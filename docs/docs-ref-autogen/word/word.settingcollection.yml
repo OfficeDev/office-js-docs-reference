@@ -2,10 +2,7 @@
 items:
   - uid: word.Word.SettingCollection
     summary: >-
-      Contains the collection of [Word.Setting](xref:word.Word.Setting) objects.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      Contains the collection of [Word.Setting](xref:word.Word.Setting) objects. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: Word.SettingCollection
@@ -30,10 +27,7 @@ items:
       - word.Word.SettingCollection.untrack
   - uid: word.Word.SettingCollection.add
     summary: >-
-      Creates a new setting or sets an existing setting.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      Creates a new setting or sets an existing setting. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: 'add(key, value)'
@@ -73,10 +67,7 @@ items:
           - RequestContext
   - uid: word.Word.SettingCollection.deleteAll
     summary: >-
-      Deletes all settings in this add-in.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      Deletes all settings in this add-in. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: deleteAll()
@@ -132,10 +123,7 @@ items:
           ```
   - uid: word.Word.SettingCollection.getCount
     summary: >-
-      Gets the count of settings.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      Gets the count of settings. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: getCount()
@@ -191,11 +179,8 @@ items:
           ```
   - uid: word.Word.SettingCollection.getItem
     summary: >-
-      Gets a setting object by its key, which is case-sensitive. Throws if the setting does not exist.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Gets a setting object by its key, which is case-sensitive. Throws if the setting does not exist. \[ [API set:
+      WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: getItem(key)
     fullName: getItem
@@ -285,11 +270,9 @@ items:
             - string
   - uid: word.Word.SettingCollection.getItemOrNullObject
     summary: >-
-      Gets a setting object by its key, which is case-sensitive. Returns a null object if the setting does not exist.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Gets a setting object by its key, which is case-sensitive. Returns a null object if the setting does not exist. \[
+      [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
     isPreview: true
     name: getItemOrNullObject(key)
     fullName: getItemOrNullObject

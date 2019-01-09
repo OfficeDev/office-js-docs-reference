@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.FunctionResult
-    summary: |-
-      An object containing the result of a function-evaluation operation
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      An object containing the result of a function-evaluation operation \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.FunctionResult
     fullName: Excel.FunctionResult
     langs:
@@ -36,10 +35,8 @@ items:
   - uid: excel.Excel.FunctionResult.error
     summary: >-
       Error value (such as "\#DIV/0") representing the error. If the error string is not set, then the function
-      succeeded, and its result is written to the Value field. The error is always in the English locale.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      succeeded, and its result is written to the Value field. The error is always in the English locale. \[ [API set:
+      ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: error
     fullName: error
     langs:
@@ -109,10 +106,8 @@ items:
   - uid: excel.Excel.FunctionResult.value
     summary: >-
       The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error
-      property is not set).
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      property is not set). \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
     fullName: value
     langs:

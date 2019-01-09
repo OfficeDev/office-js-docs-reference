@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartPointFormat
-    summary: |-
-      Represents formatting object for chart points.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents formatting object for chart points. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartPointFormat
     fullName: Excel.ChartPointFormat
     langs:
@@ -22,10 +21,8 @@ items:
   - uid: excel.Excel.ChartPointFormat.border
     summary: >-
       Represents the border format of a chart data point, which includes color, style, and weight information.
-      Read-only.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Read-only. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
     name: border
     fullName: border
     langs:
@@ -51,10 +48,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ChartPointFormat.fill
-    summary: |-
-      Represents the fill format of a chart, which includes background formating information. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the fill format of a chart, which includes background formating information. Read-only. \[ [API set:
+      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:

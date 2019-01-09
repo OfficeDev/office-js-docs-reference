@@ -18,10 +18,7 @@ items:
   - uid: excel.Excel.Interfaces.HeaderFooterData.centerFooter
     summary: >-
       Gets or sets the center footer of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: centerFooter
@@ -37,10 +34,7 @@ items:
   - uid: excel.Excel.Interfaces.HeaderFooterData.centerHeader
     summary: >-
       Gets or sets the center header of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: centerHeader
@@ -56,10 +50,7 @@ items:
   - uid: excel.Excel.Interfaces.HeaderFooterData.leftFooter
     summary: >-
       Gets or sets the left footer of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: leftFooter
@@ -75,10 +66,7 @@ items:
   - uid: excel.Excel.Interfaces.HeaderFooterData.leftHeader
     summary: >-
       Gets or sets the left header of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: leftHeader
@@ -94,10 +82,7 @@ items:
   - uid: excel.Excel.Interfaces.HeaderFooterData.rightFooter
     summary: >-
       Gets or sets the right footer of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: rightFooter
@@ -113,10 +98,7 @@ items:
   - uid: excel.Excel.Interfaces.HeaderFooterData.rightHeader
     summary: >-
       Gets or sets the right header of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: rightHeader

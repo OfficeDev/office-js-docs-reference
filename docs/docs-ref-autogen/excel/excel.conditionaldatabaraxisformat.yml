@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalDataBarAxisFormat
-    summary: |-
-      Represents the format options for a Data Bar Axis.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the format options for a Data Bar Axis. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalDataBarAxisFormat
     fullName: Excel.ConditionalDataBarAxisFormat
     langs:

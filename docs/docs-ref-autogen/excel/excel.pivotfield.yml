@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PivotField
-    summary: |-
-      Represents the Excel PivotField.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the Excel PivotField. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotField
     fullName: Excel.PivotField
     langs:
@@ -39,10 +38,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.PivotField.id
-    summary: |-
-      Id of the PivotField.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Id of the PivotField. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -54,10 +52,9 @@ items:
         type:
           - string
   - uid: excel.Excel.PivotField.items
-    summary: |-
-      Returns the PivotFields associated with the PivotField.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the PivotFields associated with the PivotField. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: items
     fullName: items
     langs:
@@ -103,10 +100,9 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.PivotField.name
-    summary: |-
-      Name of the PivotField.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Name of the PivotField. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -118,10 +114,9 @@ items:
         type:
           - string
   - uid: excel.Excel.PivotField.showAllItems
-    summary: |-
-      Determines whether to show all items of the PivotField.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Determines whether to show all items of the PivotField. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAllItems
     fullName: showAllItems
     langs:
@@ -135,10 +130,8 @@ items:
   - uid: excel.Excel.PivotField.sortByLabels
     summary: >-
       Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort
-      will be based on the PivotField itself.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      will be based on the PivotField itself. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sortByLabels(sortby)
     fullName: sortByLabels
     langs:
@@ -158,10 +151,7 @@ items:
   - uid: excel.Excel.PivotField.sortByValues
     summary: >-
       Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to
-      sort when there are multiple values from the same DataPivotHierarchy.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      sort when there are multiple values from the same DataPivotHierarchy. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'sortByValues(sortby, valuesHierarchy, pivotItemScope)'
@@ -195,10 +185,9 @@ items:
           type:
             - Array<PivotItem | string>
   - uid: excel.Excel.PivotField.subtotals
-    summary: |-
-      Subtotals of the PivotField.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Subtotals of the PivotField. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subtotals
     fullName: subtotals
     langs:

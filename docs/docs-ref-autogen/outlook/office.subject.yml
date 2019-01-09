@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.Subject
-    summary: |-
-      Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: >-
+      Provides methods to get and set the subject of an appointment or message in an Outlook add-in. \[ [API set:
+      Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -27,10 +26,7 @@ items:
 
 
       The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or
-      message.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      message. \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -75,10 +71,7 @@ items:
 
       The setAsync method starts an asynchronous call to the Exchange server to set the subject of an appointment or
       message. Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in
-      place.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      place. \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>

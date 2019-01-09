@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Binding
-    summary: |-
-      Represents an Office.js binding that is defined in the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents an Office.js binding that is defined in the workbook. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Binding
     fullName: Excel.Binding
     langs:
@@ -40,10 +39,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.Binding.delete
-    summary: |-
-      Deletes the binding.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Deletes the binding. \[ [API set: ExcelApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: delete
     langs:
@@ -56,10 +54,9 @@ items:
           - void
         description: ''
   - uid: excel.Excel.Binding.getRange
-    summary: |-
-      Returns the range represented by the binding. Will throw an error if binding is not of the correct type.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the range represented by the binding. Will throw an error if binding is not of the correct type. \[ [API
+      set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
     fullName: getRange
     langs:
@@ -90,10 +87,9 @@ items:
           });
           ```
   - uid: excel.Excel.Binding.getTable
-    summary: |-
-      Returns the table represented by the binding. Will throw an error if binding is not of the correct type.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the table represented by the binding. Will throw an error if binding is not of the correct type. \[ [API
+      set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getTable()
     fullName: getTable
     langs:
@@ -124,10 +120,9 @@ items:
           });
           ```
   - uid: excel.Excel.Binding.getText
-    summary: |-
-      Returns the text represented by the binding. Will throw an error if binding is not of the correct type.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the text represented by the binding. Will throw an error if binding is not of the correct type. \[ [API
+      set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getText()
     fullName: getText
     langs:
@@ -158,10 +153,9 @@ items:
           });
           ```
   - uid: excel.Excel.Binding.id
-    summary: |-
-      Represents binding identifier. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents binding identifier. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -227,10 +221,9 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.Binding.onDataChanged
-    summary: |-
-      Occurs when data or formatting within the binding is changed.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Occurs when data or formatting within the binding is changed. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDataChanged
     fullName: onDataChanged
     langs:
@@ -258,10 +251,9 @@ items:
           });
           ```
   - uid: excel.Excel.Binding.onSelectionChanged
-    summary: |-
-      Occurs when the selected content in the binding is changed.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Occurs when the selected content in the binding is changed. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSelectionChanged
     fullName: onSelectionChanged
     langs:
@@ -291,10 +283,9 @@ items:
           - excel.Excel.Interfaces.BindingData
         description: ''
   - uid: excel.Excel.Binding.type
-    summary: |-
-      Returns the type of the binding. See Excel.BindingType for details. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the type of the binding. See Excel.BindingType for details. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

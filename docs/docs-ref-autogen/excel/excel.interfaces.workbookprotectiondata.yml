@@ -11,10 +11,9 @@ items:
     children:
       - excel.Excel.Interfaces.WorkbookProtectionData.protected
   - uid: excel.Excel.Interfaces.WorkbookProtectionData.protected
-    summary: |-
-      Indicates if the workbook is protected. Read-Only.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Indicates if the workbook is protected. Read-Only. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protected
     fullName: protected
     langs:

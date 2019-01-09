@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Application
-    summary: |-
-      Represents the Excel application that manages the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the Excel application that manages the workbook. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Application
     fullName: Excel.Application
     langs:
@@ -25,10 +24,9 @@ items:
       - excel.Excel.Application.suspendScreenUpdatingUntilNextSync
       - excel.Excel.Application.toJSON
   - uid: excel.Excel.Application.calculate
-    summary: |-
-      Recalculate all currently opened workbooks in Excel.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Recalculate all currently opened workbooks in Excel. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculate(calculationType)
     fullName: calculate
     langs:
@@ -62,10 +60,7 @@ items:
   - uid: excel.Excel.Application.calculationEngineVersion
     summary: >-
       Returns a number about the version of Excel Calculation Engine that the workbook was last fully recalculated by.
-      Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: calculationEngineVersion
@@ -83,10 +78,7 @@ items:
       Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible
       values are: `Automatic`<!-- -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->, where Excel
       controls recalculation but ignores changes in tables; `Manual`<!-- -->, where calculation is done when the user
-      requests it.
-
-
-      \[ [API set: ExcelApi 1.1 for get, 1.8 for
+      requests it. \[ [API set: ExcelApi 1.1 for get, 1.8 for
       set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationMode
     fullName: calculationMode
@@ -101,10 +93,7 @@ items:
   - uid: excel.Excel.Application.calculationState
     summary: >-
       Returns a CalculationState that indicates the calculation state of the application. See Excel.CalculationState for
-      details. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      details. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: calculationState
@@ -135,8 +124,6 @@ items:
     summary: >-
       Returns the Iterative Calculation settings. On Excel for Windows and Excel for Mac, the settings will apply to the
       Excel Application. On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
-
-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -207,10 +194,8 @@ items:
   - uid: excel.Excel.Application.suspendApiCalculationUntilNextSync
     summary: >-
       Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to
-      re-calc the workbook, to ensure that any dependencies are propagated.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      re-calc the workbook, to ensure that any dependencies are propagated. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: suspendApiCalculationUntilNextSync()
     fullName: suspendApiCalculationUntilNextSync
     langs:
@@ -224,10 +209,7 @@ items:
         description: ''
   - uid: excel.Excel.Application.suspendScreenUpdatingUntilNextSync
     summary: >-
-      Suspends sceen updating until the next "context.sync()" is called.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Suspends sceen updating until the next "context.sync()" is called. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: suspendScreenUpdatingUntilNextSync()

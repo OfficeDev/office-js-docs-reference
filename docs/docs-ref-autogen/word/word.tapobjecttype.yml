@@ -1,7 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.TapObjectType
-    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.TapObjectType
     fullName: Word.TapObjectType
     langs:

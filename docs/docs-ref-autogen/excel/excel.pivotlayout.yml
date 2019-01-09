@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PivotLayout
-    summary: |-
-      Represents the visual layout of the PivotTable.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the visual layout of the PivotTable. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotLayout
     fullName: Excel.PivotLayout
     langs:
@@ -47,10 +46,7 @@ items:
           - RequestContext
   - uid: excel.Excel.PivotLayout.enableFieldList
     summary: >-
-      True if the field list should be shown or hidden from the UI.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      True if the field list should be shown or hidden from the UI. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: enableFieldList
@@ -66,10 +62,7 @@ items:
   - uid: excel.Excel.PivotLayout.getCell
     summary: >-
       Gets the cell in the PivotTable's data body that contains the value for the intersection of the specified
-      dataHierarchy, rowItems, and columnItems.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      dataHierarchy, rowItems, and columnItems. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'getCell(dataHierarchy, rowItems, columnItems)'
@@ -99,10 +92,9 @@ items:
           type:
             - Array<PivotItem | string>
   - uid: excel.Excel.PivotLayout.getColumnLabelRange
-    summary: |-
-      Returns the range where the PivotTable's column labels reside.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the range where the PivotTable's column labels reside. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getColumnLabelRange()
     fullName: getColumnLabelRange
     langs:
@@ -115,10 +107,9 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel.Excel.PivotLayout.getDataBodyRange
-    summary: |-
-      Returns the range where the PivotTable's data values reside.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the range where the PivotTable's data values reside. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getDataBodyRange()
     fullName: getDataBodyRange
     langs:
@@ -153,11 +144,8 @@ items:
           ```
   - uid: excel.Excel.PivotLayout.getDataHierarchy
     summary: >-
-      Gets the DataHierarchy that is used to calculate the value in a specified range within the PivotTable.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Gets the DataHierarchy that is used to calculate the value in a specified range within the PivotTable. \[ [API
+      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getDataHierarchy(cell)
     fullName: getDataHierarchy
@@ -176,10 +164,9 @@ items:
           type:
             - Range | string
   - uid: excel.Excel.PivotLayout.getFilterAxisRange
-    summary: |-
-      Returns the range of the PivotTable's filter area.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the range of the PivotTable's filter area. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getFilterAxisRange()
     fullName: getFilterAxisRange
     langs:
@@ -193,11 +180,8 @@ items:
         description: ''
   - uid: excel.Excel.PivotLayout.getPivotItems
     summary: >-
-      Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable. \[ [API set:
+      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'getPivotItems(axis, cell)'
     fullName: getPivotItems
@@ -220,10 +204,9 @@ items:
           type:
             - Range | string
   - uid: excel.Excel.PivotLayout.getRange
-    summary: |-
-      Returns the range the PivotTable exists on, excluding the filter area.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the range the PivotTable exists on, excluding the filter area. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
     fullName: getRange
     langs:
@@ -236,10 +219,9 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel.Excel.PivotLayout.getRowLabelRange
-    summary: |-
-      Returns the range where the PivotTable's row labels reside.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the range where the PivotTable's row labels reside. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRowLabelRange()
     fullName: getRowLabelRange
     langs:
@@ -254,10 +236,8 @@ items:
   - uid: excel.Excel.PivotLayout.layoutType
     summary: >-
       This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
-      will be null.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      will be null. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: layoutType
     fullName: layoutType
     langs:
@@ -304,11 +284,8 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.PivotLayout.setAutosortOnCell
     summary: >-
-      Sets an autosort using the specified cell to automatically select all criteria and context for the sort.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Sets an autosort using the specified cell to automatically select all criteria and context for the sort. \[ [API
+      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'setAutosortOnCell(cell, sortby)'
     fullName: setAutosortOnCell
@@ -331,10 +308,9 @@ items:
           type:
             - excel.Excel.SortBy
   - uid: excel.Excel.PivotLayout.showColumnGrandTotals
-    summary: |-
-      True if the PivotTable report shows grand totals for columns.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      True if the PivotTable report shows grand totals for columns. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showColumnGrandTotals
     fullName: showColumnGrandTotals
     langs:
@@ -346,10 +322,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.PivotLayout.showRowGrandTotals
-    summary: |-
-      True if the PivotTable report shows grand totals for rows.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      True if the PivotTable report shows grand totals for rows. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showRowGrandTotals
     fullName: showRowGrandTotals
     langs:
@@ -363,10 +338,8 @@ items:
   - uid: excel.Excel.PivotLayout.subtotalLocation
     summary: >-
       This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states,
-      this will be null.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      this will be null. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subtotalLocation
     fullName: subtotalLocation
     langs:

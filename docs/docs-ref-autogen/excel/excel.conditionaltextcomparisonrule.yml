@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalTextComparisonRule
-    summary: |-
-      Represents a Cell Value Conditional Format Rule
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents a Cell Value Conditional Format Rule \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalTextComparisonRule
     fullName: Excel.ConditionalTextComparisonRule
     langs:
@@ -15,10 +14,9 @@ items:
       - excel.Excel.ConditionalTextComparisonRule.operator
       - excel.Excel.ConditionalTextComparisonRule.text
   - uid: excel.Excel.ConditionalTextComparisonRule.operator
-    summary: |-
-      The operator of the text conditional format.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The operator of the text conditional format. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: operator
     fullName: operator
     langs:
@@ -30,10 +28,9 @@ items:
         type:
           - Excel.ConditionalTextOperator | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith"
   - uid: excel.Excel.ConditionalTextComparisonRule.text
-    summary: |-
-      The Text value of conditional format.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The Text value of conditional format. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
     fullName: text
     langs:

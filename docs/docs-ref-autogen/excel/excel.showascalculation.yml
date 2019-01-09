@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShowAsCalculation
-    summary: |-
-      The ShowAs Calculation function for the Data Pivot Field.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The ShowAs Calculation function for the Data Pivot Field. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ShowAsCalculation
     fullName: Excel.ShowAsCalculation
     langs:

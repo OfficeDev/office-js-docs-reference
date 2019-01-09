@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartSeriesCollection
-    summary: |-
-      Represents a collection of chart series.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents a collection of chart series. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartSeriesCollection
     fullName: Excel.ChartSeriesCollection
     langs:
@@ -25,10 +24,8 @@ items:
   - uid: excel.Excel.ChartSeriesCollection.add
     summary: >-
       Add a new series to the collection. The new added series is not visible until set values/x axis values/bubble
-      sizes for it (depending on chart type).
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      sizes for it (depending on chart type). \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(name, index)'
     fullName: add
     langs:
@@ -64,10 +61,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ChartSeriesCollection.count
-    summary: |-
-      Returns the number of series in the collection. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the number of series in the collection. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -79,10 +75,9 @@ items:
         type:
           - number
   - uid: excel.Excel.ChartSeriesCollection.getCount
-    summary: |-
-      Returns the number of series in the collection.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the number of series in the collection. \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -95,10 +90,9 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.ChartSeriesCollection.getItemAt
-    summary: |-
-      Retrieves a series based on its position in the collection.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Retrieves a series based on its position in the collection. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:

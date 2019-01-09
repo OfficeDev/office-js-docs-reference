@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.IterativeCalculation
     summary: >-
-      Represents the Iterative Calculation settings.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the Iterative Calculation settings. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.IterativeCalculation
@@ -40,10 +37,7 @@ items:
           - RequestContext
   - uid: excel.Excel.IterativeCalculation.enabled
     summary: >-
-      True if Excel will use iteration to resolve circular references.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      True if Excel will use iteration to resolve circular references. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: enabled
@@ -93,11 +87,8 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.IterativeCalculation.maxChange
     summary: >-
-      Returns or sets the maximum amount of change between each iteration as Excel resolves circular references.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns or sets the maximum amount of change between each iteration as Excel resolves circular references. \[ [API
+      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: maxChange
     fullName: maxChange
@@ -111,11 +102,8 @@ items:
           - number
   - uid: excel.Excel.IterativeCalculation.maxIteration
     summary: >-
-      Returns or sets the maximum number of iterations that Excel can use to resolve a circular reference.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns or sets the maximum number of iterations that Excel can use to resolve a circular reference. \[ [API set:
+      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: maxIteration
     fullName: maxIteration

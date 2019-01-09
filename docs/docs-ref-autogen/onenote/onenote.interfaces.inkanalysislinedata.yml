@@ -13,10 +13,9 @@ items:
       - onenote.OneNote.Interfaces.InkAnalysisLineData.paragraph
       - onenote.OneNote.Interfaces.InkAnalysisLineData.words
   - uid: onenote.OneNote.Interfaces.InkAnalysisLineData.id
-    summary: |-
-      Gets the ID of the InkAnalysisLine object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the ID of the InkAnalysisLine object. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -28,10 +27,9 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Interfaces.InkAnalysisLineData.paragraph
-    summary: |-
-      Reference to the parent InkAnalysisParagraph. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Reference to the parent InkAnalysisParagraph. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
     fullName: paragraph
     langs:
@@ -43,10 +41,9 @@ items:
         type:
           - onenote.OneNote.Interfaces.InkAnalysisParagraphData
   - uid: onenote.OneNote.Interfaces.InkAnalysisLineData.words
-    summary: |-
-      Gets the ink analysis words in this ink analysis line. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the ink analysis words in this ink analysis line. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: words
     fullName: words
     langs:

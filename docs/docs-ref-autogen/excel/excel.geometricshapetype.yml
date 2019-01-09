@@ -1,10 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.GeometricShapeType
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: Excel.GeometricShapeType
     fullName: Excel.GeometricShapeType
     langs:
@@ -190,7 +186,6 @@ items:
       - excel.Excel.GeometricShapeType.wedgeRectCallout
       - excel.Excel.GeometricShapeType.wedgeRRectCallout
   - uid: excel.Excel.GeometricShapeType.accentBorderCallout1
-    isPreview: true
     name: accentBorderCallout1
     fullName: accentBorderCallout1
     langs:
@@ -198,7 +193,6 @@ items:
     type: field
     numericValue: '"AccentBorderCallout1"'
   - uid: excel.Excel.GeometricShapeType.accentBorderCallout2
-    isPreview: true
     name: accentBorderCallout2
     fullName: accentBorderCallout2
     langs:
@@ -206,7 +200,6 @@ items:
     type: field
     numericValue: '"AccentBorderCallout2"'
   - uid: excel.Excel.GeometricShapeType.accentBorderCallout3
-    isPreview: true
     name: accentBorderCallout3
     fullName: accentBorderCallout3
     langs:
@@ -214,7 +207,6 @@ items:
     type: field
     numericValue: '"AccentBorderCallout3"'
   - uid: excel.Excel.GeometricShapeType.accentCallout1
-    isPreview: true
     name: accentCallout1
     fullName: accentCallout1
     langs:
@@ -222,7 +214,6 @@ items:
     type: field
     numericValue: '"AccentCallout1"'
   - uid: excel.Excel.GeometricShapeType.accentCallout2
-    isPreview: true
     name: accentCallout2
     fullName: accentCallout2
     langs:
@@ -230,7 +221,6 @@ items:
     type: field
     numericValue: '"AccentCallout2"'
   - uid: excel.Excel.GeometricShapeType.accentCallout3
-    isPreview: true
     name: accentCallout3
     fullName: accentCallout3
     langs:
@@ -238,7 +228,6 @@ items:
     type: field
     numericValue: '"AccentCallout3"'
   - uid: excel.Excel.GeometricShapeType.actionButtonBackPrevious
-    isPreview: true
     name: actionButtonBackPrevious
     fullName: actionButtonBackPrevious
     langs:
@@ -246,7 +235,6 @@ items:
     type: field
     numericValue: '"ActionButtonBackPrevious"'
   - uid: excel.Excel.GeometricShapeType.actionButtonBeginning
-    isPreview: true
     name: actionButtonBeginning
     fullName: actionButtonBeginning
     langs:
@@ -254,7 +242,6 @@ items:
     type: field
     numericValue: '"ActionButtonBeginning"'
   - uid: excel.Excel.GeometricShapeType.actionButtonBlank
-    isPreview: true
     name: actionButtonBlank
     fullName: actionButtonBlank
     langs:
@@ -262,7 +249,6 @@ items:
     type: field
     numericValue: '"ActionButtonBlank"'
   - uid: excel.Excel.GeometricShapeType.actionButtonDocument
-    isPreview: true
     name: actionButtonDocument
     fullName: actionButtonDocument
     langs:
@@ -270,7 +256,6 @@ items:
     type: field
     numericValue: '"ActionButtonDocument"'
   - uid: excel.Excel.GeometricShapeType.actionButtonEnd
-    isPreview: true
     name: actionButtonEnd
     fullName: actionButtonEnd
     langs:
@@ -278,7 +263,6 @@ items:
     type: field
     numericValue: '"ActionButtonEnd"'
   - uid: excel.Excel.GeometricShapeType.actionButtonForwardNext
-    isPreview: true
     name: actionButtonForwardNext
     fullName: actionButtonForwardNext
     langs:
@@ -286,7 +270,6 @@ items:
     type: field
     numericValue: '"ActionButtonForwardNext"'
   - uid: excel.Excel.GeometricShapeType.actionButtonHelp
-    isPreview: true
     name: actionButtonHelp
     fullName: actionButtonHelp
     langs:
@@ -294,7 +277,6 @@ items:
     type: field
     numericValue: '"ActionButtonHelp"'
   - uid: excel.Excel.GeometricShapeType.actionButtonHome
-    isPreview: true
     name: actionButtonHome
     fullName: actionButtonHome
     langs:
@@ -302,7 +284,6 @@ items:
     type: field
     numericValue: '"ActionButtonHome"'
   - uid: excel.Excel.GeometricShapeType.actionButtonInformation
-    isPreview: true
     name: actionButtonInformation
     fullName: actionButtonInformation
     langs:
@@ -310,7 +291,6 @@ items:
     type: field
     numericValue: '"ActionButtonInformation"'
   - uid: excel.Excel.GeometricShapeType.actionButtonMovie
-    isPreview: true
     name: actionButtonMovie
     fullName: actionButtonMovie
     langs:
@@ -318,7 +298,6 @@ items:
     type: field
     numericValue: '"ActionButtonMovie"'
   - uid: excel.Excel.GeometricShapeType.actionButtonReturn
-    isPreview: true
     name: actionButtonReturn
     fullName: actionButtonReturn
     langs:
@@ -326,7 +305,6 @@ items:
     type: field
     numericValue: '"ActionButtonReturn"'
   - uid: excel.Excel.GeometricShapeType.actionButtonSound
-    isPreview: true
     name: actionButtonSound
     fullName: actionButtonSound
     langs:
@@ -334,7 +312,6 @@ items:
     type: field
     numericValue: '"ActionButtonSound"'
   - uid: excel.Excel.GeometricShapeType.arc
-    isPreview: true
     name: arc
     fullName: arc
     langs:
@@ -342,7 +319,6 @@ items:
     type: field
     numericValue: '"Arc"'
   - uid: excel.Excel.GeometricShapeType.bentArrow
-    isPreview: true
     name: bentArrow
     fullName: bentArrow
     langs:
@@ -350,7 +326,6 @@ items:
     type: field
     numericValue: '"BentArrow"'
   - uid: excel.Excel.GeometricShapeType.bentUpArrow
-    isPreview: true
     name: bentUpArrow
     fullName: bentUpArrow
     langs:
@@ -358,7 +333,6 @@ items:
     type: field
     numericValue: '"BentUpArrow"'
   - uid: excel.Excel.GeometricShapeType.bevel
-    isPreview: true
     name: bevel
     fullName: bevel
     langs:
@@ -366,7 +340,6 @@ items:
     type: field
     numericValue: '"Bevel"'
   - uid: excel.Excel.GeometricShapeType.blockArc
-    isPreview: true
     name: blockArc
     fullName: blockArc
     langs:
@@ -374,7 +347,6 @@ items:
     type: field
     numericValue: '"BlockArc"'
   - uid: excel.Excel.GeometricShapeType.borderCallout1
-    isPreview: true
     name: borderCallout1
     fullName: borderCallout1
     langs:
@@ -382,7 +354,6 @@ items:
     type: field
     numericValue: '"BorderCallout1"'
   - uid: excel.Excel.GeometricShapeType.borderCallout2
-    isPreview: true
     name: borderCallout2
     fullName: borderCallout2
     langs:
@@ -390,7 +361,6 @@ items:
     type: field
     numericValue: '"BorderCallout2"'
   - uid: excel.Excel.GeometricShapeType.borderCallout3
-    isPreview: true
     name: borderCallout3
     fullName: borderCallout3
     langs:
@@ -398,7 +368,6 @@ items:
     type: field
     numericValue: '"BorderCallout3"'
   - uid: excel.Excel.GeometricShapeType.bracePair
-    isPreview: true
     name: bracePair
     fullName: bracePair
     langs:
@@ -406,7 +375,6 @@ items:
     type: field
     numericValue: '"BracePair"'
   - uid: excel.Excel.GeometricShapeType.bracketPair
-    isPreview: true
     name: bracketPair
     fullName: bracketPair
     langs:
@@ -414,7 +382,6 @@ items:
     type: field
     numericValue: '"BracketPair"'
   - uid: excel.Excel.GeometricShapeType.callout1
-    isPreview: true
     name: callout1
     fullName: callout1
     langs:
@@ -422,7 +389,6 @@ items:
     type: field
     numericValue: '"Callout1"'
   - uid: excel.Excel.GeometricShapeType.callout2
-    isPreview: true
     name: callout2
     fullName: callout2
     langs:
@@ -430,7 +396,6 @@ items:
     type: field
     numericValue: '"Callout2"'
   - uid: excel.Excel.GeometricShapeType.callout3
-    isPreview: true
     name: callout3
     fullName: callout3
     langs:
@@ -438,7 +403,6 @@ items:
     type: field
     numericValue: '"Callout3"'
   - uid: excel.Excel.GeometricShapeType.can
-    isPreview: true
     name: can
     fullName: can
     langs:
@@ -446,7 +410,6 @@ items:
     type: field
     numericValue: '"Can"'
   - uid: excel.Excel.GeometricShapeType.chartPlus
-    isPreview: true
     name: chartPlus
     fullName: chartPlus
     langs:
@@ -454,7 +417,6 @@ items:
     type: field
     numericValue: '"ChartPlus"'
   - uid: excel.Excel.GeometricShapeType.chartStar
-    isPreview: true
     name: chartStar
     fullName: chartStar
     langs:
@@ -462,7 +424,6 @@ items:
     type: field
     numericValue: '"ChartStar"'
   - uid: excel.Excel.GeometricShapeType.chartX
-    isPreview: true
     name: chartX
     fullName: chartX
     langs:
@@ -470,7 +431,6 @@ items:
     type: field
     numericValue: '"ChartX"'
   - uid: excel.Excel.GeometricShapeType.chevron
-    isPreview: true
     name: chevron
     fullName: chevron
     langs:
@@ -478,7 +438,6 @@ items:
     type: field
     numericValue: '"Chevron"'
   - uid: excel.Excel.GeometricShapeType.chord
-    isPreview: true
     name: chord
     fullName: chord
     langs:
@@ -486,7 +445,6 @@ items:
     type: field
     numericValue: '"Chord"'
   - uid: excel.Excel.GeometricShapeType.circularArrow
-    isPreview: true
     name: circularArrow
     fullName: circularArrow
     langs:
@@ -494,7 +452,6 @@ items:
     type: field
     numericValue: '"CircularArrow"'
   - uid: excel.Excel.GeometricShapeType.cloud
-    isPreview: true
     name: cloud
     fullName: cloud
     langs:
@@ -502,7 +459,6 @@ items:
     type: field
     numericValue: '"Cloud"'
   - uid: excel.Excel.GeometricShapeType.cloudCallout
-    isPreview: true
     name: cloudCallout
     fullName: cloudCallout
     langs:
@@ -510,7 +466,6 @@ items:
     type: field
     numericValue: '"CloudCallout"'
   - uid: excel.Excel.GeometricShapeType.corner
-    isPreview: true
     name: corner
     fullName: corner
     langs:
@@ -518,7 +473,6 @@ items:
     type: field
     numericValue: '"Corner"'
   - uid: excel.Excel.GeometricShapeType.cornerTabs
-    isPreview: true
     name: cornerTabs
     fullName: cornerTabs
     langs:
@@ -526,7 +480,6 @@ items:
     type: field
     numericValue: '"CornerTabs"'
   - uid: excel.Excel.GeometricShapeType.cube
-    isPreview: true
     name: cube
     fullName: cube
     langs:
@@ -534,7 +487,6 @@ items:
     type: field
     numericValue: '"Cube"'
   - uid: excel.Excel.GeometricShapeType.curvedDownArrow
-    isPreview: true
     name: curvedDownArrow
     fullName: curvedDownArrow
     langs:
@@ -542,7 +494,6 @@ items:
     type: field
     numericValue: '"CurvedDownArrow"'
   - uid: excel.Excel.GeometricShapeType.curvedLeftArrow
-    isPreview: true
     name: curvedLeftArrow
     fullName: curvedLeftArrow
     langs:
@@ -550,7 +501,6 @@ items:
     type: field
     numericValue: '"CurvedLeftArrow"'
   - uid: excel.Excel.GeometricShapeType.curvedRightArrow
-    isPreview: true
     name: curvedRightArrow
     fullName: curvedRightArrow
     langs:
@@ -558,7 +508,6 @@ items:
     type: field
     numericValue: '"CurvedRightArrow"'
   - uid: excel.Excel.GeometricShapeType.curvedUpArrow
-    isPreview: true
     name: curvedUpArrow
     fullName: curvedUpArrow
     langs:
@@ -566,7 +515,6 @@ items:
     type: field
     numericValue: '"CurvedUpArrow"'
   - uid: excel.Excel.GeometricShapeType.decagon
-    isPreview: true
     name: decagon
     fullName: decagon
     langs:
@@ -574,7 +522,6 @@ items:
     type: field
     numericValue: '"Decagon"'
   - uid: excel.Excel.GeometricShapeType.diagonalStripe
-    isPreview: true
     name: diagonalStripe
     fullName: diagonalStripe
     langs:
@@ -582,7 +529,6 @@ items:
     type: field
     numericValue: '"DiagonalStripe"'
   - uid: excel.Excel.GeometricShapeType.diamond
-    isPreview: true
     name: diamond
     fullName: diamond
     langs:
@@ -590,7 +536,6 @@ items:
     type: field
     numericValue: '"Diamond"'
   - uid: excel.Excel.GeometricShapeType.dodecagon
-    isPreview: true
     name: dodecagon
     fullName: dodecagon
     langs:
@@ -598,7 +543,6 @@ items:
     type: field
     numericValue: '"Dodecagon"'
   - uid: excel.Excel.GeometricShapeType.donut
-    isPreview: true
     name: donut
     fullName: donut
     langs:
@@ -606,7 +550,6 @@ items:
     type: field
     numericValue: '"Donut"'
   - uid: excel.Excel.GeometricShapeType.doubleWave
-    isPreview: true
     name: doubleWave
     fullName: doubleWave
     langs:
@@ -614,7 +557,6 @@ items:
     type: field
     numericValue: '"DoubleWave"'
   - uid: excel.Excel.GeometricShapeType.downArrow
-    isPreview: true
     name: downArrow
     fullName: downArrow
     langs:
@@ -622,7 +564,6 @@ items:
     type: field
     numericValue: '"DownArrow"'
   - uid: excel.Excel.GeometricShapeType.downArrowCallout
-    isPreview: true
     name: downArrowCallout
     fullName: downArrowCallout
     langs:
@@ -630,7 +571,6 @@ items:
     type: field
     numericValue: '"DownArrowCallout"'
   - uid: excel.Excel.GeometricShapeType.ellipse
-    isPreview: true
     name: ellipse
     fullName: ellipse
     langs:
@@ -638,7 +578,6 @@ items:
     type: field
     numericValue: '"Ellipse"'
   - uid: excel.Excel.GeometricShapeType.ellipseRibbon
-    isPreview: true
     name: ellipseRibbon
     fullName: ellipseRibbon
     langs:
@@ -646,7 +585,6 @@ items:
     type: field
     numericValue: '"EllipseRibbon"'
   - uid: excel.Excel.GeometricShapeType.ellipseRibbon2
-    isPreview: true
     name: ellipseRibbon2
     fullName: ellipseRibbon2
     langs:
@@ -654,7 +592,6 @@ items:
     type: field
     numericValue: '"EllipseRibbon2"'
   - uid: excel.Excel.GeometricShapeType.flowChartAlternateProcess
-    isPreview: true
     name: flowChartAlternateProcess
     fullName: flowChartAlternateProcess
     langs:
@@ -662,7 +599,6 @@ items:
     type: field
     numericValue: '"FlowChartAlternateProcess"'
   - uid: excel.Excel.GeometricShapeType.flowChartCollate
-    isPreview: true
     name: flowChartCollate
     fullName: flowChartCollate
     langs:
@@ -670,7 +606,6 @@ items:
     type: field
     numericValue: '"FlowChartCollate"'
   - uid: excel.Excel.GeometricShapeType.flowChartConnector
-    isPreview: true
     name: flowChartConnector
     fullName: flowChartConnector
     langs:
@@ -678,7 +613,6 @@ items:
     type: field
     numericValue: '"FlowChartConnector"'
   - uid: excel.Excel.GeometricShapeType.flowChartDecision
-    isPreview: true
     name: flowChartDecision
     fullName: flowChartDecision
     langs:
@@ -686,7 +620,6 @@ items:
     type: field
     numericValue: '"FlowChartDecision"'
   - uid: excel.Excel.GeometricShapeType.flowChartDelay
-    isPreview: true
     name: flowChartDelay
     fullName: flowChartDelay
     langs:
@@ -694,7 +627,6 @@ items:
     type: field
     numericValue: '"FlowChartDelay"'
   - uid: excel.Excel.GeometricShapeType.flowChartDisplay
-    isPreview: true
     name: flowChartDisplay
     fullName: flowChartDisplay
     langs:
@@ -702,7 +634,6 @@ items:
     type: field
     numericValue: '"FlowChartDisplay"'
   - uid: excel.Excel.GeometricShapeType.flowChartDocument
-    isPreview: true
     name: flowChartDocument
     fullName: flowChartDocument
     langs:
@@ -710,7 +641,6 @@ items:
     type: field
     numericValue: '"FlowChartDocument"'
   - uid: excel.Excel.GeometricShapeType.flowChartExtract
-    isPreview: true
     name: flowChartExtract
     fullName: flowChartExtract
     langs:
@@ -718,7 +648,6 @@ items:
     type: field
     numericValue: '"FlowChartExtract"'
   - uid: excel.Excel.GeometricShapeType.flowChartInputOutput
-    isPreview: true
     name: flowChartInputOutput
     fullName: flowChartInputOutput
     langs:
@@ -726,7 +655,6 @@ items:
     type: field
     numericValue: '"FlowChartInputOutput"'
   - uid: excel.Excel.GeometricShapeType.flowChartInternalStorage
-    isPreview: true
     name: flowChartInternalStorage
     fullName: flowChartInternalStorage
     langs:
@@ -734,7 +662,6 @@ items:
     type: field
     numericValue: '"FlowChartInternalStorage"'
   - uid: excel.Excel.GeometricShapeType.flowChartMagneticDisk
-    isPreview: true
     name: flowChartMagneticDisk
     fullName: flowChartMagneticDisk
     langs:
@@ -742,7 +669,6 @@ items:
     type: field
     numericValue: '"FlowChartMagneticDisk"'
   - uid: excel.Excel.GeometricShapeType.flowChartMagneticDrum
-    isPreview: true
     name: flowChartMagneticDrum
     fullName: flowChartMagneticDrum
     langs:
@@ -750,7 +676,6 @@ items:
     type: field
     numericValue: '"FlowChartMagneticDrum"'
   - uid: excel.Excel.GeometricShapeType.flowChartMagneticTape
-    isPreview: true
     name: flowChartMagneticTape
     fullName: flowChartMagneticTape
     langs:
@@ -758,7 +683,6 @@ items:
     type: field
     numericValue: '"FlowChartMagneticTape"'
   - uid: excel.Excel.GeometricShapeType.flowChartManualInput
-    isPreview: true
     name: flowChartManualInput
     fullName: flowChartManualInput
     langs:
@@ -766,7 +690,6 @@ items:
     type: field
     numericValue: '"FlowChartManualInput"'
   - uid: excel.Excel.GeometricShapeType.flowChartManualOperation
-    isPreview: true
     name: flowChartManualOperation
     fullName: flowChartManualOperation
     langs:
@@ -774,7 +697,6 @@ items:
     type: field
     numericValue: '"FlowChartManualOperation"'
   - uid: excel.Excel.GeometricShapeType.flowChartMerge
-    isPreview: true
     name: flowChartMerge
     fullName: flowChartMerge
     langs:
@@ -782,7 +704,6 @@ items:
     type: field
     numericValue: '"FlowChartMerge"'
   - uid: excel.Excel.GeometricShapeType.flowChartMultidocument
-    isPreview: true
     name: flowChartMultidocument
     fullName: flowChartMultidocument
     langs:
@@ -790,7 +711,6 @@ items:
     type: field
     numericValue: '"FlowChartMultidocument"'
   - uid: excel.Excel.GeometricShapeType.flowChartOfflineStorage
-    isPreview: true
     name: flowChartOfflineStorage
     fullName: flowChartOfflineStorage
     langs:
@@ -798,7 +718,6 @@ items:
     type: field
     numericValue: '"FlowChartOfflineStorage"'
   - uid: excel.Excel.GeometricShapeType.flowChartOffpageConnector
-    isPreview: true
     name: flowChartOffpageConnector
     fullName: flowChartOffpageConnector
     langs:
@@ -806,7 +725,6 @@ items:
     type: field
     numericValue: '"FlowChartOffpageConnector"'
   - uid: excel.Excel.GeometricShapeType.flowChartOnlineStorage
-    isPreview: true
     name: flowChartOnlineStorage
     fullName: flowChartOnlineStorage
     langs:
@@ -814,7 +732,6 @@ items:
     type: field
     numericValue: '"FlowChartOnlineStorage"'
   - uid: excel.Excel.GeometricShapeType.flowChartOr
-    isPreview: true
     name: flowChartOr
     fullName: flowChartOr
     langs:
@@ -822,7 +739,6 @@ items:
     type: field
     numericValue: '"FlowChartOr"'
   - uid: excel.Excel.GeometricShapeType.flowChartPredefinedProcess
-    isPreview: true
     name: flowChartPredefinedProcess
     fullName: flowChartPredefinedProcess
     langs:
@@ -830,7 +746,6 @@ items:
     type: field
     numericValue: '"FlowChartPredefinedProcess"'
   - uid: excel.Excel.GeometricShapeType.flowChartPreparation
-    isPreview: true
     name: flowChartPreparation
     fullName: flowChartPreparation
     langs:
@@ -838,7 +753,6 @@ items:
     type: field
     numericValue: '"FlowChartPreparation"'
   - uid: excel.Excel.GeometricShapeType.flowChartProcess
-    isPreview: true
     name: flowChartProcess
     fullName: flowChartProcess
     langs:
@@ -846,7 +760,6 @@ items:
     type: field
     numericValue: '"FlowChartProcess"'
   - uid: excel.Excel.GeometricShapeType.flowChartPunchedCard
-    isPreview: true
     name: flowChartPunchedCard
     fullName: flowChartPunchedCard
     langs:
@@ -854,7 +767,6 @@ items:
     type: field
     numericValue: '"FlowChartPunchedCard"'
   - uid: excel.Excel.GeometricShapeType.flowChartPunchedTape
-    isPreview: true
     name: flowChartPunchedTape
     fullName: flowChartPunchedTape
     langs:
@@ -862,7 +774,6 @@ items:
     type: field
     numericValue: '"FlowChartPunchedTape"'
   - uid: excel.Excel.GeometricShapeType.flowChartSort
-    isPreview: true
     name: flowChartSort
     fullName: flowChartSort
     langs:
@@ -870,7 +781,6 @@ items:
     type: field
     numericValue: '"FlowChartSort"'
   - uid: excel.Excel.GeometricShapeType.flowChartSummingJunction
-    isPreview: true
     name: flowChartSummingJunction
     fullName: flowChartSummingJunction
     langs:
@@ -878,7 +788,6 @@ items:
     type: field
     numericValue: '"FlowChartSummingJunction"'
   - uid: excel.Excel.GeometricShapeType.flowChartTerminator
-    isPreview: true
     name: flowChartTerminator
     fullName: flowChartTerminator
     langs:
@@ -886,7 +795,6 @@ items:
     type: field
     numericValue: '"FlowChartTerminator"'
   - uid: excel.Excel.GeometricShapeType.foldedCorner
-    isPreview: true
     name: foldedCorner
     fullName: foldedCorner
     langs:
@@ -894,7 +802,6 @@ items:
     type: field
     numericValue: '"FoldedCorner"'
   - uid: excel.Excel.GeometricShapeType.frame
-    isPreview: true
     name: frame
     fullName: frame
     langs:
@@ -902,7 +809,6 @@ items:
     type: field
     numericValue: '"Frame"'
   - uid: excel.Excel.GeometricShapeType.funnel
-    isPreview: true
     name: funnel
     fullName: funnel
     langs:
@@ -910,7 +816,6 @@ items:
     type: field
     numericValue: '"Funnel"'
   - uid: excel.Excel.GeometricShapeType.gear6
-    isPreview: true
     name: gear6
     fullName: gear6
     langs:
@@ -918,7 +823,6 @@ items:
     type: field
     numericValue: '"Gear6"'
   - uid: excel.Excel.GeometricShapeType.gear9
-    isPreview: true
     name: gear9
     fullName: gear9
     langs:
@@ -926,7 +830,6 @@ items:
     type: field
     numericValue: '"Gear9"'
   - uid: excel.Excel.GeometricShapeType.halfFrame
-    isPreview: true
     name: halfFrame
     fullName: halfFrame
     langs:
@@ -934,7 +837,6 @@ items:
     type: field
     numericValue: '"HalfFrame"'
   - uid: excel.Excel.GeometricShapeType.heart
-    isPreview: true
     name: heart
     fullName: heart
     langs:
@@ -942,7 +844,6 @@ items:
     type: field
     numericValue: '"Heart"'
   - uid: excel.Excel.GeometricShapeType.heptagon
-    isPreview: true
     name: heptagon
     fullName: heptagon
     langs:
@@ -950,7 +851,6 @@ items:
     type: field
     numericValue: '"Heptagon"'
   - uid: excel.Excel.GeometricShapeType.hexagon
-    isPreview: true
     name: hexagon
     fullName: hexagon
     langs:
@@ -958,7 +858,6 @@ items:
     type: field
     numericValue: '"Hexagon"'
   - uid: excel.Excel.GeometricShapeType.homePlate
-    isPreview: true
     name: homePlate
     fullName: homePlate
     langs:
@@ -966,7 +865,6 @@ items:
     type: field
     numericValue: '"HomePlate"'
   - uid: excel.Excel.GeometricShapeType.horizontalScroll
-    isPreview: true
     name: horizontalScroll
     fullName: horizontalScroll
     langs:
@@ -974,7 +872,6 @@ items:
     type: field
     numericValue: '"HorizontalScroll"'
   - uid: excel.Excel.GeometricShapeType.irregularSeal1
-    isPreview: true
     name: irregularSeal1
     fullName: irregularSeal1
     langs:
@@ -982,7 +879,6 @@ items:
     type: field
     numericValue: '"IrregularSeal1"'
   - uid: excel.Excel.GeometricShapeType.irregularSeal2
-    isPreview: true
     name: irregularSeal2
     fullName: irregularSeal2
     langs:
@@ -990,7 +886,6 @@ items:
     type: field
     numericValue: '"IrregularSeal2"'
   - uid: excel.Excel.GeometricShapeType.leftArrow
-    isPreview: true
     name: leftArrow
     fullName: leftArrow
     langs:
@@ -998,7 +893,6 @@ items:
     type: field
     numericValue: '"LeftArrow"'
   - uid: excel.Excel.GeometricShapeType.leftArrowCallout
-    isPreview: true
     name: leftArrowCallout
     fullName: leftArrowCallout
     langs:
@@ -1006,7 +900,6 @@ items:
     type: field
     numericValue: '"LeftArrowCallout"'
   - uid: excel.Excel.GeometricShapeType.leftBrace
-    isPreview: true
     name: leftBrace
     fullName: leftBrace
     langs:
@@ -1014,7 +907,6 @@ items:
     type: field
     numericValue: '"LeftBrace"'
   - uid: excel.Excel.GeometricShapeType.leftBracket
-    isPreview: true
     name: leftBracket
     fullName: leftBracket
     langs:
@@ -1022,7 +914,6 @@ items:
     type: field
     numericValue: '"LeftBracket"'
   - uid: excel.Excel.GeometricShapeType.leftCircularArrow
-    isPreview: true
     name: leftCircularArrow
     fullName: leftCircularArrow
     langs:
@@ -1030,7 +921,6 @@ items:
     type: field
     numericValue: '"LeftCircularArrow"'
   - uid: excel.Excel.GeometricShapeType.leftRightArrow
-    isPreview: true
     name: leftRightArrow
     fullName: leftRightArrow
     langs:
@@ -1038,7 +928,6 @@ items:
     type: field
     numericValue: '"LeftRightArrow"'
   - uid: excel.Excel.GeometricShapeType.leftRightArrowCallout
-    isPreview: true
     name: leftRightArrowCallout
     fullName: leftRightArrowCallout
     langs:
@@ -1046,7 +935,6 @@ items:
     type: field
     numericValue: '"LeftRightArrowCallout"'
   - uid: excel.Excel.GeometricShapeType.leftRightCircularArrow
-    isPreview: true
     name: leftRightCircularArrow
     fullName: leftRightCircularArrow
     langs:
@@ -1054,7 +942,6 @@ items:
     type: field
     numericValue: '"LeftRightCircularArrow"'
   - uid: excel.Excel.GeometricShapeType.leftRightRibbon
-    isPreview: true
     name: leftRightRibbon
     fullName: leftRightRibbon
     langs:
@@ -1062,7 +949,6 @@ items:
     type: field
     numericValue: '"LeftRightRibbon"'
   - uid: excel.Excel.GeometricShapeType.leftRightUpArrow
-    isPreview: true
     name: leftRightUpArrow
     fullName: leftRightUpArrow
     langs:
@@ -1070,7 +956,6 @@ items:
     type: field
     numericValue: '"LeftRightUpArrow"'
   - uid: excel.Excel.GeometricShapeType.leftUpArrow
-    isPreview: true
     name: leftUpArrow
     fullName: leftUpArrow
     langs:
@@ -1078,7 +963,6 @@ items:
     type: field
     numericValue: '"LeftUpArrow"'
   - uid: excel.Excel.GeometricShapeType.lightningBolt
-    isPreview: true
     name: lightningBolt
     fullName: lightningBolt
     langs:
@@ -1086,7 +970,6 @@ items:
     type: field
     numericValue: '"LightningBolt"'
   - uid: excel.Excel.GeometricShapeType.lineInverse
-    isPreview: true
     name: lineInverse
     fullName: lineInverse
     langs:
@@ -1094,7 +977,6 @@ items:
     type: field
     numericValue: '"LineInverse"'
   - uid: excel.Excel.GeometricShapeType.mathDivide
-    isPreview: true
     name: mathDivide
     fullName: mathDivide
     langs:
@@ -1102,7 +984,6 @@ items:
     type: field
     numericValue: '"MathDivide"'
   - uid: excel.Excel.GeometricShapeType.mathEqual
-    isPreview: true
     name: mathEqual
     fullName: mathEqual
     langs:
@@ -1110,7 +991,6 @@ items:
     type: field
     numericValue: '"MathEqual"'
   - uid: excel.Excel.GeometricShapeType.mathMinus
-    isPreview: true
     name: mathMinus
     fullName: mathMinus
     langs:
@@ -1118,7 +998,6 @@ items:
     type: field
     numericValue: '"MathMinus"'
   - uid: excel.Excel.GeometricShapeType.mathMultiply
-    isPreview: true
     name: mathMultiply
     fullName: mathMultiply
     langs:
@@ -1126,7 +1005,6 @@ items:
     type: field
     numericValue: '"MathMultiply"'
   - uid: excel.Excel.GeometricShapeType.mathNotEqual
-    isPreview: true
     name: mathNotEqual
     fullName: mathNotEqual
     langs:
@@ -1134,7 +1012,6 @@ items:
     type: field
     numericValue: '"MathNotEqual"'
   - uid: excel.Excel.GeometricShapeType.mathPlus
-    isPreview: true
     name: mathPlus
     fullName: mathPlus
     langs:
@@ -1142,7 +1019,6 @@ items:
     type: field
     numericValue: '"MathPlus"'
   - uid: excel.Excel.GeometricShapeType.moon
-    isPreview: true
     name: moon
     fullName: moon
     langs:
@@ -1150,7 +1026,6 @@ items:
     type: field
     numericValue: '"Moon"'
   - uid: excel.Excel.GeometricShapeType.nonIsoscelesTrapezoid
-    isPreview: true
     name: nonIsoscelesTrapezoid
     fullName: nonIsoscelesTrapezoid
     langs:
@@ -1158,7 +1033,6 @@ items:
     type: field
     numericValue: '"NonIsoscelesTrapezoid"'
   - uid: excel.Excel.GeometricShapeType.noSmoking
-    isPreview: true
     name: noSmoking
     fullName: noSmoking
     langs:
@@ -1166,7 +1040,6 @@ items:
     type: field
     numericValue: '"NoSmoking"'
   - uid: excel.Excel.GeometricShapeType.notchedRightArrow
-    isPreview: true
     name: notchedRightArrow
     fullName: notchedRightArrow
     langs:
@@ -1174,7 +1047,6 @@ items:
     type: field
     numericValue: '"NotchedRightArrow"'
   - uid: excel.Excel.GeometricShapeType.octagon
-    isPreview: true
     name: octagon
     fullName: octagon
     langs:
@@ -1182,7 +1054,6 @@ items:
     type: field
     numericValue: '"Octagon"'
   - uid: excel.Excel.GeometricShapeType.parallelogram
-    isPreview: true
     name: parallelogram
     fullName: parallelogram
     langs:
@@ -1190,7 +1061,6 @@ items:
     type: field
     numericValue: '"Parallelogram"'
   - uid: excel.Excel.GeometricShapeType.pentagon
-    isPreview: true
     name: pentagon
     fullName: pentagon
     langs:
@@ -1198,7 +1068,6 @@ items:
     type: field
     numericValue: '"Pentagon"'
   - uid: excel.Excel.GeometricShapeType.pie
-    isPreview: true
     name: pie
     fullName: pie
     langs:
@@ -1206,7 +1075,6 @@ items:
     type: field
     numericValue: '"Pie"'
   - uid: excel.Excel.GeometricShapeType.pieWedge
-    isPreview: true
     name: pieWedge
     fullName: pieWedge
     langs:
@@ -1214,7 +1082,6 @@ items:
     type: field
     numericValue: '"PieWedge"'
   - uid: excel.Excel.GeometricShapeType.plaque
-    isPreview: true
     name: plaque
     fullName: plaque
     langs:
@@ -1222,7 +1089,6 @@ items:
     type: field
     numericValue: '"Plaque"'
   - uid: excel.Excel.GeometricShapeType.plaqueTabs
-    isPreview: true
     name: plaqueTabs
     fullName: plaqueTabs
     langs:
@@ -1230,7 +1096,6 @@ items:
     type: field
     numericValue: '"PlaqueTabs"'
   - uid: excel.Excel.GeometricShapeType.plus
-    isPreview: true
     name: plus
     fullName: plus
     langs:
@@ -1238,7 +1103,6 @@ items:
     type: field
     numericValue: '"Plus"'
   - uid: excel.Excel.GeometricShapeType.quadArrow
-    isPreview: true
     name: quadArrow
     fullName: quadArrow
     langs:
@@ -1246,7 +1110,6 @@ items:
     type: field
     numericValue: '"QuadArrow"'
   - uid: excel.Excel.GeometricShapeType.quadArrowCallout
-    isPreview: true
     name: quadArrowCallout
     fullName: quadArrowCallout
     langs:
@@ -1254,7 +1117,6 @@ items:
     type: field
     numericValue: '"QuadArrowCallout"'
   - uid: excel.Excel.GeometricShapeType.rectangle
-    isPreview: true
     name: rectangle
     fullName: rectangle
     langs:
@@ -1262,7 +1124,6 @@ items:
     type: field
     numericValue: '"Rectangle"'
   - uid: excel.Excel.GeometricShapeType.ribbon
-    isPreview: true
     name: ribbon
     fullName: ribbon
     langs:
@@ -1270,7 +1131,6 @@ items:
     type: field
     numericValue: '"Ribbon"'
   - uid: excel.Excel.GeometricShapeType.ribbon2
-    isPreview: true
     name: ribbon2
     fullName: ribbon2
     langs:
@@ -1278,7 +1138,6 @@ items:
     type: field
     numericValue: '"Ribbon2"'
   - uid: excel.Excel.GeometricShapeType.rightArrow
-    isPreview: true
     name: rightArrow
     fullName: rightArrow
     langs:
@@ -1286,7 +1145,6 @@ items:
     type: field
     numericValue: '"RightArrow"'
   - uid: excel.Excel.GeometricShapeType.rightArrowCallout
-    isPreview: true
     name: rightArrowCallout
     fullName: rightArrowCallout
     langs:
@@ -1294,7 +1152,6 @@ items:
     type: field
     numericValue: '"RightArrowCallout"'
   - uid: excel.Excel.GeometricShapeType.rightBrace
-    isPreview: true
     name: rightBrace
     fullName: rightBrace
     langs:
@@ -1302,7 +1159,6 @@ items:
     type: field
     numericValue: '"RightBrace"'
   - uid: excel.Excel.GeometricShapeType.rightBracket
-    isPreview: true
     name: rightBracket
     fullName: rightBracket
     langs:
@@ -1310,7 +1166,6 @@ items:
     type: field
     numericValue: '"RightBracket"'
   - uid: excel.Excel.GeometricShapeType.rightTriangle
-    isPreview: true
     name: rightTriangle
     fullName: rightTriangle
     langs:
@@ -1318,7 +1173,6 @@ items:
     type: field
     numericValue: '"RightTriangle"'
   - uid: excel.Excel.GeometricShapeType.round1Rectangle
-    isPreview: true
     name: round1Rectangle
     fullName: round1Rectangle
     langs:
@@ -1326,7 +1180,6 @@ items:
     type: field
     numericValue: '"Round1Rectangle"'
   - uid: excel.Excel.GeometricShapeType.round2DiagonalRectangle
-    isPreview: true
     name: round2DiagonalRectangle
     fullName: round2DiagonalRectangle
     langs:
@@ -1334,7 +1187,6 @@ items:
     type: field
     numericValue: '"Round2DiagonalRectangle"'
   - uid: excel.Excel.GeometricShapeType.round2SameRectangle
-    isPreview: true
     name: round2SameRectangle
     fullName: round2SameRectangle
     langs:
@@ -1342,7 +1194,6 @@ items:
     type: field
     numericValue: '"Round2SameRectangle"'
   - uid: excel.Excel.GeometricShapeType.roundRectangle
-    isPreview: true
     name: roundRectangle
     fullName: roundRectangle
     langs:
@@ -1350,7 +1201,6 @@ items:
     type: field
     numericValue: '"RoundRectangle"'
   - uid: excel.Excel.GeometricShapeType.smileyFace
-    isPreview: true
     name: smileyFace
     fullName: smileyFace
     langs:
@@ -1358,7 +1208,6 @@ items:
     type: field
     numericValue: '"SmileyFace"'
   - uid: excel.Excel.GeometricShapeType.snip1Rectangle
-    isPreview: true
     name: snip1Rectangle
     fullName: snip1Rectangle
     langs:
@@ -1366,7 +1215,6 @@ items:
     type: field
     numericValue: '"Snip1Rectangle"'
   - uid: excel.Excel.GeometricShapeType.snip2DiagonalRectangle
-    isPreview: true
     name: snip2DiagonalRectangle
     fullName: snip2DiagonalRectangle
     langs:
@@ -1374,7 +1222,6 @@ items:
     type: field
     numericValue: '"Snip2DiagonalRectangle"'
   - uid: excel.Excel.GeometricShapeType.snip2SameRectangle
-    isPreview: true
     name: snip2SameRectangle
     fullName: snip2SameRectangle
     langs:
@@ -1382,7 +1229,6 @@ items:
     type: field
     numericValue: '"Snip2SameRectangle"'
   - uid: excel.Excel.GeometricShapeType.snipRoundRectangle
-    isPreview: true
     name: snipRoundRectangle
     fullName: snipRoundRectangle
     langs:
@@ -1390,7 +1236,6 @@ items:
     type: field
     numericValue: '"SnipRoundRectangle"'
   - uid: excel.Excel.GeometricShapeType.squareTabs
-    isPreview: true
     name: squareTabs
     fullName: squareTabs
     langs:
@@ -1398,7 +1243,6 @@ items:
     type: field
     numericValue: '"SquareTabs"'
   - uid: excel.Excel.GeometricShapeType.star10
-    isPreview: true
     name: star10
     fullName: star10
     langs:
@@ -1406,7 +1250,6 @@ items:
     type: field
     numericValue: '"Star10"'
   - uid: excel.Excel.GeometricShapeType.star12
-    isPreview: true
     name: star12
     fullName: star12
     langs:
@@ -1414,7 +1257,6 @@ items:
     type: field
     numericValue: '"Star12"'
   - uid: excel.Excel.GeometricShapeType.star16
-    isPreview: true
     name: star16
     fullName: star16
     langs:
@@ -1422,7 +1264,6 @@ items:
     type: field
     numericValue: '"Star16"'
   - uid: excel.Excel.GeometricShapeType.star24
-    isPreview: true
     name: star24
     fullName: star24
     langs:
@@ -1430,7 +1271,6 @@ items:
     type: field
     numericValue: '"Star24"'
   - uid: excel.Excel.GeometricShapeType.star32
-    isPreview: true
     name: star32
     fullName: star32
     langs:
@@ -1438,7 +1278,6 @@ items:
     type: field
     numericValue: '"Star32"'
   - uid: excel.Excel.GeometricShapeType.star4
-    isPreview: true
     name: star4
     fullName: star4
     langs:
@@ -1446,7 +1285,6 @@ items:
     type: field
     numericValue: '"Star4"'
   - uid: excel.Excel.GeometricShapeType.star5
-    isPreview: true
     name: star5
     fullName: star5
     langs:
@@ -1454,7 +1292,6 @@ items:
     type: field
     numericValue: '"Star5"'
   - uid: excel.Excel.GeometricShapeType.star6
-    isPreview: true
     name: star6
     fullName: star6
     langs:
@@ -1462,7 +1299,6 @@ items:
     type: field
     numericValue: '"Star6"'
   - uid: excel.Excel.GeometricShapeType.star7
-    isPreview: true
     name: star7
     fullName: star7
     langs:
@@ -1470,7 +1306,6 @@ items:
     type: field
     numericValue: '"Star7"'
   - uid: excel.Excel.GeometricShapeType.star8
-    isPreview: true
     name: star8
     fullName: star8
     langs:
@@ -1478,7 +1313,6 @@ items:
     type: field
     numericValue: '"Star8"'
   - uid: excel.Excel.GeometricShapeType.stripedRightArrow
-    isPreview: true
     name: stripedRightArrow
     fullName: stripedRightArrow
     langs:
@@ -1486,7 +1320,6 @@ items:
     type: field
     numericValue: '"StripedRightArrow"'
   - uid: excel.Excel.GeometricShapeType.sun
-    isPreview: true
     name: sun
     fullName: sun
     langs:
@@ -1494,7 +1327,6 @@ items:
     type: field
     numericValue: '"Sun"'
   - uid: excel.Excel.GeometricShapeType.swooshArrow
-    isPreview: true
     name: swooshArrow
     fullName: swooshArrow
     langs:
@@ -1502,7 +1334,6 @@ items:
     type: field
     numericValue: '"SwooshArrow"'
   - uid: excel.Excel.GeometricShapeType.teardrop
-    isPreview: true
     name: teardrop
     fullName: teardrop
     langs:
@@ -1510,7 +1341,6 @@ items:
     type: field
     numericValue: '"Teardrop"'
   - uid: excel.Excel.GeometricShapeType.trapezoid
-    isPreview: true
     name: trapezoid
     fullName: trapezoid
     langs:
@@ -1518,7 +1348,6 @@ items:
     type: field
     numericValue: '"Trapezoid"'
   - uid: excel.Excel.GeometricShapeType.triangle
-    isPreview: true
     name: triangle
     fullName: triangle
     langs:
@@ -1526,7 +1355,6 @@ items:
     type: field
     numericValue: '"Triangle"'
   - uid: excel.Excel.GeometricShapeType.upArrow
-    isPreview: true
     name: upArrow
     fullName: upArrow
     langs:
@@ -1534,7 +1362,6 @@ items:
     type: field
     numericValue: '"UpArrow"'
   - uid: excel.Excel.GeometricShapeType.upArrowCallout
-    isPreview: true
     name: upArrowCallout
     fullName: upArrowCallout
     langs:
@@ -1542,7 +1369,6 @@ items:
     type: field
     numericValue: '"UpArrowCallout"'
   - uid: excel.Excel.GeometricShapeType.upDownArrow
-    isPreview: true
     name: upDownArrow
     fullName: upDownArrow
     langs:
@@ -1550,7 +1376,6 @@ items:
     type: field
     numericValue: '"UpDownArrow"'
   - uid: excel.Excel.GeometricShapeType.upDownArrowCallout
-    isPreview: true
     name: upDownArrowCallout
     fullName: upDownArrowCallout
     langs:
@@ -1558,7 +1383,6 @@ items:
     type: field
     numericValue: '"UpDownArrowCallout"'
   - uid: excel.Excel.GeometricShapeType.uturnArrow
-    isPreview: true
     name: uturnArrow
     fullName: uturnArrow
     langs:
@@ -1566,7 +1390,6 @@ items:
     type: field
     numericValue: '"UturnArrow"'
   - uid: excel.Excel.GeometricShapeType.verticalScroll
-    isPreview: true
     name: verticalScroll
     fullName: verticalScroll
     langs:
@@ -1574,7 +1397,6 @@ items:
     type: field
     numericValue: '"VerticalScroll"'
   - uid: excel.Excel.GeometricShapeType.wave
-    isPreview: true
     name: wave
     fullName: wave
     langs:
@@ -1582,7 +1404,6 @@ items:
     type: field
     numericValue: '"Wave"'
   - uid: excel.Excel.GeometricShapeType.wedgeEllipseCallout
-    isPreview: true
     name: wedgeEllipseCallout
     fullName: wedgeEllipseCallout
     langs:
@@ -1590,7 +1411,6 @@ items:
     type: field
     numericValue: '"WedgeEllipseCallout"'
   - uid: excel.Excel.GeometricShapeType.wedgeRectCallout
-    isPreview: true
     name: wedgeRectCallout
     fullName: wedgeRectCallout
     langs:
@@ -1598,7 +1418,6 @@ items:
     type: field
     numericValue: '"WedgeRectCallout"'
   - uid: excel.Excel.GeometricShapeType.wedgeRRectCallout
-    isPreview: true
     name: wedgeRRectCallout
     fullName: wedgeRRectCallout
     langs:

@@ -11,10 +11,9 @@ items:
     children:
       - visio.Visio.Interfaces.SelectionData.shapes
   - uid: visio.Visio.Interfaces.SelectionData.shapes
-    summary: |-
-      Gets the Shapes of the Selection. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Gets the Shapes of the Selection. Read-only. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: shapes
     fullName: shapes
     langs:

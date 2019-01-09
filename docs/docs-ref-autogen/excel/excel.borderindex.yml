@@ -1,7 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.BorderIndex
-    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.BorderIndex
     fullName: Excel.BorderIndex
     langs:

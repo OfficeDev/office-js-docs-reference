@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.WorksheetFormatChangedEventArgs
     summary: >-
-      Provides information about the worksheet format change event.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Provides information about the worksheet format change event. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.WorksheetFormatChangedEventArgs
@@ -23,11 +20,8 @@ items:
       - excel.Excel.WorksheetFormatChangedEventArgs.worksheetId
   - uid: excel.Excel.WorksheetFormatChangedEventArgs.address
     summary: >-
-      Gets the range address that represents the changed area of a specific worksheet.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Gets the range address that represents the changed area of a specific worksheet. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: address
     fullName: address
@@ -41,10 +35,7 @@ items:
           - string
   - uid: excel.Excel.WorksheetFormatChangedEventArgs.getRange
     summary: >-
-      Gets the range that represents the changed area of a specific worksheet.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the range that represents the changed area of a specific worksheet. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getRange(ctx)
@@ -65,11 +56,8 @@ items:
             - excel.Excel.RequestContext
   - uid: excel.Excel.WorksheetFormatChangedEventArgs.getRangeOrNullObject
     summary: >-
-      Gets the range that represents the changed area of a specific worksheet. It might return null object.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Gets the range that represents the changed area of a specific worksheet. It might return null object. \[ [API set:
+      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getRangeOrNullObject(ctx)
     fullName: getRangeOrNullObject
@@ -89,10 +77,7 @@ items:
             - excel.Excel.RequestContext
   - uid: excel.Excel.WorksheetFormatChangedEventArgs.source
     summary: >-
-      Gets the source of the event. See Excel.EventSource for details.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the source of the event. See Excel.EventSource for details. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: source
@@ -107,10 +92,7 @@ items:
           - Excel.EventSource | "Local" | "Remote"
   - uid: excel.Excel.WorksheetFormatChangedEventArgs.type
     summary: >-
-      Gets the type of the event. See Excel.EventType for details.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the type of the event. See Excel.EventType for details. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: type
@@ -125,10 +107,7 @@ items:
           - '"WorksheetFormatChanged"'
   - uid: excel.Excel.WorksheetFormatChangedEventArgs.worksheetId
     summary: >-
-      Gets the id of the worksheet in which the data changed.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the id of the worksheet in which the data changed. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: worksheetId

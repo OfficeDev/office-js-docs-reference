@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.CommentCollection
     summary: >-
-      Represents a collection of comment objects that are part of the workbook.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents a collection of comment objects that are part of the workbook. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.CommentCollection
@@ -41,10 +38,7 @@ items:
           - RequestContext
   - uid: excel.Excel.CommentCollection.getCount
     summary: >-
-      Gets the number of comments in the collection.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the number of comments in the collection. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getCount()
@@ -60,10 +54,7 @@ items:
         description: ''
   - uid: excel.Excel.CommentCollection.getItem
     summary: >-
-      Returns a comment identified by its ID. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns a comment identified by its ID. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItem(commentId)
@@ -84,10 +75,7 @@ items:
             - string
   - uid: excel.Excel.CommentCollection.getItemAt
     summary: >-
-      Gets a comment based on its position in the collection.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Gets a comment based on its position in the collection. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItemAt(index)

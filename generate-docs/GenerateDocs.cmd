@@ -24,57 +24,9 @@ cd ..\api-extractor-inputs-excel
 
 call ..\node_modules\.bin\api-extractor run
 
-cd ..\api-extractor-inputs-excel-legacy\Excel_1_8
-
-call ..\..\node_modules\.bin\api-extractor run
-
-cd ..\Excel_1_7
-
-call ..\..\node_modules\.bin\api-extractor run
-
-cd ..\Excel_1_6
-
-call ..\..\node_modules\.bin\api-extractor run
-
-cd ..\Excel_1_5
-
-call ..\..\node_modules\.bin\api-extractor run
-
-cd ..\Excel_1_4
-
-call ..\..\node_modules\.bin\api-extractor run
-
-cd ..\Excel_1_3
-
-call ..\..\node_modules\.bin\api-extractor run
-
-cd ..\Excel_1_2
-
-call ..\..\node_modules\.bin\api-extractor run
-
-cd ..\Excel_1_1
-
-call ..\..\node_modules\.bin\api-extractor run
-
-cd ..
-
 cd ..\api-extractor-inputs-word
 
 call ..\node_modules\.bin\api-extractor run
-
-cd ..\api-extractor-inputs-word-legacy\Word_1_3
-
-call ..\..\node_modules\.bin\api-extractor run
-
-cd ..\Word_1_2
-
-call ..\..\node_modules\.bin\api-extractor run
-
-cd ..\Word_1_1
-
-call ..\..\node_modules\.bin\api-extractor run
-
-cd ..
 
 cd ..\api-extractor-inputs-onenote
 

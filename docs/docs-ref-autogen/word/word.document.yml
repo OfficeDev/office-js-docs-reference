@@ -3,10 +3,8 @@ items:
   - uid: word.Word.Document
     summary: >-
       The Document object is the top level object. A Document object contains one or more sections, content controls,
-      and the body that contains the contents of the document.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      and the body that contains the contents of the document. \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Document
     fullName: Word.Document
     langs:
@@ -37,10 +35,8 @@ items:
   - uid: word.Word.Document.body
     summary: >-
       Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
-      etc.. Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      etc.. Read-only. \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: body
     fullName: body
     langs:
@@ -54,10 +50,8 @@ items:
   - uid: word.Word.Document.contentControls
     summary: >-
       Gets the collection of content control objects in the document. This includes content controls in the body of the
-      document, headers, footers, textboxes, etc.. Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      document, headers, footers, textboxes, etc.. Read-only. \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: contentControls
     fullName: contentControls
     langs:
@@ -84,10 +78,7 @@ items:
           - RequestContext
   - uid: word.Word.Document.customXmlParts
     summary: >-
-      Gets the custom XML parts in the document. Read-only.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      Gets the custom XML parts in the document. Read-only. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: customXmlParts
@@ -102,10 +93,7 @@ items:
           - Word.CustomXmlPartCollection
   - uid: word.Word.Document.deleteBookmark
     summary: >-
-      Deletes a bookmark, if exists, from the document.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      Deletes a bookmark, if exists, from the document. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: deleteBookmark(name)
@@ -126,10 +114,7 @@ items:
             - string
   - uid: word.Word.Document.getBookmarkRange
     summary: >-
-      Gets a bookmark's range. Throws if the bookmark does not exist.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      Gets a bookmark's range. Throws if the bookmark does not exist. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: getBookmarkRange(name)
@@ -150,10 +135,7 @@ items:
             - string
   - uid: word.Word.Document.getBookmarkRangeOrNullObject
     summary: >-
-      Gets a bookmark's range. Returns a null object if the bookmark does not exist.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      Gets a bookmark's range. Returns a null object if the bookmark does not exist. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: getBookmarkRangeOrNullObject(name)
@@ -173,10 +155,9 @@ items:
           type:
             - string
   - uid: word.Word.Document.getSelection
-    summary: |-
-      Gets the current selection of the document. Multiple selections are not supported.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the current selection of the document. Multiple selections are not supported. \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getSelection()
     fullName: getSelection
     langs:
@@ -296,10 +277,7 @@ items:
   - uid: word.Word.Document.onContentControlAdded
     summary: >-
       Occurs when a content control is added. Run context.sync() in the handler to get the new content control's
-      properties.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      properties. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: onContentControlAdded
@@ -313,10 +291,9 @@ items:
         type:
           - OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
   - uid: word.Word.Document.properties
-    summary: |-
-      Gets the properties of the document. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the properties of the document. Read-only. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: properties
     fullName: properties
     langs:
@@ -343,10 +320,7 @@ items:
   - uid: word.Word.Document.save
     summary: >-
       Saves the document. This will use the Word default file naming convention if the document has not been saved
-      before.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      before. \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: save()
     fullName: save
     langs:
@@ -399,10 +373,8 @@ items:
   - uid: word.Word.Document.saved
     summary: >-
       Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
-      changed since it was saved. Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      changed since it was saved. Read-only. \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: saved
     fullName: saved
     langs:
@@ -414,10 +386,9 @@ items:
         type:
           - boolean
   - uid: word.Word.Document.sections
-    summary: |-
-      Gets the collection of section objects in the document. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the collection of section objects in the document. Read-only. \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: sections
     fullName: sections
     langs:
@@ -430,10 +401,7 @@ items:
           - Word.SectionCollection
   - uid: word.Word.Document.settings
     summary: >-
-      Gets the add-in's settings in the document. Read-only.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      Gets the add-in's settings in the document. Read-only. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: settings

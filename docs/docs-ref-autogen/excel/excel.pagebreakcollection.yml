@@ -1,10 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PageBreakCollection
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: Excel.PageBreakCollection
     fullName: Excel.PageBreakCollection
     langs:
@@ -24,10 +20,7 @@ items:
       - excel.Excel.PageBreakCollection.toJSON
   - uid: excel.Excel.PageBreakCollection.add
     summary: >-
-      Adds a page break before the top-left cell of the range specified.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Adds a page break before the top-left cell of the range specified. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: add(pageBreakRange)
@@ -50,7 +43,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -63,10 +55,7 @@ items:
           - RequestContext
   - uid: excel.Excel.PageBreakCollection.getCount
     summary: >-
-      Gets the number of page breaks in the collection.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the number of page breaks in the collection. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getCount()
@@ -82,10 +71,7 @@ items:
         description: ''
   - uid: excel.Excel.PageBreakCollection.getItem
     summary: >-
-      Gets a page break object via the index.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Gets a page break object via the index. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItem(index)
@@ -106,7 +92,6 @@ items:
             - number
   - uid: excel.Excel.PageBreakCollection.items
     summary: Gets the loaded child items in this collection.
-    isPreview: true
     name: items
     fullName: items
     langs:
@@ -135,7 +120,6 @@ items:
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
-    isPreview: true
     name: load(option)
     fullName: load
     langs:
@@ -154,10 +138,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.PageBreakCollection.removePageBreaks
     summary: >-
-      Resets all manual page breaks in the collection.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Resets all manual page breaks in the collection. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: removePageBreaks()
@@ -178,7 +159,6 @@ items:
       passed to it.) Whereas the original `Excel.PageBreakCollection` object is an API object, the `toJSON` method
       returns a plain JavaScript object (typed as `Excel.Interfaces.PageBreakCollectionData`<!-- -->) that contains an
       "items" array with shallow copies of any loaded properties from the collection's items.
-    isPreview: true
     name: toJSON()
     fullName: toJSON
     langs:

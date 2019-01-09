@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.SearchDirection
     summary: >-
-      Specifies the search direction.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Specifies the search direction. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.SearchDirection

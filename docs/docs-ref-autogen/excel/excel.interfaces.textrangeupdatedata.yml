@@ -13,11 +13,8 @@ items:
       - excel.Excel.Interfaces.TextRangeUpdateData.text
   - uid: excel.Excel.Interfaces.TextRangeUpdateData.font
     summary: >-
-      Returns a ShapeFont object that represents the font attributes for the text range.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns a ShapeFont object that represents the font attributes for the text range. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: font
     fullName: font
@@ -31,10 +28,7 @@ items:
           - excel.Excel.Interfaces.ShapeFontUpdateData
   - uid: excel.Excel.Interfaces.TextRangeUpdateData.text
     summary: >-
-      Represents the plain text content of the text range.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the plain text content of the text range. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: text

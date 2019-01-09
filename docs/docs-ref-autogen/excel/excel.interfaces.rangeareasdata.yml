@@ -23,10 +23,7 @@ items:
   - uid: excel.Excel.Interfaces.RangeAreasData.address
     summary: >-
       Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular
-      block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: address
@@ -41,10 +38,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.RangeAreasData.addressLocal
     summary: >-
-      Returns the RageAreas reference in the user locale. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the RageAreas reference in the user locale. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: addressLocal
@@ -59,10 +53,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.RangeAreasData.areaCount
     summary: >-
-      Returns the number of rectangular ranges that comprise this RangeAreas object.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the number of rectangular ranges that comprise this RangeAreas object. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: areaCount
@@ -77,11 +68,8 @@ items:
           - number
   - uid: excel.Excel.Interfaces.RangeAreasData.areas
     summary: >-
-      Returns a collection of rectangular ranges that comprise this RangeAreas object.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns a collection of rectangular ranges that comprise this RangeAreas object. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: areas
     fullName: areas
@@ -96,11 +84,8 @@ items:
   - uid: excel.Excel.Interfaces.RangeAreasData.cellCount
     summary: >-
       Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual
-      rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only. \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: cellCount
     fullName: cellCount
@@ -114,11 +99,9 @@ items:
           - number
   - uid: excel.Excel.Interfaces.RangeAreasData.conditionalFormats
     summary: >-
-      Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object. Read-only. \[
+      [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
     isPreview: true
     name: conditionalFormats
     fullName: conditionalFormats
@@ -132,10 +115,7 @@ items:
           - 'Excel.Interfaces.ConditionalFormatData[]'
   - uid: excel.Excel.Interfaces.RangeAreasData.dataValidation
     summary: >-
-      Returns a dataValidation object for all ranges in the RangeAreas.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns a dataValidation object for all ranges in the RangeAreas. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: dataValidation
@@ -151,10 +131,7 @@ items:
   - uid: excel.Excel.Interfaces.RangeAreasData.format
     summary: >-
       Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all
-      ranges in the RangeAreas object. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      ranges in the RangeAreas object. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: format
@@ -170,8 +147,6 @@ items:
   - uid: excel.Excel.Interfaces.RangeAreasData.isEntireColumn
     summary: >-
       Indicates whether all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z"). Read-only.
-
-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -187,11 +162,9 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.RangeAreasData.isEntireRow
     summary: >-
-      Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only. \[
+      [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
     isPreview: true
     name: isEntireRow
     fullName: isEntireRow
@@ -207,10 +180,7 @@ items:
     summary: >-
       Represents the style for all ranges in this RangeAreas object. If the styles of the cells are inconsistent, null
       will be returned. For custom styles, the style name will be returned. For built-in styles, a string representing a
-      value in the BuiltInStyle enum will be returned.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      value in the BuiltInStyle enum will be returned. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: style

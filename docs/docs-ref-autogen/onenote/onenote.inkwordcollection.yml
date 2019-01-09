@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.InkWordCollection
-    summary: |-
-      Represents a collection of InkWord objects.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Represents a collection of InkWord objects. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkWordCollection
     fullName: OneNote.InkWordCollection
     langs:
@@ -23,10 +22,9 @@ items:
       - onenote.OneNote.InkWordCollection.track
       - onenote.OneNote.InkWordCollection.untrack
   - uid: onenote.OneNote.InkWordCollection.count
-    summary: |-
-      Returns the number of InkWords in the page. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Returns the number of InkWords in the page. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -38,10 +36,9 @@ items:
         type:
           - number
   - uid: onenote.OneNote.InkWordCollection.getItem
-    summary: |-
-      Gets a InkWord object by ID or by its index in the collection. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets a InkWord object by ID or by its index in the collection. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: getItem
     langs:
@@ -59,10 +56,9 @@ items:
           type:
             - number | string
   - uid: onenote.OneNote.InkWordCollection.getItemAt
-    summary: |-
-      Gets a InkWord on its position in the collection.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets a InkWord on its position in the collection. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:

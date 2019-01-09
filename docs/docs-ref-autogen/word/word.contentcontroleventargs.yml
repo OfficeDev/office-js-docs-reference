@@ -2,10 +2,7 @@
 items:
   - uid: word.Word.ContentControlEventArgs
     summary: >-
-      Provides information about the content control that raised an event.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      Provides information about the content control that raised an event. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: Word.ContentControlEventArgs
@@ -19,10 +16,7 @@ items:
       - word.Word.ContentControlEventArgs.eventType
   - uid: word.Word.ContentControlEventArgs.contentControl
     summary: >-
-      The object that raised the event. Load this object to get its properties.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      The object that raised the event. Load this object to get its properties. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: contentControl
@@ -37,10 +31,7 @@ items:
           - word.Word.ContentControl
   - uid: word.Word.ContentControlEventArgs.eventType
     summary: >-
-      The event type. See Word.EventType for details.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      The event type. See Word.EventType for details. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: eventType

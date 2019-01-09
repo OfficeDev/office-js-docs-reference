@@ -53,10 +53,7 @@ items:
 
 
       You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
-      session.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      session. \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
@@ -158,10 +155,8 @@ items:
 
 
       You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
-      session.
-
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      session. \[ [API set: Mailbox
+      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
@@ -244,10 +239,8 @@ items:
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
       `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->. In Preview,
-      `Office.EventType.AttachmentsChanged` is also supported.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      `Office.EventType.AttachmentsChanged` is also supported. \[ [API set: Mailbox
+      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -314,10 +307,8 @@ items:
 
 
       If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items
-      other than the item that you are editing; however, this is not supported and is not recommended.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      other than the item that you are editing; however, this is not supported and is not recommended. \[ [API set:
+      Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
@@ -412,10 +403,9 @@ items:
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: outlook.Office.AppointmentCompose.body
-    summary: |-
-      Gets an object that provides methods for manipulating the body of an item.
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: >-
+      Gets an object that provides methods for manipulating the body of an item. \[ [API set: Mailbox
+      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -447,10 +437,8 @@ items:
 
 
       Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the
-      user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved.
-
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved. \[
+      [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
@@ -471,10 +459,9 @@ items:
           - void
         description: ''
   - uid: outlook.Office.AppointmentCompose.dateTimeCreated
-    summary: |-
-      Gets the date and time that an item was created. Read mode only.
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: >-
+      Gets the date and time that an item was created. Read mode only. \[ [API set: Mailbox
+      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -494,10 +481,9 @@ items:
         type:
           - Date
   - uid: outlook.Office.AppointmentCompose.dateTimeModifed
-    summary: |-
-      Gets the date and time that an item was last modified. Read mode only.
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: >-
+      Gets the date and time that an item was last modified. Read mode only. \[ [API set: Mailbox
+      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -530,10 +516,8 @@ items:
 
 
       When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to
-      convert the local time on the client to UTC for the server.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      convert the local time on the client to UTC for the server. \[ [API set: Mailbox
+      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -581,10 +565,9 @@ items:
         type:
           - Time
   - uid: outlook.Office.AppointmentCompose.getAttachmentsAsync
-    summary: |-
-      Gets the item's attachments as an array.
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: >-
+      Gets the item's attachments as an array. \[ [API set: Mailbox
+      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -654,10 +637,8 @@ items:
 
 
       Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
-      16.0.8413.1000) and Outlook on the web for Office 365.
-
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      16.0.8413.1000) and Outlook on the web for Office 365. \[ [API set: Mailbox
+      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -710,10 +691,8 @@ items:
 
 
       To access the selected data from the callback method, call asyncResult.value.data. To access the source property
-      that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-
-
-      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject. \[
+      [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
@@ -786,10 +765,8 @@ items:
 
 
       The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance
-      is a message or an appointment.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      is a message or an appointment. \[ [API set: Mailbox
+      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -821,10 +798,8 @@ items:
 
       The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can
       be used to get, set, and remove custom properties from the item and save changes to the custom property set back
-      to the server.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      to the server. \[ [API set: Mailbox
+      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -862,10 +837,8 @@ items:
   - uid: outlook.Office.AppointmentCompose.location
     summary: >-
       Gets or sets the [Office.Location](xref:outlook.Office.Location) of an appointment. The location property returns
-      a Location object that provides methods that are used to get and set the location of the appointment.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      a Location object that provides methods that are used to get and set the location of the appointment. \[ [API set:
+      Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -902,10 +875,9 @@ items:
         type:
           - Location
   - uid: outlook.Office.AppointmentCompose.notificationMessages
-    summary: |-
-      Gets the notification messages for an item.
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: >-
+      Gets the notification messages for an item. \[ [API set: Mailbox
+      1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -928,10 +900,8 @@ items:
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
       of the current item. The optionalAttendees property returns an [Office.Recipients](xref:outlook.Office.Recipients)
-      object that provides methods to get or update the optional attendees for a meeting.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      object that provides methods to get or update the optional attendees for a meeting. \[ [API set: Mailbox
+      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -974,10 +944,8 @@ items:
 
 
       The organizer property returns an [Organizer](xref:outlook.Office.Organizer) object that provides a method to get
-      the organizer value.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      the organizer value. \[ [API set: Mailbox
+      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -1021,10 +989,8 @@ items:
 
 
       Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting
-      request of a single appointment and NOT a part of a series.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      request of a single appointment and NOT a part of a series. \[ [API set: Mailbox
+      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -1052,10 +1018,8 @@ items:
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
       that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid
       only within the same session. A session is over when the user closes the app, or if the user starts composing an
-      inline form then subsequently pops out the form to continue in a separate window.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      inline form then subsequently pops out the form to continue in a separate window. \[ [API set: Mailbox
+      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
@@ -1134,10 +1098,8 @@ items:
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
       `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->. In Preview,
-      `Office.EventType.AttachmentsChanged` is also supported.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      `Office.EventType.AttachmentsChanged` is also supported. \[ [API set: Mailbox
+      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -1192,10 +1154,8 @@ items:
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode
       of the current item. The requiredAttendees property returns an [Office.Recipients](xref:outlook.Office.Recipients)
-      object that provides methods to get or update the required attendees for a meeting.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      object that provides methods to get or update the required attendees for a meeting. \[ [API set: Mailbox
+      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -1260,10 +1220,7 @@ items:
 
 
       - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose
-      mode.
-
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      mode. \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
@@ -1354,10 +1311,8 @@ items:
 
 
       The seriesId property returns null for items that do not have parent items such as single appointments, series
-      items, or meeting requests and returns undefined for any other items that are not meeting requests.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      items, or meeting requests and returns undefined for any other items that are not meeting requests. \[ [API set:
+      Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -1383,10 +1338,8 @@ items:
 
       The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the
       item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or
-      subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.
-
-
-      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content. \[
+      [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
@@ -1468,10 +1421,8 @@ items:
 
 
       When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to
-      convert the local time on the client to UTC for the server.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      convert the local time on the client to UTC for the server. \[ [API set: Mailbox
+      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -1519,14 +1470,15 @@ items:
         type:
           - Time
   - uid: outlook.Office.AppointmentCompose.subject
-    summary: |-
+    summary: >-
       Gets or sets the description that appears in the subject field of an item.
+
 
       The subject property gets or sets the entire subject of the item, as sent by the email server.
 
-      The subject property returns a Subject object that provides methods to get and set the subject.
 
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      The subject property returns a Subject object that provides methods to get and set the subject. \[ [API set:
+      Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>

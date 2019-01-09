@@ -13,10 +13,7 @@ items:
       - excel.Excel.Interfaces.CommentReplyData.isParent
   - uid: excel.Excel.Interfaces.CommentReplyData.id
     summary: >-
-      Represents the comment reply identifier. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the comment reply identifier. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: id
@@ -31,11 +28,8 @@ items:
           - string
   - uid: excel.Excel.Interfaces.CommentReplyData.isParent
     summary: >-
-      Represents whether it is a comment thread or reply. Always return false here. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents whether it is a comment thread or reply. Always return false here. Read-only. \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: isParent
     fullName: isParent

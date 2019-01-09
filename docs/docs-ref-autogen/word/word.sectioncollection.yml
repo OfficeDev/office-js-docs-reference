@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.SectionCollection
-    summary: |-
-      Contains the collection of the document's [Word.Section](xref:word.Word.Section) objects.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Contains the collection of the document's [Word.Section](xref:word.Word.Section) objects. \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.SectionCollection
     fullName: Word.SectionCollection
     langs:
@@ -37,10 +36,9 @@ items:
         type:
           - RequestContext
   - uid: word.Word.SectionCollection.getFirst
-    summary: |-
-      Gets the first section in this collection. Throws if this collection is empty.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the first section in this collection. Throws if this collection is empty. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirst()
     fullName: getFirst
     langs:
@@ -53,10 +51,9 @@ items:
           - Word.Section
         description: ''
   - uid: word.Word.SectionCollection.getFirstOrNullObject
-    summary: |-
-      Gets the first section in this collection. Returns a null object if this collection is empty.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the first section in this collection. Returns a null object if this collection is empty. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirstOrNullObject()
     fullName: getFirstOrNullObject
     langs:

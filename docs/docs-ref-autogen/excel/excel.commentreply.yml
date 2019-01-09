@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.CommentReply
     summary: >-
-      Represents a cell comment reply object in the workbook.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents a cell comment reply object in the workbook. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.CommentReply
@@ -40,10 +37,7 @@ items:
           - RequestContext
   - uid: excel.Excel.CommentReply.delete
     summary: >-
-      Deletes the comment reply.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Deletes the comment reply. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: delete()
@@ -59,10 +53,7 @@ items:
         description: ''
   - uid: excel.Excel.CommentReply.id
     summary: >-
-      Represents the comment reply identifier. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the comment reply identifier. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: id
@@ -77,11 +68,8 @@ items:
           - string
   - uid: excel.Excel.CommentReply.isParent
     summary: >-
-      Represents whether it is a comment thread or reply. Always return false here. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents whether it is a comment thread or reply. Always return false here. Read-only. \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: isParent
     fullName: isParent

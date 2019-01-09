@@ -12,10 +12,7 @@ items:
       - word.Word.Interfaces.SettingUpdateData.value
   - uid: word.Word.Interfaces.SettingUpdateData.value
     summary: >-
-      Gets or sets the value of the setting.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      Gets or sets the value of the setting. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: value

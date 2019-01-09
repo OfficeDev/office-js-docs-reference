@@ -1,10 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeZOrder
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: Excel.ShapeZOrder
     fullName: Excel.ShapeZOrder
     langs:
@@ -17,7 +13,6 @@ items:
       - excel.Excel.ShapeZOrder.sendBackward
       - excel.Excel.ShapeZOrder.sendToBack
   - uid: excel.Excel.ShapeZOrder.bringForward
-    isPreview: true
     name: bringForward
     fullName: bringForward
     langs:
@@ -25,7 +20,6 @@ items:
     type: field
     numericValue: '"BringForward"'
   - uid: excel.Excel.ShapeZOrder.bringToFront
-    isPreview: true
     name: bringToFront
     fullName: bringToFront
     langs:
@@ -33,7 +27,6 @@ items:
     type: field
     numericValue: '"BringToFront"'
   - uid: excel.Excel.ShapeZOrder.sendBackward
-    isPreview: true
     name: sendBackward
     fullName: sendBackward
     langs:
@@ -41,7 +34,6 @@ items:
     type: field
     numericValue: '"SendBackward"'
   - uid: excel.Excel.ShapeZOrder.sendToBack
-    isPreview: true
     name: sendToBack
     fullName: sendToBack
     langs:

@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartLegendEntryCollection
-    summary: |-
-      Represents a collection of legendEntries.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents a collection of legendEntries. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartLegendEntryCollection
     fullName: Excel.ChartLegendEntryCollection
     langs:
@@ -35,10 +34,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ChartLegendEntryCollection.getCount
-    summary: |-
-      Returns the number of legendEntry in the collection.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the number of legendEntry in the collection. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -51,10 +49,9 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.ChartLegendEntryCollection.getItemAt
-    summary: |-
-      Returns a legendEntry at the given index.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns a legendEntry at the given index. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:

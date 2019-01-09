@@ -28,10 +28,7 @@ items:
     summary: >-
       Returns or sets a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and
       1 (brightest), with 0 for the original color. A null value indicates that the entire border collections don't have
-      uniform tintAndShade setting.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      uniform tintAndShade setting. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: tintAndShade

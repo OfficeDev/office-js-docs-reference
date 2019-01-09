@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Range
-    summary: |-
-      Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc. \[
+      [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Range
     fullName: Excel.Range
     langs:
@@ -95,10 +94,8 @@ items:
   - uid: excel.Excel.Range.address
     summary: >-
       Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
-      Read-only.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Read-only. \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
     name: address
     fullName: address
     langs:
@@ -110,10 +107,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Range.addressLocal
-    summary: |-
-      Represents range reference for the specified range in the language of the user. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents range reference for the specified range in the language of the user. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
     fullName: addressLocal
     langs:
@@ -125,10 +121,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Range.calculate
-    summary: |-
-      Calculates a range of cells on a worksheet.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Calculates a range of cells on a worksheet. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculate()
     fullName: calculate
     langs:
@@ -141,9 +136,8 @@ items:
           - void
         description: ''
   - uid: excel.Excel.Range.cellCount
-    summary: |-
+    summary: >-
       Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellCount
     fullName: cellCount
@@ -156,10 +150,9 @@ items:
         type:
           - number
   - uid: excel.Excel.Range.clear
-    summary: |-
-      Clear range values, format, fill, border, etc.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Clear range values, format, fill, border, etc. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear(applyTo)
     fullName: clear
     langs:
@@ -195,10 +188,9 @@ items:
           type:
             - excel.Excel.ClearApplyTo
   - uid: excel.Excel.Range.columnCount
-    summary: |-
-      Represents the total number of columns in the range. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the total number of columns in the range. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
     fullName: columnCount
     langs:
@@ -210,10 +202,9 @@ items:
         type:
           - number
   - uid: excel.Excel.Range.columnHidden
-    summary: |-
-      Represents if all columns of the current range are hidden.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents if all columns of the current range are hidden. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnHidden
     fullName: columnHidden
     langs:
@@ -225,10 +216,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Range.columnIndex
-    summary: |-
-      Represents the column number of the first cell in the range. Zero-indexed. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the column number of the first cell in the range. Zero-indexed. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnIndex
     fullName: columnIndex
     langs:
@@ -240,10 +230,9 @@ items:
         type:
           - number
   - uid: excel.Excel.Range.conditionalFormats
-    summary: |-
-      Collection of ConditionalFormats that intersect the range. Read-only.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Collection of ConditionalFormats that intersect the range. Read-only. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: conditionalFormats
     fullName: conditionalFormats
     langs:
@@ -270,10 +259,7 @@ items:
           - RequestContext
   - uid: excel.Excel.Range.convertDataTypeToText
     summary: >-
-      Converts the range cells with datatypes into text.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Converts the range cells with datatypes into text. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: convertDataTypeToText()
@@ -289,10 +275,7 @@ items:
         description: ''
   - uid: excel.Excel.Range.convertToLinkedDataType
     summary: >-
-      Converts the range cells into linked datatype in the worksheet.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Converts the range cells into linked datatype in the worksheet. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'convertToLinkedDataType(serviceID, languageCulture)'
@@ -319,10 +302,7 @@ items:
     summary: >-
       Copies cell data or formatting from the source range or RangeAreas to the current range. The destination range can
       be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is
-      smaller than the source.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      smaller than the source. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
@@ -358,10 +338,9 @@ items:
           type:
             - boolean
   - uid: excel.Excel.Range.dataValidation
-    summary: |-
-      Returns a data validation object.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns a data validation object. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataValidation
     fullName: dataValidation
     langs:
@@ -373,10 +352,9 @@ items:
         type:
           - excel.Excel.DataValidation
   - uid: excel.Excel.Range.delete
-    summary: |-
-      Deletes the cells associated with the range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Deletes the cells associated with the range. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete(shift)
     fullName: delete
     langs:
@@ -413,11 +391,9 @@ items:
   - uid: excel.Excel.Range.find
     summary: >-
       Finds the given string based on the criteria specified. If the current range is larger than a single cell, then
-      the search will be limited to that range, else the search will cover the entire sheet starting after that cell.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      the search will be limited to that range, else the search will cover the entire sheet starting after that cell. \[
+      [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
     isPreview: true
     name: 'find(text, criteria)'
     fullName: find
@@ -443,10 +419,7 @@ items:
     summary: >-
       Finds the given string based on the criteria specified. If the current range is larger than a single cell, then
       the search will be limited to that range, else the search will cover the entire sheet starting after that cell. If
-      there are no matches, this function will return a null object.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      there are no matches, this function will return a null object. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'findOrNullObject(text, criteria)'
@@ -472,10 +445,8 @@ items:
   - uid: excel.Excel.Range.format
     summary: >-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-      Read-only.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Read-only. \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
     name: format
     fullName: format
     langs:
@@ -490,10 +461,8 @@ items:
     summary: >-
       Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
       single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
-      cells in the range.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      cells in the range. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulas
     fullName: formulas
     langs:
@@ -509,10 +478,8 @@ items:
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. When setting formulas to a range, the
       value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single
-      value, it will be applied to all cells in the range.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      value, it will be applied to all cells in the range. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulasLocal
     fullName: formulasLocal
     langs:
@@ -527,10 +494,8 @@ items:
     summary: >-
       Represents the formula in R1C1-style notation. When setting formulas to a range, the value argument can be either
       a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
-      cells in the range.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      cells in the range. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulasR1C1
     fullName: formulasR1C1
     langs:
@@ -544,10 +509,8 @@ items:
   - uid: excel.Excel.Range.getAbsoluteResizedRange
     summary: >-
       Gets a Range object with the same top-left cell as the current Range object, but with the specified numbers of
-      rows and columns.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      rows and columns. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getAbsoluteResizedRange(numRows, numColumns)'
     fullName: getAbsoluteResizedRange
     langs:
@@ -571,10 +534,8 @@ items:
   - uid: excel.Excel.Range.getBoundingRect
     summary: >-
       Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and
-      "D10:E15" is "B2:E15".
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      "D10:E15" is "B2:E15". \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getBoundingRect(anotherRange)
     fullName: getBoundingRect
     langs:
@@ -615,10 +576,8 @@ items:
     summary: >-
       Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
       bounds of its parent range, so long as it stays within the worksheet grid. The returned cell is located relative
-      to the top left cell of the range.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      to the top left cell of the range. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getCell(row, column)'
     fullName: getCell
     langs:
@@ -661,10 +620,9 @@ items:
           type:
             - number
   - uid: excel.Excel.Range.getColumn
-    summary: |-
-      Gets a column contained in the range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a column contained in the range. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getColumn(column)
     fullName: getColumn
     langs:
@@ -701,10 +659,9 @@ items:
           type:
             - number
   - uid: excel.Excel.Range.getColumnsAfter
-    summary: |-
-      Gets a certain number of columns to the right of the current Range object.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a certain number of columns to the right of the current Range object. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getColumnsAfter(count)
     fullName: getColumnsAfter
     langs:
@@ -725,10 +682,9 @@ items:
           type:
             - number
   - uid: excel.Excel.Range.getColumnsBefore
-    summary: |-
-      Gets a certain number of columns to the left of the current Range object.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a certain number of columns to the left of the current Range object. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getColumnsBefore(count)
     fullName: getColumnsBefore
     langs:
@@ -751,10 +707,8 @@ items:
   - uid: excel.Excel.Range.getEntireColumn
     summary: >-
       Gets an object that represents the entire column of the range (for example, if the current range represents cells
-      "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      "B4:E11", its `getEntireColumn` is a range that represents columns "B:E"). \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getEntireColumn()
     fullName: getEntireColumn
     langs:
@@ -791,10 +745,8 @@ items:
   - uid: excel.Excel.Range.getEntireRow
     summary: >-
       Gets an object that represents the entire row of the range (for example, if the current range represents cells
-      "B4:E11", its `GetEntireRow` is a range that represents rows "4:11").
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      "B4:E11", its `GetEntireRow` is a range that represents rows "4:11"). \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getEntireRow()
     fullName: getEntireRow
     langs:
@@ -830,10 +782,9 @@ items:
           });
           ```
   - uid: excel.Excel.Range.getImage
-    summary: |-
-      Renders the range as a base64-encoded png image.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Renders the range as a base64-encoded png image. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getImage()
     fullName: getImage
     langs:
@@ -846,10 +797,9 @@ items:
           - OfficeExtension.ClientResult<string>
         description: ''
   - uid: excel.Excel.Range.getIntersection
-    summary: |-
-      Gets the range object that represents the rectangular intersection of the given ranges.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the range object that represents the rectangular intersection of the given ranges. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getIntersection(anotherRange)
     fullName: getIntersection
     langs:
@@ -889,10 +839,8 @@ items:
   - uid: excel.Excel.Range.getIntersectionOrNullObject
     summary: >-
       Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is
-      found, will return a null object.
-
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      found, will return a null object. \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getIntersectionOrNullObject(anotherRange)
     fullName: getIntersectionOrNullObject
     langs:
@@ -969,10 +917,9 @@ items:
           type:
             - Range | string
   - uid: excel.Excel.Range.getLastCell
-    summary: |-
-      Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5". \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLastCell()
     fullName: getLastCell
     langs:
@@ -1004,10 +951,9 @@ items:
           });
           ```
   - uid: excel.Excel.Range.getLastColumn
-    summary: |-
-      Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5". \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLastColumn()
     fullName: getLastColumn
     langs:
@@ -1039,10 +985,9 @@ items:
           });
           ```
   - uid: excel.Excel.Range.getLastRow
-    summary: |-
-      Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5". \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLastRow()
     fullName: getLastRow
     langs:
@@ -1077,10 +1022,8 @@ items:
     summary: >-
       Gets an object which represents a range that's offset from the specified range. The dimension of the returned
       range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error
-      will be thrown.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      will be thrown. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getOffsetRange(rowOffset, columnOffset)'
     fullName: getOffsetRange
     langs:
@@ -1128,10 +1071,8 @@ items:
   - uid: excel.Excel.Range.getResizedRange
     summary: >-
       Gets a Range object similar to the current Range object, but with its bottom-right corner expanded (or contracted)
-      by some number of rows and columns.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      by some number of rows and columns. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getResizedRange(deltaRows, deltaColumns)'
     fullName: getResizedRange
     langs:
@@ -1157,10 +1098,9 @@ items:
           type:
             - number
   - uid: excel.Excel.Range.getRow
-    summary: |-
-      Gets a row contained in the range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a row contained in the range. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRow(row)
     fullName: getRow
     langs:
@@ -1197,10 +1137,9 @@ items:
           type:
             - number
   - uid: excel.Excel.Range.getRowsAbove
-    summary: |-
-      Gets a certain number of rows above the current Range object.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a certain number of rows above the current Range object. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRowsAbove(count)
     fullName: getRowsAbove
     langs:
@@ -1221,10 +1160,9 @@ items:
           type:
             - number
   - uid: excel.Excel.Range.getRowsBelow
-    summary: |-
-      Gets a certain number of rows below the current Range object.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a certain number of rows below the current Range object. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRowsBelow(count)
     fullName: getRowsBelow
     langs:
@@ -1247,11 +1185,8 @@ items:
   - uid: excel.Excel.Range.getSpecialCells
     summary: >-
       Gets the RangeAreas object, comprising one or more rectangular ranges, that represents all the cells that match
-      the specified type and value. If no special cells are found, an ItemNotFound error will be thrown.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      the specified type and value. If no special cells are found, an ItemNotFound error will be thrown. \[ [API set:
+      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'getSpecialCells(cellType, cellValueType)'
     fullName: getSpecialCells
@@ -1279,10 +1214,7 @@ items:
   - uid: excel.Excel.Range.getSpecialCellsOrNullObject
     summary: >-
       Gets the RangeAreas object, comprising one or more ranges, that represents all the cells that match the specified
-      type and value. If no special cells are found, a null object will be returned.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      type and value. If no special cells are found, a null object will be returned. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
@@ -1313,10 +1245,7 @@ items:
   - uid: excel.Excel.Range.getSpillingToRange
     summary: >-
       Gets the range object containing the spill range when called on an anchor cell. Fails if applied to a range with
-      more than one cell. Read only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      more than one cell. Read only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getSpillingToRange()
@@ -1333,10 +1262,7 @@ items:
   - uid: excel.Excel.Range.getSpillParent
     summary: >-
       Gets the range object containing the anchor cell for a cell getting spilled into. Fails if applied to a range with
-      more than one cell. Read only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      more than one cell. Read only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getSpillParent()
@@ -1353,10 +1279,8 @@ items:
   - uid: excel.Excel.Range.getSurroundingRegion
     summary: >-
       Returns a Range object that represents the surrounding region for the top-left cell in this range. A surrounding
-      region is a range bounded by any combination of blank rows and blank columns relative to this range.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      region is a range bounded by any combination of blank rows and blank columns relative to this range. \[ [API set:
+      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getSurroundingRegion()
     fullName: getSurroundingRegion
     langs:
@@ -1370,10 +1294,7 @@ items:
         description: ''
   - uid: excel.Excel.Range.getTables
     summary: >-
-      Gets a scoped collection of tables that overlap with the range.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Gets a scoped collection of tables that overlap with the range. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getTables(fullyContained)
@@ -1395,10 +1316,8 @@ items:
   - uid: excel.Excel.Range.getUsedRange
     summary: >-
       Returns the used range of the given range object. If there are no used cells within the range, this function will
-      throw an ItemNotFound error.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      throw an ItemNotFound error. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getUsedRange(valuesOnly)
     fullName: getUsedRange
     langs:
@@ -1494,10 +1413,8 @@ items:
   - uid: excel.Excel.Range.getUsedRangeOrNullObject
     summary: >-
       Returns the used range of the given range object. If there are no used cells within the range, this function will
-      return a null object.
-
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      return a null object. \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getUsedRangeOrNullObject(valuesOnly)
     fullName: getUsedRangeOrNullObject
     langs:
@@ -1554,10 +1471,9 @@ items:
           type:
             - boolean
   - uid: excel.Excel.Range.getVisibleView
-    summary: |-
-      Represents the visible rows of the current range.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the visible rows of the current range. \[ [API set: ExcelApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getVisibleView()
     fullName: getVisibleView
     langs:
@@ -1573,8 +1489,6 @@ items:
     summary: >-
       Represents if all cells have a spill border. Returns true if all cells have a spill border, or false if all cells
       do not have a spill border. Returns null if there are cells both with and without spill borders within the range.
-
-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -1589,10 +1503,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Range.hidden
-    summary: |-
-      Represents if all cells of the current range are hidden. Read-only.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents if all cells of the current range are hidden. Read-only. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hidden
     fullName: hidden
     langs:
@@ -1604,10 +1517,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Range.hyperlink
-    summary: |-
-      Represents the hyperlink for the current range.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the hyperlink for the current range. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hyperlink
     fullName: hyperlink
     langs:
@@ -1651,10 +1563,8 @@ items:
   - uid: excel.Excel.Range.insert
     summary: >-
       Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
-      space. Returns a new Range object at the now blank space.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      space. Returns a new Range object at the now blank space. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insert(shift)
     fullName: insert
     langs:
@@ -1690,10 +1600,9 @@ items:
           type:
             - excel.Excel.InsertShiftDirection
   - uid: excel.Excel.Range.isEntireColumn
-    summary: |-
-      Represents if the current range is an entire column. Read-only.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents if the current range is an entire column. Read-only. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireColumn
     fullName: isEntireColumn
     langs:
@@ -1705,10 +1614,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Range.isEntireRow
-    summary: |-
-      Represents if the current range is an entire row. Read-only.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents if the current range is an entire row. Read-only. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireRow
     fullName: isEntireRow
     langs:
@@ -1721,10 +1629,7 @@ items:
           - boolean
   - uid: excel.Excel.Range.linkedDataTypeState
     summary: >-
-      Represents the data type state of each cell. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the data type state of each cell. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: linkedDataTypeState
@@ -1844,10 +1749,9 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.Range.merge
-    summary: |-
-      Merge the range cells into one region in the worksheet.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Merge the range cells into one region in the worksheet. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: merge(across)
     fullName: merge
     langs:
@@ -1901,10 +1805,8 @@ items:
     summary: >-
       Represents Excel's number format code for the given range. When setting number format to a range, the value
       argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it
-      will be applied to all cells in the range.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      will be applied to all cells in the range. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: numberFormat
     langs:
@@ -1919,10 +1821,8 @@ items:
     summary: >-
       Represents Excel's number format code for the given range as a string in the language of the user. When setting
       number format local to a range, the value argument can be either a single value (string) or a two-dimensional
-      array. If the argument is a single value, it will be applied to all cells in the range.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      array. If the argument is a single value, it will be applied to all cells in the range. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormatLocal
     fullName: numberFormatLocal
     langs:
@@ -1935,10 +1835,7 @@ items:
           - 'any[][]'
   - uid: excel.Excel.Range.removeDuplicates
     summary: >-
-      Removes duplicate values from the range specified by the columns.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Removes duplicate values from the range specified by the columns. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'removeDuplicates(columns, includesHeader)'
@@ -1965,11 +1862,8 @@ items:
             - boolean
   - uid: excel.Excel.Range.replaceAll
     summary: >-
-      Finds and replaces the given string based on the criteria specified within the current range.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Finds and replaces the given string based on the criteria specified within the current range. \[ [API set:
+      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'replaceAll(text, replacement, criteria)'
     fullName: replaceAll
@@ -1998,10 +1892,9 @@ items:
           type:
             - excel.Excel.ReplaceCriteria
   - uid: excel.Excel.Range.rowCount
-    summary: |-
-      Returns the total number of rows in the range. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the total number of rows in the range. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
     fullName: rowCount
     langs:
@@ -2013,10 +1906,9 @@ items:
         type:
           - number
   - uid: excel.Excel.Range.rowHidden
-    summary: |-
-      Represents if all rows of the current range are hidden.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents if all rows of the current range are hidden. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowHidden
     fullName: rowHidden
     langs:
@@ -2028,10 +1920,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Range.rowIndex
-    summary: |-
-      Returns the row number of the first cell in the range. Zero-indexed. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the row number of the first cell in the range. Zero-indexed. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex
     fullName: rowIndex
     langs:
@@ -2043,10 +1934,9 @@ items:
         type:
           - number
   - uid: excel.Excel.Range.select
-    summary: |-
-      Selects the specified range in the Excel UI.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Selects the specified range in the Excel UI. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: select()
     fullName: select
     langs:
@@ -2077,10 +1967,7 @@ items:
           ```
   - uid: excel.Excel.Range.setDirty
     summary: >-
-      Set a range to be recalculated when the next recalculation occurs.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Set a range to be recalculated when the next recalculation occurs. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: setDirty()
@@ -2095,10 +1982,9 @@ items:
           - void
         description: ''
   - uid: excel.Excel.Range.showCard
-    summary: |-
-      Displays the card for an active cell if it has rich value content.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Displays the card for an active cell if it has rich value content. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showCard()
     fullName: showCard
     langs:
@@ -2111,10 +1997,9 @@ items:
           - void
         description: ''
   - uid: excel.Excel.Range.sort
-    summary: |-
-      Represents the range sort of the current range. Read-only.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the range sort of the current range. Read-only. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sort
     fullName: sort
     langs:
@@ -2129,10 +2014,8 @@ items:
     summary: >-
       Represents the style of the current range. If the styles of the cells are inconsistent, null will be returned. For
       custom styles, the style name will be returned. For built-in styles, a string representing a value in the
-      BuiltInStyle enum will be returned.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      BuiltInStyle enum will be returned. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: style
     langs:
@@ -2163,10 +2046,8 @@ items:
   - uid: excel.Excel.Range.text
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
-      that happens in Excel UI will not affect the text value returned by the API. Read-only.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      that happens in Excel UI will not affect the text value returned by the API. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
     fullName: text
     langs:
@@ -2214,10 +2095,9 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel.Excel.Range.unmerge
-    summary: |-
-      Unmerge the range cells into separate cells.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Unmerge the range cells into separate cells. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: unmerge()
     fullName: unmerge
     langs:
@@ -2290,10 +2170,8 @@ items:
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
       Cells that contain an error will return the error string. When setting values to a range, the value argument can
       be either a single value (string, number or boolean) or a two-dimensional array. If the argument is a single
-      value, it will be applied to all cells in the range.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      value, it will be applied to all cells in the range. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: values
     langs:
@@ -2305,10 +2183,9 @@ items:
         type:
           - 'any[][]'
   - uid: excel.Excel.Range.valueTypes
-    summary: |-
-      Represents the type of data of each cell. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the type of data of each cell. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueTypes
     fullName: valueTypes
     langs:
@@ -2320,10 +2197,9 @@ items:
         type:
           - 'Excel.RangeValueType[][]'
   - uid: excel.Excel.Range.worksheet
-    summary: |-
-      The worksheet containing the current range. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The worksheet containing the current range. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
     fullName: worksheet
     langs:

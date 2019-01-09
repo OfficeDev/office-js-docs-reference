@@ -13,10 +13,7 @@ items:
       - excel.Excel.Interfaces.ShapeGroupData.shapes
   - uid: excel.Excel.Interfaces.ShapeGroupData.id
     summary: >-
-      Represents the shape identifier. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the shape identifier. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: id
@@ -31,10 +28,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.ShapeGroupData.shapes
     summary: >-
-      Returns the shape collection in the group. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the shape collection in the group. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: shapes

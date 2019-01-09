@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.RowColumnPivotHierarchyCollection
-    summary: |-
-      Represents a collection of RowColumnPivotHierarchy items associated with the PivotTable.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents a collection of RowColumnPivotHierarchy items associated with the PivotTable. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RowColumnPivotHierarchyCollection
     fullName: Excel.RowColumnPivotHierarchyCollection
     langs:
@@ -26,10 +25,8 @@ items:
   - uid: excel.Excel.RowColumnPivotHierarchyCollection.add
     summary: >-
       Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column, or filter
-      axis, it will be removed from that location.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      axis, it will be removed from that location. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(pivotHierarchy)
     fullName: add
     langs:
@@ -61,10 +58,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.RowColumnPivotHierarchyCollection.getCount
-    summary: |-
-      Gets the number of pivot hierarchies in the collection.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the number of pivot hierarchies in the collection. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -77,10 +73,9 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.RowColumnPivotHierarchyCollection.getItem
-    summary: |-
-      Gets a RowColumnPivotHierarchy by its name or id.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a RowColumnPivotHierarchy by its name or id. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
     fullName: getItem
     langs:
@@ -98,9 +93,8 @@ items:
           type:
             - string
   - uid: excel.Excel.RowColumnPivotHierarchyCollection.getItemOrNullObject
-    summary: |-
+    summary: >-
       Gets a RowColumnPivotHierarchy by name. If the RowColumnPivotHierarchy does not exist, will return a null object.
-
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
     fullName: getItemOrNullObject
@@ -165,10 +159,9 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.RowColumnPivotHierarchyCollection.remove
-    summary: |-
-      Removes the PivotHierarchy from the current axis.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Removes the PivotHierarchy from the current axis. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: remove(rowColumnPivotHierarchy)
     fullName: remove
     langs:

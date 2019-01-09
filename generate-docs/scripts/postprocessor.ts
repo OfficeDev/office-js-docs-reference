@@ -93,18 +93,11 @@ tryCatch(async () => {
     let outlookRoot = {"name": "Outlook", "uid": "", "items": [] as any};
     let outlookRootPushed = false;
 
-    // create a root for all the Excel versions
-    let excelRoot = {"name": "Excel", "uid": "", "items": [] as any};
-    let excelRootPushed = false;
-
-    // create a root for all the Excel versions
-    let wordRoot = {"name": "Word", "uid": "", "items": [] as any};
-    let wordRootPushed = false;
-
     // look for existing folders to move
     let outlookFolders : string[] = ["MailboxEnums"];
 
     // create folders for Excel subcategories
+    let excelRoot;
     let excelEnumFilter : string [] = ["AggregationFunction", "BindingType", "BorderIndex", "BorderLineStyle", "BorderWeight", "BuiltInStyle", "CalculationMode", "CalculationState", "CalculationType", "ChartAxisCategoryType", "ChartAxisDisplayUnit", "ChartAxisGroup", "ChartAxisPosition", "ChartAxisScaleType", "ChartAxisTickLabelPosition", "ChartAxisTickMark", "ChartAxisTimeUnit", "ChartAxisType", "ChartBinType", "ChartBoxQuartileCalculation", "ChartColorScheme", "ChartDataLabelPosition", "ChartDisplayBlankAs", "ChartErrorBarsInclude", "ChartErrorBarsType", "ChartGradientStyle", "ChartGradientStyleType", "ChartLegendPosition", "ChartLineStyle", "ChartMapAreaLevel", "ChartMapLabelStrategy", "ChartMapProjectionType", "ChartMarkerStyle", "ChartParentLabelStrategy", "ChartPlotAreaPosition", "ChartPlotBy", "ChartSeriesBy", "ChartSplitSType", "ChartTextHorizontalAlignment", "ChartTextVerticalAlignment", "ChartTickLabelAlignment", "ChartTitlePosition", "ChartTrendlineType", "ChartType", "ChartUnderlineStyle", "ClearApplyTo", "ConditionalCellValueOperator", "ConditionalDataBarAxisFormat", "ConditionalDataBarDirection", "ConditionalFormatColorCriterionType", "ConditionalFormatDirection", "ConditionalFormatIconRuleType", "ConditionalFormatPresetCriterion", "ConditionalFormatRuleType", "ConditionalFormatType", "ConditionalIconCriterionOperator", "ConditionalRangeBorderIndex", "ConditionalRangeBorderLineStyle", "ConditionalRangeFontUnderlineStyle", "ConditionalTextOperator", "ConditionalTopBottomCriterionType", "ContentType", "CustomFunctionMetadataFormat", "CustomFunctionType", "DataChangeType", "DataValidationAlertStyle", "DataValidationOperator", "DataValidationType", "DeleteShiftDirection", "DocumentPropertyItem", "DocumentPropertyType", "DynamicFilterCriteria", "ErrorCodes", "EventSource", "EventType", "FillPattern", "FilterDatetimeSpecificity", "FilterOn", "FilterOperator", "GeometricShapeType", "HeaderFooterState", "HorizontalAlignment", "IconSet", "ImageFittingMode", "InsertShiftDirection", "LinkedDataTypeState", "NamedItemScope", "NamedItemType", "PageOrientation", "PaperType", "PictureFormat", "PivotAxis", "PivotFilterTopBottomCriterion", "PivotLayoutType", "Placement", "PrintComments", "PrintErrorType", "PrintMarginUnit", "PrintOrder", "ProtectionSelectionMode", "RangeCopyType", "RangeUnderlineStyle", "RangeValueType", "ReadingOrder", "SaveBehavior", "SearchDirection", "ShapeAutoSize", "ShapeFillType", "ShapeFontUnderlineStyle", "ShapeScaleFrom", "ShapeScaleType", "ShapeTextHorizontalAlignType", "ShapeTextHorzOverflowType", "ShapeTextOrientationType", "ShapeTextReadingOrder", "ShapeTextVerticalAlignType", "ShapeTextVertOverflowType", "ShapeType", "ShapeZOrder", "SheetVisibility", "ShowAsCalculation", "SortBy",  "SortDataOption", "SortMethod", "SortOn", "SortOrientation", "SpecialCellType", "SpecialCellValueType", "SubtotalLocationType", "VerticalAlignment", "WorksheetPositionType"];
     let excelEventArgsFilter : string [] = ["BindingDataChangedEventArgs", "BindingSelectionChangedEventArgs", "ChartActivatedEventArgs", "ChartAddedEventArgs", "ChartDeactivatedEventArgs", "ChartDeletedEventArgs", "SelectionChangedEventArgs", "SettingsChangedEventArgs", "TableChangedEventArgs", "TableSelectionChangedEventArgs", "WorksheetActivatedEventArgs", "WorksheetAddedEventArgs", "WorksheetCalculatedEventArgs", "WorksheetChangedEventArgs", "WorksheetDeactivatedEventArgs", "WorksheetDeletedEventArgs", "WorksheetSelectionChangedEventArgs"];
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
@@ -179,11 +172,6 @@ tryCatch(async () => {
                             });
                         }
                     } else if (packageName.toLocaleLowerCase().includes('excel')) {
-                        if (!excelRootPushed) { // add root in alphabetical order
-                            newToc.items[0].items.push(excelRoot);
-                            excelRootPushed = true;
-                        }
-
                         let enumList = membersToMove.items.filter(item => {
                              return excelEnumFilter.indexOf(item.name) >= 0;
                          });
@@ -193,28 +181,12 @@ tryCatch(async () => {
 
                         let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(excelEnumRoot);
-
-                        if (packageName === 'Excel') { // The version without a suffix is the preview version
-                            excelRoot.items.push({
-                                "name": packageName + " - Preview",
-                                "uid": packageItem.uid,
-                                "items":  primaryList
-                            });
-                        }
-                        else {
-                            let packageNameVersionFormated = packageName.replace('_1_', ' 1.');
-                            excelRoot.items.push({
-                                "name": packageNameVersionFormated,
-                                "uid": packageItem.uid,
-                                "items":  primaryList
-                            });
-                        }
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items":  primaryList as any
+                        });
                     } else if (packageName.toLocaleLowerCase().includes('word')) {
-                        if (!wordRootPushed) { // add root in alphabetical order
-                            newToc.items[0].items.push(wordRoot);
-                            wordRootPushed = true;
-                        }
-
                         let enumList = membersToMove.items.filter(item => {
                             return wordEnumFilter.indexOf(item.name) >= 0;
                         });
@@ -224,22 +196,13 @@ tryCatch(async () => {
 
                         let wordEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(wordEnumRoot);
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items":  primaryList as any
+                        });
 
-                        if (packageName === 'Word') { // The version without a suffix is the preview version
-                            wordRoot.items.push({
-                                "name": packageName + " - Preview",
-                                "uid": packageItem.uid,
-                                "items":  primaryList
-                            });
-                        }
-                        else {
-                            let packageNameVersionFormated = packageName.replace('_1_', ' 1.');
-                            wordRoot.items.push({
-                                "name": packageNameVersionFormated,
-                                "uid": packageItem.uid,
-                                "items":  primaryList
-                            });
-                        }
+                        excelRoot = primaryList;
                     } else if (packageName.toLocaleLowerCase().includes('visio')) {
                         let primaryList = membersToMove.items.filter(item => {
                             return visioFilter.indexOf(item.name) < 0;
@@ -295,12 +258,8 @@ tryCatch(async () => {
     // Get the logical order: Preview, 1.6, 1.5, etc.
     outlookRoot.items.reverse();
     outlookRoot.items.unshift(outlookRoot.items.pop());
-    excelRoot.items.reverse();
-    excelRoot.items.unshift(excelRoot.items.pop());
-    wordRoot.items.reverse();
-    wordRoot.items.unshift(wordRoot.items.pop());
     // add custom functions packages under excel
-    excelRoot.items.unshift(customFunctionsRoot);
+    excelRoot.unshift(customFunctionsRoot);
 
     // process 'office' (Common "Shared" API) package
     origToc.items.forEach((rootItem, rootIndex) => {

@@ -1,10 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.RangeCopyType
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: Excel.RangeCopyType
     fullName: Excel.RangeCopyType
     langs:
@@ -17,7 +13,6 @@ items:
       - excel.Excel.RangeCopyType.formulas
       - excel.Excel.RangeCopyType.values
   - uid: excel.Excel.RangeCopyType.all
-    isPreview: true
     name: all
     fullName: all
     langs:
@@ -25,7 +20,6 @@ items:
     type: field
     numericValue: '"All"'
   - uid: excel.Excel.RangeCopyType.formats
-    isPreview: true
     name: formats
     fullName: formats
     langs:
@@ -33,7 +27,6 @@ items:
     type: field
     numericValue: '"Formats"'
   - uid: excel.Excel.RangeCopyType.formulas
-    isPreview: true
     name: formulas
     fullName: formulas
     langs:
@@ -41,7 +34,6 @@ items:
     type: field
     numericValue: '"Formulas"'
   - uid: excel.Excel.RangeCopyType.values
-    isPreview: true
     name: values
     fullName: values
     langs:

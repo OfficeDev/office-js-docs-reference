@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.InkAnalysis
-    summary: |-
-      Represents ink analysis data for a given set of ink strokes.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Represents ink analysis data for a given set of ink strokes. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkAnalysis
     fullName: OneNote.InkAnalysis
     langs:
@@ -21,10 +20,9 @@ items:
       - onenote.OneNote.InkAnalysis.track
       - onenote.OneNote.InkAnalysis.untrack
   - uid: onenote.OneNote.InkAnalysis.id
-    summary: |-
-      Gets the ID of the InkAnalysis object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the ID of the InkAnalysis object. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -99,10 +97,9 @@ items:
           type:
             - 'string | string[]'
   - uid: onenote.OneNote.InkAnalysis.page
-    summary: |-
-      Gets the parent page object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the parent page object. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: page
     fullName: page
     langs:

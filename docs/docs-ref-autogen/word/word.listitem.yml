@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.ListItem
-    summary: |-
-      Represents the paragraph list item format.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Represents the paragraph list item format. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.ListItem
     fullName: Word.ListItem
     langs:
@@ -42,10 +41,7 @@ items:
   - uid: word.Word.ListItem.getAncestor
     summary: >-
       Gets the list item parent, or the closest ancestor if the parent does not exist. Throws if the list item has no
-      ancestor.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      ancestor. \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getAncestor(parentOnly)
     fullName: getAncestor
     langs:
@@ -67,10 +63,8 @@ items:
   - uid: word.Word.ListItem.getAncestorOrNullObject
     summary: >-
       Gets the list item parent, or the closest ancestor if the parent does not exist. Returns a null object if the list
-      item has no ancestor.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      item has no ancestor. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getAncestorOrNullObject(parentOnly)
     fullName: getAncestorOrNullObject
     langs:
@@ -90,10 +84,9 @@ items:
           type:
             - boolean
   - uid: word.Word.ListItem.getDescendants
-    summary: |-
-      Gets all descendant list items of the list item.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets all descendant list items of the list item. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getDescendants(directChildrenOnly)
     fullName: getDescendants
     langs:
@@ -113,10 +106,9 @@ items:
           type:
             - boolean
   - uid: word.Word.ListItem.level
-    summary: |-
-      Gets or sets the level of the item in the list.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the level of the item in the list. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: level
     fullName: level
     langs:
@@ -128,10 +120,9 @@ items:
         type:
           - number
   - uid: word.Word.ListItem.listString
-    summary: |-
-      Gets the list item bullet, number, or picture as a string. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the list item bullet, number, or picture as a string. Read-only. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: listString
     fullName: listString
     langs:
@@ -177,10 +168,9 @@ items:
           type:
             - 'string | string[]'
   - uid: word.Word.ListItem.siblingIndex
-    summary: |-
-      Gets the list item order number in relation to its siblings. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the list item order number in relation to its siblings. Read-only. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: siblingIndex
     fullName: siblingIndex
     langs:

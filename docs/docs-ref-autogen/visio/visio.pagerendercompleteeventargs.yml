@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.PageRenderCompleteEventArgs
-    summary: |-
-      Provides information about the page that raised the PageRenderComplete event.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Provides information about the page that raised the PageRenderComplete event. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.PageRenderCompleteEventArgs
     fullName: Visio.PageRenderCompleteEventArgs
     langs:
@@ -15,10 +14,9 @@ items:
       - visio.Visio.PageRenderCompleteEventArgs.pageName
       - visio.Visio.PageRenderCompleteEventArgs.success
   - uid: visio.Visio.PageRenderCompleteEventArgs.pageName
-    summary: |-
-      Gets the name of the page that raised the PageLoad event.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Gets the name of the page that raised the PageLoad event. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: pageName
     fullName: pageName
     langs:
@@ -30,10 +28,9 @@ items:
         type:
           - string
   - uid: visio.Visio.PageRenderCompleteEventArgs.success
-    summary: |-
-      Gets the success/failure of the PageRender event.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Gets the success/failure of the PageRender event. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: success
     fullName: success
     langs:

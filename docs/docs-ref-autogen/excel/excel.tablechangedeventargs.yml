@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.TableChangedEventArgs
-    summary: |-
-      Provides information about the table that raised the Changed event.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Provides information about the table that raised the Changed event. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableChangedEventArgs
     fullName: Excel.TableChangedEventArgs
     langs:
@@ -21,10 +20,9 @@ items:
       - excel.Excel.TableChangedEventArgs.type
       - excel.Excel.TableChangedEventArgs.worksheetId
   - uid: excel.Excel.TableChangedEventArgs.address
-    summary: |-
-      Gets the address that represents the changed area of a table on a specific worksheet.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the address that represents the changed area of a table on a specific worksheet. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: address
     langs:
@@ -36,10 +34,9 @@ items:
         type:
           - string
   - uid: excel.Excel.TableChangedEventArgs.changeType
-    summary: |-
-      Gets the change type that represents how the Changed event is triggered. See Excel.DataChangeType for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the change type that represents how the Changed event is triggered. See Excel.DataChangeType for details. \[
+      [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: changeType
     fullName: changeType
     langs:
@@ -55,10 +52,9 @@ items:
             Excel.DataChangeType | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" |
             "ColumnDeleted" | "CellInserted" | "CellDeleted"
   - uid: excel.Excel.TableChangedEventArgs.getRange
-    summary: |-
-      Gets the range that represents the changed area of a table on a specific worksheet.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the range that represents the changed area of a table on a specific worksheet. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange(ctx)
     fullName: getRange
     langs:
@@ -76,9 +72,8 @@ items:
           type:
             - excel.Excel.RequestContext
   - uid: excel.Excel.TableChangedEventArgs.getRangeOrNullObject
-    summary: |-
+    summary: >-
       Gets the range that represents the changed area of a table on a specific worksheet. It might return null object.
-
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRangeOrNullObject(ctx)
     fullName: getRangeOrNullObject
@@ -97,10 +92,9 @@ items:
           type:
             - excel.Excel.RequestContext
   - uid: excel.Excel.TableChangedEventArgs.source
-    summary: |-
-      Gets the source of the event. See Excel.EventSource for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the source of the event. See Excel.EventSource for details. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: source
     fullName: source
     langs:
@@ -112,10 +106,9 @@ items:
         type:
           - Excel.EventSource | "Local" | "Remote"
   - uid: excel.Excel.TableChangedEventArgs.tableId
-    summary: |-
-      Gets the id of the table in which the data changed.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the id of the table in which the data changed. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tableId
     fullName: tableId
     langs:
@@ -146,10 +139,9 @@ items:
           }
           ```
   - uid: excel.Excel.TableChangedEventArgs.type
-    summary: |-
-      Gets the type of the event. See Excel.EventType for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the type of the event. See Excel.EventType for details. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -161,10 +153,9 @@ items:
         type:
           - '"TableChanged"'
   - uid: excel.Excel.TableChangedEventArgs.worksheetId
-    summary: |-
-      Gets the id of the worksheet in which the data changed.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the id of the worksheet in which the data changed. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: worksheetId
     langs:

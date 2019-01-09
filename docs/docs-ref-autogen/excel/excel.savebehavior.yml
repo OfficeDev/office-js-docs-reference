@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.SaveBehavior
     summary: >-
-      Specifies the save behavior for workbook.save API.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Specifies the save behavior for workbook.save API. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.SaveBehavior

@@ -13,10 +13,9 @@ items:
       - onenote.OneNote.Interfaces.FloatingInkData.inkStrokes
       - onenote.OneNote.Interfaces.FloatingInkData.pageContent
   - uid: onenote.OneNote.Interfaces.FloatingInkData.id
-    summary: |-
-      Gets the ID of the FloatingInk object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the ID of the FloatingInk object. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -28,10 +27,9 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Interfaces.FloatingInkData.inkStrokes
-    summary: |-
-      Gets the strokes of the FloatingInk object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the strokes of the FloatingInk object. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkStrokes
     fullName: inkStrokes
     langs:
@@ -43,10 +41,9 @@ items:
         type:
           - 'OneNote.Interfaces.InkStrokeData[]'
   - uid: onenote.OneNote.Interfaces.FloatingInkData.pageContent
-    summary: |-
-      Gets the PageContent parent of the FloatingInk object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the PageContent parent of the FloatingInk object. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageContent
     fullName: pageContent
     langs:

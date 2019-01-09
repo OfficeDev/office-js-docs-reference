@@ -7,10 +7,7 @@ items:
 
       An array of PhoneNumber objects containing the phone numbers found in an email message is returned in the
       phoneNumbers property of the Entities object that is returned when you call the getEntities method on the selected
-      item.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      item. \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>

@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.WorksheetProtectionOptions
-    summary: |-
-      Represents the options in sheet protection.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the options in sheet protection. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetProtectionOptions
     fullName: Excel.WorksheetProtectionOptions
     langs:
@@ -27,10 +26,9 @@ items:
       - excel.Excel.WorksheetProtectionOptions.allowSort
       - excel.Excel.WorksheetProtectionOptions.selectionMode
   - uid: excel.Excel.WorksheetProtectionOptions.allowAutoFilter
-    summary: |-
-      Represents the worksheet protection option of allowing using auto filter feature.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the worksheet protection option of allowing using auto filter feature. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowAutoFilter
     fullName: allowAutoFilter
     langs:
@@ -42,10 +40,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.WorksheetProtectionOptions.allowDeleteColumns
-    summary: |-
-      Represents the worksheet protection option of allowing deleting columns.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the worksheet protection option of allowing deleting columns. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowDeleteColumns
     fullName: allowDeleteColumns
     langs:
@@ -57,10 +54,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.WorksheetProtectionOptions.allowDeleteRows
-    summary: |-
-      Represents the worksheet protection option of allowing deleting rows.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the worksheet protection option of allowing deleting rows. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowDeleteRows
     fullName: allowDeleteRows
     langs:
@@ -72,10 +68,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.WorksheetProtectionOptions.allowEditObjects
-    summary: |-
-      Represents the worksheet protection option of allowing editing objects.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the worksheet protection option of allowing editing objects. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowEditObjects
     fullName: allowEditObjects
     langs:
@@ -87,10 +82,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.WorksheetProtectionOptions.allowEditScenarios
-    summary: |-
-      Represents the worksheet protection option of allowing editing scenarios.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the worksheet protection option of allowing editing scenarios. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowEditScenarios
     fullName: allowEditScenarios
     langs:
@@ -102,10 +96,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.WorksheetProtectionOptions.allowFormatCells
-    summary: |-
-      Represents the worksheet protection option of allowing formatting cells.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the worksheet protection option of allowing formatting cells. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowFormatCells
     fullName: allowFormatCells
     langs:
@@ -117,10 +110,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.WorksheetProtectionOptions.allowFormatColumns
-    summary: |-
-      Represents the worksheet protection option of allowing formatting columns.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the worksheet protection option of allowing formatting columns. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowFormatColumns
     fullName: allowFormatColumns
     langs:
@@ -132,10 +124,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.WorksheetProtectionOptions.allowFormatRows
-    summary: |-
-      Represents the worksheet protection option of allowing formatting rows.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the worksheet protection option of allowing formatting rows. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowFormatRows
     fullName: allowFormatRows
     langs:
@@ -147,10 +138,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.WorksheetProtectionOptions.allowInsertColumns
-    summary: |-
-      Represents the worksheet protection option of allowing inserting columns.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the worksheet protection option of allowing inserting columns. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowInsertColumns
     fullName: allowInsertColumns
     langs:
@@ -162,10 +152,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.WorksheetProtectionOptions.allowInsertHyperlinks
-    summary: |-
-      Represents the worksheet protection option of allowing inserting hyperlinks.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the worksheet protection option of allowing inserting hyperlinks. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowInsertHyperlinks
     fullName: allowInsertHyperlinks
     langs:
@@ -177,10 +166,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.WorksheetProtectionOptions.allowInsertRows
-    summary: |-
-      Represents the worksheet protection option of allowing inserting rows.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the worksheet protection option of allowing inserting rows. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowInsertRows
     fullName: allowInsertRows
     langs:
@@ -192,10 +180,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.WorksheetProtectionOptions.allowPivotTables
-    summary: |-
-      Represents the worksheet protection option of allowing using PivotTable feature.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the worksheet protection option of allowing using PivotTable feature. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowPivotTables
     fullName: allowPivotTables
     langs:
@@ -207,10 +194,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.WorksheetProtectionOptions.allowSort
-    summary: |-
-      Represents the worksheet protection option of allowing using sort feature.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the worksheet protection option of allowing using sort feature. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowSort
     fullName: allowSort
     langs:
@@ -222,10 +208,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.WorksheetProtectionOptions.selectionMode
-    summary: |-
-      Represents the worksheet protection option of selection mode.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the worksheet protection option of selection mode. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: selectionMode
     fullName: selectionMode
     langs:

@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Page
-    summary: |-
-      Represents a OneNote page.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Represents a OneNote page. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Page
     fullName: OneNote.Page
     langs:
@@ -36,10 +35,9 @@ items:
       - onenote.OneNote.Page.untrack
       - onenote.OneNote.Page.webUrl
   - uid: onenote.OneNote.Page.addOutline
-    summary: |-
-      Adds an Outline to the page at the specified position.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Adds an Outline to the page at the specified position. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'addOutline(left, top, html)'
     fullName: addOutline
     langs:
@@ -106,10 +104,9 @@ items:
           type:
             - string
   - uid: onenote.OneNote.Page.analyzePage
-    summary: |-
-      Return a json string with node id and content in html format.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Return a json string with node id and content in html format. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: analyzePage()
     fullName: analyzePage
     langs:
@@ -122,10 +119,9 @@ items:
           - OfficeExtension.ClientResult<string>
         description: ''
   - uid: onenote.OneNote.Page.applyTranslation
-    summary: |-
-      Inserts a new page with translated content.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Inserts a new page with translated content. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: applyTranslation(translatedContent)
     fullName: applyTranslation
     langs:
@@ -143,10 +139,9 @@ items:
           type:
             - string
   - uid: onenote.OneNote.Page.classNotebookPageSource
-    summary: |-
-      Gets the ClassNotebookPageSource to the page.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the ClassNotebookPageSource to the page. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: classNotebookPageSource
     fullName: classNotebookPageSource
     langs:
@@ -158,10 +153,9 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Page.clientUrl
-    summary: |-
-      The client url of the page. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      The client url of the page. Read only \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clientUrl
     fullName: clientUrl
     langs:
@@ -173,10 +167,9 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Page.contents
-    summary: |-
-      The collection of PageContent objects on the page. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      The collection of PageContent objects on the page. Read only \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: contents
     fullName: contents
     langs:
@@ -188,10 +181,9 @@ items:
         type:
           - onenote.OneNote.PageContentCollection
   - uid: onenote.OneNote.Page.copyToSection
-    summary: |-
-      Copies this page to specified section.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Copies this page to specified section. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: copyToSection(destinationSection)
     fullName: copyToSection
     langs:
@@ -248,10 +240,9 @@ items:
           type:
             - onenote.OneNote.Section
   - uid: onenote.OneNote.Page.copyToSectionAndSetClassNotebookPageSource
-    summary: |-
-      Copies this page to specified section and sets ClassNotebookPageSource.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Copies this page to specified section and sets ClassNotebookPageSource. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: copyToSectionAndSetClassNotebookPageSource(destinationSection)
     fullName: copyToSectionAndSetClassNotebookPageSource
     langs:
@@ -269,10 +260,9 @@ items:
           type:
             - onenote.OneNote.Section
   - uid: onenote.OneNote.Page.getRestApiId
-    summary: |-
-      Gets the REST API ID.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the REST API ID. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getRestApiId()
     fullName: getRestApiId
     langs:
@@ -305,10 +295,9 @@ items:
           });
           ```
   - uid: onenote.OneNote.Page.hasTitleContent
-    summary: |-
-      Does the page has content title.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Does the page has content title. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: hasTitleContent()
     fullName: hasTitleContent
     langs:
@@ -321,10 +310,9 @@ items:
           - OfficeExtension.ClientResult<boolean>
         description: ''
   - uid: onenote.OneNote.Page.id
-    summary: |-
-      Gets the ID of the page. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the ID of the page. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -336,10 +324,9 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Page.inkAnalysisOrNull
-    summary: |-
-      Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only. \[
+      [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkAnalysisOrNull
     fullName: inkAnalysisOrNull
     langs:
@@ -351,10 +338,9 @@ items:
         type:
           - onenote.OneNote.InkAnalysis
   - uid: onenote.OneNote.Page.insertPageAsSibling
-    summary: |-
-      Inserts a new page before or after the current page.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Inserts a new page before or after the current page. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertPageAsSibling(location, title)'
     fullName: insertPageAsSibling
     langs:
@@ -540,10 +526,9 @@ items:
           type:
             - 'string | string[]'
   - uid: onenote.OneNote.Page.pageLevel
-    summary: |-
-      Gets or sets the indentation level of the page.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the indentation level of the page. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageLevel
     fullName: pageLevel
     langs:
@@ -555,10 +540,9 @@ items:
         type:
           - number
   - uid: onenote.OneNote.Page.parentSection
-    summary: |-
-      Gets the section that contains the page. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the section that contains the page. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentSection
     fullName: parentSection
     langs:
@@ -570,10 +554,9 @@ items:
         type:
           - onenote.OneNote.Section
   - uid: onenote.OneNote.Page.title
-    summary: |-
-      Gets or sets the title of the page.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the title of the page. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: title
     fullName: title
     langs:
@@ -632,10 +615,9 @@ items:
           - onenote.OneNote.Page
         description: ''
   - uid: onenote.OneNote.Page.webUrl
-    summary: |-
-      The web url of the page. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      The web url of the page. Read only \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: webUrl
     fullName: webUrl
     langs:

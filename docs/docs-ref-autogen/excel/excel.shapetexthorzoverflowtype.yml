@@ -1,10 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeTextHorzOverflowType
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: Excel.ShapeTextHorzOverflowType
     fullName: Excel.ShapeTextHorzOverflowType
     langs:
@@ -16,7 +12,6 @@ items:
       - excel.Excel.ShapeTextHorzOverflowType.overflow
       - excel.Excel.ShapeTextHorzOverflowType.shapeTextHorzOverflowType_MaxEnumIDs
   - uid: excel.Excel.ShapeTextHorzOverflowType.clip
-    isPreview: true
     name: clip
     fullName: clip
     langs:
@@ -24,7 +19,6 @@ items:
     type: field
     numericValue: '"Clip"'
   - uid: excel.Excel.ShapeTextHorzOverflowType.overflow
-    isPreview: true
     name: overflow
     fullName: overflow
     langs:
@@ -32,7 +26,6 @@ items:
     type: field
     numericValue: '"Overflow"'
   - uid: excel.Excel.ShapeTextHorzOverflowType.shapeTextHorzOverflowType_MaxEnumIDs
-    isPreview: true
     name: shapeTextHorzOverflowType_MaxEnumIDs
     fullName: shapeTextHorzOverflowType_MaxEnumIDs
     langs:

@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartGridlinesFormat
-    summary: |-
-      Encapsulates the format properties for chart gridlines.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Encapsulates the format properties for chart gridlines. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartGridlinesFormat
     fullName: Excel.ChartGridlinesFormat
     langs:
@@ -33,10 +32,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ChartGridlinesFormat.line
-    summary: |-
-      Represents chart line formatting. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents chart line formatting. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
     fullName: line
     langs:

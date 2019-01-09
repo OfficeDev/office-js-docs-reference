@@ -12,10 +12,9 @@ items:
       - excel.Excel.Interfaces.CustomXmlPartData.id
       - excel.Excel.Interfaces.CustomXmlPartData.namespaceUri
   - uid: excel.Excel.Interfaces.CustomXmlPartData.id
-    summary: |-
-      The custom XML part's ID. Read-only.
-
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The custom XML part's ID. Read-only. \[ [API set: ExcelApi
+      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -27,10 +26,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.CustomXmlPartData.namespaceUri
-    summary: |-
-      The custom XML part's namespace URI. Read-only.
-
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The custom XML part's namespace URI. Read-only. \[ [API set: ExcelApi
+      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: namespaceUri
     fullName: namespaceUri
     langs:

@@ -2,11 +2,8 @@
 items:
   - uid: excel.Excel.RangeAreas
     summary: >-
-      RangeAreas represents a collection of one or more rectangular ranges in the same worksheet.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      RangeAreas represents a collection of one or more rectangular ranges in the same worksheet. \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.RangeAreas
     fullName: Excel.RangeAreas
@@ -53,10 +50,7 @@ items:
   - uid: excel.Excel.RangeAreas.address
     summary: >-
       Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular
-      block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: address
@@ -71,10 +65,7 @@ items:
           - string
   - uid: excel.Excel.RangeAreas.addressLocal
     summary: >-
-      Returns the RageAreas reference in the user locale. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the RageAreas reference in the user locale. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: addressLocal
@@ -89,10 +80,7 @@ items:
           - string
   - uid: excel.Excel.RangeAreas.areaCount
     summary: >-
-      Returns the number of rectangular ranges that comprise this RangeAreas object.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the number of rectangular ranges that comprise this RangeAreas object. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: areaCount
@@ -107,11 +95,8 @@ items:
           - number
   - uid: excel.Excel.RangeAreas.areas
     summary: >-
-      Returns a collection of rectangular ranges that comprise this RangeAreas object.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns a collection of rectangular ranges that comprise this RangeAreas object. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: areas
     fullName: areas
@@ -125,10 +110,7 @@ items:
           - excel.Excel.RangeCollection
   - uid: excel.Excel.RangeAreas.calculate
     summary: >-
-      Calculates all cells in the RangeAreas.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Calculates all cells in the RangeAreas. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: calculate()
@@ -145,11 +127,8 @@ items:
   - uid: excel.Excel.RangeAreas.cellCount
     summary: >-
       Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual
-      rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only. \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: cellCount
     fullName: cellCount
@@ -163,11 +142,8 @@ items:
           - number
   - uid: excel.Excel.RangeAreas.clear
     summary: >-
-      Clears values, format, fill, border, etc on each of the areas that comprise this RangeAreas object.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Clears values, format, fill, border, etc on each of the areas that comprise this RangeAreas object. \[ [API set:
+      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: clear(applyTo)
     fullName: clear
@@ -187,11 +163,9 @@ items:
             - excel.Excel.ClearApplyTo
   - uid: excel.Excel.RangeAreas.conditionalFormats
     summary: >-
-      Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object. Read-only. \[
+      [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
     isPreview: true
     name: conditionalFormats
     fullName: conditionalFormats
@@ -220,10 +194,7 @@ items:
           - RequestContext
   - uid: excel.Excel.RangeAreas.convertDataTypeToText
     summary: >-
-      Converts all cells in the RangeAreas with datatypes into text.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Converts all cells in the RangeAreas with datatypes into text. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: convertDataTypeToText()
@@ -239,10 +210,7 @@ items:
         description: ''
   - uid: excel.Excel.RangeAreas.convertToLinkedDataType
     summary: >-
-      Converts all cells in the RangeAreas into linked datatype.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Converts all cells in the RangeAreas into linked datatype. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'convertToLinkedDataType(serviceID, languageCulture)'
@@ -269,10 +237,7 @@ items:
     summary: >-
       Copies cell data or formatting from the source range or RangeAreas to the current RangeAreas. The destination
       rangeAreas can be of different size than the source range or RangeAreas. The destination will be expanded
-      automatically if it is smaller than the source.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      automatically if it is smaller than the source. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
@@ -309,10 +274,7 @@ items:
             - boolean
   - uid: excel.Excel.RangeAreas.dataValidation
     summary: >-
-      Returns a dataValidation object for all ranges in the RangeAreas.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns a dataValidation object for all ranges in the RangeAreas. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: dataValidation
@@ -328,10 +290,7 @@ items:
   - uid: excel.Excel.RangeAreas.format
     summary: >-
       Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all
-      ranges in the RangeAreas object. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      ranges in the RangeAreas object. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: format
@@ -347,11 +306,8 @@ items:
   - uid: excel.Excel.RangeAreas.getEntireColumn
     summary: >-
       Returns a RangeAreas object that represents the entire columns of the RangeAreas (for example, if the current
-      RangeAreas represents cells "B4:E11, H2", it returns a RangeAreas that represents columns "B:E, H:H").
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      RangeAreas represents cells "B4:E11, H2", it returns a RangeAreas that represents columns "B:E, H:H"). \[ [API
+      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getEntireColumn()
     fullName: getEntireColumn
@@ -367,11 +323,8 @@ items:
   - uid: excel.Excel.RangeAreas.getEntireRow
     summary: >-
       Returns a RangeAreas object that represents the entire rows of the RangeAreas (for example, if the current
-      RangeAreas represents cells "B4:E11", it returns a RangeAreas that represents rows "4:11").
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      RangeAreas represents cells "B4:E11", it returns a RangeAreas that represents rows "4:11"). \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getEntireRow()
     fullName: getEntireRow
@@ -387,10 +340,7 @@ items:
   - uid: excel.Excel.RangeAreas.getIntersection
     summary: >-
       Returns the RangeAreas object that represents the intersection of the given ranges or RangeAreas. If no
-      intersection is found, an ItemNotFound error will be thrown.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      intersection is found, an ItemNotFound error will be thrown. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getIntersection(anotherRange)
@@ -412,10 +362,7 @@ items:
   - uid: excel.Excel.RangeAreas.getIntersectionOrNullObject
     summary: >-
       Returns the RangeAreas object that represents the intersection of the given ranges or RangeAreas. If no
-      intersection is found, a null object is returned.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      intersection is found, a null object is returned. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getIntersectionOrNullObject(anotherRange)
@@ -438,10 +385,7 @@ items:
     summary: >-
       Returns an RangeAreas object that is shifted by the specific row and column offset. The dimension of the returned
       RangeAreas will match the original object. If the resulting RangeAreas is forced outside the bounds of the
-      worksheet grid, an error will be thrown.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      worksheet grid, an error will be thrown. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'getOffsetRangeAreas(rowOffset, columnOffset)'
@@ -471,10 +415,7 @@ items:
   - uid: excel.Excel.RangeAreas.getSpecialCells
     summary: >-
       Returns a RangeAreas object that represents all the cells that match the specified type and value. Throws an error
-      if no special cells are found that match the criteria.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      if no special cells are found that match the criteria. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'getSpecialCells(cellType, cellValueType)'
@@ -503,10 +444,7 @@ items:
   - uid: excel.Excel.RangeAreas.getSpecialCellsOrNullObject
     summary: >-
       Returns a RangeAreas object that represents all the cells that match the specified type and value. Returns a null
-      object if no special cells are found that match the criteria.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      object if no special cells are found that match the criteria. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
@@ -536,11 +474,8 @@ items:
             - excel.Excel.SpecialCellValueType
   - uid: excel.Excel.RangeAreas.getTables
     summary: >-
-      Returns a scoped collection of tables that overlap with any range in this RangeAreas object.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns a scoped collection of tables that overlap with any range in this RangeAreas object. \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getTables(fullyContained)
     fullName: getTables
@@ -561,11 +496,8 @@ items:
   - uid: excel.Excel.RangeAreas.getUsedRangeAreas
     summary: >-
       Returns the used RangeAreas that comprises all the used areas of individual rectangular ranges in the RangeAreas
-      object. If there are no used cells within the RangeAreas, the ItemNotFound error will be thrown.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      object. If there are no used cells within the RangeAreas, the ItemNotFound error will be thrown. \[ [API set:
+      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getUsedRangeAreas(valuesOnly)
     fullName: getUsedRangeAreas
@@ -586,11 +518,8 @@ items:
   - uid: excel.Excel.RangeAreas.getUsedRangeAreasOrNullObject
     summary: >-
       Returns the used RangeAreas that comprises all the used areas of individual rectangular ranges in the RangeAreas
-      object. If there are no used cells within the RangeAreas, a null object will be returned.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      object. If there are no used cells within the RangeAreas, a null object will be returned. \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getUsedRangeAreasOrNullObject(valuesOnly)
     fullName: getUsedRangeAreasOrNullObject
@@ -611,8 +540,6 @@ items:
   - uid: excel.Excel.RangeAreas.isEntireColumn
     summary: >-
       Indicates whether all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z"). Read-only.
-
-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -628,11 +555,9 @@ items:
           - boolean
   - uid: excel.Excel.RangeAreas.isEntireRow
     summary: >-
-      Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only. \[
+      [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
     isPreview: true
     name: isEntireRow
     fullName: isEntireRow
@@ -681,10 +606,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.RangeAreas.setDirty
     summary: >-
-      Sets the RangeAreas to be recalculated when the next recalculation occurs.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Sets the RangeAreas to be recalculated when the next recalculation occurs. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: setDirty()
@@ -702,10 +624,7 @@ items:
     summary: >-
       Represents the style for all ranges in this RangeAreas object. If the styles of the cells are inconsistent, null
       will be returned. For custom styles, the style name will be returned. For built-in styles, a string representing a
-      value in the BuiltInStyle enum will be returned.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      value in the BuiltInStyle enum will be returned. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: style
@@ -776,10 +695,7 @@ items:
         description: ''
   - uid: excel.Excel.RangeAreas.worksheet
     summary: >-
-      Returns the worksheet for the current RangeAreas. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the worksheet for the current RangeAreas. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: worksheet

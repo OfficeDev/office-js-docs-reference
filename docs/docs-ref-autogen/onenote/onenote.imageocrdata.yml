@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.ImageOcrData
-    summary: |-
-      Represents data obtained by OCR (optical character recognition) of an image.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Represents data obtained by OCR (optical character recognition) of an image. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.ImageOcrData
     fullName: OneNote.ImageOcrData
     langs:
@@ -15,10 +14,9 @@ items:
       - onenote.OneNote.ImageOcrData.ocrLanguageId
       - onenote.OneNote.ImageOcrData.ocrText
   - uid: onenote.OneNote.ImageOcrData.ocrLanguageId
-    summary: |-
-      Represents the OCR language, with values such as EN-US
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Represents the OCR language, with values such as EN-US \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: ocrLanguageId
     fullName: ocrLanguageId
     langs:
@@ -30,10 +28,9 @@ items:
         type:
           - string
   - uid: onenote.OneNote.ImageOcrData.ocrText
-    summary: |-
-      Represents the text obtained by OCR of the image
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Represents the text obtained by OCR of the image \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: ocrText
     fullName: ocrText
     langs:

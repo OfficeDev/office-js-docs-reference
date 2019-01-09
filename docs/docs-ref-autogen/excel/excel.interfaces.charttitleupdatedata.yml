@@ -21,10 +21,9 @@ items:
       - excel.Excel.Interfaces.ChartTitleUpdateData.verticalAlignment
       - excel.Excel.Interfaces.ChartTitleUpdateData.visible
   - uid: excel.Excel.Interfaces.ChartTitleUpdateData.format
-    summary: |-
-      Represents the formatting of a chart title, which includes fill and font formatting.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the formatting of a chart title, which includes fill and font formatting. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -36,10 +35,9 @@ items:
         type:
           - excel.Excel.Interfaces.ChartTitleFormatUpdateData
   - uid: excel.Excel.Interfaces.ChartTitleUpdateData.horizontalAlignment
-    summary: |-
-      Represents the horizontal alignment for chart title.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the horizontal alignment for chart title. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: horizontalAlignment
     langs:
@@ -55,10 +53,8 @@ items:
   - uid: excel.Excel.Interfaces.ChartTitleUpdateData.left
     summary: >-
       Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if
-      chart title is not visible.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      chart title is not visible. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -70,10 +66,9 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.ChartTitleUpdateData.overlay
-    summary: |-
-      Boolean value representing if the chart title will overlay the chart or not.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Boolean value representing if the chart title will overlay the chart or not. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlay
     fullName: overlay
     langs:
@@ -85,10 +80,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartTitleUpdateData.position
-    summary: |-
-      Represents the position of chart title. See Excel.ChartTitlePosition for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the position of chart title. See Excel.ChartTitlePosition for details. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: position
     langs:
@@ -100,10 +94,9 @@ items:
         type:
           - Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right"
   - uid: excel.Excel.Interfaces.ChartTitleUpdateData.showShadow
-    summary: |-
-      Represents a boolean value that determines if the chart title has a shadow.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents a boolean value that determines if the chart title has a shadow. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
     fullName: showShadow
     langs:
@@ -115,10 +108,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartTitleUpdateData.text
-    summary: |-
-      Represents the title text of a chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the title text of a chart. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
     fullName: text
     langs:
@@ -132,10 +124,8 @@ items:
   - uid: excel.Excel.Interfaces.ChartTitleUpdateData.textOrientation
     summary: >-
       Represents the text orientation of chart title. The value should be an integer either from -90 to 90, or 180 for
-      vertically-oriented text.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      vertically-oriented text. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
     fullName: textOrientation
     langs:
@@ -149,10 +139,8 @@ items:
   - uid: excel.Excel.Interfaces.ChartTitleUpdateData.top
     summary: >-
       Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title
-      is not visible.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      is not visible. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:
@@ -164,10 +152,9 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.ChartTitleUpdateData.verticalAlignment
-    summary: |-
-      Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details. \[ [API set:
+      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
     fullName: verticalAlignment
     langs:
@@ -179,10 +166,9 @@ items:
         type:
           - Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
   - uid: excel.Excel.Interfaces.ChartTitleUpdateData.visible
-    summary: |-
-      A boolean value the represents the visibility of a chart title object.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      A boolean value the represents the visibility of a chart title object. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:

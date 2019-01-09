@@ -13,10 +13,9 @@ items:
       - excel.Excel.Interfaces.ChartBorderData.lineStyle
       - excel.Excel.Interfaces.ChartBorderData.weight
   - uid: excel.Excel.Interfaces.ChartBorderData.color
-    summary: |-
-      HTML color code representing the color of borders in the chart.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      HTML color code representing the color of borders in the chart. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -28,10 +27,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.ChartBorderData.lineStyle
-    summary: |-
-      Represents the line style of the border. See Excel.ChartLineStyle for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the line style of the border. See Excel.ChartLineStyle for details. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lineStyle
     fullName: lineStyle
     langs:
@@ -47,10 +45,9 @@ items:
             Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" |
             "Grey50" | "Grey75" | "Automatic" | "RoundDot"
   - uid: excel.Excel.Interfaces.ChartBorderData.weight
-    summary: |-
-      Represents weight of the border, in points.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents weight of the border, in points. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
     fullName: weight
     langs:

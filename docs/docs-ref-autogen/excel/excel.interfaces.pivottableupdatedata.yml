@@ -12,10 +12,9 @@ items:
       - excel.Excel.Interfaces.PivotTableUpdateData.name
       - excel.Excel.Interfaces.PivotTableUpdateData.useCustomSortLists
   - uid: excel.Excel.Interfaces.PivotTableUpdateData.name
-    summary: |-
-      Name of the PivotTable.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Name of the PivotTable. \[ [API set: ExcelApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -28,10 +27,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.PivotTableUpdateData.useCustomSortLists
     summary: >-
-      True if the PivotTable should use custom lists when sorting.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      True if the PivotTable should use custom lists when sorting. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: useCustomSortLists

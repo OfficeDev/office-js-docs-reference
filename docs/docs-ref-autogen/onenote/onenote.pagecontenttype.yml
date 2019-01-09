@@ -1,7 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.PageContentType
-    summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     name: OneNote.PageContentType
     fullName: OneNote.PageContentType
     langs:

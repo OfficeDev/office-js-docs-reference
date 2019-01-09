@@ -16,10 +16,9 @@ items:
       - excel.Excel.Interfaces.ChartFontUpdateData.size
       - excel.Excel.Interfaces.ChartFontUpdateData.underline
   - uid: excel.Excel.Interfaces.ChartFontUpdateData.bold
-    summary: |-
-      Represents the bold status of font.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the bold status of font. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bold
     fullName: bold
     langs:
@@ -31,10 +30,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartFontUpdateData.color
-    summary: |-
-      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      HTML color code representation of the text color. E.g. \#FF0000 represents Red. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -46,10 +44,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.ChartFontUpdateData.italic
-    summary: |-
-      Represents the italic status of the font.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the italic status of the font. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: italic
     fullName: italic
     langs:
@@ -61,10 +58,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartFontUpdateData.name
-    summary: |-
-      Font name (e.g. "Calibri")
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Font name (e.g. "Calibri") \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -76,10 +72,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.ChartFontUpdateData.size
-    summary: |-
-      Size of the font (e.g. 11)
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Size of the font (e.g. 11) \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: size
     fullName: size
     langs:
@@ -91,10 +86,9 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.ChartFontUpdateData.underline
-    summary: |-
-      Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Type of underline applied to the font. See Excel.ChartUnderlineStyle for details. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underline
     fullName: underline
     langs:

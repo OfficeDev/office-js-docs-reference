@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.TableCellCollection
-    summary: |-
-      Contains a collection of TableCell objects.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Contains a collection of TableCell objects. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.TableCellCollection
     fullName: OneNote.TableCellCollection
     langs:
@@ -23,10 +22,9 @@ items:
       - onenote.OneNote.TableCellCollection.track
       - onenote.OneNote.TableCellCollection.untrack
   - uid: onenote.OneNote.TableCellCollection.count
-    summary: |-
-      Returns the number of tablecells in this collection. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Returns the number of tablecells in this collection. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -38,10 +36,9 @@ items:
         type:
           - number
   - uid: onenote.OneNote.TableCellCollection.getItem
-    summary: |-
-      Gets a table cell object by ID or by its index in the collection. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets a table cell object by ID or by its index in the collection. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: getItem
     langs:
@@ -59,10 +56,9 @@ items:
           type:
             - number | string
   - uid: onenote.OneNote.TableCellCollection.getItemAt
-    summary: |-
-      Gets a tablecell at its position in the collection.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets a tablecell at its position in the collection. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:

@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalRangeFill
-    summary: |-
-      Represents the background of a conditional range object.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the background of a conditional range object. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalRangeFill
     fullName: Excel.ConditionalRangeFill
     langs:
@@ -20,10 +19,9 @@ items:
       - excel.Excel.ConditionalRangeFill.load
       - excel.Excel.ConditionalRangeFill.toJSON
   - uid: excel.Excel.ConditionalRangeFill.clear
-    summary: |-
-      Resets the fill.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Resets the fill. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: clear
     langs:
@@ -38,10 +36,8 @@ items:
   - uid: excel.Excel.ConditionalRangeFill.color
     summary: >-
       HTML color code representing the color of the fill, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color
-      (e.g. "orange").
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      (e.g. "orange"). \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:

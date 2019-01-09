@@ -1,10 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeFontUnderlineStyle
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: Excel.ShapeFontUnderlineStyle
     fullName: Excel.ShapeFontUnderlineStyle
     langs:
@@ -30,7 +26,6 @@ items:
       - excel.Excel.ShapeFontUnderlineStyle.wavyDouble
       - excel.Excel.ShapeFontUnderlineStyle.wavyHeavy
   - uid: excel.Excel.ShapeFontUnderlineStyle.dash
-    isPreview: true
     name: dash
     fullName: dash
     langs:
@@ -38,7 +33,6 @@ items:
     type: field
     numericValue: '"Dash"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.dashHeavy
-    isPreview: true
     name: dashHeavy
     fullName: dashHeavy
     langs:
@@ -46,7 +40,6 @@ items:
     type: field
     numericValue: '"DashHeavy"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.dashLong
-    isPreview: true
     name: dashLong
     fullName: dashLong
     langs:
@@ -54,7 +47,6 @@ items:
     type: field
     numericValue: '"DashLong"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.dashLongHeavy
-    isPreview: true
     name: dashLongHeavy
     fullName: dashLongHeavy
     langs:
@@ -62,7 +54,6 @@ items:
     type: field
     numericValue: '"DashLongHeavy"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.dotDash
-    isPreview: true
     name: dotDash
     fullName: dotDash
     langs:
@@ -70,7 +61,6 @@ items:
     type: field
     numericValue: '"DotDash"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.dotDashHeavy
-    isPreview: true
     name: dotDashHeavy
     fullName: dotDashHeavy
     langs:
@@ -78,7 +68,6 @@ items:
     type: field
     numericValue: '"DotDashHeavy"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.dotDotDash
-    isPreview: true
     name: dotDotDash
     fullName: dotDotDash
     langs:
@@ -86,7 +75,6 @@ items:
     type: field
     numericValue: '"DotDotDash"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.dotDotDashHeavy
-    isPreview: true
     name: dotDotDashHeavy
     fullName: dotDotDashHeavy
     langs:
@@ -94,7 +82,6 @@ items:
     type: field
     numericValue: '"DotDotDashHeavy"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.dotted
-    isPreview: true
     name: dotted
     fullName: dotted
     langs:
@@ -102,7 +89,6 @@ items:
     type: field
     numericValue: '"Dotted"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.dottedHeavy
-    isPreview: true
     name: dottedHeavy
     fullName: dottedHeavy
     langs:
@@ -110,7 +96,6 @@ items:
     type: field
     numericValue: '"DottedHeavy"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.double
-    isPreview: true
     name: double
     fullName: double
     langs:
@@ -118,7 +103,6 @@ items:
     type: field
     numericValue: '"Double"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.heavy
-    isPreview: true
     name: heavy
     fullName: heavy
     langs:
@@ -126,7 +110,6 @@ items:
     type: field
     numericValue: '"Heavy"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.none
-    isPreview: true
     name: none
     fullName: none
     langs:
@@ -134,7 +117,6 @@ items:
     type: field
     numericValue: '"None"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.single
-    isPreview: true
     name: single
     fullName: single
     langs:
@@ -142,7 +124,6 @@ items:
     type: field
     numericValue: '"Single"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.wavy
-    isPreview: true
     name: wavy
     fullName: wavy
     langs:
@@ -150,7 +131,6 @@ items:
     type: field
     numericValue: '"Wavy"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.wavyDouble
-    isPreview: true
     name: wavyDouble
     fullName: wavyDouble
     langs:
@@ -158,7 +138,6 @@ items:
     type: field
     numericValue: '"WavyDouble"'
   - uid: excel.Excel.ShapeFontUnderlineStyle.wavyHeavy
-    isPreview: true
     name: wavyHeavy
     fullName: wavyHeavy
     langs:

@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.OverlayType
-    summary: |-
-      Represents the type of the overlay.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Represents the type of the overlay. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.OverlayType
     fullName: Visio.OverlayType
     langs:

@@ -1,10 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeFillType
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: Excel.ShapeFillType
     fullName: Excel.ShapeFillType
     langs:
@@ -19,7 +15,6 @@ items:
       - excel.Excel.ShapeFillType.pictureAndTexture
       - excel.Excel.ShapeFillType.solid
   - uid: excel.Excel.ShapeFillType.gradient
-    isPreview: true
     name: gradient
     fullName: gradient
     langs:
@@ -27,7 +22,6 @@ items:
     type: field
     numericValue: '"Gradient"'
   - uid: excel.Excel.ShapeFillType.mixed
-    isPreview: true
     name: mixed
     fullName: mixed
     langs:
@@ -35,7 +29,6 @@ items:
     type: field
     numericValue: '"Mixed"'
   - uid: excel.Excel.ShapeFillType.noFill
-    isPreview: true
     name: noFill
     fullName: noFill
     langs:
@@ -43,7 +36,6 @@ items:
     type: field
     numericValue: '"NoFill"'
   - uid: excel.Excel.ShapeFillType.pattern
-    isPreview: true
     name: pattern
     fullName: pattern
     langs:
@@ -51,7 +43,6 @@ items:
     type: field
     numericValue: '"Pattern"'
   - uid: excel.Excel.ShapeFillType.pictureAndTexture
-    isPreview: true
     name: pictureAndTexture
     fullName: pictureAndTexture
     langs:
@@ -59,7 +50,6 @@ items:
     type: field
     numericValue: '"PictureAndTexture"'
   - uid: excel.Excel.ShapeFillType.solid
-    isPreview: true
     name: solid
     fullName: solid
     langs:

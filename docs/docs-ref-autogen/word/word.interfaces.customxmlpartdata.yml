@@ -13,10 +13,7 @@ items:
       - word.Word.Interfaces.CustomXmlPartData.namespaceUri
   - uid: word.Word.Interfaces.CustomXmlPartData.id
     summary: >-
-      Gets the ID of the custom XML part. Read only.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      Gets the ID of the custom XML part. Read only. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: id
@@ -31,10 +28,7 @@ items:
           - string
   - uid: word.Word.Interfaces.CustomXmlPartData.namespaceUri
     summary: >-
-      Gets the namespace URI of the custom XML part. Read only.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
+      Gets the namespace URI of the custom XML part. Read only. \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: namespaceUri

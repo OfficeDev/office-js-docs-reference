@@ -1,10 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeScaleType
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: Excel.ShapeScaleType
     fullName: Excel.ShapeScaleType
     langs:
@@ -15,7 +11,6 @@ items:
       - excel.Excel.ShapeScaleType.currentSize
       - excel.Excel.ShapeScaleType.originalSize
   - uid: excel.Excel.ShapeScaleType.currentSize
-    isPreview: true
     name: currentSize
     fullName: currentSize
     langs:
@@ -23,7 +18,6 @@ items:
     type: field
     numericValue: '"CurrentSize"'
   - uid: excel.Excel.ShapeScaleType.originalSize
-    isPreview: true
     name: originalSize
     fullName: originalSize
     langs:

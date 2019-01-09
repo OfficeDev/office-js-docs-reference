@@ -22,10 +22,9 @@ items:
       - excel.Excel.Interfaces.DocumentPropertiesData.subject
       - excel.Excel.Interfaces.DocumentPropertiesData.title
   - uid: excel.Excel.Interfaces.DocumentPropertiesData.author
-    summary: |-
-      Gets or sets the author of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the author of the workbook. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: author
     fullName: author
     langs:
@@ -37,10 +36,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.DocumentPropertiesData.category
-    summary: |-
-      Gets or sets the category of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the category of the workbook. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: category
     fullName: category
     langs:
@@ -52,10 +50,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.DocumentPropertiesData.comments
-    summary: |-
-      Gets or sets the comments of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the comments of the workbook. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comments
     fullName: comments
     langs:
@@ -67,10 +64,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.DocumentPropertiesData.company
-    summary: |-
-      Gets or sets the company of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the company of the workbook. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: company
     fullName: company
     langs:
@@ -82,10 +78,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.DocumentPropertiesData.creationDate
-    summary: |-
-      Gets the creation date of the workbook. Read only.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the creation date of the workbook. Read only. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: creationDate
     fullName: creationDate
     langs:
@@ -97,10 +92,9 @@ items:
         type:
           - Date
   - uid: excel.Excel.Interfaces.DocumentPropertiesData.custom
-    summary: |-
-      Gets the collection of custom properties of the workbook. Read only.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the collection of custom properties of the workbook. Read only. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: custom
     fullName: custom
     langs:
@@ -112,10 +106,9 @@ items:
         type:
           - 'Excel.Interfaces.CustomPropertyData[]'
   - uid: excel.Excel.Interfaces.DocumentPropertiesData.keywords
-    summary: |-
-      Gets or sets the keywords of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the keywords of the workbook. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: keywords
     fullName: keywords
     langs:
@@ -127,10 +120,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.DocumentPropertiesData.lastAuthor
-    summary: |-
-      Gets the last author of the workbook. Read only.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the last author of the workbook. Read only. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lastAuthor
     fullName: lastAuthor
     langs:
@@ -142,10 +134,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.DocumentPropertiesData.manager
-    summary: |-
-      Gets or sets the manager of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the manager of the workbook. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: manager
     fullName: manager
     langs:
@@ -157,10 +148,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.DocumentPropertiesData.revisionNumber
-    summary: |-
-      Gets the revision number of the workbook. Read only.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the revision number of the workbook. Read only. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: revisionNumber
     fullName: revisionNumber
     langs:
@@ -172,10 +162,9 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.DocumentPropertiesData.subject
-    summary: |-
-      Gets or sets the subject of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the subject of the workbook. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subject
     fullName: subject
     langs:
@@ -187,10 +176,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.DocumentPropertiesData.title
-    summary: |-
-      Gets or sets the title of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the title of the workbook. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
     fullName: title
     langs:

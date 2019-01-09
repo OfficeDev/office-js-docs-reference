@@ -3,10 +3,8 @@ items:
   - uid: excel.Excel.PresetCriteriaConditionalFormat
     summary: >-
       Represents the the preset criteria conditional format such as above average, below average, unique values,
-      contains blank, nonblank, error, and noerror.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      contains blank, nonblank, error, and noerror. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PresetCriteriaConditionalFormat
     fullName: Excel.PresetCriteriaConditionalFormat
     langs:
@@ -36,10 +34,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.PresetCriteriaConditionalFormat.format
-    summary: |-
-      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. \[ [API
+      set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -85,10 +82,9 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.PresetCriteriaConditionalFormat.rule
-    summary: |-
-      The rule of the conditional format.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The rule of the conditional format. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: rule
     langs:

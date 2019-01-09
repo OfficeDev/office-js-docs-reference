@@ -14,10 +14,9 @@ items:
       - excel.Excel.Interfaces.TextConditionalFormatUpdateData.format
       - excel.Excel.Interfaces.TextConditionalFormatUpdateData.rule
   - uid: excel.Excel.Interfaces.TextConditionalFormatUpdateData.format
-    summary: |-
-      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. \[ [API
+      set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -29,10 +28,9 @@ items:
         type:
           - excel.Excel.Interfaces.ConditionalRangeFormatUpdateData
   - uid: excel.Excel.Interfaces.TextConditionalFormatUpdateData.rule
-    summary: |-
-      The rule of the conditional format.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The rule of the conditional format. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: rule
     langs:

@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.Location
-    summary: |-
-      Provides methods to get and set the location of a meeting in an Outlook add-in.
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: >-
+      Provides methods to get and set the location of a meeting in an Outlook add-in. \[ [API set: Mailbox
+      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -62,10 +61,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
-
-
-            \[Api set: Mailbox 1.1\]
+            parameter of type Office.AsyncResult. \[Api set: Mailbox 1.1\]
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: outlook.Office.Location.setAsync
@@ -126,9 +122,6 @@ items:
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. If setting the location fails, the asyncResult.error property will
-            contain an error code.
-
-
-            \[Api set: Mailbox 1.1\]
+            contain an error code. \[Api set: Mailbox 1.1\]
           type:
             - '(result: AsyncResult<void>) => void'

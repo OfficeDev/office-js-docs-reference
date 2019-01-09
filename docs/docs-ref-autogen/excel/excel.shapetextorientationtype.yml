@@ -1,10 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeTextOrientationType
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: Excel.ShapeTextOrientationType
     fullName: Excel.ShapeTextOrientationType
     langs:
@@ -21,7 +17,6 @@ items:
       - excel.Excel.ShapeTextOrientationType.wordArtVertical
       - excel.Excel.ShapeTextOrientationType.wordArtVerticalRTL
   - uid: excel.Excel.ShapeTextOrientationType.eastAsianVertical
-    isPreview: true
     name: eastAsianVertical
     fullName: eastAsianVertical
     langs:
@@ -29,7 +24,6 @@ items:
     type: field
     numericValue: '"EastAsianVertical"'
   - uid: excel.Excel.ShapeTextOrientationType.horizontal
-    isPreview: true
     name: horizontal
     fullName: horizontal
     langs:
@@ -37,7 +31,6 @@ items:
     type: field
     numericValue: '"Horizontal"'
   - uid: excel.Excel.ShapeTextOrientationType.mongolianVertical
-    isPreview: true
     name: mongolianVertical
     fullName: mongolianVertical
     langs:
@@ -45,7 +38,6 @@ items:
     type: field
     numericValue: '"MongolianVertical"'
   - uid: excel.Excel.ShapeTextOrientationType.shapeTextOrientationType_MaxEnumIDs
-    isPreview: true
     name: shapeTextOrientationType_MaxEnumIDs
     fullName: shapeTextOrientationType_MaxEnumIDs
     langs:
@@ -53,7 +45,6 @@ items:
     type: field
     numericValue: '"ShapeTextOrientationType_MaxEnumIDs"'
   - uid: excel.Excel.ShapeTextOrientationType.vertical
-    isPreview: true
     name: vertical
     fullName: vertical
     langs:
@@ -61,7 +52,6 @@ items:
     type: field
     numericValue: '"Vertical"'
   - uid: excel.Excel.ShapeTextOrientationType.vertical270
-    isPreview: true
     name: vertical270
     fullName: vertical270
     langs:
@@ -69,7 +59,6 @@ items:
     type: field
     numericValue: '"Vertical270"'
   - uid: excel.Excel.ShapeTextOrientationType.wordArtVertical
-    isPreview: true
     name: wordArtVertical
     fullName: wordArtVertical
     langs:
@@ -77,7 +66,6 @@ items:
     type: field
     numericValue: '"WordArtVertical"'
   - uid: excel.Excel.ShapeTextOrientationType.wordArtVerticalRTL
-    isPreview: true
     name: wordArtVerticalRTL
     fullName: wordArtVerticalRTL
     langs:

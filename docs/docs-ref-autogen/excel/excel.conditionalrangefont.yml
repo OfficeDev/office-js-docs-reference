@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalRangeFont
-    summary: |-
-      This object represents the font attributes (font style, color, etc.) for an object.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      This object represents the font attributes (font style, color, etc.) for an object. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalRangeFont
     fullName: Excel.ConditionalRangeFont
     langs:
@@ -24,10 +23,9 @@ items:
       - excel.Excel.ConditionalRangeFont.toJSON
       - excel.Excel.ConditionalRangeFont.underline
   - uid: excel.Excel.ConditionalRangeFont.bold
-    summary: |-
-      Represents the bold status of font.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the bold status of font. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bold
     fullName: bold
     langs:
@@ -39,10 +37,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.ConditionalRangeFont.clear
-    summary: |-
-      Resets the font formats.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Resets the font formats. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: clear
     langs:
@@ -55,10 +52,9 @@ items:
           - void
         description: ''
   - uid: excel.Excel.ConditionalRangeFont.color
-    summary: |-
-      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      HTML color code representation of the text color. E.g. \#FF0000 represents Red. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -84,10 +80,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ConditionalRangeFont.italic
-    summary: |-
-      Represents the italic status of the font.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the italic status of the font. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: italic
     fullName: italic
     langs:
@@ -133,10 +128,9 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.ConditionalRangeFont.strikethrough
-    summary: |-
-      Represents the strikethrough status of the font.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the strikethrough status of the font. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: strikethrough
     fullName: strikethrough
     langs:
@@ -166,10 +160,9 @@ items:
           - excel.Excel.Interfaces.ConditionalRangeFontData
         description: ''
   - uid: excel.Excel.ConditionalRangeFont.underline
-    summary: |-
-      Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details. \[ [API set:
+      ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underline
     fullName: underline
     langs:

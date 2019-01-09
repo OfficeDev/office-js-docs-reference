@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.ParagraphCollection
-    summary: |-
-      Contains a collection of [Word.Paragraph](xref:word.Word.Paragraph) objects.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Contains a collection of [Word.Paragraph](xref:word.Word.Paragraph) objects. \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.ParagraphCollection
     fullName: Word.ParagraphCollection
     langs:
@@ -39,10 +38,9 @@ items:
         type:
           - RequestContext
   - uid: word.Word.ParagraphCollection.getFirst
-    summary: |-
-      Gets the first paragraph in this collection. Throws if the collection is empty.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the first paragraph in this collection. Throws if the collection is empty. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirst()
     fullName: getFirst
     langs:
@@ -55,10 +53,9 @@ items:
           - Word.Paragraph
         description: ''
   - uid: word.Word.ParagraphCollection.getFirstOrNullObject
-    summary: |-
-      Gets the first paragraph in this collection. Returns a null object if the collection is empty.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the first paragraph in this collection. Returns a null object if the collection is empty. \[ [API set:
+      WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirstOrNullObject()
     fullName: getFirstOrNullObject
     langs:
@@ -71,10 +68,9 @@ items:
           - Word.Paragraph
         description: ''
   - uid: word.Word.ParagraphCollection.getLast
-    summary: |-
-      Gets the last paragraph in this collection. Throws if the collection is empty.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the last paragraph in this collection. Throws if the collection is empty. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getLast()
     fullName: getLast
     langs:
@@ -87,10 +83,9 @@ items:
           - Word.Paragraph
         description: ''
   - uid: word.Word.ParagraphCollection.getLastOrNullObject
-    summary: |-
-      Gets the last paragraph in this collection. Returns a null object if the collection is empty.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the last paragraph in this collection. Returns a null object if the collection is empty. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getLastOrNullObject()
     fullName: getLastOrNullObject
     langs:

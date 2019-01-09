@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.AppointmentForm
-    summary: |-
-      The AppointmentForm namespace is used to access the currently selected appointment.
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: >-
+      The AppointmentForm namespace is used to access the currently selected appointment. \[ [API set: Mailbox
+      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
@@ -28,10 +27,9 @@ items:
       - outlook.Office.AppointmentForm.start
       - outlook.Office.AppointmentForm.subject
   - uid: outlook.Office.AppointmentForm.body
-    summary: |-
-      Gets an object that provides methods for manipulating the body of an item.
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: >-
+      Gets an object that provides methods for manipulating the body of an item. \[ [API set: Mailbox
+      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -71,10 +69,8 @@ items:
 
 
       When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to
-      convert the local time on the client to UTC for the server.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      convert the local time on the client to UTC for the server. \[ [API set: Mailbox
+      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -107,10 +103,8 @@ items:
 
 
       The location property returns a Location object that provides methods that are used to get and set the location of
-      the appointment.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      the appointment. \[ [API set: Mailbox
+      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -143,10 +137,8 @@ items:
 
 
       The optionalAttendees property returns a Recipients object that provides methods to get or update the optional
-      attendees for a meeting.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      attendees for a meeting. \[ [API set: Mailbox
+      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -181,10 +173,8 @@ items:
 
 
       The requiredAttendees property returns a Recipients object that provides methods to get or update the required
-      attendees for a meeting.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      attendees for a meeting. \[ [API set: Mailbox
+      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -235,10 +225,8 @@ items:
 
 
       When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to
-      convert the local time on the client to UTC for the server.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      convert the local time on the client to UTC for the server. \[ [API set: Mailbox
+      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -274,10 +262,8 @@ items:
       *Compose mode*
 
 
-      The subject property returns a Subject object that provides methods to get and set the subject.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      The subject property returns a Subject object that provides methods to get and set the subject. \[ [API set:
+      Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>

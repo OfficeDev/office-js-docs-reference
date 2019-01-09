@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.InkStrokePointer
-    summary: |-
-      Weak reference to an ink stroke object and its content parent.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Weak reference to an ink stroke object and its content parent. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkStrokePointer
     fullName: OneNote.InkStrokePointer
     langs:
@@ -15,10 +14,9 @@ items:
       - onenote.OneNote.InkStrokePointer.contentId
       - onenote.OneNote.InkStrokePointer.inkStrokeId
   - uid: onenote.OneNote.InkStrokePointer.contentId
-    summary: |-
-      Represents the id of the page content object corresponding to this stroke
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Represents the id of the page content object corresponding to this stroke \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: contentId
     fullName: contentId
     langs:
@@ -30,10 +28,9 @@ items:
         type:
           - string
   - uid: onenote.OneNote.InkStrokePointer.inkStrokeId
-    summary: |-
-      Represents the id of the ink stroke
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Represents the id of the ink stroke \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkStrokeId
     fullName: inkStrokeId
     langs:

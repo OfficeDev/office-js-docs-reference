@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.Comment
     summary: >-
-      Represents a cell comment object in the workbook.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents a cell comment object in the workbook. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.Comment
@@ -40,10 +37,7 @@ items:
           - RequestContext
   - uid: excel.Excel.Comment.id
     summary: >-
-      Represents the comment identifier. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the comment identifier. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: id
@@ -58,11 +52,8 @@ items:
           - string
   - uid: excel.Excel.Comment.isParent
     summary: >-
-      Represents whether it is a comment thread or reply. Always return true here. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents whether it is a comment thread or reply. Always return true here. Read-only. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: isParent
     fullName: isParent
@@ -111,11 +102,8 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.Comment.replies
     summary: >-
-      Represents a collection of reply objects associated with the comment. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents a collection of reply objects associated with the comment. Read-only. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: replies
     fullName: replies

@@ -7,10 +7,8 @@ items:
 
       Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
       represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows
-      are added, a table row will continue to point at the index for which it was created.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      are added, a table row will continue to point at the index for which it was created. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableRowCollection
     fullName: Excel.TableRowCollection
     langs:
@@ -35,10 +33,8 @@ items:
 
       Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
       represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows
-      are added, a table row will continue to point at the index for which it was created.
-
-
-      \[ [API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple
+      are added, a table row will continue to point at the index for which it was created. \[ [API set: ExcelApi 1.1 for
+      adding a single row; 1.4 allows adding of multiple
       rows.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(index, values)'
     fullName: add
@@ -98,10 +94,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.TableRowCollection.count
-    summary: |-
-      Returns the number of rows in the table. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the number of rows in the table. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -113,10 +108,9 @@ items:
         type:
           - number
   - uid: excel.Excel.TableRowCollection.getCount
-    summary: |-
-      Gets the number of rows in the table.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the number of rows in the table. \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -135,10 +129,8 @@ items:
 
       Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
       represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows
-      are added, a table row will continue to point at the index for which it was created.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      are added, a table row will continue to point at the index for which it was created. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:

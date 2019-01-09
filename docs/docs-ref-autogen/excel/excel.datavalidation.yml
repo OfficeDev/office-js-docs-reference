@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.DataValidation
-    summary: |-
-      Represents the data validation applied to the current range.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the data validation applied to the current range. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataValidation
     fullName: Excel.DataValidation
     langs:
@@ -27,10 +26,9 @@ items:
       - excel.Excel.DataValidation.type
       - excel.Excel.DataValidation.valid
   - uid: excel.Excel.DataValidation.clear
-    summary: |-
-      Clears the data validation from the current range.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Clears the data validation from the current range. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: clear
     langs:
@@ -57,10 +55,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.DataValidation.errorAlert
-    summary: |-
-      Error alert when user enters invalid data.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Error alert when user enters invalid data. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: errorAlert
     fullName: errorAlert
     langs:
@@ -107,10 +104,7 @@ items:
   - uid: excel.Excel.DataValidation.getInvalidCells
     summary: >-
       Returns a RangeAreas, comprising one or more rectangular ranges, with invalid cell values. If all cell values are
-      valid, this function will throw an ItemNotFound error.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      valid, this function will throw an ItemNotFound error. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getInvalidCells()
@@ -127,10 +121,7 @@ items:
   - uid: excel.Excel.DataValidation.getInvalidCellsOrNullObject
     summary: >-
       Returns a RangeAreas, comprising one or more rectangular ranges, with invalid cell values. If all cell values are
-      valid, this function will return null.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      valid, this function will return null. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getInvalidCellsOrNullObject()
@@ -145,10 +136,9 @@ items:
           - excel.Excel.RangeAreas
         description: ''
   - uid: excel.Excel.DataValidation.ignoreBlanks
-    summary: |-
-      Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Ignore blanks: no data validation will be performed on blank cells, it defaults to true. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ignoreBlanks
     fullName: ignoreBlanks
     langs:
@@ -194,10 +184,9 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.DataValidation.prompt
-    summary: |-
-      Prompt when users select a cell.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Prompt when users select a cell. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: prompt
     fullName: prompt
     langs:
@@ -209,10 +198,9 @@ items:
         type:
           - excel.Excel.DataValidationPrompt
   - uid: excel.Excel.DataValidation.rule
-    summary: |-
-      Data Validation rule that contains different type of data validation criteria.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Data Validation rule that contains different type of data validation criteria. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: rule
     langs:
@@ -242,10 +230,9 @@ items:
           - excel.Excel.Interfaces.DataValidationData
         description: ''
   - uid: excel.Excel.DataValidation.type
-    summary: |-
-      Type of the data validation, see Excel.DataValidationType for details.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Type of the data validation, see Excel.DataValidationType for details. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -264,10 +251,8 @@ items:
     summary: >-
       Represents if all cell values are valid according to the data validation rules. Returns true if all cell values
       are valid, or false if all cell values are invalid. Returns null if there are both valid and invalid cell values
-      within the range.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      within the range. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valid
     fullName: valid
     langs:

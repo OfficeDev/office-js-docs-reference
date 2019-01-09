@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Notebook
-    summary: |-
-      Represents a OneNote notebook. Notebooks contain section groups and sections.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Represents a OneNote notebook. Notebooks contain section groups and sections. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Notebook
     fullName: OneNote.Notebook
     langs:
@@ -29,10 +28,9 @@ items:
       - onenote.OneNote.Notebook.track
       - onenote.OneNote.Notebook.untrack
   - uid: onenote.OneNote.Notebook.addSection
-    summary: |-
-      Adds a new section to the end of the notebook.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Adds a new section to the end of the notebook. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: addSection(name)
     fullName: addSection
     langs:
@@ -78,10 +76,9 @@ items:
           type:
             - string
   - uid: onenote.OneNote.Notebook.addSectionGroup
-    summary: |-
-      Adds a new section group to the end of the notebook.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Adds a new section group to the end of the notebook. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: addSectionGroup(name)
     fullName: addSectionGroup
     langs:
@@ -127,10 +124,9 @@ items:
           type:
             - string
   - uid: onenote.OneNote.Notebook.baseUrl
-    summary: |-
-      The url of the site that this notebook is located. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      The url of the site that this notebook is located. Read only \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: baseUrl
     fullName: baseUrl
     langs:
@@ -142,10 +138,9 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Notebook.clientUrl
-    summary: |-
-      The client url of the notebook. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      The client url of the notebook. Read only \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clientUrl
     fullName: clientUrl
     langs:
@@ -157,10 +152,9 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Notebook.getRestApiId
-    summary: |-
-      Gets the REST API ID.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the REST API ID. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getRestApiId()
     fullName: getRestApiId
     langs:
@@ -193,10 +187,9 @@ items:
           });
           ```
   - uid: onenote.OneNote.Notebook.id
-    summary: |-
-      Gets the ID of the notebook. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the ID of the notebook. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -208,10 +201,9 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Notebook.isVirtual
-    summary: |-
-      True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
-
-      \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only \[ [API set: OneNoteApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: isVirtual
     fullName: isVirtual
     langs:
@@ -405,10 +397,9 @@ items:
           type:
             - 'string | string[]'
   - uid: onenote.OneNote.Notebook.name
-    summary: |-
-      Gets the name of the notebook. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the name of the notebook. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -420,10 +411,9 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Notebook.sectionGroups
-    summary: |-
-      The section groups in the notebook. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      The section groups in the notebook. Read only \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sectionGroups
     fullName: sectionGroups
     langs:
@@ -435,10 +425,9 @@ items:
         type:
           - onenote.OneNote.SectionGroupCollection
   - uid: onenote.OneNote.Notebook.sections
-    summary: |-
-      The the sections of the notebook. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      The the sections of the notebook. Read only \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sections
     fullName: sections
     langs:

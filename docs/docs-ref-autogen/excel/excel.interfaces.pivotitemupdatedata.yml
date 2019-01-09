@@ -13,10 +13,9 @@ items:
       - excel.Excel.Interfaces.PivotItemUpdateData.name
       - excel.Excel.Interfaces.PivotItemUpdateData.visible
   - uid: excel.Excel.Interfaces.PivotItemUpdateData.isExpanded
-    summary: |-
-      Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden. \[
+      [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isExpanded
     fullName: isExpanded
     langs:
@@ -28,10 +27,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.PivotItemUpdateData.name
-    summary: |-
-      Name of the PivotItem.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Name of the PivotItem. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -43,10 +41,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.PivotItemUpdateData.visible
-    summary: |-
-      Determines whether the PivotItem is visible or not.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Determines whether the PivotItem is visible or not. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:

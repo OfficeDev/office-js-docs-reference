@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.SectionGroupCollection
-    summary: |-
-      Represents a collection of section groups.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Represents a collection of section groups. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.SectionGroupCollection
     fullName: OneNote.SectionGroupCollection
     langs:
@@ -24,10 +23,9 @@ items:
       - onenote.OneNote.SectionGroupCollection.track
       - onenote.OneNote.SectionGroupCollection.untrack
   - uid: onenote.OneNote.SectionGroupCollection.count
-    summary: |-
-      Returns the number of section groups in the collection. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Returns the number of section groups in the collection. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -39,10 +37,9 @@ items:
         type:
           - number
   - uid: onenote.OneNote.SectionGroupCollection.getByName
-    summary: |-
-      Gets the collection of section groups with the specified name.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the collection of section groups with the specified name. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getByName(name)
     fullName: getByName
     langs:
@@ -97,10 +94,9 @@ items:
           type:
             - string
   - uid: onenote.OneNote.SectionGroupCollection.getItem
-    summary: |-
-      Gets a section group by ID or by its index in the collection. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets a section group by ID or by its index in the collection. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: getItem
     langs:
@@ -118,10 +114,9 @@ items:
           type:
             - number | string
   - uid: onenote.OneNote.SectionGroupCollection.getItemAt
-    summary: |-
-      Gets a section group on its position in the collection.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets a section group on its position in the collection. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:

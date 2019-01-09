@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.DataValidationErrorAlert
-    summary: |-
-      Represents the error alert properties for the data validation.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the error alert properties for the data validation. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataValidationErrorAlert
     fullName: Excel.DataValidationErrorAlert
     langs:
@@ -17,10 +16,9 @@ items:
       - excel.Excel.DataValidationErrorAlert.style
       - excel.Excel.DataValidationErrorAlert.title
   - uid: excel.Excel.DataValidationErrorAlert.message
-    summary: |-
-      Represents error alert message.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents error alert message. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: message
     fullName: message
     langs:
@@ -32,10 +30,9 @@ items:
         type:
           - string
   - uid: excel.Excel.DataValidationErrorAlert.showAlert
-    summary: |-
-      It determines show error alert dialog or not when users enter invalid data, it defaults to true.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      It determines show error alert dialog or not when users enter invalid data, it defaults to true. \[ [API set:
+      ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAlert
     fullName: showAlert
     langs:
@@ -47,10 +44,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.DataValidationErrorAlert.style
-    summary: |-
-      Represents Data validation alert type, please see Excel.DataValidationAlertStyle for details.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents Data validation alert type, please see Excel.DataValidationAlertStyle for details. \[ [API set:
+      ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: style
     langs:
@@ -62,10 +58,9 @@ items:
         type:
           - Excel.DataValidationAlertStyle | "Stop" | "Warning" | "Information"
   - uid: excel.Excel.DataValidationErrorAlert.title
-    summary: |-
-      Represents error alert dialog title.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents error alert dialog title. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
     fullName: title
     langs:

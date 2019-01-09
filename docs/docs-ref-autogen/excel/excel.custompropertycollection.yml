@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.CustomPropertyCollection
-    summary: |-
-      Contains the collection of customProperty objects.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Contains the collection of customProperty objects. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomPropertyCollection
     fullName: Excel.CustomPropertyCollection
     langs:
@@ -24,10 +23,9 @@ items:
       - excel.Excel.CustomPropertyCollection.load
       - excel.Excel.CustomPropertyCollection.toJSON
   - uid: excel.Excel.CustomPropertyCollection.add
-    summary: |-
-      Creates a new or sets an existing custom property.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Creates a new or sets an existing custom property. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(key, value)'
     fullName: add
     langs:
@@ -63,10 +61,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.CustomPropertyCollection.deleteAll
-    summary: |-
-      Deletes all custom properties in this collection.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Deletes all custom properties in this collection. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: deleteAll()
     fullName: deleteAll
     langs:
@@ -79,10 +76,9 @@ items:
           - void
         description: ''
   - uid: excel.Excel.CustomPropertyCollection.getCount
-    summary: |-
-      Gets the count of custom properties.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the count of custom properties. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -95,9 +91,8 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.CustomPropertyCollection.getItem
-    summary: |-
+    summary: >-
       Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.
-
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
     fullName: getItem
@@ -118,10 +113,8 @@ items:
   - uid: excel.Excel.CustomPropertyCollection.getItemOrNullObject
     summary: >-
       Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property
-      does not exist.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      does not exist. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
     fullName: getItemOrNullObject
     langs:

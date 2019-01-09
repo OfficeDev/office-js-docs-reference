@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.DataPivotHierarchyCollection
-    summary: |-
-      Represents a collection of DataPivotHierarchy items associated with the PivotTable.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents a collection of DataPivotHierarchy items associated with the PivotTable. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataPivotHierarchyCollection
     fullName: Excel.DataPivotHierarchyCollection
     langs:
@@ -24,10 +23,9 @@ items:
       - excel.Excel.DataPivotHierarchyCollection.remove
       - excel.Excel.DataPivotHierarchyCollection.toJSON
   - uid: excel.Excel.DataPivotHierarchyCollection.add
-    summary: |-
-      Adds the PivotHierarchy to the current axis.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Adds the PivotHierarchy to the current axis. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(pivotHierarchy)
     fullName: add
     langs:
@@ -59,10 +57,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.DataPivotHierarchyCollection.getCount
-    summary: |-
-      Gets the number of pivot hierarchies in the collection.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the number of pivot hierarchies in the collection. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -75,10 +72,9 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.DataPivotHierarchyCollection.getItem
-    summary: |-
-      Gets a DataPivotHierarchy by its name or id.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a DataPivotHierarchy by its name or id. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
     fullName: getItem
     langs:
@@ -96,10 +92,9 @@ items:
           type:
             - string
   - uid: excel.Excel.DataPivotHierarchyCollection.getItemOrNullObject
-    summary: |-
-      Gets a DataPivotHierarchy by name. If the DataPivotHierarchy does not exist, will return a null object.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a DataPivotHierarchy by name. If the DataPivotHierarchy does not exist, will return a null object. \[ [API
+      set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
     fullName: getItemOrNullObject
     langs:
@@ -163,10 +158,9 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.DataPivotHierarchyCollection.remove
-    summary: |-
-      Removes the PivotHierarchy from the current axis.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Removes the PivotHierarchy from the current axis. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: remove(DataPivotHierarchy)
     fullName: remove
     langs:

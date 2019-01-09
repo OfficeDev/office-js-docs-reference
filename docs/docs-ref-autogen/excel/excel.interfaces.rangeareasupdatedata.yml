@@ -14,10 +14,7 @@ items:
       - excel.Excel.Interfaces.RangeAreasUpdateData.style
   - uid: excel.Excel.Interfaces.RangeAreasUpdateData.dataValidation
     summary: >-
-      Returns a dataValidation object for all ranges in the RangeAreas.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns a dataValidation object for all ranges in the RangeAreas. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: dataValidation
@@ -33,10 +30,7 @@ items:
   - uid: excel.Excel.Interfaces.RangeAreasUpdateData.format
     summary: >-
       Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all
-      ranges in the RangeAreas object.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      ranges in the RangeAreas object. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: format
@@ -53,10 +47,7 @@ items:
     summary: >-
       Represents the style for all ranges in this RangeAreas object. If the styles of the cells are inconsistent, null
       will be returned. For custom styles, the style name will be returned. For built-in styles, a string representing a
-      value in the BuiltInStyle enum will be returned.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      value in the BuiltInStyle enum will be returned. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: style

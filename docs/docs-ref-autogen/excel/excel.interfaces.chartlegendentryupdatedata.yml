@@ -11,10 +11,9 @@ items:
     children:
       - excel.Excel.Interfaces.ChartLegendEntryUpdateData.visible
   - uid: excel.Excel.Interfaces.ChartLegendEntryUpdateData.visible
-    summary: |-
-      Represents the visible of a chart legend entry.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the visible of a chart legend entry. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:

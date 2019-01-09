@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.RangeBorderCollection
-    summary: |-
-      Represents the border objects that make up the range border.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the border objects that make up the range border. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeBorderCollection
     fullName: Excel.RangeBorderCollection
     langs:
@@ -37,10 +36,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.RangeBorderCollection.count
-    summary: |-
-      Number of border objects in the collection. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Number of border objects in the collection. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -52,10 +50,9 @@ items:
         type:
           - number
   - uid: excel.Excel.RangeBorderCollection.getItem
-    summary: |-
-      Gets a border object using its name.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a border object using its name. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(index)
     fullName: getItem
     langs:
@@ -113,10 +110,9 @@ items:
           type:
             - excel.Excel.BorderIndex
   - uid: excel.Excel.RangeBorderCollection.getItemAt
-    summary: |-
-      Gets a border object using its index.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a border object using its index. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:
@@ -256,10 +252,7 @@ items:
     summary: >-
       Returns or sets a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and
       1 (brightest), with 0 for the original color. A null value indicates that the entire border collections don't have
-      uniform tintAndShade setting.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      uniform tintAndShade setting. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: tintAndShade

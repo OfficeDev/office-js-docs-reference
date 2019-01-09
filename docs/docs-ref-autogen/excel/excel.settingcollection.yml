@@ -3,10 +3,8 @@ items:
   - uid: excel.Excel.SettingCollection
     summary: >-
       Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to
-      per file and add-in (task-pane or content) combination.
-
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      per file and add-in (task-pane or content) combination. \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.SettingCollection
     fullName: Excel.SettingCollection
     langs:
@@ -26,10 +24,9 @@ items:
       - excel.Excel.SettingCollection.onSettingsChanged
       - excel.Excel.SettingCollection.toJSON
   - uid: excel.Excel.SettingCollection.add
-    summary: |-
-      Sets or adds the specified setting to the workbook.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Sets or adds the specified setting to the workbook. \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(key, value)'
     fullName: add
     langs:
@@ -77,10 +74,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.SettingCollection.getCount
-    summary: |-
-      Gets the number of Settings in the collection.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the number of Settings in the collection. \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -93,10 +89,9 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.SettingCollection.getItem
-    summary: |-
-      Gets a Setting entry via the key.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a Setting entry via the key. \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
     fullName: getItem
     langs:
@@ -114,10 +109,9 @@ items:
           type:
             - string
   - uid: excel.Excel.SettingCollection.getItemOrNullObject
-    summary: |-
-      Gets a Setting entry via the key. If the Setting does not exist, will return a null object.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a Setting entry via the key. If the Setting does not exist, will return a null object. \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
     fullName: getItemOrNullObject
     langs:
@@ -202,10 +196,9 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.SettingCollection.onSettingsChanged
-    summary: |-
-      Occurs when the Settings in the document are changed.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Occurs when the Settings in the document are changed. \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSettingsChanged
     fullName: onSettingsChanged
     langs:

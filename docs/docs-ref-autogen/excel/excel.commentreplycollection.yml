@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.CommentReplyCollection
     summary: >-
-      Represents a collection of comment reply objects that are part of the comment.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents a collection of comment reply objects that are part of the comment. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.CommentReplyCollection
@@ -25,10 +22,7 @@ items:
       - excel.Excel.CommentReplyCollection.toJSON
   - uid: excel.Excel.CommentReplyCollection.add
     summary: >-
-      Creates a comment reply for comment.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Creates a comment reply for comment. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'add(content, contentType)'
@@ -68,10 +62,7 @@ items:
           - RequestContext
   - uid: excel.Excel.CommentReplyCollection.getItem
     summary: >-
-      Returns a comment reply identified by its ID. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns a comment reply identified by its ID. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItem(commentReplyId)

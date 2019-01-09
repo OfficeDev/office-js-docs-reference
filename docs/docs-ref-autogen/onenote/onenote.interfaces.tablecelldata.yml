@@ -16,10 +16,9 @@ items:
       - onenote.OneNote.Interfaces.TableCellData.rowIndex
       - onenote.OneNote.Interfaces.TableCellData.shadingColor
   - uid: onenote.OneNote.Interfaces.TableCellData.cellIndex
-    summary: |-
-      Gets the index of the cell in its row. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the index of the cell in its row. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: cellIndex
     fullName: cellIndex
     langs:
@@ -31,10 +30,9 @@ items:
         type:
           - number
   - uid: onenote.OneNote.Interfaces.TableCellData.id
-    summary: |-
-      Gets the ID of the cell. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the ID of the cell. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -46,10 +44,9 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Interfaces.TableCellData.paragraphs
-    summary: |-
-      Gets the collection of Paragraph objects in the TableCell. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the collection of Paragraph objects in the TableCell. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraphs
     fullName: paragraphs
     langs:
@@ -61,10 +58,9 @@ items:
         type:
           - 'OneNote.Interfaces.ParagraphData[]'
   - uid: onenote.OneNote.Interfaces.TableCellData.parentRow
-    summary: |-
-      Gets the parent row of the cell. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the parent row of the cell. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentRow
     fullName: parentRow
     langs:
@@ -76,10 +72,9 @@ items:
         type:
           - OneNote.Interfaces.TableRowData
   - uid: onenote.OneNote.Interfaces.TableCellData.rowIndex
-    summary: |-
-      Gets the index of the cell's row in the table. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets the index of the cell's row in the table. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rowIndex
     fullName: rowIndex
     langs:
@@ -91,10 +86,9 @@ items:
         type:
           - number
   - uid: onenote.OneNote.Interfaces.TableCellData.shadingColor
-    summary: |-
-      Gets and sets the shading color of the cell
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets and sets the shading color of the cell \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: shadingColor
     fullName: shadingColor
     langs:

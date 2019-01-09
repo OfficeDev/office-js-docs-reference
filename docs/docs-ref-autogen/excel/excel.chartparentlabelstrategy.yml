@@ -2,11 +2,8 @@
 items:
   - uid: excel.Excel.ChartParentLabelStrategy
     summary: >-
-      Represents the parent lable strategy type of chart series layout, only applicable in Treemap chart.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents the parent lable strategy type of chart series layout, only applicable in Treemap chart. \[ [API set:
+      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.ChartParentLabelStrategy
     fullName: Excel.ChartParentLabelStrategy

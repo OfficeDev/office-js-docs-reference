@@ -2,11 +2,8 @@
 items:
   - uid: excel.Excel.ChartGradientStyleType
     summary: >-
-      Represents the Gradient Style of chart series, only applicable in RegionMap chart.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents the Gradient Style of chart series, only applicable in RegionMap chart. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.ChartGradientStyleType
     fullName: Excel.ChartGradientStyleType

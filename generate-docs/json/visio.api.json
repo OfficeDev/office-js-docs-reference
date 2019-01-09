@@ -20,14 +20,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the Application."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the Application. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -111,14 +104,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Show or hide the iFrame application borders."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Show or hide the iFrame application borders. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -168,14 +154,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets the visibility of a specific toolbar in the application."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Sets the visibility of a specific toolbar in the application. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -195,14 +174,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Show or hide the standard toolbars."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Show or hide the standard toolbars. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -242,14 +214,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the BoundingBox of the shape."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the BoundingBox of the shape. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -267,14 +232,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "The distance between the top and bottom edges of the bounding box of the shape, excluding any data graphics associated with the shape."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "The distance between the top and bottom edges of the bounding box of the shape, excluding any data graphics associated with the shape. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -295,14 +253,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "The distance between the left and right edges of the bounding box of the shape, excluding any data graphics associated with the shape."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "The distance between the left and right edges of the bounding box of the shape, excluding any data graphics associated with the shape. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -323,14 +274,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An integer that specifies the x-coordinate of the bounding box."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "An integer that specifies the x-coordinate of the bounding box. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -351,14 +295,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An integer that specifies the y-coordinate of the bounding box."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "An integer that specifies the y-coordinate of the bounding box. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -379,14 +316,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the Comment."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the Comment. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -404,14 +334,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that specifies the name of the author of the comment."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "A string that specifies the name of the author of the comment. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -432,14 +355,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that specifies the date when the comment was created."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "A string that specifies the date when the comment was created. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -526,14 +442,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that contains the comment text."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "A string that contains the comment text. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -573,14 +482,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the CommentCollection for a given Shape."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the CommentCollection for a given Shape. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -602,14 +504,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the number of Comments."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the number of Comments. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -646,14 +541,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the Comment using its name."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the Comment using its name. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -779,14 +667,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Provides information about the document that raised the DataRefreshComplete event."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Provides information about the document that raised the DataRefreshComplete event. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -804,14 +685,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the document object that raised the DataRefreshComplete event."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the document object that raised the DataRefreshComplete event. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -832,14 +706,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the success or failure of the DataRefreshComplete event."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the success or failure of the DataRefreshComplete event. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -860,14 +727,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the Document class."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the Document class. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -885,14 +745,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Represents a Visio application instance that contains this document. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Represents a Visio application instance that contains this document. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -917,14 +770,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the Active Page of the document."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Returns the Active Page of the document. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1010,14 +856,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Occurs when the data is refreshed in the diagram."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Occurs when the data is refreshed in the diagram. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1038,14 +877,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Occurs when the Document is loaded, refreshed, or changed."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Occurs when the Document is loaded, refreshed, or changed. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1066,14 +898,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Occurs when the page is finished loading."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Occurs when the page is finished loading. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1094,14 +919,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Occurs when the current selection of shapes changes."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Occurs when the current selection of shapes changes. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1122,14 +940,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Occurs when the user moves the mouse pointer into the bounding box of a shape."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Occurs when the user moves the mouse pointer into the bounding box of a shape. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1150,14 +961,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Occurs when the user moves the mouse out of the bounding box of a shape."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Occurs when the user moves the mouse out of the bounding box of a shape. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1178,14 +982,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Represents a collection of pages associated with the document. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Represents a collection of pages associated with the document. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1223,14 +1020,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Set the Active Page of the document."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Set the Active Page of the document. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1254,14 +1044,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers the refresh of the data in the Diagram, for all pages."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Triggers the refresh of the data in the Diagram, for all pages. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1300,14 +1083,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the DocumentView object. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Returns the DocumentView object. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1328,14 +1104,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Provides information about the success or failure of the DocumentLoadComplete event."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Provides information about the success or failure of the DocumentLoadComplete event. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -1353,14 +1122,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the success or failure of the DocumentLoadComplete event."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the success or failure of the DocumentLoadComplete event. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1381,14 +1143,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the DocumentView class."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the DocumentView class. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -1406,14 +1161,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Disable Hyperlinks."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Disable Hyperlinks. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1434,14 +1182,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Disable Pan."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Disable Pan. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1462,14 +1203,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Disable Zoom."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Disable Zoom. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1490,14 +1224,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Hide Diagram Boundary."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Hide Diagram Boundary. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1660,14 +1387,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the highlight data added to the shape."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the highlight data added to the shape. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -1685,14 +1405,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that specifies the color of the highlight. It must have the form \"#RRGGBB\", where each letter represents a hexadecimal digit between 0 and F, and where RR is the red value between 0 and 0xFF (255), GG the green value between 0 and 0xFF (255), and BB is the blue value between 0 and 0xFF (255)."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "A string that specifies the color of the highlight. It must have the form \"#RRGGBB\", where each letter represents a hexadecimal digit between 0 and F, and where RR is the red value between 0 and 0xFF (255), GG the green value between 0 and 0xFF (255), and BB is the blue value between 0 and 0xFF (255). [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1713,14 +1426,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A positive integer that specifies the width of the highlight's stroke in pixels."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "A positive integer that specifies the width of the highlight's stroke in pixels. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1741,14 +1447,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the Hyperlink."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the Hyperlink. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -1766,14 +1465,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the address of the Hyperlink object. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the address of the Hyperlink object. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1794,14 +1486,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the description of a hyperlink. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the description of a hyperlink. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1822,14 +1507,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the extra URL request information used to resolve the hyperlink's URL. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the extra URL request information used to resolve the hyperlink's URL. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1916,14 +1594,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the sub-address of the Hyperlink object. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the sub-address of the Hyperlink object. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -1963,14 +1634,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the Hyperlink Collection."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the Hyperlink Collection. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -1992,14 +1656,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the number of hyperlinks."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the number of hyperlinks. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -2036,14 +1693,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets a Hyperlink using its key (name or Id)."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets a Hyperlink using its key (name or Id). [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -2194,14 +1844,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Show or hide the iFrame application borders."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Show or hide the iFrame application borders. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2222,14 +1865,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Show or hide the standard toolbars."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Show or hide the standard toolbars. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2268,14 +1904,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Show or hide the iFrame application borders."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Show or hide the iFrame application borders. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2296,14 +1925,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Show or hide the standard toolbars."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Show or hide the standard toolbars. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2410,14 +2032,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the name of the author of the comment."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "A string that specifies the name of the author of the comment. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2438,14 +2053,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the date when the comment was created."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "A string that specifies the date when the comment was created. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2466,14 +2074,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that contains the comment text."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "A string that contains the comment text. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2512,14 +2113,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the name of the author of the comment."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "A string that specifies the name of the author of the comment. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2540,14 +2134,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the date when the comment was created."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "A string that specifies the date when the comment was created. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2568,14 +2155,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that contains the comment text."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "A string that contains the comment text. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2614,14 +2194,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Represents a Visio application instance that contains this document. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Represents a Visio application instance that contains this document. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2642,14 +2215,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Represents a collection of pages associated with the document. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Represents a collection of pages associated with the document. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2670,14 +2236,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the DocumentView object. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Returns the DocumentView object. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2716,14 +2275,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Represents a Visio application instance that contains this document."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Represents a Visio application instance that contains this document. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2744,14 +2296,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the DocumentView object."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Returns the DocumentView object. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2790,14 +2335,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Disable Hyperlinks."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Disable Hyperlinks. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2818,14 +2356,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Disable Pan."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Disable Pan. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2846,14 +2377,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Disable Zoom."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Disable Zoom. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2874,14 +2398,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Hide Diagram Boundary."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Hide Diagram Boundary. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2920,14 +2437,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Disable Hyperlinks."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Disable Hyperlinks. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2948,14 +2458,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Disable Pan."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Disable Pan. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -2976,14 +2479,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Disable Zoom."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Disable Zoom. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3004,14 +2500,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Hide Diagram Boundary."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Hide Diagram Boundary. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3118,14 +2607,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets the address of the Hyperlink object. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Gets the address of the Hyperlink object. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3146,14 +2628,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets the description of a hyperlink. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Gets the description of a hyperlink. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3174,14 +2649,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets the extra URL request information used to resolve the hyperlink's URL. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Gets the extra URL request information used to resolve the hyperlink's URL. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3202,14 +2670,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets the sub-address of the Hyperlink object. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Gets the sub-address of the Hyperlink object. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3316,14 +2777,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "All shapes in the Page, including subshapes. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "All shapes in the Page, including subshapes. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3344,14 +2798,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the Comments Collection. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Returns the Comments Collection. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3372,14 +2819,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the height of the page. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Returns the height of the page. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3400,14 +2840,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Index of the Page. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Index of the Page. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3428,14 +2861,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Whether the page is a background page or not. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Whether the page is a background page or not. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3456,14 +2882,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Page name. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Page name. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3484,14 +2903,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "All top-level shapes in the Page.Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "All top-level shapes in the Page.Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3512,14 +2924,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the view of the page. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Returns the view of the page. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3540,14 +2945,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the width of the page. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Returns the width of the page. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3586,14 +2984,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the view of the page."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Returns the view of the page. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3632,14 +3023,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3678,14 +3062,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3724,14 +3101,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets the Shapes of the Selection. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Gets the Shapes of the Selection. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3838,14 +3208,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the Comments Collection. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Returns the Comments Collection. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3866,14 +3229,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the Hyperlinks collection for a Shape object. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Returns the Hyperlinks collection for a Shape object. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3894,14 +3250,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Shape's identifier. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Shape's identifier. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3922,14 +3271,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Shape's name. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Shape's name. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3950,14 +3292,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns true, if shape is selected. User can set true to select the shape explicitly."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Returns true, if shape is selected. User can set true to select the shape explicitly. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -3978,14 +3313,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the Shape's Data Section. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Returns the Shape's Data Section. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -4006,14 +3334,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Gets SubShape Collection. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Gets SubShape Collection. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -4034,14 +3355,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Shape's text. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Shape's text. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -4062,14 +3376,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the view of the shape. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Returns the view of the shape. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -4176,14 +3483,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the format of the shape data item. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "A string that specifies the format of the shape data item. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -4204,14 +3504,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the formatted value of the shape data item. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "A string that specifies the formatted value of the shape data item. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -4232,14 +3525,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the label of the shape data item. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "A string that specifies the label of the shape data item. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -4260,14 +3546,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "A string that specifies the value of the shape data item. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "A string that specifies the value of the shape data item. Read-only. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -4306,14 +3585,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns true, if shape is selected. User can set true to select the shape explicitly."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Returns true, if shape is selected. User can set true to select the shape explicitly. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -4334,14 +3606,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Returns the view of the shape."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Returns the view of the shape. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -4380,14 +3645,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Represents the highlight around the shape."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Represents the highlight around the shape. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -4426,14 +3684,7 @@
                   "summary": [
                     {
                       "kind": "text",
-                      "text": "Represents the highlight around the shape."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: 1.1]"
+                      "text": "Represents the highlight around the shape. [Api set: 1.1]"
                     }
                   ],
                   "remarks": [],
@@ -4494,14 +3745,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the Horizontal Alignment of the Overlay relative to the shape."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the Horizontal Alignment of the Overlay relative to the shape. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -4541,14 +3785,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the type of the overlay."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the type of the overlay. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -4601,14 +3838,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the Vertical Alignment of the Overlay relative to the shape."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the Vertical Alignment of the Overlay relative to the shape. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -4623,14 +3853,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the Page class."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the Page class. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -4652,14 +3875,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Set the page as Active Page of the document."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Set the page as Active Page of the document. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -4679,14 +3895,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "All shapes in the Page, including subshapes. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "All shapes in the Page, including subshapes. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -4707,14 +3916,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the Comments Collection. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Returns the Comments Collection. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -4735,14 +3937,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the height of the page. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Returns the height of the page. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -4763,14 +3958,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Index of the Page. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Index of the Page. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -4791,14 +3979,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Whether the page is a background page or not. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Whether the page is a background page or not. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -4885,14 +4066,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Page name. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Page name. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -4913,14 +4087,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "All top-level shapes in the Page.Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "All top-level shapes in the Page.Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -4960,14 +4127,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the view of the page. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Returns the view of the page. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -4988,14 +4148,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the width of the page. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Returns the width of the page. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5016,14 +4169,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents a collection of Page objects that are part of the document."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents a collection of Page objects that are part of the document. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -5045,14 +4191,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the number of pages in the collection."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the number of pages in the collection. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5089,14 +4228,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets a page using its key (name or Id)."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets a page using its key (name or Id). [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5222,14 +4354,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Provides information about the page that raised the PageLoadComplete event."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Provides information about the page that raised the PageLoadComplete event. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -5247,14 +4372,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the name of the page that raised the PageLoad event."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the name of the page that raised the PageLoad event. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5275,14 +4393,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the success or failure of the PageLoadComplete event."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the success or failure of the PageLoadComplete event. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5303,14 +4414,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Provides information about the page that raised the PageRenderComplete event."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Provides information about the page that raised the PageRenderComplete event. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -5328,14 +4432,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the name of the page that raised the PageLoad event."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the name of the page that raised the PageLoad event. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5356,14 +4453,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the success/failure of the PageRender event."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the success/failure of the PageRender event. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5384,14 +4474,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the PageView class."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the PageView class. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -5426,14 +4509,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Pans the Visio drawing to place the specified shape in the center of the view."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Pans the Visio drawing to place the specified shape in the center of the view. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5457,14 +4533,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Fit Page to current window."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Fit Page to current window. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5488,14 +4557,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the position object that specifies the position of the page in the view."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Returns the position object that specifies the position of the page in the view. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5519,14 +4581,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Represents the Selection in the page."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Represents the Selection in the page. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5563,14 +4618,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "To check if the shape is in view of the page or not."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "To check if the shape is in view of the page or not. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5673,14 +4721,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets the position of the page in the view."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Sets the position of the page in the view. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5719,14 +4760,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5747,14 +4781,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the Position of the object in the view."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the Position of the object in the view. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -5772,14 +4799,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An integer that specifies the x-coordinate of the object, which is the signed value of the distance in pixels from the viewport's center to the left boundary of the page."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "An integer that specifies the x-coordinate of the object, which is the signed value of the distance in pixels from the viewport's center to the left boundary of the page. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5800,14 +4820,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An integer that specifies the y-coordinate of the object, which is the signed value of the distance in pixels from the viewport's center to the top boundary of the page."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "An integer that specifies the y-coordinate of the object, which is the signed value of the distance in pixels from the viewport's center to the top boundary of the page. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -5974,14 +4987,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the Selection in the page."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the Selection in the page. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -6065,14 +5071,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the Shapes of the Selection. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the Shapes of the Selection. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6112,14 +5111,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Provides information about the shape collection that raised the SelectionChanged event."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Provides information about the shape collection that raised the SelectionChanged event. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -6137,14 +5129,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the name of the page which has the ShapeCollection object that raised the SelectionChanged event."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the name of the page which has the ShapeCollection object that raised the SelectionChanged event. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6165,14 +5150,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the array of shape names that raised the SelectionChanged event."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the array of shape names that raised the SelectionChanged event. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6193,14 +5171,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the Shape class."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the Shape class. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -6218,14 +5189,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the Comments Collection. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Returns the Comments Collection. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6250,14 +5214,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the BoundingBox object that specifies bounding box of the shape."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Returns the BoundingBox object that specifies bounding box of the shape. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6277,14 +5234,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the Hyperlinks collection for a Shape object. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Returns the Hyperlinks collection for a Shape object. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6305,14 +5255,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Shape's identifier. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Shape's identifier. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6399,14 +5342,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Shape's name. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Shape's name. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6427,14 +5363,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns true, if shape is selected. User can set true to select the shape explicitly."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Returns true, if shape is selected. User can set true to select the shape explicitly. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6455,14 +5384,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the Shape's Data Section. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Returns the Shape's Data Section. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6483,14 +5405,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets SubShape Collection. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets SubShape Collection. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6511,14 +5426,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Shape's text. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Shape's text. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6558,14 +5466,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns the view of the shape. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Returns the view of the shape. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6586,14 +5487,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the Shape Collection."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the Shape Collection. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -6615,14 +5509,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the number of Shapes in the collection."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the number of Shapes in the collection. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6659,14 +5546,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets a Shape using its key (name or Index)."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets a Shape using its key (name or Index). [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6792,14 +5672,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the ShapeDataItem."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the ShapeDataItem. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -6817,14 +5690,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that specifies the format of the shape data item. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "A string that specifies the format of the shape data item. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6845,14 +5711,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that specifies the formatted value of the shape data item. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "A string that specifies the formatted value of the shape data item. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6873,14 +5732,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that specifies the label of the shape data item. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "A string that specifies the label of the shape data item. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -6986,14 +5838,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "A string that specifies the value of the shape data item. Read-only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "A string that specifies the value of the shape data item. Read-only. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -7014,14 +5859,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the ShapeDataItemCollection for a given Shape."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the ShapeDataItemCollection for a given Shape. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -7043,14 +5881,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the number of Shape Data Items."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the number of Shape Data Items. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -7087,14 +5918,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the ShapeDataItem using its name."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the ShapeDataItem using its name. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -7220,14 +6044,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Provides information about the shape that raised the ShapeMouseEnter event."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Provides information about the shape that raised the ShapeMouseEnter event. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -7245,14 +6062,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the name of the page which has the shape object that raised the ShapeMouseEnter event."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the name of the page which has the shape object that raised the ShapeMouseEnter event. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -7273,14 +6083,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the name of the shape object that raised the ShapeMouseEnter event."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the name of the shape object that raised the ShapeMouseEnter event. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -7301,14 +6104,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Provides information about the shape that raised the ShapeMouseLeave event."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Provides information about the shape that raised the ShapeMouseLeave event. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -7326,14 +6122,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the name of the page which has the shape object that raised the ShapeMouseLeave event."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the name of the page which has the shape object that raised the ShapeMouseLeave event. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -7354,14 +6143,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the name of the shape object that raised the ShapeMouseLeave event."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Gets the name of the shape object that raised the ShapeMouseLeave event. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -7382,14 +6164,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the ShapeView class."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Represents the ShapeView class. [Api set: 1.1]"
             }
           ],
           "remarks": [],
@@ -7484,14 +6259,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Adds an overlay on top of the shape."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Adds an overlay on top of the shape. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -7511,14 +6279,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Represents the highlight around the shape."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Represents the highlight around the shape. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -7622,14 +6383,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Removes particular overlay or all overlays on the Shape."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: 1.1]"
+                  "text": "Removes particular overlay or all overlays on the Shape. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -7706,14 +6460,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Toolbar IDs of the app"
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "[Api set: 1.1]"
+              "text": "Toolbar IDs of the app [Api set: 1.1]"
             }
           ],
           "remarks": [],

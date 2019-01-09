@@ -11,10 +11,9 @@ items:
     children:
       - word.Word.Interfaces.ListItemUpdateData.level
   - uid: word.Word.Interfaces.ListItemUpdateData.level
-    summary: |-
-      Gets or sets the level of the item in the list.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the level of the item in the list. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: level
     fullName: level
     langs:

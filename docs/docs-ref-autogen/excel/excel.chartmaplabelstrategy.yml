@@ -2,11 +2,8 @@
 items:
   - uid: excel.Excel.ChartMapLabelStrategy
     summary: >-
-      Represents the region label strategy of chart series layout, only applicable in RegionMap chart.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents the region label strategy of chart series layout, only applicable in RegionMap chart. \[ [API set:
+      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.ChartMapLabelStrategy
     fullName: Excel.ChartMapLabelStrategy

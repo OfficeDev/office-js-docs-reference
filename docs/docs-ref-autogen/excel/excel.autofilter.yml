@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.AutoFilter
     summary: >-
-      Represents the AutoFilter object.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the AutoFilter object. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.AutoFilter
@@ -31,11 +28,8 @@ items:
       - excel.Excel.AutoFilter.toJSON
   - uid: excel.Excel.AutoFilter.apply
     summary: >-
-      Applies AutoFilter on a range and filters the column if column index and filter criteria are specified.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Applies AutoFilter on a range and filters the column if column index and filter criteria are specified. \[ [API
+      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'apply(range, columnIndex, criteria)'
     fullName: apply
@@ -63,10 +57,7 @@ items:
             - excel.Excel.FilterCriteria
   - uid: excel.Excel.AutoFilter.clearCriteria
     summary: >-
-      Clears the criteria if AutoFilter has filters
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Clears the criteria if AutoFilter has filters \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: clearCriteria()
@@ -97,10 +88,7 @@ items:
           - RequestContext
   - uid: excel.Excel.AutoFilter.criteria
     summary: >-
-      Array that holds all filter criterias in an autofiltered range. Read-Only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Array that holds all filter criterias in an autofiltered range. Read-Only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: criteria
@@ -115,10 +103,7 @@ items:
           - 'Excel.FilterCriteria[]'
   - uid: excel.Excel.AutoFilter.enabled
     summary: >-
-      Indicates if the AutoFilter is enabled or not. Read-Only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Indicates if the AutoFilter is enabled or not. Read-Only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: enabled
@@ -133,11 +118,8 @@ items:
           - boolean
   - uid: excel.Excel.AutoFilter.getRange
     summary: >-
-      Returns the Range object that represents the range to which the AutoFilter applies.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns the Range object that represents the range to which the AutoFilter applies. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getRange()
     fullName: getRange
@@ -153,10 +135,7 @@ items:
   - uid: excel.Excel.AutoFilter.getRangeOrNullObject
     summary: >-
       If there is Range object associated with the AutoFilter, this method returns it. Otherwise, this method returns a
-      null object.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      null object. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getRangeOrNullObject()
@@ -172,10 +151,7 @@ items:
         description: ''
   - uid: excel.Excel.AutoFilter.isDataFiltered
     summary: >-
-      Indicates if the AutoFilter has filter criteria. Read-Only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Indicates if the AutoFilter has filter criteria. Read-Only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: isDataFiltered
@@ -225,10 +201,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.AutoFilter.reapply
     summary: >-
-      Applies the specified Autofilter object currently on the range.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Applies the specified Autofilter object currently on the range. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: reapply()
@@ -244,10 +217,7 @@ items:
         description: ''
   - uid: excel.Excel.AutoFilter.remove
     summary: >-
-      Removes the AutoFilter for the range.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Removes the AutoFilter for the range. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: remove()

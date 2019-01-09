@@ -11,10 +11,9 @@ items:
     children:
       - onenote.OneNote.Interfaces.InkAnalysisWordUpdateData.line
   - uid: onenote.OneNote.Interfaces.InkAnalysisWordUpdateData.line
-    summary: |-
-      Reference to the parent InkAnalysisLine.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Reference to the parent InkAnalysisLine. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: line
     fullName: line
     langs:

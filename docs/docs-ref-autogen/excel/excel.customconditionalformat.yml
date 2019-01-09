@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.CustomConditionalFormat
-    summary: |-
-      Represents a custom conditional format type.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents a custom conditional format type. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomConditionalFormat
     fullName: Excel.CustomConditionalFormat
     langs:
@@ -36,10 +35,8 @@ items:
   - uid: excel.Excel.CustomConditionalFormat.format
     summary: >-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-      Read-only.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Read-only. \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
     name: format
     fullName: format
     langs:
@@ -100,10 +97,9 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.CustomConditionalFormat.rule
-    summary: |-
-      Represents the Rule object on this conditional format. Read-only.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the Rule object on this conditional format. Read-only. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: rule
     langs:

@@ -1,7 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartSplitType
-    summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartSplitType
     fullName: Excel.ChartSplitType
     langs:

@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartAxisFormat
-    summary: |-
-      Encapsulates the format properties for the chart axis.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Encapsulates the format properties for the chart axis. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartAxisFormat
     fullName: Excel.ChartAxisFormat
     langs:
@@ -35,10 +34,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ChartAxisFormat.fill
-    summary: |-
-      Represents chart fill formatting. Read-only.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents chart fill formatting. Read-only. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -50,10 +48,9 @@ items:
         type:
           - excel.Excel.ChartFill
   - uid: excel.Excel.ChartAxisFormat.font
-    summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only. \[ [API
+      set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:
@@ -65,10 +62,9 @@ items:
         type:
           - excel.Excel.ChartFont
   - uid: excel.Excel.ChartAxisFormat.line
-    summary: |-
-      Represents chart line formatting. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents chart line formatting. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
     fullName: line
     langs:

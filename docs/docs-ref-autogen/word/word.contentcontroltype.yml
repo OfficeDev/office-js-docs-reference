@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.ContentControlType
-    summary: |-
-      Specifies supported content control types and subtypes.
-
-      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Specifies supported content control types and subtypes. \[ [API set:
+      WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.ContentControlType
     fullName: Word.ContentControlType
     langs:

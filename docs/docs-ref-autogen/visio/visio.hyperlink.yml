@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Hyperlink
-    summary: |-
-      Represents the Hyperlink.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Represents the Hyperlink. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Hyperlink
     fullName: Visio.Hyperlink
     langs:
@@ -21,10 +20,9 @@ items:
       - visio.Visio.Hyperlink.subAddress
       - visio.Visio.Hyperlink.toJSON
   - uid: visio.Visio.Hyperlink.address
-    summary: |-
-      Gets the address of the Hyperlink object. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Gets the address of the Hyperlink object. Read-only. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: address
     fullName: address
     langs:
@@ -36,10 +34,9 @@ items:
         type:
           - string
   - uid: visio.Visio.Hyperlink.description
-    summary: |-
-      Gets the description of a hyperlink. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Gets the description of a hyperlink. Read-only. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: description
     fullName: description
     langs:
@@ -51,10 +48,9 @@ items:
         type:
           - string
   - uid: visio.Visio.Hyperlink.extraInfo
-    summary: |-
-      Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Gets the extra URL request information used to resolve the hyperlink's URL. Read-only. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: extraInfo
     fullName: extraInfo
     langs:
@@ -125,10 +121,9 @@ items:
           type:
             - 'string | string[]'
   - uid: visio.Visio.Hyperlink.subAddress
-    summary: |-
-      Gets the sub-address of the Hyperlink object. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Gets the sub-address of the Hyperlink object. Read-only. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: subAddress
     fullName: subAddress
     langs:

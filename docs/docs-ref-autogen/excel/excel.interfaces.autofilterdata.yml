@@ -14,10 +14,7 @@ items:
       - excel.Excel.Interfaces.AutoFilterData.isDataFiltered
   - uid: excel.Excel.Interfaces.AutoFilterData.criteria
     summary: >-
-      Array that holds all filter criterias in an autofiltered range. Read-Only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Array that holds all filter criterias in an autofiltered range. Read-Only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: criteria
@@ -32,10 +29,7 @@ items:
           - 'Excel.FilterCriteria[]'
   - uid: excel.Excel.Interfaces.AutoFilterData.enabled
     summary: >-
-      Indicates if the AutoFilter is enabled or not. Read-Only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Indicates if the AutoFilter is enabled or not. Read-Only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: enabled
@@ -50,10 +44,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.AutoFilterData.isDataFiltered
     summary: >-
-      Indicates if the AutoFilter has filter criteria. Read-Only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Indicates if the AutoFilter has filter criteria. Read-Only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: isDataFiltered

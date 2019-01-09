@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.RangeSort
-    summary: |-
-      Manages sorting operations on Range objects.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Manages sorting operations on Range objects. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeSort
     fullName: Excel.RangeSort
     langs:
@@ -18,10 +17,9 @@ items:
       - excel.Excel.RangeSort.context
       - excel.Excel.RangeSort.toJSON
   - uid: excel.Excel.RangeSort.apply
-    summary: |-
-      Perform a sort operation.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Perform a sort operation. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
     fullName: apply
     langs:

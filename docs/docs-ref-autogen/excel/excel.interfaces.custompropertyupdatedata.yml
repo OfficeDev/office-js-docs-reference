@@ -11,10 +11,9 @@ items:
     children:
       - excel.Excel.Interfaces.CustomPropertyUpdateData.value
   - uid: excel.Excel.Interfaces.CustomPropertyUpdateData.value
-    summary: |-
-      Gets or sets the value of the custom property.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the value of the custom property. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
     fullName: value
     langs:

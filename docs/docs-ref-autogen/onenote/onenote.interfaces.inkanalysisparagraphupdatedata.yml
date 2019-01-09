@@ -11,10 +11,9 @@ items:
     children:
       - onenote.OneNote.Interfaces.InkAnalysisParagraphUpdateData.inkAnalysis
   - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphUpdateData.inkAnalysis
-    summary: |-
-      Reference to the parent InkAnalysisPage.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Reference to the parent InkAnalysisPage. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkAnalysis
     fullName: inkAnalysis
     langs:

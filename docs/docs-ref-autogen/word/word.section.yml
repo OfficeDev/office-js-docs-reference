@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Section
-    summary: |-
-      Represents a section in a Word document.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Represents a section in a Word document. \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Section
     fullName: Word.Section
     langs:
@@ -27,10 +26,7 @@ items:
   - uid: word.Word.Section.body
     summary: >-
       Gets the body object of the section. This does not include the header/footer and other section metadata.
-      Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Read-only. \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: body
     fullName: body
     langs:
@@ -56,10 +52,9 @@ items:
         type:
           - RequestContext
   - uid: word.Word.Section.getFooter
-    summary: |-
-      Gets one of the section's footers.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets one of the section's footers. \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFooter(type)
     fullName: getFooter
     langs:
@@ -126,10 +121,9 @@ items:
           type:
             - word.Word.HeaderFooterType
   - uid: word.Word.Section.getHeader
-    summary: |-
-      Gets one of the section's headers.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets one of the section's headers. \[ [API set: WordApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getHeader(type)
     fullName: getHeader
     langs:
@@ -196,10 +190,9 @@ items:
           type:
             - word.Word.HeaderFooterType
   - uid: word.Word.Section.getNext
-    summary: |-
-      Gets the next section. Throws if this section is the last one.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the next section. Throws if this section is the last one. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNext()
     fullName: getNext
     langs:
@@ -212,10 +205,9 @@ items:
           - Word.Section
         description: ''
   - uid: word.Word.Section.getNextOrNullObject
-    summary: |-
-      Gets the next section. Returns a null object if this section is the last one.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the next section. Returns a null object if this section is the last one. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNextOrNullObject()
     fullName: getNextOrNullObject
     langs:

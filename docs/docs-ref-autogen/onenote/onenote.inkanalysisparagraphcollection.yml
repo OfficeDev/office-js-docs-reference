@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.InkAnalysisParagraphCollection
-    summary: |-
-      Represents a collection of InkAnalysisParagraph objects.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Represents a collection of InkAnalysisParagraph objects. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkAnalysisParagraphCollection
     fullName: OneNote.InkAnalysisParagraphCollection
     langs:
@@ -23,10 +22,9 @@ items:
       - onenote.OneNote.InkAnalysisParagraphCollection.track
       - onenote.OneNote.InkAnalysisParagraphCollection.untrack
   - uid: onenote.OneNote.InkAnalysisParagraphCollection.count
-    summary: |-
-      Returns the number of InkAnalysisParagraphs in the page. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Returns the number of InkAnalysisParagraphs in the page. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -38,10 +36,9 @@ items:
         type:
           - number
   - uid: onenote.OneNote.InkAnalysisParagraphCollection.getItem
-    summary: |-
-      Gets a InkAnalysisParagraph object by ID or by its index in the collection. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets a InkAnalysisParagraph object by ID or by its index in the collection. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: getItem
     langs:
@@ -61,10 +58,9 @@ items:
           type:
             - number | string
   - uid: onenote.OneNote.InkAnalysisParagraphCollection.getItemAt
-    summary: |-
-      Gets a InkAnalysisParagraph on its position in the collection.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets a InkAnalysisParagraph on its position in the collection. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:

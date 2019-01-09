@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalColorScaleCriterion
-    summary: |-
-      Represents a Color Scale Criterion which contains a type, value, and a color.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents a Color Scale Criterion which contains a type, value, and a color. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalColorScaleCriterion
     fullName: Excel.ConditionalColorScaleCriterion
     langs:
@@ -16,10 +15,9 @@ items:
       - excel.Excel.ConditionalColorScaleCriterion.formula
       - excel.Excel.ConditionalColorScaleCriterion.type
   - uid: excel.Excel.ConditionalColorScaleCriterion.color
-    summary: |-
-      HTML color code representation of the color scale color. E.g. \#FF0000 represents Red.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      HTML color code representation of the color scale color. E.g. \#FF0000 represents Red. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -31,10 +29,9 @@ items:
         type:
           - string
   - uid: excel.Excel.ConditionalColorScaleCriterion.formula
-    summary: |-
-      A number, a formula, or null (if Type is LowestValue).
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      A number, a formula, or null (if Type is LowestValue). \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
     fullName: formula
     langs:
@@ -46,10 +43,9 @@ items:
         type:
           - string
   - uid: excel.Excel.ConditionalColorScaleCriterion.type
-    summary: |-
-      What the icon conditional formula should be based on.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      What the icon conditional formula should be based on. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

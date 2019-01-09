@@ -21,10 +21,7 @@ items:
   - uid: excel.Excel.Interfaces.WorksheetUpdateData.enableCalculation
     summary: >-
       Gets or sets the enableCalculation property of the worksheet. True if Excel recalculates the worksheet when
-      necessary. False if Excel doesn't recalculate the sheet.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      necessary. False if Excel doesn't recalculate the sheet. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: enableCalculation
@@ -38,10 +35,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.WorksheetUpdateData.name
-    summary: |-
-      The display name of the worksheet.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The display name of the worksheet. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -54,10 +50,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.WorksheetUpdateData.pageLayout
     summary: >-
-      Gets the PageLayout object of the worksheet.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the PageLayout object of the worksheet. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: pageLayout
@@ -71,10 +64,9 @@ items:
         type:
           - excel.Excel.Interfaces.PageLayoutUpdateData
   - uid: excel.Excel.Interfaces.WorksheetUpdateData.position
-    summary: |-
-      The zero-based position of the worksheet within the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The zero-based position of the worksheet within the workbook. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: position
     langs:
@@ -86,10 +78,9 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.WorksheetUpdateData.showGridlines
-    summary: |-
-      Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user. \[
+      [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showGridlines
     fullName: showGridlines
     langs:
@@ -101,10 +92,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.WorksheetUpdateData.showHeadings
-    summary: |-
-      Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user. \[ [API
+      set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showHeadings
     fullName: showHeadings
     langs:
@@ -119,10 +109,8 @@ items:
     summary: >-
       Returns or sets the standard (default) width of all the columns in the worksheet. One unit of column width is
       equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0
-      (zero) is used.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      (zero) is used. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: standardWidth
     fullName: standardWidth
     langs:
@@ -138,10 +126,8 @@ items:
       Gets or sets the worksheet tab color. When retrieving the tab color, if the worksheet is invisible, the value will
       be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
       Otherwise, the property will be set to a color, in the form "\#123456" When setting the color, use an empty-string
-      to set an "auto" color, or a real color otherwise.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      to set an "auto" color, or a real color otherwise. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tabColor
     fullName: tabColor
     langs:
@@ -154,10 +140,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.WorksheetUpdateData.visibility
     summary: >-
-      The Visibility of the worksheet.
-
-
-      \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
+      The Visibility of the worksheet. \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
       it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visibility
     fullName: visibility

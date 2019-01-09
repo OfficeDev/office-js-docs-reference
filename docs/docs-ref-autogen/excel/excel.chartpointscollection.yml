@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartPointsCollection
-    summary: |-
-      A collection of all the chart points within a series inside a chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      A collection of all the chart points within a series inside a chart. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartPointsCollection
     fullName: Excel.ChartPointsCollection
     langs:
@@ -36,10 +35,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ChartPointsCollection.count
-    summary: |-
-      Returns the number of chart points in the series. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the number of chart points in the series. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -51,10 +49,9 @@ items:
         type:
           - number
   - uid: excel.Excel.ChartPointsCollection.getCount
-    summary: |-
-      Returns the number of chart points in the series.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the number of chart points in the series. \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -67,10 +64,9 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.ChartPointsCollection.getItemAt
-    summary: |-
-      Retrieve a point based on its position within the series.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Retrieve a point based on its position within the series. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:

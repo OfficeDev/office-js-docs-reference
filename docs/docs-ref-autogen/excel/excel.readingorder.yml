@@ -1,7 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ReadingOrder
-    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ReadingOrder
     fullName: Excel.ReadingOrder
     langs:

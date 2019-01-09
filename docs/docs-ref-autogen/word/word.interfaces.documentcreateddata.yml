@@ -19,11 +19,8 @@ items:
   - uid: word.Word.Interfaces.DocumentCreatedData.body
     summary: >-
       Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
-      etc.. Read-only.
-
-
-      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      etc.. Read-only. \[ [API set: WordApiHiddenDocument
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: body
     fullName: body
     langs:
@@ -37,11 +34,8 @@ items:
   - uid: word.Word.Interfaces.DocumentCreatedData.contentControls
     summary: >-
       Gets the collection of content control objects in the document. This includes content controls in the body of the
-      document, headers, footers, textboxes, etc.. Read-only.
-
-
-      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      document, headers, footers, textboxes, etc.. Read-only. \[ [API set: WordApiHiddenDocument
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: contentControls
     fullName: contentControls
     langs:
@@ -54,11 +48,8 @@ items:
           - 'Word.Interfaces.ContentControlData[]'
   - uid: word.Word.Interfaces.DocumentCreatedData.customXmlParts
     summary: >-
-      Gets the custom XML parts in the document. Read-only.
-
-
-      \[ [API set: WordApiHiddenDocument 1.4](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      Gets the custom XML parts in the document. Read-only. \[ [API set: WordApiHiddenDocument
+      1.4](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: customXmlParts
     fullName: customXmlParts
     langs:
@@ -71,11 +62,8 @@ items:
           - 'Word.Interfaces.CustomXmlPartData[]'
   - uid: word.Word.Interfaces.DocumentCreatedData.properties
     summary: >-
-      Gets the properties of the document. Read-only.
-
-
-      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      Gets the properties of the document. Read-only. \[ [API set: WordApiHiddenDocument
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: properties
     fullName: properties
     langs:
@@ -89,11 +77,8 @@ items:
   - uid: word.Word.Interfaces.DocumentCreatedData.saved
     summary: >-
       Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
-      changed since it was saved. Read-only.
-
-
-      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      changed since it was saved. Read-only. \[ [API set: WordApiHiddenDocument
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: saved
     fullName: saved
     langs:
@@ -106,11 +91,8 @@ items:
           - boolean
   - uid: word.Word.Interfaces.DocumentCreatedData.sections
     summary: >-
-      Gets the collection of section objects in the document. Read-only.
-
-
-      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      Gets the collection of section objects in the document. Read-only. \[ [API set: WordApiHiddenDocument
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: sections
     fullName: sections
     langs:
@@ -123,11 +105,8 @@ items:
           - 'Word.Interfaces.SectionData[]'
   - uid: word.Word.Interfaces.DocumentCreatedData.settings
     summary: >-
-      Gets the add-in's settings in the document. Read-only.
-
-
-      \[ [API set: WordApiHiddenDocument 1.4](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      Gets the add-in's settings in the document. Read-only. \[ [API set: WordApiHiddenDocument
+      1.4](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: settings
     fullName: settings
     langs:

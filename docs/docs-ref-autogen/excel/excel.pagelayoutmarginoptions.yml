@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.PageLayoutMarginOptions
     summary: >-
-      Represents the options in page layout margins.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the options in page layout margins. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.PageLayoutMarginOptions
@@ -23,11 +20,8 @@ items:
       - excel.Excel.PageLayoutMarginOptions.top
   - uid: excel.Excel.PageLayoutMarginOptions.bottom
     summary: >-
-      Represents the page layout bottom margin in the unit specified to use for printing.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents the page layout bottom margin in the unit specified to use for printing. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: bottom
     fullName: bottom
@@ -41,11 +35,8 @@ items:
           - number
   - uid: excel.Excel.PageLayoutMarginOptions.footer
     summary: >-
-      Represents the page layout footer margin in the unit specified to use for printing.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents the page layout footer margin in the unit specified to use for printing. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: footer
     fullName: footer
@@ -59,11 +50,8 @@ items:
           - number
   - uid: excel.Excel.PageLayoutMarginOptions.header
     summary: >-
-      Represents the page layout header margin in the unit specified to use for printing.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents the page layout header margin in the unit specified to use for printing. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: header
     fullName: header
@@ -77,11 +65,8 @@ items:
           - number
   - uid: excel.Excel.PageLayoutMarginOptions.left
     summary: >-
-      Represents the page layout left margin in the unit specified to use for printing.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents the page layout left margin in the unit specified to use for printing. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: left
     fullName: left
@@ -95,11 +80,8 @@ items:
           - number
   - uid: excel.Excel.PageLayoutMarginOptions.right
     summary: >-
-      Represents the page layout right margin in the unit specified to use for printing.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents the page layout right margin in the unit specified to use for printing. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: right
     fullName: right
@@ -113,11 +95,8 @@ items:
           - number
   - uid: excel.Excel.PageLayoutMarginOptions.top
     summary: >-
-      Represents the page layout top margin in the unit specified to use for printing.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents the page layout top margin in the unit specified to use for printing. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: top
     fullName: top

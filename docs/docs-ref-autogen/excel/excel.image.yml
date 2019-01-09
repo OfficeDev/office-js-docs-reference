@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.Image
     summary: >-
-      Represents an image object in the worksheet.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents an image object in the worksheet. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.Image
@@ -40,10 +37,7 @@ items:
           - RequestContext
   - uid: excel.Excel.Image.format
     summary: >-
-      Returns the format for the image. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the format for the image. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: format
@@ -58,10 +52,7 @@ items:
           - Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"
   - uid: excel.Excel.Image.id
     summary: >-
-      Represents the shape identifier for the image object. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the shape identifier for the image object. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: id
@@ -111,10 +102,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.Image.shape
     summary: >-
-      Returns the shape object for the image. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the shape object for the image. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: shape

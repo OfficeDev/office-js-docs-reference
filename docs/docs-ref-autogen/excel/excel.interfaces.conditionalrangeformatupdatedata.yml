@@ -16,10 +16,9 @@ items:
       - excel.Excel.Interfaces.ConditionalRangeFormatUpdateData.font
       - excel.Excel.Interfaces.ConditionalRangeFormatUpdateData.numberFormat
   - uid: excel.Excel.Interfaces.ConditionalRangeFormatUpdateData.borders
-    summary: |-
-      Collection of border objects that apply to the overall conditional format range.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Collection of border objects that apply to the overall conditional format range. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
     fullName: borders
     langs:
@@ -31,10 +30,9 @@ items:
         type:
           - excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
   - uid: excel.Excel.Interfaces.ConditionalRangeFormatUpdateData.fill
-    summary: |-
-      Returns the fill object defined on the overall conditional format range.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the fill object defined on the overall conditional format range. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -46,10 +44,9 @@ items:
         type:
           - excel.Excel.Interfaces.ConditionalRangeFillUpdateData
   - uid: excel.Excel.Interfaces.ConditionalRangeFormatUpdateData.font
-    summary: |-
-      Returns the font object defined on the overall conditional format range.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the font object defined on the overall conditional format range. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:
@@ -61,10 +58,9 @@ items:
         type:
           - excel.Excel.Interfaces.ConditionalRangeFontUpdateData
   - uid: excel.Excel.Interfaces.ConditionalRangeFormatUpdateData.numberFormat
-    summary: |-
-      Represents Excel's number format code for the given range. Cleared if null is passed in.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents Excel's number format code for the given range. Cleared if null is passed in. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: numberFormat
     langs:

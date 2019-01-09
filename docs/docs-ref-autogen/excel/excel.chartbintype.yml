@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.ChartBinType
     summary: >-
-      Specifies the bins type of the Histogram chart series.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Specifies the bins type of the Histogram chart series. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.ChartBinType

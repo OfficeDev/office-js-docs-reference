@@ -12,10 +12,9 @@ items:
       - excel.Excel.Interfaces.ChartTitleFormatData.border
       - excel.Excel.Interfaces.ChartTitleFormatData.font
   - uid: excel.Excel.Interfaces.ChartTitleFormatData.border
-    summary: |-
-      Represents the border format of chart title, which includes color, linestyle, and weight. Read-only.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the border format of chart title, which includes color, linestyle, and weight. Read-only. \[ [API set:
+      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: border
     langs:
@@ -27,10 +26,9 @@ items:
         type:
           - excel.Excel.Interfaces.ChartBorderData
   - uid: excel.Excel.Interfaces.ChartTitleFormatData.font
-    summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for an object. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the font attributes (font name, font size, color, etc.) for an object. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:

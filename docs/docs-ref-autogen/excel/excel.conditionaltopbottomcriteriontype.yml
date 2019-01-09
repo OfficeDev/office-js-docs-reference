@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalTopBottomCriterionType
-    summary: |-
-      Represents the criteria for the above/below average conditional format type.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the criteria for the above/below average conditional format type. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalTopBottomCriterionType
     fullName: Excel.ConditionalTopBottomCriterionType
     langs:

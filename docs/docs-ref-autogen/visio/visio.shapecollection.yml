@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.ShapeCollection
-    summary: |-
-      Represents the Shape Collection.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Represents the Shape Collection. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.ShapeCollection
     fullName: Visio.ShapeCollection
     langs:
@@ -20,10 +19,9 @@ items:
       - visio.Visio.ShapeCollection.load
       - visio.Visio.ShapeCollection.toJSON
   - uid: visio.Visio.ShapeCollection.getCount
-    summary: |-
-      Gets the number of Shapes in the collection.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Gets the number of Shapes in the collection. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -53,10 +51,9 @@ items:
           });
           ```
   - uid: visio.Visio.ShapeCollection.getItem
-    summary: |-
-      Gets a Shape using its key (name or Index).
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Gets a Shape using its key (name or Index). \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getItem(key)
     fullName: getItem
     langs:

@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.ReplaceCriteria
     summary: >-
-      Represents the replace criteria to be used.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the replace criteria to be used. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.ReplaceCriteria
@@ -19,11 +16,8 @@ items:
       - excel.Excel.ReplaceCriteria.matchCase
   - uid: excel.Excel.ReplaceCriteria.completeMatch
     summary: >-
-      Specifies whether the match needs to be complete or partial. Default is false (partial).
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Specifies whether the match needs to be complete or partial. Default is false (partial). \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: completeMatch
     fullName: completeMatch
@@ -37,10 +31,7 @@ items:
           - boolean
   - uid: excel.Excel.ReplaceCriteria.matchCase
     summary: >-
-      Specifies whether the match is case sensitive. Default is false (insensitive).
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Specifies whether the match is case sensitive. Default is false (insensitive). \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: matchCase

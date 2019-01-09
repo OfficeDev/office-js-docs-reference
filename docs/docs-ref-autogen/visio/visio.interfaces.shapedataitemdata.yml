@@ -14,10 +14,9 @@ items:
       - visio.Visio.Interfaces.ShapeDataItemData.label
       - visio.Visio.Interfaces.ShapeDataItemData.value
   - uid: visio.Visio.Interfaces.ShapeDataItemData.format
-    summary: |-
-      A string that specifies the format of the shape data item. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      A string that specifies the format of the shape data item. Read-only. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: format
     fullName: format
     langs:
@@ -29,10 +28,9 @@ items:
         type:
           - string
   - uid: visio.Visio.Interfaces.ShapeDataItemData.formattedValue
-    summary: |-
-      A string that specifies the formatted value of the shape data item. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      A string that specifies the formatted value of the shape data item. Read-only. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: formattedValue
     fullName: formattedValue
     langs:
@@ -44,10 +42,9 @@ items:
         type:
           - string
   - uid: visio.Visio.Interfaces.ShapeDataItemData.label
-    summary: |-
-      A string that specifies the label of the shape data item. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      A string that specifies the label of the shape data item. Read-only. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: label
     fullName: label
     langs:
@@ -59,10 +56,9 @@ items:
         type:
           - string
   - uid: visio.Visio.Interfaces.ShapeDataItemData.value
-    summary: |-
-      A string that specifies the value of the shape data item. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      A string that specifies the value of the shape data item. Read-only. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: value
     fullName: value
     langs:

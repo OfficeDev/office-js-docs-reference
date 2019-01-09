@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.ShapeDataItemCollection
-    summary: |-
-      Represents the ShapeDataItemCollection for a given Shape.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Represents the ShapeDataItemCollection for a given Shape. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.ShapeDataItemCollection
     fullName: Visio.ShapeDataItemCollection
     langs:
@@ -20,10 +19,9 @@ items:
       - visio.Visio.ShapeDataItemCollection.load
       - visio.Visio.ShapeDataItemCollection.toJSON
   - uid: visio.Visio.ShapeDataItemCollection.getCount
-    summary: |-
-      Gets the number of Shape Data Items.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Gets the number of Shape Data Items. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -36,10 +34,9 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: visio.Visio.ShapeDataItemCollection.getItem
-    summary: |-
-      Gets the ShapeDataItem using its name.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: >-
+      Gets the ShapeDataItem using its name. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getItem(key)
     fullName: getItem
     langs:

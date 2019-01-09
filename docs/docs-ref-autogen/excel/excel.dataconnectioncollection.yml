@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.DataConnectionCollection
-    summary: |-
-      Represents a collection of all the Data Connections that are part of the workbook or worksheet.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents a collection of all the Data Connections that are part of the workbook or worksheet. \[ [API set:
+      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataConnectionCollection
     fullName: Excel.DataConnectionCollection
     langs:
@@ -32,10 +31,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.DataConnectionCollection.refreshAll
-    summary: |-
-      Refreshes all the Data Connections in the collection.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Refreshes all the Data Connections in the collection. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: refreshAll()
     fullName: refreshAll
     langs:

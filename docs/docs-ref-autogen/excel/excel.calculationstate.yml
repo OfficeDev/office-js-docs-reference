@@ -1,10 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.CalculationState
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: Excel.CalculationState
     fullName: Excel.CalculationState
     langs:
@@ -16,7 +12,6 @@ items:
       - excel.Excel.CalculationState.done
       - excel.Excel.CalculationState.pending
   - uid: excel.Excel.CalculationState.calculating
-    isPreview: true
     name: calculating
     fullName: calculating
     langs:
@@ -24,7 +19,6 @@ items:
     type: field
     numericValue: '"Calculating"'
   - uid: excel.Excel.CalculationState.done
-    isPreview: true
     name: done
     fullName: done
     langs:
@@ -32,7 +26,6 @@ items:
     type: field
     numericValue: '"Done"'
   - uid: excel.Excel.CalculationState.pending
-    isPreview: true
     name: pending
     fullName: pending
     langs:

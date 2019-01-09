@@ -2,11 +2,9 @@
 items:
   - uid: excel.Excel.ChartBoxQuartileCalculation
     summary: >-
-      Represents the quartile calculation type of chart series layout, only applicable in Box &amp; Whisker chart.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents the quartile calculation type of chart series layout, only applicable in Box &amp; Whisker chart. \[
+      [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
     isPreview: true
     name: Excel.ChartBoxQuartileCalculation
     fullName: Excel.ChartBoxQuartileCalculation

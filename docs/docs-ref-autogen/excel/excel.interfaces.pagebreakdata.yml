@@ -13,10 +13,7 @@ items:
       - excel.Excel.Interfaces.PageBreakData.rowIndex
   - uid: excel.Excel.Interfaces.PageBreakData.columnIndex
     summary: >-
-      Represents the column index for the page break
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the column index for the page break \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: columnIndex
@@ -31,10 +28,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.PageBreakData.rowIndex
     summary: >-
-      Represents the row index for the page break
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the row index for the page break \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: rowIndex

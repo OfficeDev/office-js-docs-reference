@@ -1,10 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeType
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: Excel.ShapeType
     fullName: Excel.ShapeType
     langs:
@@ -17,7 +13,6 @@ items:
       - excel.Excel.ShapeType.image
       - excel.Excel.ShapeType.unknown
   - uid: excel.Excel.ShapeType.geometricShape
-    isPreview: true
     name: geometricShape
     fullName: geometricShape
     langs:
@@ -25,7 +20,6 @@ items:
     type: field
     numericValue: '"GeometricShape"'
   - uid: excel.Excel.ShapeType.group
-    isPreview: true
     name: group
     fullName: group
     langs:
@@ -33,7 +27,6 @@ items:
     type: field
     numericValue: '"Group"'
   - uid: excel.Excel.ShapeType.image
-    isPreview: true
     name: image
     fullName: image
     langs:
@@ -41,7 +34,6 @@ items:
     type: field
     numericValue: '"Image"'
   - uid: excel.Excel.ShapeType.unknown
-    isPreview: true
     name: unknown
     fullName: unknown
     langs:

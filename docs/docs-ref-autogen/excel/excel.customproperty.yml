@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.CustomProperty
-    summary: |-
-      Represents a custom property.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents a custom property. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomProperty
     fullName: Excel.CustomProperty
     langs:
@@ -36,10 +35,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.CustomProperty.delete
-    summary: |-
-      Deletes the custom property.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Deletes the custom property. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: delete
     langs:
@@ -52,10 +50,9 @@ items:
           - void
         description: ''
   - uid: excel.Excel.CustomProperty.key
-    summary: |-
-      Gets the key of the custom property. Read only.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the key of the custom property. Read only. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
     fullName: key
     langs:
@@ -119,10 +116,9 @@ items:
           - excel.Excel.Interfaces.CustomPropertyData
         description: ''
   - uid: excel.Excel.CustomProperty.type
-    summary: |-
-      Gets the value type of the custom property. Read only.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the value type of the custom property. Read only. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -134,10 +130,9 @@ items:
         type:
           - Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float"
   - uid: excel.Excel.CustomProperty.value
-    summary: |-
-      Gets or sets the value of the custom property.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets or sets the value of the custom property. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
     fullName: value
     langs:

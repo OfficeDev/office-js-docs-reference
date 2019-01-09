@@ -1,11 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.AttachmentDetails
-    summary: |-
+    summary: >-
       Represents an attachment on an item from the server. Read mode only.
 
-      An array of AttachmentDetail objects is returned as the attachments property of an Appointment or Message object.
 
+      An array of AttachmentDetail objects is returned as the attachments property of an Appointment or Message object.
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission

@@ -2,11 +2,8 @@
 items:
   - uid: excel.Excel.ChartMapProjectionType
     summary: >-
-      Represents the region projection type of chart series layout, only applicable in RegionMap chart.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents the region projection type of chart series layout, only applicable in RegionMap chart. \[ [API set:
+      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.ChartMapProjectionType
     fullName: Excel.ChartMapProjectionType

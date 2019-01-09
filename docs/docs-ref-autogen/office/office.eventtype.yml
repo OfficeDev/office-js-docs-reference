@@ -79,20 +79,18 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.AppointmentTimeChanged
-    summary: |-
-      Triggers when any date or time of the selected appointment or series is changed in Outlook.
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    summary: >-
+      Triggers when any date or time of the selected appointment or series is changed in Outlook. \[ [API set: Mailbox
+      1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: AppointmentTimeChanged
     fullName: AppointmentTimeChanged
     langs:
       - typeScript
     type: field
   - uid: office.Office.EventType.AttachmentsChanged
-    summary: |-
-      Triggers when an attachment is added to or removed from an item.
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    summary: >-
+      Triggers when an attachment is added to or removed from an item. \[ [API set: Mailbox
+      Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
     isPreview: true
     name: AttachmentsChanged
     fullName: AttachmentsChanged
@@ -190,10 +188,9 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.ItemChanged
-    summary: |-
-      Triggers when a different Outlook item is selected for viewing while the task pane is pinned.
-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    summary: >-
+      Triggers when a different Outlook item is selected for viewing while the task pane is pinned. \[ [API set: Mailbox
+      1.5](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: ItemChanged
     fullName: ItemChanged
     langs:
@@ -221,10 +218,9 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.OfficeThemeChanged
-    summary: |-
-      Triggers when the OfficeTheme is changed in Outlook.
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    summary: >-
+      Triggers when the OfficeTheme is changed in Outlook. \[ [API set: Mailbox
+      Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
     isPreview: true
     name: OfficeThemeChanged
     fullName: OfficeThemeChanged
@@ -232,20 +228,18 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.RecipientsChanged
-    summary: |-
-      Triggers when the recipient list of the selected item or the appointment location is changed in Outlook.
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    summary: >-
+      Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. \[ [API
+      set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: RecipientsChanged
     fullName: RecipientsChanged
     langs:
       - typeScript
     type: field
   - uid: office.Office.EventType.RecurrenceChanged
-    summary: |-
-      Triggers when the recurrence pattern of the selected series is changed in Outlook.
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    summary: >-
+      Triggers when the recurrence pattern of the selected series is changed in Outlook. \[ [API set: Mailbox
+      1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: RecurrenceChanged
     fullName: RecurrenceChanged
     langs:

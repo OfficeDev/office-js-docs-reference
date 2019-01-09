@@ -24,11 +24,8 @@ items:
   - uid: excel.Excel.Interfaces.TextFrameData.autoSize
     summary: >-
       Gets or sets the auto sizing settings for the text frame. A text frame can be set to auto size the text to fit the
-      text frame, or auto size the text frame to fit the text, or without auto sizing.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      text frame, or auto size the text frame to fit the text, or without auto sizing. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: autoSize
     fullName: autoSize
@@ -44,10 +41,7 @@ items:
           - Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
   - uid: excel.Excel.Interfaces.TextFrameData.bottomMargin
     summary: >-
-      Represents the bottom margin, in points, of the text frame.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the bottom margin, in points, of the text frame. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: bottomMargin
@@ -62,10 +56,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.TextFrameData.hasText
     summary: >-
-      Specifies whether the TextFrame contains text.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Specifies whether the TextFrame contains text. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: hasText
@@ -80,10 +71,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.TextFrameData.horizontalAlignment
     summary: >-
-      Represents the horizontal alignment of the text frame.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the horizontal alignment of the text frame. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: horizontalAlignment
@@ -102,10 +90,7 @@ items:
             | "ThaiDistributed" | "ShapeTextHorizontalAlignType_MaxEnumIDs"
   - uid: excel.Excel.Interfaces.TextFrameData.horizontalOverflow
     summary: >-
-      Represents the horizontal overflow type of the text frame.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the horizontal overflow type of the text frame. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: horizontalOverflow
@@ -122,10 +107,7 @@ items:
           - Excel.ShapeTextHorzOverflowType | "Overflow" | "Clip" | "ShapeTextHorzOverflowType_MaxEnumIDs"
   - uid: excel.Excel.Interfaces.TextFrameData.leftMargin
     summary: >-
-      Represents the left margin, in points, of the text frame.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the left margin, in points, of the text frame. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: leftMargin
@@ -140,10 +122,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.TextFrameData.orientation
     summary: >-
-      Represents the text orientation of the text frame.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the text orientation of the text frame. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: orientation
@@ -162,10 +141,7 @@ items:
             "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL" | "ShapeTextOrientationType_MaxEnumIDs"
   - uid: excel.Excel.Interfaces.TextFrameData.readingOrder
     summary: >-
-      Represents the reading order of the text frame, RTL or LTR.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the reading order of the text frame, RTL or LTR. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: readingOrder
@@ -180,10 +156,7 @@ items:
           - Excel.ShapeTextReadingOrder | "LTR" | "RTL"
   - uid: excel.Excel.Interfaces.TextFrameData.rightMargin
     summary: >-
-      Represents the right margin, in points, of the text frame.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the right margin, in points, of the text frame. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: rightMargin
@@ -198,10 +171,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.TextFrameData.topMargin
     summary: >-
-      Represents the top margin, in points, of the text frame.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the top margin, in points, of the text frame. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: topMargin
@@ -216,10 +186,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.TextFrameData.verticalAlignment
     summary: >-
-      Represents the vertical alignment of the text frame.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the vertical alignment of the text frame. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: verticalAlignment
@@ -238,10 +205,7 @@ items:
             "ShapeTextVerticalAlignType_MaxEnumIDs"
   - uid: excel.Excel.Interfaces.TextFrameData.verticalOverflow
     summary: >-
-      Represents the vertical overflow type of the text frame.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the vertical overflow type of the text frame. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: verticalOverflow

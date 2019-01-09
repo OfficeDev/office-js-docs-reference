@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartDeletedEventArgs
-    summary: |-
-      Provides information about the chart that raised the Deleted event.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Provides information about the chart that raised the Deleted event. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartDeletedEventArgs
     fullName: Excel.ChartDeletedEventArgs
     langs:
@@ -17,10 +16,9 @@ items:
       - excel.Excel.ChartDeletedEventArgs.type
       - excel.Excel.ChartDeletedEventArgs.worksheetId
   - uid: excel.Excel.ChartDeletedEventArgs.chartId
-    summary: |-
-      Gets the id of the chart that is deleted from the worksheet.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the id of the chart that is deleted from the worksheet. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: chartId
     fullName: chartId
     langs:
@@ -32,10 +30,9 @@ items:
         type:
           - string
   - uid: excel.Excel.ChartDeletedEventArgs.source
-    summary: |-
-      Gets the source of the event. See Excel.EventSource for details.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the source of the event. See Excel.EventSource for details. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: source
     fullName: source
     langs:
@@ -47,10 +44,9 @@ items:
         type:
           - Excel.EventSource | "Local" | "Remote"
   - uid: excel.Excel.ChartDeletedEventArgs.type
-    summary: |-
-      Gets the type of the event. See Excel.EventType for details.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the type of the event. See Excel.EventType for details. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -62,10 +58,9 @@ items:
         type:
           - '"ChartDeleted"'
   - uid: excel.Excel.ChartDeletedEventArgs.worksheetId
-    summary: |-
-      Gets the id of the worksheet in which the chart is deleted.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the id of the worksheet in which the chart is deleted. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: worksheetId
     langs:

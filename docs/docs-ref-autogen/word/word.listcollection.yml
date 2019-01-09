@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.ListCollection
-    summary: |-
-      Contains a collection of [Word.List](xref:word.Word.List) objects.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Contains a collection of [Word.List](xref:word.Word.List) objects. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.ListCollection
     fullName: Word.ListCollection
     langs:
@@ -40,10 +39,9 @@ items:
         type:
           - RequestContext
   - uid: word.Word.ListCollection.getById
-    summary: |-
-      Gets a list by its identifier. Throws if there isn't a list with the identifier in this collection.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets a list by its identifier. Throws if there isn't a list with the identifier in this collection. \[ [API set:
+      WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getById(id)
     fullName: getById
     langs:
@@ -61,9 +59,8 @@ items:
           type:
             - number
   - uid: word.Word.ListCollection.getByIdOrNullObject
-    summary: |-
+    summary: >-
       Gets a list by its identifier. Returns a null object if there isn't a list with the identifier in this collection.
-
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getByIdOrNullObject(id)
     fullName: getByIdOrNullObject
@@ -82,10 +79,9 @@ items:
           type:
             - number
   - uid: word.Word.ListCollection.getFirst
-    summary: |-
-      Gets the first list in this collection. Throws if this collection is empty.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the first list in this collection. Throws if this collection is empty. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirst()
     fullName: getFirst
     langs:
@@ -98,10 +94,9 @@ items:
           - word.Word.List
         description: ''
   - uid: word.Word.ListCollection.getFirstOrNullObject
-    summary: |-
-      Gets the first list in this collection. Returns a null object if this collection is empty.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets the first list in this collection. Returns a null object if this collection is empty. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirstOrNullObject()
     fullName: getFirstOrNullObject
     langs:
@@ -114,10 +109,9 @@ items:
           - word.Word.List
         description: ''
   - uid: word.Word.ListCollection.getItem
-    summary: |-
-      Gets a list object by its index in the collection.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: >-
+      Gets a list object by its index in the collection. \[ [API set: WordApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getItem(index)
     fullName: getItem
     langs:

@@ -5,9 +5,7 @@
 export declare namespace Office {
     export namespace MailboxEnums {
         /**
-         * Specifies the formatting that applies to an attachment's content.
-         * 
-         * [Api set: Mailbox Preview]
+         * Specifies the formatting that applies to an attachment's content. [Api set: Mailbox Preview]
          * 
          * @remarks
          * <table><tr><td>
@@ -38,9 +36,7 @@ export declare namespace Office {
             ICalendar = "iCalendar"
         }
         /**
-         * Specifies whether an attachment was added to or removed from an item.
-         * 
-         * [Api set: Mailbox Preview]
+         * Specifies whether an attachment was added to or removed from an item. [Api set: Mailbox Preview]
          * 
          * @remarks
          * <table><tr><td>
@@ -61,9 +57,7 @@ export declare namespace Office {
             Removed = "removed"
         }
         /**
-         * Specifies an attachment's type.
-         *
-         * [Api set: Mailbox 1.0]
+         * Specifies an attachment's type. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>
@@ -85,9 +79,7 @@ export declare namespace Office {
             Cloud = "cloud"
         }
         /**
-         * Specifies the day of week or type of day.
-         *
-         * [Api set: Mailbox 1.7]
+         * Specifies the day of week or type of day. [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>
@@ -137,9 +129,7 @@ export declare namespace Office {
             Day = "day"
         }
         /**
-         * This bit mask represents a delegate's permissions on a shared folder.
-         *
-         * [Api set: Mailbox Preview]
+         * This bit mask represents a delegate's permissions on a shared folder. [Api set: Mailbox Preview]
          *
          * @remarks
          * <table><tr><td>
@@ -175,9 +165,7 @@ export declare namespace Office {
             EditAll = 32
         }
         /**
-         * Specifies an entity's type.
-         *
-         * [Api set: Mailbox 1.0]
+         * Specifies an entity's type. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>
@@ -215,9 +203,7 @@ export declare namespace Office {
             Contact = "contact"
         }
         /**
-         * Specifies the notification message type for an appointment or message.
-         *
-         * [Api set: Mailbox 1.3]
+         * Specifies the notification message type for an appointment or message. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>
@@ -239,9 +225,7 @@ export declare namespace Office {
             ErrorMessage = "errorMessage"
         }
         /**
-         * Specifies an item's type.
-         *
-         * [Api set: Mailbox 1.0]
+         * Specifies an item's type. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>
@@ -259,9 +243,7 @@ export declare namespace Office {
             Appointment = "appointment"
         }
         /**
-         * Specifies the month.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Specifies the month. [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>
@@ -337,9 +319,7 @@ export declare namespace Office {
             ThreeColumns = "ThreeColumns"
         }
         /**
-         * Specifies the type of recipient for an appointment.
-         *
-         * [Api set: Mailbox 1.1]
+         * Specifies the type of recipient for an appointment. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>
@@ -365,9 +345,7 @@ export declare namespace Office {
             Other = "other"
         }
         /**
-         * Specifies the time zone applied to the recurrence.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Specifies the time zone applied to the recurrence. [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>
@@ -923,9 +901,7 @@ export declare namespace Office {
         }
 
         /**
-         * Specifies the type of recurrence.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Specifies the type of recurrence. [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>
@@ -955,9 +931,7 @@ export declare namespace Office {
             Yearly = "yearly"
         }
         /**  
-         * Specifies the type of response to a meeting invitation.
-         *
-         * [Api set: Mailbox 1.0]
+         * Specifies the type of response to a meeting invitation. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>
@@ -987,9 +961,7 @@ export declare namespace Office {
             Declined = "declined"
         }
         /**
-         * Specifies the version of the REST API that corresponds to a REST-formatted item ID.
-         *
-         * [Api set: Mailbox 1.3]
+         * Specifies the version of the REST API that corresponds to a REST-formatted item ID. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>
@@ -1011,9 +983,7 @@ export declare namespace Office {
             Beta = "beta"
         }
         /**
-         * Specifies the week of the month.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Specifies the week of the month. [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>
@@ -1057,9 +1027,7 @@ export declare namespace Office {
         Subject
     }
     /**
-     * The AppointmentForm namespace is used to access the currently selected appointment.
-     *
-     * [Api set: Mailbox 1.0]
+     * The AppointmentForm namespace is used to access the currently selected appointment. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
@@ -1068,9 +1036,7 @@ export declare namespace Office {
      */
     export interface AppointmentForm {
         /**
-         * Gets an object that provides methods for manipulating the body of an item.
-         *
-         * [Api set: Mailbox 1.1]
+         * Gets an object that provides methods for manipulating the body of an item. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -1094,9 +1060,7 @@ export declare namespace Office {
          * The end property returns a Time object.
          *
          * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on 
-         * the client to UTC for the server.
-         *
-         * [Api set: Mailbox 1.0]
+         * the client to UTC for the server. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -1114,9 +1078,7 @@ export declare namespace Office {
         *
         * *Compose mode*
         *
-        * The location property returns a Location object that provides methods that are used to get and set the location of the appointment.
-        *
-        * [Api set: Mailbox 1.0]
+        * The location property returns a Location object that provides methods that are used to get and set the location of the appointment. [Api set: Mailbox 1.0]
         *
         * @remarks
         *
@@ -1133,9 +1095,7 @@ export declare namespace Office {
         *
         * *Compose mode*
         *
-        * The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting.
-        *
-        * [Api set: Mailbox 1.0]
+        * The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting. [Api set: Mailbox 1.0]
         *
         * @remarks
         *
@@ -1154,9 +1114,7 @@ export declare namespace Office {
          *
          * *Compose mode*
          *
-         * The requiredAttendees property returns a Recipients object that provides methods to get or update the required attendees for a meeting.
-         *
-         * [Api set: Mailbox 1.0]
+         * The requiredAttendees property returns a Recipients object that provides methods to get or update the required attendees for a meeting. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -1180,9 +1138,7 @@ export declare namespace Office {
          * The start property returns a Time object.
          *
          * When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on 
-         * the client to UTC for the server.
-         *
-         * [Api set: Mailbox 1.0]
+         * the client to UTC for the server. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -1202,9 +1158,7 @@ export declare namespace Office {
          *
          * *Compose mode*
          *
-         * The subject property returns a Subject object that provides methods to get and set the subject.
-         *
-         * [Api set: Mailbox 1.0]
+         * The subject property returns a Subject object that provides methods to get and set the subject. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -1215,9 +1169,7 @@ export declare namespace Office {
         subject: string;
     }
     /**
-     * Represents the content of an attachment on a message or appointment item.
-     *
-     * [Api set: Mailbox Preview]
+     * Represents the content of an attachment on a message or appointment item. [Api set: Mailbox Preview]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1247,9 +1199,7 @@ export declare namespace Office {
     /**
      * Represents an attachment on an item from the server. Read mode only.
      *
-     * An array of AttachmentDetail objects is returned as the attachments property of an Appointment or Message object.
-     *
-     * [Api set: Mailbox 1.0]
+     * An array of AttachmentDetail objects is returned as the attachments property of an Appointment or Message object. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1284,9 +1234,7 @@ export declare namespace Office {
     }
     /**
      * The body object provides methods for adding and updating the content of the message or appointment. 
-     * It is returned in the body property of the selected item.
-     *
-     * [Api set: Mailbox 1.1]
+     * It is returned in the body property of the selected item. [Api set: Mailbox 1.1]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1301,9 +1249,7 @@ export declare namespace Office {
          *
          * When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods are not idempotent. 
          * The value returned from the getAsync method will not necessarily be exactly the same as the value that was passed in the setAsync method previously. 
-         * The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
-         *
-         * [Api set: Mailbox 1.3]
+         * The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1328,9 +1274,7 @@ export declare namespace Office {
          *
          * When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods are not idempotent. 
          * The value returned from the getAsync method will not necessarily be exactly the same as the value that was passed in the setAsync method previously. 
-         * The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
-         *
-         * [Api set: Mailbox 1.3]
+         * The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1344,9 +1288,7 @@ export declare namespace Office {
         getAsync(coercionType: Office.CoercionType, callback: (result: AsyncResult<string>) => void): void;
 
         /**
-         * Gets a value that indicates whether the content is in HTML or text format.
-         *
-         * [Api set: Mailbox 1.1]
+         * Gets a value that indicates whether the content is in HTML or text format. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1366,9 +1308,7 @@ export declare namespace Office {
          * After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
-         * (please see the Examples section for a sample).
-         *
-         * [Api set: Mailbox 1.1]
+         * (please see the Examples section for a sample). [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -1400,9 +1340,7 @@ export declare namespace Office {
          * After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
-         * (please see the Examples section for a sample).
-         *
-         * [Api set: Mailbox 1.1]
+         * (please see the Examples section for a sample). [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -1424,9 +1362,7 @@ export declare namespace Office {
          * After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
-         * (please see the Examples section for a sample).
-         *
-         * [Api set: Mailbox 1.1]
+         * (please see the Examples section for a sample). [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -1445,9 +1381,7 @@ export declare namespace Office {
          * After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
-         * (please see the Examples section for a sample).
-         *
-         * [Api set: Mailbox 1.1]
+         * (please see the Examples section for a sample). [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -1465,9 +1399,7 @@ export declare namespace Office {
          * previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
-         * (please see the Examples section for a sample).
-         *
-         * [Api set: Mailbox 1.3]
+         * (please see the Examples section for a sample). [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -1500,9 +1432,7 @@ export declare namespace Office {
          * previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
-         * (please see the Examples section for a sample).
-         *
-         * [Api set: Mailbox 1.3]
+         * (please see the Examples section for a sample). [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -1525,9 +1455,7 @@ export declare namespace Office {
          * previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
-         * (please see the Examples section for a sample).
-         *
-         * [Api set: Mailbox 1.3]
+         * (please see the Examples section for a sample). [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -1549,9 +1477,7 @@ export declare namespace Office {
          * previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
-         * (please see the Examples section for a sample).
-         *
-         * [Api set: Mailbox 1.3]
+         * (please see the Examples section for a sample). [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -1572,9 +1498,7 @@ export declare namespace Office {
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
-         * (please see the Examples section for a sample).
-         *
-         * [Api set: Mailbox 1.1]
+         * (please see the Examples section for a sample). [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -1607,9 +1531,7 @@ export declare namespace Office {
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
-         * (please see the Examples section for a sample).
-         *
-         * [Api set: Mailbox 1.1]
+         * (please see the Examples section for a sample). [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -1632,9 +1554,7 @@ export declare namespace Office {
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
-         * (please see the Examples section for a sample).
-         *
-         * [Api set: Mailbox 1.1]
+         * (please see the Examples section for a sample). [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -1656,9 +1576,7 @@ export declare namespace Office {
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP" 
-         * (please see the Examples section for a sample).
-         *
-         * [Api set: Mailbox 1.1]
+         * (please see the Examples section for a sample). [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -1675,9 +1593,7 @@ export declare namespace Office {
      * Represents a contact stored on the server. Read mode only.
      *
      * The list of contacts associated with an email message or appointment is returned in the contacts property of the {@link Office.Entities} object 
-     * that is returned by the getEntities or getEntitiesByType method of the active item.
-     *
-     * [Api set: Mailbox 1.0]
+     * that is returned by the getEntities or getEntitiesByType method of the active item. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
@@ -1716,9 +1632,7 @@ export declare namespace Office {
      * If the user revisits the same message in the future and activates the mail add-in again, the add-in will be able to retrieve the data that had 
      * been saved as custom properties.
      *
-     * Because Outlook for Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot access their custom properties.
-     *
-     * [Api set: Mailbox 1.0]
+     * Because Outlook for Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot access their custom properties. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1729,9 +1643,7 @@ export declare namespace Office {
         /**
          * Returns the value of the specified custom property.
          * @param name - The name of the custom property to be returned.
-         * @returns The value of the specified custom property.
-         *
-         * [Api set: Mailbox 1.0]
+         * @returns The value of the specified custom property. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1746,9 +1658,7 @@ export declare namespace Office {
          *
          * The set method creates a new property if the specified property does not already exist; 
          * otherwise, the existing value is replaced with the new value. 
-         * The value parameter can be of any type; however, it is always passed to the server as a string.
-         *
-         * [Api set: Mailbox 1.0]
+         * The value parameter can be of any type; however, it is always passed to the server as a string. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1763,9 +1673,7 @@ export declare namespace Office {
          * Removes the specified property from the custom property collection.
          *
          * To make the removal of the property permanent, you must call the saveAsync method of the CustomProperties object.
-         * @param name - The name of the property to be removed.
-         *
-         * [Api set: Mailbox 1.0]
+         * @param name - The name of the property to be removed. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1787,9 +1695,7 @@ export declare namespace Office {
          *
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
-         * @param asyncContext - Optional. Any state data that is passed to the callback method.
-         *
-         * [Api set: Mailbox 1.0]
+         * @param asyncContext - Optional. Any state data that is passed to the callback method. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1799,9 +1705,7 @@ export declare namespace Office {
         saveAsync(callback?: (result: AsyncResult<void>) => void, asyncContext?: any): void;
     }
     /**
-     * Provides diagnostic information to an Outlook add-in.
-     *
-     * [Api set: Mailbox 1.0]
+     * Provides diagnostic information to an Outlook add-in. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1812,9 +1716,7 @@ export declare namespace Office {
         /**
          * Gets a string that represents the name of the host application.
          *
-         * A string that can be one of the following values: Outlook, Mac Outlook, OutlookIOS, or OutlookWebApp.
-         *
-         * [Api set: Mailbox 1.0]
+         * A string that can be one of the following values: Outlook, Mac Outlook, OutlookIOS, or OutlookWebApp. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1826,9 +1728,7 @@ export declare namespace Office {
          * Gets a string that represents the version of either the host application or the Exchange Server.
          *
          * If the mail add-in is running on the Outlook desktop client or Outlook for iOS, the hostVersion property returns the version of the host 
-         * application, Outlook. In Outlook Web App, the property returns the version of the Exchange Server. An example is the string 15.0.468.0.
-         *
-         * [Api set: Mailbox 1.0]
+         * application, Outlook. In Outlook Web App, the property returns the version of the Exchange Server. An example is the string 15.0.468.0. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1851,9 +1751,7 @@ export declare namespace Office {
          * - TwoColumns, which is displayed when the screen is wider. Outlook Web App uses this view on most tablets.
          *
          * - ThreeColumns, which is displayed when the screen is wide. For example, Outlook Web App uses this view in a full screen window on a 
-         * desktop computer.
-         *
-         * [Api set: Mailbox 1.0]
+         * desktop computer. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1863,9 +1761,7 @@ export declare namespace Office {
         OWAView: MailboxEnums.OWAView | "OneColumn" | "TwoColumns" | "ThreeColumns";
     }
     /**
-     * Provides the email properties of the sender or specified recipients of an email message or appointment.
-     *
-     * [Api set: Mailbox 1.0]
+     * Provides the email properties of the sender or specified recipients of an email message or appointment. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1893,9 +1789,7 @@ export declare namespace Office {
         recipientType: Office.MailboxEnums.RecipientType;
     }
     /**
-     * Represents an email account on an Exchange Server.
-     *
-     * [Api set: Mailbox 1.0]
+     * Represents an email account on an Exchange Server. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1933,9 +1827,7 @@ export declare namespace Office {
      * The recognition of an entity is non-deterministic and success sometimes relies on the particular context in the item.
      *
      * When the property arrays are returned by the getEntitiesByType method, only the property for the specified entity contains data; 
-     * all other properties are null.
-     *
-     * [Api set: Mailbox 1.0]
+     * all other properties are null. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1974,9 +1866,7 @@ export declare namespace Office {
     }
 
     /**
-     * Provides a method to get the from value of a message in an Outlook add-in.
-     * 
-     * [Api set: Mailbox 1.7]
+     * Provides a method to get the from value of a message in an Outlook add-in. [Api set: Mailbox 1.7]
      * 
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -1989,9 +1879,7 @@ export declare namespace Office {
          * 
          * The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
          * 
-         * The from value of the item is provided as an {@link Office.EmailAddressDetails} in the asyncResult.value property.
-         * 
-         * [Api set: Mailbox 1.7]
+         * The from value of the item is provided as an {@link Office.EmailAddressDetails} in the asyncResult.value property. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -2013,9 +1901,7 @@ export declare namespace Office {
          * 
          * The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
          * 
-         * The from value of the item is provided as an {@link Office.EmailAddressDetails} in the asyncResult.value property.
-         * 
-         * [Api set: Mailbox 1.7]
+         * The from value of the item is provided as an {@link Office.EmailAddressDetails} in the asyncResult.value property. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -2033,9 +1919,7 @@ export declare namespace Office {
      * The InternetHeaders object represents properties that are preserved after the message item leaves Exchange and is converted to a MIME message. 
      * These properties are stored as x-headers in the MIME message.
      * 
-     * InternetHeaders are stored as key/value pairs on a per-item basis.
-     *
-     * [Api set: Mailbox Preview]
+     * InternetHeaders are stored as key/value pairs on a per-item basis. [Api set: Mailbox Preview]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -2047,9 +1931,7 @@ export declare namespace Office {
     export interface InternetHeaders {
         /**
          * Given an array of internet header names, this method returns a dictionary containing those internet headers and their values. 
-         * If the add-in requests an x-header that is not available, that x-header will not be returned in the results. 
-         *
-         * [Api set: Mailbox Preview]
+         * If the add-in requests an x-header that is not available, that x-header will not be returned in the results. [Api set: Mailbox Preview]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -2071,9 +1953,7 @@ export declare namespace Office {
         getAsync(names: string[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.InternetHeaders>) => void): void;
         /**
          * Given an array of internet header names, this method returns a dictionary containing those internet headers and their values. 
-         * If the add-in requests an x-header that is not available, that x-header will not be returned in the results. 
-         *
-         * [Api set: Mailbox Preview]
+         * If the add-in requests an x-header that is not available, that x-header will not be returned in the results. [Api set: Mailbox Preview]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -2088,9 +1968,7 @@ export declare namespace Office {
          */
         getAsync(names: string[], callback?: (result: AsyncResult<Office.InternetHeaders>) => void): void;
         /**
-         * Given an array of internet header names, this method removes the specified headers from the internet header collection.
-         *
-         * [Api set: Mailbox Preview]
+         * Given an array of internet header names, this method removes the specified headers from the internet header collection. [Api set: Mailbox Preview]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -2111,9 +1989,7 @@ export declare namespace Office {
          */
         removeAsync(names: string[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.InternetHeaders>) => void): void;
         /**
-         * Given an array of internet header names, this method removes the specified headers from the internet header collection.
-         *
-         * [Api set: Mailbox Preview]
+         * Given an array of internet header names, this method removes the specified headers from the internet header collection. [Api set: Mailbox Preview]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -2131,9 +2007,7 @@ export declare namespace Office {
          * Sets the specified internet headers to the specified values.
          * 
          * The setAsync method creates a new header if the specified header does not already exist; otherwise, the existing value is replaced with 
-         * the new value.
-         *
-         * [Api set: Mailbox Preview]
+         * the new value. [Api set: Mailbox Preview]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -2158,9 +2032,7 @@ export declare namespace Office {
          * Sets the specified internet headers to the specified values.
          * 
          * The setAsync method creates a new header if the specified header does not already exist; otherwise, the existing value is replaced with 
-         * the new value.
-         *
-         * [Api set: Mailbox Preview]
+         * the new value. [Api set: Mailbox Preview]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -2179,9 +2051,7 @@ export declare namespace Office {
 
     /**
      * Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. 
-     * This object provides a method to get the organizer value of an appointment in an Outlook add-in.
-     * 
-     * [Api set: Mailbox 1.7]
+     * This object provides a method to get the organizer value of an appointment in an Outlook add-in. [Api set: Mailbox 1.7]
      * 
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -2190,9 +2060,7 @@ export declare namespace Office {
      */
     export interface Organizer {
         /**
-         * Gets the organizer value of an appointment as an {@link Office.EmailAddressDetails} in the asyncResult.value property.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Gets the organizer value of an appointment as an {@link Office.EmailAddressDetails} in the asyncResult.value property. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -2223,9 +2091,7 @@ export declare namespace Office {
      */
     export interface AppointmentCompose extends Appointment, ItemCompose {
          /**
-         * Gets an object that provides methods for manipulating the body of an item.
-         *
-         * [Api set: Mailbox 1.1]
+         * Gets an object that provides methods for manipulating the body of an item. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -2235,9 +2101,7 @@ export declare namespace Office {
          */
         body: Office.Body;
         /**
-         * Gets the date and time that an item was created.  Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the date and time that an item was created.  Read mode only. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -2247,9 +2111,7 @@ export declare namespace Office {
          */
         dateTimeCreated: Date;
         /**
-         * Gets the date and time that an item was last modified. Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the date and time that an item was last modified. Read mode only. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -2267,9 +2129,7 @@ export declare namespace Office {
          * You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.
          *
          * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on 
-         * the client to UTC for the server.
-         *
-         * [Api set: Mailbox 1.0]
+         * the client to UTC for the server. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -2281,9 +2141,7 @@ export declare namespace Office {
         /**
          * Gets the type of item that an instance represents.
          *
-         * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment.
-         *
-         * [Api set: Mailbox 1.0]
+         * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -2294,9 +2152,7 @@ export declare namespace Office {
         itemType: Office.MailboxEnums.ItemType;
         /**
          * Gets or sets the {@link Office.Location} of an appointment. The location property returns a Location object that provides methods that are 
-         * used to get and set the location of the appointment.
-         *
-         * [Api set: Mailbox 1.0]
+         * used to get and set the location of the appointment. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -2306,9 +2162,7 @@ export declare namespace Office {
          */
         location: Location;
         /**
-         * Gets the notification messages for an item.
-         *
-         * [Api set: Mailbox 1.3]
+         * Gets the notification messages for an item. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -2320,9 +2174,7 @@ export declare namespace Office {
         /**
          * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item. 
          * The optionalAttendees property returns an {@link Office.Recipients} object that provides methods to get or update the optional attendees 
-         * for a meeting.
-         *
-         * [Api set: Mailbox 1.0]
+         * for a meeting. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -2334,9 +2186,7 @@ export declare namespace Office {
         /**
          * Gets the organizer for the specified meeting. 
          * 
-         * The organizer property returns an {@link Office.Organizer | Organizer} object that provides a method to get the organizer value.
-         * 
-         * [Api set: Mailbox 1.7]
+         * The organizer property returns an {@link Office.Organizer | Organizer} object that provides a method to get the organizer value. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -2354,9 +2204,7 @@ export declare namespace Office {
          * Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
          * 
          * Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single 
-         * appointment and NOT a part of a series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * appointment and NOT a part of a series. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -2368,9 +2216,7 @@ export declare namespace Office {
         /**
          * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item. 
          * The requiredAttendees property returns an {@link Office.Recipients} object that provides methods to get or update the required attendees 
-         * for a meeting.
-         *
-         * [Api set: Mailbox 1.0]
+         * for a meeting. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -2391,9 +2237,7 @@ export declare namespace Office {
          * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
          * 
          * The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests 
-         * and returns undefined for any other items that are not meeting requests.
-         * 
-         * [Api set: Mailbox 1.7]
+         * and returns undefined for any other items that are not meeting requests. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -2409,9 +2253,7 @@ export declare namespace Office {
          * You can use the convertToLocalClientTime method to convert the value to the client's local date and time.
          *
          * When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on 
-         * the client to UTC for the server.
-         *
-         * [Api set: Mailbox 1.0]
+         * the client to UTC for the server. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -2425,9 +2267,7 @@ export declare namespace Office {
          *
          * The subject property gets or sets the entire subject of the item, as sent by the email server.
          *
-         * The subject property returns a Subject object that provides methods to get and set the subject.
-         *
-         * [Api set: Mailbox 1.0]
+         * The subject property returns a Subject object that provides methods to get and set the subject. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -2441,9 +2281,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox 1.1]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -2475,9 +2313,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox 1.1]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -2495,9 +2331,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox 1.1]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -2518,9 +2352,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox 1.1]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -2541,9 +2373,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the AsyncResult.value object.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox Preview]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox Preview]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -2568,9 +2398,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-         * 
-         * [Api set: Mailbox 1.7]
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
          *
          * @remarks
          * 
@@ -2595,9 +2423,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-         * 
-         * [Api set: Mailbox 1.7]
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -2623,9 +2449,7 @@ export declare namespace Office {
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
          * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
-         * you are editing; however, this is not supported and is not recommended.
-         *
-         * [Api set: Mailbox 1.1]
+         * you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -2662,9 +2486,7 @@ export declare namespace Office {
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
          * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
-         * you are editing; however, this is not supported and is not recommended.
-         *
-         * [Api set: Mailbox 1.1]
+         * you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -2688,9 +2510,7 @@ export declare namespace Office {
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
          * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
-         * you are editing; however, this is not supported and is not recommended.
-         *
-         * [Api set: Mailbox 1.1]
+         * you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -2716,9 +2536,7 @@ export declare namespace Office {
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
          * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
-         * you are editing; however, this is not supported and is not recommended.
-         *
-         * [Api set: Mailbox 1.1]
+         * you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -2743,9 +2561,7 @@ export declare namespace Office {
          * In the Outlook desktop client, if the message is an inline reply, the close method has no effect.
          *
          * Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, 
-         * discard, or cancel even if no changes have occurred since the item was last saved.
-         *
-         * [Api set: Mailbox 1.3]
+         * discard, or cancel even if no changes have occurred since the item was last saved. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -2755,9 +2571,7 @@ export declare namespace Office {
          */
         close(): void;
         /**
-         * Gets the item's attachments as an array.
-         * 
-         * [Api set: Mailbox Preview]
+         * Gets the item's attachments as an array. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -2777,9 +2591,7 @@ export declare namespace Office {
         /**
          * Gets initialization data passed when the add-in is activated by an actionable message.
          *
-         * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365.
-         * 
-         * [Api set: Mailbox Preview]
+         * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -2805,9 +2617,7 @@ export declare namespace Office {
          * If a field other than the body or subject is selected, the method returns the InvalidSelection error.
          *
          * To access the selected data from the callback method, call asyncResult.value.data. 
-         * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * [Api set: Mailbox 1.2]
+         * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject. [Api set: Mailbox 1.2]
          *
          * @returns
          * The selected data as a string with format determined by coercionType.
@@ -2832,9 +2642,7 @@ export declare namespace Office {
          * If a field other than the body or subject is selected, the method returns the InvalidSelection error.
          *
          * To access the selected data from the callback method, call asyncResult.value.data. 
-         * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * [Api set: Mailbox 1.2]
+         * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject. [Api set: Mailbox 1.2]
          *
          * @returns
          * The selected data as a string with format determined by coercionType.
@@ -2860,9 +2668,7 @@ export declare namespace Office {
          *
          * The custom properties are provided as a CustomProperties object in the asyncResult.value property. 
          * This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to 
-         * the server.
-         *
-         * [Api set: Mailbox 1.0]
+         * the server. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -2883,9 +2689,7 @@ export declare namespace Office {
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
-         * continue in a separate window.
-         *
-         * [Api set: Mailbox 1.1]
+         * continue in a separate window. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -2917,9 +2721,7 @@ export declare namespace Office {
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
-         * continue in a separate window.
-         *
-         * [Api set: Mailbox 1.1]
+         * continue in a separate window. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -2939,9 +2741,7 @@ export declare namespace Office {
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
-         * continue in a separate window.
-         *
-         * [Api set: Mailbox 1.1]
+         * continue in a separate window. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -2964,9 +2764,7 @@ export declare namespace Office {
          * in the same session. 
          * In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
-         * continue in a separate window.
-         *
-         * [Api set: Mailbox 1.1]
+         * continue in a separate window. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -2986,9 +2784,7 @@ export declare namespace Office {
         * Removes an event handler for a supported event.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-        * 
-        * [Api set: Mailbox 1.7]
+        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
         *
         * @remarks
         *
@@ -3013,9 +2809,7 @@ export declare namespace Office {
         * Removes an event handler for a supported event.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-        * 
-        * [Api set: Mailbox 1.7]
+        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
         *
         * @remarks
         *
@@ -3049,9 +2843,7 @@ export declare namespace Office {
          *
          * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
          *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
+         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -3093,9 +2885,7 @@ export declare namespace Office {
          *
          * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
          *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
+         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -3126,9 +2916,7 @@ export declare namespace Office {
          *
          * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
          *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
+         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -3160,9 +2948,7 @@ export declare namespace Office {
          *
          * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
          *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
+         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -3180,9 +2966,7 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
-         * After insertion, the cursor is placed at the end of the inserted content.
-         *
-         * [Api set: Mailbox 1.2]
+         * After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]
          *
          * @remarks
          *
@@ -3220,9 +3004,7 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
-         * After insertion, the cursor is placed at the end of the inserted content.
-         *
-         * [Api set: Mailbox 1.2]
+         * After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]
          *
          * @remarks
          *
@@ -3241,9 +3023,7 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
-         * After insertion, the cursor is placed at the end of the inserted content.
-         *
-         * [Api set: Mailbox 1.2]
+         * After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]
          *
          * @remarks
          *
@@ -3270,9 +3050,7 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
-         * After insertion, the cursor is placed at the end of the inserted content.
-         *
-         * [Api set: Mailbox 1.2]
+         * After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]
          *
          * @remarks
          *
@@ -3298,9 +3076,7 @@ export declare namespace Office {
      */
     export interface AppointmentRead extends Appointment, ItemRead {
         /**
-         * Gets the item's attachments as an array.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the item's attachments as an array. [Api set: Mailbox 1.0]
          *
          * @remarks
          * 
@@ -3314,9 +3090,7 @@ export declare namespace Office {
          */
         attachments: Office.AttachmentDetails[];
         /**
-         * Gets an object that provides methods for manipulating the body of an item.
-         *
-         * [Api set: Mailbox 1.1]
+         * Gets an object that provides methods for manipulating the body of an item. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -3326,9 +3100,7 @@ export declare namespace Office {
          */
         body: Office.Body;
         /**
-         * Gets the date and time that an item was created. Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the date and time that an item was created. Read mode only. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3338,9 +3110,7 @@ export declare namespace Office {
          */
         dateTimeCreated: Date;
         /**
-         * Gets the date and time that an item was last modified. Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the date and time that an item was last modified. Read mode only. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3358,9 +3128,7 @@ export declare namespace Office {
          * You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.
          *
          * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on 
-         * the client to UTC for the server.
-         *
-         * [Api set: Mailbox 1.0]
+         * the client to UTC for the server. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3373,9 +3141,7 @@ export declare namespace Office {
          * Gets the Exchange Web Services item class of the selected item.
          *
          *
-         * You can create custom message classes that extends a default message class, for example, a custom appointment message class IPM.Appointment.Contoso.
-         *
-         * [Api set: Mailbox 1.0]
+         * You can create custom message classes that extends a default message class, for example, a custom appointment message class IPM.Appointment.Contoso. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3415,9 +3181,7 @@ export declare namespace Office {
          * Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. 
          * The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. 
          * Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. 
-         * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
-         *
-         * [Api set: Mailbox 1.0]
+         * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3429,9 +3193,7 @@ export declare namespace Office {
         /**
          * Gets the type of item that an instance represents.
          *
-         * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment.
-         *
-         * [Api set: Mailbox 1.0]
+         * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3443,9 +3205,7 @@ export declare namespace Office {
         /**
          * Gets the location of an appointment.
          *
-         * The location property returns a string that contains the location of the appointment.
-         *
-         * [Api set: Mailbox 1.0]
+         * The location property returns a string that contains the location of the appointment. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3458,9 +3218,7 @@ export declare namespace Office {
          * Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
          *
          * The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by email programs. 
-         * To get the subject of the item with the prefixes intact, use the subject property.
-         *
-         * [Api set: Mailbox 1.0]
+         * To get the subject of the item with the prefixes intact, use the subject property. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3470,9 +3228,7 @@ export declare namespace Office {
          */
         normalizedSubject: string;
         /**
-         * Gets the notification messages for an item.
-         *
-         * [Api set: Mailbox 1.3]
+         * Gets the notification messages for an item. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -3485,9 +3241,7 @@ export declare namespace Office {
          * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
          *
          * The optionalAttendees property returns an array that contains an {@link Office.EmailAddressDetails} object for each optional attendee to 
-         * the meeting.
-         *
-         * [Api set: Mailbox 1.0]
+         * the meeting. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3497,9 +3251,7 @@ export declare namespace Office {
          */
         optionalAttendees: EmailAddressDetails[];
         /**
-         * Gets the email address of the meeting organizer for a specified meeting.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the email address of the meeting organizer for a specified meeting. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3517,9 +3269,7 @@ export declare namespace Office {
          * Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
          * 
          * Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single 
-         * appointment and NOT a part of a series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * appointment and NOT a part of a series. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -3532,9 +3282,7 @@ export declare namespace Office {
          * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
          *
          * The requiredAttendees property returns an array that contains an {@link Office.EmailAddressDetails} object for each required attendee to 
-         * the meeting.
-         *
-         * [Api set: Mailbox 1.0]
+         * the meeting. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3547,9 +3295,7 @@ export declare namespace Office {
          * Gets the date and time that the appointment is to begin.
          *
          * The start property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. 
-         * You can use the convertToLocalClientTime method to convert the value to the client's local date and time.
-         *
-         * [Api set: Mailbox 1.0]
+         * You can use the convertToLocalClientTime method to convert the value to the client's local date and time. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3570,9 +3316,7 @@ export declare namespace Office {
          * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
          * 
          * The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests 
-         * and returns undefined for any other items that are not meeting requests.
-         * 
-         * [Api set: Mailbox 1.7]
+         * and returns undefined for any other items that are not meeting requests. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -3586,9 +3330,7 @@ export declare namespace Office {
          *
          * The subject property gets or sets the entire subject of the item, as sent by the email server.
          *
-         * The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:.
-         *
-         * [Api set: Mailbox 1.0]
+         * The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3602,9 +3344,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-         * 
-         * [Api set: Mailbox 1.7]
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -3630,9 +3370,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-         * 
-         * [Api set: Mailbox 1.7]
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -3659,9 +3397,7 @@ export declare namespace Office {
          * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
          * If this isn't possible, then no error message is thrown.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -3684,9 +3420,7 @@ export declare namespace Office {
          * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
          * If this isn't possible, then no error message is thrown.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3703,9 +3437,7 @@ export declare namespace Office {
          * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
          * 
          * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web 
-         * for Office 365.
-         * 
-         * [Api set: Mailbox Preview]
+         * for Office 365. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -3731,9 +3463,7 @@ export declare namespace Office {
         /**
          * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
          * 
-         * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365.
-         * 
-         * [Api set: Mailbox Preview]
+         * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -3753,9 +3483,7 @@ export declare namespace Office {
         /**
          * Gets the entities found in the selected item's body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3767,9 +3495,7 @@ export declare namespace Office {
         /**
          * Gets an array of all the entities of the specified entity type found in the selected item's body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          * 
          * @param entityType - One of the EntityType enumeration values.
          *
@@ -3835,9 +3561,7 @@ export declare namespace Office {
          * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element 
          * in the manifest XML file with the specified FilterName element value.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -3865,9 +3589,7 @@ export declare namespace Office {
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
          * Instead, use the Body.getAsync method to retrieve the entire body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. 
@@ -3891,9 +3613,7 @@ export declare namespace Office {
          * and should not attempt to return the entire body of the item. 
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @returns
          * An array that contains the strings that match the regular expression defined in the manifest XML file.
@@ -3910,9 +3630,7 @@ export declare namespace Office {
         /**
          * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.6]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.6]
          *
          * @remarks
          *
@@ -3937,9 +3655,7 @@ export declare namespace Office {
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
          * Instead, use the Body.getAsync method to retrieve the entire body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.6]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.6]
          *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. 
@@ -3962,9 +3678,7 @@ export declare namespace Office {
         *
         * The custom properties are provided as a CustomProperties object in the asyncResult.value property. 
         * This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to 
-        * the server.
-        *
-        * [Api set: Mailbox 1.0]
+        * the server. [Api set: Mailbox 1.0]
         *
         * @remarks
         *
@@ -3983,9 +3697,7 @@ export declare namespace Office {
         * Removes an event handler for a supported event.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-        * 
-        * [Api set: Mailbox 1.7]
+        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
         *
         * @remarks
         *
@@ -4010,9 +3722,7 @@ export declare namespace Office {
         * Removes an event handler for a supported event.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-        * 
-        * [Api set: Mailbox 1.7]
+        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
         *
         * @remarks
         *
@@ -4031,9 +3741,7 @@ export declare namespace Office {
 
     /**
      * The item namespace is used to access the currently selected message, meeting request, or appointment. 
-     * You can determine the type of the item by using the `itemType` property.
-     *
-     * [Api set: Mailbox 1.0]
+     * You can determine the type of the item by using the `itemType` property. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
@@ -4042,9 +3750,7 @@ export declare namespace Office {
      */
     export interface Item {
         /**
-         * Gets an object that provides methods for manipulating the body of an item.
-         *
-         * [Api set: Mailbox 1.1]
+         * Gets an object that provides methods for manipulating the body of an item. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -4054,9 +3760,7 @@ export declare namespace Office {
          */
         body: Office.Body;
         /**
-         * Gets the date and time that an item was created. Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the date and time that an item was created. Read mode only. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -4066,9 +3770,7 @@ export declare namespace Office {
          */
         dateTimeCreated: Date;
         /**
-         * Gets the date and time that an item was last modified. Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the date and time that an item was last modified. Read mode only. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -4083,9 +3785,7 @@ export declare namespace Office {
          * Gets the type of item that an instance represents.
          *
          * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or 
-         * an appointment.
-         *
-         * [Api set: Mailbox 1.0]
+         * an appointment. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -4095,9 +3795,7 @@ export declare namespace Office {
          */
         itemType: Office.MailboxEnums.ItemType;
         /**
-         * Gets the notification messages for an item.
-         *
-         * [Api set: Mailbox 1.3]
+         * Gets the notification messages for an item. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -4118,9 +3816,7 @@ export declare namespace Office {
          * Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
          * 
          * Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment 
-         * and NOT a part of a series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * and NOT a part of a series. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -4142,9 +3838,7 @@ export declare namespace Office {
          * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
          * 
          * The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests 
-         * and returns undefined for any other items that are not meeting requests.
-         * 
-         * [Api set: Mailbox 1.7]
+         * and returns undefined for any other items that are not meeting requests. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -4158,9 +3852,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-         * 
-         * [Api set: Mailbox 1.7]
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -4186,9 +3878,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-         * 
-         * [Api set: Mailbox 1.7]
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -4211,9 +3901,7 @@ export declare namespace Office {
          * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
          * `item.attachments` call. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
-         * continue in a separate window.
-         * 
-         * [Api set: Mailbox Preview]
+         * continue in a separate window. [Api set: Mailbox Preview]
          * 
          * @remarks
          * 
@@ -4238,9 +3926,7 @@ export declare namespace Office {
          * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
          * 
          * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web 
-         * for Office 365.
-         * 
-         * [Api set: Mailbox Preview]
+         * for Office 365. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -4265,9 +3951,7 @@ export declare namespace Office {
         getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;
 
        /**
-        * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
-        *
-        * [Api set: Mailbox Preview]
+        * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox. [Api set: Mailbox Preview]
         *
         * @remarks
         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -4289,9 +3973,7 @@ export declare namespace Office {
         getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult<Office.SharedProperties>) => void): void;
 
        /**
-        * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
-        *
-        * [Api set: Mailbox Preview]
+        * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox. [Api set: Mailbox Preview]
         *
         * @remarks
         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -4315,9 +3997,7 @@ export declare namespace Office {
         *
         * The custom properties are provided as a CustomProperties object in the asyncResult.value property. 
         * This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to 
-        * the server.
-        *
-        * [Api set: Mailbox 1.0]
+        * the server. [Api set: Mailbox 1.0]
         *
         * @remarks
         *
@@ -4336,9 +4016,7 @@ export declare namespace Office {
         * Removes an event handler for a supported event.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-        * 
-        * [Api set: Mailbox 1.7]
+        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
         *
         * @remarks
         *
@@ -4364,9 +4042,7 @@ export declare namespace Office {
         * Removes an event handler for a supported event.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-        * 
-        * [Api set: Mailbox 1.7]
+        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
         *
         * @remarks
         *
@@ -4394,9 +4070,7 @@ export declare namespace Office {
          *
          * The subject property gets or sets the entire subject of the item, as sent by the email server.
          *
-         * The subject property returns a Subject object that provides methods to get and set the subject.
-         *
-         * [Api set: Mailbox 1.0]
+         * The subject property returns a Subject object that provides methods to get and set the subject. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -4410,9 +4084,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox 1.1]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -4446,9 +4118,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox 1.1]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -4466,9 +4136,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox 1.1]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -4490,9 +4158,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox 1.1]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -4515,9 +4181,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the AsyncResult.value object.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox Preview]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox Preview]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -4550,9 +4214,7 @@ export declare namespace Office {
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
          * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
-         * you are editing; however, this is not supported and is not recommended.
-         *
-         * [Api set: Mailbox 1.1]
+         * you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -4590,9 +4252,7 @@ export declare namespace Office {
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
          * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
-         * you are editing; however, this is not supported and is not recommended.
-         *
-         * [Api set: Mailbox 1.1]
+         * you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -4616,9 +4276,7 @@ export declare namespace Office {
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
          * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
-         * you are editing; however, this is not supported and is not recommended.
-         *
-         * [Api set: Mailbox 1.1]
+         * you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -4644,9 +4302,7 @@ export declare namespace Office {
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
          * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
-         * you are editing; however, this is not supported and is not recommended.
-         *
-         * [Api set: Mailbox 1.1]
+         * you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -4673,9 +4329,7 @@ export declare namespace Office {
          * In the Outlook desktop client, if the message is an inline reply, the close method has no effect.
          *
          * Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, 
-         * discard, or cancel even if no changes have occurred since the item was last saved.
-         *
-         * [Api set: Mailbox 1.3]
+         * discard, or cancel even if no changes have occurred since the item was last saved. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -4685,9 +4339,7 @@ export declare namespace Office {
          */
         close(): void;
         /**
-         * Gets the item's attachments as an array.
-         * 
-         * [Api set: Mailbox Preview]
+         * Gets the item's attachments as an array. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -4707,9 +4359,7 @@ export declare namespace Office {
         /**
          * Gets initialization data passed when the add-in is activated by an actionable message.
          *
-         * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365.
-         * 
-         * [Api set: Mailbox Preview]
+         * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -4737,9 +4387,7 @@ export declare namespace Office {
          * If a field other than the body or subject is selected, the method returns the InvalidSelection error.
          *
          * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes 
-         * from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * [Api set: Mailbox 1.2]
+         * from, call asyncResult.value.sourceProperty, which will be either body or subject. [Api set: Mailbox 1.2]
          *
          * @returns
          * The selected data as a string with format determined by coercionType.
@@ -4763,9 +4411,7 @@ export declare namespace Office {
          * If a field other than the body or subject is selected, the method returns the InvalidSelection error.
          *
          * To access the selected data from the callback method, call asyncResult.value.data. 
-         * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * [Api set: Mailbox 1.2]
+         * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject. [Api set: Mailbox 1.2]
          *
          * @returns
          * The selected data as a string with format determined by coercionType.
@@ -4791,9 +4437,7 @@ export declare namespace Office {
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
-         * continue in a separate window.
-         *
-         * [Api set: Mailbox 1.1]
+         * continue in a separate window. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -4826,9 +4470,7 @@ export declare namespace Office {
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
-         * continue in a separate window.
-         *
-         * [Api set: Mailbox 1.1]
+         * continue in a separate window. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -4848,9 +4490,7 @@ export declare namespace Office {
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
-         * continue in a separate window.
-         *
-         * [Api set: Mailbox 1.1]
+         * continue in a separate window. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -4872,9 +4512,7 @@ export declare namespace Office {
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
-         * continue in a separate window.
-         *
-         * [Api set: Mailbox 1.1]
+         * continue in a separate window. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -4910,9 +4548,7 @@ export declare namespace Office {
          *
          * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
          *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
+         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -4956,9 +4592,7 @@ export declare namespace Office {
          *
          * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
          *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
+         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -4989,9 +4623,7 @@ export declare namespace Office {
          *
          * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
          *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
+         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -5024,9 +4656,7 @@ export declare namespace Office {
          *
          * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
          *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
+         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -5046,9 +4676,7 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
-         * After insertion, the cursor is placed at the end of the inserted content.
-         *
-         * [Api set: Mailbox 1.2]
+         * After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]
          *
          * @remarks
          *
@@ -5086,9 +4714,7 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
-         * After insertion, the cursor is placed at the end of the inserted content.
-         *
-         * [Api set: Mailbox 1.2]
+         * After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]
          *
          * @remarks
          *
@@ -5107,9 +4733,7 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
-         * After insertion, the cursor is placed at the end of the inserted content.
-         *
-         * [Api set: Mailbox 1.2]
+         * After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]
          *
          * @remarks
          *
@@ -5137,9 +4761,7 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
-         * After insertion, the cursor is placed at the end of the inserted content.
-         *
-         * [Api set: Mailbox 1.2]
+         * After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]
          *
          * @remarks
          *
@@ -5164,9 +4786,7 @@ export declare namespace Office {
      */
     export interface ItemRead extends Item {
         /**
-         * Gets the item's attachments as an array.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the item's attachments as an array. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -5184,9 +4804,7 @@ export declare namespace Office {
          *
          *
          * You can create custom message classes that extends a default message class, for example, a custom appointment message class 
-         * IPM.Appointment.Contoso.
-         *
-         * [Api set: Mailbox 1.0]
+         * IPM.Appointment.Contoso. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5226,9 +4844,7 @@ export declare namespace Office {
          * Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. 
          * The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. 
          * Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. 
-         * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
-         *
-         * [Api set: Mailbox 1.0]
+         * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5241,9 +4857,7 @@ export declare namespace Office {
          * Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
          *
          * The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by 
-         * email programs. To get the subject of the item with the prefixes intact, use the subject property.
-         *
-         * [Api set: Mailbox 1.0]
+         * email programs. To get the subject of the item with the prefixes intact, use the subject property. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5257,9 +4871,7 @@ export declare namespace Office {
          *
          * The subject property gets or sets the entire subject of the item, as sent by the email server.
          *
-         * The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:.
-         *
-         * [Api set: Mailbox 1.0]
+         * The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5280,9 +4892,7 @@ export declare namespace Office {
          * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
          * If this isn't possible, then no error message is thrown.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -5305,9 +4915,7 @@ export declare namespace Office {
          * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
          * If this isn't possible, then no error message is thrown.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5324,9 +4932,7 @@ export declare namespace Office {
          * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
          * 
          * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web 
-         * for Office 365.
-         * 
-         * [Api set: Mailbox Preview]
+         * for Office 365. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -5353,9 +4959,7 @@ export declare namespace Office {
          * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
          * 
          * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web 
-         * for Office 365.
-         * 
-         * [Api set: Mailbox Preview]
+         * for Office 365. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -5375,9 +4979,7 @@ export declare namespace Office {
         /**
          * Gets the entities found in the selected item's body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5389,9 +4991,7 @@ export declare namespace Office {
         /**
          * Gets an array of all the entities of the specified entity type found in the selected item's body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          * 
          * @param entityType - One of the EntityType enumeration values.
          *
@@ -5458,9 +5058,7 @@ export declare namespace Office {
          * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element 
          * in the manifest XML file with the specified FilterName element value.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5488,9 +5086,7 @@ export declare namespace Office {
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
          * Instead, use the Body.getAsync method to retrieve the entire body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. 
@@ -5514,9 +5110,7 @@ export declare namespace Office {
          * and should not attempt to return the entire body of the item. 
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @returns
          * An array that contains the strings that match the regular expression defined in the manifest XML file.
@@ -5533,9 +5127,7 @@ export declare namespace Office {
         /**
          * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.6]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.6]
          *
          * @remarks
          *
@@ -5558,9 +5150,7 @@ export declare namespace Office {
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
          * Instead, use the Body.getAsync method to retrieve the entire body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.6]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.6]
          *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. 
@@ -5590,9 +5180,7 @@ export declare namespace Office {
          * change and that value you obtained earlier will no longer apply.
          *
          * You get null for this property for a new item in a compose form. 
-         * If the user sets a subject and saves the item, the conversationId property will return a value.
-         *
-         * [Api set: Mailbox 1.0]
+         * If the user sets a subject and saves the item, the conversationId property will return a value. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5611,9 +5199,7 @@ export declare namespace Office {
      */
     export interface MessageCompose extends Message, ItemCompose {
         /**
-         * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.
-         *
-         * [Api set: Mailbox 1.1]
+         * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -5623,9 +5209,7 @@ export declare namespace Office {
          */
         bcc: Recipients;
         /**
-         * Gets an object that provides methods for manipulating the body of an item.
-         *
-         * [Api set: Mailbox 1.1]
+         * Gets an object that provides methods for manipulating the body of an item. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -5639,9 +5223,7 @@ export declare namespace Office {
          * current item.
          *
          * The cc property returns a {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of 
-         * the message.
-         *
-         * [Api set: Mailbox 1.0]
+         * the message. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5658,9 +5240,7 @@ export declare namespace Office {
          * and that value you obtained earlier will no longer apply.
          *
          * You get null for this property for a new item in a compose form. 
-         * If the user sets a subject and saves the item, the conversationId property will return a value.
-         *
-         * [Api set: Mailbox 1.0]
+         * If the user sets a subject and saves the item, the conversationId property will return a value. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5670,9 +5250,7 @@ export declare namespace Office {
          */
         conversationId: string;
         /**
-         * Gets the date and time that an item was created. Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the date and time that an item was created. Read mode only. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5682,9 +5260,7 @@ export declare namespace Office {
          */
         dateTimeCreated: Date;
         /**
-         * Gets the date and time that an item was last modified. Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the date and time that an item was last modified. Read mode only. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5701,9 +5277,7 @@ export declare namespace Office {
          * The from and sender properties represent the same person unless the message is sent by a delegate. 
          * In that case, the from property represents the owner, and the sender property represents the delegate.
          *
-         * The from property returns a From object that provides a method to get the from value.
-         * 
-         * [Api set: Mailbox 1.7]
+         * The from property returns a From object that provides a method to get the from value. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -5715,9 +5289,7 @@ export declare namespace Office {
         /**
          * Sets the internet headers of a message.
          * 
-         * The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet headers on the message.
-         *
-         * [Api set: Mailbox Preview]
+         * The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet headers on the message. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -5732,9 +5304,7 @@ export declare namespace Office {
          * Gets the type of item that an instance represents.
          *
          * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or 
-         * an appointment.
-         *
-         * [Api set: Mailbox 1.0]
+         * an appointment. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5744,9 +5314,7 @@ export declare namespace Office {
          */
         itemType: Office.MailboxEnums.ItemType;
         /**
-         * Gets the notification messages for an item.
-         *
-         * [Api set: Mailbox 1.3]
+         * Gets the notification messages for an item. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -5766,9 +5334,7 @@ export declare namespace Office {
          * Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
          * 
          * Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment 
-         * and NOT a part of a series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * and NOT a part of a series. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -5789,9 +5355,7 @@ export declare namespace Office {
          * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
          * 
          * The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests 
-         * and returns undefined for any other items that are not meeting requests.
-         * 
-         * [Api set: Mailbox 1.7]
+         * and returns undefined for any other items that are not meeting requests. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -5805,9 +5369,7 @@ export declare namespace Office {
          *
          * The subject property gets or sets the entire subject of the item, as sent by the email server.
          *
-         * The subject property returns a Subject object that provides methods to get and set the subject.
-         *
-         * [Api set: Mailbox 1.0]
+         * The subject property returns a Subject object that provides methods to get and set the subject. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5820,9 +5382,7 @@ export declare namespace Office {
          * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the 
          * current item.
          *
-         * The to property returns a Recipients object that provides methods to get or update the recipients on the To line of the message.
-         *
-         * [Api set: Mailbox 1.0]
+         * The to property returns a Recipients object that provides methods to get or update the recipients on the To line of the message. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -5837,9 +5397,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox 1.1]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -5873,9 +5431,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox 1.1]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -5893,9 +5449,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox 1.1]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -5916,9 +5470,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox 1.1]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -5940,9 +5492,7 @@ export declare namespace Office {
          *
          * The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the AsyncResult.value object.
          *
-         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
-         *
-         * [Api set: Mailbox Preview]
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox Preview]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -5967,9 +5517,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-         * 
-         * [Api set: Mailbox 1.7]
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -5994,9 +5542,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-         * 
-         * [Api set: Mailbox 1.7]
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -6022,9 +5568,7 @@ export declare namespace Office {
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
          * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
-         * you are editing; however, this is not supported and is not recommended.
-         *
-         * [Api set: Mailbox 1.1]
+         * you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -6062,9 +5606,7 @@ export declare namespace Office {
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
          * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
-         * you are editing; however, this is not supported and is not recommended.
-         *
-         * [Api set: Mailbox 1.1]
+         * you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -6088,9 +5630,7 @@ export declare namespace Office {
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
          * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
-         * you are editing; however, this is not supported and is not recommended.
-         *
-         * [Api set: Mailbox 1.1]
+         * you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -6116,9 +5656,7 @@ export declare namespace Office {
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
          * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that 
-         * you are editing; however, this is not supported and is not recommended.
-         *
-         * [Api set: Mailbox 1.1]
+         * you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -6144,9 +5682,7 @@ export declare namespace Office {
          * In the Outlook desktop client, if the message is an inline reply, the close method has no effect.
          *
          * Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, 
-         * discard, or cancel even if no changes have occurred since the item was last saved.
-         *
-         * [Api set: Mailbox 1.3]
+         * discard, or cancel even if no changes have occurred since the item was last saved. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -6156,9 +5692,7 @@ export declare namespace Office {
          */
         close(): void;
         /**
-         * Gets the item's attachments as an array.
-         * 
-         * [Api set: Mailbox Preview]
+         * Gets the item's attachments as an array. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -6179,9 +5713,7 @@ export declare namespace Office {
          * Gets initialization data passed when the add-in is activated by an actionable message.
          *
          * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web 
-         * for Office 365.
-         * 
-         * [Api set: Mailbox Preview]
+         * for Office 365. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -6209,9 +5741,7 @@ export declare namespace Office {
          * If a field other than the body or subject is selected, the method returns the InvalidSelection error.
          *
          * To access the selected data from the callback method, call asyncResult.value.data. 
-         * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * [Api set: Mailbox 1.2]
+         * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject. [Api set: Mailbox 1.2]
          *
          * @returns
          * The selected data as a string with format determined by coercionType.
@@ -6235,9 +5765,7 @@ export declare namespace Office {
          * If a field other than the body or subject is selected, the method returns the InvalidSelection error.
          *
          * To access the selected data from the callback method, call asyncResult.value.data. 
-         * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * [Api set: Mailbox 1.2]
+         * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject. [Api set: Mailbox 1.2]
          *
          * @returns
          * The selected data as a string with format determined by coercionType.
@@ -6265,9 +5793,7 @@ export declare namespace Office {
          *
          * The custom properties are provided as a CustomProperties object in the asyncResult.value property. 
          * This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to 
-         * the server.
-         *
-         * [Api set: Mailbox 1.0]
+         * the server. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -6288,9 +5814,7 @@ export declare namespace Office {
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
-         * continue in a separate window.
-         *
-         * [Api set: Mailbox 1.1]
+         * continue in a separate window. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -6323,9 +5847,7 @@ export declare namespace Office {
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
-         * continue in a separate window.
-         *
-         * [Api set: Mailbox 1.1]
+         * continue in a separate window. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -6345,9 +5867,7 @@ export declare namespace Office {
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
-         * continue in a separate window.
-         *
-         * [Api set: Mailbox 1.1]
+         * continue in a separate window. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -6369,9 +5889,7 @@ export declare namespace Office {
          * As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment 
          * in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
-         * continue in a separate window.
-         *
-         * [Api set: Mailbox 1.1]
+         * continue in a separate window. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -6391,9 +5909,7 @@ export declare namespace Office {
          * Removes an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-         * 
-         * [Api set: Mailbox 1.7]
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -6418,9 +5934,7 @@ export declare namespace Office {
          * Removes an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-         * 
-         * [Api set: Mailbox 1.7]
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -6454,9 +5968,7 @@ export declare namespace Office {
          *
          * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
          *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
+         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -6499,9 +6011,7 @@ export declare namespace Office {
          *
          * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
          *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
+         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -6531,9 +6041,7 @@ export declare namespace Office {
          *
          * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
          *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
+         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -6566,9 +6074,7 @@ export declare namespace Office {
          *
          * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
          *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
+         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -6587,9 +6093,7 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
-         * After insertion, the cursor is placed at the end of the inserted content.
-         *
-         * [Api set: Mailbox 1.2]
+         * After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]
          *
          * @remarks
          *
@@ -6626,9 +6130,7 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
-         * After insertion, the cursor is placed at the end of the inserted content.
-         *
-         * [Api set: Mailbox 1.2]
+         * After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]
          *
          * @remarks
          *
@@ -6647,9 +6149,7 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
-         * After insertion, the cursor is placed at the end of the inserted content.
-         *
-         * [Api set: Mailbox 1.2]
+         * After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]
          *
          * @remarks
          *
@@ -6676,9 +6176,7 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
-         * After insertion, the cursor is placed at the end of the inserted content.
-         *
-         * [Api set: Mailbox 1.2]
+         * After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]
          *
          * @remarks
          *
@@ -6703,9 +6201,7 @@ export declare namespace Office {
      */
     export interface MessageRead extends Message, ItemRead {
         /**
-         * Gets the item's attachments as an array.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the item's attachments as an array. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -6720,9 +6216,7 @@ export declare namespace Office {
          */
         attachments: Office.AttachmentDetails[];
         /**
-         * Gets an object that provides methods for manipulating the body of an item.
-         *
-         * [Api set: Mailbox 1.1]
+         * Gets an object that provides methods for manipulating the body of an item. [Api set: Mailbox 1.1]
          *
          * @remarks
          *
@@ -6736,9 +6230,7 @@ export declare namespace Office {
          * current item.
          *
          * The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc line of the message. 
-         * The collection is limited to a maximum of 100 members.
-         *
-         * [Api set: Mailbox 1.0]
+         * The collection is limited to a maximum of 100 members. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -6755,9 +6247,7 @@ export declare namespace Office {
          * and that value you obtained earlier will no longer apply.
          *
          * You get null for this property for a new item in a compose form. 
-         * If the user sets a subject and saves the item, the conversationId property will return a value.
-         *
-         * [Api set: Mailbox 1.0]
+         * If the user sets a subject and saves the item, the conversationId property will return a value. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -6767,9 +6257,7 @@ export declare namespace Office {
          */
         conversationId: string;
         /**
-         * Gets the date and time that an item was created. Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the date and time that an item was created. Read mode only. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -6779,9 +6267,7 @@ export declare namespace Office {
          */
         dateTimeCreated: Date;
         /**
-         * Gets the date and time that an item was last modified. Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the date and time that an item was last modified. Read mode only. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -6800,9 +6286,7 @@ export declare namespace Office {
          *
          * Note: The recipientType property of the EmailAddressDetails object in the from property is undefined.
          * 
-         * The from property returns an EmailAddressDetails object.
-         * 
-         * [Api set: Mailbox 1.0]
+         * The from property returns an EmailAddressDetails object. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -6814,9 +6298,7 @@ export declare namespace Office {
         /**
          * Gets the internet headers of a message.
          * 
-         * The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet headers on the message.
-         *
-         * [Api set: Mailbox Preview]
+         * The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet headers on the message. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -6828,9 +6310,7 @@ export declare namespace Office {
          */
         internetHeaders: Office.InternetHeaders;
         /**
-         * Gets the Internet message identifier for an email message.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the Internet message identifier for an email message. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -6843,9 +6323,7 @@ export declare namespace Office {
          * Gets the Exchange Web Services item class of the selected item.
          * 
          * You can create custom message classes that extends a default message class, for example, a custom appointment message class 
-         * IPM.Appointment.Contoso.
-         *
-         * [Api set: Mailbox 1.0]
+         * IPM.Appointment.Contoso. [Api set: Mailbox 1.0]
          *
          * @remarks
          * 
@@ -6886,9 +6364,7 @@ export declare namespace Office {
          * Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. 
          * The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. 
          * Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. 
-         * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
-         *
-         * [Api set: Mailbox 1.0]
+         * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -6901,9 +6377,7 @@ export declare namespace Office {
          * Gets the type of item that an instance represents.
          *
          * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or 
-         * an appointment.
-         *
-         * [Api set: Mailbox 1.0]
+         * an appointment. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -6917,9 +6391,7 @@ export declare namespace Office {
          *
          * The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by 
          * email programs. 
-         * To get the subject of the item with the prefixes intact, use the subject property.
-         *
-         * [Api set: Mailbox 1.0]
+         * To get the subject of the item with the prefixes intact, use the subject property. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -6929,9 +6401,7 @@ export declare namespace Office {
          */
         normalizedSubject: string;
         /**
-         * Gets the notification messages for an item.
-         *
-         * [Api set: Mailbox 1.3]
+         * Gets the notification messages for an item. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -6951,9 +6421,7 @@ export declare namespace Office {
          * Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
          * 
          * Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment 
-         * and NOT a part of a series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * and NOT a part of a series. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -6974,9 +6442,7 @@ export declare namespace Office {
          * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
          * 
          * The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests 
-         * and returns undefined for any other items that are not meeting requests.
-         * 
-         * [Api set: Mailbox 1.7]
+         * and returns undefined for any other items that are not meeting requests. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -6991,9 +6457,7 @@ export declare namespace Office {
          * The from and sender properties represent the same person unless the message is sent by a delegate. 
          * In that case, the from property represents the delegator, and the sender property represents the delegate.
          *
-         * Note: The recipientType property of the EmailAddressDetails object in the sender property is undefined.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: The recipientType property of the EmailAddressDetails object in the sender property is undefined. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -7007,9 +6471,7 @@ export declare namespace Office {
          *
          * The subject property gets or sets the entire subject of the item, as sent by the email server.
          *
-         * The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:.
-         *
-         * [Api set: Mailbox 1.0]
+         * The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -7023,9 +6485,7 @@ export declare namespace Office {
          * current item.
          *
          * The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To line of the message. 
-         * The collection is limited to a maximum of 100 members.
-         *
-         * [Api set: Mailbox 1.0]
+         * The collection is limited to a maximum of 100 members. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -7039,9 +6499,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-         * 
-         * [Api set: Mailbox 1.7]
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -7067,9 +6525,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-         * 
-         * [Api set: Mailbox 1.7]
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -7096,9 +6552,7 @@ export declare namespace Office {
          * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
          * If this isn't possible, then no error message is thrown.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -7121,9 +6575,7 @@ export declare namespace Office {
          * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
          * If this isn't possible, then no error message is thrown.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -7141,9 +6593,7 @@ export declare namespace Office {
          * {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
          * 
          * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web 
-         * for Office 365.
-         * 
-         * [Api set: Mailbox Preview]
+         * for Office 365. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -7171,9 +6621,7 @@ export declare namespace Office {
          * {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
          * 
          * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the 
-         * web for Office 365.
-         * 
-         * [Api set: Mailbox Preview]
+         * web for Office 365. [Api set: Mailbox Preview]
          *
          * @remarks
          *
@@ -7193,9 +6641,7 @@ export declare namespace Office {
         /**
          * Gets the entities found in the selected item's body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -7207,9 +6653,7 @@ export declare namespace Office {
         /**
          * Gets an array of all the entities of the specified entity type found in the selected item's body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @param entityType - One of the EntityType enumeration values.
          * 
@@ -7277,9 +6721,7 @@ export declare namespace Office {
          * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element 
          * in the manifest XML file with the specified FilterName element value.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -7307,9 +6749,7 @@ export declare namespace Office {
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
          * Instead, use the Body.getAsync method to retrieve the entire body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. 
@@ -7333,9 +6773,7 @@ export declare namespace Office {
          * and should not attempt to return the entire body of the item. 
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @returns
          * An array that contains the strings that match the regular expression defined in the manifest XML file.
@@ -7352,9 +6790,7 @@ export declare namespace Office {
         /**
          * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.6]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.6]
          *
          * @remarks
          *
@@ -7379,9 +6815,7 @@ export declare namespace Office {
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
          * Instead, use the Body.getAsync method to retrieve the entire body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.6]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.6]
          *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. 
@@ -7404,9 +6838,7 @@ export declare namespace Office {
          *
          * The custom properties are provided as a CustomProperties object in the asyncResult.value property. 
          * This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to 
-         * the server.
-         *
-         * [Api set: Mailbox 1.0]
+         * the server. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -7424,9 +6856,7 @@ export declare namespace Office {
          * Removes an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-         * 
-         * [Api set: Mailbox 1.7]
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -7451,9 +6881,7 @@ export declare namespace Office {
          * Removes an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
-         * 
-         * [Api set: Mailbox 1.7]
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported. [Api set: Mailbox 1.7]
          *
          * @remarks
          *
@@ -7471,9 +6899,7 @@ export declare namespace Office {
     }
 
     /**
-     * Represents a date and time in the local client's time zone. Read mode only.
-     *
-     * [Api set: Mailbox 1.0]
+     * Represents a date and time in the local client's time zone. Read mode only. [Api set: Mailbox 1.0]
      *
      * @remarks
      *
@@ -7516,9 +6942,7 @@ export declare namespace Office {
         timezoneOffset: number;
     }
     /**
-     * Provides methods to get and set the location of a meeting in an Outlook add-in.
-     *
-     * [Api set: Mailbox 1.1]
+     * Provides methods to get and set the location of a meeting in an Outlook add-in. [Api set: Mailbox 1.1]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -7535,9 +6959,7 @@ export declare namespace Office {
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
-         *                 type Office.AsyncResult.
-         *
-         * [Api set: Mailbox 1.1]
+         *                 type Office.AsyncResult. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -7557,9 +6979,7 @@ export declare namespace Office {
          * The location of the appointment is provided as a string in the asyncResult.value property.
          *
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
-         *                 type Office.AsyncResult.
-         *
-         * [Api set: Mailbox 1.1]
+         *                 type Office.AsyncResult. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -7577,9 +6997,7 @@ export declare namespace Office {
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
-         *                 type Office.AsyncResult. If setting the location fails, the asyncResult.error property will contain an error code.
-         *
-         * [Api set: Mailbox 1.1]
+         *                 type Office.AsyncResult. If setting the location fails, the asyncResult.error property will contain an error code. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -7603,9 +7021,7 @@ export declare namespace Office {
          * The setAsync method starts an asynchronous call to the Exchange server to set the location of an appointment. 
          * Setting the location of an appointment overwrites the current location.
          *
-         * @param location - The location of the appointment. The string is limited to 255 characters.
-         *
-         * [Api set: Mailbox 1.1]
+         * @param location - The location of the appointment. The string is limited to 255 characters. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -7623,9 +7039,7 @@ export declare namespace Office {
          *
          * @param location - The location of the appointment. The string is limited to 255 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *
-         * [Api set: Mailbox 1.1]
+         *        asyncContext: Developers can provide any object they wish to access in the callback method. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -7643,9 +7057,7 @@ export declare namespace Office {
          *
          * @param location - The location of the appointment. The string is limited to 255 characters.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
-         *                 type Office.AsyncResult. If setting the location fails, the asyncResult.error property will contain an error code.
-         *
-         * [Api set: Mailbox 1.1]
+         *                 type Office.AsyncResult. If setting the location fails, the asyncResult.error property will contain an error code. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -7665,9 +7077,7 @@ export declare namespace Office {
      *
      * - item: Provides methods and properties for accessing a message or appointment in an Outlook add-in.
      *
-     * - userProfile: Provides information about the user in an Outlook add-in.
-     *
-     * [Api set: Mailbox 1.0]
+     * - userProfile: Provides information about the user in an Outlook add-in. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
@@ -7693,9 +7103,7 @@ export declare namespace Office {
          * and ThreeColumns - displayed when the screen is wide) that correspond to the width of the screen and the window, and the number of columns 
          * that can be displayed.
          *
-         *  More information is under {@link Office.Diagnostics}. 
-         *
-         * [Api set: Mailbox 1.0]
+         *  More information is under {@link Office.Diagnostics}. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -7709,9 +7117,7 @@ export declare namespace Office {
          * Your app must have the ReadItem permission specified in its manifest to call the ewsUrl member in read mode.
          *
          * In compose mode you must call the saveAsync method before you can use the ewsUrl member. 
-         * Your app must have ReadWriteItem permissions to call the saveAsync method.
-         *
-         * [Api set: Mailbox 1.0]
+         * Your app must have ReadWriteItem permissions to call the saveAsync method. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -7736,9 +7142,7 @@ export declare namespace Office {
          * Your app must have the ReadItem permission specified in its manifest to call the restUrl member in read mode.
          *
          * In compose mode you must call the saveAsync method before you can use the restUrl member. 
-         * Your app must have ReadWriteItem permissions to call the saveAsync method.
-         *
-         * [Api set: Mailbox 1.5]
+         * Your app must have ReadWriteItem permissions to call the saveAsync method. [Api set: Mailbox 1.5]
          *
          * @remarks
          *
@@ -7758,9 +7162,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event.
          *
-         * Currently, the only supported event type is `Office.EventType.ItemChanged`. In Preview, `Office.EventType.OfficeThemeChanged` is also supported.
-         *
-         * [Api set: Mailbox 1.5]
+         * Currently, the only supported event type is `Office.EventType.ItemChanged`. In Preview, `Office.EventType.OfficeThemeChanged` is also supported. [Api set: Mailbox 1.5]
          *
          * @remarks
          *
@@ -7782,9 +7184,7 @@ export declare namespace Office {
          * Item IDs retrieved via a REST API (such as the Outlook Mail API or the Microsoft Graph) use a different format than the format used by 
          * Exchange Web Services (EWS). The convertToEwsId method converts a REST-formatted ID into the proper format for EWS.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.3]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -7807,9 +7207,7 @@ export declare namespace Office {
          * If the mail app is running in Outlook, the convertToLocalClientTime method will return a dictionary object with the values set to the 
          * client computer time zone. 
          * If the mail app is running in Outlook Web App, the convertToLocalClientTime method will return a dictionary object with the values set to 
-         * the time zone specified in the EAC.
-         *
-         * [Api set: Mailbox 1.0]
+         * the time zone specified in the EAC. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -7823,9 +7221,7 @@ export declare namespace Office {
         /**
          * Converts an item ID formatted for EWS into REST format.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.3]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.3]
          *
          * @remarks
          * 
@@ -7845,9 +7241,7 @@ export declare namespace Office {
          * Gets a Date object from a dictionary containing time information.
          *
          * The convertToUtcClientTime method converts a dictionary containing a local date and time to a Date object with the correct values for the 
-         * local date and time.
-         *
-         * [Api set: Mailbox 1.0]
+         * local date and time. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -7874,9 +7268,7 @@ export declare namespace Office {
          * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and 
          * no error message will be returned.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -7900,9 +7292,7 @@ export declare namespace Office {
          * Do not use the displayMessageForm with an itemId that represents an appointment. Use the displayAppointmentForm method to display 
          * an existing appointment, and displayNewAppointmentForm to display a form to create a new appointment.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -7929,9 +7319,7 @@ export declare namespace Office {
          *
          * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.0]
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -7948,9 +7336,7 @@ export declare namespace Office {
          * The displayNewMessageForm method opens a form that enables the user to create a new message. If parameters are specified, the message form 
          * fields are automatically populated with the contents of the parameters.
          *
-         * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
-         *
-         * [Api set: Mailbox 1.6]
+         * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown. [Api set: Mailbox 1.6]
          *
          * @remarks
          *
@@ -8011,9 +7397,7 @@ export declare namespace Office {
          *
          * The add-in should use the ewsUrl property to determine the correct URL to use when making EWS calls.
          *
-         * Note: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
-         *
-         * [Api set: Mailbox 1.5]
+         * Note: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible. [Api set: Mailbox 1.5]
          *
          * @remarks
          *
@@ -8048,9 +7432,7 @@ export declare namespace Office {
          * Your app must have the ReadItem permission specified in its manifest to call the getCallbackTokenAsync method in read mode.
          *
          * In compose mode you must call the saveAsync method to get an item identifier to pass to the getCallbackTokenAsync method. 
-         * Your app must have ReadWriteItem permissions to call the saveAsync method.
-         *
-         * [Api set: Mailbox 1.5]
+         * Your app must have ReadWriteItem permissions to call the saveAsync method. [Api set: Mailbox 1.5]
          *
          * @remarks
          *
@@ -8076,9 +7458,7 @@ export declare namespace Office {
          * Your app must have the ReadItem permission specified in its manifest to call the getCallbackTokenAsync method in read mode.
          *
          * In compose mode you must call the saveAsync method to get an item identifier to pass to the getCallbackTokenAsync method. 
-         * Your app must have ReadWriteItem permissions to call the saveAsync method.
-         *
-         * [Api set: Mailbox 1.3]
+         * Your app must have ReadWriteItem permissions to call the saveAsync method. [Api set: Mailbox 1.3]
          *
          * @remarks
          *
@@ -8095,9 +7475,7 @@ export declare namespace Office {
         /**
          * Gets a token identifying the user and the Office Add-in.
          *
-         * The token is provided as a string in the asyncResult.value property.
-         *
-         * [Api set: Mailbox 1.0]
+         * The token is provided as a string in the asyncResult.value property. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -8151,9 +7529,7 @@ export declare namespace Office {
          *
          * You do not need to set the encoding value when your mail app is running in Outlook on the web. 
          * You can determine whether your mail app is running in Outlook or Outlook on the web by using the mailbox.diagnostics.hostName property. 
-         * You can determine what version of Outlook is running by using the mailbox.diagnostics.hostVersion property.
-         *
-         * [Api set: Mailbox 1.0]
+         * You can determine what version of Outlook is running by using the mailbox.diagnostics.hostVersion property. [Api set: Mailbox 1.0]
          *
          * @remarks
          *
@@ -8171,9 +7547,7 @@ export declare namespace Office {
         /**
          * Removes an event handler for a supported event.
          *
-         * Currently, the only supported event type is `Office.EventType.ItemChanged`. In Preview, `Office.EventType.OfficeThemeChanged` is also supported.
-         *
-         * [Api set: Mailbox 1.5]
+         * Currently, the only supported event type is `Office.EventType.ItemChanged`. In Preview, `Office.EventType.OfficeThemeChanged` is also supported. [Api set: Mailbox 1.5]
          *
          * @remarks
          *
@@ -8199,9 +7573,7 @@ export declare namespace Office {
      *
      * The start and end values are string representations of a Date object that contains the date and time at which the suggested meeting is to 
      * begin and end. 
-     * The values are in the default time zone specified for the current user.
-     *
-     * [Api set: Mailbox 1.0]
+     * The values are in the default time zone specified for the current user. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8235,9 +7607,7 @@ export declare namespace Office {
         subject: string;
     }
     /**
-     * An array of NotificationMessageDetails objects are returned by the NotificationMessages.getAllAsync method.
-     *
-     * [Api set: Mailbox 1.3]
+     * An array of NotificationMessageDetails objects are returned by the NotificationMessages.getAllAsync method. [Api set: Mailbox 1.3]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8275,9 +7645,7 @@ export declare namespace Office {
         persistent?: Boolean;
     }
     /**
-     * The NotificationMessages object is returned as the notificationMessages property of an item.
-     *
-     * [Api set: Mailbox 1.3]
+     * The NotificationMessages object is returned as the notificationMessages property of an item. [Api set: Mailbox 1.3]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8297,9 +7665,7 @@ export declare namespace Office {
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
-         *                 type Office.AsyncResult.
-         *
-         * [Api set: Mailbox 1.3]
+         *                 type Office.AsyncResult. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8324,9 +7690,7 @@ export declare namespace Office {
          * @param key - A developer-specified key used to reference this notification message. Developers can use it to modify this message later. 
          *             It can't be longer than 32 characters.
          * @param JSONmessage - A JSON object that contains the notification message to be added to the item. 
-         *                    It contains a NotificationMessageDetails object.
-         *
-         * [Api set: Mailbox 1.3]
+         *                    It contains a NotificationMessageDetails object. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8344,9 +7708,7 @@ export declare namespace Office {
          * @param JSONmessage - A JSON object that contains the notification message to be added to the item. 
          *                    It contains a NotificationMessageDetails object.
          * @param options - Optional. An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *
-         * [Api set: Mailbox 1.3]
+         *        asyncContext: Developers can provide any object they wish to access in the callback method. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8364,9 +7726,7 @@ export declare namespace Office {
          * @param JSONmessage - A JSON object that contains the notification message to be added to the item. 
          *                    It contains a NotificationMessageDetails object.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
-         *                 type Office.AsyncResult.
-         *
-         * [Api set: Mailbox 1.3]
+         *                 type Office.AsyncResult. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8375,9 +7735,7 @@ export declare namespace Office {
          */
         addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult<void>) => void): void;
         /**
-         * Returns all keys and messages for an item.
-         *
-         * [Api set: Mailbox 1.3]
+         * Returns all keys and messages for an item. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8395,9 +7753,7 @@ export declare namespace Office {
          */
         getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.NotificationMessageDetails[]>) => void): void;
         /**
-         * Returns all keys and messages for an item.
-         *
-         * [Api set: Mailbox 1.3]
+         * Returns all keys and messages for an item. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8409,9 +7765,7 @@ export declare namespace Office {
          */
         getAllAsync(callback: (result: AsyncResult<Office.NotificationMessageDetails[]>) => void): void;
         /**
-         * Removes a notification message for an item.
-         *
-         * [Api set: Mailbox 1.3]
+         * Removes a notification message for an item. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8434,9 +7788,7 @@ export declare namespace Office {
          */
         removeAsync(key: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
-         * Removes a notification message for an item.
-         *
-         * [Api set: Mailbox 1.3]
+         * Removes a notification message for an item. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8447,9 +7799,7 @@ export declare namespace Office {
          */
         removeAsync(key: string): void;
         /**
-         * Removes a notification message for an item.
-         *
-         * [Api set: Mailbox 1.3]
+         * Removes a notification message for an item. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8462,9 +7812,7 @@ export declare namespace Office {
          */
         removeAsync(key: string, options: Office.AsyncContextOptions): void;
         /**
-         * Removes a notification message for an item.
-         *
-         * [Api set: Mailbox 1.3]
+         * Removes a notification message for an item. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8479,9 +7827,7 @@ export declare namespace Office {
         /**
          * Replaces a notification message that has a given key with another message.
          *
-         * If a notification message with the specified key doesn't exist, replaceAsync will add the notification.
-         *
-         * [Api set: Mailbox 1.3]
+         * If a notification message with the specified key doesn't exist, replaceAsync will add the notification. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8508,9 +7854,7 @@ export declare namespace Office {
         /**
          * Replaces a notification message that has a given key with another message.
          *
-         * If a notification message with the specified key doesn't exist, replaceAsync will add the notification.
-         *
-         * [Api set: Mailbox 1.3]
+         * If a notification message with the specified key doesn't exist, replaceAsync will add the notification. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8525,9 +7869,7 @@ export declare namespace Office {
         /**
          * Replaces a notification message that has a given key with another message.
          *
-         * If a notification message with the specified key doesn't exist, replaceAsync will add the notification.
-         *
-         * [Api set: Mailbox 1.3]
+         * If a notification message with the specified key doesn't exist, replaceAsync will add the notification. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8544,9 +7886,7 @@ export declare namespace Office {
         /**
          * Replaces a notification message that has a given key with another message.
          *
-         * If a notification message with the specified key doesn't exist, replaceAsync will add the notification.
-         *
-         * [Api set: Mailbox 1.3]
+         * If a notification message with the specified key doesn't exist, replaceAsync will add the notification. [Api set: Mailbox 1.3]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8565,9 +7905,7 @@ export declare namespace Office {
      * Represents a phone number identified in an item. Read mode only.
      *
      * An array of PhoneNumber objects containing the phone numbers found in an email message is returned in the phoneNumbers property of the 
-     * Entities object that is returned when you call the getEntities method on the selected item.
-     *
-     * [Api set: Mailbox 1.0]
+     * Entities object that is returned when you call the getEntities method on the selected item. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8588,8 +7926,7 @@ export declare namespace Office {
          */
         type: string;
     }
-    /**
-     * [Api set: Mailbox 1.1]
+    /* [Api set: Mailbox 1.1]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8606,9 +7943,7 @@ export declare namespace Office {
          *
          * - EmailUser objects
          *
-         * - EmailAddressDetails objects
-         *
-         * [Api set: Mailbox 1.1]
+         * - EmailAddressDetails objects [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -8641,9 +7976,7 @@ export declare namespace Office {
          *
          * - EmailUser objects
          *
-         * - EmailAddressDetails objects
-         *
-         * [Api set: Mailbox 1.1]
+         * - EmailAddressDetails objects [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -8664,9 +7997,7 @@ export declare namespace Office {
          *
          * - {@link Office.EmailUser} objects
          *
-         * - {@link Office.EmailAddressDetails} objects
-         *
-         * [Api set: Mailbox 1.1]
+         * - {@link Office.EmailAddressDetails} objects [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -8689,9 +8020,7 @@ export declare namespace Office {
          *
          * - {@link Office.EmailUser} objects
          *
-         * - {@link Office.EmailAddressDetails} objects
-         *
-         * [Api set: Mailbox 1.1]
+         * - {@link Office.EmailAddressDetails} objects [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -8708,9 +8037,7 @@ export declare namespace Office {
         /**
          * Gets a recipient list for an appointment or message.
          *
-         * When the call completes, the asyncResult.value property will contain an array of {@link Office.EmailAddressDetails} objects.
-         *
-         * [Api set: Mailbox 1.1]
+         * When the call completes, the asyncResult.value property will contain an array of {@link Office.EmailAddressDetails} objects. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8731,9 +8058,7 @@ export declare namespace Office {
         /**
          * Gets a recipient list for an appointment or message.
          *
-         * When the call completes, the asyncResult.value property will contain an array of {@link Office.EmailAddressDetails} objects.
-         *
-         * [Api set: Mailbox 1.1]
+         * When the call completes, the asyncResult.value property will contain an array of {@link Office.EmailAddressDetails} objects. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -8756,9 +8081,7 @@ export declare namespace Office {
          *
          * - {@link Office.EmailUser} objects
          *
-         * - {@link Office.EmailAddressDetails} objects
-         *
-         * [Api set: Mailbox 1.1]
+         * - {@link Office.EmailAddressDetails} objects [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -8795,9 +8118,7 @@ export declare namespace Office {
          *
          * - {@link Office.EmailUser} objects
          *
-         * - {@link Office.EmailAddressDetails} objects
-         *
-         * [Api set: Mailbox 1.1]
+         * - {@link Office.EmailAddressDetails} objects [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -8820,9 +8141,7 @@ export declare namespace Office {
          *
          * - {@link Office.EmailUser} objects
          *
-         * - {@link Office.EmailAddressDetails} objects
-         *
-         * [Api set: Mailbox 1.1]
+         * - {@link Office.EmailAddressDetails} objects [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -8847,9 +8166,7 @@ export declare namespace Office {
          *
          * - {@link Office.EmailUser} objects
          *
-         * - {@link Office.EmailAddressDetails} objects
-         *
-         * [Api set: Mailbox 1.1]
+         * - {@link Office.EmailAddressDetails} objects [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -8871,9 +8188,7 @@ export declare namespace Office {
     /**
      * The recurrence object provides methods to get and set the recurrence pattern of appointments but only get the recurrence pattern of 
      * meeting requests. 
-     * It will have a dictionary with the following keys: seriesTime, recurrenceType, recurrenceProperties, and recurrenceTimeZone (optional).
-     * 
-     * [Api set: Mailbox 1.7]
+     * It will have a dictionary with the following keys: seriesTime, recurrenceType, recurrenceProperties, and recurrenceTimeZone (optional). [Api set: Mailbox 1.7]
      * 
      * @remarks
      * 
@@ -8923,9 +8238,7 @@ export declare namespace Office {
      */
     export interface Recurrence {
         /**
-         * Gets or sets the properties of the recurring appointment series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Gets or sets the properties of the recurring appointment series. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -8935,9 +8248,7 @@ export declare namespace Office {
          */
         recurrenceProperties: Office.RecurrenceProperties;
         /**
-         * Gets or sets the properties of the recurring appointment series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Gets or sets the properties of the recurring appointment series. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -8948,9 +8259,7 @@ export declare namespace Office {
         recurrenceTimeZone: Office.RecurrenceTimeZone;
 
         /**
-         * Gets or sets the type of the recurring appointment series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Gets or sets the type of the recurring appointment series. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -8963,9 +8272,7 @@ export declare namespace Office {
         /**
          * The {@link Office.SeriesTime} object enables you to manage the start and end dates of the recurring appointment series and the usual start 
          * and end times of instances. **This object is not in UTC time.** 
-         * Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's time zone.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's time zone. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -8978,9 +8285,7 @@ export declare namespace Office {
         /**
          * Returns the current recurrence object of an appointment series.
          * 
-         * This method returns the entire recurrence object for the appointment series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * This method returns the entire recurrence object for the appointment series. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -9003,9 +8308,7 @@ export declare namespace Office {
         /**
          * Returns the current recurrence object of an appointment series.
          * 
-         * This method returns the entire recurrence object for the appointment series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * This method returns the entire recurrence object for the appointment series. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -9022,9 +8325,7 @@ export declare namespace Office {
         /**
          * Sets the recurrence pattern of an appointment series.
          * 
-         * Note: setAsync should only be available for series items and not instance items.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Note: setAsync should only be available for series items and not instance items. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -9049,9 +8350,7 @@ export declare namespace Office {
         /**
          * Sets the recurrence pattern of an appointment series.
          * 
-         * Note: setAsync should only be available for series items and not instance items.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Note: setAsync should only be available for series items and not instance items. [Api set: Mailbox 1.7]
          * 
          * @remarks
          * 
@@ -9069,9 +8368,7 @@ export declare namespace Office {
     }
 
     /**
-     * Represents the properties of the recurrence.
-     * 
-     * [Api set: Mailbox 1.7]
+     * Represents the properties of the recurrence. [Api set: Mailbox 1.7]
      * 
      * @remarks
      * 
@@ -9112,9 +8409,7 @@ export declare namespace Office {
     }
 
     /**
-     * Represents the time zone of the recurrence.
-     * 
-     * [Api set: Mailbox 1.7]
+     * Represents the time zone of the recurrence. [Api set: Mailbox 1.7]
      * 
      * @remarks
      * 
@@ -9194,9 +8489,7 @@ export declare namespace Office {
      * Important: The RoamingSettings object is initialized from the persisted storage only when the add-in is first loaded. 
      * For task panes, this means that it is only initialized when the task pane first opens. 
      * If the task pane navigates to another page or reloads the current page, the in-memory object is reset to its initial values, even if 
-     * your add-in has persisted changes. The persisted changes will not be available until the task pane is closed and reopened.
-     *
-     * [Api set: Mailbox 1.0]
+     * your add-in has persisted changes. The persisted changes will not be available until the task pane is closed and reopened. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
@@ -9205,9 +8498,7 @@ export declare namespace Office {
      */
     export interface RoamingSettings {
         /**
-         * Retrieves the specified setting.
-         *
-         * [Api set: Mailbox 1.0]
+         * Retrieves the specified setting. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
@@ -9219,9 +8510,7 @@ export declare namespace Office {
          */
         get(name: string): any;
         /**
-         * Removes the specified setting
-         *
-         * [Api set: Mailbox 1.0]
+         * Removes the specified setting [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
@@ -9236,9 +8525,7 @@ export declare namespace Office {
          *
          * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use 
          * the set and get methods to work with the in-memory copy of the settings property bag. 
-         * When you want to persist the settings so that they are available the next time the add-in is used, use the saveAsync method.
-         *
-         * [Api set: Mailbox 1.0]
+         * When you want to persist the settings so that they are available the next time the add-in is used, use the saveAsync method. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
@@ -9257,9 +8544,7 @@ export declare namespace Office {
          *
          * A maximum of 32KB is available for the settings of each add-in.
          *
-         * Any changes made to settings using the set function will not be saved to the server until the saveAsync function is called.
-         *
-         * [Api set: Mailbox 1.0]
+         * Any changes made to settings using the set function will not be saved to the server until the saveAsync function is called. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
@@ -9274,9 +8559,7 @@ export declare namespace Office {
 
     /**
      * The SeriesTime object provides methods to get and set the dates and times of appointments in a recurring series and get the dates and times of 
-     * meeting requests in a recurring series.
-     * 
-     * [Api set: Mailbox 1.7]
+     * meeting requests in a recurring series. [Api set: Mailbox 1.7]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9285,9 +8568,7 @@ export declare namespace Office {
      */
     export interface SeriesTime {
         /**
-         * Gets the duration in minutes of a usual instance in a recurring appointment series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Gets the duration in minutes of a usual instance in a recurring appointment series. [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9297,9 +8578,7 @@ export declare namespace Office {
         getDuration(): number;
 
         /**
-         * Gets the end date of a recurrence pattern in the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} date format: "YYYY-MM-DD"
-         * 
-         * [Api set: Mailbox 1.7]
+         * Gets the end date of a recurrence pattern in the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} date format: "YYYY-MM-DD" [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9311,9 +8590,7 @@ export declare namespace Office {
         /**
          * Gets the end time of a usual appointment or meeting request instance of a recurrence pattern in whichever time zone that the user or 
          * add-in set the recurrence pattern using the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} format: 
-         * "THH:mm:ss:mmm"
-         * 
-         * [Api set: Mailbox 1.7]
+         * "THH:mm:ss:mmm" [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9323,9 +8600,7 @@ export declare namespace Office {
         getEndTime(): string;
 
         /**
-         * Gets the start date of a recurrence pattern in the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} date format: "YYYY-MM-DD"
-         * 
-         * [Api set: Mailbox 1.7]
+         * Gets the start date of a recurrence pattern in the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} date format: "YYYY-MM-DD" [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9336,9 +8611,7 @@ export declare namespace Office {
 
         /**
          * Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the user/add-in set the 
-         * recurrence pattern using the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} format: "THH:mm:ss:mmm"
-         * 
-         * [Api set: Mailbox 1.7]
+         * recurrence pattern using the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} format: "THH:mm:ss:mmm" [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9348,9 +8621,7 @@ export declare namespace Office {
         getStartTime(): string;
 
         /**
-         * Sets the duration of all appointments in a recurrence pattern. This will also change the end time of the recurrence pattern.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Sets the duration of all appointments in a recurrence pattern. This will also change the end time of the recurrence pattern. [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -9362,9 +8633,7 @@ export declare namespace Office {
         setDuration(minutes: number): void;
 
         /**
-         * Sets the end date of a recurring appointment series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Sets the end date of a recurring appointment series. [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -9384,9 +8653,7 @@ export declare namespace Office {
          */
         setEndDate(year: number, month: number, day: number): void;
         /**
-         * Sets the end date of a recurring appointment series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Sets the end date of a recurring appointment series. [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -9399,9 +8666,7 @@ export declare namespace Office {
          */
         setEndDate(date: string): void;
         /**
-         * Sets the start date of a recurring appointment series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Sets the start date of a recurring appointment series. [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -9421,9 +8686,7 @@ export declare namespace Office {
         setStartDate(year:number, month:number, day:number): void;
 
         /**
-         * Sets the start date of a recurring appointment series.
-         * 
-         * [Api set: Mailbox 1.7]
+         * Sets the start date of a recurring appointment series. [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -9438,9 +8701,7 @@ export declare namespace Office {
 
         /**
          * Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence pattern is set 
-         * (the item's time zone is used by default).
-         * 
-         * [Api set: Mailbox 1.7]
+         * (the item's time zone is used by default). [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -9460,9 +8721,7 @@ export declare namespace Office {
 
         /**
          * Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence pattern is set 
-         * (the item's time zone is used by default).
-         * 
-         * [Api set: Mailbox 1.7]
+         * (the item's time zone is used by default). [Api set: Mailbox 1.7]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -9477,9 +8736,7 @@ export declare namespace Office {
     }
 
     /**
-     * Represents the properties of an appointment or message in a shared folder, mailbox, or calendar.
-     *
-     * [Api set: Mailbox Preview]
+     * Represents the properties of an appointment or message in a shared folder, mailbox, or calendar. [Api set: Mailbox Preview]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9504,9 +8761,7 @@ export declare namespace Office {
     }
 
     /**
-     * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
-     *
-     * [Api set: Mailbox 1.1]
+     * Provides methods to get and set the subject of an appointment or message in an Outlook add-in. [Api set: Mailbox 1.1]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9517,9 +8772,7 @@ export declare namespace Office {
         /**
          * Gets the subject of an appointment or message.
          *
-         * The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or message.
-         *
-         * [Api set: Mailbox 1.1]
+         * The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or message. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9540,9 +8793,7 @@ export declare namespace Office {
         /**
          * Gets the subject of an appointment or message.
          * 
-         * The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or message.
-         *
-         * [Api set: Mailbox 1.1]
+         * The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or message. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9557,9 +8808,7 @@ export declare namespace Office {
          * Sets the subject of an appointment or message.
          *
          * The setAsync method starts an asynchronous call to the Exchange server to set the subject of an appointment or message. 
-         * Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in place.
-         *
-         * [Api set: Mailbox 1.1]
+         * Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in place. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9587,9 +8836,7 @@ export declare namespace Office {
          * Sets the subject of an appointment or message.
          *
          * The setAsync method starts an asynchronous call to the Exchange server to set the subject of an appointment or message. 
-         * Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in place.
-         *
-         * [Api set: Mailbox 1.1]
+         * Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in place. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9605,9 +8852,7 @@ export declare namespace Office {
          * Sets the subject of an appointment or message.
          *
          * The setAsync method starts an asynchronous call to the Exchange server to set the subject of an appointment or message. 
-         * Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in place.
-         *
-         * [Api set: Mailbox 1.1]
+         * Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in place. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9625,9 +8870,7 @@ export declare namespace Office {
          * Sets the subject of an appointment or message.
          *
          * The setAsync method starts an asynchronous call to the Exchange server to set the subject of an appointment or message. 
-         * Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in place.
-         *
-         * [Api set: Mailbox 1.1]
+         * Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in place. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9647,9 +8890,7 @@ export declare namespace Office {
      * Represents a suggested task identified in an item. Read mode only.
      *
      * The list of tasks suggested in an email message is returned in the taskSuggestions property of the {@link Office.Entities | Entities} object 
-     * that is returned when the getEntities or getEntitiesByType method is called on the active item.
-     *
-     * [Api set: Mailbox 1.0]
+     * that is returned when the getEntities or getEntitiesByType method is called on the active item. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9667,9 +8908,7 @@ export declare namespace Office {
         taskString: string;
     }
     /**
-     * The Time object is returned as the start or end property of an appointment in compose mode.
-     *
-     * [Api set: Mailbox 1.1]
+     * The Time object is returned as the start or end property of an appointment in compose mode. [Api set: Mailbox 1.1]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9681,9 +8920,7 @@ export declare namespace Office {
          * Gets the start or end time of an appointment.
          *
          * The date and time is provided as a Date object in the asyncResult.value property. The value is in Coordinated Universal Time (UTC). 
-         * You can convert the UTC time to the local client time by using the convertToLocalClientTime method.
-         *
-         * [Api set: Mailbox 1.1]
+         * You can convert the UTC time to the local client time by using the convertToLocalClientTime method. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9704,9 +8941,7 @@ export declare namespace Office {
          * Gets the start or end time of an appointment.
          *
          * The date and time is provided as a Date object in the asyncResult.value property. The value is in Coordinated Universal Time (UTC). 
-         * You can convert the UTC time to the local client time by using the convertToLocalClientTime method.
-         *
-         * [Api set: Mailbox 1.1]
+         * You can convert the UTC time to the local client time by using the convertToLocalClientTime method. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9723,9 +8958,7 @@ export declare namespace Office {
          * If the setAsync method is called on the start property, the end property will be adjusted to maintain the duration of the appointment as 
          * previously set. If the setAsync method is called on the end property, the duration of the appointment will be extended to the new end time.
          *
-         * The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method.
-         *
-         * [Api set: Mailbox 1.1]
+         * The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -9756,9 +8989,7 @@ export declare namespace Office {
          * If the setAsync method is called on the start property, the end property will be adjusted to maintain the duration of the appointment as 
          * previously set. If the setAsync method is called on the end property, the duration of the appointment will be extended to the new end time.
          *
-         * The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method.
-         *
-         * [Api set: Mailbox 1.1]
+         * The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -9776,9 +9007,7 @@ export declare namespace Office {
          * If the setAsync method is called on the start property, the end property will be adjusted to maintain the duration of the appointment as 
          * previously set. If the setAsync method is called on the end property, the duration of the appointment will be extended to the new end time.
          *
-         * The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method.
-         *
-         * [Api set: Mailbox 1.1]
+         * The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -9798,9 +9027,7 @@ export declare namespace Office {
          * If the setAsync method is called on the start property, the end property will be adjusted to maintain the duration of the appointment as 
          * previously set. If the setAsync method is called on the end property, the duration of the appointment will be extended to the new end time.
          *
-         * The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method.
-         *
-         * [Api set: Mailbox 1.1]
+         * The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method. [Api set: Mailbox 1.1]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
@@ -9818,9 +9045,7 @@ export declare namespace Office {
 
     }
     /**
-     * Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone.
-     * 
-     * [Api set: Mailbox 1.0]
+     * Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone. [Api set: Mailbox 1.0]
      *
      * @remarks
      * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9831,9 +9056,7 @@ export declare namespace Office {
         /**
          * Gets the account type of the user associated with the mailbox. 
          *
-         * Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
-         *
-         * [Api set: Mailbox 1.6]
+         * Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater. [Api set: Mailbox 1.6]
          *
          * @remarks
          *
@@ -9868,9 +9091,7 @@ export declare namespace Office {
          */
         accountType: string;
         /**
-         * Gets the user's display name.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the user's display name. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9879,9 +9100,7 @@ export declare namespace Office {
          */
         displayName: string;
         /**
-         * Gets the user's display name.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the user's display name. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
@@ -9890,9 +9109,7 @@ export declare namespace Office {
          */
         emailAddress: string;
         /**
-         * Gets the user's SMTP email address.
-         *
-         * [Api set: Mailbox 1.0]
+         * Gets the user's SMTP email address. [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>

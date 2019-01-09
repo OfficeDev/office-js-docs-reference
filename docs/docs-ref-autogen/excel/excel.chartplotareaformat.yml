@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartPlotAreaFormat
-    summary: |-
-      Represents the format properties for chart plotArea.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the format properties for chart plotArea. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartPlotAreaFormat
     fullName: Excel.ChartPlotAreaFormat
     langs:
@@ -20,10 +19,9 @@ items:
       - excel.Excel.ChartPlotAreaFormat.load
       - excel.Excel.ChartPlotAreaFormat.toJSON
   - uid: excel.Excel.ChartPlotAreaFormat.border
-    summary: |-
-      Represents the border attributes of a chart plotArea.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the border attributes of a chart plotArea. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: border
     langs:
@@ -49,10 +47,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ChartPlotAreaFormat.fill
-    summary: |-
-      Represents the fill format of an object, which includes background formating information.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the fill format of an object, which includes background formating information. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:

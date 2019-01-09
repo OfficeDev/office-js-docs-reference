@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PivotTableCollection
-    summary: |-
-      Represents a collection of all the PivotTables that are part of the workbook or worksheet.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents a collection of all the PivotTables that are part of the workbook or worksheet. \[ [API set: ExcelApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotTableCollection
     fullName: Excel.PivotTableCollection
     langs:
@@ -24,9 +23,8 @@ items:
       - excel.Excel.PivotTableCollection.refreshAll
       - excel.Excel.PivotTableCollection.toJSON
   - uid: excel.Excel.PivotTableCollection.add
-    summary: |-
+    summary: >-
       Add a Pivottable based on the specified source data and insert it at the top left cell of the destination range.
-
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(name, source, destination)'
     fullName: add
@@ -83,10 +81,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.PivotTableCollection.getCount
-    summary: |-
-      Gets the number of pivot tables in the collection.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets the number of pivot tables in the collection. \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -99,10 +96,9 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.PivotTableCollection.getItem
-    summary: |-
-      Gets a PivotTable by name.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a PivotTable by name. \[ [API set: ExcelApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
     fullName: getItem
     langs:
@@ -120,10 +116,9 @@ items:
           type:
             - string
   - uid: excel.Excel.PivotTableCollection.getItemOrNullObject
-    summary: |-
-      Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Gets a PivotTable by name. If the PivotTable does not exist, will return a null object. \[ [API set: ExcelApi
+      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
     fullName: getItemOrNullObject
     langs:
@@ -187,10 +182,9 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.PivotTableCollection.refreshAll
-    summary: |-
-      Refreshes all the pivot tables in the collection.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Refreshes all the pivot tables in the collection. \[ [API set: ExcelApi
+      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: refreshAll()
     fullName: refreshAll
     langs:

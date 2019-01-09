@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.PageContentCollection
-    summary: |-
-      Represents the contents of a page, as a collection of PageContent objects.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Represents the contents of a page, as a collection of PageContent objects. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.PageContentCollection
     fullName: OneNote.PageContentCollection
     langs:
@@ -23,10 +22,9 @@ items:
       - onenote.OneNote.PageContentCollection.track
       - onenote.OneNote.PageContentCollection.untrack
   - uid: onenote.OneNote.PageContentCollection.count
-    summary: |-
-      Returns the number of page contents in the collection. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Returns the number of page contents in the collection. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -38,10 +36,9 @@ items:
         type:
           - number
   - uid: onenote.OneNote.PageContentCollection.getItem
-    summary: |-
-      Gets a PageContent object by ID or by its index in the collection. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets a PageContent object by ID or by its index in the collection. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: getItem
     langs:
@@ -59,10 +56,9 @@ items:
           type:
             - number | string
   - uid: onenote.OneNote.PageContentCollection.getItemAt
-    summary: |-
-      Gets a page content on its position in the collection.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets a page content on its position in the collection. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:

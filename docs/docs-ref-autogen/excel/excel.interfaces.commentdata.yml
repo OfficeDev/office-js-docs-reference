@@ -14,10 +14,7 @@ items:
       - excel.Excel.Interfaces.CommentData.replies
   - uid: excel.Excel.Interfaces.CommentData.id
     summary: >-
-      Represents the comment identifier. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the comment identifier. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: id
@@ -32,11 +29,8 @@ items:
           - string
   - uid: excel.Excel.Interfaces.CommentData.isParent
     summary: >-
-      Represents whether it is a comment thread or reply. Always return true here. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents whether it is a comment thread or reply. Always return true here. Read-only. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: isParent
     fullName: isParent
@@ -50,11 +44,8 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.CommentData.replies
     summary: >-
-      Represents a collection of reply objects associated with the comment. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents a collection of reply objects associated with the comment. Read-only. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: replies
     fullName: replies

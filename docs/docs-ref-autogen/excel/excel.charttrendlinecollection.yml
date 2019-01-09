@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartTrendlineCollection
-    summary: |-
-      Represents a collection of Chart Trendlines.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents a collection of Chart Trendlines. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTrendlineCollection
     fullName: Excel.ChartTrendlineCollection
     langs:
@@ -22,10 +21,9 @@ items:
       - excel.Excel.ChartTrendlineCollection.load
       - excel.Excel.ChartTrendlineCollection.toJSON
   - uid: excel.Excel.ChartTrendlineCollection.add
-    summary: |-
-      Adds a new trendline to trendline collection.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Adds a new trendline to trendline collection. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(type)
     fullName: add
     langs:
@@ -72,10 +70,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ChartTrendlineCollection.getCount
-    summary: |-
-      Returns the number of trendlines in the collection.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the number of trendlines in the collection. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -88,10 +85,9 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.ChartTrendlineCollection.getItem
-    summary: |-
-      Get trendline object by index, which is the insertion order in items array.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Get trendline object by index, which is the insertion order in items array. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(index)
     fullName: getItem
     langs:

@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.ShapeGroup
     summary: >-
-      Represents a shape group object inside a worksheet.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents a shape group object inside a worksheet. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.ShapeGroup
@@ -41,10 +38,7 @@ items:
           - RequestContext
   - uid: excel.Excel.ShapeGroup.id
     summary: >-
-      Represents the shape identifier. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the shape identifier. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: id
@@ -94,10 +88,7 @@ items:
             - 'string | string[]'
   - uid: excel.Excel.ShapeGroup.shape
     summary: >-
-      Returns the shape object for the group. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the shape object for the group. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: shape
@@ -112,10 +103,7 @@ items:
           - excel.Excel.Shape
   - uid: excel.Excel.ShapeGroup.shapes
     summary: >-
-      Returns the shape collection in the group. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the shape collection in the group. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: shapes
@@ -149,10 +137,7 @@ items:
         description: ''
   - uid: excel.Excel.ShapeGroup.ungroup
     summary: >-
-      Ungroups any grouped shapes in the specified shape group.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Ungroups any grouped shapes in the specified shape group. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: ungroup()

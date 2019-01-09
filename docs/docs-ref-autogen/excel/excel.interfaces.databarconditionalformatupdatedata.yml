@@ -22,10 +22,8 @@ items:
   - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.axisColor
     summary: >-
       HTML color code representing the color of the Axis line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange"). "" (empty string) if no axis is present or set.
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      color (e.g. "orange"). "" (empty string) if no axis is present or set. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axisColor
     fullName: axisColor
     langs:
@@ -37,10 +35,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.axisFormat
-    summary: |-
-      Representation of how the axis is determined for an Excel data bar.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Representation of how the axis is determined for an Excel data bar. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axisFormat
     fullName: axisFormat
     langs:
@@ -52,10 +49,9 @@ items:
         type:
           - Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint"
   - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.barDirection
-    summary: |-
-      Represents the direction that the data bar graphic should be based on.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the direction that the data bar graphic should be based on. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: barDirection
     fullName: barDirection
     langs:
@@ -67,10 +63,9 @@ items:
         type:
           - Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft"
   - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.lowerBoundRule
-    summary: |-
-      The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar. \[ [API
+      set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lowerBoundRule
     fullName: lowerBoundRule
     langs:
@@ -82,10 +77,9 @@ items:
         type:
           - excel.Excel.ConditionalDataBarRule
   - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.negativeFormat
-    summary: |-
-      Representation of all values to the left of the axis in an Excel data bar.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Representation of all values to the left of the axis in an Excel data bar. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: negativeFormat
     fullName: negativeFormat
     langs:
@@ -97,10 +91,9 @@ items:
         type:
           - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
   - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.positiveFormat
-    summary: |-
-      Representation of all values to the right of the axis in an Excel data bar.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Representation of all values to the right of the axis in an Excel data bar. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: positiveFormat
     fullName: positiveFormat
     langs:
@@ -112,10 +105,9 @@ items:
         type:
           - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
   - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.showDataBarOnly
-    summary: |-
-      If true, hides the values from the cells where the data bar is applied.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      If true, hides the values from the cells where the data bar is applied. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showDataBarOnly
     fullName: showDataBarOnly
     langs:
@@ -127,10 +119,9 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.upperBoundRule
-    summary: |-
-      The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar. \[ [API
+      set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: upperBoundRule
     fullName: upperBoundRule
     langs:

@@ -2,10 +2,7 @@
 items:
   - uid: excel.Excel.ShapeCollection
     summary: >-
-      Represents all the shapes in the worksheet.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Represents all the shapes in the worksheet. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.ShapeCollection
@@ -30,11 +27,8 @@ items:
       - excel.Excel.ShapeCollection.toJSON
   - uid: excel.Excel.ShapeCollection.addGeometricShape
     summary: >-
-      Adds a geometric shape to worksheet. Returns a Shape object that represents the new shape.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Adds a geometric shape to worksheet. Returns a Shape object that represents the new shape. \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'addGeometricShape(geometricShapeType, left, top, width, height)'
     fullName: addGeometricShape
@@ -72,11 +66,8 @@ items:
             - number
   - uid: excel.Excel.ShapeCollection.addGroup
     summary: >-
-      Group a subset of shapes in a worksheet. Returns a Shape object that represents the new group of shapes.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Group a subset of shapes in a worksheet. Returns a Shape object that represents the new group of shapes. \[ [API
+      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: addGroup(values)
     fullName: addGroup
@@ -97,10 +88,7 @@ items:
   - uid: excel.Excel.ShapeCollection.addImage
     summary: >-
       Creates an image from a base64 string and adds it to worksheet. Returns the Shape object that represents the new
-      Image.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Image. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: addImage(base64ImageString)
@@ -122,8 +110,6 @@ items:
   - uid: excel.Excel.ShapeCollection.addSVG
     summary: >-
       Creates an SVG from a XML string and adds it to worksheet. Returns a Shape object that represents the new Image.
-
-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -146,8 +132,6 @@ items:
   - uid: excel.Excel.ShapeCollection.addTextBox
     summary: >-
       Adds a textbox to worksheet by telling it's text content. Returns a Shape object that represents the new text box.
-
-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -184,10 +168,7 @@ items:
           - RequestContext
   - uid: excel.Excel.ShapeCollection.getCount
     summary: >-
-      Returns the number of shapes in the worksheet. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the number of shapes in the worksheet. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getCount()
@@ -203,10 +184,7 @@ items:
         description: ''
   - uid: excel.Excel.ShapeCollection.getItem
     summary: >-
-      Returns a shape identified by the shape id. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
+      Returns a shape identified by the shape id. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItem(shapeId)

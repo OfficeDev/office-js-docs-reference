@@ -75,7 +75,8 @@ tryCatch(async () => {
         .replace(/\*\s*?`load\(option\?: string \| string\[\]\): (Excel|Word|OneNote|Visio)\..*?` - Where option is a comma-delimited string or an array of strings that specify the properties to load\./g, '')
         .replace(/interface .*?LoadOptions \{[^}]*?}/gm, '')
         .replace(/\/\*\* Sets multiple properties.*\s*\*\s*\*.@remarks\s*\*\s*\* This method has the following additional signature:\s*\*\s*\* \`set\(properties:.*\s*\*\s*\* @param.*\s*\*.*\s*\*\/\s*set\(properties:.*\s*\/\*\* Sets multiple properties.*\s*set\(properties:.*;/gm, '')
-        .replace(/(extends OfficeCore.RequestContext)/g, `extends OfficeExtension.ClientRequestContext`));
+        .replace(/(extends OfficeCore.RequestContext)/g, `extends OfficeExtension.ClientRequestContext`)
+        .replace(/[\s]*?\*[\s]*?\*( \[.*?\])/gm, `$1`));
 
     const dtsBuilder = new DtsBuilder();
 

@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.ParagraphCollection
-    summary: |-
-      Represents a collection of Paragraph objects.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Represents a collection of Paragraph objects. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.ParagraphCollection
     fullName: OneNote.ParagraphCollection
     langs:
@@ -23,10 +22,9 @@ items:
       - onenote.OneNote.ParagraphCollection.track
       - onenote.OneNote.ParagraphCollection.untrack
   - uid: onenote.OneNote.ParagraphCollection.count
-    summary: |-
-      Returns the number of paragraphs in the page. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Returns the number of paragraphs in the page. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -38,10 +36,9 @@ items:
         type:
           - number
   - uid: onenote.OneNote.ParagraphCollection.getItem
-    summary: |-
-      Gets a Paragraph object by ID or by its index in the collection. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets a Paragraph object by ID or by its index in the collection. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: getItem
     langs:
@@ -59,10 +56,9 @@ items:
           type:
             - number | string
   - uid: onenote.OneNote.ParagraphCollection.getItemAt
-    summary: |-
-      Gets a paragraph on its position in the collection.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: >-
+      Gets a paragraph on its position in the collection. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:

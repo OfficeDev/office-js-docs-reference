@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartPoint
-    summary: |-
-      Represents a point of a series in a chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents a point of a series in a chart. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartPoint
     fullName: Excel.ChartPoint
     langs:
@@ -40,10 +39,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ChartPoint.dataLabel
-    summary: |-
-      Returns the data label of a chart point. Read-only.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the data label of a chart point. Read-only. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataLabel
     fullName: dataLabel
     langs:
@@ -55,10 +53,9 @@ items:
         type:
           - excel.Excel.ChartDataLabel
   - uid: excel.Excel.ChartPoint.format
-    summary: |-
-      Encapsulates the format properties chart point. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Encapsulates the format properties chart point. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -70,10 +67,9 @@ items:
         type:
           - excel.Excel.ChartPointFormat
   - uid: excel.Excel.ChartPoint.hasDataLabel
-    summary: |-
-      Represents whether a data point has a data label. Not applicable for surface charts.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents whether a data point has a data label. Not applicable for surface charts. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasDataLabel
     fullName: hasDataLabel
     langs:
@@ -119,10 +115,9 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.ChartPoint.markerBackgroundColor
-    summary: |-
-      HTML color code representation of the marker background color of data point. E.g. \#FF0000 represents Red.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      HTML color code representation of the marker background color of data point. E.g. \#FF0000 represents Red. \[ [API
+      set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerBackgroundColor
     fullName: markerBackgroundColor
     langs:
@@ -134,10 +129,9 @@ items:
         type:
           - string
   - uid: excel.Excel.ChartPoint.markerForegroundColor
-    summary: |-
-      HTML color code representation of the marker foreground color of data point. E.g. \#FF0000 represents Red.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      HTML color code representation of the marker foreground color of data point. E.g. \#FF0000 represents Red. \[ [API
+      set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerForegroundColor
     fullName: markerForegroundColor
     langs:
@@ -149,10 +143,9 @@ items:
         type:
           - string
   - uid: excel.Excel.ChartPoint.markerSize
-    summary: |-
-      Represents marker size of data point.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents marker size of data point. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerSize
     fullName: markerSize
     langs:
@@ -164,10 +157,9 @@ items:
         type:
           - number
   - uid: excel.Excel.ChartPoint.markerStyle
-    summary: |-
-      Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerStyle
     fullName: markerStyle
     langs:
@@ -201,10 +193,9 @@ items:
           - excel.Excel.Interfaces.ChartPointData
         description: ''
   - uid: excel.Excel.ChartPoint.value
-    summary: |-
-      Returns the value of a chart point. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the value of a chart point. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
     fullName: value
     langs:

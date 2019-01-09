@@ -14,10 +14,9 @@ items:
       - excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData.name
       - excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData.position
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData.name
-    summary: |-
-      Name of the RowColumnPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Name of the RowColumnPivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -29,10 +28,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData.position
-    summary: |-
-      Position of the RowColumnPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Position of the RowColumnPivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: position
     langs:

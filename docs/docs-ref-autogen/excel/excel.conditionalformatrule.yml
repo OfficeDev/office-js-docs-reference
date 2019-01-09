@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalFormatRule
-    summary: |-
-      Represents a rule, for all traditional rule/format pairings.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents a rule, for all traditional rule/format pairings. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormatRule
     fullName: Excel.ConditionalFormatRule
     langs:
@@ -35,10 +34,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ConditionalFormatRule.formula
-    summary: |-
-      The formula, if required, to evaluate the conditional format rule on.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The formula, if required, to evaluate the conditional format rule on. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
     fullName: formula
     langs:
@@ -65,10 +63,9 @@ items:
           });
           ```
   - uid: excel.Excel.ConditionalFormatRule.formulaLocal
-    summary: |-
-      The formula, if required, to evaluate the conditional format rule on in the user's language.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The formula, if required, to evaluate the conditional format rule on in the user's language. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaLocal
     fullName: formulaLocal
     langs:
@@ -80,10 +77,9 @@ items:
         type:
           - string
   - uid: excel.Excel.ConditionalFormatRule.formulaR1C1
-    summary: |-
-      The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      The formula, if required, to evaluate the conditional format rule on in R1C1-style notation. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaR1C1
     fullName: formulaR1C1
     langs:

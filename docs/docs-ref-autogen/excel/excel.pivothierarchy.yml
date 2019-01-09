@@ -1,10 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PivotHierarchy
-    summary: |-
-      Represents the Excel PivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Represents the Excel PivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotHierarchy
     fullName: Excel.PivotHierarchy
     langs:
@@ -35,10 +34,9 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.PivotHierarchy.fields
-    summary: |-
-      Returns the PivotFields associated with the PivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Returns the PivotFields associated with the PivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
     fullName: fields
     langs:
@@ -50,10 +48,9 @@ items:
         type:
           - excel.Excel.PivotFieldCollection
   - uid: excel.Excel.PivotHierarchy.id
-    summary: |-
-      Id of the PivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Id of the PivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -99,10 +96,9 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.PivotHierarchy.name
-    summary: |-
-      Name of the PivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: >-
+      Name of the PivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
