@@ -19,8 +19,8 @@ items:
       Gets or sets the Formula1, i.e. minimum value or value depending of the operator. When setting the value, it can
       be passed in as a number, a range object, or a string formula (where the string is either a stringified number, a
       cell reference like "=A1", or a formula like "=MIN(A1, B1)"). When retrieving the value, it will always be
-      returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc. \[ [![API set: ExcelApi
+      1.8](test.png)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula1
     fullName: formula1
     langs:
@@ -36,8 +36,8 @@ items:
       Gets or sets the Formula2, i.e. maximum value or value depending of the operator. When setting the value, it can
       be passed in as a number, a range object, or a string formula (where the string is either a stringified number, a
       cell reference like "=A1", or a formula like "=MIN(A1, B1)"). When retrieving the value, it will always be
-      returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc. \[ [![API set: ExcelApi
+      1.8](test.png)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula2
     fullName: formula2
     langs:
@@ -50,8 +50,8 @@ items:
           - string | number | Range
   - uid: excel.Excel.BasicDataValidation.operator
     summary: >-
-      The operator to use for validating the data. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      The operator to use for validating the data. \[ [![API set: ExcelApi
+      1.8](test.png)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: operator
     fullName: operator
     langs:
