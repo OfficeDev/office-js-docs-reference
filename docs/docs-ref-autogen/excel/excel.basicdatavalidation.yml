@@ -19,8 +19,7 @@ items:
       Gets or sets the Formula1, i.e. minimum value or value depending of the operator. When setting the value, it can
       be passed in as a number, a range object, or a string formula (where the string is either a stringified number, a
       cell reference like "=A1", or a formula like "=MIN(A1, B1)"). When retrieving the value, it will always be
-      returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc. \[ [![API set: ExcelApi
-      1.8](test.png)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc. \[<a href="/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets"><img src="test.png" title="API Set" /></a> \]
     name: formula1
     fullName: formula1
     langs:
