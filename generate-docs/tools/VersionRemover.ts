@@ -1,3 +1,5 @@
+// usage: node VersionRemover [source d.ts] [API set name] [output file name]
+// example: node VersionRemover excel.d.ts "ExcelApi 1.8" excel_1_7.d.ts
 import * as fsx from "fs-extra";
 
 let wholeDTS = fsx.readFileSync(process.argv[2]).toString();
