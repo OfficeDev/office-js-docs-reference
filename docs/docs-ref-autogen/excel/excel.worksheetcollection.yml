@@ -15,6 +15,7 @@ items:
     package: excel
     children:
       - excel.Excel.WorksheetCollection.add
+      - excel.Excel.WorksheetCollection.context
       - excel.Excel.WorksheetCollection.getActiveWorksheet
       - excel.Excel.WorksheetCollection.getCount
       - excel.Excel.WorksheetCollection.getFirst
@@ -72,6 +73,20 @@ items:
             Excel determines the name of the new worksheet.
           type:
             - string
+  - uid: excel.Excel.WorksheetCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.WorksheetCollection.getActiveWorksheet
     summary: |-
       Gets the currently active worksheet in the workbook.
@@ -453,6 +468,12 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>
   - uid: excel.Excel.WorksheetCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
     fullName: toJSON
     langs:

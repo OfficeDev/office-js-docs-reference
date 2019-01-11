@@ -77,6 +77,8 @@ items:
                 uid: excel.Excel.ChartPlotBy
               - name: ChartSeriesBy
                 uid: excel.Excel.ChartSeriesBy
+              - name: ChartSplitType
+                uid: excel.Excel.ChartSplitType
               - name: ChartTextHorizontalAlignment
                 uid: excel.Excel.ChartTextHorizontalAlignment
               - name: ChartTextVerticalAlignment

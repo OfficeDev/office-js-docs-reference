@@ -21,6 +21,7 @@ items:
       - excel.Excel.Worksheet.activate
       - excel.Excel.Worksheet.calculate
       - excel.Excel.Worksheet.charts
+      - excel.Excel.Worksheet.context
       - excel.Excel.Worksheet.copy
       - excel.Excel.Worksheet.delete
       - excel.Excel.Worksheet.freezePanes
@@ -121,6 +122,20 @@ items:
       return:
         type:
           - excel.Excel.ChartCollection
+  - uid: excel.Excel.Worksheet.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.Worksheet.copy
     summary: |-
       Copy a worksheet and place it at the specified position. Return the copied worksheet.
@@ -941,6 +956,12 @@ items:
         type:
           - excel.Excel.TableCollection
   - uid: excel.Excel.Worksheet.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.WorksheetData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:
