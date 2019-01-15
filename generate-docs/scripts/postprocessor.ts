@@ -78,7 +78,6 @@ tryCatch(async () => {
 
     console.log("\nStarting postprocessor script...");
 
-
     console.log(`\nUpdating the structure of the TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as IOrigToc);
