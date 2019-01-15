@@ -65,6 +65,8 @@ items:
                 uid: excel.Excel.ChartColorScheme
               - name: ChartDataLabelPosition
                 uid: excel.Excel.ChartDataLabelPosition
+              - name: ChartDisplayBlanksAs
+                uid: excel.Excel.ChartDisplayBlanksAs
               - name: ChartLegendPosition
                 uid: excel.Excel.ChartLegendPosition
               - name: ChartLineStyle
@@ -77,6 +79,8 @@ items:
                 uid: excel.Excel.ChartPlotBy
               - name: ChartSeriesBy
                 uid: excel.Excel.ChartSeriesBy
+              - name: ChartSplitType
+                uid: excel.Excel.ChartSplitType
               - name: ChartTextHorizontalAlignment
                 uid: excel.Excel.ChartTextHorizontalAlignment
               - name: ChartTextVerticalAlignment
@@ -229,8 +233,6 @@ items:
             uid: excel.Excel.ChartDataLabelFormat
           - name: ChartDataLabels
             uid: excel.Excel.ChartDataLabels
-          - name: ChartDisplayBlanksAs
-            uid: excel.Excel.ChartDisplayBlanksAs
           - name: ChartFill
             uid: excel.Excel.ChartFill
           - name: ChartFont
