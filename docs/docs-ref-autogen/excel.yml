@@ -74,6 +74,7 @@ items:
       - excel.Excel.ChartSeriesBy
       - excel.Excel.ChartSeriesCollection
       - excel.Excel.ChartSeriesFormat
+      - excel.Excel.ChartSplitType
       - excel.Excel.ChartTextHorizontalAlignment
       - excel.Excel.ChartTextVerticalAlignment
       - excel.Excel.ChartTickLabelAlignment
@@ -499,10 +500,10 @@ items:
       - typeScript
     type: function
     syntax:
-      content: 'export function createWorkbook(base64?: string): Promise<object>;'
+      content: 'export function createWorkbook(base64?: string): Promise<void>;'
       return:
         type:
-          - Promise<object>
+          - Promise<void>
         description: ''
       parameters:
         - id: base64
@@ -692,6 +693,8 @@ references:
     name: Excel.ChartSeriesCollection
   - uid: excel.Excel.ChartSeriesFormat
     name: Excel.ChartSeriesFormat
+  - uid: excel.Excel.ChartSplitType
+    name: Excel.ChartSplitType
   - uid: excel.Excel.ChartTextHorizontalAlignment
     name: Excel.ChartTextHorizontalAlignment
   - uid: excel.Excel.ChartTextVerticalAlignment

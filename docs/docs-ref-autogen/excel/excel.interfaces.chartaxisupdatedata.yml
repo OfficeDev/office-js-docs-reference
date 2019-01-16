@@ -12,7 +12,6 @@ items:
       - excel.Excel.Interfaces.ChartAxisUpdateData.alignment
       - excel.Excel.Interfaces.ChartAxisUpdateData.baseTimeUnit
       - excel.Excel.Interfaces.ChartAxisUpdateData.categoryType
-      - excel.Excel.Interfaces.ChartAxisUpdateData.crosses
       - excel.Excel.Interfaces.ChartAxisUpdateData.displayUnit
       - excel.Excel.Interfaces.ChartAxisUpdateData.format
       - excel.Excel.Interfaces.ChartAxisUpdateData.isBetweenCategories
@@ -85,23 +84,6 @@ items:
       return:
         type:
           - Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis"
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.crosses
-    summary: >-
-      \[DEPRECATED; kept for back-compat with existing first-party solutions\]. Please use `Position` instead.
-      Represents the specified axis where the other axis crosses. See Excel.ChartAxisPosition for details.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: crosses
-    fullName: crosses
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'crosses?: Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom";'
-      return:
-        type:
-          - Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom"
   - uid: excel.Excel.Interfaces.ChartAxisUpdateData.displayUnit
     summary: |-
       Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details.

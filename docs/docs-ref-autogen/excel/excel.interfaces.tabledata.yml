@@ -23,7 +23,6 @@ items:
       - excel.Excel.Interfaces.TableData.showTotals
       - excel.Excel.Interfaces.TableData.sort
       - excel.Excel.Interfaces.TableData.style
-      - excel.Excel.Interfaces.TableData.worksheet
   - uid: excel.Excel.Interfaces.TableData.columns
     summary: |-
       Represents a collection of all the columns in the table. Read-only.
@@ -245,18 +244,3 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.TableData.worksheet
-    summary: |-
-      The worksheet containing the current table. Read-only.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'worksheet?: Excel.Interfaces.WorksheetData;'
-      return:
-        type:
-          - excel.Excel.Interfaces.WorksheetData

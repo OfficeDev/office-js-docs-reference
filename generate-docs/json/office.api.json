@@ -12540,6 +12540,19 @@
               ],
               "remarks": [],
               "isBeta": false
+            },
+            "XmlSvg": {
+              "kind": "enum value",
+              "value": "",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Data is returned or set as XML data containing an SVG image. Note: Only applies to data in Excel, Word, and PowerPoint."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
             }
           },
           "deprecatedMessage": [],
@@ -12570,11 +12583,20 @@
             },
             {
               "kind": "text",
-              "text": ", and "
+              "text": ", "
             },
             {
               "kind": "code",
               "text": "Office.CoercionType.SlideRange",
+              "highlighter": "plain"
+            },
+            {
+              "kind": "text",
+              "text": ", and "
+            },
+            {
+              "kind": "code",
+              "text": "Office.CoercionType.XmlSvg",
               "highlighter": "plain"
             },
             {
@@ -25091,6 +25113,55 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Excel, PowerPoint, and Word"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "code",
+                  "text": "Office.CoercionType.XmlSvg",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</table>"
                 },
                 {
@@ -30726,6 +30797,55 @@
                 {
                   "kind": "code",
                   "text": "Office.CoercionType.SlideRange",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Excel, PowerPoint, and Word"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "code",
+                  "text": "Office.CoercionType.XmlSvg",
                   "highlighter": "plain"
                 },
                 {

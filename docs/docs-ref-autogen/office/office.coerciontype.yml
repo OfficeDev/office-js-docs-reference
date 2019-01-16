@@ -3,8 +3,8 @@ items:
   - uid: office.Office.CoercionType
     summary: Specifies how to coerce data returned or set by the invoked method.
     remarks: >-
-      PowerPoint supports only `Office.CoercionType.Text`<!-- -->, `Office.CoercionType.Image`<!-- -->, and
-      `Office.CoercionType.SlideRange`<!-- -->.
+      PowerPoint supports only `Office.CoercionType.Text`<!-- -->, `Office.CoercionType.Image`<!-- -->,
+      `Office.CoercionType.SlideRange`<!-- -->, and `Office.CoercionType.XmlSvg`<!-- -->.
 
 
       Project supports only `Office.CoercionType.Text`<!-- -->.
@@ -43,6 +43,7 @@ items:
       - office.Office.CoercionType.SlideRange
       - office.Office.CoercionType.Table
       - office.Office.CoercionType.Text
+      - office.Office.CoercionType.XmlSvg
   - uid: office.Office.CoercionType.Html
     summary: |-
       Return or set data as HTML.
@@ -113,6 +114,15 @@ items:
     summary: Return or set data as text (string). Data is returned or set as a one-dimensional run of characters.
     name: Text
     fullName: Text
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.CoercionType.XmlSvg
+    summary: >-
+      Data is returned or set as XML data containing an SVG image. Note: Only applies to data in Excel, Word, and
+      PowerPoint.
+    name: XmlSvg
+    fullName: XmlSvg
     langs:
       - typeScript
     type: field

@@ -11,6 +11,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.WorksheetFreezePanes.context
       - excel.Excel.WorksheetFreezePanes.freezeAt
       - excel.Excel.WorksheetFreezePanes.freezeColumns
       - excel.Excel.WorksheetFreezePanes.freezeRows
@@ -18,6 +19,20 @@ items:
       - excel.Excel.WorksheetFreezePanes.getLocationOrNullObject
       - excel.Excel.WorksheetFreezePanes.toJSON
       - excel.Excel.WorksheetFreezePanes.unfreeze
+  - uid: excel.Excel.WorksheetFreezePanes.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.WorksheetFreezePanes.freezeAt
     summary: >-
       Sets the frozen cells in the active worksheet view. The range provided corresponds to cells that will be frozen in
@@ -177,6 +192,12 @@ items:
           });
           ```
   - uid: excel.Excel.WorksheetFreezePanes.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.WorksheetFreezePanes object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetFreezePanesData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

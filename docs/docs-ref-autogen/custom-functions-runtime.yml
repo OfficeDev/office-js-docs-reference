@@ -11,28 +11,24 @@ items:
       - custom-functions-runtime.CustomFunctions.CancelableHandler
       - custom-functions-runtime.CustomFunctions.StreamingHandler
   - uid: custom-functions-runtime.CustomFunctions.associate
-    summary: Ties together the function's JavaScript name with the JSON id property
+    summary: Associates the JavaScript functions to the names given by the "id" properties in the metadata JSON file.
     isPreview: true
-    name: 'associate(id, functionObject)'
+    name: associate(mappings)
     fullName: CustomFunctions.associate
     langs:
       - typeScript
     type: function
     syntax:
-      content: 'export function associate(id: string, functionObject: Function): void;'
+      content: 'export function associate(mappings: { [key: string]: Function }): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: id
+        - id: mappings
           description: ''
           type:
-            - string
-        - id: functionObject
-          description: ''
-          type:
-            - Function
+            - '{ [key: string]: Function }'
 references:
   - uid: custom-functions-runtime.CustomFunctions.CancelableHandler
     name: CustomFunctions.CancelableHandler

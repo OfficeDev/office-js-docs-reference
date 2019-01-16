@@ -34,7 +34,6 @@ items:
       - excel.Excel.Interfaces.RangeData.text
       - excel.Excel.Interfaces.RangeData.values
       - excel.Excel.Interfaces.RangeData.valueTypes
-      - excel.Excel.Interfaces.RangeData.worksheet
   - uid: excel.Excel.Interfaces.RangeData.address
     summary: >-
       Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
@@ -439,18 +438,3 @@ items:
       return:
         type:
           - 'Excel.RangeValueType[][]'
-  - uid: excel.Excel.Interfaces.RangeData.worksheet
-    summary: |-
-      The worksheet containing the current range. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'worksheet?: Excel.Interfaces.WorksheetData;'
-      return:
-        type:
-          - excel.Excel.Interfaces.WorksheetData

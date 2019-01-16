@@ -21,6 +21,7 @@ items:
       - excel.Excel.ErrorCodes.invalidSelection
       - excel.Excel.ErrorCodes.itemAlreadyExists
       - excel.Excel.ErrorCodes.itemNotFound
+      - excel.Excel.ErrorCodes.nonBlankCellOffSheet
       - excel.Excel.ErrorCodes.notImplemented
       - excel.Excel.ErrorCodes.unsupportedOperation
   - uid: excel.Excel.ErrorCodes.accessDenied
@@ -114,6 +115,13 @@ items:
       - typeScript
     type: field
     numericValue: '"ItemNotFound"'
+  - uid: excel.Excel.ErrorCodes.nonBlankCellOffSheet
+    name: nonBlankCellOffSheet
+    fullName: nonBlankCellOffSheet
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NonBlankCellOffSheet"'
   - uid: excel.Excel.ErrorCodes.notImplemented
     name: notImplemented
     fullName: notImplemented
