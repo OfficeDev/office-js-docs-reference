@@ -14,10 +14,8 @@ items:
       - excel.Excel.Interfaces.PivotTableData.filterHierarchies
       - excel.Excel.Interfaces.PivotTableData.hierarchies
       - excel.Excel.Interfaces.PivotTableData.id
-      - excel.Excel.Interfaces.PivotTableData.layout
       - excel.Excel.Interfaces.PivotTableData.name
       - excel.Excel.Interfaces.PivotTableData.rowHierarchies
-      - excel.Excel.Interfaces.PivotTableData.worksheet
   - uid: excel.Excel.Interfaces.PivotTableData.columnHierarchies
     summary: |-
       The Column Pivot Hierarchies of the PivotTable.
@@ -93,21 +91,6 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.PivotTableData.layout
-    summary: |-
-      The PivotLayout describing the layout and visual structure of the PivotTable.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: layout
-    fullName: layout
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'layout?: Excel.Interfaces.PivotLayoutData;'
-      return:
-        type:
-          - excel.Excel.Interfaces.PivotLayoutData
   - uid: excel.Excel.Interfaces.PivotTableData.name
     summary: |-
       Name of the PivotTable.
@@ -138,18 +121,3 @@ items:
       return:
         type:
           - 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
-  - uid: excel.Excel.Interfaces.PivotTableData.worksheet
-    summary: |-
-      The worksheet containing the current PivotTable.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'worksheet?: Excel.Interfaces.WorksheetData;'
-      return:
-        type:
-          - excel.Excel.Interfaces.WorksheetData

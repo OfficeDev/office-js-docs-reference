@@ -31,7 +31,6 @@ items:
       - excel.Excel.Interfaces.ChartData.title
       - excel.Excel.Interfaces.ChartData.top
       - excel.Excel.Interfaces.ChartData.width
-      - excel.Excel.Interfaces.ChartData.worksheet
   - uid: excel.Excel.Interfaces.ChartData.axes
     summary: |-
       Represents chart axes. Read-only.
@@ -402,18 +401,3 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartData.worksheet
-    summary: |-
-      The worksheet containing the current chart. Read-only.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'worksheet?: Excel.Interfaces.WorksheetData;'
-      return:
-        type:
-          - excel.Excel.Interfaces.WorksheetData

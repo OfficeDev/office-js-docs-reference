@@ -15,6 +15,7 @@ items:
     package: excel
     children:
       - excel.Excel.ChartTrendlineLabelFormat.border
+      - excel.Excel.ChartTrendlineLabelFormat.context
       - excel.Excel.ChartTrendlineLabelFormat.fill
       - excel.Excel.ChartTrendlineLabelFormat.font
       - excel.Excel.ChartTrendlineLabelFormat.load
@@ -34,6 +35,20 @@ items:
       return:
         type:
           - excel.Excel.ChartBorder
+  - uid: excel.Excel.ChartTrendlineLabelFormat.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.ChartTrendlineLabelFormat.fill
     summary: |-
       Represents the fill format of the current chart trendline label.
@@ -99,6 +114,12 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.ChartTrendlineLabelFormat.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartTrendlineLabelFormat object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineLabelFormatData`<!-- -->) that
+      contains shallow copies of any loaded child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

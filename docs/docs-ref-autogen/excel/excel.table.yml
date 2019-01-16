@@ -20,6 +20,7 @@ items:
     children:
       - excel.Excel.Table.clearFilters
       - excel.Excel.Table.columns
+      - excel.Excel.Table.context
       - excel.Excel.Table.convertToRange
       - excel.Excel.Table.delete
       - excel.Excel.Table.getDataBodyRange
@@ -76,6 +77,20 @@ items:
       return:
         type:
           - excel.Excel.TableColumnCollection
+  - uid: excel.Excel.Table.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.Table.convertToRange
     summary: |-
       Converts the table into a normal range of cells. All data is preserved.
@@ -659,6 +674,12 @@ items:
         type:
           - string
   - uid: excel.Excel.Table.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Table object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.TableData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

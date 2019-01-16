@@ -16,6 +16,7 @@ items:
     children:
       - excel.Excel.Application.calculate
       - excel.Excel.Application.calculationMode
+      - excel.Excel.Application.context
       - excel.Excel.Application.load
       - excel.Excel.Application.suspendApiCalculationUntilNextSync
       - excel.Excel.Application.toJSON
@@ -74,6 +75,20 @@ items:
       return:
         type:
           - Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
+  - uid: excel.Excel.Application.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.Application.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -147,6 +162,12 @@ items:
           - void
         description: ''
   - uid: excel.Excel.Application.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Application object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

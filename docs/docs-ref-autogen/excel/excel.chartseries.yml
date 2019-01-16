@@ -16,6 +16,7 @@ items:
     children:
       - excel.Excel.ChartSeries.axisGroup
       - excel.Excel.ChartSeries.chartType
+      - excel.Excel.ChartSeries.context
       - excel.Excel.ChartSeries.dataLabels
       - excel.Excel.ChartSeries.delete
       - excel.Excel.ChartSeries.doughnutHoleSize
@@ -104,6 +105,20 @@ items:
             "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
             "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
             "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
+  - uid: excel.Excel.ChartSeries.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.ChartSeries.dataLabels
     summary: |-
       Represents a collection of all dataLabels in the series.
@@ -737,11 +752,19 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'splitType: "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit";'
+      content: >-
+        splitType: Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" |
+        "SplitByCustomSplit";
       return:
         type:
-          - '"SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"'
+          - Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"
   - uid: excel.Excel.ChartSeries.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartSeries object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

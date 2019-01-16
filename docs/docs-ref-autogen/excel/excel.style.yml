@@ -17,6 +17,7 @@ items:
       - excel.Excel.Style.autoIndent
       - excel.Excel.Style.borders
       - excel.Excel.Style.builtIn
+      - excel.Excel.Style.context
       - excel.Excel.Style.delete
       - excel.Excel.Style.fill
       - excel.Excel.Style.font
@@ -85,6 +86,20 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Style.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.Style.delete
     summary: |-
       Deletes this style.
@@ -492,6 +507,12 @@ items:
         type:
           - number
   - uid: excel.Excel.Style.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Style object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.StyleData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:
