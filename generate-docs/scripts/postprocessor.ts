@@ -133,7 +133,16 @@ tryCatch(async () => {
     origToc.items.forEach((rootItem, rootIndex) => {
         rootItem.items.forEach((packageItem, packageIndex) => {
             if (packageItem.name !== 'office') {
-                const packageName = packageItem.name === 'onenote' ? 'OneNote' : (packageItem.name.substr(0, 1).toUpperCase() + packageItem.name.substr(1)).replace(/\-/g, ' ');
+                // fix host capitalization
+                let packageName;
+                if (packageItem.name === 'onenote') {
+                    packageName = 'OneNote';
+                } else if (packageItem.name === 'powerpoint') {
+                    packageName = 'PowerPoint';
+                } else {
+                    packageName = (packageItem.name.substr(0, 1).toUpperCase() + packageItem.name.substr(1)).replace(/\-/g, ' ');
+                }
+
                 if (packageItem.items.length === 1) {
                     packageItem.items.forEach((namespaceItem, namespaceIndex) => {
                         membersToMove.items = namespaceItem.items;
@@ -245,11 +254,19 @@ tryCatch(async () => {
                             "items":  membersToMove.items as any
                         });
                     } else {
-                        newToc.items[0].items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items": membersToMove.items
-                        });
+                        if (membersToMove.items) {
+                            newToc.items[0].items.push({
+                                "name": packageName,
+                                "uid": packageItem.uid,
+                                "items": membersToMove.items
+                            });
+                        } else {
+                            newToc.items[0].items.push({
+                                "name": packageName,
+                                "uid": packageItem.uid,
+                                "items": [] as any
+                            });
+                        }
                     }
                 } else {
                     newToc.items[0].items.push({

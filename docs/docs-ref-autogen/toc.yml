@@ -1179,6 +1179,9 @@ items:
                 uid: Outlook_1_1.Office.Time
               - name: UserProfile
                 uid: Outlook_1_1.Office.UserProfile
+      - name: PowerPoint
+        uid: powerpoint
+        items: []
       - name: Visio
         uid: visio
         items:

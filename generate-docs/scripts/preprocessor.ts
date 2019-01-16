@@ -108,6 +108,12 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(definitions, "Begin Exchange APIs", "End Exchange APIs")
     );
 
+    console.log("create file: powerpoint.d.ts");
+    fsx.writeFileSync(
+        '../api-extractor-inputs-powerpoint/powerpoint.d.ts',
+        dtsBuilder.extractDtsSection(definitions, "Begin PowerPoint APIs", "End PowerPoint APIs")
+    );
+
     console.log("create file: visio.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-visio/visio.d.ts',
