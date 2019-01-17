@@ -316,14 +316,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.Body` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Body` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Body` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.BodyLoadOptions): Word.Body;
         load(option?: string | string[]): Word.Body;
         load(option?: {
@@ -706,14 +706,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.ContentControl` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.ContentControl` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControl` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.ContentControlLoadOptions): Word.ContentControl;
         load(option?: string | string[]): Word.ContentControl;
         load(option?: {
@@ -822,14 +822,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.ContentControlCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.ContentControlCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControlCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ContentControlCollection;
         load(option?: string | string[]): Word.ContentControlCollection;
         load(option?: OfficeExtension.LoadOption): Word.ContentControlCollection;
@@ -878,14 +878,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.CustomProperty` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.CustomProperty` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomProperty` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.CustomPropertyLoadOptions): Word.CustomProperty;
         load(option?: string | string[]): Word.CustomProperty;
         load(option?: {
@@ -950,14 +950,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.CustomPropertyCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.CustomPropertyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomPropertyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CustomPropertyCollection;
         load(option?: string | string[]): Word.CustomPropertyCollection;
         load(option?: OfficeExtension.LoadOption): Word.CustomPropertyCollection;
@@ -1090,14 +1090,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.CustomXmlPart` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.CustomXmlPart` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomXmlPart` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.CustomXmlPartLoadOptions): Word.CustomXmlPart;
         load(option?: string | string[]): Word.CustomXmlPart;
         load(option?: {
@@ -1169,14 +1169,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.CustomXmlPartCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.CustomXmlPartCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomXmlPartCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.CustomXmlPartCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CustomXmlPartCollection;
         load(option?: string | string[]): Word.CustomXmlPartCollection;
         load(option?: OfficeExtension.LoadOption): Word.CustomXmlPartCollection;
@@ -1241,14 +1241,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.CustomXmlPartScopedCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.CustomXmlPartScopedCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomXmlPartScopedCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CustomXmlPartScopedCollection;
         load(option?: string | string[]): Word.CustomXmlPartScopedCollection;
         load(option?: OfficeExtension.LoadOption): Word.CustomXmlPartScopedCollection;
@@ -1348,14 +1348,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.Document` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Document` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Document` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.DocumentLoadOptions): Word.Document;
         load(option?: string | string[]): Word.Document;
         load(option?: {
@@ -1461,14 +1461,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.DocumentCreated` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.DocumentCreated` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.DocumentCreated` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.DocumentCreatedLoadOptions): Word.DocumentCreated;
         load(option?: string | string[]): Word.DocumentCreated;
         load(option?: {
@@ -1590,14 +1590,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.DocumentProperties` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.DocumentProperties` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.DocumentProperties` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.DocumentPropertiesLoadOptions): Word.DocumentProperties;
         load(option?: string | string[]): Word.DocumentProperties;
         load(option?: {
@@ -1684,14 +1684,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.Font` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Font` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Font` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.FontLoadOptions): Word.Font;
         load(option?: string | string[]): Word.Font;
         load(option?: {
@@ -1959,14 +1959,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.InlinePicture` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.InlinePicture` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePicture` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.InlinePictureLoadOptions): Word.InlinePicture;
         load(option?: string | string[]): Word.InlinePicture;
         load(option?: {
@@ -2009,14 +2009,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.InlinePictureCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.InlinePictureCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePictureCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.InlinePictureCollection;
         load(option?: string | string[]): Word.InlinePictureCollection;
         load(option?: OfficeExtension.LoadOption): Word.InlinePictureCollection;
@@ -2199,14 +2199,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.List` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.List` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.List` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.ListLoadOptions): Word.List;
         load(option?: string | string[]): Word.List;
         load(option?: {
@@ -2270,14 +2270,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.ListCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.ListCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ListCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ListCollection;
         load(option?: string | string[]): Word.ListCollection;
         load(option?: OfficeExtension.LoadOption): Word.ListCollection;
@@ -2342,14 +2342,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.ListItem` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.ListItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ListItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.ListItemLoadOptions): Word.ListItem;
         load(option?: string | string[]): Word.ListItem;
         load(option?: {
@@ -2787,14 +2787,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.Paragraph` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Paragraph` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Paragraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.ParagraphLoadOptions): Word.Paragraph;
         load(option?: string | string[]): Word.Paragraph;
         load(option?: {
@@ -2847,14 +2847,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.ParagraphCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.ParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ParagraphCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ParagraphCollection;
         load(option?: string | string[]): Word.ParagraphCollection;
         load(option?: OfficeExtension.LoadOption): Word.ParagraphCollection;
@@ -3265,14 +3265,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.Range` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Range` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Range` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.RangeLoadOptions): Word.Range;
         load(option?: string | string[]): Word.Range;
         load(option?: {
@@ -3315,14 +3315,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.RangeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.RangeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.RangeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.RangeCollection;
         load(option?: string | string[]): Word.RangeCollection;
         load(option?: OfficeExtension.LoadOption): Word.RangeCollection;
@@ -3387,14 +3387,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.SearchOptions` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.SearchOptions` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SearchOptions` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;
         load(option?: string | string[]): Word.SearchOptions;
         load(option?: {
@@ -3465,14 +3465,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.Section` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Section` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Section` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.SectionLoadOptions): Word.Section;
         load(option?: string | string[]): Word.Section;
         load(option?: {
@@ -3515,14 +3515,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.SectionCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.SectionCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SectionCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.SectionCollection;
         load(option?: string | string[]): Word.SectionCollection;
         load(option?: OfficeExtension.LoadOption): Word.SectionCollection;
@@ -3574,14 +3574,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.Setting` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Setting` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Setting` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.SettingLoadOptions): Word.Setting;
         load(option?: string | string[]): Word.Setting;
         load(option?: {
@@ -3652,14 +3652,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.SettingCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.SettingCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SettingCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.SettingCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.SettingCollection;
         load(option?: string | string[]): Word.SettingCollection;
         load(option?: OfficeExtension.LoadOption): Word.SettingCollection;
@@ -4081,14 +4081,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.Table` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Table` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Table` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.TableLoadOptions): Word.Table;
         load(option?: string | string[]): Word.Table;
         load(option?: {
@@ -4131,14 +4131,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.TableCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.TableCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.TableCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableCollection;
         load(option?: string | string[]): Word.TableCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableCollection;
@@ -4346,14 +4346,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.TableRow` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.TableRow` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableRow` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.TableRowLoadOptions): Word.TableRow;
         load(option?: string | string[]): Word.TableRow;
         load(option?: {
@@ -4396,14 +4396,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.TableRowCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableRowCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableRowCollection;
         load(option?: string | string[]): Word.TableRowCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableRowCollection;
@@ -4596,14 +4596,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.TableCell` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.TableCell` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCell` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.TableCellLoadOptions): Word.TableCell;
         load(option?: string | string[]): Word.TableCell;
         load(option?: {
@@ -4646,14 +4646,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.TableCellCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.TableCellCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCellCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableCellCollection;
         load(option?: string | string[]): Word.TableCellCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableCellCollection;
@@ -4697,14 +4697,14 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Word.TableBorder` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Word.TableBorder` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableBorder` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Word.Interfaces.TableBorderLoadOptions): Word.TableBorder;
         load(option?: string | string[]): Word.TableBorder;
         load(option?: {

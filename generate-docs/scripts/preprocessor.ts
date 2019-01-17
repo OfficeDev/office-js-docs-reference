@@ -69,9 +69,9 @@ tryCatch(async () => {
     // Note: This step fixing formatting discrepancies and hiding content we do not wish to expose.
     // set() is removed from RichAPI, along with corresponding comments. This is to reduce traffic to the method pending a decision about modifying the underlying behavior.
     definitions = applyRegularExpressions(
-        definitions//.replace(/\s*\* \@param options Provides options for which properties of the object to load\.(\s*\*\/)/gm, ' @param option A comma-delimited string or an array of strings that specify the properties to load.$1\n')
+        definitions.replace(/\s*\* \@param options Provides options for which properties of the object to load\.(\s*\*\/)/gm, ' @param option A comma-delimited string or an array of strings that specify the properties to load.$1\n')
         // .replace(/\s*load\(option\?: (Excel|Word|OneNote|Visio)\.Interfaces\.\S*LoadOptions.*\): \S*?;/gm, '')
-        // .replace(/\*\s*?`load\(option\?: string \| string\[\]\): (Excel|Word|OneNote|Visio)\..*?` - Where option is a comma-delimited string or an array of strings that specify the properties to load\./g, '')
+        .replace(/\*\s*?`load\(option\?: string \| string\[\]\): (Excel|Word|OneNote|Visio)\..*?` - Where option is a comma-delimited string or an array of strings that specify the properties to load\./g, '')
         // .replace(/interface .*?LoadOptions \{[^}]*?};[\s]*}/gm, '')
         // .replace(/interface .*?LoadOptions \{[^}]*?}/gm, '')
         .replace(/\/\*\* Sets multiple properties.*\s*\*\s*\*.@remarks\s*\*\s*\* This method has the following additional signature:\s*\*\s*\* \`set\(properties:.*\s*\*\s*\* @param.*\s*\*.*\s*\*\/\s*set\(properties:.*\s*\/\*\* Sets multiple properties.*\s*set\(properties:.*;/gm, '')

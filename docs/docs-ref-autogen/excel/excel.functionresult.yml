@@ -82,7 +82,7 @@ items:
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - excel.Excel.Interfaces.FunctionResultLoadOptions
   - uid: excel.Excel.FunctionResult.toJSON

@@ -149,14 +149,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.Application` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.ApplicationLoadOptions): Visio.Application;
         load(option?: string | string[]): Visio.Application;
         load(option?: {
@@ -210,14 +210,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.Document` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.Document` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Document` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.DocumentLoadOptions): Visio.Document;
         load(option?: string | string[]): Visio.Document;
         load(option?: {
@@ -301,14 +301,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.DocumentView` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.DocumentView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.DocumentView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.DocumentViewLoadOptions): Visio.DocumentView;
         load(option?: string | string[]): Visio.DocumentView;
         load(option?: {
@@ -380,14 +380,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.Page` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.Page` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Page` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.PageLoadOptions): Visio.Page;
         load(option?: string | string[]): Visio.Page;
         load(option?: {
@@ -450,14 +450,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.PageView` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.PageView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.PageViewLoadOptions): Visio.PageView;
         load(option?: string | string[]): Visio.PageView;
         load(option?: {
@@ -492,14 +492,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.PageCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.PageCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.PageCollection;
         load(option?: string | string[]): Visio.PageCollection;
         load(option?: OfficeExtension.LoadOption): Visio.PageCollection;
@@ -531,14 +531,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.ShapeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.ShapeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.ShapeCollection;
         load(option?: string | string[]): Visio.ShapeCollection;
         load(option?: OfficeExtension.LoadOption): Visio.ShapeCollection;
@@ -607,14 +607,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.Shape` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.Shape` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Shape` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;
         load(option?: string | string[]): Visio.Shape;
         load(option?: {
@@ -672,14 +672,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.ShapeView` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.ShapeView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.ShapeViewLoadOptions): Visio.ShapeView;
         load(option?: string | string[]): Visio.ShapeView;
         load(option?: {
@@ -772,14 +772,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.ShapeDataItemCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItemCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeDataItemCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.ShapeDataItemCollection;
         load(option?: string | string[]): Visio.ShapeDataItemCollection;
         load(option?: OfficeExtension.LoadOption): Visio.ShapeDataItemCollection;
@@ -817,14 +817,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.ShapeDataItem` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeDataItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.ShapeDataItemLoadOptions): Visio.ShapeDataItem;
         load(option?: string | string[]): Visio.ShapeDataItem;
         load(option?: {
@@ -859,14 +859,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.HyperlinkCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.HyperlinkCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.HyperlinkCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.HyperlinkCollection;
         load(option?: string | string[]): Visio.HyperlinkCollection;
         load(option?: OfficeExtension.LoadOption): Visio.HyperlinkCollection;
@@ -904,14 +904,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.Hyperlink` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.Hyperlink` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Hyperlink` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.HyperlinkLoadOptions): Visio.Hyperlink;
         load(option?: string | string[]): Visio.Hyperlink;
         load(option?: {
@@ -946,14 +946,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.CommentCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.CommentCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.CommentCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.CommentCollection;
         load(option?: string | string[]): Visio.CommentCollection;
         load(option?: OfficeExtension.LoadOption): Visio.CommentCollection;
@@ -987,14 +987,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.Comment` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.Comment` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Comment` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: Visio.Interfaces.CommentLoadOptions): Visio.Comment;
         load(option?: string | string[]): Visio.Comment;
         load(option?: {
@@ -1020,14 +1020,14 @@ export declare namespace Visio {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         * `load(option?: string | string[]): Visio.Selection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         
          *
          * `load(option?: { select?: string; expand?: string; }): Visio.Selection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Selection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
          */
+
         load(option?: string | string[]): Visio.Selection;
         load(option?: {
             select?: string;

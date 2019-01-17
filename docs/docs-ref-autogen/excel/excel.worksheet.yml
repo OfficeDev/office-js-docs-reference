@@ -729,10 +729,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Excel.Worksheet` - Where option is a comma-delimited string or an array of
-      strings that specify the properties to load.
-
-
       `load(option?: { select?: string; expand?: string; }): Excel.Worksheet` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -797,7 +793,7 @@ items:
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - excel.Excel.Interfaces.WorksheetLoadOptions
   - uid: excel.Excel.Worksheet.name

@@ -85,10 +85,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Word.TableCellCollection` - Where option is a comma-delimited string or an
-      array of strings that specify the properties to load.
-
-
       `load(option?: { select?: string; expand?: string; }): Word.TableCellCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -114,7 +110,7 @@ items:
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
   - uid: word.Word.TableCellCollection.toJSON

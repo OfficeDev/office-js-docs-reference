@@ -306,20 +306,12 @@ items:
                 uid: excel.Excel.CellBorderCollection
               - name: CellProperties
                 uid: excel.Excel.CellProperties
-              - name: CellPropertiesBorderLoadOptions
-                uid: excel.Excel.CellPropertiesBorderLoadOptions
               - name: CellPropertiesFill
                 uid: excel.Excel.CellPropertiesFill
-              - name: CellPropertiesFillLoadOptions
-                uid: excel.Excel.CellPropertiesFillLoadOptions
               - name: CellPropertiesFont
                 uid: excel.Excel.CellPropertiesFont
-              - name: CellPropertiesFontLoadOptions
-                uid: excel.Excel.CellPropertiesFontLoadOptions
               - name: CellPropertiesFormat
                 uid: excel.Excel.CellPropertiesFormat
-              - name: CellPropertiesFormatLoadOptions
-                uid: excel.Excel.CellPropertiesFormatLoadOptions
               - name: CellPropertiesLoadOptions
                 uid: excel.Excel.CellPropertiesLoadOptions
               - name: CellPropertiesProtection
@@ -422,8 +414,6 @@ items:
                 uid: excel.Excel.ColorScaleConditionalFormat
               - name: ColumnProperties
                 uid: excel.Excel.ColumnProperties
-              - name: ColumnPropertiesLoadOptions
-                uid: excel.Excel.ColumnPropertiesLoadOptions
               - name: Comment
                 uid: excel.Excel.Comment
               - name: CommentCollection
@@ -592,8 +582,6 @@ items:
                 uid: excel.Excel.RowColumnPivotHierarchyCollection
               - name: RowProperties
                 uid: excel.Excel.RowProperties
-              - name: RowPropertiesLoadOptions
-                uid: excel.Excel.RowPropertiesLoadOptions
               - name: Runtime
                 uid: excel.Excel.Runtime
               - name: SearchCriteria
@@ -700,7 +688,7 @@ items:
                 uid: excel.Excel.WorksheetProtection
               - name: WorksheetSearchCriteria
                 uid: excel.Excel.WorksheetSearchCriteria
-          - name: Excel Release
+          - name: Excel - Release
             uid: excel_release
             items:
               - name: Enums

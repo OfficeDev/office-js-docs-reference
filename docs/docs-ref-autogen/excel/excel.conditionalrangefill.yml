@@ -70,10 +70,6 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Excel.ConditionalRangeFill` - Where option is a comma-delimited string or an
-      array of strings that specify the properties to load.
-
-
       `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFill` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -97,7 +93,7 @@ items:
         description: ''
       parameters:
         - id: option
-          description: ''
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - excel.Excel.Interfaces.ConditionalRangeFillLoadOptions
   - uid: excel.Excel.ConditionalRangeFill.toJSON

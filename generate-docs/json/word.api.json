@@ -912,7 +912,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.BodyLoadOptions"
@@ -929,18 +934,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.Body",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -2723,7 +2716,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.ContentControlLoadOptions"
@@ -2740,18 +2738,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.ContentControl",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -3865,7 +3851,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
@@ -3882,18 +3873,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.ContentControlCollection",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -4319,7 +4298,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.CustomPropertyLoadOptions"
@@ -4336,18 +4320,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.CustomProperty",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -4751,7 +4723,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
@@ -4768,18 +4745,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.CustomPropertyCollection",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5255,7 +5220,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.CustomXmlPartLoadOptions"
@@ -5272,18 +5242,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.CustomXmlPart",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5892,7 +5850,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.CustomXmlPartCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
@@ -5909,18 +5872,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.CustomXmlPartCollection",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6257,7 +6208,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
@@ -6274,18 +6230,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.CustomXmlPartScopedCollection",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6634,7 +6578,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.DocumentLoadOptions"
@@ -6651,18 +6600,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.Document",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -7116,7 +7053,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.DocumentCreatedLoadOptions"
@@ -7133,18 +7075,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.DocumentCreated",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -7679,7 +7609,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.DocumentPropertiesLoadOptions"
@@ -7696,18 +7631,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.DocumentProperties",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -8278,7 +8201,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.FontLoadOptions"
@@ -8295,18 +8223,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.Font",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -9357,7 +9273,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.InlinePictureLoadOptions"
@@ -9374,18 +9295,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.InlinePicture",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -9850,7 +9759,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
@@ -9867,18 +9781,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.InlinePictureCollection",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -26539,7 +26441,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.ListLoadOptions"
@@ -26556,18 +26463,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.List",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -27394,7 +27289,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
@@ -27411,18 +27311,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.ListCollection",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -27726,7 +27614,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.ListItemLoadOptions"
@@ -27743,18 +27636,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.ListItem",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -29322,7 +29203,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.ParagraphLoadOptions"
@@ -29339,18 +29225,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.Paragraph",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -30123,7 +29997,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
@@ -30140,18 +30019,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.ParagraphCollection",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -31452,7 +31319,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.RangeLoadOptions"
@@ -31469,18 +31341,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.Range",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -32130,7 +31990,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
@@ -32147,18 +32012,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.RangeCollection",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -32626,7 +32479,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.SearchOptionsLoadOptions"
@@ -32643,18 +32501,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.SearchOptions",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -33053,7 +32899,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.SectionLoadOptions"
@@ -33070,18 +32921,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.Section",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -33320,7 +33159,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
@@ -33337,18 +33181,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.SectionCollection",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -33604,7 +33436,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.SettingLoadOptions"
@@ -33621,18 +33458,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.Setting",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -34015,7 +33840,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.SettingCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
@@ -34032,18 +33862,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.SettingCollection",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -36367,7 +36185,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.TableLoadOptions"
@@ -36384,18 +36207,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.Table",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -37237,7 +37048,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.TableBorderLoadOptions"
@@ -37254,18 +37070,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.TableBorder",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -37834,7 +37638,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.TableCellLoadOptions"
@@ -37851,18 +37660,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.TableCell",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -38327,7 +38124,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
@@ -38344,18 +38146,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.TableCellCollection",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -38575,7 +38365,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.TableCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
@@ -38592,18 +38387,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.TableCollection",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -39114,7 +38897,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.TableRowLoadOptions"
@@ -39131,18 +38919,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.TableRow",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -39647,7 +39423,12 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions"
@@ -39664,18 +39445,6 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "code",
-                  "text": "load(option?: string | string[]): Word.TableRowCollection",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
