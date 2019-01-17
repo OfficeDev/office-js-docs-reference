@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
+    summary: >-
+      Represents a collection of InkAnalysisWord objects. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
+    fullName: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.id
+      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.languageId
+      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.line
+      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.strokePointers
+      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.wordAlternates
+  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.id
+    summary: >-
+      For EACH ITEM in the collection: Gets the ID of the InkAnalysisWord object. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.languageId
+    summary: >-
+      For EACH ITEM in the collection: The id of the recognized language in this inkAnalysisWord. Read-only. \[ [API
+      set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: languageId
+    fullName: languageId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'languageId?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.line
+    summary: >-
+      For EACH ITEM in the collection: Reference to the parent InkAnalysisLine. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line?: OneNote.Interfaces.InkAnalysisLineLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions
+  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.strokePointers
+    summary: >-
+      For EACH ITEM in the collection: Weak references to the ink strokes that were recognized as part of this ink
+      analysis word. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: strokePointers
+    fullName: strokePointers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strokePointers?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.wordAlternates
+    summary: >-
+      For EACH ITEM in the collection: The words that were recognized in this ink word, in order of likelihood.
+      Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: wordAlternates
+    fullName: wordAlternates
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wordAlternates?: boolean;'
+      return:
+        type:
+          - boolean

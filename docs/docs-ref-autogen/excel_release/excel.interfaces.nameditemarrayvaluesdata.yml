@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.NamedItemArrayValuesData
+    summary: An interface describing the data returned by calling "namedItemArrayValues.toJSON()".
+    name: Excel.Interfaces.NamedItemArrayValuesData
+    fullName: Excel.Interfaces.NamedItemArrayValuesData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.NamedItemArrayValuesData.types
+      - excel_release.Excel.Interfaces.NamedItemArrayValuesData.values
+  - uid: excel_release.Excel.Interfaces.NamedItemArrayValuesData.types
+    summary: >-
+      Represents the types for each item in the named item array \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: types
+    fullName: types
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'types?: Excel.RangeValueType[][];'
+      return:
+        type:
+          - 'Excel.RangeValueType[][]'
+  - uid: excel_release.Excel.Interfaces.NamedItemArrayValuesData.values
+    summary: >-
+      Represents the values of each item in the named item array. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values?: any[][];'
+      return:
+        type:
+          - 'any[][]'

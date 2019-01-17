@@ -155,6 +155,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.CustomXmlPartScopedCollection` - Where option is a comma-delimited string
+      or an array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.CustomXmlPartScopedCollection` - Where option.select
       is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string
       that specifies the navigation properties to load.
@@ -172,16 +176,18 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.CustomXmlPartScopedCollection;'
+      content: >-
+        load(option?: Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.CustomXmlPartScopedCollection;
       return:
         type:
           - Word.CustomXmlPartScopedCollection
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
   - uid: word.Word.CustomXmlPartScopedCollection.toJSON
     isPreview: true
     name: toJSON()

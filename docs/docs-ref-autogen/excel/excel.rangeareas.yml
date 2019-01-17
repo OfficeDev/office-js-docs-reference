@@ -577,6 +577,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.RangeAreas` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.RangeAreas` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -594,16 +598,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.RangeAreas;'
+      content: 'load(option?: Excel.Interfaces.RangeAreasLoadOptions): Excel.RangeAreas;'
       return:
         type:
           - excel.Excel.RangeAreas
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.RangeAreasLoadOptions
   - uid: excel.Excel.RangeAreas.setDirty
     summary: >-
       Sets the RangeAreas to be recalculated when the next recalculation occurs. \[ [API set: ExcelApi BETA (PREVIEW

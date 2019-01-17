@@ -77,6 +77,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartMapOptions` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartMapOptions` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -94,16 +98,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartMapOptions;'
+      content: 'load(option?: Excel.Interfaces.ChartMapOptionsLoadOptions): Excel.ChartMapOptions;'
       return:
         type:
           - excel.Excel.ChartMapOptions
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartMapOptionsLoadOptions
   - uid: excel.Excel.ChartMapOptions.projectionType
     summary: >-
       Returns or sets series projection type of a region map chart. Read/Write. \[ [API set: ExcelApi BETA (PREVIEW

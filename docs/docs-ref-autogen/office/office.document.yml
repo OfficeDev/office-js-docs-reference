@@ -1528,7 +1528,7 @@ items:
       <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint and PowerPoint Online</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
-      </table>
+      <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
 
 
       **Support details**
@@ -3180,7 +3180,7 @@ items:
       <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint and PowerPoint Online</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
-      </table>
+      <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
 
 
       **Support details**

@@ -80,6 +80,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartAxes` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartAxes` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -96,16 +100,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartAxes;'
+      content: 'load(option?: Excel.Interfaces.ChartAxesLoadOptions): Excel.ChartAxes;'
       return:
         type:
           - excel.Excel.ChartAxes
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartAxesLoadOptions
   - uid: excel.Excel.ChartAxes.seriesAxis
     summary: >-
       Represents the series axis of a 3-dimensional chart. Read-only. \[ [API set: ExcelApi

@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.SlicerSortType
+    name: Excel.SlicerSortType
+    fullName: Excel.SlicerSortType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.SlicerSortType.ascending
+      - excel.Excel.SlicerSortType.dataSourceOrder
+      - excel.Excel.SlicerSortType.descending
+  - uid: excel.Excel.SlicerSortType.ascending
+    name: ascending
+    fullName: ascending
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Ascending"'
+  - uid: excel.Excel.SlicerSortType.dataSourceOrder
+    name: dataSourceOrder
+    fullName: dataSourceOrder
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DataSourceOrder"'
+  - uid: excel.Excel.SlicerSortType.descending
+    name: descending
+    fullName: descending
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Descending"'

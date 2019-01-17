@@ -27,6 +27,8 @@ items:
       - excel.Excel.Workbook.getActiveCell
       - excel.Excel.Workbook.getActiveChart
       - excel.Excel.Workbook.getActiveChartOrNullObject
+      - excel.Excel.Workbook.getActiveSlicer
+      - excel.Excel.Workbook.getActiveSlicerOrNullObject
       - excel.Excel.Workbook.getIsActiveCollabSession
       - excel.Excel.Workbook.getSelectedRange
       - excel.Excel.Workbook.getSelectedRanges
@@ -43,6 +45,7 @@ items:
       - excel.Excel.Workbook.readOnly
       - excel.Excel.Workbook.save
       - excel.Excel.Workbook.settings
+      - excel.Excel.Workbook.slicers
       - excel.Excel.Workbook.styles
       - excel.Excel.Workbook.tables
       - excel.Excel.Workbook.toJSON
@@ -278,6 +281,39 @@ items:
         type:
           - excel.Excel.Chart
         description: ''
+  - uid: excel.Excel.Workbook.getActiveSlicer
+    summary: >-
+      Gets the currently active slicer in the workbook. If there is no active slicer, will throw exception when invoke
+      this statement. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getActiveSlicer()
+    fullName: getActiveSlicer
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveSlicer(): Excel.Slicer;'
+      return:
+        type:
+          - excel.Excel.Slicer
+        description: ''
+  - uid: excel.Excel.Workbook.getActiveSlicerOrNullObject
+    summary: >-
+      Gets the currently active slicer in the workbook. If there is no active slicer, will return null object \[ [API
+      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getActiveSlicerOrNullObject()
+    fullName: getActiveSlicerOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveSlicerOrNullObject(): Excel.Slicer;'
+      return:
+        type:
+          - excel.Excel.Slicer
+        description: ''
   - uid: excel.Excel.Workbook.getIsActiveCollabSession
     summary: >-
       True if the workbook is being edited by multiple users (co-authoring). Please be aware there might be some delay
@@ -369,6 +405,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Workbook` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Workbook` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -385,16 +425,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Workbook;'
+      content: 'load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;'
       return:
         type:
           - excel.Excel.Workbook
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.WorkbookLoadOptions
   - uid: excel.Excel.Workbook.name
     summary: >-
       Gets the workbook name. Read-only. \[ [API set: ExcelApi
@@ -588,6 +628,21 @@ items:
       return:
         type:
           - excel.Excel.SettingCollection
+  - uid: excel.Excel.Workbook.slicers
+    summary: >-
+      Represents a collection of Slicers associated with the workbook. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: slicers
+    fullName: slicers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly slicers: Excel.SlicerCollection;'
+      return:
+        type:
+          - excel.Excel.SlicerCollection
   - uid: excel.Excel.Workbook.styles
     summary: >-
       Represents a collection of styles associated with the workbook. Read-only. \[ [API set: ExcelApi

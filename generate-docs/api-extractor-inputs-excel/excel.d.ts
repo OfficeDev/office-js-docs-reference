@@ -3,13 +3,114 @@
 ////////////////////////////////////////////////////////////////
 
 export declare namespace Excel {
+    /** Represents which cell properties to load, when used as part of a "range.getCellProperties" method. */
+    export interface CellPropertiesLoadOptions {
+        address?: boolean;
+        addressLocal?: boolean;
+        format?: Excel.CellPropertiesFormatLoadOptions;
+        hasSpill?: boolean;
+        hidden?: boolean;
+        hyperlink?: boolean;
+        style?: boolean;
+    }
+    /** Represents which row properties to load, when used as part of a "range.getRowProperties" method. */
+    export interface RowPropertiesLoadOptions extends CellPropertiesLoadOptions {
+        rowHidden?: boolean;
+        rowIndex?: boolean;
+        format?: Excel.CellPropertiesFormatLoadOptions & {
+            rowHeight?: boolean;
+        };
+    }
+    /** Represents which column properties to load, when used as part of a "range.getColumnProperties" method. */
+    export interface ColumnPropertiesLoadOptions extends CellPropertiesLoadOptions {
+        columnIndex?: boolean;
+        columnHidden?: boolean;
+        format?: Excel.CellPropertiesFormatLoadOptions & {
+            columnWidth?: boolean;
+        };
+    }
+    /** Represents which properties to load on the format object. */
+    export interface CellPropertiesFormatLoadOptions {
+        autoIndent?: boolean;
+        borders?: Excel.CellPropertiesBorderLoadOptions;
+        fill?: Excel.CellPropertiesFillLoadOptions;
+        font?: Excel.CellPropertiesFontLoadOptions;
+        horizontalAlignment?: boolean;
+        indentLevel?: boolean;
+        protection?: boolean;
+        readingOrder?: boolean;
+        shrinkToFit?: boolean;
+        textOrientation?: boolean;
+        useStandardHeight?: boolean;
+        useStandardWidth?: boolean;
+        verticalAlignment?: boolean;
+        wrapText?: boolean;
+    }
+    /** Represents the input parameter of setCellProperties. */
+    export interface SettableCellProperties {
+        format?: Excel.CellPropertiesFormat;
+        hyperlink?: Excel.RangeHyperlink;
+        style?: string;
+    }
+    /** Represents the returned properties of getCellProperties. */
+    export interface CellProperties extends SettableCellProperties {
+        address?: string;
+        addressLocal?: string;
+        hasSpill?: boolean;
+        hidden?: boolean;
+    }
+    /** Represents the input parameter of setRowProperties. */
+    export interface SettableRowProperties extends SettableCellProperties {
+        rowHidden?: boolean;
+        format?: Excel.CellPropertiesFormat & {
+            rowHeight?: number;
+        };
+    }
+    /** Represents the returned properties of getRowProperties. */
+    export interface RowProperties extends SettableRowProperties {
+        rowIndex?: number;
+        address?: string;
+        addressLocal?: string;
+        hasSpill?: boolean;
+    }
+    /** Represents the input parameter of setColumnProperties. */
+    export interface SettableColumnProperties extends SettableCellProperties {
+        columnHidden?: boolean;
+        format?: Excel.CellPropertiesFormat & {
+            columnWidth?: number;
+        };
+    }
+    /** Represents the returned properties of getColumnProperties. */
+    export interface ColumnProperties extends SettableColumnProperties {
+        columnIndex?: number;
+        address?: string;
+        addressLocal?: string;
+        hasSpill?: boolean;
+    }
+    /** Represents the returned format properties of getCellProperties or format input parameter of setCellProperties. */
+    export interface CellPropertiesFormat {
+        autoIndent?: boolean;
+        borders?: Excel.CellBorderCollection;
+        fill?: Excel.CellPropertiesFill;
+        font?: Excel.CellPropertiesFont;
+        horizontalAlignment?: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed";
+        indentLevel?: number;
+        protection?: Excel.CellPropertiesProtection;
+        readingOrder?: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";
+        shrinkToFit?: boolean;
+        textOrientation?: number;
+        useStandardHeight?: boolean;
+        useStandardWidth?: boolean;
+        verticalAlignment?: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";
+        wrapText?: boolean;
+    }
     /**
      *
      * Creates and opens a new workbook.  Optionally, the workbook can be pre-populated with a base64-encoded .xlsx file. [Api set: ExcelApi 1.8]
      *
      * @param base64File - Optional. The base64 encoded .xlsx file. The default value is null.
      */
-    export function createWorkbook(base64?: string): Promise<object>;
+    export function createWorkbook(base64?: string): Promise<void>;
     export interface ThreeArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
@@ -242,6 +343,8 @@ export declare namespace Excel {
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
     export function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
+    export function postprocessBindingDescriptor(response: any): any;
+    export function getDataCommonPostprocess(response: any, callArgs: any): any;
     /**
      *
      * Provides information about the binding that raised the SelectionChanged event. [Api set: ExcelApi 1.2]
@@ -854,7 +957,7 @@ export declare namespace Excel {
         context: RequestContext; 
         /**
          *
-         * Turn on/off JavaScript events in current taskpane or content add-in. [Api set: ExcelApi 1.8]
+         * Toggle JavaScript events in the current task pane or content add-in. [Api set: ExcelApi 1.8]
          */
         enableEvents: boolean;
         
@@ -865,13 +968,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.Runtime` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Runtime` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Runtime` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.RuntimeLoadOptions): Excel.Runtime;
         load(option?: string | string[]): Excel.Runtime;
         load(option?: {
             select?: string;
@@ -948,13 +1053,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.Application` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Application` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ApplicationLoadOptions): Excel.Application;
         load(option?: string | string[]): Excel.Application;
         load(option?: {
             select?: string;
@@ -1000,13 +1107,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.IterativeCalculation` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.IterativeCalculation` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.IterativeCalculation` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.IterativeCalculationLoadOptions): Excel.IterativeCalculation;
         load(option?: string | string[]): Excel.IterativeCalculation;
         load(option?: {
             select?: string;
@@ -1081,6 +1190,12 @@ export declare namespace Excel {
          * Represents a collection of Settings associated with the workbook. Read-only. [Api set: ExcelApi 1.4]
          */
         readonly settings: Excel.SettingCollection;
+        /**
+         *
+         * Represents a collection of Slicers associated with the workbook. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly slicers: Excel.SlicerCollection;
         /**
          *
          * Represents a collection of styles associated with the workbook. Read-only. [Api set: ExcelApi 1.7]
@@ -1186,6 +1301,18 @@ export declare namespace Excel {
         getActiveChartOrNullObject(): Excel.Chart;
         /**
          *
+         * Gets the currently active slicer in the workbook. If there is no active slicer, will throw exception when invoke this statement. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getActiveSlicer(): Excel.Slicer;
+        /**
+         *
+         * Gets the currently active slicer in the workbook. If there is no active slicer, will return null object [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getActiveSlicerOrNullObject(): Excel.Slicer;
+        /**
+         *
          * True if the workbook is being edited by multiple users (co-authoring).
             Please be aware there might be some delay between when the workbook status changes and when the changes are reflected on the result of the method. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -1224,13 +1351,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.Workbook` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Workbook` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Workbook` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;
         load(option?: string | string[]): Excel.Workbook;
         load(option?: {
             select?: string;
@@ -1251,6 +1380,13 @@ export declare namespace Excel {
          * @eventproperty
          */
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;
+        /**
+         *
+         * Occurs when a WAC operation occurs. [Api set: WACOperationEvents 1.1]
+         *
+         * @eventproperty
+         * @beta
+         */
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Workbook object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookData`) that contains shallow copies of any loaded child properties from the original object.
@@ -1290,13 +1426,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.WorkbookProtection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.WorkbookProtection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorkbookProtection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.WorkbookProtectionLoadOptions): Excel.WorkbookProtection;
         load(option?: string | string[]): Excel.WorkbookProtection;
         load(option?: {
             select?: string;
@@ -1322,14 +1460,14 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.WorkbookCreated` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.WorkbookCreated` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorkbookCreated` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
-
         load(option?: string | string[]): Excel.WorkbookCreated;
         load(option?: {
             select?: string;
@@ -1359,6 +1497,12 @@ export declare namespace Excel {
          * Returns collection of charts that are part of the worksheet. Read-only. [Api set: ExcelApi 1.1]
          */
         readonly charts: Excel.ChartCollection;
+        /**
+         *
+         * Returns a collection of all the Comments objects on the worksheet. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly comments: Excel.CommentCollection;
         /**
          *
          * Gets an object that can be used to manipulate frozen panes on the worksheet. Read-only. [Api set: ExcelApi 1.7]
@@ -1397,6 +1541,12 @@ export declare namespace Excel {
          * @beta
          */
         readonly shapes: Excel.ShapeCollection;
+        /**
+         *
+         * Returns collection of slicers that are part of the worksheet. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly slicers: Excel.SlicerCollection;
         /**
          *
          * Collection of tables that are part of the worksheet. Read-only. [Api set: ExcelApi 1.1]
@@ -1612,13 +1762,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.Worksheet` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Worksheet` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Worksheet` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;
         load(option?: string | string[]): Excel.Worksheet;
         load(option?: {
             select?: string;
@@ -1767,13 +1919,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.WorksheetCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.WorksheetCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorksheetCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.WorksheetCollection;
         load(option?: string | string[]): Excel.WorksheetCollection;
         load(option?: OfficeExtension.LoadOption): Excel.WorksheetCollection;
         /**
@@ -1888,13 +2042,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.WorksheetProtection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.WorksheetProtection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorksheetProtection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;
         load(option?: string | string[]): Excel.WorksheetProtection;
         load(option?: {
             select?: string;
@@ -2200,6 +2356,8 @@ export declare namespace Excel {
          */
         values: any[][];
         
+        autoFill(destinationRange: Range | string, autoFillType?: Excel.AutoFillType): void;
+        autoFill(destinationRange: Range | string, autoFillType?: "FillDefault" | "FillCopy" | "FillSeries" | "FillFormats" | "FillValues" | "FillDays" | "FillWeekdays" | "FillMonths" | "FillYears" | "LinearTrend" | "GrowthTrend" | "FlashFill"): void;
         /**
          *
          * Calculates a range of cells on a worksheet. [Api set: ExcelApi 1.6]
@@ -2319,11 +2477,23 @@ export declare namespace Excel {
         getCell(row: number, column: number): Excel.Range;
         /**
          *
+         * Returns a 2D array, encapsulating the data for each cell's font, fill, borders, alignment, and other properties. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCellProperties(cellPropertiesLoadOptions: CellPropertiesLoadOptions): OfficeExtension.ClientResult<CellProperties[][]>;
+        /**
+         *
          * Gets a column contained in the range. [Api set: ExcelApi 1.1]
          *
          * @param column - Column number of the range to be retrieved. Zero-indexed.
          */
         getColumn(column: number): Excel.Range;
+        /**
+         *
+         * Returns a single-dimensional array, encapsulating the data for each column's font, fill, borders, alignment, and other properties.  For properties that are not consistent across each cell within a given column, null will be returned. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getColumnProperties(columnPropertiesLoadOptions: ColumnPropertiesLoadOptions): OfficeExtension.ClientResult<ColumnProperties[]>;
         /**
          *
          * Gets a certain number of columns to the right of the current Range object. [Api set: ExcelApi 1.2]
@@ -2405,6 +2575,12 @@ export declare namespace Excel {
          * @param row - Row number of the range to be retrieved. Zero-indexed.
          */
         getRow(row: number): Excel.Range;
+        /**
+         *
+         * Returns a single-dimensional array, encapsulating the data for each row's font, fill, borders, alignment, and other properties.  For properties that are not consistent across each cell within a given row, null will be returned. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getRowProperties(rowPropertiesLoadOptions: RowPropertiesLoadOptions): OfficeExtension.ClientResult<RowProperties[]>;
         /**
          *
          * Gets a certain number of rows above the current Range object. [Api set: ExcelApi 1.2]
@@ -2550,10 +2726,28 @@ export declare namespace Excel {
         select(): void;
         /**
          *
+         * Updates the range based on a 2D array of cell properties , encapsulating things like font, fill, borders, alignment, and so forth. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setCellProperties(cellPropertiesData: SettableCellProperties[][]): void;
+        /**
+         *
+         * Updates the range based on a single-dimensional array of column properties, encapsulating things like font, fill, borders, alignment, and so forth. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setColumnProperties(columnPropertiesData: SettableColumnProperties[]): void;
+        /**
+         *
          * Set a range to be recalculated when the next recalculation occurs. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         setDirty(): void;
+        /**
+         *
+         * Updates the range based on a single-dimensional array of row properties, encapsulating things like font, fill, borders, alignment, and so forth. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        setRowProperties(rowPropertiesData: SettableRowProperties[]): void;
         /**
          *
          * Displays the card for an active cell if it has rich value content. [Api set: ExcelApi 1.7]
@@ -2571,13 +2765,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.Range` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Range` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Range` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;
         load(option?: string | string[]): Excel.Range;
         load(option?: {
             select?: string;
@@ -2890,13 +3086,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.RangeAreas` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeAreas` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeAreas` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.RangeAreasLoadOptions): Excel.RangeAreas;
         load(option?: string | string[]): Excel.RangeAreas;
         load(option?: {
             select?: string;
@@ -2981,6 +3179,110 @@ export declare namespace Excel {
     }
     /**
      *
+     * Represents which properties to load on the format.fill object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CellPropertiesFillLoadOptions {
+        color?: boolean;
+        pattern?: boolean;
+        patternColor?: boolean;
+        patternTintAndShade?: boolean;
+        tintAndShade?: boolean;
+    }
+    /**
+     *
+     * Represents which properties to load on the format.font object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CellPropertiesFontLoadOptions {
+        bold?: boolean;
+        color?: boolean;
+        italic?: boolean;
+        name?: boolean;
+        size?: boolean;
+        strikethrough?: boolean;
+        subscript?: boolean;
+        superscript?: boolean;
+        tintAndShade?: boolean;
+        underline?: boolean;
+    }
+    /**
+     *
+     * Represents which properties to load on the format.borders object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CellPropertiesBorderLoadOptions {
+        color?: boolean;
+        style?: boolean;
+        tintAndShade?: boolean;
+        weight?: boolean;
+    }
+    /**
+     *
+     * Represents the returned format.protection properties of getCell/Row/ColumnProperties or format.protection input parameter of setCell/Row/ColumnProperties. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CellPropertiesProtection {
+        formulaHidden?: boolean;
+        locked?: boolean;
+    }
+    /**
+     *
+     * Represents the returned format.fill properties of getCell/Row/ColumnProperties or format.fill input parameter of setCell/Row/ColumnProperties. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CellPropertiesFill {
+        color?: string;
+        pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
+        patternColor?: string;
+        patternTintAndShade?: number;
+        tintAndShade?: number;
+    }
+    /**
+     *
+     * Represents the returned format.font properties of getCell/Row/ColumnProperties or format.font input parameter of setCell/Row/ColumnProperties. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CellPropertiesFont {
+        bold?: boolean;
+        color?: string;
+        italic?: boolean;
+        name?: string;
+        size?: number;
+        strikethrough?: boolean;
+        subscript?: boolean;
+        superscript?: boolean;
+        tintAndShade?: number;
+        underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";
+    }
+    /**
+     *
+     * Represents the returned format.borders properties of getCell/Row/ColumnProperties or format.borders input parameter of setCell/Row/ColumnProperties. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CellBorderCollection {
+        bottom?: Excel.CellBorder;
+        diagonalDown?: Excel.CellBorder;
+        diagonalUp?: Excel.CellBorder;
+        horizontal?: Excel.CellBorder;
+        left?: Excel.CellBorder;
+        right?: Excel.CellBorder;
+        top?: Excel.CellBorder;
+        vertical?: Excel.CellBorder;
+    }
+    /**
+     *
+     * Represents the returned single border properties of getCell/Row/ColumnProperties or border property input parameter of setCell/Row/ColumnProperties. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface CellBorder {
+        color?: string;
+        style?: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot";
+        tintAndShade?: number;
+        weight?: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";
+    }
+    /**
+     *
      * RangeView represents a set of visible cells of the parent range. [Api set: ExcelApi 1.3]
      */
     export class RangeView extends OfficeExtension.ClientObject {
@@ -3059,13 +3361,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.RangeView` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.RangeViewLoadOptions): Excel.RangeView;
         load(option?: string | string[]): Excel.RangeView;
         load(option?: {
             select?: string;
@@ -3105,13 +3409,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.RangeViewCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeViewCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeViewCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.RangeViewCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeViewCollection;
         load(option?: string | string[]): Excel.RangeViewCollection;
         load(option?: OfficeExtension.LoadOption): Excel.RangeViewCollection;
         /**
@@ -3163,13 +3469,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.SettingCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.SettingCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.SettingCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.SettingCollection;
         load(option?: string | string[]): Excel.SettingCollection;
         load(option?: OfficeExtension.LoadOption): Excel.SettingCollection;
         /**
@@ -3194,7 +3502,7 @@ export declare namespace Excel {
         context: RequestContext; 
         private static DateJSONPrefix;
         private static DateJSONSuffix;
-        private static replaceStringDateWithDate(value);
+        private static replaceStringDateWithDate;
         /**
          *
          * Returns the key that represents the id of the Setting. Read-only. [Api set: ExcelApi 1.4]
@@ -3218,13 +3526,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.Setting` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Setting` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Setting` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.SettingLoadOptions): Excel.Setting;
         load(option?: string | string[]): Excel.Setting;
         load(option?: {
             select?: string;
@@ -3291,13 +3601,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.NamedItemCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.NamedItemCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.NamedItemCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.NamedItemCollection;
         load(option?: string | string[]): Excel.NamedItemCollection;
         load(option?: OfficeExtension.LoadOption): Excel.NamedItemCollection;
         /**
@@ -3386,13 +3698,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.NamedItem` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.NamedItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.NamedItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.NamedItemLoadOptions): Excel.NamedItem;
         load(option?: string | string[]): Excel.NamedItem;
         load(option?: {
             select?: string;
@@ -3428,13 +3742,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.NamedItemArrayValues` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.NamedItemArrayValues` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.NamedItemArrayValues` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.NamedItemArrayValuesLoadOptions): Excel.NamedItemArrayValues;
         load(option?: string | string[]): Excel.NamedItemArrayValues;
         load(option?: {
             select?: string;
@@ -3490,13 +3806,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.Binding` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Binding` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Binding` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;
         load(option?: string | string[]): Excel.Binding;
         load(option?: {
             select?: string;
@@ -3625,13 +3943,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.BindingCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.BindingCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.BindingCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.BindingCollection;
         load(option?: string | string[]): Excel.BindingCollection;
         load(option?: OfficeExtension.LoadOption): Excel.BindingCollection;
         /**
@@ -3695,13 +4015,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.TableCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableCollection;
         load(option?: string | string[]): Excel.TableCollection;
         load(option?: OfficeExtension.LoadOption): Excel.TableCollection;
         /**
@@ -3778,13 +4100,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.TableScopedCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableScopedCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableScopedCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.TableScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableScopedCollection;
         load(option?: string | string[]): Excel.TableScopedCollection;
         load(option?: OfficeExtension.LoadOption): Excel.TableScopedCollection;
         /**
@@ -3935,13 +4259,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.Table` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Table` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Table` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;
         load(option?: string | string[]): Excel.Table;
         load(option?: {
             select?: string;
@@ -4031,13 +4357,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.TableColumnCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableColumnCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableColumnCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableColumnCollection;
         load(option?: string | string[]): Excel.TableColumnCollection;
         load(option?: OfficeExtension.LoadOption): Excel.TableColumnCollection;
         /**
@@ -4111,13 +4439,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.TableColumn` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableColumn` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableColumn` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.TableColumnLoadOptions): Excel.TableColumn;
         load(option?: string | string[]): Excel.TableColumn;
         load(option?: {
             select?: string;
@@ -4185,13 +4515,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.TableRowCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableRowCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableRowCollection;
         load(option?: string | string[]): Excel.TableRowCollection;
         load(option?: OfficeExtension.LoadOption): Excel.TableRowCollection;
         /**
@@ -4240,13 +4572,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.TableRow` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableRow` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableRow` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.TableRowLoadOptions): Excel.TableRow;
         load(option?: string | string[]): Excel.TableRow;
         load(option?: {
             select?: string;
@@ -4282,7 +4616,7 @@ export declare namespace Excel {
         prompt: Excel.DataValidationPrompt;
         /**
          *
-         * Data Validation rule that contains different type of data validation criteria. [Api set: ExcelApi 1.8]
+         * Data validation rule that contains different type of data validation criteria. [Api set: ExcelApi 1.8]
          */
         rule: Excel.DataValidationRule;
         /**
@@ -4322,13 +4656,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.DataValidation` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.DataValidation` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.DataValidation` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.DataValidationLoadOptions): Excel.DataValidation;
         load(option?: string | string[]): Excel.DataValidation;
         load(option?: {
             select?: string;
@@ -4408,13 +4744,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.RemoveDuplicatesResult` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RemoveDuplicatesResult` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RemoveDuplicatesResult` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.RemoveDuplicatesResultLoadOptions): Excel.RemoveDuplicatesResult;
         load(option?: string | string[]): Excel.RemoveDuplicatesResult;
         load(option?: {
             select?: string;
@@ -4433,14 +4771,15 @@ export declare namespace Excel {
     export interface BasicDataValidation {
         /**
          *
-         * Gets or sets the Formula1, i.e. minimum value or value depending of the operator.
+         * Specifies the right-hand operand when the operator property is set to a binary operator such as GreaterThan (the left-hand operand is the value the user tries to enter in the cell). With the ternary operators Between and NotBetween, specifies the lower bound operand.
+            For example, setting formula1 to 10 and operator to GreaterThan means that valid data for the range must be greater than 10.
             When setting the value, it can be passed in as a number, a range object, or a string formula (where the string is either a stringified number, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
             When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc. [Api set: ExcelApi 1.8]
          */
         formula1: string | number | Range;
         /**
          *
-         * Gets or sets the Formula2, i.e. maximum value or value depending of the operator.
+         * With the ternary operators Between and NotBetween, specifies the upper bound operand. Is not used with the binary operators, such as GreaterThan.
             When setting the value, it can be passed in as a number, a range object, or a string formula (where the string is either a stringified number, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
             When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc. [Api set: ExcelApi 1.8]
          */
@@ -4458,14 +4797,14 @@ export declare namespace Excel {
     export interface DateTimeDataValidation {
         /**
          *
-         * Gets or sets the Formula1, i.e. minimum value or value depending of the operator.
+         * Specifies the right-hand operand when the operator property is set to a binary operator such as GreaterThan (the left-hand operand is the value the user tries to enter in the cell). With the ternary operators Between and NotBetween, specifies the lower bound operand.
             When setting the value, it can be passed in as a Date, a Range object, or a string formula (where the string is either a stringified date/time in ISO8601 format, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
             When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc. [Api set: ExcelApi 1.8]
          */
         formula1: string | Date | Range;
         /**
          *
-         * Gets or sets the Formula2, i.e. maximum value or value depending of the operator.
+         * With the ternary operators Between and NotBetween, specifies the upper bound operand. Is not used with the binary operators, such as GreaterThan.
             When setting the value, it can be passed in as a Date, a Range object, or a string (where the string is either a stringified date/time in ISO8601 format, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
             When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc. [Api set: ExcelApi 1.8]
          */
@@ -4500,7 +4839,7 @@ export declare namespace Excel {
     export interface CustomDataValidation {
         /**
          *
-         * Custom data validation formula, it is to create special rules, such as preventing duplicates, or limiting the total in a range of cells. [Api set: ExcelApi 1.8]
+         * A custom data validation formula. This creates special input rules, such as preventing duplicates, or limiting the total in a range of cells. [Api set: ExcelApi 1.8]
          */
         formula: string;
     }
@@ -4516,12 +4855,12 @@ export declare namespace Excel {
         message: string;
         /**
          *
-         * It determines show error alert dialog or not when users enter invalid data, it defaults to true. [Api set: ExcelApi 1.8]
+         * Determines whether to show an error alert dialog or not when a user enters invalid data. The default is true. [Api set: ExcelApi 1.8]
          */
         showAlert: boolean;
         /**
          *
-         * Represents Data validation alert type, please see Excel.DataValidationAlertStyle for details. [Api set: ExcelApi 1.8]
+         * Represents data validation alert type, please see Excel.DataValidationAlertStyle for details. [Api set: ExcelApi 1.8]
          */
         style: Excel.DataValidationAlertStyle | "Stop" | "Warning" | "Information";
         /**
@@ -4542,7 +4881,7 @@ export declare namespace Excel {
         message: string;
         /**
          *
-         * It determines showing the prompt or not when user selects a cell with the data validation. [Api set: ExcelApi 1.8]
+         * Determines whether or not to show the prompt when user selects a cell with data validation. [Api set: ExcelApi 1.8]
          */
         showPrompt: boolean;
         /**
@@ -4668,13 +5007,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.RangeFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;
         load(option?: string | string[]): Excel.RangeFormat;
         load(option?: {
             select?: string;
@@ -4711,13 +5052,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.FormatProtection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.FormatProtection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.FormatProtection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.FormatProtectionLoadOptions): Excel.FormatProtection;
         load(option?: string | string[]): Excel.FormatProtection;
         load(option?: {
             select?: string;
@@ -4738,7 +5081,7 @@ export declare namespace Excel {
         context: RequestContext; 
         /**
          *
-         * HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange") [Api set: ExcelApi 1.1]
+         * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange") [Api set: ExcelApi 1.1]
          */
         color: string;
         /**
@@ -4782,13 +5125,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.RangeFill` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeFill` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFill` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;
         load(option?: string | string[]): Excel.RangeFill;
         load(option?: {
             select?: string;
@@ -4842,13 +5187,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.RangeBorder` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeBorder` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeBorder` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;
         load(option?: string | string[]): Excel.RangeBorder;
         load(option?: {
             select?: string;
@@ -4909,13 +5256,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.RangeBorderCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeBorderCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeBorderCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeBorderCollection;
         load(option?: string | string[]): Excel.RangeBorderCollection;
         load(option?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;
         /**
@@ -5000,13 +5349,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.RangeFont` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeFont` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFont` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;
         load(option?: string | string[]): Excel.RangeFont;
         load(option?: {
             select?: string;
@@ -5084,13 +5435,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartCollection;
         load(option?: string | string[]): Excel.ChartCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartCollection;
         /**
@@ -5172,7 +5525,7 @@ export declare namespace Excel {
         readonly series: Excel.ChartSeriesCollection;
         /**
          *
-         * Represents the title of the specified chart, including the text, visibility, position, and formating of the title. Read-only. [Api set: ExcelApi 1.1]
+         * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title. Read-only. [Api set: ExcelApi 1.1]
          */
         readonly title: Excel.ChartTitle;
         /**
@@ -5239,7 +5592,7 @@ export declare namespace Excel {
         showAllFieldButtons: boolean;
         /**
          *
-         * Represents whether to to show the data labels when the value is greater than the maximum value on the value axis.
+         * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
             If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
             This property applies to 2-D charts only. [Api set: ExcelApi 1.8]
          */
@@ -5322,13 +5675,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.Chart` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Chart` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Chart` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;
         load(option?: string | string[]): Excel.Chart;
         load(option?: {
             select?: string;
@@ -5395,13 +5750,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartPivotOptions` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPivotOptions` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPivotOptions` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartPivotOptionsLoadOptions): Excel.ChartPivotOptions;
         load(option?: string | string[]): Excel.ChartPivotOptions;
         load(option?: {
             select?: string;
@@ -5455,13 +5812,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartAreaFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAreaFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAreaFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartAreaFormatLoadOptions): Excel.ChartAreaFormat;
         load(option?: string | string[]): Excel.ChartAreaFormat;
         load(option?: {
             select?: string;
@@ -5514,13 +5873,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartSeriesCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeriesCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeriesCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartSeriesCollection;
         load(option?: string | string[]): Excel.ChartSeriesCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartSeriesCollection;
         /**
@@ -5732,7 +6093,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * Specifies how bars and columns are positioned. Can be a value between – 100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write. [Api set: ExcelApi 1.8]
+         * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write. [Api set: ExcelApi 1.8]
          */
         overlap: number;
         /**
@@ -5823,13 +6184,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartSeries` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeries` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeries` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;
         load(option?: string | string[]): Excel.ChartSeries;
         load(option?: {
             select?: string;
@@ -5850,7 +6213,7 @@ export declare namespace Excel {
         context: RequestContext; 
         /**
          *
-         * Represents the fill format of a chart series, which includes background formating information. Read-only. [Api set: ExcelApi 1.1]
+         * Represents the fill format of a chart series, which includes background formatting information. Read-only. [Api set: ExcelApi 1.1]
          */
         readonly fill: Excel.ChartFill;
         /**
@@ -5866,13 +6229,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartSeriesFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeriesFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeriesFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartSeriesFormatLoadOptions): Excel.ChartSeriesFormat;
         load(option?: string | string[]): Excel.ChartSeriesFormat;
         load(option?: {
             select?: string;
@@ -5917,13 +6282,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartPointsCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPointsCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPointsCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartPointsCollection;
         load(option?: string | string[]): Excel.ChartPointsCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartPointsCollection;
         /**
@@ -5987,13 +6354,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartPoint` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPoint` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPoint` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartPointLoadOptions): Excel.ChartPoint;
         load(option?: string | string[]): Excel.ChartPoint;
         load(option?: {
             select?: string;
@@ -6019,7 +6388,7 @@ export declare namespace Excel {
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of a chart, which includes background formating information. Read-only. [Api set: ExcelApi 1.1]
+         * Represents the fill format of a chart, which includes background formatting information. Read-only. [Api set: ExcelApi 1.1]
          */
         readonly fill: Excel.ChartFill;
         
@@ -6030,13 +6399,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartPointFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPointFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPointFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartPointFormatLoadOptions): Excel.ChartPointFormat;
         load(option?: string | string[]): Excel.ChartPointFormat;
         load(option?: {
             select?: string;
@@ -6094,13 +6465,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartAxes` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxes` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxes` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartAxesLoadOptions): Excel.ChartAxes;
         load(option?: string | string[]): Excel.ChartAxes;
         load(option?: {
             select?: string;
@@ -6257,7 +6630,7 @@ export declare namespace Excel {
         position: Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom";
         /**
          *
-         * Represents the specified axis position where the other axis crosses at. Read Only. Set to this property should use SetPositionAt(double) method. [Api set: ExcelApi 1.8]
+         * Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property. [Api set: ExcelApi 1.8]
          */
         readonly positionAt: number;
         /**
@@ -6344,13 +6717,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartAxis` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxis` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxis` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;
         load(option?: string | string[]): Excel.ChartAxis;
         load(option?: {
             select?: string;
@@ -6392,13 +6767,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartAxisFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxisFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxisFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartAxisFormatLoadOptions): Excel.ChartAxisFormat;
         load(option?: string | string[]): Excel.ChartAxisFormat;
         load(option?: {
             select?: string;
@@ -6447,13 +6824,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartAxisTitle` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxisTitle` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxisTitle` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartAxisTitleLoadOptions): Excel.ChartAxisTitle;
         load(option?: string | string[]): Excel.ChartAxisTitle;
         load(option?: {
             select?: string;
@@ -6495,13 +6874,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartAxisTitleFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxisTitleFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxisTitleFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions): Excel.ChartAxisTitleFormat;
         load(option?: string | string[]): Excel.ChartAxisTitleFormat;
         load(option?: {
             select?: string;
@@ -6527,7 +6908,7 @@ export declare namespace Excel {
         readonly format: Excel.ChartDataLabelFormat;
         /**
          *
-         * Represents whether data labels automatically generates appropriate text based on context. [Api set: ExcelApi 1.8]
+         * Represents whether data labels automatically generate appropriate text based on context. [Api set: ExcelApi 1.8]
          */
         autoText: boolean;
         /**
@@ -6606,13 +6987,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartDataLabels` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabels` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartDataLabels` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartDataLabelsLoadOptions): Excel.ChartDataLabels;
         load(option?: string | string[]): Excel.ChartDataLabels;
         load(option?: {
             select?: string;
@@ -6747,13 +7130,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartDataLabel` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabel` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartDataLabel` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartDataLabelLoadOptions): Excel.ChartDataLabel;
         load(option?: string | string[]): Excel.ChartDataLabel;
         load(option?: {
             select?: string;
@@ -6795,13 +7180,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartDataLabelFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabelFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartDataLabelFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartDataLabelFormatLoadOptions): Excel.ChartDataLabelFormat;
         load(option?: string | string[]): Excel.ChartDataLabelFormat;
         load(option?: {
             select?: string;
@@ -6859,13 +7246,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartErrorBars` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartErrorBars` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartErrorBars` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartErrorBarsLoadOptions): Excel.ChartErrorBars;
         load(option?: string | string[]): Excel.ChartErrorBars;
         load(option?: {
             select?: string;
@@ -6899,13 +7288,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartErrorBarsFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartErrorBarsFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartErrorBarsFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartErrorBarsFormatLoadOptions): Excel.ChartErrorBarsFormat;
         load(option?: string | string[]): Excel.ChartErrorBarsFormat;
         load(option?: {
             select?: string;
@@ -6942,13 +7333,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartGridlines` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartGridlines` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartGridlines` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartGridlinesLoadOptions): Excel.ChartGridlines;
         load(option?: string | string[]): Excel.ChartGridlines;
         load(option?: {
             select?: string;
@@ -6980,13 +7373,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartGridlinesFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartGridlinesFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartGridlinesFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartGridlinesFormatLoadOptions): Excel.ChartGridlinesFormat;
         load(option?: string | string[]): Excel.ChartGridlinesFormat;
         load(option?: {
             select?: string;
@@ -7063,13 +7458,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartLegend` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLegend` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLegend` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartLegendLoadOptions): Excel.ChartLegend;
         load(option?: string | string[]): Excel.ChartLegend;
         load(option?: {
             select?: string;
@@ -7090,12 +7487,12 @@ export declare namespace Excel {
         context: RequestContext; 
         /**
          *
-         * Represents the height of the legendEntry on the chart Legend. [Api set: ExcelApi 1.8]
+         * Represents the height of the legendEntry on the chart legend. [Api set: ExcelApi 1.8]
          */
         readonly height: number;
         /**
          *
-         * Represents the index of the LegendEntry in the Chart Legend. [Api set: ExcelApi 1.8]
+         * Represents the index of the legendEntry in the chart legend. [Api set: ExcelApi 1.8]
          */
         readonly index: number;
         /**
@@ -7126,13 +7523,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartLegendEntry` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLegendEntry` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLegendEntry` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartLegendEntryLoadOptions): Excel.ChartLegendEntry;
         load(option?: string | string[]): Excel.ChartLegendEntry;
         load(option?: {
             select?: string;
@@ -7172,13 +7571,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartLegendEntryCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLegendEntryCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLegendEntryCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartLegendEntryCollection;
         load(option?: string | string[]): Excel.ChartLegendEntryCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartLegendEntryCollection;
         /**
@@ -7201,7 +7602,7 @@ export declare namespace Excel {
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of an object, which includes background formating information. Read-only. [Api set: ExcelApi 1.1]
+         * Represents the fill format of an object, which includes background formatting information. Read-only. [Api set: ExcelApi 1.1]
          */
         readonly fill: Excel.ChartFill;
         /**
@@ -7217,13 +7618,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartLegendFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLegendFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLegendFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartLegendFormatLoadOptions): Excel.ChartLegendFormat;
         load(option?: string | string[]): Excel.ChartLegendFormat;
         load(option?: {
             select?: string;
@@ -7269,13 +7672,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartMapOptions` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartMapOptions` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartMapOptions` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartMapOptionsLoadOptions): Excel.ChartMapOptions;
         load(option?: string | string[]): Excel.ChartMapOptions;
         load(option?: {
             select?: string;
@@ -7382,13 +7787,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartTitle` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTitle` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTitle` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartTitleLoadOptions): Excel.ChartTitle;
         load(option?: string | string[]): Excel.ChartTitle;
         load(option?: {
             select?: string;
@@ -7420,13 +7827,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartFormatString` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartFormatString` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartFormatString` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartFormatStringLoadOptions): Excel.ChartFormatString;
         load(option?: string | string[]): Excel.ChartFormatString;
         load(option?: {
             select?: string;
@@ -7452,7 +7861,7 @@ export declare namespace Excel {
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of an object, which includes background formating information. Read-only. [Api set: ExcelApi 1.1]
+         * Represents the fill format of an object, which includes background formatting information. Read-only. [Api set: ExcelApi 1.1]
          */
         readonly fill: Excel.ChartFill;
         /**
@@ -7468,13 +7877,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartTitleFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTitleFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTitleFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartTitleFormatLoadOptions): Excel.ChartTitleFormat;
         load(option?: string | string[]): Excel.ChartTitleFormat;
         load(option?: {
             select?: string;
@@ -7506,7 +7917,7 @@ export declare namespace Excel {
          *
          * Sets the fill formatting of a chart element to a uniform color. [Api set: ExcelApi 1.1]
          *
-         * @param color - HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * @param color - HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
          */
         setSolidColor(color: string): void;
         /**
@@ -7552,13 +7963,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartBorder` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartBorder` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartBorder` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartBorderLoadOptions): Excel.ChartBorder;
         load(option?: string | string[]): Excel.ChartBorder;
         load(option?: {
             select?: string;
@@ -7628,13 +8041,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartBinOptions` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartBinOptions` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartBinOptions` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartBinOptionsLoadOptions): Excel.ChartBinOptions;
         load(option?: string | string[]): Excel.ChartBinOptions;
         load(option?: {
             select?: string;
@@ -7692,13 +8107,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartBoxwhiskerOptions` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartBoxwhiskerOptions` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartBoxwhiskerOptions` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions): Excel.ChartBoxwhiskerOptions;
         load(option?: string | string[]): Excel.ChartBoxwhiskerOptions;
         load(option?: {
             select?: string;
@@ -7745,13 +8162,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartLineFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartLineFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLineFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartLineFormatLoadOptions): Excel.ChartLineFormat;
         load(option?: string | string[]): Excel.ChartLineFormat;
         load(option?: {
             select?: string;
@@ -7808,13 +8227,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartFont` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartFont` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartFont` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartFontLoadOptions): Excel.ChartFont;
         load(option?: string | string[]): Excel.ChartFont;
         load(option?: {
             select?: string;
@@ -7901,13 +8322,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartTrendline` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendline` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendline` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartTrendlineLoadOptions): Excel.ChartTrendline;
         load(option?: string | string[]): Excel.ChartTrendline;
         load(option?: {
             select?: string;
@@ -7961,13 +8384,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartTrendlineCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendlineCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartTrendlineCollection;
         load(option?: string | string[]): Excel.ChartTrendlineCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartTrendlineCollection;
         /**
@@ -7996,13 +8421,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartTrendlineFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendlineFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartTrendlineFormatLoadOptions): Excel.ChartTrendlineFormat;
         load(option?: string | string[]): Excel.ChartTrendlineFormat;
         load(option?: {
             select?: string;
@@ -8097,13 +8524,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartTrendlineLabel` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineLabel` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendlineLabel` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartTrendlineLabelLoadOptions): Excel.ChartTrendlineLabel;
         load(option?: string | string[]): Excel.ChartTrendlineLabel;
         load(option?: {
             select?: string;
@@ -8145,13 +8574,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartTrendlineLabelFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineLabelFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendlineLabelFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions): Excel.ChartTrendlineLabelFormat;
         load(option?: string | string[]): Excel.ChartTrendlineLabelFormat;
         load(option?: {
             select?: string;
@@ -8228,13 +8659,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartPlotArea` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPlotArea` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPlotArea` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartPlotAreaLoadOptions): Excel.ChartPlotArea;
         load(option?: string | string[]): Excel.ChartPlotArea;
         load(option?: {
             select?: string;
@@ -8260,7 +8693,7 @@ export declare namespace Excel {
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of an object, which includes background formating information. [Api set: ExcelApi 1.8]
+         * Represents the fill format of an object, which includes background formatting information. [Api set: ExcelApi 1.8]
          */
         readonly fill: Excel.ChartFill;
         
@@ -8271,13 +8704,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ChartPlotAreaFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ChartPlotAreaFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPlotAreaFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ChartPlotAreaFormatLoadOptions): Excel.ChartPlotAreaFormat;
         load(option?: string | string[]): Excel.ChartPlotAreaFormat;
         load(option?: {
             select?: string;
@@ -8383,13 +8818,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.TableSort` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TableSort` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableSort` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.TableSortLoadOptions): Excel.TableSort;
         load(option?: string | string[]): Excel.TableSort;
         load(option?: {
             select?: string;
@@ -8561,13 +8998,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.Filter` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Filter` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Filter` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;
         load(option?: string | string[]): Excel.Filter;
         load(option?: {
             select?: string;
@@ -8723,13 +9162,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.AutoFilter` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.AutoFilter` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.AutoFilter` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.AutoFilterLoadOptions): Excel.AutoFilter;
         load(option?: string | string[]): Excel.AutoFilter;
         load(option?: {
             select?: string;
@@ -8807,13 +9248,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.CustomXmlPartScopedCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPartScopedCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomXmlPartScopedCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartScopedCollection;
         load(option?: string | string[]): Excel.CustomXmlPartScopedCollection;
         load(option?: OfficeExtension.LoadOption): Excel.CustomXmlPartScopedCollection;
         /**
@@ -8872,13 +9315,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.CustomXmlPartCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPartCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomXmlPartCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartCollection;
         load(option?: string | string[]): Excel.CustomXmlPartCollection;
         load(option?: OfficeExtension.LoadOption): Excel.CustomXmlPartCollection;
         /**
@@ -8928,13 +9373,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.CustomXmlPart` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPart` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomXmlPart` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.CustomXmlPartLoadOptions): Excel.CustomXmlPart;
         load(option?: string | string[]): Excel.CustomXmlPart;
         load(option?: {
             select?: string;
@@ -8996,13 +9443,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.PivotTableCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotTableCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotTableCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotTableCollection;
         load(option?: string | string[]): Excel.PivotTableCollection;
         load(option?: OfficeExtension.LoadOption): Excel.PivotTableCollection;
         /**
@@ -9055,6 +9504,12 @@ export declare namespace Excel {
         readonly worksheet: Excel.Worksheet;
         /**
          *
+         * True if the PivotTable should use custom lists when sorting. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        enableDataValueEditing: boolean;
+        /**
+         *
          * Id of the PivotTable. Read-only. [Api set: ExcelApi 1.5]
          */
         readonly id: string;
@@ -9087,13 +9542,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.PivotTable` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotTable` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotTable` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.PivotTableLoadOptions): Excel.PivotTable;
         load(option?: string | string[]): Excel.PivotTable;
         load(option?: {
             select?: string;
@@ -9114,6 +9571,12 @@ export declare namespace Excel {
         context: RequestContext; 
         /**
          *
+         * True if formatting will be automatically formatted when it’s refreshed or when fields are moved [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        autoFormat: boolean;
+        /**
+         *
          * True if the field list should be shown or hidden from the UI. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -9123,6 +9586,12 @@ export declare namespace Excel {
          * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null. [Api set: ExcelApi 1.8]
          */
         layoutType: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";
+        /**
+         *
+         * True if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        preserveFormatting: boolean;
         /**
          *
          * True if the PivotTable report shows grand totals for columns. [Api set: ExcelApi 1.8]
@@ -9227,13 +9696,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.PivotLayout` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotLayout` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotLayout` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.PivotLayoutLoadOptions): Excel.PivotLayout;
         load(option?: string | string[]): Excel.PivotLayout;
         load(option?: {
             select?: string;
@@ -9280,13 +9751,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.PivotHierarchyCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotHierarchyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotHierarchyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.PivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotHierarchyCollection;
         load(option?: string | string[]): Excel.PivotHierarchyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.PivotHierarchyCollection;
         /**
@@ -9325,13 +9798,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.PivotHierarchy` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotHierarchy` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotHierarchy` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.PivotHierarchyLoadOptions): Excel.PivotHierarchy;
         load(option?: string | string[]): Excel.PivotHierarchy;
         load(option?: {
             select?: string;
@@ -9389,13 +9864,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.RowColumnPivotHierarchyCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RowColumnPivotHierarchyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RowColumnPivotHierarchyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RowColumnPivotHierarchyCollection;
         load(option?: string | string[]): Excel.RowColumnPivotHierarchyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.RowColumnPivotHierarchyCollection;
         /**
@@ -9444,13 +9921,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.RowColumnPivotHierarchy` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RowColumnPivotHierarchy` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RowColumnPivotHierarchy` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.RowColumnPivotHierarchyLoadOptions): Excel.RowColumnPivotHierarchy;
         load(option?: string | string[]): Excel.RowColumnPivotHierarchy;
         load(option?: {
             select?: string;
@@ -9508,13 +9987,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.FilterPivotHierarchyCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.FilterPivotHierarchyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.FilterPivotHierarchyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.FilterPivotHierarchyCollection;
         load(option?: string | string[]): Excel.FilterPivotHierarchyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.FilterPivotHierarchyCollection;
         /**
@@ -9568,13 +10049,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.FilterPivotHierarchy` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.FilterPivotHierarchy` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.FilterPivotHierarchy` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.FilterPivotHierarchyLoadOptions): Excel.FilterPivotHierarchy;
         load(option?: string | string[]): Excel.FilterPivotHierarchy;
         load(option?: {
             select?: string;
@@ -9631,13 +10114,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.DataPivotHierarchyCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.DataPivotHierarchyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.DataPivotHierarchyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.DataPivotHierarchyCollection;
         load(option?: string | string[]): Excel.DataPivotHierarchyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.DataPivotHierarchyCollection;
         /**
@@ -9680,7 +10165,7 @@ export declare namespace Excel {
         position: number;
         /**
          *
-         * Determines whether the data should be sown as a specific summary calculation or not. [Api set: ExcelApi 1.8]
+         * Determines whether the data should be shown as a specific summary calculation or not. [Api set: ExcelApi 1.8]
          */
         showAs: Excel.ShowAsRule;
         /**
@@ -9701,13 +10186,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.DataPivotHierarchy` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.DataPivotHierarchy` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.DataPivotHierarchy` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.DataPivotHierarchyLoadOptions): Excel.DataPivotHierarchy;
         load(option?: string | string[]): Excel.DataPivotHierarchy;
         load(option?: {
             select?: string;
@@ -9724,12 +10211,12 @@ export declare namespace Excel {
     export interface ShowAsRule {
         /**
          *
-         * The Base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null. [Api set: ExcelApi 1.8]
+         * The base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null. [Api set: ExcelApi 1.8]
          */
         baseField?: Excel.PivotField;
         /**
          *
-         * The Base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null. [Api set: ExcelApi 1.8]
+         * The base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null. [Api set: ExcelApi 1.8]
          */
         baseItem?: Excel.PivotItem;
         /**
@@ -9773,13 +10260,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.PivotFieldCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotFieldCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotFieldCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.PivotFieldCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotFieldCollection;
         load(option?: string | string[]): Excel.PivotFieldCollection;
         load(option?: OfficeExtension.LoadOption): Excel.PivotFieldCollection;
         /**
@@ -9862,13 +10351,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.PivotField` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotField` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotField` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.PivotFieldLoadOptions): Excel.PivotField;
         load(option?: string | string[]): Excel.PivotField;
         load(option?: {
             select?: string;
@@ -9915,13 +10406,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.PivotItemCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotItemCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotItemCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.PivotItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotItemCollection;
         load(option?: string | string[]): Excel.PivotItemCollection;
         load(option?: OfficeExtension.LoadOption): Excel.PivotItemCollection;
         /**
@@ -9965,13 +10458,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.PivotItem` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PivotItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.PivotItemLoadOptions): Excel.PivotItem;
         load(option?: string | string[]): Excel.PivotItem;
         load(option?: {
             select?: string;
@@ -10017,7 +10512,7 @@ export declare namespace Excel {
         topSum = "TopSum",
         bottomItems = "BottomItems",
         bottomPercent = "BottomPercent",
-        bottomSum = "BottomSum",
+        bottomSum = "BottomSum"
     }
     /**
      *
@@ -10035,7 +10530,7 @@ export declare namespace Excel {
          * Descending sort. Largest to smallest or Z to A.
          *
          */
-        descending = "Descending",
+        descending = "Descending"
     }
     /**
      *
@@ -10119,7 +10614,7 @@ export declare namespace Excel {
          * Aggregate using the variance of the data, equivalent to the VARP function.
          *
          */
-        varianceP = "VarianceP",
+        varianceP = "VarianceP"
     }
     /**
      *
@@ -10222,7 +10717,7 @@ export declare namespace Excel {
             ((value in cell) x (Grand Total of Grand Totals)) / ((Grand Row Total) x (Grand Column Total))
          *
          */
-        index = "Index",
+        index = "Index"
     }
     /**
      *
@@ -10259,7 +10754,7 @@ export declare namespace Excel {
          * The filter axis.
          *
          */
-        filter = "Filter",
+        filter = "Filter"
     }
     /**
      *
@@ -10336,13 +10831,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.DocumentProperties` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.DocumentProperties` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.DocumentProperties` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.DocumentPropertiesLoadOptions): Excel.DocumentProperties;
         load(option?: string | string[]): Excel.DocumentProperties;
         load(option?: {
             select?: string;
@@ -10389,13 +10886,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.CustomProperty` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomProperty` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomProperty` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.CustomPropertyLoadOptions): Excel.CustomProperty;
         load(option?: string | string[]): Excel.CustomProperty;
         load(option?: {
             select?: string;
@@ -10455,13 +10954,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.CustomPropertyCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomPropertyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomPropertyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomPropertyCollection;
         load(option?: string | string[]): Excel.CustomPropertyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.CustomPropertyCollection;
         /**
@@ -10525,13 +11026,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ConditionalFormatCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormatCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalFormatCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ConditionalFormatCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalFormatCollection;
         load(option?: string | string[]): Excel.ConditionalFormatCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ConditionalFormatCollection;
         /**
@@ -10687,13 +11190,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ConditionalFormatLoadOptions): Excel.ConditionalFormat;
         load(option?: string | string[]): Excel.ConditionalFormat;
         load(option?: {
             select?: string;
@@ -10761,13 +11266,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.DataBarConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.DataBarConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.DataBarConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.DataBarConditionalFormatLoadOptions): Excel.DataBarConditionalFormat;
         load(option?: string | string[]): Excel.DataBarConditionalFormat;
         load(option?: {
             select?: string;
@@ -10810,13 +11317,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ConditionalDataBarPositiveFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarPositiveFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalDataBarPositiveFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions): Excel.ConditionalDataBarPositiveFormat;
         load(option?: string | string[]): Excel.ConditionalDataBarPositiveFormat;
         load(option?: {
             select?: string;
@@ -10864,13 +11373,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ConditionalDataBarNegativeFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalDataBarNegativeFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalDataBarNegativeFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions): Excel.ConditionalDataBarNegativeFormat;
         load(option?: string | string[]): Excel.ConditionalDataBarNegativeFormat;
         load(option?: {
             select?: string;
@@ -10923,13 +11434,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.CustomConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CustomConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.CustomConditionalFormatLoadOptions): Excel.CustomConditionalFormat;
         load(option?: string | string[]): Excel.CustomConditionalFormat;
         load(option?: {
             select?: string;
@@ -10971,13 +11484,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ConditionalFormatRule` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormatRule` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalFormatRule` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ConditionalFormatRuleLoadOptions): Excel.ConditionalFormatRule;
         load(option?: string | string[]): Excel.ConditionalFormatRule;
         load(option?: {
             select?: string;
@@ -11024,13 +11539,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.IconSetConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.IconSetConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.IconSetConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.IconSetConditionalFormatLoadOptions): Excel.IconSetConditionalFormat;
         load(option?: string | string[]): Excel.IconSetConditionalFormat;
         load(option?: {
             select?: string;
@@ -11093,13 +11610,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ColorScaleConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ColorScaleConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ColorScaleConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions): Excel.ColorScaleConditionalFormat;
         load(option?: string | string[]): Excel.ColorScaleConditionalFormat;
         load(option?: {
             select?: string;
@@ -11149,7 +11668,7 @@ export declare namespace Excel {
         formula?: string;
         /**
          *
-         * What the icon conditional formula should be based on. [Api set: ExcelApi 1.6]
+         * What the criterion conditional formula should be based on. [Api set: ExcelApi 1.6]
          */
         type: Excel.ConditionalFormatColorCriterionType | "Invalid" | "LowestValue" | "HighestValue" | "Number" | "Percent" | "Formula" | "Percentile";
     }
@@ -11178,13 +11697,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.TopBottomConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TopBottomConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TopBottomConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions): Excel.TopBottomConditionalFormat;
         load(option?: string | string[]): Excel.TopBottomConditionalFormat;
         load(option?: {
             select?: string;
@@ -11237,13 +11758,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.PresetCriteriaConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PresetCriteriaConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PresetCriteriaConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions): Excel.PresetCriteriaConditionalFormat;
         load(option?: string | string[]): Excel.PresetCriteriaConditionalFormat;
         load(option?: {
             select?: string;
@@ -11291,13 +11814,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.TextConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TextConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TextConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.TextConditionalFormatLoadOptions): Excel.TextConditionalFormat;
         load(option?: string | string[]): Excel.TextConditionalFormat;
         load(option?: {
             select?: string;
@@ -11350,13 +11875,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.CellValueConditionalFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CellValueConditionalFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CellValueConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.CellValueConditionalFormatLoadOptions): Excel.CellValueConditionalFormat;
         load(option?: string | string[]): Excel.CellValueConditionalFormat;
         load(option?: {
             select?: string;
@@ -11424,13 +11951,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ConditionalRangeFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ConditionalRangeFormatLoadOptions): Excel.ConditionalRangeFormat;
         load(option?: string | string[]): Excel.ConditionalRangeFormat;
         load(option?: {
             select?: string;
@@ -11487,13 +12016,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ConditionalRangeFont` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFont` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeFont` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ConditionalRangeFontLoadOptions): Excel.ConditionalRangeFont;
         load(option?: string | string[]): Excel.ConditionalRangeFont;
         load(option?: {
             select?: string;
@@ -11530,13 +12061,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ConditionalRangeFill` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFill` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeFill` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ConditionalRangeFillLoadOptions): Excel.ConditionalRangeFill;
         load(option?: string | string[]): Excel.ConditionalRangeFill;
         load(option?: {
             select?: string;
@@ -11578,13 +12111,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ConditionalRangeBorder` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorder` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeBorder` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ConditionalRangeBorderLoadOptions): Excel.ConditionalRangeBorder;
         load(option?: string | string[]): Excel.ConditionalRangeBorder;
         load(option?: {
             select?: string;
@@ -11658,13 +12193,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ConditionalRangeBorderCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorderCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeBorderCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
         load(option?: string | string[]): Excel.ConditionalRangeBorderCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ConditionalRangeBorderCollection;
         /**
@@ -11815,13 +12352,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.Style` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Style` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Style` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.StyleLoadOptions): Excel.Style;
         load(option?: string | string[]): Excel.Style;
         load(option?: {
             select?: string;
@@ -11838,6 +12377,8 @@ export declare namespace Excel {
      * Represents a collection of all the styles. [Api set: ExcelApi 1.7]
      */
     export class StyleCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Style[];
         /**
@@ -11849,11 +12390,25 @@ export declare namespace Excel {
         add(name: string): void;
         /**
          *
+         * Gets the number of styles in the collection. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         *
          * Gets a style by name. [Api set: ExcelApi 1.7]
          *
          * @param name - Name of the style to be retrieved.
          */
         getItem(name: string): Excel.Style;
+        /**
+         *
+         * Gets a style based on its position in the collection. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
+         */
+        getItemAt(index: number): Excel.Style;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -11861,15 +12416,21 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.StyleCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.StyleCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.StyleCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.StyleCollection;
         load(option?: string | string[]): Excel.StyleCollection;
         load(option?: OfficeExtension.LoadOption): Excel.StyleCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.StyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.StyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Excel.Interfaces.StyleCollectionData;
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -12084,13 +12645,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.PageLayout` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PageLayout` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PageLayout` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.PageLayoutLoadOptions): Excel.PageLayout;
         load(option?: string | string[]): Excel.PageLayout;
         load(option?: {
             select?: string;
@@ -12226,13 +12789,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.HeaderFooter` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.HeaderFooter` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.HeaderFooter` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.HeaderFooterLoadOptions): Excel.HeaderFooter;
         load(option?: string | string[]): Excel.HeaderFooter;
         load(option?: {
             select?: string;
@@ -12300,13 +12865,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.HeaderFooterGroup` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.HeaderFooterGroup` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.HeaderFooterGroup` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.HeaderFooterGroupLoadOptions): Excel.HeaderFooterGroup;
         load(option?: string | string[]): Excel.HeaderFooterGroup;
         load(option?: {
             select?: string;
@@ -12355,13 +12922,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.PageBreak` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PageBreak` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PageBreak` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.PageBreakLoadOptions): Excel.PageBreak;
         load(option?: string | string[]): Excel.PageBreak;
         load(option?: {
             select?: string;
@@ -12416,13 +12985,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.PageBreakCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.PageBreakCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PageBreakCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.PageBreakCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PageBreakCollection;
         load(option?: string | string[]): Excel.PageBreakCollection;
         load(option?: OfficeExtension.LoadOption): Excel.PageBreakCollection;
         /**
@@ -12480,13 +13051,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.RangeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.RangeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.RangeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeCollection;
         load(option?: string | string[]): Excel.RangeCollection;
         load(option?: OfficeExtension.LoadOption): Excel.RangeCollection;
         /**
@@ -12505,6 +13078,26 @@ export declare namespace Excel {
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Comment[];
+        /**
+         *
+         * Creates a new comment(comment thread) based on the cell location and content. Invalid argument will be thrown if the location is larger than one cell. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param content - The comment content.
+         * @param cellAddress - Cell to insert comment to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
+         * @param contentType - Optional. Type of the comment content
+         */
+        add(content: string, cellAddress: Range | string, contentType?: Excel.ContentType): Excel.Comment;
+        /**
+         *
+         * Creates a new comment(comment thread) based on the cell location and content. Invalid argument will be thrown if the location is larger than one cell. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param content - The comment content.
+         * @param cellAddress - Cell to insert comment to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
+         * @param contentType - Optional. Type of the comment content
+         */
+        add(content: string, cellAddress: Range | string, contentType?: "Plain"): Excel.Comment;
         /**
          *
          * Gets the number of comments in the collection. [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -12528,19 +13121,37 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Comment;
         /**
+         *
+         * Gets a comment on the specific cell in the collection. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param cellAddress - Cell which the comment is on. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
+         */
+        getItemByCell(cellAddress: Range | string): Excel.Comment;
+        /**
+         *
+         * Gets a comment related to its reply ID in the collection. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param replyId - The identifier of comment reply.
+         */
+        getItemByReplyId(replyId: string): Excel.Comment;
+        /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
          * @remarks
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.CommentCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CommentCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CommentCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.CommentCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CommentCollection;
         load(option?: string | string[]): Excel.CommentCollection;
         load(option?: OfficeExtension.LoadOption): Excel.CommentCollection;
         /**
@@ -12565,6 +13176,12 @@ export declare namespace Excel {
         readonly replies: Excel.CommentReplyCollection;
         /**
          *
+         * Get/Set the content. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        content: string;
+        /**
+         *
          * Represents the comment identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -12575,6 +13192,13 @@ export declare namespace Excel {
          * @beta
          */
         readonly isParent: boolean;
+        
+        /**
+         *
+         * Deletes the comment thread. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -12582,13 +13206,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.Comment` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Comment` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Comment` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.CommentLoadOptions): Excel.Comment;
         load(option?: string | string[]): Excel.Comment;
         load(option?: {
             select?: string;
@@ -12630,6 +13256,12 @@ export declare namespace Excel {
         add(content: string, contentType?: "Plain"): Excel.CommentReply;
         /**
          *
+         * Gets the number of comment replies in the collection. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         *
          * Returns a comment reply identified by its ID. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
@@ -12637,19 +13269,29 @@ export declare namespace Excel {
          */
         getItem(commentReplyId: string): Excel.CommentReply;
         /**
+         *
+         * Gets a comment reply based on its position in the collection. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
+         */
+        getItemAt(index: number): Excel.CommentReply;
+        /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
          * @remarks
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.CommentReplyCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CommentReplyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CommentReplyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.CommentReplyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CommentReplyCollection;
         load(option?: string | string[]): Excel.CommentReplyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.CommentReplyCollection;
         /**
@@ -12668,6 +13310,12 @@ export declare namespace Excel {
         context: RequestContext; 
         /**
          *
+         * Get/Set the content. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        content: string;
+        /**
+         *
          * Represents the comment reply identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -12678,6 +13326,7 @@ export declare namespace Excel {
          * @beta
          */
         readonly isParent: boolean;
+        
         /**
          *
          * Deletes the comment reply. [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -12685,19 +13334,27 @@ export declare namespace Excel {
          */
         delete(): void;
         /**
+         *
+         * Get its parent comment of this reply. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getParentComment(): Excel.Comment;
+        /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
          * @remarks
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.CommentReply` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.CommentReply` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CommentReply` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.CommentReplyLoadOptions): Excel.CommentReply;
         load(option?: string | string[]): Excel.CommentReply;
         load(option?: {
             select?: string;
@@ -12761,6 +13418,30 @@ export declare namespace Excel {
         addImage(base64ImageString: string): Excel.Shape;
         /**
          *
+         * Adds a line to worksheet. Returns a Shape object that represents the new line. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param startLeft - The distance, in points, from the start left of the line to the left side of the worksheet.
+         * @param startTop - The distance, in points, from the start top of the line to the top of the worksheet.
+         * @param endLeft - The distance, in points, from the end left of the line to the left of the worksheet.
+         * @param endTop - The distance, in points, from the end top of the line to the top of the worksheet.
+         * @param connectorType - Represents the connector type. See Excel.ConnectorType for details.
+         */
+        addLine(startLeft: number, startTop: number, endLeft: number, endTop: number, connectorType?: Excel.ConnectorType): Excel.Shape;
+        /**
+         *
+         * Adds a line to worksheet. Returns a Shape object that represents the new line. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param startLeft - The distance, in points, from the start left of the line to the left side of the worksheet.
+         * @param startTop - The distance, in points, from the start top of the line to the top of the worksheet.
+         * @param endLeft - The distance, in points, from the end left of the line to the left of the worksheet.
+         * @param endTop - The distance, in points, from the end top of the line to the top of the worksheet.
+         * @param connectorType - Represents the connector type. See Excel.ConnectorType for details.
+         */
+        addLine(startLeft: number, startTop: number, endLeft: number, endTop: number, connectorType?: "Straight" | "Elbow" | "Curve"): Excel.Shape;
+        /**
+         *
          * Creates an SVG from a XML string and adds it to worksheet. Returns a Shape object that represents the new Image. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
@@ -12783,12 +13464,20 @@ export declare namespace Excel {
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Returns a shape identified by the shape id. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * Gets a shape using its name. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param shapeId - The identifier for the shape.
+         * @param name - Name of the shape to be retrieved.
          */
-        getItem(shapeId: string): Excel.Shape;
+        getItem(name: string): Excel.Shape;
+        /**
+         *
+         * Gets a shape based on its position in the collection. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
+         */
+        getItemAt(index: number): Excel.Shape;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -12796,13 +13485,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ShapeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ShapeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ShapeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ShapeCollection;
         load(option?: string | string[]): Excel.ShapeCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ShapeCollection;
         /**
@@ -12843,6 +13534,24 @@ export declare namespace Excel {
          * @beta
          */
         readonly image: Excel.Image;
+        /**
+         *
+         * Returns the line object for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly line: Excel.Line;
+        /**
+         *
+         * Returns the line formatting of the shape object. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly lineFormat: Excel.ShapeLineFormat;
+        /**
+         *
+         * Represents the parent group of the specified shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly parentGroup: Excel.Shape;
         /**
          *
          * Returns the textFrame object of a shape. Read only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -12889,16 +13598,22 @@ export declare namespace Excel {
         left: number;
         /**
          *
+         * Represents the level of the specified shape. Level 0 means the shape is not part of any group, level 1 means the shape is part of a top-level group, etc. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly level: number;
+        /**
+         *
          * Represents if the aspect ratio locked, in boolean, of the shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         lockAspectRatio: boolean;
         /**
          *
-         * Represents the name of the shape. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * Represents the name of the shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly name: string;
+        name: string;
         /**
          *
          * Represents the placment, value that represents the way the object is attached to the cells below it. [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -12923,7 +13638,7 @@ export declare namespace Excel {
          * Returns the type of the specified shape. Read-only. See Excel.ShapeType for detail. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly type: Excel.ShapeType | "Unknown" | "Image" | "GeometricShape" | "Group";
+        readonly type: Excel.ShapeType | "Unknown" | "Image" | "GeometricShape" | "Group" | "Line";
         /**
          *
          * Represents the visibility, in boolean, of the specified shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -13050,13 +13765,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.Shape` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Shape` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Shape` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ShapeLoadOptions): Excel.Shape;
         load(option?: string | string[]): Excel.Shape;
         load(option?: {
             select?: string;
@@ -13111,13 +13828,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.GeometricShape` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.GeometricShape` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.GeometricShape` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.GeometricShapeLoadOptions): Excel.GeometricShape;
         load(option?: string | string[]): Excel.GeometricShape;
         load(option?: {
             select?: string;
@@ -13162,13 +13881,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.Image` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.Image` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Image` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ImageLoadOptions): Excel.Image;
         load(option?: string | string[]): Excel.Image;
         load(option?: {
             select?: string;
@@ -13219,13 +13940,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ShapeGroup` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ShapeGroup` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ShapeGroup` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ShapeGroupLoadOptions): Excel.ShapeGroup;
         load(option?: string | string[]): Excel.ShapeGroup;
         load(option?: {
             select?: string;
@@ -13255,12 +13978,20 @@ export declare namespace Excel {
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Returns a shape identified by the shape id. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * Gets a shape using its name. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param shapeId - The identifier for the shape.
+         * @param name - Name of the shape to be retrieved.
          */
-        getItem(shapeId: string): Excel.Shape;
+        getItem(name: string): Excel.Shape;
+        /**
+         *
+         * Gets a shape based on its position in the collection. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
+         */
+        getItemAt(index: number): Excel.Shape;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -13268,13 +13999,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.GroupShapeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.GroupShapeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.GroupShapeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.GroupShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.GroupShapeCollection;
         load(option?: string | string[]): Excel.GroupShapeCollection;
         load(option?: OfficeExtension.LoadOption): Excel.GroupShapeCollection;
         /**
@@ -13282,6 +14015,60 @@ export declare namespace Excel {
         * Whereas the original `Excel.GroupShapeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.GroupShapeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.GroupShapeCollectionData;
+    }
+    /**
+     *
+     * Represents a Line object inside a worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Line extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
+        /**
+         *
+         * Returns the shape object for the line. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly shape: Excel.Shape;
+        /**
+         *
+         * Represents the shape identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: string;
+        /**
+         *
+         * Represents the connector type for the line. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        connectorType: Excel.ConnectorType | "Straight" | "Elbow" | "Curve";
+        
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Excel.Line` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Excel.Line` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Line` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(option?: Excel.Interfaces.LineLoadOptions): Excel.Line;
+        load(option?: string | string[]): Excel.Line;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Line;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.Line object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LineData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.LineData;
     }
     /**
      *
@@ -13331,13 +14118,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ShapeFill` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ShapeFill` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ShapeFill` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ShapeFillLoadOptions): Excel.ShapeFill;
         load(option?: string | string[]): Excel.ShapeFill;
         load(option?: {
             select?: string;
@@ -13348,6 +14137,78 @@ export declare namespace Excel {
         * Whereas the original Excel.ShapeFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeFillData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ShapeFillData;
+    }
+    /**
+     *
+     * Represents the line formatting for the shape object. For picture and geometric shape, line formatting represents the border of shape object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ShapeLineFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
+        /**
+         *
+         * Represents the line color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange"). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        color: string;
+        /**
+         *
+         * Represents the line style of the shape. Returns null when line is not visible or has mixed line dash style property (e.g. group type of shape). See Excel.ShapeLineStyle for details. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dashStyle: Excel.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
+        /**
+         *
+         * Represents the line style of the shape object. Returns null when line is not visible or has mixed line visible property (e.g. group type of shape). See Excel.ShapeLineStyle for details. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        style: Excel.ShapeLineStyle | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin";
+        /**
+         *
+         * Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear). Returns null when the shape has mixed line transparency property (e.g. group type of shape). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        transparency: number;
+        /**
+         *
+         * Represents whether the line formatting of a shape element is visible. Returns null when the shape has mixed line visible property (e.g. group type of shape). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        visible: boolean;
+        /**
+         *
+         * Represents weight of the line, in points. Returns null when the line is not visible or has mixed line weight property (e.g. group type of shape). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        weight: number;
+        
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Excel.ShapeLineFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Excel.ShapeLineFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ShapeLineFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(option?: Excel.Interfaces.ShapeLineFormatLoadOptions): Excel.ShapeLineFormat;
+        load(option?: string | string[]): Excel.ShapeLineFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ShapeLineFormat;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.ShapeLineFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.ShapeLineFormatData;
     }
     /**
      *
@@ -13444,13 +14305,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.TextFrame` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TextFrame` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TextFrame` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.TextFrameLoadOptions): Excel.TextFrame;
         load(option?: string | string[]): Excel.TextFrame;
         load(option?: {
             select?: string;
@@ -13497,13 +14360,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.TextRange` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.TextRange` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TextRange` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.TextRangeLoadOptions): Excel.TextRange;
         load(option?: string | string[]): Excel.TextRange;
         load(option?: {
             select?: string;
@@ -13567,13 +14432,15 @@ export declare namespace Excel {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Excel.ShapeFont` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Excel.ShapeFont` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ShapeFont` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.ShapeFontLoadOptions): Excel.ShapeFont;
         load(option?: string | string[]): Excel.ShapeFont;
         load(option?: {
             select?: string;
@@ -13584,6 +14451,350 @@ export declare namespace Excel {
         * Whereas the original Excel.ShapeFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeFontData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Excel.Interfaces.ShapeFontData;
+    }
+    /**
+     *
+     * Represents a slicer object in the workbook. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Slicer extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
+        /**
+         *
+         * Represents the collection of SlicerItems that are part of the slicer. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly slicerItems: Excel.SlicerItemCollection;
+        /**
+         *
+         * Represents the worksheet containing the slicer. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly worksheet: Excel.Worksheet;
+        /**
+         *
+         * Represents the caption of slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        caption: string;
+        /**
+         *
+         * Represents the height, in points, of the slicer.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        height: number;
+        /**
+         *
+         * Represents the unique id of slicer. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: string;
+        /**
+         *
+         * True if all filters currently applied on the slicer is cleared. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly isFilterCleared: boolean;
+        /**
+         *
+         * Represents the distance, in points, from the left side of the slicer to the left of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left: number;
+        /**
+         *
+         * Represents the name of slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        name: string;
+        /**
+         *
+         * Represents the name used in the formula. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nameInFormula: string;
+        /**
+         *
+         * Represents the sort order of the items in the slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sortBy: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";
+        /**
+         *
+         * Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6, TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        style: string;
+        /**
+         *
+         * Represents the distance, in points, from the top edge of the slicer to the right of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        top: number;
+        /**
+         *
+         * Represents the width, in points, of the slicer.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        width: number;
+        
+        /**
+         *
+         * Clears all the filters currently applied on the slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        clearFilters(): void;
+        /**
+         *
+         * Deletes the slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         *
+         * Returns an array of selected items' names. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getSelectedItems(): OfficeExtension.ClientResult<string[]>;
+        /**
+         *
+         * Select slicer items based on their names. Previous selection will be cleared.
+            All items will be deselected if the array is empty. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param items - Optional. The specified slicer item names to be selected.
+         */
+        selectItems(items?: string[]): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Excel.Slicer` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Excel.Slicer` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Slicer` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(option?: Excel.Interfaces.SlicerLoadOptions): Excel.Slicer;
+        load(option?: string | string[]): Excel.Slicer;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Slicer;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.Slicer object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.SlicerData;
+    }
+    /**
+     *
+     * Represents a collection of all the slicer objects on the workbook or a worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SlicerCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
+        /** Gets the loaded child items in this collection. */
+        readonly items: Excel.Slicer[];
+        /**
+         *
+         * Adds a new slicer to the workbook. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param slicerSource - The data source that the new slicer will be based on. It can be a PivotTable object, a Table object or a string. When a PivotTable object is passed, the data source is the source of the PivotTable object. When a Table object is passed, the data source is the Table object. When a string is passed, it is interpreted as the name/id of a PivotTable/Table.
+         * @param sourceField - The field in the data source to filter by. It can be a PivotField object, a TableColumn object, the id of a PivotField or the id/name of TableColumn.
+         * @param slicerDestination - Optional. The worksheet where the new slicer will be created in. It can be a Worksheet object or the name/id of a worksheet. This parameter can be omitted if the slicer collection is retrieved from worksheet.
+         * @returns The new slicer.
+         */
+        add(slicerSource: string | PivotTable | Table, sourceField: string | PivotField | number | TableColumn, slicerDestination?: string | Worksheet): Excel.Slicer;
+        /**
+         *
+         * Returns the number of slicers in the collection. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         *
+         * Gets a slicer object using its name or id. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - The name or id of the slicer.
+         */
+        getItem(key: string): Excel.Slicer;
+        /**
+         *
+         * Gets a slicer based on its position in the collection. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
+         */
+        getItemAt(index: number): Excel.Slicer;
+        /**
+         *
+         * Gets a slicer using its name or id. If the slicer does not exist, will return a null object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - Name or Id of the slicer to be retrieved.
+         */
+        getItemOrNullObject(key: string): Excel.Slicer;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Excel.SlicerCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Excel.SlicerCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.SlicerCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(option?: Excel.Interfaces.SlicerCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.SlicerCollection;
+        load(option?: string | string[]): Excel.SlicerCollection;
+        load(option?: OfficeExtension.LoadOption): Excel.SlicerCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.SlicerCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.SlicerCollectionData;
+    }
+    /**
+     *
+     * Represents a slicer item in a slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SlicerItem extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
+        /**
+         *
+         * True if the slicer item has data. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly hasData: boolean;
+        /**
+         *
+         * True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isSelected: boolean;
+        /**
+         *
+         * Represents the unique value representing the slicer item. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly key: string;
+        /**
+         *
+         * Represents the value displayed on UI. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly name: string;
+        
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Excel.SlicerItem` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Excel.SlicerItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.SlicerItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(option?: Excel.Interfaces.SlicerItemLoadOptions): Excel.SlicerItem;
+        load(option?: string | string[]): Excel.SlicerItem;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.SlicerItem;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.SlicerItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerItemData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.SlicerItemData;
+    }
+    /**
+     *
+     * Represents a collection of all the slicer item objects on the slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SlicerItemCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
+        /** Gets the loaded child items in this collection. */
+        readonly items: Excel.SlicerItem[];
+        /**
+         *
+         * Returns the number of slicer items in the slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         *
+         * Gets a slicer item object using its key or name. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - The key or name of the slicer item.
+         */
+        getItem(key: string): Excel.SlicerItem;
+        /**
+         *
+         * Gets a slicer item based on its position in the collection. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
+         */
+        getItemAt(index: number): Excel.SlicerItem;
+        /**
+         *
+         * Gets a slicer item using its key or name. If the slicer item does not exist, will return a null object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - Key or name of the slicer to be retrieved.
+         */
+        getItemOrNullObject(key: string): Excel.SlicerItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Excel.SlicerItemCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Excel.SlicerItemCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.SlicerItemCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(option?: Excel.Interfaces.SlicerItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.SlicerItemCollection;
+        load(option?: string | string[]): Excel.SlicerItemCollection;
+        load(option?: OfficeExtension.LoadOption): Excel.SlicerItemCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.SlicerItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.SlicerItemCollectionData;
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -13606,19 +14817,19 @@ export declare namespace Excel {
          * Axis displays data series.
          *
          */
-        series = "Series",
+        series = "Series"
     }
     /* [Api set: ExcelApi 1.7]
      */
     enum ChartAxisGroup {
         primary = "Primary",
-        secondary = "Secondary",
+        secondary = "Secondary"
     }
     /* [Api set: ExcelApi 1.7]
      */
     enum ChartAxisScaleType {
         linear = "Linear",
-        logarithmic = "Logarithmic",
+        logarithmic = "Logarithmic"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -13626,7 +14837,7 @@ export declare namespace Excel {
         automatic = "Automatic",
         maximum = "Maximum",
         minimum = "Minimum",
-        custom = "Custom",
+        custom = "Custom"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -13634,7 +14845,7 @@ export declare namespace Excel {
         none = "None",
         cross = "Cross",
         inside = "Inside",
-        outside = "Outside",
+        outside = "Outside"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -13642,7 +14853,7 @@ export declare namespace Excel {
     enum CalculationState {
         done = "Done",
         calculating = "Calculating",
-        pending = "Pending",
+        pending = "Pending"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -13650,7 +14861,7 @@ export declare namespace Excel {
         nextToAxis = "NextToAxis",
         high = "High",
         low = "Low",
-        none = "None",
+        none = "None"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -13720,7 +14931,7 @@ export declare namespace Excel {
          * This will set the axis in units of custom value.
          *
          */
-        custom = "Custom",
+        custom = "Custom"
     }
     /**
      *
@@ -13729,7 +14940,7 @@ export declare namespace Excel {
     enum ChartAxisTimeUnit {
         days = "Days",
         months = "Months",
-        years = "Years",
+        years = "Years"
     }
     /**
      *
@@ -13738,7 +14949,7 @@ export declare namespace Excel {
      */
     enum ChartBoxQuartileCalculation {
         inclusive = "Inclusive",
-        exclusive = "Exclusive",
+        exclusive = "Exclusive"
     }
     /**
      *
@@ -13762,7 +14973,7 @@ export declare namespace Excel {
          * Axis groups data on a time scale.
          *
          */
-        dateAxis = "DateAxis",
+        dateAxis = "DateAxis"
     }
     /**
      *
@@ -13773,7 +14984,7 @@ export declare namespace Excel {
         category = "Category",
         auto = "Auto",
         binWidth = "BinWidth",
-        binCount = "BinCount",
+        binCount = "BinCount"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -13788,7 +14999,7 @@ export declare namespace Excel {
         grey50 = "Grey50",
         grey75 = "Grey75",
         automatic = "Automatic",
-        roundDot = "RoundDot",
+        roundDot = "RoundDot"
     }
     /* [Api set: ExcelApi 1.1]
      */
@@ -13804,7 +15015,7 @@ export declare namespace Excel {
         top = "Top",
         bottom = "Bottom",
         bestFit = "BestFit",
-        callout = "Callout",
+        callout = "Callout"
     }
     /**
      *
@@ -13814,7 +15025,7 @@ export declare namespace Excel {
     enum ChartErrorBarsInclude {
         both = "Both",
         minusValues = "MinusValues",
-        plusValues = "PlusValues",
+        plusValues = "PlusValues"
     }
     /**
      *
@@ -13826,7 +15037,7 @@ export declare namespace Excel {
         percent = "Percent",
         stDev = "StDev",
         stError = "StError",
-        custom = "Custom",
+        custom = "Custom"
     }
     /**
      *
@@ -13841,7 +15052,7 @@ export declare namespace Excel {
         state = "State",
         country = "Country",
         continent = "Continent",
-        world = "World",
+        world = "World"
     }
     /**
      *
@@ -13850,7 +15061,7 @@ export declare namespace Excel {
      */
     enum ChartGradientStyle {
         twoPhaseColor = "TwoPhaseColor",
-        threePhaseColor = "ThreePhaseColor",
+        threePhaseColor = "ThreePhaseColor"
     }
     /**
      *
@@ -13860,7 +15071,7 @@ export declare namespace Excel {
     enum ChartGradientStyleType {
         extremeValue = "ExtremeValue",
         number = "Number",
-        percent = "Percent",
+        percent = "Percent"
     }
     /**
      *
@@ -13871,7 +15082,7 @@ export declare namespace Excel {
         top = "Top",
         bottom = "Bottom",
         left = "Left",
-        right = "Right",
+        right = "Right"
     }
     /* [Api set: ExcelApi 1.1]
      */
@@ -13882,7 +15093,7 @@ export declare namespace Excel {
         left = "Left",
         right = "Right",
         corner = "Corner",
-        custom = "Custom",
+        custom = "Custom"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -13899,13 +15110,13 @@ export declare namespace Excel {
         dash = "Dash",
         circle = "Circle",
         plus = "Plus",
-        picture = "Picture",
+        picture = "Picture"
     }
     /* [Api set: ExcelApi 1.8]
      */
     enum ChartPlotAreaPosition {
         automatic = "Automatic",
-        custom = "Custom",
+        custom = "Custom"
     }
     /**
      *
@@ -13915,7 +15126,7 @@ export declare namespace Excel {
     enum ChartMapLabelStrategy {
         none = "None",
         bestFit = "BestFit",
-        showAll = "ShowAll",
+        showAll = "ShowAll"
     }
     /**
      *
@@ -13927,7 +15138,7 @@ export declare namespace Excel {
         mercator = "Mercator",
         miller = "Miller",
         robinson = "Robinson",
-        albers = "Albers",
+        albers = "Albers"
     }
     /**
      *
@@ -13937,7 +15148,7 @@ export declare namespace Excel {
     enum ChartParentLabelStrategy {
         none = "None",
         banner = "Banner",
-        overlapping = "Overlapping",
+        overlapping = "Overlapping"
     }
     /**
      *
@@ -13951,7 +15162,7 @@ export declare namespace Excel {
          */
         auto = "Auto",
         columns = "Columns",
-        rows = "Rows",
+        rows = "Rows"
     }
     /**
      *
@@ -13962,7 +15173,7 @@ export declare namespace Excel {
         left = "Left",
         right = "Right",
         justify = "Justify",
-        distributed = "Distributed",
+        distributed = "Distributed"
     }
     /**
      *
@@ -13973,14 +15184,14 @@ export declare namespace Excel {
         bottom = "Bottom",
         top = "Top",
         justify = "Justify",
-        distributed = "Distributed",
+        distributed = "Distributed"
     }
     /* [Api set: ExcelApi 1.8]
      */
     enum ChartTickLabelAlignment {
         center = "Center",
         left = "Left",
-        right = "Right",
+        right = "Right"
     }
     /* [Api set: ExcelApi 1.1]
      */
@@ -14066,26 +15277,26 @@ export declare namespace Excel {
         treemap = "Treemap",
         waterfall = "Waterfall",
         sunburst = "Sunburst",
-        funnel = "Funnel",
+        funnel = "Funnel"
     }
     /* [Api set: ExcelApi 1.1]
      */
     enum ChartUnderlineStyle {
         none = "None",
-        single = "Single",
+        single = "Single"
     }
     /* [Api set: ExcelApi 1.8]
      */
     enum ChartDisplayBlanksAs {
         notPlotted = "NotPlotted",
         zero = "Zero",
-        interplotted = "Interplotted",
+        interplotted = "Interplotted"
     }
     /* [Api set: ExcelApi 1.8]
      */
     enum ChartPlotBy {
         rows = "Rows",
-        columns = "Columns",
+        columns = "Columns"
     }
     /* [Api set: ExcelApi 1.8]
      */
@@ -14093,7 +15304,7 @@ export declare namespace Excel {
         splitByPosition = "SplitByPosition",
         splitByValue = "SplitByValue",
         splitByPercentValue = "SplitByPercentValue",
-        splitByCustomSplit = "SplitByCustomSplit",
+        splitByCustomSplit = "SplitByCustomSplit"
     }
     /* [Api set: ExcelApi 1.8]
      */
@@ -14114,7 +15325,7 @@ export declare namespace Excel {
         monochromaticPalette10 = "MonochromaticPalette10",
         monochromaticPalette11 = "MonochromaticPalette11",
         monochromaticPalette12 = "MonochromaticPalette12",
-        monochromaticPalette13 = "MonochromaticPalette13",
+        monochromaticPalette13 = "MonochromaticPalette13"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -14124,7 +15335,7 @@ export declare namespace Excel {
         logarithmic = "Logarithmic",
         movingAverage = "MovingAverage",
         polynomial = "Polynomial",
-        power = "Power",
+        power = "Power"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -14133,7 +15344,7 @@ export declare namespace Excel {
         bringToFront = "BringToFront",
         bringForward = "BringForward",
         sendToBack = "SendToBack",
-        sendBackward = "SendBackward",
+        sendBackward = "SendBackward"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -14143,13 +15354,14 @@ export declare namespace Excel {
         image = "Image",
         geometricShape = "GeometricShape",
         group = "Group",
+        line = "Line"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
      */
     enum ShapeScaleType {
         currentSize = "CurrentSize",
-        originalSize = "OriginalSize",
+        originalSize = "OriginalSize"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -14157,7 +15369,7 @@ export declare namespace Excel {
     enum ShapeScaleFrom {
         scaleFromTopLeft = "ScaleFromTopLeft",
         scaleFromMiddle = "ScaleFromMiddle",
-        scaleFromBottomRight = "ScaleFromBottomRight",
+        scaleFromBottomRight = "ScaleFromBottomRight"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -14168,7 +15380,7 @@ export declare namespace Excel {
         gradient = "Gradient",
         pattern = "Pattern",
         pictureAndTexture = "PictureAndTexture",
-        mixed = "Mixed",
+        mixed = "Mixed"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -14190,7 +15402,7 @@ export declare namespace Excel {
         dotDotDashHeavy = "DotDotDashHeavy",
         wavy = "Wavy",
         wavyHeavy = "WavyHeavy",
-        wavyDouble = "WavyDouble",
+        wavyDouble = "WavyDouble"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -14201,14 +15413,41 @@ export declare namespace Excel {
         jpeg = "JPEG",
         gif = "GIF",
         png = "PNG",
-        svg = "SVG",
+        svg = "SVG"
+    }
+    /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShapeLineStyle {
+        single = "Single",
+        thickBetweenThin = "ThickBetweenThin",
+        thickThin = "ThickThin",
+        thinThick = "ThinThick",
+        thinThin = "ThinThin"
+    }
+    /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShapeLineDashStyle {
+        dash = "Dash",
+        dashDot = "DashDot",
+        dashDotDot = "DashDotDot",
+        longDash = "LongDash",
+        longDashDot = "LongDashDot",
+        roundDot = "RoundDot",
+        solid = "Solid",
+        squareDot = "SquareDot",
+        longDashDotDot = "LongDashDotDot",
+        systemDash = "SystemDash",
+        systemDot = "SystemDot",
+        systemDashDot = "SystemDashDot"
     }
     /* [Api set: ExcelApi 1.1]
      */
     enum BindingType {
         range = "Range",
         table = "Table",
-        text = "Text",
+        text = "Text"
     }
     /* [Api set: ExcelApi 1.1]
      */
@@ -14220,7 +15459,7 @@ export declare namespace Excel {
         insideVertical = "InsideVertical",
         insideHorizontal = "InsideHorizontal",
         diagonalDown = "DiagonalDown",
-        diagonalUp = "DiagonalUp",
+        diagonalUp = "DiagonalUp"
     }
     /* [Api set: ExcelApi 1.1]
      */
@@ -14232,7 +15471,7 @@ export declare namespace Excel {
         dashDotDot = "DashDotDot",
         dot = "Dot",
         double = "Double",
-        slantDashDot = "SlantDashDot",
+        slantDashDot = "SlantDashDot"
     }
     /* [Api set: ExcelApi 1.1]
      */
@@ -14240,14 +15479,29 @@ export declare namespace Excel {
         hairline = "Hairline",
         thin = "Thin",
         medium = "Medium",
-        thick = "Thick",
+        thick = "Thick"
     }
     /* [Api set: ExcelApi 1.1]
      */
     enum CalculationMode {
+        /**
+         *
+         * The default recalculation behavior where Excel calculates new formula results every time the relevant data is changed.
+         *
+         */
         automatic = "Automatic",
+        /**
+         *
+         * Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.
+         *
+         */
         automaticExceptTables = "AutomaticExceptTables",
-        manual = "Manual",
+        /**
+         *
+         * Calculations only occur when the user or add-in requests them.
+         *
+         */
+        manual = "Manual"
     }
     /* [Api set: ExcelApi 1.1]
      */
@@ -14269,7 +15523,7 @@ export declare namespace Excel {
          * This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.
          *
          */
-        fullRebuild = "FullRebuild",
+        fullRebuild = "FullRebuild"
     }
     /* [Api set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks & HyperlinksAndFormats.]
      */
@@ -14298,7 +15552,7 @@ export declare namespace Excel {
          * Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation intact.
          *
          */
-        removeHyperlinks = "RemoveHyperlinks",
+        removeHyperlinks = "RemoveHyperlinks"
     }
     /**
      *
@@ -14307,7 +15561,7 @@ export declare namespace Excel {
     enum ConditionalDataBarAxisFormat {
         automatic = "Automatic",
         none = "None",
-        cellMidPoint = "CellMidPoint",
+        cellMidPoint = "CellMidPoint"
     }
     /**
      *
@@ -14316,7 +15570,7 @@ export declare namespace Excel {
     enum ConditionalDataBarDirection {
         context = "Context",
         leftToRight = "LeftToRight",
-        rightToLeft = "RightToLeft",
+        rightToLeft = "RightToLeft"
     }
     /**
      *
@@ -14324,7 +15578,7 @@ export declare namespace Excel {
      */
     enum ConditionalFormatDirection {
         top = "Top",
-        bottom = "Bottom",
+        bottom = "Bottom"
     }
     /* [Api set: ExcelApi 1.6]
      */
@@ -14336,7 +15590,7 @@ export declare namespace Excel {
         topBottom = "TopBottom",
         presetCriteria = "PresetCriteria",
         containsText = "ContainsText",
-        cellValue = "CellValue",
+        cellValue = "CellValue"
     }
     /**
      *
@@ -14350,7 +15604,7 @@ export declare namespace Excel {
         number = "Number",
         percent = "Percent",
         formula = "Formula",
-        percentile = "Percentile",
+        percentile = "Percentile"
     }
     /**
      *
@@ -14361,7 +15615,7 @@ export declare namespace Excel {
         number = "Number",
         percent = "Percent",
         formula = "Formula",
-        percentile = "Percentile",
+        percentile = "Percentile"
     }
     /**
      *
@@ -14374,7 +15628,7 @@ export declare namespace Excel {
         number = "Number",
         percent = "Percent",
         formula = "Formula",
-        percentile = "Percentile",
+        percentile = "Percentile"
     }
     /**
      *
@@ -14385,7 +15639,7 @@ export declare namespace Excel {
         topItems = "TopItems",
         topPercent = "TopPercent",
         bottomItems = "BottomItems",
-        bottomPercent = "BottomPercent",
+        bottomPercent = "BottomPercent"
     }
     /**
      *
@@ -14418,7 +15672,7 @@ export declare namespace Excel {
         threeStdDevAboveAverage = "ThreeStdDevAboveAverage",
         threeStdDevBelowAverage = "ThreeStdDevBelowAverage",
         uniqueValues = "UniqueValues",
-        duplicateValues = "DuplicateValues",
+        duplicateValues = "DuplicateValues"
     }
     /**
      *
@@ -14429,7 +15683,7 @@ export declare namespace Excel {
         contains = "Contains",
         notContains = "NotContains",
         beginsWith = "BeginsWith",
-        endsWith = "EndsWith",
+        endsWith = "EndsWith"
     }
     /**
      *
@@ -14444,7 +15698,7 @@ export declare namespace Excel {
         greaterThan = "GreaterThan",
         lessThan = "LessThan",
         greaterThanOrEqual = "GreaterThanOrEqual",
-        lessThanOrEqual = "LessThanOrEqual",
+        lessThanOrEqual = "LessThanOrEqual"
     }
     /**
      *
@@ -14453,7 +15707,7 @@ export declare namespace Excel {
     enum ConditionalIconCriterionOperator {
         invalid = "Invalid",
         greaterThan = "GreaterThan",
-        greaterThanOrEqual = "GreaterThanOrEqual",
+        greaterThanOrEqual = "GreaterThanOrEqual"
     }
     /* [Api set: ExcelApi 1.6]
      */
@@ -14461,7 +15715,7 @@ export declare namespace Excel {
         edgeTop = "EdgeTop",
         edgeBottom = "EdgeBottom",
         edgeLeft = "EdgeLeft",
-        edgeRight = "EdgeRight",
+        edgeRight = "EdgeRight"
     }
     /* [Api set: ExcelApi 1.6]
      */
@@ -14471,14 +15725,14 @@ export declare namespace Excel {
         dash = "Dash",
         dashDot = "DashDot",
         dashDotDot = "DashDotDot",
-        dot = "Dot",
+        dot = "Dot"
     }
     /* [Api set: ExcelApi 1.6]
      */
     enum ConditionalRangeFontUnderlineStyle {
         none = "None",
         single = "Single",
-        double = "Double",
+        double = "Double"
     }
     /* [Api set: CustomFunctions 1.1]
      * @beta
@@ -14486,14 +15740,14 @@ export declare namespace Excel {
     enum CustomFunctionType {
         invalid = "Invalid",
         script = "Script",
-        webService = "WebService",
+        webService = "WebService"
     }
     /* [Api set: CustomFunctions 1.1]
      * @beta
      */
     enum CustomFunctionMetadataFormat {
         invalid = "Invalid",
-        openApi = "OpenApi",
+        openApi = "OpenApi"
     }
     /**
      *
@@ -14559,7 +15813,7 @@ export declare namespace Excel {
          * MixedCriteria means that the range has data validation present on some but not all cells
          *
          */
-        mixedCriteria = "MixedCriteria",
+        mixedCriteria = "MixedCriteria"
     }
     /**
      *
@@ -14573,7 +15827,7 @@ export declare namespace Excel {
         greaterThan = "GreaterThan",
         lessThan = "LessThan",
         greaterThanOrEqualTo = "GreaterThanOrEqualTo",
-        lessThanOrEqualTo = "LessThanOrEqualTo",
+        lessThanOrEqualTo = "LessThanOrEqualTo"
     }
     /**
      *
@@ -14582,13 +15836,13 @@ export declare namespace Excel {
     enum DataValidationAlertStyle {
         stop = "Stop",
         warning = "Warning",
-        information = "Information",
+        information = "Information"
     }
     /* [Api set: ExcelApi 1.1]
      */
     enum DeleteShiftDirection {
         up = "Up",
-        left = "Left",
+        left = "Left"
     }
     /* [Api set: ExcelApi 1.2]
      */
@@ -14627,7 +15881,7 @@ export declare namespace Excel {
         today = "Today",
         tomorrow = "Tomorrow",
         yearToDate = "YearToDate",
-        yesterday = "Yesterday",
+        yesterday = "Yesterday"
     }
     /* [Api set: ExcelApi 1.2]
      */
@@ -14637,7 +15891,7 @@ export declare namespace Excel {
         day = "Day",
         hour = "Hour",
         minute = "Minute",
-        second = "Second",
+        second = "Second"
     }
     /* [Api set: ExcelApi 1.2]
      */
@@ -14651,13 +15905,13 @@ export declare namespace Excel {
         topItems = "TopItems",
         topPercent = "TopPercent",
         icon = "Icon",
-        custom = "Custom",
+        custom = "Custom"
     }
     /* [Api set: ExcelApi 1.2]
      */
     enum FilterOperator {
         and = "And",
-        or = "Or",
+        or = "Or"
     }
     /* [Api set: ExcelApi 1.1]
      */
@@ -14669,7 +15923,7 @@ export declare namespace Excel {
         fill = "Fill",
         justify = "Justify",
         centerAcrossSelection = "CenterAcrossSelection",
-        distributed = "Distributed",
+        distributed = "Distributed"
     }
     /* [Api set: ExcelApi 1.2]
      */
@@ -14696,26 +15950,26 @@ export declare namespace Excel {
         threeTriangles = "ThreeTriangles",
         fiveBoxes = "FiveBoxes",
         linkedEntityFinanceIcon = "LinkedEntityFinanceIcon",
-        linkedEntityMapIcon = "LinkedEntityMapIcon",
+        linkedEntityMapIcon = "LinkedEntityMapIcon"
     }
     /* [Api set: ExcelApi 1.2]
      */
     enum ImageFittingMode {
         fit = "Fit",
         fitAndCenter = "FitAndCenter",
-        fill = "Fill",
+        fill = "Fill"
     }
     /* [Api set: ExcelApi 1.1]
      */
     enum InsertShiftDirection {
         down = "Down",
-        right = "Right",
+        right = "Right"
     }
     /* [Api set: ExcelApi 1.4]
      */
     enum NamedItemScope {
         worksheet = "Worksheet",
-        workbook = "Workbook",
+        workbook = "Workbook"
     }
     /* [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
      */
@@ -14726,7 +15980,7 @@ export declare namespace Excel {
         boolean = "Boolean",
         range = "Range",
         error = "Error",
-        array = "Array",
+        array = "Array"
     }
     /* [Api set: ExcelApi 1.1]
      */
@@ -14735,14 +15989,14 @@ export declare namespace Excel {
         single = "Single",
         double = "Double",
         singleAccountant = "SingleAccountant",
-        doubleAccountant = "DoubleAccountant",
+        doubleAccountant = "DoubleAccountant"
     }
     /* [Api set: ExcelApi 1.1]
      */
     enum SheetVisibility {
         visible = "Visible",
         hidden = "Hidden",
-        veryHidden = "VeryHidden",
+        veryHidden = "VeryHidden"
     }
     /* [Api set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for RichValue]
      */
@@ -14754,7 +16008,7 @@ export declare namespace Excel {
         double = "Double",
         boolean = "Boolean",
         error = "Error",
-        richValue = "RichValue",
+        richValue = "RichValue"
     }
     /**
      *
@@ -14773,13 +16027,13 @@ export declare namespace Excel {
          * Search in reverse order.
          *
          */
-        backwards = "Backwards",
+        backwards = "Backwards"
     }
     /* [Api set: ExcelApi 1.2]
      */
     enum SortOrientation {
         rows = "Rows",
-        columns = "Columns",
+        columns = "Columns"
     }
     /* [Api set: ExcelApi 1.2]
      */
@@ -14787,19 +16041,19 @@ export declare namespace Excel {
         value = "Value",
         cellColor = "CellColor",
         fontColor = "FontColor",
-        icon = "Icon",
+        icon = "Icon"
     }
     /* [Api set: ExcelApi 1.2]
      */
     enum SortDataOption {
         normal = "Normal",
-        textAsNumber = "TextAsNumber",
+        textAsNumber = "TextAsNumber"
     }
     /* [Api set: ExcelApi 1.2]
      */
     enum SortMethod {
         pinYin = "PinYin",
-        strokeCount = "StrokeCount",
+        strokeCount = "StrokeCount"
     }
     /* [Api set: ExcelApi 1.1]
      */
@@ -14808,7 +16062,7 @@ export declare namespace Excel {
         center = "Center",
         bottom = "Bottom",
         justify = "Justify",
-        distributed = "Distributed",
+        distributed = "Distributed"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -14817,7 +16071,7 @@ export declare namespace Excel {
         boolean = "Boolean",
         date = "Date",
         string = "String",
-        float = "Float",
+        float = "Float"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -14833,7 +16087,7 @@ export declare namespace Excel {
          * Remote means event comes from remote user session.
          *
          */
-        remote = "Remote",
+        remote = "Remote"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -14885,7 +16139,7 @@ export declare namespace Excel {
          * CellDeleted represents the data change event is triggered by deleting cells.
          *
          */
-        cellDeleted = "CellDeleted",
+        cellDeleted = "CellDeleted"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -15034,6 +16288,7 @@ export declare namespace Excel {
          *
          */
         worksheetFormatChanged = "WorksheetFormatChanged",
+        wacoperationEvent = "WACOperationEvent"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -15053,7 +16308,7 @@ export declare namespace Excel {
         category = "Category",
         format = "Format",
         manager = "Manager",
-        company = "Company",
+        company = "Company"
     }
     /* [Api set: ExcelApi 1.8]
      */
@@ -15075,7 +16330,7 @@ export declare namespace Excel {
          * Subtotals are off.
          *
          */
-        off = "Off",
+        off = "Off"
     }
     /* [Api set: ExcelApi 1.8]
      */
@@ -15097,7 +16352,7 @@ export declare namespace Excel {
          * Inner fields' items are on same row as outer fields' items and subtotals are always on the bottom.
          *
          */
-        outline = "Outline",
+        outline = "Outline"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -15119,13 +16374,13 @@ export declare namespace Excel {
          * Selection is not allowed for all cells.
          *
          */
-        none = "None",
+        none = "None"
     }
     /* [Api set: ExcelApi 1.7]
      */
     enum PageOrientation {
         portrait = "Portrait",
-        landscape = "Landscape",
+        landscape = "Landscape"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15171,7 +16426,7 @@ export declare namespace Excel {
         envelopePersonal = "EnvelopePersonal",
         fanfoldUS = "FanfoldUS",
         fanfoldStdGerman = "FanfoldStdGerman",
-        fanfoldLegalGerman = "FanfoldLegalGerman",
+        fanfoldLegalGerman = "FanfoldLegalGerman"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -15195,7 +16450,7 @@ export declare namespace Excel {
          * Right to left reading order
          *
          */
-        rightToLeft = "RightToLeft",
+        rightToLeft = "RightToLeft"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -15251,7 +16506,7 @@ export declare namespace Excel {
         accent6_20 = "Accent6_20",
         accent6_40 = "Accent6_40",
         accent6_60 = "Accent6_60",
-        explanatoryText = "ExplanatoryText",
+        explanatoryText = "ExplanatoryText"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15260,7 +16515,7 @@ export declare namespace Excel {
         asDisplayed = "AsDisplayed",
         blank = "Blank",
         dash = "Dash",
-        notAvailable = "NotAvailable",
+        notAvailable = "NotAvailable"
     }
     /* [Api set: ExcelApi 1.7]
      */
@@ -15269,7 +16524,7 @@ export declare namespace Excel {
         before = "Before",
         after = "After",
         beginning = "Beginning",
-        end = "End",
+        end = "End"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15292,7 +16547,7 @@ export declare namespace Excel {
          * Comments will be printed where they were inserted in the worksheet.
          *
          */
-        inPlace = "InPlace",
+        inPlace = "InPlace"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15309,7 +16564,7 @@ export declare namespace Excel {
          * Process across pages or page fields to the right before moving down the rows.
          *
          */
-        overThenDown = "OverThenDown",
+        overThenDown = "OverThenDown"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15332,7 +16587,7 @@ export declare namespace Excel {
          * Assign the page margins in centimeters.
          *
          */
-        centimeters = "Centimeters",
+        centimeters = "Centimeters"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15361,7 +16616,24 @@ export declare namespace Excel {
          * There is a separate first page header/footer, then there is a separate header/footer for odd and even pages.
          *
          */
-        firstOddAndEven = "FirstOddAndEven",
+        firstOddAndEven = "FirstOddAndEven"
+    }
+    /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum AutoFillType {
+        fillDefault = "FillDefault",
+        fillCopy = "FillCopy",
+        fillSeries = "FillSeries",
+        fillFormats = "FillFormats",
+        fillValues = "FillValues",
+        fillDays = "FillDays",
+        fillWeekdays = "FillWeekdays",
+        fillMonths = "FillMonths",
+        fillYears = "FillYears",
+        linearTrend = "LinearTrend",
+        growthTrend = "GrowthTrend",
+        flashFill = "FlashFill"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15370,7 +16642,7 @@ export declare namespace Excel {
         all = "All",
         formulas = "Formulas",
         values = "Values",
-        formats = "Formats",
+        formats = "Formats"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15380,7 +16652,7 @@ export declare namespace Excel {
         validLinkedData = "ValidLinkedData",
         disambiguationNeeded = "DisambiguationNeeded",
         brokenLinkedData = "BrokenLinkedData",
-        fetchingData = "FetchingData",
+        fetchingData = "FetchingData"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15562,7 +16834,15 @@ export declare namespace Excel {
         plaqueTabs = "PlaqueTabs",
         chartX = "ChartX",
         chartStar = "ChartStar",
-        chartPlus = "ChartPlus",
+        chartPlus = "ChartPlus"
+    }
+    /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ConnectorType {
+        straight = "Straight",
+        elbow = "Elbow",
+        curve = "Curve"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15573,7 +16853,7 @@ export declare namespace Excel {
          * Indicates plain format type of the comment content.
          *
          */
-        plain = "Plain",
+        plain = "Plain"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15632,7 +16912,7 @@ export declare namespace Excel {
          * Cells that are visible.
          *
          */
-        visible = "Visible",
+        visible = "Visible"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15727,7 +17007,7 @@ export declare namespace Excel {
          * Cells that have a string value.
          *
          */
-        text = "Text",
+        text = "Text"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15735,7 +17015,7 @@ export declare namespace Excel {
     enum Placement {
         twoCell = "TwoCell",
         oneCell = "OneCell",
-        absolute = "Absolute",
+        absolute = "Absolute"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15761,7 +17041,7 @@ export declare namespace Excel {
         gray16 = "Gray16",
         gray8 = "Gray8",
         linearGradient = "LinearGradient",
-        rectangularGradient = "RectangularGradient",
+        rectangularGradient = "RectangularGradient"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15774,7 +17054,7 @@ export declare namespace Excel {
         justifyLow = "JustifyLow",
         distributed = "Distributed",
         thaiDistributed = "ThaiDistributed",
-        shapeTextHorizontalAlignType_MaxEnumIDs = "ShapeTextHorizontalAlignType_MaxEnumIDs",
+        shapeTextHorizontalAlignType_MaxEnumIDs = "ShapeTextHorizontalAlignType_MaxEnumIDs"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15785,7 +17065,7 @@ export declare namespace Excel {
         bottom = "Bottom",
         justified = "Justified",
         distributed = "Distributed",
-        shapeTextVerticalAlignType_MaxEnumIDs = "ShapeTextVerticalAlignType_MaxEnumIDs",
+        shapeTextVerticalAlignType_MaxEnumIDs = "ShapeTextVerticalAlignType_MaxEnumIDs"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15794,7 +17074,7 @@ export declare namespace Excel {
         overflow = "Overflow",
         ellipsis = "Ellipsis",
         clip = "Clip",
-        shapeTextVertOverflowType_MaxEnumIDs = "ShapeTextVertOverflowType_MaxEnumIDs",
+        shapeTextVertOverflowType_MaxEnumIDs = "ShapeTextVertOverflowType_MaxEnumIDs"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15802,14 +17082,14 @@ export declare namespace Excel {
     enum ShapeTextHorzOverflowType {
         overflow = "Overflow",
         clip = "Clip",
-        shapeTextHorzOverflowType_MaxEnumIDs = "ShapeTextHorzOverflowType_MaxEnumIDs",
+        shapeTextHorzOverflowType_MaxEnumIDs = "ShapeTextHorzOverflowType_MaxEnumIDs"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
      */
     enum ShapeTextReadingOrder {
         ltr = "LTR",
-        rtl = "RTL",
+        rtl = "RTL"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15822,7 +17102,7 @@ export declare namespace Excel {
         eastAsianVertical = "EastAsianVertical",
         mongolianVertical = "MongolianVertical",
         wordArtVerticalRTL = "WordArtVerticalRTL",
-        shapeTextOrientationType_MaxEnumIDs = "ShapeTextOrientationType_MaxEnumIDs",
+        shapeTextOrientationType_MaxEnumIDs = "ShapeTextOrientationType_MaxEnumIDs"
     }
     /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
      * @beta
@@ -15831,7 +17111,7 @@ export declare namespace Excel {
         autoSizeNone = "AutoSizeNone",
         autoSizeTextToFitShape = "AutoSizeTextToFitShape",
         autoSizeShapeToFitText = "AutoSizeShapeToFitText",
-        autoSizeMixed = "AutoSizeMixed",
+        autoSizeMixed = "AutoSizeMixed"
     }
     /**
      *
@@ -15850,7 +17130,7 @@ export declare namespace Excel {
          * Discard the possible changes when closing the workbook.
          *
          */
-        skipSave = "SkipSave",
+        skipSave = "SkipSave"
     }
     /**
      *
@@ -15871,7 +17151,15 @@ export declare namespace Excel {
             Ignored if the workbook was previously saved.
          *
          */
-        prompt = "Prompt",
+        prompt = "Prompt"
+    }
+    /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum SlicerSortType {
+        dataSourceOrder = "DataSourceOrder",
+        ascending = "Ascending",
+        descending = "Descending"
     }
     /**
      *
@@ -15902,8 +17190,10 @@ export declare namespace Excel {
          * `load(option?: { select?: string; expand?: string; }): FunctionResult<T>` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): FunctionResult<T>` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Excel.Interfaces.FunctionResultLoadOptions): FunctionResult<T>;
         load(option?: string | string[]): FunctionResult<T>;
         load(option?: {
             select?: string;
@@ -18950,18 +20240,27 @@ export declare namespace Excel {
         nonBlankCellOffSheet = "NonBlankCellOffSheet",
         notImplemented = "NotImplemented",
         unsupportedOperation = "UnsupportedOperation",
-        invalidOperationInCellEditMode = "InvalidOperationInCellEditMode",
+        invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
     }
     export module Interfaces {
         /**
         * Provides ways to load properties of only a subset of members of a collection.
         */
-        
+        export interface CollectionLoadOptions {
+            /**
+            * Specify the number of items in the queried collection to be included in the result.
+            */
+            $top?: number;
+            /**
+            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+            */
+            $skip?: number;
+        }
         /** An interface for updating data on the Runtime object, for use in "runtime.set({ ... })". */
         export interface RuntimeUpdateData {
             /**
              *
-             * Turn on/off JavaScript events in current taskpane or content add-in. [Api set: ExcelApi 1.8]
+             * Toggle JavaScript events in the current task pane or content add-in. [Api set: ExcelApi 1.8]
              */
             enableEvents?: boolean;
         }
@@ -19365,7 +20664,7 @@ export declare namespace Excel {
             prompt?: Excel.DataValidationPrompt;
             /**
              *
-             * Data Validation rule that contains different type of data validation criteria. [Api set: ExcelApi 1.8]
+             * Data validation rule that contains different type of data validation criteria. [Api set: ExcelApi 1.8]
              */
             rule?: Excel.DataValidationRule;
         }
@@ -19481,7 +20780,7 @@ export declare namespace Excel {
         export interface RangeFillUpdateData {
             /**
              *
-             * HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange") [Api set: ExcelApi 1.1]
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange") [Api set: ExcelApi 1.1]
              */
             color?: string;
             /**
@@ -19652,7 +20951,7 @@ export declare namespace Excel {
             plotArea?: Excel.Interfaces.ChartPlotAreaUpdateData;
             /**
             *
-            * Represents the title of the specified chart, including the text, visibility, position, and formating of the title. [Api set: ExcelApi 1.1]
+            * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title. [Api set: ExcelApi 1.1]
             */
             title?: Excel.Interfaces.ChartTitleUpdateData;
             /**
@@ -19709,7 +21008,7 @@ export declare namespace Excel {
             showAllFieldButtons?: boolean;
             /**
              *
-             * Represents whether to to show the data labels when the value is greater than the maximum value on the value axis.
+             * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
             If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
             This property applies to 2-D charts only. [Api set: ExcelApi 1.8]
              */
@@ -19975,7 +21274,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Specifies how bars and columns are positioned. Can be a value between – 100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write. [Api set: ExcelApi 1.8]
+             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write. [Api set: ExcelApi 1.8]
              */
             overlap?: number;
             /**
@@ -20321,7 +21620,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;
             /**
              *
-             * Represents whether data labels automatically generates appropriate text based on context. [Api set: ExcelApi 1.8]
+             * Represents whether data labels automatically generate appropriate text based on context. [Api set: ExcelApi 1.8]
              */
             autoText?: boolean;
             /**
@@ -21111,6 +22410,12 @@ export declare namespace Excel {
         export interface PivotTableUpdateData {
             /**
              *
+             * True if the PivotTable should use custom lists when sorting. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            enableDataValueEditing?: boolean;
+            /**
+             *
              * Name of the PivotTable. [Api set: ExcelApi 1.3]
              */
             name?: string;
@@ -21125,6 +22430,12 @@ export declare namespace Excel {
         export interface PivotLayoutUpdateData {
             /**
              *
+             * True if formatting will be automatically formatted when it’s refreshed or when fields are moved [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoFormat?: boolean;
+            /**
+             *
              * True if the field list should be shown or hidden from the UI. [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -21134,6 +22445,12 @@ export declare namespace Excel {
              * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null. [Api set: ExcelApi 1.8]
              */
             layoutType?: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";
+            /**
+             *
+             * True if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            preserveFormatting?: boolean;
             /**
              *
              * True if the PivotTable report shows grand totals for columns. [Api set: ExcelApi 1.8]
@@ -21229,7 +22546,7 @@ export declare namespace Excel {
             position?: number;
             /**
              *
-             * Determines whether the data should be sown as a specific summary calculation or not. [Api set: ExcelApi 1.8]
+             * Determines whether the data should be shown as a specific summary calculation or not. [Api set: ExcelApi 1.8]
              */
             showAs?: Excel.ShowAsRule;
             /**
@@ -22084,9 +23401,27 @@ export declare namespace Excel {
         export interface CommentCollectionUpdateData {
             items?: Excel.Interfaces.CommentData[];
         }
+        /** An interface for updating data on the Comment object, for use in "comment.set({ ... })". */
+        export interface CommentUpdateData {
+            /**
+             *
+             * Get/Set the content. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: string;
+        }
         /** An interface for updating data on the CommentReplyCollection object, for use in "commentReplyCollection.set({ ... })". */
         export interface CommentReplyCollectionUpdateData {
             items?: Excel.Interfaces.CommentReplyData[];
+        }
+        /** An interface for updating data on the CommentReply object, for use in "commentReply.set({ ... })". */
+        export interface CommentReplyUpdateData {
+            /**
+             *
+             * Get/Set the content. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: string;
         }
         /** An interface for updating data on the ShapeCollection object, for use in "shapeCollection.set({ ... })". */
         export interface ShapeCollectionUpdateData {
@@ -22100,6 +23435,12 @@ export declare namespace Excel {
             * @beta
             */
             fill?: Excel.Interfaces.ShapeFillUpdateData;
+            /**
+            *
+            * Returns the line formatting of the shape object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            lineFormat?: Excel.Interfaces.ShapeLineFormatUpdateData;
             /**
              *
              * Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page. [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -22140,6 +23481,12 @@ export declare namespace Excel {
             lockAspectRatio?: boolean;
             /**
              *
+             * Represents the name of the shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: string;
+            /**
+             *
              * Represents the placment, value that represents the way the object is attached to the cells below it. [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -22175,6 +23522,15 @@ export declare namespace Excel {
         export interface GroupShapeCollectionUpdateData {
             items?: Excel.Interfaces.ShapeData[];
         }
+        /** An interface for updating data on the Line object, for use in "line.set({ ... })". */
+        export interface LineUpdateData {
+            /**
+             *
+             * Represents the connector type for the line. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            connectorType?: Excel.ConnectorType | "Straight" | "Elbow" | "Curve";
+        }
         /** An interface for updating data on the ShapeFill object, for use in "shapeFill.set({ ... })". */
         export interface ShapeFillUpdateData {
             /**
@@ -22189,6 +23545,45 @@ export declare namespace Excel {
              * @beta
              */
             transparency?: number;
+        }
+        /** An interface for updating data on the ShapeLineFormat object, for use in "shapeLineFormat.set({ ... })". */
+        export interface ShapeLineFormatUpdateData {
+            /**
+             *
+             * Represents the line color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange"). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            color?: string;
+            /**
+             *
+             * Represents the line style of the shape. Returns null when line is not visible or has mixed line dash style property (e.g. group type of shape). See Excel.ShapeLineStyle for details. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            dashStyle?: Excel.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
+            /**
+             *
+             * Represents the line style of the shape object. Returns null when line is not visible or has mixed line visible property (e.g. group type of shape). See Excel.ShapeLineStyle for details. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: Excel.ShapeLineStyle | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin";
+            /**
+             *
+             * Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear). Returns null when the shape has mixed line transparency property (e.g. group type of shape). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+            /**
+             *
+             * Represents whether the line formatting of a shape element is visible. Returns null when the shape has mixed line visible property (e.g. group type of shape). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
+            /**
+             *
+             * Represents weight of the line, in points. Returns null when the line is not visible or has mixed line weight property (e.g. group type of shape). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            weight?: number;
         }
         /** An interface for updating data on the TextFrame object, for use in "textFrame.set({ ... })". */
         export interface TextFrameUpdateData {
@@ -22313,11 +23708,95 @@ export declare namespace Excel {
              */
             underline?: Excel.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
         }
+        /** An interface for updating data on the Slicer object, for use in "slicer.set({ ... })". */
+        export interface SlicerUpdateData {
+            /**
+            *
+            * Represents the worksheet containing the slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            worksheet?: Excel.Interfaces.WorksheetUpdateData;
+            /**
+             *
+             * Represents the caption of slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            caption?: string;
+            /**
+             *
+             * Represents the height, in points, of the slicer.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: number;
+            /**
+             *
+             * Represents the distance, in points, from the left side of the slicer to the left of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: number;
+            /**
+             *
+             * Represents the name of slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: string;
+            /**
+             *
+             * Represents the name used in the formula. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameInFormula?: string;
+            /**
+             *
+             * Represents the sort order of the items in the slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sortBy?: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";
+            /**
+             *
+             * Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6, TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: string;
+            /**
+             *
+             * Represents the distance, in points, from the top edge of the slicer to the right of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: number;
+            /**
+             *
+             * Represents the width, in points, of the slicer.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: number;
+        }
+        /** An interface for updating data on the SlicerCollection object, for use in "slicerCollection.set({ ... })". */
+        export interface SlicerCollectionUpdateData {
+            items?: Excel.Interfaces.SlicerData[];
+        }
+        /** An interface for updating data on the SlicerItem object, for use in "slicerItem.set({ ... })". */
+        export interface SlicerItemUpdateData {
+            /**
+             *
+             * True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSelected?: boolean;
+        }
+        /** An interface for updating data on the SlicerItemCollection object, for use in "slicerItemCollection.set({ ... })". */
+        export interface SlicerItemCollectionUpdateData {
+            items?: Excel.Interfaces.SlicerItemData[];
+        }
         /** An interface describing the data returned by calling "runtime.toJSON()". */
         export interface RuntimeData {
             /**
              *
-             * Turn on/off JavaScript events in current taskpane or content add-in. [Api set: ExcelApi 1.8]
+             * Toggle JavaScript events in the current task pane or content add-in. [Api set: ExcelApi 1.8]
              */
             enableEvents?: boolean;
         }
@@ -22415,6 +23894,12 @@ export declare namespace Excel {
             settings?: Excel.Interfaces.SettingData[];
             /**
             *
+            * Represents a collection of Slicers associated with the workbook. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            slicers?: Excel.Interfaces.SlicerData[];
+            /**
+            *
             * Represents a collection of styles associated with the workbook. Read-only. [Api set: ExcelApi 1.7]
             */
             styles?: Excel.Interfaces.StyleData[];
@@ -22510,6 +23995,12 @@ export declare namespace Excel {
             charts?: Excel.Interfaces.ChartData[];
             /**
             *
+            * Returns a collection of all the Comments objects on the worksheet. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            comments?: Excel.Interfaces.CommentData[];
+            /**
+            *
             * Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks. [Api set: ExcelApi BETA (PREVIEW ONLY)]
             * @beta
             */
@@ -22541,6 +24032,12 @@ export declare namespace Excel {
             * @beta
             */
             shapes?: Excel.Interfaces.ShapeData[];
+            /**
+            *
+            * Returns collection of slicers that are part of the worksheet. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            slicers?: Excel.Interfaces.SlicerData[];
             /**
             *
             * Collection of tables that are part of the worksheet. Read-only. [Api set: ExcelApi 1.1]
@@ -23164,7 +24661,7 @@ export declare namespace Excel {
             prompt?: Excel.DataValidationPrompt;
             /**
              *
-             * Data Validation rule that contains different type of data validation criteria. [Api set: ExcelApi 1.8]
+             * Data validation rule that contains different type of data validation criteria. [Api set: ExcelApi 1.8]
              */
             rule?: Excel.DataValidationRule;
             /**
@@ -23307,7 +24804,7 @@ export declare namespace Excel {
         export interface RangeFillData {
             /**
              *
-             * HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange") [Api set: ExcelApi 1.1]
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange") [Api set: ExcelApi 1.1]
              */
             color?: string;
             /**
@@ -23481,7 +24978,7 @@ export declare namespace Excel {
             series?: Excel.Interfaces.ChartSeriesData[];
             /**
             *
-            * Represents the title of the specified chart, including the text, visibility, position, and formating of the title. Read-only. [Api set: ExcelApi 1.1]
+            * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title. Read-only. [Api set: ExcelApi 1.1]
             */
             title?: Excel.Interfaces.ChartTitleData;
             /**
@@ -23543,7 +25040,7 @@ export declare namespace Excel {
             showAllFieldButtons?: boolean;
             /**
              *
-             * Represents whether to to show the data labels when the value is greater than the maximum value on the value axis.
+             * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
             If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
             This property applies to 2-D charts only. [Api set: ExcelApi 1.8]
              */
@@ -23819,7 +25316,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Specifies how bars and columns are positioned. Can be a value between – 100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write. [Api set: ExcelApi 1.8]
+             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write. [Api set: ExcelApi 1.8]
              */
             overlap?: number;
             /**
@@ -24098,7 +25595,7 @@ export declare namespace Excel {
             position?: Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom";
             /**
              *
-             * Represents the specified axis position where the other axis crosses at. Read Only. Set to this property should use SetPositionAt(double) method. [Api set: ExcelApi 1.8]
+             * Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property. [Api set: ExcelApi 1.8]
              */
             positionAt?: number;
             /**
@@ -24210,7 +25707,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartDataLabelFormatData;
             /**
              *
-             * Represents whether data labels automatically generates appropriate text based on context. [Api set: ExcelApi 1.8]
+             * Represents whether data labels automatically generate appropriate text based on context. [Api set: ExcelApi 1.8]
              */
             autoText?: boolean;
             /**
@@ -24526,12 +26023,12 @@ export declare namespace Excel {
         export interface ChartLegendEntryData {
             /**
              *
-             * Represents the height of the legendEntry on the chart Legend. [Api set: ExcelApi 1.8]
+             * Represents the height of the legendEntry on the chart legend. [Api set: ExcelApi 1.8]
              */
             height?: number;
             /**
              *
-             * Represents the index of the LegendEntry in the Chart Legend. [Api set: ExcelApi 1.8]
+             * Represents the index of the legendEntry in the chart legend. [Api set: ExcelApi 1.8]
              */
             index?: number;
             /**
@@ -25145,6 +26642,12 @@ export declare namespace Excel {
             rowHierarchies?: Excel.Interfaces.RowColumnPivotHierarchyData[];
             /**
              *
+             * True if the PivotTable should use custom lists when sorting. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            enableDataValueEditing?: boolean;
+            /**
+             *
              * Id of the PivotTable. Read-only. [Api set: ExcelApi 1.5]
              */
             id?: string;
@@ -25164,6 +26667,12 @@ export declare namespace Excel {
         export interface PivotLayoutData {
             /**
              *
+             * True if formatting will be automatically formatted when it’s refreshed or when fields are moved [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoFormat?: boolean;
+            /**
+             *
              * True if the field list should be shown or hidden from the UI. [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -25173,6 +26682,12 @@ export declare namespace Excel {
              * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null. [Api set: ExcelApi 1.8]
              */
             layoutType?: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";
+            /**
+             *
+             * True if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            preserveFormatting?: boolean;
             /**
              *
              * True if the PivotTable report shows grand totals for columns. [Api set: ExcelApi 1.8]
@@ -25303,7 +26818,7 @@ export declare namespace Excel {
             position?: number;
             /**
              *
-             * Determines whether the data should be sown as a specific summary calculation or not. [Api set: ExcelApi 1.8]
+             * Determines whether the data should be shown as a specific summary calculation or not. [Api set: ExcelApi 1.8]
              */
             showAs?: Excel.ShowAsRule;
             /**
@@ -26233,6 +27748,12 @@ export declare namespace Excel {
             replies?: Excel.Interfaces.CommentReplyData[];
             /**
              *
+             * Get/Set the content. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: string;
+            /**
+             *
              * Represents the comment identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -26250,6 +27771,12 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling "commentReply.toJSON()". */
         export interface CommentReplyData {
+            /**
+             *
+             * Get/Set the content. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: string;
             /**
              *
              * Represents the comment reply identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -26275,6 +27802,12 @@ export declare namespace Excel {
             * @beta
             */
             fill?: Excel.Interfaces.ShapeFillData;
+            /**
+            *
+            * Returns the line formatting of the shape object. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            lineFormat?: Excel.Interfaces.ShapeLineFormatData;
             /**
              *
              * Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page. [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -26315,13 +27848,19 @@ export declare namespace Excel {
             left?: number;
             /**
              *
+             * Represents the level of the specified shape. Level 0 means the shape is not part of any group, level 1 means the shape is part of a top-level group, etc. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            level?: number;
+            /**
+             *
              * Represents if the aspect ratio locked, in boolean, of the shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             lockAspectRatio?: boolean;
             /**
              *
-             * Represents the name of the shape. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * Represents the name of the shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             name?: string;
@@ -26349,7 +27888,7 @@ export declare namespace Excel {
              * Returns the type of the specified shape. Read-only. See Excel.ShapeType for detail. [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            type?: Excel.ShapeType | "Unknown" | "Image" | "GeometricShape" | "Group";
+            type?: Excel.ShapeType | "Unknown" | "Image" | "GeometricShape" | "Group" | "Line";
             /**
              *
              * Represents the visibility, in boolean, of the specified shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -26413,6 +27952,21 @@ export declare namespace Excel {
         export interface GroupShapeCollectionData {
             items?: Excel.Interfaces.ShapeData[];
         }
+        /** An interface describing the data returned by calling "line.toJSON()". */
+        export interface LineData {
+            /**
+             *
+             * Represents the shape identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
+            /**
+             *
+             * Represents the connector type for the line. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            connectorType?: Excel.ConnectorType | "Straight" | "Elbow" | "Curve";
+        }
         /** An interface describing the data returned by calling "shapeFill.toJSON()". */
         export interface ShapeFillData {
             /**
@@ -26433,6 +27987,45 @@ export declare namespace Excel {
              * @beta
              */
             type?: Excel.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed";
+        }
+        /** An interface describing the data returned by calling "shapeLineFormat.toJSON()". */
+        export interface ShapeLineFormatData {
+            /**
+             *
+             * Represents the line color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange"). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            color?: string;
+            /**
+             *
+             * Represents the line style of the shape. Returns null when line is not visible or has mixed line dash style property (e.g. group type of shape). See Excel.ShapeLineStyle for details. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            dashStyle?: Excel.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
+            /**
+             *
+             * Represents the line style of the shape object. Returns null when line is not visible or has mixed line visible property (e.g. group type of shape). See Excel.ShapeLineStyle for details. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: Excel.ShapeLineStyle | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin";
+            /**
+             *
+             * Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear). Returns null when the shape has mixed line transparency property (e.g. group type of shape). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: number;
+            /**
+             *
+             * Represents whether the line formatting of a shape element is visible. Returns null when the shape has mixed line visible property (e.g. group type of shape). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
+            /**
+             *
+             * Represents weight of the line, in points. Returns null when the line is not visible or has mixed line weight property (e.g. group type of shape). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            weight?: number;
         }
         /** An interface describing the data returned by calling "textFrame.toJSON()". */
         export interface TextFrameData {
@@ -26563,6 +28156,126 @@ export declare namespace Excel {
              */
             underline?: Excel.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
         }
+        /** An interface describing the data returned by calling "slicer.toJSON()". */
+        export interface SlicerData {
+            /**
+            *
+            * Represents the collection of SlicerItems that are part of the slicer. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            slicerItems?: Excel.Interfaces.SlicerItemData[];
+            /**
+            *
+            * Represents the worksheet containing the slicer. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            worksheet?: Excel.Interfaces.WorksheetData;
+            /**
+             *
+             * Represents the caption of slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            caption?: string;
+            /**
+             *
+             * Represents the height, in points, of the slicer.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: number;
+            /**
+             *
+             * Represents the unique id of slicer. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
+            /**
+             *
+             * True if all filters currently applied on the slicer is cleared. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFilterCleared?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the left side of the slicer to the left of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: number;
+            /**
+             *
+             * Represents the name of slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: string;
+            /**
+             *
+             * Represents the name used in the formula. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameInFormula?: string;
+            /**
+             *
+             * Represents the sort order of the items in the slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sortBy?: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";
+            /**
+             *
+             * Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6, TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: string;
+            /**
+             *
+             * Represents the distance, in points, from the top edge of the slicer to the right of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: number;
+            /**
+             *
+             * Represents the width, in points, of the slicer.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: number;
+        }
+        /** An interface describing the data returned by calling "slicerCollection.toJSON()". */
+        export interface SlicerCollectionData {
+            items?: Excel.Interfaces.SlicerData[];
+        }
+        /** An interface describing the data returned by calling "slicerItem.toJSON()". */
+        export interface SlicerItemData {
+            /**
+             *
+             * True if the slicer item has data. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasData?: boolean;
+            /**
+             *
+             * True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSelected?: boolean;
+            /**
+             *
+             * Represents the unique value representing the slicer item. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            key?: string;
+            /**
+             *
+             * Represents the value displayed on UI. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: string;
+        }
+        /** An interface describing the data returned by calling "slicerItemCollection.toJSON()". */
+        export interface SlicerItemCollectionData {
+            items?: Excel.Interfaces.SlicerItemData[];
+        }
         /** An interface describing the data returned by calling "functionResult.toJSON()". */
         export interface FunctionResultData<T> {
             /**
@@ -26580,125 +28293,1246 @@ export declare namespace Excel {
          *
          * Represents the Excel Runtime class. [Api set: ExcelApi 1.5]
          */
-        
+        export interface RuntimeLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Toggle JavaScript events in the current task pane or content add-in. [Api set: ExcelApi 1.8]
+             */
+            enableEvents?: boolean;
+        }
         /**
          *
          * Represents the Excel application that manages the workbook. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ApplicationLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns the Iterative Calculation settings.
+            On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
+            On Excel Online and Excel for other platforms, the settings will apply to the active workbook. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            iterativeCalculation?: Excel.Interfaces.IterativeCalculationLoadOptions;
+            /**
+             *
+             * Returns a number about the version of Excel Calculation Engine that the workbook was last fully recalculated by. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            calculationEngineVersion?: boolean;
+            /**
+             *
+             * Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it. [Api set: ExcelApi 1.1 for get, 1.8 for set]
+             */
+            calculationMode?: boolean;
+            /**
+             *
+             * Returns a CalculationState that indicates the calculation state of the application. See Excel.CalculationState for details. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            calculationState?: boolean;
+        }
         /**
          *
          * Represents the Iterative Calculation settings. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface IterativeCalculationLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * True if Excel will use iteration to resolve circular references. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            enabled?: boolean;
+            /**
+             *
+             * Returns or sets the maximum amount of change between each iteration as Excel resolves circular references. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            maxChange?: boolean;
+            /**
+             *
+             * Returns or sets the maximum number of iterations that Excel can use to resolve a circular reference. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            maxIteration?: boolean;
+        }
         /**
          *
          * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc. [Api set: ExcelApi 1.1]
          */
-        
+        export interface WorkbookLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the Excel application instance that contains this workbook. [Api set: ExcelApi 1.1]
+            */
+            application?: Excel.Interfaces.ApplicationLoadOptions;
+            /**
+            *
+            * Represents a collection of bindings that are part of the workbook. [Api set: ExcelApi 1.1]
+            */
+            bindings?: Excel.Interfaces.BindingCollectionLoadOptions;
+            /**
+            *
+            * Gets the workbook properties. [Api set: ExcelApi 1.7]
+            */
+            properties?: Excel.Interfaces.DocumentPropertiesLoadOptions;
+            /**
+            *
+            * Returns workbook protection object for a workbook. [Api set: ExcelApi 1.7]
+            */
+            protection?: Excel.Interfaces.WorkbookProtectionLoadOptions;
+            /**
+            *
+            * Represents a collection of tables associated with the workbook. [Api set: ExcelApi 1.1]
+            */
+            tables?: Excel.Interfaces.TableCollectionLoadOptions;
+            /**
+             *
+             * True if the workbook is in auto save mode. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoSave?: boolean;
+            /**
+             *
+             * Returns a number about the version of Excel Calculation Engine. Read-Only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            calculationEngineVersion?: boolean;
+            /**
+             *
+             * True if all charts in the workbook are tracking the actual data points to which they are attached.
+            False if the charts track the index of the data points. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            chartDataPointTrack?: boolean;
+            /**
+             *
+             * True if no changes have been made to the specified workbook since it was last saved.
+            You can set this property to True if you want to close a modified workbook without either saving it or being prompted to save it. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDirty?: boolean;
+            /**
+             *
+             * Gets the workbook name. Read-only. [Api set: ExcelApi 1.7]
+             */
+            name?: boolean;
+            /**
+             *
+             * True if the workbook has ever been saved locally or online. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            previouslySaved?: boolean;
+            /**
+             *
+             * True if the workbook is open in Read-only mode. Read-only. [Api set: ExcelApi 1.8]
+             */
+            readOnly?: boolean;
+            /**
+             *
+             * True if the workbook uses the 1904 date system. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            use1904DateSystem?: boolean;
+            /**
+             *
+             * True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
+            Data will permanently lose accuracy when switching this property from false to true. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            usePrecisionAsDisplayed?: boolean;
+        }
         /**
          *
          * Represents the protection of a workbook object. [Api set: ExcelApi 1.7]
          */
-        
+        export interface WorkbookProtectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Indicates if the workbook is protected. Read-Only. [Api set: ExcelApi 1.7]
+             */
+            protected?: boolean;
+        }
         /**
          *
          * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. [Api set: ExcelApi 1.1]
          */
-        
+        export interface WorksheetLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the AutoFilter object of the worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;
+            /**
+            *
+            * Returns collection of charts that are part of the worksheet. [Api set: ExcelApi 1.1]
+            */
+            charts?: Excel.Interfaces.ChartCollectionLoadOptions;
+            /**
+            *
+            * Gets the PageLayout object of the worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            pageLayout?: Excel.Interfaces.PageLayoutLoadOptions;
+            /**
+            *
+            * Returns sheet protection object for a worksheet. [Api set: ExcelApi 1.2]
+            */
+            protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;
+            /**
+            *
+            * Collection of tables that are part of the worksheet. [Api set: ExcelApi 1.1]
+            */
+            tables?: Excel.Interfaces.TableCollectionLoadOptions;
+            /**
+             *
+             * Gets or sets the enableCalculation property of the worksheet.
+            True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            enableCalculation?: boolean;
+            /**
+             *
+             * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only. [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * The display name of the worksheet. [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * The zero-based position of the worksheet within the workbook. [Api set: ExcelApi 1.1]
+             */
+            position?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's gridlines flag.
+            This flag determines whether gridlines are visible to the user. [Api set: ExcelApi 1.8]
+             */
+            showGridlines?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's headings flag.
+            This flag determines whether headings are visible to the user. [Api set: ExcelApi 1.8]
+             */
+            showHeadings?: boolean;
+            /**
+             *
+             * Returns the standard (default) height of all the rows in the worksheet, in points. Read-only. [Api set: ExcelApi 1.7]
+             */
+            standardHeight?: boolean;
+            /**
+             *
+             * Returns or sets the standard (default) width of all the columns in the worksheet.
+            One unit of column width is equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is used. [Api set: ExcelApi 1.7]
+             */
+            standardWidth?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet tab color.
+            When retrieving the tab color, if the worksheet is invisible, the value will be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise, the property will be set to a color, in the form "#123456"
+            When setting the color, use an empty-string to set an "auto" color, or a real color otherwise. [Api set: ExcelApi 1.7]
+             */
+            tabColor?: boolean;
+            /**
+             *
+             * The Visibility of the worksheet. [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
+             */
+            visibility?: boolean;
+        }
         /**
          *
          * Represents a collection of worksheet objects that are part of the workbook. [Api set: ExcelApi 1.1]
          */
-        
+        export interface WorksheetCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the AutoFilter object of the worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns collection of charts that are part of the worksheet. [Api set: ExcelApi 1.1]
+            */
+            charts?: Excel.Interfaces.ChartCollectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the PageLayout object of the worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            pageLayout?: Excel.Interfaces.PageLayoutLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns sheet protection object for a worksheet. [Api set: ExcelApi 1.2]
+            */
+            protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Collection of tables that are part of the worksheet. [Api set: ExcelApi 1.1]
+            */
+            tables?: Excel.Interfaces.TableCollectionLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the enableCalculation property of the worksheet.
+            True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            enableCalculation?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only. [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The display name of the worksheet. [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The zero-based position of the worksheet within the workbook. [Api set: ExcelApi 1.1]
+             */
+            position?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the worksheet's gridlines flag.
+            This flag determines whether gridlines are visible to the user. [Api set: ExcelApi 1.8]
+             */
+            showGridlines?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the worksheet's headings flag.
+            This flag determines whether headings are visible to the user. [Api set: ExcelApi 1.8]
+             */
+            showHeadings?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the standard (default) height of all the rows in the worksheet, in points. Read-only. [Api set: ExcelApi 1.7]
+             */
+            standardHeight?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the standard (default) width of all the columns in the worksheet.
+            One unit of column width is equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is used. [Api set: ExcelApi 1.7]
+             */
+            standardWidth?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the worksheet tab color.
+            When retrieving the tab color, if the worksheet is invisible, the value will be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise, the property will be set to a color, in the form "#123456"
+            When setting the color, use an empty-string to set an "auto" color, or a real color otherwise. [Api set: ExcelApi 1.7]
+             */
+            tabColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The Visibility of the worksheet. [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
+             */
+            visibility?: boolean;
+        }
         /**
          *
          * Represents the protection of a sheet object. [Api set: ExcelApi 1.2]
          */
-        
+        export interface WorksheetProtectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Sheet protection options. Read-only. [Api set: ExcelApi 1.2]
+             */
+            options?: boolean;
+            /**
+             *
+             * Indicates if the worksheet is protected. Read-only. [Api set: ExcelApi 1.2]
+             */
+            protected?: boolean;
+        }
         /**
          *
          * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc. [Api set: ExcelApi 1.1]
          */
-        
+        export interface RangeLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns a data validation object. [Api set: ExcelApi 1.8]
+            */
+            dataValidation?: Excel.Interfaces.DataValidationLoadOptions;
+            /**
+            *
+            * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.RangeFormatLoadOptions;
+            /**
+            *
+            * The worksheet containing the current range. [Api set: ExcelApi 1.1]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4"). Read-only. [Api set: ExcelApi 1.1]
+             */
+            address?: boolean;
+            /**
+             *
+             * Represents range reference for the specified range in the language of the user. Read-only. [Api set: ExcelApi 1.1]
+             */
+            addressLocal?: boolean;
+            /**
+             *
+             * Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only. [Api set: ExcelApi 1.1]
+             */
+            cellCount?: boolean;
+            /**
+             *
+             * Represents the total number of columns in the range. Read-only. [Api set: ExcelApi 1.1]
+             */
+            columnCount?: boolean;
+            /**
+             *
+             * Represents if all columns of the current range are hidden. [Api set: ExcelApi 1.2]
+             */
+            columnHidden?: boolean;
+            /**
+             *
+             * Represents the column number of the first cell in the range. Zero-indexed. Read-only. [Api set: ExcelApi 1.1]
+             */
+            columnIndex?: boolean;
+            /**
+             *
+             * Represents the formula in A1-style notation.
+            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. [Api set: ExcelApi 1.1]
+             */
+            formulas?: boolean;
+            /**
+             *
+             * Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
+            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. [Api set: ExcelApi 1.1]
+             */
+            formulasLocal?: boolean;
+            /**
+             *
+             * Represents the formula in R1C1-style notation.
+            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. [Api set: ExcelApi 1.2]
+             */
+            formulasR1C1?: boolean;
+            /**
+             *
+             * Represents if all cells have a spill border.
+            Returns true if all cells have a spill border, or false if all cells do not have a spill border.
+            Returns null if there are cells both with and without spill borders within the range. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasSpill?: boolean;
+            /**
+             *
+             * Represents if all cells of the current range are hidden. Read-only. [Api set: ExcelApi 1.2]
+             */
+            hidden?: boolean;
+            /**
+             *
+             * Represents the hyperlink for the current range. [Api set: ExcelApi 1.7]
+             */
+            hyperlink?: boolean;
+            /**
+             *
+             * Represents if the current range is an entire column. Read-only. [Api set: ExcelApi 1.7]
+             */
+            isEntireColumn?: boolean;
+            /**
+             *
+             * Represents if the current range is an entire row. Read-only. [Api set: ExcelApi 1.7]
+             */
+            isEntireRow?: boolean;
+            /**
+             *
+             * Represents the data type state of each cell. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linkedDataTypeState?: boolean;
+            /**
+             *
+             * Represents Excel's number format code for the given range.
+            When setting number format to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. [Api set: ExcelApi 1.1]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * Represents Excel's number format code for the given range as a string in the language of the user.
+            When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. [Api set: ExcelApi 1.7]
+             */
+            numberFormatLocal?: boolean;
+            /**
+             *
+             * Returns the total number of rows in the range. Read-only. [Api set: ExcelApi 1.1]
+             */
+            rowCount?: boolean;
+            /**
+             *
+             * Represents if all rows of the current range are hidden. [Api set: ExcelApi 1.2]
+             */
+            rowHidden?: boolean;
+            /**
+             *
+             * Returns the row number of the first cell in the range. Zero-indexed. Read-only. [Api set: ExcelApi 1.1]
+             */
+            rowIndex?: boolean;
+            /**
+             *
+             * Represents the style of the current range.
+            If the styles of the cells are inconsistent, null will be returned.
+            For custom styles, the style name will be returned. For built-in styles, a string representing a value in the BuiltInStyle enum will be returned. [Api set: ExcelApi 1.7]
+             */
+            style?: boolean;
+            /**
+             *
+             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only. [Api set: ExcelApi 1.1]
+             */
+            text?: boolean;
+            /**
+             *
+             * Represents the type of data of each cell. Read-only. [Api set: ExcelApi 1.1]
+             */
+            valueTypes?: boolean;
+            /**
+             *
+             * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+            When setting values to a range, the value argument can be either a single value (string, number or boolean) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. [Api set: ExcelApi 1.1]
+             */
+            values?: boolean;
+        }
         /**
          *
          * RangeAreas represents a collection of one or more rectangular ranges in the same worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface RangeAreasLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns a dataValidation object for all ranges in the RangeAreas. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            dataValidation?: Excel.Interfaces.DataValidationLoadOptions;
+            /**
+            *
+            * Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            format?: Excel.Interfaces.RangeFormatLoadOptions;
+            /**
+            *
+            * Returns the worksheet for the current RangeAreas. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            address?: boolean;
+            /**
+             *
+             * Returns the RageAreas reference in the user locale. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            addressLocal?: boolean;
+            /**
+             *
+             * Returns the number of rectangular ranges that comprise this RangeAreas object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            areaCount?: boolean;
+            /**
+             *
+             * Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            cellCount?: boolean;
+            /**
+             *
+             * Indicates whether all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z"). Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEntireColumn?: boolean;
+            /**
+             *
+             * Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isEntireRow?: boolean;
+            /**
+             *
+             * Represents the style for all ranges in this RangeAreas object.
+            If the styles of the cells are inconsistent, null will be returned.
+            For custom styles, the style name will be returned. For built-in styles, a string representing a value in the BuiltInStyle enum will be returned. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: boolean;
+        }
         /**
          *
          * RangeView represents a set of visible cells of the parent range. [Api set: ExcelApi 1.3]
          */
-        
+        export interface RangeViewLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the cell addresses of the RangeView. Read-only. [Api set: ExcelApi 1.3]
+             */
+            cellAddresses?: boolean;
+            /**
+             *
+             * Returns the number of visible columns. Read-only. [Api set: ExcelApi 1.3]
+             */
+            columnCount?: boolean;
+            /**
+             *
+             * Represents the formula in A1-style notation. [Api set: ExcelApi 1.3]
+             */
+            formulas?: boolean;
+            /**
+             *
+             * Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. [Api set: ExcelApi 1.3]
+             */
+            formulasLocal?: boolean;
+            /**
+             *
+             * Represents the formula in R1C1-style notation. [Api set: ExcelApi 1.3]
+             */
+            formulasR1C1?: boolean;
+            /**
+             *
+             * Returns a value that represents the index of the RangeView. Read-only. [Api set: ExcelApi 1.3]
+             */
+            index?: boolean;
+            /**
+             *
+             * Represents Excel's number format code for the given cell. [Api set: ExcelApi 1.3]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * Returns the number of visible rows. Read-only. [Api set: ExcelApi 1.3]
+             */
+            rowCount?: boolean;
+            /**
+             *
+             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only. [Api set: ExcelApi 1.3]
+             */
+            text?: boolean;
+            /**
+             *
+             * Represents the type of data of each cell. Read-only. [Api set: ExcelApi 1.3]
+             */
+            valueTypes?: boolean;
+            /**
+             *
+             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string. [Api set: ExcelApi 1.3]
+             */
+            values?: boolean;
+        }
         /**
          *
          * Represents a collection of RangeView objects. [Api set: ExcelApi 1.3]
          */
-        
+        export interface RangeViewCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the cell addresses of the RangeView. Read-only. [Api set: ExcelApi 1.3]
+             */
+            cellAddresses?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the number of visible columns. Read-only. [Api set: ExcelApi 1.3]
+             */
+            columnCount?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the formula in A1-style notation. [Api set: ExcelApi 1.3]
+             */
+            formulas?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. [Api set: ExcelApi 1.3]
+             */
+            formulasLocal?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the formula in R1C1-style notation. [Api set: ExcelApi 1.3]
+             */
+            formulasR1C1?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns a value that represents the index of the RangeView. Read-only. [Api set: ExcelApi 1.3]
+             */
+            index?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents Excel's number format code for the given cell. [Api set: ExcelApi 1.3]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the number of visible rows. Read-only. [Api set: ExcelApi 1.3]
+             */
+            rowCount?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only. [Api set: ExcelApi 1.3]
+             */
+            text?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the type of data of each cell. Read-only. [Api set: ExcelApi 1.3]
+             */
+            valueTypes?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string. [Api set: ExcelApi 1.3]
+             */
+            values?: boolean;
+        }
         /**
          *
          * Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per file and add-in (task-pane or content) combination. [Api set: ExcelApi 1.4]
          */
-        
+        export interface SettingCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the key that represents the id of the Setting. Read-only. [Api set: ExcelApi 1.4]
+             */
+            key?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the value stored for this setting. [Api set: ExcelApi 1.4]
+             */
+            value?: boolean;
+        }
         /**
          *
          * Setting represents a key-value pair of a setting persisted to the document (per file per add-in). These custom key-value pair can be used to store state or lifecycle information needed by the content or task-pane add-in. Note that settings are persisted in the document and hence it is not a place to store any sensitive or protected information such as user information and password. [Api set: ExcelApi 1.4]
          */
-        
+        export interface SettingLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Returns the key that represents the id of the Setting. Read-only. [Api set: ExcelApi 1.4]
+             */
+            key?: boolean;
+            /**
+             *
+             * Represents the value stored for this setting. [Api set: ExcelApi 1.4]
+             */
+            value?: boolean;
+        }
         /**
          *
          * A collection of all the NamedItem objects that are part of the workbook or worksheet, depending on how it was reached. [Api set: ExcelApi 1.1]
          */
-        
+        export interface NamedItemCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns an object containing values and types of the named item. [Api set: ExcelApi 1.7]
+            */
+            arrayValues?: Excel.Interfaces.NamedItemArrayValuesLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook instead. [Api set: ExcelApi 1.4]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the workbook instead. [Api set: ExcelApi 1.4]
+            */
+            worksheetOrNullObject?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the comment associated with this name. [Api set: ExcelApi 1.4]
+             */
+            comment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the formula of the named item.  Formula always starts with a '=' sign. [Api set: ExcelApi 1.7]
+             */
+            formula?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The name of the object. Read-only. [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook. Read-only. [Api set: ExcelApi 1.4]
+             */
+            scope?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only. [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
+             */
+            type?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range, will return the range address. Read-only. [Api set: ExcelApi 1.1]
+             */
+            value?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Specifies whether the object is visible or not. [Api set: ExcelApi 1.1]
+             */
+            visible?: boolean;
+        }
         /**
          *
          * Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type below), range object, or a reference to a range. This object can be used to obtain range object associated with names. [Api set: ExcelApi 1.1]
          */
-        
+        export interface NamedItemLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns an object containing values and types of the named item. [Api set: ExcelApi 1.7]
+            */
+            arrayValues?: Excel.Interfaces.NamedItemArrayValuesLoadOptions;
+            /**
+            *
+            * Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook instead. [Api set: ExcelApi 1.4]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+            *
+            * Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the workbook instead. [Api set: ExcelApi 1.4]
+            */
+            worksheetOrNullObject?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * Represents the comment associated with this name. [Api set: ExcelApi 1.4]
+             */
+            comment?: boolean;
+            /**
+             *
+             * Gets or sets the formula of the named item.  Formula always starts with a '=' sign. [Api set: ExcelApi 1.7]
+             */
+            formula?: boolean;
+            /**
+             *
+             * The name of the object. Read-only. [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook. Read-only. [Api set: ExcelApi 1.4]
+             */
+            scope?: boolean;
+            /**
+             *
+             * Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only. [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
+             */
+            type?: boolean;
+            /**
+             *
+             * Represents the value computed by the name's formula. For a named range, will return the range address. Read-only. [Api set: ExcelApi 1.1]
+             */
+            value?: boolean;
+            /**
+             *
+             * Specifies whether the object is visible or not. [Api set: ExcelApi 1.1]
+             */
+            visible?: boolean;
+        }
         /**
          *
          * Represents an object containing values and types of a named item. [Api set: ExcelApi 1.7]
          */
-        
+        export interface NamedItemArrayValuesLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the types for each item in the named item array [Api set: ExcelApi 1.7]
+             */
+            types?: boolean;
+            /**
+             *
+             * Represents the values of each item in the named item array. [Api set: ExcelApi 1.7]
+             */
+            values?: boolean;
+        }
         /**
          *
          * Represents an Office.js binding that is defined in the workbook. [Api set: ExcelApi 1.1]
          */
-        
+        export interface BindingLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents binding identifier. Read-only. [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * Returns the type of the binding. See Excel.BindingType for details. Read-only. [Api set: ExcelApi 1.1]
+             */
+            type?: boolean;
+        }
         /**
          *
          * Represents the collection of all the binding objects that are part of the workbook. [Api set: ExcelApi 1.1]
          */
-        
+        export interface BindingCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents binding identifier. Read-only. [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the type of the binding. See Excel.BindingType for details. Read-only. [Api set: ExcelApi 1.1]
+             */
+            type?: boolean;
+        }
         /**
          *
          * Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was reached. [Api set: ExcelApi 1.1]
          */
-        
+        export interface TableCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the AutoFilter object of the table. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents a collection of all the columns in the table. [Api set: ExcelApi 1.1]
+            */
+            columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents a collection of all the rows in the table. [Api set: ExcelApi 1.1]
+            */
+            rows?: Excel.Interfaces.TableRowCollectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the sorting for the table. [Api set: ExcelApi 1.2]
+            */
+            sort?: Excel.Interfaces.TableSortLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: The worksheet containing the current table. [Api set: ExcelApi 1.2]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the first column contains special formatting. [Api set: ExcelApi 1.3]
+             */
+            highlightFirstColumn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the last column contains special formatting. [Api set: ExcelApi 1.3]
+             */
+            highlightLastColumn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only. [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns a numeric id. [Api set: ExcelApi 1.8]
+             */
+            legacyId?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Name of the table. [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier. [Api set: ExcelApi 1.3]
+             */
+            showBandedColumns?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier. [Api set: ExcelApi 1.3]
+             */
+            showBandedRows?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row. [Api set: ExcelApi 1.3]
+             */
+            showFilterButton?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the header row is visible or not. This value can be set to show or remove the header row. [Api set: ExcelApi 1.1]
+             */
+            showHeaders?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the total row is visible or not. This value can be set to show or remove the total row. [Api set: ExcelApi 1.1]
+             */
+            showTotals?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified. [Api set: ExcelApi 1.1]
+             */
+            style?: boolean;
+        }
         /**
          *
          * Represents a scoped collection of tables. For each table its top-left corner is considered its anchor location and the tables are sorted top to bottom and then left to right. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface TableScopedCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the AutoFilter object of the table. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents a collection of all the columns in the table. [Api set: ExcelApi 1.1]
+            */
+            columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents a collection of all the rows in the table. [Api set: ExcelApi 1.1]
+            */
+            rows?: Excel.Interfaces.TableRowCollectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the sorting for the table. [Api set: ExcelApi 1.2]
+            */
+            sort?: Excel.Interfaces.TableSortLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: The worksheet containing the current table. [Api set: ExcelApi 1.2]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the first column contains special formatting. [Api set: ExcelApi 1.3]
+             */
+            highlightFirstColumn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the last column contains special formatting. [Api set: ExcelApi 1.3]
+             */
+            highlightLastColumn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only. [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns a numeric id. [Api set: ExcelApi 1.8]
+             */
+            legacyId?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Name of the table. [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier. [Api set: ExcelApi 1.3]
+             */
+            showBandedColumns?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier. [Api set: ExcelApi 1.3]
+             */
+            showBandedRows?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row. [Api set: ExcelApi 1.3]
+             */
+            showFilterButton?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the header row is visible or not. This value can be set to show or remove the header row. [Api set: ExcelApi 1.1]
+             */
+            showHeaders?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether the total row is visible or not. This value can be set to show or remove the total row. [Api set: ExcelApi 1.1]
+             */
+            showTotals?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified. [Api set: ExcelApi 1.1]
+             */
+            style?: boolean;
+        }
         /**
          *
          * Represents an Excel table. [Api set: ExcelApi 1.1]
          */
-        
+        export interface TableLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the AutoFilter object of the table. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;
+            /**
+            *
+            * Represents a collection of all the columns in the table. [Api set: ExcelApi 1.1]
+            */
+            columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;
+            /**
+            *
+            * Represents a collection of all the rows in the table. [Api set: ExcelApi 1.1]
+            */
+            rows?: Excel.Interfaces.TableRowCollectionLoadOptions;
+            /**
+            *
+            * Represents the sorting for the table. [Api set: ExcelApi 1.2]
+            */
+            sort?: Excel.Interfaces.TableSortLoadOptions;
+            /**
+            *
+            * The worksheet containing the current table. [Api set: ExcelApi 1.2]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * Indicates whether the first column contains special formatting. [Api set: ExcelApi 1.3]
+             */
+            highlightFirstColumn?: boolean;
+            /**
+             *
+             * Indicates whether the last column contains special formatting. [Api set: ExcelApi 1.3]
+             */
+            highlightLastColumn?: boolean;
+            /**
+             *
+             * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only. [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * Returns a numeric id. [Api set: ExcelApi 1.8]
+             */
+            legacyId?: boolean;
+            /**
+             *
+             * Name of the table. [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier. [Api set: ExcelApi 1.3]
+             */
+            showBandedColumns?: boolean;
+            /**
+             *
+             * Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier. [Api set: ExcelApi 1.3]
+             */
+            showBandedRows?: boolean;
+            /**
+             *
+             * Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row. [Api set: ExcelApi 1.3]
+             */
+            showFilterButton?: boolean;
+            /**
+             *
+             * Indicates whether the header row is visible or not. This value can be set to show or remove the header row. [Api set: ExcelApi 1.1]
+             */
+            showHeaders?: boolean;
+            /**
+             *
+             * Indicates whether the total row is visible or not. This value can be set to show or remove the total row. [Api set: ExcelApi 1.1]
+             */
+            showTotals?: boolean;
+            /**
+             *
+             * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified. [Api set: ExcelApi 1.1]
+             */
+            style?: boolean;
+        }
         /**
          *
          * Represents a collection of all the columns that are part of the table. [Api set: ExcelApi 1.1]
          */
-        
+        export interface TableColumnCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Retrieve the filter applied to the column. [Api set: ExcelApi 1.2]
+            */
+            filter?: Excel.Interfaces.FilterLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns a unique key that identifies the column within the table. Read-only. [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only. [Api set: ExcelApi 1.1]
+             */
+            index?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the name of the table column. [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string. [Api set: ExcelApi 1.1]
+             */
+            values?: boolean;
+        }
         /**
          *
          * Represents a column in a table. [Api set: ExcelApi 1.1]
          */
-        
+        export interface TableColumnLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Retrieve the filter applied to the column. [Api set: ExcelApi 1.2]
+            */
+            filter?: Excel.Interfaces.FilterLoadOptions;
+            /**
+             *
+             * Returns a unique key that identifies the column within the table. Read-only. [Api set: ExcelApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only. [Api set: ExcelApi 1.1]
+             */
+            index?: boolean;
+            /**
+             *
+             * Represents the name of the table column. [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
+             */
+            name?: boolean;
+            /**
+             *
+             * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string. [Api set: ExcelApi 1.1]
+             */
+            values?: boolean;
+        }
         /**
          *
          * Represents a collection of all the rows that are part of the table.
@@ -26708,7 +29542,19 @@ export declare namespace Excel {
              That is, if the data is sorted or if new rows are added, a table row will continue
              to point at the index for which it was created. [Api set: ExcelApi 1.1]
          */
-        
+        export interface TableRowCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only. [Api set: ExcelApi 1.1]
+             */
+            index?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string. [Api set: ExcelApi 1.1]
+             */
+            values?: boolean;
+        }
         /**
          *
          * Represents a row in a table.
@@ -26718,601 +29564,5697 @@ export declare namespace Excel {
              That is, if the data is sorted or if new rows are added, a table row will continue
              to point at the index for which it was created. [Api set: ExcelApi 1.1]
          */
-        
+        export interface TableRowLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only. [Api set: ExcelApi 1.1]
+             */
+            index?: boolean;
+            /**
+             *
+             * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string. [Api set: ExcelApi 1.1]
+             */
+            values?: boolean;
+        }
         /**
          *
          * Represents the data validation applied to the current range. [Api set: ExcelApi 1.8]
          */
-        
+        export interface DataValidationLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Error alert when user enters invalid data. [Api set: ExcelApi 1.8]
+             */
+            errorAlert?: boolean;
+            /**
+             *
+             * Ignore blanks: no data validation will be performed on blank cells, it defaults to true. [Api set: ExcelApi 1.8]
+             */
+            ignoreBlanks?: boolean;
+            /**
+             *
+             * Prompt when users select a cell. [Api set: ExcelApi 1.8]
+             */
+            prompt?: boolean;
+            /**
+             *
+             * Data validation rule that contains different type of data validation criteria. [Api set: ExcelApi 1.8]
+             */
+            rule?: boolean;
+            /**
+             *
+             * Type of the data validation, see Excel.DataValidationType for details. [Api set: ExcelApi 1.8]
+             */
+            type?: boolean;
+            /**
+             *
+             * Represents if all cell values are valid according to the data validation rules.
+            Returns true if all cell values are valid, or false if all cell values are invalid.
+            Returns null if there are both valid and invalid cell values within the range. [Api set: ExcelApi 1.8]
+             */
+            valid?: boolean;
+        }
         /**
          *
          * Represents the results from the removeDuplicates method on range [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface RemoveDuplicatesResultLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Number of duplicated rows removed by the operation. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            removed?: boolean;
+            /**
+             *
+             * Number of remaining unique rows present in the resulting range. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            uniqueRemaining?: boolean;
+        }
         /**
          *
          * A format object encapsulating the range's font, fill, borders, alignment, and other properties. [Api set: ExcelApi 1.1]
          */
-        
+        export interface RangeFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Collection of border objects that apply to the overall range. [Api set: ExcelApi 1.1]
+            */
+            borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;
+            /**
+            *
+            * Returns the fill object defined on the overall range. [Api set: ExcelApi 1.1]
+            */
+            fill?: Excel.Interfaces.RangeFillLoadOptions;
+            /**
+            *
+            * Returns the font object defined on the overall range. [Api set: ExcelApi 1.1]
+            */
+            font?: Excel.Interfaces.RangeFontLoadOptions;
+            /**
+            *
+            * Returns the format protection object for a range. [Api set: ExcelApi 1.2]
+            */
+            protection?: Excel.Interfaces.FormatProtectionLoadOptions;
+            /**
+             *
+             * Indicates if text is automatically indented when text alignment is set to equal distribution. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoIndent?: boolean;
+            /**
+             *
+             * Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned. [Api set: ExcelApi 1.2]
+             */
+            columnWidth?: boolean;
+            /**
+             *
+             * Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details. [Api set: ExcelApi 1.1]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * An integer from 0 to 250 that indicates the indent level. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            indentLevel?: boolean;
+            /**
+             *
+             * The reading order for the range. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            readingOrder?: boolean;
+            /**
+             *
+             * Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned. [Api set: ExcelApi 1.2]
+             */
+            rowHeight?: boolean;
+            /**
+             *
+             * Indicates if text automatically shrinks to fit in the available column width. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            shrinkToFit?: boolean;
+            /**
+             *
+             * Gets or sets the text orientation of all the cells within the range.
+            The text orientation should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+            If the orientation within a range are not uniform, then null will be returned. [Api set: ExcelApi 1.7]
+             */
+            textOrientation?: boolean;
+            /**
+             *
+             * Determines if the row height of the Range object equals the standard height of the sheet.
+            Returns True if the row height of the Range object equals the standard height of the sheet.
+            Returns Null if the range contains more than one row and the rows aren't all the same height.
+            Returns False otherwise. [Api set: ExcelApi 1.7]
+             */
+            useStandardHeight?: boolean;
+            /**
+             *
+             * Indicates whether the column width of the Range object equals the standard width of the sheet.
+            Returns True if the column width of the Range object equals the standard width of the sheet.
+            Returns Null if the range contains more than one column and the columns aren't all the same height.
+            Returns False otherwise. [Api set: ExcelApi 1.7]
+             */
+            useStandardWidth?: boolean;
+            /**
+             *
+             * Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details. [Api set: ExcelApi 1.1]
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting [Api set: ExcelApi 1.1]
+             */
+            wrapText?: boolean;
+        }
         /**
          *
          * Represents the format protection of a range object. [Api set: ExcelApi 1.2]
          */
-        
+        export interface FormatProtectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting. [Api set: ExcelApi 1.2]
+             */
+            formulaHidden?: boolean;
+            /**
+             *
+             * Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting. [Api set: ExcelApi 1.2]
+             */
+            locked?: boolean;
+        }
         /**
          *
          * Represents the background of a range object. [Api set: ExcelApi 1.1]
          */
-        
+        export interface RangeFillLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange") [Api set: ExcelApi 1.1]
+             */
+            color?: boolean;
+            /**
+             *
+             * Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not supported.
+            A null value indicates that the entire range doesn't have uniform pattern setting. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            pattern?: boolean;
+            /**
+             *
+             * Sets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+            Gets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500"). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            patternColor?: boolean;
+            /**
+             *
+             * Returns or sets a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+            If the pattern tintAndShades are not uniform, null will be returned. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            patternTintAndShade?: boolean;
+            /**
+             *
+             * Returns or sets a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+            If the tintAndShades are not uniform, null will be returned. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tintAndShade?: boolean;
+        }
         /**
          *
          * Represents the border of an object. [Api set: ExcelApi 1.1]
          */
-        
+        export interface RangeBorderLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange"). [Api set: ExcelApi 1.1]
+             */
+            color?: boolean;
+            /**
+             *
+             * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only. [Api set: ExcelApi 1.1]
+             */
+            sideIndex?: boolean;
+            /**
+             *
+             * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details. [Api set: ExcelApi 1.1]
+             */
+            style?: boolean;
+            /**
+             *
+             * Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+            A null value indicates that the border doesn't have uniform tintAndShade setting. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tintAndShade?: boolean;
+            /**
+             *
+             * Specifies the weight of the border around a range. See Excel.BorderWeight for details. [Api set: ExcelApi 1.1]
+             */
+            weight?: boolean;
+        }
         /**
          *
          * Represents the border objects that make up the range border. [Api set: ExcelApi 1.1]
          */
-        
+        export interface RangeBorderCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange"). [Api set: ExcelApi 1.1]
+             */
+            color?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only. [Api set: ExcelApi 1.1]
+             */
+            sideIndex?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details. [Api set: ExcelApi 1.1]
+             */
+            style?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+            A null value indicates that the border doesn't have uniform tintAndShade setting. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tintAndShade?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Specifies the weight of the border around a range. See Excel.BorderWeight for details. [Api set: ExcelApi 1.1]
+             */
+            weight?: boolean;
+        }
         /**
          *
          * This object represents the font attributes (font name, font size, color, etc.) for an object. [Api set: ExcelApi 1.1]
          */
-        
+        export interface RangeFontLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the bold status of font. [Api set: ExcelApi 1.1]
+             */
+            bold?: boolean;
+            /**
+             *
+             * HTML color code representation of the text color. E.g. #FF0000 represents Red. [Api set: ExcelApi 1.1]
+             */
+            color?: boolean;
+            /**
+             *
+             * Represents the italic status of the font. [Api set: ExcelApi 1.1]
+             */
+            italic?: boolean;
+            /**
+             *
+             * Font name (e.g. "Calibri") [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Font size. [Api set: ExcelApi 1.1]
+             */
+            size?: boolean;
+            /**
+             *
+             * Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            strikethrough?: boolean;
+            /**
+             *
+             * Represents the Subscript status of font.
+            Returns True if all the fonts of the range are Subscript.
+            Returns False if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript).
+            Returns Null otherwise. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            subscript?: boolean;
+            /**
+             *
+             * Represents the Superscript status of font.
+            Returns True if all the fonts of the range are Superscript.
+            Returns False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript).
+            Returns Null otherwise. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            superscript?: boolean;
+            /**
+             *
+             * Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+            A null value indicates that the entire range doesn't have uniform font tintAndShade setting. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tintAndShade?: boolean;
+            /**
+             *
+             * Type of underline applied to the font. See Excel.RangeUnderlineStyle for details. [Api set: ExcelApi 1.1]
+             */
+            underline?: boolean;
+        }
         /**
          *
          * A collection of all the chart objects on a worksheet. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents chart axes. [Api set: ExcelApi 1.1]
+            */
+            axes?: Excel.Interfaces.ChartAxesLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the datalabels on the chart. [Api set: ExcelApi 1.1]
+            */
+            dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Encapsulates the format properties for the chart area. [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartAreaFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the legend for the chart. [Api set: ExcelApi 1.1]
+            */
+            legend?: Excel.Interfaces.ChartLegendLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Encapsulates the options for the pivot chart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            pivotOptions?: Excel.Interfaces.ChartPivotOptionsLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the plotArea for the chart. [Api set: ExcelApi 1.8]
+            */
+            plotArea?: Excel.Interfaces.ChartPlotAreaLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents either a single series or collection of series in the chart. [Api set: ExcelApi 1.1]
+            */
+            series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility, position, and formatting of the title. [Api set: ExcelApi 1.1]
+            */
+            title?: Excel.Interfaces.ChartTitleLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: The worksheet containing the current chart. [Api set: ExcelApi 1.2]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets a ChartCategoryLabelLevel enumeration constant referring to
+            the level of where the category labels are being sourced from. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            categoryLabelLevel?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the type of the chart. See Excel.ChartType for details. [Api set: ExcelApi 1.7]
+             */
+            chartType?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the way that blank cells are plotted on a chart. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            displayBlanksAs?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the height, in points, of the chart object. [Api set: ExcelApi 1.1]
+             */
+            height?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The unique id of chart. Read-only. [Api set: ExcelApi 1.7]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The distance, in points, from the left side of the chart to the worksheet origin. [Api set: ExcelApi 1.1]
+             */
+            left?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the name of a chart object. [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the way columns or rows are used as data series on the chart. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            plotBy?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            plotVisibleOnly?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets a ChartSeriesNameLevel enumeration constant referring to
+            the level of where the series names are being sourced from. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            seriesNameLevel?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents whether to display all field buttons on a PivotChart. [Api set: ExcelApi 1.7]
+             */
+            showAllFieldButtons?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
+            If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
+            This property applies to 2-D charts only. [Api set: ExcelApi 1.8]
+             */
+            showDataLabelsOverMaximum?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the chart style for the chart. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            style?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart). [Api set: ExcelApi 1.1]
+             */
+            top?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the width, in points, of the chart object. [Api set: ExcelApi 1.1]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Represents a chart object in a workbook. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents chart axes. [Api set: ExcelApi 1.1]
+            */
+            axes?: Excel.Interfaces.ChartAxesLoadOptions;
+            /**
+            *
+            * Represents the datalabels on the chart. [Api set: ExcelApi 1.1]
+            */
+            dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;
+            /**
+            *
+            * Encapsulates the format properties for the chart area. [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartAreaFormatLoadOptions;
+            /**
+            *
+            * Represents the legend for the chart. [Api set: ExcelApi 1.1]
+            */
+            legend?: Excel.Interfaces.ChartLegendLoadOptions;
+            /**
+            *
+            * Encapsulates the options for the pivot chart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            pivotOptions?: Excel.Interfaces.ChartPivotOptionsLoadOptions;
+            /**
+            *
+            * Represents the plotArea for the chart. [Api set: ExcelApi 1.8]
+            */
+            plotArea?: Excel.Interfaces.ChartPlotAreaLoadOptions;
+            /**
+            *
+            * Represents either a single series or collection of series in the chart. [Api set: ExcelApi 1.1]
+            */
+            series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;
+            /**
+            *
+            * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title. [Api set: ExcelApi 1.1]
+            */
+            title?: Excel.Interfaces.ChartTitleLoadOptions;
+            /**
+            *
+            * The worksheet containing the current chart. [Api set: ExcelApi 1.2]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * Returns or sets a ChartCategoryLabelLevel enumeration constant referring to
+            the level of where the category labels are being sourced from. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            categoryLabelLevel?: boolean;
+            /**
+             *
+             * Represents the type of the chart. See Excel.ChartType for details. [Api set: ExcelApi 1.7]
+             */
+            chartType?: boolean;
+            /**
+             *
+             * Returns or sets the way that blank cells are plotted on a chart. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            displayBlanksAs?: boolean;
+            /**
+             *
+             * Represents the height, in points, of the chart object. [Api set: ExcelApi 1.1]
+             */
+            height?: boolean;
+            /**
+             *
+             * The unique id of chart. Read-only. [Api set: ExcelApi 1.7]
+             */
+            id?: boolean;
+            /**
+             *
+             * The distance, in points, from the left side of the chart to the worksheet origin. [Api set: ExcelApi 1.1]
+             */
+            left?: boolean;
+            /**
+             *
+             * Represents the name of a chart object. [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Returns or sets the way columns or rows are used as data series on the chart. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            plotBy?: boolean;
+            /**
+             *
+             * True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            plotVisibleOnly?: boolean;
+            /**
+             *
+             * Returns or sets a ChartSeriesNameLevel enumeration constant referring to
+            the level of where the series names are being sourced from. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            seriesNameLevel?: boolean;
+            /**
+             *
+             * Represents whether to display all field buttons on a PivotChart. [Api set: ExcelApi 1.7]
+             */
+            showAllFieldButtons?: boolean;
+            /**
+             *
+             * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
+            If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
+            This property applies to 2-D charts only. [Api set: ExcelApi 1.8]
+             */
+            showDataLabelsOverMaximum?: boolean;
+            /**
+             *
+             * Returns or sets the chart style for the chart. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            style?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart). [Api set: ExcelApi 1.1]
+             */
+            top?: boolean;
+            /**
+             *
+             * Represents the width, in points, of the chart object. [Api set: ExcelApi 1.1]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Encapsulates the options for the pivot chart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface ChartPivotOptionsLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents whether to display axis field buttons on a PivotChart.
+            The ShowAxisFieldButtons property corresponds to the Show Axis Field Buttons command on the Field Buttons drop-down list of the Analyze tab, which is available when a PivotChart is selected. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showAxisFieldButtons?: boolean;
+            /**
+             *
+             * Represents whether to display legend field buttons on a PivotChart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showLegendFieldButtons?: boolean;
+            /**
+             *
+             * Represents whether to display report filter field buttons on a PivotChart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showReportFilterFieldButtons?: boolean;
+            /**
+             *
+             * Represents whether to display show value field buttons on a PivotChart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showValueFieldButtons?: boolean;
+        }
         /**
          *
          * Encapsulates the format properties for the overall chart area. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartAreaFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the border format of chart area, which includes color, linestyle, and weight. [Api set: ExcelApi 1.7]
+            */
+            border?: Excel.Interfaces.ChartBorderLoadOptions;
+            /**
+            *
+            * Represents the font attributes (font name, font size, color, etc.) for the current object. [Api set: ExcelApi 1.1]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+            /**
+             *
+             * Returns or sets an integer that represents the color scheme for the chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            colorScheme?: boolean;
+            /**
+             *
+             * True if the chart area of the chart has rounded corners. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            roundedCorners?: boolean;
+        }
         /**
          *
          * Represents a collection of chart series. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartSeriesCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Encapsulates the bin options only for histogram chart and pareto chart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            binOptions?: Excel.Interfaces.ChartBinOptionsLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Encapsulates the options for the Box & Whisker chart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            boxwhiskerOptions?: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents a collection of all dataLabels in the series. [Api set: ExcelApi 1.8]
+            */
+            dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the formatting of a chart series, which includes fill and line formatting. [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Encapsulates the options for the Map chart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            mapOptions?: Excel.Interfaces.ChartMapOptionsLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents a collection of all points in the series. [Api set: ExcelApi 1.1]
+            */
+            points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the error bar object for a chart series. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            xerrorBars?: Excel.Interfaces.ChartErrorBarsLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the error bar object for a chart series. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            yerrorBars?: Excel.Interfaces.ChartErrorBarsLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the group for the specified series. Read/Write [Api set: ExcelApi 1.8]
+             */
+            axisGroup?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the scale factor for bubbles in the specified chart group. Can be an integer value from 0 (zero) to 300, corresponding to a percentage of the default size. Applies only to bubble charts. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bubbleScale?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the chart type of a series. See Excel.ChartType for details. [Api set: ExcelApi 1.7]
+             */
+            chartType?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the doughnut hole size of a chart series.  Only valid on doughnut and doughnutExploded charts.
+            Throws an invalid argument exception on invalid charts. [Api set: ExcelApi 1.7]
+             */
+            doughnutHoleSize?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write. [Api set: ExcelApi 1.8]
+             */
+            explosion?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Boolean value representing if the series is filtered or not. Not applicable for surface charts. [Api set: ExcelApi 1.7]
+             */
+            filtered?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write [Api set: ExcelApi 1.8]
+             */
+            firstSliceAngle?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the gap width of a chart series.  Only valid on bar and column charts, as well as
+            specific classes of line and pie charts.  Throws an invalid argument exception on invalid charts. [Api set: ExcelApi 1.7]
+             */
+            gapWidth?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the Color for maximum value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMaximumColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the type for maximum value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMaximumType?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the maximum value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMaximumValue?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the Color for midpoint value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMidpointColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the type for midpoint value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMidpointType?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the midpoint value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMidpointValue?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the Color for minimum value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMinimumColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the type for minimum value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMinimumType?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the minimum value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMinimumValue?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets series gradient style of a region map chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientStyle?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Boolean value representing if the series has data labels or not. [Api set: ExcelApi 1.7]
+             */
+            hasDataLabels?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the fill color for negative data points in a series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            invertColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            invertIfNegative?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents markers background color of a chart series. [Api set: ExcelApi 1.7]
+             */
+            markerBackgroundColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents markers foreground color of a chart series. [Api set: ExcelApi 1.7]
+             */
+            markerForegroundColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents marker size of a chart series. [Api set: ExcelApi 1.7]
+             */
+            markerSize?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents marker style of a chart series. See Excel.ChartMarkerStyle for details. [Api set: ExcelApi 1.7]
+             */
+            markerStyle?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the name of a series in a chart. [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            overlap?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets series parent label strategy area of a treemap chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentLabelStrategy?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the plot order of a chart series within the chart group. [Api set: ExcelApi 1.7]
+             */
+            plotOrder?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            secondPlotSize?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets if connector lines show in a waterfall chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showConnectorLines?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: True if Microsoft Excel show leaderlines for each datalabel in series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showLeaderLines?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Boolean value representing if the series has a shadow or not. [Api set: ExcelApi 1.7]
+             */
+            showShadow?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts. [Api set: ExcelApi 1.7]
+             */
+            smooth?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            splitType?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the threshold value separating the two sections of either a pie of pie chart or a bar of pie chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitValue?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one series. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            varyByCategories?: boolean;
+        }
         /**
          *
          * Represents a series in a chart. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartSeriesLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Encapsulates the bin options only for histogram chart and pareto chart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            binOptions?: Excel.Interfaces.ChartBinOptionsLoadOptions;
+            /**
+            *
+            * Encapsulates the options for the Box & Whisker chart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            boxwhiskerOptions?: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions;
+            /**
+            *
+            * Represents a collection of all dataLabels in the series. [Api set: ExcelApi 1.8]
+            */
+            dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;
+            /**
+            *
+            * Represents the formatting of a chart series, which includes fill and line formatting. [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;
+            /**
+            *
+            * Encapsulates the options for the Map chart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            mapOptions?: Excel.Interfaces.ChartMapOptionsLoadOptions;
+            /**
+            *
+            * Represents a collection of all points in the series. [Api set: ExcelApi 1.1]
+            */
+            points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;
+            /**
+            *
+            * Represents the error bar object for a chart series. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            xerrorBars?: Excel.Interfaces.ChartErrorBarsLoadOptions;
+            /**
+            *
+            * Represents the error bar object for a chart series. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            yerrorBars?: Excel.Interfaces.ChartErrorBarsLoadOptions;
+            /**
+             *
+             * Returns or sets the group for the specified series. Read/Write [Api set: ExcelApi 1.8]
+             */
+            axisGroup?: boolean;
+            /**
+             *
+             * Returns or sets the scale factor for bubbles in the specified chart group. Can be an integer value from 0 (zero) to 300, corresponding to a percentage of the default size. Applies only to bubble charts. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bubbleScale?: boolean;
+            /**
+             *
+             * Represents the chart type of a series. See Excel.ChartType for details. [Api set: ExcelApi 1.7]
+             */
+            chartType?: boolean;
+            /**
+             *
+             * Represents the doughnut hole size of a chart series.  Only valid on doughnut and doughnutExploded charts.
+            Throws an invalid argument exception on invalid charts. [Api set: ExcelApi 1.7]
+             */
+            doughnutHoleSize?: boolean;
+            /**
+             *
+             * Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write. [Api set: ExcelApi 1.8]
+             */
+            explosion?: boolean;
+            /**
+             *
+             * Boolean value representing if the series is filtered or not. Not applicable for surface charts. [Api set: ExcelApi 1.7]
+             */
+            filtered?: boolean;
+            /**
+             *
+             * Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write [Api set: ExcelApi 1.8]
+             */
+            firstSliceAngle?: boolean;
+            /**
+             *
+             * Represents the gap width of a chart series.  Only valid on bar and column charts, as well as
+            specific classes of line and pie charts.  Throws an invalid argument exception on invalid charts. [Api set: ExcelApi 1.7]
+             */
+            gapWidth?: boolean;
+            /**
+             *
+             * Returns or sets the Color for maximum value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMaximumColor?: boolean;
+            /**
+             *
+             * Returns or sets the type for maximum value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMaximumType?: boolean;
+            /**
+             *
+             * Returns or sets the maximum value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMaximumValue?: boolean;
+            /**
+             *
+             * Returns or sets the Color for midpoint value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMidpointColor?: boolean;
+            /**
+             *
+             * Returns or sets the type for midpoint value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMidpointType?: boolean;
+            /**
+             *
+             * Returns or sets the midpoint value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMidpointValue?: boolean;
+            /**
+             *
+             * Returns or sets the Color for minimum value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMinimumColor?: boolean;
+            /**
+             *
+             * Returns or sets the type for minimum value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMinimumType?: boolean;
+            /**
+             *
+             * Returns or sets the minimum value of a region map chart series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientMinimumValue?: boolean;
+            /**
+             *
+             * Returns or sets series gradient style of a region map chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            gradientStyle?: boolean;
+            /**
+             *
+             * Boolean value representing if the series has data labels or not. [Api set: ExcelApi 1.7]
+             */
+            hasDataLabels?: boolean;
+            /**
+             *
+             * Returns or sets the fill color for negative data points in a series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            invertColor?: boolean;
+            /**
+             *
+             * True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            invertIfNegative?: boolean;
+            /**
+             *
+             * Represents markers background color of a chart series. [Api set: ExcelApi 1.7]
+             */
+            markerBackgroundColor?: boolean;
+            /**
+             *
+             * Represents markers foreground color of a chart series. [Api set: ExcelApi 1.7]
+             */
+            markerForegroundColor?: boolean;
+            /**
+             *
+             * Represents marker size of a chart series. [Api set: ExcelApi 1.7]
+             */
+            markerSize?: boolean;
+            /**
+             *
+             * Represents marker style of a chart series. See Excel.ChartMarkerStyle for details. [Api set: ExcelApi 1.7]
+             */
+            markerStyle?: boolean;
+            /**
+             *
+             * Represents the name of a series in a chart. [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            overlap?: boolean;
+            /**
+             *
+             * Returns or sets series parent label strategy area of a treemap chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            parentLabelStrategy?: boolean;
+            /**
+             *
+             * Represents the plot order of a chart series within the chart group. [Api set: ExcelApi 1.7]
+             */
+            plotOrder?: boolean;
+            /**
+             *
+             * Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            secondPlotSize?: boolean;
+            /**
+             *
+             * Returns or sets if connector lines show in a waterfall chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showConnectorLines?: boolean;
+            /**
+             *
+             * True if Microsoft Excel show leaderlines for each datalabel in series. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showLeaderLines?: boolean;
+            /**
+             *
+             * Boolean value representing if the series has a shadow or not. [Api set: ExcelApi 1.7]
+             */
+            showShadow?: boolean;
+            /**
+             *
+             * Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts. [Api set: ExcelApi 1.7]
+             */
+            smooth?: boolean;
+            /**
+             *
+             * Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            splitType?: boolean;
+            /**
+             *
+             * Returns or sets the threshold value separating the two sections of either a pie of pie chart or a bar of pie chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            splitValue?: boolean;
+            /**
+             *
+             * True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one series. Read/Write. [Api set: ExcelApi 1.8]
+             */
+            varyByCategories?: boolean;
+        }
         /**
          *
          * Encapsulates the format properties for the chart series [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartSeriesFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents line formatting. [Api set: ExcelApi 1.1]
+            */
+            line?: Excel.Interfaces.ChartLineFormatLoadOptions;
+        }
         /**
          *
          * A collection of all the chart points within a series inside a chart. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartPointsCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the data label of a chart point. [Api set: ExcelApi 1.7]
+            */
+            dataLabel?: Excel.Interfaces.ChartDataLabelLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Encapsulates the format properties chart point. [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartPointFormatLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents whether a data point has a data label. Not applicable for surface charts. [Api set: ExcelApi 1.7]
+             */
+            hasDataLabel?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red. [Api set: ExcelApi 1.7]
+             */
+            markerBackgroundColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red. [Api set: ExcelApi 1.7]
+             */
+            markerForegroundColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents marker size of data point. [Api set: ExcelApi 1.7]
+             */
+            markerSize?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details. [Api set: ExcelApi 1.7]
+             */
+            markerStyle?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the value of a chart point. Read-only. [Api set: ExcelApi 1.1]
+             */
+            value?: boolean;
+        }
         /**
          *
          * Represents a point of a series in a chart. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartPointLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns the data label of a chart point. [Api set: ExcelApi 1.7]
+            */
+            dataLabel?: Excel.Interfaces.ChartDataLabelLoadOptions;
+            /**
+            *
+            * Encapsulates the format properties chart point. [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartPointFormatLoadOptions;
+            /**
+             *
+             * Represents whether a data point has a data label. Not applicable for surface charts. [Api set: ExcelApi 1.7]
+             */
+            hasDataLabel?: boolean;
+            /**
+             *
+             * HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red. [Api set: ExcelApi 1.7]
+             */
+            markerBackgroundColor?: boolean;
+            /**
+             *
+             * HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red. [Api set: ExcelApi 1.7]
+             */
+            markerForegroundColor?: boolean;
+            /**
+             *
+             * Represents marker size of data point. [Api set: ExcelApi 1.7]
+             */
+            markerSize?: boolean;
+            /**
+             *
+             * Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details. [Api set: ExcelApi 1.7]
+             */
+            markerStyle?: boolean;
+            /**
+             *
+             * Returns the value of a chart point. Read-only. [Api set: ExcelApi 1.1]
+             */
+            value?: boolean;
+        }
         /**
          *
          * Represents formatting object for chart points. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartPointFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the border format of a chart data point, which includes color, style, and weight information. [Api set: ExcelApi 1.7]
+            */
+            border?: Excel.Interfaces.ChartBorderLoadOptions;
+        }
         /**
          *
          * Represents the chart axes. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartAxesLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the category axis in a chart. [Api set: ExcelApi 1.1]
+            */
+            categoryAxis?: Excel.Interfaces.ChartAxisLoadOptions;
+            /**
+            *
+            * Represents the series axis of a 3-dimensional chart. [Api set: ExcelApi 1.1]
+            */
+            seriesAxis?: Excel.Interfaces.ChartAxisLoadOptions;
+            /**
+            *
+            * Represents the value axis in an axis. [Api set: ExcelApi 1.1]
+            */
+            valueAxis?: Excel.Interfaces.ChartAxisLoadOptions;
+        }
         /**
          *
          * Represents a single axis in a chart. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartAxisLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of a chart object, which includes line and font formatting. [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartAxisFormatLoadOptions;
+            /**
+            *
+            * Returns a Gridlines object that represents the major gridlines for the specified axis. [Api set: ExcelApi 1.1]
+            */
+            majorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;
+            /**
+            *
+            * Returns a Gridlines object that represents the minor gridlines for the specified axis. [Api set: ExcelApi 1.1]
+            */
+            minorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;
+            /**
+            *
+            * Represents the axis title. [Api set: ExcelApi 1.1]
+            */
+            title?: Excel.Interfaces.ChartAxisTitleLoadOptions;
+            /**
+             *
+             * Represents the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail. [Api set: ExcelApi 1.8]
+             */
+            alignment?: boolean;
+            /**
+             *
+             * Represents the group for the specified axis. See Excel.ChartAxisGroup for details. Read-only. [Api set: ExcelApi 1.7]
+             */
+            axisGroup?: boolean;
+            /**
+             *
+             * Returns or sets the base unit for the specified category axis. [Api set: ExcelApi 1.7]
+             */
+            baseTimeUnit?: boolean;
+            /**
+             *
+             * Returns or sets the category axis type. [Api set: ExcelApi 1.7]
+             */
+            categoryType?: boolean;
+            /* [DEPRECATED; kept for back-compat with existing first-party solutions]. Please use `Position` instead.
+             * Represents the specified axis where the other axis crosses. See Excel.ChartAxisPosition for details. [Api set: ExcelApi 1.7]
+             */
+            crosses?: boolean;
+            /* [DEPRECATED; kept for back-compat with existing first-party solutions]. Please use `PositionAt` instead.
+             * Represents the specified axis where the other axis crosses at. Read Only. Set to this property should use SetCrossesAt(double) method. [Api set: ExcelApi 1.7]
+             */
+            crossesAt?: boolean;
+            /**
+             *
+             * Represents the custom axis display unit value. Read-only. To set this property, please use the SetCustomDisplayUnit(double) method. [Api set: ExcelApi 1.7]
+             */
+            customDisplayUnit?: boolean;
+            /**
+             *
+             * Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details. [Api set: ExcelApi 1.7]
+             */
+            displayUnit?: boolean;
+            /**
+             *
+             * Represents the height, in points, of the chart axis. Null if the axis is not visible. Read-only. [Api set: ExcelApi 1.7]
+             */
+            height?: boolean;
+            /**
+             *
+             * Represents whether value axis crosses the category axis between categories. [Api set: ExcelApi 1.8]
+             */
+            isBetweenCategories?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is not visible. Read-only. [Api set: ExcelApi 1.7]
+             */
+            left?: boolean;
+            /**
+             *
+             * Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linkNumberFormat?: boolean;
+            /**
+             *
+             * Represents the base of the logarithm when using logarithmic scales. [Api set: ExcelApi 1.7]
+             */
+            logBase?: boolean;
+            /**
+             *
+             * Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details. [Api set: ExcelApi 1.7]
+             */
+            majorTickMark?: boolean;
+            /**
+             *
+             * Returns or sets the major unit scale value for the category axis when the CategoryType property is set to TimeScale. [Api set: ExcelApi 1.7]
+             */
+            majorTimeUnitScale?: boolean;
+            /**
+             *
+             * Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number. [Api set: ExcelApi 1.1]
+             */
+            majorUnit?: boolean;
+            /**
+             *
+             * Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number. [Api set: ExcelApi 1.1]
+             */
+            maximum?: boolean;
+            /**
+             *
+             * Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number. [Api set: ExcelApi 1.1]
+             */
+            minimum?: boolean;
+            /**
+             *
+             * Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details. [Api set: ExcelApi 1.7]
+             */
+            minorTickMark?: boolean;
+            /**
+             *
+             * Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale. [Api set: ExcelApi 1.7]
+             */
+            minorTimeUnitScale?: boolean;
+            /**
+             *
+             * Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number. [Api set: ExcelApi 1.1]
+             */
+            minorUnit?: boolean;
+            /**
+             *
+             * Represents whether an axis is multilevel or not. [Api set: ExcelApi 1.8]
+             */
+            multiLevel?: boolean;
+            /**
+             *
+             * Represents the format code for the axis tick label. [Api set: ExcelApi 1.8]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * Represents the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000. [Api set: ExcelApi 1.8]
+             */
+            offset?: boolean;
+            /**
+             *
+             * Represents the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details. [Api set: ExcelApi 1.8]
+             */
+            position?: boolean;
+            /**
+             *
+             * Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property. [Api set: ExcelApi 1.8]
+             */
+            positionAt?: boolean;
+            /**
+             *
+             * Represents whether Microsoft Excel plots data points from last to first. [Api set: ExcelApi 1.7]
+             */
+            reversePlotOrder?: boolean;
+            /**
+             *
+             * Represents the value axis scale type. See Excel.ChartAxisScaleType for details. [Api set: ExcelApi 1.7]
+             */
+            scaleType?: boolean;
+            /**
+             *
+             * Represents whether the axis display unit label is visible. [Api set: ExcelApi 1.7]
+             */
+            showDisplayUnitLabel?: boolean;
+            /**
+             *
+             * Represents the text orientation of the axis tick label. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text. [Api set: ExcelApi 1.8]
+             */
+            textOrientation?: boolean;
+            /**
+             *
+             * Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for details. [Api set: ExcelApi 1.7]
+             */
+            tickLabelPosition?: boolean;
+            /**
+             *
+             * Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number. [Api set: ExcelApi 1.7]
+             */
+            tickLabelSpacing?: boolean;
+            /**
+             *
+             * Represents the number of categories or series between tick marks. [Api set: ExcelApi 1.7]
+             */
+            tickMarkSpacing?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is not visible. Read-only. [Api set: ExcelApi 1.7]
+             */
+            top?: boolean;
+            /**
+             *
+             * Represents the axis type. See Excel.ChartAxisType for details. [Api set: ExcelApi 1.7]
+             */
+            type?: boolean;
+            /**
+             *
+             * A boolean value represents the visibility of the axis. [Api set: ExcelApi 1.7]
+             */
+            visible?: boolean;
+            /**
+             *
+             * Represents the width, in points, of the chart axis. Null if the axis is not visible. Read-only. [Api set: ExcelApi 1.7]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Encapsulates the format properties for the chart axis. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartAxisFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the font attributes (font name, font size, color, etc.) for a chart axis element. [Api set: ExcelApi 1.1]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+            /**
+            *
+            * Represents chart line formatting. [Api set: ExcelApi 1.1]
+            */
+            line?: Excel.Interfaces.ChartLineFormatLoadOptions;
+        }
         /**
          *
          * Represents the title of a chart axis. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartAxisTitleLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of chart axis title. [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions;
+            /**
+             *
+             * Represents the axis title. [Api set: ExcelApi 1.1]
+             */
+            text?: boolean;
+            /**
+             *
+             * A boolean that specifies the visibility of an axis title. [Api set: ExcelApi 1.1]
+             */
+            visible?: boolean;
+        }
         /**
          *
          * Represents the chart axis title formatting. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartAxisTitleFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the border format, which includes color, linestyle, and weight. [Api set: ExcelApi 1.8]
+            */
+            border?: Excel.Interfaces.ChartBorderLoadOptions;
+            /**
+            *
+            * Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. [Api set: ExcelApi 1.1]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+        }
         /**
          *
          * Represents a collection of all the data labels on a chart point. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartDataLabelsLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the format of chart data labels, which includes fill and font formatting. [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;
+            /**
+             *
+             * Represents whether data labels automatically generate appropriate text based on context. [Api set: ExcelApi 1.8]
+             */
+            autoText?: boolean;
+            /**
+             *
+             * Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
+            This property is valid only when TextOrientation of data label is 0. [Api set: ExcelApi 1.8]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * Represents whether the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linkNumberFormat?: boolean;
+            /**
+             *
+             * Represents the format code for data labels. [Api set: ExcelApi 1.8]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details. [Api set: ExcelApi 1.1]
+             */
+            position?: boolean;
+            /**
+             *
+             * String representing the separator used for the data labels on a chart. [Api set: ExcelApi 1.1]
+             */
+            separator?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label bubble size is visible or not. [Api set: ExcelApi 1.1]
+             */
+            showBubbleSize?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label category name is visible or not. [Api set: ExcelApi 1.1]
+             */
+            showCategoryName?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label legend key is visible or not. [Api set: ExcelApi 1.1]
+             */
+            showLegendKey?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label percentage is visible or not. [Api set: ExcelApi 1.1]
+             */
+            showPercentage?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label series name is visible or not. [Api set: ExcelApi 1.1]
+             */
+            showSeriesName?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label value is visible or not. [Api set: ExcelApi 1.1]
+             */
+            showValue?: boolean;
+            /**
+             *
+             * Represents the text orientation of data labels. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text. [Api set: ExcelApi 1.8]
+             */
+            textOrientation?: boolean;
+            /**
+             *
+             * Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details.
+            This property is valid only when TextOrientation of data label is 90, -90 or 180. [Api set: ExcelApi 1.8]
+             */
+            verticalAlignment?: boolean;
+        }
         /**
          *
          * Represents the data label of a chart point. [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartDataLabelLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the format of chart data label. [Api set: ExcelApi 1.8]
+            */
+            format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;
+            /**
+             *
+             * Boolean value representing if data label automatically generates appropriate text based on context. [Api set: ExcelApi 1.8]
+             */
+            autoText?: boolean;
+            /**
+             *
+             * String value that represents the formula of chart data label using A1-style notation. [Api set: ExcelApi 1.8]
+             */
+            formula?: boolean;
+            /**
+             *
+             * Returns the height, in points, of the chart data label. Read-only. Null if chart data label is not visible. [Api set: ExcelApi 1.8]
+             */
+            height?: boolean;
+            /**
+             *
+             * Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
+            This property is valid only when TextOrientation of data label is 90, -90 or 180. [Api set: ExcelApi 1.8]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the left edge of chart data label to the left edge of chart area. Null if chart data label is not visible. [Api set: ExcelApi 1.8]
+             */
+            left?: boolean;
+            /**
+             *
+             * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linkNumberFormat?: boolean;
+            /**
+             *
+             * String value that represents the format code for data label. [Api set: ExcelApi 1.8]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details. [Api set: ExcelApi 1.7]
+             */
+            position?: boolean;
+            /**
+             *
+             * String representing the separator used for the data label on a chart. [Api set: ExcelApi 1.7]
+             */
+            separator?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label bubble size is visible or not. [Api set: ExcelApi 1.7]
+             */
+            showBubbleSize?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label category name is visible or not. [Api set: ExcelApi 1.7]
+             */
+            showCategoryName?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label legend key is visible or not. [Api set: ExcelApi 1.7]
+             */
+            showLegendKey?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label percentage is visible or not. [Api set: ExcelApi 1.7]
+             */
+            showPercentage?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label series name is visible or not. [Api set: ExcelApi 1.7]
+             */
+            showSeriesName?: boolean;
+            /**
+             *
+             * Boolean value representing if the data label value is visible or not. [Api set: ExcelApi 1.7]
+             */
+            showValue?: boolean;
+            /**
+             *
+             * String representing the text of the data label on a chart. [Api set: ExcelApi 1.8]
+             */
+            text?: boolean;
+            /**
+             *
+             * Represents the text orientation of chart data label. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text. [Api set: ExcelApi 1.8]
+             */
+            textOrientation?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the top edge of chart data label to the top of chart area. Null if chart data label is not visible. [Api set: ExcelApi 1.8]
+             */
+            top?: boolean;
+            /**
+             *
+             * Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details.
+            This property is valid only when TextOrientation of data label is 0. [Api set: ExcelApi 1.8]
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * Returns the width, in points, of the chart data label. Read-only. Null if chart data label is not visible. [Api set: ExcelApi 1.8]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Encapsulates the format properties for the chart data labels. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartDataLabelFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the border format, which includes color, linestyle, and weight. [Api set: ExcelApi 1.8]
+            */
+            border?: Excel.Interfaces.ChartBorderLoadOptions;
+            /**
+            *
+            * Represents the font attributes (font name, font size, color, etc.) for a chart data label. [Api set: ExcelApi 1.1]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+        }
         /**
          *
          * This object represents the attributes for chart error bars object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface ChartErrorBarsLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of chart ErrorBars. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            format?: Excel.Interfaces.ChartErrorBarsFormatLoadOptions;
+            /**
+             *
+             * Represents whether have the end style cap for the error bars. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            endStyleCap?: boolean;
+            /**
+             *
+             * Represents which error-bar parts to include. See Excel.ChartErrorBarsInclude for details. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            include?: boolean;
+            /**
+             *
+             * Represents the range marked by error bars. See Excel.ChartErrorBarsType for details. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
+             *
+             * Represents whether shown error bars. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
+        }
         /**
          *
          * Encapsulates the format properties for chart error bars. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface ChartErrorBarsFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents chart line formatting. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            line?: Excel.Interfaces.ChartLineFormatLoadOptions;
+        }
         /**
          *
          * Represents major or minor gridlines on a chart axis. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartGridlinesLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of chart gridlines. [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartGridlinesFormatLoadOptions;
+            /**
+             *
+             * Boolean value representing if the axis gridlines are visible or not. [Api set: ExcelApi 1.1]
+             */
+            visible?: boolean;
+        }
         /**
          *
          * Encapsulates the format properties for chart gridlines. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartGridlinesFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents chart line formatting. [Api set: ExcelApi 1.1]
+            */
+            line?: Excel.Interfaces.ChartLineFormatLoadOptions;
+        }
         /**
          *
          * Represents the legend in a chart. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartLegendLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of a chart legend, which includes fill and font formatting. [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartLegendFormatLoadOptions;
+            /**
+             *
+             * Represents the height, in points, of the legend on the chart. Null if legend is not visible. [Api set: ExcelApi 1.7]
+             */
+            height?: boolean;
+            /**
+             *
+             * Represents the left, in points, of a chart legend. Null if legend is not visible. [Api set: ExcelApi 1.7]
+             */
+            left?: boolean;
+            /**
+             *
+             * Boolean value for whether the chart legend should overlap with the main body of the chart. [Api set: ExcelApi 1.1]
+             */
+            overlay?: boolean;
+            /**
+             *
+             * Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details. [Api set: ExcelApi 1.1]
+             */
+            position?: boolean;
+            /**
+             *
+             * Represents if the legend has a shadow on the chart. [Api set: ExcelApi 1.7]
+             */
+            showShadow?: boolean;
+            /**
+             *
+             * Represents the top of a chart legend. [Api set: ExcelApi 1.7]
+             */
+            top?: boolean;
+            /**
+             *
+             * A boolean value the represents the visibility of a ChartLegend object. [Api set: ExcelApi 1.1]
+             */
+            visible?: boolean;
+            /**
+             *
+             * Represents the width, in points, of the legend on the chart. Null if legend is not visible. [Api set: ExcelApi 1.7]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Represents the legendEntry in legendEntryCollection. [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartLegendEntryLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the height of the legendEntry on the chart legend. [Api set: ExcelApi 1.8]
+             */
+            height?: boolean;
+            /**
+             *
+             * Represents the index of the legendEntry in the chart legend. [Api set: ExcelApi 1.8]
+             */
+            index?: boolean;
+            /**
+             *
+             * Represents the left of a chart legendEntry. [Api set: ExcelApi 1.8]
+             */
+            left?: boolean;
+            /**
+             *
+             * Represents the top of a chart legendEntry. [Api set: ExcelApi 1.8]
+             */
+            top?: boolean;
+            /**
+             *
+             * Represents the visible of a chart legend entry. [Api set: ExcelApi 1.7]
+             */
+            visible?: boolean;
+            /**
+             *
+             * Represents the width of the legendEntry on the chart Legend. [Api set: ExcelApi 1.8]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Represents a collection of legendEntries. [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartLegendEntryCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the height of the legendEntry on the chart legend. [Api set: ExcelApi 1.8]
+             */
+            height?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the index of the legendEntry in the chart legend. [Api set: ExcelApi 1.8]
+             */
+            index?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the left of a chart legendEntry. [Api set: ExcelApi 1.8]
+             */
+            left?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the top of a chart legendEntry. [Api set: ExcelApi 1.8]
+             */
+            top?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the visible of a chart legend entry. [Api set: ExcelApi 1.7]
+             */
+            visible?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the width of the legendEntry on the chart Legend. [Api set: ExcelApi 1.8]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Encapsulates the format properties of a chart legend. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartLegendFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the border format, which includes color, linestyle, and weight. [Api set: ExcelApi 1.8]
+            */
+            border?: Excel.Interfaces.ChartBorderLoadOptions;
+            /**
+            *
+            * Represents the font attributes such as font name, font size, color, etc. of a chart legend. [Api set: ExcelApi 1.1]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+        }
         /**
          *
          * Encapsulates the properties for Map chart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface ChartMapOptionsLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Returns or sets series map labels strategy of a region map chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            labelStrategy?: boolean;
+            /**
+             *
+             * Returns or sets series map area of a region map chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            level?: boolean;
+            /**
+             *
+             * Returns or sets series projection type of a region map chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            projectionType?: boolean;
+        }
         /**
          *
          * Represents a chart title object of a chart. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartTitleLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of a chart title, which includes fill and font formatting. [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.ChartTitleFormatLoadOptions;
+            /**
+             *
+             * Returns the height, in points, of the chart title. Null if chart title is not visible. Read-only. [Api set: ExcelApi 1.7]
+             */
+            height?: boolean;
+            /**
+             *
+             * Represents the horizontal alignment for chart title. [Api set: ExcelApi 1.7]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title is not visible. [Api set: ExcelApi 1.7]
+             */
+            left?: boolean;
+            /**
+             *
+             * Boolean value representing if the chart title will overlay the chart or not. [Api set: ExcelApi 1.1]
+             */
+            overlay?: boolean;
+            /**
+             *
+             * Represents the position of chart title. See Excel.ChartTitlePosition for details. [Api set: ExcelApi 1.7]
+             */
+            position?: boolean;
+            /**
+             *
+             * Represents a boolean value that determines if the chart title has a shadow. [Api set: ExcelApi 1.7]
+             */
+            showShadow?: boolean;
+            /**
+             *
+             * Represents the title text of a chart. [Api set: ExcelApi 1.1]
+             */
+            text?: boolean;
+            /**
+             *
+             * Represents the text orientation of chart title. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text. [Api set: ExcelApi 1.7]
+             */
+            textOrientation?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title is not visible. [Api set: ExcelApi 1.7]
+             */
+            top?: boolean;
+            /**
+             *
+             * Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details. [Api set: ExcelApi 1.7]
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * A boolean value the represents the visibility of a chart title object. [Api set: ExcelApi 1.1]
+             */
+            visible?: boolean;
+            /**
+             *
+             * Returns the width, in points, of the chart title. Null if chart title is not visible. Read-only. [Api set: ExcelApi 1.7]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Represents the substring in chart related objects that contains text, like ChartTitle object, ChartAxisTitle object, etc. [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartFormatStringLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the font attributes, such as font name, font size, color, etc. of chart characters object. [Api set: ExcelApi 1.7]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+        }
         /**
          *
          * Provides access to the office art formatting for chart title. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartTitleFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the border format of chart title, which includes color, linestyle, and weight. [Api set: ExcelApi 1.7]
+            */
+            border?: Excel.Interfaces.ChartBorderLoadOptions;
+            /**
+            *
+            * Represents the font attributes (font name, font size, color, etc.) for an object. [Api set: ExcelApi 1.1]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+        }
         /**
          *
          * Represents the border formatting of a chart element. [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartBorderLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of borders in the chart. [Api set: ExcelApi 1.7]
+             */
+            color?: boolean;
+            /**
+             *
+             * Represents the line style of the border. See Excel.ChartLineStyle for details. [Api set: ExcelApi 1.7]
+             */
+            lineStyle?: boolean;
+            /**
+             *
+             * Represents weight of the border, in points. [Api set: ExcelApi 1.7]
+             */
+            weight?: boolean;
+        }
         /**
          *
          * Encapsulates the bon options only for histogram chart and pareto chart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface ChartBinOptionsLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Returns or sets if bin overflow enabled in a histogram chart or pareto chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allowOverflow?: boolean;
+            /**
+             *
+             * Returns or sets if bin underflow enabled in a histogram chart or pareto chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            allowUnderflow?: boolean;
+            /**
+             *
+             * Returns or sets count of bin of a histogram chart or pareto chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            count?: boolean;
+            /**
+             *
+             * Returns or sets bin overflow value of a histogram chart or pareto chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            overflowValue?: boolean;
+            /**
+             *
+             * Returns or sets bin type of a histogram chart or pareto chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
+             *
+             * Returns or sets bin underflow value of a histogram chart or pareto chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            underflowValue?: boolean;
+            /**
+             *
+             * Returns or sets bin width value of a histogram chart or pareto chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+        }
         /**
          *
          * Represents the properties for Box & Whisker chart. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface ChartBoxwhiskerOptionsLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Returns or sets quartile calculation type of a Box & whisker chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            quartileCalculation?: boolean;
+            /**
+             *
+             * Returns or sets if inner points showed in a Box & whisker chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showInnerPoints?: boolean;
+            /**
+             *
+             * Returns or sets if mean line showed in a Box & whisker chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showMeanLine?: boolean;
+            /**
+             *
+             * Returns or sets if mean marker showed in a Box & whisker chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showMeanMarker?: boolean;
+            /**
+             *
+             * Returns or sets if outlier points showed in a Box & whisker chart. Read/Write. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showOutlierPoints?: boolean;
+        }
         /**
          *
          * Encapsulates the formatting options for line elements. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartLineFormatLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of lines in the chart. [Api set: ExcelApi 1.1]
+             */
+            color?: boolean;
+            /**
+             *
+             * Represents the line style. See Excel.ChartLineStyle for details. [Api set: ExcelApi 1.7]
+             */
+            lineStyle?: boolean;
+            /**
+             *
+             * Represents weight of the line, in points. [Api set: ExcelApi 1.7]
+             */
+            weight?: boolean;
+        }
         /**
          *
          * This object represents the font attributes (font name, font size, color, etc.) for a chart object. [Api set: ExcelApi 1.1]
          */
-        
+        export interface ChartFontLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the bold status of font. [Api set: ExcelApi 1.1]
+             */
+            bold?: boolean;
+            /**
+             *
+             * HTML color code representation of the text color. E.g. #FF0000 represents Red. [Api set: ExcelApi 1.1]
+             */
+            color?: boolean;
+            /**
+             *
+             * Represents the italic status of the font. [Api set: ExcelApi 1.1]
+             */
+            italic?: boolean;
+            /**
+             *
+             * Font name (e.g. "Calibri") [Api set: ExcelApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Size of the font (e.g. 11) [Api set: ExcelApi 1.1]
+             */
+            size?: boolean;
+            /**
+             *
+             * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details. [Api set: ExcelApi 1.1]
+             */
+            underline?: boolean;
+        }
         /**
          *
          * This object represents the attributes for a chart trendline object. [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartTrendlineLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of a chart trendline. [Api set: ExcelApi 1.7]
+            */
+            format?: Excel.Interfaces.ChartTrendlineFormatLoadOptions;
+            /**
+            *
+            * Represents the label of a chart trendline. [Api set: ExcelApi 1.8]
+            */
+            label?: Excel.Interfaces.ChartTrendlineLabelLoadOptions;
+            /**
+             *
+             * Represents the number of periods that the trendline extends backward. [Api set: ExcelApi 1.8]
+             */
+            backwardPeriod?: boolean;
+            /**
+             *
+             * Represents the number of periods that the trendline extends forward. [Api set: ExcelApi 1.8]
+             */
+            forwardPeriod?: boolean;
+            /**
+             *
+             * Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic values). The returned value is always a number. [Api set: ExcelApi 1.7]
+             */
+            intercept?: boolean;
+            /**
+             *
+             * Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type. [Api set: ExcelApi 1.7]
+             */
+            movingAveragePeriod?: boolean;
+            /**
+             *
+             * Represents the name of the trendline. Can be set to a string value, or can be set to null value represents automatic values. The returned value is always a string [Api set: ExcelApi 1.7]
+             */
+            name?: boolean;
+            /**
+             *
+             * Represents the order of a chart trendline. Only applicable for trendline with Polynomial type. [Api set: ExcelApi 1.7]
+             */
+            polynomialOrder?: boolean;
+            /**
+             *
+             * True if the equation for the trendline is displayed on the chart. [Api set: ExcelApi 1.8]
+             */
+            showEquation?: boolean;
+            /**
+             *
+             * True if the R-squared for the trendline is displayed on the chart. [Api set: ExcelApi 1.8]
+             */
+            showRSquared?: boolean;
+            /**
+             *
+             * Represents the type of a chart trendline. [Api set: ExcelApi 1.7]
+             */
+            type?: boolean;
+        }
         /**
          *
          * Represents a collection of Chart Trendlines. [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartTrendlineCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the formatting of a chart trendline. [Api set: ExcelApi 1.7]
+            */
+            format?: Excel.Interfaces.ChartTrendlineFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the label of a chart trendline. [Api set: ExcelApi 1.8]
+            */
+            label?: Excel.Interfaces.ChartTrendlineLabelLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the number of periods that the trendline extends backward. [Api set: ExcelApi 1.8]
+             */
+            backwardPeriod?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the number of periods that the trendline extends forward. [Api set: ExcelApi 1.8]
+             */
+            forwardPeriod?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic values). The returned value is always a number. [Api set: ExcelApi 1.7]
+             */
+            intercept?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type. [Api set: ExcelApi 1.7]
+             */
+            movingAveragePeriod?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the name of the trendline. Can be set to a string value, or can be set to null value represents automatic values. The returned value is always a string [Api set: ExcelApi 1.7]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the order of a chart trendline. Only applicable for trendline with Polynomial type. [Api set: ExcelApi 1.7]
+             */
+            polynomialOrder?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: True if the equation for the trendline is displayed on the chart. [Api set: ExcelApi 1.8]
+             */
+            showEquation?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: True if the R-squared for the trendline is displayed on the chart. [Api set: ExcelApi 1.8]
+             */
+            showRSquared?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the type of a chart trendline. [Api set: ExcelApi 1.7]
+             */
+            type?: boolean;
+        }
         /**
          *
          * Represents the format properties for chart trendline. [Api set: ExcelApi 1.7]
          */
-        
+        export interface ChartTrendlineFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents chart line formatting. [Api set: ExcelApi 1.7]
+            */
+            line?: Excel.Interfaces.ChartLineFormatLoadOptions;
+        }
         /**
          *
          * This object represents the attributes for a chart trendline lable object. [Api set: ExcelApi 1.8]
          */
-        
+        export interface ChartTrendlineLabelLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the format of chart trendline label. [Api set: ExcelApi 1.8]
+            */
+            format?: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions;
+            /**
+             *
+             * Boolean value representing if trendline label automatically generates appropriate text based on context. [Api set: ExcelApi 1.8]
+             */
+            autoText?: boolean;
+            /**
+             *
+             * String value that represents the formula of chart trendline label using A1-style notation. [Api set: ExcelApi 1.8]
+             */
+            formula?: boolean;
+            /**
+             *
+             * Returns the height, in points, of the chart trendline label. Read-only. Null if chart trendline label is not visible. [Api set: ExcelApi 1.8]
+             */
+            height?: boolean;
+            /**
+             *
+             * Represents the horizontal alignment for chart trendline label. See Excel.ChartTextHorizontalAlignment for details.
+            This property is valid only when TextOrientation of trendline label is 90, -90 or 180. [Api set: ExcelApi 1.8]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the left edge of chart trendline label to the left edge of chart area. Null if chart trendline label is not visible. [Api set: ExcelApi 1.8]
+             */
+            left?: boolean;
+            /**
+             *
+             * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linkNumberFormat?: boolean;
+            /**
+             *
+             * String value that represents the format code for trendline label. [Api set: ExcelApi 1.8]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * String representing the text of the trendline label on a chart. [Api set: ExcelApi 1.8]
+             */
+            text?: boolean;
+            /**
+             *
+             * Represents the text orientation of chart trendline label. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text. [Api set: ExcelApi 1.8]
+             */
+            textOrientation?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the top edge of chart trendline label to the top of chart area. Null if chart trendline label is not visible. [Api set: ExcelApi 1.8]
+             */
+            top?: boolean;
+            /**
+             *
+             * Represents the vertical alignment of chart trendline label. See Excel.ChartTextVerticalAlignment for details.
+            This property is valid only when TextOrientation of trendline label is 0. [Api set: ExcelApi 1.8]
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * Returns the width, in points, of the chart trendline label. Read-only. Null if chart trendline label is not visible. [Api set: ExcelApi 1.8]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Encapsulates the format properties for the chart trendline label. [Api set: ExcelApi 1.8]
          */
-        
+        export interface ChartTrendlineLabelFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the border format, which includes color, linestyle, and weight. [Api set: ExcelApi 1.8]
+            */
+            border?: Excel.Interfaces.ChartBorderLoadOptions;
+            /**
+            *
+            * Represents the font attributes (font name, font size, color, etc.) for a chart trendline label. [Api set: ExcelApi 1.8]
+            */
+            font?: Excel.Interfaces.ChartFontLoadOptions;
+        }
         /**
          *
          * This object represents the attributes for a chart plotArea object. [Api set: ExcelApi 1.8]
          */
-        
+        export interface ChartPlotAreaLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the formatting of a chart plotArea. [Api set: ExcelApi 1.8]
+            */
+            format?: Excel.Interfaces.ChartPlotAreaFormatLoadOptions;
+            /**
+             *
+             * Represents the height value of plotArea. [Api set: ExcelApi 1.8]
+             */
+            height?: boolean;
+            /**
+             *
+             * Represents the insideHeight value of plotArea. [Api set: ExcelApi 1.8]
+             */
+            insideHeight?: boolean;
+            /**
+             *
+             * Represents the insideLeft value of plotArea. [Api set: ExcelApi 1.8]
+             */
+            insideLeft?: boolean;
+            /**
+             *
+             * Represents the insideTop value of plotArea. [Api set: ExcelApi 1.8]
+             */
+            insideTop?: boolean;
+            /**
+             *
+             * Represents the insideWidth value of plotArea. [Api set: ExcelApi 1.8]
+             */
+            insideWidth?: boolean;
+            /**
+             *
+             * Represents the left value of plotArea. [Api set: ExcelApi 1.8]
+             */
+            left?: boolean;
+            /**
+             *
+             * Represents the position of plotArea. [Api set: ExcelApi 1.8]
+             */
+            position?: boolean;
+            /**
+             *
+             * Represents the top value of plotArea. [Api set: ExcelApi 1.8]
+             */
+            top?: boolean;
+            /**
+             *
+             * Represents the width value of plotArea. [Api set: ExcelApi 1.8]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Represents the format properties for chart plotArea. [Api set: ExcelApi 1.8]
          */
-        
+        export interface ChartPlotAreaFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the border attributes of a chart plotArea. [Api set: ExcelApi 1.8]
+            */
+            border?: Excel.Interfaces.ChartBorderLoadOptions;
+        }
         /**
          *
          * Manages sorting operations on Table objects. [Api set: ExcelApi 1.2]
          */
-        
+        export interface TableSortLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the current conditions used to last sort the table. Read-only. [Api set: ExcelApi 1.2]
+             */
+            fields?: boolean;
+            /**
+             *
+             * Represents whether the casing impacted the last sort of the table. Read-only. [Api set: ExcelApi 1.2]
+             */
+            matchCase?: boolean;
+            /**
+             *
+             * Represents Chinese character ordering method last used to sort the table. Read-only. [Api set: ExcelApi 1.2]
+             */
+            method?: boolean;
+        }
         /**
          *
          * Manages the filtering of a table's column. [Api set: ExcelApi 1.2]
          */
-        
+        export interface FilterLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * The currently applied filter on the given column. Read-only. [Api set: ExcelApi 1.2]
+             */
+            criteria?: boolean;
+        }
         /**
          *
          * Represents the AutoFilter object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface AutoFilterLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Array that holds all filter criterias in an autofiltered range. Read-Only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            criteria?: boolean;
+            /**
+             *
+             * Indicates if the AutoFilter is enabled or not. Read-Only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            enabled?: boolean;
+            /**
+             *
+             * Indicates if the AutoFilter has filter criteria. Read-Only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isDataFiltered?: boolean;
+        }
         /**
          *
          * A scoped collection of custom XML parts.
             A scoped collection is the result of some operation, e.g. filtering by namespace.
             A scoped collection cannot be scoped any further. [Api set: ExcelApi 1.5]
          */
-        
+        export interface CustomXmlPartScopedCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The custom XML part's ID. Read-only. [Api set: ExcelApi 1.5]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The custom XML part's namespace URI. Read-only. [Api set: ExcelApi 1.5]
+             */
+            namespaceUri?: boolean;
+        }
         /**
          *
          * A collection of custom XML parts. [Api set: ExcelApi 1.5]
          */
-        
+        export interface CustomXmlPartCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The custom XML part's ID. Read-only. [Api set: ExcelApi 1.5]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The custom XML part's namespace URI. Read-only. [Api set: ExcelApi 1.5]
+             */
+            namespaceUri?: boolean;
+        }
         /**
          *
          * Represents a custom XML part object in a workbook. [Api set: ExcelApi 1.5]
          */
-        
+        export interface CustomXmlPartLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * The custom XML part's ID. Read-only. [Api set: ExcelApi 1.5]
+             */
+            id?: boolean;
+            /**
+             *
+             * The custom XML part's namespace URI. Read-only. [Api set: ExcelApi 1.5]
+             */
+            namespaceUri?: boolean;
+        }
         /**
          *
          * Represents a collection of all the PivotTables that are part of the workbook or worksheet. [Api set: ExcelApi 1.3]
          */
-        
+        export interface PivotTableCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: The PivotLayout describing the layout and visual structure of the PivotTable. [Api set: ExcelApi 1.8]
+            */
+            layout?: Excel.Interfaces.PivotLayoutLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: The worksheet containing the current PivotTable. [Api set: ExcelApi 1.3]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: True if the PivotTable should use custom lists when sorting. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            enableDataValueEditing?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Id of the PivotTable. Read-only. [Api set: ExcelApi 1.5]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Name of the PivotTable. [Api set: ExcelApi 1.3]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: True if the PivotTable should use custom lists when sorting. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            useCustomSortLists?: boolean;
+        }
         /**
          *
          * Represents an Excel PivotTable. [Api set: ExcelApi 1.3]
          */
-        
+        export interface PivotTableLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * The PivotLayout describing the layout and visual structure of the PivotTable. [Api set: ExcelApi 1.8]
+            */
+            layout?: Excel.Interfaces.PivotLayoutLoadOptions;
+            /**
+            *
+            * The worksheet containing the current PivotTable. [Api set: ExcelApi 1.3]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * True if the PivotTable should use custom lists when sorting. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            enableDataValueEditing?: boolean;
+            /**
+             *
+             * Id of the PivotTable. Read-only. [Api set: ExcelApi 1.5]
+             */
+            id?: boolean;
+            /**
+             *
+             * Name of the PivotTable. [Api set: ExcelApi 1.3]
+             */
+            name?: boolean;
+            /**
+             *
+             * True if the PivotTable should use custom lists when sorting. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            useCustomSortLists?: boolean;
+        }
         /**
          *
          * Represents the visual layout of the PivotTable. [Api set: ExcelApi 1.8]
          */
-        
+        export interface PivotLayoutLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * True if formatting will be automatically formatted when it’s refreshed or when fields are moved [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoFormat?: boolean;
+            /**
+             *
+             * True if the field list should be shown or hidden from the UI. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            enableFieldList?: boolean;
+            /**
+             *
+             * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null. [Api set: ExcelApi 1.8]
+             */
+            layoutType?: boolean;
+            /**
+             *
+             * True if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            preserveFormatting?: boolean;
+            /**
+             *
+             * True if the PivotTable report shows grand totals for columns. [Api set: ExcelApi 1.8]
+             */
+            showColumnGrandTotals?: boolean;
+            /**
+             *
+             * True if the PivotTable report shows grand totals for rows. [Api set: ExcelApi 1.8]
+             */
+            showRowGrandTotals?: boolean;
+            /**
+             *
+             * This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states, this will be null. [Api set: ExcelApi 1.8]
+             */
+            subtotalLocation?: boolean;
+        }
         /**
          *
          * Represents a collection of all the PivotTables that are part of the workbook or worksheet. [Api set: ExcelApi 1.8]
          */
-        
+        export interface PivotHierarchyCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Id of the PivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Name of the PivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            name?: boolean;
+        }
         /**
          *
          * Represents the Excel PivotHierarchy. [Api set: ExcelApi 1.8]
          */
-        
+        export interface PivotHierarchyLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Id of the PivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            id?: boolean;
+            /**
+             *
+             * Name of the PivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            name?: boolean;
+        }
         /**
          *
          * Represents a collection of RowColumnPivotHierarchy items associated with the PivotTable. [Api set: ExcelApi 1.8]
          */
-        
+        export interface RowColumnPivotHierarchyCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Id of the RowColumnPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Name of the RowColumnPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Position of the RowColumnPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            position?: boolean;
+        }
         /**
          *
          * Represents the Excel RowColumnPivotHierarchy. [Api set: ExcelApi 1.8]
          */
-        
+        export interface RowColumnPivotHierarchyLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Id of the RowColumnPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            id?: boolean;
+            /**
+             *
+             * Name of the RowColumnPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            name?: boolean;
+            /**
+             *
+             * Position of the RowColumnPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            position?: boolean;
+        }
         /**
          *
          * Represents a collection of FilterPivotHierarchy items associated with the PivotTable. [Api set: ExcelApi 1.8]
          */
-        
+        export interface FilterPivotHierarchyCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Determines whether to allow multiple filter items. [Api set: ExcelApi 1.8]
+             */
+            enableMultipleFilterItems?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Id of the FilterPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Name of the FilterPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Position of the FilterPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            position?: boolean;
+        }
         /**
          *
          * Represents the Excel FilterPivotHierarchy. [Api set: ExcelApi 1.8]
          */
-        
+        export interface FilterPivotHierarchyLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Determines whether to allow multiple filter items. [Api set: ExcelApi 1.8]
+             */
+            enableMultipleFilterItems?: boolean;
+            /**
+             *
+             * Id of the FilterPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            id?: boolean;
+            /**
+             *
+             * Name of the FilterPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            name?: boolean;
+            /**
+             *
+             * Position of the FilterPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            position?: boolean;
+        }
         /**
          *
          * Represents a collection of DataPivotHierarchy items associated with the PivotTable. [Api set: ExcelApi 1.8]
          */
-        
+        export interface DataPivotHierarchyCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the PivotFields associated with the DataPivotHierarchy. [Api set: ExcelApi 1.8]
+            */
+            field?: Excel.Interfaces.PivotFieldLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Id of the DataPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Name of the DataPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Number format of the DataPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Position of the DataPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            position?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Determines whether the data should be shown as a specific summary calculation or not. [Api set: ExcelApi 1.8]
+             */
+            showAs?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Determines whether to show all items of the DataPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            summarizeBy?: boolean;
+        }
         /**
          *
          * Represents the Excel DataPivotHierarchy. [Api set: ExcelApi 1.8]
          */
-        
+        export interface DataPivotHierarchyLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns the PivotFields associated with the DataPivotHierarchy. [Api set: ExcelApi 1.8]
+            */
+            field?: Excel.Interfaces.PivotFieldLoadOptions;
+            /**
+             *
+             * Id of the DataPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            id?: boolean;
+            /**
+             *
+             * Name of the DataPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            name?: boolean;
+            /**
+             *
+             * Number format of the DataPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * Position of the DataPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            position?: boolean;
+            /**
+             *
+             * Determines whether the data should be shown as a specific summary calculation or not. [Api set: ExcelApi 1.8]
+             */
+            showAs?: boolean;
+            /**
+             *
+             * Determines whether to show all items of the DataPivotHierarchy. [Api set: ExcelApi 1.8]
+             */
+            summarizeBy?: boolean;
+        }
         /**
          *
          * Represents a collection of all the PivotTables that are part of the workbook or worksheet. [Api set: ExcelApi 1.8]
          */
-        
+        export interface PivotFieldCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Id of the PivotField. [Api set: ExcelApi 1.8]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Name of the PivotField. [Api set: ExcelApi 1.8]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Determines whether to show all items of the PivotField. [Api set: ExcelApi 1.8]
+             */
+            showAllItems?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Subtotals of the PivotField. [Api set: ExcelApi 1.8]
+             */
+            subtotals?: boolean;
+        }
         /**
          *
          * Represents the Excel PivotField. [Api set: ExcelApi 1.8]
          */
-        
+        export interface PivotFieldLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Id of the PivotField. [Api set: ExcelApi 1.8]
+             */
+            id?: boolean;
+            /**
+             *
+             * Name of the PivotField. [Api set: ExcelApi 1.8]
+             */
+            name?: boolean;
+            /**
+             *
+             * Determines whether to show all items of the PivotField. [Api set: ExcelApi 1.8]
+             */
+            showAllItems?: boolean;
+            /**
+             *
+             * Subtotals of the PivotField. [Api set: ExcelApi 1.8]
+             */
+            subtotals?: boolean;
+        }
         /**
          *
          * Represents a collection of all the Pivot Items related to their parent PivotField. [Api set: ExcelApi 1.8]
          */
-        
+        export interface PivotItemCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Id of the PivotItem. [Api set: ExcelApi 1.8]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden. [Api set: ExcelApi 1.8]
+             */
+            isExpanded?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Name of the PivotItem. [Api set: ExcelApi 1.8]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Determines whether the PivotItem is visible or not. [Api set: ExcelApi 1.8]
+             */
+            visible?: boolean;
+        }
         /**
          *
          * Represents the Excel PivotItem. [Api set: ExcelApi 1.8]
          */
-        
+        export interface PivotItemLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Id of the PivotItem. [Api set: ExcelApi 1.8]
+             */
+            id?: boolean;
+            /**
+             *
+             * Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden. [Api set: ExcelApi 1.8]
+             */
+            isExpanded?: boolean;
+            /**
+             *
+             * Name of the PivotItem. [Api set: ExcelApi 1.8]
+             */
+            name?: boolean;
+            /**
+             *
+             * Determines whether the PivotItem is visible or not. [Api set: ExcelApi 1.8]
+             */
+            visible?: boolean;
+        }
         /**
          *
          * Represents workbook properties. [Api set: ExcelApi 1.7]
          */
-        
+        export interface DocumentPropertiesLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets or sets the author of the workbook. [Api set: ExcelApi 1.7]
+             */
+            author?: boolean;
+            /**
+             *
+             * Gets or sets the category of the workbook. [Api set: ExcelApi 1.7]
+             */
+            category?: boolean;
+            /**
+             *
+             * Gets or sets the comments of the workbook. [Api set: ExcelApi 1.7]
+             */
+            comments?: boolean;
+            /**
+             *
+             * Gets or sets the company of the workbook. [Api set: ExcelApi 1.7]
+             */
+            company?: boolean;
+            /**
+             *
+             * Gets the creation date of the workbook. Read only. [Api set: ExcelApi 1.7]
+             */
+            creationDate?: boolean;
+            /**
+             *
+             * Gets or sets the keywords of the workbook. [Api set: ExcelApi 1.7]
+             */
+            keywords?: boolean;
+            /**
+             *
+             * Gets the last author of the workbook. Read only. [Api set: ExcelApi 1.7]
+             */
+            lastAuthor?: boolean;
+            /**
+             *
+             * Gets or sets the manager of the workbook. [Api set: ExcelApi 1.7]
+             */
+            manager?: boolean;
+            /**
+             *
+             * Gets the revision number of the workbook. Read only. [Api set: ExcelApi 1.7]
+             */
+            revisionNumber?: boolean;
+            /**
+             *
+             * Gets or sets the subject of the workbook. [Api set: ExcelApi 1.7]
+             */
+            subject?: boolean;
+            /**
+             *
+             * Gets or sets the title of the workbook. [Api set: ExcelApi 1.7]
+             */
+            title?: boolean;
+        }
         /**
          *
          * Represents a custom property. [Api set: ExcelApi 1.7]
          */
-        
+        export interface CustomPropertyLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets the key of the custom property. Read only. [Api set: ExcelApi 1.7]
+             */
+            key?: boolean;
+            /**
+             *
+             * Gets the value type of the custom property. Read only. [Api set: ExcelApi 1.7]
+             */
+            type?: boolean;
+            /**
+             *
+             * Gets or sets the value of the custom property. [Api set: ExcelApi 1.7]
+             */
+            value?: boolean;
+        }
         /**
          *
          * Contains the collection of customProperty objects. [Api set: ExcelApi 1.7]
          */
-        
+        export interface CustomPropertyCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the key of the custom property. Read only. [Api set: ExcelApi 1.7]
+             */
+            key?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the value type of the custom property. Read only. [Api set: ExcelApi 1.7]
+             */
+            type?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the value of the custom property. [Api set: ExcelApi 1.7]
+             */
+            value?: boolean;
+        }
         /**
          *
          * Represents a collection of all the conditional formats that are overlap the range. [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalFormatCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional format is a CellValue type.
+            For example to format all cells between 5 and 10. [Api set: ExcelApi 1.6]
+            */
+            cellValue?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional format is a CellValue type.
+            For example to format all cells between 5 and 10. [Api set: ExcelApi 1.6]
+            */
+            cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type. [Api set: ExcelApi 1.6]
+            */
+            colorScale?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type. [Api set: ExcelApi 1.6]
+            */
+            colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the custom conditional format properties if the current conditional format is a custom type. [Api set: ExcelApi 1.6]
+            */
+            custom?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the custom conditional format properties if the current conditional format is a custom type. [Api set: ExcelApi 1.6]
+            */
+            customOrNullObject?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the data bar properties if the current conditional format is a data bar. [Api set: ExcelApi 1.6]
+            */
+            dataBar?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the data bar properties if the current conditional format is a data bar. [Api set: ExcelApi 1.6]
+            */
+            dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the IconSet conditional format properties if the current conditional format is an IconSet type. [Api set: ExcelApi 1.6]
+            */
+            iconSet?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the IconSet conditional format properties if the current conditional format is an IconSet type. [Api set: ExcelApi 1.6]
+            */
+            iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details. [Api set: ExcelApi 1.6]
+            */
+            preset?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details. [Api set: ExcelApi 1.6]
+            */
+            presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the specific text conditional format properties if the current conditional format is a text type.
+            For example to format cells matching the word "Text". [Api set: ExcelApi 1.6]
+            */
+            textComparison?: Excel.Interfaces.TextConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the specific text conditional format properties if the current conditional format is a text type.
+            For example to format cells matching the word "Text". [Api set: ExcelApi 1.6]
+            */
+            textComparisonOrNullObject?: Excel.Interfaces.TextConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
+            For example to format the top 10% or bottom 10 items. [Api set: ExcelApi 1.6]
+            */
+            topBottom?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
+            For example to format the top 10% or bottom 10 items. [Api set: ExcelApi 1.6]
+            */
+            topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only. [Api set: ExcelApi 1.6]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The priority (or index) within the conditional format collection that this conditional format currently exists in. Changing this also
+            changes other conditional formats' priorities, to allow for a contiguous priority order.
+            Use a negative priority to begin from the back.
+            Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
+            Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it. Read-only. [Api set: ExcelApi 1.6]
+             */
+            priority?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
+            Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these [Api set: ExcelApi 1.6]
+             */
+            stopIfTrue?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: A type of conditional format. Only one can be set at a time. Read-only. [Api set: ExcelApi 1.6]
+             */
+            type?: boolean;
+        }
         /**
          *
          * An object encapsulating a conditional format's range, format, rule, and other properties. [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
+            For example to format all cells between 5 and 10. [Api set: ExcelApi 1.6]
+            */
+            cellValue?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
+            For example to format all cells between 5 and 10. [Api set: ExcelApi 1.6]
+            */
+            cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type. [Api set: ExcelApi 1.6]
+            */
+            colorScale?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type. [Api set: ExcelApi 1.6]
+            */
+            colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the custom conditional format properties if the current conditional format is a custom type. [Api set: ExcelApi 1.6]
+            */
+            custom?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the custom conditional format properties if the current conditional format is a custom type. [Api set: ExcelApi 1.6]
+            */
+            customOrNullObject?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the data bar properties if the current conditional format is a data bar. [Api set: ExcelApi 1.6]
+            */
+            dataBar?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the data bar properties if the current conditional format is a data bar. [Api set: ExcelApi 1.6]
+            */
+            dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the IconSet conditional format properties if the current conditional format is an IconSet type. [Api set: ExcelApi 1.6]
+            */
+            iconSet?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the IconSet conditional format properties if the current conditional format is an IconSet type. [Api set: ExcelApi 1.6]
+            */
+            iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details. [Api set: ExcelApi 1.6]
+            */
+            preset?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details. [Api set: ExcelApi 1.6]
+            */
+            presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the specific text conditional format properties if the current conditional format is a text type.
+            For example to format cells matching the word "Text". [Api set: ExcelApi 1.6]
+            */
+            textComparison?: Excel.Interfaces.TextConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the specific text conditional format properties if the current conditional format is a text type.
+            For example to format cells matching the word "Text". [Api set: ExcelApi 1.6]
+            */
+            textComparisonOrNullObject?: Excel.Interfaces.TextConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
+            For example to format the top 10% or bottom 10 items. [Api set: ExcelApi 1.6]
+            */
+            topBottom?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
+            /**
+            *
+            * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
+            For example to format the top 10% or bottom 10 items. [Api set: ExcelApi 1.6]
+            */
+            topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
+            /**
+             *
+             * The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only. [Api set: ExcelApi 1.6]
+             */
+            id?: boolean;
+            /**
+             *
+             * The priority (or index) within the conditional format collection that this conditional format currently exists in. Changing this also
+            changes other conditional formats' priorities, to allow for a contiguous priority order.
+            Use a negative priority to begin from the back.
+            Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
+            Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it. Read-only. [Api set: ExcelApi 1.6]
+             */
+            priority?: boolean;
+            /**
+             *
+             * If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
+            Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these [Api set: ExcelApi 1.6]
+             */
+            stopIfTrue?: boolean;
+            /**
+             *
+             * A type of conditional format. Only one can be set at a time. Read-only. [Api set: ExcelApi 1.6]
+             */
+            type?: boolean;
+        }
         /**
          *
          * Represents an Excel Conditional Data Bar Type. [Api set: ExcelApi 1.6]
          */
-        
+        export interface DataBarConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Representation of all values to the left of the axis in an Excel data bar. [Api set: ExcelApi 1.6]
+            */
+            negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions;
+            /**
+            *
+            * Representation of all values to the right of the axis in an Excel data bar. [Api set: ExcelApi 1.6]
+            */
+            positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions;
+            /**
+             *
+             * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+            "" (empty string) if no axis is present or set. [Api set: ExcelApi 1.6]
+             */
+            axisColor?: boolean;
+            /**
+             *
+             * Representation of how the axis is determined for an Excel data bar. [Api set: ExcelApi 1.6]
+             */
+            axisFormat?: boolean;
+            /**
+             *
+             * Represents the direction that the data bar graphic should be based on. [Api set: ExcelApi 1.6]
+             */
+            barDirection?: boolean;
+            /**
+             *
+             * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar. [Api set: ExcelApi 1.6]
+             */
+            lowerBoundRule?: boolean;
+            /**
+             *
+             * If true, hides the values from the cells where the data bar is applied. [Api set: ExcelApi 1.6]
+             */
+            showDataBarOnly?: boolean;
+            /**
+             *
+             * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar. [Api set: ExcelApi 1.6]
+             */
+            upperBoundRule?: boolean;
+        }
         /**
          *
          * Represents a conditional format DataBar Format for the positive side of the data bar. [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalDataBarPositiveFormatLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+            "" (empty string) if no border is present or set. [Api set: ExcelApi 1.6]
+             */
+            borderColor?: boolean;
+            /**
+             *
+             * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange"). [Api set: ExcelApi 1.6]
+             */
+            fillColor?: boolean;
+            /**
+             *
+             * Boolean representation of whether or not the DataBar has a gradient. [Api set: ExcelApi 1.6]
+             */
+            gradientFill?: boolean;
+        }
         /**
          *
          * Represents a conditional format DataBar Format for the negative side of the data bar. [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalDataBarNegativeFormatLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+            "Empty String" if no border is present or set. [Api set: ExcelApi 1.6]
+             */
+            borderColor?: boolean;
+            /**
+             *
+             * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange"). [Api set: ExcelApi 1.6]
+             */
+            fillColor?: boolean;
+            /**
+             *
+             * Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar. [Api set: ExcelApi 1.6]
+             */
+            matchPositiveBorderColor?: boolean;
+            /**
+             *
+             * Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar. [Api set: ExcelApi 1.6]
+             */
+            matchPositiveFillColor?: boolean;
+        }
         /**
          *
          * Represents a custom conditional format type. [Api set: ExcelApi 1.6]
          */
-        
+        export interface CustomConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. [Api set: ExcelApi 1.6]
+            */
+            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
+            /**
+            *
+            * Represents the Rule object on this conditional format. [Api set: ExcelApi 1.6]
+            */
+            rule?: Excel.Interfaces.ConditionalFormatRuleLoadOptions;
+        }
         /**
          *
          * Represents a rule, for all traditional rule/format pairings. [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalFormatRuleLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * The formula, if required, to evaluate the conditional format rule on. [Api set: ExcelApi 1.6]
+             */
+            formula?: boolean;
+            /**
+             *
+             * The formula, if required, to evaluate the conditional format rule on in the user's language. [Api set: ExcelApi 1.6]
+             */
+            formulaLocal?: boolean;
+            /**
+             *
+             * The formula, if required, to evaluate the conditional format rule on in R1C1-style notation. [Api set: ExcelApi 1.6]
+             */
+            formulaR1C1?: boolean;
+        }
         /**
          *
          * Represents an IconSet criteria for conditional formatting. [Api set: ExcelApi 1.6]
          */
-        
+        export interface IconSetConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when set. [Api set: ExcelApi 1.6]
+             */
+            criteria?: boolean;
+            /**
+             *
+             * If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used. [Api set: ExcelApi 1.6]
+             */
+            reverseIconOrder?: boolean;
+            /**
+             *
+             * If true, hides the values and only shows icons. [Api set: ExcelApi 1.6]
+             */
+            showIconOnly?: boolean;
+            /**
+             *
+             * If set, displays the IconSet option for the conditional format. [Api set: ExcelApi 1.6]
+             */
+            style?: boolean;
+        }
         /**
          *
          * Represents an IconSet criteria for conditional formatting. [Api set: ExcelApi 1.6]
          */
-        
+        export interface ColorScaleConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * The criteria of the color scale. Midpoint is optional when using a two point color scale. [Api set: ExcelApi 1.6]
+             */
+            criteria?: boolean;
+            /**
+             *
+             * If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum, maximum). [Api set: ExcelApi 1.6]
+             */
+            threeColorScale?: boolean;
+        }
         /**
          *
          * Represents a Top/Bottom conditional format. [Api set: ExcelApi 1.6]
          */
-        
+        export interface TopBottomConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. [Api set: ExcelApi 1.6]
+            */
+            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
+            /**
+             *
+             * The criteria of the Top/Bottom conditional format. [Api set: ExcelApi 1.6]
+             */
+            rule?: boolean;
+        }
         /**
          *
          * Represents the the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror. [Api set: ExcelApi 1.6]
          */
-        
+        export interface PresetCriteriaConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. [Api set: ExcelApi 1.6]
+            */
+            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
+            /**
+             *
+             * The rule of the conditional format. [Api set: ExcelApi 1.6]
+             */
+            rule?: boolean;
+        }
         /**
          *
          * Represents a specific text conditional format. [Api set: ExcelApi 1.6]
          */
-        
+        export interface TextConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. [Api set: ExcelApi 1.6]
+            */
+            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
+            /**
+             *
+             * The rule of the conditional format. [Api set: ExcelApi 1.6]
+             */
+            rule?: boolean;
+        }
         /**
          *
          * Represents a cell value conditional format. [Api set: ExcelApi 1.6]
          */
-        
+        export interface CellValueConditionalFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. [Api set: ExcelApi 1.6]
+            */
+            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
+            /**
+             *
+             * Represents the Rule object on this conditional format. [Api set: ExcelApi 1.6]
+             */
+            rule?: boolean;
+        }
         /**
          *
          * A format object encapsulating the conditional formats range's font, fill, borders, and other properties. [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalRangeFormatLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Collection of border objects that apply to the overall conditional format range. [Api set: ExcelApi 1.6]
+            */
+            borders?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions;
+            /**
+            *
+            * Returns the fill object defined on the overall conditional format range. [Api set: ExcelApi 1.6]
+            */
+            fill?: Excel.Interfaces.ConditionalRangeFillLoadOptions;
+            /**
+            *
+            * Returns the font object defined on the overall conditional format range. [Api set: ExcelApi 1.6]
+            */
+            font?: Excel.Interfaces.ConditionalRangeFontLoadOptions;
+            /**
+             *
+             * Represents Excel's number format code for the given range. Cleared if null is passed in. [Api set: ExcelApi 1.6]
+             */
+            numberFormat?: boolean;
+        }
         /**
          *
          * This object represents the font attributes (font style, color, etc.) for an object. [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalRangeFontLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the bold status of font. [Api set: ExcelApi 1.6]
+             */
+            bold?: boolean;
+            /**
+             *
+             * HTML color code representation of the text color. E.g. #FF0000 represents Red. [Api set: ExcelApi 1.6]
+             */
+            color?: boolean;
+            /**
+             *
+             * Represents the italic status of the font. [Api set: ExcelApi 1.6]
+             */
+            italic?: boolean;
+            /**
+             *
+             * Represents the strikethrough status of the font. [Api set: ExcelApi 1.6]
+             */
+            strikethrough?: boolean;
+            /**
+             *
+             * Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details. [Api set: ExcelApi 1.6]
+             */
+            underline?: boolean;
+        }
         /**
          *
          * Represents the background of a conditional range object. [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalRangeFillLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange"). [Api set: ExcelApi 1.6]
+             */
+            color?: boolean;
+        }
         /**
          *
          * Represents the border of an object. [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalRangeBorderLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange"). [Api set: ExcelApi 1.6]
+             */
+            color?: boolean;
+            /**
+             *
+             * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only. [Api set: ExcelApi 1.6]
+             */
+            sideIndex?: boolean;
+            /**
+             *
+             * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details. [Api set: ExcelApi 1.6]
+             */
+            style?: boolean;
+        }
         /**
          *
          * Represents the border objects that make up range border. [Api set: ExcelApi 1.6]
          */
-        
+        export interface ConditionalRangeBorderCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange"). [Api set: ExcelApi 1.6]
+             */
+            color?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only. [Api set: ExcelApi 1.6]
+             */
+            sideIndex?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details. [Api set: ExcelApi 1.6]
+             */
+            style?: boolean;
+        }
         /**
          *
          * An object encapsulating a style's format and other properties. [Api set: ExcelApi 1.7]
          */
-        
+        export interface StyleLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * A Border collection of four Border objects that represent the style of the four borders. [Api set: ExcelApi 1.7]
+            */
+            borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;
+            /**
+            *
+            * The Fill of the style. [Api set: ExcelApi 1.7]
+            */
+            fill?: Excel.Interfaces.RangeFillLoadOptions;
+            /**
+            *
+            * A Font object that represents the font of the style. [Api set: ExcelApi 1.7]
+            */
+            font?: Excel.Interfaces.RangeFontLoadOptions;
+            /**
+             *
+             * Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution. [Api set: ExcelApi 1.8]
+             */
+            autoIndent?: boolean;
+            /**
+             *
+             * Indicates if the style is a built-in style. [Api set: ExcelApi 1.7]
+             */
+            builtIn?: boolean;
+            /**
+             *
+             * Indicates if the formula will be hidden when the worksheet is protected. [Api set: ExcelApi 1.7]
+             */
+            formulaHidden?: boolean;
+            /**
+             *
+             * Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details. [Api set: ExcelApi 1.7]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties. [Api set: ExcelApi 1.7]
+             */
+            includeAlignment?: boolean;
+            /**
+             *
+             * Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties. [Api set: ExcelApi 1.7]
+             */
+            includeBorder?: boolean;
+            /**
+             *
+             * Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties. [Api set: ExcelApi 1.7]
+             */
+            includeFont?: boolean;
+            /**
+             *
+             * Indicates if the style includes the NumberFormat property. [Api set: ExcelApi 1.7]
+             */
+            includeNumber?: boolean;
+            /**
+             *
+             * Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties. [Api set: ExcelApi 1.7]
+             */
+            includePatterns?: boolean;
+            /**
+             *
+             * Indicates if the style includes the FormulaHidden and Locked protection properties. [Api set: ExcelApi 1.7]
+             */
+            includeProtection?: boolean;
+            /**
+             *
+             * An integer from 0 to 250 that indicates the indent level for the style. [Api set: ExcelApi 1.7]
+             */
+            indentLevel?: boolean;
+            /**
+             *
+             * Indicates if the object is locked when the worksheet is protected. [Api set: ExcelApi 1.7]
+             */
+            locked?: boolean;
+            /**
+             *
+             * The name of the style. [Api set: ExcelApi 1.7]
+             */
+            name?: boolean;
+            /**
+             *
+             * The format code of the number format for the style. [Api set: ExcelApi 1.7]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * The localized format code of the number format for the style. [Api set: ExcelApi 1.7]
+             */
+            numberFormatLocal?: boolean;
+            /**
+             *
+             * The reading order for the style. [Api set: ExcelApi 1.7]
+             */
+            readingOrder?: boolean;
+            /**
+             *
+             * Indicates if text automatically shrinks to fit in the available column width. [Api set: ExcelApi 1.7]
+             */
+            shrinkToFit?: boolean;
+            /**
+             *
+             * The text orientation for the style. [Api set: ExcelApi 1.8]
+             */
+            textOrientation?: boolean;
+            /**
+             *
+             * Represents the vertical alignment for the style. See Excel.VerticalAlignment for details. [Api set: ExcelApi 1.7]
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * Indicates if Microsoft Excel wraps the text in the object. [Api set: ExcelApi 1.7]
+             */
+            wrapText?: boolean;
+        }
         /**
          *
          * Represents a collection of all the styles. [Api set: ExcelApi 1.7]
          */
-        
+        export interface StyleCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: A Border collection of four Border objects that represent the style of the four borders. [Api set: ExcelApi 1.7]
+            */
+            borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: The Fill of the style. [Api set: ExcelApi 1.7]
+            */
+            fill?: Excel.Interfaces.RangeFillLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: A Font object that represents the font of the style. [Api set: ExcelApi 1.7]
+            */
+            font?: Excel.Interfaces.RangeFontLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution. [Api set: ExcelApi 1.8]
+             */
+            autoIndent?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the style is a built-in style. [Api set: ExcelApi 1.7]
+             */
+            builtIn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the formula will be hidden when the worksheet is protected. [Api set: ExcelApi 1.7]
+             */
+            formulaHidden?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details. [Api set: ExcelApi 1.7]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties. [Api set: ExcelApi 1.7]
+             */
+            includeAlignment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties. [Api set: ExcelApi 1.7]
+             */
+            includeBorder?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties. [Api set: ExcelApi 1.7]
+             */
+            includeFont?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the style includes the NumberFormat property. [Api set: ExcelApi 1.7]
+             */
+            includeNumber?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties. [Api set: ExcelApi 1.7]
+             */
+            includePatterns?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the style includes the FormulaHidden and Locked protection properties. [Api set: ExcelApi 1.7]
+             */
+            includeProtection?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: An integer from 0 to 250 that indicates the indent level for the style. [Api set: ExcelApi 1.7]
+             */
+            indentLevel?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if the object is locked when the worksheet is protected. [Api set: ExcelApi 1.7]
+             */
+            locked?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The name of the style. [Api set: ExcelApi 1.7]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The format code of the number format for the style. [Api set: ExcelApi 1.7]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The localized format code of the number format for the style. [Api set: ExcelApi 1.7]
+             */
+            numberFormatLocal?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The reading order for the style. [Api set: ExcelApi 1.7]
+             */
+            readingOrder?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if text automatically shrinks to fit in the available column width. [Api set: ExcelApi 1.7]
+             */
+            shrinkToFit?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The text orientation for the style. [Api set: ExcelApi 1.8]
+             */
+            textOrientation?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the vertical alignment for the style. See Excel.VerticalAlignment for details. [Api set: ExcelApi 1.7]
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates if Microsoft Excel wraps the text in the object. [Api set: ExcelApi 1.7]
+             */
+            wrapText?: boolean;
+        }
         /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface PageLayoutLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Header and footer configuration for the worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            headersFooters?: Excel.Interfaces.HeaderFooterGroupLoadOptions;
+            /**
+             *
+             * Gets or sets the worksheet's black and white print option. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            blackAndWhite?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's bottom page margin to use for printing in points. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bottomMargin?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            centerHorizontally?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            centerVertically?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            draftMode?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            firstPageNumber?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's footer margin, in points, for use when printing. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            footerMargin?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's header margin, in points, for use when printing. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            headerMargin?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's left margin, in points, for use when printing. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftMargin?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's orientation of the page. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            orientation?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's paper size of the page. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            paperSize?: boolean;
+            /**
+             *
+             * Gets or sets whether the worksheet's comments should be displayed when printing. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            printComments?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's print errors option. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            printErrors?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            printGridlines?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            printHeadings?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's page print order option. This specifies the order to use for processing the page number printed. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            printOrder?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's right margin, in points, for use when printing. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightMargin?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's top margin, in points, for use when printing. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            topMargin?: boolean;
+            /**
+             *
+             * Gets or sets the worksheet's print zoom options. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            zoom?: boolean;
+        }
         /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface HeaderFooterLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets or sets the center footer of the worksheet.
+            To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            centerFooter?: boolean;
+            /**
+             *
+             * Gets or sets the center header of the worksheet.
+            To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            centerHeader?: boolean;
+            /**
+             *
+             * Gets or sets the left footer of the worksheet.
+            To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftFooter?: boolean;
+            /**
+             *
+             * Gets or sets the left header of the worksheet.
+            To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftHeader?: boolean;
+            /**
+             *
+             * Gets or sets the right footer of the worksheet.
+            To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightFooter?: boolean;
+            /**
+             *
+             * Gets or sets the right header of the worksheet.
+            To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightHeader?: boolean;
+        }
         /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface HeaderFooterGroupLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * The general header/footer, used for all pages unless even/odd or first page is specified. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            defaultForAllPages?: Excel.Interfaces.HeaderFooterLoadOptions;
+            /**
+            *
+            * The header/footer to use for even pages, odd header/footer needs to be specified for odd pages. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            evenPages?: Excel.Interfaces.HeaderFooterLoadOptions;
+            /**
+            *
+            * The first page header/footer, for all other pages general or even/odd is used. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            firstPage?: Excel.Interfaces.HeaderFooterLoadOptions;
+            /**
+            *
+            * The header/footer to use for odd pages, even header/footer needs to be specified for even pages. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            oddPages?: Excel.Interfaces.HeaderFooterLoadOptions;
+            /**
+             *
+             * Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            state?: boolean;
+            /**
+             *
+             * Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options for the worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            useSheetMargins?: boolean;
+            /**
+             *
+             * Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page layout options for the worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            useSheetScale?: boolean;
+        }
         /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface PageBreakLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the column index for the page break [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            columnIndex?: boolean;
+            /**
+             *
+             * Represents the row index for the page break [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rowIndex?: boolean;
+        }
         /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface PageBreakCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the column index for the page break [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            columnIndex?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the row index for the page break [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rowIndex?: boolean;
+        }
         /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface RangeCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns a data validation object. [Api set: ExcelApi 1.8]
+            */
+            dataValidation?: Excel.Interfaces.DataValidationLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. [Api set: ExcelApi 1.1]
+            */
+            format?: Excel.Interfaces.RangeFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: The worksheet containing the current range. [Api set: ExcelApi 1.1]
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4"). Read-only. [Api set: ExcelApi 1.1]
+             */
+            address?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents range reference for the specified range in the language of the user. Read-only. [Api set: ExcelApi 1.1]
+             */
+            addressLocal?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only. [Api set: ExcelApi 1.1]
+             */
+            cellCount?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the total number of columns in the range. Read-only. [Api set: ExcelApi 1.1]
+             */
+            columnCount?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents if all columns of the current range are hidden. [Api set: ExcelApi 1.2]
+             */
+            columnHidden?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the column number of the first cell in the range. Zero-indexed. Read-only. [Api set: ExcelApi 1.1]
+             */
+            columnIndex?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the formula in A1-style notation.
+            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. [Api set: ExcelApi 1.1]
+             */
+            formulas?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
+            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. [Api set: ExcelApi 1.1]
+             */
+            formulasLocal?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the formula in R1C1-style notation.
+            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. [Api set: ExcelApi 1.2]
+             */
+            formulasR1C1?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents if all cells have a spill border.
+            Returns true if all cells have a spill border, or false if all cells do not have a spill border.
+            Returns null if there are cells both with and without spill borders within the range. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasSpill?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents if all cells of the current range are hidden. Read-only. [Api set: ExcelApi 1.2]
+             */
+            hidden?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the hyperlink for the current range. [Api set: ExcelApi 1.7]
+             */
+            hyperlink?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents if the current range is an entire column. Read-only. [Api set: ExcelApi 1.7]
+             */
+            isEntireColumn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents if the current range is an entire row. Read-only. [Api set: ExcelApi 1.7]
+             */
+            isEntireRow?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the data type state of each cell. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linkedDataTypeState?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents Excel's number format code for the given range.
+            When setting number format to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. [Api set: ExcelApi 1.1]
+             */
+            numberFormat?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents Excel's number format code for the given range as a string in the language of the user.
+            When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. [Api set: ExcelApi 1.7]
+             */
+            numberFormatLocal?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the total number of rows in the range. Read-only. [Api set: ExcelApi 1.1]
+             */
+            rowCount?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents if all rows of the current range are hidden. [Api set: ExcelApi 1.2]
+             */
+            rowHidden?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the row number of the first cell in the range. Zero-indexed. Read-only. [Api set: ExcelApi 1.1]
+             */
+            rowIndex?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the style of the current range.
+            If the styles of the cells are inconsistent, null will be returned.
+            For custom styles, the style name will be returned. For built-in styles, a string representing a value in the BuiltInStyle enum will be returned. [Api set: ExcelApi 1.7]
+             */
+            style?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only. [Api set: ExcelApi 1.1]
+             */
+            text?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the type of data of each cell. Read-only. [Api set: ExcelApi 1.1]
+             */
+            valueTypes?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
+            When setting values to a range, the value argument can be either a single value (string, number or boolean) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. [Api set: ExcelApi 1.1]
+             */
+            values?: boolean;
+        }
         /**
          *
          * Represents a collection of comment objects that are part of the workbook. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface CommentCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Get/Set the content. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the comment identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents whether it is a comment thread or reply. Always return true here. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isParent?: boolean;
+        }
         /**
          *
          * Represents a cell comment object in the workbook. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface CommentLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Get/Set the content. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: boolean;
+            /**
+             *
+             * Represents the comment identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * Represents whether it is a comment thread or reply. Always return true here. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isParent?: boolean;
+        }
         /**
          *
          * Represents a collection of comment reply objects that are part of the comment. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface CommentReplyCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Get/Set the content. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the comment reply identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents whether it is a comment thread or reply. Always return false here. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isParent?: boolean;
+        }
         /**
          *
          * Represents a cell comment reply object in the workbook. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface CommentReplyLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Get/Set the content. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: boolean;
+            /**
+             *
+             * Represents the comment reply identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * Represents whether it is a comment thread or reply. Always return false here. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isParent?: boolean;
+        }
         /**
          *
          * Represents all the shapes in the worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface ShapeCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the fill formatting of the shape object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            fill?: Excel.Interfaces.ShapeFillLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the geometric shape for the shape object. Error will be thrown, if the shape object is other shape type (Like, Image, SmartArt, etc.) rather than GeometricShape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            geometricShape?: Excel.Interfaces.GeometricShapeLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the shape group for the shape object. Error will be thrown, if the shape object is other shape type (Like, Image, SmartArt, etc.) rather than GroupShape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            group?: Excel.Interfaces.ShapeGroupLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the image for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            image?: Excel.Interfaces.ImageLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the line object for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            line?: Excel.Interfaces.LineLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the line formatting of the shape object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            lineFormat?: Excel.Interfaces.ShapeLineFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the parent group of the specified shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            parentGroup?: Excel.Interfaces.ShapeLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the textFrame object of a shape. Read only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            textFrame?: Excel.Interfaces.TextFrameLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextDescription?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the alternative title text string for a Shape object when the object is saved to a Web page. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextTitle?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the geometric shape type of the specified shape. See Excel.GeometricShapeType for detail. Returns null if the shape is not geometric, for example, get GeometricShapeType of a line or a chart will return null. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            geometricShapeType?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the height, in points, of the shape.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the shape identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the left of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the level of the specified shape. Level 0 means the shape is not part of any group, level 1 means the shape is part of a top-level group, etc. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            level?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents if the aspect ratio locked, in boolean, of the shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lockAspectRatio?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the name of the shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the placment, value that represents the way the object is attached to the cells below it. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            placement?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the rotation, in degrees, of the shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotation?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the top of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the type of the specified shape. Read-only. See Excel.ShapeType for detail. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the visibility, in boolean, of the specified shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the width, in points, of the shape.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the position of the specified shape in the z-order, the very bottom shape's z-order value is 0. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            zorderPosition?: boolean;
+        }
         /**
          *
          * Represents a generic shape object in the worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface ShapeLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns the fill formatting of the shape object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            fill?: Excel.Interfaces.ShapeFillLoadOptions;
+            /**
+            *
+            * Returns the geometric shape for the shape object. Error will be thrown, if the shape object is other shape type (Like, Image, SmartArt, etc.) rather than GeometricShape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            geometricShape?: Excel.Interfaces.GeometricShapeLoadOptions;
+            /**
+            *
+            * Returns the shape group for the shape object. Error will be thrown, if the shape object is other shape type (Like, Image, SmartArt, etc.) rather than GroupShape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            group?: Excel.Interfaces.ShapeGroupLoadOptions;
+            /**
+            *
+            * Returns the image for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            image?: Excel.Interfaces.ImageLoadOptions;
+            /**
+            *
+            * Returns the line object for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            line?: Excel.Interfaces.LineLoadOptions;
+            /**
+            *
+            * Returns the line formatting of the shape object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            lineFormat?: Excel.Interfaces.ShapeLineFormatLoadOptions;
+            /**
+            *
+            * Represents the parent group of the specified shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            parentGroup?: Excel.Interfaces.ShapeLoadOptions;
+            /**
+            *
+            * Returns the textFrame object of a shape. Read only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            textFrame?: Excel.Interfaces.TextFrameLoadOptions;
+            /**
+             *
+             * Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextDescription?: boolean;
+            /**
+             *
+             * Returns or sets the alternative title text string for a Shape object when the object is saved to a Web page. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextTitle?: boolean;
+            /**
+             *
+             * Represents the geometric shape type of the specified shape. See Excel.GeometricShapeType for detail. Returns null if the shape is not geometric, for example, get GeometricShapeType of a line or a chart will return null. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            geometricShapeType?: boolean;
+            /**
+             *
+             * Represents the height, in points, of the shape.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             *
+             * Represents the shape identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * The distance, in points, from the left side of the shape to the left of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: boolean;
+            /**
+             *
+             * Represents the level of the specified shape. Level 0 means the shape is not part of any group, level 1 means the shape is part of a top-level group, etc. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            level?: boolean;
+            /**
+             *
+             * Represents if the aspect ratio locked, in boolean, of the shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lockAspectRatio?: boolean;
+            /**
+             *
+             * Represents the name of the shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             *
+             * Represents the placment, value that represents the way the object is attached to the cells below it. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            placement?: boolean;
+            /**
+             *
+             * Represents the rotation, in degrees, of the shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotation?: boolean;
+            /**
+             *
+             * The distance, in points, from the top edge of the shape to the top of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: boolean;
+            /**
+             *
+             * Returns the type of the specified shape. Read-only. See Excel.ShapeType for detail. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
+             *
+             * Represents the visibility, in boolean, of the specified shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
+            /**
+             *
+             * Represents the width, in points, of the shape.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+            /**
+             *
+             * Returns the position of the specified shape in the z-order, the very bottom shape's z-order value is 0. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            zorderPosition?: boolean;
+        }
         /**
          *
          * Represents a geometric shape object inside a worksheet. A geometric shape can be a line, rectangle, block arrow, equation, flowchart, start, banner, callout or basic shape in Excel. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface GeometricShapeLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns the shape object for the geometric shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            shape?: Excel.Interfaces.ShapeLoadOptions;
+            /**
+             *
+             * Represents the shape identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+        }
         /**
          *
          * Represents an image object in the worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface ImageLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns the shape object for the image. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            shape?: Excel.Interfaces.ShapeLoadOptions;
+            /**
+             *
+             * Represents the shape identifier for the image object. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * Returns the format for the image. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            format?: boolean;
+        }
         /**
          *
          * Represents a shape group object inside a worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface ShapeGroupLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns the shape object for the group. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            shape?: Excel.Interfaces.ShapeLoadOptions;
+            /**
+             *
+             * Represents the shape identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+        }
         /**
          *
          * Represents a shape collection inside a shape group. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface GroupShapeCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the fill formatting of the shape object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            fill?: Excel.Interfaces.ShapeFillLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the geometric shape for the shape object. Error will be thrown, if the shape object is other shape type (Like, Image, SmartArt, etc.) rather than GeometricShape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            geometricShape?: Excel.Interfaces.GeometricShapeLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the shape group for the shape object. Error will be thrown, if the shape object is other shape type (Like, Image, SmartArt, etc.) rather than GroupShape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            group?: Excel.Interfaces.ShapeGroupLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the image for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            image?: Excel.Interfaces.ImageLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the line object for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            line?: Excel.Interfaces.LineLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the line formatting of the shape object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            lineFormat?: Excel.Interfaces.ShapeLineFormatLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the parent group of the specified shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            parentGroup?: Excel.Interfaces.ShapeLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the textFrame object of a shape. Read only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            textFrame?: Excel.Interfaces.TextFrameLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextDescription?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns or sets the alternative title text string for a Shape object when the object is saved to a Web page. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            altTextTitle?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the geometric shape type of the specified shape. See Excel.GeometricShapeType for detail. Returns null if the shape is not geometric, for example, get GeometricShapeType of a line or a chart will return null. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            geometricShapeType?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the height, in points, of the shape.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the shape identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the left of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the level of the specified shape. Level 0 means the shape is not part of any group, level 1 means the shape is part of a top-level group, etc. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            level?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents if the aspect ratio locked, in boolean, of the shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lockAspectRatio?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the name of the shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the placment, value that represents the way the object is attached to the cells below it. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            placement?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the rotation, in degrees, of the shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rotation?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the top of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the type of the specified shape. Read-only. See Excel.ShapeType for detail. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the visibility, in boolean, of the specified shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the width, in points, of the shape.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the position of the specified shape in the z-order, the very bottom shape's z-order value is 0. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            zorderPosition?: boolean;
+        }
+        /**
+         *
+         * Represents a Line object inside a worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface LineLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns the shape object for the line. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            shape?: Excel.Interfaces.ShapeLoadOptions;
+            /**
+             *
+             * Represents the shape identifier. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * Represents the connector type for the line. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            connectorType?: boolean;
+        }
         /**
          *
          * Represents the fill formatting for a shape object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface ShapeFillLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the shape fill fore color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange") [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            foreColor?: boolean;
+            /**
+             *
+             * Returns or sets the degree of transparency of the specified fill as a value from 0.0 (opaque) through 1.0 (clear). For API not supported shape types  or special fill type with inconsistent transparencies, return null. For example, gradient fill type could have inconsistent transparencies. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: boolean;
+            /**
+             *
+             * Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for detail. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
+         *
+         * Represents the line formatting for the shape object. For picture and geometric shape, line formatting represents the border of shape object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ShapeLineFormatLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the line color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange"). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            color?: boolean;
+            /**
+             *
+             * Represents the line style of the shape. Returns null when line is not visible or has mixed line dash style property (e.g. group type of shape). See Excel.ShapeLineStyle for details. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            dashStyle?: boolean;
+            /**
+             *
+             * Represents the line style of the shape object. Returns null when line is not visible or has mixed line visible property (e.g. group type of shape). See Excel.ShapeLineStyle for details. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: boolean;
+            /**
+             *
+             * Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear). Returns null when the shape has mixed line transparency property (e.g. group type of shape). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            transparency?: boolean;
+            /**
+             *
+             * Represents whether the line formatting of a shape element is visible. Returns null when the shape has mixed line visible property (e.g. group type of shape). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visible?: boolean;
+            /**
+             *
+             * Represents weight of the line, in points. Returns null when the line is not visible or has mixed line weight property (e.g. group type of shape). [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            weight?: boolean;
+        }
         /**
          *
          * Represents the text frame for a shape object. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface TextFrameLoadOptions {
+            $all?: boolean;
+            textRange?: Excel.Interfaces.TextRangeLoadOptions;
+            /**
+             *
+             * Gets or sets the auto sizing settings for the text frame. A text frame can be set to auto size the text to fit the text frame, or auto size the text frame to fit the text, or without auto sizing. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            autoSize?: boolean;
+            /**
+             *
+             * Represents the bottom margin, in points, of the text frame. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bottomMargin?: boolean;
+            /**
+             *
+             * Specifies whether the TextFrame contains text. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasText?: boolean;
+            /**
+             *
+             * Represents the horizontal alignment of the text frame. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * Represents the horizontal overflow type of the text frame. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            horizontalOverflow?: boolean;
+            /**
+             *
+             * Represents the left margin, in points, of the text frame. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftMargin?: boolean;
+            /**
+             *
+             * Represents the text orientation of the text frame. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            orientation?: boolean;
+            /**
+             *
+             * Represents the reading order of the text frame, RTL or LTR. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            readingOrder?: boolean;
+            /**
+             *
+             * Represents the right margin, in points, of the text frame. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightMargin?: boolean;
+            /**
+             *
+             * Represents the top margin, in points, of the text frame. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            topMargin?: boolean;
+            /**
+             *
+             * Represents the vertical alignment of the text frame. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * Represents the vertical overflow type of the text frame. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            verticalOverflow?: boolean;
+        }
         /* [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface TextRangeLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns a ShapeFont object that represents the font attributes for the text range. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            font?: Excel.Interfaces.ShapeFontLoadOptions;
+            /**
+             *
+             * Represents the plain text content of the text range. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            text?: boolean;
+        }
         /**
          *
          * This object represents the font attributes (font name, font size, color, etc.) for a TextRange in the Shape. [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        
+        export interface ShapeFontLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the bold status of font. Returns null the TextRange includes both bold and non-bold text fragments. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            bold?: boolean;
+            /**
+             *
+             * HTML color code representation of the text color. E.g. #FF0000 represents Red. Returns null if the TextRange includes text fragments with different colors. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            color?: boolean;
+            /**
+             *
+             * Represents the italic status of font. Return null if the TextRange includes both italic and non-italic text fragments. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            italic?: boolean;
+            /**
+             *
+             * Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, represents corresponding font name; otherwise represents Latin font name. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             *
+             * Represents font size in points (e.g. 11). Return null if the TextRange includes text fragments with different font sizes. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            size?: boolean;
+            /**
+             *
+             * Type of underline applied to the font. Return null if the TextRange includes text fragments with different underline styles. See Excel.ShapeFontUnderlineStyle for details. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            underline?: boolean;
+        }
+        /**
+         *
+         * Represents a slicer object in the workbook. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlicerLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents the worksheet containing the slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * Represents the caption of slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            caption?: boolean;
+            /**
+             *
+             * Represents the height, in points, of the slicer.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             *
+             * Represents the unique id of slicer. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * True if all filters currently applied on the slicer is cleared. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFilterCleared?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the left side of the slicer to the left of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: boolean;
+            /**
+             *
+             * Represents the name of slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             *
+             * Represents the name used in the formula. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameInFormula?: boolean;
+            /**
+             *
+             * Represents the sort order of the items in the slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sortBy?: boolean;
+            /**
+             *
+             * Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6, TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: boolean;
+            /**
+             *
+             * Represents the distance, in points, from the top edge of the slicer to the right of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: boolean;
+            /**
+             *
+             * Represents the width, in points, of the slicer.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+        }
+        /**
+         *
+         * Represents a collection of all the slicer objects on the workbook or a worksheet. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlicerCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Represents the worksheet containing the slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the caption of slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            caption?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the height, in points, of the slicer.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the unique id of slicer. Read-only. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: True if all filters currently applied on the slicer is cleared. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isFilterCleared?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the distance, in points, from the left side of the slicer to the left of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the name of slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the name used in the formula. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameInFormula?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the sort order of the items in the slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            sortBy?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6, TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            style?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the slicer to the right of the worksheet.
+            Throws an invalid argument exception when set with negative value as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the width, in points, of the slicer.
+            Throws an invalid argument exception when set with negative value or zero as input. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+        }
+        /**
+         *
+         * Represents a slicer item in a slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlicerItemLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * True if the slicer item has data. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasData?: boolean;
+            /**
+             *
+             * True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSelected?: boolean;
+            /**
+             *
+             * Represents the unique value representing the slicer item. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            key?: boolean;
+            /**
+             *
+             * Represents the value displayed on UI. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+        }
+        /**
+         *
+         * Represents a collection of all the slicer item objects on the slicer. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SlicerItemCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: True if the slicer item has data. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            hasData?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            isSelected?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the unique value representing the slicer item. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            key?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the value displayed on UI. [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            name?: boolean;
+        }
         /**
          *
          * An object containing the result of a function-evaluation operation [Api set: ExcelApi 1.2]
          */
-        
+        export interface FunctionResultLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Error value (such as "#DIV/0") representing the error. If the error string is not set, then the function succeeded, and its result is written to the Value field. The error is always in the English locale. [Api set: ExcelApi 1.2]
+             */
+            error?: boolean;
+            /**
+             *
+             * The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error property is not set). [Api set: ExcelApi 1.2]
+             */
+            value?: boolean;
+        }
     }
 }
-
 
 ////////////////////////////////////////////////////////////////
 //////////////////////// End Excel APIs ////////////////////////

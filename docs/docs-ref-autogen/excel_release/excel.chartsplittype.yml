@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ChartSplitType
+    name: Excel.ChartSplitType
+    fullName: Excel.ChartSplitType
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ChartSplitType.splitByCustomSplit
+      - excel_release.Excel.ChartSplitType.splitByPercentValue
+      - excel_release.Excel.ChartSplitType.splitByPosition
+      - excel_release.Excel.ChartSplitType.splitByValue
+  - uid: excel_release.Excel.ChartSplitType.splitByCustomSplit
+    name: splitByCustomSplit
+    fullName: splitByCustomSplit
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SplitByCustomSplit"'
+  - uid: excel_release.Excel.ChartSplitType.splitByPercentValue
+    name: splitByPercentValue
+    fullName: splitByPercentValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SplitByPercentValue"'
+  - uid: excel_release.Excel.ChartSplitType.splitByPosition
+    name: splitByPosition
+    fullName: splitByPosition
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SplitByPosition"'
+  - uid: excel_release.Excel.ChartSplitType.splitByValue
+    name: splitByValue
+    fullName: splitByValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SplitByValue"'

@@ -1,0 +1,117 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ShapeLineFormatLoadOptions
+    summary: >-
+      Represents the line formatting for the shape object. For picture and geometric shape, line formatting represents
+      the border of shape object. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.ShapeLineFormatLoadOptions
+    fullName: Excel.Interfaces.ShapeLineFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ShapeLineFormatLoadOptions.color
+      - excel.Excel.Interfaces.ShapeLineFormatLoadOptions.dashStyle
+      - excel.Excel.Interfaces.ShapeLineFormatLoadOptions.style
+      - excel.Excel.Interfaces.ShapeLineFormatLoadOptions.transparency
+      - excel.Excel.Interfaces.ShapeLineFormatLoadOptions.visible
+      - excel.Excel.Interfaces.ShapeLineFormatLoadOptions.weight
+  - uid: excel.Excel.Interfaces.ShapeLineFormatLoadOptions.color
+    summary: >-
+      Represents the line color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color
+      (e.g. "orange"). \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeLineFormatLoadOptions.dashStyle
+    summary: >-
+      Represents the line style of the shape. Returns null when line is not visible or has mixed line dash style
+      property (e.g. group type of shape). See Excel.ShapeLineStyle for details. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: dashStyle
+    fullName: dashStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dashStyle?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeLineFormatLoadOptions.style
+    summary: >-
+      Represents the line style of the shape object. Returns null when line is not visible or has mixed line visible
+      property (e.g. group type of shape). See Excel.ShapeLineStyle for details. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeLineFormatLoadOptions.transparency
+    summary: >-
+      Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear).
+      Returns null when the shape has mixed line transparency property (e.g. group type of shape). \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: transparency
+    fullName: transparency
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'transparency?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeLineFormatLoadOptions.visible
+    summary: >-
+      Represents whether the line formatting of a shape element is visible. Returns null when the shape has mixed line
+      visible property (e.g. group type of shape). \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeLineFormatLoadOptions.weight
+    summary: >-
+      Represents weight of the line, in points. Returns null when the line is not visible or has mixed line weight
+      property (e.g. group type of shape). \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: boolean;'
+      return:
+        type:
+          - boolean

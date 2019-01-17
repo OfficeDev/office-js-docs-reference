@@ -26,6 +26,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.Application` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -61,16 +65,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.Application;'
+      content: 'load(option?: Visio.Interfaces.ApplicationLoadOptions): Visio.Application;'
       return:
         type:
           - Visio.Application
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Visio.Interfaces.ApplicationLoadOptions
   - uid: visio.Visio.Application.showBorders
     summary: >-
       Show or hide the iFrame application borders. \[ [API set:

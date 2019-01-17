@@ -542,7 +542,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.overlap
     summary: >-
-      Specifies how bars and columns are positioned. Can be a value between – 100 and 100. Applies only to 2-D bar and
+      Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and
       2-D column charts. Read/Write. \[ [API set: ExcelApi
       1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlap

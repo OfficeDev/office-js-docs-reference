@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions
+    summary: >-
+      Represents the Excel RowColumnPivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.RowColumnPivotHierarchyLoadOptions
+    fullName: Excel.Interfaces.RowColumnPivotHierarchyLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions.id
+      - excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions.name
+      - excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions.position
+  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions.id
+    summary: >-
+      Id of the RowColumnPivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions.name
+    summary: >-
+      Name of the RowColumnPivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions.position
+    summary: >-
+      Position of the RowColumnPivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position?: boolean;'
+      return:
+        type:
+          - boolean

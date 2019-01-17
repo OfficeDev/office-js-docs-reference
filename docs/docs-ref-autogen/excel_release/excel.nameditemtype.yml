@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.NamedItemType
+    name: Excel.NamedItemType
+    fullName: Excel.NamedItemType
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.NamedItemType.array
+      - excel_release.Excel.NamedItemType.boolean
+      - excel_release.Excel.NamedItemType.double
+      - excel_release.Excel.NamedItemType.error
+      - excel_release.Excel.NamedItemType.integer
+      - excel_release.Excel.NamedItemType.range
+      - excel_release.Excel.NamedItemType.string
+  - uid: excel_release.Excel.NamedItemType.array
+    name: array
+    fullName: array
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Array"'
+  - uid: excel_release.Excel.NamedItemType.boolean
+    name: boolean
+    fullName: boolean
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Boolean"'
+  - uid: excel_release.Excel.NamedItemType.double
+    name: double
+    fullName: double
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Double"'
+  - uid: excel_release.Excel.NamedItemType.error
+    name: error
+    fullName: error
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Error"'
+  - uid: excel_release.Excel.NamedItemType.integer
+    name: integer
+    fullName: integer
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Integer"'
+  - uid: excel_release.Excel.NamedItemType.range
+    name: range
+    fullName: range
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Range"'
+  - uid: excel_release.Excel.NamedItemType.string
+    name: string
+    fullName: string
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"String"'

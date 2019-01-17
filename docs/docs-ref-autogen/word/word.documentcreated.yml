@@ -157,6 +157,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.DocumentCreated` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.DocumentCreated` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -173,16 +177,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.DocumentCreated;'
+      content: 'load(option?: Word.Interfaces.DocumentCreatedLoadOptions): Word.DocumentCreated;'
       return:
         type:
           - word.Word.DocumentCreated
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - word.Word.Interfaces.DocumentCreatedLoadOptions
   - uid: word.Word.DocumentCreated.open
     summary: >-
       Opens the document. \[ [API set: WordApi

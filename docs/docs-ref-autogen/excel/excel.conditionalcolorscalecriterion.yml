@@ -44,7 +44,7 @@ items:
           - string
   - uid: excel.Excel.ConditionalColorScaleCriterion.type
     summary: >-
-      What the icon conditional formula should be based on. \[ [API set: ExcelApi
+      What the criterion conditional formula should be based on. \[ [API set: ExcelApi
       1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type

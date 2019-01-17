@@ -74,6 +74,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ColorScaleConditionalFormat` - Where option is a comma-delimited string
+      or an array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ColorScaleConditionalFormat` - Where option.select is
       a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string
       that specifies the navigation properties to load.
@@ -90,16 +94,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ColorScaleConditionalFormat;'
+      content: 'load(option?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions): Excel.ColorScaleConditionalFormat;'
       return:
         type:
           - excel.Excel.ColorScaleConditionalFormat
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
   - uid: excel.Excel.ColorScaleConditionalFormat.threeColorScale
     summary: >-
       If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum,

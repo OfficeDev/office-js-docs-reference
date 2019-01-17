@@ -1,0 +1,73 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.RangeHyperlink
+    summary: >-
+      Represents the necessary strings to get/set a hyperlink (XHL) object. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.RangeHyperlink
+    fullName: Excel.RangeHyperlink
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.RangeHyperlink.address
+      - excel_release.Excel.RangeHyperlink.documentReference
+      - excel_release.Excel.RangeHyperlink.screenTip
+      - excel_release.Excel.RangeHyperlink.textToDisplay
+  - uid: excel_release.Excel.RangeHyperlink.address
+    summary: >-
+      Represents the url target for the hyperlink. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.RangeHyperlink.documentReference
+    summary: >-
+      Represents the document reference target for the hyperlink. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: documentReference
+    fullName: documentReference
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'documentReference?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.RangeHyperlink.screenTip
+    summary: >-
+      Represents the string displayed when hovering over the hyperlink. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: screenTip
+    fullName: screenTip
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'screenTip?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.RangeHyperlink.textToDisplay
+    summary: >-
+      Represents the string that is displayed in the top left most cell in the range. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textToDisplay
+    fullName: textToDisplay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textToDisplay?: string;'
+      return:
+        type:
+          - string

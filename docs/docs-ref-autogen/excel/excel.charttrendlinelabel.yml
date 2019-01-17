@@ -155,6 +155,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartTrendlineLabel` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineLabel` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -171,16 +175,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartTrendlineLabel;'
+      content: 'load(option?: Excel.Interfaces.ChartTrendlineLabelLoadOptions): Excel.ChartTrendlineLabel;'
       return:
         type:
           - excel.Excel.ChartTrendlineLabel
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartTrendlineLabelLoadOptions
   - uid: excel.Excel.ChartTrendlineLabel.numberFormat
     summary: >-
       String value that represents the format code for trendline label. \[ [API set: ExcelApi

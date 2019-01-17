@@ -31,8 +31,8 @@ items:
           - string
   - uid: excel.Excel.DataValidationErrorAlert.showAlert
     summary: >-
-      It determines show error alert dialog or not when users enter invalid data, it defaults to true. \[ [API set:
-      ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Determines whether to show an error alert dialog or not when a user enters invalid data. The default is true. \[
+      [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAlert
     fullName: showAlert
     langs:
@@ -45,7 +45,7 @@ items:
           - boolean
   - uid: excel.Excel.DataValidationErrorAlert.style
     summary: >-
-      Represents Data validation alert type, please see Excel.DataValidationAlertStyle for details. \[ [API set:
+      Represents data validation alert type, please see Excel.DataValidationAlertStyle for details. \[ [API set:
       ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: style

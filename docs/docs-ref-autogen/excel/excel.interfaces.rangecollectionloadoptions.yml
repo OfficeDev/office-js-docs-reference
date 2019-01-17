@@ -1,0 +1,442 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions
+    name: Excel.Interfaces.RangeCollectionLoadOptions
+    fullName: Excel.Interfaces.RangeCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.address
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.addressLocal
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.cellCount
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.columnCount
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.columnHidden
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.columnIndex
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.dataValidation
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.format
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.formulas
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.formulasLocal
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.formulasR1C1
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.hasSpill
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.hidden
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.hyperlink
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.isEntireColumn
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.isEntireRow
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.linkedDataTypeState
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.numberFormat
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.numberFormatLocal
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.rowCount
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.rowHidden
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.rowIndex
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.style
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.text
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.values
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.valueTypes
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.worksheet
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.address
+    summary: >-
+      For EACH ITEM in the collection: Represents the range reference in A1-style. Address value will contain the Sheet
+      reference (e.g. "Sheet1!A1:B4"). Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.addressLocal
+    summary: >-
+      For EACH ITEM in the collection: Represents range reference for the specified range in the language of the user.
+      Read-only. \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    name: addressLocal
+    fullName: addressLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addressLocal?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.cellCount
+    summary: >-
+      For EACH ITEM in the collection: Number of cells in the range. This API will return -1 if the cell count exceeds
+      2^31-1 (2,147,483,647). Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: cellCount
+    fullName: cellCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellCount?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.columnCount
+    summary: >-
+      For EACH ITEM in the collection: Represents the total number of columns in the range. Read-only. \[ [API set:
+      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnCount
+    fullName: columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnCount?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.columnHidden
+    summary: >-
+      For EACH ITEM in the collection: Represents if all columns of the current range are hidden. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnHidden
+    fullName: columnHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.columnIndex
+    summary: >-
+      For EACH ITEM in the collection: Represents the column number of the first cell in the range. Zero-indexed.
+      Read-only. \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    name: columnIndex
+    fullName: columnIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.dataValidation
+    summary: >-
+      For EACH ITEM in the collection: Returns a data validation object. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataValidation
+    fullName: dataValidation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataValidation?: Excel.Interfaces.DataValidationLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.DataValidationLoadOptions
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.format
+    summary: >-
+      For EACH ITEM in the collection: Returns a format object, encapsulating the range's font, fill, borders,
+      alignment, and other properties. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.RangeFormatLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.RangeFormatLoadOptions
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.formulas
+    summary: >-
+      For EACH ITEM in the collection: Represents the formula in A1-style notation. When setting formulas to a range,
+      the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single
+      value, it will be applied to all cells in the range. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulas
+    fullName: formulas
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulas?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.formulasLocal
+    summary: >-
+      For EACH ITEM in the collection: Represents the formula in A1-style notation, in the user's language and
+      number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in
+      German. When setting formulas to a range, the value argument can be either a single value (a string) or a
+      two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. \[ [API
+      set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulasLocal
+    fullName: formulasLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulasLocal?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.formulasR1C1
+    summary: >-
+      For EACH ITEM in the collection: Represents the formula in R1C1-style notation. When setting formulas to a range,
+      the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single
+      value, it will be applied to all cells in the range. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulasR1C1
+    fullName: formulasR1C1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulasR1C1?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.hasSpill
+    summary: >-
+      For EACH ITEM in the collection: Represents if all cells have a spill border. Returns true if all cells have a
+      spill border, or false if all cells do not have a spill border. Returns null if there are cells both with and
+      without spill borders within the range. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: hasSpill
+    fullName: hasSpill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasSpill?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.hidden
+    summary: >-
+      For EACH ITEM in the collection: Represents if all cells of the current range are hidden. Read-only. \[ [API set:
+      ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hidden
+    fullName: hidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.hyperlink
+    summary: >-
+      For EACH ITEM in the collection: Represents the hyperlink for the current range. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hyperlink
+    fullName: hyperlink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hyperlink?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.isEntireColumn
+    summary: >-
+      For EACH ITEM in the collection: Represents if the current range is an entire column. Read-only. \[ [API set:
+      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isEntireColumn
+    fullName: isEntireColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isEntireColumn?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.isEntireRow
+    summary: >-
+      For EACH ITEM in the collection: Represents if the current range is an entire row. Read-only. \[ [API set:
+      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isEntireRow
+    fullName: isEntireRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isEntireRow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.linkedDataTypeState
+    summary: >-
+      For EACH ITEM in the collection: Represents the data type state of each cell. Read-only. \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: linkedDataTypeState
+    fullName: linkedDataTypeState
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkedDataTypeState?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.numberFormat
+    summary: >-
+      For EACH ITEM in the collection: Represents Excel's number format code for the given range. When setting number
+      format to a range, the value argument can be either a single value (string) or a two-dimensional array. If the
+      argument is a single value, it will be applied to all cells in the range. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.numberFormatLocal
+    summary: >-
+      For EACH ITEM in the collection: Represents Excel's number format code for the given range as a string in the
+      language of the user. When setting number format local to a range, the value argument can be either a single value
+      (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the
+      range. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormatLocal
+    fullName: numberFormatLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormatLocal?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.rowCount
+    summary: >-
+      For EACH ITEM in the collection: Returns the total number of rows in the range. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowCount
+    fullName: rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowCount?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.rowHidden
+    summary: >-
+      For EACH ITEM in the collection: Represents if all rows of the current range are hidden. \[ [API set: ExcelApi
+      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowHidden
+    fullName: rowHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.rowIndex
+    summary: >-
+      For EACH ITEM in the collection: Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.style
+    summary: >-
+      For EACH ITEM in the collection: Represents the style of the current range. If the styles of the cells are
+      inconsistent, null will be returned. For custom styles, the style name will be returned. For built-in styles, a
+      string representing a value in the BuiltInStyle enum will be returned. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.text
+    summary: >-
+      For EACH ITEM in the collection: Text values of the specified range. The Text value will not depend on the cell
+      width. The \# sign substitution that happens in Excel UI will not affect the text value returned by the API.
+      Read-only. \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.values
+    summary: >-
+      For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of
+      type string, number, or a boolean. Cells that contain an error will return the error string. When setting values
+      to a range, the value argument can be either a single value (string, number or boolean) or a two-dimensional
+      array. If the argument is a single value, it will be applied to all cells in the range. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.valueTypes
+    summary: >-
+      For EACH ITEM in the collection: Represents the type of data of each cell. Read-only. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: valueTypes
+    fullName: valueTypes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'valueTypes?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.worksheet
+    summary: >-
+      For EACH ITEM in the collection: The worksheet containing the current range. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorksheetLoadOptions

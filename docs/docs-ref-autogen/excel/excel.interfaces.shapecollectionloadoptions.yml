@@ -1,0 +1,414 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions
+    summary: >-
+      Represents all the shapes in the worksheet. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.ShapeCollectionLoadOptions
+    fullName: Excel.Interfaces.ShapeCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.altTextDescription
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.altTextTitle
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.fill
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.geometricShape
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.geometricShapeType
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.group
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.height
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.id
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.image
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.left
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.level
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.line
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.lineFormat
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.lockAspectRatio
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.name
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.parentGroup
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.placement
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.rotation
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.textFrame
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.top
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.type
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.visible
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.width
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions.zorderPosition
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.altTextDescription
+    summary: >-
+      For EACH ITEM in the collection: Returns or sets the alternative descriptive text string for a Shape object when
+      the object is saved to a Web page. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: altTextDescription
+    fullName: altTextDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextDescription?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.altTextTitle
+    summary: >-
+      For EACH ITEM in the collection: Returns or sets the alternative title text string for a Shape object when the
+      object is saved to a Web page. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: altTextTitle
+    fullName: altTextTitle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextTitle?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.fill
+    summary: >-
+      For EACH ITEM in the collection: Returns the fill formatting of the shape object. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fill?: Excel.Interfaces.ShapeFillLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ShapeFillLoadOptions
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.geometricShape
+    summary: >-
+      For EACH ITEM in the collection: Returns the geometric shape for the shape object. Error will be thrown, if the
+      shape object is other shape type (Like, Image, SmartArt, etc.) rather than GeometricShape. \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: geometricShape
+    fullName: geometricShape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'geometricShape?: Excel.Interfaces.GeometricShapeLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.GeometricShapeLoadOptions
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.geometricShapeType
+    summary: >-
+      For EACH ITEM in the collection: Represents the geometric shape type of the specified shape. See
+      Excel.GeometricShapeType for detail. Returns null if the shape is not geometric, for example, get
+      GeometricShapeType of a line or a chart will return null. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: geometricShapeType
+    fullName: geometricShapeType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'geometricShapeType?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.group
+    summary: >-
+      For EACH ITEM in the collection: Returns the shape group for the shape object. Error will be thrown, if the shape
+      object is other shape type (Like, Image, SmartArt, etc.) rather than GroupShape. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: group
+    fullName: group
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'group?: Excel.Interfaces.ShapeGroupLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ShapeGroupLoadOptions
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.height
+    summary: >-
+      For EACH ITEM in the collection: Represents the height, in points, of the shape. Throws an invalid argument
+      exception when set with negative value or zero as input. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.id
+    summary: >-
+      For EACH ITEM in the collection: Represents the shape identifier. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.image
+    summary: >-
+      For EACH ITEM in the collection: Returns the image for the shape object. Error will be thrown, if the shape object
+      is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: image
+    fullName: image
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'image?: Excel.Interfaces.ImageLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ImageLoadOptions
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.left
+    summary: >-
+      For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the left of the
+      worksheet. Throws an invalid argument exception when set with negative value as input. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.level
+    summary: >-
+      For EACH ITEM in the collection: Represents the level of the specified shape. Level 0 means the shape is not part
+      of any group, level 1 means the shape is part of a top-level group, etc. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'level?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.line
+    summary: >-
+      For EACH ITEM in the collection: Returns the line object for the shape object. Error will be thrown, if the shape
+      object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line?: Excel.Interfaces.LineLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.LineLoadOptions
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.lineFormat
+    summary: >-
+      For EACH ITEM in the collection: Returns the line formatting of the shape object. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: lineFormat
+    fullName: lineFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lineFormat?: Excel.Interfaces.ShapeLineFormatLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ShapeLineFormatLoadOptions
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.lockAspectRatio
+    summary: >-
+      For EACH ITEM in the collection: Represents if the aspect ratio locked, in boolean, of the shape. \[ [API set:
+      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: lockAspectRatio
+    fullName: lockAspectRatio
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lockAspectRatio?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.name
+    summary: >-
+      For EACH ITEM in the collection: Represents the name of the shape. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.parentGroup
+    summary: >-
+      For EACH ITEM in the collection: Represents the parent group of the specified shape. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: parentGroup
+    fullName: parentGroup
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentGroup?: Excel.Interfaces.ShapeLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ShapeLoadOptions
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.placement
+    summary: >-
+      For EACH ITEM in the collection: Represents the placment, value that represents the way the object is attached to
+      the cells below it. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: placement
+    fullName: placement
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'placement?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.rotation
+    summary: >-
+      For EACH ITEM in the collection: Represents the rotation, in degrees, of the shape. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: rotation
+    fullName: rotation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rotation?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.textFrame
+    summary: >-
+      For EACH ITEM in the collection: Returns the textFrame object of a shape. Read only. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: textFrame
+    fullName: textFrame
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textFrame?: Excel.Interfaces.TextFrameLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TextFrameLoadOptions
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.top
+    summary: >-
+      For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the top of the
+      worksheet. Throws an invalid argument exception when set with negative value as input. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.type
+    summary: >-
+      For EACH ITEM in the collection: Returns the type of the specified shape. Read-only. See Excel.ShapeType for
+      detail. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.visible
+    summary: >-
+      For EACH ITEM in the collection: Represents the visibility, in boolean, of the specified shape. \[ [API set:
+      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.width
+    summary: >-
+      For EACH ITEM in the collection: Represents the width, in points, of the shape. Throws an invalid argument
+      exception when set with negative value or zero as input. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions.zorderPosition
+    summary: >-
+      For EACH ITEM in the collection: Returns the position of the specified shape in the z-order, the very bottom
+      shape's z-order value is 0. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: zorderPosition
+    fullName: zorderPosition
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'zorderPosition?: boolean;'
+      return:
+        type:
+          - boolean

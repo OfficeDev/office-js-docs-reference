@@ -1,0 +1,73 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.HyperlinkLoadOptions
+    summary: >-
+      Represents the Hyperlink. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: Visio.Interfaces.HyperlinkLoadOptions
+    fullName: Visio.Interfaces.HyperlinkLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.HyperlinkLoadOptions.address
+      - visio.Visio.Interfaces.HyperlinkLoadOptions.description
+      - visio.Visio.Interfaces.HyperlinkLoadOptions.extraInfo
+      - visio.Visio.Interfaces.HyperlinkLoadOptions.subAddress
+  - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.address
+    summary: >-
+      Gets the address of the Hyperlink object. Read-only. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.description
+    summary: >-
+      Gets the description of a hyperlink. Read-only. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: description
+    fullName: description
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'description?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.extraInfo
+    summary: >-
+      Gets the extra URL request information used to resolve the hyperlink's URL. Read-only. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: extraInfo
+    fullName: extraInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'extraInfo?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.subAddress
+    summary: >-
+      Gets the sub-address of the Hyperlink object. Read-only. \[ [API set:
+      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: subAddress
+    fullName: subAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subAddress?: boolean;'
+      return:
+        type:
+          - boolean

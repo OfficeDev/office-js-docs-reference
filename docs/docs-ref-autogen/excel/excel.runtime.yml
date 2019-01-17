@@ -33,7 +33,7 @@ items:
           - RequestContext
   - uid: excel.Excel.Runtime.enableEvents
     summary: >-
-      Turn on/off JavaScript events in current taskpane or content add-in. \[ [API set: ExcelApi
+      Toggle JavaScript events in the current task pane or content add-in. \[ [API set: ExcelApi
       1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableEvents
     fullName: enableEvents
@@ -74,6 +74,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Runtime` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Runtime` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -90,16 +94,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Runtime;'
+      content: 'load(option?: Excel.Interfaces.RuntimeLoadOptions): Excel.Runtime;'
       return:
         type:
           - excel.Excel.Runtime
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.RuntimeLoadOptions
   - uid: excel.Excel.Runtime.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

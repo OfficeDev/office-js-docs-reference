@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ChartUnderlineStyle
+    name: Excel.ChartUnderlineStyle
+    fullName: Excel.ChartUnderlineStyle
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ChartUnderlineStyle.none
+      - excel_release.Excel.ChartUnderlineStyle.single
+  - uid: excel_release.Excel.ChartUnderlineStyle.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel_release.Excel.ChartUnderlineStyle.single
+    name: single
+    fullName: single
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Single"'

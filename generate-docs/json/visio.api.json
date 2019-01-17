@@ -29,7 +29,7 @@
           "members": {
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.Application;",
+              "signature": "load(option?: Visio.Interfaces.ApplicationLoadOptions): Visio.Application;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -40,15 +40,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.ApplicationLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -62,6 +57,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.Application",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -367,7 +374,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.Comment;",
+              "signature": "load(option?: Visio.Interfaces.CommentLoadOptions): Visio.Comment;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -378,15 +385,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.CommentLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -400,6 +402,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.Comment",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -573,7 +587,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.CommentCollection;",
+              "signature": "load(option?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.CommentCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -584,15 +598,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -606,6 +615,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.CommentCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -781,7 +802,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.Document;",
+              "signature": "load(option?: Visio.Interfaces.DocumentLoadOptions): Visio.Document;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -792,15 +813,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.DocumentLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -814,6 +830,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.Document",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1236,7 +1264,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.DocumentView;",
+              "signature": "load(option?: Visio.Interfaces.DocumentViewLoadOptions): Visio.DocumentView;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1247,15 +1275,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.DocumentViewLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -1269,6 +1292,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.DocumentView",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1519,7 +1554,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.Hyperlink;",
+              "signature": "load(option?: Visio.Interfaces.HyperlinkLoadOptions): Visio.Hyperlink;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1530,15 +1565,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.HyperlinkLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -1552,6 +1582,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.Hyperlink",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1725,7 +1767,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.HyperlinkCollection;",
+              "signature": "load(option?: Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.HyperlinkCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1736,15 +1778,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -1758,6 +1795,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.HyperlinkCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -1877,6 +1926,66 @@
                 }
               }
             },
+            "ApplicationLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Application. [Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "showBorders": {
+                  "kind": "property",
+                  "signature": "showBorders?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Show or hide the iFrame application borders. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "showToolbars": {
+                  "kind": "property",
+                  "signature": "showToolbars?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Show or hide the standard toolbars. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
             "ApplicationUpdateData": {
               "kind": "interface",
               "extends": "",
@@ -1937,6 +2046,23 @@
                 }
               }
             },
+            "CollectionLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Provides ways to load properties of only a subset of members of a collection."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {}
+            },
             "CommentCollectionData": {
               "kind": "interface",
               "extends": "",
@@ -1962,6 +2088,87 @@
                   "type": "Visio.Interfaces.CommentData[]",
                   "deprecatedMessage": [],
                   "summary": [],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
+            "CommentCollectionLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the CommentCollection for a given Shape. [Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "author": {
+                  "kind": "property",
+                  "signature": "author?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: A string that specifies the name of the author of the comment. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "date": {
+                  "kind": "property",
+                  "signature": "date?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: A string that specifies the date when the comment was created. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "text": {
+                  "kind": "property",
+                  "signature": "text?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: A string that contains the comment text. [Api set: 1.1]"
+                    }
+                  ],
                   "remarks": [],
                   "isBeta": false,
                   "isSealed": false,
@@ -2070,6 +2277,87 @@
                   "isReadOnly": false,
                   "isStatic": false,
                   "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that contains the comment text. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
+            "CommentLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Comment. [Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "author": {
+                  "kind": "property",
+                  "signature": "author?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the name of the author of the comment. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "date": {
+                  "kind": "property",
+                  "signature": "date?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the date when the comment was created. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "text": {
+                  "kind": "property",
+                  "signature": "text?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
                   "deprecatedMessage": [],
                   "summary": [
                     {
@@ -2248,6 +2536,66 @@
                 }
               }
             },
+            "DocumentLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Document class. [Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "application": {
+                  "kind": "property",
+                  "signature": "application?: Visio.Interfaces.ApplicationLoadOptions;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ApplicationLoadOptions",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Represents a Visio application instance that contains this document. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.DocumentViewLoadOptions;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.DocumentViewLoadOptions",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the DocumentView object. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
             "DocumentUpdateData": {
               "kind": "interface",
               "extends": "",
@@ -2318,6 +2666,108 @@
                 {
                   "kind": "text",
                   "text": "An interface describing the data returned by calling \"documentView.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "disableHyperlinks": {
+                  "kind": "property",
+                  "signature": "disableHyperlinks?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Hyperlinks. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "disablePan": {
+                  "kind": "property",
+                  "signature": "disablePan?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Pan. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "disableZoom": {
+                  "kind": "property",
+                  "signature": "disableZoom?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Zoom. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "hideDiagramBoundary": {
+                  "kind": "property",
+                  "signature": "hideDiagramBoundary?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Hide Diagram Boundary. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
+            "DocumentViewLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the DocumentView class. [Api set: 1.1]"
                 }
               ],
               "remarks": [],
@@ -2546,6 +2996,108 @@
                 }
               }
             },
+            "HyperlinkCollectionLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Hyperlink Collection. [Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "address": {
+                  "kind": "property",
+                  "signature": "address?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Gets the address of the Hyperlink object. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "description": {
+                  "kind": "property",
+                  "signature": "description?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Gets the description of a hyperlink. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "extraInfo": {
+                  "kind": "property",
+                  "signature": "extraInfo?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Gets the extra URL request information used to resolve the hyperlink's URL. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "subAddress": {
+                  "kind": "property",
+                  "signature": "subAddress?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Gets the sub-address of the Hyperlink object. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
             "HyperlinkCollectionUpdateData": {
               "kind": "interface",
               "extends": "",
@@ -2682,6 +3234,108 @@
                 }
               }
             },
+            "HyperlinkLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Hyperlink. [Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "address": {
+                  "kind": "property",
+                  "signature": "address?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Gets the address of the Hyperlink object. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "description": {
+                  "kind": "property",
+                  "signature": "description?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Gets the description of a hyperlink. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "extraInfo": {
+                  "kind": "property",
+                  "signature": "extraInfo?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Gets the extra URL request information used to resolve the hyperlink's URL. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "subAddress": {
+                  "kind": "property",
+                  "signature": "subAddress?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Gets the sub-address of the Hyperlink object. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
             "PageCollectionData": {
               "kind": "interface",
               "extends": "",
@@ -2707,6 +3361,150 @@
                   "type": "Visio.Interfaces.PageData[]",
                   "deprecatedMessage": [],
                   "summary": [],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
+            "PageCollectionLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents a collection of Page objects that are part of the document. [Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "height": {
+                  "kind": "property",
+                  "signature": "height?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Returns the height of the page. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "index": {
+                  "kind": "property",
+                  "signature": "index?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Index of the Page. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "isBackground": {
+                  "kind": "property",
+                  "signature": "isBackground?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Whether the page is a background page or not. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "name": {
+                  "kind": "property",
+                  "signature": "name?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Page name. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.PageViewLoadOptions;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.PageViewLoadOptions",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Returns the view of the page. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "width": {
+                  "kind": "property",
+                  "signature": "width?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Returns the width of the page. Read-only. [Api set: 1.1]"
+                    }
+                  ],
                   "remarks": [],
                   "isBeta": false,
                   "isSealed": false,
@@ -2957,6 +3755,150 @@
                 }
               }
             },
+            "PageLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Page class. [Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "height": {
+                  "kind": "property",
+                  "signature": "height?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the height of the page. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "index": {
+                  "kind": "property",
+                  "signature": "index?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Index of the Page. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "isBackground": {
+                  "kind": "property",
+                  "signature": "isBackground?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Whether the page is a background page or not. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "name": {
+                  "kind": "property",
+                  "signature": "name?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Page name. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.PageViewLoadOptions;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.PageViewLoadOptions",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the view of the page. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "width": {
+                  "kind": "property",
+                  "signature": "width?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the width of the page. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
             "PageUpdateData": {
               "kind": "interface",
               "extends": "",
@@ -3019,6 +3961,45 @@
                   "isReadOnly": false,
                   "isStatic": false,
                   "type": "number",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
+            "PageViewLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the PageView class. [Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "zoom": {
+                  "kind": "property",
+                  "signature": "zoom?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
                   "deprecatedMessage": [],
                   "summary": [
                     {
@@ -3138,6 +4119,129 @@
                   "type": "Visio.Interfaces.ShapeData[]",
                   "deprecatedMessage": [],
                   "summary": [],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
+            "ShapeCollectionLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Shape Collection. [Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "id": {
+                  "kind": "property",
+                  "signature": "id?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Shape's identifier. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "name": {
+                  "kind": "property",
+                  "signature": "name?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Shape's name. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "select": {
+                  "kind": "property",
+                  "signature": "select?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Returns true, if shape is selected. User can set true to select the shape explicitly. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "text": {
+                  "kind": "property",
+                  "signature": "text?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Shape's text. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.ShapeViewLoadOptions;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeViewLoadOptions",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Returns the view of the shape. [Api set: 1.1]"
+                    }
+                  ],
                   "remarks": [],
                   "isBeta": false,
                   "isSealed": false,
@@ -3422,6 +4526,108 @@
                 }
               }
             },
+            "ShapeDataItemCollectionLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the ShapeDataItemCollection for a given Shape. [Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "format": {
+                  "kind": "property",
+                  "signature": "format?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: A string that specifies the format of the shape data item. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "formattedValue": {
+                  "kind": "property",
+                  "signature": "formattedValue?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: A string that specifies the formatted value of the shape data item. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "label": {
+                  "kind": "property",
+                  "signature": "label?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: A string that specifies the label of the shape data item. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "value": {
+                  "kind": "property",
+                  "signature": "value?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: A string that specifies the value of the shape data item. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
             "ShapeDataItemCollectionUpdateData": {
               "kind": "interface",
               "extends": "",
@@ -3558,6 +4764,231 @@
                 }
               }
             },
+            "ShapeDataItemLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the ShapeDataItem. [Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "format": {
+                  "kind": "property",
+                  "signature": "format?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the format of the shape data item. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "formattedValue": {
+                  "kind": "property",
+                  "signature": "formattedValue?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the formatted value of the shape data item. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "label": {
+                  "kind": "property",
+                  "signature": "label?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the label of the shape data item. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "value": {
+                  "kind": "property",
+                  "signature": "value?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the value of the shape data item. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
+            "ShapeLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Shape class. [Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "id": {
+                  "kind": "property",
+                  "signature": "id?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Shape's identifier. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "name": {
+                  "kind": "property",
+                  "signature": "name?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Shape's name. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "select": {
+                  "kind": "property",
+                  "signature": "select?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns true, if shape is selected. User can set true to select the shape explicitly. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "text": {
+                  "kind": "property",
+                  "signature": "text?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Shape's text. Read-only. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.ShapeViewLoadOptions;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeViewLoadOptions",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the view of the shape. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
             "ShapeUpdateData": {
               "kind": "interface",
               "extends": "",
@@ -3641,6 +5072,45 @@
                   "isReadOnly": false,
                   "isStatic": false,
                   "type": "Visio.Highlight",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Represents the highlight around the shape. [Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false,
+                  "isEventProperty": false
+                }
+              }
+            },
+            "ShapeViewLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the ShapeView class. [Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "highlight": {
+                  "kind": "property",
+                  "signature": "highlight?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
                   "deprecatedMessage": [],
                   "summary": [
                     {
@@ -3991,7 +5461,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.Page;",
+              "signature": "load(option?: Visio.Interfaces.PageLoadOptions): Visio.Page;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4002,15 +5472,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.PageLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -4024,6 +5489,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.Page",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -4260,7 +5737,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.PageCollection;",
+              "signature": "load(option?: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.PageCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4271,15 +5748,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -4293,6 +5765,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.PageCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -4629,7 +6113,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.PageView;",
+              "signature": "load(option?: Visio.Interfaces.PageViewLoadOptions): Visio.PageView;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4640,15 +6124,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.PageViewLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -4662,6 +6141,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.PageView",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5007,12 +6498,7 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "string | string[]"
@@ -5029,6 +6515,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.Selection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5267,7 +6765,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.Shape;",
+              "signature": "load(option?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5278,15 +6776,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.ShapeLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -5300,6 +6793,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.Shape",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5578,7 +7083,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.ShapeCollection;",
+              "signature": "load(option?: Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.ShapeCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5589,15 +7094,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -5611,6 +7111,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.ShapeCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5744,7 +7256,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.ShapeDataItem;",
+              "signature": "load(option?: Visio.Interfaces.ShapeDataItemLoadOptions): Visio.ShapeDataItem;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5755,15 +7267,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.ShapeDataItemLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -5777,6 +7284,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.ShapeDataItem",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -5950,7 +7469,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.ShapeDataItemCollection;",
+              "signature": "load(option?: Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.ShapeDataItemCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5961,15 +7480,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -5983,6 +7497,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.ShapeDataItemCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"
@@ -6291,7 +7817,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(option?: string | string[]): Visio.ShapeView;",
+              "signature": "load(option?: Visio.Interfaces.ShapeViewLoadOptions): Visio.ShapeView;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6302,15 +7828,10 @@
               "parameters": {
                 "option": {
                   "name": "option",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "A comma-delimited string or an array of strings that specify the properties to load."
-                    }
-                  ],
+                  "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[]"
+                  "type": "Visio.Interfaces.ShapeViewLoadOptions"
                 }
               },
               "deprecatedMessage": [],
@@ -6324,6 +7845,18 @@
                 {
                   "kind": "text",
                   "text": "In addition to this signature, this method has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "load(option?: string | string[]): Visio.ShapeView",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " - Where option is a comma-delimited string or an array of strings that specify the properties to load."
                 },
                 {
                   "kind": "paragraph"

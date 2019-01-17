@@ -73,6 +73,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.PivotField` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.PivotField` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -89,16 +93,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.PivotField;'
+      content: 'load(option?: Excel.Interfaces.PivotFieldLoadOptions): Excel.PivotField;'
       return:
         type:
           - excel.Excel.PivotField
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.PivotFieldLoadOptions
   - uid: excel.Excel.PivotField.name
     summary: >-
       Name of the PivotField. \[ [API set: ExcelApi
@@ -147,7 +151,7 @@ items:
         - id: sortby
           description: Represents whether the sorting is done in an ascending or descending order.
           type:
-            - excel.Excel.SortBy
+            - SortBy
   - uid: excel.Excel.PivotField.sortByValues
     summary: >-
       Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to

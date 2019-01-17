@@ -1,0 +1,474 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData
+    summary: 'An interface for updating data on the ChartAxis object, for use in "chartAxis.set({ ... })".'
+    name: Excel.Interfaces.ChartAxisUpdateData
+    fullName: Excel.Interfaces.ChartAxisUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.alignment
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.baseTimeUnit
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.categoryType
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.displayUnit
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.format
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.isBetweenCategories
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.logBase
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.majorGridlines
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.majorTickMark
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.majorTimeUnitScale
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.majorUnit
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.maximum
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.minimum
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.minorGridlines
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.minorTickMark
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.minorTimeUnitScale
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.minorUnit
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.multiLevel
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.numberFormat
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.offset
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.position
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.reversePlotOrder
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.scaleType
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.showDisplayUnitLabel
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.textOrientation
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.tickLabelPosition
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.tickLabelSpacing
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.tickMarkSpacing
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.title
+      - excel_release.Excel.Interfaces.ChartAxisUpdateData.visible
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.alignment
+    summary: >-
+      Represents the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail. \[
+      [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: alignment
+    fullName: alignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'alignment?: Excel.ChartTickLabelAlignment | "Center" | "Left" | "Right";'
+      return:
+        type:
+          - Excel.ChartTickLabelAlignment | "Center" | "Left" | "Right"
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.baseTimeUnit
+    summary: >-
+      Returns or sets the base unit for the specified category axis. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: baseTimeUnit
+    fullName: baseTimeUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'baseTimeUnit?: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
+      return:
+        type:
+          - Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.categoryType
+    summary: >-
+      Returns or sets the category axis type. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: categoryType
+    fullName: categoryType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'categoryType?: Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis";'
+      return:
+        type:
+          - Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis"
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.displayUnit
+    summary: >-
+      Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: displayUnit
+    fullName: displayUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        displayUnit?: Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" |
+        "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom";
+      return:
+        type:
+          - >-
+            Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" |
+            "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.format
+    summary: >-
+      Represents the formatting of a chart object, which includes line and font formatting. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartAxisFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAxisFormatUpdateData
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.isBetweenCategories
+    summary: >-
+      Represents whether value axis crosses the category axis between categories. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isBetweenCategories
+    fullName: isBetweenCategories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isBetweenCategories?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.logBase
+    summary: >-
+      Represents the base of the logarithm when using logarithmic scales. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: logBase
+    fullName: logBase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'logBase?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.majorGridlines
+    summary: >-
+      Returns a Gridlines object that represents the major gridlines for the specified axis. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: majorGridlines
+    fullName: majorGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartGridlinesUpdateData
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.majorTickMark
+    summary: >-
+      Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details. \[ [API
+      set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: majorTickMark
+    fullName: majorTickMark
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'majorTickMark?: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";'
+      return:
+        type:
+          - Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.majorTimeUnitScale
+    summary: >-
+      Returns or sets the major unit scale value for the category axis when the CategoryType property is set to
+      TimeScale. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    name: majorTimeUnitScale
+    fullName: majorTimeUnitScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'majorTimeUnitScale?: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
+      return:
+        type:
+          - Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.majorUnit
+    summary: >-
+      Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
+      returned value is always a number. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: majorUnit
+    fullName: majorUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'majorUnit?: any;'
+      return:
+        type:
+          - any
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.maximum
+    summary: >-
+      Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: maximum
+    fullName: maximum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maximum?: any;'
+      return:
+        type:
+          - any
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.minimum
+    summary: >-
+      Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minimum
+    fullName: minimum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minimum?: any;'
+      return:
+        type:
+          - any
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.minorGridlines
+    summary: >-
+      Returns a Gridlines object that represents the minor gridlines for the specified axis. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minorGridlines
+    fullName: minorGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartGridlinesUpdateData
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.minorTickMark
+    summary: >-
+      Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details. \[ [API
+      set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minorTickMark
+    fullName: minorTickMark
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minorTickMark?: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";'
+      return:
+        type:
+          - Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.minorTimeUnitScale
+    summary: >-
+      Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to
+      TimeScale. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
+    name: minorTimeUnitScale
+    fullName: minorTimeUnitScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minorTimeUnitScale?: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
+      return:
+        type:
+          - Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.minorUnit
+    summary: >-
+      Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
+      automatic axis values). The returned value is always a number. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minorUnit
+    fullName: minorUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minorUnit?: any;'
+      return:
+        type:
+          - any
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.multiLevel
+    summary: >-
+      Represents whether an axis is multilevel or not. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: multiLevel
+    fullName: multiLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'multiLevel?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.numberFormat
+    summary: >-
+      Represents the format code for the axis tick label. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.offset
+    summary: >-
+      Represents the distance between the levels of labels, and the distance between the first level and the axis line.
+      The value should be an integer from 0 to 1000. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: offset
+    fullName: offset
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'offset?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.position
+    summary: >-
+      Represents the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details. \[
+      [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position?: Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom";'
+      return:
+        type:
+          - Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom"
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.reversePlotOrder
+    summary: >-
+      Represents whether Microsoft Excel plots data points from last to first. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: reversePlotOrder
+    fullName: reversePlotOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'reversePlotOrder?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.scaleType
+    summary: >-
+      Represents the value axis scale type. See Excel.ChartAxisScaleType for details. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: scaleType
+    fullName: scaleType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'scaleType?: Excel.ChartAxisScaleType | "Linear" | "Logarithmic";'
+      return:
+        type:
+          - Excel.ChartAxisScaleType | "Linear" | "Logarithmic"
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.showDisplayUnitLabel
+    summary: >-
+      Represents whether the axis display unit label is visible. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showDisplayUnitLabel
+    fullName: showDisplayUnitLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showDisplayUnitLabel?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.textOrientation
+    summary: >-
+      Represents the text orientation of the axis tick label. The value should be an integer either from -90 to 90, or
+      180 for vertically-oriented text. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation?: any;'
+      return:
+        type:
+          - any
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.tickLabelPosition
+    summary: >-
+      Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
+      details. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tickLabelPosition
+    fullName: tickLabelPosition
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tickLabelPosition?: Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None";'
+      return:
+        type:
+          - Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None"
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.tickLabelSpacing
+    summary: >-
+      Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
+      empty string for automatic setting. The returned value is always a number. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tickLabelSpacing
+    fullName: tickLabelSpacing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tickLabelSpacing?: any;'
+      return:
+        type:
+          - any
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.tickMarkSpacing
+    summary: >-
+      Represents the number of categories or series between tick marks. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tickMarkSpacing
+    fullName: tickMarkSpacing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tickMarkSpacing?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.title
+    summary: >-
+      Represents the axis title. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: Excel.Interfaces.ChartAxisTitleUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAxisTitleUpdateData
+  - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.visible
+    summary: >-
+      A boolean value represents the visibility of the axis. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

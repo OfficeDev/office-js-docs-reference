@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.NoteTagLoadOptions
+    summary: >-
+      A container for the NoteTag in a paragraph. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.NoteTagLoadOptions
+    fullName: OneNote.Interfaces.NoteTagLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.NoteTagLoadOptions.id
+      - onenote.OneNote.Interfaces.NoteTagLoadOptions.status
+      - onenote.OneNote.Interfaces.NoteTagLoadOptions.type
+  - uid: onenote.OneNote.Interfaces.NoteTagLoadOptions.id
+    summary: >-
+      Gets the Id of the NoteTag object. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.NoteTagLoadOptions.status
+    summary: >-
+      Gets the status of the NoteTag object. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: status
+    fullName: status
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'status?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.NoteTagLoadOptions.type
+    summary: >-
+      Gets the type of the NoteTag object. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type:
+          - boolean

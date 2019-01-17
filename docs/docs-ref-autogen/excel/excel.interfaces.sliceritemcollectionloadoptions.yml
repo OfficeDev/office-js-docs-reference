@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions
+    summary: >-
+      Represents a collection of all the slicer item objects on the slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.SlicerItemCollectionLoadOptions
+    fullName: Excel.Interfaces.SlicerItemCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.hasData
+      - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.isSelected
+      - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.key
+      - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.name
+  - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.hasData
+    summary: >-
+      For EACH ITEM in the collection: True if the slicer item has data. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: hasData
+    fullName: hasData
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasData?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.isSelected
+    summary: >-
+      For EACH ITEM in the collection: True if the slicer item is selected. Setting this value will not clear other
+      SlicerItems' selected state. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: isSelected
+    fullName: isSelected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isSelected?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.key
+    summary: >-
+      For EACH ITEM in the collection: Represents the unique value representing the slicer item. \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.name
+    summary: >-
+      For EACH ITEM in the collection: Represents the value displayed on UI. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean

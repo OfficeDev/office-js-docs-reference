@@ -13,7 +13,7 @@ items:
       - excel.Excel.ShowAsRule.calculation
   - uid: excel.Excel.ShowAsRule.baseField
     summary: >-
-      The Base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.
+      The base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: baseField
     fullName: baseField
@@ -27,7 +27,7 @@ items:
           - excel.Excel.PivotField
   - uid: excel.Excel.ShowAsRule.baseItem
     summary: >-
-      The Base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null. \[
+      The base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null. \[
       [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: baseItem
     fullName: baseItem

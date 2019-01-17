@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ShapeLineDashStyle
+    name: Excel.ShapeLineDashStyle
+    fullName: Excel.ShapeLineDashStyle
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ShapeLineDashStyle.dash
+      - excel.Excel.ShapeLineDashStyle.dashDot
+      - excel.Excel.ShapeLineDashStyle.dashDotDot
+      - excel.Excel.ShapeLineDashStyle.longDash
+      - excel.Excel.ShapeLineDashStyle.longDashDot
+      - excel.Excel.ShapeLineDashStyle.longDashDotDot
+      - excel.Excel.ShapeLineDashStyle.roundDot
+      - excel.Excel.ShapeLineDashStyle.solid
+      - excel.Excel.ShapeLineDashStyle.squareDot
+      - excel.Excel.ShapeLineDashStyle.systemDash
+      - excel.Excel.ShapeLineDashStyle.systemDashDot
+      - excel.Excel.ShapeLineDashStyle.systemDot
+  - uid: excel.Excel.ShapeLineDashStyle.dash
+    name: dash
+    fullName: dash
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dash"'
+  - uid: excel.Excel.ShapeLineDashStyle.dashDot
+    name: dashDot
+    fullName: dashDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashDot"'
+  - uid: excel.Excel.ShapeLineDashStyle.dashDotDot
+    name: dashDotDot
+    fullName: dashDotDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashDotDot"'
+  - uid: excel.Excel.ShapeLineDashStyle.longDash
+    name: longDash
+    fullName: longDash
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LongDash"'
+  - uid: excel.Excel.ShapeLineDashStyle.longDashDot
+    name: longDashDot
+    fullName: longDashDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LongDashDot"'
+  - uid: excel.Excel.ShapeLineDashStyle.longDashDotDot
+    name: longDashDotDot
+    fullName: longDashDotDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LongDashDotDot"'
+  - uid: excel.Excel.ShapeLineDashStyle.roundDot
+    name: roundDot
+    fullName: roundDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RoundDot"'
+  - uid: excel.Excel.ShapeLineDashStyle.solid
+    name: solid
+    fullName: solid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Solid"'
+  - uid: excel.Excel.ShapeLineDashStyle.squareDot
+    name: squareDot
+    fullName: squareDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SquareDot"'
+  - uid: excel.Excel.ShapeLineDashStyle.systemDash
+    name: systemDash
+    fullName: systemDash
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SystemDash"'
+  - uid: excel.Excel.ShapeLineDashStyle.systemDashDot
+    name: systemDashDot
+    fullName: systemDashDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SystemDashDot"'
+  - uid: excel.Excel.ShapeLineDashStyle.systemDot
+    name: systemDot
+    fullName: systemDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SystemDot"'

@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartLineFormatLoadOptions
+    summary: >-
+      Encapsulates the formatting options for line elements. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartLineFormatLoadOptions
+    fullName: Excel.Interfaces.ChartLineFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartLineFormatLoadOptions.color
+      - excel.Excel.Interfaces.ChartLineFormatLoadOptions.lineStyle
+      - excel.Excel.Interfaces.ChartLineFormatLoadOptions.weight
+  - uid: excel.Excel.Interfaces.ChartLineFormatLoadOptions.color
+    summary: >-
+      HTML color code representing the color of lines in the chart. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLineFormatLoadOptions.lineStyle
+    summary: >-
+      Represents the line style. See Excel.ChartLineStyle for details. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: lineStyle
+    fullName: lineStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lineStyle?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLineFormatLoadOptions.weight
+    summary: >-
+      Represents weight of the line, in points. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: boolean;'
+      return:
+        type:
+          - boolean

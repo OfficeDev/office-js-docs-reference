@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions
+    summary: >-
+      This object represents the attributes for chart error bars object. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.ChartErrorBarsLoadOptions
+    fullName: Excel.Interfaces.ChartErrorBarsLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.endStyleCap
+      - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.format
+      - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.include
+      - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.type
+      - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.visible
+  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.endStyleCap
+    summary: >-
+      Represents whether have the end style cap for the error bars. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: endStyleCap
+    fullName: endStyleCap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endStyleCap?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.format
+    summary: >-
+      Represents the formatting of chart ErrorBars. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartErrorBarsFormatLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions
+  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.include
+    summary: >-
+      Represents which error-bar parts to include. See Excel.ChartErrorBarsInclude for details. \[ [API set: ExcelApi
+      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: include
+    fullName: include
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'include?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.type
+    summary: >-
+      Represents the range marked by error bars. See Excel.ChartErrorBarsType for details. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.visible
+    summary: >-
+      Represents whether shown error bars. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

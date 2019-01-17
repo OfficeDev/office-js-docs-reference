@@ -262,6 +262,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartAxis` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartAxis` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -323,16 +327,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartAxis;'
+      content: 'load(option?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;'
       return:
         type:
           - excel.Excel.ChartAxis
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartAxisLoadOptions
   - uid: excel.Excel.ChartAxis.logBase
     summary: >-
       Represents the base of the logarithm when using logarithmic scales. \[ [API set: ExcelApi
@@ -552,8 +556,8 @@ items:
           - Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom"
   - uid: excel.Excel.ChartAxis.positionAt
     summary: >-
-      Represents the specified axis position where the other axis crosses at. Read Only. Set to this property should use
-      SetPositionAt(double) method. \[ [API set: ExcelApi
+      Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double)
+      method to set this property. \[ [API set: ExcelApi
       1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: positionAt
     fullName: positionAt

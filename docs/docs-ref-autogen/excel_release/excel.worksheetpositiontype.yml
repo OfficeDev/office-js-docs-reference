@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.WorksheetPositionType
+    name: Excel.WorksheetPositionType
+    fullName: Excel.WorksheetPositionType
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.WorksheetPositionType.after
+      - excel_release.Excel.WorksheetPositionType.before
+      - excel_release.Excel.WorksheetPositionType.beginning
+      - excel_release.Excel.WorksheetPositionType.end
+      - excel_release.Excel.WorksheetPositionType.none
+  - uid: excel_release.Excel.WorksheetPositionType.after
+    name: after
+    fullName: after
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"After"'
+  - uid: excel_release.Excel.WorksheetPositionType.before
+    name: before
+    fullName: before
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Before"'
+  - uid: excel_release.Excel.WorksheetPositionType.beginning
+    name: beginning
+    fullName: beginning
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Beginning"'
+  - uid: excel_release.Excel.WorksheetPositionType.end
+    name: end
+    fullName: end
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"End"'
+  - uid: excel_release.Excel.WorksheetPositionType.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'

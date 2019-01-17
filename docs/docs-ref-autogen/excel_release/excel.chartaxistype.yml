@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ChartAxisType
+    name: Excel.ChartAxisType
+    fullName: Excel.ChartAxisType
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ChartAxisType.category
+      - excel_release.Excel.ChartAxisType.invalid
+      - excel_release.Excel.ChartAxisType.series
+      - excel_release.Excel.ChartAxisType.value
+  - uid: excel_release.Excel.ChartAxisType.category
+    summary: Axis displays categories.
+    name: category
+    fullName: category
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Category"'
+  - uid: excel_release.Excel.ChartAxisType.invalid
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: excel_release.Excel.ChartAxisType.series
+    summary: Axis displays data series.
+    name: series
+    fullName: series
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Series"'
+  - uid: excel_release.Excel.ChartAxisType.value
+    summary: Axis displays values.
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Value"'

@@ -1,0 +1,395 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ChartDataLabel
+    summary: >-
+      Represents the data label of a chart point. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartDataLabel
+    fullName: Excel.ChartDataLabel
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: excel_release
+    children:
+      - excel_release.Excel.ChartDataLabel.autoText
+      - excel_release.Excel.ChartDataLabel.context
+      - excel_release.Excel.ChartDataLabel.format
+      - excel_release.Excel.ChartDataLabel.formula
+      - excel_release.Excel.ChartDataLabel.height
+      - excel_release.Excel.ChartDataLabel.horizontalAlignment
+      - excel_release.Excel.ChartDataLabel.left
+      - excel_release.Excel.ChartDataLabel.load
+      - excel_release.Excel.ChartDataLabel.numberFormat
+      - excel_release.Excel.ChartDataLabel.position
+      - excel_release.Excel.ChartDataLabel.separator
+      - excel_release.Excel.ChartDataLabel.showBubbleSize
+      - excel_release.Excel.ChartDataLabel.showCategoryName
+      - excel_release.Excel.ChartDataLabel.showLegendKey
+      - excel_release.Excel.ChartDataLabel.showPercentage
+      - excel_release.Excel.ChartDataLabel.showSeriesName
+      - excel_release.Excel.ChartDataLabel.showValue
+      - excel_release.Excel.ChartDataLabel.text
+      - excel_release.Excel.ChartDataLabel.textOrientation
+      - excel_release.Excel.ChartDataLabel.toJSON
+      - excel_release.Excel.ChartDataLabel.top
+      - excel_release.Excel.ChartDataLabel.verticalAlignment
+      - excel_release.Excel.ChartDataLabel.width
+  - uid: excel_release.Excel.ChartDataLabel.autoText
+    summary: >-
+      Boolean value representing if data label automatically generates appropriate text based on context. \[ [API set:
+      ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoText
+    fullName: autoText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoText: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.ChartDataLabel.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: excel_release.Excel.ChartDataLabel.format
+    summary: >-
+      Represents the format of chart data label. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartDataLabelFormat;'
+      return:
+        type:
+          - excel.Excel.ChartDataLabelFormat
+  - uid: excel_release.Excel.ChartDataLabel.formula
+    summary: >-
+      String value that represents the formula of chart data label using A1-style notation. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.ChartDataLabel.height
+    summary: >-
+      Returns the height, in points, of the chart data label. Read-only. Null if chart data label is not visible. \[
+      [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.ChartDataLabel.horizontalAlignment
+    summary: >-
+      Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This
+      property is valid only when TextOrientation of data label is 90, -90 or 180. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" |
+        "Distributed";
+      return:
+        type:
+          - Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+  - uid: excel_release.Excel.ChartDataLabel.left
+    summary: >-
+      Represents the distance, in points, from the left edge of chart data label to the left edge of chart area. Null if
+      chart data label is not visible. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.ChartDataLabel.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabel` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartDataLabel` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.ChartDataLabel;'
+      return:
+        type:
+          - excel.Excel.ChartDataLabel
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.ChartDataLabel.numberFormat
+    summary: >-
+      String value that represents the format code for data label. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.ChartDataLabel.position
+    summary: >-
+      DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
+      details. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        position: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" |
+        "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
+      return:
+        type:
+          - >-
+            Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" |
+            "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
+  - uid: excel_release.Excel.ChartDataLabel.separator
+    summary: >-
+      String representing the separator used for the data label on a chart. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: separator
+    fullName: separator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'separator: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.ChartDataLabel.showBubbleSize
+    summary: >-
+      Boolean value representing if the data label bubble size is visible or not. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showBubbleSize
+    fullName: showBubbleSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBubbleSize: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.ChartDataLabel.showCategoryName
+    summary: >-
+      Boolean value representing if the data label category name is visible or not. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showCategoryName
+    fullName: showCategoryName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showCategoryName: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.ChartDataLabel.showLegendKey
+    summary: >-
+      Boolean value representing if the data label legend key is visible or not. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showLegendKey
+    fullName: showLegendKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showLegendKey: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.ChartDataLabel.showPercentage
+    summary: >-
+      Boolean value representing if the data label percentage is visible or not. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showPercentage
+    fullName: showPercentage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showPercentage: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.ChartDataLabel.showSeriesName
+    summary: >-
+      Boolean value representing if the data label series name is visible or not. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showSeriesName
+    fullName: showSeriesName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showSeriesName: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.ChartDataLabel.showValue
+    summary: >-
+      Boolean value representing if the data label value is visible or not. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showValue
+    fullName: showValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showValue: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.ChartDataLabel.text
+    summary: >-
+      String representing the text of the data label on a chart. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.ChartDataLabel.textOrientation
+    summary: >-
+      Represents the text orientation of chart data label. The value should be an integer either from -90 to 90, or 180
+      for vertically-oriented text. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.ChartDataLabel.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartDataLabel object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartDataLabelData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartDataLabelData
+        description: ''
+  - uid: excel_release.Excel.ChartDataLabel.top
+    summary: >-
+      Represents the distance, in points, from the top edge of chart data label to the top of chart area. Null if chart
+      data label is not visible. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.ChartDataLabel.verticalAlignment
+    summary: >-
+      Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details. This
+      property is valid only when TextOrientation of data label is 0. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";'
+      return:
+        type:
+          - Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
+  - uid: excel_release.Excel.ChartDataLabel.width
+    summary: >-
+      Returns the width, in points, of the chart data label. Read-only. Null if chart data label is not visible. \[ [API
+      set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number

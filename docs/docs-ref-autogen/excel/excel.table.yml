@@ -381,6 +381,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Table` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Table` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -463,16 +467,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Table;'
+      content: 'load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;'
       return:
         type:
           - excel.Excel.Table
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.TableLoadOptions
   - uid: excel.Excel.Table.name
     summary: >-
       Name of the table. \[ [API set: ExcelApi

@@ -58,6 +58,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.RangeBorder` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.RangeBorder` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -126,16 +130,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.RangeBorder;'
+      content: 'load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;'
       return:
         type:
           - excel.Excel.RangeBorder
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.RangeBorderLoadOptions
   - uid: excel.Excel.RangeBorder.sideIndex
     summary: >-
       Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only. \[

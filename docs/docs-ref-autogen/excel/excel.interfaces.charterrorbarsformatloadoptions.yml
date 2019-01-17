@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions
+    summary: >-
+      Encapsulates the format properties for chart error bars. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
+    fullName: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions.line
+  - uid: excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions.line
+    summary: >-
+      Represents chart line formatting. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartLineFormatLoadOptions

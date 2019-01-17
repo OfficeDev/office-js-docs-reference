@@ -1,0 +1,212 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions
+    summary: >-
+      Represents a slicer object in the workbook. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.SlicerLoadOptions
+    fullName: Excel.Interfaces.SlicerLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.SlicerLoadOptions.caption
+      - excel.Excel.Interfaces.SlicerLoadOptions.height
+      - excel.Excel.Interfaces.SlicerLoadOptions.id
+      - excel.Excel.Interfaces.SlicerLoadOptions.isFilterCleared
+      - excel.Excel.Interfaces.SlicerLoadOptions.left
+      - excel.Excel.Interfaces.SlicerLoadOptions.name
+      - excel.Excel.Interfaces.SlicerLoadOptions.nameInFormula
+      - excel.Excel.Interfaces.SlicerLoadOptions.sortBy
+      - excel.Excel.Interfaces.SlicerLoadOptions.style
+      - excel.Excel.Interfaces.SlicerLoadOptions.top
+      - excel.Excel.Interfaces.SlicerLoadOptions.width
+      - excel.Excel.Interfaces.SlicerLoadOptions.worksheet
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions.caption
+    summary: >-
+      Represents the caption of slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: caption
+    fullName: caption
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'caption?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions.height
+    summary: >-
+      Represents the height, in points, of the slicer. Throws an invalid argument exception when set with negative value
+      or zero as input. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions.id
+    summary: >-
+      Represents the unique id of slicer. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions.isFilterCleared
+    summary: >-
+      True if all filters currently applied on the slicer is cleared. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: isFilterCleared
+    fullName: isFilterCleared
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isFilterCleared?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions.left
+    summary: >-
+      Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an
+      invalid argument exception when set with negative value as input. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions.name
+    summary: >-
+      Represents the name of slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions.nameInFormula
+    summary: >-
+      Represents the name used in the formula. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: nameInFormula
+    fullName: nameInFormula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'nameInFormula?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions.sortBy
+    summary: >-
+      Represents the sort order of the items in the slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: sortBy
+    fullName: sortBy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sortBy?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions.style
+    summary: >-
+      Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6,
+      TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style
+      present in the workbook can also be specified. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions.top
+    summary: >-
+      Represents the distance, in points, from the top edge of the slicer to the right of the worksheet. Throws an
+      invalid argument exception when set with negative value as input. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions.width
+    summary: >-
+      Represents the width, in points, of the slicer. Throws an invalid argument exception when set with negative value
+      or zero as input. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions.worksheet
+    summary: >-
+      Represents the worksheet containing the slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorksheetLoadOptions

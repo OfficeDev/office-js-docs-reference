@@ -429,8 +429,8 @@ items:
           - Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom"
   - uid: excel.Excel.Interfaces.ChartAxisData.positionAt
     summary: >-
-      Represents the specified axis position where the other axis crosses at. Read Only. Set to this property should use
-      SetPositionAt(double) method. \[ [API set: ExcelApi
+      Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double)
+      method to set this property. \[ [API set: ExcelApi
       1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: positionAt
     fullName: positionAt

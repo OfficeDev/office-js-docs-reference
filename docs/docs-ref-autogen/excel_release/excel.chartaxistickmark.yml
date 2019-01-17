@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ChartAxisTickMark
+    name: Excel.ChartAxisTickMark
+    fullName: Excel.ChartAxisTickMark
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ChartAxisTickMark.cross
+      - excel_release.Excel.ChartAxisTickMark.inside
+      - excel_release.Excel.ChartAxisTickMark.none
+      - excel_release.Excel.ChartAxisTickMark.outside
+  - uid: excel_release.Excel.ChartAxisTickMark.cross
+    name: cross
+    fullName: cross
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Cross"'
+  - uid: excel_release.Excel.ChartAxisTickMark.inside
+    name: inside
+    fullName: inside
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Inside"'
+  - uid: excel_release.Excel.ChartAxisTickMark.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel_release.Excel.ChartAxisTickMark.outside
+    name: outside
+    fullName: outside
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Outside"'

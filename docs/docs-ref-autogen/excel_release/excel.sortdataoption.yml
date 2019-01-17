@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.SortDataOption
+    name: Excel.SortDataOption
+    fullName: Excel.SortDataOption
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.SortDataOption.normal
+      - excel_release.Excel.SortDataOption.textAsNumber
+  - uid: excel_release.Excel.SortDataOption.normal
+    name: normal
+    fullName: normal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Normal"'
+  - uid: excel_release.Excel.SortDataOption.textAsNumber
+    name: textAsNumber
+    fullName: textAsNumber
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TextAsNumber"'

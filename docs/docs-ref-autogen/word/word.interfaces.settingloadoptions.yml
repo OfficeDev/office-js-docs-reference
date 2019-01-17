@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.SettingLoadOptions
+    summary: >-
+      Represents a setting of the add-in. \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: Word.Interfaces.SettingLoadOptions
+    fullName: Word.Interfaces.SettingLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.SettingLoadOptions.key
+      - word.Word.Interfaces.SettingLoadOptions.value
+  - uid: word.Word.Interfaces.SettingLoadOptions.key
+    summary: >-
+      Gets the key of the setting. Read only. \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.SettingLoadOptions.value
+    summary: >-
+      Gets or sets the value of the setting. \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: boolean;'
+      return:
+        type:
+          - boolean

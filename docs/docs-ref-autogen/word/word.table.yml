@@ -613,6 +613,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.Table` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.Table` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -629,16 +633,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.Table;'
+      content: 'load(option?: Word.Interfaces.TableLoadOptions): Word.Table;'
       return:
         type:
           - Word.Table
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Word.Interfaces.TableLoadOptions
   - uid: word.Word.Table.mergeCells
     summary: >-
       Merges the cells bounded inclusively by a first and last cell. \[ [API set: WordApi BETA (PREVIEW

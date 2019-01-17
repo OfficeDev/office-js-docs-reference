@@ -1,0 +1,177 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.SlicerUpdateData
+    summary: 'An interface for updating data on the Slicer object, for use in "slicer.set({ ... })".'
+    name: Excel.Interfaces.SlicerUpdateData
+    fullName: Excel.Interfaces.SlicerUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.SlicerUpdateData.caption
+      - excel.Excel.Interfaces.SlicerUpdateData.height
+      - excel.Excel.Interfaces.SlicerUpdateData.left
+      - excel.Excel.Interfaces.SlicerUpdateData.name
+      - excel.Excel.Interfaces.SlicerUpdateData.nameInFormula
+      - excel.Excel.Interfaces.SlicerUpdateData.sortBy
+      - excel.Excel.Interfaces.SlicerUpdateData.style
+      - excel.Excel.Interfaces.SlicerUpdateData.top
+      - excel.Excel.Interfaces.SlicerUpdateData.width
+      - excel.Excel.Interfaces.SlicerUpdateData.worksheet
+  - uid: excel.Excel.Interfaces.SlicerUpdateData.caption
+    summary: >-
+      Represents the caption of slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: caption
+    fullName: caption
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'caption?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.SlicerUpdateData.height
+    summary: >-
+      Represents the height, in points, of the slicer. Throws an invalid argument exception when set with negative value
+      or zero as input. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.SlicerUpdateData.left
+    summary: >-
+      Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an
+      invalid argument exception when set with negative value as input. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.SlicerUpdateData.name
+    summary: >-
+      Represents the name of slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.SlicerUpdateData.nameInFormula
+    summary: >-
+      Represents the name used in the formula. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: nameInFormula
+    fullName: nameInFormula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'nameInFormula?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.SlicerUpdateData.sortBy
+    summary: >-
+      Represents the sort order of the items in the slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: sortBy
+    fullName: sortBy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sortBy?: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";'
+      return:
+        type:
+          - Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
+  - uid: excel.Excel.Interfaces.SlicerUpdateData.style
+    summary: >-
+      Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6,
+      TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style
+      present in the workbook can also be specified. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.SlicerUpdateData.top
+    summary: >-
+      Represents the distance, in points, from the top edge of the slicer to the right of the worksheet. Throws an
+      invalid argument exception when set with negative value as input. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.SlicerUpdateData.width
+    summary: >-
+      Represents the width, in points, of the slicer. Throws an invalid argument exception when set with negative value
+      or zero as input. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.SlicerUpdateData.worksheet
+    summary: >-
+      Represents the worksheet containing the slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorksheetUpdateData

@@ -117,6 +117,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.ParagraphCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.ParagraphCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -173,16 +177,18 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.ParagraphCollection;'
+      content: >-
+        load(option?: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.ParagraphCollection;
       return:
         type:
           - Word.ParagraphCollection
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
   - uid: word.Word.ParagraphCollection.toJSON
     name: toJSON()
     fullName: toJSON

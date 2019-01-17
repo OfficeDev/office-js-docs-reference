@@ -1,0 +1,134 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ChartLegendEntryCollection
+    summary: >-
+      Represents a collection of legendEntries. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartLegendEntryCollection
+    fullName: Excel.ChartLegendEntryCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: excel_release
+    children:
+      - excel_release.Excel.ChartLegendEntryCollection.context
+      - excel_release.Excel.ChartLegendEntryCollection.getCount
+      - excel_release.Excel.ChartLegendEntryCollection.getItemAt
+      - excel_release.Excel.ChartLegendEntryCollection.items
+      - excel_release.Excel.ChartLegendEntryCollection.load
+      - excel_release.Excel.ChartLegendEntryCollection.toJSON
+  - uid: excel_release.Excel.ChartLegendEntryCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: excel_release.Excel.ChartLegendEntryCollection.getCount
+    summary: >-
+      Returns the number of legendEntry in the collection. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getCount()
+    fullName: getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: excel_release.Excel.ChartLegendEntryCollection.getItemAt
+    summary: >-
+      Returns a legendEntry at the given index. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemAt(index)
+    fullName: getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.ChartLegendEntry;'
+      return:
+        type:
+          - excel.Excel.ChartLegendEntry
+        description: ''
+      parameters:
+        - id: index
+          description: Index of the legendEntry to be retrieved.
+          type:
+            - number
+  - uid: excel_release.Excel.ChartLegendEntryCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.ChartLegendEntry[];'
+      return:
+        type:
+          - 'Excel.ChartLegendEntry[]'
+  - uid: excel_release.Excel.ChartLegendEntryCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ChartLegendEntryCollection` - Where option.select is
+      a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string
+      that specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }):
+      Excel.ChartLegendEntryCollection` - Only available on collection types. It is similar to the preceding signature.
+      Option.top specifies the maximum number of collection items that can be included in the result. Option.skip
+      specifies the number of items that are to be skipped and not included in the result. If option.top is specified,
+      the result set will start after skipping the specified number of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.ChartLegendEntryCollection;'
+      return:
+        type:
+          - excel.Excel.ChartLegendEntryCollection
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.ChartLegendEntryCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.ChartLegendEntryCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendEntryCollectionData`<!-- -->) that
+      contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartLegendEntryCollectionData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartLegendEntryCollectionData
+        description: ''

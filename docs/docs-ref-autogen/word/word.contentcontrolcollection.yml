@@ -415,6 +415,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.ContentControlCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.ContentControlCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -510,16 +514,18 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.ContentControlCollection;'
+      content: >-
+        load(option?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.ContentControlCollection;
       return:
         type:
           - word.Word.ContentControlCollection
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
   - uid: word.Word.ContentControlCollection.toJSON
     name: toJSON()
     fullName: toJSON

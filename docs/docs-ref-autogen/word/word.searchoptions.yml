@@ -77,6 +77,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.SearchOptions` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.SearchOptions` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -261,16 +265,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.SearchOptions;'
+      content: 'load(option?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;'
       return:
         type:
           - word.Word.SearchOptions
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - word.Word.Interfaces.SearchOptionsLoadOptions
   - uid: word.Word.SearchOptions.matchCase
     summary: >-
       Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case

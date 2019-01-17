@@ -1,0 +1,134 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.ImageLoadOptions
+    summary: >-
+      Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object. \[ [API set:
+      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.ImageLoadOptions
+    fullName: OneNote.Interfaces.ImageLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.ImageLoadOptions.description
+      - onenote.OneNote.Interfaces.ImageLoadOptions.height
+      - onenote.OneNote.Interfaces.ImageLoadOptions.hyperlink
+      - onenote.OneNote.Interfaces.ImageLoadOptions.id
+      - onenote.OneNote.Interfaces.ImageLoadOptions.ocrData
+      - onenote.OneNote.Interfaces.ImageLoadOptions.pageContent
+      - onenote.OneNote.Interfaces.ImageLoadOptions.paragraph
+      - onenote.OneNote.Interfaces.ImageLoadOptions.width
+  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.description
+    summary: >-
+      Gets or sets the description of the Image. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: description
+    fullName: description
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'description?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.height
+    summary: >-
+      Gets or sets the height of the Image layout. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.hyperlink
+    summary: >-
+      Gets or sets the hyperlink of the Image. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: hyperlink
+    fullName: hyperlink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hyperlink?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.id
+    summary: >-
+      Gets the ID of the Image object. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.ocrData
+    summary: >-
+      Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language. \[
+      [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: ocrData
+    fullName: ocrData
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ocrData?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.pageContent
+    summary: >-
+      Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent.
+      This object defines the position of the Image on the page. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: pageContent
+    fullName: pageContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageContent?: OneNote.Interfaces.PageContentLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.PageContentLoadOptions
+  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.paragraph
+    summary: >-
+      Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph. \[
+      [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: paragraph
+    fullName: paragraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.ParagraphLoadOptions
+  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.width
+    summary: >-
+      Gets or sets the width of the Image layout. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type:
+          - boolean

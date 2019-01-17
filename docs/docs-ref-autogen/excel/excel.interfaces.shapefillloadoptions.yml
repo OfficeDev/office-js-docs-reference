@@ -1,0 +1,65 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ShapeFillLoadOptions
+    summary: >-
+      Represents the fill formatting for a shape object. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.ShapeFillLoadOptions
+    fullName: Excel.Interfaces.ShapeFillLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ShapeFillLoadOptions.foreColor
+      - excel.Excel.Interfaces.ShapeFillLoadOptions.transparency
+      - excel.Excel.Interfaces.ShapeFillLoadOptions.type
+  - uid: excel.Excel.Interfaces.ShapeFillLoadOptions.foreColor
+    summary: >-
+      Represents the shape fill fore color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      color (e.g. "orange") \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: foreColor
+    fullName: foreColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'foreColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeFillLoadOptions.transparency
+    summary: >-
+      Returns or sets the degree of transparency of the specified fill as a value from 0.0 (opaque) through 1.0 (clear).
+      For API not supported shape types or special fill type with inconsistent transparencies, return null. For example,
+      gradient fill type could have inconsistent transparencies. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: transparency
+    fullName: transparency
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'transparency?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeFillLoadOptions.type
+    summary: >-
+      Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for detail. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type:
+          - boolean

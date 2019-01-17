@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.CustomXmlPartLoadOptions
+    summary: >-
+      Represents a custom XML part. \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: Word.Interfaces.CustomXmlPartLoadOptions
+    fullName: Word.Interfaces.CustomXmlPartLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.CustomXmlPartLoadOptions.id
+      - word.Word.Interfaces.CustomXmlPartLoadOptions.namespaceUri
+  - uid: word.Word.Interfaces.CustomXmlPartLoadOptions.id
+    summary: >-
+      Gets the ID of the custom XML part. Read only. \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.CustomXmlPartLoadOptions.namespaceUri
+    summary: >-
+      Gets the namespace URI of the custom XML part. Read only. \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: namespaceUri
+    fullName: namespaceUri
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'namespaceUri?: boolean;'
+      return:
+        type:
+          - boolean

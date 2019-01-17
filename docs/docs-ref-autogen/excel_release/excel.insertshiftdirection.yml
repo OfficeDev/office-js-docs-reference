@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.InsertShiftDirection
+    name: Excel.InsertShiftDirection
+    fullName: Excel.InsertShiftDirection
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.InsertShiftDirection.down
+      - excel_release.Excel.InsertShiftDirection.right
+  - uid: excel_release.Excel.InsertShiftDirection.down
+    name: down
+    fullName: down
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Down"'
+  - uid: excel_release.Excel.InsertShiftDirection.right
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'

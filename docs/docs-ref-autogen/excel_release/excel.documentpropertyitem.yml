@@ -1,0 +1,138 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.DocumentPropertyItem
+    name: Excel.DocumentPropertyItem
+    fullName: Excel.DocumentPropertyItem
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.DocumentPropertyItem.appName
+      - excel_release.Excel.DocumentPropertyItem.author
+      - excel_release.Excel.DocumentPropertyItem.category
+      - excel_release.Excel.DocumentPropertyItem.comments
+      - excel_release.Excel.DocumentPropertyItem.company
+      - excel_release.Excel.DocumentPropertyItem.creation
+      - excel_release.Excel.DocumentPropertyItem.format
+      - excel_release.Excel.DocumentPropertyItem.keywords
+      - excel_release.Excel.DocumentPropertyItem.lastAuth
+      - excel_release.Excel.DocumentPropertyItem.lastPrint
+      - excel_release.Excel.DocumentPropertyItem.lastSave
+      - excel_release.Excel.DocumentPropertyItem.manager
+      - excel_release.Excel.DocumentPropertyItem.revision
+      - excel_release.Excel.DocumentPropertyItem.subject
+      - excel_release.Excel.DocumentPropertyItem.template
+      - excel_release.Excel.DocumentPropertyItem.title
+  - uid: excel_release.Excel.DocumentPropertyItem.appName
+    name: appName
+    fullName: appName
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AppName"'
+  - uid: excel_release.Excel.DocumentPropertyItem.author
+    name: author
+    fullName: author
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Author"'
+  - uid: excel_release.Excel.DocumentPropertyItem.category
+    name: category
+    fullName: category
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Category"'
+  - uid: excel_release.Excel.DocumentPropertyItem.comments
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Comments"'
+  - uid: excel_release.Excel.DocumentPropertyItem.company
+    name: company
+    fullName: company
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Company"'
+  - uid: excel_release.Excel.DocumentPropertyItem.creation
+    name: creation
+    fullName: creation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Creation"'
+  - uid: excel_release.Excel.DocumentPropertyItem.format
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Format"'
+  - uid: excel_release.Excel.DocumentPropertyItem.keywords
+    name: keywords
+    fullName: keywords
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Keywords"'
+  - uid: excel_release.Excel.DocumentPropertyItem.lastAuth
+    name: lastAuth
+    fullName: lastAuth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastAuth"'
+  - uid: excel_release.Excel.DocumentPropertyItem.lastPrint
+    name: lastPrint
+    fullName: lastPrint
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastPrint"'
+  - uid: excel_release.Excel.DocumentPropertyItem.lastSave
+    name: lastSave
+    fullName: lastSave
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastSave"'
+  - uid: excel_release.Excel.DocumentPropertyItem.manager
+    name: manager
+    fullName: manager
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Manager"'
+  - uid: excel_release.Excel.DocumentPropertyItem.revision
+    name: revision
+    fullName: revision
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Revision"'
+  - uid: excel_release.Excel.DocumentPropertyItem.subject
+    name: subject
+    fullName: subject
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Subject"'
+  - uid: excel_release.Excel.DocumentPropertyItem.template
+    name: template
+    fullName: template
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Template"'
+  - uid: excel_release.Excel.DocumentPropertyItem.title
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Title"'

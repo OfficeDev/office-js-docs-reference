@@ -22,7 +22,7 @@ items:
       content: '[index: number]: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
         description: ''
       parameters:
         - id: index
@@ -39,7 +39,7 @@ items:
       content: 'greenUpTriangle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.ThreeTrianglesSet.redDownTriangle
     name: redDownTriangle
     fullName: redDownTriangle
@@ -50,7 +50,7 @@ items:
       content: 'redDownTriangle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon
   - uid: excel.Excel.ThreeTrianglesSet.yellowDash
     name: yellowDash
     fullName: yellowDash
@@ -61,4 +61,4 @@ items:
       content: 'yellowDash: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - Icon

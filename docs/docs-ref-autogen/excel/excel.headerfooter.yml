@@ -105,6 +105,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.HeaderFooter` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.HeaderFooter` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -121,16 +125,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.HeaderFooter;'
+      content: 'load(option?: Excel.Interfaces.HeaderFooterLoadOptions): Excel.HeaderFooter;'
       return:
         type:
           - excel.Excel.HeaderFooter
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.HeaderFooterLoadOptions
   - uid: excel.Excel.HeaderFooter.rightFooter
     summary: >-
       Gets or sets the right footer of the worksheet. To apply font formatting or insert a variable value, use format

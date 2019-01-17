@@ -26,7 +26,7 @@ items:
       - excel.Excel.Interfaces.ChartDataLabelsData.verticalAlignment
   - uid: excel.Excel.Interfaces.ChartDataLabelsData.autoText
     summary: >-
-      Represents whether data labels automatically generates appropriate text based on context. \[ [API set: ExcelApi
+      Represents whether data labels automatically generate appropriate text based on context. \[ [API set: ExcelApi
       1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText
     fullName: autoText

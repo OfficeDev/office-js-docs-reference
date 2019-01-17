@@ -73,7 +73,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.DataPivotHierarchyUpdateData.showAs
     summary: >-
-      Determines whether the data should be sown as a specific summary calculation or not. \[ [API set: ExcelApi
+      Determines whether the data should be shown as a specific summary calculation or not. \[ [API set: ExcelApi
       1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAs
     fullName: showAs

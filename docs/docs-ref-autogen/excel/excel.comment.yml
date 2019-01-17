@@ -14,12 +14,29 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.Comment.content
       - excel.Excel.Comment.context
+      - excel.Excel.Comment.delete
       - excel.Excel.Comment.id
       - excel.Excel.Comment.isParent
       - excel.Excel.Comment.load
       - excel.Excel.Comment.replies
       - excel.Excel.Comment.toJSON
+  - uid: excel.Excel.Comment.content
+    summary: >-
+      Get/Set the content. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'content: string;'
+      return:
+        type:
+          - string
   - uid: excel.Excel.Comment.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -35,6 +52,22 @@ items:
       return:
         type:
           - RequestContext
+  - uid: excel.Excel.Comment.delete
+    summary: >-
+      Deletes the comment thread. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: delete()
+    fullName: delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: excel.Excel.Comment.id
     summary: >-
       Represents the comment identifier. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
@@ -73,6 +106,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Comment` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Comment` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -90,16 +127,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Comment;'
+      content: 'load(option?: Excel.Interfaces.CommentLoadOptions): Excel.Comment;'
       return:
         type:
           - excel.Excel.Comment
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.CommentLoadOptions
   - uid: excel.Excel.Comment.replies
     summary: >-
       Represents a collection of reply objects associated with the comment. Read-only. \[ [API set: ExcelApi BETA

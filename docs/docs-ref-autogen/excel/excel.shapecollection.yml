@@ -17,11 +17,13 @@ items:
       - excel.Excel.ShapeCollection.addGeometricShape
       - excel.Excel.ShapeCollection.addGroup
       - excel.Excel.ShapeCollection.addImage
+      - excel.Excel.ShapeCollection.addLine
       - excel.Excel.ShapeCollection.addSVG
       - excel.Excel.ShapeCollection.addTextBox
       - excel.Excel.ShapeCollection.context
       - excel.Excel.ShapeCollection.getCount
       - excel.Excel.ShapeCollection.getItem
+      - excel.Excel.ShapeCollection.getItemAt
       - excel.Excel.ShapeCollection.items
       - excel.Excel.ShapeCollection.load
       - excel.Excel.ShapeCollection.toJSON
@@ -107,6 +109,45 @@ items:
           description: A base64 encoded image in JPEG or PNG formats.
           type:
             - string
+  - uid: excel.Excel.ShapeCollection.addLine
+    summary: >-
+      Adds a line to worksheet. Returns a Shape object that represents the new line. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
+    fullName: addLine
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addLine(startLeft: number, startTop: number, endLeft: number, endTop: number, connectorType?:
+        Excel.ConnectorType): Excel.Shape;
+      return:
+        type:
+          - excel.Excel.Shape
+        description: ''
+      parameters:
+        - id: startLeft
+          description: 'The distance, in points, from the start left of the line to the left side of the worksheet.'
+          type:
+            - number
+        - id: startTop
+          description: 'The distance, in points, from the start top of the line to the top of the worksheet.'
+          type:
+            - number
+        - id: endLeft
+          description: 'The distance, in points, from the end left of the line to the left of the worksheet.'
+          type:
+            - number
+        - id: endTop
+          description: 'The distance, in points, from the end top of the line to the top of the worksheet.'
+          type:
+            - number
+        - id: connectorType
+          description: Represents the connector type. See Excel.ConnectorType for details.
+          type:
+            - excel.Excel.ConnectorType
   - uid: excel.Excel.ShapeCollection.addSVG
     summary: >-
       Creates an SVG from a XML string and adds it to worksheet. Returns a Shape object that represents the new Image.
@@ -184,25 +225,46 @@ items:
         description: ''
   - uid: excel.Excel.ShapeCollection.getItem
     summary: >-
-      Returns a shape identified by the shape id. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets a shape using its name. \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: getItem(shapeId)
+    name: getItem(name)
     fullName: getItem
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getItem(shapeId: string): Excel.Shape;'
+      content: 'getItem(name: string): Excel.Shape;'
       return:
         type:
           - excel.Excel.Shape
         description: ''
       parameters:
-        - id: shapeId
-          description: The identifier for the shape.
+        - id: name
+          description: Name of the shape to be retrieved.
           type:
             - string
+  - uid: excel.Excel.ShapeCollection.getItemAt
+    summary: >-
+      Gets a shape based on its position in the collection. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getItemAt(index)
+    fullName: getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.Shape;'
+      return:
+        type:
+          - excel.Excel.Shape
+        description: ''
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type:
+            - number
   - uid: excel.Excel.ShapeCollection.items
     summary: Gets the loaded child items in this collection.
     isPreview: true
@@ -224,6 +286,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ShapeCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ShapeCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -241,16 +307,18 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ShapeCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.ShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ShapeCollection;
       return:
         type:
           - excel.Excel.ShapeCollection
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.ShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.ShapeCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

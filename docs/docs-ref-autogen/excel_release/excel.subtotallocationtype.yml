@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.SubtotalLocationType
+    name: Excel.SubtotalLocationType
+    fullName: Excel.SubtotalLocationType
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.SubtotalLocationType.atBottom
+      - excel_release.Excel.SubtotalLocationType.atTop
+      - excel_release.Excel.SubtotalLocationType.off
+  - uid: excel_release.Excel.SubtotalLocationType.atBottom
+    summary: Subtotals are at the bottom.
+    name: atBottom
+    fullName: atBottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AtBottom"'
+  - uid: excel_release.Excel.SubtotalLocationType.atTop
+    summary: Subtotals are at the top.
+    name: atTop
+    fullName: atTop
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AtTop"'
+  - uid: excel_release.Excel.SubtotalLocationType.off
+    summary: Subtotals are off.
+    name: 'off'
+    fullName: 'off'
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Off"'

@@ -131,6 +131,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.DataPivotHierarchyCollection` - Where option is a comma-delimited string
+      or an array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.DataPivotHierarchyCollection` - Where option.select
       is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string
       that specifies the navigation properties to load.
@@ -147,16 +151,18 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.DataPivotHierarchyCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.DataPivotHierarchyCollection;
       return:
         type:
           - excel.Excel.DataPivotHierarchyCollection
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.DataPivotHierarchyCollection.remove
     summary: >-
       Removes the PivotHierarchy from the current axis. \[ [API set: ExcelApi

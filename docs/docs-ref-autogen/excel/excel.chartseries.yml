@@ -521,6 +521,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartSeries` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartSeries` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -559,16 +563,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartSeries;'
+      content: 'load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;'
       return:
         type:
           - excel.Excel.ChartSeries
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartSeriesLoadOptions
   - uid: excel.Excel.ChartSeries.mapOptions
     summary: >-
       Encapsulates the options for the Map chart. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
@@ -792,7 +796,7 @@ items:
           - string
   - uid: excel.Excel.ChartSeries.overlap
     summary: >-
-      Specifies how bars and columns are positioned. Can be a value between – 100 and 100. Applies only to 2-D bar and
+      Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and
       2-D column charts. Read/Write. \[ [API set: ExcelApi
       1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlap

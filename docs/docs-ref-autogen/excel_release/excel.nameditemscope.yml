@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.NamedItemScope
+    name: Excel.NamedItemScope
+    fullName: Excel.NamedItemScope
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.NamedItemScope.workbook
+      - excel_release.Excel.NamedItemScope.worksheet
+  - uid: excel_release.Excel.NamedItemScope.workbook
+    name: workbook
+    fullName: workbook
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Workbook"'
+  - uid: excel_release.Excel.NamedItemScope.worksheet
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Worksheet"'

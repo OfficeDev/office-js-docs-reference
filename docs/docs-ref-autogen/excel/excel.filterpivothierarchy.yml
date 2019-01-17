@@ -86,6 +86,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.FilterPivotHierarchy` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.FilterPivotHierarchy` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -102,16 +106,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.FilterPivotHierarchy;'
+      content: 'load(option?: Excel.Interfaces.FilterPivotHierarchyLoadOptions): Excel.FilterPivotHierarchy;'
       return:
         type:
           - excel.Excel.FilterPivotHierarchy
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions
   - uid: excel.Excel.FilterPivotHierarchy.name
     summary: >-
       Name of the FilterPivotHierarchy. \[ [API set: ExcelApi

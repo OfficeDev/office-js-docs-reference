@@ -1,0 +1,103 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions
+    summary: >-
+      Contains a collection of TableCell objects. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.TableCellCollectionLoadOptions
+    fullName: OneNote.Interfaces.TableCellCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.cellIndex
+      - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.id
+      - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.paragraphs
+      - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.parentRow
+      - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.rowIndex
+      - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.shadingColor
+  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.cellIndex
+    summary: >-
+      For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: cellIndex
+    fullName: cellIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.id
+    summary: >-
+      For EACH ITEM in the collection: Gets the ID of the cell. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.paragraphs
+    summary: >-
+      For EACH ITEM in the collection: Gets the collection of Paragraph objects in the TableCell. \[ [API set:
+      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: paragraphs
+    fullName: paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions
+  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.parentRow
+    summary: >-
+      For EACH ITEM in the collection: Gets the parent row of the cell. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentRow
+    fullName: parentRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentRow?: OneNote.Interfaces.TableRowLoadOptions;'
+      return:
+        type:
+          - OneNote.Interfaces.TableRowLoadOptions
+  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.rowIndex
+    summary: >-
+      For EACH ITEM in the collection: Gets the index of the cell's row in the table. Read-only. \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.shadingColor
+    summary: >-
+      For EACH ITEM in the collection: Gets and sets the shading color of the cell \[ [API set: OneNoteApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: shadingColor
+    fullName: shadingColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shadingColor?: boolean;'
+      return:
+        type:
+          - boolean

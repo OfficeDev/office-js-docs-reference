@@ -1,0 +1,28 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+    summary: >-
+      An interface for updating data on the ColorScaleConditionalFormat object, for use in
+      "colorScaleConditionalFormat.set({ ... })".
+    name: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+    fullName: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.ColorScaleConditionalFormatUpdateData.criteria
+  - uid: excel_release.Excel.Interfaces.ColorScaleConditionalFormatUpdateData.criteria
+    summary: >-
+      The criteria of the color scale. Midpoint is optional when using a two point color scale. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria?: Excel.ConditionalColorScaleCriteria;'
+      return:
+        type:
+          - excel.Excel.ConditionalColorScaleCriteria

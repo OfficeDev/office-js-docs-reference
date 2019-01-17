@@ -748,6 +748,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.Body` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.Body` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -834,16 +838,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.Body;'
+      content: 'load(option?: Word.Interfaces.BodyLoadOptions): Word.Body;'
       return:
         type:
           - Word.Body
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - word.Word.Interfaces.BodyLoadOptions
   - uid: word.Word.Body.paragraphs
     summary: >-
       Gets the collection of paragraph objects in the body. Read-only. \[ [API set: WordApi

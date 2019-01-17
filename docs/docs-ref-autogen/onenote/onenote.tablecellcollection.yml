@@ -95,6 +95,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.TableCellCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.TableCellCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -111,16 +115,18 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.TableCellCollection;'
+      content: >-
+        load(option?: OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
+        OneNote.TableCellCollection;
       return:
         type:
           - onenote.OneNote.TableCellCollection
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
   - uid: onenote.OneNote.TableCellCollection.toJSON
     name: toJSON()
     fullName: toJSON

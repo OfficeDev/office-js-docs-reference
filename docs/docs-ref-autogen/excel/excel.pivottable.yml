@@ -17,6 +17,7 @@ items:
       - excel.Excel.PivotTable.context
       - excel.Excel.PivotTable.dataHierarchies
       - excel.Excel.PivotTable.delete
+      - excel.Excel.PivotTable.enableDataValueEditing
       - excel.Excel.PivotTable.filterHierarchies
       - excel.Excel.PivotTable.hierarchies
       - excel.Excel.PivotTable.id
@@ -131,6 +132,21 @@ items:
               await context.sync();
           });
           ```
+  - uid: excel.Excel.PivotTable.enableDataValueEditing
+    summary: >-
+      True if the PivotTable should use custom lists when sorting. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: enableDataValueEditing
+    fullName: enableDataValueEditing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableDataValueEditing: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.PivotTable.filterHierarchies
     summary: >-
       The Filter Pivot Hierarchies of the PivotTable. \[ [API set: ExcelApi
@@ -238,6 +254,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.PivotTable` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.PivotTable` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -254,16 +274,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.PivotTable;'
+      content: 'load(option?: Excel.Interfaces.PivotTableLoadOptions): Excel.PivotTable;'
       return:
         type:
           - excel.Excel.PivotTable
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.PivotTableLoadOptions
   - uid: excel.Excel.PivotTable.name
     summary: >-
       Name of the PivotTable. \[ [API set: ExcelApi

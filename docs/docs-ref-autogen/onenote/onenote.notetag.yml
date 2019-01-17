@@ -42,6 +42,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.NoteTag` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.NoteTag` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -58,16 +62,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.NoteTag;'
+      content: 'load(option?: OneNote.Interfaces.NoteTagLoadOptions): OneNote.NoteTag;'
       return:
         type:
           - onenote.OneNote.NoteTag
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - onenote.OneNote.Interfaces.NoteTagLoadOptions
   - uid: onenote.OneNote.NoteTag.status
     summary: >-
       Gets the status of the NoteTag object. Read-only. \[ [API set: OneNoteApi

@@ -17,7 +17,7 @@ items:
       - excel.Excel.Interfaces.ChartLegendEntryData.width
   - uid: excel.Excel.Interfaces.ChartLegendEntryData.height
     summary: >-
-      Represents the height of the legendEntry on the chart Legend. \[ [API set: ExcelApi
+      Represents the height of the legendEntry on the chart legend. \[ [API set: ExcelApi
       1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: height
@@ -31,7 +31,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ChartLegendEntryData.index
     summary: >-
-      Represents the index of the LegendEntry in the Chart Legend. \[ [API set: ExcelApi
+      Represents the index of the legendEntry in the chart legend. \[ [API set: ExcelApi
       1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
     fullName: index

@@ -1,0 +1,60 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.ChartLineFormatUpdateData
+    summary: 'An interface for updating data on the ChartLineFormat object, for use in "chartLineFormat.set({ ... })".'
+    name: Excel.Interfaces.ChartLineFormatUpdateData
+    fullName: Excel.Interfaces.ChartLineFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.ChartLineFormatUpdateData.color
+      - excel_release.Excel.Interfaces.ChartLineFormatUpdateData.lineStyle
+      - excel_release.Excel.Interfaces.ChartLineFormatUpdateData.weight
+  - uid: excel_release.Excel.Interfaces.ChartLineFormatUpdateData.color
+    summary: >-
+      HTML color code representing the color of lines in the chart. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.Interfaces.ChartLineFormatUpdateData.lineStyle
+    summary: >-
+      Represents the line style. See Excel.ChartLineStyle for details. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: lineStyle
+    fullName: lineStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        lineStyle?: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25"
+        | "Grey50" | "Grey75" | "Automatic" | "RoundDot";
+      return:
+        type:
+          - >-
+            Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" |
+            "Grey50" | "Grey75" | "Automatic" | "RoundDot"
+  - uid: excel_release.Excel.Interfaces.ChartLineFormatUpdateData.weight
+    summary: >-
+      Represents weight of the line, in points. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: number;'
+      return:
+        type:
+          - number

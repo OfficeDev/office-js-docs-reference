@@ -1,0 +1,233 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions
+    summary: >-
+      Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.WorkbookLoadOptions
+    fullName: Excel.Interfaces.WorkbookLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.WorkbookLoadOptions.application
+      - excel.Excel.Interfaces.WorkbookLoadOptions.autoSave
+      - excel.Excel.Interfaces.WorkbookLoadOptions.bindings
+      - excel.Excel.Interfaces.WorkbookLoadOptions.calculationEngineVersion
+      - excel.Excel.Interfaces.WorkbookLoadOptions.chartDataPointTrack
+      - excel.Excel.Interfaces.WorkbookLoadOptions.isDirty
+      - excel.Excel.Interfaces.WorkbookLoadOptions.name
+      - excel.Excel.Interfaces.WorkbookLoadOptions.previouslySaved
+      - excel.Excel.Interfaces.WorkbookLoadOptions.properties
+      - excel.Excel.Interfaces.WorkbookLoadOptions.protection
+      - excel.Excel.Interfaces.WorkbookLoadOptions.readOnly
+      - excel.Excel.Interfaces.WorkbookLoadOptions.tables
+      - excel.Excel.Interfaces.WorkbookLoadOptions.use1904DateSystem
+      - excel.Excel.Interfaces.WorkbookLoadOptions.usePrecisionAsDisplayed
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.application
+    summary: >-
+      Represents the Excel application instance that contains this workbook. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: application
+    fullName: application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'application?: Excel.Interfaces.ApplicationLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ApplicationLoadOptions
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.autoSave
+    summary: >-
+      True if the workbook is in auto save mode. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: autoSave
+    fullName: autoSave
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoSave?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.bindings
+    summary: >-
+      Represents a collection of bindings that are part of the workbook. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bindings
+    fullName: bindings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bindings?: Excel.Interfaces.BindingCollectionLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.BindingCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.calculationEngineVersion
+    summary: >-
+      Returns a number about the version of Excel Calculation Engine. Read-Only. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: calculationEngineVersion
+    fullName: calculationEngineVersion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calculationEngineVersion?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.chartDataPointTrack
+    summary: >-
+      True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
+      charts track the index of the data points. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: chartDataPointTrack
+    fullName: chartDataPointTrack
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'chartDataPointTrack?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.isDirty
+    summary: >-
+      True if no changes have been made to the specified workbook since it was last saved. You can set this property to
+      True if you want to close a modified workbook without either saving it or being prompted to save it. \[ [API set:
+      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: isDirty
+    fullName: isDirty
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDirty?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.name
+    summary: >-
+      Gets the workbook name. Read-only. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.previouslySaved
+    summary: >-
+      True if the workbook has ever been saved locally or online. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: previouslySaved
+    fullName: previouslySaved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'previouslySaved?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.properties
+    summary: >-
+      Gets the workbook properties. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: properties
+    fullName: properties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'properties?: Excel.Interfaces.DocumentPropertiesLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.DocumentPropertiesLoadOptions
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.protection
+    summary: >-
+      Returns workbook protection object for a workbook. \[ [API set: ExcelApi
+      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: protection
+    fullName: protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protection?: Excel.Interfaces.WorkbookProtectionLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorkbookProtectionLoadOptions
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.readOnly
+    summary: >-
+      True if the workbook is open in Read-only mode. Read-only. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readOnly?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.tables
+    summary: >-
+      Represents a collection of tables associated with the workbook. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tables
+    fullName: tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TableCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.use1904DateSystem
+    summary: >-
+      True if the workbook uses the 1904 date system. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: use1904DateSystem
+    fullName: use1904DateSystem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'use1904DateSystem?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.usePrecisionAsDisplayed
+    summary: >-
+      True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
+      Data will permanently lose accuracy when switching this property from false to true. \[ [API set: ExcelApi BETA
+      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: usePrecisionAsDisplayed
+    fullName: usePrecisionAsDisplayed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'usePrecisionAsDisplayed?: boolean;'
+      return:
+        type:
+          - boolean

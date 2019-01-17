@@ -281,6 +281,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.TableRow` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.TableRow` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -297,16 +301,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.TableRow;'
+      content: 'load(option?: Word.Interfaces.TableRowLoadOptions): Word.TableRow;'
       return:
         type:
           - Word.TableRow
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Word.Interfaces.TableRowLoadOptions
   - uid: word.Word.TableRow.merge
     summary: >-
       Merges the row into one cell. \[ [API set: WordApi BETA (PREVIEW

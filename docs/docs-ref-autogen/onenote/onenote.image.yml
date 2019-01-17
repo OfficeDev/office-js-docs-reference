@@ -143,6 +143,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.Image` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.Image` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -290,16 +294,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.Image;'
+      content: 'load(option?: OneNote.Interfaces.ImageLoadOptions): OneNote.Image;'
       return:
         type:
           - OneNote.Image
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - OneNote.Interfaces.ImageLoadOptions
   - uid: onenote.OneNote.Image.ocrData
     summary: >-
       Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language. \[

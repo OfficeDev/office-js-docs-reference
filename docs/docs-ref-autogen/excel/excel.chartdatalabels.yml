@@ -33,7 +33,7 @@ items:
       - excel.Excel.ChartDataLabels.verticalAlignment
   - uid: excel.Excel.ChartDataLabels.autoText
     summary: >-
-      Represents whether data labels automatically generates appropriate text based on context. \[ [API set: ExcelApi
+      Represents whether data labels automatically generate appropriate text based on context. \[ [API set: ExcelApi
       1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText
     fullName: autoText
@@ -114,6 +114,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartDataLabels` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabels` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -154,16 +158,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartDataLabels;'
+      content: 'load(option?: Excel.Interfaces.ChartDataLabelsLoadOptions): Excel.ChartDataLabels;'
       return:
         type:
           - excel.Excel.ChartDataLabels
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
   - uid: excel.Excel.ChartDataLabels.numberFormat
     summary: >-
       Represents the format code for data labels. \[ [API set: ExcelApi

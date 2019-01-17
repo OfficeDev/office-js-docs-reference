@@ -58,6 +58,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.IterativeCalculation` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.IterativeCalculation` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -75,16 +79,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.IterativeCalculation;'
+      content: 'load(option?: Excel.Interfaces.IterativeCalculationLoadOptions): Excel.IterativeCalculation;'
       return:
         type:
           - excel.Excel.IterativeCalculation
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.IterativeCalculationLoadOptions
   - uid: excel.Excel.IterativeCalculation.maxChange
     summary: >-
       Returns or sets the maximum amount of change between each iteration as Excel resolves circular references. \[ [API

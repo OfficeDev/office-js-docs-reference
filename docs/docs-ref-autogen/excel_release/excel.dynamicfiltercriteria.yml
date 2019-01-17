@@ -1,0 +1,290 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.DynamicFilterCriteria
+    name: Excel.DynamicFilterCriteria
+    fullName: Excel.DynamicFilterCriteria
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.DynamicFilterCriteria.aboveAverage
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodApril
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodAugust
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodDecember
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodFebruray
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodJanuary
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodJuly
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodJune
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodMarch
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodMay
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodNovember
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodOctober
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter1
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter2
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter3
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter4
+      - excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodSeptember
+      - excel_release.Excel.DynamicFilterCriteria.belowAverage
+      - excel_release.Excel.DynamicFilterCriteria.lastMonth
+      - excel_release.Excel.DynamicFilterCriteria.lastQuarter
+      - excel_release.Excel.DynamicFilterCriteria.lastWeek
+      - excel_release.Excel.DynamicFilterCriteria.lastYear
+      - excel_release.Excel.DynamicFilterCriteria.nextMonth
+      - excel_release.Excel.DynamicFilterCriteria.nextQuarter
+      - excel_release.Excel.DynamicFilterCriteria.nextWeek
+      - excel_release.Excel.DynamicFilterCriteria.nextYear
+      - excel_release.Excel.DynamicFilterCriteria.thisMonth
+      - excel_release.Excel.DynamicFilterCriteria.thisQuarter
+      - excel_release.Excel.DynamicFilterCriteria.thisWeek
+      - excel_release.Excel.DynamicFilterCriteria.thisYear
+      - excel_release.Excel.DynamicFilterCriteria.today
+      - excel_release.Excel.DynamicFilterCriteria.tomorrow
+      - excel_release.Excel.DynamicFilterCriteria.unknown
+      - excel_release.Excel.DynamicFilterCriteria.yearToDate
+      - excel_release.Excel.DynamicFilterCriteria.yesterday
+  - uid: excel_release.Excel.DynamicFilterCriteria.aboveAverage
+    name: aboveAverage
+    fullName: aboveAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AboveAverage"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodApril
+    name: allDatesInPeriodApril
+    fullName: allDatesInPeriodApril
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodApril"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodAugust
+    name: allDatesInPeriodAugust
+    fullName: allDatesInPeriodAugust
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodAugust"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodDecember
+    name: allDatesInPeriodDecember
+    fullName: allDatesInPeriodDecember
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodDecember"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodFebruray
+    name: allDatesInPeriodFebruray
+    fullName: allDatesInPeriodFebruray
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodFebruray"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodJanuary
+    name: allDatesInPeriodJanuary
+    fullName: allDatesInPeriodJanuary
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodJanuary"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodJuly
+    name: allDatesInPeriodJuly
+    fullName: allDatesInPeriodJuly
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodJuly"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodJune
+    name: allDatesInPeriodJune
+    fullName: allDatesInPeriodJune
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodJune"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodMarch
+    name: allDatesInPeriodMarch
+    fullName: allDatesInPeriodMarch
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodMarch"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodMay
+    name: allDatesInPeriodMay
+    fullName: allDatesInPeriodMay
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodMay"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodNovember
+    name: allDatesInPeriodNovember
+    fullName: allDatesInPeriodNovember
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodNovember"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodOctober
+    name: allDatesInPeriodOctober
+    fullName: allDatesInPeriodOctober
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodOctober"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter1
+    name: allDatesInPeriodQuarter1
+    fullName: allDatesInPeriodQuarter1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter1"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter2
+    name: allDatesInPeriodQuarter2
+    fullName: allDatesInPeriodQuarter2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter2"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter3
+    name: allDatesInPeriodQuarter3
+    fullName: allDatesInPeriodQuarter3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter3"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodQuarter4
+    name: allDatesInPeriodQuarter4
+    fullName: allDatesInPeriodQuarter4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter4"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.allDatesInPeriodSeptember
+    name: allDatesInPeriodSeptember
+    fullName: allDatesInPeriodSeptember
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodSeptember"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.belowAverage
+    name: belowAverage
+    fullName: belowAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BelowAverage"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.lastMonth
+    name: lastMonth
+    fullName: lastMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastMonth"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.lastQuarter
+    name: lastQuarter
+    fullName: lastQuarter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastQuarter"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.lastWeek
+    name: lastWeek
+    fullName: lastWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastWeek"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.lastYear
+    name: lastYear
+    fullName: lastYear
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastYear"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.nextMonth
+    name: nextMonth
+    fullName: nextMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextMonth"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.nextQuarter
+    name: nextQuarter
+    fullName: nextQuarter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextQuarter"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.nextWeek
+    name: nextWeek
+    fullName: nextWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextWeek"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.nextYear
+    name: nextYear
+    fullName: nextYear
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextYear"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.thisMonth
+    name: thisMonth
+    fullName: thisMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisMonth"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.thisQuarter
+    name: thisQuarter
+    fullName: thisQuarter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisQuarter"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.thisWeek
+    name: thisWeek
+    fullName: thisWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisWeek"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.thisYear
+    name: thisYear
+    fullName: thisYear
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisYear"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.today
+    name: today
+    fullName: today
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Today"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.tomorrow
+    name: tomorrow
+    fullName: tomorrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tomorrow"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.unknown
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.yearToDate
+    name: yearToDate
+    fullName: yearToDate
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"YearToDate"'
+  - uid: excel_release.Excel.DynamicFilterCriteria.yesterday
+    name: yesterday
+    fullName: yesterday
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Yesterday"'

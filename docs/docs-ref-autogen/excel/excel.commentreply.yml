@@ -14,12 +14,29 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.CommentReply.content
       - excel.Excel.CommentReply.context
       - excel.Excel.CommentReply.delete
+      - excel.Excel.CommentReply.getParentComment
       - excel.Excel.CommentReply.id
       - excel.Excel.CommentReply.isParent
       - excel.Excel.CommentReply.load
       - excel.Excel.CommentReply.toJSON
+  - uid: excel.Excel.CommentReply.content
+    summary: >-
+      Get/Set the content. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'content: string;'
+      return:
+        type:
+          - string
   - uid: excel.Excel.CommentReply.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -50,6 +67,22 @@ items:
       return:
         type:
           - void
+        description: ''
+  - uid: excel.Excel.CommentReply.getParentComment
+    summary: >-
+      Get its parent comment of this reply. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getParentComment()
+    fullName: getParentComment
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getParentComment(): Excel.Comment;'
+      return:
+        type:
+          - excel.Excel.Comment
         description: ''
   - uid: excel.Excel.CommentReply.id
     summary: >-
@@ -89,6 +122,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.CommentReply` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.CommentReply` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -106,16 +143,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.CommentReply;'
+      content: 'load(option?: Excel.Interfaces.CommentReplyLoadOptions): Excel.CommentReply;'
       return:
         type:
           - excel.Excel.CommentReply
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.CommentReplyLoadOptions
   - uid: excel.Excel.CommentReply.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

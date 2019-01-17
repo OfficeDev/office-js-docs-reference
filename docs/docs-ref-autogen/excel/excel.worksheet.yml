@@ -17,6 +17,7 @@ items:
       - excel.Excel.Worksheet.autoFilter
       - excel.Excel.Worksheet.calculate
       - excel.Excel.Worksheet.charts
+      - excel.Excel.Worksheet.comments
       - excel.Excel.Worksheet.context
       - excel.Excel.Worksheet.copy
       - excel.Excel.Worksheet.delete
@@ -54,6 +55,7 @@ items:
       - excel.Excel.Worksheet.shapes
       - excel.Excel.Worksheet.showGridlines
       - excel.Excel.Worksheet.showHeadings
+      - excel.Excel.Worksheet.slicers
       - excel.Excel.Worksheet.standardHeight
       - excel.Excel.Worksheet.standardWidth
       - excel.Excel.Worksheet.tabColor
@@ -141,6 +143,21 @@ items:
       return:
         type:
           - excel.Excel.ChartCollection
+  - uid: excel.Excel.Worksheet.comments
+    summary: >-
+      Returns a collection of all the Comments objects on the worksheet. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly comments: Excel.CommentCollection;'
+      return:
+        type:
+          - excel.Excel.CommentCollection
   - uid: excel.Excel.Worksheet.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -712,6 +729,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Worksheet` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Worksheet` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -769,16 +790,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Worksheet;'
+      content: 'load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;'
       return:
         type:
           - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.WorksheetLoadOptions
   - uid: excel.Excel.Worksheet.name
     summary: >-
       The display name of the worksheet. \[ [API set: ExcelApi
@@ -1063,6 +1084,21 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Worksheet.slicers
+    summary: >-
+      Returns collection of slicers that are part of the worksheet. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: slicers
+    fullName: slicers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly slicers: Excel.SlicerCollection;'
+      return:
+        type:
+          - excel.Excel.SlicerCollection
   - uid: excel.Excel.Worksheet.standardHeight
     summary: >-
       Returns the standard (default) height of all the rows in the worksheet, in points. Read-only. \[ [API set:

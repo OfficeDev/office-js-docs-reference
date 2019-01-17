@@ -231,6 +231,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.CustomXmlPart` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.CustomXmlPart` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -248,16 +252,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.CustomXmlPart;'
+      content: 'load(option?: Word.Interfaces.CustomXmlPartLoadOptions): Word.CustomXmlPart;'
       return:
         type:
           - Word.CustomXmlPart
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Word.Interfaces.CustomXmlPartLoadOptions
   - uid: word.Word.CustomXmlPart.namespaceUri
     summary: >-
       Gets the namespace URI of the custom XML part. Read only. \[ [API set: WordApi BETA (PREVIEW

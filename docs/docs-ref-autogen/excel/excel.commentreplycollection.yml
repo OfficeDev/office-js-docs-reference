@@ -16,7 +16,9 @@ items:
     children:
       - excel.Excel.CommentReplyCollection.add
       - excel.Excel.CommentReplyCollection.context
+      - excel.Excel.CommentReplyCollection.getCount
       - excel.Excel.CommentReplyCollection.getItem
+      - excel.Excel.CommentReplyCollection.getItemAt
       - excel.Excel.CommentReplyCollection.items
       - excel.Excel.CommentReplyCollection.load
       - excel.Excel.CommentReplyCollection.toJSON
@@ -60,6 +62,22 @@ items:
       return:
         type:
           - RequestContext
+  - uid: excel.Excel.CommentReplyCollection.getCount
+    summary: >-
+      Gets the number of comment replies in the collection. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getCount()
+    fullName: getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
   - uid: excel.Excel.CommentReplyCollection.getItem
     summary: >-
       Returns a comment reply identified by its ID. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
@@ -81,6 +99,27 @@ items:
           description: The identifier for the comment reply.
           type:
             - string
+  - uid: excel.Excel.CommentReplyCollection.getItemAt
+    summary: >-
+      Gets a comment reply based on its position in the collection. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getItemAt(index)
+    fullName: getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.CommentReply;'
+      return:
+        type:
+          - excel.Excel.CommentReply
+        description: ''
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type:
+            - number
   - uid: excel.Excel.CommentReplyCollection.items
     summary: Gets the loaded child items in this collection.
     isPreview: true
@@ -102,6 +141,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.CommentReplyCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.CommentReplyCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -119,16 +162,18 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.CommentReplyCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.CommentReplyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.CommentReplyCollection;
       return:
         type:
           - excel.Excel.CommentReplyCollection
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.CommentReplyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.CommentReplyCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

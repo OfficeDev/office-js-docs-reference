@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ConditionalFormatColorCriterionType
+    summary: >-
+      Represents the types of conditional format values. \[ [API set: ExcelApi
+      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalFormatColorCriterionType
+    fullName: Excel.ConditionalFormatColorCriterionType
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ConditionalFormatColorCriterionType.formula
+      - excel_release.Excel.ConditionalFormatColorCriterionType.highestValue
+      - excel_release.Excel.ConditionalFormatColorCriterionType.invalid
+      - excel_release.Excel.ConditionalFormatColorCriterionType.lowestValue
+      - excel_release.Excel.ConditionalFormatColorCriterionType.number
+      - excel_release.Excel.ConditionalFormatColorCriterionType.percent
+      - excel_release.Excel.ConditionalFormatColorCriterionType.percentile
+  - uid: excel_release.Excel.ConditionalFormatColorCriterionType.formula
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Formula"'
+  - uid: excel_release.Excel.ConditionalFormatColorCriterionType.highestValue
+    name: highestValue
+    fullName: highestValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"HighestValue"'
+  - uid: excel_release.Excel.ConditionalFormatColorCriterionType.invalid
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: excel_release.Excel.ConditionalFormatColorCriterionType.lowestValue
+    name: lowestValue
+    fullName: lowestValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LowestValue"'
+  - uid: excel_release.Excel.ConditionalFormatColorCriterionType.number
+    name: number
+    fullName: number
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Number"'
+  - uid: excel_release.Excel.ConditionalFormatColorCriterionType.percent
+    name: percent
+    fullName: percent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percent"'
+  - uid: excel_release.Excel.ConditionalFormatColorCriterionType.percentile
+    name: percentile
+    fullName: percentile
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percentile"'

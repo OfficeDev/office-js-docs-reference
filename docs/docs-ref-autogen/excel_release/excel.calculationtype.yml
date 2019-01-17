@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.CalculationType
+    name: Excel.CalculationType
+    fullName: Excel.CalculationType
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.CalculationType.full
+      - excel_release.Excel.CalculationType.fullRebuild
+      - excel_release.Excel.CalculationType.recalculate
+  - uid: excel_release.Excel.CalculationType.full
+    summary: This will mark all cells as dirty and then recalculate them.
+    name: full
+    fullName: full
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Full"'
+  - uid: excel_release.Excel.CalculationType.fullRebuild
+    summary: 'This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.'
+    name: fullRebuild
+    fullName: fullRebuild
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FullRebuild"'
+  - uid: excel_release.Excel.CalculationType.recalculate
+    summary: >-
+      Recalculates all cells that Excel has marked as dirty, that is, dependents of volatile or changed data, and cells
+      programmatically marked as dirty.
+    name: recalculate
+    fullName: recalculate
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Recalculate"'

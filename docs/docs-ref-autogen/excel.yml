@@ -9,6 +9,7 @@ items:
     children:
       - excel.Excel.AggregationFunction
       - excel.Excel.Application
+      - excel.Excel.AutoFillType
       - excel.Excel.AutoFilter
       - excel.Excel.BasicDataValidation
       - excel.Excel.Binding
@@ -23,6 +24,18 @@ items:
       - excel.Excel.CalculationMode
       - excel.Excel.CalculationState
       - excel.Excel.CalculationType
+      - excel.Excel.CellBorder
+      - excel.Excel.CellBorderCollection
+      - excel.Excel.CellProperties
+      - excel.Excel.CellPropertiesBorderLoadOptions
+      - excel.Excel.CellPropertiesFill
+      - excel.Excel.CellPropertiesFillLoadOptions
+      - excel.Excel.CellPropertiesFont
+      - excel.Excel.CellPropertiesFontLoadOptions
+      - excel.Excel.CellPropertiesFormat
+      - excel.Excel.CellPropertiesFormatLoadOptions
+      - excel.Excel.CellPropertiesLoadOptions
+      - excel.Excel.CellPropertiesProtection
       - excel.Excel.CellValueConditionalFormat
       - excel.Excel.Chart
       - excel.Excel.ChartActivatedEventArgs
@@ -110,6 +123,8 @@ items:
       - excel.Excel.ClearApplyTo
       - excel.Excel.CloseBehavior
       - excel.Excel.ColorScaleConditionalFormat
+      - excel.Excel.ColumnProperties
+      - excel.Excel.ColumnPropertiesLoadOptions
       - excel.Excel.Comment
       - excel.Excel.CommentCollection
       - excel.Excel.CommentReply
@@ -147,6 +162,7 @@ items:
       - excel.Excel.ConditionalTextOperator
       - excel.Excel.ConditionalTopBottomCriterionType
       - excel.Excel.ConditionalTopBottomRule
+      - excel.Excel.ConnectorType
       - excel.Excel.ContentType
       - excel.Excel.createWorkbook
       - excel.Excel.CustomConditionalFormat
@@ -204,6 +220,7 @@ items:
       - excel.Excel.Functions
       - excel.Excel.GeometricShape
       - excel.Excel.GeometricShapeType
+      - excel.Excel.getDataCommonPostprocess
       - excel.Excel.GroupShapeCollection
       - excel.Excel.HeaderFooter
       - excel.Excel.HeaderFooterGroup
@@ -217,273 +234,436 @@ items:
       - excel.Excel.ImageFittingMode
       - excel.Excel.InsertShiftDirection
       - excel.Excel.Interfaces.ApplicationData
+      - excel.Excel.Interfaces.ApplicationLoadOptions
       - excel.Excel.Interfaces.ApplicationUpdateData
       - excel.Excel.Interfaces.AutoFilterData
+      - excel.Excel.Interfaces.AutoFilterLoadOptions
       - excel.Excel.Interfaces.BindingCollectionData
+      - excel.Excel.Interfaces.BindingCollectionLoadOptions
       - excel.Excel.Interfaces.BindingCollectionUpdateData
       - excel.Excel.Interfaces.BindingData
+      - excel.Excel.Interfaces.BindingLoadOptions
       - excel.Excel.Interfaces.CellValueConditionalFormatData
+      - excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions
       - excel.Excel.Interfaces.CellValueConditionalFormatUpdateData
       - excel.Excel.Interfaces.ChartAreaFormatData
+      - excel.Excel.Interfaces.ChartAreaFormatLoadOptions
       - excel.Excel.Interfaces.ChartAreaFormatUpdateData
       - excel.Excel.Interfaces.ChartAxesData
+      - excel.Excel.Interfaces.ChartAxesLoadOptions
       - excel.Excel.Interfaces.ChartAxesUpdateData
       - excel.Excel.Interfaces.ChartAxisData
       - excel.Excel.Interfaces.ChartAxisFormatData
+      - excel.Excel.Interfaces.ChartAxisFormatLoadOptions
       - excel.Excel.Interfaces.ChartAxisFormatUpdateData
+      - excel.Excel.Interfaces.ChartAxisLoadOptions
       - excel.Excel.Interfaces.ChartAxisTitleData
       - excel.Excel.Interfaces.ChartAxisTitleFormatData
+      - excel.Excel.Interfaces.ChartAxisTitleFormatLoadOptions
       - excel.Excel.Interfaces.ChartAxisTitleFormatUpdateData
+      - excel.Excel.Interfaces.ChartAxisTitleLoadOptions
       - excel.Excel.Interfaces.ChartAxisTitleUpdateData
       - excel.Excel.Interfaces.ChartAxisUpdateData
       - excel.Excel.Interfaces.ChartBinOptionsData
+      - excel.Excel.Interfaces.ChartBinOptionsLoadOptions
       - excel.Excel.Interfaces.ChartBinOptionsUpdateData
       - excel.Excel.Interfaces.ChartBorderData
+      - excel.Excel.Interfaces.ChartBorderLoadOptions
       - excel.Excel.Interfaces.ChartBorderUpdateData
       - excel.Excel.Interfaces.ChartBoxwhiskerOptionsData
+      - excel.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
       - excel.Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
       - excel.Excel.Interfaces.ChartCollectionData
+      - excel.Excel.Interfaces.ChartCollectionLoadOptions
       - excel.Excel.Interfaces.ChartCollectionUpdateData
       - excel.Excel.Interfaces.ChartData
       - excel.Excel.Interfaces.ChartDataLabelData
       - excel.Excel.Interfaces.ChartDataLabelFormatData
+      - excel.Excel.Interfaces.ChartDataLabelFormatLoadOptions
       - excel.Excel.Interfaces.ChartDataLabelFormatUpdateData
+      - excel.Excel.Interfaces.ChartDataLabelLoadOptions
       - excel.Excel.Interfaces.ChartDataLabelsData
+      - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData
       - excel.Excel.Interfaces.ChartDataLabelUpdateData
       - excel.Excel.Interfaces.ChartErrorBarsData
       - excel.Excel.Interfaces.ChartErrorBarsFormatData
+      - excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions
       - excel.Excel.Interfaces.ChartErrorBarsFormatUpdateData
+      - excel.Excel.Interfaces.ChartErrorBarsLoadOptions
       - excel.Excel.Interfaces.ChartErrorBarsUpdateData
       - excel.Excel.Interfaces.ChartFontData
+      - excel.Excel.Interfaces.ChartFontLoadOptions
       - excel.Excel.Interfaces.ChartFontUpdateData
       - excel.Excel.Interfaces.ChartFormatStringData
+      - excel.Excel.Interfaces.ChartFormatStringLoadOptions
       - excel.Excel.Interfaces.ChartFormatStringUpdateData
       - excel.Excel.Interfaces.ChartGridlinesData
       - excel.Excel.Interfaces.ChartGridlinesFormatData
+      - excel.Excel.Interfaces.ChartGridlinesFormatLoadOptions
       - excel.Excel.Interfaces.ChartGridlinesFormatUpdateData
+      - excel.Excel.Interfaces.ChartGridlinesLoadOptions
       - excel.Excel.Interfaces.ChartGridlinesUpdateData
       - excel.Excel.Interfaces.ChartLegendData
       - excel.Excel.Interfaces.ChartLegendEntryCollectionData
+      - excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions
       - excel.Excel.Interfaces.ChartLegendEntryCollectionUpdateData
       - excel.Excel.Interfaces.ChartLegendEntryData
+      - excel.Excel.Interfaces.ChartLegendEntryLoadOptions
       - excel.Excel.Interfaces.ChartLegendEntryUpdateData
       - excel.Excel.Interfaces.ChartLegendFormatData
+      - excel.Excel.Interfaces.ChartLegendFormatLoadOptions
       - excel.Excel.Interfaces.ChartLegendFormatUpdateData
+      - excel.Excel.Interfaces.ChartLegendLoadOptions
       - excel.Excel.Interfaces.ChartLegendUpdateData
       - excel.Excel.Interfaces.ChartLineFormatData
+      - excel.Excel.Interfaces.ChartLineFormatLoadOptions
       - excel.Excel.Interfaces.ChartLineFormatUpdateData
+      - excel.Excel.Interfaces.ChartLoadOptions
       - excel.Excel.Interfaces.ChartMapOptionsData
+      - excel.Excel.Interfaces.ChartMapOptionsLoadOptions
       - excel.Excel.Interfaces.ChartMapOptionsUpdateData
       - excel.Excel.Interfaces.ChartPivotOptionsData
+      - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions
       - excel.Excel.Interfaces.ChartPivotOptionsUpdateData
       - excel.Excel.Interfaces.ChartPlotAreaData
       - excel.Excel.Interfaces.ChartPlotAreaFormatData
+      - excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions
       - excel.Excel.Interfaces.ChartPlotAreaFormatUpdateData
+      - excel.Excel.Interfaces.ChartPlotAreaLoadOptions
       - excel.Excel.Interfaces.ChartPlotAreaUpdateData
       - excel.Excel.Interfaces.ChartPointData
       - excel.Excel.Interfaces.ChartPointFormatData
+      - excel.Excel.Interfaces.ChartPointFormatLoadOptions
       - excel.Excel.Interfaces.ChartPointFormatUpdateData
+      - excel.Excel.Interfaces.ChartPointLoadOptions
       - excel.Excel.Interfaces.ChartPointsCollectionData
+      - excel.Excel.Interfaces.ChartPointsCollectionLoadOptions
       - excel.Excel.Interfaces.ChartPointsCollectionUpdateData
       - excel.Excel.Interfaces.ChartPointUpdateData
       - excel.Excel.Interfaces.ChartSeriesCollectionData
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions
       - excel.Excel.Interfaces.ChartSeriesCollectionUpdateData
       - excel.Excel.Interfaces.ChartSeriesData
       - excel.Excel.Interfaces.ChartSeriesFormatData
+      - excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
       - excel.Excel.Interfaces.ChartSeriesFormatUpdateData
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions
       - excel.Excel.Interfaces.ChartSeriesUpdateData
       - excel.Excel.Interfaces.ChartTitleData
       - excel.Excel.Interfaces.ChartTitleFormatData
+      - excel.Excel.Interfaces.ChartTitleFormatLoadOptions
       - excel.Excel.Interfaces.ChartTitleFormatUpdateData
+      - excel.Excel.Interfaces.ChartTitleLoadOptions
       - excel.Excel.Interfaces.ChartTitleUpdateData
       - excel.Excel.Interfaces.ChartTrendlineCollectionData
+      - excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions
       - excel.Excel.Interfaces.ChartTrendlineCollectionUpdateData
       - excel.Excel.Interfaces.ChartTrendlineData
       - excel.Excel.Interfaces.ChartTrendlineFormatData
+      - excel.Excel.Interfaces.ChartTrendlineFormatLoadOptions
       - excel.Excel.Interfaces.ChartTrendlineFormatUpdateData
       - excel.Excel.Interfaces.ChartTrendlineLabelData
       - excel.Excel.Interfaces.ChartTrendlineLabelFormatData
+      - excel.Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions
       - excel.Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
+      - excel.Excel.Interfaces.ChartTrendlineLabelLoadOptions
       - excel.Excel.Interfaces.ChartTrendlineLabelUpdateData
+      - excel.Excel.Interfaces.ChartTrendlineLoadOptions
       - excel.Excel.Interfaces.ChartTrendlineUpdateData
       - excel.Excel.Interfaces.ChartUpdateData
+      - excel.Excel.Interfaces.CollectionLoadOptions
       - excel.Excel.Interfaces.ColorScaleConditionalFormatData
+      - excel.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
       - excel.Excel.Interfaces.ColorScaleConditionalFormatUpdateData
       - excel.Excel.Interfaces.CommentCollectionData
+      - excel.Excel.Interfaces.CommentCollectionLoadOptions
       - excel.Excel.Interfaces.CommentCollectionUpdateData
       - excel.Excel.Interfaces.CommentData
+      - excel.Excel.Interfaces.CommentLoadOptions
       - excel.Excel.Interfaces.CommentReplyCollectionData
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions
       - excel.Excel.Interfaces.CommentReplyCollectionUpdateData
       - excel.Excel.Interfaces.CommentReplyData
+      - excel.Excel.Interfaces.CommentReplyLoadOptions
+      - excel.Excel.Interfaces.CommentReplyUpdateData
+      - excel.Excel.Interfaces.CommentUpdateData
       - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatData
+      - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
       - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
       - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatData
+      - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
       - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
       - excel.Excel.Interfaces.ConditionalFormatCollectionData
+      - excel.Excel.Interfaces.ConditionalFormatCollectionLoadOptions
       - excel.Excel.Interfaces.ConditionalFormatCollectionUpdateData
       - excel.Excel.Interfaces.ConditionalFormatData
+      - excel.Excel.Interfaces.ConditionalFormatLoadOptions
       - excel.Excel.Interfaces.ConditionalFormatRuleData
+      - excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions
       - excel.Excel.Interfaces.ConditionalFormatRuleUpdateData
       - excel.Excel.Interfaces.ConditionalFormatUpdateData
       - excel.Excel.Interfaces.ConditionalRangeBorderCollectionData
+      - excel.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
       - excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
       - excel.Excel.Interfaces.ConditionalRangeBorderData
+      - excel.Excel.Interfaces.ConditionalRangeBorderLoadOptions
       - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
       - excel.Excel.Interfaces.ConditionalRangeFillData
+      - excel.Excel.Interfaces.ConditionalRangeFillLoadOptions
       - excel.Excel.Interfaces.ConditionalRangeFillUpdateData
       - excel.Excel.Interfaces.ConditionalRangeFontData
+      - excel.Excel.Interfaces.ConditionalRangeFontLoadOptions
       - excel.Excel.Interfaces.ConditionalRangeFontUpdateData
       - excel.Excel.Interfaces.ConditionalRangeFormatData
+      - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
       - excel.Excel.Interfaces.ConditionalRangeFormatUpdateData
       - excel.Excel.Interfaces.CustomConditionalFormatData
+      - excel.Excel.Interfaces.CustomConditionalFormatLoadOptions
       - excel.Excel.Interfaces.CustomConditionalFormatUpdateData
       - excel.Excel.Interfaces.CustomPropertyCollectionData
+      - excel.Excel.Interfaces.CustomPropertyCollectionLoadOptions
       - excel.Excel.Interfaces.CustomPropertyCollectionUpdateData
       - excel.Excel.Interfaces.CustomPropertyData
+      - excel.Excel.Interfaces.CustomPropertyLoadOptions
       - excel.Excel.Interfaces.CustomPropertyUpdateData
       - excel.Excel.Interfaces.CustomXmlPartCollectionData
+      - excel.Excel.Interfaces.CustomXmlPartCollectionLoadOptions
       - excel.Excel.Interfaces.CustomXmlPartCollectionUpdateData
       - excel.Excel.Interfaces.CustomXmlPartData
+      - excel.Excel.Interfaces.CustomXmlPartLoadOptions
       - excel.Excel.Interfaces.CustomXmlPartScopedCollectionData
+      - excel.Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions
       - excel.Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
       - excel.Excel.Interfaces.DataBarConditionalFormatData
+      - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions
       - excel.Excel.Interfaces.DataBarConditionalFormatUpdateData
       - excel.Excel.Interfaces.DataPivotHierarchyCollectionData
+      - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions
       - excel.Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
       - excel.Excel.Interfaces.DataPivotHierarchyData
+      - excel.Excel.Interfaces.DataPivotHierarchyLoadOptions
       - excel.Excel.Interfaces.DataPivotHierarchyUpdateData
       - excel.Excel.Interfaces.DataValidationData
+      - excel.Excel.Interfaces.DataValidationLoadOptions
       - excel.Excel.Interfaces.DataValidationUpdateData
       - excel.Excel.Interfaces.DocumentPropertiesData
+      - excel.Excel.Interfaces.DocumentPropertiesLoadOptions
       - excel.Excel.Interfaces.DocumentPropertiesUpdateData
       - excel.Excel.Interfaces.FilterData
+      - excel.Excel.Interfaces.FilterLoadOptions
       - excel.Excel.Interfaces.FilterPivotHierarchyCollectionData
+      - excel.Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions
       - excel.Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
       - excel.Excel.Interfaces.FilterPivotHierarchyData
+      - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions
       - excel.Excel.Interfaces.FilterPivotHierarchyUpdateData
       - excel.Excel.Interfaces.FormatProtectionData
+      - excel.Excel.Interfaces.FormatProtectionLoadOptions
       - excel.Excel.Interfaces.FormatProtectionUpdateData
       - excel.Excel.Interfaces.FunctionResultData
+      - excel.Excel.Interfaces.FunctionResultLoadOptions
       - excel.Excel.Interfaces.GeometricShapeData
+      - excel.Excel.Interfaces.GeometricShapeLoadOptions
       - excel.Excel.Interfaces.GroupShapeCollectionData
+      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions
       - excel.Excel.Interfaces.GroupShapeCollectionUpdateData
       - excel.Excel.Interfaces.HeaderFooterData
       - excel.Excel.Interfaces.HeaderFooterGroupData
+      - excel.Excel.Interfaces.HeaderFooterGroupLoadOptions
       - excel.Excel.Interfaces.HeaderFooterGroupUpdateData
+      - excel.Excel.Interfaces.HeaderFooterLoadOptions
       - excel.Excel.Interfaces.HeaderFooterUpdateData
       - excel.Excel.Interfaces.IconSetConditionalFormatData
+      - excel.Excel.Interfaces.IconSetConditionalFormatLoadOptions
       - excel.Excel.Interfaces.IconSetConditionalFormatUpdateData
       - excel.Excel.Interfaces.ImageData
+      - excel.Excel.Interfaces.ImageLoadOptions
       - excel.Excel.Interfaces.IterativeCalculationData
+      - excel.Excel.Interfaces.IterativeCalculationLoadOptions
       - excel.Excel.Interfaces.IterativeCalculationUpdateData
+      - excel.Excel.Interfaces.LineData
+      - excel.Excel.Interfaces.LineLoadOptions
+      - excel.Excel.Interfaces.LineUpdateData
       - excel.Excel.Interfaces.NamedItemArrayValuesData
+      - excel.Excel.Interfaces.NamedItemArrayValuesLoadOptions
       - excel.Excel.Interfaces.NamedItemCollectionData
+      - excel.Excel.Interfaces.NamedItemCollectionLoadOptions
       - excel.Excel.Interfaces.NamedItemCollectionUpdateData
       - excel.Excel.Interfaces.NamedItemData
+      - excel.Excel.Interfaces.NamedItemLoadOptions
       - excel.Excel.Interfaces.NamedItemUpdateData
       - excel.Excel.Interfaces.PageBreakCollectionData
+      - excel.Excel.Interfaces.PageBreakCollectionLoadOptions
       - excel.Excel.Interfaces.PageBreakCollectionUpdateData
       - excel.Excel.Interfaces.PageBreakData
+      - excel.Excel.Interfaces.PageBreakLoadOptions
       - excel.Excel.Interfaces.PageLayoutData
+      - excel.Excel.Interfaces.PageLayoutLoadOptions
       - excel.Excel.Interfaces.PageLayoutUpdateData
       - excel.Excel.Interfaces.PivotFieldCollectionData
+      - excel.Excel.Interfaces.PivotFieldCollectionLoadOptions
       - excel.Excel.Interfaces.PivotFieldCollectionUpdateData
       - excel.Excel.Interfaces.PivotFieldData
+      - excel.Excel.Interfaces.PivotFieldLoadOptions
       - excel.Excel.Interfaces.PivotFieldUpdateData
       - excel.Excel.Interfaces.PivotHierarchyCollectionData
+      - excel.Excel.Interfaces.PivotHierarchyCollectionLoadOptions
       - excel.Excel.Interfaces.PivotHierarchyCollectionUpdateData
       - excel.Excel.Interfaces.PivotHierarchyData
+      - excel.Excel.Interfaces.PivotHierarchyLoadOptions
       - excel.Excel.Interfaces.PivotHierarchyUpdateData
       - excel.Excel.Interfaces.PivotItemCollectionData
+      - excel.Excel.Interfaces.PivotItemCollectionLoadOptions
       - excel.Excel.Interfaces.PivotItemCollectionUpdateData
       - excel.Excel.Interfaces.PivotItemData
+      - excel.Excel.Interfaces.PivotItemLoadOptions
       - excel.Excel.Interfaces.PivotItemUpdateData
       - excel.Excel.Interfaces.PivotLayoutData
+      - excel.Excel.Interfaces.PivotLayoutLoadOptions
       - excel.Excel.Interfaces.PivotLayoutUpdateData
       - excel.Excel.Interfaces.PivotTableCollectionData
+      - excel.Excel.Interfaces.PivotTableCollectionLoadOptions
       - excel.Excel.Interfaces.PivotTableCollectionUpdateData
       - excel.Excel.Interfaces.PivotTableData
+      - excel.Excel.Interfaces.PivotTableLoadOptions
       - excel.Excel.Interfaces.PivotTableUpdateData
       - excel.Excel.Interfaces.PresetCriteriaConditionalFormatData
+      - excel.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
       - excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
       - excel.Excel.Interfaces.RangeAreasData
+      - excel.Excel.Interfaces.RangeAreasLoadOptions
       - excel.Excel.Interfaces.RangeAreasUpdateData
       - excel.Excel.Interfaces.RangeBorderCollectionData
+      - excel.Excel.Interfaces.RangeBorderCollectionLoadOptions
       - excel.Excel.Interfaces.RangeBorderCollectionUpdateData
       - excel.Excel.Interfaces.RangeBorderData
+      - excel.Excel.Interfaces.RangeBorderLoadOptions
       - excel.Excel.Interfaces.RangeBorderUpdateData
       - excel.Excel.Interfaces.RangeCollectionData
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions
       - excel.Excel.Interfaces.RangeCollectionUpdateData
       - excel.Excel.Interfaces.RangeData
       - excel.Excel.Interfaces.RangeFillData
+      - excel.Excel.Interfaces.RangeFillLoadOptions
       - excel.Excel.Interfaces.RangeFillUpdateData
       - excel.Excel.Interfaces.RangeFontData
+      - excel.Excel.Interfaces.RangeFontLoadOptions
       - excel.Excel.Interfaces.RangeFontUpdateData
       - excel.Excel.Interfaces.RangeFormatData
+      - excel.Excel.Interfaces.RangeFormatLoadOptions
       - excel.Excel.Interfaces.RangeFormatUpdateData
+      - excel.Excel.Interfaces.RangeLoadOptions
       - excel.Excel.Interfaces.RangeUpdateData
       - excel.Excel.Interfaces.RangeViewCollectionData
+      - excel.Excel.Interfaces.RangeViewCollectionLoadOptions
       - excel.Excel.Interfaces.RangeViewCollectionUpdateData
       - excel.Excel.Interfaces.RangeViewData
+      - excel.Excel.Interfaces.RangeViewLoadOptions
       - excel.Excel.Interfaces.RangeViewUpdateData
       - excel.Excel.Interfaces.RemoveDuplicatesResultData
+      - excel.Excel.Interfaces.RemoveDuplicatesResultLoadOptions
       - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData
+      - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions
       - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
       - excel.Excel.Interfaces.RowColumnPivotHierarchyData
+      - excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions
       - excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData
       - excel.Excel.Interfaces.RuntimeData
+      - excel.Excel.Interfaces.RuntimeLoadOptions
       - excel.Excel.Interfaces.RuntimeUpdateData
       - excel.Excel.Interfaces.SettingCollectionData
+      - excel.Excel.Interfaces.SettingCollectionLoadOptions
       - excel.Excel.Interfaces.SettingCollectionUpdateData
       - excel.Excel.Interfaces.SettingData
+      - excel.Excel.Interfaces.SettingLoadOptions
       - excel.Excel.Interfaces.SettingUpdateData
       - excel.Excel.Interfaces.ShapeCollectionData
+      - excel.Excel.Interfaces.ShapeCollectionLoadOptions
       - excel.Excel.Interfaces.ShapeCollectionUpdateData
       - excel.Excel.Interfaces.ShapeData
       - excel.Excel.Interfaces.ShapeFillData
+      - excel.Excel.Interfaces.ShapeFillLoadOptions
       - excel.Excel.Interfaces.ShapeFillUpdateData
       - excel.Excel.Interfaces.ShapeFontData
+      - excel.Excel.Interfaces.ShapeFontLoadOptions
       - excel.Excel.Interfaces.ShapeFontUpdateData
       - excel.Excel.Interfaces.ShapeGroupData
+      - excel.Excel.Interfaces.ShapeGroupLoadOptions
+      - excel.Excel.Interfaces.ShapeLineFormatData
+      - excel.Excel.Interfaces.ShapeLineFormatLoadOptions
+      - excel.Excel.Interfaces.ShapeLineFormatUpdateData
+      - excel.Excel.Interfaces.ShapeLoadOptions
       - excel.Excel.Interfaces.ShapeUpdateData
+      - excel.Excel.Interfaces.SlicerCollectionData
+      - excel.Excel.Interfaces.SlicerCollectionLoadOptions
+      - excel.Excel.Interfaces.SlicerCollectionUpdateData
+      - excel.Excel.Interfaces.SlicerData
+      - excel.Excel.Interfaces.SlicerItemCollectionData
+      - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions
+      - excel.Excel.Interfaces.SlicerItemCollectionUpdateData
+      - excel.Excel.Interfaces.SlicerItemData
+      - excel.Excel.Interfaces.SlicerItemLoadOptions
+      - excel.Excel.Interfaces.SlicerItemUpdateData
+      - excel.Excel.Interfaces.SlicerLoadOptions
+      - excel.Excel.Interfaces.SlicerUpdateData
       - excel.Excel.Interfaces.StyleCollectionData
+      - excel.Excel.Interfaces.StyleCollectionLoadOptions
       - excel.Excel.Interfaces.StyleCollectionUpdateData
       - excel.Excel.Interfaces.StyleData
+      - excel.Excel.Interfaces.StyleLoadOptions
       - excel.Excel.Interfaces.StyleUpdateData
       - excel.Excel.Interfaces.TableCollectionData
+      - excel.Excel.Interfaces.TableCollectionLoadOptions
       - excel.Excel.Interfaces.TableCollectionUpdateData
       - excel.Excel.Interfaces.TableColumnCollectionData
+      - excel.Excel.Interfaces.TableColumnCollectionLoadOptions
       - excel.Excel.Interfaces.TableColumnCollectionUpdateData
       - excel.Excel.Interfaces.TableColumnData
+      - excel.Excel.Interfaces.TableColumnLoadOptions
       - excel.Excel.Interfaces.TableColumnUpdateData
       - excel.Excel.Interfaces.TableData
+      - excel.Excel.Interfaces.TableLoadOptions
       - excel.Excel.Interfaces.TableRowCollectionData
+      - excel.Excel.Interfaces.TableRowCollectionLoadOptions
       - excel.Excel.Interfaces.TableRowCollectionUpdateData
       - excel.Excel.Interfaces.TableRowData
+      - excel.Excel.Interfaces.TableRowLoadOptions
       - excel.Excel.Interfaces.TableRowUpdateData
       - excel.Excel.Interfaces.TableScopedCollectionData
+      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions
       - excel.Excel.Interfaces.TableScopedCollectionUpdateData
       - excel.Excel.Interfaces.TableSortData
+      - excel.Excel.Interfaces.TableSortLoadOptions
       - excel.Excel.Interfaces.TableUpdateData
       - excel.Excel.Interfaces.TextConditionalFormatData
+      - excel.Excel.Interfaces.TextConditionalFormatLoadOptions
       - excel.Excel.Interfaces.TextConditionalFormatUpdateData
       - excel.Excel.Interfaces.TextFrameData
+      - excel.Excel.Interfaces.TextFrameLoadOptions
       - excel.Excel.Interfaces.TextFrameUpdateData
       - excel.Excel.Interfaces.TextRangeData
+      - excel.Excel.Interfaces.TextRangeLoadOptions
       - excel.Excel.Interfaces.TextRangeUpdateData
       - excel.Excel.Interfaces.TopBottomConditionalFormatData
+      - excel.Excel.Interfaces.TopBottomConditionalFormatLoadOptions
       - excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData
       - excel.Excel.Interfaces.WorkbookCreatedData
       - excel.Excel.Interfaces.WorkbookData
+      - excel.Excel.Interfaces.WorkbookLoadOptions
       - excel.Excel.Interfaces.WorkbookProtectionData
+      - excel.Excel.Interfaces.WorkbookProtectionLoadOptions
       - excel.Excel.Interfaces.WorkbookUpdateData
       - excel.Excel.Interfaces.WorksheetCollectionData
+      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions
       - excel.Excel.Interfaces.WorksheetCollectionUpdateData
       - excel.Excel.Interfaces.WorksheetData
+      - excel.Excel.Interfaces.WorksheetLoadOptions
       - excel.Excel.Interfaces.WorksheetProtectionData
+      - excel.Excel.Interfaces.WorksheetProtectionLoadOptions
       - excel.Excel.Interfaces.WorksheetUpdateData
       - excel.Excel.IterativeCalculation
+      - excel.Excel.Line
       - excel.Excel.LinkedDataTypeState
       - excel.Excel.ListDataValidation
       - excel.Excel.NamedItem
@@ -512,6 +692,7 @@ items:
       - excel.Excel.PivotTable
       - excel.Excel.PivotTableCollection
       - excel.Excel.Placement
+      - excel.Excel.postprocessBindingDescriptor
       - excel.Excel.PresetCriteriaConditionalFormat
       - excel.Excel.PrintComments
       - excel.Excel.PrintErrorType
@@ -540,6 +721,8 @@ items:
       - excel.Excel.RequestContext
       - excel.Excel.RowColumnPivotHierarchy
       - excel.Excel.RowColumnPivotHierarchyCollection
+      - excel.Excel.RowProperties
+      - excel.Excel.RowPropertiesLoadOptions
       - excel.Excel.run
       - excel.Excel.RunOptions
       - excel.Excel.Runtime
@@ -548,6 +731,9 @@ items:
       - excel.Excel.SearchDirection
       - excel.Excel.SelectionChangedEventArgs
       - excel.Excel.Session
+      - excel.Excel.SettableCellProperties
+      - excel.Excel.SettableColumnProperties
+      - excel.Excel.SettableRowProperties
       - excel.Excel.Setting
       - excel.Excel.SettingCollection
       - excel.Excel.SettingsChangedEventArgs
@@ -561,6 +747,9 @@ items:
       - excel.Excel.ShapeFont
       - excel.Excel.ShapeFontUnderlineStyle
       - excel.Excel.ShapeGroup
+      - excel.Excel.ShapeLineDashStyle
+      - excel.Excel.ShapeLineFormat
+      - excel.Excel.ShapeLineStyle
       - excel.Excel.ShapeScaleFrom
       - excel.Excel.ShapeScaleType
       - excel.Excel.ShapeTextHorizontalAlignType
@@ -574,6 +763,11 @@ items:
       - excel.Excel.SheetVisibility
       - excel.Excel.ShowAsCalculation
       - excel.Excel.ShowAsRule
+      - excel.Excel.Slicer
+      - excel.Excel.SlicerCollection
+      - excel.Excel.SlicerItem
+      - excel.Excel.SlicerItemCollection
+      - excel.Excel.SlicerSortType
       - excel.Excel.SortBy
       - excel.Excel.SortDataOption
       - excel.Excel.SortField
@@ -644,16 +838,54 @@ items:
       - typeScript
     type: function
     syntax:
-      content: 'export function createWorkbook(base64?: string): Promise<object>;'
+      content: 'export function createWorkbook(base64?: string): Promise<void>;'
       return:
         type:
-          - Promise<object>
+          - Promise<void>
         description: ''
       parameters:
         - id: base64
           description: ''
           type:
             - string
+  - uid: excel.Excel.getDataCommonPostprocess
+    name: 'getDataCommonPostprocess(response, callArgs)'
+    fullName: Excel.getDataCommonPostprocess
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function getDataCommonPostprocess(response: any, callArgs: any): any;'
+      return:
+        type:
+          - any
+        description: ''
+      parameters:
+        - id: response
+          description: ''
+          type:
+            - any
+        - id: callArgs
+          description: ''
+          type:
+            - any
+  - uid: excel.Excel.postprocessBindingDescriptor
+    name: postprocessBindingDescriptor(response)
+    fullName: Excel.postprocessBindingDescriptor
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function postprocessBindingDescriptor(response: any): any;'
+      return:
+        type:
+          - any
+        description: ''
+      parameters:
+        - id: response
+          description: ''
+          type:
+            - any
   - uid: excel.Excel.run
     summary: >-
       Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
@@ -707,6 +939,8 @@ references:
     name: Excel.AggregationFunction
   - uid: excel.Excel.Application
     name: Excel.Application
+  - uid: excel.Excel.AutoFillType
+    name: Excel.AutoFillType
   - uid: excel.Excel.AutoFilter
     name: Excel.AutoFilter
   - uid: excel.Excel.BasicDataValidation
@@ -735,6 +969,30 @@ references:
     name: Excel.CalculationState
   - uid: excel.Excel.CalculationType
     name: Excel.CalculationType
+  - uid: excel.Excel.CellBorder
+    name: Excel.CellBorder
+  - uid: excel.Excel.CellBorderCollection
+    name: Excel.CellBorderCollection
+  - uid: excel.Excel.CellProperties
+    name: Excel.CellProperties
+  - uid: excel.Excel.CellPropertiesBorderLoadOptions
+    name: Excel.CellPropertiesBorderLoadOptions
+  - uid: excel.Excel.CellPropertiesFill
+    name: Excel.CellPropertiesFill
+  - uid: excel.Excel.CellPropertiesFillLoadOptions
+    name: Excel.CellPropertiesFillLoadOptions
+  - uid: excel.Excel.CellPropertiesFont
+    name: Excel.CellPropertiesFont
+  - uid: excel.Excel.CellPropertiesFontLoadOptions
+    name: Excel.CellPropertiesFontLoadOptions
+  - uid: excel.Excel.CellPropertiesFormat
+    name: Excel.CellPropertiesFormat
+  - uid: excel.Excel.CellPropertiesFormatLoadOptions
+    name: Excel.CellPropertiesFormatLoadOptions
+  - uid: excel.Excel.CellPropertiesLoadOptions
+    name: Excel.CellPropertiesLoadOptions
+  - uid: excel.Excel.CellPropertiesProtection
+    name: Excel.CellPropertiesProtection
   - uid: excel.Excel.CellValueConditionalFormat
     name: Excel.CellValueConditionalFormat
   - uid: excel.Excel.Chart
@@ -909,6 +1167,10 @@ references:
     name: Excel.CloseBehavior
   - uid: excel.Excel.ColorScaleConditionalFormat
     name: Excel.ColorScaleConditionalFormat
+  - uid: excel.Excel.ColumnProperties
+    name: Excel.ColumnProperties
+  - uid: excel.Excel.ColumnPropertiesLoadOptions
+    name: Excel.ColumnPropertiesLoadOptions
   - uid: excel.Excel.Comment
     name: Excel.Comment
   - uid: excel.Excel.CommentCollection
@@ -983,6 +1245,8 @@ references:
     name: Excel.ConditionalTopBottomCriterionType
   - uid: excel.Excel.ConditionalTopBottomRule
     name: Excel.ConditionalTopBottomRule
+  - uid: excel.Excel.ConnectorType
+    name: Excel.ConnectorType
   - uid: excel.Excel.ContentType
     name: Excel.ContentType
   - uid: excel.Excel.CustomConditionalFormat
@@ -1121,58 +1385,88 @@ references:
     name: Excel.InsertShiftDirection
   - uid: excel.Excel.Interfaces.ApplicationData
     name: Excel.Interfaces.ApplicationData
+  - uid: excel.Excel.Interfaces.ApplicationLoadOptions
+    name: Excel.Interfaces.ApplicationLoadOptions
   - uid: excel.Excel.Interfaces.ApplicationUpdateData
     name: Excel.Interfaces.ApplicationUpdateData
   - uid: excel.Excel.Interfaces.AutoFilterData
     name: Excel.Interfaces.AutoFilterData
+  - uid: excel.Excel.Interfaces.AutoFilterLoadOptions
+    name: Excel.Interfaces.AutoFilterLoadOptions
   - uid: excel.Excel.Interfaces.BindingCollectionData
     name: Excel.Interfaces.BindingCollectionData
+  - uid: excel.Excel.Interfaces.BindingCollectionLoadOptions
+    name: Excel.Interfaces.BindingCollectionLoadOptions
   - uid: excel.Excel.Interfaces.BindingCollectionUpdateData
     name: Excel.Interfaces.BindingCollectionUpdateData
   - uid: excel.Excel.Interfaces.BindingData
     name: Excel.Interfaces.BindingData
+  - uid: excel.Excel.Interfaces.BindingLoadOptions
+    name: Excel.Interfaces.BindingLoadOptions
   - uid: excel.Excel.Interfaces.CellValueConditionalFormatData
     name: Excel.Interfaces.CellValueConditionalFormatData
+  - uid: excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions
+    name: Excel.Interfaces.CellValueConditionalFormatLoadOptions
   - uid: excel.Excel.Interfaces.CellValueConditionalFormatUpdateData
     name: Excel.Interfaces.CellValueConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ChartAreaFormatData
     name: Excel.Interfaces.ChartAreaFormatData
+  - uid: excel.Excel.Interfaces.ChartAreaFormatLoadOptions
+    name: Excel.Interfaces.ChartAreaFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartAreaFormatUpdateData
     name: Excel.Interfaces.ChartAreaFormatUpdateData
   - uid: excel.Excel.Interfaces.ChartAxesData
     name: Excel.Interfaces.ChartAxesData
+  - uid: excel.Excel.Interfaces.ChartAxesLoadOptions
+    name: Excel.Interfaces.ChartAxesLoadOptions
   - uid: excel.Excel.Interfaces.ChartAxesUpdateData
     name: Excel.Interfaces.ChartAxesUpdateData
   - uid: excel.Excel.Interfaces.ChartAxisData
     name: Excel.Interfaces.ChartAxisData
   - uid: excel.Excel.Interfaces.ChartAxisFormatData
     name: Excel.Interfaces.ChartAxisFormatData
+  - uid: excel.Excel.Interfaces.ChartAxisFormatLoadOptions
+    name: Excel.Interfaces.ChartAxisFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartAxisFormatUpdateData
     name: Excel.Interfaces.ChartAxisFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions
+    name: Excel.Interfaces.ChartAxisLoadOptions
   - uid: excel.Excel.Interfaces.ChartAxisTitleData
     name: Excel.Interfaces.ChartAxisTitleData
   - uid: excel.Excel.Interfaces.ChartAxisTitleFormatData
     name: Excel.Interfaces.ChartAxisTitleFormatData
+  - uid: excel.Excel.Interfaces.ChartAxisTitleFormatLoadOptions
+    name: Excel.Interfaces.ChartAxisTitleFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartAxisTitleFormatUpdateData
     name: Excel.Interfaces.ChartAxisTitleFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartAxisTitleLoadOptions
+    name: Excel.Interfaces.ChartAxisTitleLoadOptions
   - uid: excel.Excel.Interfaces.ChartAxisTitleUpdateData
     name: Excel.Interfaces.ChartAxisTitleUpdateData
   - uid: excel.Excel.Interfaces.ChartAxisUpdateData
     name: Excel.Interfaces.ChartAxisUpdateData
   - uid: excel.Excel.Interfaces.ChartBinOptionsData
     name: Excel.Interfaces.ChartBinOptionsData
+  - uid: excel.Excel.Interfaces.ChartBinOptionsLoadOptions
+    name: Excel.Interfaces.ChartBinOptionsLoadOptions
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData
     name: Excel.Interfaces.ChartBinOptionsUpdateData
   - uid: excel.Excel.Interfaces.ChartBorderData
     name: Excel.Interfaces.ChartBorderData
+  - uid: excel.Excel.Interfaces.ChartBorderLoadOptions
+    name: Excel.Interfaces.ChartBorderLoadOptions
   - uid: excel.Excel.Interfaces.ChartBorderUpdateData
     name: Excel.Interfaces.ChartBorderUpdateData
   - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsData
     name: Excel.Interfaces.ChartBoxwhiskerOptionsData
+  - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
+    name: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
   - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
     name: Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
   - uid: excel.Excel.Interfaces.ChartCollectionData
     name: Excel.Interfaces.ChartCollectionData
+  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions
+    name: Excel.Interfaces.ChartCollectionLoadOptions
   - uid: excel.Excel.Interfaces.ChartCollectionUpdateData
     name: Excel.Interfaces.ChartCollectionUpdateData
   - uid: excel.Excel.Interfaces.ChartData
@@ -1181,10 +1475,16 @@ references:
     name: Excel.Interfaces.ChartDataLabelData
   - uid: excel.Excel.Interfaces.ChartDataLabelFormatData
     name: Excel.Interfaces.ChartDataLabelFormatData
+  - uid: excel.Excel.Interfaces.ChartDataLabelFormatLoadOptions
+    name: Excel.Interfaces.ChartDataLabelFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartDataLabelFormatUpdateData
     name: Excel.Interfaces.ChartDataLabelFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions
+    name: Excel.Interfaces.ChartDataLabelLoadOptions
   - uid: excel.Excel.Interfaces.ChartDataLabelsData
     name: Excel.Interfaces.ChartDataLabelsData
+  - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions
+    name: Excel.Interfaces.ChartDataLabelsLoadOptions
   - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData
     name: Excel.Interfaces.ChartDataLabelsUpdateData
   - uid: excel.Excel.Interfaces.ChartDataLabelUpdateData
@@ -1193,468 +1493,758 @@ references:
     name: Excel.Interfaces.ChartErrorBarsData
   - uid: excel.Excel.Interfaces.ChartErrorBarsFormatData
     name: Excel.Interfaces.ChartErrorBarsFormatData
+  - uid: excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions
+    name: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartErrorBarsFormatUpdateData
     name: Excel.Interfaces.ChartErrorBarsFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions
+    name: Excel.Interfaces.ChartErrorBarsLoadOptions
   - uid: excel.Excel.Interfaces.ChartErrorBarsUpdateData
     name: Excel.Interfaces.ChartErrorBarsUpdateData
   - uid: excel.Excel.Interfaces.ChartFontData
     name: Excel.Interfaces.ChartFontData
+  - uid: excel.Excel.Interfaces.ChartFontLoadOptions
+    name: Excel.Interfaces.ChartFontLoadOptions
   - uid: excel.Excel.Interfaces.ChartFontUpdateData
     name: Excel.Interfaces.ChartFontUpdateData
   - uid: excel.Excel.Interfaces.ChartFormatStringData
     name: Excel.Interfaces.ChartFormatStringData
+  - uid: excel.Excel.Interfaces.ChartFormatStringLoadOptions
+    name: Excel.Interfaces.ChartFormatStringLoadOptions
   - uid: excel.Excel.Interfaces.ChartFormatStringUpdateData
     name: Excel.Interfaces.ChartFormatStringUpdateData
   - uid: excel.Excel.Interfaces.ChartGridlinesData
     name: Excel.Interfaces.ChartGridlinesData
   - uid: excel.Excel.Interfaces.ChartGridlinesFormatData
     name: Excel.Interfaces.ChartGridlinesFormatData
+  - uid: excel.Excel.Interfaces.ChartGridlinesFormatLoadOptions
+    name: Excel.Interfaces.ChartGridlinesFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartGridlinesFormatUpdateData
     name: Excel.Interfaces.ChartGridlinesFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartGridlinesLoadOptions
+    name: Excel.Interfaces.ChartGridlinesLoadOptions
   - uid: excel.Excel.Interfaces.ChartGridlinesUpdateData
     name: Excel.Interfaces.ChartGridlinesUpdateData
   - uid: excel.Excel.Interfaces.ChartLegendData
     name: Excel.Interfaces.ChartLegendData
   - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionData
     name: Excel.Interfaces.ChartLegendEntryCollectionData
+  - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions
+    name: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions
   - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionUpdateData
     name: Excel.Interfaces.ChartLegendEntryCollectionUpdateData
   - uid: excel.Excel.Interfaces.ChartLegendEntryData
     name: Excel.Interfaces.ChartLegendEntryData
+  - uid: excel.Excel.Interfaces.ChartLegendEntryLoadOptions
+    name: Excel.Interfaces.ChartLegendEntryLoadOptions
   - uid: excel.Excel.Interfaces.ChartLegendEntryUpdateData
     name: Excel.Interfaces.ChartLegendEntryUpdateData
   - uid: excel.Excel.Interfaces.ChartLegendFormatData
     name: Excel.Interfaces.ChartLegendFormatData
+  - uid: excel.Excel.Interfaces.ChartLegendFormatLoadOptions
+    name: Excel.Interfaces.ChartLegendFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartLegendFormatUpdateData
     name: Excel.Interfaces.ChartLegendFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartLegendLoadOptions
+    name: Excel.Interfaces.ChartLegendLoadOptions
   - uid: excel.Excel.Interfaces.ChartLegendUpdateData
     name: Excel.Interfaces.ChartLegendUpdateData
   - uid: excel.Excel.Interfaces.ChartLineFormatData
     name: Excel.Interfaces.ChartLineFormatData
+  - uid: excel.Excel.Interfaces.ChartLineFormatLoadOptions
+    name: Excel.Interfaces.ChartLineFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartLineFormatUpdateData
     name: Excel.Interfaces.ChartLineFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartLoadOptions
+    name: Excel.Interfaces.ChartLoadOptions
   - uid: excel.Excel.Interfaces.ChartMapOptionsData
     name: Excel.Interfaces.ChartMapOptionsData
+  - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions
+    name: Excel.Interfaces.ChartMapOptionsLoadOptions
   - uid: excel.Excel.Interfaces.ChartMapOptionsUpdateData
     name: Excel.Interfaces.ChartMapOptionsUpdateData
   - uid: excel.Excel.Interfaces.ChartPivotOptionsData
     name: Excel.Interfaces.ChartPivotOptionsData
+  - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions
+    name: Excel.Interfaces.ChartPivotOptionsLoadOptions
   - uid: excel.Excel.Interfaces.ChartPivotOptionsUpdateData
     name: Excel.Interfaces.ChartPivotOptionsUpdateData
   - uid: excel.Excel.Interfaces.ChartPlotAreaData
     name: Excel.Interfaces.ChartPlotAreaData
   - uid: excel.Excel.Interfaces.ChartPlotAreaFormatData
     name: Excel.Interfaces.ChartPlotAreaFormatData
+  - uid: excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions
+    name: Excel.Interfaces.ChartPlotAreaFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartPlotAreaFormatUpdateData
     name: Excel.Interfaces.ChartPlotAreaFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions
+    name: Excel.Interfaces.ChartPlotAreaLoadOptions
   - uid: excel.Excel.Interfaces.ChartPlotAreaUpdateData
     name: Excel.Interfaces.ChartPlotAreaUpdateData
   - uid: excel.Excel.Interfaces.ChartPointData
     name: Excel.Interfaces.ChartPointData
   - uid: excel.Excel.Interfaces.ChartPointFormatData
     name: Excel.Interfaces.ChartPointFormatData
+  - uid: excel.Excel.Interfaces.ChartPointFormatLoadOptions
+    name: Excel.Interfaces.ChartPointFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartPointFormatUpdateData
     name: Excel.Interfaces.ChartPointFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartPointLoadOptions
+    name: Excel.Interfaces.ChartPointLoadOptions
   - uid: excel.Excel.Interfaces.ChartPointsCollectionData
     name: Excel.Interfaces.ChartPointsCollectionData
+  - uid: excel.Excel.Interfaces.ChartPointsCollectionLoadOptions
+    name: Excel.Interfaces.ChartPointsCollectionLoadOptions
   - uid: excel.Excel.Interfaces.ChartPointsCollectionUpdateData
     name: Excel.Interfaces.ChartPointsCollectionUpdateData
   - uid: excel.Excel.Interfaces.ChartPointUpdateData
     name: Excel.Interfaces.ChartPointUpdateData
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionData
     name: Excel.Interfaces.ChartSeriesCollectionData
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions
+    name: Excel.Interfaces.ChartSeriesCollectionLoadOptions
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionUpdateData
     name: Excel.Interfaces.ChartSeriesCollectionUpdateData
   - uid: excel.Excel.Interfaces.ChartSeriesData
     name: Excel.Interfaces.ChartSeriesData
   - uid: excel.Excel.Interfaces.ChartSeriesFormatData
     name: Excel.Interfaces.ChartSeriesFormatData
+  - uid: excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
+    name: Excel.Interfaces.ChartSeriesFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartSeriesFormatUpdateData
     name: Excel.Interfaces.ChartSeriesFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions
+    name: Excel.Interfaces.ChartSeriesLoadOptions
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData
     name: Excel.Interfaces.ChartSeriesUpdateData
   - uid: excel.Excel.Interfaces.ChartTitleData
     name: Excel.Interfaces.ChartTitleData
   - uid: excel.Excel.Interfaces.ChartTitleFormatData
     name: Excel.Interfaces.ChartTitleFormatData
+  - uid: excel.Excel.Interfaces.ChartTitleFormatLoadOptions
+    name: Excel.Interfaces.ChartTitleFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartTitleFormatUpdateData
     name: Excel.Interfaces.ChartTitleFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartTitleLoadOptions
+    name: Excel.Interfaces.ChartTitleLoadOptions
   - uid: excel.Excel.Interfaces.ChartTitleUpdateData
     name: Excel.Interfaces.ChartTitleUpdateData
   - uid: excel.Excel.Interfaces.ChartTrendlineCollectionData
     name: Excel.Interfaces.ChartTrendlineCollectionData
+  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions
+    name: Excel.Interfaces.ChartTrendlineCollectionLoadOptions
   - uid: excel.Excel.Interfaces.ChartTrendlineCollectionUpdateData
     name: Excel.Interfaces.ChartTrendlineCollectionUpdateData
   - uid: excel.Excel.Interfaces.ChartTrendlineData
     name: Excel.Interfaces.ChartTrendlineData
   - uid: excel.Excel.Interfaces.ChartTrendlineFormatData
     name: Excel.Interfaces.ChartTrendlineFormatData
+  - uid: excel.Excel.Interfaces.ChartTrendlineFormatLoadOptions
+    name: Excel.Interfaces.ChartTrendlineFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartTrendlineFormatUpdateData
     name: Excel.Interfaces.ChartTrendlineFormatUpdateData
   - uid: excel.Excel.Interfaces.ChartTrendlineLabelData
     name: Excel.Interfaces.ChartTrendlineLabelData
   - uid: excel.Excel.Interfaces.ChartTrendlineLabelFormatData
     name: Excel.Interfaces.ChartTrendlineLabelFormatData
+  - uid: excel.Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions
+    name: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
     name: Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartTrendlineLabelLoadOptions
+    name: Excel.Interfaces.ChartTrendlineLabelLoadOptions
   - uid: excel.Excel.Interfaces.ChartTrendlineLabelUpdateData
     name: Excel.Interfaces.ChartTrendlineLabelUpdateData
+  - uid: excel.Excel.Interfaces.ChartTrendlineLoadOptions
+    name: Excel.Interfaces.ChartTrendlineLoadOptions
   - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData
     name: Excel.Interfaces.ChartTrendlineUpdateData
   - uid: excel.Excel.Interfaces.ChartUpdateData
     name: Excel.Interfaces.ChartUpdateData
+  - uid: excel.Excel.Interfaces.CollectionLoadOptions
+    name: Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.Interfaces.ColorScaleConditionalFormatData
     name: Excel.Interfaces.ColorScaleConditionalFormatData
+  - uid: excel.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
+    name: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
   - uid: excel.Excel.Interfaces.ColorScaleConditionalFormatUpdateData
     name: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.CommentCollectionData
     name: Excel.Interfaces.CommentCollectionData
+  - uid: excel.Excel.Interfaces.CommentCollectionLoadOptions
+    name: Excel.Interfaces.CommentCollectionLoadOptions
   - uid: excel.Excel.Interfaces.CommentCollectionUpdateData
     name: Excel.Interfaces.CommentCollectionUpdateData
   - uid: excel.Excel.Interfaces.CommentData
     name: Excel.Interfaces.CommentData
+  - uid: excel.Excel.Interfaces.CommentLoadOptions
+    name: Excel.Interfaces.CommentLoadOptions
   - uid: excel.Excel.Interfaces.CommentReplyCollectionData
     name: Excel.Interfaces.CommentReplyCollectionData
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions
+    name: Excel.Interfaces.CommentReplyCollectionLoadOptions
   - uid: excel.Excel.Interfaces.CommentReplyCollectionUpdateData
     name: Excel.Interfaces.CommentReplyCollectionUpdateData
   - uid: excel.Excel.Interfaces.CommentReplyData
     name: Excel.Interfaces.CommentReplyData
+  - uid: excel.Excel.Interfaces.CommentReplyLoadOptions
+    name: Excel.Interfaces.CommentReplyLoadOptions
+  - uid: excel.Excel.Interfaces.CommentReplyUpdateData
+    name: Excel.Interfaces.CommentReplyUpdateData
+  - uid: excel.Excel.Interfaces.CommentUpdateData
+    name: Excel.Interfaces.CommentUpdateData
   - uid: excel.Excel.Interfaces.ConditionalDataBarNegativeFormatData
     name: Excel.Interfaces.ConditionalDataBarNegativeFormatData
+  - uid: excel.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
+    name: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
   - uid: excel.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
     name: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatData
     name: Excel.Interfaces.ConditionalDataBarPositiveFormatData
+  - uid: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
+    name: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
   - uid: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
     name: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatCollectionData
     name: Excel.Interfaces.ConditionalFormatCollectionData
+  - uid: excel.Excel.Interfaces.ConditionalFormatCollectionLoadOptions
+    name: Excel.Interfaces.ConditionalFormatCollectionLoadOptions
   - uid: excel.Excel.Interfaces.ConditionalFormatCollectionUpdateData
     name: Excel.Interfaces.ConditionalFormatCollectionUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatData
     name: Excel.Interfaces.ConditionalFormatData
+  - uid: excel.Excel.Interfaces.ConditionalFormatLoadOptions
+    name: Excel.Interfaces.ConditionalFormatLoadOptions
   - uid: excel.Excel.Interfaces.ConditionalFormatRuleData
     name: Excel.Interfaces.ConditionalFormatRuleData
+  - uid: excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions
+    name: Excel.Interfaces.ConditionalFormatRuleLoadOptions
   - uid: excel.Excel.Interfaces.ConditionalFormatRuleUpdateData
     name: Excel.Interfaces.ConditionalFormatRuleUpdateData
   - uid: excel.Excel.Interfaces.ConditionalFormatUpdateData
     name: Excel.Interfaces.ConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionData
     name: Excel.Interfaces.ConditionalRangeBorderCollectionData
+  - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
+    name: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
   - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
     name: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
   - uid: excel.Excel.Interfaces.ConditionalRangeBorderData
     name: Excel.Interfaces.ConditionalRangeBorderData
+  - uid: excel.Excel.Interfaces.ConditionalRangeBorderLoadOptions
+    name: Excel.Interfaces.ConditionalRangeBorderLoadOptions
   - uid: excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
     name: Excel.Interfaces.ConditionalRangeBorderUpdateData
   - uid: excel.Excel.Interfaces.ConditionalRangeFillData
     name: Excel.Interfaces.ConditionalRangeFillData
+  - uid: excel.Excel.Interfaces.ConditionalRangeFillLoadOptions
+    name: Excel.Interfaces.ConditionalRangeFillLoadOptions
   - uid: excel.Excel.Interfaces.ConditionalRangeFillUpdateData
     name: Excel.Interfaces.ConditionalRangeFillUpdateData
   - uid: excel.Excel.Interfaces.ConditionalRangeFontData
     name: Excel.Interfaces.ConditionalRangeFontData
+  - uid: excel.Excel.Interfaces.ConditionalRangeFontLoadOptions
+    name: Excel.Interfaces.ConditionalRangeFontLoadOptions
   - uid: excel.Excel.Interfaces.ConditionalRangeFontUpdateData
     name: Excel.Interfaces.ConditionalRangeFontUpdateData
   - uid: excel.Excel.Interfaces.ConditionalRangeFormatData
     name: Excel.Interfaces.ConditionalRangeFormatData
+  - uid: excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
+    name: Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: excel.Excel.Interfaces.ConditionalRangeFormatUpdateData
     name: Excel.Interfaces.ConditionalRangeFormatUpdateData
   - uid: excel.Excel.Interfaces.CustomConditionalFormatData
     name: Excel.Interfaces.CustomConditionalFormatData
+  - uid: excel.Excel.Interfaces.CustomConditionalFormatLoadOptions
+    name: Excel.Interfaces.CustomConditionalFormatLoadOptions
   - uid: excel.Excel.Interfaces.CustomConditionalFormatUpdateData
     name: Excel.Interfaces.CustomConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.CustomPropertyCollectionData
     name: Excel.Interfaces.CustomPropertyCollectionData
+  - uid: excel.Excel.Interfaces.CustomPropertyCollectionLoadOptions
+    name: Excel.Interfaces.CustomPropertyCollectionLoadOptions
   - uid: excel.Excel.Interfaces.CustomPropertyCollectionUpdateData
     name: Excel.Interfaces.CustomPropertyCollectionUpdateData
   - uid: excel.Excel.Interfaces.CustomPropertyData
     name: Excel.Interfaces.CustomPropertyData
+  - uid: excel.Excel.Interfaces.CustomPropertyLoadOptions
+    name: Excel.Interfaces.CustomPropertyLoadOptions
   - uid: excel.Excel.Interfaces.CustomPropertyUpdateData
     name: Excel.Interfaces.CustomPropertyUpdateData
   - uid: excel.Excel.Interfaces.CustomXmlPartCollectionData
     name: Excel.Interfaces.CustomXmlPartCollectionData
+  - uid: excel.Excel.Interfaces.CustomXmlPartCollectionLoadOptions
+    name: Excel.Interfaces.CustomXmlPartCollectionLoadOptions
   - uid: excel.Excel.Interfaces.CustomXmlPartCollectionUpdateData
     name: Excel.Interfaces.CustomXmlPartCollectionUpdateData
   - uid: excel.Excel.Interfaces.CustomXmlPartData
     name: Excel.Interfaces.CustomXmlPartData
+  - uid: excel.Excel.Interfaces.CustomXmlPartLoadOptions
+    name: Excel.Interfaces.CustomXmlPartLoadOptions
   - uid: excel.Excel.Interfaces.CustomXmlPartScopedCollectionData
     name: Excel.Interfaces.CustomXmlPartScopedCollectionData
+  - uid: excel.Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions
+    name: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions
   - uid: excel.Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
     name: Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
   - uid: excel.Excel.Interfaces.DataBarConditionalFormatData
     name: Excel.Interfaces.DataBarConditionalFormatData
+  - uid: excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions
+    name: Excel.Interfaces.DataBarConditionalFormatLoadOptions
   - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData
     name: Excel.Interfaces.DataBarConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionData
     name: Excel.Interfaces.DataPivotHierarchyCollectionData
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions
+    name: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions
   - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
     name: Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
   - uid: excel.Excel.Interfaces.DataPivotHierarchyData
     name: Excel.Interfaces.DataPivotHierarchyData
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyLoadOptions
+    name: Excel.Interfaces.DataPivotHierarchyLoadOptions
   - uid: excel.Excel.Interfaces.DataPivotHierarchyUpdateData
     name: Excel.Interfaces.DataPivotHierarchyUpdateData
   - uid: excel.Excel.Interfaces.DataValidationData
     name: Excel.Interfaces.DataValidationData
+  - uid: excel.Excel.Interfaces.DataValidationLoadOptions
+    name: Excel.Interfaces.DataValidationLoadOptions
   - uid: excel.Excel.Interfaces.DataValidationUpdateData
     name: Excel.Interfaces.DataValidationUpdateData
   - uid: excel.Excel.Interfaces.DocumentPropertiesData
     name: Excel.Interfaces.DocumentPropertiesData
+  - uid: excel.Excel.Interfaces.DocumentPropertiesLoadOptions
+    name: Excel.Interfaces.DocumentPropertiesLoadOptions
   - uid: excel.Excel.Interfaces.DocumentPropertiesUpdateData
     name: Excel.Interfaces.DocumentPropertiesUpdateData
   - uid: excel.Excel.Interfaces.FilterData
     name: Excel.Interfaces.FilterData
+  - uid: excel.Excel.Interfaces.FilterLoadOptions
+    name: Excel.Interfaces.FilterLoadOptions
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyCollectionData
     name: Excel.Interfaces.FilterPivotHierarchyCollectionData
+  - uid: excel.Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions
+    name: Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
     name: Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyData
     name: Excel.Interfaces.FilterPivotHierarchyData
+  - uid: excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions
+    name: Excel.Interfaces.FilterPivotHierarchyLoadOptions
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyUpdateData
     name: Excel.Interfaces.FilterPivotHierarchyUpdateData
   - uid: excel.Excel.Interfaces.FormatProtectionData
     name: Excel.Interfaces.FormatProtectionData
+  - uid: excel.Excel.Interfaces.FormatProtectionLoadOptions
+    name: Excel.Interfaces.FormatProtectionLoadOptions
   - uid: excel.Excel.Interfaces.FormatProtectionUpdateData
     name: Excel.Interfaces.FormatProtectionUpdateData
   - uid: excel.Excel.Interfaces.FunctionResultData
     name: Excel.Interfaces.FunctionResultData
+  - uid: excel.Excel.Interfaces.FunctionResultLoadOptions
+    name: Excel.Interfaces.FunctionResultLoadOptions
   - uid: excel.Excel.Interfaces.GeometricShapeData
     name: Excel.Interfaces.GeometricShapeData
+  - uid: excel.Excel.Interfaces.GeometricShapeLoadOptions
+    name: Excel.Interfaces.GeometricShapeLoadOptions
   - uid: excel.Excel.Interfaces.GroupShapeCollectionData
     name: Excel.Interfaces.GroupShapeCollectionData
+  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions
+    name: Excel.Interfaces.GroupShapeCollectionLoadOptions
   - uid: excel.Excel.Interfaces.GroupShapeCollectionUpdateData
     name: Excel.Interfaces.GroupShapeCollectionUpdateData
   - uid: excel.Excel.Interfaces.HeaderFooterData
     name: Excel.Interfaces.HeaderFooterData
   - uid: excel.Excel.Interfaces.HeaderFooterGroupData
     name: Excel.Interfaces.HeaderFooterGroupData
+  - uid: excel.Excel.Interfaces.HeaderFooterGroupLoadOptions
+    name: Excel.Interfaces.HeaderFooterGroupLoadOptions
   - uid: excel.Excel.Interfaces.HeaderFooterGroupUpdateData
     name: Excel.Interfaces.HeaderFooterGroupUpdateData
+  - uid: excel.Excel.Interfaces.HeaderFooterLoadOptions
+    name: Excel.Interfaces.HeaderFooterLoadOptions
   - uid: excel.Excel.Interfaces.HeaderFooterUpdateData
     name: Excel.Interfaces.HeaderFooterUpdateData
   - uid: excel.Excel.Interfaces.IconSetConditionalFormatData
     name: Excel.Interfaces.IconSetConditionalFormatData
+  - uid: excel.Excel.Interfaces.IconSetConditionalFormatLoadOptions
+    name: Excel.Interfaces.IconSetConditionalFormatLoadOptions
   - uid: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData
     name: Excel.Interfaces.IconSetConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.ImageData
     name: Excel.Interfaces.ImageData
+  - uid: excel.Excel.Interfaces.ImageLoadOptions
+    name: Excel.Interfaces.ImageLoadOptions
   - uid: excel.Excel.Interfaces.IterativeCalculationData
     name: Excel.Interfaces.IterativeCalculationData
+  - uid: excel.Excel.Interfaces.IterativeCalculationLoadOptions
+    name: Excel.Interfaces.IterativeCalculationLoadOptions
   - uid: excel.Excel.Interfaces.IterativeCalculationUpdateData
     name: Excel.Interfaces.IterativeCalculationUpdateData
+  - uid: excel.Excel.Interfaces.LineData
+    name: Excel.Interfaces.LineData
+  - uid: excel.Excel.Interfaces.LineLoadOptions
+    name: Excel.Interfaces.LineLoadOptions
+  - uid: excel.Excel.Interfaces.LineUpdateData
+    name: Excel.Interfaces.LineUpdateData
   - uid: excel.Excel.Interfaces.NamedItemArrayValuesData
     name: Excel.Interfaces.NamedItemArrayValuesData
+  - uid: excel.Excel.Interfaces.NamedItemArrayValuesLoadOptions
+    name: Excel.Interfaces.NamedItemArrayValuesLoadOptions
   - uid: excel.Excel.Interfaces.NamedItemCollectionData
     name: Excel.Interfaces.NamedItemCollectionData
+  - uid: excel.Excel.Interfaces.NamedItemCollectionLoadOptions
+    name: Excel.Interfaces.NamedItemCollectionLoadOptions
   - uid: excel.Excel.Interfaces.NamedItemCollectionUpdateData
     name: Excel.Interfaces.NamedItemCollectionUpdateData
   - uid: excel.Excel.Interfaces.NamedItemData
     name: Excel.Interfaces.NamedItemData
+  - uid: excel.Excel.Interfaces.NamedItemLoadOptions
+    name: Excel.Interfaces.NamedItemLoadOptions
   - uid: excel.Excel.Interfaces.NamedItemUpdateData
     name: Excel.Interfaces.NamedItemUpdateData
   - uid: excel.Excel.Interfaces.PageBreakCollectionData
     name: Excel.Interfaces.PageBreakCollectionData
+  - uid: excel.Excel.Interfaces.PageBreakCollectionLoadOptions
+    name: Excel.Interfaces.PageBreakCollectionLoadOptions
   - uid: excel.Excel.Interfaces.PageBreakCollectionUpdateData
     name: Excel.Interfaces.PageBreakCollectionUpdateData
   - uid: excel.Excel.Interfaces.PageBreakData
     name: Excel.Interfaces.PageBreakData
+  - uid: excel.Excel.Interfaces.PageBreakLoadOptions
+    name: Excel.Interfaces.PageBreakLoadOptions
   - uid: excel.Excel.Interfaces.PageLayoutData
     name: Excel.Interfaces.PageLayoutData
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions
+    name: Excel.Interfaces.PageLayoutLoadOptions
   - uid: excel.Excel.Interfaces.PageLayoutUpdateData
     name: Excel.Interfaces.PageLayoutUpdateData
   - uid: excel.Excel.Interfaces.PivotFieldCollectionData
     name: Excel.Interfaces.PivotFieldCollectionData
+  - uid: excel.Excel.Interfaces.PivotFieldCollectionLoadOptions
+    name: Excel.Interfaces.PivotFieldCollectionLoadOptions
   - uid: excel.Excel.Interfaces.PivotFieldCollectionUpdateData
     name: Excel.Interfaces.PivotFieldCollectionUpdateData
   - uid: excel.Excel.Interfaces.PivotFieldData
     name: Excel.Interfaces.PivotFieldData
+  - uid: excel.Excel.Interfaces.PivotFieldLoadOptions
+    name: Excel.Interfaces.PivotFieldLoadOptions
   - uid: excel.Excel.Interfaces.PivotFieldUpdateData
     name: Excel.Interfaces.PivotFieldUpdateData
   - uid: excel.Excel.Interfaces.PivotHierarchyCollectionData
     name: Excel.Interfaces.PivotHierarchyCollectionData
+  - uid: excel.Excel.Interfaces.PivotHierarchyCollectionLoadOptions
+    name: Excel.Interfaces.PivotHierarchyCollectionLoadOptions
   - uid: excel.Excel.Interfaces.PivotHierarchyCollectionUpdateData
     name: Excel.Interfaces.PivotHierarchyCollectionUpdateData
   - uid: excel.Excel.Interfaces.PivotHierarchyData
     name: Excel.Interfaces.PivotHierarchyData
+  - uid: excel.Excel.Interfaces.PivotHierarchyLoadOptions
+    name: Excel.Interfaces.PivotHierarchyLoadOptions
   - uid: excel.Excel.Interfaces.PivotHierarchyUpdateData
     name: Excel.Interfaces.PivotHierarchyUpdateData
   - uid: excel.Excel.Interfaces.PivotItemCollectionData
     name: Excel.Interfaces.PivotItemCollectionData
+  - uid: excel.Excel.Interfaces.PivotItemCollectionLoadOptions
+    name: Excel.Interfaces.PivotItemCollectionLoadOptions
   - uid: excel.Excel.Interfaces.PivotItemCollectionUpdateData
     name: Excel.Interfaces.PivotItemCollectionUpdateData
   - uid: excel.Excel.Interfaces.PivotItemData
     name: Excel.Interfaces.PivotItemData
+  - uid: excel.Excel.Interfaces.PivotItemLoadOptions
+    name: Excel.Interfaces.PivotItemLoadOptions
   - uid: excel.Excel.Interfaces.PivotItemUpdateData
     name: Excel.Interfaces.PivotItemUpdateData
   - uid: excel.Excel.Interfaces.PivotLayoutData
     name: Excel.Interfaces.PivotLayoutData
+  - uid: excel.Excel.Interfaces.PivotLayoutLoadOptions
+    name: Excel.Interfaces.PivotLayoutLoadOptions
   - uid: excel.Excel.Interfaces.PivotLayoutUpdateData
     name: Excel.Interfaces.PivotLayoutUpdateData
   - uid: excel.Excel.Interfaces.PivotTableCollectionData
     name: Excel.Interfaces.PivotTableCollectionData
+  - uid: excel.Excel.Interfaces.PivotTableCollectionLoadOptions
+    name: Excel.Interfaces.PivotTableCollectionLoadOptions
   - uid: excel.Excel.Interfaces.PivotTableCollectionUpdateData
     name: Excel.Interfaces.PivotTableCollectionUpdateData
   - uid: excel.Excel.Interfaces.PivotTableData
     name: Excel.Interfaces.PivotTableData
+  - uid: excel.Excel.Interfaces.PivotTableLoadOptions
+    name: Excel.Interfaces.PivotTableLoadOptions
   - uid: excel.Excel.Interfaces.PivotTableUpdateData
     name: Excel.Interfaces.PivotTableUpdateData
   - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatData
     name: Excel.Interfaces.PresetCriteriaConditionalFormatData
+  - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
+    name: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
   - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
     name: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.RangeAreasData
     name: Excel.Interfaces.RangeAreasData
+  - uid: excel.Excel.Interfaces.RangeAreasLoadOptions
+    name: Excel.Interfaces.RangeAreasLoadOptions
   - uid: excel.Excel.Interfaces.RangeAreasUpdateData
     name: Excel.Interfaces.RangeAreasUpdateData
   - uid: excel.Excel.Interfaces.RangeBorderCollectionData
     name: Excel.Interfaces.RangeBorderCollectionData
+  - uid: excel.Excel.Interfaces.RangeBorderCollectionLoadOptions
+    name: Excel.Interfaces.RangeBorderCollectionLoadOptions
   - uid: excel.Excel.Interfaces.RangeBorderCollectionUpdateData
     name: Excel.Interfaces.RangeBorderCollectionUpdateData
   - uid: excel.Excel.Interfaces.RangeBorderData
     name: Excel.Interfaces.RangeBorderData
+  - uid: excel.Excel.Interfaces.RangeBorderLoadOptions
+    name: Excel.Interfaces.RangeBorderLoadOptions
   - uid: excel.Excel.Interfaces.RangeBorderUpdateData
     name: Excel.Interfaces.RangeBorderUpdateData
   - uid: excel.Excel.Interfaces.RangeCollectionData
     name: Excel.Interfaces.RangeCollectionData
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions
+    name: Excel.Interfaces.RangeCollectionLoadOptions
   - uid: excel.Excel.Interfaces.RangeCollectionUpdateData
     name: Excel.Interfaces.RangeCollectionUpdateData
   - uid: excel.Excel.Interfaces.RangeData
     name: Excel.Interfaces.RangeData
   - uid: excel.Excel.Interfaces.RangeFillData
     name: Excel.Interfaces.RangeFillData
+  - uid: excel.Excel.Interfaces.RangeFillLoadOptions
+    name: Excel.Interfaces.RangeFillLoadOptions
   - uid: excel.Excel.Interfaces.RangeFillUpdateData
     name: Excel.Interfaces.RangeFillUpdateData
   - uid: excel.Excel.Interfaces.RangeFontData
     name: Excel.Interfaces.RangeFontData
+  - uid: excel.Excel.Interfaces.RangeFontLoadOptions
+    name: Excel.Interfaces.RangeFontLoadOptions
   - uid: excel.Excel.Interfaces.RangeFontUpdateData
     name: Excel.Interfaces.RangeFontUpdateData
   - uid: excel.Excel.Interfaces.RangeFormatData
     name: Excel.Interfaces.RangeFormatData
+  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions
+    name: Excel.Interfaces.RangeFormatLoadOptions
   - uid: excel.Excel.Interfaces.RangeFormatUpdateData
     name: Excel.Interfaces.RangeFormatUpdateData
+  - uid: excel.Excel.Interfaces.RangeLoadOptions
+    name: Excel.Interfaces.RangeLoadOptions
   - uid: excel.Excel.Interfaces.RangeUpdateData
     name: Excel.Interfaces.RangeUpdateData
   - uid: excel.Excel.Interfaces.RangeViewCollectionData
     name: Excel.Interfaces.RangeViewCollectionData
+  - uid: excel.Excel.Interfaces.RangeViewCollectionLoadOptions
+    name: Excel.Interfaces.RangeViewCollectionLoadOptions
   - uid: excel.Excel.Interfaces.RangeViewCollectionUpdateData
     name: Excel.Interfaces.RangeViewCollectionUpdateData
   - uid: excel.Excel.Interfaces.RangeViewData
     name: Excel.Interfaces.RangeViewData
+  - uid: excel.Excel.Interfaces.RangeViewLoadOptions
+    name: Excel.Interfaces.RangeViewLoadOptions
   - uid: excel.Excel.Interfaces.RangeViewUpdateData
     name: Excel.Interfaces.RangeViewUpdateData
   - uid: excel.Excel.Interfaces.RemoveDuplicatesResultData
     name: Excel.Interfaces.RemoveDuplicatesResultData
+  - uid: excel.Excel.Interfaces.RemoveDuplicatesResultLoadOptions
+    name: Excel.Interfaces.RemoveDuplicatesResultLoadOptions
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData
     name: Excel.Interfaces.RowColumnPivotHierarchyCollectionData
+  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions
+    name: Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
     name: Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyData
     name: Excel.Interfaces.RowColumnPivotHierarchyData
+  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions
+    name: Excel.Interfaces.RowColumnPivotHierarchyLoadOptions
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData
     name: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
   - uid: excel.Excel.Interfaces.RuntimeData
     name: Excel.Interfaces.RuntimeData
+  - uid: excel.Excel.Interfaces.RuntimeLoadOptions
+    name: Excel.Interfaces.RuntimeLoadOptions
   - uid: excel.Excel.Interfaces.RuntimeUpdateData
     name: Excel.Interfaces.RuntimeUpdateData
   - uid: excel.Excel.Interfaces.SettingCollectionData
     name: Excel.Interfaces.SettingCollectionData
+  - uid: excel.Excel.Interfaces.SettingCollectionLoadOptions
+    name: Excel.Interfaces.SettingCollectionLoadOptions
   - uid: excel.Excel.Interfaces.SettingCollectionUpdateData
     name: Excel.Interfaces.SettingCollectionUpdateData
   - uid: excel.Excel.Interfaces.SettingData
     name: Excel.Interfaces.SettingData
+  - uid: excel.Excel.Interfaces.SettingLoadOptions
+    name: Excel.Interfaces.SettingLoadOptions
   - uid: excel.Excel.Interfaces.SettingUpdateData
     name: Excel.Interfaces.SettingUpdateData
   - uid: excel.Excel.Interfaces.ShapeCollectionData
     name: Excel.Interfaces.ShapeCollectionData
+  - uid: excel.Excel.Interfaces.ShapeCollectionLoadOptions
+    name: Excel.Interfaces.ShapeCollectionLoadOptions
   - uid: excel.Excel.Interfaces.ShapeCollectionUpdateData
     name: Excel.Interfaces.ShapeCollectionUpdateData
   - uid: excel.Excel.Interfaces.ShapeData
     name: Excel.Interfaces.ShapeData
   - uid: excel.Excel.Interfaces.ShapeFillData
     name: Excel.Interfaces.ShapeFillData
+  - uid: excel.Excel.Interfaces.ShapeFillLoadOptions
+    name: Excel.Interfaces.ShapeFillLoadOptions
   - uid: excel.Excel.Interfaces.ShapeFillUpdateData
     name: Excel.Interfaces.ShapeFillUpdateData
   - uid: excel.Excel.Interfaces.ShapeFontData
     name: Excel.Interfaces.ShapeFontData
+  - uid: excel.Excel.Interfaces.ShapeFontLoadOptions
+    name: Excel.Interfaces.ShapeFontLoadOptions
   - uid: excel.Excel.Interfaces.ShapeFontUpdateData
     name: Excel.Interfaces.ShapeFontUpdateData
   - uid: excel.Excel.Interfaces.ShapeGroupData
     name: Excel.Interfaces.ShapeGroupData
+  - uid: excel.Excel.Interfaces.ShapeGroupLoadOptions
+    name: Excel.Interfaces.ShapeGroupLoadOptions
+  - uid: excel.Excel.Interfaces.ShapeLineFormatData
+    name: Excel.Interfaces.ShapeLineFormatData
+  - uid: excel.Excel.Interfaces.ShapeLineFormatLoadOptions
+    name: Excel.Interfaces.ShapeLineFormatLoadOptions
+  - uid: excel.Excel.Interfaces.ShapeLineFormatUpdateData
+    name: Excel.Interfaces.ShapeLineFormatUpdateData
+  - uid: excel.Excel.Interfaces.ShapeLoadOptions
+    name: Excel.Interfaces.ShapeLoadOptions
   - uid: excel.Excel.Interfaces.ShapeUpdateData
     name: Excel.Interfaces.ShapeUpdateData
+  - uid: excel.Excel.Interfaces.SlicerCollectionData
+    name: Excel.Interfaces.SlicerCollectionData
+  - uid: excel.Excel.Interfaces.SlicerCollectionLoadOptions
+    name: Excel.Interfaces.SlicerCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.SlicerCollectionUpdateData
+    name: Excel.Interfaces.SlicerCollectionUpdateData
+  - uid: excel.Excel.Interfaces.SlicerData
+    name: Excel.Interfaces.SlicerData
+  - uid: excel.Excel.Interfaces.SlicerItemCollectionData
+    name: Excel.Interfaces.SlicerItemCollectionData
+  - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions
+    name: Excel.Interfaces.SlicerItemCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.SlicerItemCollectionUpdateData
+    name: Excel.Interfaces.SlicerItemCollectionUpdateData
+  - uid: excel.Excel.Interfaces.SlicerItemData
+    name: Excel.Interfaces.SlicerItemData
+  - uid: excel.Excel.Interfaces.SlicerItemLoadOptions
+    name: Excel.Interfaces.SlicerItemLoadOptions
+  - uid: excel.Excel.Interfaces.SlicerItemUpdateData
+    name: Excel.Interfaces.SlicerItemUpdateData
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions
+    name: Excel.Interfaces.SlicerLoadOptions
+  - uid: excel.Excel.Interfaces.SlicerUpdateData
+    name: Excel.Interfaces.SlicerUpdateData
   - uid: excel.Excel.Interfaces.StyleCollectionData
     name: Excel.Interfaces.StyleCollectionData
+  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions
+    name: Excel.Interfaces.StyleCollectionLoadOptions
   - uid: excel.Excel.Interfaces.StyleCollectionUpdateData
     name: Excel.Interfaces.StyleCollectionUpdateData
   - uid: excel.Excel.Interfaces.StyleData
     name: Excel.Interfaces.StyleData
+  - uid: excel.Excel.Interfaces.StyleLoadOptions
+    name: Excel.Interfaces.StyleLoadOptions
   - uid: excel.Excel.Interfaces.StyleUpdateData
     name: Excel.Interfaces.StyleUpdateData
   - uid: excel.Excel.Interfaces.TableCollectionData
     name: Excel.Interfaces.TableCollectionData
+  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions
+    name: Excel.Interfaces.TableCollectionLoadOptions
   - uid: excel.Excel.Interfaces.TableCollectionUpdateData
     name: Excel.Interfaces.TableCollectionUpdateData
   - uid: excel.Excel.Interfaces.TableColumnCollectionData
     name: Excel.Interfaces.TableColumnCollectionData
+  - uid: excel.Excel.Interfaces.TableColumnCollectionLoadOptions
+    name: Excel.Interfaces.TableColumnCollectionLoadOptions
   - uid: excel.Excel.Interfaces.TableColumnCollectionUpdateData
     name: Excel.Interfaces.TableColumnCollectionUpdateData
   - uid: excel.Excel.Interfaces.TableColumnData
     name: Excel.Interfaces.TableColumnData
+  - uid: excel.Excel.Interfaces.TableColumnLoadOptions
+    name: Excel.Interfaces.TableColumnLoadOptions
   - uid: excel.Excel.Interfaces.TableColumnUpdateData
     name: Excel.Interfaces.TableColumnUpdateData
   - uid: excel.Excel.Interfaces.TableData
     name: Excel.Interfaces.TableData
+  - uid: excel.Excel.Interfaces.TableLoadOptions
+    name: Excel.Interfaces.TableLoadOptions
   - uid: excel.Excel.Interfaces.TableRowCollectionData
     name: Excel.Interfaces.TableRowCollectionData
+  - uid: excel.Excel.Interfaces.TableRowCollectionLoadOptions
+    name: Excel.Interfaces.TableRowCollectionLoadOptions
   - uid: excel.Excel.Interfaces.TableRowCollectionUpdateData
     name: Excel.Interfaces.TableRowCollectionUpdateData
   - uid: excel.Excel.Interfaces.TableRowData
     name: Excel.Interfaces.TableRowData
+  - uid: excel.Excel.Interfaces.TableRowLoadOptions
+    name: Excel.Interfaces.TableRowLoadOptions
   - uid: excel.Excel.Interfaces.TableRowUpdateData
     name: Excel.Interfaces.TableRowUpdateData
   - uid: excel.Excel.Interfaces.TableScopedCollectionData
     name: Excel.Interfaces.TableScopedCollectionData
+  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions
+    name: Excel.Interfaces.TableScopedCollectionLoadOptions
   - uid: excel.Excel.Interfaces.TableScopedCollectionUpdateData
     name: Excel.Interfaces.TableScopedCollectionUpdateData
   - uid: excel.Excel.Interfaces.TableSortData
     name: Excel.Interfaces.TableSortData
+  - uid: excel.Excel.Interfaces.TableSortLoadOptions
+    name: Excel.Interfaces.TableSortLoadOptions
   - uid: excel.Excel.Interfaces.TableUpdateData
     name: Excel.Interfaces.TableUpdateData
   - uid: excel.Excel.Interfaces.TextConditionalFormatData
     name: Excel.Interfaces.TextConditionalFormatData
+  - uid: excel.Excel.Interfaces.TextConditionalFormatLoadOptions
+    name: Excel.Interfaces.TextConditionalFormatLoadOptions
   - uid: excel.Excel.Interfaces.TextConditionalFormatUpdateData
     name: Excel.Interfaces.TextConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.TextFrameData
     name: Excel.Interfaces.TextFrameData
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions
+    name: Excel.Interfaces.TextFrameLoadOptions
   - uid: excel.Excel.Interfaces.TextFrameUpdateData
     name: Excel.Interfaces.TextFrameUpdateData
   - uid: excel.Excel.Interfaces.TextRangeData
     name: Excel.Interfaces.TextRangeData
+  - uid: excel.Excel.Interfaces.TextRangeLoadOptions
+    name: Excel.Interfaces.TextRangeLoadOptions
   - uid: excel.Excel.Interfaces.TextRangeUpdateData
     name: Excel.Interfaces.TextRangeUpdateData
   - uid: excel.Excel.Interfaces.TopBottomConditionalFormatData
     name: Excel.Interfaces.TopBottomConditionalFormatData
+  - uid: excel.Excel.Interfaces.TopBottomConditionalFormatLoadOptions
+    name: Excel.Interfaces.TopBottomConditionalFormatLoadOptions
   - uid: excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData
     name: Excel.Interfaces.TopBottomConditionalFormatUpdateData
   - uid: excel.Excel.Interfaces.WorkbookCreatedData
     name: Excel.Interfaces.WorkbookCreatedData
   - uid: excel.Excel.Interfaces.WorkbookData
     name: Excel.Interfaces.WorkbookData
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions
+    name: Excel.Interfaces.WorkbookLoadOptions
   - uid: excel.Excel.Interfaces.WorkbookProtectionData
     name: Excel.Interfaces.WorkbookProtectionData
+  - uid: excel.Excel.Interfaces.WorkbookProtectionLoadOptions
+    name: Excel.Interfaces.WorkbookProtectionLoadOptions
   - uid: excel.Excel.Interfaces.WorkbookUpdateData
     name: Excel.Interfaces.WorkbookUpdateData
   - uid: excel.Excel.Interfaces.WorksheetCollectionData
     name: Excel.Interfaces.WorksheetCollectionData
+  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions
+    name: Excel.Interfaces.WorksheetCollectionLoadOptions
   - uid: excel.Excel.Interfaces.WorksheetCollectionUpdateData
     name: Excel.Interfaces.WorksheetCollectionUpdateData
   - uid: excel.Excel.Interfaces.WorksheetData
     name: Excel.Interfaces.WorksheetData
+  - uid: excel.Excel.Interfaces.WorksheetLoadOptions
+    name: Excel.Interfaces.WorksheetLoadOptions
   - uid: excel.Excel.Interfaces.WorksheetProtectionData
     name: Excel.Interfaces.WorksheetProtectionData
+  - uid: excel.Excel.Interfaces.WorksheetProtectionLoadOptions
+    name: Excel.Interfaces.WorksheetProtectionLoadOptions
   - uid: excel.Excel.Interfaces.WorksheetUpdateData
     name: Excel.Interfaces.WorksheetUpdateData
   - uid: excel.Excel.IterativeCalculation
     name: Excel.IterativeCalculation
+  - uid: excel.Excel.Line
+    name: Excel.Line
   - uid: excel.Excel.LinkedDataTypeState
     name: Excel.LinkedDataTypeState
   - uid: excel.Excel.ListDataValidation
@@ -1767,6 +2357,10 @@ references:
     name: Excel.RowColumnPivotHierarchy
   - uid: excel.Excel.RowColumnPivotHierarchyCollection
     name: Excel.RowColumnPivotHierarchyCollection
+  - uid: excel.Excel.RowProperties
+    name: Excel.RowProperties
+  - uid: excel.Excel.RowPropertiesLoadOptions
+    name: Excel.RowPropertiesLoadOptions
   - uid: excel.Excel.RunOptions
     name: Excel.RunOptions
   - uid: excel.Excel.Runtime
@@ -1781,6 +2375,12 @@ references:
     name: Excel.SelectionChangedEventArgs
   - uid: excel.Excel.Session
     name: Excel.Session
+  - uid: excel.Excel.SettableCellProperties
+    name: Excel.SettableCellProperties
+  - uid: excel.Excel.SettableColumnProperties
+    name: Excel.SettableColumnProperties
+  - uid: excel.Excel.SettableRowProperties
+    name: Excel.SettableRowProperties
   - uid: excel.Excel.Setting
     name: Excel.Setting
   - uid: excel.Excel.SettingCollection
@@ -1807,6 +2407,12 @@ references:
     name: Excel.ShapeFontUnderlineStyle
   - uid: excel.Excel.ShapeGroup
     name: Excel.ShapeGroup
+  - uid: excel.Excel.ShapeLineDashStyle
+    name: Excel.ShapeLineDashStyle
+  - uid: excel.Excel.ShapeLineFormat
+    name: Excel.ShapeLineFormat
+  - uid: excel.Excel.ShapeLineStyle
+    name: Excel.ShapeLineStyle
   - uid: excel.Excel.ShapeScaleFrom
     name: Excel.ShapeScaleFrom
   - uid: excel.Excel.ShapeScaleType
@@ -1833,6 +2439,16 @@ references:
     name: Excel.ShowAsCalculation
   - uid: excel.Excel.ShowAsRule
     name: Excel.ShowAsRule
+  - uid: excel.Excel.Slicer
+    name: Excel.Slicer
+  - uid: excel.Excel.SlicerCollection
+    name: Excel.SlicerCollection
+  - uid: excel.Excel.SlicerItem
+    name: Excel.SlicerItem
+  - uid: excel.Excel.SlicerItemCollection
+    name: Excel.SlicerItemCollection
+  - uid: excel.Excel.SlicerSortType
+    name: Excel.SlicerSortType
   - uid: excel.Excel.SortBy
     name: Excel.SortBy
   - uid: excel.Excel.SortDataOption

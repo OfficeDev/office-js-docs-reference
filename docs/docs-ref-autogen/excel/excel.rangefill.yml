@@ -58,7 +58,7 @@ items:
           ```
   - uid: excel.Excel.RangeFill.color
     summary: >-
-      HTML color code representing the color of the background, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange") \[ [API set: ExcelApi
       1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
@@ -91,6 +91,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.RangeFill` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.RangeFill` - Where option.select is a comma-delimited
@@ -152,16 +156,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.RangeFill;'
+      content: 'load(option?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;'
       return:
         type:
           - excel.Excel.RangeFill
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.RangeFillLoadOptions
   - uid: excel.Excel.RangeFill.pattern
     summary: >-
       Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are

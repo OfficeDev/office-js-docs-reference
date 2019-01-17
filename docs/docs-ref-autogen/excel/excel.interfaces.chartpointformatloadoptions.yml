@@ -1,0 +1,28 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartPointFormatLoadOptions
+    summary: >-
+      Represents formatting object for chart points. \[ [API set: ExcelApi
+      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartPointFormatLoadOptions
+    fullName: Excel.Interfaces.ChartPointFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartPointFormatLoadOptions.border
+  - uid: excel.Excel.Interfaces.ChartPointFormatLoadOptions.border
+    summary: >-
+      Represents the border format of a chart data point, which includes color, style, and weight information. \[ [API
+      set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'border?: Excel.Interfaces.ChartBorderLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartBorderLoadOptions

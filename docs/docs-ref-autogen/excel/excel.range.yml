@@ -15,6 +15,7 @@ items:
     children:
       - excel.Excel.Range.address
       - excel.Excel.Range.addressLocal
+      - excel.Excel.Range.autoFill
       - excel.Excel.Range.calculate
       - excel.Excel.Range.cellCount
       - excel.Excel.Range.clear
@@ -37,7 +38,9 @@ items:
       - excel.Excel.Range.getAbsoluteResizedRange
       - excel.Excel.Range.getBoundingRect
       - excel.Excel.Range.getCell
+      - excel.Excel.Range.getCellProperties
       - excel.Excel.Range.getColumn
+      - excel.Excel.Range.getColumnProperties
       - excel.Excel.Range.getColumnsAfter
       - excel.Excel.Range.getColumnsBefore
       - excel.Excel.Range.getEntireColumn
@@ -51,6 +54,7 @@ items:
       - excel.Excel.Range.getOffsetRange
       - excel.Excel.Range.getResizedRange
       - excel.Excel.Range.getRow
+      - excel.Excel.Range.getRowProperties
       - excel.Excel.Range.getRowsAbove
       - excel.Excel.Range.getRowsBelow
       - excel.Excel.Range.getSpecialCells
@@ -79,7 +83,10 @@ items:
       - excel.Excel.Range.rowHidden
       - excel.Excel.Range.rowIndex
       - excel.Excel.Range.select
+      - excel.Excel.Range.setCellProperties
+      - excel.Excel.Range.setColumnProperties
       - excel.Excel.Range.setDirty
+      - excel.Excel.Range.setRowProperties
       - excel.Excel.Range.showCard
       - excel.Excel.Range.sort
       - excel.Excel.Range.style
@@ -120,6 +127,27 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.Range.autoFill
+    name: 'autoFill(destinationRange, autoFillType)'
+    fullName: autoFill
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'autoFill(destinationRange: Range | string, autoFillType?: Excel.AutoFillType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: destinationRange
+          description: ''
+          type:
+            - Range | string
+        - id: autoFillType
+          description: ''
+          type:
+            - excel.Excel.AutoFillType
   - uid: excel.Excel.Range.calculate
     summary: >-
       Calculates a range of cells on a worksheet. \[ [API set: ExcelApi
@@ -619,6 +647,30 @@ items:
           description: Column number of the cell to be retrieved. Zero-indexed.
           type:
             - number
+  - uid: excel.Excel.Range.getCellProperties
+    summary: >-
+      Returns a 2D array, encapsulating the data for each cell's font, fill, borders, alignment, and other properties.
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getCellProperties(cellPropertiesLoadOptions)
+    fullName: getCellProperties
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getCellProperties(cellPropertiesLoadOptions: CellPropertiesLoadOptions):
+        OfficeExtension.ClientResult<CellProperties[][]>;
+      return:
+        type:
+          - 'OfficeExtension.ClientResult<CellProperties[][]>'
+        description: ''
+      parameters:
+        - id: cellPropertiesLoadOptions
+          description: ''
+          type:
+            - excel.Excel.CellPropertiesLoadOptions
   - uid: excel.Excel.Range.getColumn
     summary: >-
       Gets a column contained in the range. \[ [API set: ExcelApi
@@ -658,6 +710,31 @@ items:
           description: Column number of the range to be retrieved. Zero-indexed.
           type:
             - number
+  - uid: excel.Excel.Range.getColumnProperties
+    summary: >-
+      Returns a single-dimensional array, encapsulating the data for each column's font, fill, borders, alignment, and
+      other properties. For properties that are not consistent across each cell within a given column, null will be
+      returned. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getColumnProperties(columnPropertiesLoadOptions)
+    fullName: getColumnProperties
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getColumnProperties(columnPropertiesLoadOptions: ColumnPropertiesLoadOptions):
+        OfficeExtension.ClientResult<ColumnProperties[]>;
+      return:
+        type:
+          - 'OfficeExtension.ClientResult<ColumnProperties[]>'
+        description: ''
+      parameters:
+        - id: columnPropertiesLoadOptions
+          description: ''
+          type:
+            - excel.Excel.ColumnPropertiesLoadOptions
   - uid: excel.Excel.Range.getColumnsAfter
     summary: >-
       Gets a certain number of columns to the right of the current Range object. \[ [API set: ExcelApi
@@ -1136,6 +1213,31 @@ items:
           description: Row number of the range to be retrieved. Zero-indexed.
           type:
             - number
+  - uid: excel.Excel.Range.getRowProperties
+    summary: >-
+      Returns a single-dimensional array, encapsulating the data for each row's font, fill, borders, alignment, and
+      other properties. For properties that are not consistent across each cell within a given row, null will be
+      returned. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getRowProperties(rowPropertiesLoadOptions)
+    fullName: getRowProperties
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getRowProperties(rowPropertiesLoadOptions: RowPropertiesLoadOptions):
+        OfficeExtension.ClientResult<RowProperties[]>;
+      return:
+        type:
+          - 'OfficeExtension.ClientResult<RowProperties[]>'
+        description: ''
+      parameters:
+        - id: rowPropertiesLoadOptions
+          description: ''
+          type:
+            - excel.Excel.RowPropertiesLoadOptions
   - uid: excel.Excel.Range.getRowsAbove
     summary: >-
       Gets a certain number of rows above the current Range object. \[ [API set: ExcelApi
@@ -1650,6 +1752,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Range` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Range` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -1738,16 +1844,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Range;'
+      content: 'load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;'
       return:
         type:
           - excel.Excel.Range
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.RangeLoadOptions
   - uid: excel.Excel.Range.merge
     summary: >-
       Merge the range cells into one region in the worksheet. \[ [API set: ExcelApi
@@ -1965,6 +2071,50 @@ items:
               }
           });
           ```
+  - uid: excel.Excel.Range.setCellProperties
+    summary: >-
+      Updates the range based on a 2D array of cell properties , encapsulating things like font, fill, borders,
+      alignment, and so forth. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: setCellProperties(cellPropertiesData)
+    fullName: setCellProperties
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCellProperties(cellPropertiesData: SettableCellProperties[][]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cellPropertiesData
+          description: ''
+          type:
+            - 'SettableCellProperties[][]'
+  - uid: excel.Excel.Range.setColumnProperties
+    summary: >-
+      Updates the range based on a single-dimensional array of column properties, encapsulating things like font, fill,
+      borders, alignment, and so forth. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: setColumnProperties(columnPropertiesData)
+    fullName: setColumnProperties
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColumnProperties(columnPropertiesData: SettableColumnProperties[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: columnPropertiesData
+          description: ''
+          type:
+            - 'SettableColumnProperties[]'
   - uid: excel.Excel.Range.setDirty
     summary: >-
       Set a range to be recalculated when the next recalculation occurs. \[ [API set: ExcelApi BETA (PREVIEW
@@ -1981,6 +2131,28 @@ items:
         type:
           - void
         description: ''
+  - uid: excel.Excel.Range.setRowProperties
+    summary: >-
+      Updates the range based on a single-dimensional array of row properties, encapsulating things like font, fill,
+      borders, alignment, and so forth. \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: setRowProperties(rowPropertiesData)
+    fullName: setRowProperties
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setRowProperties(rowPropertiesData: SettableRowProperties[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rowPropertiesData
+          description: ''
+          type:
+            - 'SettableRowProperties[]'
   - uid: excel.Excel.Range.showCard
     summary: >-
       Displays the card for an active cell if it has rich value content. \[ [API set: ExcelApi

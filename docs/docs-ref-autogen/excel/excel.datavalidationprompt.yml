@@ -30,7 +30,7 @@ items:
           - string
   - uid: excel.Excel.DataValidationPrompt.showPrompt
     summary: >-
-      It determines showing the prompt or not when user selects a cell with the data validation. \[ [API set: ExcelApi
+      Determines whether or not to show the prompt when user selects a cell with data validation. \[ [API set: ExcelApi
       1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showPrompt
     fullName: showPrompt

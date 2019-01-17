@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.DataPivotHierarchyUpdateData
+    summary: 'An interface for updating data on the DataPivotHierarchy object, for use in "dataPivotHierarchy.set({ ... })".'
+    name: Excel.Interfaces.DataPivotHierarchyUpdateData
+    fullName: Excel.Interfaces.DataPivotHierarchyUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.DataPivotHierarchyUpdateData.field
+      - excel_release.Excel.Interfaces.DataPivotHierarchyUpdateData.name
+      - excel_release.Excel.Interfaces.DataPivotHierarchyUpdateData.numberFormat
+      - excel_release.Excel.Interfaces.DataPivotHierarchyUpdateData.position
+      - excel_release.Excel.Interfaces.DataPivotHierarchyUpdateData.showAs
+      - excel_release.Excel.Interfaces.DataPivotHierarchyUpdateData.summarizeBy
+  - uid: excel_release.Excel.Interfaces.DataPivotHierarchyUpdateData.field
+    summary: >-
+      Returns the PivotFields associated with the DataPivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: field
+    fullName: field
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'field?: Excel.Interfaces.PivotFieldUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.PivotFieldUpdateData
+  - uid: excel_release.Excel.Interfaces.DataPivotHierarchyUpdateData.name
+    summary: >-
+      Name of the DataPivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.Interfaces.DataPivotHierarchyUpdateData.numberFormat
+    summary: >-
+      Number format of the DataPivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.Interfaces.DataPivotHierarchyUpdateData.position
+    summary: >-
+      Position of the DataPivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.DataPivotHierarchyUpdateData.showAs
+    summary: >-
+      Determines whether the data should be sown as a specific summary calculation or not. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showAs
+    fullName: showAs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAs?: Excel.ShowAsRule;'
+      return:
+        type:
+          - excel.Excel.ShowAsRule
+  - uid: excel_release.Excel.Interfaces.DataPivotHierarchyUpdateData.summarizeBy
+    summary: >-
+      Determines whether to show all items of the DataPivotHierarchy. \[ [API set: ExcelApi
+      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: summarizeBy
+    fullName: summarizeBy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        summarizeBy?: Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min"
+        | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP";
+      return:
+        type:
+          - >-
+            Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" |
+            "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP"

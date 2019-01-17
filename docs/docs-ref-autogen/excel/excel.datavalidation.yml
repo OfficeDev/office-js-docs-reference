@@ -157,6 +157,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.DataValidation` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.DataValidation` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -173,16 +177,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.DataValidation;'
+      content: 'load(option?: Excel.Interfaces.DataValidationLoadOptions): Excel.DataValidation;'
       return:
         type:
           - excel.Excel.DataValidation
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.DataValidationLoadOptions
   - uid: excel.Excel.DataValidation.prompt
     summary: >-
       Prompt when users select a cell. \[ [API set: ExcelApi
@@ -199,7 +203,7 @@ items:
           - excel.Excel.DataValidationPrompt
   - uid: excel.Excel.DataValidation.rule
     summary: >-
-      Data Validation rule that contains different type of data validation criteria. \[ [API set: ExcelApi
+      Data validation rule that contains different type of data validation criteria. \[ [API set: ExcelApi
       1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: rule

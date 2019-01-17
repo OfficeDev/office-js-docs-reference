@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.SortMethod
+    name: Excel.SortMethod
+    fullName: Excel.SortMethod
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.SortMethod.pinYin
+      - excel_release.Excel.SortMethod.strokeCount
+  - uid: excel_release.Excel.SortMethod.pinYin
+    name: pinYin
+    fullName: pinYin
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PinYin"'
+  - uid: excel_release.Excel.SortMethod.strokeCount
+    name: strokeCount
+    fullName: strokeCount
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"StrokeCount"'

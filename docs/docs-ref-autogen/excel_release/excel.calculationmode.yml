@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.CalculationMode
+    name: Excel.CalculationMode
+    fullName: Excel.CalculationMode
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.CalculationMode.automatic
+      - excel_release.Excel.CalculationMode.automaticExceptTables
+      - excel_release.Excel.CalculationMode.manual
+  - uid: excel_release.Excel.CalculationMode.automatic
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: excel_release.Excel.CalculationMode.automaticExceptTables
+    name: automaticExceptTables
+    fullName: automaticExceptTables
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AutomaticExceptTables"'
+  - uid: excel_release.Excel.CalculationMode.manual
+    name: manual
+    fullName: manual
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Manual"'

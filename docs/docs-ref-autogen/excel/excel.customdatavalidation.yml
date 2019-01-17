@@ -14,7 +14,7 @@ items:
       - excel.Excel.CustomDataValidation.formula
   - uid: excel.Excel.CustomDataValidation.formula
     summary: >-
-      Custom data validation formula, it is to create special rules, such as preventing duplicates, or limiting the
+      A custom data validation formula. This creates special input rules, such as preventing duplicates, or limiting the
       total in a range of cells. \[ [API set: ExcelApi
       1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
