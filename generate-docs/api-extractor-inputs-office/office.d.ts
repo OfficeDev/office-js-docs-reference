@@ -1649,7 +1649,7 @@ export declare namespace Office {
      * Specifies how to coerce data returned or set by the invoked method.
      *
      * @remarks
-     * PowerPoint supports only `Office.CoercionType.Text`, `Office.CoercionType.Image`, and `Office.CoercionType.SlideRange`.
+     * PowerPoint supports only `Office.CoercionType.Text`, `Office.CoercionType.Image`, `Office.CoercionType.SlideRange`, and `Office.CoercionType.XmlSvg`.
      * 
      * Project supports only `Office.CoercionType.Text`.
      * 
@@ -1714,7 +1714,12 @@ export declare namespace Office {
         * Data is returned or set as an image stream.
         * Note: Only applies to data in Excel, Word, and PowerPoint.
         */
-        Image
+        Image,
+        /**
+         * Data is returned or set as XML data containing an SVG image.
+         * Note: Only applies to data in Excel, Word, and PowerPoint.
+         */
+        XmlSvg
     }
     /**
      * Specifies whether the document in the associated application is read-only or read-write.
@@ -3531,6 +3536,10 @@ export declare namespace Office {
          *     <td>PowerPoint and PowerPoint Online</td>
          *     <td>`Office.CoercionType.SlideRange`</td>
          *   </tr>
+         *   <tr>
+         *     <td>Excel, PowerPoint, and Word</td>
+         *     <td>`Office.CoercionType.XmlSvg`</td>
+         *   </tr>
          * </table>
          * 
          * **Support details**
@@ -3697,6 +3706,10 @@ export declare namespace Office {
          *   <tr>
          *     <td>PowerPoint and PowerPoint Online</td>
          *     <td>`Office.CoercionType.SlideRange`</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Excel, PowerPoint, and Word</td>
+         *     <td>`Office.CoercionType.XmlSvg`</td>
          *   </tr>
          * </table>
          * 

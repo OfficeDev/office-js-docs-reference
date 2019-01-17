@@ -14,10 +14,25 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartSeriesFormat.context
       - excel.Excel.ChartSeriesFormat.fill
       - excel.Excel.ChartSeriesFormat.line
       - excel.Excel.ChartSeriesFormat.load
       - excel.Excel.ChartSeriesFormat.toJSON
+  - uid: excel.Excel.ChartSeriesFormat.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.ChartSeriesFormat.fill
     summary: |-
       Represents the fill format of a chart series, which includes background formating information. Read-only.
@@ -83,6 +98,12 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.ChartSeriesFormat.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartSeriesFormat object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesFormatData`<!-- -->) that contains shallow copies
+      of any loaded child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

@@ -9,7 +9,6 @@ items:
     type: interface
     package: excel
     children:
-      - excel.Excel.Interfaces.WorkbookData.application
       - excel.Excel.Interfaces.WorkbookData.bindings
       - excel.Excel.Interfaces.WorkbookData.customXmlParts
       - excel.Excel.Interfaces.WorkbookData.name
@@ -22,21 +21,6 @@ items:
       - excel.Excel.Interfaces.WorkbookData.styles
       - excel.Excel.Interfaces.WorkbookData.tables
       - excel.Excel.Interfaces.WorkbookData.worksheets
-  - uid: excel.Excel.Interfaces.WorkbookData.application
-    summary: |-
-      Represents the Excel application instance that contains this workbook. Read-only.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: application
-    fullName: application
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'application?: Excel.Interfaces.ApplicationData;'
-      return:
-        type:
-          - excel.Excel.Interfaces.ApplicationData
   - uid: excel.Excel.Interfaces.WorkbookData.bindings
     summary: |-
       Represents a collection of bindings that are part of the workbook. Read-only.

@@ -1,0 +1,55 @@
+{
+  "kind": "package",
+  "name": "powerpoint",
+  "summary": [],
+  "remarks": [],
+  "exports": {
+    "PowerPoint": {
+      "kind": "namespace",
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "exports": {
+        "createPresentation": {
+          "kind": "function",
+          "signature": "export function createPresentation(base64File?: string): Promise<void>;",
+          "returnValue": {
+            "type": "Promise<void>",
+            "description": []
+          },
+          "parameters": {
+            "base64File": {
+              "name": "base64File",
+              "description": [
+                {
+                  "kind": "text",
+                  "text": "Optional. The base64-encoded .pptx file. The default value is null."
+                }
+              ],
+              "isOptional": true,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded .pptx file."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: PowerPointApi 1.1]"
+            }
+          ],
+          "remarks": [],
+          "isBeta": false
+        }
+      }
+    }
+  }
+}

@@ -73,6 +73,7 @@ items:
       - excel.Excel.Functions.concatenate
       - excel.Excel.Functions.confidence_Norm
       - excel.Excel.Functions.confidence_T
+      - excel.Excel.Functions.context
       - excel.Excel.Functions.convert
       - excel.Excel.Functions.cos
       - excel.Excel.Functions.cosh
@@ -2085,6 +2086,20 @@ items:
           description: Is the sample size.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+  - uid: excel.Excel.Functions.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: excel.Excel.Functions.convert
     summary: |-
       Converts a number from one measurement system to another.
@@ -10222,6 +10237,12 @@ items:
           - FunctionResult<number>
         description: ''
   - uid: excel.Excel.Functions.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Functions object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.FunctionsData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:
