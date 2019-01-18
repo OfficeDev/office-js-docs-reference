@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ChartTrendlineLabelFormat
-    summary: >-
-      Encapsulates the format properties for the chart trendline label. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Encapsulates the format properties for the chart trendline label.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTrendlineLabelFormat
     fullName: Excel.ChartTrendlineLabelFormat
     langs:
@@ -20,9 +21,10 @@ items:
       - excel_release.Excel.ChartTrendlineLabelFormat.load
       - excel_release.Excel.ChartTrendlineLabelFormat.toJSON
   - uid: excel_release.Excel.ChartTrendlineLabelFormat.border
-    summary: >-
-      Represents the border format, which includes color, linestyle, and weight. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the border format, which includes color, linestyle, and weight.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: border
     langs:
@@ -48,9 +50,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ChartTrendlineLabelFormat.fill
-    summary: >-
-      Represents the fill format of the current chart trendline label. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the fill format of the current chart trendline label.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -62,9 +65,10 @@ items:
         type:
           - excel.Excel.ChartFill
   - uid: excel_release.Excel.ChartTrendlineLabelFormat.font
-    summary: >-
-      Represents the font attributes (font name, font size, color, etc.) for a chart trendline label. \[ [API set:
-      ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for a chart trendline label.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:
@@ -99,7 +103,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartTrendlineLabelFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions): Excel.ChartTrendlineLabelFormat;'
       return:
         type:
           - excel.Excel.ChartTrendlineLabelFormat
@@ -108,7 +112,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions
   - uid: excel_release.Excel.ChartTrendlineLabelFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

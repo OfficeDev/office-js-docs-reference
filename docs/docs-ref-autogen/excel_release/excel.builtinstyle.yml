@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.BuiltInStyle
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.BuiltInStyle
     fullName: Excel.BuiltInStyle
     langs:

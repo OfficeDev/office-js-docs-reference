@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ChartLegendFormat
-    summary: >-
-      Encapsulates the format properties of a chart legend. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Encapsulates the format properties of a chart legend.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartLegendFormat
     fullName: Excel.ChartLegendFormat
     langs:
@@ -20,9 +21,10 @@ items:
       - excel_release.Excel.ChartLegendFormat.load
       - excel_release.Excel.ChartLegendFormat.toJSON
   - uid: excel_release.Excel.ChartLegendFormat.border
-    summary: >-
-      Represents the border format, which includes color, linestyle, and weight. Read-only. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the border format, which includes color, linestyle, and weight. Read-only.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: border
     langs:
@@ -48,9 +50,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ChartLegendFormat.fill
-    summary: >-
-      Represents the fill format of an object, which includes background formating information. Read-only. \[ [API set:
-      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the fill format of an object, which includes background formatting information. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -62,9 +65,10 @@ items:
         type:
           - excel.Excel.ChartFill
   - uid: excel_release.Excel.ChartLegendFormat.font
-    summary: >-
-      Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only. \[ [API
-      set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:
@@ -99,7 +103,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartLegendFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartLegendFormatLoadOptions): Excel.ChartLegendFormat;'
       return:
         type:
           - excel.Excel.ChartLegendFormat
@@ -108,7 +112,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartLegendFormatLoadOptions
   - uid: excel_release.Excel.ChartLegendFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

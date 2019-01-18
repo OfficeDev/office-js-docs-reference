@@ -12,9 +12,10 @@ items:
       - excel_release.Excel.Interfaces.BindingData.id
       - excel_release.Excel.Interfaces.BindingData.type
   - uid: excel_release.Excel.Interfaces.BindingData.id
-    summary: >-
-      Represents binding identifier. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents binding identifier. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -26,9 +27,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.Interfaces.BindingData.type
-    summary: >-
-      Returns the type of the binding. See Excel.BindingType for details. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the type of the binding. See Excel.BindingType for details. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

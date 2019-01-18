@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ChartSeriesFormat
-    summary: >-
-      Encapsulates the format properties for the chart series \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Encapsulates the format properties for the chart series
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartSeriesFormat
     fullName: Excel.ChartSeriesFormat
     langs:
@@ -33,9 +34,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ChartSeriesFormat.fill
-    summary: >-
-      Represents the fill format of a chart series, which includes background formating information. Read-only. \[ [API
-      set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the fill format of a chart series, which includes background formatting information. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -47,9 +49,10 @@ items:
         type:
           - excel.Excel.ChartFill
   - uid: excel_release.Excel.ChartSeriesFormat.line
-    summary: >-
-      Represents line formatting. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents line formatting. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
     fullName: line
     langs:
@@ -84,7 +87,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartSeriesFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartSeriesFormatLoadOptions): Excel.ChartSeriesFormat;'
       return:
         type:
           - excel.Excel.ChartSeriesFormat
@@ -93,7 +96,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
   - uid: excel_release.Excel.ChartSeriesFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

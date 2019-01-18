@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ChartLegendEntryCollection
-    summary: >-
-      Represents a collection of legendEntries. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of legendEntries.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartLegendEntryCollection
     fullName: Excel.ChartLegendEntryCollection
     langs:
@@ -34,9 +35,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ChartLegendEntryCollection.getCount
-    summary: >-
-      Returns the number of legendEntry in the collection. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the number of legendEntry in the collection.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -49,9 +51,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel_release.Excel.ChartLegendEntryCollection.getItemAt
-    summary: >-
-      Returns a legendEntry at the given index. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns a legendEntry at the given index.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:
@@ -104,7 +107,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartLegendEntryCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ChartLegendEntryCollection;
       return:
         type:
           - excel.Excel.ChartLegendEntryCollection
@@ -113,7 +118,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.ChartLegendEntryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel_release.Excel.ChartLegendEntryCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

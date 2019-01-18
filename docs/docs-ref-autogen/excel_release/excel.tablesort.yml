@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.TableSort
-    summary: >-
-      Manages sorting operations on Table objects. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Manages sorting operations on Table objects.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableSort
     fullName: Excel.TableSort
     langs:
@@ -23,9 +24,10 @@ items:
       - excel_release.Excel.TableSort.reapply
       - excel_release.Excel.TableSort.toJSON
   - uid: excel_release.Excel.TableSort.apply
-    summary: >-
-      Perform a sort operation. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Perform a sort operation.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'apply(fields, matchCase, method)'
     fullName: apply
     langs:
@@ -53,8 +55,10 @@ items:
   - uid: excel_release.Excel.TableSort.clear
     summary: >-
       Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the
-      state of the header buttons. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      state of the header buttons.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: clear
     langs:
@@ -81,9 +85,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.TableSort.fields
-    summary: >-
-      Represents the current conditions used to last sort the table. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the current conditions used to last sort the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
     fullName: fields
     langs:
@@ -118,7 +123,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.TableSort;'
+      content: 'load(option?: Excel.Interfaces.TableSortLoadOptions): Excel.TableSort;'
       return:
         type:
           - excel.Excel.TableSort
@@ -127,11 +132,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.TableSortLoadOptions
   - uid: excel_release.Excel.TableSort.matchCase
-    summary: >-
-      Represents whether the casing impacted the last sort of the table. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents whether the casing impacted the last sort of the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: matchCase
     fullName: matchCase
     langs:
@@ -143,9 +149,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.TableSort.method
-    summary: >-
-      Represents Chinese character ordering method last used to sort the table. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents Chinese character ordering method last used to sort the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: method
     fullName: method
     langs:
@@ -157,9 +164,10 @@ items:
         type:
           - Excel.SortMethod | "PinYin" | "StrokeCount"
   - uid: excel_release.Excel.TableSort.reapply
-    summary: >-
-      Reapplies the current sorting parameters to the table. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Reapplies the current sorting parameters to the table.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reapply()
     fullName: reapply
     langs:

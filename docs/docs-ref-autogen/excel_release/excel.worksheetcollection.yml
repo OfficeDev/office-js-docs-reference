@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.WorksheetCollection
-    summary: >-
-      Represents a collection of worksheet objects that are part of the workbook. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of worksheet objects that are part of the workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetCollection
     fullName: Excel.WorksheetCollection
     langs:
@@ -32,8 +33,10 @@ items:
   - uid: excel_release.Excel.WorksheetCollection.add
     summary: >-
       Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish
-      to activate the newly added worksheet, call ".activate() on it. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      to activate the newly added worksheet, call ".activate() on it.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(name)
     fullName: add
     langs:
@@ -67,9 +70,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.WorksheetCollection.getActiveWorksheet
-    summary: >-
-      Gets the currently active worksheet in the workbook. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the currently active worksheet in the workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveWorksheet()
     fullName: getActiveWorksheet
     langs:
@@ -82,9 +86,10 @@ items:
           - excel.Excel.Worksheet
         description: ''
   - uid: excel_release.Excel.WorksheetCollection.getCount
-    summary: >-
-      Gets the number of worksheets in the collection. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the number of worksheets in the collection.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount(visibleOnly)
     fullName: getCount
     langs:
@@ -102,9 +107,10 @@ items:
           type:
             - boolean
   - uid: excel_release.Excel.WorksheetCollection.getFirst
-    summary: >-
-      Gets the first worksheet in the collection. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the first worksheet in the collection.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getFirst(visibleOnly)
     fullName: getFirst
     langs:
@@ -122,9 +128,10 @@ items:
           type:
             - boolean
   - uid: excel_release.Excel.WorksheetCollection.getItem
-    summary: >-
-      Gets a worksheet object using its Name or ID. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a worksheet object using its Name or ID.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
     fullName: getItem
     langs:
@@ -142,9 +149,10 @@ items:
           type:
             - string
   - uid: excel_release.Excel.WorksheetCollection.getItemOrNullObject
-    summary: >-
-      Gets a worksheet object using its Name or ID. If the worksheet does not exist, will return a null object. \[ [API
-      set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a worksheet object using its Name or ID. If the worksheet does not exist, will return a null object.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
     fullName: getItemOrNullObject
     langs:
@@ -162,9 +170,10 @@ items:
           type:
             - string
   - uid: excel_release.Excel.WorksheetCollection.getLast
-    summary: >-
-      Gets the last worksheet in the collection. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the last worksheet in the collection.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLast(visibleOnly)
     fullName: getLast
     langs:
@@ -217,7 +226,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.WorksheetCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.WorksheetCollection;
       return:
         type:
           - excel.Excel.WorksheetCollection
@@ -226,11 +237,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel_release.Excel.WorksheetCollection.onActivated
-    summary: >-
-      Occurs when any worksheet in the workbook is activated. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when any worksheet in the workbook is activated.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onActivated
     fullName: onActivated
     langs:
@@ -242,9 +254,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
   - uid: excel_release.Excel.WorksheetCollection.onAdded
-    summary: >-
-      Occurs when a new worksheet is added to the workbook. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when a new worksheet is added to the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onAdded
     fullName: onAdded
     langs:
@@ -256,9 +269,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>
   - uid: excel_release.Excel.WorksheetCollection.onCalculated
-    summary: >-
-      Occurs when any worksheet in the workbook is calculated. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when any worksheet in the workbook is calculated.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onCalculated
     fullName: onCalculated
     langs:
@@ -270,9 +284,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
   - uid: excel_release.Excel.WorksheetCollection.onDeactivated
-    summary: >-
-      Occurs when any worksheet in the workbook is deactivated. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when any worksheet in the workbook is deactivated.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeactivated
     fullName: onDeactivated
     langs:
@@ -284,9 +299,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
   - uid: excel_release.Excel.WorksheetCollection.onDeleted
-    summary: >-
-      Occurs when a worksheet is deleted from the workbook. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when a worksheet is deleted from the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeleted
     fullName: onDeleted
     langs:

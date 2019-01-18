@@ -12,9 +12,10 @@ items:
       - excel_release.Excel.Interfaces.ChartAreaFormatUpdateData.border
       - excel_release.Excel.Interfaces.ChartAreaFormatUpdateData.font
   - uid: excel_release.Excel.Interfaces.ChartAreaFormatUpdateData.border
-    summary: >-
-      Represents the border format of chart area, which includes color, linestyle, and weight. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the border format of chart area, which includes color, linestyle, and weight.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: border
     langs:
@@ -26,9 +27,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartBorderUpdateData
   - uid: excel_release.Excel.Interfaces.ChartAreaFormatUpdateData.font
-    summary: >-
-      Represents the font attributes (font name, font size, color, etc.) for the current object. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for the current object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:

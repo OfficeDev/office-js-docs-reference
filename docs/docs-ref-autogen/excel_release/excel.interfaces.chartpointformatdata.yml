@@ -13,8 +13,10 @@ items:
   - uid: excel_release.Excel.Interfaces.ChartPointFormatData.border
     summary: >-
       Represents the border format of a chart data point, which includes color, style, and weight information.
-      Read-only. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: border
     langs:

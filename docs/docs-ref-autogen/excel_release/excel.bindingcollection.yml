@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.BindingCollection
-    summary: >-
-      Represents the collection of all the binding objects that are part of the workbook. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the collection of all the binding objects that are part of the workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.BindingCollection
     fullName: Excel.BindingCollection
     langs:
@@ -26,9 +27,10 @@ items:
       - excel_release.Excel.BindingCollection.load
       - excel_release.Excel.BindingCollection.toJSON
   - uid: excel_release.Excel.BindingCollection.add
-    summary: >-
-      Add a new binding to a particular Range. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Add a new binding to a particular Range.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(range, bindingType, id)'
     fullName: add
     langs:
@@ -58,8 +60,10 @@ items:
   - uid: excel_release.Excel.BindingCollection.addFromNamedItem
     summary: >-
       Add a new binding based on a named item in the workbook. If the named item references to multiple areas, the
-      "InvalidReference" error will be returned. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      "InvalidReference" error will be returned.
+
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'addFromNamedItem(name, bindingType, id)'
     fullName: addFromNamedItem
     langs:
@@ -87,8 +91,10 @@ items:
   - uid: excel_release.Excel.BindingCollection.addFromSelection
     summary: >-
       Add a new binding based on the current selection. If the selection has multiple areas, the "InvalidReference"
-      error will be returned. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      error will be returned.
+
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'addFromSelection(bindingType, id)'
     fullName: addFromSelection
     langs:
@@ -124,9 +130,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.BindingCollection.count
-    summary: >-
-      Returns the number of bindings in the collection. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the number of bindings in the collection. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -138,9 +145,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.BindingCollection.getCount
-    summary: >-
-      Gets the number of bindings in the collection. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the number of bindings in the collection.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -153,9 +161,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel_release.Excel.BindingCollection.getItem
-    summary: >-
-      Gets a binding object by ID. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a binding object by ID.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(id)
     fullName: getItem
     langs:
@@ -173,9 +182,10 @@ items:
           type:
             - string
   - uid: excel_release.Excel.BindingCollection.getItemAt
-    summary: >-
-      Gets a binding object based on its position in the items array. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a binding object based on its position in the items array.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:
@@ -193,9 +203,10 @@ items:
           type:
             - number
   - uid: excel_release.Excel.BindingCollection.getItemOrNullObject
-    summary: >-
-      Gets a binding object by ID. If the binding object does not exist, will return a null object. \[ [API set:
-      ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a binding object by ID. If the binding object does not exist, will return a null object.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(id)
     fullName: getItemOrNullObject
     langs:
@@ -248,7 +259,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.BindingCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.BindingCollection;
       return:
         type:
           - excel.Excel.BindingCollection
@@ -257,7 +270,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel_release.Excel.BindingCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

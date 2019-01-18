@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.RangeHyperlink
-    summary: >-
-      Represents the necessary strings to get/set a hyperlink (XHL) object. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the necessary strings to get/set a hyperlink (XHL) object.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeHyperlink
     fullName: Excel.RangeHyperlink
     langs:
@@ -16,9 +17,10 @@ items:
       - excel_release.Excel.RangeHyperlink.screenTip
       - excel_release.Excel.RangeHyperlink.textToDisplay
   - uid: excel_release.Excel.RangeHyperlink.address
-    summary: >-
-      Represents the url target for the hyperlink. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the url target for the hyperlink.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: address
     langs:
@@ -30,9 +32,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.RangeHyperlink.documentReference
-    summary: >-
-      Represents the document reference target for the hyperlink. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the document reference target for the hyperlink.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: documentReference
     fullName: documentReference
     langs:
@@ -44,9 +47,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.RangeHyperlink.screenTip
-    summary: >-
-      Represents the string displayed when hovering over the hyperlink. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the string displayed when hovering over the hyperlink.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: screenTip
     fullName: screenTip
     langs:
@@ -58,9 +62,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.RangeHyperlink.textToDisplay
-    summary: >-
-      Represents the string that is displayed in the top left most cell in the range. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the string that is displayed in the top left most cell in the range.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textToDisplay
     fullName: textToDisplay
     langs:

@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.ChartAxisTitleFormatLoadOptions
+    summary: |-
+      Represents the chart axis title formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartAxisTitleFormatLoadOptions
+    fullName: Excel.Interfaces.ChartAxisTitleFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.ChartAxisTitleFormatLoadOptions.border
+      - excel_release.Excel.Interfaces.ChartAxisTitleFormatLoadOptions.font
+  - uid: excel_release.Excel.Interfaces.ChartAxisTitleFormatLoadOptions.border
+    summary: |-
+      Represents the border format, which includes color, linestyle, and weight.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'border?: Excel.Interfaces.ChartBorderLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartBorderLoadOptions
+  - uid: excel_release.Excel.Interfaces.ChartAxisTitleFormatLoadOptions.font
+    summary: |-
+      Represents the font attributes, such as font name, font size, color, etc. of chart axis title object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartFontLoadOptions

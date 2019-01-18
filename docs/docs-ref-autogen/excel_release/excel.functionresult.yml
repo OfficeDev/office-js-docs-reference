@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.FunctionResult
-    summary: >-
-      An object containing the result of a function-evaluation operation \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      An object containing the result of a function-evaluation operation
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.FunctionResult
     fullName: Excel.FunctionResult
     langs:
@@ -35,8 +36,10 @@ items:
   - uid: excel_release.Excel.FunctionResult.error
     summary: >-
       Error value (such as "\#DIV/0") representing the error. If the error string is not set, then the function
-      succeeded, and its result is written to the Value field. The error is always in the English locale. \[ [API set:
-      ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      succeeded, and its result is written to the Value field. The error is always in the English locale.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: error
     fullName: error
     langs:
@@ -75,7 +78,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): FunctionResult<T>;'
+      content: 'load(option?: Excel.Interfaces.FunctionResultLoadOptions): FunctionResult<T>;'
       return:
         type:
           - FunctionResult<T>
@@ -84,7 +87,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.FunctionResultLoadOptions
   - uid: excel_release.Excel.FunctionResult.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -106,8 +109,10 @@ items:
   - uid: excel_release.Excel.FunctionResult.value
     summary: >-
       The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error
-      property is not set). \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      property is not set).
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
     fullName: value
     langs:

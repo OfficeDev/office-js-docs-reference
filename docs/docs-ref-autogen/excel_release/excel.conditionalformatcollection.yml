@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ConditionalFormatCollection
-    summary: >-
-      Represents a collection of all the conditional formats that are overlap the range. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of all the conditional formats that are overlap the range.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormatCollection
     fullName: Excel.ConditionalFormatCollection
     langs:
@@ -23,9 +24,10 @@ items:
       - excel_release.Excel.ConditionalFormatCollection.load
       - excel_release.Excel.ConditionalFormatCollection.toJSON
   - uid: excel_release.Excel.ConditionalFormatCollection.add
-    summary: >-
-      Adds a new conditional format to the collection at the first/top priority. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Adds a new conditional format to the collection at the first/top priority.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(type)
     fullName: add
     langs:
@@ -43,9 +45,10 @@ items:
           type:
             - excel.Excel.ConditionalFormatType
   - uid: excel_release.Excel.ConditionalFormatCollection.clearAll
-    summary: >-
-      Clears all conditional formats active on the current specified range. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Clears all conditional formats active on the current specified range.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clearAll()
     fullName: clearAll
     langs:
@@ -72,9 +75,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ConditionalFormatCollection.getCount
-    summary: >-
-      Returns the number of conditional formats in the workbook. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the number of conditional formats in the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -87,9 +91,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel_release.Excel.ConditionalFormatCollection.getItem
-    summary: >-
-      Returns a conditional format for the given ID. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns a conditional format for the given ID.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(id)
     fullName: getItem
     langs:
@@ -107,9 +112,10 @@ items:
           type:
             - string
   - uid: excel_release.Excel.ConditionalFormatCollection.getItemAt
-    summary: >-
-      Returns a conditional format at the given index. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns a conditional format at the given index.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:
@@ -162,7 +168,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ConditionalFormatCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.ConditionalFormatCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ConditionalFormatCollection;
       return:
         type:
           - excel.Excel.ConditionalFormatCollection
@@ -171,7 +179,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.ConditionalFormatCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel_release.Excel.ConditionalFormatCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

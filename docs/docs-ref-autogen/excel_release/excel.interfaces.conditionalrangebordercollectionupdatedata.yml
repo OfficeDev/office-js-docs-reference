@@ -17,9 +17,10 @@ items:
       - excel_release.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.right
       - excel_release.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.top
   - uid: excel_release.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.bottom
-    summary: >-
-      Gets the bottom border. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the bottom border.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bottom
     fullName: bottom
     langs:
@@ -42,9 +43,10 @@ items:
         type:
           - 'Excel.Interfaces.ConditionalRangeBorderData[]'
   - uid: excel_release.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.left
-    summary: >-
-      Gets the left border. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the left border.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -56,9 +58,10 @@ items:
         type:
           - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
   - uid: excel_release.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.right
-    summary: >-
-      Gets the right border. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the right border.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: right
     fullName: right
     langs:
@@ -70,9 +73,10 @@ items:
         type:
           - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
   - uid: excel_release.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.top
-    summary: >-
-      Gets the top border. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the top border.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:

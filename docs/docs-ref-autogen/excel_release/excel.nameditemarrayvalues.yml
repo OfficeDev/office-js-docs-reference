@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.NamedItemArrayValues
-    summary: >-
-      Represents an object containing values and types of a named item. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents an object containing values and types of a named item.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.NamedItemArrayValues
     fullName: Excel.NamedItemArrayValues
     langs:
@@ -56,7 +57,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.NamedItemArrayValues;'
+      content: 'load(option?: Excel.Interfaces.NamedItemArrayValuesLoadOptions): Excel.NamedItemArrayValues;'
       return:
         type:
           - excel.Excel.NamedItemArrayValues
@@ -65,7 +66,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.NamedItemArrayValuesLoadOptions
   - uid: excel_release.Excel.NamedItemArrayValues.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -85,9 +86,10 @@ items:
           - excel.Excel.Interfaces.NamedItemArrayValuesData
         description: ''
   - uid: excel_release.Excel.NamedItemArrayValues.types
-    summary: >-
-      Represents the types for each item in the named item array \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the types for each item in the named item array
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: types
     fullName: types
     langs:
@@ -99,9 +101,10 @@ items:
         type:
           - 'Excel.RangeValueType[][]'
   - uid: excel_release.Excel.NamedItemArrayValues.values
-    summary: >-
-      Represents the values of each item in the named item array. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the values of each item in the named item array.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: values
     langs:

@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.CollectionLoadOptions
+    summary: Provides ways to load properties of only a subset of members of a collection.
+    name: Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.CollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release

@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.RangeFill
-    summary: >-
-      Represents the background of a range object. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the background of a range object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeFill
     fullName: Excel.RangeFill
     langs:
@@ -19,9 +20,10 @@ items:
       - excel_release.Excel.RangeFill.load
       - excel_release.Excel.RangeFill.toJSON
   - uid: excel_release.Excel.RangeFill.clear
-    summary: >-
-      Resets the range background. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Resets the range background.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: clear
     langs:
@@ -35,9 +37,11 @@ items:
         description: ''
   - uid: excel_release.Excel.RangeFill.color
     summary: >-
-      HTML color code representing the color of the background, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange") \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      color (e.g. "orange")
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -86,7 +90,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.RangeFill;'
+      content: 'load(option?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;'
       return:
         type:
           - excel.Excel.RangeFill
@@ -95,7 +99,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.RangeFillLoadOptions
   - uid: excel_release.Excel.RangeFill.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

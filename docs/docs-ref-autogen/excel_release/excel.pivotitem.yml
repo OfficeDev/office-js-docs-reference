@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.PivotItem
-    summary: >-
-      Represents the Excel PivotItem. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the Excel PivotItem.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotItem
     fullName: Excel.PivotItem
     langs:
@@ -35,9 +36,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.PivotItem.id
-    summary: >-
-      Id of the PivotItem. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Id of the PivotItem.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -49,9 +51,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.PivotItem.isExpanded
-    summary: >-
-      Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden. \[
-      [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isExpanded
     fullName: isExpanded
     langs:
@@ -86,7 +89,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.PivotItem;'
+      content: 'load(option?: Excel.Interfaces.PivotItemLoadOptions): Excel.PivotItem;'
       return:
         type:
           - excel.Excel.PivotItem
@@ -95,11 +98,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.PivotItemLoadOptions
   - uid: excel_release.Excel.PivotItem.name
-    summary: >-
-      Name of the PivotItem. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Name of the PivotItem.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -129,9 +133,10 @@ items:
           - excel.Excel.Interfaces.PivotItemData
         description: ''
   - uid: excel_release.Excel.PivotItem.visible
-    summary: >-
-      Determines whether the PivotItem is visible or not. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Determines whether the PivotItem is visible or not.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:

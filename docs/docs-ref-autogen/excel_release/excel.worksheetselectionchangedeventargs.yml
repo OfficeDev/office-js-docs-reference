@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.WorksheetSelectionChangedEventArgs
-    summary: >-
-      Provides information about the worksheet that raised the SelectionChanged event. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Provides information about the worksheet that raised the SelectionChanged event.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetSelectionChangedEventArgs
     fullName: Excel.WorksheetSelectionChangedEventArgs
     langs:
@@ -15,9 +16,10 @@ items:
       - excel_release.Excel.WorksheetSelectionChangedEventArgs.type
       - excel_release.Excel.WorksheetSelectionChangedEventArgs.worksheetId
   - uid: excel_release.Excel.WorksheetSelectionChangedEventArgs.address
-    summary: >-
-      Gets the range address that represents the selected area of a specific worksheet. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the range address that represents the selected area of a specific worksheet.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: address
     langs:
@@ -29,9 +31,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.WorksheetSelectionChangedEventArgs.type
-    summary: >-
-      Gets the type of the event. See Excel.EventType for details. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the type of the event. See Excel.EventType for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -43,9 +46,10 @@ items:
         type:
           - '"WorksheetSelectionChanged"'
   - uid: excel_release.Excel.WorksheetSelectionChangedEventArgs.worksheetId
-    summary: >-
-      Gets the id of the worksheet in which the selection changed. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the id of the worksheet in which the selection changed.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: worksheetId
     langs:

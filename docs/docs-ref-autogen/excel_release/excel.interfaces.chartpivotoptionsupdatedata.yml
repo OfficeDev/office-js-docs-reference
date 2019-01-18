@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.ChartPivotOptionsUpdateData
+    summary: 'An interface for updating data on the ChartPivotOptions object, for use in "chartPivotOptions.set({ ... })".'
+    name: Excel.Interfaces.ChartPivotOptionsUpdateData
+    fullName: Excel.Interfaces.ChartPivotOptionsUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release

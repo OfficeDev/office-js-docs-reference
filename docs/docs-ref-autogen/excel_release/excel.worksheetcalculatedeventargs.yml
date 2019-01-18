@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.WorksheetCalculatedEventArgs
-    summary: >-
-      Provides information about the worksheet that raised the Calculated event. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Provides information about the worksheet that raised the Calculated event.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetCalculatedEventArgs
     fullName: Excel.WorksheetCalculatedEventArgs
     langs:
@@ -14,9 +15,10 @@ items:
       - excel_release.Excel.WorksheetCalculatedEventArgs.type
       - excel_release.Excel.WorksheetCalculatedEventArgs.worksheetId
   - uid: excel_release.Excel.WorksheetCalculatedEventArgs.type
-    summary: >-
-      Gets the type of the event. See Excel.EventType for details. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the type of the event. See Excel.EventType for details.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -28,9 +30,10 @@ items:
         type:
           - '"WorksheetCalculated"'
   - uid: excel_release.Excel.WorksheetCalculatedEventArgs.worksheetId
-    summary: >-
-      Gets the id of the worksheet that is calculated. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the id of the worksheet that is calculated.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: worksheetId
     langs:

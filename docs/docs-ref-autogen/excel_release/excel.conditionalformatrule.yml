@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ConditionalFormatRule
-    summary: >-
-      Represents a rule, for all traditional rule/format pairings. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a rule, for all traditional rule/format pairings.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormatRule
     fullName: Excel.ConditionalFormatRule
     langs:
@@ -34,9 +35,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ConditionalFormatRule.formula
-    summary: >-
-      The formula, if required, to evaluate the conditional format rule on. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
     fullName: formula
     langs:
@@ -48,9 +50,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.ConditionalFormatRule.formulaLocal
-    summary: >-
-      The formula, if required, to evaluate the conditional format rule on in the user's language. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on in the user's language.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaLocal
     fullName: formulaLocal
     langs:
@@ -62,9 +65,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.ConditionalFormatRule.formulaR1C1
-    summary: >-
-      The formula, if required, to evaluate the conditional format rule on in R1C1-style notation. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaR1C1
     fullName: formulaR1C1
     langs:
@@ -99,7 +103,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ConditionalFormatRule;'
+      content: 'load(option?: Excel.Interfaces.ConditionalFormatRuleLoadOptions): Excel.ConditionalFormatRule;'
       return:
         type:
           - excel.Excel.ConditionalFormatRule
@@ -108,7 +112,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions
   - uid: excel_release.Excel.ConditionalFormatRule.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

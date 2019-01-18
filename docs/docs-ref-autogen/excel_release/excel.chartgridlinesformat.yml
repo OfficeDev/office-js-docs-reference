@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ChartGridlinesFormat
-    summary: >-
-      Encapsulates the format properties for chart gridlines. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Encapsulates the format properties for chart gridlines.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartGridlinesFormat
     fullName: Excel.ChartGridlinesFormat
     langs:
@@ -32,9 +33,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ChartGridlinesFormat.line
-    summary: >-
-      Represents chart line formatting. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents chart line formatting. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
     fullName: line
     langs:
@@ -69,7 +71,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartGridlinesFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartGridlinesFormatLoadOptions): Excel.ChartGridlinesFormat;'
       return:
         type:
           - excel.Excel.ChartGridlinesFormat
@@ -78,7 +80,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartGridlinesFormatLoadOptions
   - uid: excel_release.Excel.ChartGridlinesFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

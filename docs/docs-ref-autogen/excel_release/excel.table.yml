@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.Table
-    summary: >-
-      Represents an Excel table. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: >-
-      Our [how-to guide on working with
-      tables](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables) has detailed walkthroughs,
-      images, and code samples.
+    summary: |-
+      Represents an Excel table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Table
     fullName: Excel.Table
     langs:
@@ -46,9 +43,10 @@ items:
       - excel_release.Excel.Table.toJSON
       - excel_release.Excel.Table.worksheet
   - uid: excel_release.Excel.Table.clearFilters
-    summary: >-
-      Clears all the filters currently applied on the table. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Clears all the filters currently applied on the table.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clearFilters()
     fullName: clearFilters
     langs:
@@ -61,9 +59,10 @@ items:
           - void
         description: ''
   - uid: excel_release.Excel.Table.columns
-    summary: >-
-      Represents a collection of all the columns in the table. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of all the columns in the table. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columns
     fullName: columns
     langs:
@@ -89,9 +88,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.Table.convertToRange
-    summary: >-
-      Converts the table into a normal range of cells. All data is preserved. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Converts the table into a normal range of cells. All data is preserved.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: convertToRange()
     fullName: convertToRange
     langs:
@@ -104,9 +104,10 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel_release.Excel.Table.delete
-    summary: >-
-      Deletes the table. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Deletes the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: delete
     langs:
@@ -119,9 +120,10 @@ items:
           - void
         description: ''
   - uid: excel_release.Excel.Table.getDataBodyRange
-    summary: >-
-      Gets the range object associated with the data body of the table. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the range object associated with the data body of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getDataBodyRange()
     fullName: getDataBodyRange
     langs:
@@ -134,9 +136,10 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel_release.Excel.Table.getHeaderRowRange
-    summary: >-
-      Gets the range object associated with header row of the table. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the range object associated with header row of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getHeaderRowRange()
     fullName: getHeaderRowRange
     langs:
@@ -149,9 +152,10 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel_release.Excel.Table.getRange
-    summary: >-
-      Gets the range object associated with the entire table. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the range object associated with the entire table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
     fullName: getRange
     langs:
@@ -164,9 +168,10 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel_release.Excel.Table.getTotalRowRange
-    summary: >-
-      Gets the range object associated with totals row of the table. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the range object associated with totals row of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getTotalRowRange()
     fullName: getTotalRowRange
     langs:
@@ -179,9 +184,10 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel_release.Excel.Table.highlightFirstColumn
-    summary: >-
-      Indicates whether the first column contains special formatting. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Indicates whether the first column contains special formatting.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: highlightFirstColumn
     fullName: highlightFirstColumn
     langs:
@@ -193,9 +199,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Table.highlightLastColumn
-    summary: >-
-      Indicates whether the last column contains special formatting. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Indicates whether the last column contains special formatting.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: highlightLastColumn
     fullName: highlightLastColumn
     langs:
@@ -209,8 +216,10 @@ items:
   - uid: excel_release.Excel.Table.id
     summary: >-
       Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
-      same even when the table is renamed. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      same even when the table is renamed. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -222,9 +231,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.Table.legacyId
-    summary: >-
-      Returns a numeric id. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns a numeric id.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: legacyId
     fullName: legacyId
     langs:
@@ -259,7 +269,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Table;'
+      content: 'load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;'
       return:
         type:
           - excel.Excel.Table
@@ -268,11 +278,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.TableLoadOptions
   - uid: excel_release.Excel.Table.name
-    summary: >-
-      Name of the table. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Name of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -284,9 +295,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.Table.onChanged
-    summary: >-
-      Occurs when data in cells changes on a specific table. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when data in cells changes on a specific table.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onChanged
     fullName: onChanged
     langs:
@@ -298,9 +310,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
   - uid: excel_release.Excel.Table.onSelectionChanged
-    summary: >-
-      Occurs when the selection changes on a specific table. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when the selection changes on a specific table.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSelectionChanged
     fullName: onSelectionChanged
     langs:
@@ -312,9 +325,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>
   - uid: excel_release.Excel.Table.reapplyFilters
-    summary: >-
-      Reapplies all the filters currently on the table. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Reapplies all the filters currently on the table.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reapplyFilters()
     fullName: reapplyFilters
     langs:
@@ -327,9 +341,10 @@ items:
           - void
         description: ''
   - uid: excel_release.Excel.Table.rows
-    summary: >-
-      Represents a collection of all the rows in the table. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of all the rows in the table. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rows
     fullName: rows
     langs:
@@ -343,8 +358,10 @@ items:
   - uid: excel_release.Excel.Table.showBandedColumns
     summary: >-
       Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even
-      ones to make reading the table easier. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      ones to make reading the table easier.
+
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showBandedColumns
     fullName: showBandedColumns
     langs:
@@ -358,8 +375,10 @@ items:
   - uid: excel_release.Excel.Table.showBandedRows
     summary: >-
       Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to
-      make reading the table easier. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      make reading the table easier.
+
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showBandedRows
     fullName: showBandedRows
     langs:
@@ -373,8 +392,10 @@ items:
   - uid: excel_release.Excel.Table.showFilterButton
     summary: >-
       Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if
-      the table contains a header row. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      the table contains a header row.
+
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showFilterButton
     fullName: showFilterButton
     langs:
@@ -386,9 +407,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Table.showHeaders
-    summary: >-
-      Indicates whether the header row is visible or not. This value can be set to show or remove the header row. \[
-      [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showHeaders
     fullName: showHeaders
     langs:
@@ -400,9 +422,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Table.showTotals
-    summary: >-
-      Indicates whether the total row is visible or not. This value can be set to show or remove the total row. \[ [API
-      set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showTotals
     fullName: showTotals
     langs:
@@ -414,9 +437,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Table.sort
-    summary: >-
-      Represents the sorting for the table. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the sorting for the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sort
     fullName: sort
     langs:
@@ -431,8 +455,10 @@ items:
     summary: >-
       Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
       TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined
-      style present in the workbook can also be specified. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      style present in the workbook can also be specified.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: style
     langs:
@@ -462,9 +488,10 @@ items:
           - excel.Excel.Interfaces.TableData
         description: ''
   - uid: excel_release.Excel.Table.worksheet
-    summary: >-
-      The worksheet containing the current table. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The worksheet containing the current table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
     fullName: worksheet
     langs:

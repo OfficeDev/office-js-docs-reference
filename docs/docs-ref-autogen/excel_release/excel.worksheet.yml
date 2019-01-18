@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.Worksheet
-    summary: >-
-      An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: >-
-      Our [how-to guide on working with
-      worksheets](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets) has detailed
-      walkthroughs and code samples.
+    summary: |-
+      An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Worksheet
     fullName: Excel.Worksheet
     langs:
@@ -54,9 +51,10 @@ items:
       - excel_release.Excel.Worksheet.toJSON
       - excel_release.Excel.Worksheet.visibility
   - uid: excel_release.Excel.Worksheet.activate
-    summary: >-
-      Activate the worksheet in the Excel UI. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Activate the worksheet in the Excel UI.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: activate()
     fullName: activate
     langs:
@@ -69,9 +67,10 @@ items:
           - void
         description: ''
   - uid: excel_release.Excel.Worksheet.calculate
-    summary: >-
-      Calculates all cells on a worksheet. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Calculates all cells on a worksheet.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculate(markAllDirty)
     fullName: calculate
     langs:
@@ -89,9 +88,10 @@ items:
           type:
             - boolean
   - uid: excel_release.Excel.Worksheet.charts
-    summary: >-
-      Returns collection of charts that are part of the worksheet. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns collection of charts that are part of the worksheet. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: charts
     fullName: charts
     langs:
@@ -117,9 +117,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.Worksheet.copy
-    summary: >-
-      Copy a worksheet and place it at the specified position. Return the copied worksheet. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Copy a worksheet and place it at the specified position. Return the copied worksheet.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'copy(positionType, relativeTo)'
     fullName: copy
     langs:
@@ -141,9 +142,10 @@ items:
           type:
             - excel.Excel.Worksheet
   - uid: excel_release.Excel.Worksheet.delete
-    summary: >-
-      Deletes the worksheet from the workbook. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Deletes the worksheet from the workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: delete
     langs:
@@ -156,9 +158,10 @@ items:
           - void
         description: ''
   - uid: excel_release.Excel.Worksheet.freezePanes
-    summary: >-
-      Gets an object that can be used to manipulate frozen panes on the worksheet. Read-only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets an object that can be used to manipulate frozen panes on the worksheet. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: freezePanes
     fullName: freezePanes
     langs:
@@ -172,8 +175,10 @@ items:
   - uid: excel_release.Excel.Worksheet.getCell
     summary: >-
       Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
-      bounds of its parent range, so long as it stays within the worksheet grid. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      bounds of its parent range, so long as it stays within the worksheet grid.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getCell(row, column)'
     fullName: getCell
     langs:
@@ -197,7 +202,10 @@ items:
   - uid: excel_release.Excel.Worksheet.getNext
     summary: >-
       Gets the worksheet that follows this one. If there are no worksheets following this one, this method will throw an
-      error. \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      error.
+
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getNext(visibleOnly)
     fullName: getNext
     langs:
@@ -217,8 +225,10 @@ items:
   - uid: excel_release.Excel.Worksheet.getNextOrNullObject
     summary: >-
       Gets the worksheet that follows this one. If there are no worksheets following this one, this method will return a
-      null object. \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      null object.
+
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getNextOrNullObject(visibleOnly)
     fullName: getNextOrNullObject
     langs:
@@ -236,8 +246,9 @@ items:
           type:
             - boolean
   - uid: excel_release.Excel.Worksheet.getPrevious
-    summary: >-
+    summary: |-
       Gets the worksheet that precedes this one. If there are no previous worksheets, this method will throw an error.
+
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getPrevious(visibleOnly)
     fullName: getPrevious
@@ -258,7 +269,10 @@ items:
   - uid: excel_release.Excel.Worksheet.getPreviousOrNullObject
     summary: >-
       Gets the worksheet that precedes this one. If there are no previous worksheets, this method will return a null
-      objet. \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      objet.
+
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getPreviousOrNullObject(visibleOnly)
     fullName: getPreviousOrNullObject
     langs:
@@ -276,9 +290,10 @@ items:
           type:
             - boolean
   - uid: excel_release.Excel.Worksheet.getRange
-    summary: >-
-      Gets the range object, representing a single rectangular block of cells, specified by the address or name. \[ [API
-      set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the range object, representing a single rectangular block of cells, specified by the address or name.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange(address)
     fullName: getRange
     langs:
@@ -300,8 +315,10 @@ items:
   - uid: excel_release.Excel.Worksheet.getRangeByIndexes
     summary: >-
       Gets the range object beginning at a particular row index and column index, and spanning a certain number of rows
-      and columns. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      and columns.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
     fullName: getRangeByIndexes
     langs:
@@ -334,6 +351,8 @@ items:
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
       If the entire worksheet is blank, this function will return the top left cell (i.e. it will *not* throw an error).
+
+
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getUsedRange(valuesOnly)
     fullName: getUsedRange
@@ -356,8 +375,10 @@ items:
   - uid: excel_release.Excel.Worksheet.getUsedRangeOrNullObject
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
-      If the entire worksheet is blank, this function will return a null object. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      If the entire worksheet is blank, this function will return a null object.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getUsedRangeOrNullObject(valuesOnly)
     fullName: getUsedRangeOrNullObject
     langs:
@@ -377,8 +398,10 @@ items:
   - uid: excel_release.Excel.Worksheet.id
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
-      the same even when the worksheet is renamed or moved. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      the same even when the worksheet is renamed or moved. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -413,7 +436,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Worksheet;'
+      content: 'load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;'
       return:
         type:
           - excel.Excel.Worksheet
@@ -422,11 +445,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.WorksheetLoadOptions
   - uid: excel_release.Excel.Worksheet.name
-    summary: >-
-      The display name of the worksheet. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The display name of the worksheet.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -438,9 +462,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.Worksheet.names
-    summary: >-
-      Collection of names scoped to the current worksheet. Read-only. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Collection of names scoped to the current worksheet. Read-only.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: names
     fullName: names
     langs:
@@ -452,9 +477,10 @@ items:
         type:
           - excel.Excel.NamedItemCollection
   - uid: excel_release.Excel.Worksheet.onActivated
-    summary: >-
-      Occurs when the worksheet is activated. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when the worksheet is activated.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onActivated
     fullName: onActivated
     langs:
@@ -466,9 +492,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
   - uid: excel_release.Excel.Worksheet.onCalculated
-    summary: >-
-      Occurs when the worksheet is calculated. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when the worksheet is calculated.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onCalculated
     fullName: onCalculated
     langs:
@@ -480,9 +507,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
   - uid: excel_release.Excel.Worksheet.onChanged
-    summary: >-
-      Occurs when data changed on a specific worksheet. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when data changed on a specific worksheet.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onChanged
     fullName: onChanged
     langs:
@@ -494,9 +522,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
   - uid: excel_release.Excel.Worksheet.onDeactivated
-    summary: >-
-      Occurs when the worksheet is deactivated. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when the worksheet is deactivated.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeactivated
     fullName: onDeactivated
     langs:
@@ -508,9 +537,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
   - uid: excel_release.Excel.Worksheet.onSelectionChanged
-    summary: >-
-      Occurs when the selection changes on a specific worksheet. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when the selection changes on a specific worksheet.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSelectionChanged
     fullName: onSelectionChanged
     langs:
@@ -522,9 +552,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
   - uid: excel_release.Excel.Worksheet.pivotTables
-    summary: >-
-      Collection of PivotTables that are part of the worksheet. Read-only. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Collection of PivotTables that are part of the worksheet. Read-only.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotTables
     fullName: pivotTables
     langs:
@@ -536,9 +567,10 @@ items:
         type:
           - excel.Excel.PivotTableCollection
   - uid: excel_release.Excel.Worksheet.position
-    summary: >-
-      The zero-based position of the worksheet within the workbook. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The zero-based position of the worksheet within the workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: position
     langs:
@@ -550,9 +582,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.Worksheet.protection
-    summary: >-
-      Returns sheet protection object for a worksheet. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns sheet protection object for a worksheet. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
     fullName: protection
     langs:
@@ -564,9 +597,10 @@ items:
         type:
           - excel.Excel.WorksheetProtection
   - uid: excel_release.Excel.Worksheet.showGridlines
-    summary: >-
-      Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user. \[
-      [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showGridlines
     fullName: showGridlines
     langs:
@@ -578,9 +612,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Worksheet.showHeadings
-    summary: >-
-      Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user. \[ [API
-      set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showHeadings
     fullName: showHeadings
     langs:
@@ -592,9 +627,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Worksheet.standardHeight
-    summary: >-
-      Returns the standard (default) height of all the rows in the worksheet, in points. Read-only. \[ [API set:
-      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: standardHeight
     fullName: standardHeight
     langs:
@@ -609,8 +645,10 @@ items:
     summary: >-
       Returns or sets the standard (default) width of all the columns in the worksheet. One unit of column width is
       equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0
-      (zero) is used. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      (zero) is used.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: standardWidth
     fullName: standardWidth
     langs:
@@ -626,8 +664,10 @@ items:
       Gets or sets the worksheet tab color. When retrieving the tab color, if the worksheet is invisible, the value will
       be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
       Otherwise, the property will be set to a color, in the form "\#123456" When setting the color, use an empty-string
-      to set an "auto" color, or a real color otherwise. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      to set an "auto" color, or a real color otherwise.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tabColor
     fullName: tabColor
     langs:
@@ -639,9 +679,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.Worksheet.tables
-    summary: >-
-      Collection of tables that are part of the worksheet. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Collection of tables that are part of the worksheet. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tables
     fullName: tables
     langs:
@@ -672,7 +713,10 @@ items:
         description: ''
   - uid: excel_release.Excel.Worksheet.visibility
     summary: >-
-      The Visibility of the worksheet. \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
+      The Visibility of the worksheet.
+
+
+      \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
       it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visibility
     fullName: visibility

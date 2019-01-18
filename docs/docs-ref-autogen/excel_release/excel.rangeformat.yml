@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.RangeFormat
-    summary: >-
-      A format object encapsulating the range's font, fill, borders, alignment, and other properties. \[ [API set:
-      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      A format object encapsulating the range's font, fill, borders, alignment, and other properties.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeFormat
     fullName: Excel.RangeFormat
     langs:
@@ -33,7 +34,10 @@ items:
   - uid: excel_release.Excel.RangeFormat.autofitColumns
     summary: >-
       Changes the width of the columns of the current range to achieve the best fit, based on the current data in the
-      columns. \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      columns.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autofitColumns()
     fullName: autofitColumns
     langs:
@@ -48,7 +52,10 @@ items:
   - uid: excel_release.Excel.RangeFormat.autofitRows
     summary: >-
       Changes the height of the rows of the current range to achieve the best fit, based on the current data in the
-      columns. \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      columns.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autofitRows()
     fullName: autofitRows
     langs:
@@ -61,9 +68,10 @@ items:
           - void
         description: ''
   - uid: excel_release.Excel.RangeFormat.borders
-    summary: >-
-      Collection of border objects that apply to the overall range. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Collection of border objects that apply to the overall range. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
     fullName: borders
     langs:
@@ -77,7 +85,10 @@ items:
   - uid: excel_release.Excel.RangeFormat.columnWidth
     summary: >-
       Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
-      returned. \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      returned.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnWidth
     fullName: columnWidth
     langs:
@@ -103,9 +114,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.RangeFormat.fill
-    summary: >-
-      Returns the fill object defined on the overall range. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the fill object defined on the overall range. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -117,9 +129,10 @@ items:
         type:
           - excel.Excel.RangeFill
   - uid: excel_release.Excel.RangeFormat.font
-    summary: >-
-      Returns the font object defined on the overall range. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the font object defined on the overall range. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:
@@ -131,9 +144,10 @@ items:
         type:
           - excel.Excel.RangeFont
   - uid: excel_release.Excel.RangeFormat.horizontalAlignment
-    summary: >-
-      Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details. \[ [API
-      set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: horizontalAlignment
     langs:
@@ -172,7 +186,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.RangeFormat;'
+      content: 'load(option?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;'
       return:
         type:
           - excel.Excel.RangeFormat
@@ -181,11 +195,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.RangeFormatLoadOptions
   - uid: excel_release.Excel.RangeFormat.protection
-    summary: >-
-      Returns the format protection object for a range. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the format protection object for a range. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
     fullName: protection
     langs:
@@ -197,9 +212,10 @@ items:
         type:
           - excel.Excel.FormatProtection
   - uid: excel_release.Excel.RangeFormat.rowHeight
-    summary: >-
-      Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned. \[
-      [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowHeight
     fullName: rowHeight
     langs:
@@ -214,8 +230,10 @@ items:
     summary: >-
       Gets or sets the text orientation of all the cells within the range. The text orientation should be an integer
       either from -90 to 90, or 180 for vertically-oriented text. If the orientation within a range are not uniform,
-      then null will be returned. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      then null will be returned.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
     fullName: textOrientation
     langs:
@@ -248,8 +266,10 @@ items:
     summary: >-
       Determines if the row height of the Range object equals the standard height of the sheet. Returns True if the row
       height of the Range object equals the standard height of the sheet. Returns Null if the range contains more than
-      one row and the rows aren't all the same height. Returns False otherwise. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      one row and the rows aren't all the same height. Returns False otherwise.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useStandardHeight
     fullName: useStandardHeight
     langs:
@@ -264,8 +284,10 @@ items:
     summary: >-
       Indicates whether the column width of the Range object equals the standard width of the sheet. Returns True if the
       column width of the Range object equals the standard width of the sheet. Returns Null if the range contains more
-      than one column and the columns aren't all the same height. Returns False otherwise. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      than one column and the columns aren't all the same height. Returns False otherwise.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useStandardWidth
     fullName: useStandardWidth
     langs:
@@ -277,9 +299,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.RangeFormat.verticalAlignment
-    summary: >-
-      Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details. \[ [API set:
-      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
     fullName: verticalAlignment
     langs:
@@ -293,8 +316,10 @@ items:
   - uid: excel_release.Excel.RangeFormat.wrapText
     summary: >-
       Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
-      wrap setting \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      wrap setting
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: wrapText
     fullName: wrapText
     langs:

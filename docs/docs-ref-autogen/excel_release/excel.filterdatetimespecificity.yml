@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.FilterDatetimeSpecificity
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.FilterDatetimeSpecificity
     fullName: Excel.FilterDatetimeSpecificity
     langs:

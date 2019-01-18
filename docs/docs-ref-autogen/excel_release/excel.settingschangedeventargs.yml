@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.SettingsChangedEventArgs
-    summary: >-
-      Provides information about the setting that raised the SettingsChanged event \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Provides information about the setting that raised the SettingsChanged event
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.SettingsChangedEventArgs
     fullName: Excel.SettingsChangedEventArgs
     langs:
@@ -13,9 +14,10 @@ items:
     children:
       - excel_release.Excel.SettingsChangedEventArgs.settings
   - uid: excel_release.Excel.SettingsChangedEventArgs.settings
-    summary: >-
-      Gets the Setting object that represents the binding that raised the SettingsChanged event \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the Setting object that represents the binding that raised the SettingsChanged event
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: settings
     fullName: settings
     langs:

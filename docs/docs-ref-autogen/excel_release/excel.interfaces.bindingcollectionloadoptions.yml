@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.BindingCollectionLoadOptions
+    summary: |-
+      Represents the collection of all the binding objects that are part of the workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.BindingCollectionLoadOptions
+    fullName: Excel.Interfaces.BindingCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.BindingCollectionLoadOptions.id
+      - excel_release.Excel.Interfaces.BindingCollectionLoadOptions.type
+  - uid: excel_release.Excel.Interfaces.BindingCollectionLoadOptions.id
+    summary: |-
+      For EACH ITEM in the collection: Represents binding identifier. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.BindingCollectionLoadOptions.type
+    summary: |-
+      For EACH ITEM in the collection: Returns the type of the binding. See Excel.BindingType for details. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type:
+          - boolean

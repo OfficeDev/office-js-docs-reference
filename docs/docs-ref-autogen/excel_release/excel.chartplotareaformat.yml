@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ChartPlotAreaFormat
-    summary: >-
-      Represents the format properties for chart plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the format properties for chart plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartPlotAreaFormat
     fullName: Excel.ChartPlotAreaFormat
     langs:
@@ -19,9 +20,10 @@ items:
       - excel_release.Excel.ChartPlotAreaFormat.load
       - excel_release.Excel.ChartPlotAreaFormat.toJSON
   - uid: excel_release.Excel.ChartPlotAreaFormat.border
-    summary: >-
-      Represents the border attributes of a chart plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the border attributes of a chart plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: border
     langs:
@@ -47,9 +49,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ChartPlotAreaFormat.fill
-    summary: >-
-      Represents the fill format of an object, which includes background formating information. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the fill format of an object, which includes background formatting information.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -84,7 +87,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartPlotAreaFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartPlotAreaFormatLoadOptions): Excel.ChartPlotAreaFormat;'
       return:
         type:
           - excel.Excel.ChartPlotAreaFormat
@@ -93,7 +96,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions
   - uid: excel_release.Excel.ChartPlotAreaFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

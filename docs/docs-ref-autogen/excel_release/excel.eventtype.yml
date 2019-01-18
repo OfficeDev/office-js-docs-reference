@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.EventType
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.EventType
     fullName: Excel.EventType
     langs:
@@ -22,6 +23,7 @@ items:
       - excel_release.Excel.EventType.tableSelectionChanged
       - excel_release.Excel.EventType.visualChange
       - excel_release.Excel.EventType.visualSelectionChanged
+      - excel_release.Excel.EventType.wacoperationEvent
       - excel_release.Excel.EventType.workbookAutoSaveSettingChanged
       - excel_release.Excel.EventType.worksheetActivated
       - excel_release.Excel.EventType.worksheetAdded
@@ -160,6 +162,13 @@ items:
       - typeScript
     type: field
     numericValue: '"VisualSelectionChanged"'
+  - uid: excel_release.Excel.EventType.wacoperationEvent
+    name: wacoperationEvent
+    fullName: wacoperationEvent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WACOperationEvent"'
   - uid: excel_release.Excel.EventType.workbookAutoSaveSettingChanged
     summary: >-
       WorkbookAutoSaveSettingChanged represents the type of event registered on workbook, and occurs when there is an

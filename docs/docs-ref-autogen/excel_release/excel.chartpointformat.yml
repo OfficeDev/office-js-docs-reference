@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ChartPointFormat
-    summary: >-
-      Represents formatting object for chart points. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents formatting object for chart points.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartPointFormat
     fullName: Excel.ChartPointFormat
     langs:
@@ -21,8 +22,10 @@ items:
   - uid: excel_release.Excel.ChartPointFormat.border
     summary: >-
       Represents the border format of a chart data point, which includes color, style, and weight information.
-      Read-only. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: border
     langs:
@@ -48,9 +51,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ChartPointFormat.fill
-    summary: >-
-      Represents the fill format of a chart, which includes background formating information. Read-only. \[ [API set:
-      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the fill format of a chart, which includes background formatting information. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -85,7 +89,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartPointFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartPointFormatLoadOptions): Excel.ChartPointFormat;'
       return:
         type:
           - excel.Excel.ChartPointFormat
@@ -94,7 +98,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartPointFormatLoadOptions
   - uid: excel_release.Excel.ChartPointFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

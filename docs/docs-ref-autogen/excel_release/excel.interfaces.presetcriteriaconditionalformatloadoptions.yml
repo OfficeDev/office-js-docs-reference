@@ -1,0 +1,48 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
+    summary: >-
+      Represents the the preset criteria conditional format such as above average, below average, unique values,
+      contains blank, nonblank, error, and noerror.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
+    fullName: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.format
+      - excel_release.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.rule
+  - uid: excel_release.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.format
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
+  - uid: excel_release.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.rule
+    summary: |-
+      The rule of the conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rule
+    fullName: rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule?: boolean;'
+      return:
+        type:
+          - boolean

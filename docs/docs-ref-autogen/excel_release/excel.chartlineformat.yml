@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ChartLineFormat
-    summary: >-
-      Encapsulates the formatting options for line elements. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Encapsulates the formatting options for line elements.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartLineFormat
     fullName: Excel.ChartLineFormat
     langs:
@@ -21,9 +22,10 @@ items:
       - excel_release.Excel.ChartLineFormat.toJSON
       - excel_release.Excel.ChartLineFormat.weight
   - uid: excel_release.Excel.ChartLineFormat.clear
-    summary: >-
-      Clear the line format of a chart element. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Clear the line format of a chart element.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: clear
     langs:
@@ -36,9 +38,10 @@ items:
           - void
         description: ''
   - uid: excel_release.Excel.ChartLineFormat.color
-    summary: >-
-      HTML color code representing the color of lines in the chart. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      HTML color code representing the color of lines in the chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -64,9 +67,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ChartLineFormat.lineStyle
-    summary: >-
-      Represents the line style. See Excel.ChartLineStyle for details. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the line style. See Excel.ChartLineStyle for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lineStyle
     fullName: lineStyle
     langs:
@@ -105,7 +109,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartLineFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartLineFormatLoadOptions): Excel.ChartLineFormat;'
       return:
         type:
           - excel.Excel.ChartLineFormat
@@ -114,7 +118,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartLineFormatLoadOptions
   - uid: excel_release.Excel.ChartLineFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -134,9 +138,10 @@ items:
           - excel.Excel.Interfaces.ChartLineFormatData
         description: ''
   - uid: excel_release.Excel.ChartLineFormat.weight
-    summary: >-
-      Represents weight of the line, in points. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents weight of the line, in points.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
     fullName: weight
     langs:

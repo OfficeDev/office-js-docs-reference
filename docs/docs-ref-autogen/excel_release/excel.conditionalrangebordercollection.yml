@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ConditionalRangeBorderCollection
-    summary: >-
-      Represents the border objects that make up range border. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the border objects that make up range border.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalRangeBorderCollection
     fullName: Excel.ConditionalRangeBorderCollection
     langs:
@@ -25,9 +26,10 @@ items:
       - excel_release.Excel.ConditionalRangeBorderCollection.toJSON
       - excel_release.Excel.ConditionalRangeBorderCollection.top
   - uid: excel_release.Excel.ConditionalRangeBorderCollection.bottom
-    summary: >-
-      Gets the bottom border. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the bottom border. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bottom
     fullName: bottom
     langs:
@@ -53,9 +55,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ConditionalRangeBorderCollection.count
-    summary: >-
-      Number of border objects in the collection. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Number of border objects in the collection. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -67,9 +70,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.ConditionalRangeBorderCollection.getItem
-    summary: >-
-      Gets a border object using its name. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a border object using its name.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(index)
     fullName: getItem
     langs:
@@ -87,9 +91,10 @@ items:
           type:
             - excel.Excel.ConditionalRangeBorderIndex
   - uid: excel_release.Excel.ConditionalRangeBorderCollection.getItemAt
-    summary: >-
-      Gets a border object using its index. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a border object using its index.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:
@@ -119,9 +124,10 @@ items:
         type:
           - 'Excel.ConditionalRangeBorder[]'
   - uid: excel_release.Excel.ConditionalRangeBorderCollection.left
-    summary: >-
-      Gets the left border. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the left border. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -156,7 +162,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ConditionalRangeBorderCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
       return:
         type:
           - excel.Excel.ConditionalRangeBorderCollection
@@ -165,11 +173,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel_release.Excel.ConditionalRangeBorderCollection.right
-    summary: >-
-      Gets the right border. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the right border. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: right
     fullName: right
     langs:
@@ -199,9 +208,10 @@ items:
           - excel.Excel.Interfaces.ConditionalRangeBorderCollectionData
         description: ''
   - uid: excel_release.Excel.ConditionalRangeBorderCollection.top
-    summary: >-
-      Gets the top border. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the top border. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:

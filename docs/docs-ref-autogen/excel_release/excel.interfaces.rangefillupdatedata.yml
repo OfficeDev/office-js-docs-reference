@@ -12,9 +12,11 @@ items:
       - excel_release.Excel.Interfaces.RangeFillUpdateData.color
   - uid: excel_release.Excel.Interfaces.RangeFillUpdateData.color
     summary: >-
-      HTML color code representing the color of the background, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange") \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      color (e.g. "orange")
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:

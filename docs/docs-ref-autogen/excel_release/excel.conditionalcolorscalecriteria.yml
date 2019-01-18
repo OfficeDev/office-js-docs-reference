@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ConditionalColorScaleCriteria
-    summary: >-
-      Represents the criteria of the color scale. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the criteria of the color scale.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalColorScaleCriteria
     fullName: Excel.ConditionalColorScaleCriteria
     langs:
@@ -15,9 +16,10 @@ items:
       - excel_release.Excel.ConditionalColorScaleCriteria.midpoint
       - excel_release.Excel.ConditionalColorScaleCriteria.minimum
   - uid: excel_release.Excel.ConditionalColorScaleCriteria.maximum
-    summary: >-
-      The maximum point Color Scale Criterion. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The maximum point Color Scale Criterion.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: maximum
     fullName: maximum
     langs:
@@ -29,9 +31,10 @@ items:
         type:
           - excel.Excel.ConditionalColorScaleCriterion
   - uid: excel_release.Excel.ConditionalColorScaleCriteria.midpoint
-    summary: >-
-      The midpoint Color Scale Criterion if the color scale is a 3-color scale. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The midpoint Color Scale Criterion if the color scale is a 3-color scale.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: midpoint
     fullName: midpoint
     langs:
@@ -43,9 +46,10 @@ items:
         type:
           - excel.Excel.ConditionalColorScaleCriterion
   - uid: excel_release.Excel.ConditionalColorScaleCriteria.minimum
-    summary: >-
-      The minimum point Color Scale Criterion. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The minimum point Color Scale Criterion.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minimum
     fullName: minimum
     langs:

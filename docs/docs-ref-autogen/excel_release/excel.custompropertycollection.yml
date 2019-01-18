@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.CustomPropertyCollection
-    summary: >-
-      Contains the collection of customProperty objects. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Contains the collection of customProperty objects.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomPropertyCollection
     fullName: Excel.CustomPropertyCollection
     langs:
@@ -23,9 +24,10 @@ items:
       - excel_release.Excel.CustomPropertyCollection.load
       - excel_release.Excel.CustomPropertyCollection.toJSON
   - uid: excel_release.Excel.CustomPropertyCollection.add
-    summary: >-
-      Creates a new or sets an existing custom property. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Creates a new or sets an existing custom property.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(key, value)'
     fullName: add
     langs:
@@ -61,9 +63,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.CustomPropertyCollection.deleteAll
-    summary: >-
-      Deletes all custom properties in this collection. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Deletes all custom properties in this collection.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: deleteAll()
     fullName: deleteAll
     langs:
@@ -76,9 +79,10 @@ items:
           - void
         description: ''
   - uid: excel_release.Excel.CustomPropertyCollection.getCount
-    summary: >-
-      Gets the count of custom properties. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the count of custom properties.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -91,8 +95,9 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel_release.Excel.CustomPropertyCollection.getItem
-    summary: >-
+    summary: |-
       Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.
+
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
     fullName: getItem
@@ -113,8 +118,10 @@ items:
   - uid: excel_release.Excel.CustomPropertyCollection.getItemOrNullObject
     summary: >-
       Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property
-      does not exist. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      does not exist.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
     fullName: getItemOrNullObject
     langs:
@@ -167,7 +174,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.CustomPropertyCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.CustomPropertyCollection;
       return:
         type:
           - excel.Excel.CustomPropertyCollection
@@ -176,7 +185,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel_release.Excel.CustomPropertyCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

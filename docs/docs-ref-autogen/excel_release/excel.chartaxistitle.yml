@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ChartAxisTitle
-    summary: >-
-      Represents the title of a chart axis. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the title of a chart axis.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartAxisTitle
     fullName: Excel.ChartAxisTitle
     langs:
@@ -35,9 +36,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ChartAxisTitle.format
-    summary: >-
-      Represents the formatting of chart axis title. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the formatting of chart axis title. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -72,7 +74,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartAxisTitle;'
+      content: 'load(option?: Excel.Interfaces.ChartAxisTitleLoadOptions): Excel.ChartAxisTitle;'
       return:
         type:
           - excel.Excel.ChartAxisTitle
@@ -81,11 +83,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartAxisTitleLoadOptions
   - uid: excel_release.Excel.ChartAxisTitle.setFormula
-    summary: >-
-      A string value that represents the formula of chart axis title using A1-style notation. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      A string value that represents the formula of chart axis title using A1-style notation.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setFormula(formula)
     fullName: setFormula
     langs:
@@ -103,9 +106,10 @@ items:
           type:
             - string
   - uid: excel_release.Excel.ChartAxisTitle.text
-    summary: >-
-      Represents the axis title. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the axis title.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
     fullName: text
     langs:
@@ -135,9 +139,10 @@ items:
           - excel.Excel.Interfaces.ChartAxisTitleData
         description: ''
   - uid: excel_release.Excel.ChartAxisTitle.visible
-    summary: >-
-      A boolean that specifies the visibility of an axis title. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      A boolean that specifies the visibility of an axis title.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:

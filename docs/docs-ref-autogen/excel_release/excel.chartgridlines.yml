@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ChartGridlines
-    summary: >-
-      Represents major or minor gridlines on a chart axis. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents major or minor gridlines on a chart axis.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartGridlines
     fullName: Excel.ChartGridlines
     langs:
@@ -33,9 +34,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ChartGridlines.format
-    summary: >-
-      Represents the formatting of chart gridlines. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the formatting of chart gridlines. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -70,7 +72,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartGridlines;'
+      content: 'load(option?: Excel.Interfaces.ChartGridlinesLoadOptions): Excel.ChartGridlines;'
       return:
         type:
           - excel.Excel.ChartGridlines
@@ -79,7 +81,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartGridlinesLoadOptions
   - uid: excel_release.Excel.ChartGridlines.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -99,9 +101,10 @@ items:
           - excel.Excel.Interfaces.ChartGridlinesData
         description: ''
   - uid: excel_release.Excel.ChartGridlines.visible
-    summary: >-
-      Boolean value representing if the axis gridlines are visible or not. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Boolean value representing if the axis gridlines are visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:

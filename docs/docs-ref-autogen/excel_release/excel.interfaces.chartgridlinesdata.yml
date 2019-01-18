@@ -12,9 +12,10 @@ items:
       - excel_release.Excel.Interfaces.ChartGridlinesData.format
       - excel_release.Excel.Interfaces.ChartGridlinesData.visible
   - uid: excel_release.Excel.Interfaces.ChartGridlinesData.format
-    summary: >-
-      Represents the formatting of chart gridlines. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the formatting of chart gridlines. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -26,9 +27,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartGridlinesFormatData
   - uid: excel_release.Excel.Interfaces.ChartGridlinesData.visible
-    summary: >-
-      Boolean value representing if the axis gridlines are visible or not. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Boolean value representing if the axis gridlines are visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:

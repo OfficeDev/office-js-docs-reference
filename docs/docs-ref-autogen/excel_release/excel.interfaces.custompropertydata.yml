@@ -13,9 +13,10 @@ items:
       - excel_release.Excel.Interfaces.CustomPropertyData.type
       - excel_release.Excel.Interfaces.CustomPropertyData.value
   - uid: excel_release.Excel.Interfaces.CustomPropertyData.key
-    summary: >-
-      Gets the key of the custom property. Read only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the key of the custom property. Read only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
     fullName: key
     langs:
@@ -27,9 +28,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.Interfaces.CustomPropertyData.type
-    summary: >-
-      Gets the value type of the custom property. Read only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the value type of the custom property. Read only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -41,9 +43,10 @@ items:
         type:
           - Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float"
   - uid: excel_release.Excel.Interfaces.CustomPropertyData.value
-    summary: >-
-      Gets or sets the value of the custom property. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the value of the custom property.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
     fullName: value
     langs:

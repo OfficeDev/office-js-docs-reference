@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.RowColumnPivotHierarchy
-    summary: >-
-      Represents the Excel RowColumnPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the Excel RowColumnPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RowColumnPivotHierarchy
     fullName: Excel.RowColumnPivotHierarchy
     langs:
@@ -36,9 +37,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.RowColumnPivotHierarchy.fields
-    summary: >-
-      Returns the PivotFields associated with the RowColumnPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the PivotFields associated with the RowColumnPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
     fullName: fields
     langs:
@@ -50,9 +52,10 @@ items:
         type:
           - excel.Excel.PivotFieldCollection
   - uid: excel_release.Excel.RowColumnPivotHierarchy.id
-    summary: >-
-      Id of the RowColumnPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Id of the RowColumnPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -87,7 +90,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.RowColumnPivotHierarchy;'
+      content: 'load(option?: Excel.Interfaces.RowColumnPivotHierarchyLoadOptions): Excel.RowColumnPivotHierarchy;'
       return:
         type:
           - excel.Excel.RowColumnPivotHierarchy
@@ -96,11 +99,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions
   - uid: excel_release.Excel.RowColumnPivotHierarchy.name
-    summary: >-
-      Name of the RowColumnPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Name of the RowColumnPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -112,9 +116,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.RowColumnPivotHierarchy.position
-    summary: >-
-      Position of the RowColumnPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Position of the RowColumnPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: position
     langs:
@@ -126,9 +131,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.RowColumnPivotHierarchy.setToDefault
-    summary: >-
-      Reset the RowColumnPivotHierarchy back to its default values. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Reset the RowColumnPivotHierarchy back to its default values.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setToDefault()
     fullName: setToDefault
     langs:

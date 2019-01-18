@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.ShapeUpdateData
+    summary: 'An interface for updating data on the Shape object, for use in "shape.set({ ... })".'
+    name: Excel.Interfaces.ShapeUpdateData
+    fullName: Excel.Interfaces.ShapeUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release

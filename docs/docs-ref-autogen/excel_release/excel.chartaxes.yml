@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ChartAxes
-    summary: >-
-      Represents the chart axes. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the chart axes.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartAxes
     fullName: Excel.ChartAxes
     langs:
@@ -21,9 +22,10 @@ items:
       - excel_release.Excel.ChartAxes.toJSON
       - excel_release.Excel.ChartAxes.valueAxis
   - uid: excel_release.Excel.ChartAxes.categoryAxis
-    summary: >-
-      Represents the category axis in a chart. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the category axis in a chart. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: categoryAxis
     fullName: categoryAxis
     langs:
@@ -49,9 +51,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ChartAxes.getItem
-    summary: >-
-      Returns the specific axis identified by type and group. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the specific axis identified by type and group.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getItem(type, group)'
     fullName: getItem
     langs:
@@ -96,7 +99,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartAxes;'
+      content: 'load(option?: Excel.Interfaces.ChartAxesLoadOptions): Excel.ChartAxes;'
       return:
         type:
           - excel.Excel.ChartAxes
@@ -105,11 +108,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartAxesLoadOptions
   - uid: excel_release.Excel.ChartAxes.seriesAxis
-    summary: >-
-      Represents the series axis of a 3-dimensional chart. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the series axis of a 3-dimensional chart. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: seriesAxis
     fullName: seriesAxis
     langs:
@@ -139,9 +143,10 @@ items:
           - excel.Excel.Interfaces.ChartAxesData
         description: ''
   - uid: excel_release.Excel.ChartAxes.valueAxis
-    summary: >-
-      Represents the value axis in an axis. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the value axis in an axis. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueAxis
     fullName: valueAxis
     langs:

@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.PivotTable
-    summary: >-
-      Represents an Excel PivotTable. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: >-
-      Our [how-to guide on working with
-      PivotTables](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables) has detailed
-      walkthroughs, images, and code samples.
+    summary: |-
+      Represents an Excel PivotTable.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotTable
     fullName: Excel.PivotTable
     langs:
@@ -32,9 +29,10 @@ items:
       - excel_release.Excel.PivotTable.toJSON
       - excel_release.Excel.PivotTable.worksheet
   - uid: excel_release.Excel.PivotTable.columnHierarchies
-    summary: >-
-      The Column Pivot Hierarchies of the PivotTable. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The Column Pivot Hierarchies of the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnHierarchies
     fullName: columnHierarchies
     langs:
@@ -60,9 +58,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.PivotTable.dataHierarchies
-    summary: >-
-      The Data Pivot Hierarchies of the PivotTable. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The Data Pivot Hierarchies of the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataHierarchies
     fullName: dataHierarchies
     langs:
@@ -74,9 +73,10 @@ items:
         type:
           - excel.Excel.DataPivotHierarchyCollection
   - uid: excel_release.Excel.PivotTable.delete
-    summary: >-
-      Deletes the PivotTable. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Deletes the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: delete
     langs:
@@ -89,9 +89,10 @@ items:
           - void
         description: ''
   - uid: excel_release.Excel.PivotTable.filterHierarchies
-    summary: >-
-      The Filter Pivot Hierarchies of the PivotTable. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The Filter Pivot Hierarchies of the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: filterHierarchies
     fullName: filterHierarchies
     langs:
@@ -103,9 +104,10 @@ items:
         type:
           - excel.Excel.FilterPivotHierarchyCollection
   - uid: excel_release.Excel.PivotTable.hierarchies
-    summary: >-
-      The Pivot Hierarchies of the PivotTable. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The Pivot Hierarchies of the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hierarchies
     fullName: hierarchies
     langs:
@@ -117,9 +119,10 @@ items:
         type:
           - excel.Excel.PivotHierarchyCollection
   - uid: excel_release.Excel.PivotTable.id
-    summary: >-
-      Id of the PivotTable. Read-only. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Id of the PivotTable. Read-only.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -131,9 +134,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.PivotTable.layout
-    summary: >-
-      The PivotLayout describing the layout and visual structure of the PivotTable. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The PivotLayout describing the layout and visual structure of the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: layout
     fullName: layout
     langs:
@@ -168,7 +172,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.PivotTable;'
+      content: 'load(option?: Excel.Interfaces.PivotTableLoadOptions): Excel.PivotTable;'
       return:
         type:
           - excel.Excel.PivotTable
@@ -177,11 +181,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.PivotTableLoadOptions
   - uid: excel_release.Excel.PivotTable.name
-    summary: >-
-      Name of the PivotTable. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Name of the PivotTable.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -193,9 +198,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.PivotTable.refresh
-    summary: >-
-      Refreshes the PivotTable. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Refreshes the PivotTable.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: refresh()
     fullName: refresh
     langs:
@@ -208,9 +214,10 @@ items:
           - void
         description: ''
   - uid: excel_release.Excel.PivotTable.rowHierarchies
-    summary: >-
-      The Row Pivot Hierarchies of the PivotTable. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The Row Pivot Hierarchies of the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowHierarchies
     fullName: rowHierarchies
     langs:
@@ -240,9 +247,10 @@ items:
           - excel.Excel.Interfaces.PivotTableData
         description: ''
   - uid: excel_release.Excel.PivotTable.worksheet
-    summary: >-
-      The worksheet containing the current PivotTable. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The worksheet containing the current PivotTable.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
     fullName: worksheet
     langs:

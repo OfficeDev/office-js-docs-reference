@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.WorksheetProtection
-    summary: >-
-      Represents the protection of a sheet object. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the protection of a sheet object.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetProtection
     fullName: Excel.WorksheetProtection
     langs:
@@ -58,7 +59,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.WorksheetProtection;'
+      content: 'load(option?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;'
       return:
         type:
           - excel.Excel.WorksheetProtection
@@ -67,11 +68,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.WorksheetProtectionLoadOptions
   - uid: excel_release.Excel.WorksheetProtection.options
-    summary: >-
-      Sheet protection options. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Sheet protection options. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: options
     fullName: options
     langs:
@@ -84,8 +86,11 @@ items:
           - excel.Excel.WorksheetProtectionOptions
   - uid: excel_release.Excel.WorksheetProtection.protect
     summary: >-
-      Protects a worksheet. Fails if the worksheet has already been protected. \[ [API set: ExcelApi 1.2 for options;
-      1.7 for password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Protects a worksheet. Fails if the worksheet has already been protected.
+
+
+      \[ [API set: ExcelApi 1.2 for options; 1.7 for
+      password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'protect(options, password)'
     fullName: protect
     langs:
@@ -107,9 +112,10 @@ items:
           type:
             - string
   - uid: excel_release.Excel.WorksheetProtection.protected
-    summary: >-
-      Indicates if the worksheet is protected. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Indicates if the worksheet is protected. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protected
     fullName: protected
     langs:
@@ -140,8 +146,11 @@ items:
         description: ''
   - uid: excel_release.Excel.WorksheetProtection.unprotect
     summary: >-
-      Unprotects a worksheet. \[ [API set: ExcelApi 1.7 for
-      password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Unprotects a worksheet.
+
+
+      \[ [API set: ExcelApi 1.7 for password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+      \]
     name: unprotect(password)
     fullName: unprotect
     langs:

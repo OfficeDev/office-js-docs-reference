@@ -4,7 +4,10 @@ items:
     summary: >-
       Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type
       below), range object, or a reference to a range. This object can be used to obtain range object associated with
-      names. \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      names.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.NamedItem
     fullName: Excel.NamedItem
     langs:
@@ -31,9 +34,10 @@ items:
       - excel_release.Excel.NamedItem.worksheet
       - excel_release.Excel.NamedItem.worksheetOrNullObject
   - uid: excel_release.Excel.NamedItem.arrayValues
-    summary: >-
-      Returns an object containing values and types of the named item. Read-only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns an object containing values and types of the named item. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: arrayValues
     fullName: arrayValues
     langs:
@@ -45,9 +49,10 @@ items:
         type:
           - excel.Excel.NamedItemArrayValues
   - uid: excel_release.Excel.NamedItem.comment
-    summary: >-
-      Represents the comment associated with this name. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the comment associated with this name.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comment
     fullName: comment
     langs:
@@ -73,9 +78,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.NamedItem.delete
-    summary: >-
-      Deletes the given name. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Deletes the given name.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: delete
     langs:
@@ -88,9 +94,10 @@ items:
           - void
         description: ''
   - uid: excel_release.Excel.NamedItem.formula
-    summary: >-
-      Gets or sets the formula of the named item. Formula always starts with a '=' sign. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the formula of the named item. Formula always starts with a '=' sign.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
     fullName: formula
     langs:
@@ -104,7 +111,10 @@ items:
   - uid: excel_release.Excel.NamedItem.getRange
     summary: >-
       Returns the range object that is associated with the name. Throws an error if the named item's type is not a
-      range. \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      range.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
     fullName: getRange
     langs:
@@ -119,7 +129,10 @@ items:
   - uid: excel_release.Excel.NamedItem.getRangeOrNullObject
     summary: >-
       Returns the range object that is associated with the name. Returns a null object if the named item's type is not a
-      range. \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      range.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRangeOrNullObject()
     fullName: getRangeOrNullObject
     langs:
@@ -155,7 +168,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.NamedItem;'
+      content: 'load(option?: Excel.Interfaces.NamedItemLoadOptions): Excel.NamedItem;'
       return:
         type:
           - excel.Excel.NamedItem
@@ -164,11 +177,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.NamedItemLoadOptions
   - uid: excel_release.Excel.NamedItem.name
-    summary: >-
-      The name of the object. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The name of the object. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -182,8 +196,10 @@ items:
   - uid: excel_release.Excel.NamedItem.scope
     summary: >-
       Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet,
-      Workbook. Read-only. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Workbook. Read-only.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: scope
     fullName: scope
     langs:
@@ -214,8 +230,10 @@ items:
         description: ''
   - uid: excel_release.Excel.NamedItem.type
     summary: >-
-      Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only. \[
-      [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
+      Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
       Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
@@ -228,8 +246,9 @@ items:
         type:
           - Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"
   - uid: excel_release.Excel.NamedItem.value
-    summary: >-
+    summary: |-
       Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
+
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
     fullName: value
@@ -242,9 +261,10 @@ items:
         type:
           - any
   - uid: excel_release.Excel.NamedItem.visible
-    summary: >-
-      Specifies whether the object is visible or not. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Specifies whether the object is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:
@@ -258,7 +278,10 @@ items:
   - uid: excel_release.Excel.NamedItem.worksheet
     summary: >-
       Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook
-      instead. \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      instead.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
     fullName: worksheet
     langs:
@@ -272,8 +295,10 @@ items:
   - uid: excel_release.Excel.NamedItem.worksheetOrNullObject
     summary: >-
       Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the
-      workbook instead. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      workbook instead.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetOrNullObject
     fullName: worksheetOrNullObject
     langs:

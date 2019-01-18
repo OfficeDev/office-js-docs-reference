@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.FilterCriteria
-    summary: >-
-      Represents the filtering criteria applied to a column. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the filtering criteria applied to a column.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.FilterCriteria
     fullName: Excel.FilterCriteria
     langs:
@@ -20,9 +21,10 @@ items:
       - excel_release.Excel.FilterCriteria.operator
       - excel_release.Excel.FilterCriteria.values
   - uid: excel_release.Excel.FilterCriteria.color
-    summary: >-
-      The HTML color string used to filter cells. Used with "cellColor" and "fontColor" filtering. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The HTML color string used to filter cells. Used with "cellColor" and "fontColor" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -40,8 +42,10 @@ items:
 
 
       Used as a number in the case of top/bottom items/percents. E.g. "5" for the top 5 items if filterOn is set to
-      "topItems" \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      "topItems"
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criterion1
     fullName: criterion1
     langs:
@@ -53,9 +57,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.FilterCriteria.criterion2
-    summary: >-
-      The second criterion used to filter data. Only used as an operator in the case of "custom" filtering. \[ [API set:
-      ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The second criterion used to filter data. Only used as an operator in the case of "custom" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criterion2
     fullName: criterion2
     langs:
@@ -69,8 +74,10 @@ items:
   - uid: excel_release.Excel.FilterCriteria.dynamicCriteria
     summary: >-
       The dynamic criteria from the Excel.DynamicFilterCriteria set to apply on this column. Used with "dynamic"
-      filtering. \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      filtering.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dynamicCriteria
     fullName: dynamicCriteria
     langs:
@@ -97,9 +104,10 @@ items:
             "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" |
             "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"
   - uid: excel_release.Excel.FilterCriteria.filterOn
-    summary: >-
-      The property used by the filter to determine whether the values should stay visible. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The property used by the filter to determine whether the values should stay visible.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: filterOn
     fullName: filterOn
     langs:
@@ -115,9 +123,10 @@ items:
             Excel.FilterOn | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" |
             "TopItems" | "TopPercent" | "Icon" | "Custom"
   - uid: excel_release.Excel.FilterCriteria.icon
-    summary: >-
-      The icon used to filter cells. Used with "icon" filtering. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The icon used to filter cells. Used with "icon" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: icon
     fullName: icon
     langs:
@@ -129,9 +138,10 @@ items:
         type:
           - excel.Excel.Icon
   - uid: excel_release.Excel.FilterCriteria.operator
-    summary: >-
-      The operator used to combine criterion 1 and 2 when using "custom" filtering. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The operator used to combine criterion 1 and 2 when using "custom" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: operator
     fullName: operator
     langs:
@@ -143,9 +153,10 @@ items:
         type:
           - Excel.FilterOperator | "And" | "Or"
   - uid: excel_release.Excel.FilterCriteria.values
-    summary: >-
-      The set of values to be used as part of "values" filtering. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The set of values to be used as part of "values" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: values
     langs:

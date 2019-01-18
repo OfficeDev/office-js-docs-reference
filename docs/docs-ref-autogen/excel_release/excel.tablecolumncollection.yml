@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.TableColumnCollection
-    summary: >-
-      Represents a collection of all the columns that are part of the table. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of all the columns that are part of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableColumnCollection
     fullName: Excel.TableColumnCollection
     langs:
@@ -25,9 +26,12 @@ items:
       - excel_release.Excel.TableColumnCollection.toJSON
   - uid: excel_release.Excel.TableColumnCollection.add
     summary: >-
-      Adds a new column to the table. \[ [API set: ExcelApi 1.1 requires an index smaller than the total column count;
-      1.4 allows index to be optional (null or -1) and will append a column at the end; 1.4 allows name parameter at
-      creation time.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Adds a new column to the table.
+
+
+      \[ [API set: ExcelApi 1.1 requires an index smaller than the total column count; 1.4 allows index to be optional
+      (null or -1) and will append a column at the end; 1.4 allows name parameter at creation
+      time.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(index, values, name)'
     fullName: add
     langs:
@@ -71,9 +75,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.TableColumnCollection.count
-    summary: >-
-      Returns the number of columns in the table. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the number of columns in the table. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -85,9 +90,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.TableColumnCollection.getCount
-    summary: >-
-      Gets the number of columns in the table. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the number of columns in the table.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -100,9 +106,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel_release.Excel.TableColumnCollection.getItem
-    summary: >-
-      Gets a column object by Name or ID. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a column object by Name or ID.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
     fullName: getItem
     langs:
@@ -120,9 +127,10 @@ items:
           type:
             - number | string
   - uid: excel_release.Excel.TableColumnCollection.getItemAt
-    summary: >-
-      Gets a column based on its position in the collection. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a column based on its position in the collection.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:
@@ -140,9 +148,10 @@ items:
           type:
             - number
   - uid: excel_release.Excel.TableColumnCollection.getItemOrNullObject
-    summary: >-
-      Gets a column object by Name or ID. If the column does not exist, will return a null object. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a column object by Name or ID. If the column does not exist, will return a null object.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
     fullName: getItemOrNullObject
     langs:
@@ -195,7 +204,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.TableColumnCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.TableColumnCollection;
       return:
         type:
           - excel.Excel.TableColumnCollection
@@ -204,7 +215,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel_release.Excel.TableColumnCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.ChartBorderLoadOptions
+    summary: |-
+      Represents the border formatting of a chart element.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartBorderLoadOptions
+    fullName: Excel.Interfaces.ChartBorderLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.ChartBorderLoadOptions.color
+      - excel_release.Excel.Interfaces.ChartBorderLoadOptions.lineStyle
+      - excel_release.Excel.Interfaces.ChartBorderLoadOptions.weight
+  - uid: excel_release.Excel.Interfaces.ChartBorderLoadOptions.color
+    summary: |-
+      HTML color code representing the color of borders in the chart.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartBorderLoadOptions.lineStyle
+    summary: |-
+      Represents the line style of the border. See Excel.ChartLineStyle for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: lineStyle
+    fullName: lineStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lineStyle?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartBorderLoadOptions.weight
+    summary: |-
+      Represents weight of the border, in points.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: boolean;'
+      return:
+        type:
+          - boolean

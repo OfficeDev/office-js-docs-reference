@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.CellValueConditionalFormat
-    summary: >-
-      Represents a cell value conditional format. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a cell value conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CellValueConditionalFormat
     fullName: Excel.CellValueConditionalFormat
     langs:
@@ -33,9 +34,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.CellValueConditionalFormat.format
-    summary: >-
-      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. \[ [API
-      set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -70,7 +72,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.CellValueConditionalFormat;'
+      content: 'load(option?: Excel.Interfaces.CellValueConditionalFormatLoadOptions): Excel.CellValueConditionalFormat;'
       return:
         type:
           - excel.Excel.CellValueConditionalFormat
@@ -79,11 +81,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions
   - uid: excel_release.Excel.CellValueConditionalFormat.rule
-    summary: >-
-      Represents the Rule object on this conditional format. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the Rule object on this conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: rule
     langs:

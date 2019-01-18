@@ -22,9 +22,10 @@ items:
       - excel_release.Excel.Interfaces.WorkbookData.tables
       - excel_release.Excel.Interfaces.WorkbookData.worksheets
   - uid: excel_release.Excel.Interfaces.WorkbookData.bindings
-    summary: >-
-      Represents a collection of bindings that are part of the workbook. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of bindings that are part of the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bindings
     fullName: bindings
     langs:
@@ -36,9 +37,10 @@ items:
         type:
           - 'Excel.Interfaces.BindingData[]'
   - uid: excel_release.Excel.Interfaces.WorkbookData.customXmlParts
-    summary: >-
-      Represents the collection of custom XML parts contained by this workbook. Read-only. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the collection of custom XML parts contained by this workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: customXmlParts
     fullName: customXmlParts
     langs:
@@ -50,9 +52,10 @@ items:
         type:
           - 'Excel.Interfaces.CustomXmlPartData[]'
   - uid: excel_release.Excel.Interfaces.WorkbookData.name
-    summary: >-
-      Gets the workbook name. Read-only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the workbook name. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -64,9 +67,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.Interfaces.WorkbookData.names
-    summary: >-
-      Represents a collection of workbook scoped named items (named ranges and constants). Read-only. \[ [API set:
-      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: names
     fullName: names
     langs:
@@ -78,9 +82,10 @@ items:
         type:
           - 'Excel.Interfaces.NamedItemData[]'
   - uid: excel_release.Excel.Interfaces.WorkbookData.pivotTables
-    summary: >-
-      Represents a collection of PivotTables associated with the workbook. Read-only. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of PivotTables associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotTables
     fullName: pivotTables
     langs:
@@ -92,9 +97,10 @@ items:
         type:
           - 'Excel.Interfaces.PivotTableData[]'
   - uid: excel_release.Excel.Interfaces.WorkbookData.properties
-    summary: >-
-      Gets the workbook properties. Read-only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the workbook properties. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: properties
     fullName: properties
     langs:
@@ -106,9 +112,10 @@ items:
         type:
           - excel.Excel.Interfaces.DocumentPropertiesData
   - uid: excel_release.Excel.Interfaces.WorkbookData.protection
-    summary: >-
-      Returns workbook protection object for a workbook. Read-only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns workbook protection object for a workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
     fullName: protection
     langs:
@@ -120,9 +127,10 @@ items:
         type:
           - excel.Excel.Interfaces.WorkbookProtectionData
   - uid: excel_release.Excel.Interfaces.WorkbookData.readOnly
-    summary: >-
-      True if the workbook is open in Read-only mode. Read-only. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      True if the workbook is open in Read-only mode. Read-only.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readOnly
     fullName: readOnly
     langs:
@@ -134,9 +142,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Interfaces.WorkbookData.settings
-    summary: >-
-      Represents a collection of Settings associated with the workbook. Read-only. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of Settings associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: settings
     fullName: settings
     langs:
@@ -148,9 +157,10 @@ items:
         type:
           - 'Excel.Interfaces.SettingData[]'
   - uid: excel_release.Excel.Interfaces.WorkbookData.styles
-    summary: >-
-      Represents a collection of styles associated with the workbook. Read-only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of styles associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: styles
     fullName: styles
     langs:
@@ -162,9 +172,10 @@ items:
         type:
           - 'Excel.Interfaces.StyleData[]'
   - uid: excel_release.Excel.Interfaces.WorkbookData.tables
-    summary: >-
-      Represents a collection of tables associated with the workbook. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of tables associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tables
     fullName: tables
     langs:
@@ -176,9 +187,10 @@ items:
         type:
           - 'Excel.Interfaces.TableData[]'
   - uid: excel_release.Excel.Interfaces.WorkbookData.worksheets
-    summary: >-
-      Represents a collection of worksheets associated with the workbook. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of worksheets associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheets
     fullName: worksheets
     langs:

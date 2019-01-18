@@ -12,9 +12,10 @@ items:
       - excel_release.Excel.Interfaces.CellValueConditionalFormatData.format
       - excel_release.Excel.Interfaces.CellValueConditionalFormatData.rule
   - uid: excel_release.Excel.Interfaces.CellValueConditionalFormatData.format
-    summary: >-
-      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. \[ [API
-      set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -26,9 +27,10 @@ items:
         type:
           - excel.Excel.Interfaces.ConditionalRangeFormatData
   - uid: excel_release.Excel.Interfaces.CellValueConditionalFormatData.rule
-    summary: >-
-      Represents the Rule object on this conditional format. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the Rule object on this conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: rule
     langs:

@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ConditionalFormatPresetCriterion
-    summary: >-
-      Represents the criteria for the Preset Criteria conditional format type. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the criteria for the Preset Criteria conditional format type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormatPresetCriterion
     fullName: Excel.ConditionalFormatPresetCriterion
     langs:

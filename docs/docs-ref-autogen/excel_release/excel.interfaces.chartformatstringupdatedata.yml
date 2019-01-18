@@ -11,9 +11,10 @@ items:
     children:
       - excel_release.Excel.Interfaces.ChartFormatStringUpdateData.font
   - uid: excel_release.Excel.Interfaces.ChartFormatStringUpdateData.font
-    summary: >-
-      Represents the font attributes, such as font name, font size, color, etc. of chart characters object. \[ [API set:
-      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the font attributes, such as font name, font size, color, etc. of chart characters object.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:

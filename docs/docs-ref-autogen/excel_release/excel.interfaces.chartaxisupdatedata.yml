@@ -40,9 +40,10 @@ items:
       - excel_release.Excel.Interfaces.ChartAxisUpdateData.title
       - excel_release.Excel.Interfaces.ChartAxisUpdateData.visible
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.alignment
-    summary: >-
-      Represents the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail. \[
-      [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: alignment
     fullName: alignment
     langs:
@@ -54,9 +55,10 @@ items:
         type:
           - Excel.ChartTickLabelAlignment | "Center" | "Left" | "Right"
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.baseTimeUnit
-    summary: >-
-      Returns or sets the base unit for the specified category axis. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns or sets the base unit for the specified category axis.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: baseTimeUnit
     fullName: baseTimeUnit
     langs:
@@ -68,9 +70,10 @@ items:
         type:
           - Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.categoryType
-    summary: >-
-      Returns or sets the category axis type. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns or sets the category axis type.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: categoryType
     fullName: categoryType
     langs:
@@ -82,9 +85,10 @@ items:
         type:
           - Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis"
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.displayUnit
-    summary: >-
-      Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: displayUnit
     fullName: displayUnit
     langs:
@@ -100,9 +104,10 @@ items:
             Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" |
             "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.format
-    summary: >-
-      Represents the formatting of a chart object, which includes line and font formatting. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the formatting of a chart object, which includes line and font formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -114,9 +119,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartAxisFormatUpdateData
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.isBetweenCategories
-    summary: >-
-      Represents whether value axis crosses the category axis between categories. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents whether value axis crosses the category axis between categories.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isBetweenCategories
     fullName: isBetweenCategories
     langs:
@@ -128,9 +134,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.logBase
-    summary: >-
-      Represents the base of the logarithm when using logarithmic scales. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the base of the logarithm when using logarithmic scales.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: logBase
     fullName: logBase
     langs:
@@ -142,9 +149,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.majorGridlines
-    summary: >-
-      Returns a Gridlines object that represents the major gridlines for the specified axis. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns a Gridlines object that represents the major gridlines for the specified axis.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: majorGridlines
     fullName: majorGridlines
     langs:
@@ -156,9 +164,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartGridlinesUpdateData
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.majorTickMark
-    summary: >-
-      Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details. \[ [API
-      set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: majorTickMark
     fullName: majorTickMark
     langs:
@@ -172,8 +181,10 @@ items:
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.majorTimeUnitScale
     summary: >-
       Returns or sets the major unit scale value for the category axis when the CategoryType property is set to
-      TimeScale. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      TimeScale.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: majorTimeUnitScale
     fullName: majorTimeUnitScale
     langs:
@@ -187,8 +198,10 @@ items:
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.majorUnit
     summary: >-
       Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
-      returned value is always a number. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: majorUnit
     fullName: majorUnit
     langs:
@@ -202,8 +215,10 @@ items:
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.maximum
     summary: >-
       Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
-      axis values). The returned value is always a number. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      axis values). The returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: maximum
     fullName: maximum
     langs:
@@ -217,8 +232,10 @@ items:
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.minimum
     summary: >-
       Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
-      axis values). The returned value is always a number. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      axis values). The returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minimum
     fullName: minimum
     langs:
@@ -230,9 +247,10 @@ items:
         type:
           - any
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.minorGridlines
-    summary: >-
-      Returns a Gridlines object that represents the minor gridlines for the specified axis. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns a Gridlines object that represents the minor gridlines for the specified axis.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minorGridlines
     fullName: minorGridlines
     langs:
@@ -244,9 +262,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartGridlinesUpdateData
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.minorTickMark
-    summary: >-
-      Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details. \[ [API
-      set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minorTickMark
     fullName: minorTickMark
     langs:
@@ -260,8 +279,10 @@ items:
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.minorTimeUnitScale
     summary: >-
       Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to
-      TimeScale. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      TimeScale.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minorTimeUnitScale
     fullName: minorTimeUnitScale
     langs:
@@ -275,8 +296,10 @@ items:
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.minorUnit
     summary: >-
       Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
-      automatic axis values). The returned value is always a number. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      automatic axis values). The returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minorUnit
     fullName: minorUnit
     langs:
@@ -288,9 +311,10 @@ items:
         type:
           - any
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.multiLevel
-    summary: >-
-      Represents whether an axis is multilevel or not. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents whether an axis is multilevel or not.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: multiLevel
     fullName: multiLevel
     langs:
@@ -302,9 +326,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.numberFormat
-    summary: >-
-      Represents the format code for the axis tick label. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the format code for the axis tick label.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: numberFormat
     langs:
@@ -318,8 +343,10 @@ items:
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.offset
     summary: >-
       Represents the distance between the levels of labels, and the distance between the first level and the axis line.
-      The value should be an integer from 0 to 1000. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      The value should be an integer from 0 to 1000.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: offset
     fullName: offset
     langs:
@@ -331,9 +358,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.position
-    summary: >-
-      Represents the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details. \[
-      [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: position
     langs:
@@ -345,9 +373,10 @@ items:
         type:
           - Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom"
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.reversePlotOrder
-    summary: >-
-      Represents whether Microsoft Excel plots data points from last to first. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents whether Microsoft Excel plots data points from last to first.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reversePlotOrder
     fullName: reversePlotOrder
     langs:
@@ -359,9 +388,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.scaleType
-    summary: >-
-      Represents the value axis scale type. See Excel.ChartAxisScaleType for details. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the value axis scale type. See Excel.ChartAxisScaleType for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: scaleType
     fullName: scaleType
     langs:
@@ -373,9 +403,10 @@ items:
         type:
           - Excel.ChartAxisScaleType | "Linear" | "Logarithmic"
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.showDisplayUnitLabel
-    summary: >-
-      Represents whether the axis display unit label is visible. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents whether the axis display unit label is visible.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showDisplayUnitLabel
     fullName: showDisplayUnitLabel
     langs:
@@ -389,8 +420,10 @@ items:
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.textOrientation
     summary: >-
       Represents the text orientation of the axis tick label. The value should be an integer either from -90 to 90, or
-      180 for vertically-oriented text. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      180 for vertically-oriented text.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
     fullName: textOrientation
     langs:
@@ -404,7 +437,10 @@ items:
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.tickLabelPosition
     summary: >-
       Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
-      details. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      details.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tickLabelPosition
     fullName: tickLabelPosition
     langs:
@@ -418,8 +454,10 @@ items:
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.tickLabelSpacing
     summary: >-
       Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
-      empty string for automatic setting. The returned value is always a number. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      empty string for automatic setting. The returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tickLabelSpacing
     fullName: tickLabelSpacing
     langs:
@@ -431,9 +469,10 @@ items:
         type:
           - any
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.tickMarkSpacing
-    summary: >-
-      Represents the number of categories or series between tick marks. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the number of categories or series between tick marks.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tickMarkSpacing
     fullName: tickMarkSpacing
     langs:
@@ -445,9 +484,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.title
-    summary: >-
-      Represents the axis title. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the axis title.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
     fullName: title
     langs:
@@ -459,9 +499,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartAxisTitleUpdateData
   - uid: excel_release.Excel.Interfaces.ChartAxisUpdateData.visible
-    summary: >-
-      A boolean value represents the visibility of the axis. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      A boolean value represents the visibility of the axis.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:

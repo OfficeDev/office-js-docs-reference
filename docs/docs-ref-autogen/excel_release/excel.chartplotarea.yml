@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ChartPlotArea
-    summary: >-
-      This object represents the attributes for a chart plotArea object. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      This object represents the attributes for a chart plotArea object.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartPlotArea
     fullName: Excel.ChartPlotArea
     langs:
@@ -41,9 +42,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ChartPlotArea.format
-    summary: >-
-      Represents the formatting of a chart plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the formatting of a chart plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -55,9 +57,10 @@ items:
         type:
           - excel.Excel.ChartPlotAreaFormat
   - uid: excel_release.Excel.ChartPlotArea.height
-    summary: >-
-      Represents the height value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the height value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: height
     langs:
@@ -69,9 +72,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.ChartPlotArea.insideHeight
-    summary: >-
-      Represents the insideHeight value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the insideHeight value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideHeight
     fullName: insideHeight
     langs:
@@ -83,9 +87,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.ChartPlotArea.insideLeft
-    summary: >-
-      Represents the insideLeft value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the insideLeft value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideLeft
     fullName: insideLeft
     langs:
@@ -97,9 +102,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.ChartPlotArea.insideTop
-    summary: >-
-      Represents the insideTop value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the insideTop value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideTop
     fullName: insideTop
     langs:
@@ -111,9 +117,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.ChartPlotArea.insideWidth
-    summary: >-
-      Represents the insideWidth value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the insideWidth value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideWidth
     fullName: insideWidth
     langs:
@@ -125,9 +132,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.ChartPlotArea.left
-    summary: >-
-      Represents the left value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the left value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -162,7 +170,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartPlotArea;'
+      content: 'load(option?: Excel.Interfaces.ChartPlotAreaLoadOptions): Excel.ChartPlotArea;'
       return:
         type:
           - excel.Excel.ChartPlotArea
@@ -171,11 +179,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartPlotAreaLoadOptions
   - uid: excel_release.Excel.ChartPlotArea.position
-    summary: >-
-      Represents the position of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the position of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: position
     langs:
@@ -205,9 +214,10 @@ items:
           - excel.Excel.Interfaces.ChartPlotAreaData
         description: ''
   - uid: excel_release.Excel.ChartPlotArea.top
-    summary: >-
-      Represents the top value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the top value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:
@@ -219,9 +229,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.ChartPlotArea.width
-    summary: >-
-      Represents the width value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the width value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: width
     langs:

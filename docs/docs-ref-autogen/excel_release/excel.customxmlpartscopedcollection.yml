@@ -3,8 +3,10 @@ items:
   - uid: excel_release.Excel.CustomXmlPartScopedCollection
     summary: >-
       A scoped collection of custom XML parts. A scoped collection is the result of some operation, e.g. filtering by
-      namespace. A scoped collection cannot be scoped any further. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      namespace. A scoped collection cannot be scoped any further.
+
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomXmlPartScopedCollection
     fullName: Excel.CustomXmlPartScopedCollection
     langs:
@@ -38,9 +40,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.CustomXmlPartScopedCollection.getCount
-    summary: >-
-      Gets the number of CustomXML parts in this collection. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the number of CustomXML parts in this collection.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -53,9 +56,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel_release.Excel.CustomXmlPartScopedCollection.getItem
-    summary: >-
-      Gets a custom XML part based on its ID. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a custom XML part based on its ID.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(id)
     fullName: getItem
     langs:
@@ -75,8 +79,10 @@ items:
   - uid: excel_release.Excel.CustomXmlPartScopedCollection.getItemOrNullObject
     summary: >-
       Gets a custom XML part based on its ID. If the CustomXmlPart does not exist, the return object's isNull property
-      will be true. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      will be true.
+
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(id)
     fullName: getItemOrNullObject
     langs:
@@ -94,9 +100,10 @@ items:
           type:
             - string
   - uid: excel_release.Excel.CustomXmlPartScopedCollection.getOnlyItem
-    summary: >-
-      If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error. \[
-      [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getOnlyItem()
     fullName: getOnlyItem
     langs:
@@ -109,9 +116,10 @@ items:
           - excel.Excel.CustomXmlPart
         description: ''
   - uid: excel_release.Excel.CustomXmlPartScopedCollection.getOnlyItemOrNullObject
-    summary: >-
-      If the collection contains exactly one item, this method returns it. Otherwise, this method returns Null. \[ [API
-      set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      If the collection contains exactly one item, this method returns it. Otherwise, this method returns Null.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getOnlyItemOrNullObject()
     fullName: getOnlyItemOrNullObject
     langs:
@@ -159,7 +167,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.CustomXmlPartScopedCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartScopedCollection;
       return:
         type:
           - excel.Excel.CustomXmlPartScopedCollection
@@ -168,7 +178,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel_release.Excel.CustomXmlPartScopedCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

@@ -16,8 +16,10 @@ items:
   - uid: excel_release.Excel.Interfaces.PivotLayoutUpdateData.layoutType
     summary: >-
       This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
-      will be null. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      will be null.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: layoutType
     fullName: layoutType
     langs:
@@ -29,9 +31,10 @@ items:
         type:
           - Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline"
   - uid: excel_release.Excel.Interfaces.PivotLayoutUpdateData.showColumnGrandTotals
-    summary: >-
-      True if the PivotTable report shows grand totals for columns. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      True if the PivotTable report shows grand totals for columns.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showColumnGrandTotals
     fullName: showColumnGrandTotals
     langs:
@@ -43,9 +46,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Interfaces.PivotLayoutUpdateData.showRowGrandTotals
-    summary: >-
-      True if the PivotTable report shows grand totals for rows. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      True if the PivotTable report shows grand totals for rows.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showRowGrandTotals
     fullName: showRowGrandTotals
     langs:
@@ -59,8 +63,10 @@ items:
   - uid: excel_release.Excel.Interfaces.PivotLayoutUpdateData.subtotalLocation
     summary: >-
       This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states,
-      this will be null. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      this will be null.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subtotalLocation
     fullName: subtotalLocation
     langs:

@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.WorkbookProtectionLoadOptions
+    summary: |-
+      Represents the protection of a workbook object.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.WorkbookProtectionLoadOptions
+    fullName: Excel.Interfaces.WorkbookProtectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.WorkbookProtectionLoadOptions.protected
+  - uid: excel_release.Excel.Interfaces.WorkbookProtectionLoadOptions.protected
+    summary: |-
+      Indicates if the workbook is protected. Read-Only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: protected
+    fullName: protected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected?: boolean;'
+      return:
+        type:
+          - boolean

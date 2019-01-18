@@ -790,6 +790,10 @@ items:
                     uid: excel_release.Excel.ConditionalTextOperator
                   - name: ConditionalTopBottomCriterionType
                     uid: excel_release.Excel.ConditionalTopBottomCriterionType
+                  - name: CustomFunctionMetadataFormat
+                    uid: excel_release.Excel.CustomFunctionMetadataFormat
+                  - name: CustomFunctionType
+                    uid: excel_release.Excel.CustomFunctionType
                   - name: DataChangeType
                     uid: excel_release.Excel.DataChangeType
                   - name: DataValidationAlertStyle
@@ -976,6 +980,8 @@ items:
                 uid: excel_release.Excel.CustomConditionalFormat
               - name: CustomDataValidation
                 uid: excel_release.Excel.CustomDataValidation
+              - name: CustomFunctionEventArgs
+                uid: excel_release.Excel.CustomFunctionEventArgs
               - name: CustomProperty
                 uid: excel_release.Excel.CustomProperty
               - name: CustomPropertyCollection

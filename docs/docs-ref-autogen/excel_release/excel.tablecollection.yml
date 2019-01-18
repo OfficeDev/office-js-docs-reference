@@ -3,7 +3,10 @@ items:
   - uid: excel_release.Excel.TableCollection
     summary: >-
       Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was
-      reached. \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      reached.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableCollection
     fullName: Excel.TableCollection
     langs:
@@ -28,8 +31,10 @@ items:
     summary: >-
       Create a new table. The range object or source address determines the worksheet under which the table will be
       added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another
-      table), an error will be thrown. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      table), an error will be thrown.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(address, hasHeaders)'
     fullName: add
     langs:
@@ -72,9 +77,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.TableCollection.count
-    summary: >-
-      Returns the number of tables in the workbook. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the number of tables in the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -86,9 +92,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.TableCollection.getCount
-    summary: >-
-      Gets the number of tables in the collection. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the number of tables in the collection.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -101,9 +108,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel_release.Excel.TableCollection.getItem
-    summary: >-
-      Gets a table by Name or ID. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a table by Name or ID.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
     fullName: getItem
     langs:
@@ -121,9 +129,10 @@ items:
           type:
             - string
   - uid: excel_release.Excel.TableCollection.getItemAt
-    summary: >-
-      Gets a table based on its position in the collection. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a table based on its position in the collection.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:
@@ -141,9 +150,10 @@ items:
           type:
             - number
   - uid: excel_release.Excel.TableCollection.getItemOrNullObject
-    summary: >-
-      Gets a table by Name or ID. If the table does not exist, will return a null object. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a table by Name or ID. If the table does not exist, will return a null object.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
     fullName: getItemOrNullObject
     langs:
@@ -196,7 +206,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.TableCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.TableCollection;
       return:
         type:
           - excel.Excel.TableCollection
@@ -205,11 +217,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel_release.Excel.TableCollection.onChanged
-    summary: >-
-      Occurs when data changes on any table in a workbook, or a worksheet. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when data changes on any table in a workbook, or a worksheet.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onChanged
     fullName: onChanged
     langs:

@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ListDataValidation
-    summary: >-
-      Represents the List data validation criteria. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the List data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ListDataValidation
     fullName: Excel.ListDataValidation
     langs:
@@ -14,9 +15,10 @@ items:
       - excel_release.Excel.ListDataValidation.inCellDropDown
       - excel_release.Excel.ListDataValidation.source
   - uid: excel_release.Excel.ListDataValidation.inCellDropDown
-    summary: >-
-      Displays the list in cell drop down or not, it defaults to true. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Displays the list in cell drop down or not, it defaults to true.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: inCellDropDown
     fullName: inCellDropDown
     langs:
@@ -29,16 +31,18 @@ items:
           - boolean
   - uid: excel_release.Excel.ListDataValidation.source
     summary: >-
-      The source of the list for data validation. The value is a string, which can either be a range reference (e.g.
-      `"=Names!$A$1:$A$3"`<!-- -->) or a comma-separated list of the values themselves. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Source of the list for data validation When setting the value, it can be passed in as a Excel Range object, or a
+      string that contains comma separated number, boolean or date.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: source
     fullName: source
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'source: string;'
+      content: 'source: string | Range;'
       return:
         type:
-          - string
+          - string | Range

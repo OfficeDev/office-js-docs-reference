@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.Subtotals
-    summary: >-
-      Subtotals for the Pivot Field. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Subtotals for the Pivot Field.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Subtotals
     fullName: Excel.Subtotals
     langs:
@@ -24,9 +25,10 @@ items:
       - excel_release.Excel.Subtotals.variance
       - excel_release.Excel.Subtotals.varianceP
   - uid: excel_release.Excel.Subtotals.automatic
-    summary: >-
-      If Automatic is set to true, then all other values will be ignored when setting the Subtotals. \[ [API set:
-      ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      If Automatic is set to true, then all other values will be ignored when setting the Subtotals.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: automatic
     fullName: automatic
     langs:

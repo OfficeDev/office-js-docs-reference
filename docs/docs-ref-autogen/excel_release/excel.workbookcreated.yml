@@ -3,8 +3,10 @@ items:
   - uid: excel_release.Excel.WorkbookCreated
     summary: >-
       The WorkbookCreated object is the top level object created by Application.CreateWorkbook. A WorkbookCreated object
-      is a special Workbook object. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      is a special Workbook object.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorkbookCreated
     fullName: Excel.WorkbookCreated
     langs:

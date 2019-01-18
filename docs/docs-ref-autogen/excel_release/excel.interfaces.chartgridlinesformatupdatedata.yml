@@ -11,9 +11,10 @@ items:
     children:
       - excel_release.Excel.Interfaces.ChartGridlinesFormatUpdateData.line
   - uid: excel_release.Excel.Interfaces.ChartGridlinesFormatUpdateData.line
-    summary: >-
-      Represents chart line formatting. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents chart line formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
     fullName: line
     langs:

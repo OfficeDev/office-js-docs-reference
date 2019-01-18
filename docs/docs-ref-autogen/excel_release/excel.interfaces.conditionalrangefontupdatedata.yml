@@ -15,9 +15,10 @@ items:
       - excel_release.Excel.Interfaces.ConditionalRangeFontUpdateData.strikethrough
       - excel_release.Excel.Interfaces.ConditionalRangeFontUpdateData.underline
   - uid: excel_release.Excel.Interfaces.ConditionalRangeFontUpdateData.bold
-    summary: >-
-      Represents the bold status of font. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the bold status of font.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bold
     fullName: bold
     langs:
@@ -29,9 +30,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Interfaces.ConditionalRangeFontUpdateData.color
-    summary: >-
-      HTML color code representation of the text color. E.g. \#FF0000 represents Red. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -43,9 +45,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.Interfaces.ConditionalRangeFontUpdateData.italic
-    summary: >-
-      Represents the italic status of the font. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the italic status of the font.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: italic
     fullName: italic
     langs:
@@ -57,9 +60,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Interfaces.ConditionalRangeFontUpdateData.strikethrough
-    summary: >-
-      Represents the strikethrough status of the font. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the strikethrough status of the font.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: strikethrough
     fullName: strikethrough
     langs:
@@ -71,9 +75,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Interfaces.ConditionalRangeFontUpdateData.underline
-    summary: >-
-      Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details. \[ [API set:
-      ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underline
     fullName: underline
     langs:

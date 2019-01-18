@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.BindingSelectionChangedEventArgs
-    summary: >-
-      Provides information about the binding that raised the SelectionChanged event. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Provides information about the binding that raised the SelectionChanged event.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.BindingSelectionChangedEventArgs
     fullName: Excel.BindingSelectionChangedEventArgs
     langs:
@@ -17,9 +18,10 @@ items:
       - excel_release.Excel.BindingSelectionChangedEventArgs.startColumn
       - excel_release.Excel.BindingSelectionChangedEventArgs.startRow
   - uid: excel_release.Excel.BindingSelectionChangedEventArgs.binding
-    summary: >-
-      Gets the Binding object that represents the binding that raised the SelectionChanged event. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the Binding object that represents the binding that raised the SelectionChanged event.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: binding
     fullName: binding
     langs:
@@ -31,9 +33,10 @@ items:
         type:
           - excel.Excel.Binding
   - uid: excel_release.Excel.BindingSelectionChangedEventArgs.columnCount
-    summary: >-
-      Gets the number of columns selected. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the number of columns selected.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
     fullName: columnCount
     langs:
@@ -45,9 +48,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.BindingSelectionChangedEventArgs.rowCount
-    summary: >-
-      Gets the number of rows selected. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the number of rows selected.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
     fullName: rowCount
     langs:
@@ -59,9 +63,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.BindingSelectionChangedEventArgs.startColumn
-    summary: >-
-      Gets the index of the first column of the selection (zero-based). \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the index of the first column of the selection (zero-based).
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: startColumn
     fullName: startColumn
     langs:
@@ -73,9 +78,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.BindingSelectionChangedEventArgs.startRow
-    summary: >-
-      Gets the index of the first row of the selection (zero-based). \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the index of the first row of the selection (zero-based).
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: startRow
     fullName: startRow
     langs:

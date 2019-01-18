@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.PivotHierarchy
-    summary: >-
-      Represents the Excel PivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the Excel PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotHierarchy
     fullName: Excel.PivotHierarchy
     langs:
@@ -34,9 +35,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.PivotHierarchy.fields
-    summary: >-
-      Returns the PivotFields associated with the PivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the PivotFields associated with the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
     fullName: fields
     langs:
@@ -48,9 +50,10 @@ items:
         type:
           - excel.Excel.PivotFieldCollection
   - uid: excel_release.Excel.PivotHierarchy.id
-    summary: >-
-      Id of the PivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Id of the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -85,7 +88,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.PivotHierarchy;'
+      content: 'load(option?: Excel.Interfaces.PivotHierarchyLoadOptions): Excel.PivotHierarchy;'
       return:
         type:
           - excel.Excel.PivotHierarchy
@@ -94,11 +97,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.PivotHierarchyLoadOptions
   - uid: excel_release.Excel.PivotHierarchy.name
-    summary: >-
-      Name of the PivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Name of the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:

@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.PageLayoutUpdateData
+    summary: 'An interface for updating data on the PageLayout object, for use in "pageLayout.set({ ... })".'
+    name: Excel.Interfaces.PageLayoutUpdateData
+    fullName: Excel.Interfaces.PageLayoutUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release

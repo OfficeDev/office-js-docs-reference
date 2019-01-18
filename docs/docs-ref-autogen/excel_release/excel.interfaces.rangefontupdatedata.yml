@@ -16,9 +16,10 @@ items:
       - excel_release.Excel.Interfaces.RangeFontUpdateData.size
       - excel_release.Excel.Interfaces.RangeFontUpdateData.underline
   - uid: excel_release.Excel.Interfaces.RangeFontUpdateData.bold
-    summary: >-
-      Represents the bold status of font. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the bold status of font.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bold
     fullName: bold
     langs:
@@ -30,9 +31,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Interfaces.RangeFontUpdateData.color
-    summary: >-
-      HTML color code representation of the text color. E.g. \#FF0000 represents Red. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -44,9 +46,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.Interfaces.RangeFontUpdateData.italic
-    summary: >-
-      Represents the italic status of the font. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the italic status of the font.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: italic
     fullName: italic
     langs:
@@ -58,9 +61,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.Interfaces.RangeFontUpdateData.name
-    summary: >-
-      Font name (e.g. "Calibri") \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Font name (e.g. "Calibri")
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -72,9 +76,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.Interfaces.RangeFontUpdateData.size
-    summary: >-
-      Font size. \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+    summary: |-
+      Font size.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: size
     fullName: size
     langs:
@@ -86,9 +91,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.Interfaces.RangeFontUpdateData.underline
-    summary: >-
-      Type of underline applied to the font. See Excel.RangeUnderlineStyle for details. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underline
     fullName: underline
     langs:

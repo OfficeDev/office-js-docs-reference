@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.ChartAxisFormatLoadOptions
+    summary: |-
+      Encapsulates the format properties for the chart axis.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartAxisFormatLoadOptions
+    fullName: Excel.Interfaces.ChartAxisFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.ChartAxisFormatLoadOptions.font
+      - excel_release.Excel.Interfaces.ChartAxisFormatLoadOptions.line
+  - uid: excel_release.Excel.Interfaces.ChartAxisFormatLoadOptions.font
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for a chart axis element.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartFontLoadOptions
+  - uid: excel_release.Excel.Interfaces.ChartAxisFormatLoadOptions.line
+    summary: |-
+      Represents chart line formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartLineFormatLoadOptions

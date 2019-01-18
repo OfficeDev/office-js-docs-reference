@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.PivotField
-    summary: >-
-      Represents the Excel PivotField. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the Excel PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotField
     fullName: Excel.PivotField
     langs:
@@ -37,9 +38,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.PivotField.id
-    summary: >-
-      Id of the PivotField. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Id of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -51,9 +53,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.PivotField.items
-    summary: >-
-      Returns the PivotFields associated with the PivotField. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the PivotFields associated with the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: items
     fullName: items
     langs:
@@ -88,7 +91,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.PivotField;'
+      content: 'load(option?: Excel.Interfaces.PivotFieldLoadOptions): Excel.PivotField;'
       return:
         type:
           - excel.Excel.PivotField
@@ -97,11 +100,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.PivotFieldLoadOptions
   - uid: excel_release.Excel.PivotField.name
-    summary: >-
-      Name of the PivotField. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Name of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -113,9 +117,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.PivotField.showAllItems
-    summary: >-
-      Determines whether to show all items of the PivotField. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Determines whether to show all items of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAllItems
     fullName: showAllItems
     langs:
@@ -129,8 +134,10 @@ items:
   - uid: excel_release.Excel.PivotField.sortByLabels
     summary: >-
       Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort
-      will be based on the PivotField itself. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      will be based on the PivotField itself.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sortByLabels(sortby)
     fullName: sortByLabels
     langs:
@@ -148,9 +155,10 @@ items:
           type:
             - SortBy
   - uid: excel_release.Excel.PivotField.subtotals
-    summary: >-
-      Subtotals of the PivotField. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Subtotals of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subtotals
     fullName: subtotals
     langs:

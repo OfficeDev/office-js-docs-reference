@@ -3,7 +3,10 @@ items:
   - uid: excel_release.Excel.NamedItemCollection
     summary: >-
       A collection of all the NamedItem objects that are part of the workbook or worksheet, depending on how it was
-      reached. \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      reached.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.NamedItemCollection
     fullName: Excel.NamedItemCollection
     langs:
@@ -23,9 +26,10 @@ items:
       - excel_release.Excel.NamedItemCollection.load
       - excel_release.Excel.NamedItemCollection.toJSON
   - uid: excel_release.Excel.NamedItemCollection.add
-    summary: >-
-      Adds a new name to the collection of the given scope. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Adds a new name to the collection of the given scope.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(name, reference, comment)'
     fullName: add
     langs:
@@ -51,9 +55,10 @@ items:
           type:
             - string
   - uid: excel_release.Excel.NamedItemCollection.addFormulaLocal
-    summary: >-
-      Adds a new name to the collection of the given scope using the user's locale for the formula. \[ [API set:
-      ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Adds a new name to the collection of the given scope using the user's locale for the formula.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'addFormulaLocal(name, formula, comment)'
     fullName: addFormulaLocal
     langs:
@@ -93,9 +98,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.NamedItemCollection.getCount
-    summary: >-
-      Gets the number of named items in the collection. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the number of named items in the collection.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -108,9 +114,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel_release.Excel.NamedItemCollection.getItem
-    summary: >-
-      Gets a NamedItem object using its name. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a NamedItem object using its name.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
     fullName: getItem
     langs:
@@ -128,9 +135,10 @@ items:
           type:
             - string
   - uid: excel_release.Excel.NamedItemCollection.getItemOrNullObject
-    summary: >-
-      Gets a NamedItem object using its name. If the nameditem object does not exist, will return a null object. \[ [API
-      set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a NamedItem object using its name. If the nameditem object does not exist, will return a null object.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
     fullName: getItemOrNullObject
     langs:
@@ -183,7 +191,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.NamedItemCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.NamedItemCollection;
       return:
         type:
           - excel.Excel.NamedItemCollection
@@ -192,7 +202,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel_release.Excel.NamedItemCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

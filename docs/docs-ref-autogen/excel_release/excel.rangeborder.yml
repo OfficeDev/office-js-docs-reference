@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.RangeBorder
-    summary: >-
-      Represents the border of an object. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the border of an object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeBorder
     fullName: Excel.RangeBorder
     langs:
@@ -23,8 +24,10 @@ items:
   - uid: excel_release.Excel.RangeBorder.color
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange"). \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      color (e.g. "orange").
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -73,7 +76,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.RangeBorder;'
+      content: 'load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;'
       return:
         type:
           - excel.Excel.RangeBorder
@@ -82,11 +85,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.RangeBorderLoadOptions
   - uid: excel_release.Excel.RangeBorder.sideIndex
-    summary: >-
-      Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only. \[
-      [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sideIndex
     fullName: sideIndex
     langs:
@@ -104,7 +108,10 @@ items:
   - uid: excel_release.Excel.RangeBorder.style
     summary: >-
       One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
-      details. \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      details.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: style
     langs:
@@ -138,9 +145,10 @@ items:
           - excel.Excel.Interfaces.RangeBorderData
         description: ''
   - uid: excel_release.Excel.RangeBorder.weight
-    summary: >-
-      Specifies the weight of the border around a range. See Excel.BorderWeight for details. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Specifies the weight of the border around a range. See Excel.BorderWeight for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
     fullName: weight
     langs:

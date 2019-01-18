@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ChartAxisTitleFormat
-    summary: >-
-      Represents the chart axis title formatting. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the chart axis title formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartAxisTitleFormat
     fullName: Excel.ChartAxisTitleFormat
     langs:
@@ -20,9 +21,10 @@ items:
       - excel_release.Excel.ChartAxisTitleFormat.load
       - excel_release.Excel.ChartAxisTitleFormat.toJSON
   - uid: excel_release.Excel.ChartAxisTitleFormat.border
-    summary: >-
-      Represents the border format, which includes color, linestyle, and weight. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the border format, which includes color, linestyle, and weight.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: border
     langs:
@@ -48,9 +50,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.ChartAxisTitleFormat.fill
-    summary: >-
-      Represents chart fill formatting. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents chart fill formatting.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -62,8 +65,9 @@ items:
         type:
           - excel.Excel.ChartFill
   - uid: excel_release.Excel.ChartAxisTitleFormat.font
-    summary: >-
+    summary: |-
       Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
+
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
@@ -99,7 +103,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartAxisTitleFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions): Excel.ChartAxisTitleFormat;'
       return:
         type:
           - excel.Excel.ChartAxisTitleFormat
@@ -108,7 +112,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.ChartAxisTitleFormatLoadOptions
   - uid: excel_release.Excel.ChartAxisTitleFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

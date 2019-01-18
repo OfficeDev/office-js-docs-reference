@@ -12,9 +12,10 @@ items:
       - excel_release.Excel.Interfaces.WorksheetProtectionData.options
       - excel_release.Excel.Interfaces.WorksheetProtectionData.protected
   - uid: excel_release.Excel.Interfaces.WorksheetProtectionData.options
-    summary: >-
-      Sheet protection options. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Sheet protection options. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: options
     fullName: options
     langs:
@@ -26,9 +27,10 @@ items:
         type:
           - excel.Excel.WorksheetProtectionOptions
   - uid: excel_release.Excel.Interfaces.WorksheetProtectionData.protected
-    summary: >-
-      Indicates if the worksheet is protected. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Indicates if the worksheet is protected. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protected
     fullName: protected
     langs:

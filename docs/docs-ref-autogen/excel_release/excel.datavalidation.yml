@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.DataValidation
-    summary: >-
-      Represents the data validation applied to the current range. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the data validation applied to the current range.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataValidation
     fullName: Excel.DataValidation
     langs:
@@ -24,9 +25,10 @@ items:
       - excel_release.Excel.DataValidation.type
       - excel_release.Excel.DataValidation.valid
   - uid: excel_release.Excel.DataValidation.clear
-    summary: >-
-      Clears the data validation from the current range. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Clears the data validation from the current range.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: clear
     langs:
@@ -53,9 +55,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.DataValidation.errorAlert
-    summary: >-
-      Error alert when user enters invalid data. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Error alert when user enters invalid data.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: errorAlert
     fullName: errorAlert
     langs:
@@ -67,9 +70,10 @@ items:
         type:
           - excel.Excel.DataValidationErrorAlert
   - uid: excel_release.Excel.DataValidation.ignoreBlanks
-    summary: >-
-      Ignore blanks: no data validation will be performed on blank cells, it defaults to true. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ignoreBlanks
     fullName: ignoreBlanks
     langs:
@@ -104,7 +108,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.DataValidation;'
+      content: 'load(option?: Excel.Interfaces.DataValidationLoadOptions): Excel.DataValidation;'
       return:
         type:
           - excel.Excel.DataValidation
@@ -113,11 +117,12 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.DataValidationLoadOptions
   - uid: excel_release.Excel.DataValidation.prompt
-    summary: >-
-      Prompt when users select a cell. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Prompt when users select a cell.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: prompt
     fullName: prompt
     langs:
@@ -129,9 +134,10 @@ items:
         type:
           - excel.Excel.DataValidationPrompt
   - uid: excel_release.Excel.DataValidation.rule
-    summary: >-
-      Data Validation rule that contains different type of data validation criteria. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Data validation rule that contains different type of data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: rule
     langs:
@@ -161,9 +167,10 @@ items:
           - excel.Excel.Interfaces.DataValidationData
         description: ''
   - uid: excel_release.Excel.DataValidation.type
-    summary: >-
-      Type of the data validation, see Excel.DataValidationType for details. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Type of the data validation, see Excel.DataValidationType for details.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -182,8 +189,10 @@ items:
     summary: >-
       Represents if all cell values are valid according to the data validation rules. Returns true if all cell values
       are valid, or false if all cell values are invalid. Returns null if there are both valid and invalid cell values
-      within the range. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      within the range.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valid
     fullName: valid
     langs:

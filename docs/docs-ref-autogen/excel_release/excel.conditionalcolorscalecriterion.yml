@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.ConditionalColorScaleCriterion
-    summary: >-
-      Represents a Color Scale Criterion which contains a type, value, and a color. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a Color Scale Criterion which contains a type, value, and a color.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalColorScaleCriterion
     fullName: Excel.ConditionalColorScaleCriterion
     langs:
@@ -15,9 +16,10 @@ items:
       - excel_release.Excel.ConditionalColorScaleCriterion.formula
       - excel_release.Excel.ConditionalColorScaleCriterion.type
   - uid: excel_release.Excel.ConditionalColorScaleCriterion.color
-    summary: >-
-      HTML color code representation of the color scale color. E.g. \#FF0000 represents Red. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      HTML color code representation of the color scale color. E.g. \#FF0000 represents Red.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -29,9 +31,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.ConditionalColorScaleCriterion.formula
-    summary: >-
-      A number, a formula, or null (if Type is LowestValue). \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      A number, a formula, or null (if Type is LowestValue).
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
     fullName: formula
     langs:
@@ -43,9 +46,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.ConditionalColorScaleCriterion.type
-    summary: >-
-      What the icon conditional formula should be based on. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      What the criterion conditional formula should be based on.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

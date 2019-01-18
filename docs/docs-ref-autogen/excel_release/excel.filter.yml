@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.Filter
-    summary: >-
-      Manages the filtering of a table's column. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Manages the filtering of a table's column.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Filter
     fullName: Excel.Filter
     langs:
@@ -30,9 +31,10 @@ items:
       - excel_release.Excel.Filter.load
       - excel_release.Excel.Filter.toJSON
   - uid: excel_release.Excel.Filter.apply
-    summary: >-
-      Apply the given filter criteria on the given column. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Apply the given filter criteria on the given column.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: apply(criteria)
     fullName: apply
     langs:
@@ -50,9 +52,10 @@ items:
           type:
             - excel.Excel.FilterCriteria
   - uid: excel_release.Excel.Filter.applyBottomItemsFilter
-    summary: >-
-      Apply a "Bottom Item" filter to the column for the given number of elements. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Apply a "Bottom Item" filter to the column for the given number of elements.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyBottomItemsFilter(count)
     fullName: applyBottomItemsFilter
     langs:
@@ -70,9 +73,10 @@ items:
           type:
             - number
   - uid: excel_release.Excel.Filter.applyBottomPercentFilter
-    summary: >-
-      Apply a "Bottom Percent" filter to the column for the given percentage of elements. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Apply a "Bottom Percent" filter to the column for the given percentage of elements.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyBottomPercentFilter(percent)
     fullName: applyBottomPercentFilter
     langs:
@@ -90,9 +94,10 @@ items:
           type:
             - number
   - uid: excel_release.Excel.Filter.applyCellColorFilter
-    summary: >-
-      Apply a "Cell Color" filter to the column for the given color. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Apply a "Cell Color" filter to the column for the given color.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyCellColorFilter(color)
     fullName: applyCellColorFilter
     langs:
@@ -110,9 +115,10 @@ items:
           type:
             - string
   - uid: excel_release.Excel.Filter.applyCustomFilter
-    summary: >-
-      Apply an "Icon" filter to the column for the given criteria strings. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Apply an "Icon" filter to the column for the given criteria strings.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'applyCustomFilter(criteria1, criteria2, oper)'
     fullName: applyCustomFilter
     langs:
@@ -138,9 +144,10 @@ items:
           type:
             - excel.Excel.FilterOperator
   - uid: excel_release.Excel.Filter.applyDynamicFilter
-    summary: >-
-      Apply a "Dynamic" filter to the column. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Apply a "Dynamic" filter to the column.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyDynamicFilter(criteria)
     fullName: applyDynamicFilter
     langs:
@@ -158,9 +165,10 @@ items:
           type:
             - excel.Excel.DynamicFilterCriteria
   - uid: excel_release.Excel.Filter.applyFontColorFilter
-    summary: >-
-      Apply a "Font Color" filter to the column for the given color. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Apply a "Font Color" filter to the column for the given color.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyFontColorFilter(color)
     fullName: applyFontColorFilter
     langs:
@@ -178,9 +186,10 @@ items:
           type:
             - string
   - uid: excel_release.Excel.Filter.applyIconFilter
-    summary: >-
-      Apply an "Icon" filter to the column for the given icon. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Apply an "Icon" filter to the column for the given icon.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyIconFilter(icon)
     fullName: applyIconFilter
     langs:
@@ -198,9 +207,10 @@ items:
           type:
             - excel.Excel.Icon
   - uid: excel_release.Excel.Filter.applyTopItemsFilter
-    summary: >-
-      Apply a "Top Item" filter to the column for the given number of elements. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Apply a "Top Item" filter to the column for the given number of elements.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyTopItemsFilter(count)
     fullName: applyTopItemsFilter
     langs:
@@ -218,9 +228,10 @@ items:
           type:
             - number
   - uid: excel_release.Excel.Filter.applyTopPercentFilter
-    summary: >-
-      Apply a "Top Percent" filter to the column for the given percentage of elements. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Apply a "Top Percent" filter to the column for the given percentage of elements.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyTopPercentFilter(percent)
     fullName: applyTopPercentFilter
     langs:
@@ -238,9 +249,10 @@ items:
           type:
             - number
   - uid: excel_release.Excel.Filter.applyValuesFilter
-    summary: >-
-      Apply a "Values" filter to the column for the given values. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Apply a "Values" filter to the column for the given values.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyValuesFilter(values)
     fullName: applyValuesFilter
     langs:
@@ -258,9 +270,10 @@ items:
           type:
             - Array<string | FilterDatetime>
   - uid: excel_release.Excel.Filter.clear
-    summary: >-
-      Clear the filter on the given column. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Clear the filter on the given column.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: clear
     langs:
@@ -287,9 +300,10 @@ items:
         type:
           - RequestContext
   - uid: excel_release.Excel.Filter.criteria
-    summary: >-
-      The currently applied filter on the given column. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The currently applied filter on the given column. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
     fullName: criteria
     langs:
@@ -324,7 +338,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Filter;'
+      content: 'load(option?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;'
       return:
         type:
           - excel.Excel.Filter
@@ -333,7 +347,7 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.FilterLoadOptions
   - uid: excel_release.Excel.Filter.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

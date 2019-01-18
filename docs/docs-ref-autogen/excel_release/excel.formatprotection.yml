@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.FormatProtection
-    summary: >-
-      Represents the format protection of a range object. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the format protection of a range object.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.FormatProtection
     fullName: Excel.FormatProtection
     langs:
@@ -35,8 +36,10 @@ items:
   - uid: excel_release.Excel.FormatProtection.formulaHidden
     summary: >-
       Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range
-      doesn't have uniform formula hidden setting. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      doesn't have uniform formula hidden setting.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaHidden
     fullName: formulaHidden
     langs:
@@ -71,7 +74,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.FormatProtection;'
+      content: 'load(option?: Excel.Interfaces.FormatProtectionLoadOptions): Excel.FormatProtection;'
       return:
         type:
           - excel.Excel.FormatProtection
@@ -80,12 +83,14 @@ items:
         - id: option
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
-            - 'string | string[]'
+            - excel.Excel.Interfaces.FormatProtectionLoadOptions
   - uid: excel_release.Excel.FormatProtection.locked
     summary: >-
       Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have
-      uniform lock setting. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      uniform lock setting.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: locked
     fullName: locked
     langs:
