@@ -17,8 +17,10 @@ items:
   - uid: excel.Excel.Interfaces.RangeFillUpdateData.color
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange") \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      color (e.g. "orange")
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -32,8 +34,11 @@ items:
   - uid: excel.Excel.Interfaces.RangeFillUpdateData.pattern
     summary: >-
       Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are
-      not supported. A null value indicates that the entire range doesn't have uniform pattern setting. \[ [API set:
-      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      not supported. A null value indicates that the entire range doesn't have uniform pattern setting.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: pattern
     fullName: pattern
@@ -55,7 +60,10 @@ items:
     summary: >-
       Sets HTML color code representing the color of the Range pattern, of the form \#RRGGBB (e.g. "FFA500") or as a
       named HTML color (e.g. "orange"). Gets HTML color code representing the color of the Range pattern, of the form
-      \#RRGGBB (e.g. "FFA500"). \[ [API set: ExcelApi BETA (PREVIEW
+      \#RRGGBB (e.g. "FFA500").
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: patternColor
@@ -72,7 +80,10 @@ items:
     summary: >-
       Returns or sets a double that lightens or darkens a pattern color for Range Fill, the value is between -1
       (darkest) and 1 (brightest), with 0 for the original color. If the pattern tintAndShades are not uniform, null
-      will be returned. \[ [API set: ExcelApi BETA (PREVIEW
+      will be returned.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: patternTintAndShade
@@ -88,8 +99,11 @@ items:
   - uid: excel.Excel.Interfaces.RangeFillUpdateData.tintAndShade
     summary: >-
       Returns or sets a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1
-      (brightest), with 0 for the original color. If the tintAndShades are not uniform, null will be returned. \[ [API
-      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      (brightest), with 0 for the original color. If the tintAndShades are not uniform, null will be returned.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: tintAndShade
     fullName: tintAndShade

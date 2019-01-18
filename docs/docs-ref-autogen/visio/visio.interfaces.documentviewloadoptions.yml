@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Interfaces.DocumentViewLoadOptions
-    summary: >-
-      Represents the DocumentView class. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the DocumentView class.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Interfaces.DocumentViewLoadOptions
     fullName: Visio.Interfaces.DocumentViewLoadOptions
     langs:
@@ -16,9 +17,10 @@ items:
       - visio.Visio.Interfaces.DocumentViewLoadOptions.disableZoom
       - visio.Visio.Interfaces.DocumentViewLoadOptions.hideDiagramBoundary
   - uid: visio.Visio.Interfaces.DocumentViewLoadOptions.disableHyperlinks
-    summary: >-
-      Disable Hyperlinks. \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+    summary: |-
+      Disable Hyperlinks.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: disableHyperlinks
     fullName: disableHyperlinks
     langs:
@@ -30,7 +32,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Interfaces.DocumentViewLoadOptions.disablePan
-    summary: 'Disable Pan. \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    summary: |-
+      Disable Pan.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: disablePan
     fullName: disablePan
     langs:
@@ -42,7 +47,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Interfaces.DocumentViewLoadOptions.disableZoom
-    summary: 'Disable Zoom. \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+    summary: |-
+      Disable Zoom.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: disableZoom
     fullName: disableZoom
     langs:
@@ -54,9 +62,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Interfaces.DocumentViewLoadOptions.hideDiagramBoundary
-    summary: >-
-      Hide Diagram Boundary. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Hide Diagram Boundary.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: hideDiagramBoundary
     fullName: hideDiagramBoundary
     langs:

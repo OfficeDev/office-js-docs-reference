@@ -19,8 +19,10 @@ items:
   - uid: word.Word.Interfaces.SearchOptionsUpdateData.ignorePunct
     summary: >-
       Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the
-      Ignore punctuation check box in the Find and Replace dialog box. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Ignore punctuation check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: ignorePunct
     fullName: ignorePunct
     langs:
@@ -34,8 +36,10 @@ items:
   - uid: word.Word.Interfaces.SearchOptionsUpdateData.ignoreSpace
     summary: >-
       Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore
-      whitespace characters check box in the Find and Replace dialog box. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      whitespace characters check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: ignoreSpace
     fullName: ignoreSpace
     langs:
@@ -49,8 +53,10 @@ items:
   - uid: word.Word.Interfaces.SearchOptionsUpdateData.matchCase
     summary: >-
       Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
-      check box in the Find and Replace dialog box. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchCase
     fullName: matchCase
     langs:
@@ -64,8 +70,10 @@ items:
   - uid: word.Word.Interfaces.SearchOptionsUpdateData.matchPrefix
     summary: >-
       Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the
-      Match prefix check box in the Find and Replace dialog box. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Match prefix check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchPrefix
     fullName: matchPrefix
     langs:
@@ -79,8 +87,10 @@ items:
   - uid: word.Word.Interfaces.SearchOptionsUpdateData.matchSuffix
     summary: >-
       Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the
-      Match suffix check box in the Find and Replace dialog box. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Match suffix check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchSuffix
     fullName: matchSuffix
     langs:
@@ -94,8 +104,10 @@ items:
   - uid: word.Word.Interfaces.SearchOptionsUpdateData.matchWholeWord
     summary: >-
       Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger
-      word. Corresponds to the Find whole words only check box in the Find and Replace dialog box. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchWholeWord
     fullName: matchWholeWord
     langs:
@@ -109,8 +121,10 @@ items:
   - uid: word.Word.Interfaces.SearchOptionsUpdateData.matchWildcards
     summary: >-
       Gets or sets a value that indicates whether the search will be performed using special search operators.
-      Corresponds to the Use wildcards check box in the Find and Replace dialog box. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: matchWildcards
     fullName: matchWildcards
     langs:

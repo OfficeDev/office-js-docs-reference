@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.TextConditionalFormatLoadOptions
-    summary: >-
-      Represents a specific text conditional format. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a specific text conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.TextConditionalFormatLoadOptions
     fullName: Excel.Interfaces.TextConditionalFormatLoadOptions
     langs:
@@ -14,9 +15,10 @@ items:
       - excel.Excel.Interfaces.TextConditionalFormatLoadOptions.format
       - excel.Excel.Interfaces.TextConditionalFormatLoadOptions.rule
   - uid: excel.Excel.Interfaces.TextConditionalFormatLoadOptions.format
-    summary: >-
-      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. \[ [API
-      set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -28,9 +30,10 @@ items:
         type:
           - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: excel.Excel.Interfaces.TextConditionalFormatLoadOptions.rule
-    summary: >-
-      The rule of the conditional format. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The rule of the conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: rule
     langs:

@@ -75,8 +75,7 @@ tryCatch(async () => {
         // .replace(/interface .*?LoadOptions \{[^}]*?};[\s]*}/gm, '')
         // .replace(/interface .*?LoadOptions \{[^}]*?}/gm, '')
         .replace(/\/\*\* Sets multiple properties.*\s*\*\s*\*.@remarks\s*\*\s*\* This method has the following additional signature:\s*\*\s*\* \`set\(properties:.*\s*\*\s*\* @param.*\s*\*.*\s*\*\/\s*set\(properties:.*\s*\/\*\* Sets multiple properties.*\s*set\(properties:.*;/gm, '')
-        .replace(/(extends OfficeCore.RequestContext)/g, `extends OfficeExtension.ClientRequestContext`)
-        .replace(/[\s]*?\*[\s]*?\*( \[.*?\])/gm, `$1`));
+        .replace(/(extends OfficeCore.RequestContext)/g, `extends OfficeExtension.ClientRequestContext`));
 
     const dtsBuilder = new DtsBuilder();
 

@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalRangeBorderIndex
+    summary: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ConditionalRangeBorderIndex
     fullName: Excel.ConditionalRangeBorderIndex
     langs:

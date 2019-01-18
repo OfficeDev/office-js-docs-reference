@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.HeaderFooter
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: Excel.HeaderFooter
     fullName: Excel.HeaderFooter
     langs:
@@ -22,7 +26,10 @@ items:
   - uid: excel.Excel.HeaderFooter.centerFooter
     summary: >-
       Gets or sets the center footer of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. \[ [API set: ExcelApi BETA (PREVIEW
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: centerFooter
@@ -38,7 +45,10 @@ items:
   - uid: excel.Excel.HeaderFooter.centerHeader
     summary: >-
       Gets or sets the center header of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. \[ [API set: ExcelApi BETA (PREVIEW
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: centerHeader
@@ -55,6 +65,7 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
+    isPreview: true
     name: context
     fullName: context
     langs:
@@ -68,7 +79,10 @@ items:
   - uid: excel.Excel.HeaderFooter.leftFooter
     summary: >-
       Gets or sets the left footer of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. \[ [API set: ExcelApi BETA (PREVIEW
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: leftFooter
@@ -84,7 +98,10 @@ items:
   - uid: excel.Excel.HeaderFooter.leftHeader
     summary: >-
       Gets or sets the left header of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. \[ [API set: ExcelApi BETA (PREVIEW
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: leftHeader
@@ -115,6 +132,7 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
+    isPreview: true
     name: load(option)
     fullName: load
     langs:
@@ -134,7 +152,10 @@ items:
   - uid: excel.Excel.HeaderFooter.rightFooter
     summary: >-
       Gets or sets the right footer of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. \[ [API set: ExcelApi BETA (PREVIEW
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: rightFooter
@@ -150,7 +171,10 @@ items:
   - uid: excel.Excel.HeaderFooter.rightHeader
     summary: >-
       Gets or sets the right header of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx. \[ [API set: ExcelApi BETA (PREVIEW
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: rightHeader
@@ -170,6 +194,7 @@ items:
       passed to it.) Whereas the original Excel.HeaderFooter object is an API object, the `toJSON` method returns a
       plain JavaScript object (typed as `Excel.Interfaces.HeaderFooterData`<!-- -->) that contains shallow copies of any
       loaded child properties from the original object.
+    isPreview: true
     name: toJSON()
     fullName: toJSON
     langs:

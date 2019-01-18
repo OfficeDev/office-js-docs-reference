@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeLineStyle
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: Excel.ShapeLineStyle
     fullName: Excel.ShapeLineStyle
     langs:
@@ -14,6 +18,7 @@ items:
       - excel.Excel.ShapeLineStyle.thinThick
       - excel.Excel.ShapeLineStyle.thinThin
   - uid: excel.Excel.ShapeLineStyle.single
+    isPreview: true
     name: single
     fullName: single
     langs:
@@ -21,6 +26,7 @@ items:
     type: field
     numericValue: '"Single"'
   - uid: excel.Excel.ShapeLineStyle.thickBetweenThin
+    isPreview: true
     name: thickBetweenThin
     fullName: thickBetweenThin
     langs:
@@ -28,6 +34,7 @@ items:
     type: field
     numericValue: '"ThickBetweenThin"'
   - uid: excel.Excel.ShapeLineStyle.thickThin
+    isPreview: true
     name: thickThin
     fullName: thickThin
     langs:
@@ -35,6 +42,7 @@ items:
     type: field
     numericValue: '"ThickThin"'
   - uid: excel.Excel.ShapeLineStyle.thinThick
+    isPreview: true
     name: thinThick
     fullName: thinThick
     langs:
@@ -42,6 +50,7 @@ items:
     type: field
     numericValue: '"ThinThick"'
   - uid: excel.Excel.ShapeLineStyle.thinThin
+    isPreview: true
     name: thinThin
     fullName: thinThin
     langs:

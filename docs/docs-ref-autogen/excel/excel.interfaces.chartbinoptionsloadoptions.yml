@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.Interfaces.ChartBinOptionsLoadOptions
     summary: >-
-      Encapsulates the bon options only for histogram chart and pareto chart. \[ [API set: ExcelApi BETA (PREVIEW
+      Encapsulates the bon options only for histogram chart and pareto chart.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.Interfaces.ChartBinOptionsLoadOptions
@@ -21,8 +24,11 @@ items:
       - excel.Excel.Interfaces.ChartBinOptionsLoadOptions.width
   - uid: excel.Excel.Interfaces.ChartBinOptionsLoadOptions.allowOverflow
     summary: >-
-      Returns or sets if bin overflow enabled in a histogram chart or pareto chart. Read/Write. \[ [API set: ExcelApi
-      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns or sets if bin overflow enabled in a histogram chart or pareto chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: allowOverflow
     fullName: allowOverflow
@@ -36,8 +42,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartBinOptionsLoadOptions.allowUnderflow
     summary: >-
-      Returns or sets if bin underflow enabled in a histogram chart or pareto chart. Read/Write. \[ [API set: ExcelApi
-      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns or sets if bin underflow enabled in a histogram chart or pareto chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: allowUnderflow
     fullName: allowUnderflow
@@ -51,7 +60,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartBinOptionsLoadOptions.count
     summary: >-
-      Returns or sets count of bin of a histogram chart or pareto chart. Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns or sets count of bin of a histogram chart or pareto chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: count
@@ -66,8 +78,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartBinOptionsLoadOptions.overflowValue
     summary: >-
-      Returns or sets bin overflow value of a histogram chart or pareto chart. Read/Write. \[ [API set: ExcelApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns or sets bin overflow value of a histogram chart or pareto chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: overflowValue
     fullName: overflowValue
@@ -81,7 +96,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartBinOptionsLoadOptions.type
     summary: >-
-      Returns or sets bin type of a histogram chart or pareto chart. Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns or sets bin type of a histogram chart or pareto chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: type
@@ -96,8 +114,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartBinOptionsLoadOptions.underflowValue
     summary: >-
-      Returns or sets bin underflow value of a histogram chart or pareto chart. Read/Write. \[ [API set: ExcelApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns or sets bin underflow value of a histogram chart or pareto chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: underflowValue
     fullName: underflowValue
@@ -111,8 +132,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartBinOptionsLoadOptions.width
     summary: >-
-      Returns or sets bin width value of a histogram chart or pareto chart. Read/Write. \[ [API set: ExcelApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns or sets bin width value of a histogram chart or pareto chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: width
     fullName: width

@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Placement
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: Excel.Placement
     fullName: Excel.Placement
     langs:
@@ -12,6 +16,7 @@ items:
       - excel.Excel.Placement.oneCell
       - excel.Excel.Placement.twoCell
   - uid: excel.Excel.Placement.absolute
+    isPreview: true
     name: absolute
     fullName: absolute
     langs:
@@ -19,6 +24,7 @@ items:
     type: field
     numericValue: '"Absolute"'
   - uid: excel.Excel.Placement.oneCell
+    isPreview: true
     name: oneCell
     fullName: oneCell
     langs:
@@ -26,6 +32,7 @@ items:
     type: field
     numericValue: '"OneCell"'
   - uid: excel.Excel.Placement.twoCell
+    isPreview: true
     name: twoCell
     fullName: twoCell
     langs:

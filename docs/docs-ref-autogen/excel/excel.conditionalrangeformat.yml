@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalRangeFormat
-    summary: >-
-      A format object encapsulating the conditional formats range's font, fill, borders, and other properties. \[ [API
-      set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalRangeFormat
     fullName: Excel.ConditionalRangeFormat
     langs:
@@ -21,9 +22,10 @@ items:
       - excel.Excel.ConditionalRangeFormat.numberFormat
       - excel.Excel.ConditionalRangeFormat.toJSON
   - uid: excel.Excel.ConditionalRangeFormat.borders
-    summary: >-
-      Collection of border objects that apply to the overall conditional format range. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Collection of border objects that apply to the overall conditional format range. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
     fullName: borders
     langs:
@@ -49,9 +51,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ConditionalRangeFormat.fill
-    summary: >-
-      Returns the fill object defined on the overall conditional format range. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the fill object defined on the overall conditional format range. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -63,9 +66,10 @@ items:
         type:
           - excel.Excel.ConditionalRangeFill
   - uid: excel.Excel.ConditionalRangeFormat.font
-    summary: >-
-      Returns the font object defined on the overall conditional format range. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the font object defined on the overall conditional format range. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:
@@ -111,9 +115,10 @@ items:
           type:
             - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: excel.Excel.ConditionalRangeFormat.numberFormat
-    summary: >-
-      Represents Excel's number format code for the given range. Cleared if null is passed in. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents Excel's number format code for the given range. Cleared if null is passed in.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: numberFormat
     langs:

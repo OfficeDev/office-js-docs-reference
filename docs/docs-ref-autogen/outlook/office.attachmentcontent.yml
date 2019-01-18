@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.AttachmentContent
-    summary: >-
-      Represents the content of an attachment on a message or appointment item. \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: |-
+      Represents the content of an attachment on a message or appointment item.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>

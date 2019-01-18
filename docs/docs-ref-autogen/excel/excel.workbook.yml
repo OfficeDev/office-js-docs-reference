@@ -1,8 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Workbook
-    summary: >-
+    summary: |-
       Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
+
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Workbook
     fullName: Excel.Workbook
@@ -53,9 +54,10 @@ items:
       - excel.Excel.Workbook.usePrecisionAsDisplayed
       - excel.Excel.Workbook.worksheets
   - uid: excel.Excel.Workbook.application
-    summary: >-
-      Represents the Excel application instance that contains this workbook. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the Excel application instance that contains this workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: application
     fullName: application
     langs:
@@ -68,7 +70,10 @@ items:
           - excel.Excel.Application
   - uid: excel.Excel.Workbook.autoSave
     summary: >-
-      True if the workbook is in auto save mode. \[ [API set: ExcelApi BETA (PREVIEW
+      True if the workbook is in auto save mode.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: autoSave
@@ -82,9 +87,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Workbook.bindings
-    summary: >-
-      Represents a collection of bindings that are part of the workbook. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of bindings that are part of the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bindings
     fullName: bindings
     langs:
@@ -97,7 +103,10 @@ items:
           - excel.Excel.BindingCollection
   - uid: excel.Excel.Workbook.calculationEngineVersion
     summary: >-
-      Returns a number about the version of Excel Calculation Engine. Read-Only. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns a number about the version of Excel Calculation Engine. Read-Only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: calculationEngineVersion
@@ -113,7 +122,10 @@ items:
   - uid: excel.Excel.Workbook.chartDataPointTrack
     summary: >-
       True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
-      charts track the index of the data points. \[ [API set: ExcelApi BETA (PREVIEW
+      charts track the index of the data points.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: chartDataPointTrack
@@ -128,7 +140,10 @@ items:
           - boolean
   - uid: excel.Excel.Workbook.close
     summary: >-
-      Close current workbook. \[ [API set: ExcelApi BETA (PREVIEW
+      Close current workbook.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: close(closeBehavior)
@@ -149,7 +164,10 @@ items:
             - excel.Excel.CloseBehavior
   - uid: excel.Excel.Workbook.comments
     summary: >-
-      Represents a collection of Comments associated with the workbook. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents a collection of Comments associated with the workbook. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: comments
@@ -177,9 +195,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.Workbook.customXmlParts
-    summary: >-
-      Represents the collection of custom XML parts contained by this workbook. Read-only. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the collection of custom XML parts contained by this workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: customXmlParts
     fullName: customXmlParts
     langs:
@@ -191,9 +210,10 @@ items:
         type:
           - excel.Excel.CustomXmlPartCollection
   - uid: excel.Excel.Workbook.dataConnections
-    summary: >-
-      Represents all data connections in the workbook. Read-only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents all data connections in the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataConnections
     fullName: dataConnections
     langs:
@@ -205,9 +225,10 @@ items:
         type:
           - excel.Excel.DataConnectionCollection
   - uid: excel.Excel.Workbook.functions
-    summary: >-
-      Represents a collection of worksheet functions that can be used for computation. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of worksheet functions that can be used for computation. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: functions
     fullName: functions
     langs:
@@ -219,9 +240,10 @@ items:
         type:
           - excel.Excel.Functions
   - uid: excel.Excel.Workbook.getActiveCell
-    summary: >-
-      Gets the currently active cell from the workbook. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the currently active cell from the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveCell()
     fullName: getActiveCell
     langs:
@@ -251,7 +273,10 @@ items:
   - uid: excel.Excel.Workbook.getActiveChart
     summary: >-
       Gets the currently active chart in the workbook. If there is no active chart, will throw exception when invoke
-      this statement \[ [API set: ExcelApi BETA (PREVIEW
+      this statement
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getActiveChart()
@@ -267,8 +292,11 @@ items:
         description: ''
   - uid: excel.Excel.Workbook.getActiveChartOrNullObject
     summary: >-
-      Gets the currently active chart in the workbook. If there is no active chart, will return null object \[ [API set:
-      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Gets the currently active chart in the workbook. If there is no active chart, will return null object
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getActiveChartOrNullObject()
     fullName: getActiveChartOrNullObject
@@ -284,7 +312,10 @@ items:
   - uid: excel.Excel.Workbook.getActiveSlicer
     summary: >-
       Gets the currently active slicer in the workbook. If there is no active slicer, will throw exception when invoke
-      this statement. \[ [API set: ExcelApi BETA (PREVIEW
+      this statement.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getActiveSlicer()
@@ -300,8 +331,11 @@ items:
         description: ''
   - uid: excel.Excel.Workbook.getActiveSlicerOrNullObject
     summary: >-
-      Gets the currently active slicer in the workbook. If there is no active slicer, will return null object \[ [API
-      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Gets the currently active slicer in the workbook. If there is no active slicer, will return null object
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getActiveSlicerOrNullObject()
     fullName: getActiveSlicerOrNullObject
@@ -317,8 +351,11 @@ items:
   - uid: excel.Excel.Workbook.getIsActiveCollabSession
     summary: >-
       True if the workbook is being edited by multiple users (co-authoring). Please be aware there might be some delay
-      between when the workbook status changes and when the changes are reflected on the result of the method. \[ [API
-      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      between when the workbook status changes and when the changes are reflected on the result of the method.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getIsActiveCollabSession()
     fullName: getIsActiveCollabSession
@@ -334,8 +371,10 @@ items:
   - uid: excel.Excel.Workbook.getSelectedRange
     summary: >-
       Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method
-      will throw an error. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      will throw an error.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getSelectedRange()
     fullName: getSelectedRange
     langs:
@@ -367,7 +406,10 @@ items:
   - uid: excel.Excel.Workbook.getSelectedRanges
     summary: >-
       Gets the currently selected one or more ranges from the workbook. Unlike getSelectedRange(), this method returns a
-      RangeAreas object that represents all the selected ranges. \[ [API set: ExcelApi BETA (PREVIEW
+      RangeAreas object that represents all the selected ranges.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getSelectedRanges()
@@ -384,8 +426,11 @@ items:
   - uid: excel.Excel.Workbook.isDirty
     summary: >-
       True if no changes have been made to the specified workbook since it was last saved. You can set this property to
-      True if you want to close a modified workbook without either saving it or being prompted to save it. \[ [API set:
-      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      True if you want to close a modified workbook without either saving it or being prompted to save it.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: isDirty
     fullName: isDirty
@@ -432,9 +477,10 @@ items:
           type:
             - excel.Excel.Interfaces.WorkbookLoadOptions
   - uid: excel.Excel.Workbook.name
-    summary: >-
-      Gets the workbook name. Read-only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the workbook name. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -446,9 +492,10 @@ items:
         type:
           - string
   - uid: excel.Excel.Workbook.names
-    summary: >-
-      Represents a collection of workbook scoped named items (named ranges and constants). Read-only. \[ [API set:
-      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: names
     fullName: names
     langs:
@@ -461,7 +508,10 @@ items:
           - excel.Excel.NamedItemCollection
   - uid: excel.Excel.Workbook.onAutoSaveSettingChanged
     summary: >-
-      Occurs when AutoSave setting is changed on the workbook. \[ [API set: ExcelApi BETA (PREVIEW
+      Occurs when AutoSave setting is changed on the workbook.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: onAutoSaveSettingChanged
@@ -475,9 +525,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>
   - uid: excel.Excel.Workbook.onSelectionChanged
-    summary: >-
-      Occurs when the selection in the document is changed. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when the selection in the document is changed.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSelectionChanged
     fullName: onSelectionChanged
     langs:
@@ -489,9 +540,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
   - uid: excel.Excel.Workbook.pivotTables
-    summary: >-
-      Represents a collection of PivotTables associated with the workbook. Read-only. \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of PivotTables associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotTables
     fullName: pivotTables
     langs:
@@ -504,7 +556,10 @@ items:
           - excel.Excel.PivotTableCollection
   - uid: excel.Excel.Workbook.previouslySaved
     summary: >-
-      True if the workbook has ever been saved locally or online. \[ [API set: ExcelApi BETA (PREVIEW
+      True if the workbook has ever been saved locally or online.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: previouslySaved
@@ -518,9 +573,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Workbook.properties
-    summary: >-
-      Gets the workbook properties. Read-only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the workbook properties. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: properties
     fullName: properties
     langs:
@@ -562,9 +618,10 @@ items:
           });
           ```
   - uid: excel.Excel.Workbook.protection
-    summary: >-
-      Returns workbook protection object for a workbook. Read-only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns workbook protection object for a workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
     fullName: protection
     langs:
@@ -576,9 +633,10 @@ items:
         type:
           - excel.Excel.WorkbookProtection
   - uid: excel.Excel.Workbook.readOnly
-    summary: >-
-      True if the workbook is open in Read-only mode. Read-only. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      True if the workbook is open in Read-only mode. Read-only.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readOnly
     fullName: readOnly
     langs:
@@ -591,7 +649,10 @@ items:
           - boolean
   - uid: excel.Excel.Workbook.save
     summary: >-
-      Save current workbook. \[ [API set: ExcelApi BETA (PREVIEW
+      Save current workbook.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: save(saveBehavior)
@@ -611,9 +672,10 @@ items:
           type:
             - excel.Excel.SaveBehavior
   - uid: excel.Excel.Workbook.settings
-    summary: >-
-      Represents a collection of Settings associated with the workbook. Read-only. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of Settings associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: settings
     fullName: settings
     langs:
@@ -626,7 +688,10 @@ items:
           - excel.Excel.SettingCollection
   - uid: excel.Excel.Workbook.slicers
     summary: >-
-      Represents a collection of Slicers associated with the workbook. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents a collection of Slicers associated with the workbook. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: slicers
@@ -640,9 +705,10 @@ items:
         type:
           - excel.Excel.SlicerCollection
   - uid: excel.Excel.Workbook.styles
-    summary: >-
-      Represents a collection of styles associated with the workbook. Read-only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of styles associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: styles
     fullName: styles
     langs:
@@ -654,9 +720,10 @@ items:
         type:
           - excel.Excel.StyleCollection
   - uid: excel.Excel.Workbook.tables
-    summary: >-
-      Represents a collection of tables associated with the workbook. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of tables associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tables
     fullName: tables
     langs:
@@ -687,7 +754,10 @@ items:
         description: ''
   - uid: excel.Excel.Workbook.use1904DateSystem
     summary: >-
-      True if the workbook uses the 1904 date system. \[ [API set: ExcelApi BETA (PREVIEW
+      True if the workbook uses the 1904 date system.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: use1904DateSystem
@@ -703,8 +773,11 @@ items:
   - uid: excel.Excel.Workbook.usePrecisionAsDisplayed
     summary: >-
       True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
-      Data will permanently lose accuracy when switching this property from false to true. \[ [API set: ExcelApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Data will permanently lose accuracy when switching this property from false to true.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: usePrecisionAsDisplayed
     fullName: usePrecisionAsDisplayed
@@ -717,9 +790,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Workbook.worksheets
-    summary: >-
-      Represents a collection of worksheets associated with the workbook. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of worksheets associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheets
     fullName: worksheets
     langs:

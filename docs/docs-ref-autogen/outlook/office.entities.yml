@@ -29,8 +29,10 @@ items:
 
 
       When the property arrays are returned by the getEntitiesByType method, only the property for the specified entity
-      contains data; all other properties are null. \[ [API set: Mailbox
-      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      contains data; all other properties are null.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>

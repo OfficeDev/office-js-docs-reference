@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.NoteTag
-    summary: >-
-      A container for the NoteTag in a paragraph. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      A container for the NoteTag in a paragraph.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.NoteTag
     fullName: OneNote.NoteTag
     langs:
@@ -21,9 +22,10 @@ items:
       - onenote.OneNote.NoteTag.type
       - onenote.OneNote.NoteTag.untrack
   - uid: onenote.OneNote.NoteTag.id
-    summary: >-
-      Gets the Id of the NoteTag object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the Id of the NoteTag object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -69,9 +71,10 @@ items:
           type:
             - onenote.OneNote.Interfaces.NoteTagLoadOptions
   - uid: onenote.OneNote.NoteTag.status
-    summary: >-
-      Gets the status of the NoteTag object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the status of the NoteTag object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: status
     fullName: status
     langs:
@@ -117,9 +120,10 @@ items:
           - onenote.OneNote.NoteTag
         description: ''
   - uid: onenote.OneNote.NoteTag.type
-    summary: >-
-      Gets the type of the NoteTag object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the type of the NoteTag object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

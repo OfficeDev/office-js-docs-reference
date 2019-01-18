@@ -12,7 +12,10 @@ items:
       - excel.Excel.Interfaces.LineUpdateData.connectorType
   - uid: excel.Excel.Interfaces.LineUpdateData.connectorType
     summary: >-
-      Represents the connector type for the line. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the connector type for the line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: connectorType

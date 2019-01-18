@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions
-    summary: >-
-      Represents a collection of pages. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of pages.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Interfaces.PageCollectionLoadOptions
     fullName: OneNote.Interfaces.PageCollectionLoadOptions
     langs:
@@ -21,9 +22,10 @@ items:
       - onenote.OneNote.Interfaces.PageCollectionLoadOptions.title
       - onenote.OneNote.Interfaces.PageCollectionLoadOptions.webUrl
   - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.classNotebookPageSource
-    summary: >-
-      For EACH ITEM in the collection: Gets the ClassNotebookPageSource to the page. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the ClassNotebookPageSource to the page.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: classNotebookPageSource
     fullName: classNotebookPageSource
     langs:
@@ -35,9 +37,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.clientUrl
-    summary: >-
-      For EACH ITEM in the collection: The client url of the page. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The client url of the page. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clientUrl
     fullName: clientUrl
     langs:
@@ -49,9 +52,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.contents
-    summary: >-
-      For EACH ITEM in the collection: The collection of PageContent objects on the page. Read only \[ [API set:
-      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The collection of PageContent objects on the page. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: contents
     fullName: contents
     langs:
@@ -63,9 +67,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.id
-    summary: >-
-      For EACH ITEM in the collection: Gets the ID of the page. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the ID of the page. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -79,8 +84,10 @@ items:
   - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.inkAnalysisOrNull
     summary: >-
       For EACH ITEM in the collection: Text interpretation for the ink on the page. Returns null if there is no ink
-      analysis information. Read only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+      analysis information. Read only.
+
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkAnalysisOrNull
     fullName: inkAnalysisOrNull
     langs:
@@ -92,9 +99,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.InkAnalysisLoadOptions
   - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.pageLevel
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets the indentation level of the page. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the indentation level of the page.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageLevel
     fullName: pageLevel
     langs:
@@ -106,9 +114,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.parentSection
-    summary: >-
-      For EACH ITEM in the collection: Gets the section that contains the page. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the section that contains the page.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentSection
     fullName: parentSection
     langs:
@@ -120,9 +129,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.SectionLoadOptions
   - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.title
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets the title of the page. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the title of the page.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: title
     fullName: title
     langs:
@@ -134,9 +144,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.webUrl
-    summary: >-
-      For EACH ITEM in the collection: The web url of the page. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The web url of the page. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: webUrl
     fullName: webUrl
     langs:

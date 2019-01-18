@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.CustomXmlPartCollectionLoadOptions
-    summary: >-
-      A collection of custom XML parts. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      A collection of custom XML parts.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.CustomXmlPartCollectionLoadOptions
     fullName: Excel.Interfaces.CustomXmlPartCollectionLoadOptions
     langs:
@@ -14,9 +15,10 @@ items:
       - excel.Excel.Interfaces.CustomXmlPartCollectionLoadOptions.id
       - excel.Excel.Interfaces.CustomXmlPartCollectionLoadOptions.namespaceUri
   - uid: excel.Excel.Interfaces.CustomXmlPartCollectionLoadOptions.id
-    summary: >-
-      For EACH ITEM in the collection: The custom XML part's ID. Read-only. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The custom XML part's ID. Read-only.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -28,9 +30,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.CustomXmlPartCollectionLoadOptions.namespaceUri
-    summary: >-
-      For EACH ITEM in the collection: The custom XML part's namespace URI. Read-only. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The custom XML part's namespace URI. Read-only.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: namespaceUri
     fullName: namespaceUri
     langs:

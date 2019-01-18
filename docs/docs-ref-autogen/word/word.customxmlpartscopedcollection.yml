@@ -3,6 +3,8 @@ items:
   - uid: word.Word.CustomXmlPartScopedCollection
     summary: >-
       Contains the collection of [Word.CustomXmlPart](xref:word.Word.CustomXmlPart) objects with a specific namespace.
+
+
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
@@ -43,7 +45,10 @@ items:
           - RequestContext
   - uid: word.Word.CustomXmlPartScopedCollection.getCount
     summary: >-
-      Gets the number of items in the collection. \[ [API set: WordApi BETA (PREVIEW
+      Gets the number of items in the collection.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: getCount()
@@ -59,7 +64,10 @@ items:
         description: ''
   - uid: word.Word.CustomXmlPartScopedCollection.getItem
     summary: >-
-      Gets a custom XML part based on its ID. Read only. \[ [API set: WordApi BETA (PREVIEW
+      Gets a custom XML part based on its ID. Read only.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: getItem(id)
@@ -81,7 +89,10 @@ items:
   - uid: word.Word.CustomXmlPartScopedCollection.getItemOrNullObject
     summary: >-
       Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist in the
-      collection. \[ [API set: WordApi BETA (PREVIEW
+      collection.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: getItemOrNullObject(id)
@@ -102,9 +113,11 @@ items:
             - string
   - uid: word.Word.CustomXmlPartScopedCollection.getOnlyItem
     summary: >-
-      If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error. \[
-      [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: getOnlyItem()
     fullName: getOnlyItem
@@ -120,6 +133,8 @@ items:
   - uid: word.Word.CustomXmlPartScopedCollection.getOnlyItemOrNullObject
     summary: >-
       If the collection contains exactly one item, this method returns it. Otherwise, this method returns a null object.
+
+
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true

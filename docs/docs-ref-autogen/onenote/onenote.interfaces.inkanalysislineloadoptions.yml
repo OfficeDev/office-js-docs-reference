@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions
-    summary: >-
-      Represents ink analysis data for an identified text line formed by ink strokes. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents ink analysis data for an identified text line formed by ink strokes.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Interfaces.InkAnalysisLineLoadOptions
     fullName: OneNote.Interfaces.InkAnalysisLineLoadOptions
     langs:
@@ -15,9 +16,10 @@ items:
       - onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions.paragraph
       - onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions.words
   - uid: onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions.id
-    summary: >-
-      Gets the ID of the InkAnalysisLine object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the InkAnalysisLine object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -29,9 +31,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions.paragraph
-    summary: >-
-      Reference to the parent InkAnalysisParagraph. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Reference to the parent InkAnalysisParagraph.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
     fullName: paragraph
     langs:
@@ -43,9 +46,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.InkAnalysisParagraphLoadOptions
   - uid: onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions.words
-    summary: >-
-      Gets the ink analysis words in this ink analysis line. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ink analysis words in this ink analysis line.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: words
     fullName: words
     langs:

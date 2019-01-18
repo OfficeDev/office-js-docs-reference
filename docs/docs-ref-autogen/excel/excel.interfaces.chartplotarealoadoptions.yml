@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions
-    summary: >-
-      This object represents the attributes for a chart plotArea object. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      This object represents the attributes for a chart plotArea object.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ChartPlotAreaLoadOptions
     fullName: Excel.Interfaces.ChartPlotAreaLoadOptions
     langs:
@@ -22,9 +23,10 @@ items:
       - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.top
       - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.width
   - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.format
-    summary: >-
-      Represents the formatting of a chart plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the formatting of a chart plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -36,9 +38,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.height
-    summary: >-
-      Represents the height value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the height value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: height
     langs:
@@ -50,9 +53,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.insideHeight
-    summary: >-
-      Represents the insideHeight value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the insideHeight value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideHeight
     fullName: insideHeight
     langs:
@@ -64,9 +68,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.insideLeft
-    summary: >-
-      Represents the insideLeft value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the insideLeft value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideLeft
     fullName: insideLeft
     langs:
@@ -78,9 +83,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.insideTop
-    summary: >-
-      Represents the insideTop value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the insideTop value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideTop
     fullName: insideTop
     langs:
@@ -92,9 +98,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.insideWidth
-    summary: >-
-      Represents the insideWidth value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the insideWidth value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideWidth
     fullName: insideWidth
     langs:
@@ -106,9 +113,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.left
-    summary: >-
-      Represents the left value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the left value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -120,9 +128,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.position
-    summary: >-
-      Represents the position of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the position of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: position
     langs:
@@ -134,9 +143,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.top
-    summary: >-
-      Represents the top value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the top value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:
@@ -148,9 +158,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.width
-    summary: >-
-      Represents the width value of plotArea. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the width value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: width
     langs:

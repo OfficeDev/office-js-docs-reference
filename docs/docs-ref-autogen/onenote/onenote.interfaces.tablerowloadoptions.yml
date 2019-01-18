@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.TableRowLoadOptions
-    summary: >-
-      Represents a row in a table. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents a row in a table.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Interfaces.TableRowLoadOptions
     fullName: OneNote.Interfaces.TableRowLoadOptions
     langs:
@@ -17,9 +18,10 @@ items:
       - onenote.OneNote.Interfaces.TableRowLoadOptions.parentTable
       - onenote.OneNote.Interfaces.TableRowLoadOptions.rowIndex
   - uid: onenote.OneNote.Interfaces.TableRowLoadOptions.cellCount
-    summary: >-
-      Gets the number of cells in the row. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the number of cells in the row. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: cellCount
     fullName: cellCount
     langs:
@@ -31,9 +33,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.TableRowLoadOptions.cells
-    summary: >-
-      Gets the cells in the row. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the cells in the row.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: cells
     fullName: cells
     langs:
@@ -45,9 +48,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.TableRowLoadOptions.id
-    summary: >-
-      Gets the ID of the row. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the row. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -59,9 +63,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.TableRowLoadOptions.parentTable
-    summary: >-
-      Gets the parent table. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the parent table.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentTable
     fullName: parentTable
     langs:
@@ -73,9 +78,10 @@ items:
         type:
           - OneNote.Interfaces.TableLoadOptions
   - uid: onenote.OneNote.Interfaces.TableRowLoadOptions.rowIndex
-    summary: >-
-      Gets the index of the row in its parent table. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the index of the row in its parent table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rowIndex
     fullName: rowIndex
     langs:

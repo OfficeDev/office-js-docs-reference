@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.TableRow
-    summary: >-
-      Represents a row in a table. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents a row in a table.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.TableRow
     fullName: OneNote.TableRow
     langs:
@@ -26,9 +27,10 @@ items:
       - onenote.OneNote.TableRow.track
       - onenote.OneNote.TableRow.untrack
   - uid: onenote.OneNote.TableRow.cellCount
-    summary: >-
-      Gets the number of cells in the row. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the number of cells in the row. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: cellCount
     fullName: cellCount
     langs:
@@ -40,9 +42,10 @@ items:
         type:
           - number
   - uid: onenote.OneNote.TableRow.cells
-    summary: >-
-      Gets the cells in the row. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the cells in the row. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: cells
     fullName: cells
     langs:
@@ -54,9 +57,10 @@ items:
         type:
           - onenote.OneNote.TableCellCollection
   - uid: onenote.OneNote.TableRow.clear
-    summary: >-
-      Clears the contents of the row. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Clears the contents of the row.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clear()
     fullName: clear
     langs:
@@ -69,9 +73,10 @@ items:
           - void
         description: ''
   - uid: onenote.OneNote.TableRow.id
-    summary: >-
-      Gets the ID of the row. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the row. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -83,9 +88,10 @@ items:
         type:
           - string
   - uid: onenote.OneNote.TableRow.insertRowAsSibling
-    summary: >-
-      Inserts a row before or after the current row. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Inserts a row before or after the current row.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertRowAsSibling(insertLocation, values)'
     fullName: insertRowAsSibling
     langs:
@@ -281,9 +287,10 @@ items:
           type:
             - OneNote.Interfaces.TableRowLoadOptions
   - uid: onenote.OneNote.TableRow.parentTable
-    summary: >-
-      Gets the parent table. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the parent table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentTable
     fullName: parentTable
     langs:
@@ -295,9 +302,10 @@ items:
         type:
           - OneNote.Table
   - uid: onenote.OneNote.TableRow.rowIndex
-    summary: >-
-      Gets the index of the row in its parent table. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the index of the row in its parent table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rowIndex
     fullName: rowIndex
     langs:
@@ -309,9 +317,10 @@ items:
         type:
           - number
   - uid: onenote.OneNote.TableRow.setShadingColor
-    summary: >-
-      Sets the shading color of all cells in the row. The color code to set the cells to. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Sets the shading color of all cells in the row. The color code to set the cells to.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: setShadingColor(colorCode)
     fullName: setShadingColor
     langs:

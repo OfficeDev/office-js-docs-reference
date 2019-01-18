@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.InkAnalysisWordCollection
-    summary: >-
-      Represents a collection of InkAnalysisWord objects. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of InkAnalysisWord objects.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkAnalysisWordCollection
     fullName: OneNote.InkAnalysisWordCollection
     langs:
@@ -22,9 +23,10 @@ items:
       - onenote.OneNote.InkAnalysisWordCollection.track
       - onenote.OneNote.InkAnalysisWordCollection.untrack
   - uid: onenote.OneNote.InkAnalysisWordCollection.count
-    summary: >-
-      Returns the number of InkAnalysisWords in the page. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Returns the number of InkAnalysisWords in the page. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -36,9 +38,10 @@ items:
         type:
           - number
   - uid: onenote.OneNote.InkAnalysisWordCollection.getItem
-    summary: >-
-      Gets a InkAnalysisWord object by ID or by its index in the collection. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets a InkAnalysisWord object by ID or by its index in the collection. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: getItem
     langs:
@@ -56,9 +59,10 @@ items:
           type:
             - number | string
   - uid: onenote.OneNote.InkAnalysisWordCollection.getItemAt
-    summary: >-
-      Gets a InkAnalysisWord on its position in the collection. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets a InkAnalysisWord on its position in the collection.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:

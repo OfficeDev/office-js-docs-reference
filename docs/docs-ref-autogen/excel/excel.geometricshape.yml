@@ -3,7 +3,10 @@ items:
   - uid: excel.Excel.GeometricShape
     summary: >-
       Represents a geometric shape object inside a worksheet. A geometric shape can be a line, rectangle, block arrow,
-      equation, flowchart, start, banner, callout or basic shape in Excel. \[ [API set: ExcelApi BETA (PREVIEW
+      equation, flowchart, start, banner, callout or basic shape in Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.GeometricShape
@@ -37,7 +40,10 @@ items:
           - RequestContext
   - uid: excel.Excel.GeometricShape.id
     summary: >-
-      Represents the shape identifier. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the shape identifier. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: id
@@ -87,7 +93,10 @@ items:
             - excel.Excel.Interfaces.GeometricShapeLoadOptions
   - uid: excel.Excel.GeometricShape.shape
     summary: >-
-      Returns the shape object for the geometric shape. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the shape object for the geometric shape. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: shape

@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.TableSortLoadOptions
-    summary: >-
-      Manages sorting operations on Table objects. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Manages sorting operations on Table objects.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.TableSortLoadOptions
     fullName: Excel.Interfaces.TableSortLoadOptions
     langs:
@@ -15,9 +16,10 @@ items:
       - excel.Excel.Interfaces.TableSortLoadOptions.matchCase
       - excel.Excel.Interfaces.TableSortLoadOptions.method
   - uid: excel.Excel.Interfaces.TableSortLoadOptions.fields
-    summary: >-
-      Represents the current conditions used to last sort the table. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the current conditions used to last sort the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
     fullName: fields
     langs:
@@ -29,9 +31,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.TableSortLoadOptions.matchCase
-    summary: >-
-      Represents whether the casing impacted the last sort of the table. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents whether the casing impacted the last sort of the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: matchCase
     fullName: matchCase
     langs:
@@ -43,9 +46,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.TableSortLoadOptions.method
-    summary: >-
-      Represents Chinese character ordering method last used to sort the table. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents Chinese character ordering method last used to sort the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: method
     fullName: method
     langs:

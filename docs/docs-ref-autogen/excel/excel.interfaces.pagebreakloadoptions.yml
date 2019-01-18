@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.PageBreakLoadOptions
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: Excel.Interfaces.PageBreakLoadOptions
     fullName: Excel.Interfaces.PageBreakLoadOptions
     langs:
@@ -12,7 +16,10 @@ items:
       - excel.Excel.Interfaces.PageBreakLoadOptions.rowIndex
   - uid: excel.Excel.Interfaces.PageBreakLoadOptions.columnIndex
     summary: >-
-      Represents the column index for the page break \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the column index for the page break
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: columnIndex
@@ -27,7 +34,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.PageBreakLoadOptions.rowIndex
     summary: >-
-      Represents the row index for the page break \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the row index for the page break
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: rowIndex

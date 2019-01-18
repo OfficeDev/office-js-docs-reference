@@ -11,9 +11,10 @@ items:
     children:
       - onenote.OneNote.Interfaces.TableCellUpdateData.shadingColor
   - uid: onenote.OneNote.Interfaces.TableCellUpdateData.shadingColor
-    summary: >-
-      Gets and sets the shading color of the cell \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets and sets the shading color of the cell
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: shadingColor
     fullName: shadingColor
     langs:

@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.PageCollection
-    summary: >-
-      Represents a collection of pages. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of pages.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.PageCollection
     fullName: OneNote.PageCollection
     langs:
@@ -23,9 +24,10 @@ items:
       - onenote.OneNote.PageCollection.track
       - onenote.OneNote.PageCollection.untrack
   - uid: onenote.OneNote.PageCollection.count
-    summary: >-
-      Returns the number of pages in the collection. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Returns the number of pages in the collection. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -37,9 +39,10 @@ items:
         type:
           - number
   - uid: onenote.OneNote.PageCollection.getByTitle
-    summary: >-
-      Gets the collection of pages with the specified title. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the collection of pages with the specified title.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getByTitle(title)
     fullName: getByTitle
     langs:
@@ -99,9 +102,10 @@ items:
           type:
             - string
   - uid: onenote.OneNote.PageCollection.getItem
-    summary: >-
-      Gets a page by ID or by its index in the collection. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets a page by ID or by its index in the collection. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: getItem
     langs:
@@ -119,9 +123,10 @@ items:
           type:
             - number | string
   - uid: onenote.OneNote.PageCollection.getItemAt
-    summary: >-
-      Gets a page on its position in the collection. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets a page on its position in the collection.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:

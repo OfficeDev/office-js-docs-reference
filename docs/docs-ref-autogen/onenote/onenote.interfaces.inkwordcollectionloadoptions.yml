@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions
-    summary: >-
-      Represents a collection of InkWord objects. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of InkWord objects.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Interfaces.InkWordCollectionLoadOptions
     fullName: OneNote.Interfaces.InkWordCollectionLoadOptions
     langs:
@@ -16,9 +17,10 @@ items:
       - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.paragraph
       - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.wordAlternates
   - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.id
-    summary: >-
-      For EACH ITEM in the collection: Gets the ID of the InkWord object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the ID of the InkWord object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -30,9 +32,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.languageId
-    summary: >-
-      For EACH ITEM in the collection: The id of the recognized language in this ink word. Read-only. \[ [API set:
-      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The id of the recognized language in this ink word. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: languageId
     fullName: languageId
     langs:
@@ -44,9 +47,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.paragraph
-    summary: >-
-      For EACH ITEM in the collection: The parent paragraph containing the ink word. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The parent paragraph containing the ink word.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
     fullName: paragraph
     langs:
@@ -60,8 +64,10 @@ items:
   - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.wordAlternates
     summary: >-
       For EACH ITEM in the collection: The words that were recognized in this ink word, in order of likelihood.
-      Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+      Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: wordAlternates
     fullName: wordAlternates
     langs:

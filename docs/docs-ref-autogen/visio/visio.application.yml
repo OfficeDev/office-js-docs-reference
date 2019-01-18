@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Application
-    summary: >-
-      Represents the Application. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the Application.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Application
     fullName: Visio.Application
     langs:
@@ -72,9 +73,10 @@ items:
           type:
             - Visio.Interfaces.ApplicationLoadOptions
   - uid: visio.Visio.Application.showBorders
-    summary: >-
-      Show or hide the iFrame application borders. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Show or hide the iFrame application borders.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: showBorders
     fullName: showBorders
     langs:
@@ -86,9 +88,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Application.showToolbar
-    summary: >-
-      Sets the visibility of a specific toolbar in the application. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Sets the visibility of a specific toolbar in the application.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: 'showToolbar(id, show)'
     fullName: showToolbar
     langs:
@@ -110,9 +113,10 @@ items:
           type:
             - boolean
   - uid: visio.Visio.Application.showToolbars
-    summary: >-
-      Show or hide the standard toolbars. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Show or hide the standard toolbars.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: showToolbars
     fullName: showToolbars
     langs:

@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.FilterPivotHierarchyCollection
-    summary: >-
-      Represents a collection of FilterPivotHierarchy items associated with the PivotTable. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of FilterPivotHierarchy items associated with the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.FilterPivotHierarchyCollection
     fullName: Excel.FilterPivotHierarchyCollection
     langs:
@@ -25,8 +26,10 @@ items:
   - uid: excel.Excel.FilterPivotHierarchyCollection.add
     summary: >-
       Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column, or filter
-      axis, it will be removed from that location. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      axis, it will be removed from that location.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(pivotHierarchy)
     fullName: add
     langs:
@@ -58,9 +61,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.FilterPivotHierarchyCollection.getCount
-    summary: >-
-      Gets the number of pivot hierarchies in the collection. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the number of pivot hierarchies in the collection.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -73,9 +77,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.FilterPivotHierarchyCollection.getItem
-    summary: >-
-      Gets a FilterPivotHierarchy by its name or id. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a FilterPivotHierarchy by its name or id.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
     fullName: getItem
     langs:
@@ -93,9 +98,10 @@ items:
           type:
             - string
   - uid: excel.Excel.FilterPivotHierarchyCollection.getItemOrNullObject
-    summary: >-
-      Gets a FilterPivotHierarchy by name. If the FilterPivotHierarchy does not exist, will return a null object. \[
-      [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a FilterPivotHierarchy by name. If the FilterPivotHierarchy does not exist, will return a null object.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
     fullName: getItemOrNullObject
     langs:
@@ -161,9 +167,10 @@ items:
           type:
             - Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.FilterPivotHierarchyCollection.remove
-    summary: >-
-      Removes the PivotHierarchy from the current axis. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Removes the PivotHierarchy from the current axis.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: remove(filterPivotHierarchy)
     fullName: remove
     langs:

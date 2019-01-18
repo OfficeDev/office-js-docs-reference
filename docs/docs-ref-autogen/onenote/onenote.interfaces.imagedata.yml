@@ -18,9 +18,10 @@ items:
       - onenote.OneNote.Interfaces.ImageData.paragraph
       - onenote.OneNote.Interfaces.ImageData.width
   - uid: onenote.OneNote.Interfaces.ImageData.description
-    summary: >-
-      Gets or sets the description of the Image. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the description of the Image.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: description
     fullName: description
     langs:
@@ -32,9 +33,10 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Interfaces.ImageData.height
-    summary: >-
-      Gets or sets the height of the Image layout. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the height of the Image layout.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: height
     fullName: height
     langs:
@@ -46,9 +48,10 @@ items:
         type:
           - number
   - uid: onenote.OneNote.Interfaces.ImageData.hyperlink
-    summary: >-
-      Gets or sets the hyperlink of the Image. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the hyperlink of the Image.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: hyperlink
     fullName: hyperlink
     langs:
@@ -60,9 +63,10 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Interfaces.ImageData.id
-    summary: >-
-      Gets the ID of the Image object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the Image object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -74,9 +78,10 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Interfaces.ImageData.ocrData
-    summary: >-
-      Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language. \[
-      [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: ocrData
     fullName: ocrData
     langs:
@@ -90,8 +95,10 @@ items:
   - uid: onenote.OneNote.Interfaces.ImageData.pageContent
     summary: >-
       Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent.
-      This object defines the position of the Image on the page. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+      This object defines the position of the Image on the page. Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageContent
     fullName: pageContent
     langs:
@@ -105,8 +112,10 @@ items:
   - uid: onenote.OneNote.Interfaces.ImageData.paragraph
     summary: >-
       Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
-      Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+      Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
     fullName: paragraph
     langs:
@@ -118,9 +127,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.ParagraphData
   - uid: onenote.OneNote.Interfaces.ImageData.width
-    summary: >-
-      Gets or sets the width of the Image layout. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the width of the Image layout.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: width
     fullName: width
     langs:

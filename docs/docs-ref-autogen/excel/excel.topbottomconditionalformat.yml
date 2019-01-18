@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.TopBottomConditionalFormat
-    summary: >-
-      Represents a Top/Bottom conditional format. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a Top/Bottom conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TopBottomConditionalFormat
     fullName: Excel.TopBottomConditionalFormat
     langs:
@@ -35,8 +36,10 @@ items:
   - uid: excel.Excel.TopBottomConditionalFormat.format
     summary: >-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-      Read-only. \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -82,9 +85,10 @@ items:
           type:
             - excel.Excel.Interfaces.TopBottomConditionalFormatLoadOptions
   - uid: excel.Excel.TopBottomConditionalFormat.rule
-    summary: >-
-      The criteria of the Top/Bottom conditional format. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The criteria of the Top/Bottom conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: rule
     langs:

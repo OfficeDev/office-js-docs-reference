@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions
-    summary: >-
-      Represents a collection of all the styles. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of all the styles.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.StyleCollectionLoadOptions
     fullName: Excel.Interfaces.StyleCollectionLoadOptions
     langs:
@@ -37,8 +38,10 @@ items:
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.autoIndent
     summary: >-
       For EACH ITEM in the collection: Indicates if text is automatically indented when the text alignment in a cell is
-      set to equal distribution. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      set to equal distribution.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoIndent
     fullName: autoIndent
     langs:
@@ -52,7 +55,10 @@ items:
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.borders
     summary: >-
       For EACH ITEM in the collection: A Border collection of four Border objects that represent the style of the four
-      borders. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      borders.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
     fullName: borders
     langs:
@@ -64,9 +70,10 @@ items:
         type:
           - excel.Excel.Interfaces.RangeBorderCollectionLoadOptions
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.builtIn
-    summary: >-
-      For EACH ITEM in the collection: Indicates if the style is a built-in style. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Indicates if the style is a built-in style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: builtIn
     fullName: builtIn
     langs:
@@ -78,9 +85,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.fill
-    summary: >-
-      For EACH ITEM in the collection: The Fill of the style. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The Fill of the style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -92,9 +100,10 @@ items:
         type:
           - excel.Excel.Interfaces.RangeFillLoadOptions
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.font
-    summary: >-
-      For EACH ITEM in the collection: A Font object that represents the font of the style. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: A Font object that represents the font of the style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:
@@ -106,9 +115,10 @@ items:
         type:
           - excel.Excel.Interfaces.RangeFontLoadOptions
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.formulaHidden
-    summary: >-
-      For EACH ITEM in the collection: Indicates if the formula will be hidden when the worksheet is protected. \[ [API
-      set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Indicates if the formula will be hidden when the worksheet is protected.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaHidden
     fullName: formulaHidden
     langs:
@@ -122,8 +132,10 @@ items:
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.horizontalAlignment
     summary: >-
       For EACH ITEM in the collection: Represents the horizontal alignment for the style. See Excel.HorizontalAlignment
-      for details. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      for details.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: horizontalAlignment
     langs:
@@ -137,8 +149,10 @@ items:
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.includeAlignment
     summary: >-
       For EACH ITEM in the collection: Indicates if the style includes the AutoIndent, HorizontalAlignment,
-      VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeAlignment
     fullName: includeAlignment
     langs:
@@ -152,8 +166,10 @@ items:
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.includeBorder
     summary: >-
       For EACH ITEM in the collection: Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight
-      border properties. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      border properties.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeBorder
     fullName: includeBorder
     langs:
@@ -167,8 +183,10 @@ items:
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.includeFont
     summary: >-
       For EACH ITEM in the collection: Indicates if the style includes the Background, Bold, Color, ColorIndex,
-      FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties. \[ [API set:
-      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeFont
     fullName: includeFont
     langs:
@@ -180,9 +198,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.includeNumber
-    summary: >-
-      For EACH ITEM in the collection: Indicates if the style includes the NumberFormat property. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Indicates if the style includes the NumberFormat property.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeNumber
     fullName: includeNumber
     langs:
@@ -196,8 +215,10 @@ items:
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.includePatterns
     summary: >-
       For EACH ITEM in the collection: Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern,
-      PatternColor, and PatternColorIndex interior properties. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      PatternColor, and PatternColorIndex interior properties.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includePatterns
     fullName: includePatterns
     langs:
@@ -211,8 +232,10 @@ items:
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.includeProtection
     summary: >-
       For EACH ITEM in the collection: Indicates if the style includes the FormulaHidden and Locked protection
-      properties. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      properties.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeProtection
     fullName: includeProtection
     langs:
@@ -224,9 +247,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.indentLevel
-    summary: >-
-      For EACH ITEM in the collection: An integer from 0 to 250 that indicates the indent level for the style. \[ [API
-      set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: An integer from 0 to 250 that indicates the indent level for the style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: indentLevel
     fullName: indentLevel
     langs:
@@ -238,9 +262,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.locked
-    summary: >-
-      For EACH ITEM in the collection: Indicates if the object is locked when the worksheet is protected. \[ [API set:
-      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Indicates if the object is locked when the worksheet is protected.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: locked
     fullName: locked
     langs:
@@ -252,9 +277,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.name
-    summary: >-
-      For EACH ITEM in the collection: The name of the style. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The name of the style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -266,9 +292,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.numberFormat
-    summary: >-
-      For EACH ITEM in the collection: The format code of the number format for the style. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The format code of the number format for the style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: numberFormat
     langs:
@@ -280,9 +307,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.numberFormatLocal
-    summary: >-
-      For EACH ITEM in the collection: The localized format code of the number format for the style. \[ [API set:
-      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The localized format code of the number format for the style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormatLocal
     fullName: numberFormatLocal
     langs:
@@ -294,9 +322,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.readingOrder
-    summary: >-
-      For EACH ITEM in the collection: The reading order for the style. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The reading order for the style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readingOrder
     fullName: readingOrder
     langs:
@@ -308,9 +337,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.shrinkToFit
-    summary: >-
-      For EACH ITEM in the collection: Indicates if text automatically shrinks to fit in the available column width. \[
-      [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Indicates if text automatically shrinks to fit in the available column width.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shrinkToFit
     fullName: shrinkToFit
     langs:
@@ -322,9 +352,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.textOrientation
-    summary: >-
-      For EACH ITEM in the collection: The text orientation for the style. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The text orientation for the style.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
     fullName: textOrientation
     langs:
@@ -338,7 +369,10 @@ items:
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.verticalAlignment
     summary: >-
       For EACH ITEM in the collection: Represents the vertical alignment for the style. See Excel.VerticalAlignment for
-      details. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      details.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
     fullName: verticalAlignment
     langs:
@@ -350,9 +384,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.wrapText
-    summary: >-
-      For EACH ITEM in the collection: Indicates if Microsoft Excel wraps the text in the object. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Indicates if Microsoft Excel wraps the text in the object.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: wrapText
     fullName: wrapText
     langs:

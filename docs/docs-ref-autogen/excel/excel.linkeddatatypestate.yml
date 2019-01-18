@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.LinkedDataTypeState
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: Excel.LinkedDataTypeState
     fullName: Excel.LinkedDataTypeState
     langs:
@@ -14,6 +18,7 @@ items:
       - excel.Excel.LinkedDataTypeState.none
       - excel.Excel.LinkedDataTypeState.validLinkedData
   - uid: excel.Excel.LinkedDataTypeState.brokenLinkedData
+    isPreview: true
     name: brokenLinkedData
     fullName: brokenLinkedData
     langs:
@@ -21,6 +26,7 @@ items:
     type: field
     numericValue: '"BrokenLinkedData"'
   - uid: excel.Excel.LinkedDataTypeState.disambiguationNeeded
+    isPreview: true
     name: disambiguationNeeded
     fullName: disambiguationNeeded
     langs:
@@ -28,6 +34,7 @@ items:
     type: field
     numericValue: '"DisambiguationNeeded"'
   - uid: excel.Excel.LinkedDataTypeState.fetchingData
+    isPreview: true
     name: fetchingData
     fullName: fetchingData
     langs:
@@ -35,6 +42,7 @@ items:
     type: field
     numericValue: '"FetchingData"'
   - uid: excel.Excel.LinkedDataTypeState.none
+    isPreview: true
     name: none
     fullName: none
     langs:
@@ -42,6 +50,7 @@ items:
     type: field
     numericValue: '"None"'
   - uid: excel.Excel.LinkedDataTypeState.validLinkedData
+    isPreview: true
     name: validLinkedData
     fullName: validLinkedData
     langs:

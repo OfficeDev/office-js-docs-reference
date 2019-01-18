@@ -13,7 +13,10 @@ items:
       - excel.Excel.Interfaces.ImageData.id
   - uid: excel.Excel.Interfaces.ImageData.format
     summary: >-
-      Returns the format for the image. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the format for the image. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: format
@@ -28,7 +31,10 @@ items:
           - Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"
   - uid: excel.Excel.Interfaces.ImageData.id
     summary: >-
-      Represents the shape identifier for the image object. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the shape identifier for the image object. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: id

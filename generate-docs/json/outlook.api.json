@@ -182,7 +182,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]"
+                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -479,7 +486,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox Preview]"
+                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -774,7 +788,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " is also supported. [Api set: Mailbox 1.7]"
+                  "text": " is also supported."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -971,7 +992,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]"
+                  "text": "If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -1145,7 +1173,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets an object that provides methods for manipulating the body of an item. [Api set: Mailbox 1.1]"
+                  "text": "Gets an object that provides methods for manipulating the body of an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -1279,7 +1314,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved. [Api set: Mailbox 1.3]"
+                  "text": "Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -1387,7 +1429,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that an item was created. Read mode only. [Api set: Mailbox 1.0]"
+                  "text": "Gets the date and time that an item was created. Read mode only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -1496,7 +1545,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that an item was last modified. Read mode only. [Api set: Mailbox 1.0]"
+                  "text": "Gets the date and time that an item was last modified. Read mode only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -1645,7 +1701,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server. [Api set: Mailbox 1.0]"
+                  "text": "When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -1783,7 +1846,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the item's attachments as an array. [Api set: Mailbox Preview]"
+                  "text": "Gets the item's attachments as an array."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -1927,7 +1997,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365. [Api set: Mailbox Preview]"
+                  "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -2116,7 +2193,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject. [Api set: Mailbox 1.2]"
+                  "text": "To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.2]"
                 }
               ],
               "remarks": [
@@ -2231,7 +2315,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment. [Api set: Mailbox 1.0]"
+                  "text": "The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -2383,7 +2474,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server. [Api set: Mailbox 1.0]"
+                  "text": "The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -2510,7 +2608,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " of an appointment. The location property returns a Location object that provides methods that are used to get and set the location of the appointment. [Api set: Mailbox 1.0]"
+                  "text": " of an appointment. The location property returns a Location object that provides methods that are used to get and set the location of the appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -2619,7 +2724,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the notification messages for an item. [Api set: Mailbox 1.3]"
+                  "text": "Gets the notification messages for an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -2747,7 +2859,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " object that provides methods to get or update the optional attendees for a meeting. [Api set: Mailbox 1.0]"
+                  "text": " object that provides methods to get or update the optional attendees for a meeting."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -2882,7 +3001,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " object that provides a method to get the organizer value. [Api set: Mailbox 1.7]"
+                  "text": " object that provides a method to get the organizer value."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -3021,7 +3147,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series. [Api set: Mailbox 1.7]"
+                  "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -3178,7 +3311,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window. [Api set: Mailbox 1.1]"
+                  "text": "The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -3448,7 +3588,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " is also supported. [Api set: Mailbox 1.7]"
+                  "text": " is also supported."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -3590,7 +3737,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " object that provides methods to get or update the required attendees for a meeting. [Api set: Mailbox 1.0]"
+                  "text": " object that provides methods to get or update the required attendees for a meeting."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -3770,7 +3924,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "- Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]"
+                  "text": "- Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -3979,7 +4140,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests. [Api set: Mailbox 1.7]"
+                  "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -4136,7 +4304,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]"
+                  "text": "The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.2]"
                 }
               ],
               "remarks": [
@@ -4343,7 +4518,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server. [Api set: Mailbox 1.0]"
+                  "text": "When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -4466,7 +4648,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The subject property returns a Subject object that provides methods to get and set the subject. [Api set: Mailbox 1.0]"
+                  "text": "The subject property returns a Subject object that provides methods to get and set the subject."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -4575,7 +4764,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "The AppointmentForm namespace is used to access the currently selected appointment. [Api set: Mailbox 1.0]"
+              "text": "The AppointmentForm namespace is used to access the currently selected appointment."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -4681,7 +4877,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets an object that provides methods for manipulating the body of an item. [Api set: Mailbox 1.1]"
+                  "text": "Gets an object that provides methods for manipulating the body of an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -4832,7 +5035,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server. [Api set: Mailbox 1.0]"
+                  "text": "When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -4969,7 +5179,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The location property returns a Location object that provides methods that are used to get and set the location of the appointment. [Api set: Mailbox 1.0]"
+                  "text": "The location property returns a Location object that provides methods that are used to get and set the location of the appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -5107,7 +5324,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting. [Api set: Mailbox 1.0]"
+                  "text": "The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -5244,7 +5468,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The requiredAttendees property returns a Recipients object that provides methods to get or update the required attendees for a meeting. [Api set: Mailbox 1.0]"
+                  "text": "The requiredAttendees property returns a Recipients object that provides methods to get or update the required attendees for a meeting."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -5411,7 +5642,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server. [Api set: Mailbox 1.0]"
+                  "text": "When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -5555,7 +5793,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The subject property returns a Subject object that provides methods to get and set the subject. [Api set: Mailbox 1.0]"
+                  "text": "The subject property returns a Subject object that provides methods to get and set the subject."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -5804,7 +6049,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " is also supported. [Api set: Mailbox 1.7]"
+                  "text": " is also supported."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -5927,7 +6179,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the item's attachments as an array. [Api set: Mailbox 1.0]"
+                  "text": "Gets the item's attachments as an array."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -6057,7 +6316,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets an object that provides methods for manipulating the body of an item. [Api set: Mailbox 1.1]"
+                  "text": "Gets an object that provides methods for manipulating the body of an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -6166,7 +6432,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that an item was created. Read mode only. [Api set: Mailbox 1.0]"
+                  "text": "Gets the date and time that an item was created. Read mode only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -6275,7 +6548,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that an item was last modified. Read mode only. [Api set: Mailbox 1.0]"
+                  "text": "Gets the date and time that an item was last modified. Read mode only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -6455,7 +6735,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -6627,7 +6914,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -6749,7 +7043,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server. [Api set: Mailbox 1.0]"
+                  "text": "When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -6869,7 +7170,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -7006,7 +7314,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -7684,7 +7999,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -7842,7 +8164,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365. [Api set: Mailbox Preview]"
+                  "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -7995,7 +8324,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -8146,7 +8482,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -8265,7 +8608,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.6]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.6]"
                 }
               ],
               "remarks": [
@@ -8403,7 +8753,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.6]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.6]"
                 }
               ],
               "remarks": [
@@ -8518,7 +8875,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You can create custom message classes that extends a default message class, for example, a custom appointment message class IPM.Appointment.Contoso. [Api set: Mailbox 1.0]"
+                  "text": "You can create custom message classes that extends a default message class, for example, a custom appointment message class IPM.Appointment.Contoso."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -8869,7 +9233,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": ". [Api set: Mailbox 1.0]"
+                  "text": "."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -8985,7 +9356,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment. [Api set: Mailbox 1.0]"
+                  "text": "The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -9137,7 +9515,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server. [Api set: Mailbox 1.0]"
+                  "text": "The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -9252,7 +9637,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The location property returns a string that contains the location of the appointment. [Api set: Mailbox 1.0]"
+                  "text": "The location property returns a string that contains the location of the appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -9368,7 +9760,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by email programs. To get the subject of the item with the prefixes intact, use the subject property. [Api set: Mailbox 1.0]"
+                  "text": "The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by email programs. To get the subject of the item with the prefixes intact, use the subject property."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -9477,7 +9876,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the notification messages for an item. [Api set: Mailbox 1.3]"
+                  "text": "Gets the notification messages for an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -9612,7 +10018,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " object for each optional attendee to the meeting. [Api set: Mailbox 1.0]"
+                  "text": " object for each optional attendee to the meeting."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -9721,7 +10134,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the email address of the meeting organizer for a specified meeting. [Api set: Mailbox 1.0]"
+                  "text": "Gets the email address of the meeting organizer for a specified meeting."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -9860,7 +10280,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series. [Api set: Mailbox 1.7]"
+                  "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -10065,7 +10492,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " is also supported. [Api set: Mailbox 1.7]"
+                  "text": " is also supported."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -10214,7 +10648,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " object for each required attendee to the meeting. [Api set: Mailbox 1.0]"
+                  "text": " object for each required attendee to the meeting."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -10358,7 +10799,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests. [Api set: Mailbox 1.7]"
+                  "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -10474,7 +10922,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The start property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time. [Api set: Mailbox 1.0]"
+                  "text": "The start property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -10597,7 +11052,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:. [Api set: Mailbox 1.0]"
+                  "text": "The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -10706,7 +11168,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the content of an attachment on a message or appointment item. [Api set: Mailbox Preview]"
+              "text": "Represents the content of an attachment on a message or appointment item."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
             }
           ],
           "remarks": [
@@ -10889,7 +11358,14 @@
             },
             {
               "kind": "text",
-              "text": "An array of AttachmentDetail objects is returned as the attachments property of an Appointment or Message object. [Api set: Mailbox 1.0]"
+              "text": "An array of AttachmentDetail objects is returned as the attachments property of an Appointment or Message object."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -11121,7 +11597,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "The body object provides methods for adding and updating the content of the message or appointment. It is returned in the body property of the selected item. [Api set: Mailbox 1.1]"
+              "text": "The body object provides methods for adding and updating the content of the message or appointment. It is returned in the body property of the selected item."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.1]"
             }
           ],
           "remarks": [
@@ -11282,7 +11765,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine. [Api set: Mailbox 1.3]"
+                  "text": "When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -11434,7 +11924,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets a value that indicates whether the content is in HTML or text format. [Api set: Mailbox 1.1]"
+                  "text": "Gets a value that indicates whether the content is in HTML or text format."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -11597,7 +12094,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to \"LPNoLP\" (please see the Examples section for a sample). [Api set: Mailbox 1.1]"
+                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to \"LPNoLP\" (please see the Examples section for a sample)."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -11826,7 +12330,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to \"LPNoLP\" (please see the Examples section for a sample). [Api set: Mailbox 1.3]"
+                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to \"LPNoLP\" (please see the Examples section for a sample)."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -12083,7 +12594,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to \"LPNoLP\" (please see the Examples section for a sample). [Api set: Mailbox 1.1]"
+                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to \"LPNoLP\" (please see the Examples section for a sample)."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -12340,7 +12858,14 @@
             },
             {
               "kind": "text",
-              "text": " object that is returned by the getEntities or getEntitiesByType method of the active item. [Api set: Mailbox 1.0]"
+              "text": " object that is returned by the getEntities or getEntitiesByType method of the active item."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -12579,7 +13104,14 @@
             },
             {
               "kind": "text",
-              "text": "Because Outlook for Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot access their custom properties. [Api set: Mailbox 1.0]"
+              "text": "Because Outlook for Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot access their custom properties."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -12685,7 +13217,14 @@
                 "description": [
                   {
                     "kind": "text",
-                    "text": "The value of the specified custom property. [Api set: Mailbox 1.0]"
+                    "text": "The value of the specified custom property."
+                  },
+                  {
+                    "kind": "paragraph"
+                  },
+                  {
+                    "kind": "text",
+                    "text": "[Api set: Mailbox 1.0]"
                   }
                 ]
               },
@@ -12820,7 +13359,14 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The name of the property to be removed. [Api set: Mailbox 1.0]"
+                      "text": "The name of the property to be removed."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: Mailbox 1.0]"
                     }
                   ],
                   "isOptional": false,
@@ -12964,7 +13510,14 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. Any state data that is passed to the callback method. [Api set: Mailbox 1.0]"
+                      "text": "Optional. Any state data that is passed to the callback method."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: Mailbox 1.0]"
                     }
                   ],
                   "isOptional": true,
@@ -13141,7 +13694,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The set method creates a new property if the specified property does not already exist; otherwise, the existing value is replaced with the new value. The value parameter can be of any type; however, it is always passed to the server as a string. [Api set: Mailbox 1.0]"
+                  "text": "The set method creates a new property if the specified property does not already exist; otherwise, the existing value is replaced with the new value. The value parameter can be of any type; however, it is always passed to the server as a string."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -13249,7 +13809,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Provides diagnostic information to an Outlook add-in. [Api set: Mailbox 1.0]"
+              "text": "Provides diagnostic information to an Outlook add-in."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -13362,7 +13929,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "A string that can be one of the following values: Outlook, Mac Outlook, OutlookIOS, or OutlookWebApp. [Api set: Mailbox 1.0]"
+                  "text": "A string that can be one of the following values: Outlook, Mac Outlook, OutlookIOS, or OutlookWebApp."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -13478,7 +14052,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "If the mail add-in is running on the Outlook desktop client or Outlook for iOS, the hostVersion property returns the version of the host application, Outlook. In Outlook Web App, the property returns the version of the Exchange Server. An example is the string 15.0.468.0. [Api set: Mailbox 1.0]"
+                  "text": "If the mail add-in is running on the Outlook desktop client or Outlook for iOS, the hostVersion property returns the version of the host application, Outlook. In Outlook Web App, the property returns the version of the Exchange Server. An example is the string 15.0.468.0."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -13629,7 +14210,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "- ThreeColumns, which is displayed when the screen is wide. For example, Outlook Web App uses this view in a full screen window on a desktop computer. [Api set: Mailbox 1.0]"
+                  "text": "- ThreeColumns, which is displayed when the screen is wide. For example, Outlook Web App uses this view in a full screen window on a desktop computer."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -13738,7 +14326,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Provides the email properties of the sender or specified recipients of an email message or appointment. [Api set: Mailbox 1.0]"
+              "text": "Provides the email properties of the sender or specified recipients of an email message or appointment."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -13928,7 +14523,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents an email account on an Exchange Server. [Api set: Mailbox 1.0]"
+              "text": "Represents an email account on an Exchange Server."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -14118,7 +14720,14 @@
             },
             {
               "kind": "text",
-              "text": "When the property arrays are returned by the getEntitiesByType method, only the property for the specified entity contains data; all other properties are null. [Api set: Mailbox 1.0]"
+              "text": "When the property arrays are returned by the getEntitiesByType method, only the property for the specified entity contains data; all other properties are null."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -14371,7 +14980,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Provides a method to get the from value of a message in an Outlook add-in. [Api set: Mailbox 1.7]"
+              "text": "Provides a method to get the from value of a message in an Outlook add-in."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.7]"
             }
           ],
           "remarks": [
@@ -14548,7 +15164,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " in the asyncResult.value property. [Api set: Mailbox 1.7]"
+                  "text": " in the asyncResult.value property."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -14678,7 +15301,14 @@
             },
             {
               "kind": "text",
-              "text": "InternetHeaders are stored as key/value pairs on a per-item basis. [Api set: Mailbox Preview]"
+              "text": "InternetHeaders are stored as key/value pairs on a per-item basis."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
             }
           ],
           "remarks": [
@@ -14825,7 +15455,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Given an array of internet header names, this method returns a dictionary containing those internet headers and their values. If the add-in requests an x-header that is not available, that x-header will not be returned in the results. [Api set: Mailbox Preview]"
+                  "text": "Given an array of internet header names, this method returns a dictionary containing those internet headers and their values. If the add-in requests an x-header that is not available, that x-header will not be returned in the results."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -14989,7 +15626,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Given an array of internet header names, this method removes the specified headers from the internet header collection. [Api set: Mailbox Preview]"
+                  "text": "Given an array of internet header names, this method removes the specified headers from the internet header collection."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -15160,7 +15804,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The setAsync method creates a new header if the specified header does not already exist; otherwise, the existing value is replaced with the new value. [Api set: Mailbox Preview]"
+                  "text": "The setAsync method creates a new header if the specified header does not already exist; otherwise, the existing value is replaced with the new value."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -15288,7 +15939,14 @@
             },
             {
               "kind": "text",
-              "text": " property. [Api set: Mailbox 1.0]"
+              "text": " property."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -15490,7 +16148,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " is also supported. [Api set: Mailbox 1.7]"
+                  "text": " is also supported."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -15613,7 +16278,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets an object that provides methods for manipulating the body of an item. [Api set: Mailbox 1.1]"
+                  "text": "Gets an object that provides methods for manipulating the body of an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -15722,7 +16394,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that an item was created. Read mode only. [Api set: Mailbox 1.0]"
+                  "text": "Gets the date and time that an item was created. Read mode only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -15831,7 +16510,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that an item was last modified. Read mode only. [Api set: Mailbox 1.0]"
+                  "text": "Gets the date and time that an item was last modified. Read mode only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -16031,7 +16717,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " call. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window. [Api set: Mailbox Preview]"
+                  "text": " call. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -16224,7 +16917,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365. [Api set: Mailbox Preview]"
+                  "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -16385,7 +17085,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the properties of an appointment or message in a shared folder, calendar, or mailbox. [Api set: Mailbox Preview]"
+                  "text": "Gets the properties of an appointment or message in a shared folder, calendar, or mailbox."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -16515,7 +17222,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment. [Api set: Mailbox 1.0]"
+                  "text": "The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -16667,7 +17381,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server. [Api set: Mailbox 1.0]"
+                  "text": "The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -16775,7 +17496,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the notification messages for an item. [Api set: Mailbox 1.3]"
+                  "text": "Gets the notification messages for an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -16923,7 +17651,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series. [Api set: Mailbox 1.7]"
+                  "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -17128,7 +17863,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " is also supported. [Api set: Mailbox 1.7]"
+                  "text": " is also supported."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -17286,7 +18028,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests. [Api set: Mailbox 1.7]"
+                  "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -17515,7 +18264,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]"
+                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -17804,7 +18560,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox Preview]"
+                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -18077,7 +18840,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]"
+                  "text": "If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -18276,7 +19046,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved. [Api set: Mailbox 1.3]"
+                  "text": "Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -18413,7 +19190,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the item's attachments as an array. [Api set: Mailbox Preview]"
+                  "text": "Gets the item's attachments as an array."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -18557,7 +19341,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365. [Api set: Mailbox Preview]"
+                  "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -18734,7 +19525,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject. [Api set: Mailbox 1.2]"
+                  "text": "To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.2]"
                 }
               ],
               "remarks": [
@@ -18890,7 +19688,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window. [Api set: Mailbox 1.1]"
+                  "text": "The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -19135,7 +19940,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "- Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]"
+                  "text": "- Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -19357,7 +20169,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]"
+                  "text": "The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.2]"
                 }
               ],
               "remarks": [
@@ -19545,7 +20364,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The subject property returns a Subject object that provides methods to get and set the subject. [Api set: Mailbox 1.0]"
+                  "text": "The subject property returns a Subject object that provides methods to get and set the subject."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -19707,7 +20533,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the item's attachments as an array. [Api set: Mailbox 1.0]"
+                  "text": "Gets the item's attachments as an array."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -19901,7 +20734,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -20073,7 +20913,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -20192,7 +21039,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -20329,7 +21183,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -21007,7 +21868,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -21165,7 +22033,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365. [Api set: Mailbox Preview]"
+                  "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -21318,7 +22193,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -21469,7 +22351,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -21588,7 +22477,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.6]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.6]"
                 }
               ],
               "remarks": [
@@ -21726,7 +22622,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.6]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.6]"
                 }
               ],
               "remarks": [
@@ -21841,7 +22744,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You can create custom message classes that extends a default message class, for example, a custom appointment message class IPM.Appointment.Contoso. [Api set: Mailbox 1.0]"
+                  "text": "You can create custom message classes that extends a default message class, for example, a custom appointment message class IPM.Appointment.Contoso."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -22192,7 +23102,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": ". [Api set: Mailbox 1.0]"
+                  "text": "."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -22308,7 +23225,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by email programs. To get the subject of the item with the prefixes intact, use the subject property. [Api set: Mailbox 1.0]"
+                  "text": "The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by email programs. To get the subject of the item with the prefixes intact, use the subject property."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -22431,7 +23355,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:. [Api set: Mailbox 1.0]"
+                  "text": "The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -22540,7 +23471,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents a date and time in the local client's time zone. Read mode only. [Api set: Mailbox 1.0]"
+              "text": "Represents a date and time in the local client's time zone. Read mode only."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -22814,7 +23752,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Provides methods to get and set the location of a meeting in an Outlook add-in. [Api set: Mailbox 1.1]"
+              "text": "Provides methods to get and set the location of a meeting in an Outlook add-in."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.1]"
             }
           ],
           "remarks": [
@@ -22937,7 +23882,14 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. [Api set: Mailbox 1.1]"
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: Mailbox 1.1]"
                     }
                   ],
                   "isOptional": true,
@@ -23108,7 +24060,14 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. If setting the location fails, the asyncResult.error property will contain an error code. [Api set: Mailbox 1.1]"
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. If setting the location fails, the asyncResult.error property will contain an error code."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: Mailbox 1.1]"
                     }
                   ],
                   "isOptional": true,
@@ -23329,7 +24288,14 @@
             },
             {
               "kind": "text",
-              "text": "- userProfile: Provides information about the user in an Outlook add-in. [Api set: Mailbox 1.0]"
+              "text": "- userProfile: Provides information about the user in an Outlook add-in."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -23513,7 +24479,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " is also supported. [Api set: Mailbox 1.5]"
+                  "text": " is also supported."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.5]"
                 }
               ],
               "remarks": [
@@ -23664,7 +24637,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.3]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -23803,7 +24783,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "If the mail app is running in Outlook, the convertToLocalClientTime method will return a dictionary object with the values set to the client computer time zone. If the mail app is running in Outlook Web App, the convertToLocalClientTime method will return a dictionary object with the values set to the time zone specified in the EAC. [Api set: Mailbox 1.0]"
+                  "text": "If the mail app is running in Outlook, the convertToLocalClientTime method will return a dictionary object with the values set to the client computer time zone. If the mail app is running in Outlook Web App, the convertToLocalClientTime method will return a dictionary object with the values set to the time zone specified in the EAC."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -23947,7 +24934,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.3]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -24119,7 +25113,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The convertToUtcClientTime method converts a dictionary containing a local date and time to a Date object with the correct values for the local date and time. [Api set: Mailbox 1.0]"
+                  "text": "The convertToUtcClientTime method converts a dictionary containing a local date and time to a Date object with the correct values for the local date and time."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -24281,7 +25282,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": ". [Api set: Mailbox 1.0]"
+                  "text": "."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -24442,7 +25450,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -24602,7 +25617,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -24762,7 +25784,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -25035,7 +26064,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown. [Api set: Mailbox 1.6]"
+                  "text": "If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.6]"
                 }
               ],
               "remarks": [
@@ -25157,7 +26193,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In compose mode you must call the saveAsync method before you can use the ewsUrl member. Your app must have ReadWriteItem permissions to call the saveAsync method. [Api set: Mailbox 1.0]"
+                  "text": "In compose mode you must call the saveAsync method before you can use the ewsUrl member. Your app must have ReadWriteItem permissions to call the saveAsync method."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -25406,7 +26449,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible. [Api set: Mailbox 1.5]"
+                  "text": "Note: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.5]"
                 }
               ],
               "remarks": [
@@ -25600,7 +26650,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The token is provided as a string in the asyncResult.value property. [Api set: Mailbox 1.0]"
+                  "text": "The token is provided as a string in the asyncResult.value property."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -25963,7 +27020,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You do not need to set the encoding value when your mail app is running in Outlook on the web. You can determine whether your mail app is running in Outlook or Outlook on the web by using the mailbox.diagnostics.hostName property. You can determine what version of Outlook is running by using the mailbox.diagnostics.hostVersion property. [Api set: Mailbox 1.0]"
+                  "text": "You do not need to set the encoding value when your mail app is running in Outlook on the web. You can determine whether your mail app is running in Outlook or Outlook on the web by using the mailbox.diagnostics.hostName property. You can determine what version of Outlook is running by using the mailbox.diagnostics.hostVersion property."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -26149,7 +27213,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " is also supported. [Api set: Mailbox 1.5]"
+                  "text": " is also supported."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.5]"
                 }
               ],
               "remarks": [
@@ -26271,7 +27342,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "In compose mode you must call the saveAsync method before you can use the restUrl member. Your app must have ReadWriteItem permissions to call the saveAsync method. [Api set: Mailbox 1.5]"
+                  "text": "In compose mode you must call the saveAsync method before you can use the restUrl member. Your app must have ReadWriteItem permissions to call the saveAsync method."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.5]"
                 }
               ],
               "remarks": [
@@ -26502,7 +27580,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies the formatting that applies to an attachment's content. [Api set: Mailbox Preview]"
+                  "text": "Specifies the formatting that applies to an attachment's content."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -26597,7 +27682,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies whether an attachment was added to or removed from an item. [Api set: Mailbox Preview]"
+                  "text": "Specifies whether an attachment was added to or removed from an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -26705,7 +27797,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies an attachment's type. [Api set: Mailbox 1.0]"
+                  "text": "Specifies an attachment's type."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -26904,7 +28003,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies the day of week or type of day. [Api set: Mailbox 1.7]"
+                  "text": "Specifies the day of week or type of day."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -27051,7 +28157,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "This bit mask represents a delegate's permissions on a shared folder. [Api set: Mailbox Preview]"
+                  "text": "This bit mask represents a delegate's permissions on a shared folder."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -27211,7 +28324,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies an entity's type. [Api set: Mailbox 1.0]"
+                  "text": "Specifies an entity's type."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -27319,7 +28439,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies the notification message type for an appointment or message. [Api set: Mailbox 1.3]"
+                  "text": "Specifies the notification message type for an appointment or message."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -27414,7 +28541,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies an item's type. [Api set: Mailbox 1.0]"
+                  "text": "Specifies an item's type."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -27639,7 +28773,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies the month. [Api set: Mailbox 1.7]"
+                  "text": "Specifies the month."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -27813,7 +28954,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies the type of recipient for an appointment. [Api set: Mailbox 1.1]"
+                  "text": "Specifies the type of recipient for an appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -29650,7 +30798,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies the time zone applied to the recurrence. [Api set: Mailbox 1.7]"
+                  "text": "Specifies the time zone applied to the recurrence."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -29784,7 +30939,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies the type of recurrence. [Api set: Mailbox 1.7]"
+                  "text": "Specifies the type of recurrence."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -29918,7 +31080,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies the type of response to a meeting invitation. [Api set: Mailbox 1.0]"
+                  "text": "Specifies the type of response to a meeting invitation."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -30026,7 +31195,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies the version of the REST API that corresponds to a REST-formatted item ID. [Api set: Mailbox 1.3]"
+                  "text": "Specifies the version of the REST API that corresponds to a REST-formatted item ID."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -30160,7 +31336,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies the week of the month. [Api set: Mailbox 1.7]"
+                  "text": "Specifies the week of the month."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -30246,7 +31429,14 @@
             },
             {
               "kind": "text",
-              "text": "The start and end values are string representations of a Date object that contains the date and time at which the suggested meeting is to begin and end. The values are in the default time zone specified for the current user. [Api set: Mailbox 1.0]"
+              "text": "The start and end values are string representations of a Date object that contains the date and time at which the suggested meeting is to begin and end. The values are in the default time zone specified for the current user."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -30545,7 +31735,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You get null for this property for a new item in a compose form. If the user sets a subject and saves the item, the conversationId property will return a value. [Api set: Mailbox 1.0]"
+                  "text": "You get null for this property for a new item in a compose form. If the user sets a subject and saves the item, the conversationId property will return a value."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -30774,7 +31971,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox 1.1]"
+                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -31071,7 +32275,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session. [Api set: Mailbox Preview]"
+                  "text": "You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -31366,7 +32577,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " is also supported. [Api set: Mailbox 1.7]"
+                  "text": " is also supported."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -31563,7 +32781,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended. [Api set: Mailbox 1.1]"
+                  "text": "If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -31737,7 +32962,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message. [Api set: Mailbox 1.1]"
+                  "text": "Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -31846,7 +33078,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets an object that provides methods for manipulating the body of an item. [Api set: Mailbox 1.1]"
+                  "text": "Gets an object that provides methods for manipulating the body of an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -31981,7 +33220,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " object that provides methods to get or update the recipients on the Cc line of the message. [Api set: Mailbox 1.0]"
+                  "text": " object that provides methods to get or update the recipients on the Cc line of the message."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -32115,7 +33361,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved. [Api set: Mailbox 1.3]"
+                  "text": "Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -32237,7 +33490,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You get null for this property for a new item in a compose form. If the user sets a subject and saves the item, the conversationId property will return a value. [Api set: Mailbox 1.0]"
+                  "text": "You get null for this property for a new item in a compose form. If the user sets a subject and saves the item, the conversationId property will return a value."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -32346,7 +33606,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that an item was created. Read mode only. [Api set: Mailbox 1.0]"
+                  "text": "Gets the date and time that an item was created. Read mode only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -32455,7 +33722,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that an item was last modified. Read mode only. [Api set: Mailbox 1.0]"
+                  "text": "Gets the date and time that an item was last modified. Read mode only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -32585,7 +33859,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The from property returns a From object that provides a method to get the from value. [Api set: Mailbox 1.7]"
+                  "text": "The from property returns a From object that provides a method to get the from value."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -32723,7 +34004,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the item's attachments as an array. [Api set: Mailbox Preview]"
+                  "text": "Gets the item's attachments as an array."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -32867,7 +34155,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365. [Api set: Mailbox Preview]"
+                  "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -33044,7 +34339,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject. [Api set: Mailbox 1.2]"
+                  "text": "To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.2]"
                 }
               ],
               "remarks": [
@@ -33159,7 +34461,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet headers on the message. [Api set: Mailbox Preview]"
+                  "text": "The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet headers on the message."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -33275,7 +34584,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment. [Api set: Mailbox 1.0]"
+                  "text": "The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -33427,7 +34743,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server. [Api set: Mailbox 1.0]"
+                  "text": "The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -33535,7 +34858,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the notification messages for an item. [Api set: Mailbox 1.3]"
+                  "text": "Gets the notification messages for an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -33683,7 +35013,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series. [Api set: Mailbox 1.7]"
+                  "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -33840,7 +35177,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window. [Api set: Mailbox 1.1]"
+                  "text": "The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -34110,7 +35454,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " is also supported. [Api set: Mailbox 1.7]"
+                  "text": " is also supported."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -34304,7 +35655,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "- Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode. [Api set: Mailbox 1.3]"
+                  "text": "- Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -34513,7 +35871,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests. [Api set: Mailbox 1.7]"
+                  "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -34670,7 +36035,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content. [Api set: Mailbox 1.2]"
+                  "text": "The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.2]"
                 }
               ],
               "remarks": [
@@ -34858,7 +36230,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The subject property returns a Subject object that provides methods to get and set the subject. [Api set: Mailbox 1.0]"
+                  "text": "The subject property returns a Subject object that provides methods to get and set the subject."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -34974,7 +36353,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The to property returns a Recipients object that provides methods to get or update the recipients on the To line of the message. [Api set: Mailbox 1.0]"
+                  "text": "The to property returns a Recipients object that provides methods to get or update the recipients on the To line of the message."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -35223,7 +36609,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " is also supported. [Api set: Mailbox 1.7]"
+                  "text": " is also supported."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -35346,7 +36739,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the item's attachments as an array. [Api set: Mailbox 1.0]"
+                  "text": "Gets the item's attachments as an array."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -35476,7 +36876,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets an object that provides methods for manipulating the body of an item. [Api set: Mailbox 1.1]"
+                  "text": "Gets an object that provides methods for manipulating the body of an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -35592,7 +36999,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc line of the message. The collection is limited to a maximum of 100 members. [Api set: Mailbox 1.0]"
+                  "text": "The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc line of the message. The collection is limited to a maximum of 100 members."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -35715,7 +37129,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You get null for this property for a new item in a compose form. If the user sets a subject and saves the item, the conversationId property will return a value. [Api set: Mailbox 1.0]"
+                  "text": "You get null for this property for a new item in a compose form. If the user sets a subject and saves the item, the conversationId property will return a value."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -35824,7 +37245,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that an item was created. Read mode only. [Api set: Mailbox 1.0]"
+                  "text": "Gets the date and time that an item was created. Read mode only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -35933,7 +37361,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that an item was last modified. Read mode only. [Api set: Mailbox 1.0]"
+                  "text": "Gets the date and time that an item was last modified. Read mode only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -36113,7 +37548,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -36285,7 +37727,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -36414,7 +37863,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The from property returns an EmailAddressDetails object. [Api set: Mailbox 1.0]"
+                  "text": "The from property returns an EmailAddressDetails object."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -36534,7 +37990,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -36671,7 +38134,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -37349,7 +38819,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -37507,7 +38984,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365. [Api set: Mailbox Preview]"
+                  "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -37660,7 +39144,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -37811,7 +39302,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.0]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -37930,7 +39428,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.6]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.6]"
                 }
               ],
               "remarks": [
@@ -38068,7 +39573,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android. [Api set: Mailbox 1.6]"
+                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.6]"
                 }
               ],
               "remarks": [
@@ -38183,7 +39695,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet headers on the message. [Api set: Mailbox Preview]"
+                  "text": "The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet headers on the message."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -38292,7 +39811,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the Internet message identifier for an email message. [Api set: Mailbox 1.0]"
+                  "text": "Gets the Internet message identifier for an email message."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -38408,7 +39934,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You can create custom message classes that extends a default message class, for example, a custom appointment message class IPM.Appointment.Contoso. [Api set: Mailbox 1.0]"
+                  "text": "You can create custom message classes that extends a default message class, for example, a custom appointment message class IPM.Appointment.Contoso."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -38759,7 +40292,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": ". [Api set: Mailbox 1.0]"
+                  "text": "."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -38875,7 +40415,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment. [Api set: Mailbox 1.0]"
+                  "text": "The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -39027,7 +40574,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server. [Api set: Mailbox 1.0]"
+                  "text": "The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -39142,7 +40696,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by email programs. To get the subject of the item with the prefixes intact, use the subject property. [Api set: Mailbox 1.0]"
+                  "text": "The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by email programs. To get the subject of the item with the prefixes intact, use the subject property."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -39251,7 +40812,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the notification messages for an item. [Api set: Mailbox 1.3]"
+                  "text": "Gets the notification messages for an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -39399,7 +40967,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series. [Api set: Mailbox 1.7]"
+                  "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -39604,7 +41179,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " is also supported. [Api set: Mailbox 1.7]"
+                  "text": " is also supported."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -39741,7 +41323,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The recipientType property of the EmailAddressDetails object in the sender property is undefined. [Api set: Mailbox 1.0]"
+                  "text": "Note: The recipientType property of the EmailAddressDetails object in the sender property is undefined."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -39885,7 +41474,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests. [Api set: Mailbox 1.7]"
+                  "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -40008,7 +41604,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:. [Api set: Mailbox 1.0]"
+                  "text": "The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -40124,7 +41727,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To line of the message. The collection is limited to a maximum of 100 members. [Api set: Mailbox 1.0]"
+                  "text": "The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To line of the message. The collection is limited to a maximum of 100 members."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -40233,7 +41843,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "An array of NotificationMessageDetails objects are returned by the NotificationMessages.getAllAsync method. [Api set: Mailbox 1.3]"
+              "text": "An array of NotificationMessageDetails objects are returned by the NotificationMessages.getAllAsync method."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.3]"
             }
           ],
           "remarks": [
@@ -40444,7 +42061,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "The NotificationMessages object is returned as the notificationMessages property of an item. [Api set: Mailbox 1.3]"
+              "text": "The NotificationMessages object is returned as the notificationMessages property of an item."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.3]"
             }
           ],
           "remarks": [
@@ -40591,7 +42215,14 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. [Api set: Mailbox 1.3]"
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: Mailbox 1.3]"
                     }
                   ],
                   "isOptional": true,
@@ -40787,7 +42418,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns all keys and messages for an item. [Api set: Mailbox 1.3]"
+                  "text": "Returns all keys and messages for an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -40951,7 +42589,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Removes a notification message for an item. [Api set: Mailbox 1.3]"
+                  "text": "Removes a notification message for an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -41150,7 +42795,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "If a notification message with the specified key doesn't exist, replaceAsync will add the notification. [Api set: Mailbox 1.3]"
+                  "text": "If a notification message with the specified key doesn't exist, replaceAsync will add the notification."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.3]"
                 }
               ],
               "remarks": [
@@ -41289,7 +42941,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. This object provides a method to get the organizer value of an appointment in an Outlook add-in. [Api set: Mailbox 1.7]"
+              "text": "Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. This object provides a method to get the organizer value of an appointment in an Outlook add-in."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.7]"
             }
           ],
           "remarks": [
@@ -41452,7 +43111,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " in the asyncResult.value property. [Api set: Mailbox 1.7]"
+                  "text": " in the asyncResult.value property."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -41567,7 +43233,14 @@
             },
             {
               "kind": "text",
-              "text": "An array of PhoneNumber objects containing the phone numbers found in an email message is returned in the phoneNumbers property of the Entities object that is returned when you call the getEntities method on the selected item. [Api set: Mailbox 1.0]"
+              "text": "An array of PhoneNumber objects containing the phone numbers found in an email message is returned in the phoneNumbers property of the Entities object that is returned when you call the getEntities method on the selected item."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -41733,8 +43406,101 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
-          "remarks": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.1]"
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "html-tag",
+              "token": "<table>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "ReadItem"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "Compose"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</table>"
+            }
+          ],
           "isBeta": false,
           "isSealed": false,
           "members": {
@@ -41818,7 +43584,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "- EmailAddressDetails objects [Api set: Mailbox 1.1]"
+                  "text": "- EmailAddressDetails objects"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -42056,7 +43829,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " objects. [Api set: Mailbox 1.1]"
+                  "text": " objects."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -42293,7 +44073,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " objects [Api set: Mailbox 1.1]"
+                  "text": " objects"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -42467,7 +44254,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "The recurrence object provides methods to get and set the recurrence pattern of appointments but only get the recurrence pattern of meeting requests. It will have a dictionary with the following keys: seriesTime, recurrenceType, recurrenceProperties, and recurrenceTimeZone (optional). [Api set: Mailbox 1.7]"
+              "text": "The recurrence object provides methods to get and set the recurrence pattern of appointments but only get the recurrence pattern of meeting requests. It will have a dictionary with the following keys: seriesTime, recurrenceType, recurrenceProperties, and recurrenceTimeZone (optional)."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.7]"
             }
           ],
           "remarks": [
@@ -43088,7 +44882,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "This method returns the entire recurrence object for the appointment series. [Api set: Mailbox 1.7]"
+                  "text": "This method returns the entire recurrence object for the appointment series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -43211,7 +45012,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the properties of the recurring appointment series. [Api set: Mailbox 1.7]"
+                  "text": "Gets or sets the properties of the recurring appointment series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -43320,7 +45128,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the properties of the recurring appointment series. [Api set: Mailbox 1.7]"
+                  "text": "Gets or sets the properties of the recurring appointment series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -43429,7 +45244,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the type of the recurring appointment series. [Api set: Mailbox 1.7]"
+                  "text": "Gets or sets the type of the recurring appointment series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -43557,7 +45379,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " object enables you to manage the start and end dates of the recurring appointment series and the usual start and end times of instances. **This object is not in UTC time.** Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's time zone. [Api set: Mailbox 1.7]"
+                  "text": " object enables you to manage the start and end dates of the recurring appointment series and the usual start and end times of instances. **This object is not in UTC time.** Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's time zone."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -43714,7 +45543,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: setAsync should only be available for series items and not instance items. [Api set: Mailbox 1.7]"
+                  "text": "Note: setAsync should only be available for series items and not instance items."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -43872,7 +45708,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the properties of the recurrence. [Api set: Mailbox 1.7]"
+              "text": "Represents the properties of the recurrence."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.7]"
             }
           ],
           "remarks": [
@@ -44125,7 +45968,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the time zone of the recurrence. [Api set: Mailbox 1.7]"
+              "text": "Represents the time zone of the recurrence."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.7]"
             }
           ],
           "remarks": [
@@ -44524,7 +46374,14 @@
             },
             {
               "kind": "text",
-              "text": "Important: The RoamingSettings object is initialized from the persisted storage only when the add-in is first loaded. For task panes, this means that it is only initialized when the task pane first opens. If the task pane navigates to another page or reloads the current page, the in-memory object is reset to its initial values, even if your add-in has persisted changes. The persisted changes will not be available until the task pane is closed and reopened. [Api set: Mailbox 1.0]"
+              "text": "Important: The RoamingSettings object is initialized from the persisted storage only when the add-in is first loaded. For task panes, this means that it is only initialized when the task pane first opens. If the task pane navigates to another page or reloads the current page, the in-memory object is reset to its initial values, even if your add-in has persisted changes. The persisted changes will not be available until the task pane is closed and reopened."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -44652,7 +46509,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Retrieves the specified setting. [Api set: Mailbox 1.0]"
+                  "text": "Retrieves the specified setting."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -44777,7 +46641,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Removes the specified setting [Api set: Mailbox 1.0]"
+                  "text": "Removes the specified setting"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -44909,7 +46780,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are available the next time the add-in is used, use the saveAsync method. [Api set: Mailbox 1.0]"
+                  "text": "Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are available the next time the add-in is used, use the saveAsync method."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -45067,7 +46945,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Any changes made to settings using the set function will not be saved to the server until the saveAsync function is called. [Api set: Mailbox 1.0]"
+                  "text": "Any changes made to settings using the set function will not be saved to the server until the saveAsync function is called."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -45175,7 +47060,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "The SeriesTime object provides methods to get and set the dates and times of appointments in a recurring series and get the dates and times of meeting requests in a recurring series. [Api set: Mailbox 1.7]"
+              "text": "The SeriesTime object provides methods to get and set the dates and times of appointments in a recurring series and get the dates and times of meeting requests in a recurring series."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.7]"
             }
           ],
           "remarks": [
@@ -45285,7 +47177,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the duration in minutes of a usual instance in a recurring appointment series. [Api set: Mailbox 1.7]"
+                  "text": "Gets the duration in minutes of a usual instance in a recurring appointment series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -45411,7 +47310,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " date format: \"YYYY-MM-DD\" [Api set: Mailbox 1.7]"
+                  "text": " date format: \"YYYY-MM-DD\""
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -45537,7 +47443,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " format: \"THH:mm:ss:mmm\" [Api set: Mailbox 1.7]"
+                  "text": " format: \"THH:mm:ss:mmm\""
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -45663,7 +47576,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " date format: \"YYYY-MM-DD\" [Api set: Mailbox 1.7]"
+                  "text": " date format: \"YYYY-MM-DD\""
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -45789,7 +47709,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": " format: \"THH:mm:ss:mmm\" [Api set: Mailbox 1.7]"
+                  "text": " format: \"THH:mm:ss:mmm\""
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -45914,7 +47841,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets the duration of all appointments in a recurrence pattern. This will also change the end time of the recurrence pattern. [Api set: Mailbox 1.7]"
+                  "text": "Sets the duration of all appointments in a recurrence pattern. This will also change the end time of the recurrence pattern."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -46063,7 +47997,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets the end date of a recurring appointment series. [Api set: Mailbox 1.7]"
+                  "text": "Sets the end date of a recurring appointment series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -46280,7 +48221,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets the start date of a recurring appointment series. [Api set: Mailbox 1.7]"
+                  "text": "Sets the start date of a recurring appointment series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -46485,7 +48433,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence pattern is set (the item's time zone is used by default). [Api set: Mailbox 1.7]"
+                  "text": "Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence pattern is set (the item's time zone is used by default)."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [
@@ -46647,7 +48602,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the properties of an appointment or message in a shared folder, mailbox, or calendar. [Api set: Mailbox Preview]"
+              "text": "Represents the properties of an appointment or message in a shared folder, mailbox, or calendar."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
             }
           ],
           "remarks": [
@@ -46851,7 +48813,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Provides methods to get and set the subject of an appointment or message in an Outlook add-in. [Api set: Mailbox 1.1]"
+              "text": "Provides methods to get and set the subject of an appointment or message in an Outlook add-in."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.1]"
             }
           ],
           "remarks": [
@@ -47002,7 +48971,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or message. [Api set: Mailbox 1.1]"
+                  "text": "The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or message."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -47173,7 +49149,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The setAsync method starts an asynchronous call to the Exchange server to set the subject of an appointment or message. Setting the subject overwrites the current subject, but leaves any prefixes, such as \"Fwd:\" or \"Re:\" in place. [Api set: Mailbox 1.1]"
+                  "text": "The setAsync method starts an asynchronous call to the Exchange server to set the subject of an appointment or message. Setting the subject overwrites the current subject, but leaves any prefixes, such as \"Fwd:\" or \"Re:\" in place."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -47373,7 +49356,14 @@
             },
             {
               "kind": "text",
-              "text": " object that is returned when the getEntities or getEntitiesByType method is called on the active item. [Api set: Mailbox 1.0]"
+              "text": " object that is returned when the getEntities or getEntitiesByType method is called on the active item."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -47521,7 +49511,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "The Time object is returned as the start or end property of an appointment in compose mode. [Api set: Mailbox 1.1]"
+              "text": "The Time object is returned as the start or end property of an appointment in compose mode."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.1]"
             }
           ],
           "remarks": [
@@ -47672,7 +49669,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The date and time is provided as a Date object in the asyncResult.value property. The value is in Coordinated Universal Time (UTC). You can convert the UTC time to the local client time by using the convertToLocalClientTime method. [Api set: Mailbox 1.1]"
+                  "text": "The date and time is provided as a Date object in the asyncResult.value property. The value is in Coordinated Universal Time (UTC). You can convert the UTC time to the local client time by using the convertToLocalClientTime method."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -47850,7 +49854,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method. [Api set: Mailbox 1.1]"
+                  "text": "The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.1]"
                 }
               ],
               "remarks": [
@@ -48024,7 +50035,14 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone. [Api set: Mailbox 1.0]"
+              "text": "Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox 1.0]"
             }
           ],
           "remarks": [
@@ -48137,7 +50155,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater. [Api set: Mailbox 1.6]"
+                  "text": "Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.6]"
                 }
               ],
               "remarks": [
@@ -48508,7 +50533,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the user's display name. [Api set: Mailbox 1.0]"
+                  "text": "Gets the user's display name."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -48617,7 +50649,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the user's display name. [Api set: Mailbox 1.0]"
+                  "text": "Gets the user's display name."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -48726,7 +50765,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the user's SMTP email address. [Api set: Mailbox 1.0]"
+                  "text": "Gets the user's SMTP email address."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [

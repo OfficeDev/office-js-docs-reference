@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.HyperlinkCollection
-    summary: >-
-      Represents the Hyperlink Collection. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the Hyperlink Collection.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.HyperlinkCollection
     fullName: Visio.HyperlinkCollection
     langs:
@@ -19,9 +20,10 @@ items:
       - visio.Visio.HyperlinkCollection.load
       - visio.Visio.HyperlinkCollection.toJSON
   - uid: visio.Visio.HyperlinkCollection.getCount
-    summary: >-
-      Gets the number of hyperlinks. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Gets the number of hyperlinks.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -34,9 +36,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: visio.Visio.HyperlinkCollection.getItem
-    summary: >-
-      Gets a Hyperlink using its key (name or Id). \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Gets a Hyperlink using its key (name or Id).
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getItem(Key)
     fullName: getItem
     langs:

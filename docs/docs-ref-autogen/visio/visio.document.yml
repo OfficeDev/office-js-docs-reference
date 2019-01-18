@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Document
-    summary: >-
-      Represents the Document class. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the Document class.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Document
     fullName: Visio.Document
     langs:
@@ -28,9 +29,10 @@ items:
       - visio.Visio.Document.toJSON
       - visio.Visio.Document.view
   - uid: visio.Visio.Document.application
-    summary: >-
-      Represents a Visio application instance that contains this document. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents a Visio application instance that contains this document. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: application
     fullName: application
     langs:
@@ -42,9 +44,10 @@ items:
         type:
           - Visio.Application
   - uid: visio.Visio.Document.getActivePage
-    summary: >-
-      Returns the Active Page of the document. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Returns the Active Page of the document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getActivePage()
     fullName: getActivePage
     langs:
@@ -159,9 +162,10 @@ items:
           type:
             - visio.Visio.Interfaces.DocumentLoadOptions
   - uid: visio.Visio.Document.onDataRefreshComplete
-    summary: >-
-      Occurs when the data is refreshed in the diagram. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Occurs when the data is refreshed in the diagram.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: onDataRefreshComplete
     fullName: onDataRefreshComplete
     langs:
@@ -173,9 +177,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>
   - uid: visio.Visio.Document.onDocumentLoadComplete
-    summary: >-
-      Occurs when the Document is loaded, refreshed, or changed. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Occurs when the Document is loaded, refreshed, or changed.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: onDocumentLoadComplete
     fullName: onDocumentLoadComplete
     langs:
@@ -187,9 +192,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>
   - uid: visio.Visio.Document.onPageLoadComplete
-    summary: >-
-      Occurs when the page is finished loading. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Occurs when the page is finished loading.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: onPageLoadComplete
     fullName: onPageLoadComplete
     langs:
@@ -201,9 +207,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>
   - uid: visio.Visio.Document.onSelectionChanged
-    summary: >-
-      Occurs when the current selection of shapes changes. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Occurs when the current selection of shapes changes.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: onSelectionChanged
     fullName: onSelectionChanged
     langs:
@@ -215,9 +222,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Visio.SelectionChangedEventArgs>
   - uid: visio.Visio.Document.onShapeMouseEnter
-    summary: >-
-      Occurs when the user moves the mouse pointer into the bounding box of a shape. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Occurs when the user moves the mouse pointer into the bounding box of a shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: onShapeMouseEnter
     fullName: onShapeMouseEnter
     langs:
@@ -229,9 +237,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>
   - uid: visio.Visio.Document.onShapeMouseLeave
-    summary: >-
-      Occurs when the user moves the mouse out of the bounding box of a shape. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Occurs when the user moves the mouse out of the bounding box of a shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: onShapeMouseLeave
     fullName: onShapeMouseLeave
     langs:
@@ -243,9 +252,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>
   - uid: visio.Visio.Document.pages
-    summary: >-
-      Represents a collection of pages associated with the document. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents a collection of pages associated with the document. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: pages
     fullName: pages
     langs:
@@ -257,9 +267,10 @@ items:
         type:
           - Visio.PageCollection
   - uid: visio.Visio.Document.setActivePage
-    summary: >-
-      Set the Active Page of the document. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Set the Active Page of the document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: setActivePage(PageName)
     fullName: setActivePage
     langs:
@@ -293,9 +304,10 @@ items:
           type:
             - string
   - uid: visio.Visio.Document.startDataRefresh
-    summary: >-
-      Triggers the refresh of the data in the Diagram, for all pages. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Triggers the refresh of the data in the Diagram, for all pages.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: startDataRefresh()
     fullName: startDataRefresh
     langs:
@@ -335,9 +347,10 @@ items:
           - visio.Visio.Interfaces.DocumentData
         description: ''
   - uid: visio.Visio.Document.view
-    summary: >-
-      Returns the DocumentView object. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Returns the DocumentView object. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: view
     fullName: view
     langs:

@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.NotebookCollectionLoadOptions
-    summary: >-
-      Represents a collection of notebooks. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of notebooks.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Interfaces.NotebookCollectionLoadOptions
     fullName: OneNote.Interfaces.NotebookCollectionLoadOptions
     langs:
@@ -19,9 +20,10 @@ items:
       - onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.sectionGroups
       - onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.sections
   - uid: onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.baseUrl
-    summary: >-
-      For EACH ITEM in the collection: The url of the site that this notebook is located. Read only \[ [API set:
-      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The url of the site that this notebook is located. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: baseUrl
     fullName: baseUrl
     langs:
@@ -33,9 +35,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.clientUrl
-    summary: >-
-      For EACH ITEM in the collection: The client url of the notebook. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The client url of the notebook. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clientUrl
     fullName: clientUrl
     langs:
@@ -47,9 +50,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.id
-    summary: >-
-      For EACH ITEM in the collection: Gets the ID of the notebook. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the ID of the notebook. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -63,7 +67,10 @@ items:
   - uid: onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.isVirtual
     summary: >-
       For EACH ITEM in the collection: True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read
-      only \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+      only
+
+
+      \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: isVirtual
     fullName: isVirtual
     langs:
@@ -75,9 +82,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.name
-    summary: >-
-      For EACH ITEM in the collection: Gets the name of the notebook. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the name of the notebook. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -89,9 +97,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.sectionGroups
-    summary: >-
-      For EACH ITEM in the collection: The section groups in the notebook. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The section groups in the notebook. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sectionGroups
     fullName: sectionGroups
     langs:
@@ -103,9 +112,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.sections
-    summary: >-
-      For EACH ITEM in the collection: The the sections of the notebook. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: The the sections of the notebook. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sections
     fullName: sections
     langs:

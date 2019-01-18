@@ -25,8 +25,9 @@ items:
       - word.Word.Interfaces.TableUpdateData.verticalAlignment
       - word.Word.Interfaces.TableUpdateData.width
   - uid: word.Word.Interfaces.TableUpdateData.alignment
-    summary: >-
+    summary: |-
       Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
+
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: alignment
     fullName: alignment
@@ -39,9 +40,10 @@ items:
         type:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
   - uid: word.Word.Interfaces.TableUpdateData.font
-    summary: >-
-      Gets the font. Use this to get and set font name, size, color, and other properties. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the font. Use this to get and set font name, size, color, and other properties.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: font
     fullName: font
     langs:
@@ -53,9 +55,10 @@ items:
         type:
           - word.Word.Interfaces.FontUpdateData
   - uid: word.Word.Interfaces.TableUpdateData.headerRowCount
-    summary: >-
-      Gets and sets the number of header rows. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets and sets the number of header rows.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: headerRowCount
     fullName: headerRowCount
     langs:
@@ -69,8 +72,10 @@ items:
   - uid: word.Word.Interfaces.TableUpdateData.horizontalAlignment
     summary: >-
       Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right',
-      or 'Justified'. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      or 'Justified'.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: horizontalAlignment
     langs:
@@ -82,9 +87,10 @@ items:
         type:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
   - uid: word.Word.Interfaces.TableUpdateData.shadingColor
-    summary: >-
-      Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name. \[ [API set:
-      WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: shadingColor
     fullName: shadingColor
     langs:
@@ -98,8 +104,10 @@ items:
   - uid: word.Word.Interfaces.TableUpdateData.style
     summary: >-
       Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use
-      the built-in styles that are portable between locales, see the "styleBuiltIn" property. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: style
     fullName: style
     langs:
@@ -111,9 +119,10 @@ items:
         type:
           - string
   - uid: word.Word.Interfaces.TableUpdateData.styleBandedColumns
-    summary: >-
-      Gets and sets whether the table has banded columns. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets and sets whether the table has banded columns.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBandedColumns
     fullName: styleBandedColumns
     langs:
@@ -125,9 +134,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableUpdateData.styleBandedRows
-    summary: >-
-      Gets and sets whether the table has banded rows. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets and sets whether the table has banded rows.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBandedRows
     fullName: styleBandedRows
     langs:
@@ -141,8 +151,10 @@ items:
   - uid: word.Word.Interfaces.TableUpdateData.styleBuiltIn
     summary: >-
       Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable
-      between locales. To use custom styles or localized style names, see the "style" property. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      between locales. To use custom styles or localized style names, see the "style" property.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBuiltIn
     fullName: styleBuiltIn
     langs:
@@ -218,9 +230,10 @@ items:
             "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" |
             "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
   - uid: word.Word.Interfaces.TableUpdateData.styleFirstColumn
-    summary: >-
-      Gets and sets whether the table has a first column with a special style. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets and sets whether the table has a first column with a special style.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleFirstColumn
     fullName: styleFirstColumn
     langs:
@@ -232,9 +245,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableUpdateData.styleLastColumn
-    summary: >-
-      Gets and sets whether the table has a last column with a special style. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets and sets whether the table has a last column with a special style.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleLastColumn
     fullName: styleLastColumn
     langs:
@@ -246,9 +260,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableUpdateData.styleTotalRow
-    summary: >-
-      Gets and sets whether the table has a total (last) row with a special style. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets and sets whether the table has a total (last) row with a special style.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleTotalRow
     fullName: styleTotalRow
     langs:
@@ -260,9 +275,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableUpdateData.values
-    summary: >-
-      Gets and sets the text values in the table, as a 2D Javascript array. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets and sets the text values in the table, as a 2D Javascript array.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: values
     fullName: values
     langs:
@@ -274,9 +290,10 @@ items:
         type:
           - 'string[][]'
   - uid: word.Word.Interfaces.TableUpdateData.verticalAlignment
-    summary: >-
-      Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'. \[
-      [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: verticalAlignment
     fullName: verticalAlignment
     langs:
@@ -288,9 +305,10 @@ items:
         type:
           - Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
   - uid: word.Word.Interfaces.TableUpdateData.width
-    summary: >-
-      Gets and sets the width of the table in points. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets and sets the width of the table in points.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
     fullName: width
     langs:

@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartAxisPosition
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartAxisPosition
     fullName: Excel.ChartAxisPosition
     langs:

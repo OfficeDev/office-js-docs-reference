@@ -19,9 +19,10 @@ items:
       - onenote.OneNote.Interfaces.PageData.title
       - onenote.OneNote.Interfaces.PageData.webUrl
   - uid: onenote.OneNote.Interfaces.PageData.classNotebookPageSource
-    summary: >-
-      Gets the ClassNotebookPageSource to the page. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ClassNotebookPageSource to the page.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: classNotebookPageSource
     fullName: classNotebookPageSource
     langs:
@@ -33,9 +34,10 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Interfaces.PageData.clientUrl
-    summary: >-
-      The client url of the page. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      The client url of the page. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clientUrl
     fullName: clientUrl
     langs:
@@ -47,9 +49,10 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Interfaces.PageData.contents
-    summary: >-
-      The collection of PageContent objects on the page. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      The collection of PageContent objects on the page. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: contents
     fullName: contents
     langs:
@@ -61,9 +64,10 @@ items:
         type:
           - 'OneNote.Interfaces.PageContentData[]'
   - uid: onenote.OneNote.Interfaces.PageData.id
-    summary: >-
-      Gets the ID of the page. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the page. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -75,9 +79,10 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Interfaces.PageData.inkAnalysisOrNull
-    summary: >-
-      Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only. \[
-      [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkAnalysisOrNull
     fullName: inkAnalysisOrNull
     langs:
@@ -89,9 +94,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.InkAnalysisData
   - uid: onenote.OneNote.Interfaces.PageData.pageLevel
-    summary: >-
-      Gets or sets the indentation level of the page. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the indentation level of the page.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageLevel
     fullName: pageLevel
     langs:
@@ -103,9 +109,10 @@ items:
         type:
           - number
   - uid: onenote.OneNote.Interfaces.PageData.parentSection
-    summary: >-
-      Gets the section that contains the page. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the section that contains the page. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentSection
     fullName: parentSection
     langs:
@@ -117,9 +124,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.SectionData
   - uid: onenote.OneNote.Interfaces.PageData.title
-    summary: >-
-      Gets or sets the title of the page. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the title of the page.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: title
     fullName: title
     langs:
@@ -131,9 +139,10 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Interfaces.PageData.webUrl
-    summary: >-
-      The web url of the page. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      The web url of the page. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: webUrl
     fullName: webUrl
     langs:

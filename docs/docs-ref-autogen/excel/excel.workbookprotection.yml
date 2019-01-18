@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.WorkbookProtection
-    summary: >-
-      Represents the protection of a workbook object. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the protection of a workbook object.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorkbookProtection
     fullName: Excel.WorkbookProtection
     langs:
@@ -68,9 +69,10 @@ items:
           type:
             - excel.Excel.Interfaces.WorkbookProtectionLoadOptions
   - uid: excel.Excel.WorkbookProtection.protect
-    summary: >-
-      Protects a workbook. Fails if the workbook has been protected. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Protects a workbook. Fails if the workbook has been protected.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protect(password)
     fullName: protect
     langs:
@@ -117,9 +119,10 @@ items:
           type:
             - string
   - uid: excel.Excel.WorkbookProtection.protected
-    summary: >-
-      Indicates if the workbook is protected. Read-Only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Indicates if the workbook is protected. Read-Only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protected
     fullName: protected
     langs:
@@ -149,9 +152,10 @@ items:
           - excel.Excel.Interfaces.WorkbookProtectionData
         description: ''
   - uid: excel.Excel.WorkbookProtection.unprotect
-    summary: >-
-      Unprotects a workbook. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Unprotects a workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: unprotect(password)
     fullName: unprotect
     langs:

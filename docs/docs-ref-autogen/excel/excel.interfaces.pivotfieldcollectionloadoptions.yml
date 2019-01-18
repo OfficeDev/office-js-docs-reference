@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.PivotFieldCollectionLoadOptions
-    summary: >-
-      Represents a collection of all the PivotTables that are part of the workbook or worksheet. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of all the PivotTables that are part of the workbook or worksheet.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.PivotFieldCollectionLoadOptions
     fullName: Excel.Interfaces.PivotFieldCollectionLoadOptions
     langs:
@@ -16,9 +17,10 @@ items:
       - excel.Excel.Interfaces.PivotFieldCollectionLoadOptions.showAllItems
       - excel.Excel.Interfaces.PivotFieldCollectionLoadOptions.subtotals
   - uid: excel.Excel.Interfaces.PivotFieldCollectionLoadOptions.id
-    summary: >-
-      For EACH ITEM in the collection: Id of the PivotField. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Id of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -30,9 +32,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.PivotFieldCollectionLoadOptions.name
-    summary: >-
-      For EACH ITEM in the collection: Name of the PivotField. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Name of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -44,9 +47,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.PivotFieldCollectionLoadOptions.showAllItems
-    summary: >-
-      For EACH ITEM in the collection: Determines whether to show all items of the PivotField. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Determines whether to show all items of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAllItems
     fullName: showAllItems
     langs:
@@ -58,9 +62,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.PivotFieldCollectionLoadOptions.subtotals
-    summary: >-
-      For EACH ITEM in the collection: Subtotals of the PivotField. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Subtotals of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subtotals
     fullName: subtotals
     langs:

@@ -3,7 +3,10 @@ items:
   - uid: excel.Excel.CellBorder
     summary: >-
       Represents the returned single border properties of getCell/Row/ColumnProperties or border property input
-      parameter of setCell/Row/ColumnProperties. \[ [API set: ExcelApi BETA (PREVIEW
+      parameter of setCell/Row/ColumnProperties.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.CellBorder

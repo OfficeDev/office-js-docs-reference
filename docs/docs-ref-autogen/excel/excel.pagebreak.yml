@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PageBreak
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: Excel.PageBreak
     fullName: Excel.PageBreak
     langs:
@@ -19,7 +23,10 @@ items:
       - excel.Excel.PageBreak.toJSON
   - uid: excel.Excel.PageBreak.columnIndex
     summary: >-
-      Represents the column index for the page break \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the column index for the page break
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: columnIndex
@@ -36,6 +43,7 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
+    isPreview: true
     name: context
     fullName: context
     langs:
@@ -48,7 +56,10 @@ items:
           - RequestContext
   - uid: excel.Excel.PageBreak.delete
     summary: >-
-      Deletes a page break object. \[ [API set: ExcelApi BETA (PREVIEW
+      Deletes a page break object.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: delete()
@@ -64,7 +75,10 @@ items:
         description: ''
   - uid: excel.Excel.PageBreak.getStartCell
     summary: >-
-      Gets the first cell after the page break. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the first cell after the page break.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getStartCell()
@@ -96,6 +110,7 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
+    isPreview: true
     name: load(option)
     fullName: load
     langs:
@@ -114,7 +129,10 @@ items:
             - excel.Excel.Interfaces.PageBreakLoadOptions
   - uid: excel.Excel.PageBreak.rowIndex
     summary: >-
-      Represents the row index for the page break \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the row index for the page break
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: rowIndex
@@ -134,6 +152,7 @@ items:
       passed to it.) Whereas the original Excel.PageBreak object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.PageBreakData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
+    isPreview: true
     name: toJSON()
     fullName: toJSON
     langs:

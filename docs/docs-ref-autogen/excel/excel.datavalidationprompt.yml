@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.DataValidationPrompt
-    summary: >-
-      Represents the user prompt properties for the data validation. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the user prompt properties for the data validation.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataValidationPrompt
     fullName: Excel.DataValidationPrompt
     langs:
@@ -15,9 +16,10 @@ items:
       - excel.Excel.DataValidationPrompt.showPrompt
       - excel.Excel.DataValidationPrompt.title
   - uid: excel.Excel.DataValidationPrompt.message
-    summary: >-
-      Represents the message of the prompt. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the message of the prompt.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: message
     fullName: message
     langs:
@@ -29,9 +31,10 @@ items:
         type:
           - string
   - uid: excel.Excel.DataValidationPrompt.showPrompt
-    summary: >-
-      Determines whether or not to show the prompt when user selects a cell with data validation. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Determines whether or not to show the prompt when user selects a cell with data validation.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showPrompt
     fullName: showPrompt
     langs:
@@ -43,9 +46,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.DataValidationPrompt.title
-    summary: >-
-      Represents the title for the prompt. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the title for the prompt.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
     fullName: title
     langs:

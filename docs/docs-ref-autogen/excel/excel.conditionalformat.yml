@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalFormat
-    summary: >-
-      An object encapsulating a conditional format's range, format, rule, and other properties. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      An object encapsulating a conditional format's range, format, rule, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormat
     fullName: Excel.ConditionalFormat
     langs:
@@ -43,8 +44,10 @@ items:
   - uid: excel.Excel.ConditionalFormat.cellValue
     summary: >-
       Returns the cell value conditional format properties if the current conditional format is a CellValue type. For
-      example to format all cells between 5 and 10. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      example to format all cells between 5 and 10. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellValue
     fullName: cellValue
     langs:
@@ -74,8 +77,10 @@ items:
   - uid: excel.Excel.ConditionalFormat.cellValueOrNullObject
     summary: >-
       Returns the cell value conditional format properties if the current conditional format is a CellValue type. For
-      example to format all cells between 5 and 10. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      example to format all cells between 5 and 10. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellValueOrNullObject
     fullName: cellValueOrNullObject
     langs:
@@ -89,8 +94,10 @@ items:
   - uid: excel.Excel.ConditionalFormat.colorScale
     summary: >-
       Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
-      Read-only. \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: colorScale
     fullName: colorScale
     langs:
@@ -124,8 +131,10 @@ items:
   - uid: excel.Excel.ConditionalFormat.colorScaleOrNullObject
     summary: >-
       Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
-      Read-only. \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: colorScaleOrNullObject
     fullName: colorScaleOrNullObject
     langs:
@@ -151,9 +160,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ConditionalFormat.custom
-    summary: >-
-      Returns the custom conditional format properties if the current conditional format is a custom type. Read-only. \[
-      [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: custom
     fullName: custom
     langs:
@@ -180,9 +190,10 @@ items:
           });
           ```
   - uid: excel.Excel.ConditionalFormat.customOrNullObject
-    summary: >-
-      Returns the custom conditional format properties if the current conditional format is a custom type. Read-only. \[
-      [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: customOrNullObject
     fullName: customOrNullObject
     langs:
@@ -194,9 +205,10 @@ items:
         type:
           - excel.Excel.CustomConditionalFormat
   - uid: excel.Excel.ConditionalFormat.dataBar
-    summary: >-
-      Returns the data bar properties if the current conditional format is a data bar. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the data bar properties if the current conditional format is a data bar. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataBar
     fullName: dataBar
     langs:
@@ -223,9 +235,10 @@ items:
           });
           ```
   - uid: excel.Excel.ConditionalFormat.dataBarOrNullObject
-    summary: >-
-      Returns the data bar properties if the current conditional format is a data bar. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the data bar properties if the current conditional format is a data bar. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataBarOrNullObject
     fullName: dataBarOrNullObject
     langs:
@@ -237,9 +250,10 @@ items:
         type:
           - excel.Excel.DataBarConditionalFormat
   - uid: excel.Excel.ConditionalFormat.delete
-    summary: >-
-      Deletes this conditional format. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Deletes this conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: delete
     langs:
@@ -254,8 +268,10 @@ items:
   - uid: excel.Excel.ConditionalFormat.getRange
     summary: >-
       Returns the range the conditonal format is applied to. Throws an error if the conditional format is applied to
-      multiple ranges. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      multiple ranges. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
     fullName: getRange
     langs:
@@ -300,8 +316,10 @@ items:
   - uid: excel.Excel.ConditionalFormat.getRangeOrNullObject
     summary: >-
       Returns the range the conditonal format is applied to, or a null object if the conditional format is applied to
-      multiple ranges. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      multiple ranges. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRangeOrNullObject()
     fullName: getRangeOrNullObject
     langs:
@@ -316,6 +334,8 @@ items:
   - uid: excel.Excel.ConditionalFormat.getRanges
     summary: >-
       Returns the RangeAreas, comprising one or more rectangular ranges, the conditonal format is applied to. Read-only.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -331,8 +351,9 @@ items:
           - excel.Excel.RangeAreas
         description: ''
   - uid: excel.Excel.ConditionalFormat.iconSet
-    summary: >-
+    summary: |-
       Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
+
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: iconSet
     fullName: iconSet
@@ -389,8 +410,9 @@ items:
           });
           ```
   - uid: excel.Excel.ConditionalFormat.iconSetOrNullObject
-    summary: >-
+    summary: |-
       Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
+
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: iconSetOrNullObject
     fullName: iconSetOrNullObject
@@ -403,9 +425,10 @@ items:
         type:
           - excel.Excel.IconSetConditionalFormat
   - uid: excel.Excel.ConditionalFormat.id
-    summary: >-
-      The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only. \[ [API set:
-      ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -451,9 +474,10 @@ items:
           type:
             - excel.Excel.Interfaces.ConditionalFormatLoadOptions
   - uid: excel.Excel.ConditionalFormat.preset
-    summary: >-
-      Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details. \[
-      [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: preset
     fullName: preset
     langs:
@@ -481,9 +505,10 @@ items:
           });
           ```
   - uid: excel.Excel.ConditionalFormat.presetOrNullObject
-    summary: >-
-      Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details. \[
-      [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: presetOrNullObject
     fullName: presetOrNullObject
     langs:
@@ -500,8 +525,10 @@ items:
       Changing this also changes other conditional formats' priorities, to allow for a contiguous priority order. Use a
       negative priority to begin from the back. Priorities greater than than bounds will get and set to the maximum (or
       minimum if negative) priority. Also note that if you change the priority, you have to re-fetch a new copy of the
-      object at that new priority location if you want to make further changes to it. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      object at that new priority location if you want to make further changes to it. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: priority
     fullName: priority
     langs:
@@ -515,8 +542,10 @@ items:
   - uid: excel.Excel.ConditionalFormat.stopIfTrue
     summary: >-
       If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
-      Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: stopIfTrue
     fullName: stopIfTrue
     langs:
@@ -530,8 +559,10 @@ items:
   - uid: excel.Excel.ConditionalFormat.textComparison
     summary: >-
       Returns the specific text conditional format properties if the current conditional format is a text type. For
-      example to format cells matching the word "Text". Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      example to format cells matching the word "Text". Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textComparison
     fullName: textComparison
     langs:
@@ -561,8 +592,10 @@ items:
   - uid: excel.Excel.ConditionalFormat.textComparisonOrNullObject
     summary: >-
       Returns the specific text conditional format properties if the current conditional format is a text type. For
-      example to format cells matching the word "Text". Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      example to format cells matching the word "Text". Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textComparisonOrNullObject
     fullName: textComparisonOrNullObject
     langs:
@@ -594,8 +627,10 @@ items:
   - uid: excel.Excel.ConditionalFormat.topBottom
     summary: >-
       Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type. For
-      example to format the top 10% or bottom 10 items. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      example to format the top 10% or bottom 10 items. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: topBottom
     fullName: topBottom
     langs:
@@ -609,8 +644,10 @@ items:
   - uid: excel.Excel.ConditionalFormat.topBottomOrNullObject
     summary: >-
       Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type. For
-      example to format the top 10% or bottom 10 items. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      example to format the top 10% or bottom 10 items. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: topBottomOrNullObject
     fullName: topBottomOrNullObject
     langs:
@@ -622,9 +659,10 @@ items:
         type:
           - excel.Excel.TopBottomConditionalFormat
   - uid: excel.Excel.ConditionalFormat.type
-    summary: >-
-      A type of conditional format. Only one can be set at a time. Read-only. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      A type of conditional format. Only one can be set at a time. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.SectionLoadOptions
-    summary: >-
-      Represents a OneNote section. Sections can contain pages. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents a OneNote section. Sections can contain pages.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Interfaces.SectionLoadOptions
     fullName: OneNote.Interfaces.SectionLoadOptions
     langs:
@@ -22,9 +23,10 @@ items:
       - onenote.OneNote.Interfaces.SectionLoadOptions.parentSectionGroupOrNull
       - onenote.OneNote.Interfaces.SectionLoadOptions.webUrl
   - uid: onenote.OneNote.Interfaces.SectionLoadOptions.clientUrl
-    summary: >-
-      The client url of the section. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      The client url of the section. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clientUrl
     fullName: clientUrl
     langs:
@@ -36,9 +38,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.SectionLoadOptions.id
-    summary: >-
-      Gets the ID of the section. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the section. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -50,9 +53,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.SectionLoadOptions.isEncrypted
-    summary: >-
-      True if this section is encrypted with a password. Read only \[ [API set: OneNoteApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      True if this section is encrypted with a password. Read only
+
+      \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: isEncrypted
     fullName: isEncrypted
     langs:
@@ -64,9 +68,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.SectionLoadOptions.isLocked
-    summary: >-
-      True if this section is locked. Read only \[ [API set: OneNoteApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      True if this section is locked. Read only
+
+      \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: isLocked
     fullName: isLocked
     langs:
@@ -78,9 +83,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.SectionLoadOptions.name
-    summary: >-
-      Gets the name of the section. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the name of the section. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -92,9 +98,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.SectionLoadOptions.notebook
-    summary: >-
-      Gets the notebook that contains the section. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the notebook that contains the section.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: notebook
     fullName: notebook
     langs:
@@ -106,9 +113,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.NotebookLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionLoadOptions.pages
-    summary: >-
-      The collection of pages in the section. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      The collection of pages in the section. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pages
     fullName: pages
     langs:
@@ -122,8 +130,10 @@ items:
   - uid: onenote.OneNote.Interfaces.SectionLoadOptions.parentSectionGroup
     summary: >-
       Gets the section group that contains the section. Throws ItemNotFound if the section is a direct child of the
-      notebook. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+      notebook.
+
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentSectionGroup
     fullName: parentSectionGroup
     langs:
@@ -135,8 +145,9 @@ items:
         type:
           - onenote.OneNote.Interfaces.SectionGroupLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionLoadOptions.parentSectionGroupOrNull
-    summary: >-
+    summary: |-
       Gets the section group that contains the section. Returns null if the section is a direct child of the notebook.
+
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentSectionGroupOrNull
     fullName: parentSectionGroupOrNull
@@ -149,9 +160,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.SectionGroupLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionLoadOptions.webUrl
-    summary: >-
-      The web url of the page. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      The web url of the page. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: webUrl
     fullName: webUrl
     langs:

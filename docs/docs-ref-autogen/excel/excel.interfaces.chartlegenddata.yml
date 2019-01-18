@@ -20,9 +20,10 @@ items:
       - excel.Excel.Interfaces.ChartLegendData.visible
       - excel.Excel.Interfaces.ChartLegendData.width
   - uid: excel.Excel.Interfaces.ChartLegendData.format
-    summary: >-
-      Represents the formatting of a chart legend, which includes fill and font formatting. Read-only. \[ [API set:
-      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -34,9 +35,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartLegendFormatData
   - uid: excel.Excel.Interfaces.ChartLegendData.height
-    summary: >-
-      Represents the height, in points, of the legend on the chart. Null if legend is not visible. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the height, in points, of the legend on the chart. Null if legend is not visible.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: height
     langs:
@@ -48,9 +50,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.ChartLegendData.left
-    summary: >-
-      Represents the left, in points, of a chart legend. Null if legend is not visible. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the left, in points, of a chart legend. Null if legend is not visible.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -62,9 +65,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.ChartLegendData.legendEntries
-    summary: >-
-      Represents a collection of legendEntries in the legend. Read-only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of legendEntries in the legend. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: legendEntries
     fullName: legendEntries
     langs:
@@ -76,9 +80,10 @@ items:
         type:
           - 'Excel.Interfaces.ChartLegendEntryData[]'
   - uid: excel.Excel.Interfaces.ChartLegendData.overlay
-    summary: >-
-      Boolean value for whether the chart legend should overlap with the main body of the chart. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Boolean value for whether the chart legend should overlap with the main body of the chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlay
     fullName: overlay
     langs:
@@ -90,9 +95,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartLegendData.position
-    summary: >-
-      Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details. \[ [API set:
-      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: position
     langs:
@@ -104,9 +110,10 @@ items:
         type:
           - Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
   - uid: excel.Excel.Interfaces.ChartLegendData.showShadow
-    summary: >-
-      Represents if the legend has a shadow on the chart. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents if the legend has a shadow on the chart.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
     fullName: showShadow
     langs:
@@ -118,9 +125,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartLegendData.top
-    summary: >-
-      Represents the top of a chart legend. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the top of a chart legend.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:
@@ -132,9 +140,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.ChartLegendData.visible
-    summary: >-
-      A boolean value the represents the visibility of a ChartLegend object. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      A boolean value the represents the visibility of a ChartLegend object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:
@@ -146,9 +155,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartLegendData.width
-    summary: >-
-      Represents the width, in points, of the legend on the chart. Null if legend is not visible. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the width, in points, of the legend on the chart. Null if legend is not visible.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: width
     langs:

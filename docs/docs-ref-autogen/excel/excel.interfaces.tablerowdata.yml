@@ -12,9 +12,10 @@ items:
       - excel.Excel.Interfaces.TableRowData.index
       - excel.Excel.Interfaces.TableRowData.values
   - uid: excel.Excel.Interfaces.TableRowData.index
-    summary: >-
-      Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only. \[ [API set:
-      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
     fullName: index
     langs:
@@ -28,8 +29,10 @@ items:
   - uid: excel.Excel.Interfaces.TableRowData.values
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
-      Cells that contain an error will return the error string. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Cells that contain an error will return the error string.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: values
     langs:

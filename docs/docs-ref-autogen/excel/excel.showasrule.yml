@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShowAsRule
+    summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ShowAsRule
     fullName: Excel.ShowAsRule
     langs:
@@ -12,8 +13,9 @@ items:
       - excel.Excel.ShowAsRule.baseItem
       - excel.Excel.ShowAsRule.calculation
   - uid: excel.Excel.ShowAsRule.baseField
-    summary: >-
+    summary: |-
       The base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.
+
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: baseField
     fullName: baseField
@@ -26,9 +28,10 @@ items:
         type:
           - excel.Excel.PivotField
   - uid: excel.Excel.ShowAsRule.baseItem
-    summary: >-
-      The base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null. \[
-      [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: baseItem
     fullName: baseItem
     langs:
@@ -70,9 +73,10 @@ items:
           });
           ```
   - uid: excel.Excel.ShowAsRule.calculation
-    summary: >-
-      The ShowAs Calculation to use for the Data PivotField. See Excel.ShowAsCalculation for Details. \[ [API set:
-      ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The ShowAs Calculation to use for the Data PivotField. See Excel.ShowAsCalculation for Details.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculation
     fullName: calculation
     langs:

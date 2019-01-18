@@ -31,7 +31,10 @@ items:
       - excel.Excel.Interfaces.PageLayoutData.zoom
   - uid: excel.Excel.Interfaces.PageLayoutData.blackAndWhite
     summary: >-
-      Gets or sets the worksheet's black and white print option. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets or sets the worksheet's black and white print option.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: blackAndWhite
@@ -46,7 +49,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.PageLayoutData.bottomMargin
     summary: >-
-      Gets or sets the worksheet's bottom page margin to use for printing in points. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets or sets the worksheet's bottom page margin to use for printing in points.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: bottomMargin
@@ -62,7 +68,10 @@ items:
   - uid: excel.Excel.Interfaces.PageLayoutData.centerHorizontally
     summary: >-
       Gets or sets the worksheet's center horizontally flag. This flag determines whether the worksheet will be centered
-      horizontally when it's printed. \[ [API set: ExcelApi BETA (PREVIEW
+      horizontally when it's printed.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: centerHorizontally
@@ -78,7 +87,10 @@ items:
   - uid: excel.Excel.Interfaces.PageLayoutData.centerVertically
     summary: >-
       Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered
-      vertically when it's printed. \[ [API set: ExcelApi BETA (PREVIEW
+      vertically when it's printed.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: centerVertically
@@ -93,8 +105,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.PageLayoutData.draftMode
     summary: >-
-      Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics. \[ [API set:
-      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: draftMode
     fullName: draftMode
@@ -108,8 +123,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.PageLayoutData.firstPageNumber
     summary: >-
-      Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering. \[ [API set:
-      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: firstPageNumber
     fullName: firstPageNumber
@@ -123,7 +141,10 @@ items:
           - number | ""
   - uid: excel.Excel.Interfaces.PageLayoutData.footerMargin
     summary: >-
-      Gets or sets the worksheet's footer margin, in points, for use when printing. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets or sets the worksheet's footer margin, in points, for use when printing.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: footerMargin
@@ -138,7 +159,10 @@ items:
           - number
   - uid: excel.Excel.Interfaces.PageLayoutData.headerMargin
     summary: >-
-      Gets or sets the worksheet's header margin, in points, for use when printing. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets or sets the worksheet's header margin, in points, for use when printing.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: headerMargin
@@ -153,7 +177,10 @@ items:
           - number
   - uid: excel.Excel.Interfaces.PageLayoutData.headersFooters
     summary: >-
-      Header and footer configuration for the worksheet. \[ [API set: ExcelApi BETA (PREVIEW
+      Header and footer configuration for the worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: headersFooters
@@ -168,7 +195,10 @@ items:
           - excel.Excel.Interfaces.HeaderFooterGroupData
   - uid: excel.Excel.Interfaces.PageLayoutData.leftMargin
     summary: >-
-      Gets or sets the worksheet's left margin, in points, for use when printing. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets or sets the worksheet's left margin, in points, for use when printing.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: leftMargin
@@ -183,7 +213,10 @@ items:
           - number
   - uid: excel.Excel.Interfaces.PageLayoutData.orientation
     summary: >-
-      Gets or sets the worksheet's orientation of the page. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets or sets the worksheet's orientation of the page.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: orientation
@@ -198,7 +231,10 @@ items:
           - Excel.PageOrientation | "Portrait" | "Landscape"
   - uid: excel.Excel.Interfaces.PageLayoutData.paperSize
     summary: >-
-      Gets or sets the worksheet's paper size of the page. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets or sets the worksheet's paper size of the page.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: paperSize
@@ -225,8 +261,11 @@ items:
             "FanfoldStdGerman" | "FanfoldLegalGerman"
   - uid: excel.Excel.Interfaces.PageLayoutData.printComments
     summary: >-
-      Gets or sets whether the worksheet's comments should be displayed when printing. \[ [API set: ExcelApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Gets or sets whether the worksheet's comments should be displayed when printing.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: printComments
     fullName: printComments
@@ -240,7 +279,10 @@ items:
           - Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace"
   - uid: excel.Excel.Interfaces.PageLayoutData.printErrors
     summary: >-
-      Gets or sets the worksheet's print errors option. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets or sets the worksheet's print errors option.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: printErrors
@@ -256,6 +298,8 @@ items:
   - uid: excel.Excel.Interfaces.PageLayoutData.printGridlines
     summary: >-
       Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -271,9 +315,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.PageLayoutData.printHeadings
     summary: >-
-      Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not. \[
-      [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: printHeadings
     fullName: printHeadings
@@ -288,7 +334,10 @@ items:
   - uid: excel.Excel.Interfaces.PageLayoutData.printOrder
     summary: >-
       Gets or sets the worksheet's page print order option. This specifies the order to use for processing the page
-      number printed. \[ [API set: ExcelApi BETA (PREVIEW
+      number printed.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: printOrder
@@ -303,7 +352,10 @@ items:
           - Excel.PrintOrder | "DownThenOver" | "OverThenDown"
   - uid: excel.Excel.Interfaces.PageLayoutData.rightMargin
     summary: >-
-      Gets or sets the worksheet's right margin, in points, for use when printing. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets or sets the worksheet's right margin, in points, for use when printing.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: rightMargin
@@ -318,7 +370,10 @@ items:
           - number
   - uid: excel.Excel.Interfaces.PageLayoutData.topMargin
     summary: >-
-      Gets or sets the worksheet's top margin, in points, for use when printing. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets or sets the worksheet's top margin, in points, for use when printing.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: topMargin
@@ -333,7 +388,10 @@ items:
           - number
   - uid: excel.Excel.Interfaces.PageLayoutData.zoom
     summary: >-
-      Gets or sets the worksheet's print zoom options. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets or sets the worksheet's print zoom options.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: zoom

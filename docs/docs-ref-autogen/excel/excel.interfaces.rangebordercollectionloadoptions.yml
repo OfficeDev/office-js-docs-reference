@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.RangeBorderCollectionLoadOptions
-    summary: >-
-      Represents the border objects that make up the range border. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the border objects that make up the range border.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.RangeBorderCollectionLoadOptions
     fullName: Excel.Interfaces.RangeBorderCollectionLoadOptions
     langs:
@@ -19,8 +20,10 @@ items:
   - uid: excel.Excel.Interfaces.RangeBorderCollectionLoadOptions.color
     summary: >-
       For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form \#RRGGBB
-      (e.g. "FFA500") or as a named HTML color (e.g. "orange"). \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -34,8 +37,10 @@ items:
   - uid: excel.Excel.Interfaces.RangeBorderCollectionLoadOptions.sideIndex
     summary: >-
       For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See
-      Excel.BorderIndex for details. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Excel.BorderIndex for details. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sideIndex
     fullName: sideIndex
     langs:
@@ -49,8 +54,10 @@ items:
   - uid: excel.Excel.Interfaces.RangeBorderCollectionLoadOptions.style
     summary: >-
       For EACH ITEM in the collection: One of the constants of line style specifying the line style for the border. See
-      Excel.BorderLineStyle for details. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Excel.BorderLineStyle for details.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: style
     langs:
@@ -65,7 +72,10 @@ items:
     summary: >-
       For EACH ITEM in the collection: Returns or sets a double that lightens or darkens a color for Range Border, the
       value is between -1 (darkest) and 1 (brightest), with 0 for the original color. A null value indicates that the
-      border doesn't have uniform tintAndShade setting. \[ [API set: ExcelApi BETA (PREVIEW
+      border doesn't have uniform tintAndShade setting.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: tintAndShade
@@ -81,7 +91,10 @@ items:
   - uid: excel.Excel.Interfaces.RangeBorderCollectionLoadOptions.weight
     summary: >-
       For EACH ITEM in the collection: Specifies the weight of the border around a range. See Excel.BorderWeight for
-      details. \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      details.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
     fullName: weight
     langs:

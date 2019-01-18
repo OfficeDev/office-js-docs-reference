@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalDataBarRule
-    summary: >-
-      Represents a rule-type for a Data Bar. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a rule-type for a Data Bar.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalDataBarRule
     fullName: Excel.ConditionalDataBarRule
     langs:
@@ -14,9 +15,10 @@ items:
       - excel.Excel.ConditionalDataBarRule.formula
       - excel.Excel.ConditionalDataBarRule.type
   - uid: excel.Excel.ConditionalDataBarRule.formula
-    summary: >-
-      The formula, if required, to evaluate the databar rule on. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The formula, if required, to evaluate the databar rule on.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
     fullName: formula
     langs:
@@ -28,9 +30,10 @@ items:
         type:
           - string
   - uid: excel.Excel.ConditionalDataBarRule.type
-    summary: >-
-      The type of rule for the databar. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The type of rule for the databar.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

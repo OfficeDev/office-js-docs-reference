@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.TableCellLoadOptions
-    summary: >-
-      Represents a table cell in a Word document. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Represents a table cell in a Word document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.TableCellLoadOptions
     fullName: Word.Interfaces.TableCellLoadOptions
     langs:
@@ -23,9 +24,10 @@ items:
       - word.Word.Interfaces.TableCellLoadOptions.verticalAlignment
       - word.Word.Interfaces.TableCellLoadOptions.width
   - uid: word.Word.Interfaces.TableCellLoadOptions.body
-    summary: >-
-      Gets the body object of the cell. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the body object of the cell.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: body
     fullName: body
     langs:
@@ -37,9 +39,10 @@ items:
         type:
           - word.Word.Interfaces.BodyLoadOptions
   - uid: word.Word.Interfaces.TableCellLoadOptions.cellIndex
-    summary: >-
-      Gets the index of the cell in its row. Read-only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the index of the cell in its row. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: cellIndex
     fullName: cellIndex
     langs:
@@ -51,9 +54,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCellLoadOptions.columnWidth
-    summary: >-
-      Gets and sets the width of the cell's column in points. This is applicable to uniform tables. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: columnWidth
     fullName: columnWidth
     langs:
@@ -65,8 +69,9 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCellLoadOptions.horizontalAlignment
-    summary: >-
+    summary: |-
       Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: horizontalAlignment
@@ -79,9 +84,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCellLoadOptions.parentRow
-    summary: >-
-      Gets the parent row of the cell. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the parent row of the cell.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentRow
     fullName: parentRow
     langs:
@@ -93,9 +99,10 @@ items:
         type:
           - Word.Interfaces.TableRowLoadOptions
   - uid: word.Word.Interfaces.TableCellLoadOptions.parentTable
-    summary: >-
-      Gets the parent table of the cell. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the parent table of the cell.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
     fullName: parentTable
     langs:
@@ -107,9 +114,10 @@ items:
         type:
           - Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.TableCellLoadOptions.rowIndex
-    summary: >-
-      Gets the index of the cell's row in the table. Read-only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the index of the cell's row in the table. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: rowIndex
     fullName: rowIndex
     langs:
@@ -121,9 +129,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCellLoadOptions.shadingColor
-    summary: >-
-      Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name. \[
-      [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: shadingColor
     fullName: shadingColor
     langs:
@@ -135,9 +144,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCellLoadOptions.value
-    summary: >-
-      Gets and sets the text of the cell. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets and sets the text of the cell.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: value
     fullName: value
     langs:
@@ -149,9 +159,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCellLoadOptions.verticalAlignment
-    summary: >-
-      Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'. \[ [API set:
-      WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: verticalAlignment
     fullName: verticalAlignment
     langs:
@@ -163,9 +174,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCellLoadOptions.width
-    summary: >-
-      Gets the width of the cell in points. Read-only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the width of the cell in points. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
     fullName: width
     langs:

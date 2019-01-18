@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.CellPropertiesFontLoadOptions
     summary: >-
-      Represents which properties to load on the format.font object. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents which properties to load on the format.font object.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.CellPropertiesFontLoadOptions

@@ -12,7 +12,10 @@ items:
       - excel.Excel.Interfaces.ChartErrorBarsFormatData.line
   - uid: excel.Excel.Interfaces.ChartErrorBarsFormatData.line
     summary: >-
-      Represents chart line formatting. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents chart line formatting.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: line

@@ -12,8 +12,11 @@ items:
       - excel.Excel.Interfaces.SlicerItemUpdateData.isSelected
   - uid: excel.Excel.Interfaces.SlicerItemUpdateData.isSelected
     summary: >-
-      True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state. \[ [API
-      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: isSelected
     fullName: isSelected

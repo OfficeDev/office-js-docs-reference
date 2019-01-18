@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartAreaFormatLoadOptions
-    summary: >-
-      Encapsulates the format properties for the overall chart area. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Encapsulates the format properties for the overall chart area.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ChartAreaFormatLoadOptions
     fullName: Excel.Interfaces.ChartAreaFormatLoadOptions
     langs:
@@ -16,9 +17,10 @@ items:
       - excel.Excel.Interfaces.ChartAreaFormatLoadOptions.font
       - excel.Excel.Interfaces.ChartAreaFormatLoadOptions.roundedCorners
   - uid: excel.Excel.Interfaces.ChartAreaFormatLoadOptions.border
-    summary: >-
-      Represents the border format of chart area, which includes color, linestyle, and weight. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the border format of chart area, which includes color, linestyle, and weight.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: border
     langs:
@@ -31,8 +33,11 @@ items:
           - excel.Excel.Interfaces.ChartBorderLoadOptions
   - uid: excel.Excel.Interfaces.ChartAreaFormatLoadOptions.colorScheme
     summary: >-
-      Returns or sets an integer that represents the color scheme for the chart. Read/Write. \[ [API set: ExcelApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns or sets an integer that represents the color scheme for the chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: colorScheme
     fullName: colorScheme
@@ -45,9 +50,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartAreaFormatLoadOptions.font
-    summary: >-
-      Represents the font attributes (font name, font size, color, etc.) for the current object. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for the current object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:
@@ -60,7 +66,10 @@ items:
           - excel.Excel.Interfaces.ChartFontLoadOptions
   - uid: excel.Excel.Interfaces.ChartAreaFormatLoadOptions.roundedCorners
     summary: >-
-      True if the chart area of the chart has rounded corners. Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      True if the chart area of the chart has rounded corners. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: roundedCorners

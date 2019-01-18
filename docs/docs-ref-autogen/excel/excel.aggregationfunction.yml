@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.AggregationFunction
-    summary: >-
-      Aggregation Function for the Data Pivot Field. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Aggregation Function for the Data Pivot Field.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.AggregationFunction
     fullName: Excel.AggregationFunction
     langs:

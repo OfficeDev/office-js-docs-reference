@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Shape
-    summary: >-
-      Represents the Shape class. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the Shape class.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Shape
     fullName: Visio.Shape
     langs:
@@ -26,9 +27,10 @@ items:
       - visio.Visio.Shape.toJSON
       - visio.Visio.Shape.view
   - uid: visio.Visio.Shape.comments
-    summary: >-
-      Returns the Comments Collection. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Returns the Comments Collection. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: comments
     fullName: comments
     langs:
@@ -40,9 +42,10 @@ items:
         type:
           - Visio.CommentCollection
   - uid: visio.Visio.Shape.getBounds
-    summary: >-
-      Returns the BoundingBox object that specifies bounding box of the shape. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Returns the BoundingBox object that specifies bounding box of the shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getBounds()
     fullName: getBounds
     langs:
@@ -55,9 +58,10 @@ items:
           - OfficeExtension.ClientResult<Visio.BoundingBox>
         description: ''
   - uid: visio.Visio.Shape.hyperlinks
-    summary: >-
-      Returns the Hyperlinks collection for a Shape object. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Returns the Hyperlinks collection for a Shape object. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: hyperlinks
     fullName: hyperlinks
     langs:
@@ -69,9 +73,10 @@ items:
         type:
           - visio.Visio.HyperlinkCollection
   - uid: visio.Visio.Shape.id
-    summary: >-
-      Shape's identifier. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Shape's identifier. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: id
     fullName: id
     langs:
@@ -158,9 +163,10 @@ items:
           type:
             - Visio.Interfaces.ShapeLoadOptions
   - uid: visio.Visio.Shape.name
-    summary: >-
-      Shape's name. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Shape's name. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: name
     fullName: name
     langs:
@@ -172,9 +178,10 @@ items:
         type:
           - string
   - uid: visio.Visio.Shape.select
-    summary: >-
-      Returns true, if shape is selected. User can set true to select the shape explicitly. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Returns true, if shape is selected. User can set true to select the shape explicitly.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: select
     fullName: select
     langs:
@@ -186,9 +193,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Shape.shapeDataItems
-    summary: >-
-      Returns the Shape's Data Section. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Returns the Shape's Data Section. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: shapeDataItems
     fullName: shapeDataItems
     langs:
@@ -200,9 +208,10 @@ items:
         type:
           - visio.Visio.ShapeDataItemCollection
   - uid: visio.Visio.Shape.subShapes
-    summary: >-
-      Gets SubShape Collection. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Gets SubShape Collection. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: subShapes
     fullName: subShapes
     langs:
@@ -214,9 +223,10 @@ items:
         type:
           - Visio.ShapeCollection
   - uid: visio.Visio.Shape.text
-    summary: >-
-      Shape's text. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Shape's text. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: text
     fullName: text
     langs:
@@ -240,9 +250,10 @@ items:
           - Visio.Interfaces.ShapeData
         description: ''
   - uid: visio.Visio.Shape.view
-    summary: >-
-      Returns the view of the shape. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Returns the view of the shape. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: view
     fullName: view
     langs:

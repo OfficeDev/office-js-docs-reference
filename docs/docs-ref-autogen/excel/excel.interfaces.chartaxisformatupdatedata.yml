@@ -12,9 +12,10 @@ items:
       - excel.Excel.Interfaces.ChartAxisFormatUpdateData.font
       - excel.Excel.Interfaces.ChartAxisFormatUpdateData.line
   - uid: excel.Excel.Interfaces.ChartAxisFormatUpdateData.font
-    summary: >-
-      Represents the font attributes (font name, font size, color, etc.) for a chart axis element. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for a chart axis element.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:
@@ -26,9 +27,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartFontUpdateData
   - uid: excel.Excel.Interfaces.ChartAxisFormatUpdateData.line
-    summary: >-
-      Represents chart line formatting. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents chart line formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
     fullName: line
     langs:

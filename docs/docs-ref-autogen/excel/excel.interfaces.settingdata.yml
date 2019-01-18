@@ -12,9 +12,10 @@ items:
       - excel.Excel.Interfaces.SettingData.key
       - excel.Excel.Interfaces.SettingData.value
   - uid: excel.Excel.Interfaces.SettingData.key
-    summary: >-
-      Returns the key that represents the id of the Setting. Read-only. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the key that represents the id of the Setting. Read-only.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
     fullName: key
     langs:
@@ -26,9 +27,10 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.SettingData.value
-    summary: >-
-      Represents the value stored for this setting. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the value stored for this setting.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
     fullName: value
     langs:

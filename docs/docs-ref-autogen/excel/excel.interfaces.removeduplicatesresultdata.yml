@@ -13,7 +13,10 @@ items:
       - excel.Excel.Interfaces.RemoveDuplicatesResultData.uniqueRemaining
   - uid: excel.Excel.Interfaces.RemoveDuplicatesResultData.removed
     summary: >-
-      Number of duplicated rows removed by the operation. \[ [API set: ExcelApi BETA (PREVIEW
+      Number of duplicated rows removed by the operation.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: removed
@@ -28,7 +31,10 @@ items:
           - number
   - uid: excel.Excel.Interfaces.RemoveDuplicatesResultData.uniqueRemaining
     summary: >-
-      Number of remaining unique rows present in the resulting range. \[ [API set: ExcelApi BETA (PREVIEW
+      Number of remaining unique rows present in the resulting range.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: uniqueRemaining

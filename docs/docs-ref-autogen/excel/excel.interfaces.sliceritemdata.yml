@@ -15,7 +15,10 @@ items:
       - excel.Excel.Interfaces.SlicerItemData.name
   - uid: excel.Excel.Interfaces.SlicerItemData.hasData
     summary: >-
-      True if the slicer item has data. \[ [API set: ExcelApi BETA (PREVIEW
+      True if the slicer item has data.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: hasData
@@ -30,8 +33,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerItemData.isSelected
     summary: >-
-      True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state. \[ [API
-      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: isSelected
     fullName: isSelected
@@ -45,7 +51,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerItemData.key
     summary: >-
-      Represents the unique value representing the slicer item. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the unique value representing the slicer item.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: key
@@ -60,7 +69,10 @@ items:
           - string
   - uid: excel.Excel.Interfaces.SlicerItemData.name
     summary: >-
-      Represents the value displayed on UI. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the value displayed on UI.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: name

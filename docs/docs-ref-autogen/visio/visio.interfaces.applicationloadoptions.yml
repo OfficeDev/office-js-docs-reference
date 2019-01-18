@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Interfaces.ApplicationLoadOptions
-    summary: >-
-      Represents the Application. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the Application.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Interfaces.ApplicationLoadOptions
     fullName: Visio.Interfaces.ApplicationLoadOptions
     langs:
@@ -14,9 +15,10 @@ items:
       - visio.Visio.Interfaces.ApplicationLoadOptions.showBorders
       - visio.Visio.Interfaces.ApplicationLoadOptions.showToolbars
   - uid: visio.Visio.Interfaces.ApplicationLoadOptions.showBorders
-    summary: >-
-      Show or hide the iFrame application borders. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Show or hide the iFrame application borders.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: showBorders
     fullName: showBorders
     langs:
@@ -28,9 +30,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Interfaces.ApplicationLoadOptions.showToolbars
-    summary: >-
-      Show or hide the standard toolbars. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Show or hide the standard toolbars.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: showToolbars
     fullName: showToolbars
     langs:

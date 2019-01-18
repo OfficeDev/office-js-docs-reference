@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Comment
-    summary: >-
-      Represents the Comment. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the Comment.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Comment
     fullName: Visio.Comment
     langs:
@@ -19,9 +20,10 @@ items:
       - visio.Visio.Comment.text
       - visio.Visio.Comment.toJSON
   - uid: visio.Visio.Comment.author
-    summary: >-
-      A string that specifies the name of the author of the comment. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      A string that specifies the name of the author of the comment.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: author
     fullName: author
     langs:
@@ -33,9 +35,10 @@ items:
         type:
           - string
   - uid: visio.Visio.Comment.date
-    summary: >-
-      A string that specifies the date when the comment was created. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      A string that specifies the date when the comment was created.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: date
     fullName: date
     langs:
@@ -110,9 +113,10 @@ items:
           type:
             - Visio.Interfaces.CommentLoadOptions
   - uid: visio.Visio.Comment.text
-    summary: >-
-      A string that contains the comment text. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      A string that contains the comment text.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: text
     fullName: text
     langs:

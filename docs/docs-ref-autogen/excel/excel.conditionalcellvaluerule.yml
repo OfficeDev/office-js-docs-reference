@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalCellValueRule
-    summary: >-
-      Represents a cell value conditional format rule. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a cell value conditional format rule.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalCellValueRule
     fullName: Excel.ConditionalCellValueRule
     langs:
@@ -15,9 +16,10 @@ items:
       - excel.Excel.ConditionalCellValueRule.formula2
       - excel.Excel.ConditionalCellValueRule.operator
   - uid: excel.Excel.ConditionalCellValueRule.formula1
-    summary: >-
-      The formula, if required, to evaluate the conditional format rule on. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula1
     fullName: formula1
     langs:
@@ -45,9 +47,10 @@ items:
           });
           ```
   - uid: excel.Excel.ConditionalCellValueRule.formula2
-    summary: >-
-      The formula, if required, to evaluate the conditional format rule on. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula2
     fullName: formula2
     langs:
@@ -59,9 +62,10 @@ items:
         type:
           - string
   - uid: excel.Excel.ConditionalCellValueRule.operator
-    summary: >-
-      The operator of the text conditional format. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The operator of the text conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: operator
     fullName: operator
     langs:

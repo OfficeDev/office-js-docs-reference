@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.TableRowCollection
-    summary: >-
-      Contains a collection of TableRow objects. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Contains a collection of TableRow objects.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.TableRowCollection
     fullName: OneNote.TableRowCollection
     langs:
@@ -22,9 +23,10 @@ items:
       - onenote.OneNote.TableRowCollection.track
       - onenote.OneNote.TableRowCollection.untrack
   - uid: onenote.OneNote.TableRowCollection.count
-    summary: >-
-      Returns the number of table rows in this collection. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Returns the number of table rows in this collection. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -36,9 +38,10 @@ items:
         type:
           - number
   - uid: onenote.OneNote.TableRowCollection.getItem
-    summary: >-
-      Gets a table row object by ID or by its index in the collection. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets a table row object by ID or by its index in the collection. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: getItem
     langs:
@@ -56,9 +59,10 @@ items:
           type:
             - number | string
   - uid: onenote.OneNote.TableRowCollection.getItemAt
-    summary: >-
-      Gets a table row at its position in the collection. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets a table row at its position in the collection.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:

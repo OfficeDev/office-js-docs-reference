@@ -3,8 +3,10 @@ items:
   - uid: excel.Excel.DataValidationRule
     summary: >-
       Data validation rule contains different types of data validation. You can only use one of them at a time according
-      the Excel.DataValidationType. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      the Excel.DataValidationType.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DataValidationRule
     fullName: Excel.DataValidationRule
     langs:
@@ -20,9 +22,10 @@ items:
       - excel.Excel.DataValidationRule.time
       - excel.Excel.DataValidationRule.wholeNumber
   - uid: excel.Excel.DataValidationRule.custom
-    summary: >-
-      Custom data validation criteria. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Custom data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: custom
     fullName: custom
     langs:
@@ -34,9 +37,10 @@ items:
         type:
           - excel.Excel.CustomDataValidation
   - uid: excel.Excel.DataValidationRule.date
-    summary: >-
-      Date data validation criteria. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Date data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: date
     fullName: date
     langs:
@@ -48,9 +52,10 @@ items:
         type:
           - excel.Excel.DateTimeDataValidation
   - uid: excel.Excel.DataValidationRule.decimal
-    summary: >-
-      Decimal data validation criteria. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Decimal data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: decimal
     fullName: decimal
     langs:
@@ -62,9 +67,10 @@ items:
         type:
           - excel.Excel.BasicDataValidation
   - uid: excel.Excel.DataValidationRule.list
-    summary: >-
-      List data validation criteria. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      List data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: list
     fullName: list
     langs:
@@ -103,9 +109,10 @@ items:
           });
           ```
   - uid: excel.Excel.DataValidationRule.textLength
-    summary: >-
-      TextLength data validation criteria. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      TextLength data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textLength
     fullName: textLength
     langs:
@@ -117,9 +124,10 @@ items:
         type:
           - excel.Excel.BasicDataValidation
   - uid: excel.Excel.DataValidationRule.time
-    summary: >-
-      Time data validation criteria. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Time data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: time
     fullName: time
     langs:
@@ -131,9 +139,10 @@ items:
         type:
           - excel.Excel.DateTimeDataValidation
   - uid: excel.Excel.DataValidationRule.wholeNumber
-    summary: >-
-      WholeNumber data validation criteria. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      WholeNumber data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: wholeNumber
     fullName: wholeNumber
     langs:

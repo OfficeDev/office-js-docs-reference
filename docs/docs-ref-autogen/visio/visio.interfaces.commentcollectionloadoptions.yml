@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Interfaces.CommentCollectionLoadOptions
-    summary: >-
-      Represents the CommentCollection for a given Shape. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the CommentCollection for a given Shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Interfaces.CommentCollectionLoadOptions
     fullName: Visio.Interfaces.CommentCollectionLoadOptions
     langs:
@@ -15,9 +16,10 @@ items:
       - visio.Visio.Interfaces.CommentCollectionLoadOptions.date
       - visio.Visio.Interfaces.CommentCollectionLoadOptions.text
   - uid: visio.Visio.Interfaces.CommentCollectionLoadOptions.author
-    summary: >-
-      For EACH ITEM in the collection: A string that specifies the name of the author of the comment. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      For EACH ITEM in the collection: A string that specifies the name of the author of the comment.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: author
     fullName: author
     langs:
@@ -29,9 +31,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Interfaces.CommentCollectionLoadOptions.date
-    summary: >-
-      For EACH ITEM in the collection: A string that specifies the date when the comment was created. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      For EACH ITEM in the collection: A string that specifies the date when the comment was created.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: date
     fullName: date
     langs:
@@ -43,9 +46,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Interfaces.CommentCollectionLoadOptions.text
-    summary: >-
-      For EACH ITEM in the collection: A string that contains the comment text. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      For EACH ITEM in the collection: A string that contains the comment text.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: text
     fullName: text
     langs:

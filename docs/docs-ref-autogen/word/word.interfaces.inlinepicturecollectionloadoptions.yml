@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions
-    summary: >-
-      Contains a collection of [Word.InlinePicture](xref:word.Word.InlinePicture) objects. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Contains a collection of [Word.InlinePicture](xref:word.Word.InlinePicture) objects.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.InlinePictureCollectionLoadOptions
     fullName: Word.Interfaces.InlinePictureCollectionLoadOptions
     langs:
@@ -28,8 +29,10 @@ items:
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextDescription
     summary: >-
       For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the
-      inline image. \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      inline image.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: altTextDescription
     fullName: altTextDescription
     langs:
@@ -41,9 +44,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextTitle
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets a string that contains the title for the inline image. \[ [API set:
-      WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets a string that contains the title for the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: altTextTitle
     fullName: altTextTitle
     langs:
@@ -55,9 +59,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.height
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets a number that describes the height of the inline image. \[ [API set:
-      WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets a number that describes the height of the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: height
     fullName: height
     langs:
@@ -71,8 +76,10 @@ items:
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.hyperlink
     summary: >-
       For EACH ITEM in the collection: Gets or sets a hyperlink on the image. Use a '\#' to separate the address part
-      from the optional location part. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      from the optional location part.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: hyperlink
     fullName: hyperlink
     langs:
@@ -85,8 +92,11 @@ items:
           - boolean
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.imageFormat
     summary: >-
-      For EACH ITEM in the collection: Gets the format of the inline image. Read-only. \[ [API set: WordApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      For EACH ITEM in the collection: Gets the format of the inline image. Read-only.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: imageFormat
     fullName: imageFormat
@@ -101,8 +111,10 @@ items:
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.lockAspectRatio
     summary: >-
       For EACH ITEM in the collection: Gets or sets a value that indicates whether the inline image retains its original
-      proportions when you resize it. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      proportions when you resize it.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lockAspectRatio
     fullName: lockAspectRatio
     langs:
@@ -114,9 +126,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.paragraph
-    summary: >-
-      For EACH ITEM in the collection: Gets the parent paragraph that contains the inline image. \[ [API set: WordApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the parent paragraph that contains the inline image.
+
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: paragraph
     fullName: paragraph
     langs:
@@ -130,8 +143,10 @@ items:
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws if there isn't a
-      parent content control. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      parent content control.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl
     fullName: parentContentControl
     langs:
@@ -145,8 +160,10 @@ items:
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControlOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the inline image. Returns a null object if
-      there isn't a parent content control. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      there isn't a parent content control.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControlOrNullObject
     fullName: parentContentControlOrNullObject
     langs:
@@ -160,7 +177,10 @@ items:
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTable
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the inline image. Throws if it is not contained in a
-      table. \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      table.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
     fullName: parentTable
     langs:
@@ -174,8 +194,10 @@ items:
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCell
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws if it is not contained
-      in a table cell. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      in a table cell.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCell
     fullName: parentTableCell
     langs:
@@ -189,8 +211,10 @@ items:
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCellOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the inline image. Returns a null object if it
-      is not contained in a table cell. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      is not contained in a table cell.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCellOrNullObject
     fullName: parentTableCellOrNullObject
     langs:
@@ -204,8 +228,10 @@ items:
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the inline image. Returns a null object if it is not
-      contained in a table. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      contained in a table.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableOrNullObject
     fullName: parentTableOrNullObject
     langs:
@@ -217,9 +243,10 @@ items:
         type:
           - Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.width
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image. \[ [API set:
-      WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
     fullName: width
     langs:

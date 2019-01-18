@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.ChartErrorBarsInclude
     summary: >-
-      Represents which error-bar parts to include. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents which error-bar parts to include.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.ChartErrorBarsInclude

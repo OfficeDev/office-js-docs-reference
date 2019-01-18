@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.InkStrokeLoadOptions
-    summary: >-
-      Represents a single stroke of ink. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents a single stroke of ink.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Interfaces.InkStrokeLoadOptions
     fullName: OneNote.Interfaces.InkStrokeLoadOptions
     langs:
@@ -14,9 +15,10 @@ items:
       - onenote.OneNote.Interfaces.InkStrokeLoadOptions.floatingInk
       - onenote.OneNote.Interfaces.InkStrokeLoadOptions.id
   - uid: onenote.OneNote.Interfaces.InkStrokeLoadOptions.floatingInk
-    summary: >-
-      Gets the ID of the InkStroke object. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the InkStroke object.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: floatingInk
     fullName: floatingInk
     langs:
@@ -28,9 +30,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.FloatingInkLoadOptions
   - uid: onenote.OneNote.Interfaces.InkStrokeLoadOptions.id
-    summary: >-
-      Gets the ID of the InkStroke object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the InkStroke object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:

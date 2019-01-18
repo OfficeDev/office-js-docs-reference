@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.NotebookLoadOptions
-    summary: >-
-      Represents a OneNote notebook. Notebooks contain section groups and sections. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents a OneNote notebook. Notebooks contain section groups and sections.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Interfaces.NotebookLoadOptions
     fullName: OneNote.Interfaces.NotebookLoadOptions
     langs:
@@ -19,9 +20,10 @@ items:
       - onenote.OneNote.Interfaces.NotebookLoadOptions.sectionGroups
       - onenote.OneNote.Interfaces.NotebookLoadOptions.sections
   - uid: onenote.OneNote.Interfaces.NotebookLoadOptions.baseUrl
-    summary: >-
-      The url of the site that this notebook is located. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      The url of the site that this notebook is located. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: baseUrl
     fullName: baseUrl
     langs:
@@ -33,9 +35,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.NotebookLoadOptions.clientUrl
-    summary: >-
-      The client url of the notebook. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      The client url of the notebook. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clientUrl
     fullName: clientUrl
     langs:
@@ -47,9 +50,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.NotebookLoadOptions.id
-    summary: >-
-      Gets the ID of the notebook. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the notebook. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -61,9 +65,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.NotebookLoadOptions.isVirtual
-    summary: >-
-      True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only \[ [API set: OneNoteApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
+
+      \[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: isVirtual
     fullName: isVirtual
     langs:
@@ -75,9 +80,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.NotebookLoadOptions.name
-    summary: >-
-      Gets the name of the notebook. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the name of the notebook. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -89,9 +95,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.NotebookLoadOptions.sectionGroups
-    summary: >-
-      The section groups in the notebook. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      The section groups in the notebook. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sectionGroups
     fullName: sectionGroups
     langs:
@@ -103,9 +110,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.NotebookLoadOptions.sections
-    summary: >-
-      The the sections of the notebook. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      The the sections of the notebook. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: sections
     fullName: sections
     langs:

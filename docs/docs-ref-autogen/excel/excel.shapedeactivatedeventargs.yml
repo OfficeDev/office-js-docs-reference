@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.ShapeDeactivatedEventArgs
     summary: >-
-      Provides information about the shape that raised the Deactivated event. \[ [API set: ExcelApi BETA (PREVIEW
+      Provides information about the shape that raised the Deactivated event.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.ShapeDeactivatedEventArgs
@@ -17,7 +20,10 @@ items:
       - excel.Excel.ShapeDeactivatedEventArgs.worksheetId
   - uid: excel.Excel.ShapeDeactivatedEventArgs.shapeId
     summary: >-
-      Gets the id of the shape that is deactivated. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the id of the shape that is deactivated.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: shapeId
@@ -32,7 +38,10 @@ items:
           - string
   - uid: excel.Excel.ShapeDeactivatedEventArgs.type
     summary: >-
-      Gets the type of the event. See Excel.EventType for details. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the type of the event. See Excel.EventType for details.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: type
@@ -47,7 +56,10 @@ items:
           - '"ShapeDeactivated"'
   - uid: excel.Excel.ShapeDeactivatedEventArgs.worksheetId
     summary: >-
-      Gets the id of the worksheet in which the shape is deactivated. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the id of the worksheet in which the shape is deactivated.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: worksheetId

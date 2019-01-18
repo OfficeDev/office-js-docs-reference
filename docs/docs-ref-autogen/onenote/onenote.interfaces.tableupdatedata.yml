@@ -11,9 +11,10 @@ items:
     children:
       - onenote.OneNote.Interfaces.TableUpdateData.borderVisible
   - uid: onenote.OneNote.Interfaces.TableUpdateData.borderVisible
-    summary: >-
-      Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden. \[ [API
-      set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: borderVisible
     fullName: borderVisible
     langs:

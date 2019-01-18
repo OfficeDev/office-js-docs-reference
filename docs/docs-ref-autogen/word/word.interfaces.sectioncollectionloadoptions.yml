@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.SectionCollectionLoadOptions
-    summary: >-
-      Contains the collection of the document's [Word.Section](xref:word.Word.Section) objects. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Contains the collection of the document's [Word.Section](xref:word.Word.Section) objects.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.SectionCollectionLoadOptions
     fullName: Word.Interfaces.SectionCollectionLoadOptions
     langs:
@@ -15,8 +16,10 @@ items:
   - uid: word.Word.Interfaces.SectionCollectionLoadOptions.body
     summary: >-
       For EACH ITEM in the collection: Gets the body object of the section. This does not include the header/footer and
-      other section metadata. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      other section metadata.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: body
     fullName: body
     langs:

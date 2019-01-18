@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.ShapeActivatedEventArgs
     summary: >-
-      Provides information about the shape that raised the Activated event. \[ [API set: ExcelApi BETA (PREVIEW
+      Provides information about the shape that raised the Activated event.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.ShapeActivatedEventArgs
@@ -17,7 +20,10 @@ items:
       - excel.Excel.ShapeActivatedEventArgs.worksheetId
   - uid: excel.Excel.ShapeActivatedEventArgs.shapeId
     summary: >-
-      Gets the id of the shape that is activated. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the id of the shape that is activated.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: shapeId
@@ -32,7 +38,10 @@ items:
           - string
   - uid: excel.Excel.ShapeActivatedEventArgs.type
     summary: >-
-      Gets the type of the event. See Excel.EventType for details. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the type of the event. See Excel.EventType for details.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: type
@@ -47,7 +56,10 @@ items:
           - '"ShapeActivated"'
   - uid: excel.Excel.ShapeActivatedEventArgs.worksheetId
     summary: >-
-      Gets the id of the worksheet in which the shape is activated. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the id of the worksheet in which the shape is activated.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: worksheetId

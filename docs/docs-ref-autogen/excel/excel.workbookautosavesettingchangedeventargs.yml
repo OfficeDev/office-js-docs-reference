@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.WorkbookAutoSaveSettingChangedEventArgs
     summary: >-
-      Provides information about the workbook AutoSave setting changed event. \[ [API set: ExcelApi BETA (PREVIEW
+      Provides information about the workbook AutoSave setting changed event.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.WorkbookAutoSaveSettingChangedEventArgs
@@ -15,7 +18,10 @@ items:
       - excel.Excel.WorkbookAutoSaveSettingChangedEventArgs.type
   - uid: excel.Excel.WorkbookAutoSaveSettingChangedEventArgs.type
     summary: >-
-      Represents the type of the event. See Excel.EventType for details. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the type of the event. See Excel.EventType for details.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: type

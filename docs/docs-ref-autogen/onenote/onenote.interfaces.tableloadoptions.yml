@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.TableLoadOptions
-    summary: >-
-      Represents a table in a OneNote page. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents a table in a OneNote page.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Interfaces.TableLoadOptions
     fullName: OneNote.Interfaces.TableLoadOptions
     langs:
@@ -18,9 +19,10 @@ items:
       - onenote.OneNote.Interfaces.TableLoadOptions.rowCount
       - onenote.OneNote.Interfaces.TableLoadOptions.rows
   - uid: onenote.OneNote.Interfaces.TableLoadOptions.borderVisible
-    summary: >-
-      Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden. \[ [API
-      set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: borderVisible
     fullName: borderVisible
     langs:
@@ -32,9 +34,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.TableLoadOptions.columnCount
-    summary: >-
-      Gets the number of columns in the table. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the number of columns in the table.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: columnCount
     fullName: columnCount
     langs:
@@ -46,9 +49,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.TableLoadOptions.id
-    summary: >-
-      Gets the ID of the table. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -60,9 +64,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.TableLoadOptions.paragraph
-    summary: >-
-      Gets the Paragraph object that contains the Table object. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the Paragraph object that contains the Table object.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
     fullName: paragraph
     langs:
@@ -74,9 +79,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.ParagraphLoadOptions
   - uid: onenote.OneNote.Interfaces.TableLoadOptions.rowCount
-    summary: >-
-      Gets the number of rows in the table. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the number of rows in the table.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rowCount
     fullName: rowCount
     langs:
@@ -88,9 +94,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.TableLoadOptions.rows
-    summary: >-
-      Gets all of the table rows. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets all of the table rows.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rows
     fullName: rows
     langs:

@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeAutoSize
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: Excel.ShapeAutoSize
     fullName: Excel.ShapeAutoSize
     langs:
@@ -13,6 +17,7 @@ items:
       - excel.Excel.ShapeAutoSize.autoSizeShapeToFitText
       - excel.Excel.ShapeAutoSize.autoSizeTextToFitShape
   - uid: excel.Excel.ShapeAutoSize.autoSizeMixed
+    isPreview: true
     name: autoSizeMixed
     fullName: autoSizeMixed
     langs:
@@ -20,6 +25,7 @@ items:
     type: field
     numericValue: '"AutoSizeMixed"'
   - uid: excel.Excel.ShapeAutoSize.autoSizeNone
+    isPreview: true
     name: autoSizeNone
     fullName: autoSizeNone
     langs:
@@ -27,6 +33,7 @@ items:
     type: field
     numericValue: '"AutoSizeNone"'
   - uid: excel.Excel.ShapeAutoSize.autoSizeShapeToFitText
+    isPreview: true
     name: autoSizeShapeToFitText
     fullName: autoSizeShapeToFitText
     langs:
@@ -34,6 +41,7 @@ items:
     type: field
     numericValue: '"AutoSizeShapeToFitText"'
   - uid: excel.Excel.ShapeAutoSize.autoSizeTextToFitShape
+    isPreview: true
     name: autoSizeTextToFitShape
     fullName: autoSizeTextToFitShape
     langs:

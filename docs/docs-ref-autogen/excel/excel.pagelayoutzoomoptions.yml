@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.PageLayoutZoomOptions
     summary: >-
-      Represents page zoom properties. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents page zoom properties.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.PageLayoutZoomOptions
@@ -17,8 +20,11 @@ items:
       - excel.Excel.PageLayoutZoomOptions.verticalFitToPages
   - uid: excel.Excel.PageLayoutZoomOptions.horizontalFitToPages
     summary: >-
-      Number of pages to fit horizontally. This value can be null if percentage scale is used. \[ [API set: ExcelApi
-      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Number of pages to fit horizontally. This value can be null if percentage scale is used.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: horizontalFitToPages
     fullName: horizontalFitToPages
@@ -33,6 +39,8 @@ items:
   - uid: excel.Excel.PageLayoutZoomOptions.scale
     summary: >-
       Print page scale value can be between 10 and 400. This value can be null if fit to page tall or wide is specified.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -48,8 +56,11 @@ items:
           - number
   - uid: excel.Excel.PageLayoutZoomOptions.verticalFitToPages
     summary: >-
-      Number of pages to fit vertically. This value can be null if percentage scale is used. \[ [API set: ExcelApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Number of pages to fit vertically. This value can be null if percentage scale is used.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: verticalFitToPages
     fullName: verticalFitToPages

@@ -40,9 +40,10 @@ items:
       - word.Word.Interfaces.ParagraphData.tableNestingLevel
       - word.Word.Interfaces.ParagraphData.text
   - uid: word.Word.Interfaces.ParagraphData.alignment
-    summary: >-
-      Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'. \[ [API
-      set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: alignment
     fullName: alignment
     langs:
@@ -54,9 +55,10 @@ items:
         type:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
   - uid: word.Word.Interfaces.ParagraphData.contentControls
-    summary: >-
-      Gets the collection of content control objects in the paragraph. Read-only. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the collection of content control objects in the paragraph. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: contentControls
     fullName: contentControls
     langs:
@@ -70,8 +72,10 @@ items:
   - uid: word.Word.Interfaces.ParagraphData.firstLineIndent
     summary: >-
       Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
-      indent, and use a negative value to set a hanging indent. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      indent, and use a negative value to set a hanging indent.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: firstLineIndent
     fullName: firstLineIndent
     langs:
@@ -85,7 +89,10 @@ items:
   - uid: word.Word.Interfaces.ParagraphData.font
     summary: >-
       Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-      Read-only. \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: font
     fullName: font
     langs:
@@ -99,7 +106,10 @@ items:
   - uid: word.Word.Interfaces.ParagraphData.inlinePictures
     summary: >-
       Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
-      Read-only. \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: inlinePictures
     fullName: inlinePictures
     langs:
@@ -111,9 +121,10 @@ items:
         type:
           - 'Word.Interfaces.InlinePictureData[]'
   - uid: word.Word.Interfaces.ParagraphData.isLastParagraph
-    summary: >-
-      Indicates the paragraph is the last one inside its parent body. Read-only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Indicates the paragraph is the last one inside its parent body. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: isLastParagraph
     fullName: isLastParagraph
     langs:
@@ -125,9 +136,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.ParagraphData.isListItem
-    summary: >-
-      Checks whether the paragraph is a list item. Read-only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Checks whether the paragraph is a list item. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: isListItem
     fullName: isListItem
     langs:
@@ -139,9 +151,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.ParagraphData.leftIndent
-    summary: >-
-      Gets or sets the left indent value, in points, for the paragraph. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the left indent value, in points, for the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: leftIndent
     fullName: leftIndent
     langs:
@@ -155,7 +168,10 @@ items:
   - uid: word.Word.Interfaces.ParagraphData.lineSpacing
     summary: >-
       Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by
-      12. \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      12.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lineSpacing
     fullName: lineSpacing
     langs:
@@ -167,9 +183,10 @@ items:
         type:
           - number
   - uid: word.Word.Interfaces.ParagraphData.lineUnitAfter
-    summary: >-
-      Gets or sets the amount of spacing, in grid lines, after the paragraph. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the amount of spacing, in grid lines, after the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lineUnitAfter
     fullName: lineUnitAfter
     langs:
@@ -181,9 +198,10 @@ items:
         type:
           - number
   - uid: word.Word.Interfaces.ParagraphData.lineUnitBefore
-    summary: >-
-      Gets or sets the amount of spacing, in grid lines, before the paragraph. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the amount of spacing, in grid lines, before the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lineUnitBefore
     fullName: lineUnitBefore
     langs:
@@ -195,9 +213,10 @@ items:
         type:
           - number
   - uid: word.Word.Interfaces.ParagraphData.list
-    summary: >-
-      Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only. \[ [API set:
-      WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: list
     fullName: list
     langs:
@@ -209,9 +228,10 @@ items:
         type:
           - word.Word.Interfaces.ListData
   - uid: word.Word.Interfaces.ParagraphData.listItem
-    summary: >-
-      Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only. \[ [API set:
-      WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: listItem
     fullName: listItem
     langs:
@@ -223,9 +243,10 @@ items:
         type:
           - word.Word.Interfaces.ListItemData
   - uid: word.Word.Interfaces.ParagraphData.listItemOrNullObject
-    summary: >-
-      Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only. \[
-      [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: listItemOrNullObject
     fullName: listItemOrNullObject
     langs:
@@ -237,8 +258,9 @@ items:
         type:
           - word.Word.Interfaces.ListItemData
   - uid: word.Word.Interfaces.ParagraphData.listOrNullObject
-    summary: >-
+    summary: |-
       Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only.
+
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: listOrNullObject
     fullName: listOrNullObject
@@ -251,9 +273,10 @@ items:
         type:
           - word.Word.Interfaces.ListData
   - uid: word.Word.Interfaces.ParagraphData.outlineLevel
-    summary: >-
-      Gets or sets the outline level for the paragraph. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the outline level for the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: outlineLevel
     fullName: outlineLevel
     langs:
@@ -265,9 +288,10 @@ items:
         type:
           - number
   - uid: word.Word.Interfaces.ParagraphData.parentBody
-    summary: >-
-      Gets the parent body of the paragraph. Read-only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the parent body of the paragraph. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentBody
     fullName: parentBody
     langs:
@@ -279,8 +303,9 @@ items:
         type:
           - word.Word.Interfaces.BodyData
   - uid: word.Word.Interfaces.ParagraphData.parentContentControl
-    summary: >-
+    summary: |-
       Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.
+
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl
     fullName: parentContentControl
@@ -295,8 +320,10 @@ items:
   - uid: word.Word.Interfaces.ParagraphData.parentContentControlOrNullObject
     summary: >-
       Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content
-      control. Read-only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      control. Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControlOrNullObject
     fullName: parentContentControlOrNullObject
     langs:
@@ -308,9 +335,10 @@ items:
         type:
           - word.Word.Interfaces.ContentControlData
   - uid: word.Word.Interfaces.ParagraphData.parentTable
-    summary: >-
-      Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only. \[ [API set:
-      WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
     fullName: parentTable
     langs:
@@ -322,9 +350,10 @@ items:
         type:
           - Word.Interfaces.TableData
   - uid: word.Word.Interfaces.ParagraphData.parentTableCell
-    summary: >-
-      Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only. \[ [API
-      set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCell
     fullName: parentTableCell
     langs:
@@ -338,7 +367,10 @@ items:
   - uid: word.Word.Interfaces.ParagraphData.parentTableCellOrNullObject
     summary: >-
       Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
-      Read-only. \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCellOrNullObject
     fullName: parentTableCellOrNullObject
     langs:
@@ -350,9 +382,10 @@ items:
         type:
           - Word.Interfaces.TableCellData
   - uid: word.Word.Interfaces.ParagraphData.parentTableOrNullObject
-    summary: >-
-      Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only. \[
-      [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableOrNullObject
     fullName: parentTableOrNullObject
     langs:
@@ -364,9 +397,10 @@ items:
         type:
           - Word.Interfaces.TableData
   - uid: word.Word.Interfaces.ParagraphData.rightIndent
-    summary: >-
-      Gets or sets the right indent value, in points, for the paragraph. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the right indent value, in points, for the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: rightIndent
     fullName: rightIndent
     langs:
@@ -378,9 +412,10 @@ items:
         type:
           - number
   - uid: word.Word.Interfaces.ParagraphData.spaceAfter
-    summary: >-
-      Gets or sets the spacing, in points, after the paragraph. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the spacing, in points, after the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: spaceAfter
     fullName: spaceAfter
     langs:
@@ -392,9 +427,10 @@ items:
         type:
           - number
   - uid: word.Word.Interfaces.ParagraphData.spaceBefore
-    summary: >-
-      Gets or sets the spacing, in points, before the paragraph. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the spacing, in points, before the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: spaceBefore
     fullName: spaceBefore
     langs:
@@ -408,8 +444,10 @@ items:
   - uid: word.Word.Interfaces.ParagraphData.style
     summary: >-
       Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To
-      use the built-in styles that are portable between locales, see the "styleBuiltIn" property. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: style
     fullName: style
     langs:
@@ -423,8 +461,10 @@ items:
   - uid: word.Word.Interfaces.ParagraphData.styleBuiltIn
     summary: >-
       Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable
-      between locales. To use custom styles or localized style names, see the "style" property. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      between locales. To use custom styles or localized style names, see the "style" property.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBuiltIn
     fullName: styleBuiltIn
     langs:
@@ -500,9 +540,10 @@ items:
             "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" |
             "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
   - uid: word.Word.Interfaces.ParagraphData.tableNestingLevel
-    summary: >-
-      Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only. \[ [API set:
-      WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: tableNestingLevel
     fullName: tableNestingLevel
     langs:
@@ -514,9 +555,10 @@ items:
         type:
           - number
   - uid: word.Word.Interfaces.ParagraphData.text
-    summary: >-
-      Gets the text of the paragraph. Read-only. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the text of the paragraph. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: text
     fullName: text
     langs:

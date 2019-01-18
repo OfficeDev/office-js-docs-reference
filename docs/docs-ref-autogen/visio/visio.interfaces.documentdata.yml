@@ -13,9 +13,10 @@ items:
       - visio.Visio.Interfaces.DocumentData.pages
       - visio.Visio.Interfaces.DocumentData.view
   - uid: visio.Visio.Interfaces.DocumentData.application
-    summary: >-
-      Represents a Visio application instance that contains this document. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents a Visio application instance that contains this document. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: application
     fullName: application
     langs:
@@ -27,9 +28,10 @@ items:
         type:
           - Visio.Interfaces.ApplicationData
   - uid: visio.Visio.Interfaces.DocumentData.pages
-    summary: >-
-      Represents a collection of pages associated with the document. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents a collection of pages associated with the document. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: pages
     fullName: pages
     langs:
@@ -41,9 +43,10 @@ items:
         type:
           - 'Visio.Interfaces.PageData[]'
   - uid: visio.Visio.Interfaces.DocumentData.view
-    summary: >-
-      Returns the DocumentView object. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Returns the DocumentView object. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: view
     fullName: view
     langs:

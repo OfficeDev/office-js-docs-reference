@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.SelectionChangedEventArgs
-    summary: >-
-      Provides information about the document that raised the SelectionChanged event. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Provides information about the document that raised the SelectionChanged event.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.SelectionChangedEventArgs
     fullName: Excel.SelectionChangedEventArgs
     langs:
@@ -13,9 +14,10 @@ items:
     children:
       - excel.Excel.SelectionChangedEventArgs.workbook
   - uid: excel.Excel.SelectionChangedEventArgs.workbook
-    summary: >-
-      Gets the workbook object that raised the SelectionChanged event. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the workbook object that raised the SelectionChanged event.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: workbook
     fullName: workbook
     langs:

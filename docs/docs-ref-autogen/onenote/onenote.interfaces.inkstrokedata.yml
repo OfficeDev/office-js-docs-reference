@@ -12,9 +12,10 @@ items:
       - onenote.OneNote.Interfaces.InkStrokeData.floatingInk
       - onenote.OneNote.Interfaces.InkStrokeData.id
   - uid: onenote.OneNote.Interfaces.InkStrokeData.floatingInk
-    summary: >-
-      Gets the ID of the InkStroke object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the InkStroke object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: floatingInk
     fullName: floatingInk
     langs:
@@ -26,9 +27,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.FloatingInkData
   - uid: onenote.OneNote.Interfaces.InkStrokeData.id
-    summary: >-
-      Gets the ID of the InkStroke object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the InkStroke object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:

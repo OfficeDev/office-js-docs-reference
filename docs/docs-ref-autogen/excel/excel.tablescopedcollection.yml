@@ -3,7 +3,10 @@ items:
   - uid: excel.Excel.TableScopedCollection
     summary: >-
       Represents a scoped collection of tables. For each table its top-left corner is considered its anchor location and
-      the tables are sorted top to bottom and then left to right. \[ [API set: ExcelApi BETA (PREVIEW
+      the tables are sorted top to bottom and then left to right.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.TableScopedCollection
@@ -39,7 +42,10 @@ items:
           - RequestContext
   - uid: excel.Excel.TableScopedCollection.getCount
     summary: >-
-      Gets the number of tables in the collection. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the number of tables in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getCount()
@@ -56,7 +62,10 @@ items:
   - uid: excel.Excel.TableScopedCollection.getFirst
     summary: >-
       Gets the first table in the collection. The tables in the collection are sorted top to bottom and left to right,
-      such that top left table is the first table in the collection. \[ [API set: ExcelApi BETA (PREVIEW
+      such that top left table is the first table in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getFirst()
@@ -72,7 +81,10 @@ items:
         description: ''
   - uid: excel.Excel.TableScopedCollection.getItem
     summary: >-
-      Gets a table by Name or ID. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets a table by Name or ID.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItem(key)

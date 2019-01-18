@@ -15,7 +15,10 @@ items:
   - uid: excel.Excel.Interfaces.ShapeFillData.foreColor
     summary: >-
       Represents the shape fill fore color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange") \[ [API set: ExcelApi BETA (PREVIEW
+      color (e.g. "orange")
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: foreColor
@@ -32,7 +35,10 @@ items:
     summary: >-
       Returns or sets the degree of transparency of the specified fill as a value from 0.0 (opaque) through 1.0 (clear).
       For API not supported shape types or special fill type with inconsistent transparencies, return null. For example,
-      gradient fill type could have inconsistent transparencies. \[ [API set: ExcelApi BETA (PREVIEW
+      gradient fill type could have inconsistent transparencies.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: transparency
@@ -47,8 +53,11 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ShapeFillData.type
     summary: >-
-      Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for detail. \[ [API set: ExcelApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for detail.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: type
     fullName: type

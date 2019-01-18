@@ -16,9 +16,10 @@ items:
       - excel.Excel.Interfaces.ChartLegendEntryData.visible
       - excel.Excel.Interfaces.ChartLegendEntryData.width
   - uid: excel.Excel.Interfaces.ChartLegendEntryData.height
-    summary: >-
-      Represents the height of the legendEntry on the chart legend. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the height of the legendEntry on the chart legend.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: height
     langs:
@@ -30,9 +31,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.ChartLegendEntryData.index
-    summary: >-
-      Represents the index of the legendEntry in the chart legend. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the index of the legendEntry in the chart legend.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
     fullName: index
     langs:
@@ -44,9 +46,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.ChartLegendEntryData.left
-    summary: >-
-      Represents the left of a chart legendEntry. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the left of a chart legendEntry.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -58,9 +61,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.ChartLegendEntryData.top
-    summary: >-
-      Represents the top of a chart legendEntry. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the top of a chart legendEntry.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:
@@ -72,9 +76,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.ChartLegendEntryData.visible
-    summary: >-
-      Represents the visible of a chart legend entry. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the visible of a chart legend entry.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:
@@ -86,9 +91,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartLegendEntryData.width
-    summary: >-
-      Represents the width of the legendEntry on the chart Legend. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the width of the legendEntry on the chart Legend.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: width
     langs:

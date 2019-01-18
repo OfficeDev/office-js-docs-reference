@@ -21,7 +21,10 @@ items:
       - excel.Excel.Interfaces.SlicerUpdateData.worksheet
   - uid: excel.Excel.Interfaces.SlicerUpdateData.caption
     summary: >-
-      Represents the caption of slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the caption of slicer.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: caption
@@ -37,7 +40,10 @@ items:
   - uid: excel.Excel.Interfaces.SlicerUpdateData.height
     summary: >-
       Represents the height, in points, of the slicer. Throws an invalid argument exception when set with negative value
-      or zero as input. \[ [API set: ExcelApi BETA (PREVIEW
+      or zero as input.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: height
@@ -53,7 +59,10 @@ items:
   - uid: excel.Excel.Interfaces.SlicerUpdateData.left
     summary: >-
       Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an
-      invalid argument exception when set with negative value as input. \[ [API set: ExcelApi BETA (PREVIEW
+      invalid argument exception when set with negative value as input.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: left
@@ -68,7 +77,10 @@ items:
           - number
   - uid: excel.Excel.Interfaces.SlicerUpdateData.name
     summary: >-
-      Represents the name of slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the name of slicer.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: name
@@ -83,7 +95,10 @@ items:
           - string
   - uid: excel.Excel.Interfaces.SlicerUpdateData.nameInFormula
     summary: >-
-      Represents the name used in the formula. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the name used in the formula.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: nameInFormula
@@ -98,7 +113,10 @@ items:
           - string
   - uid: excel.Excel.Interfaces.SlicerUpdateData.sortBy
     summary: >-
-      Represents the sort order of the items in the slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the sort order of the items in the slicer.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: sortBy
@@ -115,7 +133,10 @@ items:
     summary: >-
       Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6,
       TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style
-      present in the workbook can also be specified. \[ [API set: ExcelApi BETA (PREVIEW
+      present in the workbook can also be specified.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: style
@@ -131,7 +152,10 @@ items:
   - uid: excel.Excel.Interfaces.SlicerUpdateData.top
     summary: >-
       Represents the distance, in points, from the top edge of the slicer to the right of the worksheet. Throws an
-      invalid argument exception when set with negative value as input. \[ [API set: ExcelApi BETA (PREVIEW
+      invalid argument exception when set with negative value as input.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: top
@@ -147,7 +171,10 @@ items:
   - uid: excel.Excel.Interfaces.SlicerUpdateData.width
     summary: >-
       Represents the width, in points, of the slicer. Throws an invalid argument exception when set with negative value
-      or zero as input. \[ [API set: ExcelApi BETA (PREVIEW
+      or zero as input.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: width
@@ -162,7 +189,10 @@ items:
           - number
   - uid: excel.Excel.Interfaces.SlicerUpdateData.worksheet
     summary: >-
-      Represents the worksheet containing the slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the worksheet containing the slicer.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: worksheet

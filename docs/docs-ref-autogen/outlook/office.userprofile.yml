@@ -3,8 +3,10 @@ items:
   - uid: outlook.Office.UserProfile
     summary: >-
       Information about the user associated with the mailbox. This includes their account type, display name, email
-      address, and time zone. \[ [API set: Mailbox
-      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      address, and time zone.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -24,12 +26,12 @@ items:
       - outlook.Office.UserProfile.emailAddress
       - outlook.Office.UserProfile.timeZone
   - uid: outlook.Office.UserProfile.accountType
-    summary: >-
+    summary: |-
       Gets the account type of the user associated with the mailbox.
 
+      Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
 
-      Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater. \[ [API set:
-      Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -58,9 +60,10 @@ items:
         type:
           - string
   - uid: outlook.Office.UserProfile.displayName
-    summary: >-
-      Gets the user's display name. \[ [API set: Mailbox
-      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: |-
+      Gets the user's display name.
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -79,9 +82,10 @@ items:
         type:
           - string
   - uid: outlook.Office.UserProfile.emailAddress
-    summary: >-
-      Gets the user's display name. \[ [API set: Mailbox
-      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: |-
+      Gets the user's display name.
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -100,9 +104,10 @@ items:
         type:
           - string
   - uid: outlook.Office.UserProfile.timeZone
-    summary: >-
-      Gets the user's SMTP email address. \[ [API set: Mailbox
-      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: |-
+      Gets the user's SMTP email address.
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>

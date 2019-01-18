@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.PageCollection
-    summary: >-
-      Represents a collection of Page objects that are part of the document. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents a collection of Page objects that are part of the document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.PageCollection
     fullName: Visio.PageCollection
     langs:
@@ -19,9 +20,10 @@ items:
       - visio.Visio.PageCollection.load
       - visio.Visio.PageCollection.toJSON
   - uid: visio.Visio.PageCollection.getCount
-    summary: >-
-      Gets the number of pages in the collection. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Gets the number of pages in the collection.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -34,9 +36,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: visio.Visio.PageCollection.getItem
-    summary: >-
-      Gets a page using its key (name or Id). \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Gets a page using its key (name or Id).
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getItem(key)
     fullName: getItem
     langs:

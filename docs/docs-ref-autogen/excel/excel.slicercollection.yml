@@ -2,8 +2,11 @@
 items:
   - uid: excel.Excel.SlicerCollection
     summary: >-
-      Represents a collection of all the slicer objects on the workbook or a worksheet. \[ [API set: ExcelApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents a collection of all the slicer objects on the workbook or a worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.SlicerCollection
     fullName: Excel.SlicerCollection
@@ -25,7 +28,10 @@ items:
       - excel.Excel.SlicerCollection.toJSON
   - uid: excel.Excel.SlicerCollection.add
     summary: >-
-      Adds a new slicer to the workbook. \[ [API set: ExcelApi BETA (PREVIEW
+      Adds a new slicer to the workbook.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'add(slicerSource, sourceField, slicerDestination)'
@@ -79,7 +85,10 @@ items:
           - RequestContext
   - uid: excel.Excel.SlicerCollection.getCount
     summary: >-
-      Returns the number of slicers in the collection. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the number of slicers in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getCount()
@@ -95,7 +104,10 @@ items:
         description: ''
   - uid: excel.Excel.SlicerCollection.getItem
     summary: >-
-      Gets a slicer object using its name or id. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets a slicer object using its name or id.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItem(key)
@@ -116,7 +128,10 @@ items:
             - string
   - uid: excel.Excel.SlicerCollection.getItemAt
     summary: >-
-      Gets a slicer based on its position in the collection. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets a slicer based on its position in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItemAt(index)
@@ -137,8 +152,11 @@ items:
             - number
   - uid: excel.Excel.SlicerCollection.getItemOrNullObject
     summary: >-
-      Gets a slicer using its name or id. If the slicer does not exist, will return a null object. \[ [API set: ExcelApi
-      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Gets a slicer using its name or id. If the slicer does not exist, will return a null object.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItemOrNullObject(key)
     fullName: getItemOrNullObject

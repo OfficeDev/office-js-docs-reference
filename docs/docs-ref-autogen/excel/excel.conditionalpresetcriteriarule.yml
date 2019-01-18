@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalPresetCriteriaRule
-    summary: >-
-      Represents the Preset Criteria Conditional Format Rule \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the Preset Criteria Conditional Format Rule
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalPresetCriteriaRule
     fullName: Excel.ConditionalPresetCriteriaRule
     langs:
@@ -13,9 +14,10 @@ items:
     children:
       - excel.Excel.ConditionalPresetCriteriaRule.criterion
   - uid: excel.Excel.ConditionalPresetCriteriaRule.criterion
-    summary: >-
-      The criterion of the conditional format. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The criterion of the conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criterion
     fullName: criterion
     langs:

@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartFontLoadOptions
-    summary: >-
-      This object represents the font attributes (font name, font size, color, etc.) for a chart object. \[ [API set:
-      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      This object represents the font attributes (font name, font size, color, etc.) for a chart object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ChartFontLoadOptions
     fullName: Excel.Interfaces.ChartFontLoadOptions
     langs:
@@ -18,9 +19,10 @@ items:
       - excel.Excel.Interfaces.ChartFontLoadOptions.size
       - excel.Excel.Interfaces.ChartFontLoadOptions.underline
   - uid: excel.Excel.Interfaces.ChartFontLoadOptions.bold
-    summary: >-
-      Represents the bold status of font. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the bold status of font.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bold
     fullName: bold
     langs:
@@ -32,9 +34,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartFontLoadOptions.color
-    summary: >-
-      HTML color code representation of the text color. E.g. \#FF0000 represents Red. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -46,9 +49,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartFontLoadOptions.italic
-    summary: >-
-      Represents the italic status of the font. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the italic status of the font.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: italic
     fullName: italic
     langs:
@@ -60,9 +64,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartFontLoadOptions.name
-    summary: >-
-      Font name (e.g. "Calibri") \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Font name (e.g. "Calibri")
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -74,9 +79,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartFontLoadOptions.size
-    summary: >-
-      Size of the font (e.g. 11) \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Size of the font (e.g. 11)
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: size
     fullName: size
     langs:
@@ -88,9 +94,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartFontLoadOptions.underline
-    summary: >-
-      Type of underline applied to the font. See Excel.ChartUnderlineStyle for details. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underline
     fullName: underline
     langs:

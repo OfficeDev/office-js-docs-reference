@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.CommentCollection
-    summary: >-
-      Represents the CommentCollection for a given Shape. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the CommentCollection for a given Shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.CommentCollection
     fullName: Visio.CommentCollection
     langs:
@@ -19,9 +20,10 @@ items:
       - visio.Visio.CommentCollection.load
       - visio.Visio.CommentCollection.toJSON
   - uid: visio.Visio.CommentCollection.getCount
-    summary: >-
-      Gets the number of Comments. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Gets the number of Comments.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -34,9 +36,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: visio.Visio.CommentCollection.getItem
-    summary: >-
-      Gets the Comment using its name. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Gets the Comment using its name.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getItem(key)
     fullName: getItem
     langs:

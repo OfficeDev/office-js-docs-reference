@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartTextVerticalAlignment
-    summary: >-
-      Represents the vertical alignment for the specified object. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the vertical alignment for the specified object.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTextVerticalAlignment
     fullName: Excel.ChartTextVerticalAlignment
     langs:

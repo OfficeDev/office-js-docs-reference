@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.GroupShapeCollection
     summary: >-
-      Represents a shape collection inside a shape group. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents a shape collection inside a shape group.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.GroupShapeCollection
@@ -38,7 +41,10 @@ items:
           - RequestContext
   - uid: excel.Excel.GroupShapeCollection.getCount
     summary: >-
-      Returns the number of shapes in the group shape. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the number of shapes in the group shape. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getCount()
@@ -54,7 +60,10 @@ items:
         description: ''
   - uid: excel.Excel.GroupShapeCollection.getItem
     summary: >-
-      Gets a shape using its name. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets a shape using its name.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItem(name)
@@ -75,7 +84,10 @@ items:
             - string
   - uid: excel.Excel.GroupShapeCollection.getItemAt
     summary: >-
-      Gets a shape based on its position in the collection. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets a shape based on its position in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItemAt(index)

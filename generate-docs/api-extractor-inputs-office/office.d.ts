@@ -790,7 +790,9 @@ export declare namespace Office {
          *
          * - item: Provides methods and properties for accessing a message or appointment in an Outlook add-in.
          *
-         * - userProfile: Provides information about the user in an Outlook add-in. [Api set: Mailbox 1.0]
+         * - userProfile: Provides information about the user in an Outlook add-in.
+         *
+         * [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
@@ -814,7 +816,9 @@ export declare namespace Office {
          * Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
          *
          * The RoamingSettings object lets you store and access data for a mail add-in that is stored in a user's mailbox, so that is available to 
-         * that add-in when it is running from any host client application used to access that mailbox. [Api set: Mailbox 1.0]
+         * that add-in when it is running from any host client application used to access that mailbox.
+         *
+         * [Api set: Mailbox 1.0]
          *
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
@@ -933,7 +937,9 @@ export declare namespace Office {
              * clean up any state involved with invoking the function. For example, if the user closes Outlook before this method is called, Outlook 
              * will warn that a function is still executing.
              * 
-             * This method must be called in an event handler added via Office.context.mailbox.addHandlerAsync after completing processing of the event. [Api set: Mailbox 1.3]
+             * This method must be called in an event handler added via Office.context.mailbox.addHandlerAsync after completing processing of the event.
+             * 
+             * [Api set: Mailbox 1.3]
              *
              * @remarks
              * 
@@ -1847,11 +1853,15 @@ export declare namespace Office {
          */
         ActiveViewChanged,
         /**
-         * Triggers when any date or time of the selected appointment or series is changed in Outlook. [Api set: Mailbox 1.7]
+         * Triggers when any date or time of the selected appointment or series is changed in Outlook.
+         * 
+         * [Api set: Mailbox 1.7]
          */
         AppointmentTimeChanged,
         /**
-         * Triggers when an attachment is added to or removed from an item. [Api set: Mailbox Preview]
+         * Triggers when an attachment is added to or removed from an item.
+         * 
+         * [Api set: Mailbox Preview]
          * 
          * @beta
          */
@@ -1931,7 +1941,9 @@ export declare namespace Office {
          */
         DocumentSelectionChanged,
         /**
-         * Triggers when a different Outlook item is selected for viewing while the task pane is pinned. [Api set: Mailbox 1.5]
+         * Triggers when a different Outlook item is selected for viewing while the task pane is pinned.
+         * 
+         * [Api set: Mailbox 1.5]
          */
         ItemChanged,
         /**
@@ -1947,17 +1959,23 @@ export declare namespace Office {
          */
         NodeReplaced,
         /**
-         * Triggers when the OfficeTheme is changed in Outlook. [Api set: Mailbox Preview]
+         * Triggers when the OfficeTheme is changed in Outlook.
+         * 
+         * [Api set: Mailbox Preview]
          * 
          * @beta
          */
         OfficeThemeChanged,
         /**
-         * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. [Api set: Mailbox 1.7]
+         * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook.
+         * 
+         * [Api set: Mailbox 1.7]
          */
         RecipientsChanged,
         /**
-         * Triggers when the recurrence pattern of the selected series is changed in Outlook. [Api set: Mailbox 1.7]
+         * Triggers when the recurrence pattern of the selected series is changed in Outlook.
+         * 
+         * [Api set: Mailbox 1.7]
          */
         RecurrenceChanged,
         /**

@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PaperType
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: Excel.PaperType
     fullName: Excel.PaperType
     langs:
@@ -50,6 +54,7 @@ items:
       - excel.Excel.PaperType.statement
       - excel.Excel.PaperType.tabloid
   - uid: excel.Excel.PaperType.a3
+    isPreview: true
     name: a3
     fullName: a3
     langs:
@@ -57,6 +62,7 @@ items:
     type: field
     numericValue: '"A3"'
   - uid: excel.Excel.PaperType.a4
+    isPreview: true
     name: a4
     fullName: a4
     langs:
@@ -64,6 +70,7 @@ items:
     type: field
     numericValue: '"A4"'
   - uid: excel.Excel.PaperType.a4Small
+    isPreview: true
     name: a4Small
     fullName: a4Small
     langs:
@@ -71,6 +78,7 @@ items:
     type: field
     numericValue: '"A4Small"'
   - uid: excel.Excel.PaperType.a5
+    isPreview: true
     name: a5
     fullName: a5
     langs:
@@ -78,6 +86,7 @@ items:
     type: field
     numericValue: '"A5"'
   - uid: excel.Excel.PaperType.b4
+    isPreview: true
     name: b4
     fullName: b4
     langs:
@@ -85,6 +94,7 @@ items:
     type: field
     numericValue: '"B4"'
   - uid: excel.Excel.PaperType.b5
+    isPreview: true
     name: b5
     fullName: b5
     langs:
@@ -92,6 +102,7 @@ items:
     type: field
     numericValue: '"B5"'
   - uid: excel.Excel.PaperType.csheet
+    isPreview: true
     name: csheet
     fullName: csheet
     langs:
@@ -99,6 +110,7 @@ items:
     type: field
     numericValue: '"Csheet"'
   - uid: excel.Excel.PaperType.dsheet
+    isPreview: true
     name: dsheet
     fullName: dsheet
     langs:
@@ -106,6 +118,7 @@ items:
     type: field
     numericValue: '"Dsheet"'
   - uid: excel.Excel.PaperType.envelope10
+    isPreview: true
     name: envelope10
     fullName: envelope10
     langs:
@@ -113,6 +126,7 @@ items:
     type: field
     numericValue: '"Envelope10"'
   - uid: excel.Excel.PaperType.envelope11
+    isPreview: true
     name: envelope11
     fullName: envelope11
     langs:
@@ -120,6 +134,7 @@ items:
     type: field
     numericValue: '"Envelope11"'
   - uid: excel.Excel.PaperType.envelope12
+    isPreview: true
     name: envelope12
     fullName: envelope12
     langs:
@@ -127,6 +142,7 @@ items:
     type: field
     numericValue: '"Envelope12"'
   - uid: excel.Excel.PaperType.envelope14
+    isPreview: true
     name: envelope14
     fullName: envelope14
     langs:
@@ -134,6 +150,7 @@ items:
     type: field
     numericValue: '"Envelope14"'
   - uid: excel.Excel.PaperType.envelope9
+    isPreview: true
     name: envelope9
     fullName: envelope9
     langs:
@@ -141,6 +158,7 @@ items:
     type: field
     numericValue: '"Envelope9"'
   - uid: excel.Excel.PaperType.envelopeB4
+    isPreview: true
     name: envelopeB4
     fullName: envelopeB4
     langs:
@@ -148,6 +166,7 @@ items:
     type: field
     numericValue: '"EnvelopeB4"'
   - uid: excel.Excel.PaperType.envelopeB5
+    isPreview: true
     name: envelopeB5
     fullName: envelopeB5
     langs:
@@ -155,6 +174,7 @@ items:
     type: field
     numericValue: '"EnvelopeB5"'
   - uid: excel.Excel.PaperType.envelopeB6
+    isPreview: true
     name: envelopeB6
     fullName: envelopeB6
     langs:
@@ -162,6 +182,7 @@ items:
     type: field
     numericValue: '"EnvelopeB6"'
   - uid: excel.Excel.PaperType.envelopeC3
+    isPreview: true
     name: envelopeC3
     fullName: envelopeC3
     langs:
@@ -169,6 +190,7 @@ items:
     type: field
     numericValue: '"EnvelopeC3"'
   - uid: excel.Excel.PaperType.envelopeC4
+    isPreview: true
     name: envelopeC4
     fullName: envelopeC4
     langs:
@@ -176,6 +198,7 @@ items:
     type: field
     numericValue: '"EnvelopeC4"'
   - uid: excel.Excel.PaperType.envelopeC5
+    isPreview: true
     name: envelopeC5
     fullName: envelopeC5
     langs:
@@ -183,6 +206,7 @@ items:
     type: field
     numericValue: '"EnvelopeC5"'
   - uid: excel.Excel.PaperType.envelopeC6
+    isPreview: true
     name: envelopeC6
     fullName: envelopeC6
     langs:
@@ -190,6 +214,7 @@ items:
     type: field
     numericValue: '"EnvelopeC6"'
   - uid: excel.Excel.PaperType.envelopeC65
+    isPreview: true
     name: envelopeC65
     fullName: envelopeC65
     langs:
@@ -197,6 +222,7 @@ items:
     type: field
     numericValue: '"EnvelopeC65"'
   - uid: excel.Excel.PaperType.envelopeDL
+    isPreview: true
     name: envelopeDL
     fullName: envelopeDL
     langs:
@@ -204,6 +230,7 @@ items:
     type: field
     numericValue: '"EnvelopeDL"'
   - uid: excel.Excel.PaperType.envelopeItaly
+    isPreview: true
     name: envelopeItaly
     fullName: envelopeItaly
     langs:
@@ -211,6 +238,7 @@ items:
     type: field
     numericValue: '"EnvelopeItaly"'
   - uid: excel.Excel.PaperType.envelopeMonarch
+    isPreview: true
     name: envelopeMonarch
     fullName: envelopeMonarch
     langs:
@@ -218,6 +246,7 @@ items:
     type: field
     numericValue: '"EnvelopeMonarch"'
   - uid: excel.Excel.PaperType.envelopePersonal
+    isPreview: true
     name: envelopePersonal
     fullName: envelopePersonal
     langs:
@@ -225,6 +254,7 @@ items:
     type: field
     numericValue: '"EnvelopePersonal"'
   - uid: excel.Excel.PaperType.esheet
+    isPreview: true
     name: esheet
     fullName: esheet
     langs:
@@ -232,6 +262,7 @@ items:
     type: field
     numericValue: '"Esheet"'
   - uid: excel.Excel.PaperType.executive
+    isPreview: true
     name: executive
     fullName: executive
     langs:
@@ -239,6 +270,7 @@ items:
     type: field
     numericValue: '"Executive"'
   - uid: excel.Excel.PaperType.fanfoldLegalGerman
+    isPreview: true
     name: fanfoldLegalGerman
     fullName: fanfoldLegalGerman
     langs:
@@ -246,6 +278,7 @@ items:
     type: field
     numericValue: '"FanfoldLegalGerman"'
   - uid: excel.Excel.PaperType.fanfoldStdGerman
+    isPreview: true
     name: fanfoldStdGerman
     fullName: fanfoldStdGerman
     langs:
@@ -253,6 +286,7 @@ items:
     type: field
     numericValue: '"FanfoldStdGerman"'
   - uid: excel.Excel.PaperType.fanfoldUS
+    isPreview: true
     name: fanfoldUS
     fullName: fanfoldUS
     langs:
@@ -260,6 +294,7 @@ items:
     type: field
     numericValue: '"FanfoldUS"'
   - uid: excel.Excel.PaperType.folio
+    isPreview: true
     name: folio
     fullName: folio
     langs:
@@ -267,6 +302,7 @@ items:
     type: field
     numericValue: '"Folio"'
   - uid: excel.Excel.PaperType.ledger
+    isPreview: true
     name: ledger
     fullName: ledger
     langs:
@@ -274,6 +310,7 @@ items:
     type: field
     numericValue: '"Ledger"'
   - uid: excel.Excel.PaperType.legal
+    isPreview: true
     name: legal
     fullName: legal
     langs:
@@ -281,6 +318,7 @@ items:
     type: field
     numericValue: '"Legal"'
   - uid: excel.Excel.PaperType.letter
+    isPreview: true
     name: letter
     fullName: letter
     langs:
@@ -288,6 +326,7 @@ items:
     type: field
     numericValue: '"Letter"'
   - uid: excel.Excel.PaperType.letterSmall
+    isPreview: true
     name: letterSmall
     fullName: letterSmall
     langs:
@@ -295,6 +334,7 @@ items:
     type: field
     numericValue: '"LetterSmall"'
   - uid: excel.Excel.PaperType.note
+    isPreview: true
     name: note
     fullName: note
     langs:
@@ -302,6 +342,7 @@ items:
     type: field
     numericValue: '"Note"'
   - uid: excel.Excel.PaperType.paper10x14
+    isPreview: true
     name: paper10x14
     fullName: paper10x14
     langs:
@@ -309,6 +350,7 @@ items:
     type: field
     numericValue: '"Paper10x14"'
   - uid: excel.Excel.PaperType.paper11x17
+    isPreview: true
     name: paper11x17
     fullName: paper11x17
     langs:
@@ -316,6 +358,7 @@ items:
     type: field
     numericValue: '"Paper11x17"'
   - uid: excel.Excel.PaperType.quatro
+    isPreview: true
     name: quatro
     fullName: quatro
     langs:
@@ -323,6 +366,7 @@ items:
     type: field
     numericValue: '"Quatro"'
   - uid: excel.Excel.PaperType.statement
+    isPreview: true
     name: statement
     fullName: statement
     langs:
@@ -330,6 +374,7 @@ items:
     type: field
     numericValue: '"Statement"'
   - uid: excel.Excel.PaperType.tabloid
+    isPreview: true
     name: tabloid
     fullName: tabloid
     langs:

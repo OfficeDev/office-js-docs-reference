@@ -2,8 +2,11 @@
 items:
   - uid: word.Word.CustomXmlPartCollection
     summary: >-
-      Contains the collection of [Word.CustomXmlPart](xref:word.Word.CustomXmlPart) objects. \[ [API set: WordApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Contains the collection of [Word.CustomXmlPart](xref:word.Word.CustomXmlPart) objects.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: Word.CustomXmlPartCollection
     fullName: Word.CustomXmlPartCollection
@@ -27,7 +30,10 @@ items:
       - word.Word.CustomXmlPartCollection.untrack
   - uid: word.Word.CustomXmlPartCollection.add
     summary: >-
-      Adds a new custom XML part to the document. \[ [API set: WordApi BETA (PREVIEW
+      Adds a new custom XML part to the document.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: add(xml)
@@ -63,8 +69,11 @@ items:
           - RequestContext
   - uid: word.Word.CustomXmlPartCollection.getByNamespace
     summary: >-
-      Gets a new scoped collection of custom XML parts whose namespaces match the given namespace. \[ [API set: WordApi
-      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: getByNamespace(namespaceUri)
     fullName: getByNamespace
@@ -84,7 +93,10 @@ items:
             - string
   - uid: word.Word.CustomXmlPartCollection.getCount
     summary: >-
-      Gets the number of items in the collection. \[ [API set: WordApi BETA (PREVIEW
+      Gets the number of items in the collection.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: getCount()
@@ -100,7 +112,10 @@ items:
         description: ''
   - uid: word.Word.CustomXmlPartCollection.getItem
     summary: >-
-      Gets a custom XML part based on its ID. Read only. \[ [API set: WordApi BETA (PREVIEW
+      Gets a custom XML part based on its ID. Read only.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: getItem(id)
@@ -121,8 +136,11 @@ items:
             - string
   - uid: word.Word.CustomXmlPartCollection.getItemOrNullObject
     summary: >-
-      Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist. \[ [API set:
-      WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: getItemOrNullObject(id)
     fullName: getItemOrNullObject

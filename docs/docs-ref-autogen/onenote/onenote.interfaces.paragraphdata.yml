@@ -22,9 +22,10 @@ items:
       - onenote.OneNote.Interfaces.ParagraphData.table
       - onenote.OneNote.Interfaces.ParagraphData.type
   - uid: onenote.OneNote.Interfaces.ParagraphData.id
-    summary: >-
-      Gets the ID of the Paragraph object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the Paragraph object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -36,9 +37,10 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Interfaces.ParagraphData.image
-    summary: >-
-      Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only. \[ [API set:
-      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: image
     fullName: image
     langs:
@@ -50,9 +52,10 @@ items:
         type:
           - OneNote.Interfaces.ImageData
   - uid: onenote.OneNote.Interfaces.ParagraphData.inkWords
-    summary: >-
-      Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only. \[ [API set:
-      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkWords
     fullName: inkWords
     langs:
@@ -64,9 +67,10 @@ items:
         type:
           - 'OneNote.Interfaces.InkWordData[]'
   - uid: onenote.OneNote.Interfaces.ParagraphData.outline
-    summary: >-
-      Gets the Outline object that contains the Paragraph. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the Outline object that contains the Paragraph. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: outline
     fullName: outline
     langs:
@@ -78,9 +82,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.OutlineData
   - uid: onenote.OneNote.Interfaces.ParagraphData.paragraphs
-    summary: >-
-      The collection of paragraphs under this paragraph. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      The collection of paragraphs under this paragraph. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraphs
     fullName: paragraphs
     langs:
@@ -92,9 +97,10 @@ items:
         type:
           - 'OneNote.Interfaces.ParagraphData[]'
   - uid: onenote.OneNote.Interfaces.ParagraphData.parentParagraph
-    summary: >-
-      Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentParagraph
     fullName: parentParagraph
     langs:
@@ -106,9 +112,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.ParagraphData
   - uid: onenote.OneNote.Interfaces.ParagraphData.parentParagraphOrNull
-    summary: >-
-      Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only. \[ [API set:
-      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentParagraphOrNull
     fullName: parentParagraphOrNull
     langs:
@@ -122,8 +129,10 @@ items:
   - uid: onenote.OneNote.Interfaces.ParagraphData.parentTableCell
     summary: >-
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
-      ItemNotFound. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+      ItemNotFound. Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentTableCell
     fullName: parentTableCell
     langs:
@@ -137,8 +146,10 @@ items:
   - uid: onenote.OneNote.Interfaces.ParagraphData.parentTableCellOrNull
     summary: >-
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
-      Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+      Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentTableCellOrNull
     fullName: parentTableCellOrNull
     langs:
@@ -150,9 +161,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.TableCellData
   - uid: onenote.OneNote.Interfaces.ParagraphData.richText
-    summary: >-
-      Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only \[ [API
-      set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: richText
     fullName: richText
     langs:
@@ -164,9 +176,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.RichTextData
   - uid: onenote.OneNote.Interfaces.ParagraphData.table
-    summary: >-
-      Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only. \[ [API set:
-      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: table
     fullName: table
     langs:
@@ -178,9 +191,10 @@ items:
         type:
           - OneNote.Interfaces.TableData
   - uid: onenote.OneNote.Interfaces.ParagraphData.type
-    summary: >-
-      Gets the type of the Paragraph object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the type of the Paragraph object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

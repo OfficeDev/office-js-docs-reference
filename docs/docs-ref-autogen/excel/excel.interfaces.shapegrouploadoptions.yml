@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.Interfaces.ShapeGroupLoadOptions
     summary: >-
-      Represents a shape group object inside a worksheet. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents a shape group object inside a worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.Interfaces.ShapeGroupLoadOptions
@@ -16,7 +19,10 @@ items:
       - excel.Excel.Interfaces.ShapeGroupLoadOptions.shape
   - uid: excel.Excel.Interfaces.ShapeGroupLoadOptions.id
     summary: >-
-      Represents the shape identifier. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the shape identifier. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: id
@@ -31,7 +37,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ShapeGroupLoadOptions.shape
     summary: >-
-      Returns the shape object for the group. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the shape object for the group.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: shape

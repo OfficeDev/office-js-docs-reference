@@ -12,7 +12,10 @@ items:
       - excel.Excel.Interfaces.GeometricShapeData.id
   - uid: excel.Excel.Interfaces.GeometricShapeData.id
     summary: >-
-      Represents the shape identifier. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the shape identifier. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: id

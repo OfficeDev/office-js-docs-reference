@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.SlicerItem
     summary: >-
-      Represents a slicer item in a slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents a slicer item in a slicer.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.SlicerItem
@@ -38,7 +41,10 @@ items:
           - RequestContext
   - uid: excel.Excel.SlicerItem.hasData
     summary: >-
-      True if the slicer item has data. \[ [API set: ExcelApi BETA (PREVIEW
+      True if the slicer item has data.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: hasData
@@ -53,8 +59,11 @@ items:
           - boolean
   - uid: excel.Excel.SlicerItem.isSelected
     summary: >-
-      True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state. \[ [API
-      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: isSelected
     fullName: isSelected
@@ -68,7 +77,10 @@ items:
           - boolean
   - uid: excel.Excel.SlicerItem.key
     summary: >-
-      Represents the unique value representing the slicer item. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the unique value representing the slicer item.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: key
@@ -118,7 +130,10 @@ items:
             - excel.Excel.Interfaces.SlicerItemLoadOptions
   - uid: excel.Excel.SlicerItem.name
     summary: >-
-      Represents the value displayed on UI. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the value displayed on UI.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: name

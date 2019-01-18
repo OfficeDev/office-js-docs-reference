@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.TableFilteredEventArgs
     summary: >-
-      Provides information about the table that raised the filter applied event. \[ [API set: ExcelApi BETA (PREVIEW
+      Provides information about the table that raised the filter applied event.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.TableFilteredEventArgs
@@ -17,7 +20,10 @@ items:
       - excel.Excel.TableFilteredEventArgs.worksheetId
   - uid: excel.Excel.TableFilteredEventArgs.tableId
     summary: >-
-      Represents the id of the table in which the filter is applied.. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the id of the table in which the filter is applied..
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: tableId
@@ -32,7 +38,10 @@ items:
           - string
   - uid: excel.Excel.TableFilteredEventArgs.type
     summary: >-
-      Represents the type of the event. See Excel.EventType for details. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the type of the event. See Excel.EventType for details.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: type
@@ -47,7 +56,10 @@ items:
           - '"TableFiltered"'
   - uid: excel.Excel.TableFilteredEventArgs.worksheetId
     summary: >-
-      Represents the id of the worksheet which contains the table. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the id of the worksheet which contains the table.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: worksheetId

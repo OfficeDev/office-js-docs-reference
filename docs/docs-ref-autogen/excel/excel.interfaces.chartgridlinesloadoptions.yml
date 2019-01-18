@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartGridlinesLoadOptions
-    summary: >-
-      Represents major or minor gridlines on a chart axis. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents major or minor gridlines on a chart axis.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ChartGridlinesLoadOptions
     fullName: Excel.Interfaces.ChartGridlinesLoadOptions
     langs:
@@ -14,9 +15,10 @@ items:
       - excel.Excel.Interfaces.ChartGridlinesLoadOptions.format
       - excel.Excel.Interfaces.ChartGridlinesLoadOptions.visible
   - uid: excel.Excel.Interfaces.ChartGridlinesLoadOptions.format
-    summary: >-
-      Represents the formatting of chart gridlines. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the formatting of chart gridlines.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -28,9 +30,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartGridlinesFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartGridlinesLoadOptions.visible
-    summary: >-
-      Boolean value representing if the axis gridlines are visible or not. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Boolean value representing if the axis gridlines are visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:

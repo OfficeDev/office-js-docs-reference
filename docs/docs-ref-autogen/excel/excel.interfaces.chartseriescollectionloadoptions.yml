@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions
-    summary: >-
-      Represents a collection of chart series. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of chart series.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ChartSeriesCollectionLoadOptions
     fullName: Excel.Interfaces.ChartSeriesCollectionLoadOptions
     langs:
@@ -57,9 +58,10 @@ items:
       - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.xerrorBars
       - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.yerrorBars
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.axisGroup
-    summary: >-
-      For EACH ITEM in the collection: Returns or sets the group for the specified series. Read/Write \[ [API set:
-      ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Returns or sets the group for the specified series. Read/Write
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axisGroup
     fullName: axisGroup
     langs:
@@ -72,8 +74,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.binOptions
     summary: >-
-      For EACH ITEM in the collection: Encapsulates the bin options only for histogram chart and pareto chart. \[ [API
-      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      For EACH ITEM in the collection: Encapsulates the bin options only for histogram chart and pareto chart.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: binOptions
     fullName: binOptions
@@ -87,8 +92,11 @@ items:
           - excel.Excel.Interfaces.ChartBinOptionsLoadOptions
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.boxwhiskerOptions
     summary: >-
-      For EACH ITEM in the collection: Encapsulates the options for the Box &amp; Whisker chart. \[ [API set: ExcelApi
-      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      For EACH ITEM in the collection: Encapsulates the options for the Box &amp; Whisker chart.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: boxwhiskerOptions
     fullName: boxwhiskerOptions
@@ -104,7 +112,10 @@ items:
     summary: >-
       For EACH ITEM in the collection: Returns or sets the scale factor for bubbles in the specified chart group. Can be
       an integer value from 0 (zero) to 300, corresponding to a percentage of the default size. Applies only to bubble
-      charts. Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      charts. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: bubbleScale
@@ -118,9 +129,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.chartType
-    summary: >-
-      For EACH ITEM in the collection: Represents the chart type of a series. See Excel.ChartType for details. \[ [API
-      set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Represents the chart type of a series. See Excel.ChartType for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: chartType
     fullName: chartType
     langs:
@@ -132,9 +144,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.dataLabels
-    summary: >-
-      For EACH ITEM in the collection: Represents a collection of all dataLabels in the series. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Represents a collection of all dataLabels in the series.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataLabels
     fullName: dataLabels
     langs:
@@ -148,8 +161,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.doughnutHoleSize
     summary: >-
       For EACH ITEM in the collection: Represents the doughnut hole size of a chart series. Only valid on doughnut and
-      doughnutExploded charts. Throws an invalid argument exception on invalid charts. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      doughnutExploded charts. Throws an invalid argument exception on invalid charts.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: doughnutHoleSize
     fullName: doughnutHoleSize
     langs:
@@ -163,8 +178,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.explosion
     summary: >-
       For EACH ITEM in the collection: Returns or sets the explosion value for a pie-chart or doughnut-chart slice.
-      Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write. \[ [API
-      set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: explosion
     fullName: explosion
     langs:
@@ -178,8 +195,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.filtered
     summary: >-
       For EACH ITEM in the collection: Boolean value representing if the series is filtered or not. Not applicable for
-      surface charts. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      surface charts.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: filtered
     fullName: filtered
     langs:
@@ -194,8 +213,10 @@ items:
     summary: >-
       For EACH ITEM in the collection: Returns or sets the angle of the first pie-chart or doughnut-chart slice, in
       degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0
-      through 360. Read/Write \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      through 360. Read/Write
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: firstSliceAngle
     fullName: firstSliceAngle
     langs:
@@ -209,8 +230,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.format
     summary: >-
       For EACH ITEM in the collection: Represents the formatting of a chart series, which includes fill and line
-      formatting. \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      formatting.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -224,8 +247,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gapWidth
     summary: >-
       For EACH ITEM in the collection: Represents the gap width of a chart series. Only valid on bar and column charts,
-      as well as specific classes of line and pie charts. Throws an invalid argument exception on invalid charts. \[
-      [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      as well as specific classes of line and pie charts. Throws an invalid argument exception on invalid charts.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gapWidth
     fullName: gapWidth
     langs:
@@ -239,7 +264,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMaximumColor
     summary: >-
       For EACH ITEM in the collection: Returns or sets the Color for maximum value of a region map chart series.
-      Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: gradientMaximumColor
@@ -255,7 +283,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMaximumType
     summary: >-
       For EACH ITEM in the collection: Returns or sets the type for maximum value of a region map chart series.
-      Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: gradientMaximumType
@@ -270,9 +301,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMaximumValue
     summary: >-
-      For EACH ITEM in the collection: Returns or sets the maximum value of a region map chart series. Read/Write. \[
-      [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      For EACH ITEM in the collection: Returns or sets the maximum value of a region map chart series. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: gradientMaximumValue
     fullName: gradientMaximumValue
@@ -287,7 +320,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMidpointColor
     summary: >-
       For EACH ITEM in the collection: Returns or sets the Color for midpoint value of a region map chart series.
-      Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: gradientMidpointColor
@@ -303,7 +339,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMidpointType
     summary: >-
       For EACH ITEM in the collection: Returns or sets the type for midpoint value of a region map chart series.
-      Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: gradientMidpointType
@@ -318,9 +357,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMidpointValue
     summary: >-
-      For EACH ITEM in the collection: Returns or sets the midpoint value of a region map chart series. Read/Write. \[
-      [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      For EACH ITEM in the collection: Returns or sets the midpoint value of a region map chart series. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: gradientMidpointValue
     fullName: gradientMidpointValue
@@ -335,7 +376,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMinimumColor
     summary: >-
       For EACH ITEM in the collection: Returns or sets the Color for minimum value of a region map chart series.
-      Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: gradientMinimumColor
@@ -351,7 +395,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMinimumType
     summary: >-
       For EACH ITEM in the collection: Returns or sets the type for minimum value of a region map chart series.
-      Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: gradientMinimumType
@@ -366,9 +413,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMinimumValue
     summary: >-
-      For EACH ITEM in the collection: Returns or sets the minimum value of a region map chart series. Read/Write. \[
-      [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      For EACH ITEM in the collection: Returns or sets the minimum value of a region map chart series. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: gradientMinimumValue
     fullName: gradientMinimumValue
@@ -382,8 +431,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientStyle
     summary: >-
-      For EACH ITEM in the collection: Returns or sets series gradient style of a region map chart. Read/Write. \[ [API
-      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      For EACH ITEM in the collection: Returns or sets series gradient style of a region map chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: gradientStyle
     fullName: gradientStyle
@@ -396,9 +448,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.hasDataLabels
-    summary: >-
-      For EACH ITEM in the collection: Boolean value representing if the series has data labels or not. \[ [API set:
-      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Boolean value representing if the series has data labels or not.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasDataLabels
     fullName: hasDataLabels
     langs:
@@ -412,6 +465,8 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.invertColor
     summary: >-
       For EACH ITEM in the collection: Returns or sets the fill color for negative data points in a series. Read/Write.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -428,8 +483,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.invertIfNegative
     summary: >-
       For EACH ITEM in the collection: True if Microsoft Excel inverts the pattern in the item when it corresponds to a
-      negative number. Read/Write. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      negative number. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: invertIfNegative
     fullName: invertIfNegative
     langs:
@@ -442,7 +499,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.mapOptions
     summary: >-
-      For EACH ITEM in the collection: Encapsulates the options for the Map chart. \[ [API set: ExcelApi BETA (PREVIEW
+      For EACH ITEM in the collection: Encapsulates the options for the Map chart.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: mapOptions
@@ -456,9 +516,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartMapOptionsLoadOptions
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerBackgroundColor
-    summary: >-
-      For EACH ITEM in the collection: Represents markers background color of a chart series. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Represents markers background color of a chart series.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerBackgroundColor
     fullName: markerBackgroundColor
     langs:
@@ -470,9 +531,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerForegroundColor
-    summary: >-
-      For EACH ITEM in the collection: Represents markers foreground color of a chart series. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Represents markers foreground color of a chart series.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerForegroundColor
     fullName: markerForegroundColor
     langs:
@@ -484,9 +546,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerSize
-    summary: >-
-      For EACH ITEM in the collection: Represents marker size of a chart series. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Represents marker size of a chart series.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerSize
     fullName: markerSize
     langs:
@@ -500,7 +563,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerStyle
     summary: >-
       For EACH ITEM in the collection: Represents marker style of a chart series. See Excel.ChartMarkerStyle for
-      details. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      details.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerStyle
     fullName: markerStyle
     langs:
@@ -512,9 +578,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.name
-    summary: >-
-      For EACH ITEM in the collection: Represents the name of a series in a chart. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Represents the name of a series in a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -528,8 +595,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.overlap
     summary: >-
       For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between –100 and
-      100. Applies only to 2-D bar and 2-D column charts. Read/Write. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      100. Applies only to 2-D bar and 2-D column charts. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlap
     fullName: overlap
     langs:
@@ -543,6 +612,8 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.parentLabelStrategy
     summary: >-
       For EACH ITEM in the collection: Returns or sets series parent label strategy area of a treemap chart. Read/Write.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -557,9 +628,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.plotOrder
-    summary: >-
-      For EACH ITEM in the collection: Represents the plot order of a chart series within the chart group. \[ [API set:
-      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Represents the plot order of a chart series within the chart group.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotOrder
     fullName: plotOrder
     langs:
@@ -571,9 +643,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.points
-    summary: >-
-      For EACH ITEM in the collection: Represents a collection of all points in the series. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Represents a collection of all points in the series.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: points
     fullName: points
     langs:
@@ -587,8 +660,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.secondPlotSize
     summary: >-
       For EACH ITEM in the collection: Returns or sets the size of the secondary section of either a pie of pie chart or
-      a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write. \[
-      [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: secondPlotSize
     fullName: secondPlotSize
     langs:
@@ -601,8 +676,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.showConnectorLines
     summary: >-
-      For EACH ITEM in the collection: Returns or sets if connector lines show in a waterfall chart. Read/Write. \[ [API
-      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      For EACH ITEM in the collection: Returns or sets if connector lines show in a waterfall chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: showConnectorLines
     fullName: showConnectorLines
@@ -617,7 +695,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.showLeaderLines
     summary: >-
       For EACH ITEM in the collection: True if Microsoft Excel show leaderlines for each datalabel in series.
-      Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: showLeaderLines
@@ -631,9 +712,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.showShadow
-    summary: >-
-      For EACH ITEM in the collection: Boolean value representing if the series has a shadow or not. \[ [API set:
-      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Boolean value representing if the series has a shadow or not.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
     fullName: showShadow
     langs:
@@ -647,8 +729,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.smooth
     summary: >-
       For EACH ITEM in the collection: Boolean value representing if the series is smooth or not. Only applicable to
-      line and scatter charts. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      line and scatter charts.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: smooth
     fullName: smooth
     langs:
@@ -662,8 +746,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.splitType
     summary: >-
       For EACH ITEM in the collection: Returns or sets the way the two sections of either a pie of pie chart or a bar of
-      pie chart are split. Read/Write. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      pie chart are split. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: splitType
     fullName: splitType
     langs:
@@ -677,7 +763,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.splitValue
     summary: >-
       For EACH ITEM in the collection: Returns or sets the threshold value separating the two sections of either a pie
-      of pie chart or a bar of pie chart. Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      of pie chart or a bar of pie chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: splitValue
@@ -693,8 +782,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.varyByCategories
     summary: >-
       For EACH ITEM in the collection: True if Microsoft Excel assigns a different color or pattern to each data marker.
-      The chart must contain only one series. Read/Write. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      The chart must contain only one series. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: varyByCategories
     fullName: varyByCategories
     langs:
@@ -707,8 +798,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.xerrorBars
     summary: >-
-      For EACH ITEM in the collection: Represents the error bar object for a chart series. \[ [API set: ExcelApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      For EACH ITEM in the collection: Represents the error bar object for a chart series.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: xerrorBars
     fullName: xerrorBars
@@ -722,8 +816,11 @@ items:
           - excel.Excel.Interfaces.ChartErrorBarsLoadOptions
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.yerrorBars
     summary: >-
-      For EACH ITEM in the collection: Represents the error bar object for a chart series. \[ [API set: ExcelApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      For EACH ITEM in the collection: Represents the error bar object for a chart series.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: yerrorBars
     fullName: yerrorBars

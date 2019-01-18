@@ -3,7 +3,10 @@ items:
   - uid: excel.Excel.NamedItemCollection
     summary: >-
       A collection of all the NamedItem objects that are part of the workbook or worksheet, depending on how it was
-      reached. \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      reached.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.NamedItemCollection
     fullName: Excel.NamedItemCollection
     langs:
@@ -23,9 +26,10 @@ items:
       - excel.Excel.NamedItemCollection.load
       - excel.Excel.NamedItemCollection.toJSON
   - uid: excel.Excel.NamedItemCollection.add
-    summary: >-
-      Adds a new name to the collection of the given scope. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Adds a new name to the collection of the given scope.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(name, reference, comment)'
     fullName: add
     langs:
@@ -65,9 +69,10 @@ items:
           type:
             - string
   - uid: excel.Excel.NamedItemCollection.addFormulaLocal
-    summary: >-
-      Adds a new name to the collection of the given scope using the user's locale for the formula. \[ [API set:
-      ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Adds a new name to the collection of the given scope using the user's locale for the formula.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'addFormulaLocal(name, formula, comment)'
     fullName: addFormulaLocal
     langs:
@@ -107,9 +112,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.NamedItemCollection.getCount
-    summary: >-
-      Gets the number of named items in the collection. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the number of named items in the collection.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -122,9 +128,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.NamedItemCollection.getItem
-    summary: >-
-      Gets a NamedItem object using its name. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a NamedItem object using its name.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
     fullName: getItem
     langs:
@@ -160,9 +167,10 @@ items:
           type:
             - string
   - uid: excel.Excel.NamedItemCollection.getItemOrNullObject
-    summary: >-
-      Gets a NamedItem object using its name. If the nameditem object does not exist, will return a null object. \[ [API
-      set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a NamedItem object using its name. If the nameditem object does not exist, will return a null object.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
     fullName: getItemOrNullObject
     langs:

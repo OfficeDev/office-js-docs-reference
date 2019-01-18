@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Position
-    summary: >-
-      Represents the Position of the object in the view. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the Position of the object in the view.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Position
     fullName: Visio.Position
     langs:
@@ -16,8 +17,10 @@ items:
   - uid: visio.Visio.Position.x
     summary: >-
       An integer that specifies the x-coordinate of the object, which is the signed value of the distance in pixels from
-      the viewport's center to the left boundary of the page. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      the viewport's center to the left boundary of the page.
+
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: x
     fullName: x
     langs:
@@ -31,8 +34,10 @@ items:
   - uid: visio.Visio.Position.y
     summary: >-
       An integer that specifies the y-coordinate of the object, which is the signed value of the distance in pixels from
-      the viewport's center to the top boundary of the page. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      the viewport's center to the top boundary of the page.
+
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: 'y'
     fullName: 'y'
     langs:

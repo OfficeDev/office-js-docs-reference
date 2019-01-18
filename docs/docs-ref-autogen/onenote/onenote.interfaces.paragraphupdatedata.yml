@@ -12,9 +12,10 @@ items:
       - onenote.OneNote.Interfaces.ParagraphUpdateData.image
       - onenote.OneNote.Interfaces.ParagraphUpdateData.table
   - uid: onenote.OneNote.Interfaces.ParagraphUpdateData.image
-    summary: >-
-      Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: image
     fullName: image
     langs:
@@ -26,9 +27,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.ImageUpdateData
   - uid: onenote.OneNote.Interfaces.ParagraphUpdateData.table
-    summary: >-
-      Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: table
     fullName: table
     langs:

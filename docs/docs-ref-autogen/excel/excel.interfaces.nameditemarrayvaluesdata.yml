@@ -12,9 +12,10 @@ items:
       - excel.Excel.Interfaces.NamedItemArrayValuesData.types
       - excel.Excel.Interfaces.NamedItemArrayValuesData.values
   - uid: excel.Excel.Interfaces.NamedItemArrayValuesData.types
-    summary: >-
-      Represents the types for each item in the named item array \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the types for each item in the named item array
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: types
     fullName: types
     langs:
@@ -26,9 +27,10 @@ items:
         type:
           - 'Excel.RangeValueType[][]'
   - uid: excel.Excel.Interfaces.NamedItemArrayValuesData.values
-    summary: >-
-      Represents the values of each item in the named item array. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the values of each item in the named item array.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: values
     langs:

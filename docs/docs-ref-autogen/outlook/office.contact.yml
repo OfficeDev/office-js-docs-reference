@@ -7,8 +7,10 @@ items:
 
       The list of contacts associated with an email message or appointment is returned in the contacts property of the
       [Office.Entities](xref:outlook.Office.Entities) object that is returned by the getEntities or getEntitiesByType
-      method of the active item. \[ [API set: Mailbox
-      1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      method of the active item.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>

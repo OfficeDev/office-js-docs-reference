@@ -11,9 +11,10 @@ items:
     children:
       - excel.Excel.Interfaces.FilterData.criteria
   - uid: excel.Excel.Interfaces.FilterData.criteria
-    summary: >-
-      The currently applied filter on the given column. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The currently applied filter on the given column. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
     fullName: criteria
     langs:

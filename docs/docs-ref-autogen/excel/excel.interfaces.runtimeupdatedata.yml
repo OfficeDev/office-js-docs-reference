@@ -11,9 +11,10 @@ items:
     children:
       - excel.Excel.Interfaces.RuntimeUpdateData.enableEvents
   - uid: excel.Excel.Interfaces.RuntimeUpdateData.enableEvents
-    summary: >-
-      Toggle JavaScript events in the current task pane or content add-in. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Toggle JavaScript events in the current task pane or content add-in.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableEvents
     fullName: enableEvents
     langs:

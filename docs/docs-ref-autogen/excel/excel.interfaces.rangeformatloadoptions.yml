@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions
-    summary: >-
-      A format object encapsulating the range's font, fill, borders, alignment, and other properties. \[ [API set:
-      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      A format object encapsulating the range's font, fill, borders, alignment, and other properties.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.RangeFormatLoadOptions
     fullName: Excel.Interfaces.RangeFormatLoadOptions
     langs:
@@ -29,8 +30,11 @@ items:
       - excel.Excel.Interfaces.RangeFormatLoadOptions.wrapText
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.autoIndent
     summary: >-
-      Indicates if text is automatically indented when text alignment is set to equal distribution. \[ [API set:
-      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Indicates if text is automatically indented when text alignment is set to equal distribution.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: autoIndent
     fullName: autoIndent
@@ -43,9 +47,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.borders
-    summary: >-
-      Collection of border objects that apply to the overall range. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Collection of border objects that apply to the overall range.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
     fullName: borders
     langs:
@@ -59,7 +64,10 @@ items:
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.columnWidth
     summary: >-
       Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
-      returned. \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      returned.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnWidth
     fullName: columnWidth
     langs:
@@ -71,9 +79,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.fill
-    summary: >-
-      Returns the fill object defined on the overall range. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the fill object defined on the overall range.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -85,9 +94,10 @@ items:
         type:
           - excel.Excel.Interfaces.RangeFillLoadOptions
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.font
-    summary: >-
-      Returns the font object defined on the overall range. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the font object defined on the overall range.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:
@@ -99,9 +109,10 @@ items:
         type:
           - excel.Excel.Interfaces.RangeFontLoadOptions
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.horizontalAlignment
-    summary: >-
-      Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details. \[ [API
-      set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: horizontalAlignment
     langs:
@@ -114,7 +125,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.indentLevel
     summary: >-
-      An integer from 0 to 250 that indicates the indent level. \[ [API set: ExcelApi BETA (PREVIEW
+      An integer from 0 to 250 that indicates the indent level.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: indentLevel
@@ -128,9 +142,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.protection
-    summary: >-
-      Returns the format protection object for a range. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the format protection object for a range.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
     fullName: protection
     langs:
@@ -143,7 +158,10 @@ items:
           - excel.Excel.Interfaces.FormatProtectionLoadOptions
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.readingOrder
     summary: >-
-      The reading order for the range. \[ [API set: ExcelApi BETA (PREVIEW
+      The reading order for the range.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: readingOrder
@@ -157,9 +175,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.rowHeight
-    summary: >-
-      Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned. \[
-      [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowHeight
     fullName: rowHeight
     langs:
@@ -172,7 +191,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.shrinkToFit
     summary: >-
-      Indicates if text automatically shrinks to fit in the available column width. \[ [API set: ExcelApi BETA (PREVIEW
+      Indicates if text automatically shrinks to fit in the available column width.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: shrinkToFit
@@ -189,8 +211,10 @@ items:
     summary: >-
       Gets or sets the text orientation of all the cells within the range. The text orientation should be an integer
       either from -90 to 90, or 180 for vertically-oriented text. If the orientation within a range are not uniform,
-      then null will be returned. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      then null will be returned.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
     fullName: textOrientation
     langs:
@@ -205,8 +229,10 @@ items:
     summary: >-
       Determines if the row height of the Range object equals the standard height of the sheet. Returns True if the row
       height of the Range object equals the standard height of the sheet. Returns Null if the range contains more than
-      one row and the rows aren't all the same height. Returns False otherwise. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      one row and the rows aren't all the same height. Returns False otherwise.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useStandardHeight
     fullName: useStandardHeight
     langs:
@@ -221,8 +247,10 @@ items:
     summary: >-
       Indicates whether the column width of the Range object equals the standard width of the sheet. Returns True if the
       column width of the Range object equals the standard width of the sheet. Returns Null if the range contains more
-      than one column and the columns aren't all the same height. Returns False otherwise. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      than one column and the columns aren't all the same height. Returns False otherwise.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useStandardWidth
     fullName: useStandardWidth
     langs:
@@ -234,9 +262,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.verticalAlignment
-    summary: >-
-      Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details. \[ [API set:
-      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
     fullName: verticalAlignment
     langs:
@@ -250,8 +279,10 @@ items:
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.wrapText
     summary: >-
       Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
-      wrap setting \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      wrap setting
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: wrapText
     fullName: wrapText
     langs:

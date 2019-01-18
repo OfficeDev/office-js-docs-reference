@@ -18,8 +18,10 @@ items:
   - uid: excel.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData.borderColor
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange"). "Empty String" if no border is present or set. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      color (e.g. "orange"). "Empty String" if no border is present or set.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borderColor
     fullName: borderColor
     langs:
@@ -33,8 +35,10 @@ items:
   - uid: excel.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData.fillColor
     summary: >-
       HTML color code representing the fill color, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color (e.g.
-      "orange"). \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      "orange").
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fillColor
     fullName: fillColor
     langs:
@@ -46,8 +50,9 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData.matchPositiveBorderColor
-    summary: >-
+    summary: |-
       Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
+
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: matchPositiveBorderColor
     fullName: matchPositiveBorderColor
@@ -60,9 +65,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData.matchPositiveFillColor
-    summary: >-
-      Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar. \[
-      [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: matchPositiveFillColor
     fullName: matchPositiveFillColor
     langs:

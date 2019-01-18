@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.TopBottomConditionalFormatLoadOptions
-    summary: >-
-      Represents a Top/Bottom conditional format. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a Top/Bottom conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.TopBottomConditionalFormatLoadOptions
     fullName: Excel.Interfaces.TopBottomConditionalFormatLoadOptions
     langs:
@@ -14,9 +15,10 @@ items:
       - excel.Excel.Interfaces.TopBottomConditionalFormatLoadOptions.format
       - excel.Excel.Interfaces.TopBottomConditionalFormatLoadOptions.rule
   - uid: excel.Excel.Interfaces.TopBottomConditionalFormatLoadOptions.format
-    summary: >-
-      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. \[ [API
-      set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -28,9 +30,10 @@ items:
         type:
           - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: excel.Excel.Interfaces.TopBottomConditionalFormatLoadOptions.rule
-    summary: >-
-      The criteria of the Top/Bottom conditional format. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The criteria of the Top/Bottom conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
     fullName: rule
     langs:

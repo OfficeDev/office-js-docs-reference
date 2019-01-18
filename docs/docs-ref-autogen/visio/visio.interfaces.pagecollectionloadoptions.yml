@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Interfaces.PageCollectionLoadOptions
-    summary: >-
-      Represents a collection of Page objects that are part of the document. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents a collection of Page objects that are part of the document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Interfaces.PageCollectionLoadOptions
     fullName: Visio.Interfaces.PageCollectionLoadOptions
     langs:
@@ -18,9 +19,10 @@ items:
       - visio.Visio.Interfaces.PageCollectionLoadOptions.view
       - visio.Visio.Interfaces.PageCollectionLoadOptions.width
   - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.height
-    summary: >-
-      For EACH ITEM in the collection: Returns the height of the page. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      For EACH ITEM in the collection: Returns the height of the page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: height
     fullName: height
     langs:
@@ -32,9 +34,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.index
-    summary: >-
-      For EACH ITEM in the collection: Index of the Page. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      For EACH ITEM in the collection: Index of the Page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: index
     fullName: index
     langs:
@@ -46,9 +49,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.isBackground
-    summary: >-
-      For EACH ITEM in the collection: Whether the page is a background page or not. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      For EACH ITEM in the collection: Whether the page is a background page or not. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: isBackground
     fullName: isBackground
     langs:
@@ -60,9 +64,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.name
-    summary: >-
-      For EACH ITEM in the collection: Page name. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      For EACH ITEM in the collection: Page name. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: name
     fullName: name
     langs:
@@ -74,9 +79,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.view
-    summary: >-
-      For EACH ITEM in the collection: Returns the view of the page. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      For EACH ITEM in the collection: Returns the view of the page.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: view
     fullName: view
     langs:
@@ -88,9 +94,10 @@ items:
         type:
           - visio.Visio.Interfaces.PageViewLoadOptions
   - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.width
-    summary: >-
-      For EACH ITEM in the collection: Returns the width of the page. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      For EACH ITEM in the collection: Returns the width of the page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: width
     fullName: width
     langs:

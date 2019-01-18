@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalTopBottomRule
-    summary: >-
-      Represents the rule of the top/bottom conditional format. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the rule of the top/bottom conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalTopBottomRule
     fullName: Excel.ConditionalTopBottomRule
     langs:
@@ -14,9 +15,10 @@ items:
       - excel.Excel.ConditionalTopBottomRule.rank
       - excel.Excel.ConditionalTopBottomRule.type
   - uid: excel.Excel.ConditionalTopBottomRule.rank
-    summary: >-
-      The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rank
     fullName: rank
     langs:
@@ -28,9 +30,10 @@ items:
         type:
           - number
   - uid: excel.Excel.ConditionalTopBottomRule.type
-    summary: >-
-      Format values based on the top or bottom rank. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Format values based on the top or bottom rank.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

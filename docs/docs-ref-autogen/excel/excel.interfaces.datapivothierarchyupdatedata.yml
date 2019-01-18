@@ -16,9 +16,10 @@ items:
       - excel.Excel.Interfaces.DataPivotHierarchyUpdateData.showAs
       - excel.Excel.Interfaces.DataPivotHierarchyUpdateData.summarizeBy
   - uid: excel.Excel.Interfaces.DataPivotHierarchyUpdateData.field
-    summary: >-
-      Returns the PivotFields associated with the DataPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the PivotFields associated with the DataPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: field
     fullName: field
     langs:
@@ -30,9 +31,10 @@ items:
         type:
           - excel.Excel.Interfaces.PivotFieldUpdateData
   - uid: excel.Excel.Interfaces.DataPivotHierarchyUpdateData.name
-    summary: >-
-      Name of the DataPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Name of the DataPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -44,9 +46,10 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.DataPivotHierarchyUpdateData.numberFormat
-    summary: >-
-      Number format of the DataPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Number format of the DataPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: numberFormat
     langs:
@@ -58,9 +61,10 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.DataPivotHierarchyUpdateData.position
-    summary: >-
-      Position of the DataPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Position of the DataPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: position
     langs:
@@ -72,9 +76,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.DataPivotHierarchyUpdateData.showAs
-    summary: >-
-      Determines whether the data should be shown as a specific summary calculation or not. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Determines whether the data should be shown as a specific summary calculation or not.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAs
     fullName: showAs
     langs:
@@ -86,9 +91,10 @@ items:
         type:
           - excel.Excel.ShowAsRule
   - uid: excel.Excel.Interfaces.DataPivotHierarchyUpdateData.summarizeBy
-    summary: >-
-      Determines whether to show all items of the DataPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Determines whether to show all items of the DataPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: summarizeBy
     fullName: summarizeBy
     langs:

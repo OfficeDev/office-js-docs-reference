@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeTextHorizontalAlignType
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: Excel.ShapeTextHorizontalAlignType
     fullName: Excel.ShapeTextHorizontalAlignType
     langs:
@@ -17,6 +21,7 @@ items:
       - excel.Excel.ShapeTextHorizontalAlignType.shapeTextHorizontalAlignType_MaxEnumIDs
       - excel.Excel.ShapeTextHorizontalAlignType.thaiDistributed
   - uid: excel.Excel.ShapeTextHorizontalAlignType.center
+    isPreview: true
     name: center
     fullName: center
     langs:
@@ -24,6 +29,7 @@ items:
     type: field
     numericValue: '"Center"'
   - uid: excel.Excel.ShapeTextHorizontalAlignType.distributed
+    isPreview: true
     name: distributed
     fullName: distributed
     langs:
@@ -31,6 +37,7 @@ items:
     type: field
     numericValue: '"Distributed"'
   - uid: excel.Excel.ShapeTextHorizontalAlignType.justify
+    isPreview: true
     name: justify
     fullName: justify
     langs:
@@ -38,6 +45,7 @@ items:
     type: field
     numericValue: '"Justify"'
   - uid: excel.Excel.ShapeTextHorizontalAlignType.justifyLow
+    isPreview: true
     name: justifyLow
     fullName: justifyLow
     langs:
@@ -45,6 +53,7 @@ items:
     type: field
     numericValue: '"JustifyLow"'
   - uid: excel.Excel.ShapeTextHorizontalAlignType.left
+    isPreview: true
     name: left
     fullName: left
     langs:
@@ -52,6 +61,7 @@ items:
     type: field
     numericValue: '"Left"'
   - uid: excel.Excel.ShapeTextHorizontalAlignType.right
+    isPreview: true
     name: right
     fullName: right
     langs:
@@ -59,6 +69,7 @@ items:
     type: field
     numericValue: '"Right"'
   - uid: excel.Excel.ShapeTextHorizontalAlignType.shapeTextHorizontalAlignType_MaxEnumIDs
+    isPreview: true
     name: shapeTextHorizontalAlignType_MaxEnumIDs
     fullName: shapeTextHorizontalAlignType_MaxEnumIDs
     langs:
@@ -66,6 +77,7 @@ items:
     type: field
     numericValue: '"ShapeTextHorizontalAlignType_MaxEnumIDs"'
   - uid: excel.Excel.ShapeTextHorizontalAlignType.thaiDistributed
+    isPreview: true
     name: thaiDistributed
     fullName: thaiDistributed
     langs:

@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Icon
-    summary: >-
-      Represents a cell icon. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a cell icon.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Icon
     fullName: Excel.Icon
     langs:
@@ -14,9 +15,10 @@ items:
       - excel.Excel.Icon.index
       - excel.Excel.Icon.set
   - uid: excel.Excel.Icon.index
-    summary: >-
-      Represents the index of the icon in the given set. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the index of the icon in the given set.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
     fullName: index
     langs:
@@ -28,9 +30,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Icon.set
-    summary: >-
-      Represents the set that the icon is part of. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the set that the icon is part of.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: set
     fullName: set
     langs:

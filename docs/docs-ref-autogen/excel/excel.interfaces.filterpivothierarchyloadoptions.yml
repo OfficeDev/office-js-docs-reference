@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions
-    summary: >-
-      Represents the Excel FilterPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the Excel FilterPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.FilterPivotHierarchyLoadOptions
     fullName: Excel.Interfaces.FilterPivotHierarchyLoadOptions
     langs:
@@ -16,9 +17,10 @@ items:
       - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.name
       - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.position
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.enableMultipleFilterItems
-    summary: >-
-      Determines whether to allow multiple filter items. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Determines whether to allow multiple filter items.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableMultipleFilterItems
     fullName: enableMultipleFilterItems
     langs:
@@ -30,9 +32,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.id
-    summary: >-
-      Id of the FilterPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Id of the FilterPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -44,9 +47,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.name
-    summary: >-
-      Name of the FilterPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Name of the FilterPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -58,9 +62,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.position
-    summary: >-
-      Position of the FilterPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Position of the FilterPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: position
     langs:

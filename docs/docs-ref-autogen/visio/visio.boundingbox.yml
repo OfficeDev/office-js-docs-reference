@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.BoundingBox
-    summary: >-
-      Represents the BoundingBox of the shape. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the BoundingBox of the shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.BoundingBox
     fullName: Visio.BoundingBox
     langs:
@@ -18,8 +19,10 @@ items:
   - uid: visio.Visio.BoundingBox.height
     summary: >-
       The distance between the top and bottom edges of the bounding box of the shape, excluding any data graphics
-      associated with the shape. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      associated with the shape.
+
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: height
     fullName: height
     langs:
@@ -33,8 +36,10 @@ items:
   - uid: visio.Visio.BoundingBox.width
     summary: >-
       The distance between the left and right edges of the bounding box of the shape, excluding any data graphics
-      associated with the shape. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+      associated with the shape.
+
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: width
     fullName: width
     langs:
@@ -46,9 +51,10 @@ items:
         type:
           - number
   - uid: visio.Visio.BoundingBox.x
-    summary: >-
-      An integer that specifies the x-coordinate of the bounding box. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      An integer that specifies the x-coordinate of the bounding box.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: x
     fullName: x
     langs:
@@ -60,9 +66,10 @@ items:
         type:
           - number
   - uid: visio.Visio.BoundingBox.y
-    summary: >-
-      An integer that specifies the y-coordinate of the bounding box. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      An integer that specifies the y-coordinate of the bounding box.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: 'y'
     fullName: 'y'
     langs:

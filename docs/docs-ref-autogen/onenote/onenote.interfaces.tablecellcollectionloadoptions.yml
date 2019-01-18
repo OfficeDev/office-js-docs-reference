@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions
-    summary: >-
-      Contains a collection of TableCell objects. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Contains a collection of TableCell objects.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Interfaces.TableCellCollectionLoadOptions
     fullName: OneNote.Interfaces.TableCellCollectionLoadOptions
     langs:
@@ -18,9 +19,10 @@ items:
       - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.rowIndex
       - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.shadingColor
   - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.cellIndex
-    summary: >-
-      For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: cellIndex
     fullName: cellIndex
     langs:
@@ -32,9 +34,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.id
-    summary: >-
-      For EACH ITEM in the collection: Gets the ID of the cell. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the ID of the cell. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -46,9 +49,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.paragraphs
-    summary: >-
-      For EACH ITEM in the collection: Gets the collection of Paragraph objects in the TableCell. \[ [API set:
-      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the collection of Paragraph objects in the TableCell.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraphs
     fullName: paragraphs
     langs:
@@ -60,9 +64,10 @@ items:
         type:
           - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.parentRow
-    summary: >-
-      For EACH ITEM in the collection: Gets the parent row of the cell. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the parent row of the cell.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentRow
     fullName: parentRow
     langs:
@@ -74,9 +79,10 @@ items:
         type:
           - OneNote.Interfaces.TableRowLoadOptions
   - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.rowIndex
-    summary: >-
-      For EACH ITEM in the collection: Gets the index of the cell's row in the table. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the index of the cell's row in the table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rowIndex
     fullName: rowIndex
     langs:
@@ -88,9 +94,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.shadingColor
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets the shading color of the cell \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets the shading color of the cell
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: shadingColor
     fullName: shadingColor
     langs:

@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.TableAddedEventArgs
     summary: >-
-      Provides information about the table that raised the OnAdded event. \[ [API set: ExcelApi BETA (PREVIEW
+      Provides information about the table that raised the OnAdded event.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.TableAddedEventArgs
@@ -18,7 +21,10 @@ items:
       - excel.Excel.TableAddedEventArgs.worksheetId
   - uid: excel.Excel.TableAddedEventArgs.source
     summary: >-
-      Gets the source of the event. See Excel.EventSource for details. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the source of the event. See Excel.EventSource for details.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: source
@@ -33,7 +39,10 @@ items:
           - Excel.EventSource | "Local" | "Remote"
   - uid: excel.Excel.TableAddedEventArgs.tableId
     summary: >-
-      Gets the id of the table that is added. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the id of the table that is added.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: tableId
@@ -48,7 +57,10 @@ items:
           - string
   - uid: excel.Excel.TableAddedEventArgs.type
     summary: >-
-      Gets the type of the event. See Excel.EventType for details. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the type of the event. See Excel.EventType for details.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: type
@@ -63,7 +75,10 @@ items:
           - '"TableAdded"'
   - uid: excel.Excel.TableAddedEventArgs.worksheetId
     summary: >-
-      Gets the id of the worksheet in which the table is added. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the id of the worksheet in which the table is added.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: worksheetId

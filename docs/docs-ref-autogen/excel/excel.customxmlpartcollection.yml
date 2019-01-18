@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.CustomXmlPartCollection
-    summary: >-
-      A collection of custom XML parts. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      A collection of custom XML parts.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomXmlPartCollection
     fullName: Excel.CustomXmlPartCollection
     langs:
@@ -23,9 +24,10 @@ items:
       - excel.Excel.CustomXmlPartCollection.load
       - excel.Excel.CustomXmlPartCollection.toJSON
   - uid: excel.Excel.CustomXmlPartCollection.add
-    summary: >-
-      Adds a new custom XML part to the workbook. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Adds a new custom XML part to the workbook.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(xml)
     fullName: add
     langs:
@@ -81,9 +83,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.CustomXmlPartCollection.getByNamespace
-    summary: >-
-      Gets a new scoped collection of custom XML parts whose namespaces match the given namespace. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getByNamespace(namespaceUri)
     fullName: getByNamespace
     langs:
@@ -134,9 +137,10 @@ items:
           type:
             - string
   - uid: excel.Excel.CustomXmlPartCollection.getCount
-    summary: >-
-      Gets the number of CustomXml parts in the collection. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the number of CustomXml parts in the collection.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -149,9 +153,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.CustomXmlPartCollection.getItem
-    summary: >-
-      Gets a custom XML part based on its ID. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a custom XML part based on its ID.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(id)
     fullName: getItem
     langs:
@@ -195,8 +200,10 @@ items:
   - uid: excel.Excel.CustomXmlPartCollection.getItemOrNullObject
     summary: >-
       Gets a custom XML part based on its ID. If the CustomXmlPart does not exist, the return object's isNull property
-      will be true. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      will be true.
+
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(id)
     fullName: getItemOrNullObject
     langs:

@@ -3,8 +3,10 @@ items:
   - uid: excel.Excel.ConditionalIconCriterion
     summary: >-
       Represents an Icon Criterion which contains a type, value, an Operator, and an optional custom icon, if not using
-      an iconset. \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      an iconset.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalIconCriterion
     fullName: Excel.ConditionalIconCriterion
     langs:
@@ -17,9 +19,10 @@ items:
       - excel.Excel.ConditionalIconCriterion.operator
       - excel.Excel.ConditionalIconCriterion.type
   - uid: excel.Excel.ConditionalIconCriterion.customIcon
-    summary: >-
-      The custom icon for the current criterion if different from the default IconSet, else null will be returned. \[
-      [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The custom icon for the current criterion if different from the default IconSet, else null will be returned.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: customIcon
     fullName: customIcon
     langs:
@@ -31,9 +34,10 @@ items:
         type:
           - excel.Excel.Icon
   - uid: excel.Excel.ConditionalIconCriterion.formula
-    summary: >-
-      A number or a formula depending on the type. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      A number or a formula depending on the type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
     fullName: formula
     langs:
@@ -89,9 +93,10 @@ items:
           });
           ```
   - uid: excel.Excel.ConditionalIconCriterion.operator
-    summary: >-
-      GreaterThan or GreaterThanOrEqual for each of the rule type for the Icon conditional format. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      GreaterThan or GreaterThanOrEqual for each of the rule type for the Icon conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: operator
     fullName: operator
     langs:
@@ -159,9 +164,10 @@ items:
           });
           ```
   - uid: excel.Excel.ConditionalIconCriterion.type
-    summary: >-
-      What the icon conditional formula should be based on. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      What the icon conditional formula should be based on.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

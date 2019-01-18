@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions
     summary: >-
-      Encapsulates the options for the pivot chart. \[ [API set: ExcelApi BETA (PREVIEW
+      Encapsulates the options for the pivot chart.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.Interfaces.ChartPivotOptionsLoadOptions
@@ -20,7 +23,10 @@ items:
     summary: >-
       Represents whether to display axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to
       the Show Axis Field Buttons command on the Field Buttons drop-down list of the Analyze tab, which is available
-      when a PivotChart is selected. \[ [API set: ExcelApi BETA (PREVIEW
+      when a PivotChart is selected.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: showAxisFieldButtons
@@ -35,7 +41,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showLegendFieldButtons
     summary: >-
-      Represents whether to display legend field buttons on a PivotChart. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents whether to display legend field buttons on a PivotChart.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: showLegendFieldButtons
@@ -50,7 +59,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showReportFilterFieldButtons
     summary: >-
-      Represents whether to display report filter field buttons on a PivotChart. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents whether to display report filter field buttons on a PivotChart.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: showReportFilterFieldButtons
@@ -65,7 +77,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showValueFieldButtons
     summary: >-
-      Represents whether to display show value field buttons on a PivotChart. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents whether to display show value field buttons on a PivotChart.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: showValueFieldButtons

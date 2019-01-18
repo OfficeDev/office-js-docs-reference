@@ -18,8 +18,11 @@ items:
       - excel.Excel.Interfaces.HeaderFooterGroupData.useSheetScale
   - uid: excel.Excel.Interfaces.HeaderFooterGroupData.defaultForAllPages
     summary: >-
-      The general header/footer, used for all pages unless even/odd or first page is specified. \[ [API set: ExcelApi
-      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      The general header/footer, used for all pages unless even/odd or first page is specified.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: defaultForAllPages
     fullName: defaultForAllPages
@@ -33,8 +36,11 @@ items:
           - excel.Excel.Interfaces.HeaderFooterData
   - uid: excel.Excel.Interfaces.HeaderFooterGroupData.evenPages
     summary: >-
-      The header/footer to use for even pages, odd header/footer needs to be specified for odd pages. \[ [API set:
-      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      The header/footer to use for even pages, odd header/footer needs to be specified for odd pages.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: evenPages
     fullName: evenPages
@@ -48,7 +54,10 @@ items:
           - excel.Excel.Interfaces.HeaderFooterData
   - uid: excel.Excel.Interfaces.HeaderFooterGroupData.firstPage
     summary: >-
-      The first page header/footer, for all other pages general or even/odd is used. \[ [API set: ExcelApi BETA (PREVIEW
+      The first page header/footer, for all other pages general or even/odd is used.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: firstPage
@@ -63,8 +72,11 @@ items:
           - excel.Excel.Interfaces.HeaderFooterData
   - uid: excel.Excel.Interfaces.HeaderFooterGroupData.oddPages
     summary: >-
-      The header/footer to use for odd pages, even header/footer needs to be specified for even pages. \[ [API set:
-      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      The header/footer to use for odd pages, even header/footer needs to be specified for even pages.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: oddPages
     fullName: oddPages
@@ -78,8 +90,11 @@ items:
           - excel.Excel.Interfaces.HeaderFooterData
   - uid: excel.Excel.Interfaces.HeaderFooterGroupData.state
     summary: >-
-      Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details. \[ [API set:
-      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: state
     fullName: state
@@ -94,7 +109,10 @@ items:
   - uid: excel.Excel.Interfaces.HeaderFooterGroupData.useSheetMargins
     summary: >-
       Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options
-      for the worksheet. \[ [API set: ExcelApi BETA (PREVIEW
+      for the worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: useSheetMargins
@@ -110,7 +128,10 @@ items:
   - uid: excel.Excel.Interfaces.HeaderFooterGroupData.useSheetScale
     summary: >-
       Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page
-      layout options for the worksheet. \[ [API set: ExcelApi BETA (PREVIEW
+      layout options for the worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: useSheetScale

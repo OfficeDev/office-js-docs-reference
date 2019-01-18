@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions
-    summary: >-
-      Represents a collection of RowColumnPivotHierarchy items associated with the PivotTable. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of RowColumnPivotHierarchy items associated with the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions
     fullName: Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions
     langs:
@@ -15,9 +16,10 @@ items:
       - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions.name
       - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions.position
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions.id
-    summary: >-
-      For EACH ITEM in the collection: Id of the RowColumnPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Id of the RowColumnPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -29,9 +31,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions.name
-    summary: >-
-      For EACH ITEM in the collection: Name of the RowColumnPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Name of the RowColumnPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -43,9 +46,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions.position
-    summary: >-
-      For EACH ITEM in the collection: Position of the RowColumnPivotHierarchy. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Position of the RowColumnPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
     fullName: position
     langs:

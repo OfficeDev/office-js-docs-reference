@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Font
-    summary: >-
-      Represents a font. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Represents a font.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Font
     fullName: Word.Font
     langs:
@@ -32,7 +33,10 @@ items:
   - uid: word.Word.Font.bold
     summary: >-
       Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
-      false. \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      false.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: bold
     fullName: bold
     langs:
@@ -46,7 +50,10 @@ items:
   - uid: word.Word.Font.color
     summary: >-
       Gets or sets the color for the specified font. You can provide the value in the '\#RRGGBB' format or the color
-      name. \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      name.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -74,8 +81,10 @@ items:
   - uid: word.Word.Font.doubleStrikeThrough
     summary: >-
       Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as
-      double strikethrough text, otherwise, false. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      double strikethrough text, otherwise, false.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: doubleStrikeThrough
     fullName: doubleStrikeThrough
     langs:
@@ -90,8 +99,10 @@ items:
     summary: >-
       Gets or sets the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To
       remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty
-      string for mixed highlight colors, or null for no highlight color. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      string for mixed highlight colors, or null for no highlight color.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: highlightColor
     fullName: highlightColor
     langs:
@@ -105,7 +116,10 @@ items:
   - uid: word.Word.Font.italic
     summary: >-
       Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise,
-      false. \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      false.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: italic
     fullName: italic
     langs:
@@ -364,9 +378,10 @@ items:
           type:
             - word.Word.Interfaces.FontLoadOptions
   - uid: word.Word.Font.name
-    summary: >-
-      Gets or sets a value that represents the name of the font. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets a value that represents the name of the font.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -378,9 +393,10 @@ items:
         type:
           - string
   - uid: word.Word.Font.size
-    summary: >-
-      Gets or sets a value that represents the font size in points. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets a value that represents the font size in points.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: size
     fullName: size
     langs:
@@ -394,8 +410,10 @@ items:
   - uid: word.Word.Font.strikeThrough
     summary: >-
       Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as
-      strikethrough text, otherwise, false. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      strikethrough text, otherwise, false.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: strikeThrough
     fullName: strikeThrough
     langs:
@@ -409,8 +427,10 @@ items:
   - uid: word.Word.Font.subscript
     summary: >-
       Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
-      otherwise, false. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      otherwise, false.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: subscript
     fullName: subscript
     langs:
@@ -424,8 +444,10 @@ items:
   - uid: word.Word.Font.superscript
     summary: >-
       Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as
-      superscript, otherwise, false. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      superscript, otherwise, false.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: superscript
     fullName: superscript
     langs:
@@ -467,9 +489,10 @@ items:
           - word.Word.Font
         description: ''
   - uid: word.Word.Font.underline
-    summary: >-
-      Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined. \[ [API set:
-      WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: underline
     fullName: underline
     langs:

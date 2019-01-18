@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.StyleCollection
-    summary: >-
-      Represents a collection of all the styles. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of all the styles.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.StyleCollection
     fullName: Excel.StyleCollection
     langs:
@@ -22,9 +23,10 @@ items:
       - excel.Excel.StyleCollection.load
       - excel.Excel.StyleCollection.toJSON
   - uid: excel.Excel.StyleCollection.add
-    summary: >-
-      Adds a new style to the collection. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Adds a new style to the collection.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(name)
     fullName: add
     langs:
@@ -82,7 +84,10 @@ items:
           - RequestContext
   - uid: excel.Excel.StyleCollection.getCount
     summary: >-
-      Gets the number of styles in the collection. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets the number of styles in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getCount()
@@ -97,9 +102,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.StyleCollection.getItem
-    summary: >-
-      Gets a style by name. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a style by name.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
     fullName: getItem
     langs:
@@ -143,7 +149,10 @@ items:
             - string
   - uid: excel.Excel.StyleCollection.getItemAt
     summary: >-
-      Gets a style based on its position in the collection. \[ [API set: ExcelApi BETA (PREVIEW
+      Gets a style based on its position in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItemAt(index)

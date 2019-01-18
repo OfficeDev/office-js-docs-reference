@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Paragraph
-    summary: >-
-      A container for the visible content on a page. A Paragraph can contain any one ParagraphType type of content. \[
-      [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      A container for the visible content on a page. A Paragraph can contain any one ParagraphType type of content.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Paragraph
     fullName: OneNote.Paragraph
     langs:
@@ -37,9 +38,10 @@ items:
       - onenote.OneNote.Paragraph.type
       - onenote.OneNote.Paragraph.untrack
   - uid: onenote.OneNote.Paragraph.addNoteTag
-    summary: >-
-      Add NoteTag to the paragraph. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Add NoteTag to the paragraph.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'addNoteTag(type, status)'
     fullName: addNoteTag
     langs:
@@ -61,9 +63,10 @@ items:
           type:
             - onenote.OneNote.NoteTagStatus
   - uid: onenote.OneNote.Paragraph.delete
-    summary: >-
-      Deletes the paragraph \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Deletes the paragraph
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: delete()
     fullName: delete
     langs:
@@ -114,9 +117,10 @@ items:
           });
           ```
   - uid: onenote.OneNote.Paragraph.getParagraphInfo
-    summary: >-
-      Get list information of paragraph \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Get list information of paragraph
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getParagraphInfo()
     fullName: getParagraphInfo
     langs:
@@ -129,9 +133,10 @@ items:
           - OfficeExtension.ClientResult<OneNote.ParagraphInfo>
         description: ''
   - uid: onenote.OneNote.Paragraph.id
-    summary: >-
-      Gets the ID of the Paragraph object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the Paragraph object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -143,9 +148,10 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Paragraph.image
-    summary: >-
-      Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only. \[ [API set:
-      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: image
     fullName: image
     langs:
@@ -157,9 +163,10 @@ items:
         type:
           - OneNote.Image
   - uid: onenote.OneNote.Paragraph.inkWords
-    summary: >-
-      Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only. \[ [API set:
-      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkWords
     fullName: inkWords
     langs:
@@ -171,9 +178,10 @@ items:
         type:
           - onenote.OneNote.InkWordCollection
   - uid: onenote.OneNote.Paragraph.insertHtmlAsSibling
-    summary: >-
-      Inserts the specified HTML content \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Inserts the specified HTML content
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertHtmlAsSibling(insertLocation, html)'
     fullName: insertHtmlAsSibling
     langs:
@@ -235,9 +243,10 @@ items:
           type:
             - string
   - uid: onenote.OneNote.Paragraph.insertImageAsSibling
-    summary: >-
-      Inserts the image at the specified insert location.. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Inserts the image at the specified insert location..
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertImageAsSibling(insertLocation, base64EncodedImage, width, height)'
     fullName: insertImageAsSibling
     langs:
@@ -306,9 +315,10 @@ items:
           type:
             - number
   - uid: onenote.OneNote.Paragraph.insertRichTextAsSibling
-    summary: >-
-      Inserts the paragraph text at the specifiec insert location. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Inserts the paragraph text at the specifiec insert location.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertRichTextAsSibling(insertLocation, paragraphText)'
     fullName: insertRichTextAsSibling
     langs:
@@ -367,9 +377,10 @@ items:
           type:
             - string
   - uid: onenote.OneNote.Paragraph.insertTableAsSibling
-    summary: >-
-      Adds a table with the specified number of rows and columns before or after the current paragraph. \[ [API set:
-      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Adds a table with the specified number of rows and columns before or after the current paragraph.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertTableAsSibling(insertLocation, rowCount, columnCount, values)'
     fullName: insertTableAsSibling
     langs:
@@ -514,9 +525,10 @@ items:
           type:
             - onenote.OneNote.Interfaces.ParagraphLoadOptions
   - uid: onenote.OneNote.Paragraph.outline
-    summary: >-
-      Gets the Outline object that contains the Paragraph. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the Outline object that contains the Paragraph. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: outline
     fullName: outline
     langs:
@@ -528,9 +540,10 @@ items:
         type:
           - onenote.OneNote.Outline
   - uid: onenote.OneNote.Paragraph.paragraphs
-    summary: >-
-      The collection of paragraphs under this paragraph. Read only \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      The collection of paragraphs under this paragraph. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraphs
     fullName: paragraphs
     langs:
@@ -542,9 +555,10 @@ items:
         type:
           - onenote.OneNote.ParagraphCollection
   - uid: onenote.OneNote.Paragraph.parentParagraph
-    summary: >-
-      Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentParagraph
     fullName: parentParagraph
     langs:
@@ -556,9 +570,10 @@ items:
         type:
           - onenote.OneNote.Paragraph
   - uid: onenote.OneNote.Paragraph.parentParagraphOrNull
-    summary: >-
-      Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only. \[ [API set:
-      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentParagraphOrNull
     fullName: parentParagraphOrNull
     langs:
@@ -572,8 +587,10 @@ items:
   - uid: onenote.OneNote.Paragraph.parentTableCell
     summary: >-
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
-      ItemNotFound. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+      ItemNotFound. Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentTableCell
     fullName: parentTableCell
     langs:
@@ -587,8 +604,10 @@ items:
   - uid: onenote.OneNote.Paragraph.parentTableCellOrNull
     summary: >-
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
-      Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+      Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: parentTableCellOrNull
     fullName: parentTableCellOrNull
     langs:
@@ -600,9 +619,10 @@ items:
         type:
           - onenote.OneNote.TableCell
   - uid: onenote.OneNote.Paragraph.richText
-    summary: >-
-      Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only \[ [API
-      set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: richText
     fullName: richText
     langs:
@@ -614,9 +634,10 @@ items:
         type:
           - onenote.OneNote.RichText
   - uid: onenote.OneNote.Paragraph.table
-    summary: >-
-      Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only. \[ [API set:
-      OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: table
     fullName: table
     langs:
@@ -658,9 +679,10 @@ items:
           - onenote.OneNote.Paragraph
         description: ''
   - uid: onenote.OneNote.Paragraph.type
-    summary: >-
-      Gets the type of the Paragraph object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the type of the Paragraph object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

@@ -13,9 +13,10 @@ items:
       - onenote.OneNote.Interfaces.NoteTagData.status
       - onenote.OneNote.Interfaces.NoteTagData.type
   - uid: onenote.OneNote.Interfaces.NoteTagData.id
-    summary: >-
-      Gets the Id of the NoteTag object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the Id of the NoteTag object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -27,9 +28,10 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Interfaces.NoteTagData.status
-    summary: >-
-      Gets the status of the NoteTag object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the status of the NoteTag object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: status
     fullName: status
     langs:
@@ -45,9 +47,10 @@ items:
             OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet"
             | "TaskRemoved"
   - uid: onenote.OneNote.Interfaces.NoteTagData.type
-    summary: >-
-      Gets the type of the NoteTag object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the type of the NoteTag object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

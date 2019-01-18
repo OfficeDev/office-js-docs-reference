@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.BindingDataChangedEventArgs
-    summary: >-
-      Provides information about the binding that raised the DataChanged event. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Provides information about the binding that raised the DataChanged event.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.BindingDataChangedEventArgs
     fullName: Excel.BindingDataChangedEventArgs
     langs:
@@ -13,9 +14,10 @@ items:
     children:
       - excel.Excel.BindingDataChangedEventArgs.binding
   - uid: excel.Excel.BindingDataChangedEventArgs.binding
-    summary: >-
-      Gets the Binding object that represents the binding that raised the DataChanged event. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the Binding object that represents the binding that raised the DataChanged event.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: binding
     fullName: binding
     langs:

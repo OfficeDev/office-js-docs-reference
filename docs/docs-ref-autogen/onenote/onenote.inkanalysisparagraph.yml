@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.InkAnalysisParagraph
-    summary: >-
-      Represents ink analysis data for an identified paragraph formed by ink strokes. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents ink analysis data for an identified paragraph formed by ink strokes.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkAnalysisParagraph
     fullName: OneNote.InkAnalysisParagraph
     langs:
@@ -21,9 +22,10 @@ items:
       - onenote.OneNote.InkAnalysisParagraph.track
       - onenote.OneNote.InkAnalysisParagraph.untrack
   - uid: onenote.OneNote.InkAnalysisParagraph.id
-    summary: >-
-      Gets the ID of the InkAnalysisParagraph object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the InkAnalysisParagraph object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -35,9 +37,10 @@ items:
         type:
           - string
   - uid: onenote.OneNote.InkAnalysisParagraph.inkAnalysis
-    summary: >-
-      Reference to the parent InkAnalysisPage. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Reference to the parent InkAnalysisPage. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: inkAnalysis
     fullName: inkAnalysis
     langs:
@@ -49,9 +52,10 @@ items:
         type:
           - onenote.OneNote.InkAnalysis
   - uid: onenote.OneNote.InkAnalysisParagraph.lines
-    summary: >-
-      Gets the ink analysis lines in this ink analysis paragraph. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ink analysis lines in this ink analysis paragraph. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: lines
     fullName: lines
     langs:

@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.RangeCollection
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: Excel.RangeCollection
     fullName: Excel.RangeCollection
     langs:
@@ -20,6 +24,7 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
+    isPreview: true
     name: context
     fullName: context
     langs:
@@ -32,7 +37,10 @@ items:
           - RequestContext
   - uid: excel.Excel.RangeCollection.getCount
     summary: >-
-      Returns the number of ranges in the RangeCollection. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the number of ranges in the RangeCollection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getCount()
@@ -48,7 +56,10 @@ items:
         description: ''
   - uid: excel.Excel.RangeCollection.getItemAt
     summary: >-
-      Returns the range object based on its position in the RangeCollection. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the range object based on its position in the RangeCollection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItemAt(index)
@@ -69,6 +80,7 @@ items:
             - number
   - uid: excel.Excel.RangeCollection.items
     summary: Gets the loaded child items in this collection.
+    isPreview: true
     name: items
     fullName: items
     langs:
@@ -97,6 +109,7 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
+    isPreview: true
     name: load(option)
     fullName: load
     langs:
@@ -122,6 +135,7 @@ items:
       passed to it.) Whereas the original `Excel.RangeCollection` object is an API object, the `toJSON` method returns a
       plain JavaScript object (typed as `Excel.Interfaces.RangeCollectionData`<!-- -->) that contains an "items" array
       with shallow copies of any loaded properties from the collection's items.
+    isPreview: true
     name: toJSON()
     fullName: toJSON
     langs:

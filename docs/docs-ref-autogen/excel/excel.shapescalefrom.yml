@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeScaleFrom
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: Excel.ShapeScaleFrom
     fullName: Excel.ShapeScaleFrom
     langs:
@@ -12,6 +16,7 @@ items:
       - excel.Excel.ShapeScaleFrom.scaleFromMiddle
       - excel.Excel.ShapeScaleFrom.scaleFromTopLeft
   - uid: excel.Excel.ShapeScaleFrom.scaleFromBottomRight
+    isPreview: true
     name: scaleFromBottomRight
     fullName: scaleFromBottomRight
     langs:
@@ -19,6 +24,7 @@ items:
     type: field
     numericValue: '"ScaleFromBottomRight"'
   - uid: excel.Excel.ShapeScaleFrom.scaleFromMiddle
+    isPreview: true
     name: scaleFromMiddle
     fullName: scaleFromMiddle
     langs:
@@ -26,6 +32,7 @@ items:
     type: field
     numericValue: '"ScaleFromMiddle"'
   - uid: excel.Excel.ShapeScaleFrom.scaleFromTopLeft
+    isPreview: true
     name: scaleFromTopLeft
     fullName: scaleFromTopLeft
     langs:

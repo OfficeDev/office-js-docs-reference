@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartTitleFormat
-    summary: >-
-      Provides access to the office art formatting for chart title. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Provides access to the office art formatting for chart title.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTitleFormat
     fullName: Excel.ChartTitleFormat
     langs:
@@ -20,9 +21,10 @@ items:
       - excel.Excel.ChartTitleFormat.load
       - excel.Excel.ChartTitleFormat.toJSON
   - uid: excel.Excel.ChartTitleFormat.border
-    summary: >-
-      Represents the border format of chart title, which includes color, linestyle, and weight. Read-only. \[ [API set:
-      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the border format of chart title, which includes color, linestyle, and weight. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: border
     langs:
@@ -48,9 +50,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ChartTitleFormat.fill
-    summary: >-
-      Represents the fill format of an object, which includes background formatting information. Read-only. \[ [API set:
-      ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the fill format of an object, which includes background formatting information. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -62,9 +65,10 @@ items:
         type:
           - excel.Excel.ChartFill
   - uid: excel.Excel.ChartTitleFormat.font
-    summary: >-
-      Represents the font attributes (font name, font size, color, etc.) for an object. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for an object. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:

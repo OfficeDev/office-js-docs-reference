@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.ChartErrorBarsType
     summary: >-
-      Represents the range type for error bars. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the range type for error bars.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.ChartErrorBarsType

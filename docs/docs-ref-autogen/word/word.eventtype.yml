@@ -3,8 +3,10 @@ items:
   - uid: word.Word.EventType
     summary: >-
       Provides information about the type of a raised event. For each object type, please keep the order of: deleted,
-      selection changed, data changed, added. \[ [API set:
-      WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      selection changed, data changed, added.
+
+
+      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.EventType
     fullName: Word.EventType
     langs:

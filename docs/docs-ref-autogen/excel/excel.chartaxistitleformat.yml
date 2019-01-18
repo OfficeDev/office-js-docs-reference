@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartAxisTitleFormat
-    summary: >-
-      Represents the chart axis title formatting. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the chart axis title formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartAxisTitleFormat
     fullName: Excel.ChartAxisTitleFormat
     langs:
@@ -20,9 +21,10 @@ items:
       - excel.Excel.ChartAxisTitleFormat.load
       - excel.Excel.ChartAxisTitleFormat.toJSON
   - uid: excel.Excel.ChartAxisTitleFormat.border
-    summary: >-
-      Represents the border format, which includes color, linestyle, and weight. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the border format, which includes color, linestyle, and weight.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: border
     langs:
@@ -48,9 +50,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ChartAxisTitleFormat.fill
-    summary: >-
-      Represents chart fill formatting. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents chart fill formatting.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -62,8 +65,9 @@ items:
         type:
           - excel.Excel.ChartFill
   - uid: excel.Excel.ChartAxisTitleFormat.font
-    summary: >-
+    summary: |-
       Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
+
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font

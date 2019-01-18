@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.Interfaces.SlicerLoadOptions
     summary: >-
-      Represents a slicer object in the workbook. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents a slicer object in the workbook.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.Interfaces.SlicerLoadOptions
@@ -26,7 +29,10 @@ items:
       - excel.Excel.Interfaces.SlicerLoadOptions.worksheet
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.caption
     summary: >-
-      Represents the caption of slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the caption of slicer.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: caption
@@ -42,7 +48,10 @@ items:
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.height
     summary: >-
       Represents the height, in points, of the slicer. Throws an invalid argument exception when set with negative value
-      or zero as input. \[ [API set: ExcelApi BETA (PREVIEW
+      or zero as input.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: height
@@ -57,7 +66,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.id
     summary: >-
-      Represents the unique id of slicer. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the unique id of slicer. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: id
@@ -72,7 +84,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.isFilterCleared
     summary: >-
-      True if all filters currently applied on the slicer is cleared. \[ [API set: ExcelApi BETA (PREVIEW
+      True if all filters currently applied on the slicer is cleared.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: isFilterCleared
@@ -88,7 +103,10 @@ items:
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.left
     summary: >-
       Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an
-      invalid argument exception when set with negative value as input. \[ [API set: ExcelApi BETA (PREVIEW
+      invalid argument exception when set with negative value as input.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: left
@@ -103,7 +121,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.name
     summary: >-
-      Represents the name of slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the name of slicer.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: name
@@ -118,7 +139,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.nameInFormula
     summary: >-
-      Represents the name used in the formula. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the name used in the formula.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: nameInFormula
@@ -133,7 +157,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.sortBy
     summary: >-
-      Represents the sort order of the items in the slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the sort order of the items in the slicer.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: sortBy
@@ -150,7 +177,10 @@ items:
     summary: >-
       Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6,
       TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style
-      present in the workbook can also be specified. \[ [API set: ExcelApi BETA (PREVIEW
+      present in the workbook can also be specified.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: style
@@ -166,7 +196,10 @@ items:
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.top
     summary: >-
       Represents the distance, in points, from the top edge of the slicer to the right of the worksheet. Throws an
-      invalid argument exception when set with negative value as input. \[ [API set: ExcelApi BETA (PREVIEW
+      invalid argument exception when set with negative value as input.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: top
@@ -182,7 +215,10 @@ items:
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.width
     summary: >-
       Represents the width, in points, of the slicer. Throws an invalid argument exception when set with negative value
-      or zero as input. \[ [API set: ExcelApi BETA (PREVIEW
+      or zero as input.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: width
@@ -197,7 +233,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.worksheet
     summary: >-
-      Represents the worksheet containing the slicer. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the worksheet containing the slicer.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: worksheet

@@ -2,8 +2,11 @@
 items:
   - uid: word.Word.Interfaces.CustomXmlPartCollectionLoadOptions
     summary: >-
-      Contains the collection of [Word.CustomXmlPart](xref:word.Word.CustomXmlPart) objects. \[ [API set: WordApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Contains the collection of [Word.CustomXmlPart](xref:word.Word.CustomXmlPart) objects.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: Word.Interfaces.CustomXmlPartCollectionLoadOptions
     fullName: Word.Interfaces.CustomXmlPartCollectionLoadOptions
@@ -16,7 +19,10 @@ items:
       - word.Word.Interfaces.CustomXmlPartCollectionLoadOptions.namespaceUri
   - uid: word.Word.Interfaces.CustomXmlPartCollectionLoadOptions.id
     summary: >-
-      For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only. \[ [API set: WordApi BETA (PREVIEW
+      For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: id
@@ -31,8 +37,11 @@ items:
           - boolean
   - uid: word.Word.Interfaces.CustomXmlPartCollectionLoadOptions.namespaceUri
     summary: >-
-      For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only. \[ [API set: WordApi
-      BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: namespaceUri
     fullName: namespaceUri

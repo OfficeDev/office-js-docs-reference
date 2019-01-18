@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PictureFormat
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: Excel.PictureFormat
     fullName: Excel.PictureFormat
     langs:
@@ -15,6 +19,7 @@ items:
       - excel.Excel.PictureFormat.svg
       - excel.Excel.PictureFormat.unknown
   - uid: excel.Excel.PictureFormat.bmp
+    isPreview: true
     name: bmp
     fullName: bmp
     langs:
@@ -22,6 +27,7 @@ items:
     type: field
     numericValue: '"BMP"'
   - uid: excel.Excel.PictureFormat.gif
+    isPreview: true
     name: gif
     fullName: gif
     langs:
@@ -29,6 +35,7 @@ items:
     type: field
     numericValue: '"GIF"'
   - uid: excel.Excel.PictureFormat.jpeg
+    isPreview: true
     name: jpeg
     fullName: jpeg
     langs:
@@ -36,6 +43,7 @@ items:
     type: field
     numericValue: '"JPEG"'
   - uid: excel.Excel.PictureFormat.png
+    isPreview: true
     name: png
     fullName: png
     langs:
@@ -43,6 +51,7 @@ items:
     type: field
     numericValue: '"PNG"'
   - uid: excel.Excel.PictureFormat.svg
+    isPreview: true
     name: svg
     fullName: svg
     langs:
@@ -50,6 +59,7 @@ items:
     type: field
     numericValue: '"SVG"'
   - uid: excel.Excel.PictureFormat.unknown
+    isPreview: true
     name: unknown
     fullName: unknown
     langs:

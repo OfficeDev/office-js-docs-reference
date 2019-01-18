@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.InkStrokeCollection
-    summary: >-
-      Represents a collection of InkStroke objects. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of InkStroke objects.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkStrokeCollection
     fullName: OneNote.InkStrokeCollection
     langs:
@@ -22,9 +23,10 @@ items:
       - onenote.OneNote.InkStrokeCollection.track
       - onenote.OneNote.InkStrokeCollection.untrack
   - uid: onenote.OneNote.InkStrokeCollection.count
-    summary: >-
-      Returns the number of InkStrokes in the page. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Returns the number of InkStrokes in the page. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -36,9 +38,10 @@ items:
         type:
           - number
   - uid: onenote.OneNote.InkStrokeCollection.getItem
-    summary: >-
-      Gets a InkStroke object by ID or by its index in the collection. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets a InkStroke object by ID or by its index in the collection. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: getItem
     langs:
@@ -56,9 +59,10 @@ items:
           type:
             - number | string
   - uid: onenote.OneNote.InkStrokeCollection.getItemAt
-    summary: >-
-      Gets a InkStroke on its position in the collection. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets a InkStroke on its position in the collection.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:

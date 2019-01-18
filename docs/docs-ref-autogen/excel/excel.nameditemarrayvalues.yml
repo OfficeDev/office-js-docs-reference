@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.NamedItemArrayValues
-    summary: >-
-      Represents an object containing values and types of a named item. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents an object containing values and types of a named item.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.NamedItemArrayValues
     fullName: Excel.NamedItemArrayValues
     langs:
@@ -85,9 +86,10 @@ items:
           - excel.Excel.Interfaces.NamedItemArrayValuesData
         description: ''
   - uid: excel.Excel.NamedItemArrayValues.types
-    summary: >-
-      Represents the types for each item in the named item array \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the types for each item in the named item array
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: types
     fullName: types
     langs:
@@ -99,9 +101,10 @@ items:
         type:
           - 'Excel.RangeValueType[][]'
   - uid: excel.Excel.NamedItemArrayValues.values
-    summary: >-
-      Represents the values of each item in the named item array. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the values of each item in the named item array.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: values
     langs:

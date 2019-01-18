@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartAxesLoadOptions
-    summary: >-
-      Represents the chart axes. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the chart axes.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ChartAxesLoadOptions
     fullName: Excel.Interfaces.ChartAxesLoadOptions
     langs:
@@ -15,9 +16,10 @@ items:
       - excel.Excel.Interfaces.ChartAxesLoadOptions.seriesAxis
       - excel.Excel.Interfaces.ChartAxesLoadOptions.valueAxis
   - uid: excel.Excel.Interfaces.ChartAxesLoadOptions.categoryAxis
-    summary: >-
-      Represents the category axis in a chart. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the category axis in a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: categoryAxis
     fullName: categoryAxis
     langs:
@@ -29,9 +31,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartAxisLoadOptions
   - uid: excel.Excel.Interfaces.ChartAxesLoadOptions.seriesAxis
-    summary: >-
-      Represents the series axis of a 3-dimensional chart. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the series axis of a 3-dimensional chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: seriesAxis
     fullName: seriesAxis
     langs:
@@ -43,9 +46,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartAxisLoadOptions
   - uid: excel.Excel.Interfaces.ChartAxesLoadOptions.valueAxis
-    summary: >-
-      Represents the value axis in an axis. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the value axis in an axis.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueAxis
     fullName: valueAxis
     langs:

@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ConditionalRangeFontLoadOptions
-    summary: >-
-      This object represents the font attributes (font style, color, etc.) for an object. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      This object represents the font attributes (font style, color, etc.) for an object.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ConditionalRangeFontLoadOptions
     fullName: Excel.Interfaces.ConditionalRangeFontLoadOptions
     langs:
@@ -17,9 +18,10 @@ items:
       - excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.strikethrough
       - excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.underline
   - uid: excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.bold
-    summary: >-
-      Represents the bold status of font. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the bold status of font.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bold
     fullName: bold
     langs:
@@ -31,9 +33,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.color
-    summary: >-
-      HTML color code representation of the text color. E.g. \#FF0000 represents Red. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -45,9 +48,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.italic
-    summary: >-
-      Represents the italic status of the font. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the italic status of the font.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: italic
     fullName: italic
     langs:
@@ -59,9 +63,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.strikethrough
-    summary: >-
-      Represents the strikethrough status of the font. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the strikethrough status of the font.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: strikethrough
     fullName: strikethrough
     langs:
@@ -73,9 +78,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.underline
-    summary: >-
-      Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details. \[ [API set:
-      ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underline
     fullName: underline
     langs:

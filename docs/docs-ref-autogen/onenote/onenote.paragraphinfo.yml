@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.ParagraphInfo
-    summary: >-
-      List information for paragraph. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      List information for paragraph.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.ParagraphInfo
     fullName: OneNote.ParagraphInfo
     langs:
@@ -16,9 +17,10 @@ items:
       - onenote.OneNote.ParagraphInfo.listType
       - onenote.OneNote.ParagraphInfo.numberType
   - uid: onenote.OneNote.ParagraphInfo.bulletType
-    summary: >-
-      // Bullet list type of paragraph \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      // Bullet list type of paragraph
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: bulletType
     fullName: bulletType
     langs:
@@ -30,9 +32,10 @@ items:
         type:
           - string
   - uid: onenote.OneNote.ParagraphInfo.index
-    summary: >-
-      // Index of paragraph in list \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      // Index of paragraph in list
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: index
     fullName: index
     langs:
@@ -44,9 +47,10 @@ items:
         type:
           - number
   - uid: onenote.OneNote.ParagraphInfo.listType
-    summary: >-
-      // Type of list in paragraph \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      // Type of list in paragraph
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: listType
     fullName: listType
     langs:
@@ -58,9 +62,10 @@ items:
         type:
           - OneNote.ListType | "None" | "Number" | "Bullet"
   - uid: onenote.OneNote.ParagraphInfo.numberType
-    summary: >-
-      // number list type of paragraph \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      // number list type of paragraph
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: numberType
     fullName: numberType
     langs:

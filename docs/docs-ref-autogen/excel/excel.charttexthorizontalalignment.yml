@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartTextHorizontalAlignment
-    summary: >-
-      Represents the horizontal alignment for the specified object. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the horizontal alignment for the specified object.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTextHorizontalAlignment
     fullName: Excel.ChartTextHorizontalAlignment
     langs:

@@ -12,9 +12,10 @@ items:
       - excel.Excel.Interfaces.ChartTrendlineLabelFormatData.border
       - excel.Excel.Interfaces.ChartTrendlineLabelFormatData.font
   - uid: excel.Excel.Interfaces.ChartTrendlineLabelFormatData.border
-    summary: >-
-      Represents the border format, which includes color, linestyle, and weight. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the border format, which includes color, linestyle, and weight.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: border
     langs:
@@ -26,9 +27,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartBorderData
   - uid: excel.Excel.Interfaces.ChartTrendlineLabelFormatData.font
-    summary: >-
-      Represents the font attributes (font name, font size, color, etc.) for a chart trendline label. \[ [API set:
-      ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for a chart trendline label.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:

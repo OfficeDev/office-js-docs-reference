@@ -3,8 +3,10 @@ items:
   - uid: excel.Excel.Interfaces.ChartFormatStringLoadOptions
     summary: >-
       Represents the substring in chart related objects that contains text, like ChartTitle object, ChartAxisTitle
-      object, etc. \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      object, etc.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ChartFormatStringLoadOptions
     fullName: Excel.Interfaces.ChartFormatStringLoadOptions
     langs:
@@ -14,9 +16,10 @@ items:
     children:
       - excel.Excel.Interfaces.ChartFormatStringLoadOptions.font
   - uid: excel.Excel.Interfaces.ChartFormatStringLoadOptions.font
-    summary: >-
-      Represents the font attributes, such as font name, font size, color, etc. of chart characters object. \[ [API set:
-      ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the font attributes, such as font name, font size, color, etc. of chart characters object.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:

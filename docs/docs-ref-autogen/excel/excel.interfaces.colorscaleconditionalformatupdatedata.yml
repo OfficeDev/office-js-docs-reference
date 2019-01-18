@@ -13,9 +13,10 @@ items:
     children:
       - excel.Excel.Interfaces.ColorScaleConditionalFormatUpdateData.criteria
   - uid: excel.Excel.Interfaces.ColorScaleConditionalFormatUpdateData.criteria
-    summary: >-
-      The criteria of the color scale. Midpoint is optional when using a two point color scale. \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The criteria of the color scale. Midpoint is optional when using a two point color scale.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
     fullName: criteria
     langs:

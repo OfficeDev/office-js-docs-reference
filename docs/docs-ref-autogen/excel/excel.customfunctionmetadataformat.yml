@@ -1,6 +1,8 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.CustomFunctionMetadataFormat
+    summary: '\[ [API set: CustomFunctions 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: true
     name: Excel.CustomFunctionMetadataFormat
     fullName: Excel.CustomFunctionMetadataFormat
     langs:
@@ -11,6 +13,7 @@ items:
       - excel.Excel.CustomFunctionMetadataFormat.invalid
       - excel.Excel.CustomFunctionMetadataFormat.openApi
   - uid: excel.Excel.CustomFunctionMetadataFormat.invalid
+    isPreview: true
     name: invalid
     fullName: invalid
     langs:
@@ -18,6 +21,7 @@ items:
     type: field
     numericValue: '"Invalid"'
   - uid: excel.Excel.CustomFunctionMetadataFormat.openApi
+    isPreview: true
     name: openApi
     fullName: openApi
     langs:

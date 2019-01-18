@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PivotHierarchyCollection
-    summary: >-
-      Represents a collection of all the PivotTables that are part of the workbook or worksheet. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of all the PivotTables that are part of the workbook or worksheet.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotHierarchyCollection
     fullName: Excel.PivotHierarchyCollection
     langs:
@@ -35,9 +36,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.PivotHierarchyCollection.getCount
-    summary: >-
-      Gets the number of pivot hierarchies in the collection. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the number of pivot hierarchies in the collection.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -50,9 +52,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.PivotHierarchyCollection.getItem
-    summary: >-
-      Gets a PivotHierarchy by its name or id. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a PivotHierarchy by its name or id.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
     fullName: getItem
     langs:
@@ -70,9 +73,10 @@ items:
           type:
             - string
   - uid: excel.Excel.PivotHierarchyCollection.getItemOrNullObject
-    summary: >-
-      Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object. \[ [API set:
-      ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
     fullName: getItemOrNullObject
     langs:

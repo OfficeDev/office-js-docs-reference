@@ -3,7 +3,10 @@ items:
   - uid: excel.Excel.CellPropertiesFill
     summary: >-
       Represents the returned format.fill properties of getCell/Row/ColumnProperties or format.fill input parameter of
-      setCell/Row/ColumnProperties. \[ [API set: ExcelApi BETA (PREVIEW
+      setCell/Row/ColumnProperties.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.CellPropertiesFill

@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.CustomXmlPart
-    summary: >-
-      Represents a custom XML part object in a workbook. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a custom XML part object in a workbook.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomXmlPart
     fullName: Excel.CustomXmlPart
     langs:
@@ -36,9 +37,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.CustomXmlPart.delete
-    summary: >-
-      Deletes the custom XML part. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Deletes the custom XML part.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: delete
     langs:
@@ -83,9 +85,10 @@ items:
           });
           ```
   - uid: excel.Excel.CustomXmlPart.getXml
-    summary: >-
-      Gets the custom XML part's full XML content. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the custom XML part's full XML content.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getXml()
     fullName: getXml
     langs:
@@ -122,9 +125,10 @@ items:
           });
           ```
   - uid: excel.Excel.CustomXmlPart.id
-    summary: >-
-      The custom XML part's ID. Read-only. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The custom XML part's ID. Read-only.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -195,9 +199,10 @@ items:
           type:
             - excel.Excel.Interfaces.CustomXmlPartLoadOptions
   - uid: excel.Excel.CustomXmlPart.namespaceUri
-    summary: >-
-      The custom XML part's namespace URI. Read-only. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The custom XML part's namespace URI. Read-only.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: namespaceUri
     fullName: namespaceUri
     langs:
@@ -209,9 +214,10 @@ items:
         type:
           - string
   - uid: excel.Excel.CustomXmlPart.setXml
-    summary: >-
-      Sets the custom XML part's full XML content. \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Sets the custom XML part's full XML content.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setXml(xml)
     fullName: setXml
     langs:

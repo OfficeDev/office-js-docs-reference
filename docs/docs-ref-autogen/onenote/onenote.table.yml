@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Table
-    summary: >-
-      Represents a table in a OneNote page. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents a table in a OneNote page.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Table
     fullName: OneNote.Table
     langs:
@@ -33,8 +34,10 @@ items:
   - uid: onenote.OneNote.Table.appendColumn
     summary: >-
       Adds a column to the end of the table. Values, if specified, are set in the new column. Otherwise the column is
-      empty. \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      empty.
+
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendColumn(values)
     fullName: appendColumn
     langs:
@@ -87,9 +90,10 @@ items:
           type:
             - 'string[]'
   - uid: onenote.OneNote.Table.appendRow
-    summary: >-
-      Adds a row to the end of the table. Values, if specified, are set in the new row. Otherwise the row is empty. \[
-      [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Adds a row to the end of the table. Values, if specified, are set in the new row. Otherwise the row is empty.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendRow(values)
     fullName: appendRow
     langs:
@@ -142,9 +146,10 @@ items:
           type:
             - 'string[]'
   - uid: onenote.OneNote.Table.borderVisible
-    summary: >-
-      Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden. \[ [API
-      set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: borderVisible
     fullName: borderVisible
     langs:
@@ -156,9 +161,10 @@ items:
         type:
           - boolean
   - uid: onenote.OneNote.Table.clear
-    summary: >-
-      Clears the contents of the table. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Clears the contents of the table.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clear()
     fullName: clear
     langs:
@@ -171,9 +177,10 @@ items:
           - void
         description: ''
   - uid: onenote.OneNote.Table.columnCount
-    summary: >-
-      Gets the number of columns in the table. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the number of columns in the table.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: columnCount
     fullName: columnCount
     langs:
@@ -185,9 +192,10 @@ items:
         type:
           - number
   - uid: onenote.OneNote.Table.getCell
-    summary: >-
-      Gets the table cell at a specified row and column. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the table cell at a specified row and column.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'getCell(rowIndex, cellIndex)'
     fullName: getCell
     langs:
@@ -242,9 +250,10 @@ items:
           type:
             - number
   - uid: onenote.OneNote.Table.id
-    summary: >-
-      Gets the ID of the table. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -258,8 +267,10 @@ items:
   - uid: onenote.OneNote.Table.insertColumn
     summary: >-
       Inserts a column at the given index in the table. Values, if specified, are set in the new column. Otherwise the
-      column is empty. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+      column is empty.
+
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertColumn(index, values)'
     fullName: insertColumn
     langs:
@@ -318,8 +329,10 @@ items:
   - uid: onenote.OneNote.Table.insertRow
     summary: >-
       Inserts a row at the given index in the table. Values, if specified, are set in the new row. Otherwise the row is
-      empty. \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      empty.
+
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertRow(index, values)'
     fullName: insertRow
     langs:
@@ -495,9 +508,10 @@ items:
           type:
             - OneNote.Interfaces.TableLoadOptions
   - uid: onenote.OneNote.Table.paragraph
-    summary: >-
-      Gets the Paragraph object that contains the Table object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the Paragraph object that contains the Table object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
     fullName: paragraph
     langs:
@@ -509,9 +523,10 @@ items:
         type:
           - onenote.OneNote.Paragraph
   - uid: onenote.OneNote.Table.rowCount
-    summary: >-
-      Gets the number of rows in the table. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the number of rows in the table.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rowCount
     fullName: rowCount
     langs:
@@ -523,9 +538,10 @@ items:
         type:
           - number
   - uid: onenote.OneNote.Table.rows
-    summary: >-
-      Gets all of the table rows. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets all of the table rows. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: rows
     fullName: rows
     langs:
@@ -537,9 +553,10 @@ items:
         type:
           - OneNote.TableRowCollection
   - uid: onenote.OneNote.Table.setShadingColor
-    summary: >-
-      Sets the shading color of all cells in the table. The color code to set the cells to. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Sets the shading color of all cells in the table. The color code to set the cells to.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: setShadingColor(colorCode)
     fullName: setShadingColor
     langs:

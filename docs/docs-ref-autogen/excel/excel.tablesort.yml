@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.TableSort
-    summary: >-
-      Manages sorting operations on Table objects. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Manages sorting operations on Table objects.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableSort
     fullName: Excel.TableSort
     langs:
@@ -23,9 +24,10 @@ items:
       - excel.Excel.TableSort.reapply
       - excel.Excel.TableSort.toJSON
   - uid: excel.Excel.TableSort.apply
-    summary: >-
-      Perform a sort operation. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Perform a sort operation.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'apply(fields, matchCase, method)'
     fullName: apply
     langs:
@@ -74,8 +76,10 @@ items:
   - uid: excel.Excel.TableSort.clear
     summary: >-
       Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the
-      state of the header buttons. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      state of the header buttons.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: clear
     langs:
@@ -102,9 +106,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.TableSort.fields
-    summary: >-
-      Represents the current conditions used to last sort the table. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the current conditions used to last sort the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
     fullName: fields
     langs:
@@ -150,9 +155,10 @@ items:
           type:
             - excel.Excel.Interfaces.TableSortLoadOptions
   - uid: excel.Excel.TableSort.matchCase
-    summary: >-
-      Represents whether the casing impacted the last sort of the table. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents whether the casing impacted the last sort of the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: matchCase
     fullName: matchCase
     langs:
@@ -164,9 +170,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.TableSort.method
-    summary: >-
-      Represents Chinese character ordering method last used to sort the table. Read-only. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents Chinese character ordering method last used to sort the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: method
     fullName: method
     langs:
@@ -178,9 +185,10 @@ items:
         type:
           - Excel.SortMethod | "PinYin" | "StrokeCount"
   - uid: excel.Excel.TableSort.reapply
-    summary: >-
-      Reapplies the current sorting parameters to the table. \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Reapplies the current sorting parameters to the table.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reapply()
     fullName: reapply
     langs:

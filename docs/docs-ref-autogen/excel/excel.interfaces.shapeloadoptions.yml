@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.Interfaces.ShapeLoadOptions
     summary: >-
-      Represents a generic shape object in the worksheet. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents a generic shape object in the worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.Interfaces.ShapeLoadOptions
@@ -39,6 +42,8 @@ items:
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.altTextDescription
     summary: >-
       Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -54,9 +59,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.altTextTitle
     summary: >-
-      Returns or sets the alternative title text string for a Shape object when the object is saved to a Web page. \[
-      [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      Returns or sets the alternative title text string for a Shape object when the object is saved to a Web page.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: altTextTitle
     fullName: altTextTitle
@@ -70,7 +77,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.fill
     summary: >-
-      Returns the fill formatting of the shape object. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the fill formatting of the shape object.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: fill
@@ -86,7 +96,10 @@ items:
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.geometricShape
     summary: >-
       Returns the geometric shape for the shape object. Error will be thrown, if the shape object is other shape type
-      (Like, Image, SmartArt, etc.) rather than GeometricShape. \[ [API set: ExcelApi BETA (PREVIEW
+      (Like, Image, SmartArt, etc.) rather than GeometricShape.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: geometricShape
@@ -102,8 +115,11 @@ items:
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.geometricShapeType
     summary: >-
       Represents the geometric shape type of the specified shape. See Excel.GeometricShapeType for detail. Returns null
-      if the shape is not geometric, for example, get GeometricShapeType of a line or a chart will return null. \[ [API
-      set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      if the shape is not geometric, for example, get GeometricShapeType of a line or a chart will return null.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: geometricShapeType
     fullName: geometricShapeType
@@ -118,7 +134,10 @@ items:
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.group
     summary: >-
       Returns the shape group for the shape object. Error will be thrown, if the shape object is other shape type (Like,
-      Image, SmartArt, etc.) rather than GroupShape. \[ [API set: ExcelApi BETA (PREVIEW
+      Image, SmartArt, etc.) rather than GroupShape.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: group
@@ -134,7 +153,10 @@ items:
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.height
     summary: >-
       Represents the height, in points, of the shape. Throws an invalid argument exception when set with negative value
-      or zero as input. \[ [API set: ExcelApi BETA (PREVIEW
+      or zero as input.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: height
@@ -149,7 +171,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.id
     summary: >-
-      Represents the shape identifier. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the shape identifier. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: id
@@ -165,7 +190,10 @@ items:
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.image
     summary: >-
       Returns the image for the shape object. Error will be thrown, if the shape object is other shape type (Like,
-      GeometricShape, SmartArt, etc.) rather than Image. \[ [API set: ExcelApi BETA (PREVIEW
+      GeometricShape, SmartArt, etc.) rather than Image.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: image
@@ -181,7 +209,10 @@ items:
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.left
     summary: >-
       The distance, in points, from the left side of the shape to the left of the worksheet. Throws an invalid argument
-      exception when set with negative value as input. \[ [API set: ExcelApi BETA (PREVIEW
+      exception when set with negative value as input.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: left
@@ -197,7 +228,10 @@ items:
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.level
     summary: >-
       Represents the level of the specified shape. Level 0 means the shape is not part of any group, level 1 means the
-      shape is part of a top-level group, etc. \[ [API set: ExcelApi BETA (PREVIEW
+      shape is part of a top-level group, etc.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: level
@@ -213,7 +247,10 @@ items:
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.line
     summary: >-
       Returns the line object for the shape object. Error will be thrown, if the shape object is other shape type (Like,
-      GeometricShape, SmartArt, etc.) rather than Image. \[ [API set: ExcelApi BETA (PREVIEW
+      GeometricShape, SmartArt, etc.) rather than Image.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: line
@@ -228,7 +265,10 @@ items:
           - excel.Excel.Interfaces.LineLoadOptions
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.lineFormat
     summary: >-
-      Returns the line formatting of the shape object. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the line formatting of the shape object.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: lineFormat
@@ -243,7 +283,10 @@ items:
           - excel.Excel.Interfaces.ShapeLineFormatLoadOptions
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.lockAspectRatio
     summary: >-
-      Represents if the aspect ratio locked, in boolean, of the shape. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents if the aspect ratio locked, in boolean, of the shape.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: lockAspectRatio
@@ -258,7 +301,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.name
     summary: >-
-      Represents the name of the shape. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the name of the shape.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: name
@@ -273,7 +319,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.parentGroup
     summary: >-
-      Represents the parent group of the specified shape. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the parent group of the specified shape.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: parentGroup
@@ -288,8 +337,11 @@ items:
           - excel.Excel.Interfaces.ShapeLoadOptions
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.placement
     summary: >-
-      Represents the placment, value that represents the way the object is attached to the cells below it. \[ [API set:
-      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Represents the placment, value that represents the way the object is attached to the cells below it.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: placement
     fullName: placement
@@ -303,7 +355,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.rotation
     summary: >-
-      Represents the rotation, in degrees, of the shape. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the rotation, in degrees, of the shape.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: rotation
@@ -318,7 +373,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.textFrame
     summary: >-
-      Returns the textFrame object of a shape. Read only. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the textFrame object of a shape. Read only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: textFrame
@@ -334,7 +392,10 @@ items:
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.top
     summary: >-
       The distance, in points, from the top edge of the shape to the top of the worksheet. Throws an invalid argument
-      exception when set with negative value as input. \[ [API set: ExcelApi BETA (PREVIEW
+      exception when set with negative value as input.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: top
@@ -349,8 +410,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.type
     summary: >-
-      Returns the type of the specified shape. Read-only. See Excel.ShapeType for detail. \[ [API set: ExcelApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Returns the type of the specified shape. Read-only. See Excel.ShapeType for detail.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: type
     fullName: type
@@ -364,7 +428,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.visible
     summary: >-
-      Represents the visibility, in boolean, of the specified shape. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the visibility, in boolean, of the specified shape.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: visible
@@ -380,7 +447,10 @@ items:
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.width
     summary: >-
       Represents the width, in points, of the shape. Throws an invalid argument exception when set with negative value
-      or zero as input. \[ [API set: ExcelApi BETA (PREVIEW
+      or zero as input.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: width
@@ -396,6 +466,8 @@ items:
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.zorderPosition
     summary: >-
       Returns the position of the specified shape in the z-order, the very bottom shape's z-order value is 0. Read-only.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true

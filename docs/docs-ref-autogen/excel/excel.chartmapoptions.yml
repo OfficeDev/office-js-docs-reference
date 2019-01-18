@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.ChartMapOptions
     summary: >-
-      Encapsulates the properties for Map chart. \[ [API set: ExcelApi BETA (PREVIEW
+      Encapsulates the properties for Map chart.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.ChartMapOptions
@@ -37,7 +40,10 @@ items:
           - RequestContext
   - uid: excel.Excel.ChartMapOptions.labelStrategy
     summary: >-
-      Returns or sets series map labels strategy of a region map chart. Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns or sets series map labels strategy of a region map chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: labelStrategy
@@ -52,7 +58,10 @@ items:
           - Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
   - uid: excel.Excel.ChartMapOptions.level
     summary: >-
-      Returns or sets series map area of a region map chart. Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns or sets series map area of a region map chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: level
@@ -106,7 +115,10 @@ items:
             - excel.Excel.Interfaces.ChartMapOptionsLoadOptions
   - uid: excel.Excel.ChartMapOptions.projectionType
     summary: >-
-      Returns or sets series projection type of a region map chart. Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns or sets series projection type of a region map chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: projectionType

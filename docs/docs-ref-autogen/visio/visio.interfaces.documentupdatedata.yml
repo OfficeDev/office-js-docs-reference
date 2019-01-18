@@ -12,9 +12,10 @@ items:
       - visio.Visio.Interfaces.DocumentUpdateData.application
       - visio.Visio.Interfaces.DocumentUpdateData.view
   - uid: visio.Visio.Interfaces.DocumentUpdateData.application
-    summary: >-
-      Represents a Visio application instance that contains this document. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents a Visio application instance that contains this document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: application
     fullName: application
     langs:
@@ -26,9 +27,10 @@ items:
         type:
           - Visio.Interfaces.ApplicationUpdateData
   - uid: visio.Visio.Interfaces.DocumentUpdateData.view
-    summary: >-
-      Returns the DocumentView object. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Returns the DocumentView object.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: view
     fullName: view
     langs:

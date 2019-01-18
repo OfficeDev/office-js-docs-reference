@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Interfaces.ShapeLoadOptions
-    summary: >-
-      Represents the Shape class. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the Shape class.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Interfaces.ShapeLoadOptions
     fullName: Visio.Interfaces.ShapeLoadOptions
     langs:
@@ -17,9 +18,10 @@ items:
       - visio.Visio.Interfaces.ShapeLoadOptions.text
       - visio.Visio.Interfaces.ShapeLoadOptions.view
   - uid: visio.Visio.Interfaces.ShapeLoadOptions.id
-    summary: >-
-      Shape's identifier. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Shape's identifier. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: id
     fullName: id
     langs:
@@ -31,9 +33,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Interfaces.ShapeLoadOptions.name
-    summary: >-
-      Shape's name. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Shape's name. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: name
     fullName: name
     langs:
@@ -45,9 +48,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Interfaces.ShapeLoadOptions.select
-    summary: >-
-      Returns true, if shape is selected. User can set true to select the shape explicitly. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Returns true, if shape is selected. User can set true to select the shape explicitly.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: select
     fullName: select
     langs:
@@ -59,9 +63,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Interfaces.ShapeLoadOptions.text
-    summary: >-
-      Shape's text. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Shape's text. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: text
     fullName: text
     langs:
@@ -73,9 +78,10 @@ items:
         type:
           - boolean
   - uid: visio.Visio.Interfaces.ShapeLoadOptions.view
-    summary: >-
-      Returns the view of the shape. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Returns the view of the shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: view
     fullName: view
     langs:

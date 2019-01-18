@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions
-    summary: >-
-      Contains the collection of the document's Table objects. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Contains the collection of the document's Table objects.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.TableCollectionLoadOptions
     fullName: Word.Interfaces.TableCollectionLoadOptions
     langs:
@@ -39,8 +40,10 @@ items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.alignment
     summary: >-
       For EACH ITEM in the collection: Gets or sets the alignment of the table against the page column. The value can be
-      'Left', 'Centered', or 'Right'. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      'Left', 'Centered', or 'Right'.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: alignment
     fullName: alignment
     langs:
@@ -54,7 +57,10 @@ items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.font
     summary: >-
       For EACH ITEM in the collection: Gets the font. Use this to get and set font name, size, color, and other
-      properties. \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      properties.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: font
     fullName: font
     langs:
@@ -66,9 +72,10 @@ items:
         type:
           - word.Word.Interfaces.FontLoadOptions
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.headerRowCount
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets the number of header rows. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets the number of header rows.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: headerRowCount
     fullName: headerRowCount
     langs:
@@ -82,8 +89,10 @@ items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.horizontalAlignment
     summary: >-
       For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the table. The value can
-      be 'Left', 'Centered', 'Right', or 'Justified'. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      be 'Left', 'Centered', 'Right', or 'Justified'.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: horizontalAlignment
     langs:
@@ -95,9 +104,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.isUniform
-    summary: >-
-      For EACH ITEM in the collection: Indicates whether all of the table rows are uniform. Read-only. \[ [API set:
-      WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Indicates whether all of the table rows are uniform. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: isUniform
     fullName: isUniform
     langs:
@@ -109,9 +119,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.nestingLevel
-    summary: >-
-      For EACH ITEM in the collection: Gets the nesting level of the table. Top-level tables have level 1. Read-only. \[
-      [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: nestingLevel
     fullName: nestingLevel
     langs:
@@ -123,9 +134,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.parentBody
-    summary: >-
-      For EACH ITEM in the collection: Gets the parent body of the table. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the parent body of the table.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentBody
     fullName: parentBody
     langs:
@@ -139,8 +151,10 @@ items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.parentContentControl
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the table. Throws if there isn't a parent
-      content control. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      content control.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl
     fullName: parentContentControl
     langs:
@@ -154,8 +168,10 @@ items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.parentContentControlOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the table. Returns a null object if there
-      isn't a parent content control. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      isn't a parent content control.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControlOrNullObject
     fullName: parentContentControlOrNullObject
     langs:
@@ -169,7 +185,10 @@ items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.parentTable
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains this table. Throws if it is not contained in a
-      table. \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      table.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
     fullName: parentTable
     langs:
@@ -183,7 +202,10 @@ items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.parentTableCell
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains this table. Throws if it is not contained in a
-      table cell. \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      table cell.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCell
     fullName: parentTableCell
     langs:
@@ -197,8 +219,10 @@ items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.parentTableCellOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains this table. Returns a null object if it is not
-      contained in a table cell. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      contained in a table cell.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCellOrNullObject
     fullName: parentTableCellOrNullObject
     langs:
@@ -212,8 +236,10 @@ items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.parentTableOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains this table. Returns a null object if it is not
-      contained in a table. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      contained in a table.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableOrNullObject
     fullName: parentTableOrNullObject
     langs:
@@ -225,9 +251,10 @@ items:
         type:
           - Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.rowCount
-    summary: >-
-      For EACH ITEM in the collection: Gets the number of rows in the table. Read-only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets the number of rows in the table. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: rowCount
     fullName: rowCount
     langs:
@@ -241,8 +268,10 @@ items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.shadingColor
     summary: >-
       For EACH ITEM in the collection: Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by
-      using the color name. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      using the color name.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: shadingColor
     fullName: shadingColor
     langs:
@@ -257,7 +286,10 @@ items:
     summary: >-
       For EACH ITEM in the collection: Gets or sets the style name for the table. Use this property for custom styles
       and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn"
-      property. \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      property.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: style
     fullName: style
     langs:
@@ -269,9 +301,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.styleBandedColumns
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets whether the table has banded columns. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets whether the table has banded columns.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBandedColumns
     fullName: styleBandedColumns
     langs:
@@ -283,9 +316,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.styleBandedRows
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets whether the table has banded rows. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets whether the table has banded rows.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBandedRows
     fullName: styleBandedRows
     langs:
@@ -300,7 +334,10 @@ items:
     summary: >-
       For EACH ITEM in the collection: Gets or sets the built-in style name for the table. Use this property for
       built-in styles that are portable between locales. To use custom styles or localized style names, see the "style"
-      property. \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      property.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleBuiltIn
     fullName: styleBuiltIn
     langs:
@@ -312,9 +349,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.styleFirstColumn
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets whether the table has a first column with a special style. \[ [API
-      set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets whether the table has a first column with a special style.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleFirstColumn
     fullName: styleFirstColumn
     langs:
@@ -326,9 +364,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.styleLastColumn
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets whether the table has a last column with a special style. \[ [API
-      set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets whether the table has a last column with a special style.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleLastColumn
     fullName: styleLastColumn
     langs:
@@ -340,9 +379,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.styleTotalRow
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets whether the table has a total (last) row with a special style. \[
-      [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets whether the table has a total (last) row with a special style.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: styleTotalRow
     fullName: styleTotalRow
     langs:
@@ -354,9 +394,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.values
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets the text values in the table, as a 2D Javascript array. \[ [API
-      set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets the text values in the table, as a 2D Javascript array.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: values
     fullName: values
     langs:
@@ -370,8 +411,10 @@ items:
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.verticalAlignment
     summary: >-
       For EACH ITEM in the collection: Gets and sets the vertical alignment of every cell in the table. The value can be
-      'Top', 'Center', or 'Bottom'. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      'Top', 'Center', or 'Bottom'.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: verticalAlignment
     fullName: verticalAlignment
     langs:
@@ -383,9 +426,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.width
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets the width of the table in points. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets the width of the table in points.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
     fullName: width
     langs:

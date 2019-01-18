@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.WorksheetActivatedEventArgs
-    summary: >-
-      Provides information about the worksheet that raised the Activated event. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Provides information about the worksheet that raised the Activated event.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetActivatedEventArgs
     fullName: Excel.WorksheetActivatedEventArgs
     langs:
@@ -14,9 +15,10 @@ items:
       - excel.Excel.WorksheetActivatedEventArgs.type
       - excel.Excel.WorksheetActivatedEventArgs.worksheetId
   - uid: excel.Excel.WorksheetActivatedEventArgs.type
-    summary: >-
-      Gets the type of the event. See Excel.EventType for details. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the type of the event. See Excel.EventType for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -28,9 +30,10 @@ items:
         type:
           - '"WorksheetActivated"'
   - uid: excel.Excel.WorksheetActivatedEventArgs.worksheetId
-    summary: >-
-      Gets the id of the worksheet that is activated. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the id of the worksheet that is activated.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: worksheetId
     langs:

@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Selection
-    summary: >-
-      Represents the Selection in the page. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the Selection in the page.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.Selection
     fullName: Visio.Selection
     langs:
@@ -51,9 +52,10 @@ items:
           type:
             - 'string | string[]'
   - uid: visio.Visio.Selection.shapes
-    summary: >-
-      Gets the Shapes of the Selection. Read-only. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Gets the Shapes of the Selection. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: shapes
     fullName: shapes
     langs:

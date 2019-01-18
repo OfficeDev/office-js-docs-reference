@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.WorksheetDeletedEventArgs
-    summary: >-
-      Provides information about the worksheet that raised the Deleted event. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Provides information about the worksheet that raised the Deleted event.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetDeletedEventArgs
     fullName: Excel.WorksheetDeletedEventArgs
     langs:
@@ -15,9 +16,10 @@ items:
       - excel.Excel.WorksheetDeletedEventArgs.type
       - excel.Excel.WorksheetDeletedEventArgs.worksheetId
   - uid: excel.Excel.WorksheetDeletedEventArgs.source
-    summary: >-
-      Gets the source of the event. See Excel.EventSource for details. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the source of the event. See Excel.EventSource for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: source
     fullName: source
     langs:
@@ -29,9 +31,10 @@ items:
         type:
           - Excel.EventSource | "Local" | "Remote"
   - uid: excel.Excel.WorksheetDeletedEventArgs.type
-    summary: >-
-      Gets the type of the event. See Excel.EventType for details. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the type of the event. See Excel.EventType for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -43,9 +46,10 @@ items:
         type:
           - '"WorksheetDeleted"'
   - uid: excel.Excel.WorksheetDeletedEventArgs.worksheetId
-    summary: >-
-      Gets the id of the worksheet that is deleted from the workbook. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the id of the worksheet that is deleted from the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: worksheetId
     langs:

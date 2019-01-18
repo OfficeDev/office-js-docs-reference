@@ -17,7 +17,10 @@ items:
   - uid: excel.Excel.Interfaces.WorkbookUpdateData.chartDataPointTrack
     summary: >-
       True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
-      charts track the index of the data points. \[ [API set: ExcelApi BETA (PREVIEW
+      charts track the index of the data points.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: chartDataPointTrack
@@ -33,8 +36,11 @@ items:
   - uid: excel.Excel.Interfaces.WorkbookUpdateData.isDirty
     summary: >-
       True if no changes have been made to the specified workbook since it was last saved. You can set this property to
-      True if you want to close a modified workbook without either saving it or being prompted to save it. \[ [API set:
-      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      True if you want to close a modified workbook without either saving it or being prompted to save it.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: isDirty
     fullName: isDirty
@@ -47,9 +53,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.WorkbookUpdateData.properties
-    summary: >-
-      Gets the workbook properties. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the workbook properties.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: properties
     fullName: properties
     langs:
@@ -62,7 +69,10 @@ items:
           - excel.Excel.Interfaces.DocumentPropertiesUpdateData
   - uid: excel.Excel.Interfaces.WorkbookUpdateData.use1904DateSystem
     summary: >-
-      True if the workbook uses the 1904 date system. \[ [API set: ExcelApi BETA (PREVIEW
+      True if the workbook uses the 1904 date system.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: use1904DateSystem
@@ -78,8 +88,11 @@ items:
   - uid: excel.Excel.Interfaces.WorkbookUpdateData.usePrecisionAsDisplayed
     summary: >-
       True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
-      Data will permanently lose accuracy when switching this property from false to true. \[ [API set: ExcelApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Data will permanently lose accuracy when switching this property from false to true.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: usePrecisionAsDisplayed
     fullName: usePrecisionAsDisplayed

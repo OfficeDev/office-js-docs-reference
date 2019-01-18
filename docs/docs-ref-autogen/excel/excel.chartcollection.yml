@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartCollection
-    summary: >-
-      A collection of all the chart objects on a worksheet. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      A collection of all the chart objects on a worksheet.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartCollection
     fullName: Excel.ChartCollection
     langs:
@@ -28,9 +29,10 @@ items:
       - excel.Excel.ChartCollection.onDeleted
       - excel.Excel.ChartCollection.toJSON
   - uid: excel.Excel.ChartCollection.add
-    summary: >-
-      Creates a new chart. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Creates a new chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(type, sourceData, seriesBy)'
     fullName: add
     langs:
@@ -93,9 +95,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ChartCollection.count
-    summary: >-
-      Returns the number of charts in the worksheet. Read-only. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the number of charts in the worksheet. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -107,9 +110,10 @@ items:
         type:
           - number
   - uid: excel.Excel.ChartCollection.getCount
-    summary: >-
-      Returns the number of charts in the worksheet. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns the number of charts in the worksheet.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount
     langs:
@@ -122,9 +126,10 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.ChartCollection.getItem
-    summary: >-
-      Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned. \[
-      [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
     fullName: getItem
     langs:
@@ -187,9 +192,10 @@ items:
           type:
             - string
   - uid: excel.Excel.ChartCollection.getItemAt
-    summary: >-
-      Gets a chart based on its position in the collection. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets a chart based on its position in the collection.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt
     langs:
@@ -226,8 +232,10 @@ items:
   - uid: excel.Excel.ChartCollection.getItemOrNullObject
     summary: >-
       Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned. If
-      the chart does not exist, will return a null object. \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      the chart does not exist, will return a null object.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
     fullName: getItemOrNullObject
     langs:
@@ -335,9 +343,10 @@ items:
           type:
             - Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.ChartCollection.onActivated
-    summary: >-
-      Occurs when a chart is activated. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when a chart is activated.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onActivated
     fullName: onActivated
     langs:
@@ -349,9 +358,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>
   - uid: excel.Excel.ChartCollection.onAdded
-    summary: >-
-      Occurs when a new chart is added to the worksheet. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when a new chart is added to the worksheet.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onAdded
     fullName: onAdded
     langs:
@@ -363,9 +373,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartAddedEventArgs>
   - uid: excel.Excel.ChartCollection.onDeactivated
-    summary: >-
-      Occurs when a chart is deactivated. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when a chart is deactivated.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeactivated
     fullName: onDeactivated
     langs:
@@ -377,9 +388,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>
   - uid: excel.Excel.ChartCollection.onDeleted
-    summary: >-
-      Occurs when a chart is deleted. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Occurs when a chart is deleted.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeleted
     fullName: onDeleted
     langs:

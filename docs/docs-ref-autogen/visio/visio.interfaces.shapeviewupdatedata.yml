@@ -11,9 +11,10 @@ items:
     children:
       - visio.Visio.Interfaces.ShapeViewUpdateData.highlight
   - uid: visio.Visio.Interfaces.ShapeViewUpdateData.highlight
-    summary: >-
-      Represents the highlight around the shape. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the highlight around the shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: highlight
     fullName: highlight
     langs:

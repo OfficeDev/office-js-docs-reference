@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions
-    summary: >-
-      Represents document properties. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Represents document properties.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.DocumentPropertiesLoadOptions
     fullName: Word.Interfaces.DocumentPropertiesLoadOptions
     langs:
@@ -29,9 +30,10 @@ items:
       - word.Word.Interfaces.DocumentPropertiesLoadOptions.template
       - word.Word.Interfaces.DocumentPropertiesLoadOptions.title
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.applicationName
-    summary: >-
-      Gets the application name of the document. Read only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the application name of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: applicationName
     fullName: applicationName
     langs:
@@ -43,9 +45,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.author
-    summary: >-
-      Gets or sets the author of the document. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the author of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: author
     fullName: author
     langs:
@@ -57,9 +60,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.category
-    summary: >-
-      Gets or sets the category of the document. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the category of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: category
     fullName: category
     langs:
@@ -71,9 +75,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.comments
-    summary: >-
-      Gets or sets the comments of the document. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the comments of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: comments
     fullName: comments
     langs:
@@ -85,9 +90,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.company
-    summary: >-
-      Gets or sets the company of the document. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the company of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: company
     fullName: company
     langs:
@@ -99,9 +105,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.creationDate
-    summary: >-
-      Gets the creation date of the document. Read only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the creation date of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: creationDate
     fullName: creationDate
     langs:
@@ -113,9 +120,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.format
-    summary: >-
-      Gets or sets the format of the document. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the format of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -127,9 +135,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.keywords
-    summary: >-
-      Gets or sets the keywords of the document. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the keywords of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: keywords
     fullName: keywords
     langs:
@@ -141,9 +150,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.lastAuthor
-    summary: >-
-      Gets the last author of the document. Read only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the last author of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lastAuthor
     fullName: lastAuthor
     langs:
@@ -155,9 +165,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.lastPrintDate
-    summary: >-
-      Gets the last print date of the document. Read only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the last print date of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lastPrintDate
     fullName: lastPrintDate
     langs:
@@ -169,9 +180,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.lastSaveTime
-    summary: >-
-      Gets the last save time of the document. Read only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the last save time of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lastSaveTime
     fullName: lastSaveTime
     langs:
@@ -183,9 +195,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.manager
-    summary: >-
-      Gets or sets the manager of the document. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the manager of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: manager
     fullName: manager
     langs:
@@ -197,9 +210,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.revisionNumber
-    summary: >-
-      Gets the revision number of the document. Read only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Gets the revision number of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: revisionNumber
     fullName: revisionNumber
     langs:
@@ -211,9 +225,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.security
-    summary: >-
-      Gets the security of the document. Read only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the security of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: security
     fullName: security
     langs:
@@ -225,9 +240,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.subject
-    summary: >-
-      Gets or sets the subject of the document. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the subject of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: subject
     fullName: subject
     langs:
@@ -239,9 +255,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.template
-    summary: >-
-      Gets the template of the document. Read only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the template of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: template
     fullName: template
     langs:
@@ -253,9 +270,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.title
-    summary: >-
-      Gets or sets the title of the document. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets the title of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: title
     fullName: title
     langs:

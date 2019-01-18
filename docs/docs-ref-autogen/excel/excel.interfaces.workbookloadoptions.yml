@@ -1,8 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions
-    summary: >-
+    summary: |-
       Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
+
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.WorkbookLoadOptions
     fullName: Excel.Interfaces.WorkbookLoadOptions
@@ -26,9 +27,10 @@ items:
       - excel.Excel.Interfaces.WorkbookLoadOptions.use1904DateSystem
       - excel.Excel.Interfaces.WorkbookLoadOptions.usePrecisionAsDisplayed
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.application
-    summary: >-
-      Represents the Excel application instance that contains this workbook. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the Excel application instance that contains this workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: application
     fullName: application
     langs:
@@ -41,7 +43,10 @@ items:
           - excel.Excel.Interfaces.ApplicationLoadOptions
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.autoSave
     summary: >-
-      True if the workbook is in auto save mode. \[ [API set: ExcelApi BETA (PREVIEW
+      True if the workbook is in auto save mode.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: autoSave
@@ -55,9 +60,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.bindings
-    summary: >-
-      Represents a collection of bindings that are part of the workbook. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of bindings that are part of the workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bindings
     fullName: bindings
     langs:
@@ -70,7 +76,10 @@ items:
           - excel.Excel.Interfaces.BindingCollectionLoadOptions
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.calculationEngineVersion
     summary: >-
-      Returns a number about the version of Excel Calculation Engine. Read-Only. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns a number about the version of Excel Calculation Engine. Read-Only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: calculationEngineVersion
@@ -86,7 +95,10 @@ items:
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.chartDataPointTrack
     summary: >-
       True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
-      charts track the index of the data points. \[ [API set: ExcelApi BETA (PREVIEW
+      charts track the index of the data points.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: chartDataPointTrack
@@ -102,8 +114,11 @@ items:
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.isDirty
     summary: >-
       True if no changes have been made to the specified workbook since it was last saved. You can set this property to
-      True if you want to close a modified workbook without either saving it or being prompted to save it. \[ [API set:
-      ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      True if you want to close a modified workbook without either saving it or being prompted to save it.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: isDirty
     fullName: isDirty
@@ -116,9 +131,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.name
-    summary: >-
-      Gets the workbook name. Read-only. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the workbook name. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -131,7 +147,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.previouslySaved
     summary: >-
-      True if the workbook has ever been saved locally or online. \[ [API set: ExcelApi BETA (PREVIEW
+      True if the workbook has ever been saved locally or online.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: previouslySaved
@@ -145,9 +164,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.properties
-    summary: >-
-      Gets the workbook properties. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Gets the workbook properties.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: properties
     fullName: properties
     langs:
@@ -159,9 +179,10 @@ items:
         type:
           - excel.Excel.Interfaces.DocumentPropertiesLoadOptions
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.protection
-    summary: >-
-      Returns workbook protection object for a workbook. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Returns workbook protection object for a workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
     fullName: protection
     langs:
@@ -173,9 +194,10 @@ items:
         type:
           - excel.Excel.Interfaces.WorkbookProtectionLoadOptions
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.readOnly
-    summary: >-
-      True if the workbook is open in Read-only mode. Read-only. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      True if the workbook is open in Read-only mode. Read-only.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readOnly
     fullName: readOnly
     langs:
@@ -187,9 +209,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.tables
-    summary: >-
-      Represents a collection of tables associated with the workbook. \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents a collection of tables associated with the workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tables
     fullName: tables
     langs:
@@ -202,7 +225,10 @@ items:
           - excel.Excel.Interfaces.TableCollectionLoadOptions
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.use1904DateSystem
     summary: >-
-      True if the workbook uses the 1904 date system. \[ [API set: ExcelApi BETA (PREVIEW
+      True if the workbook uses the 1904 date system.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: use1904DateSystem
@@ -218,8 +244,11 @@ items:
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.usePrecisionAsDisplayed
     summary: >-
       True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
-      Data will permanently lose accuracy when switching this property from false to true. \[ [API set: ExcelApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Data will permanently lose accuracy when switching this property from false to true.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: usePrecisionAsDisplayed
     fullName: usePrecisionAsDisplayed

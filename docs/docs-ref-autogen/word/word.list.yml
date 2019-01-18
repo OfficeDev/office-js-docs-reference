@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.List
-    summary: >-
-      Contains a collection of [Word.Paragraph](xref:word.Word.Paragraph) objects. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Contains a collection of [Word.Paragraph](xref:word.Word.Paragraph) objects.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.List
     fullName: Word.List
     langs:
@@ -50,8 +51,11 @@ items:
           - RequestContext
   - uid: word.Word.List.getLevelFont
     summary: >-
-      Gets the font of the bullet, number or picture at the specified level in the list. \[ [API set: WordApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Gets the font of the bullet, number or picture at the specified level in the list.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: getLevelFont(level)
     fullName: getLevelFont
@@ -70,9 +74,10 @@ items:
           type:
             - number
   - uid: word.Word.List.getLevelParagraphs
-    summary: >-
-      Gets the paragraphs that occur at the specified level in the list. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the paragraphs that occur at the specified level in the list.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getLevelParagraphs(level)
     fullName: getLevelParagraphs
     langs:
@@ -91,8 +96,11 @@ items:
             - number
   - uid: word.Word.List.getLevelPicture
     summary: >-
-      Gets the base64 encoded string representation of the picture at the specified level in the list. \[ [API set:
-      WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Gets the base64 encoded string representation of the picture at the specified level in the list.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: getLevelPicture(level)
     fullName: getLevelPicture
@@ -111,9 +119,10 @@ items:
           type:
             - number
   - uid: word.Word.List.getLevelString
-    summary: >-
-      Gets the bullet, number or picture at the specified level as a string. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the bullet, number or picture at the specified level as a string.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getLevelString(level)
     fullName: getLevelString
     langs:
@@ -131,9 +140,10 @@ items:
           type:
             - number
   - uid: word.Word.List.id
-    summary: >-
-      Gets the list's id. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the list's id.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -147,7 +157,10 @@ items:
   - uid: word.Word.List.insertParagraph
     summary: >-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or
-      'After'. \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      'After'.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
     fullName: insertParagraph
     langs:
@@ -171,8 +184,10 @@ items:
   - uid: word.Word.List.levelExistences
     summary: >-
       Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there
-      is at least one list item at that level. Read-only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      is at least one list item at that level. Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: levelExistences
     fullName: levelExistences
     langs:
@@ -184,9 +199,10 @@ items:
         type:
           - 'boolean[]'
   - uid: word.Word.List.levelTypes
-    summary: >-
-      Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only. \[ [API set:
-      WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: levelTypes
     fullName: levelTypes
     langs:
@@ -232,9 +248,10 @@ items:
           type:
             - word.Word.Interfaces.ListLoadOptions
   - uid: word.Word.List.paragraphs
-    summary: >-
-      Gets paragraphs in the list. Read-only. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets paragraphs in the list. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: paragraphs
     fullName: paragraphs
     langs:
@@ -247,8 +264,11 @@ items:
           - Word.ParagraphCollection
   - uid: word.Word.List.resetLevelFont
     summary: >-
-      Resets the font of the bullet, number or picture at the specified level in the list. \[ [API set: WordApi BETA
-      (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Resets the font of the bullet, number or picture at the specified level in the list.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: 'resetLevelFont(level, resetFontName)'
     fullName: resetLevelFont
@@ -273,9 +293,10 @@ items:
           type:
             - boolean
   - uid: word.Word.List.setLevelAlignment
-    summary: >-
-      Sets the alignment of the bullet, number or picture at the specified level in the list. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Sets the alignment of the bullet, number or picture at the specified level in the list.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'setLevelAlignment(level, alignment)'
     fullName: setLevelAlignment
     langs:
@@ -297,9 +318,10 @@ items:
           type:
             - word.Word.Alignment
   - uid: word.Word.List.setLevelBullet
-    summary: >-
-      Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required. \[
-      [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'setLevelBullet(level, listBullet, charCode, fontName)'
     fullName: setLevelBullet
     langs:
@@ -329,9 +351,10 @@ items:
           type:
             - string
   - uid: word.Word.List.setLevelIndents
-    summary: >-
-      Sets the two indents of the specified level in the list. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Sets the two indents of the specified level in the list.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'setLevelIndents(level, textIndent, bulletNumberPictureIndent)'
     fullName: setLevelIndents
     langs:
@@ -359,9 +382,10 @@ items:
           type:
             - number
   - uid: word.Word.List.setLevelNumbering
-    summary: >-
-      Sets the numbering format at the specified level in the list. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Sets the numbering format at the specified level in the list.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'setLevelNumbering(level, listNumbering, formatString)'
     fullName: setLevelNumbering
     langs:
@@ -392,7 +416,10 @@ items:
             - 'any[]'
   - uid: word.Word.List.setLevelPicture
     summary: >-
-      Sets the picture at the specified level in the list. \[ [API set: WordApi BETA (PREVIEW
+      Sets the picture at the specified level in the list.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: 'setLevelPicture(level, base64EncodedImage)'
@@ -416,9 +443,10 @@ items:
           type:
             - string
   - uid: word.Word.List.setLevelStartingNumber
-    summary: >-
-      Sets the starting number at the specified level in the list. Default value is 1. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Sets the starting number at the specified level in the list. Default value is 1.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'setLevelStartingNumber(level, startingNumber)'
     fullName: setLevelStartingNumber
     langs:

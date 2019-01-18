@@ -686,7 +686,14 @@
                     },
                     {
                       "kind": "text",
-                      "text": "This method must be called in an event handler added via Office.context.mailbox.addHandlerAsync after completing processing of the event. [Api set: Mailbox 1.3]"
+                      "text": "This method must be called in an event handler added via Office.context.mailbox.addHandlerAsync after completing processing of the event."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: Mailbox 1.3]"
                     }
                   ],
                   "remarks": [
@@ -15646,7 +15653,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "- userProfile: Provides information about the user in an Outlook add-in. [Api set: Mailbox 1.0]"
+                  "text": "- userProfile: Provides information about the user in an Outlook add-in."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -15825,7 +15839,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The RoamingSettings object lets you store and access data for a mail add-in that is stored in a user's mailbox, so that is available to that add-in when it is running from any host client application used to access that mailbox. [Api set: Mailbox 1.0]"
+                  "text": "The RoamingSettings object lets you store and access data for a mail add-in that is stored in a user's mailbox, so that is available to that add-in when it is running from any host client application used to access that mailbox."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
@@ -34107,7 +34128,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when any date or time of the selected appointment or series is changed in Outlook. [Api set: Mailbox 1.7]"
+                  "text": "Triggers when any date or time of the selected appointment or series is changed in Outlook."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [],
@@ -34120,7 +34148,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when an attachment is added to or removed from an item. [Api set: Mailbox Preview]"
+                  "text": "Triggers when an attachment is added to or removed from an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [],
@@ -35118,7 +35153,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when a different Outlook item is selected for viewing while the task pane is pinned. [Api set: Mailbox 1.5]"
+                  "text": "Triggers when a different Outlook item is selected for viewing while the task pane is pinned."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.5]"
                 }
               ],
               "remarks": [],
@@ -35170,7 +35212,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when the OfficeTheme is changed in Outlook. [Api set: Mailbox Preview]"
+                  "text": "Triggers when the OfficeTheme is changed in Outlook."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [],
@@ -35183,7 +35232,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. [Api set: Mailbox 1.7]"
+                  "text": "Triggers when the recipient list of the selected item or the appointment location is changed in Outlook."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [],
@@ -35196,7 +35252,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Triggers when the recurrence pattern of the selected series is changed in Outlook. [Api set: Mailbox 1.7]"
+                  "text": "Triggers when the recurrence pattern of the selected series is changed in Outlook."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.7]"
                 }
               ],
               "remarks": [],

@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.DateTimeDataValidation
-    summary: >-
-      Represents the Date data validation criteria. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the Date data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.DateTimeDataValidation
     fullName: Excel.DateTimeDataValidation
     langs:
@@ -21,8 +22,10 @@ items:
       NotBetween, specifies the lower bound operand. When setting the value, it can be passed in as a Date, a Range
       object, or a string formula (where the string is either a stringified date/time in ISO8601 format, a cell
       reference like "=A1", or a formula like "=MIN(A1, B1)"). When retrieving the value, it will always be returned as
-      a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula1
     fullName: formula1
     langs:
@@ -39,8 +42,10 @@ items:
       operators, such as GreaterThan. When setting the value, it can be passed in as a Date, a Range object, or a string
       (where the string is either a stringified date/time in ISO8601 format, a cell reference like "=A1", or a formula
       like "=MIN(A1, B1)"). When retrieving the value, it will always be returned as a string formula, for example:
-      "=10", "=A1", "=SUM(A1:B5)", etc. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      "=10", "=A1", "=SUM(A1:B5)", etc.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula2
     fullName: formula2
     langs:
@@ -52,9 +57,10 @@ items:
         type:
           - string | Date | Range
   - uid: excel.Excel.DateTimeDataValidation.operator
-    summary: >-
-      The operator to use for validating the data. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      The operator to use for validating the data.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: operator
     fullName: operator
     langs:

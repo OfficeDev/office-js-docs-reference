@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.ShapeView
-    summary: >-
-      Represents the ShapeView class. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the ShapeView class.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: Visio.ShapeView
     fullName: Visio.ShapeView
     langs:
@@ -19,9 +20,10 @@ items:
       - visio.Visio.ShapeView.removeOverlay
       - visio.Visio.ShapeView.toJSON
   - uid: visio.Visio.ShapeView.addOverlay
-    summary: >-
-      Adds an overlay on top of the shape. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Adds an overlay on top of the shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: 'addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
     fullName: addOverlay
     langs:
@@ -62,9 +64,10 @@ items:
           type:
             - number
   - uid: visio.Visio.ShapeView.highlight
-    summary: >-
-      Represents the highlight around the shape. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Represents the highlight around the shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: highlight
     fullName: highlight
     langs:
@@ -161,9 +164,10 @@ items:
           type:
             - visio.Visio.Interfaces.ShapeViewLoadOptions
   - uid: visio.Visio.ShapeView.removeOverlay
-    summary: >-
-      Removes particular overlay or all overlays on the Shape. \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: |-
+      Removes particular overlay or all overlays on the Shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: removeOverlay(OverlayId)
     fullName: removeOverlay
     langs:

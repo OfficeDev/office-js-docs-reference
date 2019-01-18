@@ -13,7 +13,10 @@ items:
       - word.Word.Interfaces.SettingData.value
   - uid: word.Word.Interfaces.SettingData.key
     summary: >-
-      Gets the key of the setting. Read only. \[ [API set: WordApi BETA (PREVIEW
+      Gets the key of the setting. Read only.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: key
@@ -28,7 +31,10 @@ items:
           - string
   - uid: word.Word.Interfaces.SettingData.value
     summary: >-
-      Gets or sets the value of the setting. \[ [API set: WordApi BETA (PREVIEW
+      Gets or sets the value of the setting.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: value

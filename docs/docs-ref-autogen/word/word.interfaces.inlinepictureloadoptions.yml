@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.InlinePictureLoadOptions
-    summary: >-
-      Represents an inline picture. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Represents an inline picture.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.InlinePictureLoadOptions
     fullName: Word.Interfaces.InlinePictureLoadOptions
     langs:
@@ -26,9 +27,10 @@ items:
       - word.Word.Interfaces.InlinePictureLoadOptions.parentTableOrNullObject
       - word.Word.Interfaces.InlinePictureLoadOptions.width
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.altTextDescription
-    summary: >-
-      Gets or sets a string that represents the alternative text associated with the inline image. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets a string that represents the alternative text associated with the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: altTextDescription
     fullName: altTextDescription
     langs:
@@ -40,9 +42,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.altTextTitle
-    summary: >-
-      Gets or sets a string that contains the title for the inline image. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets a string that contains the title for the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: altTextTitle
     fullName: altTextTitle
     langs:
@@ -54,9 +57,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.height
-    summary: >-
-      Gets or sets a number that describes the height of the inline image. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets a number that describes the height of the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: height
     fullName: height
     langs:
@@ -68,9 +72,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.hyperlink
-    summary: >-
-      Gets or sets a hyperlink on the image. Use a '\#' to separate the address part from the optional location part. \[
-      [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: hyperlink
     fullName: hyperlink
     langs:
@@ -83,7 +88,10 @@ items:
           - boolean
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.imageFormat
     summary: >-
-      Gets the format of the inline image. Read-only. \[ [API set: WordApi BETA (PREVIEW
+      Gets the format of the inline image. Read-only.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     name: imageFormat
@@ -97,8 +105,9 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.lockAspectRatio
-    summary: >-
+    summary: |-
       Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: lockAspectRatio
     fullName: lockAspectRatio
@@ -111,9 +120,10 @@ items:
         type:
           - boolean
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.paragraph
-    summary: >-
-      Gets the parent paragraph that contains the inline image. \[ [API set: WordApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the parent paragraph that contains the inline image.
+
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: paragraph
     fullName: paragraph
     langs:
@@ -125,9 +135,10 @@ items:
         type:
           - Word.Interfaces.ParagraphLoadOptions
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.parentContentControl
-    summary: >-
-      Gets the content control that contains the inline image. Throws if there isn't a parent content control. \[ [API
-      set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the content control that contains the inline image. Throws if there isn't a parent content control.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl
     fullName: parentContentControl
     langs:
@@ -141,7 +152,10 @@ items:
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.parentContentControlOrNullObject
     summary: >-
       Gets the content control that contains the inline image. Returns a null object if there isn't a parent content
-      control. \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      control.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControlOrNullObject
     fullName: parentContentControlOrNullObject
     langs:
@@ -153,9 +167,10 @@ items:
         type:
           - word.Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.parentTable
-    summary: >-
-      Gets the table that contains the inline image. Throws if it is not contained in a table. \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the table that contains the inline image. Throws if it is not contained in a table.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
     fullName: parentTable
     langs:
@@ -167,9 +182,10 @@ items:
         type:
           - Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.parentTableCell
-    summary: >-
-      Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. \[ [API set:
-      WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the table cell that contains the inline image. Throws if it is not contained in a table cell.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCell
     fullName: parentTableCell
     langs:
@@ -181,8 +197,9 @@ items:
         type:
           - Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.parentTableCellOrNullObject
-    summary: >-
+    summary: |-
       Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
+
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCellOrNullObject
     fullName: parentTableCellOrNullObject
@@ -195,9 +212,10 @@ items:
         type:
           - Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.parentTableOrNullObject
-    summary: >-
-      Gets the table that contains the inline image. Returns a null object if it is not contained in a table. \[ [API
-      set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets the table that contains the inline image. Returns a null object if it is not contained in a table.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableOrNullObject
     fullName: parentTableOrNullObject
     langs:
@@ -209,9 +227,10 @@ items:
         type:
           - Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.width
-    summary: >-
-      Gets or sets a number that describes the width of the inline image. \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    summary: |-
+      Gets or sets a number that describes the width of the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: width
     fullName: width
     langs:

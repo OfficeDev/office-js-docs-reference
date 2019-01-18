@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.Interfaces.LineLoadOptions
     summary: >-
-      Represents a Line object inside a worksheet. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents a Line object inside a worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.Interfaces.LineLoadOptions
@@ -17,7 +20,10 @@ items:
       - excel.Excel.Interfaces.LineLoadOptions.shape
   - uid: excel.Excel.Interfaces.LineLoadOptions.connectorType
     summary: >-
-      Represents the connector type for the line. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the connector type for the line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: connectorType
@@ -32,7 +38,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.LineLoadOptions.id
     summary: >-
-      Represents the shape identifier. Read-only. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents the shape identifier. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: id
@@ -47,7 +56,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.LineLoadOptions.shape
     summary: >-
-      Returns the shape object for the line. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns the shape object for the line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: shape

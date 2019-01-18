@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.CloseBehavior
     summary: >-
-      Specifies the close behavior for workbook.close API. \[ [API set: ExcelApi BETA (PREVIEW
+      Specifies the close behavior for workbook.close API.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.CloseBehavior

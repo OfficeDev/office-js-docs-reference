@@ -4,8 +4,10 @@ items:
     summary: >-
       Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data
       shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default
-      to "columns". \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      to "columns".
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartSeriesBy
     fullName: Excel.ChartSeriesBy
     langs:

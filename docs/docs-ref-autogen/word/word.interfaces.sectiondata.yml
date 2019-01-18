@@ -13,7 +13,10 @@ items:
   - uid: word.Word.Interfaces.SectionData.body
     summary: >-
       Gets the body object of the section. This does not include the header/footer and other section metadata.
-      Read-only. \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: body
     fullName: body
     langs:

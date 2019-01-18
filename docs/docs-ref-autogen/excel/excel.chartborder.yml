@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartBorder
-    summary: >-
-      Represents the border formatting of a chart element. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the border formatting of a chart element.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartBorder
     fullName: Excel.ChartBorder
     langs:
@@ -21,9 +22,10 @@ items:
       - excel.Excel.ChartBorder.toJSON
       - excel.Excel.ChartBorder.weight
   - uid: excel.Excel.ChartBorder.clear
-    summary: >-
-      Clear the border format of a chart element. \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Clear the border format of a chart element.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: clear
     langs:
@@ -36,9 +38,10 @@ items:
           - void
         description: ''
   - uid: excel.Excel.ChartBorder.color
-    summary: >-
-      HTML color code representing the color of borders in the chart. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      HTML color code representing the color of borders in the chart.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -64,9 +67,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ChartBorder.lineStyle
-    summary: >-
-      Represents the line style of the border. See Excel.ChartLineStyle for details. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents the line style of the border. See Excel.ChartLineStyle for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lineStyle
     fullName: lineStyle
     langs:
@@ -134,9 +138,10 @@ items:
           - excel.Excel.Interfaces.ChartBorderData
         description: ''
   - uid: excel.Excel.ChartBorder.weight
-    summary: >-
-      Represents weight of the border, in points. \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: |-
+      Represents weight of the border, in points.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
     fullName: weight
     langs:

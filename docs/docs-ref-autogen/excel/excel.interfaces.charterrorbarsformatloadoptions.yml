@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions
     summary: >-
-      Encapsulates the format properties for chart error bars. \[ [API set: ExcelApi BETA (PREVIEW
+      Encapsulates the format properties for chart error bars.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
@@ -15,7 +18,10 @@ items:
       - excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions.line
   - uid: excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions.line
     summary: >-
-      Represents chart line formatting. \[ [API set: ExcelApi BETA (PREVIEW
+      Represents chart line formatting.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: line

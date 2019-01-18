@@ -2,7 +2,10 @@
 items:
   - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions
     summary: >-
-      Encapsulates the properties for Map chart. \[ [API set: ExcelApi BETA (PREVIEW
+      Encapsulates the properties for Map chart.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: Excel.Interfaces.ChartMapOptionsLoadOptions
@@ -17,7 +20,10 @@ items:
       - excel.Excel.Interfaces.ChartMapOptionsLoadOptions.projectionType
   - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions.labelStrategy
     summary: >-
-      Returns or sets series map labels strategy of a region map chart. Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns or sets series map labels strategy of a region map chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: labelStrategy
@@ -32,7 +38,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions.level
     summary: >-
-      Returns or sets series map area of a region map chart. Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns or sets series map area of a region map chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: level
@@ -47,7 +56,10 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions.projectionType
     summary: >-
-      Returns or sets series projection type of a region map chart. Read/Write. \[ [API set: ExcelApi BETA (PREVIEW
+      Returns or sets series projection type of a region map chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: projectionType

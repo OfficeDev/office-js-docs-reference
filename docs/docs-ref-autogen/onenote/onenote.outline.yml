@@ -1,9 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Outline
-    summary: >-
-      Represents a container for Paragraph objects. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Represents a container for Paragraph objects.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Outline
     fullName: OneNote.Outline
     langs:
@@ -26,9 +27,10 @@ items:
       - onenote.OneNote.Outline.track
       - onenote.OneNote.Outline.untrack
   - uid: onenote.OneNote.Outline.appendHtml
-    summary: >-
-      Adds the specified HTML to the bottom of the Outline. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Adds the specified HTML to the bottom of the Outline.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendHtml(html)
     fullName: appendHtml
     langs:
@@ -87,9 +89,10 @@ items:
           type:
             - string
   - uid: onenote.OneNote.Outline.appendImage
-    summary: >-
-      Adds the specified image to the bottom of the Outline. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Adds the specified image to the bottom of the Outline.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'appendImage(base64EncodedImage, width, height)'
     fullName: appendImage
     langs:
@@ -115,9 +118,10 @@ items:
           type:
             - number
   - uid: onenote.OneNote.Outline.appendRichText
-    summary: >-
-      Adds the specified text to the bottom of the Outline. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Adds the specified text to the bottom of the Outline.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendRichText(paragraphText)
     fullName: appendRichText
     langs:
@@ -135,9 +139,10 @@ items:
           type:
             - string
   - uid: onenote.OneNote.Outline.appendTable
-    summary: >-
-      Adds a table with the specified number of rows and columns to the bottom of the outline. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Adds a table with the specified number of rows and columns to the bottom of the outline.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'appendTable(rowCount, columnCount, values)'
     fullName: appendTable
     langs:
@@ -200,9 +205,10 @@ items:
           type:
             - 'string[][]'
   - uid: onenote.OneNote.Outline.id
-    summary: >-
-      Gets the ID of the Outline object. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the ID of the Outline object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -214,9 +220,10 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Outline.isTitle
-    summary: >-
-      Check if the outline is title outline. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Check if the outline is title outline.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: isTitle()
     fullName: isTitle
     langs:
@@ -265,8 +272,10 @@ items:
   - uid: onenote.OneNote.Outline.pageContent
     summary: >-
       Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the
-      page. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+      page. Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: pageContent
     fullName: pageContent
     langs:
@@ -278,9 +287,10 @@ items:
         type:
           - onenote.OneNote.PageContent
   - uid: onenote.OneNote.Outline.paragraphs
-    summary: >-
-      Gets the collection of Paragraph objects in the Outline. Read-only. \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    summary: |-
+      Gets the collection of Paragraph objects in the Outline. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraphs
     fullName: paragraphs
     langs:

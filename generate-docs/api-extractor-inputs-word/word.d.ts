@@ -5,14 +5,18 @@
 export declare namespace Word {
     /**
      *
-     * Represents the application object. [Api set: WordApi 1.3]
+     * Represents the application object.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class Application extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Creates a new document by using an optional base64 encoded .docx file. [Api set: WordApi 1.3]
+         * Creates a new document by using an optional base64 encoded .docx file.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param base64File - Optional. The base64 encoded .docx file. The default value is null.
          */
@@ -27,124 +31,170 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents the body of a document or a section. [Api set: WordApi 1.1]
+     * Represents the body of a document or a section.
+     *
+     * [Api set: WordApi 1.1]
      */
     export class Body extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets the collection of rich text content control objects in the body. Read-only. [Api set: WordApi 1.1]
+         * Gets the collection of rich text content control objects in the body. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
          *
-         * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only. [Api set: WordApi 1.1]
+         * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly font: Word.Font;
         /**
          *
-         * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only. [Api set: WordApi 1.1]
+         * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly inlinePictures: Word.InlinePictureCollection;
         /**
          *
-         * Gets the collection of list objects in the body. Read-only. [Api set: WordApi 1.3]
+         * Gets the collection of list objects in the body. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly lists: Word.ListCollection;
         /**
          *
-         * Gets the collection of paragraph objects in the body. Read-only. [Api set: WordApi 1.1]
+         * Gets the collection of paragraph objects in the body. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly paragraphs: Word.ParagraphCollection;
         /**
          *
-         * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body. Read-only. [Api set: WordApi 1.3]
+         * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentBody: Word.Body;
         /**
          *
-         * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body. Read-only. [Api set: WordApi 1.3]
+         * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentBodyOrNullObject: Word.Body;
         /**
          *
-         * Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only. [Api set: WordApi 1.1]
+         * Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly parentContentControl: Word.ContentControl;
         /**
          *
-         * Gets the content control that contains the body. Returns a null object if there isn't a parent content control. Read-only. [Api set: WordApi 1.3]
+         * Gets the content control that contains the body. Returns a null object if there isn't a parent content control. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentContentControlOrNullObject: Word.ContentControl;
         /**
          *
-         * Gets the parent section of the body. Throws if there isn't a parent section. Read-only. [Api set: WordApi 1.3]
+         * Gets the parent section of the body. Throws if there isn't a parent section. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentSection: Word.Section;
         /**
          *
-         * Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only. [Api set: WordApi 1.3]
+         * Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentSectionOrNullObject: Word.Section;
         /**
          *
-         * Gets the collection of table objects in the body. Read-only. [Api set: WordApi 1.3]
+         * Gets the collection of table objects in the body. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly tables: Word.TableCollection;
         /**
          *
-         * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+         * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+         *
+         * [Api set: WordApi 1.1]
          */
         style: string;
         /**
          *
-         * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+         * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+         *
+         * [Api set: WordApi 1.3]
          */
         styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         /**
          *
-         * Gets the text of the body. Use the insertText method to insert text. Read-only. [Api set: WordApi 1.1]
+         * Gets the text of the body. Use the insertText method to insert text. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly text: string;
         /**
          *
-         * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only. [Api set: WordApi 1.3]
+         * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell";
         
         /**
          *
-         * Clears the contents of the body object. The user can perform the undo operation on the cleared content. [Api set: WordApi 1.1]
+         * Clears the contents of the body object. The user can perform the undo operation on the cleared content.
+         *
+         * [Api set: WordApi 1.1]
          */
         clear(): void;
         /**
          *
-         * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML. [Api set: WordApi 1.1]
+         * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
+         *
+         * [Api set: WordApi 1.1]
          */
         getHtml(): OfficeExtension.ClientResult<string>;
         /**
          *
-         * Gets the OOXML (Office Open XML) representation of the body object. [Api set: WordApi 1.1]
+         * Gets the OOXML (Office Open XML) representation of the body object.
+         *
+         * [Api set: WordApi 1.1]
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
         /**
          *
-         * Gets the whole body, or the starting or ending point of the body, as a range. [Api set: WordApi 1.3]
+         * Gets the whole body, or the starting or ending point of the body, as a range.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
          *
-         * Gets the whole body, or the starting or ending point of the body, as a range. [Api set: WordApi 1.3]
+         * Gets the whole body, or the starting or ending point of the body, as a range.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'. [Api set: WordApi 1.1]
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param breakType - Required. The break type to add to the body.
          * @param insertLocation - Required. The value can be 'Start' or 'End'.
@@ -152,7 +202,9 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'. [Api set: WordApi 1.1]
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param breakType - Required. The break type to add to the body.
          * @param insertLocation - Required. The value can be 'Start' or 'End'.
@@ -160,12 +212,16 @@ export declare namespace Word {
         insertBreak(breakType: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
          *
-         * Wraps the body object with a Rich Text content control. [Api set: WordApi 1.1]
+         * Wraps the body object with a Rich Text content control.
+         *
+         * [Api set: WordApi 1.1]
          */
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -173,7 +229,9 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -181,7 +239,9 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in the document.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -189,7 +249,9 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in the document.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -197,7 +259,9 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'. [Api set: WordApi 1.2]
+         * Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.
          * @param insertLocation - Required. The value can be 'Start' or 'End'.
@@ -205,7 +269,9 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
          *
-         * Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'. [Api set: WordApi 1.2]
+         * Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.
          * @param insertLocation - Required. The value can be 'Start' or 'End'.
@@ -213,7 +279,9 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -221,7 +289,9 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -229,7 +299,9 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'. [Api set: WordApi 1.1]
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value can be 'Start' or 'End'.
@@ -237,7 +309,9 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'. [Api set: WordApi 1.1]
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value can be 'Start' or 'End'.
@@ -245,7 +319,9 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'. [Api set: WordApi 1.3]
+         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
@@ -255,7 +331,9 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'. [Api set: WordApi 1.3]
+         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
@@ -265,7 +343,9 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
-         * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -273,7 +353,9 @@ export declare namespace Word {
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -281,7 +363,9 @@ export declare namespace Word {
         insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Performs a search with the specified SearchOptions on the scope of the body object. The search results are a collection of range objects. [Api set: WordApi 1.1]
+         * Performs a search with the specified SearchOptions on the scope of the body object. The search results are a collection of range objects.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param searchText - Required. The search text. Can be a maximum of 255 characters.
          * @param searchOptions - Optional. Options for the search.
@@ -297,14 +381,18 @@ export declare namespace Word {
         }): Word.RangeCollection;
         /**
          *
-         * Selects the body and navigates the Word UI to it. [Api set: WordApi 1.1]
+         * Selects the body and navigates the Word UI to it.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
          *
-         * Selects the body and navigates the Word UI to it. [Api set: WordApi 1.1]
+         * Selects the body and navigates the Word UI to it.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
@@ -342,186 +430,256 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported. [Api set: WordApi 1.1]
+     * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+     *
+     * [Api set: WordApi 1.1]
      */
     export class ContentControl extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets the collection of content control objects in the content control. Read-only. [Api set: WordApi 1.1]
+         * Gets the collection of content control objects in the content control. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
          *
-         * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only. [Api set: WordApi 1.1]
+         * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly font: Word.Font;
         /**
          *
-         * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only. [Api set: WordApi 1.1]
+         * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly inlinePictures: Word.InlinePictureCollection;
         /**
          *
-         * Gets the collection of list objects in the content control. Read-only. [Api set: WordApi 1.3]
+         * Gets the collection of list objects in the content control. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly lists: Word.ListCollection;
         /**
          *
-         * Get the collection of paragraph objects in the content control. Read-only. [Api set: WordApi 1.1]
+         * Get the collection of paragraph objects in the content control. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly paragraphs: Word.ParagraphCollection;
         /**
          *
-         * Gets the parent body of the content control. Read-only. [Api set: WordApi 1.3]
+         * Gets the parent body of the content control. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentBody: Word.Body;
         /**
          *
-         * Gets the content control that contains the content control. Throws if there isn't a parent content control. Read-only. [Api set: WordApi 1.1]
+         * Gets the content control that contains the content control. Throws if there isn't a parent content control. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly parentContentControl: Word.ContentControl;
         /**
          *
-         * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control. Read-only. [Api set: WordApi 1.3]
+         * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentContentControlOrNullObject: Word.ContentControl;
         /**
          *
-         * Gets the table that contains the content control. Throws if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+         * Gets the table that contains the content control. Throws if it is not contained in a table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTable: Word.Table;
         /**
          *
-         * Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+         * Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableCell: Word.TableCell;
         /**
          *
-         * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+         * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableCellOrNullObject: Word.TableCell;
         /**
          *
-         * Gets the table that contains the content control. Returns a null object if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+         * Gets the table that contains the content control. Returns a null object if it is not contained in a table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableOrNullObject: Word.Table;
         /**
          *
-         * Gets the collection of table objects in the content control. Read-only. [Api set: WordApi 1.3]
+         * Gets the collection of table objects in the content control. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly tables: Word.TableCollection;
         /**
          *
-         * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'. [Api set: WordApi 1.1]
+         * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+         *
+         * [Api set: WordApi 1.1]
          */
         appearance: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";
         /**
          *
-         * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
+         *
+         * [Api set: WordApi 1.1]
          */
         cannotDelete: boolean;
         /**
          *
-         * Gets or sets a value that indicates whether the user can edit the contents of the content control. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether the user can edit the contents of the content control.
+         *
+         * [Api set: WordApi 1.1]
          */
         cannotEdit: boolean;
         /**
          *
-         * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name. [Api set: WordApi 1.1]
+         * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
+         *
+         * [Api set: WordApi 1.1]
          */
         color: string;
         /**
          *
-         * Gets an integer that represents the content control identifier. Read-only. [Api set: WordApi 1.1]
+         * Gets an integer that represents the content control identifier. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly id: number;
         /**
          *
-         * Gets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. [Api set: WordApi 1.1]
+         * Gets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+         *
+         * [Api set: WordApi 1.1]
          */
         placeholderText: string;
         /**
          *
-         * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
+         *
+         * [Api set: WordApi 1.1]
          */
         removeWhenEdited: boolean;
         /**
          *
-         * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+         * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+         *
+         * [Api set: WordApi 1.1]
          */
         style: string;
         /**
          *
-         * Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+         * Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+         *
+         * [Api set: WordApi 1.3]
          */
         styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         /**
          *
-         * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only. [Api set: WordApi 1.3]
+         * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly subtype: Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
         /**
          *
-         * Gets or sets a tag to identify a content control. [Api set: WordApi 1.1]
+         * Gets or sets a tag to identify a content control.
+         *
+         * [Api set: WordApi 1.1]
          */
         tag: string;
         /**
          *
-         * Gets the text of the content control. Read-only. [Api set: WordApi 1.1]
+         * Gets the text of the content control. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly text: string;
         /**
          *
-         * Gets or sets the title for a content control. [Api set: WordApi 1.1]
+         * Gets or sets the title for a content control.
+         *
+         * [Api set: WordApi 1.1]
          */
         title: string;
         /**
          *
-         * Gets the content control type. Only rich text content controls are supported currently. Read-only. [Api set: WordApi 1.1]
+         * Gets the content control type. Only rich text content controls are supported currently. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly type: Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
         
         /**
          *
-         * Clears the contents of the content control. The user can perform the undo operation on the cleared content. [Api set: WordApi 1.1]
+         * Clears the contents of the content control. The user can perform the undo operation on the cleared content.
+         *
+         * [Api set: WordApi 1.1]
          */
         clear(): void;
         /**
          *
-         * Deletes the content control and its content. If keepContent is set to true, the content is not deleted. [Api set: WordApi 1.1]
+         * Deletes the content control and its content. If keepContent is set to true, the content is not deleted.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param keepContent - Required. Indicates whether the content should be deleted with the content control. If keepContent is set to true, the content is not deleted.
          */
         delete(keepContent: boolean): void;
         /**
          *
-         * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML. [Api set: WordApi 1.1]
+         * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
+         *
+         * [Api set: WordApi 1.1]
          */
         getHtml(): OfficeExtension.ClientResult<string>;
         /**
          *
-         * Gets the Office Open XML (OOXML) representation of the content control object. [Api set: WordApi 1.1]
+         * Gets the Office Open XML (OOXML) representation of the content control object.
+         *
+         * [Api set: WordApi 1.1]
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
         /**
          *
-         * Gets the whole content control, or the starting or ending point of the content control, as a range. [Api set: WordApi 1.3]
+         * Gets the whole content control, or the starting or ending point of the content control, as a range.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rangeLocation - Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
          *
-         * Gets the whole content control, or the starting or ending point of the content control, as a range. [Api set: WordApi 1.3]
+         * Gets the whole content control, or the starting or ending point of the content control, as a range.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rangeLocation - Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
          *
-         * Gets the text ranges in the content control by using punctuation marks and/or other ending marks. [Api set: WordApi 1.3]
+         * Gets the text ranges in the content control by using punctuation marks and/or other ending marks.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
          * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
@@ -529,7 +687,9 @@ export declare namespace Word {
         getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls. [Api set: WordApi 1.1]
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param breakType - Required. Type of break.
          * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.
@@ -537,7 +697,9 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls. [Api set: WordApi 1.1]
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param breakType - Required. Type of break.
          * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.
@@ -545,7 +707,9 @@ export declare namespace Word {
         insertBreak(breakType: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
          *
-         * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
@@ -553,7 +717,9 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
@@ -561,7 +727,9 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in to the content control.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
@@ -569,7 +737,9 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in to the content control.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
@@ -577,7 +747,9 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.2]
+         * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
@@ -585,7 +757,9 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
          *
-         * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.2]
+         * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
@@ -593,7 +767,9 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML into the content control at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts OOXML into the content control at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted in to the content control.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
@@ -601,7 +777,9 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML into the content control at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts OOXML into the content control at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted in to the content control.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
@@ -609,7 +787,9 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety. [Api set: WordApi 1.1]
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
@@ -617,7 +797,9 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety. [Api set: WordApi 1.1]
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
@@ -625,7 +807,9 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. [Api set: WordApi 1.3]
+         * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
@@ -635,7 +819,9 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
         /**
          *
-         * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. [Api set: WordApi 1.3]
+         * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
@@ -645,7 +831,9 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
-         * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param text - Required. The text to be inserted in to the content control.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
@@ -653,7 +841,9 @@ export declare namespace Word {
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param text - Required. The text to be inserted in to the content control.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
@@ -661,7 +851,9 @@ export declare namespace Word {
         insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Performs a search with the specified SearchOptions on the scope of the content control object. The search results are a collection of range objects. [Api set: WordApi 1.1]
+         * Performs a search with the specified SearchOptions on the scope of the content control object. The search results are a collection of range objects.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param searchText - Required. The search text.
          * @param searchOptions - Optional. Options for the search.
@@ -677,21 +869,27 @@ export declare namespace Word {
         }): Word.RangeCollection;
         /**
          *
-         * Selects the content control. This causes Word to scroll to the selection. [Api set: WordApi 1.1]
+         * Selects the content control. This causes Word to scroll to the selection.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
          *
-         * Selects the content control. This causes Word to scroll to the selection. [Api set: WordApi 1.1]
+         * Selects the content control. This causes Word to scroll to the selection.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          *
-         * Splits the content control into child ranges by using delimiters. [Api set: WordApi 1.3]
+         * Splits the content control into child ranges by using delimiters.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param delimiters - Required. The delimiters as an array of strings.
          * @param multiParagraphs - Optional. Indicates whether a returned child range can cover multiple paragraphs. Default is false which indicates that the paragraph boundaries are also used as delimiters.
@@ -722,7 +920,9 @@ export declare namespace Word {
         }): Word.ContentControl;
         /**
          *
-         * Occurs when data within the content control are changed. To get the new text, load this content control in the handler. To get the old text, do not load it. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Occurs when data within the content control are changed. To get the new text, load this content control in the handler. To get the old text, do not load it.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @eventproperty
@@ -730,7 +930,9 @@ export declare namespace Word {
         readonly onDataChanged: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
         /**
          *
-         * Occurs when the content control is deleted. Do not load this content control in the handler, otherwise you won't be able to get its original properties. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Occurs when the content control is deleted. Do not load this content control in the handler, otherwise you won't be able to get its original properties.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @eventproperty
@@ -738,7 +940,9 @@ export declare namespace Word {
         readonly onDeleted: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
         /**
          *
-         * Occurs when selection within the content control is changed. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Occurs when selection within the content control is changed.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @eventproperty
@@ -756,7 +960,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported. [Api set: WordApi 1.1]
+     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+     *
+     * [Api set: WordApi 1.1]
      */
     export class ContentControlCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -765,52 +971,68 @@ export declare namespace Word {
         readonly items: Word.ContentControl[];
         /**
          *
-         * Gets a content control by its identifier. Throws if there isn't a content control with the identifier in this collection. [Api set: WordApi 1.1]
+         * Gets a content control by its identifier. Throws if there isn't a content control with the identifier in this collection.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param id - Required. A content control identifier.
          */
         getById(id: number): Word.ContentControl;
         /**
          *
-         * Gets a content control by its identifier. Returns a null object if there isn't a content control with the identifier in this collection. [Api set: WordApi 1.3]
+         * Gets a content control by its identifier. Returns a null object if there isn't a content control with the identifier in this collection.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param id - Required. A content control identifier.
          */
         getByIdOrNullObject(id: number): Word.ContentControl;
         /**
          *
-         * Gets the content controls that have the specified tag. [Api set: WordApi 1.1]
+         * Gets the content controls that have the specified tag.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param tag - Required. A tag set on a content control.
          */
         getByTag(tag: string): Word.ContentControlCollection;
         /**
          *
-         * Gets the content controls that have the specified title. [Api set: WordApi 1.1]
+         * Gets the content controls that have the specified title.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param title - Required. The title of a content control.
          */
         getByTitle(title: string): Word.ContentControlCollection;
         /**
          *
-         * Gets the content controls that have the specified types and/or subtypes. [Api set: WordApi 1.3]
+         * Gets the content controls that have the specified types and/or subtypes.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param types - Required. An array of content control types and/or subtypes.
          */
         getByTypes(types: Word.ContentControlType[]): Word.ContentControlCollection;
         /**
          *
-         * Gets the first content control in this collection. Throws if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first content control in this collection. Throws if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirst(): Word.ContentControl;
         /**
          *
-         * Gets the first content control in this collection. Returns a null object if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first content control in this collection. Returns a null object if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirstOrNullObject(): Word.ContentControl;
         /**
          *
-         * Gets a content control by its index in the collection. [Api set: WordApi 1.1]
+         * Gets a content control by its index in the collection.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param index - The index.
          */
@@ -845,30 +1067,40 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents a custom property. [Api set: WordApi 1.3]
+     * Represents a custom property.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class CustomProperty extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets the key of the custom property. Read only. [Api set: WordApi 1.3]
+         * Gets the key of the custom property. Read only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly key: string;
         /**
          *
-         * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only. [Api set: WordApi 1.3]
+         * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly type: Word.DocumentPropertyType | "String" | "Number" | "Date" | "Boolean";
         /**
          *
-         * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair). [Api set: WordApi 1.3]
+         * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+         *
+         * [Api set: WordApi 1.3]
          */
         value: any;
         
         /**
          *
-         * Deletes the custom property. [Api set: WordApi 1.3]
+         * Deletes the custom property.
+         *
+         * [Api set: WordApi 1.3]
          */
         delete(): void;
         /**
@@ -904,7 +1136,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains the collection of {@link Word.CustomProperty} objects. [Api set: WordApi 1.3]
+     * Contains the collection of {@link Word.CustomProperty} objects.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class CustomPropertyCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -913,7 +1147,9 @@ export declare namespace Word {
         readonly items: Word.CustomProperty[];
         /**
          *
-         * Creates a new or sets an existing custom property. [Api set: WordApi 1.3]
+         * Creates a new or sets an existing custom property.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param key - Required. The custom property's key, which is case-insensitive.
          * @param value - Required. The custom property's value.
@@ -921,24 +1157,32 @@ export declare namespace Word {
         add(key: string, value: any): Word.CustomProperty;
         /**
          *
-         * Deletes all custom properties in this collection. [Api set: WordApi 1.3]
+         * Deletes all custom properties in this collection.
+         *
+         * [Api set: WordApi 1.3]
          */
         deleteAll(): void;
         /**
          *
-         * Gets the count of custom properties. [Api set: WordApi 1.3]
+         * Gets the count of custom properties.
+         *
+         * [Api set: WordApi 1.3]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist. [Api set: WordApi 1.3]
+         * Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param key - The key that identifies the custom property object.
          */
         getItem(key: string): Word.CustomProperty;
         /**
          *
-         * Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property does not exist. [Api set: WordApi 1.3]
+         * Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property does not exist.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param key - Required. The key that identifies the custom property object.
          */
@@ -973,7 +1217,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents a custom XML part. [Api set: WordApi BETA (PREVIEW ONLY)]
+     * Represents a custom XML part.
+     *
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
      * @beta
      */
     export class CustomXmlPart extends OfficeExtension.ClientObject {
@@ -981,25 +1227,33 @@ export declare namespace Word {
         context: RequestContext; 
         /**
          *
-         * Gets the ID of the custom XML part. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets the ID of the custom XML part. Read only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly id: string;
         /**
          *
-         * Gets the namespace URI of the custom XML part. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets the namespace URI of the custom XML part. Read only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly namespaceUri: string;
         /**
          *
-         * Deletes the custom XML part. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Deletes the custom XML part.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         delete(): void;
         /**
          *
-         * Deletes an attribute with the given name from the element identified by xpath. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Deletes an attribute with the given name from the element identified by xpath.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param xpath - Required. Absolute path to the single element in XPath notation.
@@ -1009,7 +1263,9 @@ export declare namespace Word {
         deleteAttribute(xpath: string, namespaceMappings: any, name: string): void;
         /**
          *
-         * Deletes the element identified by xpath. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Deletes the element identified by xpath.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param xpath - Required. Absolute path to the single element in XPath notation.
@@ -1018,13 +1274,17 @@ export declare namespace Word {
         deleteElement(xpath: string, namespaceMappings: any): void;
         /**
          *
-         * Gets the full XML content of the custom XML part. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets the full XML content of the custom XML part.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         getXml(): OfficeExtension.ClientResult<string>;
         /**
          *
-         * Inserts an attribute with the given name and value to the element identified by xpath. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Inserts an attribute with the given name and value to the element identified by xpath.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param xpath - Required. Absolute path to the single element in XPath notation.
@@ -1035,7 +1295,9 @@ export declare namespace Word {
         insertAttribute(xpath: string, namespaceMappings: any, name: string, value: string): void;
         /**
          *
-         * Inserts the given XML under the parent element identified by xpath at child position index. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Inserts the given XML under the parent element identified by xpath at child position index.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param xpath - Required. Absolute path to the single parent element in XPath notation.
@@ -1046,7 +1308,9 @@ export declare namespace Word {
         insertElement(xpath: string, xml: string, namespaceMappings: any, index?: number): void;
         /**
          *
-         * Queries the XML content of the custom XML part. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Queries the XML content of the custom XML part.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param xpath - Required. An XPath query.
@@ -1056,7 +1320,9 @@ export declare namespace Word {
         query(xpath: string, namespaceMappings: any): OfficeExtension.ClientResult<string[]>;
         /**
          *
-         * Sets the full XML content of the custom XML part. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Sets the full XML content of the custom XML part.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param xml - Required. XML content to be set.
@@ -1064,7 +1330,9 @@ export declare namespace Word {
         setXml(xml: string): void;
         /**
          *
-         * Updates the value of an attribute with the given name of the element identified by xpath. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Updates the value of an attribute with the given name of the element identified by xpath.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param xpath - Required. Absolute path to the single element in XPath notation.
@@ -1075,7 +1343,9 @@ export declare namespace Word {
         updateAttribute(xpath: string, namespaceMappings: any, name: string, value: string): void;
         /**
          *
-         * Updates the XML of the element identified by xpath. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Updates the XML of the element identified by xpath.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param xpath - Required. Absolute path to the single element in XPath notation.
@@ -1116,7 +1386,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains the collection of {@link Word.CustomXmlPart} objects. [Api set: WordApi BETA (PREVIEW ONLY)]
+     * Contains the collection of {@link Word.CustomXmlPart} objects.
+     *
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
      * @beta
      */
     export class CustomXmlPartCollection extends OfficeExtension.ClientObject {
@@ -1126,7 +1398,9 @@ export declare namespace Word {
         readonly items: Word.CustomXmlPart[];
         /**
          *
-         * Adds a new custom XML part to the document. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Adds a new custom XML part to the document.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param xml - Required. XML content. Must be a valid XML fragment.
@@ -1134,7 +1408,9 @@ export declare namespace Word {
         add(xml: string): Word.CustomXmlPart;
         /**
          *
-         * Gets a new scoped collection of custom XML parts whose namespaces match the given namespace. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param namespaceUri - Required. The namespace URI.
@@ -1142,13 +1418,17 @@ export declare namespace Word {
         getByNamespace(namespaceUri: string): Word.CustomXmlPartScopedCollection;
         /**
          *
-         * Gets the number of items in the collection. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets the number of items in the collection.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Gets a custom XML part based on its ID. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets a custom XML part based on its ID. Read only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param id - ID or index of the custom XML part to be retrieved.
@@ -1156,7 +1436,9 @@ export declare namespace Word {
         getItem(id: string): Word.CustomXmlPart;
         /**
          *
-         * Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param id - Required. ID of the object to be retrieved.
@@ -1192,7 +1474,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains the collection of {@link Word.CustomXmlPart} objects with a specific namespace. [Api set: WordApi BETA (PREVIEW ONLY)]
+     * Contains the collection of {@link Word.CustomXmlPart} objects with a specific namespace.
+     *
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
      * @beta
      */
     export class CustomXmlPartScopedCollection extends OfficeExtension.ClientObject {
@@ -1202,13 +1486,17 @@ export declare namespace Word {
         readonly items: Word.CustomXmlPart[];
         /**
          *
-         * Gets the number of items in the collection. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets the number of items in the collection.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Gets a custom XML part based on its ID. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets a custom XML part based on its ID. Read only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param id - ID of the custom XML part to be retrieved.
@@ -1216,7 +1504,9 @@ export declare namespace Word {
         getItem(id: string): Word.CustomXmlPart;
         /**
          *
-         * Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist in the collection. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist in the collection.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param id - Required. ID of the object to be retrieved.
@@ -1224,13 +1514,17 @@ export declare namespace Word {
         getItemOrNullObject(id: string): Word.CustomXmlPart;
         /**
          *
-         * If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         getOnlyItem(): Word.CustomXmlPart;
         /**
          *
-         * If the collection contains exactly one item, this method returns it. Otherwise, this method returns a null object. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * If the collection contains exactly one item, this method returns it. Otherwise, this method returns a null object.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         getOnlyItemOrNullObject(): Word.CustomXmlPart;
@@ -1264,52 +1558,70 @@ export declare namespace Word {
     }
     /**
      *
-     * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document. [Api set: WordApi 1.1]
+     * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
+     *
+     * [Api set: WordApi 1.1]
      */
     export class Document extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only. [Api set: WordApi 1.1]
+         * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly body: Word.Body;
         /**
          *
-         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only. [Api set: WordApi 1.1]
+         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
          *
-         * Gets the custom XML parts in the document. Read-only. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets the custom XML parts in the document. Read-only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly customXmlParts: Word.CustomXmlPartCollection;
         /**
          *
-         * Gets the properties of the document. Read-only. [Api set: WordApi 1.3]
+         * Gets the properties of the document. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly properties: Word.DocumentProperties;
         /**
          *
-         * Gets the collection of section objects in the document. Read-only. [Api set: WordApi 1.1]
+         * Gets the collection of section objects in the document. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly sections: Word.SectionCollection;
         /**
          *
-         * Gets the add-in's settings in the document. Read-only. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets the add-in's settings in the document. Read-only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly settings: Word.SettingCollection;
         /**
          *
-         * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only. [Api set: WordApi 1.1]
+         * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly saved: boolean;
         
         /**
          *
-         * Deletes a bookmark, if exists, from the document. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Deletes a bookmark, if exists, from the document.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param name - Required. The bookmark name, which is case-insensitive.
@@ -1317,7 +1629,9 @@ export declare namespace Word {
         deleteBookmark(name: string): void;
         /**
          *
-         * Gets a bookmark's range. Throws if the bookmark does not exist. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets a bookmark's range. Throws if the bookmark does not exist.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param name - Required. The bookmark name, which is case-insensitive.
@@ -1325,7 +1639,9 @@ export declare namespace Word {
         getBookmarkRange(name: string): Word.Range;
         /**
          *
-         * Gets a bookmark's range. Returns a null object if the bookmark does not exist. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets a bookmark's range. Returns a null object if the bookmark does not exist.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param name - Required. The bookmark name, which is case-insensitive.
@@ -1333,12 +1649,16 @@ export declare namespace Word {
         getBookmarkRangeOrNullObject(name: string): Word.Range;
         /**
          *
-         * Gets the current selection of the document. Multiple selections are not supported. [Api set: WordApi 1.1]
+         * Gets the current selection of the document. Multiple selections are not supported.
+         *
+         * [Api set: WordApi 1.1]
          */
         getSelection(): Word.Range;
         /**
          *
-         * Saves the document. This will use the Word default file naming convention if the document has not been saved before. [Api set: WordApi 1.1]
+         * Saves the document. This will use the Word default file naming convention if the document has not been saved before.
+         *
+         * [Api set: WordApi 1.1]
          */
         save(): void;
         /**
@@ -1364,7 +1684,9 @@ export declare namespace Word {
         }): Word.Document;
         /**
          *
-         * Occurs when a content control is added. Run context.sync() in the handler to get the new content control's properties. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Occurs when a content control is added. Run context.sync() in the handler to get the new content control's properties.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @eventproperty
@@ -1382,76 +1704,102 @@ export declare namespace Word {
     }
     /**
      *
-     * The DocumentCreated object is the top level object created by Application.CreateDocument. A DocumentCreated object is a special Document object. [Api set: WordApi 1.3]
+     * The DocumentCreated object is the top level object created by Application.CreateDocument. A DocumentCreated object is a special Document object.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class DocumentCreated extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only. [Api set: WordApiHiddenDocument 1.3]
+         * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
+         *
+         * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly body: Word.Body;
         /**
          *
-         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only. [Api set: WordApiHiddenDocument 1.3]
+         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
+         *
+         * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
          *
-         * Gets the custom XML parts in the document. Read-only. [Api set: WordApiHiddenDocument 1.4]
+         * Gets the custom XML parts in the document. Read-only.
+         *
+         * [Api set: WordApiHiddenDocument 1.4]
          */
         readonly customXmlParts: Word.CustomXmlPartCollection;
         /**
          *
-         * Gets the properties of the document. Read-only. [Api set: WordApiHiddenDocument 1.3]
+         * Gets the properties of the document. Read-only.
+         *
+         * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly properties: Word.DocumentProperties;
         /**
          *
-         * Gets the collection of section objects in the document. Read-only. [Api set: WordApiHiddenDocument 1.3]
+         * Gets the collection of section objects in the document. Read-only.
+         *
+         * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly sections: Word.SectionCollection;
         /**
          *
-         * Gets the add-in's settings in the document. Read-only. [Api set: WordApiHiddenDocument 1.4]
+         * Gets the add-in's settings in the document. Read-only.
+         *
+         * [Api set: WordApiHiddenDocument 1.4]
          */
         readonly settings: Word.SettingCollection;
         /**
          *
-         * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only. [Api set: WordApiHiddenDocument 1.3]
+         * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+         *
+         * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly saved: boolean;
         
         /**
          *
-         * Deletes a bookmark, if exists, from the document. [Api set: WordApiHiddenDocument 1.4]
+         * Deletes a bookmark, if exists, from the document.
+         *
+         * [Api set: WordApiHiddenDocument 1.4]
          *
          * @param name - Required. The bookmark name, which is case-insensitive.
          */
         deleteBookmark(name: string): void;
         /**
          *
-         * Gets a bookmark's range. Throws if the bookmark does not exist. [Api set: WordApiHiddenDocument 1.4]
+         * Gets a bookmark's range. Throws if the bookmark does not exist.
+         *
+         * [Api set: WordApiHiddenDocument 1.4]
          *
          * @param name - Required. The bookmark name, which is case-insensitive.
          */
         getBookmarkRange(name: string): Word.Range;
         /**
          *
-         * Gets a bookmark's range. Returns a null object if the bookmark does not exist. [Api set: WordApiHiddenDocument 1.4]
+         * Gets a bookmark's range. Returns a null object if the bookmark does not exist.
+         *
+         * [Api set: WordApiHiddenDocument 1.4]
          *
          * @param name - Required. The bookmark name, which is case-insensitive.
          */
         getBookmarkRangeOrNullObject(name: string): Word.Range;
         /**
          *
-         * Opens the document. [Api set: WordApi 1.3]
+         * Opens the document.
+         *
+         * [Api set: WordApi 1.3]
          */
         open(): void;
         /**
          *
-         * Saves the document. This will use the Word default file naming convention if the document has not been saved before. [Api set: WordApiHiddenDocument 1.3]
+         * Saves the document. This will use the Word default file naming convention if the document has not been saved before.
+         *
+         * [Api set: WordApiHiddenDocument 1.3]
          */
         save(): void;
         /**
@@ -1487,99 +1835,137 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents document properties. [Api set: WordApi 1.3]
+     * Represents document properties.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class DocumentProperties extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets the collection of custom properties of the document. Read only. [Api set: WordApi 1.3]
+         * Gets the collection of custom properties of the document. Read only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly customProperties: Word.CustomPropertyCollection;
         /**
          *
-         * Gets the application name of the document. Read only. [Api set: WordApi 1.3]
+         * Gets the application name of the document. Read only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly applicationName: string;
         /**
          *
-         * Gets or sets the author of the document. [Api set: WordApi 1.3]
+         * Gets or sets the author of the document.
+         *
+         * [Api set: WordApi 1.3]
          */
         author: string;
         /**
          *
-         * Gets or sets the category of the document. [Api set: WordApi 1.3]
+         * Gets or sets the category of the document.
+         *
+         * [Api set: WordApi 1.3]
          */
         category: string;
         /**
          *
-         * Gets or sets the comments of the document. [Api set: WordApi 1.3]
+         * Gets or sets the comments of the document.
+         *
+         * [Api set: WordApi 1.3]
          */
         comments: string;
         /**
          *
-         * Gets or sets the company of the document. [Api set: WordApi 1.3]
+         * Gets or sets the company of the document.
+         *
+         * [Api set: WordApi 1.3]
          */
         company: string;
         /**
          *
-         * Gets the creation date of the document. Read only. [Api set: WordApi 1.3]
+         * Gets the creation date of the document. Read only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly creationDate: Date;
         /**
          *
-         * Gets or sets the format of the document. [Api set: WordApi 1.3]
+         * Gets or sets the format of the document.
+         *
+         * [Api set: WordApi 1.3]
          */
         format: string;
         /**
          *
-         * Gets or sets the keywords of the document. [Api set: WordApi 1.3]
+         * Gets or sets the keywords of the document.
+         *
+         * [Api set: WordApi 1.3]
          */
         keywords: string;
         /**
          *
-         * Gets the last author of the document. Read only. [Api set: WordApi 1.3]
+         * Gets the last author of the document. Read only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly lastAuthor: string;
         /**
          *
-         * Gets the last print date of the document. Read only. [Api set: WordApi 1.3]
+         * Gets the last print date of the document. Read only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly lastPrintDate: Date;
         /**
          *
-         * Gets the last save time of the document. Read only. [Api set: WordApi 1.3]
+         * Gets the last save time of the document. Read only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly lastSaveTime: Date;
         /**
          *
-         * Gets or sets the manager of the document. [Api set: WordApi 1.3]
+         * Gets or sets the manager of the document.
+         *
+         * [Api set: WordApi 1.3]
          */
         manager: string;
         /**
          *
-         * Gets the revision number of the document. Read only. [Api set: WordApi 1.3]
+         * Gets the revision number of the document. Read only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly revisionNumber: string;
         /**
          *
-         * Gets the security of the document. Read only. [Api set: WordApi 1.3]
+         * Gets the security of the document. Read only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly security: number;
         /**
          *
-         * Gets or sets the subject of the document. [Api set: WordApi 1.3]
+         * Gets or sets the subject of the document.
+         *
+         * [Api set: WordApi 1.3]
          */
         subject: string;
         /**
          *
-         * Gets the template of the document. Read only. [Api set: WordApi 1.3]
+         * Gets the template of the document. Read only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly template: string;
         /**
          *
-         * Gets or sets the title of the document. [Api set: WordApi 1.3]
+         * Gets or sets the title of the document.
+         *
+         * [Api set: WordApi 1.3]
          */
         title: string;
         
@@ -1616,64 +2002,88 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents a font. [Api set: WordApi 1.1]
+     * Represents a font.
+     *
+     * [Api set: WordApi 1.1]
      */
     export class Font extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
+         *
+         * [Api set: WordApi 1.1]
          */
         bold: boolean;
         /**
          *
-         * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name. [Api set: WordApi 1.1]
+         * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
+         *
+         * [Api set: WordApi 1.1]
          */
         color: string;
         /**
          *
-         * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
+         *
+         * [Api set: WordApi 1.1]
          */
         doubleStrikeThrough: boolean;
         /**
          *
-         * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. [Api set: WordApi 1.1]
+         * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
+         *
+         * [Api set: WordApi 1.1]
          */
         highlightColor: string;
         /**
          *
-         * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
+         *
+         * [Api set: WordApi 1.1]
          */
         italic: boolean;
         /**
          *
-         * Gets or sets a value that represents the name of the font. [Api set: WordApi 1.1]
+         * Gets or sets a value that represents the name of the font.
+         *
+         * [Api set: WordApi 1.1]
          */
         name: string;
         /**
          *
-         * Gets or sets a value that represents the font size in points. [Api set: WordApi 1.1]
+         * Gets or sets a value that represents the font size in points.
+         *
+         * [Api set: WordApi 1.1]
          */
         size: number;
         /**
          *
-         * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
+         *
+         * [Api set: WordApi 1.1]
          */
         strikeThrough: boolean;
         /**
          *
-         * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
+         *
+         * [Api set: WordApi 1.1]
          */
         subscript: boolean;
         /**
          *
-         * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
+         *
+         * [Api set: WordApi 1.1]
          */
         superscript: boolean;
         /**
          *
-         * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+         *
+         * [Api set: WordApi 1.1]
          */
         underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
         
@@ -1710,120 +2120,164 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents an inline picture. [Api set: WordApi 1.1]
+     * Represents an inline picture.
+     *
+     * [Api set: WordApi 1.1]
      */
     export class InlinePicture extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets the parent paragraph that contains the inline image. Read-only. [Api set: WordApi 1.2]
+         * Gets the parent paragraph that contains the inline image. Read-only.
+         *
+         * [Api set: WordApi 1.2]
          */
         readonly paragraph: Word.Paragraph;
         /**
          *
-         * Gets the content control that contains the inline image. Throws if there isn't a parent content control. Read-only. [Api set: WordApi 1.1]
+         * Gets the content control that contains the inline image. Throws if there isn't a parent content control. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly parentContentControl: Word.ContentControl;
         /**
          *
-         * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control. Read-only. [Api set: WordApi 1.3]
+         * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentContentControlOrNullObject: Word.ContentControl;
         /**
          *
-         * Gets the table that contains the inline image. Throws if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+         * Gets the table that contains the inline image. Throws if it is not contained in a table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTable: Word.Table;
         /**
          *
-         * Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+         * Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableCell: Word.TableCell;
         /**
          *
-         * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+         * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableCellOrNullObject: Word.TableCell;
         /**
          *
-         * Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+         * Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableOrNullObject: Word.Table;
         /**
          *
-         * Gets or sets a string that represents the alternative text associated with the inline image. [Api set: WordApi 1.1]
+         * Gets or sets a string that represents the alternative text associated with the inline image.
+         *
+         * [Api set: WordApi 1.1]
          */
         altTextDescription: string;
         /**
          *
-         * Gets or sets a string that contains the title for the inline image. [Api set: WordApi 1.1]
+         * Gets or sets a string that contains the title for the inline image.
+         *
+         * [Api set: WordApi 1.1]
          */
         altTextTitle: string;
         /**
          *
-         * Gets or sets a number that describes the height of the inline image. [Api set: WordApi 1.1]
+         * Gets or sets a number that describes the height of the inline image.
+         *
+         * [Api set: WordApi 1.1]
          */
         height: number;
         /**
          *
-         * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part. [Api set: WordApi 1.1]
+         * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+         *
+         * [Api set: WordApi 1.1]
          */
         hyperlink: string;
         /**
          *
-         * Gets the format of the inline image. Read-only. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets the format of the inline image. Read-only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly imageFormat: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
         /**
          *
-         * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+         *
+         * [Api set: WordApi 1.1]
          */
         lockAspectRatio: boolean;
         /**
          *
-         * Gets or sets a number that describes the width of the inline image. [Api set: WordApi 1.1]
+         * Gets or sets a number that describes the width of the inline image.
+         *
+         * [Api set: WordApi 1.1]
          */
         width: number;
         
         /**
          *
-         * Deletes the inline picture from the document. [Api set: WordApi 1.2]
+         * Deletes the inline picture from the document.
+         *
+         * [Api set: WordApi 1.2]
          */
         delete(): void;
         /**
          *
-         * Gets the base64 encoded string representation of the inline image. [Api set: WordApi 1.1]
+         * Gets the base64 encoded string representation of the inline image.
+         *
+         * [Api set: WordApi 1.1]
          */
         getBase64ImageSrc(): OfficeExtension.ClientResult<string>;
         /**
          *
-         * Gets the next inline image. Throws if this inline image is the last one. [Api set: WordApi 1.3]
+         * Gets the next inline image. Throws if this inline image is the last one.
+         *
+         * [Api set: WordApi 1.3]
          */
         getNext(): Word.InlinePicture;
         /**
          *
-         * Gets the next inline image. Returns a null object if this inline image is the last one. [Api set: WordApi 1.3]
+         * Gets the next inline image. Returns a null object if this inline image is the last one.
+         *
+         * [Api set: WordApi 1.3]
          */
         getNextOrNullObject(): Word.InlinePicture;
         /**
          *
-         * Gets the picture, or the starting or ending point of the picture, as a range. [Api set: WordApi 1.3]
+         * Gets the picture, or the starting or ending point of the picture, as a range.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', or 'End'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
          *
-         * Gets the picture, or the starting or ending point of the picture, as a range. [Api set: WordApi 1.3]
+         * Gets the picture, or the starting or ending point of the picture, as a range.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', or 'End'.
          */
         getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.2]
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param breakType - Required. The break type to add.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -1831,7 +2285,9 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.2]
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param breakType - Required. The break type to add.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -1839,12 +2295,16 @@ export declare namespace Word {
         insertBreak(breakType: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
          *
-         * Wraps the inline picture with a rich text content control. [Api set: WordApi 1.1]
+         * Wraps the inline picture with a rich text content control.
+         *
+         * [Api set: WordApi 1.1]
          */
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.2]
+         * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -1852,7 +2312,9 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.2]
+         * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -1860,7 +2322,9 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.2]
+         * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param html - Required. The HTML to be inserted.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -1868,7 +2332,9 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.2]
+         * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param html - Required. The HTML to be inserted.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -1876,7 +2342,9 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'. [Api set: WordApi 1.2]
+         * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Before', or 'After'.
@@ -1884,7 +2352,9 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
          *
-         * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'. [Api set: WordApi 1.2]
+         * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Before', or 'After'.
@@ -1892,7 +2362,9 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.2]
+         * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -1900,7 +2372,9 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.2]
+         * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -1908,7 +2382,9 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.2]
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -1916,7 +2392,9 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.2]
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -1924,7 +2402,9 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.2]
+         * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param text - Required. Text to be inserted.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -1932,7 +2412,9 @@ export declare namespace Word {
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.2]
+         * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param text - Required. Text to be inserted.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -1940,14 +2422,18 @@ export declare namespace Word {
         insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Selects the inline picture. This causes Word to scroll to the selection. [Api set: WordApi 1.2]
+         * Selects the inline picture. This causes Word to scroll to the selection.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
          *
-         * Selects the inline picture. This causes Word to scroll to the selection. [Api set: WordApi 1.2]
+         * Selects the inline picture. This causes Word to scroll to the selection.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
@@ -1985,7 +2471,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains a collection of {@link Word.InlinePicture} objects. [Api set: WordApi 1.1]
+     * Contains a collection of {@link Word.InlinePicture} objects.
+     *
+     * [Api set: WordApi 1.1]
      */
     export class InlinePictureCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -1994,12 +2482,16 @@ export declare namespace Word {
         readonly items: Word.InlinePicture[];
         /**
          *
-         * Gets the first inline image in this collection. Throws if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first inline image in this collection. Throws if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirst(): Word.InlinePicture;
         /**
          *
-         * Gets the first inline image in this collection. Returns a null object if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first inline image in this collection. Returns a null object if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirstOrNullObject(): Word.InlinePicture;
         /**
@@ -2032,34 +2524,46 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains a collection of {@link Word.Paragraph} objects. [Api set: WordApi 1.3]
+     * Contains a collection of {@link Word.Paragraph} objects.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class List extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets paragraphs in the list. Read-only. [Api set: WordApi 1.3]
+         * Gets paragraphs in the list. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly paragraphs: Word.ParagraphCollection;
         /**
          *
-         * Gets the list's id. [Api set: WordApi 1.3]
+         * Gets the list's id.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly id: number;
         /**
          *
-         * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only. [Api set: WordApi 1.3]
+         * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly levelExistences: boolean[];
         /**
          *
-         * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only. [Api set: WordApi 1.3]
+         * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly levelTypes: Word.ListLevelType[];
         /**
          *
-         * Gets the font of the bullet, number or picture at the specified level in the list. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets the font of the bullet, number or picture at the specified level in the list.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param level - Required. The level in the list.
@@ -2067,14 +2571,18 @@ export declare namespace Word {
         getLevelFont(level: number): Word.Font;
         /**
          *
-         * Gets the paragraphs that occur at the specified level in the list. [Api set: WordApi 1.3]
+         * Gets the paragraphs that occur at the specified level in the list.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
          */
         getLevelParagraphs(level: number): Word.ParagraphCollection;
         /**
          *
-         * Gets the base64 encoded string representation of the picture at the specified level in the list. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets the base64 encoded string representation of the picture at the specified level in the list.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param level - Required. The level in the list.
@@ -2082,14 +2590,18 @@ export declare namespace Word {
         getLevelPicture(level: number): OfficeExtension.ClientResult<string>;
         /**
          *
-         * Gets the bullet, number or picture at the specified level as a string. [Api set: WordApi 1.3]
+         * Gets the bullet, number or picture at the specified level as a string.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
          */
         getLevelString(level: number): OfficeExtension.ClientResult<string>;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. [Api set: WordApi 1.3]
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.
@@ -2097,7 +2609,9 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. [Api set: WordApi 1.3]
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.
@@ -2105,7 +2619,9 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Resets the font of the bullet, number or picture at the specified level in the list. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Resets the font of the bullet, number or picture at the specified level in the list.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param level - Required. The level in the list.
@@ -2114,7 +2630,9 @@ export declare namespace Word {
         resetLevelFont(level: number, resetFontName?: boolean): void;
         /**
          *
-         * Sets the alignment of the bullet, number or picture at the specified level in the list. [Api set: WordApi 1.3]
+         * Sets the alignment of the bullet, number or picture at the specified level in the list.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
          * @param alignment - Required. The level alignment that can be 'Left', 'Centered', or 'Right'.
@@ -2122,7 +2640,9 @@ export declare namespace Word {
         setLevelAlignment(level: number, alignment: Word.Alignment): void;
         /**
          *
-         * Sets the alignment of the bullet, number or picture at the specified level in the list. [Api set: WordApi 1.3]
+         * Sets the alignment of the bullet, number or picture at the specified level in the list.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
          * @param alignment - Required. The level alignment that can be 'Left', 'Centered', or 'Right'.
@@ -2130,7 +2650,9 @@ export declare namespace Word {
         setLevelAlignment(level: number, alignment: "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"): void;
         /**
          *
-         * Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required. [Api set: WordApi 1.3]
+         * Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
          * @param listBullet - Required. The bullet.
@@ -2140,7 +2662,9 @@ export declare namespace Word {
         setLevelBullet(level: number, listBullet: Word.ListBullet, charCode?: number, fontName?: string): void;
         /**
          *
-         * Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required. [Api set: WordApi 1.3]
+         * Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
          * @param listBullet - Required. The bullet.
@@ -2150,7 +2674,9 @@ export declare namespace Word {
         setLevelBullet(level: number, listBullet: "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow" | "Checkmark", charCode?: number, fontName?: string): void;
         /**
          *
-         * Sets the two indents of the specified level in the list. [Api set: WordApi 1.3]
+         * Sets the two indents of the specified level in the list.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
          * @param textIndent - Required. The text indent in points. It is the same as paragraph left indent.
@@ -2159,7 +2685,9 @@ export declare namespace Word {
         setLevelIndents(level: number, textIndent: number, bulletNumberPictureIndent: number): void;
         /**
          *
-         * Sets the numbering format at the specified level in the list. [Api set: WordApi 1.3]
+         * Sets the numbering format at the specified level in the list.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
          * @param listNumbering - Required. The ordinal format.
@@ -2168,7 +2696,9 @@ export declare namespace Word {
         setLevelNumbering(level: number, listNumbering: Word.ListNumbering, formatString?: any[]): void;
         /**
          *
-         * Sets the numbering format at the specified level in the list. [Api set: WordApi 1.3]
+         * Sets the numbering format at the specified level in the list.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
          * @param listNumbering - Required. The ordinal format.
@@ -2177,7 +2707,9 @@ export declare namespace Word {
         setLevelNumbering(level: number, listNumbering: "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter", formatString?: any[]): void;
         /**
          *
-         * Sets the picture at the specified level in the list. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Sets the picture at the specified level in the list.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param level - Required. The level in the list.
@@ -2186,7 +2718,9 @@ export declare namespace Word {
         setLevelPicture(level: number, base64EncodedImage?: string): void;
         /**
          *
-         * Sets the starting number at the specified level in the list. Default value is 1. [Api set: WordApi 1.3]
+         * Sets the starting number at the specified level in the list. Default value is 1.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
          * @param startingNumber - Required. The number to start with.
@@ -2225,7 +2759,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains a collection of {@link Word.List} objects. [Api set: WordApi 1.3]
+     * Contains a collection of {@link Word.List} objects.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class ListCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2234,31 +2770,41 @@ export declare namespace Word {
         readonly items: Word.List[];
         /**
          *
-         * Gets a list by its identifier. Throws if there isn't a list with the identifier in this collection. [Api set: WordApi 1.3]
+         * Gets a list by its identifier. Throws if there isn't a list with the identifier in this collection.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param id - Required. A list identifier.
          */
         getById(id: number): Word.List;
         /**
          *
-         * Gets a list by its identifier. Returns a null object if there isn't a list with the identifier in this collection. [Api set: WordApi 1.3]
+         * Gets a list by its identifier. Returns a null object if there isn't a list with the identifier in this collection.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param id - Required. A list identifier.
          */
         getByIdOrNullObject(id: number): Word.List;
         /**
          *
-         * Gets the first list in this collection. Throws if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first list in this collection. Throws if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirst(): Word.List;
         /**
          *
-         * Gets the first list in this collection. Returns a null object if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first list in this collection. Returns a null object if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirstOrNullObject(): Word.List;
         /**
          *
-         * Gets a list object by its index in the collection. [Api set: WordApi 1.3]
+         * Gets a list object by its index in the collection.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param index - A number that identifies the index location of a list object.
          */
@@ -2293,44 +2839,58 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents the paragraph list item format. [Api set: WordApi 1.3]
+     * Represents the paragraph list item format.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class ListItem extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets or sets the level of the item in the list. [Api set: WordApi 1.3]
+         * Gets or sets the level of the item in the list.
+         *
+         * [Api set: WordApi 1.3]
          */
         level: number;
         /**
          *
-         * Gets the list item bullet, number, or picture as a string. Read-only. [Api set: WordApi 1.3]
+         * Gets the list item bullet, number, or picture as a string. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly listString: string;
         /**
          *
-         * Gets the list item order number in relation to its siblings. Read-only. [Api set: WordApi 1.3]
+         * Gets the list item order number in relation to its siblings. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly siblingIndex: number;
         
         /**
          *
-         * Gets the list item parent, or the closest ancestor if the parent does not exist. Throws if the list item has no ancestor. [Api set: WordApi 1.3]
+         * Gets the list item parent, or the closest ancestor if the parent does not exist. Throws if the list item has no ancestor.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param parentOnly - Optional. Specifies only the list item's parent will be returned. The default is false that specifies to get the lowest ancestor.
          */
         getAncestor(parentOnly?: boolean): Word.Paragraph;
         /**
          *
-         * Gets the list item parent, or the closest ancestor if the parent does not exist. Returns a null object if the list item has no ancestor. [Api set: WordApi 1.3]
+         * Gets the list item parent, or the closest ancestor if the parent does not exist. Returns a null object if the list item has no ancestor.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param parentOnly - Optional. Specifies only the list item's parent will be returned. The default is false that specifies to get the lowest ancestor.
          */
         getAncestorOrNullObject(parentOnly?: boolean): Word.Paragraph;
         /**
          *
-         * Gets all descendant list items of the list item. [Api set: WordApi 1.3]
+         * Gets all descendant list items of the list item.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param directChildrenOnly - Optional. Specifies only the list item's direct children will be returned. The default is false that indicates to get all descendant items.
          */
@@ -2368,165 +2928,229 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents a single paragraph in a selection, range, content control, or document body. [Api set: WordApi 1.1]
+     * Represents a single paragraph in a selection, range, content control, or document body.
+     *
+     * [Api set: WordApi 1.1]
      */
     export class Paragraph extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets the collection of content control objects in the paragraph. Read-only. [Api set: WordApi 1.1]
+         * Gets the collection of content control objects in the paragraph. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
          *
-         * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only. [Api set: WordApi 1.1]
+         * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly font: Word.Font;
         /**
          *
-         * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only. [Api set: WordApi 1.1]
+         * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly inlinePictures: Word.InlinePictureCollection;
         /**
          *
-         * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only. [Api set: WordApi 1.3]
+         * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly list: Word.List;
         /**
          *
-         * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only. [Api set: WordApi 1.3]
+         * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly listItem: Word.ListItem;
         /**
          *
-         * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only. [Api set: WordApi 1.3]
+         * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly listItemOrNullObject: Word.ListItem;
         /**
          *
-         * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only. [Api set: WordApi 1.3]
+         * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly listOrNullObject: Word.List;
         /**
          *
-         * Gets the parent body of the paragraph. Read-only. [Api set: WordApi 1.3]
+         * Gets the parent body of the paragraph. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentBody: Word.Body;
         /**
          *
-         * Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only. [Api set: WordApi 1.1]
+         * Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly parentContentControl: Word.ContentControl;
         /**
          *
-         * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control. Read-only. [Api set: WordApi 1.3]
+         * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentContentControlOrNullObject: Word.ContentControl;
         /**
          *
-         * Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+         * Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTable: Word.Table;
         /**
          *
-         * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+         * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableCell: Word.TableCell;
         /**
          *
-         * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+         * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableCellOrNullObject: Word.TableCell;
         /**
          *
-         * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+         * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableOrNullObject: Word.Table;
         /**
          *
-         * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'. [Api set: WordApi 1.1]
+         * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+         *
+         * [Api set: WordApi 1.1]
          */
         alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
         /**
          *
-         * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent. [Api set: WordApi 1.1]
+         * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+         *
+         * [Api set: WordApi 1.1]
          */
         firstLineIndent: number;
         /**
          *
-         * Indicates the paragraph is the last one inside its parent body. Read-only. [Api set: WordApi 1.3]
+         * Indicates the paragraph is the last one inside its parent body. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly isLastParagraph: boolean;
         /**
          *
-         * Checks whether the paragraph is a list item. Read-only. [Api set: WordApi 1.3]
+         * Checks whether the paragraph is a list item. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly isListItem: boolean;
         /**
          *
-         * Gets or sets the left indent value, in points, for the paragraph. [Api set: WordApi 1.1]
+         * Gets or sets the left indent value, in points, for the paragraph.
+         *
+         * [Api set: WordApi 1.1]
          */
         leftIndent: number;
         /**
          *
-         * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12. [Api set: WordApi 1.1]
+         * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+         *
+         * [Api set: WordApi 1.1]
          */
         lineSpacing: number;
         /**
          *
-         * Gets or sets the amount of spacing, in grid lines, after the paragraph. [Api set: WordApi 1.1]
+         * Gets or sets the amount of spacing, in grid lines, after the paragraph.
+         *
+         * [Api set: WordApi 1.1]
          */
         lineUnitAfter: number;
         /**
          *
-         * Gets or sets the amount of spacing, in grid lines, before the paragraph. [Api set: WordApi 1.1]
+         * Gets or sets the amount of spacing, in grid lines, before the paragraph.
+         *
+         * [Api set: WordApi 1.1]
          */
         lineUnitBefore: number;
         /**
          *
-         * Gets or sets the outline level for the paragraph. [Api set: WordApi 1.1]
+         * Gets or sets the outline level for the paragraph.
+         *
+         * [Api set: WordApi 1.1]
          */
         outlineLevel: number;
         /**
          *
-         * Gets or sets the right indent value, in points, for the paragraph. [Api set: WordApi 1.1]
+         * Gets or sets the right indent value, in points, for the paragraph.
+         *
+         * [Api set: WordApi 1.1]
          */
         rightIndent: number;
         /**
          *
-         * Gets or sets the spacing, in points, after the paragraph. [Api set: WordApi 1.1]
+         * Gets or sets the spacing, in points, after the paragraph.
+         *
+         * [Api set: WordApi 1.1]
          */
         spaceAfter: number;
         /**
          *
-         * Gets or sets the spacing, in points, before the paragraph. [Api set: WordApi 1.1]
+         * Gets or sets the spacing, in points, before the paragraph.
+         *
+         * [Api set: WordApi 1.1]
          */
         spaceBefore: number;
         /**
          *
-         * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+         * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+         *
+         * [Api set: WordApi 1.1]
          */
         style: string;
         /**
          *
-         * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+         * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+         *
+         * [Api set: WordApi 1.3]
          */
         styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         /**
          *
-         * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only. [Api set: WordApi 1.3]
+         * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly tableNestingLevel: number;
         /**
          *
-         * Gets the text of the paragraph. Read-only. [Api set: WordApi 1.1]
+         * Gets the text of the paragraph. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly text: string;
         
         /**
          *
-         * Lets the paragraph join an existing list at the specified level. Fails if the paragraph cannot join the list or if the paragraph is already a list item. [Api set: WordApi 1.3]
+         * Lets the paragraph join an existing list at the specified level. Fails if the paragraph cannot join the list or if the paragraph is already a list item.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param listId - Required. The ID of an existing list.
          * @param level - Required. The level in the list.
@@ -2534,66 +3158,90 @@ export declare namespace Word {
         attachToList(listId: number, level: number): Word.List;
         /**
          *
-         * Clears the contents of the paragraph object. The user can perform the undo operation on the cleared content. [Api set: WordApi 1.1]
+         * Clears the contents of the paragraph object. The user can perform the undo operation on the cleared content.
+         *
+         * [Api set: WordApi 1.1]
          */
         clear(): void;
         /**
          *
-         * Deletes the paragraph and its content from the document. [Api set: WordApi 1.1]
+         * Deletes the paragraph and its content from the document.
+         *
+         * [Api set: WordApi 1.1]
          */
         delete(): void;
         /**
          *
-         * Moves this paragraph out of its list, if the paragraph is a list item. [Api set: WordApi 1.3]
+         * Moves this paragraph out of its list, if the paragraph is a list item.
+         *
+         * [Api set: WordApi 1.3]
          */
         detachFromList(): void;
         /**
          *
-         * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML. [Api set: WordApi 1.1]
+         * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
+         *
+         * [Api set: WordApi 1.1]
          */
         getHtml(): OfficeExtension.ClientResult<string>;
         /**
          *
-         * Gets the next paragraph. Throws if the paragraph is the last one. [Api set: WordApi 1.3]
+         * Gets the next paragraph. Throws if the paragraph is the last one.
+         *
+         * [Api set: WordApi 1.3]
          */
         getNext(): Word.Paragraph;
         /**
          *
-         * Gets the next paragraph. Returns a null object if the paragraph is the last one. [Api set: WordApi 1.3]
+         * Gets the next paragraph. Returns a null object if the paragraph is the last one.
+         *
+         * [Api set: WordApi 1.3]
          */
         getNextOrNullObject(): Word.Paragraph;
         /**
          *
-         * Gets the Office Open XML (OOXML) representation of the paragraph object. [Api set: WordApi 1.1]
+         * Gets the Office Open XML (OOXML) representation of the paragraph object.
+         *
+         * [Api set: WordApi 1.1]
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
         /**
          *
-         * Gets the previous paragraph. Throws if the paragraph is the first one. [Api set: WordApi 1.3]
+         * Gets the previous paragraph. Throws if the paragraph is the first one.
+         *
+         * [Api set: WordApi 1.3]
          */
         getPrevious(): Word.Paragraph;
         /**
          *
-         * Gets the previous paragraph. Returns a null object if the paragraph is the first one. [Api set: WordApi 1.3]
+         * Gets the previous paragraph. Returns a null object if the paragraph is the first one.
+         *
+         * [Api set: WordApi 1.3]
          */
         getPreviousOrNullObject(): Word.Paragraph;
         /**
          *
-         * Gets the whole paragraph, or the starting or ending point of the paragraph, as a range. [Api set: WordApi 1.3]
+         * Gets the whole paragraph, or the starting or ending point of the paragraph, as a range.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
          *
-         * Gets the whole paragraph, or the starting or ending point of the paragraph, as a range. [Api set: WordApi 1.3]
+         * Gets the whole paragraph, or the starting or ending point of the paragraph, as a range.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
          *
-         * Gets the text ranges in the paragraph by using punctuation marks and/or other ending marks. [Api set: WordApi 1.3]
+         * Gets the text ranges in the paragraph by using punctuation marks and/or other ending marks.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
          * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
@@ -2601,7 +3249,9 @@ export declare namespace Word {
         getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.1]
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param breakType - Required. The break type to add to the document.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -2609,7 +3259,9 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.1]
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param breakType - Required. The break type to add to the document.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -2617,12 +3269,16 @@ export declare namespace Word {
         insertBreak(breakType: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
          *
-         * Wraps the paragraph object with a rich text content control. [Api set: WordApi 1.1]
+         * Wraps the paragraph object with a rich text content control.
+         *
+         * [Api set: WordApi 1.1]
          */
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -2630,7 +3286,9 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -2638,7 +3296,9 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in the paragraph.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -2646,7 +3306,9 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in the paragraph.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -2654,7 +3316,9 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -2662,7 +3326,9 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
          *
-         * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -2670,7 +3336,9 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted in the paragraph.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -2678,7 +3346,9 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted in the paragraph.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -2686,7 +3356,9 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.1]
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -2694,7 +3366,9 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.1]
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -2702,7 +3376,9 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.3]
+         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
@@ -2712,7 +3388,9 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.3]
+         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
@@ -2722,7 +3400,9 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
-         * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -2730,7 +3410,9 @@ export declare namespace Word {
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'. [Api set: WordApi 1.1]
+         * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
@@ -2738,7 +3420,9 @@ export declare namespace Word {
         insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Performs a search with the specified SearchOptions on the scope of the paragraph object. The search results are a collection of range objects. [Api set: WordApi 1.1]
+         * Performs a search with the specified SearchOptions on the scope of the paragraph object. The search results are a collection of range objects.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param searchText - Required. The search text.
          * @param searchOptions - Optional. Options for the search.
@@ -2754,21 +3438,27 @@ export declare namespace Word {
         }): Word.RangeCollection;
         /**
          *
-         * Selects and navigates the Word UI to the paragraph. [Api set: WordApi 1.1]
+         * Selects and navigates the Word UI to the paragraph.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
          *
-         * Selects and navigates the Word UI to the paragraph. [Api set: WordApi 1.1]
+         * Selects and navigates the Word UI to the paragraph.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          *
-         * Splits the paragraph into child ranges by using delimiters. [Api set: WordApi 1.3]
+         * Splits the paragraph into child ranges by using delimiters.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param delimiters - Required. The delimiters as an array of strings.
          * @param trimDelimiters - Optional. Indicates whether to trim delimiters from the ranges in the range collection. Default is false which indicates that the delimiters are included in the ranges returned in the range collection.
@@ -2777,7 +3467,9 @@ export declare namespace Word {
         split(delimiters: string[], trimDelimiters?: boolean, trimSpacing?: boolean): Word.RangeCollection;
         /**
          *
-         * Starts a new list with this paragraph. Fails if the paragraph is already a list item. [Api set: WordApi 1.3]
+         * Starts a new list with this paragraph. Fails if the paragraph is already a list item.
+         *
+         * [Api set: WordApi 1.3]
          */
         startNewList(): Word.List;
         /**
@@ -2813,7 +3505,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains a collection of {@link Word.Paragraph} objects. [Api set: WordApi 1.1]
+     * Contains a collection of {@link Word.Paragraph} objects.
+     *
+     * [Api set: WordApi 1.1]
      */
     export class ParagraphCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2822,22 +3516,30 @@ export declare namespace Word {
         readonly items: Word.Paragraph[];
         /**
          *
-         * Gets the first paragraph in this collection. Throws if the collection is empty. [Api set: WordApi 1.3]
+         * Gets the first paragraph in this collection. Throws if the collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirst(): Word.Paragraph;
         /**
          *
-         * Gets the first paragraph in this collection. Returns a null object if the collection is empty. [Api set: WordApi 1.3]
+         * Gets the first paragraph in this collection. Returns a null object if the collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirstOrNullObject(): Word.Paragraph;
         /**
          *
-         * Gets the last paragraph in this collection. Throws if the collection is empty. [Api set: WordApi 1.3]
+         * Gets the last paragraph in this collection. Throws if the collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getLast(): Word.Paragraph;
         /**
          *
-         * Gets the last paragraph in this collection. Returns a null object if the collection is empty. [Api set: WordApi 1.3]
+         * Gets the last paragraph in this collection. Returns a null object if the collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getLastOrNullObject(): Word.Paragraph;
         /**
@@ -2870,136 +3572,186 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents a contiguous area in a document. [Api set: WordApi 1.1]
+     * Represents a contiguous area in a document.
+     *
+     * [Api set: WordApi 1.1]
      */
     export class Range extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets the collection of content control objects in the range. Read-only. [Api set: WordApi 1.1]
+         * Gets the collection of content control objects in the range. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
          *
-         * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only. [Api set: WordApi 1.1]
+         * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly font: Word.Font;
         /**
          *
-         * Gets the collection of inline picture objects in the range. Read-only. [Api set: WordApi 1.2]
+         * Gets the collection of inline picture objects in the range. Read-only.
+         *
+         * [Api set: WordApi 1.2]
          */
         readonly inlinePictures: Word.InlinePictureCollection;
         /**
          *
-         * Gets the collection of list objects in the range. Read-only. [Api set: WordApi 1.3]
+         * Gets the collection of list objects in the range. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly lists: Word.ListCollection;
         /**
          *
-         * Gets the collection of paragraph objects in the range. Read-only. [Api set: WordApi 1.1]
+         * Gets the collection of paragraph objects in the range. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly paragraphs: Word.ParagraphCollection;
         /**
          *
-         * Gets the parent body of the range. Read-only. [Api set: WordApi 1.3]
+         * Gets the parent body of the range. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentBody: Word.Body;
         /**
          *
-         * Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only. [Api set: WordApi 1.1]
+         * Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly parentContentControl: Word.ContentControl;
         /**
          *
-         * Gets the content control that contains the range. Returns a null object if there isn't a parent content control. Read-only. [Api set: WordApi 1.3]
+         * Gets the content control that contains the range. Returns a null object if there isn't a parent content control. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentContentControlOrNullObject: Word.ContentControl;
         /**
          *
-         * Gets the table that contains the range. Throws if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+         * Gets the table that contains the range. Throws if it is not contained in a table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTable: Word.Table;
         /**
          *
-         * Gets the table cell that contains the range. Throws if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+         * Gets the table cell that contains the range. Throws if it is not contained in a table cell. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableCell: Word.TableCell;
         /**
          *
-         * Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+         * Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableCellOrNullObject: Word.TableCell;
         /**
          *
-         * Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+         * Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableOrNullObject: Word.Table;
         /**
          *
-         * Gets the collection of table objects in the range. Read-only. [Api set: WordApi 1.3]
+         * Gets the collection of table objects in the range. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly tables: Word.TableCollection;
         /**
          *
-         * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part. [Api set: WordApi 1.3]
+         * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
+         *
+         * [Api set: WordApi 1.3]
          */
         hyperlink: string;
         /**
          *
-         * Checks whether the range length is zero. Read-only. [Api set: WordApi 1.3]
+         * Checks whether the range length is zero. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly isEmpty: boolean;
         /**
          *
-         * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+         * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+         *
+         * [Api set: WordApi 1.1]
          */
         style: string;
         /**
          *
-         * Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+         * Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+         *
+         * [Api set: WordApi 1.3]
          */
         styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         /**
          *
-         * Gets the text of the range. Read-only. [Api set: WordApi 1.1]
+         * Gets the text of the range. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly text: string;
         
         /**
          *
-         * Clears the contents of the range object. The user can perform the undo operation on the cleared content. [Api set: WordApi 1.1]
+         * Clears the contents of the range object. The user can perform the undo operation on the cleared content.
+         *
+         * [Api set: WordApi 1.1]
          */
         clear(): void;
         /**
          *
-         * Compares this range's location with another range's location. [Api set: WordApi 1.3]
+         * Compares this range's location with another range's location.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param range - Required. The range to compare with this range.
          */
         compareLocationWith(range: Word.Range): OfficeExtension.ClientResult<Word.LocationRelation>;
         /**
          *
-         * Deletes the range and its content from the document. [Api set: WordApi 1.1]
+         * Deletes the range and its content from the document.
+         *
+         * [Api set: WordApi 1.1]
          */
         delete(): void;
         /**
          *
-         * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Throws if the two ranges do not have a union. [Api set: WordApi 1.3]
+         * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Throws if the two ranges do not have a union.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param range - Required. Another range.
          */
         expandTo(range: Word.Range): Word.Range;
         /**
          *
-         * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Returns a null object if the two ranges do not have a union. [Api set: WordApi 1.3]
+         * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Returns a null object if the two ranges do not have a union.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param range - Required. Another range.
          */
         expandToOrNullObject(range: Word.Range): Word.Range;
         /**
          *
-         * Gets the names all bookmarks in or overlapping the range. A bookmark is hidden if its name starts with the underscore character. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets the names all bookmarks in or overlapping the range. A bookmark is hidden if its name starts with the underscore character.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param includeHidden - Optional. Indicates whether to include hidden bookmarks. Default is false which indicates that the hidden bookmarks are excluded.
@@ -3008,17 +3760,23 @@ export declare namespace Word {
         getBookmarks(includeHidden?: boolean, includeAdjacent?: boolean): OfficeExtension.ClientResult<string[]>;
         /**
          *
-         * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML. [Api set: WordApi 1.1]
+         * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
+         *
+         * [Api set: WordApi 1.1]
          */
         getHtml(): OfficeExtension.ClientResult<string>;
         /**
          *
-         * Gets hyperlink child ranges within the range. [Api set: WordApi 1.3]
+         * Gets hyperlink child ranges within the range.
+         *
+         * [Api set: WordApi 1.3]
          */
         getHyperlinkRanges(): Word.RangeCollection;
         /**
          *
-         * Gets the next text range by using punctuation marks and/or other ending marks. Throws if this text range is the last one. [Api set: WordApi 1.3]
+         * Gets the next text range by using punctuation marks and/or other ending marks. Throws if this text range is the last one.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
          * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the returned range. Default is false which indicates that spacing characters at the start and end of the range are included.
@@ -3026,7 +3784,9 @@ export declare namespace Word {
         getNextTextRange(endingMarks: string[], trimSpacing?: boolean): Word.Range;
         /**
          *
-         * Gets the next text range by using punctuation marks and/or other ending marks. Returns a null object if this text range is the last one. [Api set: WordApi 1.3]
+         * Gets the next text range by using punctuation marks and/or other ending marks. Returns a null object if this text range is the last one.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
          * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the returned range. Default is false which indicates that spacing characters at the start and end of the range are included.
@@ -3034,26 +3794,34 @@ export declare namespace Word {
         getNextTextRangeOrNullObject(endingMarks: string[], trimSpacing?: boolean): Word.Range;
         /**
          *
-         * Gets the OOXML representation of the range object. [Api set: WordApi 1.1]
+         * Gets the OOXML representation of the range object.
+         *
+         * [Api set: WordApi 1.1]
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
         /**
          *
-         * Clones the range, or gets the starting or ending point of the range as a new range. [Api set: WordApi 1.3]
+         * Clones the range, or gets the starting or ending point of the range as a new range.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
          *
-         * Clones the range, or gets the starting or ending point of the range as a new range. [Api set: WordApi 1.3]
+         * Clones the range, or gets the starting or ending point of the range as a new range.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
          *
-         * Gets the text child ranges in the range by using punctuation marks and/or other ending marks. [Api set: WordApi 1.3]
+         * Gets the text child ranges in the range by using punctuation marks and/or other ending marks.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
          * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
@@ -3061,7 +3829,9 @@ export declare namespace Word {
         getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;
         /**
          *
-         * Inserts a bookmark on the range. If a bookmark of the same name exists somewhere, it is deleted first. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Inserts a bookmark on the range. If a bookmark of the same name exists somewhere, it is deleted first.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param name - Required. The bookmark name, which is case-insensitive. If the name starts with an underscore character, the bookmark is an hidden one.
@@ -3069,7 +3839,9 @@ export declare namespace Word {
         insertBookmark(name: string): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.1]
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param breakType - Required. The break type to add.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -3077,7 +3849,9 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.1]
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param breakType - Required. The break type to add.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -3085,12 +3859,16 @@ export declare namespace Word {
         insertBreak(breakType: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
          *
-         * Wraps the range object with a rich text content control. [Api set: WordApi 1.1]
+         * Wraps the range object with a rich text content control.
+         *
+         * [Api set: WordApi 1.1]
          */
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'. [Api set: WordApi 1.1]
+         * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -3098,7 +3876,9 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'. [Api set: WordApi 1.1]
+         * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -3106,7 +3886,9 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'. [Api set: WordApi 1.1]
+         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -3114,7 +3896,9 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'. [Api set: WordApi 1.1]
+         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -3122,7 +3906,9 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'. [Api set: WordApi 1.2]
+         * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -3130,7 +3916,9 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
          *
-         * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'. [Api set: WordApi 1.2]
+         * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -3138,7 +3926,9 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'. [Api set: WordApi 1.1]
+         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -3146,7 +3936,9 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'. [Api set: WordApi 1.1]
+         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -3154,7 +3946,9 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.1]
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -3162,7 +3956,9 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.1]
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -3170,7 +3966,9 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.3]
+         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
@@ -3180,7 +3978,9 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.3]
+         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
@@ -3190,7 +3990,9 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
-         * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'. [Api set: WordApi 1.1]
+         * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -3198,7 +4000,9 @@ export declare namespace Word {
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'. [Api set: WordApi 1.1]
+         * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
          * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -3206,21 +4010,27 @@ export declare namespace Word {
         insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Returns a new range as the intersection of this range with another range. This range is not changed. Throws if the two ranges are not overlapped or adjacent. [Api set: WordApi 1.3]
+         * Returns a new range as the intersection of this range with another range. This range is not changed. Throws if the two ranges are not overlapped or adjacent.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param range - Required. Another range.
          */
         intersectWith(range: Word.Range): Word.Range;
         /**
          *
-         * Returns a new range as the intersection of this range with another range. This range is not changed. Returns a null object if the two ranges are not overlapped or adjacent. [Api set: WordApi 1.3]
+         * Returns a new range as the intersection of this range with another range. This range is not changed. Returns a null object if the two ranges are not overlapped or adjacent.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param range - Required. Another range.
          */
         intersectWithOrNullObject(range: Word.Range): Word.Range;
         /**
          *
-         * Performs a search with the specified SearchOptions on the scope of the range object. The search results are a collection of range objects. [Api set: WordApi 1.1]
+         * Performs a search with the specified SearchOptions on the scope of the range object. The search results are a collection of range objects.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param searchText - Required. The search text.
          * @param searchOptions - Optional. Options for the search.
@@ -3236,21 +4046,27 @@ export declare namespace Word {
         }): Word.RangeCollection;
         /**
          *
-         * Selects and navigates the Word UI to the range. [Api set: WordApi 1.1]
+         * Selects and navigates the Word UI to the range.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
          *
-         * Selects and navigates the Word UI to the range. [Api set: WordApi 1.1]
+         * Selects and navigates the Word UI to the range.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          *
-         * Splits the range into child ranges by using delimiters. [Api set: WordApi 1.3]
+         * Splits the range into child ranges by using delimiters.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param delimiters - Required. The delimiters as an array of strings.
          * @param multiParagraphs - Optional. Indicates whether a returned child range can cover multiple paragraphs. Default is false which indicates that the paragraph boundaries are also used as delimiters.
@@ -3291,7 +4107,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains a collection of {@link Word.Range} objects. [Api set: WordApi 1.1]
+     * Contains a collection of {@link Word.Range} objects.
+     *
+     * [Api set: WordApi 1.1]
      */
     export class RangeCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3300,12 +4118,16 @@ export declare namespace Word {
         readonly items: Word.Range[];
         /**
          *
-         * Gets the first range in this collection. Throws if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first range in this collection. Throws if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirst(): Word.Range;
         /**
          *
-         * Gets the first range in this collection. Returns a null object if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first range in this collection. Returns a null object if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirstOrNullObject(): Word.Range;
         /**
@@ -3338,7 +4160,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Specifies the options to be included in a search operation. [Api set: WordApi 1.1]
+     * Specifies the options to be included in a search operation.
+     *
+     * [Api set: WordApi 1.1]
      */
     export class SearchOptions extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3346,37 +4170,51 @@ export declare namespace Word {
         matchWildCards: boolean;
         /**
          *
-         * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
+         *
+         * [Api set: WordApi 1.1]
          */
         ignorePunct: boolean;
         /**
          *
-         * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
+         *
+         * [Api set: WordApi 1.1]
          */
         ignoreSpace: boolean;
         /**
          *
-         * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
+         *
+         * [Api set: WordApi 1.1]
          */
         matchCase: boolean;
         /**
          *
-         * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
+         *
+         * [Api set: WordApi 1.1]
          */
         matchPrefix: boolean;
         /**
          *
-         * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
+         *
+         * [Api set: WordApi 1.1]
          */
         matchSuffix: boolean;
         /**
          *
-         * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
+         *
+         * [Api set: WordApi 1.1]
          */
         matchWholeWord: boolean;
         /**
          *
-         * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+         * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+         *
+         * [Api set: WordApi 1.1]
          */
         matchWildcards: boolean;
         
@@ -3409,53 +4247,69 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents a section in a Word document. [Api set: WordApi 1.1]
+     * Represents a section in a Word document.
+     *
+     * [Api set: WordApi 1.1]
      */
     export class Section extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only. [Api set: WordApi 1.1]
+         * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only.
+         *
+         * [Api set: WordApi 1.1]
          */
         readonly body: Word.Body;
         
         /**
          *
-         * Gets one of the section's footers. [Api set: WordApi 1.1]
+         * Gets one of the section's footers.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param type - Required. The type of footer to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
         getFooter(type: Word.HeaderFooterType): Word.Body;
         /**
          *
-         * Gets one of the section's footers. [Api set: WordApi 1.1]
+         * Gets one of the section's footers.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param type - Required. The type of footer to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
         getFooter(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         /**
          *
-         * Gets one of the section's headers. [Api set: WordApi 1.1]
+         * Gets one of the section's headers.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param type - Required. The type of header to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
         getHeader(type: Word.HeaderFooterType): Word.Body;
         /**
          *
-         * Gets one of the section's headers. [Api set: WordApi 1.1]
+         * Gets one of the section's headers.
+         *
+         * [Api set: WordApi 1.1]
          *
          * @param type - Required. The type of header to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
         getHeader(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         /**
          *
-         * Gets the next section. Throws if this section is the last one. [Api set: WordApi 1.3]
+         * Gets the next section. Throws if this section is the last one.
+         *
+         * [Api set: WordApi 1.3]
          */
         getNext(): Word.Section;
         /**
          *
-         * Gets the next section. Returns a null object if this section is the last one. [Api set: WordApi 1.3]
+         * Gets the next section. Returns a null object if this section is the last one.
+         *
+         * [Api set: WordApi 1.3]
          */
         getNextOrNullObject(): Word.Section;
         /**
@@ -3491,7 +4345,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains the collection of the document's {@link Word.Section} objects. [Api set: WordApi 1.1]
+     * Contains the collection of the document's {@link Word.Section} objects.
+     *
+     * [Api set: WordApi 1.1]
      */
     export class SectionCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3500,12 +4356,16 @@ export declare namespace Word {
         readonly items: Word.Section[];
         /**
          *
-         * Gets the first section in this collection. Throws if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first section in this collection. Throws if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirst(): Word.Section;
         /**
          *
-         * Gets the first section in this collection. Returns a null object if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first section in this collection. Returns a null object if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirstOrNullObject(): Word.Section;
         /**
@@ -3538,7 +4398,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents a setting of the add-in. [Api set: WordApi BETA (PREVIEW ONLY)]
+     * Represents a setting of the add-in.
+     *
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
      * @beta
      */
     export class Setting extends OfficeExtension.ClientObject {
@@ -3550,20 +4412,26 @@ export declare namespace Word {
         static _replaceDateWithStringDate(value: any): any;
         /**
          *
-         * Gets the key of the setting. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets the key of the setting. Read only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly key: string;
         /**
          *
-         * Gets or sets the value of the setting. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets or sets the value of the setting.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         value: any;
         
         /**
          *
-         * Deletes the setting. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Deletes the setting.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         delete(): void;
@@ -3600,7 +4468,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains the collection of {@link Word.Setting} objects. [Api set: WordApi BETA (PREVIEW ONLY)]
+     * Contains the collection of {@link Word.Setting} objects.
+     *
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
      * @beta
      */
     export class SettingCollection extends OfficeExtension.ClientObject {
@@ -3610,7 +4480,9 @@ export declare namespace Word {
         readonly items: Word.Setting[];
         /**
          *
-         * Creates a new setting or sets an existing setting. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Creates a new setting or sets an existing setting.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param key - Required. The setting's key, which is case-sensitive.
@@ -3619,19 +4491,25 @@ export declare namespace Word {
         add(key: string, value: any): Word.Setting;
         /**
          *
-         * Deletes all settings in this add-in. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Deletes all settings in this add-in.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         deleteAll(): void;
         /**
          *
-         * Gets the count of settings. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets the count of settings.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Gets a setting object by its key, which is case-sensitive. Throws if the setting does not exist. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets a setting object by its key, which is case-sensitive. Throws if the setting does not exist.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param key - The key that identifies the setting object.
@@ -3639,7 +4517,9 @@ export declare namespace Word {
         getItem(key: string): Word.Setting;
         /**
          *
-         * Gets a setting object by its key, which is case-sensitive. Returns a null object if the setting does not exist. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Gets a setting object by its key, which is case-sensitive. Returns a null object if the setting does not exist.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param key - Required. The key that identifies the setting object.
@@ -3675,150 +4555,208 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents a table in a Word document. [Api set: WordApi 1.3]
+     * Represents a table in a Word document.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class Table extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only. [Api set: WordApi 1.3]
+         * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly font: Word.Font;
         /**
          *
-         * Gets the parent body of the table. Read-only. [Api set: WordApi 1.3]
+         * Gets the parent body of the table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentBody: Word.Body;
         /**
          *
-         * Gets the content control that contains the table. Throws if there isn't a parent content control. Read-only. [Api set: WordApi 1.3]
+         * Gets the content control that contains the table. Throws if there isn't a parent content control. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentContentControl: Word.ContentControl;
         /**
          *
-         * Gets the content control that contains the table. Returns a null object if there isn't a parent content control. Read-only. [Api set: WordApi 1.3]
+         * Gets the content control that contains the table. Returns a null object if there isn't a parent content control. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentContentControlOrNullObject: Word.ContentControl;
         /**
          *
-         * Gets the table that contains this table. Throws if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+         * Gets the table that contains this table. Throws if it is not contained in a table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTable: Word.Table;
         /**
          *
-         * Gets the table cell that contains this table. Throws if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+         * Gets the table cell that contains this table. Throws if it is not contained in a table cell. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableCell: Word.TableCell;
         /**
          *
-         * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+         * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableCellOrNullObject: Word.TableCell;
         /**
          *
-         * Gets the table that contains this table. Returns a null object if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+         * Gets the table that contains this table. Returns a null object if it is not contained in a table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTableOrNullObject: Word.Table;
         /**
          *
-         * Gets all of the table rows. Read-only. [Api set: WordApi 1.3]
+         * Gets all of the table rows. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly rows: Word.TableRowCollection;
         /**
          *
-         * Gets the child tables nested one level deeper. Read-only. [Api set: WordApi 1.3]
+         * Gets the child tables nested one level deeper. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly tables: Word.TableCollection;
         /**
          *
-         * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'. [Api set: WordApi 1.3]
+         * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
+         *
+         * [Api set: WordApi 1.3]
          */
         alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
         /**
          *
-         * Gets and sets the number of header rows. [Api set: WordApi 1.3]
+         * Gets and sets the number of header rows.
+         *
+         * [Api set: WordApi 1.3]
          */
         headerRowCount: number;
         /**
          *
-         * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+         * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+         *
+         * [Api set: WordApi 1.3]
          */
         horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
         /**
          *
-         * Indicates whether all of the table rows are uniform. Read-only. [Api set: WordApi 1.3]
+         * Indicates whether all of the table rows are uniform. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly isUniform: boolean;
         /**
          *
-         * Gets the nesting level of the table. Top-level tables have level 1. Read-only. [Api set: WordApi 1.3]
+         * Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly nestingLevel: number;
         /**
          *
-         * Gets the number of rows in the table. Read-only. [Api set: WordApi 1.3]
+         * Gets the number of rows in the table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly rowCount: number;
         /**
          *
-         * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+         * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+         *
+         * [Api set: WordApi 1.3]
          */
         shadingColor: string;
         /**
          *
-         * Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.3]
+         * Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+         *
+         * [Api set: WordApi 1.3]
          */
         style: string;
         /**
          *
-         * Gets and sets whether the table has banded columns. [Api set: WordApi 1.3]
+         * Gets and sets whether the table has banded columns.
+         *
+         * [Api set: WordApi 1.3]
          */
         styleBandedColumns: boolean;
         /**
          *
-         * Gets and sets whether the table has banded rows. [Api set: WordApi 1.3]
+         * Gets and sets whether the table has banded rows.
+         *
+         * [Api set: WordApi 1.3]
          */
         styleBandedRows: boolean;
         /**
          *
-         * Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+         * Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+         *
+         * [Api set: WordApi 1.3]
          */
         styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         /**
          *
-         * Gets and sets whether the table has a first column with a special style. [Api set: WordApi 1.3]
+         * Gets and sets whether the table has a first column with a special style.
+         *
+         * [Api set: WordApi 1.3]
          */
         styleFirstColumn: boolean;
         /**
          *
-         * Gets and sets whether the table has a last column with a special style. [Api set: WordApi 1.3]
+         * Gets and sets whether the table has a last column with a special style.
+         *
+         * [Api set: WordApi 1.3]
          */
         styleLastColumn: boolean;
         /**
          *
-         * Gets and sets whether the table has a total (last) row with a special style. [Api set: WordApi 1.3]
+         * Gets and sets whether the table has a total (last) row with a special style.
+         *
+         * [Api set: WordApi 1.3]
          */
         styleTotalRow: boolean;
         /**
          *
-         * Gets and sets the text values in the table, as a 2D Javascript array. [Api set: WordApi 1.3]
+         * Gets and sets the text values in the table, as a 2D Javascript array.
+         *
+         * [Api set: WordApi 1.3]
          */
         values: string[][];
         /**
          *
-         * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+         * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
+         *
+         * [Api set: WordApi 1.3]
          */
         verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
         /**
          *
-         * Gets and sets the width of the table in points. [Api set: WordApi 1.3]
+         * Gets and sets the width of the table in points.
+         *
+         * [Api set: WordApi 1.3]
          */
         width: number;
         
         /**
          *
-         * Adds columns to the start or end of the table, using the first or last existing column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows. [Api set: WordApi 1.3]
+         * Adds columns to the start or end of the table, using the first or last existing column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param insertLocation - Required. It can be 'Start' or 'End', corresponding to the appropriate side of the table.
          * @param columnCount - Required. Number of columns to add.
@@ -3827,7 +4765,9 @@ export declare namespace Word {
         addColumns(insertLocation: Word.InsertLocation, columnCount: number, values?: string[][]): void;
         /**
          *
-         * Adds columns to the start or end of the table, using the first or last existing column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows. [Api set: WordApi 1.3]
+         * Adds columns to the start or end of the table, using the first or last existing column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param insertLocation - Required. It can be 'Start' or 'End', corresponding to the appropriate side of the table.
          * @param columnCount - Required. Number of columns to add.
@@ -3836,7 +4776,9 @@ export declare namespace Word {
         addColumns(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", columnCount: number, values?: string[][]): void;
         /**
          *
-         * Adds rows to the start or end of the table, using the first or last existing row as a template. The string values, if specified, are set in the newly inserted rows. [Api set: WordApi 1.3]
+         * Adds rows to the start or end of the table, using the first or last existing row as a template. The string values, if specified, are set in the newly inserted rows.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param insertLocation - Required. It can be 'Start' or 'End'.
          * @param rowCount - Required. Number of rows to add.
@@ -3845,7 +4787,9 @@ export declare namespace Word {
         addRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][]): Word.TableRowCollection;
         /**
          *
-         * Adds rows to the start or end of the table, using the first or last existing row as a template. The string values, if specified, are set in the newly inserted rows. [Api set: WordApi 1.3]
+         * Adds rows to the start or end of the table, using the first or last existing row as a template. The string values, if specified, are set in the newly inserted rows.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param insertLocation - Required. It can be 'Start' or 'End'.
          * @param rowCount - Required. Number of rows to add.
@@ -3854,22 +4798,30 @@ export declare namespace Word {
         addRows(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?: string[][]): Word.TableRowCollection;
         /**
          *
-         * Autofits the table columns to the width of the window. [Api set: WordApi 1.3]
+         * Autofits the table columns to the width of the window.
+         *
+         * [Api set: WordApi 1.3]
          */
         autoFitWindow(): void;
         /**
          *
-         * Clears the contents of the table. [Api set: WordApi 1.3]
+         * Clears the contents of the table.
+         *
+         * [Api set: WordApi 1.3]
          */
         clear(): void;
         /**
          *
-         * Deletes the entire table. [Api set: WordApi 1.3]
+         * Deletes the entire table.
+         *
+         * [Api set: WordApi 1.3]
          */
         delete(): void;
         /**
          *
-         * Deletes specific columns. This is applicable to uniform tables. [Api set: WordApi 1.3]
+         * Deletes specific columns. This is applicable to uniform tables.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param columnIndex - Required. The first column to delete.
          * @param columnCount - Optional. The number of columns to delete. Default 1.
@@ -3877,7 +4829,9 @@ export declare namespace Word {
         deleteColumns(columnIndex: number, columnCount?: number): void;
         /**
          *
-         * Deletes specific rows. [Api set: WordApi 1.3]
+         * Deletes specific rows.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rowIndex - Required. The first row to delete.
          * @param rowCount - Optional. The number of rows to delete. Default 1.
@@ -3885,26 +4839,34 @@ export declare namespace Word {
         deleteRows(rowIndex: number, rowCount?: number): void;
         /**
          *
-         * Distributes the column widths evenly. This is applicable to uniform tables. [Api set: WordApi 1.3]
+         * Distributes the column widths evenly. This is applicable to uniform tables.
+         *
+         * [Api set: WordApi 1.3]
          */
         distributeColumns(): void;
         /**
          *
-         * Gets the border style for the specified border. [Api set: WordApi 1.3]
+         * Gets the border style for the specified border.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param borderLocation - Required. The border location.
          */
         getBorder(borderLocation: Word.BorderLocation): Word.TableBorder;
         /**
          *
-         * Gets the border style for the specified border. [Api set: WordApi 1.3]
+         * Gets the border style for the specified border.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param borderLocation - Required. The border location.
          */
         getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
         /**
          *
-         * Gets the table cell at a specified row and column. Throws if the specified table cell does not exist. [Api set: WordApi 1.3]
+         * Gets the table cell at a specified row and column. Throws if the specified table cell does not exist.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rowIndex - Required. The index of the row.
          * @param cellIndex - Required. The index of the cell in the row.
@@ -3912,7 +4874,9 @@ export declare namespace Word {
         getCell(rowIndex: number, cellIndex: number): Word.TableCell;
         /**
          *
-         * Gets the table cell at a specified row and column. Returns a null object if the specified table cell does not exist. [Api set: WordApi 1.3]
+         * Gets the table cell at a specified row and column. Returns a null object if the specified table cell does not exist.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rowIndex - Required. The index of the row.
          * @param cellIndex - Required. The index of the cell in the row.
@@ -3920,70 +4884,94 @@ export declare namespace Word {
         getCellOrNullObject(rowIndex: number, cellIndex: number): Word.TableCell;
         /**
          *
-         * Gets cell padding in points. [Api set: WordApi 1.3]
+         * Gets cell padding in points.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Gets cell padding in points. [Api set: WordApi 1.3]
+         * Gets cell padding in points.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Gets the next table. Throws if this table is the last one. [Api set: WordApi 1.3]
+         * Gets the next table. Throws if this table is the last one.
+         *
+         * [Api set: WordApi 1.3]
          */
         getNext(): Word.Table;
         /**
          *
-         * Gets the next table. Returns a null object if this table is the last one. [Api set: WordApi 1.3]
+         * Gets the next table. Returns a null object if this table is the last one.
+         *
+         * [Api set: WordApi 1.3]
          */
         getNextOrNullObject(): Word.Table;
         /**
          *
-         * Gets the paragraph after the table. Throws if there isn't a paragraph after the table. [Api set: WordApi 1.3]
+         * Gets the paragraph after the table. Throws if there isn't a paragraph after the table.
+         *
+         * [Api set: WordApi 1.3]
          */
         getParagraphAfter(): Word.Paragraph;
         /**
          *
-         * Gets the paragraph after the table. Returns a null object if there isn't a paragraph after the table. [Api set: WordApi 1.3]
+         * Gets the paragraph after the table. Returns a null object if there isn't a paragraph after the table.
+         *
+         * [Api set: WordApi 1.3]
          */
         getParagraphAfterOrNullObject(): Word.Paragraph;
         /**
          *
-         * Gets the paragraph before the table. Throws if there isn't a paragraph before the table. [Api set: WordApi 1.3]
+         * Gets the paragraph before the table. Throws if there isn't a paragraph before the table.
+         *
+         * [Api set: WordApi 1.3]
          */
         getParagraphBefore(): Word.Paragraph;
         /**
          *
-         * Gets the paragraph before the table. Returns a null object if there isn't a paragraph before the table. [Api set: WordApi 1.3]
+         * Gets the paragraph before the table. Returns a null object if there isn't a paragraph before the table.
+         *
+         * [Api set: WordApi 1.3]
          */
         getParagraphBeforeOrNullObject(): Word.Paragraph;
         /**
          *
-         * Gets the range that contains this table, or the range at the start or end of the table. [Api set: WordApi 1.3]
+         * Gets the range that contains this table, or the range at the start or end of the table.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', or 'After'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
          *
-         * Gets the range that contains this table, or the range at the start or end of the table. [Api set: WordApi 1.3]
+         * Gets the range that contains this table, or the range at the start or end of the table.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', or 'After'.
          */
         getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
          *
-         * Inserts a content control on the table. [Api set: WordApi 1.3]
+         * Inserts a content control on the table.
+         *
+         * [Api set: WordApi 1.3]
          */
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.3]
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -3991,7 +4979,9 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.3]
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
@@ -3999,7 +4989,9 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.3]
+         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
@@ -4009,7 +5001,9 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'. [Api set: WordApi 1.3]
+         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
@@ -4019,7 +5013,9 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
-         * Merges the cells bounded inclusively by a first and last cell. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Merges the cells bounded inclusively by a first and last cell.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param topRow - Required. The row of the first cell
@@ -4030,7 +5026,9 @@ export declare namespace Word {
         mergeCells(topRow: number, firstCell: number, bottomRow: number, lastCell: number): Word.TableCell;
         /**
          *
-         * Performs a search with the specified SearchOptions on the scope of the table object. The search results are a collection of range objects. [Api set: WordApi 1.3]
+         * Performs a search with the specified SearchOptions on the scope of the table object. The search results are a collection of range objects.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param searchText - Required. The search text.
          * @param searchOptions - Optional. Options for the search.
@@ -4046,21 +5044,27 @@ export declare namespace Word {
         }): Word.RangeCollection;
         /**
          *
-         * Selects the table, or the position at the start or end of the table, and navigates the Word UI to it. [Api set: WordApi 1.3]
+         * Selects the table, or the position at the start or end of the table, and navigates the Word UI to it.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
          *
-         * Selects the table, or the position at the start or end of the table, and navigates the Word UI to it. [Api set: WordApi 1.3]
+         * Selects the table, or the position at the start or end of the table, and navigates the Word UI to it.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          *
-         * Sets cell padding in points. [Api set: WordApi 1.3]
+         * Sets cell padding in points.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
@@ -4068,7 +5072,9 @@ export declare namespace Word {
         setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;
         /**
          *
-         * Sets cell padding in points. [Api set: WordApi 1.3]
+         * Sets cell padding in points.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
@@ -4107,7 +5113,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains the collection of the document's Table objects. [Api set: WordApi 1.3]
+     * Contains the collection of the document's Table objects.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class TableCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -4116,12 +5124,16 @@ export declare namespace Word {
         readonly items: Word.Table[];
         /**
          *
-         * Gets the first table in this collection. Throws if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first table in this collection. Throws if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirst(): Word.Table;
         /**
          *
-         * Gets the first table in this collection. Returns a null object if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first table in this collection. Returns a null object if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirstOrNullObject(): Word.Table;
         /**
@@ -4154,124 +5166,168 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents a row in a Word document. [Api set: WordApi 1.3]
+     * Represents a row in a Word document.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class TableRow extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets cells. Read-only. [Api set: WordApi 1.3]
+         * Gets cells. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly cells: Word.TableCellCollection;
         /**
          *
-         * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only. [Api set: WordApi 1.3]
+         * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly font: Word.Font;
         /**
          *
-         * Gets parent table. Read-only. [Api set: WordApi 1.3]
+         * Gets parent table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTable: Word.Table;
         /**
          *
-         * Gets the number of cells in the row. Read-only. [Api set: WordApi 1.3]
+         * Gets the number of cells in the row. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly cellCount: number;
         /**
          *
-         * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+         * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+         *
+         * [Api set: WordApi 1.3]
          */
         horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
         /**
          *
-         * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object. [Api set: WordApi 1.3]
+         * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly isHeader: boolean;
         /**
          *
-         * Gets and sets the preferred height of the row in points. [Api set: WordApi 1.3]
+         * Gets and sets the preferred height of the row in points.
+         *
+         * [Api set: WordApi 1.3]
          */
         preferredHeight: number;
         /**
          *
-         * Gets the index of the row in its parent table. Read-only. [Api set: WordApi 1.3]
+         * Gets the index of the row in its parent table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly rowIndex: number;
         /**
          *
-         * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+         * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+         *
+         * [Api set: WordApi 1.3]
          */
         shadingColor: string;
         /**
          *
-         * Gets and sets the text values in the row, as a 2D Javascript array. [Api set: WordApi 1.3]
+         * Gets and sets the text values in the row, as a 2D Javascript array.
+         *
+         * [Api set: WordApi 1.3]
          */
         values: string[][];
         /**
          *
-         * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+         * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
+         *
+         * [Api set: WordApi 1.3]
          */
         verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
         
         /**
          *
-         * Clears the contents of the row. [Api set: WordApi 1.3]
+         * Clears the contents of the row.
+         *
+         * [Api set: WordApi 1.3]
          */
         clear(): void;
         /**
          *
-         * Deletes the entire row. [Api set: WordApi 1.3]
+         * Deletes the entire row.
+         *
+         * [Api set: WordApi 1.3]
          */
         delete(): void;
         /**
          *
-         * Gets the border style of the cells in the row. [Api set: WordApi 1.3]
+         * Gets the border style of the cells in the row.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param borderLocation - Required. The border location.
          */
         getBorder(borderLocation: Word.BorderLocation): Word.TableBorder;
         /**
          *
-         * Gets the border style of the cells in the row. [Api set: WordApi 1.3]
+         * Gets the border style of the cells in the row.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param borderLocation - Required. The border location.
          */
         getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
         /**
          *
-         * Gets cell padding in points. [Api set: WordApi 1.3]
+         * Gets cell padding in points.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Gets cell padding in points. [Api set: WordApi 1.3]
+         * Gets cell padding in points.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Gets the next row. Throws if this row is the last one. [Api set: WordApi 1.3]
+         * Gets the next row. Throws if this row is the last one.
+         *
+         * [Api set: WordApi 1.3]
          */
         getNext(): Word.TableRow;
         /**
          *
-         * Gets the next row. Returns a null object if this row is the last one. [Api set: WordApi 1.3]
+         * Gets the next row. Returns a null object if this row is the last one.
+         *
+         * [Api set: WordApi 1.3]
          */
         getNextOrNullObject(): Word.TableRow;
         /**
          *
-         * Inserts a content control on the row. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Inserts a content control on the row.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts rows using this row as a template. If values are specified, inserts the values into the new rows. [Api set: WordApi 1.3]
+         * Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param insertLocation - Required. Where the new rows should be inserted, relative to the current row. It can be 'Before' or 'After'.
          * @param rowCount - Required. Number of rows to add
@@ -4280,7 +5336,9 @@ export declare namespace Word {
         insertRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][]): Word.TableRowCollection;
         /**
          *
-         * Inserts rows using this row as a template. If values are specified, inserts the values into the new rows. [Api set: WordApi 1.3]
+         * Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param insertLocation - Required. Where the new rows should be inserted, relative to the current row. It can be 'Before' or 'After'.
          * @param rowCount - Required. Number of rows to add
@@ -4289,13 +5347,17 @@ export declare namespace Word {
         insertRows(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?: string[][]): Word.TableRowCollection;
         /**
          *
-         * Merges the row into one cell. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Merges the row into one cell.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         merge(): Word.TableCell;
         /**
          *
-         * Performs a search with the specified SearchOptions on the scope of the row. The search results are a collection of range objects. [Api set: WordApi 1.3]
+         * Performs a search with the specified SearchOptions on the scope of the row. The search results are a collection of range objects.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param searchText - Required. The search text.
          * @param searchOptions - Optional. Options for the search.
@@ -4311,21 +5373,27 @@ export declare namespace Word {
         }): Word.RangeCollection;
         /**
          *
-         * Selects the row and navigates the Word UI to it. [Api set: WordApi 1.3]
+         * Selects the row and navigates the Word UI to it.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
          *
-         * Selects the row and navigates the Word UI to it. [Api set: WordApi 1.3]
+         * Selects the row and navigates the Word UI to it.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: "Select" | "Start" | "End"): void;
         /**
          *
-         * Sets cell padding in points. [Api set: WordApi 1.3]
+         * Sets cell padding in points.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
@@ -4333,7 +5401,9 @@ export declare namespace Word {
         setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;
         /**
          *
-         * Sets cell padding in points. [Api set: WordApi 1.3]
+         * Sets cell padding in points.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
@@ -4372,7 +5442,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains the collection of the document's TableRow objects. [Api set: WordApi 1.3]
+     * Contains the collection of the document's TableRow objects.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class TableRowCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -4381,12 +5453,16 @@ export declare namespace Word {
         readonly items: Word.TableRow[];
         /**
          *
-         * Gets the first row in this collection. Throws if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first row in this collection. Throws if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirst(): Word.TableRow;
         /**
          *
-         * Gets the first row in this collection. Returns a null object if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first row in this collection. Returns a null object if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirstOrNullObject(): Word.TableRow;
         /**
@@ -4419,118 +5495,160 @@ export declare namespace Word {
     }
     /**
      *
-     * Represents a table cell in a Word document. [Api set: WordApi 1.3]
+     * Represents a table cell in a Word document.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class TableCell extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets the body object of the cell. Read-only. [Api set: WordApi 1.3]
+         * Gets the body object of the cell. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly body: Word.Body;
         /**
          *
-         * Gets the parent row of the cell. Read-only. [Api set: WordApi 1.3]
+         * Gets the parent row of the cell. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentRow: Word.TableRow;
         /**
          *
-         * Gets the parent table of the cell. Read-only. [Api set: WordApi 1.3]
+         * Gets the parent table of the cell. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly parentTable: Word.Table;
         /**
          *
-         * Gets the index of the cell in its row. Read-only. [Api set: WordApi 1.3]
+         * Gets the index of the cell in its row. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly cellIndex: number;
         /**
          *
-         * Gets and sets the width of the cell's column in points. This is applicable to uniform tables. [Api set: WordApi 1.3]
+         * Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
+         *
+         * [Api set: WordApi 1.3]
          */
         columnWidth: number;
         /**
          *
-         * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+         * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+         *
+         * [Api set: WordApi 1.3]
          */
         horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
         /**
          *
-         * Gets the index of the cell's row in the table. Read-only. [Api set: WordApi 1.3]
+         * Gets the index of the cell's row in the table. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly rowIndex: number;
         /**
          *
-         * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+         * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
+         *
+         * [Api set: WordApi 1.3]
          */
         shadingColor: string;
         /**
          *
-         * Gets and sets the text of the cell. [Api set: WordApi 1.3]
+         * Gets and sets the text of the cell.
+         *
+         * [Api set: WordApi 1.3]
          */
         value: string;
         /**
          *
-         * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+         * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
+         *
+         * [Api set: WordApi 1.3]
          */
         verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
         /**
          *
-         * Gets the width of the cell in points. Read-only. [Api set: WordApi 1.3]
+         * Gets the width of the cell in points. Read-only.
+         *
+         * [Api set: WordApi 1.3]
          */
         readonly width: number;
         
         /**
          *
-         * Deletes the column containing this cell. This is applicable to uniform tables. [Api set: WordApi 1.3]
+         * Deletes the column containing this cell. This is applicable to uniform tables.
+         *
+         * [Api set: WordApi 1.3]
          */
         deleteColumn(): void;
         /**
          *
-         * Deletes the row containing this cell. [Api set: WordApi 1.3]
+         * Deletes the row containing this cell.
+         *
+         * [Api set: WordApi 1.3]
          */
         deleteRow(): void;
         /**
          *
-         * Gets the border style for the specified border. [Api set: WordApi 1.3]
+         * Gets the border style for the specified border.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param borderLocation - Required. The border location.
          */
         getBorder(borderLocation: Word.BorderLocation): Word.TableBorder;
         /**
          *
-         * Gets the border style for the specified border. [Api set: WordApi 1.3]
+         * Gets the border style for the specified border.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param borderLocation - Required. The border location.
          */
         getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
         /**
          *
-         * Gets cell padding in points. [Api set: WordApi 1.3]
+         * Gets cell padding in points.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Gets cell padding in points. [Api set: WordApi 1.3]
+         * Gets cell padding in points.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Gets the next cell. Throws if this cell is the last one. [Api set: WordApi 1.3]
+         * Gets the next cell. Throws if this cell is the last one.
+         *
+         * [Api set: WordApi 1.3]
          */
         getNext(): Word.TableCell;
         /**
          *
-         * Gets the next cell. Returns a null object if this cell is the last one. [Api set: WordApi 1.3]
+         * Gets the next cell. Returns a null object if this cell is the last one.
+         *
+         * [Api set: WordApi 1.3]
          */
         getNextOrNullObject(): Word.TableCell;
         /**
          *
-         * Adds columns to the left or right of the cell, using the cell's column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows. [Api set: WordApi 1.3]
+         * Adds columns to the left or right of the cell, using the cell's column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param insertLocation - Required. It can be 'Before' or 'After'.
          * @param columnCount - Required. Number of columns to add.
@@ -4539,7 +5657,9 @@ export declare namespace Word {
         insertColumns(insertLocation: Word.InsertLocation, columnCount: number, values?: string[][]): void;
         /**
          *
-         * Adds columns to the left or right of the cell, using the cell's column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows. [Api set: WordApi 1.3]
+         * Adds columns to the left or right of the cell, using the cell's column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param insertLocation - Required. It can be 'Before' or 'After'.
          * @param columnCount - Required. Number of columns to add.
@@ -4548,7 +5668,9 @@ export declare namespace Word {
         insertColumns(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", columnCount: number, values?: string[][]): void;
         /**
          *
-         * Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set in the newly inserted rows. [Api set: WordApi 1.3]
+         * Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set in the newly inserted rows.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param insertLocation - Required. It can be 'Before' or 'After'.
          * @param rowCount - Required. Number of rows to add.
@@ -4557,7 +5679,9 @@ export declare namespace Word {
         insertRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][]): Word.TableRowCollection;
         /**
          *
-         * Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set in the newly inserted rows. [Api set: WordApi 1.3]
+         * Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set in the newly inserted rows.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param insertLocation - Required. It can be 'Before' or 'After'.
          * @param rowCount - Required. Number of rows to add.
@@ -4566,7 +5690,9 @@ export declare namespace Word {
         insertRows(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?: string[][]): Word.TableRowCollection;
         /**
          *
-         * Sets cell padding in points. [Api set: WordApi 1.3]
+         * Sets cell padding in points.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
@@ -4574,7 +5700,9 @@ export declare namespace Word {
         setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;
         /**
          *
-         * Sets cell padding in points. [Api set: WordApi 1.3]
+         * Sets cell padding in points.
+         *
+         * [Api set: WordApi 1.3]
          *
          * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
@@ -4582,7 +5710,9 @@ export declare namespace Word {
         setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
         /**
          *
-         * Splits the cell into the specified number of rows and columns. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Splits the cell into the specified number of rows and columns.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param rowCount - Required. The number of rows to split into. Must be a divisor of the number of underlying rows.
@@ -4622,7 +5752,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Contains the collection of the document's TableCell objects. [Api set: WordApi 1.3]
+     * Contains the collection of the document's TableCell objects.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class TableCellCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -4631,12 +5763,16 @@ export declare namespace Word {
         readonly items: Word.TableCell[];
         /**
          *
-         * Gets the first table cell in this collection. Throws if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first table cell in this collection. Throws if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirst(): Word.TableCell;
         /**
          *
-         * Gets the first table cell in this collection. Returns a null object if this collection is empty. [Api set: WordApi 1.3]
+         * Gets the first table cell in this collection. Returns a null object if this collection is empty.
+         *
+         * [Api set: WordApi 1.3]
          */
         getFirstOrNullObject(): Word.TableCell;
         /**
@@ -4669,24 +5805,32 @@ export declare namespace Word {
     }
     /**
      *
-     * Specifies the border style. [Api set: WordApi 1.3]
+     * Specifies the border style.
+     *
+     * [Api set: WordApi 1.3]
      */
     export class TableBorder extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
          *
-         * Gets or sets the table border color. [Api set: WordApi 1.3]
+         * Gets or sets the table border color.
+         *
+         * [Api set: WordApi 1.3]
          */
         color: string;
         /**
          *
-         * Gets or sets the type of the table border. [Api set: WordApi 1.3]
+         * Gets or sets the type of the table border.
+         *
+         * [Api set: WordApi 1.3]
          */
         type: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
         /**
          *
-         * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths. [Api set: WordApi 1.3]
+         * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths.
+         *
+         * [Api set: WordApi 1.3]
          */
         width: number;
         
@@ -4723,7 +5867,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Provides information about the type of a raised event. For each object type, please keep the order of: deleted, selection changed, data changed, added. [Api set: WordApi]
+     * Provides information about the type of a raised event. For each object type, please keep the order of: deleted, selection changed, data changed, added.
+     *
+     * [Api set: WordApi]
      */
     enum EventType {
         /**
@@ -4753,26 +5899,34 @@ export declare namespace Word {
     }
     /**
      *
-     * Provides information about the content control that raised an event. [Api set: WordApi BETA (PREVIEW ONLY)]
+     * Provides information about the content control that raised an event.
+     *
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
      * @beta
      */
     export interface ContentControlEventArgs {
         /**
          *
-         * The object that raised the event. Load this object to get its properties. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * The object that raised the event. Load this object to get its properties.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         contentControl: Word.ContentControl;
         /**
          *
-         * The event type. See Word.EventType for details. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * The event type. See Word.EventType for details.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded";
     }
     /**
      *
-     * Specifies supported content control types and subtypes. [Api set: WordApi]
+     * Specifies supported content control types and subtypes.
+     *
+     * [Api set: WordApi]
      */
     enum ContentControlType {
         unknown = "Unknown",
@@ -4815,7 +5969,9 @@ export declare namespace Word {
     }
     /**
      *
-     * ContentControl appearance [Api set: WordApi]
+     * ContentControl appearance
+     *
+     * [Api set: WordApi]
      */
     enum ContentControlAppearance {
         /**
@@ -4839,7 +5995,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Underline types [Api set: WordApi]
+     * Underline types
+     *
+     * [Api set: WordApi]
      */
     enum UnderlineType {
         mixed = "Mixed",
@@ -4924,7 +6082,9 @@ export declare namespace Word {
     }
     /**
      *
-     * Specifies the form of a break. [Api set: WordApi]
+     * Specifies the form of a break.
+     *
+     * [Api set: WordApi]
      */
     enum BreakType {
         /**
@@ -4971,7 +6131,9 @@ export declare namespace Word {
     }
     /**
      *
-     * The insertion location types [Api set: WordApi]
+     * The insertion location types
+     *
+     * [Api set: WordApi]
      */
     enum InsertLocation {
         /**
@@ -5005,7 +6167,8 @@ export declare namespace Word {
          */
         replace = "Replace",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum Alignment {
         mixed = "Mixed",
@@ -5040,7 +6203,8 @@ export declare namespace Word {
          */
         justified = "Justified",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum HeaderFooterType {
         /**
@@ -5062,7 +6226,8 @@ export declare namespace Word {
          */
         evenPages = "EvenPages",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum BodyType {
         unknown = "Unknown",
@@ -5072,14 +6237,16 @@ export declare namespace Word {
         footer = "Footer",
         tableCell = "TableCell",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum SelectionMode {
         select = "Select",
         start = "Start",
         end = "End",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum ImageFormat {
         unsupported = "Unsupported",
@@ -5097,7 +6264,8 @@ export declare namespace Word {
         pdf = "Pdf",
         svg = "Svg",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum RangeLocation {
         /**
@@ -5137,7 +6305,8 @@ export declare namespace Word {
          */
         content = "Content",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum LocationRelation {
         /**
@@ -5225,7 +6394,8 @@ export declare namespace Word {
          */
         after = "After",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum BorderLocation {
         top = "Top",
@@ -5238,7 +6408,8 @@ export declare namespace Word {
         outside = "Outside",
         all = "All",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum CellPaddingLocation {
         top = "Top",
@@ -5246,7 +6417,8 @@ export declare namespace Word {
         bottom = "Bottom",
         right = "Right",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum BorderType {
         mixed = "Mixed",
@@ -5274,7 +6446,8 @@ export declare namespace Word {
         threeDEmboss = "ThreeDEmboss",
         threeDEngrave = "ThreeDEngrave",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum VerticalAlignment {
         mixed = "Mixed",
@@ -5282,14 +6455,16 @@ export declare namespace Word {
         center = "Center",
         bottom = "Bottom",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum ListLevelType {
         bullet = "Bullet",
         number = "Number",
         picture = "Picture",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum ListBullet {
         custom = "Custom",
@@ -5300,7 +6475,8 @@ export declare namespace Word {
         arrow = "Arrow",
         checkmark = "Checkmark",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum ListNumbering {
         none = "None",
@@ -5310,7 +6486,8 @@ export declare namespace Word {
         upperLetter = "UpperLetter",
         lowerLetter = "LowerLetter",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum Style {
         /**
@@ -5522,7 +6699,8 @@ export declare namespace Word {
         listTable7Colorful_Accent5 = "ListTable7Colorful_Accent5",
         listTable7Colorful_Accent6 = "ListTable7Colorful_Accent6",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum DocumentPropertyType {
         string = "String",
@@ -5530,7 +6708,8 @@ export declare namespace Word {
         date = "Date",
         boolean = "Boolean",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum TapObjectType {
         chart = "Chart",
@@ -5541,7 +6720,8 @@ export declare namespace Word {
         ole = "OLE",
         text = "Text",
     }
-    /* [Api set: WordApi]
+    /**
+     * [Api set: WordApi]
      */
     enum FileContentFormat {
         base64 = "Base64",
@@ -5573,17 +6753,23 @@ export declare namespace Word {
         export interface BodyUpdateData {
             /**
             *
-            * Gets the text format of the body. Use this to get and set font name, size, color and other properties. [Api set: WordApi 1.1]
+            * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontUpdateData;
             /**
              *
-             * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: string;
             /**
              *
-             * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         }
@@ -5591,57 +6777,79 @@ export declare namespace Word {
         export interface ContentControlUpdateData {
             /**
             *
-            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.1]
+            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontUpdateData;
             /**
              *
-             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'. [Api set: WordApi 1.1]
+             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+             *
+             * [Api set: WordApi 1.1]
              */
             appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";
             /**
              *
-             * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
+             *
+             * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the user can edit the contents of the content control. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the user can edit the contents of the content control.
+             *
+             * [Api set: WordApi 1.1]
              */
             cannotEdit?: boolean;
             /**
              *
-             * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name. [Api set: WordApi 1.1]
+             * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
+             *
+             * [Api set: WordApi 1.1]
              */
             color?: string;
             /**
              *
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. [Api set: WordApi 1.1]
+             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+             *
+             * [Api set: WordApi 1.1]
              */
             placeholderText?: string;
             /**
              *
-             * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
+             *
+             * [Api set: WordApi 1.1]
              */
             removeWhenEdited?: boolean;
             /**
              *
-             * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: string;
             /**
              *
-             * Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
              *
-             * Gets or sets a tag to identify a content control. [Api set: WordApi 1.1]
+             * Gets or sets a tag to identify a content control.
+             *
+             * [Api set: WordApi 1.1]
              */
             tag?: string;
             /**
              *
-             * Gets or sets the title for a content control. [Api set: WordApi 1.1]
+             * Gets or sets the title for a content control.
+             *
+             * [Api set: WordApi 1.1]
              */
             title?: string;
         }
@@ -5653,7 +6861,9 @@ export declare namespace Word {
         export interface CustomPropertyUpdateData {
             /**
              *
-             * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair). [Api set: WordApi 1.3]
+             * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+             *
+             * [Api set: WordApi 1.3]
              */
             value?: any;
         }
@@ -5673,12 +6883,16 @@ export declare namespace Word {
         export interface DocumentUpdateData {
             /**
             *
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. [Api set: WordApi 1.1]
+            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
+            *
+            * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyUpdateData;
             /**
             *
-            * Gets the properties of the document. [Api set: WordApi 1.3]
+            * Gets the properties of the document.
+            *
+            * [Api set: WordApi 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesUpdateData;
         }
@@ -5686,12 +6900,16 @@ export declare namespace Word {
         export interface DocumentCreatedUpdateData {
             /**
             *
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. [Api set: WordApiHiddenDocument 1.3]
+            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
+            *
+            * [Api set: WordApiHiddenDocument 1.3]
             */
             body?: Word.Interfaces.BodyUpdateData;
             /**
             *
-            * Gets the properties of the document. [Api set: WordApiHiddenDocument 1.3]
+            * Gets the properties of the document.
+            *
+            * [Api set: WordApiHiddenDocument 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesUpdateData;
         }
@@ -5699,47 +6917,65 @@ export declare namespace Word {
         export interface DocumentPropertiesUpdateData {
             /**
              *
-             * Gets or sets the author of the document. [Api set: WordApi 1.3]
+             * Gets or sets the author of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             author?: string;
             /**
              *
-             * Gets or sets the category of the document. [Api set: WordApi 1.3]
+             * Gets or sets the category of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             category?: string;
             /**
              *
-             * Gets or sets the comments of the document. [Api set: WordApi 1.3]
+             * Gets or sets the comments of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             comments?: string;
             /**
              *
-             * Gets or sets the company of the document. [Api set: WordApi 1.3]
+             * Gets or sets the company of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             company?: string;
             /**
              *
-             * Gets or sets the format of the document. [Api set: WordApi 1.3]
+             * Gets or sets the format of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             format?: string;
             /**
              *
-             * Gets or sets the keywords of the document. [Api set: WordApi 1.3]
+             * Gets or sets the keywords of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             keywords?: string;
             /**
              *
-             * Gets or sets the manager of the document. [Api set: WordApi 1.3]
+             * Gets or sets the manager of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             manager?: string;
             /**
              *
-             * Gets or sets the subject of the document. [Api set: WordApi 1.3]
+             * Gets or sets the subject of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             subject?: string;
             /**
              *
-             * Gets or sets the title of the document. [Api set: WordApi 1.3]
+             * Gets or sets the title of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             title?: string;
         }
@@ -5747,57 +6983,79 @@ export declare namespace Word {
         export interface FontUpdateData {
             /**
              *
-             * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             bold?: boolean;
             /**
              *
-             * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name. [Api set: WordApi 1.1]
+             * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * [Api set: WordApi 1.1]
              */
             color?: string;
             /**
              *
-             * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
             /**
              *
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. [Api set: WordApi 1.1]
+             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
+             *
+             * [Api set: WordApi 1.1]
              */
             highlightColor?: string;
             /**
              *
-             * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             italic?: boolean;
             /**
              *
-             * Gets or sets a value that represents the name of the font. [Api set: WordApi 1.1]
+             * Gets or sets a value that represents the name of the font.
+             *
+             * [Api set: WordApi 1.1]
              */
             name?: string;
             /**
              *
-             * Gets or sets a value that represents the font size in points. [Api set: WordApi 1.1]
+             * Gets or sets a value that represents the font size in points.
+             *
+             * [Api set: WordApi 1.1]
              */
             size?: number;
             /**
              *
-             * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             strikeThrough?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             subscript?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             superscript?: boolean;
             /**
              *
-             * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+             *
+             * [Api set: WordApi 1.1]
              */
             underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
         }
@@ -5805,32 +7063,44 @@ export declare namespace Word {
         export interface InlinePictureUpdateData {
             /**
              *
-             * Gets or sets a string that represents the alternative text associated with the inline image. [Api set: WordApi 1.1]
+             * Gets or sets a string that represents the alternative text associated with the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             altTextDescription?: string;
             /**
              *
-             * Gets or sets a string that contains the title for the inline image. [Api set: WordApi 1.1]
+             * Gets or sets a string that contains the title for the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             altTextTitle?: string;
             /**
              *
-             * Gets or sets a number that describes the height of the inline image. [Api set: WordApi 1.1]
+             * Gets or sets a number that describes the height of the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             height?: number;
             /**
              *
-             * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part. [Api set: WordApi 1.1]
+             * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+             *
+             * [Api set: WordApi 1.1]
              */
             hyperlink?: string;
             /**
              *
-             * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+             *
+             * [Api set: WordApi 1.1]
              */
             lockAspectRatio?: boolean;
             /**
              *
-             * Gets or sets a number that describes the width of the inline image. [Api set: WordApi 1.1]
+             * Gets or sets a number that describes the width of the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             width?: number;
         }
@@ -5846,7 +7116,9 @@ export declare namespace Word {
         export interface ListItemUpdateData {
             /**
              *
-             * Gets or sets the level of the item in the list. [Api set: WordApi 1.3]
+             * Gets or sets the level of the item in the list.
+             *
+             * [Api set: WordApi 1.3]
              */
             level?: number;
         }
@@ -5854,77 +7126,107 @@ export declare namespace Word {
         export interface ParagraphUpdateData {
             /**
             *
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.1]
+            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontUpdateData;
             /**
             *
-            * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. [Api set: WordApi 1.3]
+            * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list.
+            *
+            * [Api set: WordApi 1.3]
             */
             listItem?: Word.Interfaces.ListItemUpdateData;
             /**
             *
-            * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. [Api set: WordApi 1.3]
+            * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
+            *
+            * [Api set: WordApi 1.3]
             */
             listItemOrNullObject?: Word.Interfaces.ListItemUpdateData;
             /**
              *
-             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'. [Api set: WordApi 1.1]
+             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+             *
+             * [Api set: WordApi 1.1]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              *
-             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent. [Api set: WordApi 1.1]
+             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+             *
+             * [Api set: WordApi 1.1]
              */
             firstLineIndent?: number;
             /**
              *
-             * Gets or sets the left indent value, in points, for the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the left indent value, in points, for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             leftIndent?: number;
             /**
              *
-             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12. [Api set: WordApi 1.1]
+             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+             *
+             * [Api set: WordApi 1.1]
              */
             lineSpacing?: number;
             /**
              *
-             * Gets or sets the amount of spacing, in grid lines, after the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the amount of spacing, in grid lines, after the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             lineUnitAfter?: number;
             /**
              *
-             * Gets or sets the amount of spacing, in grid lines, before the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the amount of spacing, in grid lines, before the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             lineUnitBefore?: number;
             /**
              *
-             * Gets or sets the outline level for the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the outline level for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             outlineLevel?: number;
             /**
              *
-             * Gets or sets the right indent value, in points, for the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the right indent value, in points, for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             rightIndent?: number;
             /**
              *
-             * Gets or sets the spacing, in points, after the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the spacing, in points, after the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             spaceAfter?: number;
             /**
              *
-             * Gets or sets the spacing, in points, before the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the spacing, in points, before the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             spaceBefore?: number;
             /**
              *
-             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: string;
             /**
              *
-             * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         }
@@ -5936,22 +7238,30 @@ export declare namespace Word {
         export interface RangeUpdateData {
             /**
             *
-            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.1]
+            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontUpdateData;
             /**
              *
-             * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part. [Api set: WordApi 1.3]
+             * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
+             *
+             * [Api set: WordApi 1.3]
              */
             hyperlink?: string;
             /**
              *
-             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: string;
             /**
              *
-             * Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         }
@@ -5963,37 +7273,51 @@ export declare namespace Word {
         export interface SearchOptionsUpdateData {
             /**
              *
-             * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             ignorePunct?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             ignoreSpace?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchCase?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchPrefix?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchSuffix?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchWholeWord?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchWildcards?: boolean;
         }
@@ -6001,7 +7325,9 @@ export declare namespace Word {
         export interface SectionUpdateData {
             /**
             *
-            * Gets the body object of the section. This does not include the header/footer and other section metadata. [Api set: WordApi 1.1]
+            * Gets the body object of the section. This does not include the header/footer and other section metadata.
+            *
+            * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyUpdateData;
         }
@@ -6013,7 +7339,9 @@ export declare namespace Word {
         export interface SettingUpdateData {
             /**
              *
-             * Gets or sets the value of the setting. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * Gets or sets the value of the setting.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             value?: any;
@@ -6026,77 +7354,107 @@ export declare namespace Word {
         export interface TableUpdateData {
             /**
             *
-            * Gets the font. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.3]
+            * Gets the font. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.3]
             */
             font?: Word.Interfaces.FontUpdateData;
             /**
              *
-             * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'. [Api set: WordApi 1.3]
+             * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
+             *
+             * [Api set: WordApi 1.3]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              *
-             * Gets and sets the number of header rows. [Api set: WordApi 1.3]
+             * Gets and sets the number of header rows.
+             *
+             * [Api set: WordApi 1.3]
              */
             headerRowCount?: number;
             /**
              *
-             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
              */
             horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              *
-             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
              */
             shadingColor?: string;
             /**
              *
-             * Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.3]
+             * Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             style?: string;
             /**
              *
-             * Gets and sets whether the table has banded columns. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has banded columns.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBandedColumns?: boolean;
             /**
              *
-             * Gets and sets whether the table has banded rows. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has banded rows.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBandedRows?: boolean;
             /**
              *
-             * Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
              *
-             * Gets and sets whether the table has a first column with a special style. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has a first column with a special style.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleFirstColumn?: boolean;
             /**
              *
-             * Gets and sets whether the table has a last column with a special style. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has a last column with a special style.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleLastColumn?: boolean;
             /**
              *
-             * Gets and sets whether the table has a total (last) row with a special style. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has a total (last) row with a special style.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleTotalRow?: boolean;
             /**
              *
-             * Gets and sets the text values in the table, as a 2D Javascript array. [Api set: WordApi 1.3]
+             * Gets and sets the text values in the table, as a 2D Javascript array.
+             *
+             * [Api set: WordApi 1.3]
              */
             values?: string[][];
             /**
              *
-             * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+             * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
              */
             verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
             /**
              *
-             * Gets and sets the width of the table in points. [Api set: WordApi 1.3]
+             * Gets and sets the width of the table in points.
+             *
+             * [Api set: WordApi 1.3]
              */
             width?: number;
         }
@@ -6108,32 +7466,44 @@ export declare namespace Word {
         export interface TableRowUpdateData {
             /**
             *
-            * Gets the font. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.3]
+            * Gets the font. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.3]
             */
             font?: Word.Interfaces.FontUpdateData;
             /**
              *
-             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
              */
             horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              *
-             * Gets and sets the preferred height of the row in points. [Api set: WordApi 1.3]
+             * Gets and sets the preferred height of the row in points.
+             *
+             * [Api set: WordApi 1.3]
              */
             preferredHeight?: number;
             /**
              *
-             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
              */
             shadingColor?: string;
             /**
              *
-             * Gets and sets the text values in the row, as a 2D Javascript array. [Api set: WordApi 1.3]
+             * Gets and sets the text values in the row, as a 2D Javascript array.
+             *
+             * [Api set: WordApi 1.3]
              */
             values?: string[][];
             /**
              *
-             * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+             * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
              */
             verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
         }
@@ -6145,32 +7515,44 @@ export declare namespace Word {
         export interface TableCellUpdateData {
             /**
             *
-            * Gets the body object of the cell. [Api set: WordApi 1.3]
+            * Gets the body object of the cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             body?: Word.Interfaces.BodyUpdateData;
             /**
              *
-             * Gets and sets the width of the cell's column in points. This is applicable to uniform tables. [Api set: WordApi 1.3]
+             * Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
+             *
+             * [Api set: WordApi 1.3]
              */
             columnWidth?: number;
             /**
              *
-             * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+             * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
              */
             horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              *
-             * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+             * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
              */
             shadingColor?: string;
             /**
              *
-             * Gets and sets the text of the cell. [Api set: WordApi 1.3]
+             * Gets and sets the text of the cell.
+             *
+             * [Api set: WordApi 1.3]
              */
             value?: string;
             /**
              *
-             * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+             * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
              */
             verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
         }
@@ -6182,17 +7564,23 @@ export declare namespace Word {
         export interface TableBorderUpdateData {
             /**
              *
-             * Gets or sets the table border color. [Api set: WordApi 1.3]
+             * Gets or sets the table border color.
+             *
+             * [Api set: WordApi 1.3]
              */
             color?: string;
             /**
              *
-             * Gets or sets the type of the table border. [Api set: WordApi 1.3]
+             * Gets or sets the type of the table border.
+             *
+             * [Api set: WordApi 1.3]
              */
             type?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
             /**
              *
-             * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths. [Api set: WordApi 1.3]
+             * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths.
+             *
+             * [Api set: WordApi 1.3]
              */
             width?: number;
         }
@@ -6200,82 +7588,114 @@ export declare namespace Word {
         export interface BodyData {
             /**
             *
-            * Gets the collection of rich text content control objects in the body. Read-only. [Api set: WordApi 1.1]
+            * Gets the collection of rich text content control objects in the body. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
             *
-            * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only. [Api set: WordApi 1.1]
+            * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontData;
             /**
             *
-            * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only. [Api set: WordApi 1.1]
+            * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
             *
-            * Gets the collection of list objects in the body. Read-only. [Api set: WordApi 1.3]
+            * Gets the collection of list objects in the body. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             lists?: Word.Interfaces.ListData[];
             /**
             *
-            * Gets the collection of paragraph objects in the body. Read-only. [Api set: WordApi 1.1]
+            * Gets the collection of paragraph objects in the body. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             paragraphs?: Word.Interfaces.ParagraphData[];
             /**
             *
-            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body. Read-only. [Api set: WordApi 1.3]
+            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyData;
             /**
             *
-            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body. Read-only. [Api set: WordApi 1.3]
+            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBodyOrNullObject?: Word.Interfaces.BodyData;
             /**
             *
-            * Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only. [Api set: WordApi 1.1]
+            * Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlData;
             /**
             *
-            * Gets the content control that contains the body. Returns a null object if there isn't a parent content control. Read-only. [Api set: WordApi 1.3]
+            * Gets the content control that contains the body. Returns a null object if there isn't a parent content control. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;
             /**
             *
-            * Gets the parent section of the body. Throws if there isn't a parent section. Read-only. [Api set: WordApi 1.3]
+            * Gets the parent section of the body. Throws if there isn't a parent section. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentSection?: Word.Interfaces.SectionData;
             /**
             *
-            * Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only. [Api set: WordApi 1.3]
+            * Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentSectionOrNullObject?: Word.Interfaces.SectionData;
             /**
             *
-            * Gets the collection of table objects in the body. Read-only. [Api set: WordApi 1.3]
+            * Gets the collection of table objects in the body. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             tables?: Word.Interfaces.TableData[];
             /**
              *
-             * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: string;
             /**
              *
-             * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
              *
-             * Gets the text of the body. Use the insertText method to insert text. Read-only. [Api set: WordApi 1.1]
+             * Gets the text of the body. Use the insertText method to insert text. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             text?: string;
             /**
              *
-             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only. [Api set: WordApi 1.3]
+             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             type?: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell";
         }
@@ -6283,137 +7703,191 @@ export declare namespace Word {
         export interface ContentControlData {
             /**
             *
-            * Gets the collection of content control objects in the content control. Read-only. [Api set: WordApi 1.1]
+            * Gets the collection of content control objects in the content control. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
             *
-            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only. [Api set: WordApi 1.1]
+            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontData;
             /**
             *
-            * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only. [Api set: WordApi 1.1]
+            * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
             *
-            * Gets the collection of list objects in the content control. Read-only. [Api set: WordApi 1.3]
+            * Gets the collection of list objects in the content control. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             lists?: Word.Interfaces.ListData[];
             /**
             *
-            * Get the collection of paragraph objects in the content control. Read-only. [Api set: WordApi 1.1]
+            * Get the collection of paragraph objects in the content control. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             paragraphs?: Word.Interfaces.ParagraphData[];
             /**
             *
-            * Gets the parent body of the content control. Read-only. [Api set: WordApi 1.3]
+            * Gets the parent body of the content control. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyData;
             /**
             *
-            * Gets the content control that contains the content control. Throws if there isn't a parent content control. Read-only. [Api set: WordApi 1.1]
+            * Gets the content control that contains the content control. Throws if there isn't a parent content control. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlData;
             /**
             *
-            * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control. Read-only. [Api set: WordApi 1.3]
+            * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;
             /**
             *
-            * Gets the table that contains the content control. Throws if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+            * Gets the table that contains the content control. Throws if it is not contained in a table. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableData;
             /**
             *
-            * Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellData;
             /**
             *
-            * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellData;
             /**
             *
-            * Gets the table that contains the content control. Returns a null object if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+            * Gets the table that contains the content control. Returns a null object if it is not contained in a table. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableData;
             /**
             *
-            * Gets the collection of table objects in the content control. Read-only. [Api set: WordApi 1.3]
+            * Gets the collection of table objects in the content control. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             tables?: Word.Interfaces.TableData[];
             /**
              *
-             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'. [Api set: WordApi 1.1]
+             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+             *
+             * [Api set: WordApi 1.1]
              */
             appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";
             /**
              *
-             * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
+             *
+             * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the user can edit the contents of the content control. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the user can edit the contents of the content control.
+             *
+             * [Api set: WordApi 1.1]
              */
             cannotEdit?: boolean;
             /**
              *
-             * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name. [Api set: WordApi 1.1]
+             * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
+             *
+             * [Api set: WordApi 1.1]
              */
             color?: string;
             /**
              *
-             * Gets an integer that represents the content control identifier. Read-only. [Api set: WordApi 1.1]
+             * Gets an integer that represents the content control identifier. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             id?: number;
             /**
              *
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. [Api set: WordApi 1.1]
+             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+             *
+             * [Api set: WordApi 1.1]
              */
             placeholderText?: string;
             /**
              *
-             * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
+             *
+             * [Api set: WordApi 1.1]
              */
             removeWhenEdited?: boolean;
             /**
              *
-             * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: string;
             /**
              *
-             * Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
              *
-             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only. [Api set: WordApi 1.3]
+             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             subtype?: Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
             /**
              *
-             * Gets or sets a tag to identify a content control. [Api set: WordApi 1.1]
+             * Gets or sets a tag to identify a content control.
+             *
+             * [Api set: WordApi 1.1]
              */
             tag?: string;
             /**
              *
-             * Gets the text of the content control. Read-only. [Api set: WordApi 1.1]
+             * Gets the text of the content control. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             text?: string;
             /**
              *
-             * Gets or sets the title for a content control. [Api set: WordApi 1.1]
+             * Gets or sets the title for a content control.
+             *
+             * [Api set: WordApi 1.1]
              */
             title?: string;
             /**
              *
-             * Gets the content control type. Only rich text content controls are supported currently. Read-only. [Api set: WordApi 1.1]
+             * Gets the content control type. Only rich text content controls are supported currently. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             type?: Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
         }
@@ -6425,17 +7899,23 @@ export declare namespace Word {
         export interface CustomPropertyData {
             /**
              *
-             * Gets the key of the custom property. Read only. [Api set: WordApi 1.3]
+             * Gets the key of the custom property. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             key?: string;
             /**
              *
-             * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only. [Api set: WordApi 1.3]
+             * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             type?: Word.DocumentPropertyType | "String" | "Number" | "Date" | "Boolean";
             /**
              *
-             * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair). [Api set: WordApi 1.3]
+             * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+             *
+             * [Api set: WordApi 1.3]
              */
             value?: any;
         }
@@ -6447,13 +7927,17 @@ export declare namespace Word {
         export interface CustomXmlPartData {
             /**
              *
-             * Gets the ID of the custom XML part. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * Gets the ID of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             id?: string;
             /**
              *
-             * Gets the namespace URI of the custom XML part. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * Gets the namespace URI of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             namespaceUri?: string;
@@ -6470,39 +7954,53 @@ export declare namespace Word {
         export interface DocumentData {
             /**
             *
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only. [Api set: WordApi 1.1]
+            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyData;
             /**
             *
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only. [Api set: WordApi 1.1]
+            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
             *
-            * Gets the custom XML parts in the document. Read-only. [Api set: WordApi BETA (PREVIEW ONLY)]
+            * Gets the custom XML parts in the document. Read-only.
+            *
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
             * @beta
             */
             customXmlParts?: Word.Interfaces.CustomXmlPartData[];
             /**
             *
-            * Gets the properties of the document. Read-only. [Api set: WordApi 1.3]
+            * Gets the properties of the document. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesData;
             /**
             *
-            * Gets the collection of section objects in the document. Read-only. [Api set: WordApi 1.1]
+            * Gets the collection of section objects in the document. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             sections?: Word.Interfaces.SectionData[];
             /**
             *
-            * Gets the add-in's settings in the document. Read-only. [Api set: WordApi BETA (PREVIEW ONLY)]
+            * Gets the add-in's settings in the document. Read-only.
+            *
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
             * @beta
             */
             settings?: Word.Interfaces.SettingData[];
             /**
              *
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only. [Api set: WordApi 1.1]
+             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             saved?: boolean;
         }
@@ -6510,37 +8008,51 @@ export declare namespace Word {
         export interface DocumentCreatedData {
             /**
             *
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only. [Api set: WordApiHiddenDocument 1.3]
+            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
+            *
+            * [Api set: WordApiHiddenDocument 1.3]
             */
             body?: Word.Interfaces.BodyData;
             /**
             *
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only. [Api set: WordApiHiddenDocument 1.3]
+            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
+            *
+            * [Api set: WordApiHiddenDocument 1.3]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
             *
-            * Gets the custom XML parts in the document. Read-only. [Api set: WordApiHiddenDocument 1.4]
+            * Gets the custom XML parts in the document. Read-only.
+            *
+            * [Api set: WordApiHiddenDocument 1.4]
             */
             customXmlParts?: Word.Interfaces.CustomXmlPartData[];
             /**
             *
-            * Gets the properties of the document. Read-only. [Api set: WordApiHiddenDocument 1.3]
+            * Gets the properties of the document. Read-only.
+            *
+            * [Api set: WordApiHiddenDocument 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesData;
             /**
             *
-            * Gets the collection of section objects in the document. Read-only. [Api set: WordApiHiddenDocument 1.3]
+            * Gets the collection of section objects in the document. Read-only.
+            *
+            * [Api set: WordApiHiddenDocument 1.3]
             */
             sections?: Word.Interfaces.SectionData[];
             /**
             *
-            * Gets the add-in's settings in the document. Read-only. [Api set: WordApiHiddenDocument 1.4]
+            * Gets the add-in's settings in the document. Read-only.
+            *
+            * [Api set: WordApiHiddenDocument 1.4]
             */
             settings?: Word.Interfaces.SettingData[];
             /**
              *
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only. [Api set: WordApiHiddenDocument 1.3]
+             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+             *
+             * [Api set: WordApiHiddenDocument 1.3]
              */
             saved?: boolean;
         }
@@ -6548,92 +8060,128 @@ export declare namespace Word {
         export interface DocumentPropertiesData {
             /**
             *
-            * Gets the collection of custom properties of the document. Read only. [Api set: WordApi 1.3]
+            * Gets the collection of custom properties of the document. Read only.
+            *
+            * [Api set: WordApi 1.3]
             */
             customProperties?: Word.Interfaces.CustomPropertyData[];
             /**
              *
-             * Gets the application name of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the application name of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             applicationName?: string;
             /**
              *
-             * Gets or sets the author of the document. [Api set: WordApi 1.3]
+             * Gets or sets the author of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             author?: string;
             /**
              *
-             * Gets or sets the category of the document. [Api set: WordApi 1.3]
+             * Gets or sets the category of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             category?: string;
             /**
              *
-             * Gets or sets the comments of the document. [Api set: WordApi 1.3]
+             * Gets or sets the comments of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             comments?: string;
             /**
              *
-             * Gets or sets the company of the document. [Api set: WordApi 1.3]
+             * Gets or sets the company of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             company?: string;
             /**
              *
-             * Gets the creation date of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the creation date of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             creationDate?: Date;
             /**
              *
-             * Gets or sets the format of the document. [Api set: WordApi 1.3]
+             * Gets or sets the format of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             format?: string;
             /**
              *
-             * Gets or sets the keywords of the document. [Api set: WordApi 1.3]
+             * Gets or sets the keywords of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             keywords?: string;
             /**
              *
-             * Gets the last author of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the last author of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             lastAuthor?: string;
             /**
              *
-             * Gets the last print date of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the last print date of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             lastPrintDate?: Date;
             /**
              *
-             * Gets the last save time of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the last save time of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             lastSaveTime?: Date;
             /**
              *
-             * Gets or sets the manager of the document. [Api set: WordApi 1.3]
+             * Gets or sets the manager of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             manager?: string;
             /**
              *
-             * Gets the revision number of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the revision number of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             revisionNumber?: string;
             /**
              *
-             * Gets the security of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the security of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             security?: number;
             /**
              *
-             * Gets or sets the subject of the document. [Api set: WordApi 1.3]
+             * Gets or sets the subject of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             subject?: string;
             /**
              *
-             * Gets the template of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the template of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             template?: string;
             /**
              *
-             * Gets or sets the title of the document. [Api set: WordApi 1.3]
+             * Gets or sets the title of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             title?: string;
         }
@@ -6641,57 +8189,79 @@ export declare namespace Word {
         export interface FontData {
             /**
              *
-             * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             bold?: boolean;
             /**
              *
-             * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name. [Api set: WordApi 1.1]
+             * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * [Api set: WordApi 1.1]
              */
             color?: string;
             /**
              *
-             * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
             /**
              *
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. [Api set: WordApi 1.1]
+             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
+             *
+             * [Api set: WordApi 1.1]
              */
             highlightColor?: string;
             /**
              *
-             * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             italic?: boolean;
             /**
              *
-             * Gets or sets a value that represents the name of the font. [Api set: WordApi 1.1]
+             * Gets or sets a value that represents the name of the font.
+             *
+             * [Api set: WordApi 1.1]
              */
             name?: string;
             /**
              *
-             * Gets or sets a value that represents the font size in points. [Api set: WordApi 1.1]
+             * Gets or sets a value that represents the font size in points.
+             *
+             * [Api set: WordApi 1.1]
              */
             size?: number;
             /**
              *
-             * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             strikeThrough?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             subscript?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             superscript?: boolean;
             /**
              *
-             * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+             *
+             * [Api set: WordApi 1.1]
              */
             underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
         }
@@ -6699,73 +8269,101 @@ export declare namespace Word {
         export interface InlinePictureData {
             /**
             *
-            * Gets the parent paragraph that contains the inline image. Read-only. [Api set: WordApi 1.2]
+            * Gets the parent paragraph that contains the inline image. Read-only.
+            *
+            * [Api set: WordApi 1.2]
             */
             paragraph?: Word.Interfaces.ParagraphData;
             /**
             *
-            * Gets the content control that contains the inline image. Throws if there isn't a parent content control. Read-only. [Api set: WordApi 1.1]
+            * Gets the content control that contains the inline image. Throws if there isn't a parent content control. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlData;
             /**
             *
-            * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control. Read-only. [Api set: WordApi 1.3]
+            * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;
             /**
             *
-            * Gets the table that contains the inline image. Throws if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+            * Gets the table that contains the inline image. Throws if it is not contained in a table. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableData;
             /**
             *
-            * Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellData;
             /**
             *
-            * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellData;
             /**
             *
-            * Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+            * Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableData;
             /**
              *
-             * Gets or sets a string that represents the alternative text associated with the inline image. [Api set: WordApi 1.1]
+             * Gets or sets a string that represents the alternative text associated with the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             altTextDescription?: string;
             /**
              *
-             * Gets or sets a string that contains the title for the inline image. [Api set: WordApi 1.1]
+             * Gets or sets a string that contains the title for the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             altTextTitle?: string;
             /**
              *
-             * Gets or sets a number that describes the height of the inline image. [Api set: WordApi 1.1]
+             * Gets or sets a number that describes the height of the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             height?: number;
             /**
              *
-             * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part. [Api set: WordApi 1.1]
+             * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+             *
+             * [Api set: WordApi 1.1]
              */
             hyperlink?: string;
             /**
              *
-             * Gets the format of the inline image. Read-only. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * Gets the format of the inline image. Read-only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             imageFormat?: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
             /**
              *
-             * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+             *
+             * [Api set: WordApi 1.1]
              */
             lockAspectRatio?: boolean;
             /**
              *
-             * Gets or sets a number that describes the width of the inline image. [Api set: WordApi 1.1]
+             * Gets or sets a number that describes the width of the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             width?: number;
         }
@@ -6777,22 +8375,30 @@ export declare namespace Word {
         export interface ListData {
             /**
             *
-            * Gets paragraphs in the list. Read-only. [Api set: WordApi 1.3]
+            * Gets paragraphs in the list. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             paragraphs?: Word.Interfaces.ParagraphData[];
             /**
              *
-             * Gets the list's id. [Api set: WordApi 1.3]
+             * Gets the list's id.
+             *
+             * [Api set: WordApi 1.3]
              */
             id?: number;
             /**
              *
-             * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only. [Api set: WordApi 1.3]
+             * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             levelExistences?: boolean[];
             /**
              *
-             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only. [Api set: WordApi 1.3]
+             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             levelTypes?: Word.ListLevelType[];
         }
@@ -6804,17 +8410,23 @@ export declare namespace Word {
         export interface ListItemData {
             /**
              *
-             * Gets or sets the level of the item in the list. [Api set: WordApi 1.3]
+             * Gets or sets the level of the item in the list.
+             *
+             * [Api set: WordApi 1.3]
              */
             level?: number;
             /**
              *
-             * Gets the list item bullet, number, or picture as a string. Read-only. [Api set: WordApi 1.3]
+             * Gets the list item bullet, number, or picture as a string. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             listString?: string;
             /**
              *
-             * Gets the list item order number in relation to its siblings. Read-only. [Api set: WordApi 1.3]
+             * Gets the list item order number in relation to its siblings. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             siblingIndex?: number;
         }
@@ -6822,152 +8434,212 @@ export declare namespace Word {
         export interface ParagraphData {
             /**
             *
-            * Gets the collection of content control objects in the paragraph. Read-only. [Api set: WordApi 1.1]
+            * Gets the collection of content control objects in the paragraph. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
             *
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only. [Api set: WordApi 1.1]
+            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontData;
             /**
             *
-            * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only. [Api set: WordApi 1.1]
+            * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
             *
-            * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only. [Api set: WordApi 1.3]
+            * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             list?: Word.Interfaces.ListData;
             /**
             *
-            * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only. [Api set: WordApi 1.3]
+            * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             listItem?: Word.Interfaces.ListItemData;
             /**
             *
-            * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only. [Api set: WordApi 1.3]
+            * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             listItemOrNullObject?: Word.Interfaces.ListItemData;
             /**
             *
-            * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only. [Api set: WordApi 1.3]
+            * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             listOrNullObject?: Word.Interfaces.ListData;
             /**
             *
-            * Gets the parent body of the paragraph. Read-only. [Api set: WordApi 1.3]
+            * Gets the parent body of the paragraph. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyData;
             /**
             *
-            * Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only. [Api set: WordApi 1.1]
+            * Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlData;
             /**
             *
-            * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control. Read-only. [Api set: WordApi 1.3]
+            * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;
             /**
             *
-            * Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+            * Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableData;
             /**
             *
-            * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellData;
             /**
             *
-            * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellData;
             /**
             *
-            * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+            * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableData;
             /**
              *
-             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'. [Api set: WordApi 1.1]
+             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+             *
+             * [Api set: WordApi 1.1]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              *
-             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent. [Api set: WordApi 1.1]
+             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+             *
+             * [Api set: WordApi 1.1]
              */
             firstLineIndent?: number;
             /**
              *
-             * Indicates the paragraph is the last one inside its parent body. Read-only. [Api set: WordApi 1.3]
+             * Indicates the paragraph is the last one inside its parent body. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             isLastParagraph?: boolean;
             /**
              *
-             * Checks whether the paragraph is a list item. Read-only. [Api set: WordApi 1.3]
+             * Checks whether the paragraph is a list item. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             isListItem?: boolean;
             /**
              *
-             * Gets or sets the left indent value, in points, for the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the left indent value, in points, for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             leftIndent?: number;
             /**
              *
-             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12. [Api set: WordApi 1.1]
+             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+             *
+             * [Api set: WordApi 1.1]
              */
             lineSpacing?: number;
             /**
              *
-             * Gets or sets the amount of spacing, in grid lines, after the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the amount of spacing, in grid lines, after the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             lineUnitAfter?: number;
             /**
              *
-             * Gets or sets the amount of spacing, in grid lines, before the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the amount of spacing, in grid lines, before the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             lineUnitBefore?: number;
             /**
              *
-             * Gets or sets the outline level for the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the outline level for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             outlineLevel?: number;
             /**
              *
-             * Gets or sets the right indent value, in points, for the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the right indent value, in points, for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             rightIndent?: number;
             /**
              *
-             * Gets or sets the spacing, in points, after the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the spacing, in points, after the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             spaceAfter?: number;
             /**
              *
-             * Gets or sets the spacing, in points, before the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the spacing, in points, before the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             spaceBefore?: number;
             /**
              *
-             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: string;
             /**
              *
-             * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
              *
-             * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only. [Api set: WordApi 1.3]
+             * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             tableNestingLevel?: number;
             /**
              *
-             * Gets the text of the paragraph. Read-only. [Api set: WordApi 1.1]
+             * Gets the text of the paragraph. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             text?: string;
         }
@@ -6979,92 +8651,128 @@ export declare namespace Word {
         export interface RangeData {
             /**
             *
-            * Gets the collection of content control objects in the range. Read-only. [Api set: WordApi 1.1]
+            * Gets the collection of content control objects in the range. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
             *
-            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only. [Api set: WordApi 1.1]
+            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontData;
             /**
             *
-            * Gets the collection of inline picture objects in the range. Read-only. [Api set: WordApi 1.2]
+            * Gets the collection of inline picture objects in the range. Read-only.
+            *
+            * [Api set: WordApi 1.2]
             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
             *
-            * Gets the collection of list objects in the range. Read-only. [Api set: WordApi 1.3]
+            * Gets the collection of list objects in the range. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             lists?: Word.Interfaces.ListData[];
             /**
             *
-            * Gets the collection of paragraph objects in the range. Read-only. [Api set: WordApi 1.1]
+            * Gets the collection of paragraph objects in the range. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             paragraphs?: Word.Interfaces.ParagraphData[];
             /**
             *
-            * Gets the parent body of the range. Read-only. [Api set: WordApi 1.3]
+            * Gets the parent body of the range. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyData;
             /**
             *
-            * Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only. [Api set: WordApi 1.1]
+            * Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlData;
             /**
             *
-            * Gets the content control that contains the range. Returns a null object if there isn't a parent content control. Read-only. [Api set: WordApi 1.3]
+            * Gets the content control that contains the range. Returns a null object if there isn't a parent content control. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;
             /**
             *
-            * Gets the table that contains the range. Throws if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+            * Gets the table that contains the range. Throws if it is not contained in a table. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableData;
             /**
             *
-            * Gets the table cell that contains the range. Throws if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the range. Throws if it is not contained in a table cell. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellData;
             /**
             *
-            * Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellData;
             /**
             *
-            * Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+            * Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableData;
             /**
             *
-            * Gets the collection of table objects in the range. Read-only. [Api set: WordApi 1.3]
+            * Gets the collection of table objects in the range. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             tables?: Word.Interfaces.TableData[];
             /**
              *
-             * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part. [Api set: WordApi 1.3]
+             * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
+             *
+             * [Api set: WordApi 1.3]
              */
             hyperlink?: string;
             /**
              *
-             * Checks whether the range length is zero. Read-only. [Api set: WordApi 1.3]
+             * Checks whether the range length is zero. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             isEmpty?: boolean;
             /**
              *
-             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: string;
             /**
              *
-             * Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
              *
-             * Gets the text of the range. Read-only. [Api set: WordApi 1.1]
+             * Gets the text of the range. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             text?: string;
         }
@@ -7076,37 +8784,51 @@ export declare namespace Word {
         export interface SearchOptionsData {
             /**
              *
-             * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             ignorePunct?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             ignoreSpace?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchCase?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchPrefix?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchSuffix?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchWholeWord?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchWildcards?: boolean;
         }
@@ -7114,7 +8836,9 @@ export declare namespace Word {
         export interface SectionData {
             /**
             *
-            * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only. [Api set: WordApi 1.1]
+            * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only.
+            *
+            * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyData;
         }
@@ -7126,13 +8850,17 @@ export declare namespace Word {
         export interface SettingData {
             /**
              *
-             * Gets the key of the setting. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * Gets the key of the setting. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             key?: string;
             /**
              *
-             * Gets or sets the value of the setting. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * Gets or sets the value of the setting.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             value?: any;
@@ -7145,137 +8873,191 @@ export declare namespace Word {
         export interface TableData {
             /**
             *
-            * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only. [Api set: WordApi 1.3]
+            * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             font?: Word.Interfaces.FontData;
             /**
             *
-            * Gets the parent body of the table. Read-only. [Api set: WordApi 1.3]
+            * Gets the parent body of the table. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyData;
             /**
             *
-            * Gets the content control that contains the table. Throws if there isn't a parent content control. Read-only. [Api set: WordApi 1.3]
+            * Gets the content control that contains the table. Throws if there isn't a parent content control. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControl?: Word.Interfaces.ContentControlData;
             /**
             *
-            * Gets the content control that contains the table. Returns a null object if there isn't a parent content control. Read-only. [Api set: WordApi 1.3]
+            * Gets the content control that contains the table. Returns a null object if there isn't a parent content control. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;
             /**
             *
-            * Gets the table that contains this table. Throws if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+            * Gets the table that contains this table. Throws if it is not contained in a table. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableData;
             /**
             *
-            * Gets the table cell that contains this table. Throws if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+            * Gets the table cell that contains this table. Throws if it is not contained in a table cell. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellData;
             /**
             *
-            * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell. Read-only. [Api set: WordApi 1.3]
+            * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellData;
             /**
             *
-            * Gets the table that contains this table. Returns a null object if it is not contained in a table. Read-only. [Api set: WordApi 1.3]
+            * Gets the table that contains this table. Returns a null object if it is not contained in a table. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableData;
             /**
             *
-            * Gets all of the table rows. Read-only. [Api set: WordApi 1.3]
+            * Gets all of the table rows. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             rows?: Word.Interfaces.TableRowData[];
             /**
             *
-            * Gets the child tables nested one level deeper. Read-only. [Api set: WordApi 1.3]
+            * Gets the child tables nested one level deeper. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             tables?: Word.Interfaces.TableData[];
             /**
              *
-             * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'. [Api set: WordApi 1.3]
+             * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
+             *
+             * [Api set: WordApi 1.3]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              *
-             * Gets and sets the number of header rows. [Api set: WordApi 1.3]
+             * Gets and sets the number of header rows.
+             *
+             * [Api set: WordApi 1.3]
              */
             headerRowCount?: number;
             /**
              *
-             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
              */
             horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              *
-             * Indicates whether all of the table rows are uniform. Read-only. [Api set: WordApi 1.3]
+             * Indicates whether all of the table rows are uniform. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             isUniform?: boolean;
             /**
              *
-             * Gets the nesting level of the table. Top-level tables have level 1. Read-only. [Api set: WordApi 1.3]
+             * Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             nestingLevel?: number;
             /**
              *
-             * Gets the number of rows in the table. Read-only. [Api set: WordApi 1.3]
+             * Gets the number of rows in the table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             rowCount?: number;
             /**
              *
-             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
              */
             shadingColor?: string;
             /**
              *
-             * Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.3]
+             * Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             style?: string;
             /**
              *
-             * Gets and sets whether the table has banded columns. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has banded columns.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBandedColumns?: boolean;
             /**
              *
-             * Gets and sets whether the table has banded rows. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has banded rows.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBandedRows?: boolean;
             /**
              *
-             * Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
              *
-             * Gets and sets whether the table has a first column with a special style. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has a first column with a special style.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleFirstColumn?: boolean;
             /**
              *
-             * Gets and sets whether the table has a last column with a special style. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has a last column with a special style.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleLastColumn?: boolean;
             /**
              *
-             * Gets and sets whether the table has a total (last) row with a special style. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has a total (last) row with a special style.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleTotalRow?: boolean;
             /**
              *
-             * Gets and sets the text values in the table, as a 2D Javascript array. [Api set: WordApi 1.3]
+             * Gets and sets the text values in the table, as a 2D Javascript array.
+             *
+             * [Api set: WordApi 1.3]
              */
             values?: string[][];
             /**
              *
-             * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+             * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
              */
             verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
             /**
              *
-             * Gets and sets the width of the table in points. [Api set: WordApi 1.3]
+             * Gets and sets the width of the table in points.
+             *
+             * [Api set: WordApi 1.3]
              */
             width?: number;
         }
@@ -7287,57 +9069,79 @@ export declare namespace Word {
         export interface TableRowData {
             /**
             *
-            * Gets cells. Read-only. [Api set: WordApi 1.3]
+            * Gets cells. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             cells?: Word.Interfaces.TableCellData[];
             /**
             *
-            * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only. [Api set: WordApi 1.3]
+            * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             font?: Word.Interfaces.FontData;
             /**
             *
-            * Gets parent table. Read-only. [Api set: WordApi 1.3]
+            * Gets parent table. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableData;
             /**
              *
-             * Gets the number of cells in the row. Read-only. [Api set: WordApi 1.3]
+             * Gets the number of cells in the row. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             cellCount?: number;
             /**
              *
-             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
              */
             horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              *
-             * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object. [Api set: WordApi 1.3]
+             * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
+             *
+             * [Api set: WordApi 1.3]
              */
             isHeader?: boolean;
             /**
              *
-             * Gets and sets the preferred height of the row in points. [Api set: WordApi 1.3]
+             * Gets and sets the preferred height of the row in points.
+             *
+             * [Api set: WordApi 1.3]
              */
             preferredHeight?: number;
             /**
              *
-             * Gets the index of the row in its parent table. Read-only. [Api set: WordApi 1.3]
+             * Gets the index of the row in its parent table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             rowIndex?: number;
             /**
              *
-             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
              */
             shadingColor?: string;
             /**
              *
-             * Gets and sets the text values in the row, as a 2D Javascript array. [Api set: WordApi 1.3]
+             * Gets and sets the text values in the row, as a 2D Javascript array.
+             *
+             * [Api set: WordApi 1.3]
              */
             values?: string[][];
             /**
              *
-             * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+             * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
              */
             verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
         }
@@ -7349,57 +9153,79 @@ export declare namespace Word {
         export interface TableCellData {
             /**
             *
-            * Gets the body object of the cell. Read-only. [Api set: WordApi 1.3]
+            * Gets the body object of the cell. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             body?: Word.Interfaces.BodyData;
             /**
             *
-            * Gets the parent row of the cell. Read-only. [Api set: WordApi 1.3]
+            * Gets the parent row of the cell. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentRow?: Word.Interfaces.TableRowData;
             /**
             *
-            * Gets the parent table of the cell. Read-only. [Api set: WordApi 1.3]
+            * Gets the parent table of the cell. Read-only.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableData;
             /**
              *
-             * Gets the index of the cell in its row. Read-only. [Api set: WordApi 1.3]
+             * Gets the index of the cell in its row. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             cellIndex?: number;
             /**
              *
-             * Gets and sets the width of the cell's column in points. This is applicable to uniform tables. [Api set: WordApi 1.3]
+             * Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
+             *
+             * [Api set: WordApi 1.3]
              */
             columnWidth?: number;
             /**
              *
-             * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+             * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
              */
             horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              *
-             * Gets the index of the cell's row in the table. Read-only. [Api set: WordApi 1.3]
+             * Gets the index of the cell's row in the table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             rowIndex?: number;
             /**
              *
-             * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+             * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
              */
             shadingColor?: string;
             /**
              *
-             * Gets and sets the text of the cell. [Api set: WordApi 1.3]
+             * Gets and sets the text of the cell.
+             *
+             * [Api set: WordApi 1.3]
              */
             value?: string;
             /**
              *
-             * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+             * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
              */
             verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
             /**
              *
-             * Gets the width of the cell in points. Read-only. [Api set: WordApi 1.3]
+             * Gets the width of the cell in points. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             width?: number;
         }
@@ -7411,1910 +9237,2640 @@ export declare namespace Word {
         export interface TableBorderData {
             /**
              *
-             * Gets or sets the table border color. [Api set: WordApi 1.3]
+             * Gets or sets the table border color.
+             *
+             * [Api set: WordApi 1.3]
              */
             color?: string;
             /**
              *
-             * Gets or sets the type of the table border. [Api set: WordApi 1.3]
+             * Gets or sets the type of the table border.
+             *
+             * [Api set: WordApi 1.3]
              */
             type?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
             /**
              *
-             * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths. [Api set: WordApi 1.3]
+             * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths.
+             *
+             * [Api set: WordApi 1.3]
              */
             width?: number;
         }
         /**
          *
-         * Represents the body of a document or a section. [Api set: WordApi 1.1]
+         * Represents the body of a document or a section.
+         *
+         * [Api set: WordApi 1.1]
          */
         export interface BodyLoadOptions {
             $all?: boolean;
             /**
             *
-            * Gets the text format of the body. Use this to get and set font name, size, color and other properties. [Api set: WordApi 1.1]
+            * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
             *
-            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body. [Api set: WordApi 1.3]
+            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
             *
-            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body. [Api set: WordApi 1.3]
+            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBodyOrNullObject?: Word.Interfaces.BodyLoadOptions;
             /**
             *
-            * Gets the content control that contains the body. Throws if there isn't a parent content control. [Api set: WordApi 1.1]
+            * Gets the content control that contains the body. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * Gets the content control that contains the body. Returns a null object if there isn't a parent content control. [Api set: WordApi 1.3]
+            * Gets the content control that contains the body. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * Gets the parent section of the body. Throws if there isn't a parent section. [Api set: WordApi 1.3]
+            * Gets the parent section of the body. Throws if there isn't a parent section.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentSection?: Word.Interfaces.SectionLoadOptions;
             /**
             *
-            * Gets the parent section of the body. Returns a null object if there isn't a parent section. [Api set: WordApi 1.3]
+            * Gets the parent section of the body. Returns a null object if there isn't a parent section.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentSectionOrNullObject?: Word.Interfaces.SectionLoadOptions;
             /**
              *
-             * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: boolean;
             /**
              *
-             * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: boolean;
             /**
              *
-             * Gets the text of the body. Use the insertText method to insert text. Read-only. [Api set: WordApi 1.1]
+             * Gets the text of the body. Use the insertText method to insert text. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             text?: boolean;
             /**
              *
-             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only. [Api set: WordApi 1.3]
+             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             type?: boolean;
         }
         /**
          *
-         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported. [Api set: WordApi 1.1]
+         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+         *
+         * [Api set: WordApi 1.1]
          */
         export interface ContentControlLoadOptions {
             $all?: boolean;
             /**
             *
-            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.1]
+            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
             *
-            * Gets the parent body of the content control. [Api set: WordApi 1.3]
+            * Gets the parent body of the content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
             *
-            * Gets the content control that contains the content control. Throws if there isn't a parent content control. [Api set: WordApi 1.1]
+            * Gets the content control that contains the content control. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control. [Api set: WordApi 1.3]
+            * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * Gets the table that contains the content control. Throws if it is not contained in a table. [Api set: WordApi 1.3]
+            * Gets the table that contains the content control. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
             *
-            * Gets the table cell that contains the content control. Throws if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the content control. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * Gets the table that contains the content control. Returns a null object if it is not contained in a table. [Api set: WordApi 1.3]
+            * Gets the table that contains the content control. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'. [Api set: WordApi 1.1]
+             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+             *
+             * [Api set: WordApi 1.1]
              */
             appearance?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
+             *
+             * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the user can edit the contents of the content control. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the user can edit the contents of the content control.
+             *
+             * [Api set: WordApi 1.1]
              */
             cannotEdit?: boolean;
             /**
              *
-             * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name. [Api set: WordApi 1.1]
+             * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
+             *
+             * [Api set: WordApi 1.1]
              */
             color?: boolean;
             /**
              *
-             * Gets an integer that represents the content control identifier. Read-only. [Api set: WordApi 1.1]
+             * Gets an integer that represents the content control identifier. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             id?: boolean;
             /**
              *
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. [Api set: WordApi 1.1]
+             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+             *
+             * [Api set: WordApi 1.1]
              */
             placeholderText?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
+             *
+             * [Api set: WordApi 1.1]
              */
             removeWhenEdited?: boolean;
             /**
              *
-             * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: boolean;
             /**
              *
-             * Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: boolean;
             /**
              *
-             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only. [Api set: WordApi 1.3]
+             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             subtype?: boolean;
             /**
              *
-             * Gets or sets a tag to identify a content control. [Api set: WordApi 1.1]
+             * Gets or sets a tag to identify a content control.
+             *
+             * [Api set: WordApi 1.1]
              */
             tag?: boolean;
             /**
              *
-             * Gets the text of the content control. Read-only. [Api set: WordApi 1.1]
+             * Gets the text of the content control. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             text?: boolean;
             /**
              *
-             * Gets or sets the title for a content control. [Api set: WordApi 1.1]
+             * Gets or sets the title for a content control.
+             *
+             * [Api set: WordApi 1.1]
              */
             title?: boolean;
             /**
              *
-             * Gets the content control type. Only rich text content controls are supported currently. Read-only. [Api set: WordApi 1.1]
+             * Gets the content control type. Only rich text content controls are supported currently. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             type?: boolean;
         }
         /**
          *
-         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported. [Api set: WordApi 1.1]
+         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+         *
+         * [Api set: WordApi 1.1]
          */
         export interface ContentControlCollectionLoadOptions {
             $all?: boolean;
             /**
             *
-            * For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.1]
+            * For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the parent body of the content control. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the parent body of the content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws if there isn't a parent content control. [Api set: WordApi 1.1]
+            * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the content control that contains the content control. Returns a null object if there isn't a parent content control. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the content control that contains the content control. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table that contains the content control. Throws if it is not contained in a table. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table that contains the content control. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table that contains the content control. Returns a null object if it is not contained in a table. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table that contains the content control. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+             *
+             * [Api set: WordApi 1.1]
              */
             appearance?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
+             *
+             * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can edit the contents of the content control. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can edit the contents of the content control.
+             *
+             * [Api set: WordApi 1.1]
              */
             cannotEdit?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
+             *
+             * [Api set: WordApi 1.1]
              */
             color?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets an integer that represents the content control identifier. Read-only. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets an integer that represents the content control identifier. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             id?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+             *
+             * [Api set: WordApi 1.1]
              */
             placeholderText?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
+             *
+             * [Api set: WordApi 1.1]
              */
             removeWhenEdited?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             subtype?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets a tag to identify a content control. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets a tag to identify a content control.
+             *
+             * [Api set: WordApi 1.1]
              */
             tag?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the text of the content control. Read-only. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets the text of the content control. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             text?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the title for a content control. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the title for a content control.
+             *
+             * [Api set: WordApi 1.1]
              */
             title?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported currently. Read-only. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported currently. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             type?: boolean;
         }
         /**
          *
-         * Represents a custom property. [Api set: WordApi 1.3]
+         * Represents a custom property.
+         *
+         * [Api set: WordApi 1.3]
          */
         export interface CustomPropertyLoadOptions {
             $all?: boolean;
             /**
              *
-             * Gets the key of the custom property. Read only. [Api set: WordApi 1.3]
+             * Gets the key of the custom property. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             key?: boolean;
             /**
              *
-             * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only. [Api set: WordApi 1.3]
+             * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             type?: boolean;
             /**
              *
-             * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair). [Api set: WordApi 1.3]
+             * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+             *
+             * [Api set: WordApi 1.3]
              */
             value?: boolean;
         }
         /**
          *
-         * Contains the collection of {@link Word.CustomProperty} objects. [Api set: WordApi 1.3]
+         * Contains the collection of {@link Word.CustomProperty} objects.
+         *
+         * [Api set: WordApi 1.3]
          */
         export interface CustomPropertyCollectionLoadOptions {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the key of the custom property. Read only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets the key of the custom property. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             key?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             type?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair). [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+             *
+             * [Api set: WordApi 1.3]
              */
             value?: boolean;
         }
         /**
          *
-         * Represents a custom XML part. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Represents a custom XML part.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         export interface CustomXmlPartLoadOptions {
             $all?: boolean;
             /**
              *
-             * Gets the ID of the custom XML part. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * Gets the ID of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             id?: boolean;
             /**
              *
-             * Gets the namespace URI of the custom XML part. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * Gets the namespace URI of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             namespaceUri?: boolean;
         }
         /**
          *
-         * Contains the collection of {@link Word.CustomXmlPart} objects. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Contains the collection of {@link Word.CustomXmlPart} objects.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         export interface CustomXmlPartCollectionLoadOptions {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             id?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             namespaceUri?: boolean;
         }
         /**
          *
-         * Contains the collection of {@link Word.CustomXmlPart} objects with a specific namespace. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Contains the collection of {@link Word.CustomXmlPart} objects with a specific namespace.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         export interface CustomXmlPartScopedCollectionLoadOptions {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             id?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             namespaceUri?: boolean;
         }
         /**
          *
-         * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document. [Api set: WordApi 1.1]
+         * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
+         *
+         * [Api set: WordApi 1.1]
          */
         export interface DocumentLoadOptions {
             $all?: boolean;
             /**
             *
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. [Api set: WordApi 1.1]
+            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
+            *
+            * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
             *
-            * Gets the properties of the document. [Api set: WordApi 1.3]
+            * Gets the properties of the document.
+            *
+            * [Api set: WordApi 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
             /**
              *
-             * Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this document even if this document is untitled. True to close, false otherwise. [Api set: WordApi]
+             * Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this document even if this document is untitled. True to close, false otherwise.
+             *
+             * [Api set: WordApi]
              */
             allowCloseOnUntitled?: boolean;
             /**
              *
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only. [Api set: WordApi 1.1]
+             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             saved?: boolean;
         }
         /**
          *
-         * The DocumentCreated object is the top level object created by Application.CreateDocument. A DocumentCreated object is a special Document object. [Api set: WordApi 1.3]
+         * The DocumentCreated object is the top level object created by Application.CreateDocument. A DocumentCreated object is a special Document object.
+         *
+         * [Api set: WordApi 1.3]
          */
         export interface DocumentCreatedLoadOptions {
             $all?: boolean;
             /**
             *
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. [Api set: WordApiHiddenDocument 1.3]
+            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
+            *
+            * [Api set: WordApiHiddenDocument 1.3]
             */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
             *
-            * Gets the properties of the document. [Api set: WordApiHiddenDocument 1.3]
+            * Gets the properties of the document.
+            *
+            * [Api set: WordApiHiddenDocument 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
             /**
              *
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only. [Api set: WordApiHiddenDocument 1.3]
+             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+             *
+             * [Api set: WordApiHiddenDocument 1.3]
              */
             saved?: boolean;
         }
         /**
          *
-         * Represents document properties. [Api set: WordApi 1.3]
+         * Represents document properties.
+         *
+         * [Api set: WordApi 1.3]
          */
         export interface DocumentPropertiesLoadOptions {
             $all?: boolean;
             /**
              *
-             * Gets the application name of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the application name of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             applicationName?: boolean;
             /**
              *
-             * Gets or sets the author of the document. [Api set: WordApi 1.3]
+             * Gets or sets the author of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             author?: boolean;
             /**
              *
-             * Gets or sets the category of the document. [Api set: WordApi 1.3]
+             * Gets or sets the category of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             category?: boolean;
             /**
              *
-             * Gets or sets the comments of the document. [Api set: WordApi 1.3]
+             * Gets or sets the comments of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             comments?: boolean;
             /**
              *
-             * Gets or sets the company of the document. [Api set: WordApi 1.3]
+             * Gets or sets the company of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             company?: boolean;
             /**
              *
-             * Gets the creation date of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the creation date of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             creationDate?: boolean;
             /**
              *
-             * Gets or sets the format of the document. [Api set: WordApi 1.3]
+             * Gets or sets the format of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             format?: boolean;
             /**
              *
-             * Gets or sets the keywords of the document. [Api set: WordApi 1.3]
+             * Gets or sets the keywords of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             keywords?: boolean;
             /**
              *
-             * Gets the last author of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the last author of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             lastAuthor?: boolean;
             /**
              *
-             * Gets the last print date of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the last print date of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             lastPrintDate?: boolean;
             /**
              *
-             * Gets the last save time of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the last save time of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             lastSaveTime?: boolean;
             /**
              *
-             * Gets or sets the manager of the document. [Api set: WordApi 1.3]
+             * Gets or sets the manager of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             manager?: boolean;
             /**
              *
-             * Gets the revision number of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the revision number of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             revisionNumber?: boolean;
             /**
              *
-             * Gets the security of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the security of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             security?: boolean;
             /**
              *
-             * Gets or sets the subject of the document. [Api set: WordApi 1.3]
+             * Gets or sets the subject of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             subject?: boolean;
             /**
              *
-             * Gets the template of the document. Read only. [Api set: WordApi 1.3]
+             * Gets the template of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
              */
             template?: boolean;
             /**
              *
-             * Gets or sets the title of the document. [Api set: WordApi 1.3]
+             * Gets or sets the title of the document.
+             *
+             * [Api set: WordApi 1.3]
              */
             title?: boolean;
         }
         /**
          *
-         * Represents a font. [Api set: WordApi 1.1]
+         * Represents a font.
+         *
+         * [Api set: WordApi 1.1]
          */
         export interface FontLoadOptions {
             $all?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             bold?: boolean;
             /**
              *
-             * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name. [Api set: WordApi 1.1]
+             * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * [Api set: WordApi 1.1]
              */
             color?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
             /**
              *
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. [Api set: WordApi 1.1]
+             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
+             *
+             * [Api set: WordApi 1.1]
              */
             highlightColor?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             italic?: boolean;
             /**
              *
-             * Gets or sets a value that represents the name of the font. [Api set: WordApi 1.1]
+             * Gets or sets a value that represents the name of the font.
+             *
+             * [Api set: WordApi 1.1]
              */
             name?: boolean;
             /**
              *
-             * Gets or sets a value that represents the font size in points. [Api set: WordApi 1.1]
+             * Gets or sets a value that represents the font size in points.
+             *
+             * [Api set: WordApi 1.1]
              */
             size?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             strikeThrough?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             subscript?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
              */
             superscript?: boolean;
             /**
              *
-             * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+             *
+             * [Api set: WordApi 1.1]
              */
             underline?: boolean;
         }
         /**
          *
-         * Represents an inline picture. [Api set: WordApi 1.1]
+         * Represents an inline picture.
+         *
+         * [Api set: WordApi 1.1]
          */
         export interface InlinePictureLoadOptions {
             $all?: boolean;
             /**
             *
-            * Gets the parent paragraph that contains the inline image. [Api set: WordApi 1.2]
+            * Gets the parent paragraph that contains the inline image.
+            *
+            * [Api set: WordApi 1.2]
             */
             paragraph?: Word.Interfaces.ParagraphLoadOptions;
             /**
             *
-            * Gets the content control that contains the inline image. Throws if there isn't a parent content control. [Api set: WordApi 1.1]
+            * Gets the content control that contains the inline image. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control. [Api set: WordApi 1.3]
+            * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * Gets the table that contains the inline image. Throws if it is not contained in a table. [Api set: WordApi 1.3]
+            * Gets the table that contains the inline image. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
             *
-            * Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the inline image. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * Gets the table that contains the inline image. Returns a null object if it is not contained in a table. [Api set: WordApi 1.3]
+            * Gets the table that contains the inline image. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * Gets or sets a string that represents the alternative text associated with the inline image. [Api set: WordApi 1.1]
+             * Gets or sets a string that represents the alternative text associated with the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             altTextDescription?: boolean;
             /**
              *
-             * Gets or sets a string that contains the title for the inline image. [Api set: WordApi 1.1]
+             * Gets or sets a string that contains the title for the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             altTextTitle?: boolean;
             /**
              *
-             * Gets or sets a number that describes the height of the inline image. [Api set: WordApi 1.1]
+             * Gets or sets a number that describes the height of the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             height?: boolean;
             /**
              *
-             * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part. [Api set: WordApi 1.1]
+             * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+             *
+             * [Api set: WordApi 1.1]
              */
             hyperlink?: boolean;
             /**
              *
-             * Gets the format of the inline image. Read-only. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * Gets the format of the inline image. Read-only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             imageFormat?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+             *
+             * [Api set: WordApi 1.1]
              */
             lockAspectRatio?: boolean;
             /**
              *
-             * Gets or sets a number that describes the width of the inline image. [Api set: WordApi 1.1]
+             * Gets or sets a number that describes the width of the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             width?: boolean;
         }
         /**
          *
-         * Contains a collection of {@link Word.InlinePicture} objects. [Api set: WordApi 1.1]
+         * Contains a collection of {@link Word.InlinePicture} objects.
+         *
+         * [Api set: WordApi 1.1]
          */
         export interface InlinePictureCollectionLoadOptions {
             $all?: boolean;
             /**
             *
-            * For EACH ITEM in the collection: Gets the parent paragraph that contains the inline image. [Api set: WordApi 1.2]
+            * For EACH ITEM in the collection: Gets the parent paragraph that contains the inline image.
+            *
+            * [Api set: WordApi 1.2]
             */
             paragraph?: Word.Interfaces.ParagraphLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws if there isn't a parent content control. [Api set: WordApi 1.1]
+            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table that contains the inline image. Throws if it is not contained in a table. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table that contains the inline image. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table that contains the inline image. Returns a null object if it is not contained in a table. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table that contains the inline image. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the inline image. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             altTextDescription?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets a string that contains the title for the inline image. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets a string that contains the title for the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             altTextTitle?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets a number that describes the height of the inline image. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets a number that describes the height of the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             height?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+             *
+             * [Api set: WordApi 1.1]
              */
             hyperlink?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the format of the inline image. Read-only. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * For EACH ITEM in the collection: Gets the format of the inline image. Read-only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             imageFormat?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+             *
+             * [Api set: WordApi 1.1]
              */
             lockAspectRatio?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image.
+             *
+             * [Api set: WordApi 1.1]
              */
             width?: boolean;
         }
         /**
          *
-         * Contains a collection of {@link Word.Paragraph} objects. [Api set: WordApi 1.3]
+         * Contains a collection of {@link Word.Paragraph} objects.
+         *
+         * [Api set: WordApi 1.3]
          */
         export interface ListLoadOptions {
             $all?: boolean;
             /**
              *
-             * Gets the list's id. [Api set: WordApi 1.3]
+             * Gets the list's id.
+             *
+             * [Api set: WordApi 1.3]
              */
             id?: boolean;
             /**
              *
-             * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only. [Api set: WordApi 1.3]
+             * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             levelExistences?: boolean;
             /**
              *
-             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only. [Api set: WordApi 1.3]
+             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             levelTypes?: boolean;
         }
         /**
          *
-         * Contains a collection of {@link Word.List} objects. [Api set: WordApi 1.3]
+         * Contains a collection of {@link Word.List} objects.
+         *
+         * [Api set: WordApi 1.3]
          */
         export interface ListCollectionLoadOptions {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the list's id. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets the list's id.
+             *
+             * [Api set: WordApi 1.3]
              */
             id?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             levelExistences?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             levelTypes?: boolean;
         }
         /**
          *
-         * Represents the paragraph list item format. [Api set: WordApi 1.3]
+         * Represents the paragraph list item format.
+         *
+         * [Api set: WordApi 1.3]
          */
         export interface ListItemLoadOptions {
             $all?: boolean;
             /**
              *
-             * Gets or sets the level of the item in the list. [Api set: WordApi 1.3]
+             * Gets or sets the level of the item in the list.
+             *
+             * [Api set: WordApi 1.3]
              */
             level?: boolean;
             /**
              *
-             * Gets the list item bullet, number, or picture as a string. Read-only. [Api set: WordApi 1.3]
+             * Gets the list item bullet, number, or picture as a string. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             listString?: boolean;
             /**
              *
-             * Gets the list item order number in relation to its siblings. Read-only. [Api set: WordApi 1.3]
+             * Gets the list item order number in relation to its siblings. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             siblingIndex?: boolean;
         }
         /**
          *
-         * Represents a single paragraph in a selection, range, content control, or document body. [Api set: WordApi 1.1]
+         * Represents a single paragraph in a selection, range, content control, or document body.
+         *
+         * [Api set: WordApi 1.1]
          */
         export interface ParagraphLoadOptions {
             $all?: boolean;
             /**
             *
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.1]
+            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
             *
-            * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. [Api set: WordApi 1.3]
+            * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list.
+            *
+            * [Api set: WordApi 1.3]
             */
             list?: Word.Interfaces.ListLoadOptions;
             /**
             *
-            * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. [Api set: WordApi 1.3]
+            * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list.
+            *
+            * [Api set: WordApi 1.3]
             */
             listItem?: Word.Interfaces.ListItemLoadOptions;
             /**
             *
-            * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. [Api set: WordApi 1.3]
+            * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
+            *
+            * [Api set: WordApi 1.3]
             */
             listItemOrNullObject?: Word.Interfaces.ListItemLoadOptions;
             /**
             *
-            * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. [Api set: WordApi 1.3]
+            * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list.
+            *
+            * [Api set: WordApi 1.3]
             */
             listOrNullObject?: Word.Interfaces.ListLoadOptions;
             /**
             *
-            * Gets the parent body of the paragraph. [Api set: WordApi 1.3]
+            * Gets the parent body of the paragraph.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
             *
-            * Gets the content control that contains the paragraph. Throws if there isn't a parent content control. [Api set: WordApi 1.1]
+            * Gets the content control that contains the paragraph. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control. [Api set: WordApi 1.3]
+            * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * Gets the table that contains the paragraph. Throws if it is not contained in a table. [Api set: WordApi 1.3]
+            * Gets the table that contains the paragraph. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
             *
-            * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. [Api set: WordApi 1.3]
+            * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'. [Api set: WordApi 1.1]
+             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+             *
+             * [Api set: WordApi 1.1]
              */
             alignment?: boolean;
             /**
              *
-             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent. [Api set: WordApi 1.1]
+             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+             *
+             * [Api set: WordApi 1.1]
              */
             firstLineIndent?: boolean;
             /**
              *
-             * Indicates the paragraph is the last one inside its parent body. Read-only. [Api set: WordApi 1.3]
+             * Indicates the paragraph is the last one inside its parent body. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             isLastParagraph?: boolean;
             /**
              *
-             * Checks whether the paragraph is a list item. Read-only. [Api set: WordApi 1.3]
+             * Checks whether the paragraph is a list item. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             isListItem?: boolean;
             /**
              *
-             * Gets or sets the left indent value, in points, for the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the left indent value, in points, for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             leftIndent?: boolean;
             /**
              *
-             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12. [Api set: WordApi 1.1]
+             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+             *
+             * [Api set: WordApi 1.1]
              */
             lineSpacing?: boolean;
             /**
              *
-             * Gets or sets the amount of spacing, in grid lines, after the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the amount of spacing, in grid lines, after the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             lineUnitAfter?: boolean;
             /**
              *
-             * Gets or sets the amount of spacing, in grid lines, before the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the amount of spacing, in grid lines, before the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             lineUnitBefore?: boolean;
             /**
              *
-             * Gets or sets the outline level for the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the outline level for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             outlineLevel?: boolean;
             /**
              *
-             * Gets or sets the right indent value, in points, for the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the right indent value, in points, for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             rightIndent?: boolean;
             /**
              *
-             * Gets or sets the spacing, in points, after the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the spacing, in points, after the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             spaceAfter?: boolean;
             /**
              *
-             * Gets or sets the spacing, in points, before the paragraph. [Api set: WordApi 1.1]
+             * Gets or sets the spacing, in points, before the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             spaceBefore?: boolean;
             /**
              *
-             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: boolean;
             /**
              *
-             * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: boolean;
             /**
              *
-             * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only. [Api set: WordApi 1.3]
+             * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             tableNestingLevel?: boolean;
             /**
              *
-             * Gets the text of the paragraph. Read-only. [Api set: WordApi 1.1]
+             * Gets the text of the paragraph. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             text?: boolean;
         }
         /**
          *
-         * Contains a collection of {@link Word.Paragraph} objects. [Api set: WordApi 1.1]
+         * Contains a collection of {@link Word.Paragraph} objects.
+         *
+         * [Api set: WordApi 1.1]
          */
         export interface ParagraphCollectionLoadOptions {
             $all?: boolean;
             /**
             *
-            * For EACH ITEM in the collection: Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.1]
+            * For EACH ITEM in the collection: Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list.
+            *
+            * [Api set: WordApi 1.3]
             */
             list?: Word.Interfaces.ListLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list.
+            *
+            * [Api set: WordApi 1.3]
             */
             listItem?: Word.Interfaces.ListItemLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
+            *
+            * [Api set: WordApi 1.3]
             */
             listItemOrNullObject?: Word.Interfaces.ListItemLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list.
+            *
+            * [Api set: WordApi 1.3]
             */
             listOrNullObject?: Word.Interfaces.ListLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the parent body of the paragraph. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the parent body of the paragraph.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws if there isn't a parent content control. [Api set: WordApi 1.1]
+            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws if it is not contained in a table. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table that contains the paragraph. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+             *
+             * [Api set: WordApi 1.1]
              */
             alignment?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+             *
+             * [Api set: WordApi 1.1]
              */
             firstLineIndent?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates the paragraph is the last one inside its parent body. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Indicates the paragraph is the last one inside its parent body. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             isLastParagraph?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Checks whether the paragraph is a list item. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Checks whether the paragraph is a list item. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             isListItem?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the left indent value, in points, for the paragraph. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the left indent value, in points, for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             leftIndent?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+             *
+             * [Api set: WordApi 1.1]
              */
             lineSpacing?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, after the paragraph. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, after the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             lineUnitAfter?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, before the paragraph. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, before the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             lineUnitBefore?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the outline level for the paragraph. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the outline level for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             outlineLevel?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the right indent value, in points, for the paragraph. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the right indent value, in points, for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             rightIndent?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the spacing, in points, after the paragraph. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the spacing, in points, after the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             spaceAfter?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the spacing, in points, before the paragraph. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the spacing, in points, before the paragraph.
+             *
+             * [Api set: WordApi 1.1]
              */
             spaceBefore?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             tableNestingLevel?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the text of the paragraph. Read-only. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets the text of the paragraph. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             text?: boolean;
         }
         /**
          *
-         * Represents a contiguous area in a document. [Api set: WordApi 1.1]
+         * Represents a contiguous area in a document.
+         *
+         * [Api set: WordApi 1.1]
          */
         export interface RangeLoadOptions {
             $all?: boolean;
             /**
             *
-            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.1]
+            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
             *
-            * Gets the parent body of the range. [Api set: WordApi 1.3]
+            * Gets the parent body of the range.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
             *
-            * Gets the content control that contains the range. Throws if there isn't a parent content control. [Api set: WordApi 1.1]
+            * Gets the content control that contains the range. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * Gets the content control that contains the range. Returns a null object if there isn't a parent content control. [Api set: WordApi 1.3]
+            * Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * Gets the table that contains the range. Throws if it is not contained in a table. [Api set: WordApi 1.3]
+            * Gets the table that contains the range. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
             *
-            * Gets the table cell that contains the range. Throws if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the range. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * Gets the table that contains the range. Returns a null object if it is not contained in a table. [Api set: WordApi 1.3]
+            * Gets the table that contains the range. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part. [Api set: WordApi 1.3]
+             * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
+             *
+             * [Api set: WordApi 1.3]
              */
             hyperlink?: boolean;
             /**
              *
-             * Checks whether the range length is zero. Read-only. [Api set: WordApi 1.3]
+             * Checks whether the range length is zero. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             isEmpty?: boolean;
             /**
              *
-             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: boolean;
             /**
              *
-             * Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: boolean;
             /**
              *
-             * Gets the text of the range. Read-only. [Api set: WordApi 1.1]
+             * Gets the text of the range. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             text?: boolean;
         }
         /**
          *
-         * Contains a collection of {@link Word.Range} objects. [Api set: WordApi 1.1]
+         * Contains a collection of {@link Word.Range} objects.
+         *
+         * [Api set: WordApi 1.1]
          */
         export interface RangeCollectionLoadOptions {
             $all?: boolean;
             /**
             *
-            * For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.1]
+            * For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the parent body of the range. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the parent body of the range.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the content control that contains the range. Throws if there isn't a parent content control. [Api set: WordApi 1.1]
+            * For EACH ITEM in the collection: Gets the content control that contains the range. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the content control that contains the range. Returns a null object if there isn't a parent content control. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table that contains the range. Throws if it is not contained in a table. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table that contains the range. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table cell that contains the range. Throws if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table cell that contains the range. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table that contains the range. Returns a null object if it is not contained in a table. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table that contains the range. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
+             *
+             * [Api set: WordApi 1.3]
              */
             hyperlink?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Checks whether the range length is zero. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Checks whether the range length is zero. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             isEmpty?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
              */
             style?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the text of the range. Read-only. [Api set: WordApi 1.1]
+             * For EACH ITEM in the collection: Gets the text of the range. Read-only.
+             *
+             * [Api set: WordApi 1.1]
              */
             text?: boolean;
         }
         /**
          *
-         * Specifies the options to be included in a search operation. [Api set: WordApi 1.1]
+         * Specifies the options to be included in a search operation.
+         *
+         * [Api set: WordApi 1.1]
          */
         export interface SearchOptionsLoadOptions {
             $all?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             ignorePunct?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             ignoreSpace?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchCase?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchPrefix?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchSuffix?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchWholeWord?: boolean;
             /**
              *
-             * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box. [Api set: WordApi 1.1]
+             * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
              */
             matchWildcards?: boolean;
         }
         /**
          *
-         * Represents a section in a Word document. [Api set: WordApi 1.1]
+         * Represents a section in a Word document.
+         *
+         * [Api set: WordApi 1.1]
          */
         export interface SectionLoadOptions {
             $all?: boolean;
             /**
             *
-            * Gets the body object of the section. This does not include the header/footer and other section metadata. [Api set: WordApi 1.1]
+            * Gets the body object of the section. This does not include the header/footer and other section metadata.
+            *
+            * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyLoadOptions;
         }
         /**
          *
-         * Contains the collection of the document's {@link Word.Section} objects. [Api set: WordApi 1.1]
+         * Contains the collection of the document's {@link Word.Section} objects.
+         *
+         * [Api set: WordApi 1.1]
          */
         export interface SectionCollectionLoadOptions {
             $all?: boolean;
             /**
             *
-            * For EACH ITEM in the collection: Gets the body object of the section. This does not include the header/footer and other section metadata. [Api set: WordApi 1.1]
+            * For EACH ITEM in the collection: Gets the body object of the section. This does not include the header/footer and other section metadata.
+            *
+            * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyLoadOptions;
         }
         /**
          *
-         * Represents a setting of the add-in. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Represents a setting of the add-in.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         export interface SettingLoadOptions {
             $all?: boolean;
             /**
              *
-             * Gets the key of the setting. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * Gets the key of the setting. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             key?: boolean;
             /**
              *
-             * Gets or sets the value of the setting. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * Gets or sets the value of the setting.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             value?: boolean;
         }
         /**
          *
-         * Contains the collection of {@link Word.Setting} objects. [Api set: WordApi BETA (PREVIEW ONLY)]
+         * Contains the collection of {@link Word.Setting} objects.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         export interface SettingCollectionLoadOptions {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the key of the setting. Read only. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * For EACH ITEM in the collection: Gets the key of the setting. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             key?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the value of the setting. [Api set: WordApi BETA (PREVIEW ONLY)]
+             * For EACH ITEM in the collection: Gets or sets the value of the setting.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
             value?: boolean;
         }
         /**
          *
-         * Represents a table in a Word document. [Api set: WordApi 1.3]
+         * Represents a table in a Word document.
+         *
+         * [Api set: WordApi 1.3]
          */
         export interface TableLoadOptions {
             $all?: boolean;
             /**
             *
-            * Gets the font. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.3]
+            * Gets the font. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.3]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
             *
-            * Gets the parent body of the table. [Api set: WordApi 1.3]
+            * Gets the parent body of the table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
             *
-            * Gets the content control that contains the table. Throws if there isn't a parent content control. [Api set: WordApi 1.3]
+            * Gets the content control that contains the table. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * Gets the content control that contains the table. Returns a null object if there isn't a parent content control. [Api set: WordApi 1.3]
+            * Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * Gets the table that contains this table. Throws if it is not contained in a table. [Api set: WordApi 1.3]
+            * Gets the table that contains this table. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
             *
-            * Gets the table cell that contains this table. Throws if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * Gets the table cell that contains this table. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * Gets the table that contains this table. Returns a null object if it is not contained in a table. [Api set: WordApi 1.3]
+            * Gets the table that contains this table. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'. [Api set: WordApi 1.3]
+             * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
+             *
+             * [Api set: WordApi 1.3]
              */
             alignment?: boolean;
             /**
              *
-             * Gets and sets the number of header rows. [Api set: WordApi 1.3]
+             * Gets and sets the number of header rows.
+             *
+             * [Api set: WordApi 1.3]
              */
             headerRowCount?: boolean;
             /**
              *
-             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
              */
             horizontalAlignment?: boolean;
             /**
              *
-             * Indicates whether all of the table rows are uniform. Read-only. [Api set: WordApi 1.3]
+             * Indicates whether all of the table rows are uniform. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             isUniform?: boolean;
             /**
              *
-             * Gets the nesting level of the table. Top-level tables have level 1. Read-only. [Api set: WordApi 1.3]
+             * Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             nestingLevel?: boolean;
             /**
              *
-             * Gets the number of rows in the table. Read-only. [Api set: WordApi 1.3]
+             * Gets the number of rows in the table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             rowCount?: boolean;
             /**
              *
-             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
              */
             shadingColor?: boolean;
             /**
              *
-             * Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.3]
+             * Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             style?: boolean;
             /**
              *
-             * Gets and sets whether the table has banded columns. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has banded columns.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBandedColumns?: boolean;
             /**
              *
-             * Gets and sets whether the table has banded rows. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has banded rows.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBandedRows?: boolean;
             /**
              *
-             * Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: boolean;
             /**
              *
-             * Gets and sets whether the table has a first column with a special style. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has a first column with a special style.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleFirstColumn?: boolean;
             /**
              *
-             * Gets and sets whether the table has a last column with a special style. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has a last column with a special style.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleLastColumn?: boolean;
             /**
              *
-             * Gets and sets whether the table has a total (last) row with a special style. [Api set: WordApi 1.3]
+             * Gets and sets whether the table has a total (last) row with a special style.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleTotalRow?: boolean;
             /**
              *
-             * Gets and sets the text values in the table, as a 2D Javascript array. [Api set: WordApi 1.3]
+             * Gets and sets the text values in the table, as a 2D Javascript array.
+             *
+             * [Api set: WordApi 1.3]
              */
             values?: boolean;
             /**
              *
-             * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+             * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
              */
             verticalAlignment?: boolean;
             /**
              *
-             * Gets and sets the width of the table in points. [Api set: WordApi 1.3]
+             * Gets and sets the width of the table in points.
+             *
+             * [Api set: WordApi 1.3]
              */
             width?: boolean;
         }
         /**
          *
-         * Contains the collection of the document's Table objects. [Api set: WordApi 1.3]
+         * Contains the collection of the document's Table objects.
+         *
+         * [Api set: WordApi 1.3]
          */
         export interface TableCollectionLoadOptions {
             $all?: boolean;
             /**
             *
-            * For EACH ITEM in the collection: Gets the font. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the font. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.3]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the parent body of the table. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the parent body of the table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the content control that contains the table. Throws if there isn't a parent content control. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the content control that contains the table. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the content control that contains the table. Returns a null object if there isn't a parent content control. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table that contains this table. Throws if it is not contained in a table. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table that contains this table. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table cell that contains this table. Throws if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table cell that contains this table. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the table that contains this table. Returns a null object if it is not contained in a table. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the table that contains this table. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
+             *
+             * [Api set: WordApi 1.3]
              */
             alignment?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the number of header rows. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the number of header rows.
+             *
+             * [Api set: WordApi 1.3]
              */
             headerRowCount?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
              */
             horizontalAlignment?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether all of the table rows are uniform. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Indicates whether all of the table rows are uniform. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             isUniform?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the nesting level of the table. Top-level tables have level 1. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             nestingLevel?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the number of rows in the table. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets the number of rows in the table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             rowCount?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
              */
             shadingColor?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             style?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets whether the table has banded columns. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets whether the table has banded columns.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBandedColumns?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets whether the table has banded rows. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets whether the table has banded rows.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBandedRows?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets whether the table has a first column with a special style. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets whether the table has a first column with a special style.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleFirstColumn?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets whether the table has a last column with a special style. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets whether the table has a last column with a special style.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleLastColumn?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets whether the table has a total (last) row with a special style. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets whether the table has a total (last) row with a special style.
+             *
+             * [Api set: WordApi 1.3]
              */
             styleTotalRow?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the text values in the table, as a 2D Javascript array. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the text values in the table, as a 2D Javascript array.
+             *
+             * [Api set: WordApi 1.3]
              */
             values?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
              */
             verticalAlignment?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the width of the table in points. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the width of the table in points.
+             *
+             * [Api set: WordApi 1.3]
              */
             width?: boolean;
         }
         /**
          *
-         * Represents a row in a Word document. [Api set: WordApi 1.3]
+         * Represents a row in a Word document.
+         *
+         * [Api set: WordApi 1.3]
          */
         export interface TableRowLoadOptions {
             $all?: boolean;
             /**
             *
-            * Gets the font. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.3]
+            * Gets the font. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.3]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
             *
-            * Gets parent table. [Api set: WordApi 1.3]
+            * Gets parent table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * Gets the number of cells in the row. Read-only. [Api set: WordApi 1.3]
+             * Gets the number of cells in the row. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             cellCount?: boolean;
             /**
              *
-             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
              */
             horizontalAlignment?: boolean;
             /**
              *
-             * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object. [Api set: WordApi 1.3]
+             * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
+             *
+             * [Api set: WordApi 1.3]
              */
             isHeader?: boolean;
             /**
              *
-             * Gets and sets the preferred height of the row in points. [Api set: WordApi 1.3]
+             * Gets and sets the preferred height of the row in points.
+             *
+             * [Api set: WordApi 1.3]
              */
             preferredHeight?: boolean;
             /**
              *
-             * Gets the index of the row in its parent table. Read-only. [Api set: WordApi 1.3]
+             * Gets the index of the row in its parent table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             rowIndex?: boolean;
             /**
              *
-             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
              */
             shadingColor?: boolean;
             /**
              *
-             * Gets and sets the text values in the row, as a 2D Javascript array. [Api set: WordApi 1.3]
+             * Gets and sets the text values in the row, as a 2D Javascript array.
+             *
+             * [Api set: WordApi 1.3]
              */
             values?: boolean;
             /**
              *
-             * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+             * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
              */
             verticalAlignment?: boolean;
         }
         /**
          *
-         * Contains the collection of the document's TableRow objects. [Api set: WordApi 1.3]
+         * Contains the collection of the document's TableRow objects.
+         *
+         * [Api set: WordApi 1.3]
          */
         export interface TableRowCollectionLoadOptions {
             $all?: boolean;
             /**
             *
-            * For EACH ITEM in the collection: Gets the font. Use this to get and set font name, size, color, and other properties. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the font. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.3]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets parent table. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets parent table.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Gets the number of cells in the row. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets the number of cells in the row. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             cellCount?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
              */
             horizontalAlignment?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
+             *
+             * [Api set: WordApi 1.3]
              */
             isHeader?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the preferred height of the row in points. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the preferred height of the row in points.
+             *
+             * [Api set: WordApi 1.3]
              */
             preferredHeight?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the index of the row in its parent table. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets the index of the row in its parent table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             rowIndex?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
              */
             shadingColor?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the text values in the row, as a 2D Javascript array. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the text values in the row, as a 2D Javascript array.
+             *
+             * [Api set: WordApi 1.3]
              */
             values?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
              */
             verticalAlignment?: boolean;
         }
         /**
          *
-         * Represents a table cell in a Word document. [Api set: WordApi 1.3]
+         * Represents a table cell in a Word document.
+         *
+         * [Api set: WordApi 1.3]
          */
         export interface TableCellLoadOptions {
             $all?: boolean;
             /**
             *
-            * Gets the body object of the cell. [Api set: WordApi 1.3]
+            * Gets the body object of the cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
             *
-            * Gets the parent row of the cell. [Api set: WordApi 1.3]
+            * Gets the parent row of the cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentRow?: Word.Interfaces.TableRowLoadOptions;
             /**
             *
-            * Gets the parent table of the cell. [Api set: WordApi 1.3]
+            * Gets the parent table of the cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * Gets the index of the cell in its row. Read-only. [Api set: WordApi 1.3]
+             * Gets the index of the cell in its row. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             cellIndex?: boolean;
             /**
              *
-             * Gets and sets the width of the cell's column in points. This is applicable to uniform tables. [Api set: WordApi 1.3]
+             * Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
+             *
+             * [Api set: WordApi 1.3]
              */
             columnWidth?: boolean;
             /**
              *
-             * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+             * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
              */
             horizontalAlignment?: boolean;
             /**
              *
-             * Gets the index of the cell's row in the table. Read-only. [Api set: WordApi 1.3]
+             * Gets the index of the cell's row in the table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             rowIndex?: boolean;
             /**
              *
-             * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+             * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
              */
             shadingColor?: boolean;
             /**
              *
-             * Gets and sets the text of the cell. [Api set: WordApi 1.3]
+             * Gets and sets the text of the cell.
+             *
+             * [Api set: WordApi 1.3]
              */
             value?: boolean;
             /**
              *
-             * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+             * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
              */
             verticalAlignment?: boolean;
             /**
              *
-             * Gets the width of the cell in points. Read-only. [Api set: WordApi 1.3]
+             * Gets the width of the cell in points. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             width?: boolean;
         }
         /**
          *
-         * Contains the collection of the document's TableCell objects. [Api set: WordApi 1.3]
+         * Contains the collection of the document's TableCell objects.
+         *
+         * [Api set: WordApi 1.3]
          */
         export interface TableCellCollectionLoadOptions {
             $all?: boolean;
             /**
             *
-            * For EACH ITEM in the collection: Gets the body object of the cell. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the body object of the cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the parent row of the cell. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the parent row of the cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentRow?: Word.Interfaces.TableRowLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the parent table of the cell. [Api set: WordApi 1.3]
+            * For EACH ITEM in the collection: Gets the parent table of the cell.
+            *
+            * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             cellIndex?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the width of the cell's column in points. This is applicable to uniform tables. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
+             *
+             * [Api set: WordApi 1.3]
              */
             columnWidth?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
              */
             horizontalAlignment?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the index of the cell's row in the table. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets the index of the cell's row in the table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             rowIndex?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
              */
             shadingColor?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the text of the cell. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the text of the cell.
+             *
+             * [Api set: WordApi 1.3]
              */
             value?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
              */
             verticalAlignment?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the width of the cell in points. Read-only. [Api set: WordApi 1.3]
+             * For EACH ITEM in the collection: Gets the width of the cell in points. Read-only.
+             *
+             * [Api set: WordApi 1.3]
              */
             width?: boolean;
         }
         /**
          *
-         * Specifies the border style. [Api set: WordApi 1.3]
+         * Specifies the border style.
+         *
+         * [Api set: WordApi 1.3]
          */
         export interface TableBorderLoadOptions {
             $all?: boolean;
             /**
              *
-             * Gets or sets the table border color. [Api set: WordApi 1.3]
+             * Gets or sets the table border color.
+             *
+             * [Api set: WordApi 1.3]
              */
             color?: boolean;
             /**
              *
-             * Gets or sets the type of the table border. [Api set: WordApi 1.3]
+             * Gets or sets the type of the table border.
+             *
+             * [Api set: WordApi 1.3]
              */
             type?: boolean;
             /**
              *
-             * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths. [Api set: WordApi 1.3]
+             * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths.
+             *
+             * [Api set: WordApi 1.3]
              */
             width?: boolean;
         }
