@@ -609,7 +609,7 @@ items:
           - outlook.Office.Recurrence
   - uid: outlook.Office.Item.removeHandlerAsync
     summary: >-
-      Removes an event handler for a supported event.
+      Removes the event handlers for a supported event type.
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
@@ -630,17 +630,16 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `removeHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void):
-      void;`
-    name: 'removeHandlerAsync(eventType, handler, options, callback)'
+      `removeHandlerAsync(eventType: Office.EventType, callback?: (result: AsyncResult<void>) => void): void;`
+    name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: removeHandlerAsync
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result:
-        AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (result: AsyncResult<void>) => void):
+        void;
       return:
         type:
           - void
@@ -650,12 +649,6 @@ items:
           description: The event that should revoke the handler.
           type:
             - Office.EventType
-        - id: handler
-          description: >-
-            The function to handle the event. The function must accept a single parameter, which is an object literal.
-            The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
-          type:
-            - any
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
