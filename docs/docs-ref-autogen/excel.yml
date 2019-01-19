@@ -504,7 +504,25 @@ items:
       return:
         type:
           - Promise<void>
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          var myFile = <HTMLInputElement>document.getElementById("file");
+          var reader = new FileReader();
+
+          reader.onload = function (event) {
+              // strip off the metadata before the base64-encoded string
+              var startIndex = (<string>(<FileReader>event.target).result).indexOf("base64,");
+              var copyBase64 = (<string>(<FileReader>event.target).result).substr(startIndex + 7);
+
+              Excel.createWorkbook(copyBase64);        
+          };
+
+          // read in the file as a data URL so we can parse the base64-encoded string
+          reader.readAsDataURL(myFile.files[0]);
+          ```
       parameters:
         - id: base64
           description: ''

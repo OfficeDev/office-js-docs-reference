@@ -1,3 +1,18 @@
+Excel.createWorkbook:
+  - |-
+    var myFile = <HTMLInputElement>document.getElementById("file");
+    var reader = new FileReader();
+
+    reader.onload = function (event) {
+        // strip off the metadata before the base64-encoded string
+        var startIndex = (<string>(<FileReader>event.target).result).indexOf("base64,");
+        var copyBase64 = (<string>(<FileReader>event.target).result).substr(startIndex + 7);
+
+        Excel.createWorkbook(copyBase64);        
+    };
+
+    // read in the file as a data URL so we can parse the base64-encoded string
+    reader.readAsDataURL(myFile.files[0]);
 Excel.Application.calculate:
   - |-
     Excel.run(function (ctx) {
@@ -10706,6 +10721,21 @@ Office.Time.setAsync:
             console.debug("Start Time " + result.asyncContext.verb);
         }
     });
+PowerPoint.createPresentation:
+  - |-
+    var myFile = <HTMLInputElement>document.getElementById("file");
+    var reader = new FileReader();
+
+    reader.onload = function (event) {
+        // strip off the metadata before the base64-encoded string
+        var startIndex = (<string>(<FileReader>event.target).result).indexOf("base64,");
+        var copyBase64 = (<string>(<FileReader>event.target).result).substr(startIndex + 7);
+
+        PowerPoint.createPresentation(copyBase64);        
+    };
+
+    // read in the file as a data URL so we can parse the base64-encoded string
+    reader.readAsDataURL(myFile.files[0]);
 Visio.Application.load:
   - |-
     Visio.run(session, function (ctx) {
