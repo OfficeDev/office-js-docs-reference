@@ -1,0 +1,71 @@
+items:
+- name: API reference
+  items:
+  - name: Excel
+    items:
+    - name: MailboxEnums
+      items:
+      - uid: Outlook_1_4.Office.MailboxEnums.AttachmentType
+        name: AttachmentType
+      - uid: Outlook_1_4.Office.MailboxEnums.EntityType
+        name: EntityType
+      - uid: Outlook_1_4.Office.MailboxEnums.ItemNotificationMessageType
+        name: ItemNotificationMessageType
+      - uid: Outlook_1_4.Office.MailboxEnums.ItemType
+        name: ItemType
+      - uid: Outlook_1_4.Office.MailboxEnums.OWAView
+        name: OWAView
+      - uid: Outlook_1_4.Office.MailboxEnums.RecipientType
+        name: RecipientType
+      - uid: Outlook_1_4.Office.MailboxEnums.ResponseType
+        name: ResponseType
+      - uid: Outlook_1_4.Office.MailboxEnums.RestVersion
+        name: RestVersion
+  - name: Common API
+    items:
+      - name: Office
+        items:
+          - name: Enums
+            uid: ''
+            items:
+              - name: ActiveView
+                uid: office.Office.ActiveView
+              - name: AsyncResultStatus
+                uid: office.Office.AsyncResultStatus
+              - name: BindingType
+                uid: office.Office.BindingType
+              - name: CoercionType
+                uid: office.Office.CoercionType
+              - name: CustomXMLNodeType
+                uid: office.Office.CustomXMLNodeType
+              - name: DocumentMode
+                uid: office.Office.DocumentMode
+              - name: EventType
+                uid: office.Office.EventType
+              - name: FileType
+                uid: office.Office.FileType
+              - name: FilterType
+                uid: office.Office.FilterType
+              - name: GoToType
+                uid: office.Office.GoToType
+              - name: HostType
+                uid: office.Office.HostType
+              - name: InitializationReason
+                uid: office.Office.InitializationReason
+              - name: PlatformType
+                uid: office.Office.PlatformType
+              - name: ProjectProjectFields
+                uid: office.Office.ProjectProjectFields
+              - name: ProjectResourceFields
+                uid: office.Office.ProjectResourceFields
+              - name: ProjectTaskFields
+                uid: office.Office.ProjectTaskFields
+              - name: ProjectViewTypes
+                uid: office.Office.ProjectViewTypes
+              - name: SelectionMode
+                uid: office.Office.SelectionMode
+              - name: Table
+                uid: office.Office.Table
+              - name: ValueFormat
+                uid: office.Office.ValueFormat
+
