@@ -1,7 +1,7 @@
 items:
 - name: API reference
   items:
-  - name: Excel
+  - name: outlook
     items:
     - name: MailboxEnums
       items:
