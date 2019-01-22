@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
+      - onenote.OneNote.FloatingInk.context
       - onenote.OneNote.FloatingInk.id
       - onenote.OneNote.FloatingInk.inkStrokes
       - onenote.OneNote.FloatingInk.load
@@ -21,6 +22,20 @@ items:
       - onenote.OneNote.FloatingInk.toJSON
       - onenote.OneNote.FloatingInk.track
       - onenote.OneNote.FloatingInk.untrack
+  - uid: onenote.OneNote.FloatingInk.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.FloatingInk.id
     summary: |-
       Gets the ID of the FloatingInk object. Read-only.
@@ -147,6 +162,12 @@ items:
         type:
           - onenote.OneNote.PageContent
   - uid: onenote.OneNote.FloatingInk.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.FloatingInk object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `OneNote.Interfaces.FloatingInkData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

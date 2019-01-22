@@ -12,12 +12,7 @@ items:
       - onenote.OneNote.Interfaces.ParagraphData.id
       - onenote.OneNote.Interfaces.ParagraphData.image
       - onenote.OneNote.Interfaces.ParagraphData.inkWords
-      - onenote.OneNote.Interfaces.ParagraphData.outline
       - onenote.OneNote.Interfaces.ParagraphData.paragraphs
-      - onenote.OneNote.Interfaces.ParagraphData.parentParagraph
-      - onenote.OneNote.Interfaces.ParagraphData.parentParagraphOrNull
-      - onenote.OneNote.Interfaces.ParagraphData.parentTableCell
-      - onenote.OneNote.Interfaces.ParagraphData.parentTableCellOrNull
       - onenote.OneNote.Interfaces.ParagraphData.richText
       - onenote.OneNote.Interfaces.ParagraphData.table
       - onenote.OneNote.Interfaces.ParagraphData.type
@@ -66,21 +61,6 @@ items:
       return:
         type:
           - 'OneNote.Interfaces.InkWordData[]'
-  - uid: onenote.OneNote.Interfaces.ParagraphData.outline
-    summary: |-
-      Gets the Outline object that contains the Paragraph. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: outline
-    fullName: outline
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'outline?: OneNote.Interfaces.OutlineData;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.OutlineData
   - uid: onenote.OneNote.Interfaces.ParagraphData.paragraphs
     summary: |-
       The collection of paragraphs under this paragraph. Read only
@@ -96,70 +76,6 @@ items:
       return:
         type:
           - 'OneNote.Interfaces.ParagraphData[]'
-  - uid: onenote.OneNote.Interfaces.ParagraphData.parentParagraph
-    summary: |-
-      Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: parentParagraph
-    fullName: parentParagraph
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentParagraph?: OneNote.Interfaces.ParagraphData;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.ParagraphData
-  - uid: onenote.OneNote.Interfaces.ParagraphData.parentParagraphOrNull
-    summary: |-
-      Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: parentParagraphOrNull
-    fullName: parentParagraphOrNull
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentParagraphOrNull?: OneNote.Interfaces.ParagraphData;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.ParagraphData
-  - uid: onenote.OneNote.Interfaces.ParagraphData.parentTableCell
-    summary: >-
-      Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
-      ItemNotFound. Read-only.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: parentTableCell
-    fullName: parentTableCell
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentTableCell?: OneNote.Interfaces.TableCellData;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.TableCellData
-  - uid: onenote.OneNote.Interfaces.ParagraphData.parentTableCellOrNull
-    summary: >-
-      Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
-      Read-only.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: parentTableCellOrNull
-    fullName: parentTableCellOrNull
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentTableCellOrNull?: OneNote.Interfaces.TableCellData;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.TableCellData
   - uid: onenote.OneNote.Interfaces.ParagraphData.richText
     summary: |-
       Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only

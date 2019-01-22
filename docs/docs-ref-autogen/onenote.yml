@@ -113,37 +113,26 @@ items:
       - onenote.OneNote.TableRowCollection
   - uid: onenote.OneNote.run
     summary: >-
-      Executes a batch script that performs actions on the OneNote object model, using the request context of a
-      previously-created API object.
-    remarks: >-
-      In addition to this signature, the method also has the following signatures:
-
-
-      `run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;`
-
-
-      `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>):
-      Promise<T>;`
-    name: 'run(object, batch)'
+      Executes a batch script that performs actions on the OneNote object model, using the request context of
+      previously-created API objects.
+    name: 'run(objects, batch)'
     fullName: OneNote.run
     langs:
       - typeScript
     type: function
     syntax:
       content: >-
-        export function run<T>(object: OfficeExtension.ClientObject, batch: (context: OneNote.RequestContext) =>
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) =>
         Promise<T>): Promise<T>;
       return:
         type:
           - Promise<T>
         description: ''
       parameters:
-        - id: object
-          description: >-
-            A previously-created API object. The batch will use the same request context as the passed-in object, which
-            means that any changes applied to the object will be picked up by "context.sync()".
+        - id: objects
+          description: ''
           type:
-            - office.OfficeExtension.ClientObject
+            - 'OfficeExtension.ClientObject[]'
         - id: batch
           description: >-
             A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of

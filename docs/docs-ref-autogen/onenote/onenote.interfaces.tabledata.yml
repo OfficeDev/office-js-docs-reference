@@ -12,7 +12,6 @@ items:
       - onenote.OneNote.Interfaces.TableData.borderVisible
       - onenote.OneNote.Interfaces.TableData.columnCount
       - onenote.OneNote.Interfaces.TableData.id
-      - onenote.OneNote.Interfaces.TableData.paragraph
       - onenote.OneNote.Interfaces.TableData.rowCount
       - onenote.OneNote.Interfaces.TableData.rows
   - uid: onenote.OneNote.Interfaces.TableData.borderVisible
@@ -60,21 +59,6 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.TableData.paragraph
-    summary: |-
-      Gets the Paragraph object that contains the Table object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: paragraph
-    fullName: paragraph
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'paragraph?: OneNote.Interfaces.ParagraphData;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.ParagraphData
   - uid: onenote.OneNote.Interfaces.TableData.rowCount
     summary: |-
       Gets the number of rows in the table.

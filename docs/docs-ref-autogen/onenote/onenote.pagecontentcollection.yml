@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
+      - onenote.OneNote.PageContentCollection.context
       - onenote.OneNote.PageContentCollection.count
       - onenote.OneNote.PageContentCollection.getItem
       - onenote.OneNote.PageContentCollection.getItemAt
@@ -22,6 +23,20 @@ items:
       - onenote.OneNote.PageContentCollection.toJSON
       - onenote.OneNote.PageContentCollection.track
       - onenote.OneNote.PageContentCollection.untrack
+  - uid: onenote.OneNote.PageContentCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.PageContentCollection.count
     summary: |-
       Returns the number of page contents in the collection. Read-only.
@@ -213,6 +228,12 @@ items:
           type:
             - 'string | string[]'
   - uid: onenote.OneNote.PageContentCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `OneNote.PageContentCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `OneNote.Interfaces.PageContentCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
     fullName: toJSON
     langs:

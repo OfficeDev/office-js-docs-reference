@@ -17,6 +17,7 @@ items:
       - word.Word.TableRow.cellCount
       - word.Word.TableRow.cells
       - word.Word.TableRow.clear
+      - word.Word.TableRow.context
       - word.Word.TableRow.delete
       - word.Word.TableRow.font
       - word.Word.TableRow.getBorder
@@ -85,6 +86,20 @@ items:
         type:
           - void
         description: ''
+  - uid: word.Word.TableRow.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.TableRow.delete
     summary: |-
       Deletes the entire row.

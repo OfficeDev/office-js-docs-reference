@@ -10,6 +10,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class Application extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Creates a new document by using an optional base64 encoded .docx file.
@@ -34,6 +36,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.1]
      */
     export class Body extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets the collection of rich text content control objects in the body. Read-only.
@@ -156,7 +160,7 @@ export declare namespace Word {
         clear(): void;
         /**
          *
-         * Gets the HTML representation of the body object.
+         * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -429,6 +433,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.1]
      */
     export class ContentControl extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets the collection of content control objects in the content control. Read-only.
@@ -557,7 +563,7 @@ export declare namespace Word {
         readonly id: number;
         /**
          *
-         * Gets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+         * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
          *
          * [Api set: WordApi 1.1]
          */
@@ -637,7 +643,7 @@ export declare namespace Word {
         delete(keepContent: boolean): void;
         /**
          *
-         * Gets the HTML representation of the content control object.
+         * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -779,7 +785,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
@@ -789,7 +795,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
@@ -925,6 +931,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.1]
      */
     export class ContentControlCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Word.ContentControl[];
         /**
@@ -1028,6 +1036,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class CustomProperty extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets the key of the custom property. Read only.
@@ -1093,6 +1103,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class CustomPropertyCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Word.CustomProperty[];
         /**
@@ -1170,6 +1182,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.1]
      */
     export class Document extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
@@ -1256,6 +1270,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class DocumentCreated extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
@@ -1342,6 +1358,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class DocumentProperties extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets the collection of custom properties of the document. Read only.
@@ -1505,6 +1523,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.1]
      */
     export class Font extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
@@ -1619,6 +1639,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.1]
      */
     export class InlinePicture extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets the parent paragraph that contains the inline image. Read-only.
@@ -1759,7 +1781,7 @@ export declare namespace Word {
         getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
          *
-         * Inserts a break at the specified location in the main document. 
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1769,7 +1791,7 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. 
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1786,7 +1808,7 @@ export declare namespace Word {
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a document at the specified location. 
+         * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1796,7 +1818,7 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document at the specified location. 
+         * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1806,7 +1828,7 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. 
+         * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1816,7 +1838,7 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. 
+         * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1846,7 +1868,7 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML at the specified location.  
+         * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1856,7 +1878,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML at the specified location.  
+         * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1866,7 +1888,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. 
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1876,7 +1898,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. 
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1886,7 +1908,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts text at the specified location. 
+         * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1896,7 +1918,7 @@ export declare namespace Word {
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text at the specified location. 
+         * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1958,6 +1980,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.1]
      */
     export class InlinePictureCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Word.InlinePicture[];
         /**
@@ -2007,6 +2031,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class List extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets paragraphs in the list. Read-only.
@@ -2196,6 +2222,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class ListCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Word.List[];
         /**
@@ -2272,6 +2300,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class ListItem extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets or sets the level of the item in the list.
@@ -2357,6 +2387,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.1]
      */
     export class Paragraph extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets the collection of content control objects in the paragraph. Read-only.
@@ -2601,7 +2633,7 @@ export declare namespace Word {
         detachFromList(): void;
         /**
          *
-         * Gets the HTML representation of the paragraph object.
+         * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -2671,7 +2703,7 @@ export declare namespace Word {
         getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;
         /**
          *
-         * Inserts a break at the specified location in the main document. 
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2681,7 +2713,7 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. 
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2778,7 +2810,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. 
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2788,7 +2820,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. 
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2798,7 +2830,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. 
+         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.3]
          *
@@ -2810,7 +2842,7 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. 
+         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.3]
          *
@@ -2930,6 +2962,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.1]
      */
     export class ParagraphCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Paragraph[];
         /**
@@ -2993,6 +3027,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.1]
      */
     export class Range extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets the collection of content control objects in the range. Read-only.
@@ -3163,7 +3199,7 @@ export declare namespace Word {
         expandToOrNullObject(range: Word.Range): Word.Range;
         /**
          *
-         * Gets the HTML representation of the range object.
+         * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -3232,7 +3268,7 @@ export declare namespace Word {
         getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;
         /**
          *
-         * Inserts a break at the specified location in the main document. 
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
@@ -3242,7 +3278,7 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. 
+         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
@@ -3339,7 +3375,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. 
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
@@ -3349,7 +3385,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. 
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.1]
          *
@@ -3359,7 +3395,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. 
+         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.3]
          *
@@ -3371,7 +3407,7 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. 
+         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.3]
          *
@@ -3503,6 +3539,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.1]
      */
     export class RangeCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Range[];
         /**
@@ -3552,6 +3590,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.1]
      */
     export class SearchOptions extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         matchWildCards: boolean;
         /**
          *
@@ -3635,6 +3675,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.1]
      */
     export class Section extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only.
@@ -3729,6 +3771,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.1]
      */
     export class SectionCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Section[];
         /**
@@ -3778,6 +3822,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class Table extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
@@ -4185,7 +4231,7 @@ export declare namespace Word {
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a paragraph at the specified location. 
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.3]
          *
@@ -4195,7 +4241,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. 
+         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.3]
          *
@@ -4205,7 +4251,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. 
+         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.3]
          *
@@ -4217,7 +4263,7 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
         /**
          *
-         * Inserts a table with the specified number of rows and columns. 
+         * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
          *
          * [Api set: WordApi 1.3]
          *
@@ -4319,6 +4365,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class TableCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Table[];
         /**
@@ -4368,6 +4416,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class TableRow extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets cells. Read-only.
@@ -4624,6 +4674,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class TableRowCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Word.TableRow[];
         /**
@@ -4673,6 +4725,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class TableCell extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets the body object of the cell. Read-only.
@@ -4915,6 +4969,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class TableCellCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Word.TableCell[];
         /**
@@ -4964,6 +5020,8 @@ export declare namespace Word {
      * [Api set: WordApi 1.3]
      */
     export class TableBorder extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
         /**
          *
          * Gets or sets the table border color.
@@ -5014,6 +5072,38 @@ export declare namespace Word {
          */
         untrack(): Word.TableBorder;
         toJSON(): Word.Interfaces.TableBorderData;
+    }
+    /**
+     *
+     * Provides information about the type of a raised event. For each object type, please keep the order of: deleted, selection changed, data changed, added.
+     *
+     * [Api set: WordApi]
+     */
+    enum EventType {
+        /**
+         *
+         * ContentControlDeleted represent the event that the content control has been deleted.
+         *
+         */
+        contentControlDeleted = "ContentControlDeleted",
+        /**
+         *
+         * ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
+         *
+         */
+        contentControlSelectionChanged = "ContentControlSelectionChanged",
+        /**
+         *
+         * ContentControlDataChanged represents the event that the data in the content control have been changed.
+         *
+         */
+        contentControlDataChanged = "ContentControlDataChanged",
+        /**
+         *
+         * ContentControlAdded represents the event a content control has been added to the document.
+         *
+         */
+        contentControlAdded = "ContentControlAdded",
     }
     /**
      *
@@ -5971,13 +6061,6 @@ export declare namespace Word {
             * [Api set: WordApi 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesUpdateData;
-            /**
-             *
-             * Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this document even if this document is untitled. True to close, false otherwise.
-             *
-             * [Api set: WordApi]
-             */
-            allowCloseOnUntitled?: boolean;
         }
         /** An interface for updating data on the DocumentCreated object, for use in "documentCreated.set({ ... })". */
         export interface DocumentCreatedUpdateData {
@@ -7021,13 +7104,6 @@ export declare namespace Word {
             * [Api set: WordApi 1.1]
             */
             sections?: Word.Interfaces.SectionData[];
-            /**
-             *
-             * Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this document even if this document is untitled. True to close, false otherwise.
-             *
-             * [Api set: WordApi]
-             */
-            allowCloseOnUntitled?: boolean;
             /**
              *
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
@@ -8452,22 +8528,30 @@ export declare namespace Word {
         readonly application: Application;
     }
     /**
-     * Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     * Executes a batch script that performs actions on the Word object model, using the RequestContext of previously created API objects.
+     * @param objects - An array of previously created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
-    export function run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
+    export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
     /**
-     * Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
+     * Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     * @param object - A previously created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
     export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
     /**
-     * Executes a batch script that performs actions on the Word object model, using the RequestContext of previously-created API objects.
-     * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
+     * Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
+     *
+     * @remarks
+     *
+     * In addition to this signature, the method also has the following signatures, which allow you to resume using the request context of previously created objects:
+     *
+     * run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
+     *
+     * run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
      */
-    export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
+    export function run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
 }
 
 

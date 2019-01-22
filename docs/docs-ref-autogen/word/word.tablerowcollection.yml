@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: word
     children:
+      - word.Word.TableRowCollection.context
       - word.Word.TableRowCollection.getFirst
       - word.Word.TableRowCollection.getFirstOrNullObject
       - word.Word.TableRowCollection.items
@@ -21,6 +22,20 @@ items:
       - word.Word.TableRowCollection.toJSON
       - word.Word.TableRowCollection.track
       - word.Word.TableRowCollection.untrack
+  - uid: word.Word.TableRowCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.TableRowCollection.getFirst
     summary: |-
       Gets the first row in this collection. Throws if this collection is empty.

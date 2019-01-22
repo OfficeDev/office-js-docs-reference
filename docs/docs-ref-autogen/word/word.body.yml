@@ -16,6 +16,7 @@ items:
     children:
       - word.Word.Body.clear
       - word.Word.Body.contentControls
+      - word.Word.Body.context
       - word.Word.Body.font
       - word.Word.Body.getHtml
       - word.Word.Body.getOoxml
@@ -110,6 +111,20 @@ items:
       return:
         type:
           - word.Word.ContentControlCollection
+  - uid: word.Word.Body.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.Body.font
     summary: |-
       Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
@@ -126,8 +141,12 @@ items:
         type:
           - word.Word.Font
   - uid: word.Word.Body.getHtml
-    summary: |-
-      Gets the HTML representation of the body object.
+    summary: >-
+      Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be
+      a close, but not exact, match for of the formatting of the document. This method does not return the exact same
+      HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity,
+      or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
+
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getHtml()

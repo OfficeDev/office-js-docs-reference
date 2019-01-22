@@ -434,6 +434,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
+              pieChart.onActivated.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The pie chart is the active chart. ID: " + event.chartId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.Chart.onDeactivated
     summary: |-
       Occurs when the chart is deactivated.
@@ -449,6 +465,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
+              pieChart.onDeactivated.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The pie chart is NOT active.");
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.Chart.plotArea
     summary: |-
       Represents the plotArea for the chart.

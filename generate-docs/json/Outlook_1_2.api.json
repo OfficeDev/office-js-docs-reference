@@ -1169,7 +1169,7 @@
             },
             "getSelectedDataAsync": {
               "kind": "method",
-              "signature": "getSelectedDataAsync(coerciontype: Office.CoercionType, options: Office.AsyncContextOptions, callback: (result: AsyncResult<any>) => void): void;",
+              "signature": "getSelectedDataAsync(coercionType: Office.CoercionType, options: Office.AsyncContextOptions, callback: (result: AsyncResult<any>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1183,9 +1183,14 @@
                 ]
               },
               "parameters": {
-                "coerciontype": {
-                  "name": "coerciontype",
-                  "description": [],
+                "coercionType": {
+                  "name": "coercionType",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "Office.CoercionType"
@@ -1890,7 +1895,7 @@
             },
             "removeAttachmentAsync": {
               "kind": "method",
-              "signature": "removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1899,12 +1904,12 @@
                 "description": []
               },
               "parameters": {
-                "attachmentIndex": {
-                  "name": "attachmentIndex",
+                "attachmentId": {
+                  "name": "attachmentId",
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The identifier of the attachment to remove. The maximum length of the string is 100 characters."
+                      "text": "The identifier of the attachment to remove."
                     }
                   ],
                   "isOptional": false,
@@ -2092,7 +2097,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -2100,7 +2105,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -2108,7 +2113,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -12392,7 +12397,7 @@
             },
             "getSelectedDataAsync": {
               "kind": "method",
-              "signature": "getSelectedDataAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<any>) => void): void;",
+              "signature": "getSelectedDataAsync(coercionType: Office.CoercionType, callback: (result: AsyncResult<any>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12406,9 +12411,14 @@
                 ]
               },
               "parameters": {
-                "coerciontype": {
-                  "name": "coerciontype",
-                  "description": [],
+                "coercionType": {
+                  "name": "coercionType",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "Office.CoercionType"
@@ -12550,7 +12560,7 @@
             },
             "removeAttachmentAsync": {
               "kind": "method",
-              "signature": "removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12559,12 +12569,12 @@
                 "description": []
               },
               "parameters": {
-                "attachmentIndex": {
-                  "name": "attachmentIndex",
+                "attachmentId": {
+                  "name": "attachmentId",
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The identifier of the attachment to remove. The maximum length of the string is 100 characters."
+                      "text": "The identifier of the attachment to remove."
                     }
                   ],
                   "isOptional": false,
@@ -12752,7 +12762,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -12760,7 +12770,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -12768,7 +12778,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -17741,7 +17751,34 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. The token is provided as a string in the asyncResult.value property."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. The token is provided as a string in the "
+                    },
+                    {
+                      "kind": "code",
+                      "text": "asyncResult.value",
+                      "highlighter": "plain"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " property. If there was an error, then the "
+                    },
+                    {
+                      "kind": "code",
+                      "text": "asyncResult.error",
+                      "highlighter": "plain"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " and "
+                    },
+                    {
+                      "kind": "code",
+                      "text": "asyncResult.diagnostics",
+                      "highlighter": "plain"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " properties may provide additional information."
                     }
                   ],
                   "isOptional": false,
@@ -20797,7 +20834,7 @@
             },
             "getSelectedDataAsync": {
               "kind": "method",
-              "signature": "getSelectedDataAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<any>) => void): void;",
+              "signature": "getSelectedDataAsync(coercionType: Office.CoercionType, callback: (result: AsyncResult<any>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -20811,9 +20848,14 @@
                 ]
               },
               "parameters": {
-                "coerciontype": {
-                  "name": "coerciontype",
-                  "description": [],
+                "coercionType": {
+                  "name": "coercionType",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "Office.CoercionType"
@@ -21236,7 +21278,7 @@
             },
             "removeAttachmentAsync": {
               "kind": "method",
-              "signature": "removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -21245,12 +21287,12 @@
                 "description": []
               },
               "parameters": {
-                "attachmentIndex": {
-                  "name": "attachmentIndex",
+                "attachmentId": {
+                  "name": "attachmentId",
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The identifier of the attachment to remove. The maximum length of the string is 100 characters."
+                      "text": "The identifier of the attachment to remove."
                     }
                   ],
                   "isOptional": false,
@@ -21438,7 +21480,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -21446,7 +21488,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -21454,7 +21496,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],

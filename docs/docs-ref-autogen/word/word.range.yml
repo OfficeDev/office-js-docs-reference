@@ -17,6 +17,7 @@ items:
       - word.Word.Range.clear
       - word.Word.Range.compareLocationWith
       - word.Word.Range.contentControls
+      - word.Word.Range.context
       - word.Word.Range.delete
       - word.Word.Range.expandTo
       - word.Word.Range.expandToOrNullObject
@@ -141,6 +142,20 @@ items:
       return:
         type:
           - word.Word.ContentControlCollection
+  - uid: word.Word.Range.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.Range.delete
     summary: |-
       Deletes the range and its content from the document.
@@ -248,8 +263,12 @@ items:
         type:
           - word.Word.Font
   - uid: word.Word.Range.getHtml
-    summary: |-
-      Gets the HTML representation of the range object.
+    summary: >-
+      Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will
+      be a close, but not exact, match for of the formatting of the document. This method does not return the exact same
+      HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity,
+      or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
+
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getHtml()
@@ -517,8 +536,10 @@ items:
         type:
           - word.Word.InlinePictureCollection
   - uid: word.Word.Range.insertBreak
-    summary: |-
-      Inserts a break at the specified location in the main document.
+    summary: >-
+      Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
+      'After'.
+
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertBreak(breakType, insertLocation)'
@@ -836,7 +857,7 @@ items:
             - Word.InsertLocation
   - uid: word.Word.Range.insertParagraph
     summary: |-
-      Inserts a paragraph at the specified location.
+      Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
@@ -887,8 +908,10 @@ items:
           type:
             - Word.InsertLocation
   - uid: word.Word.Range.insertTable
-    summary: |-
-      Inserts a table with the specified number of rows and columns.
+    summary: >-
+      Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or
+      'After'.
+
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertTable(rowCount, columnCount, insertLocation, values)'
