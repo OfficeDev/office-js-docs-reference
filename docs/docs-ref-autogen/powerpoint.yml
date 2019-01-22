@@ -30,13 +30,13 @@ items:
           #### Examples
 
           ```javascript
-          var myFile = <HTMLInputElement>document.getElementById("file");
+          var myFile = document.getElementById("file");
           var reader = new FileReader();
 
           reader.onload = function (event) {
               // strip off the metadata before the base64-encoded string
-              var startIndex = (<string>(<FileReader>event.target).result).indexOf("base64,");
-              var copyBase64 = (<string>(<FileReader>event.target).result).substr(startIndex + 7);
+              var startIndex = event.target.result.indexOf("base64,");
+              var copyBase64 = event.target.result.substr(startIndex + 7);
 
               PowerPoint.createPresentation(copyBase64);        
           };
