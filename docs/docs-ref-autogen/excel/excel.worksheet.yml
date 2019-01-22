@@ -716,6 +716,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onActivated.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The activated worksheet ID is: " + event.worksheetId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.Worksheet.onCalculated
     summary: |-
       Occurs when the worksheet is calculated.
@@ -731,6 +747,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onCalculated.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The worksheet has recalculated.");
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.Worksheet.onChanged
     summary: |-
       Occurs when data changed on a specific worksheet.
@@ -774,6 +806,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onDeactivated.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The deactivated worksheet is: " + event.worksheetId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.Worksheet.onSelectionChanged
     summary: |-
       Occurs when the selection changes on a specific worksheet.
@@ -789,6 +837,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onSelectionChanged.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The selected range has changed to: " + event.address);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.Worksheet.pivotTables
     summary: |-
       Collection of PivotTables that are part of the worksheet. Read-only.

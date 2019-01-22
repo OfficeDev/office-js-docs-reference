@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: word
     children:
+      - word.Word.List.context
       - word.Word.List.getLevelParagraphs
       - word.Word.List.getLevelString
       - word.Word.List.id
@@ -30,6 +31,20 @@ items:
       - word.Word.List.toJSON
       - word.Word.List.track
       - word.Word.List.untrack
+  - uid: word.Word.List.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.List.getLevelParagraphs
     summary: |-
       Gets the paragraphs that occur at the specified level in the list.

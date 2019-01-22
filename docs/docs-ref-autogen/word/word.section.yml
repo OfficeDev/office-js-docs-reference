@@ -15,6 +15,7 @@ items:
     package: word
     children:
       - word.Word.Section.body
+      - word.Word.Section.context
       - word.Word.Section.getFooter
       - word.Word.Section.getHeader
       - word.Word.Section.getNext
@@ -40,6 +41,20 @@ items:
       return:
         type:
           - Word.Body
+  - uid: word.Word.Section.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.Section.getFooter
     summary: |-
       Gets one of the section's footers.

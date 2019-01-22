@@ -11,7 +11,6 @@ items:
     children:
       - onenote.OneNote.Interfaces.RichTextData.id
       - onenote.OneNote.Interfaces.RichTextData.languageId
-      - onenote.OneNote.Interfaces.RichTextData.paragraph
       - onenote.OneNote.Interfaces.RichTextData.text
   - uid: onenote.OneNote.Interfaces.RichTextData.id
     summary: |-
@@ -43,21 +42,6 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.RichTextData.paragraph
-    summary: |-
-      Gets the Paragraph object that contains the RichText object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: paragraph
-    fullName: paragraph
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'paragraph?: OneNote.Interfaces.ParagraphData;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.ParagraphData
   - uid: onenote.OneNote.Interfaces.RichTextData.text
     summary: |-
       Gets the text content of the RichText object. Read-only.

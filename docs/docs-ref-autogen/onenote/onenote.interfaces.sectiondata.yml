@@ -14,10 +14,7 @@ items:
       - onenote.OneNote.Interfaces.SectionData.isEncrypted
       - onenote.OneNote.Interfaces.SectionData.isLocked
       - onenote.OneNote.Interfaces.SectionData.name
-      - onenote.OneNote.Interfaces.SectionData.notebook
       - onenote.OneNote.Interfaces.SectionData.pages
-      - onenote.OneNote.Interfaces.SectionData.parentSectionGroup
-      - onenote.OneNote.Interfaces.SectionData.parentSectionGroupOrNull
       - onenote.OneNote.Interfaces.SectionData.webUrl
   - uid: onenote.OneNote.Interfaces.SectionData.clientUrl
     summary: |-
@@ -94,21 +91,6 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.SectionData.notebook
-    summary: |-
-      Gets the notebook that contains the section. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: notebook
-    fullName: notebook
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'notebook?: OneNote.Interfaces.NotebookData;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.NotebookData
   - uid: onenote.OneNote.Interfaces.SectionData.pages
     summary: |-
       The collection of pages in the section. Read only
@@ -124,40 +106,6 @@ items:
       return:
         type:
           - 'OneNote.Interfaces.PageData[]'
-  - uid: onenote.OneNote.Interfaces.SectionData.parentSectionGroup
-    summary: >-
-      Gets the section group that contains the section. Throws ItemNotFound if the section is a direct child of the
-      notebook. Read-only.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: parentSectionGroup
-    fullName: parentSectionGroup
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentSectionGroup?: OneNote.Interfaces.SectionGroupData;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.SectionGroupData
-  - uid: onenote.OneNote.Interfaces.SectionData.parentSectionGroupOrNull
-    summary: >-
-      Gets the section group that contains the section. Returns null if the section is a direct child of the notebook.
-      Read-only.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: parentSectionGroupOrNull
-    fullName: parentSectionGroupOrNull
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupData;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.SectionGroupData
   - uid: onenote.OneNote.Interfaces.SectionData.webUrl
     summary: |-
       The web url of the page. Read only

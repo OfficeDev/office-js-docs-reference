@@ -16,6 +16,7 @@ items:
     children:
       - word.Word.Font.bold
       - word.Word.Font.color
+      - word.Word.Font.context
       - word.Word.Font.doubleStrikeThrough
       - word.Word.Font.highlightColor
       - word.Word.Font.italic
@@ -63,6 +64,20 @@ items:
       return:
         type:
           - string
+  - uid: word.Word.Font.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.Font.doubleStrikeThrough
     summary: >-
       Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as

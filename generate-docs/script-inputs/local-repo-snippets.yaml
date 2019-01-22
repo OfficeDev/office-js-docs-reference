@@ -1,3 +1,18 @@
+Excel.createWorkbook:
+  - |-
+    var myFile = document.getElementById("file");
+    var reader = new FileReader();
+
+    reader.onload = function (event) {
+        // strip off the metadata before the base64-encoded string
+        var startIndex = event.target.result.indexOf("base64,");
+        var copyBase64 = event.target.result.substr(startIndex + 7);
+
+        Excel.createWorkbook(copyBase64);        
+    };
+
+    // read in the file as a data URL so we can parse the base64-encoded string
+    reader.readAsDataURL(myFile.files[0]);
 Excel.Application.calculate:
   - |-
     Excel.run(function (ctx) {
@@ -337,6 +352,30 @@ Excel.ChartAxisTitle.load:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
+Excel.Chart.onActivated:
+  - |-
+    Excel.run(function (context){
+        var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
+        pieChart.onActivated.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The pie chart is the active chart. ID: " + event.chartId);
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.Chart.onDeactivated:
+  - |-
+    Excel.run(function (context){
+        var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
+        pieChart.onDeactivated.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The pie chart is NOT active.");
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
 Excel.ChartCollection.add:
   - |-
     // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
@@ -439,6 +478,54 @@ Excel.ChartCollection.load:
         if (error instanceof OfficeExtension.Error) {
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
+    });
+Excel.ChartCollection.onActivated:
+  - |-
+    Excel.run(function (context){
+        context.workbook.worksheets.getActiveWorksheet()
+            .charts.onActivated.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The ID of the active chart is: " + event.chartId)
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.ChartCollection.onAdded:
+  - |-
+    Excel.run(function (context){
+        context.workbook.worksheets.getActiveWorksheet()
+            .charts.onAdded.add(function (event) {
+            return Excel.run((context) => {
+                console.log("A chart has been added with ID: " + event.chartId);
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.ChartCollection.onDeactivated:
+  - |-
+    Excel.run(function (context){
+        context.workbook.worksheets.getActiveWorksheet()
+            .charts.onDeactivated.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The chart with this ID was deactivated: " + event.chartId);
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.ChartCollection.onDeleted:
+  - |-
+    Excel.run(function (context){
+        context.workbook.worksheets.getActiveWorksheet()
+            .charts.onDeleted.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The chart with this ID was deleted: " + event.chartId);
+                return context.sync();
+            });
+        });
+        return context.sync();
     });
 Excel.ChartDataLabels.load:
   - |-
@@ -2251,6 +2338,54 @@ Excel.Worksheet.load:
         if (error instanceof OfficeExtension.Error) {
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
+    });
+Excel.Worksheet.onActivated:
+  - |-
+    Excel.run(function (context) {
+        var sheet = context.workbook.worksheets.getItem("Sample");
+        sheet.onActivated.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The activated worksheet ID is: " + event.worksheetId);
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.Worksheet.onCalculated:
+  - |-
+    Excel.run(function (context) {
+        var sheet = context.workbook.worksheets.getItem("Sample");
+        sheet.onCalculated.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The worksheet has recalculated.");
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.Worksheet.onDeactivated:
+  - |-
+    Excel.run(function (context) {
+        var sheet = context.workbook.worksheets.getItem("Sample");
+        sheet.onDeactivated.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The deactivated worksheet is: " + event.worksheetId);
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.Worksheet.onSelectionChanged:
+  - |-
+    Excel.run(function (context) {
+        var sheet = context.workbook.worksheets.getItem("Sample");
+        sheet.onSelectionChanged.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The selected range has changed to: " + event.address);
+                return context.sync();
+            });
+        });
+        return context.sync();
     });
 Excel.WorksheetCollection.add:
   - |-
@@ -9758,6 +9893,21 @@ Office.Time.setAsync:
             console.debug("Start Time " + result.asyncContext.verb);
         }
     });
+PowerPoint.createPresentation:
+  - |-
+    var myFile = document.getElementById("file");
+    var reader = new FileReader();
+
+    reader.onload = function (event) {
+        // strip off the metadata before the base64-encoded string
+        var startIndex = event.target.result.indexOf("base64,");
+        var copyBase64 = event.target.result.substr(startIndex + 7);
+
+        PowerPoint.createPresentation(copyBase64);        
+    };
+
+    // read in the file as a data URL so we can parse the base64-encoded string
+    reader.readAsDataURL(myFile.files[0]);
 Visio.Application.load:
   - |-
     Visio.run(session, function (ctx) {

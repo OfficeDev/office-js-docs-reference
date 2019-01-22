@@ -3483,7 +3483,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeHandlerAsync(eventType:EventType, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3503,18 +3503,6 @@
                   "isOptional": false,
                   "isSpread": false,
                   "type": "EventType"
-                },
-                "handler": {
-                  "name": "handler",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to removeHandlerAsync."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "any"
                 },
                 "options": {
                   "name": "options",
@@ -3545,7 +3533,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Removes an event handler for a supported event."
+                  "text": "Removes the event handlers for a supported event type."
                 },
                 {
                   "kind": "paragraph"
@@ -3698,7 +3686,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeHandlerAsync(eventType:EventType, callback?: (result: AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -10387,7 +10375,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeHandlerAsync(eventType:EventType, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10407,18 +10395,6 @@
                   "isOptional": false,
                   "isSpread": false,
                   "type": "EventType"
-                },
-                "handler": {
-                  "name": "handler",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to removeHandlerAsync."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "any"
                 },
                 "options": {
                   "name": "options",
@@ -10449,7 +10425,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Removes an event handler for a supported event."
+                  "text": "Removes the event handlers for a supported event type."
                 },
                 {
                   "kind": "paragraph"
@@ -10602,7 +10578,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeHandlerAsync(eventType:EventType, callback?: (result: AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -17758,7 +17734,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -17778,18 +17754,6 @@
                   "isOptional": false,
                   "isSpread": false,
                   "type": "Office.EventType"
-                },
-                "handler": {
-                  "name": "handler",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to removeHandlerAsync."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "any"
                 },
                 "options": {
                   "name": "options",
@@ -17820,7 +17784,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Removes an event handler for a supported event."
+                  "text": "Removes the event handlers for a supported event type."
                 },
                 {
                   "kind": "paragraph"
@@ -17973,7 +17937,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeHandlerAsync(eventType: Office.EventType, callback?: (result: AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -27126,7 +27090,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType: Office.EventType, handler: (type: EventType) => void, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -27146,18 +27110,6 @@
                   "isOptional": false,
                   "isSpread": false,
                   "type": "Office.EventType"
-                },
-                "handler": {
-                  "name": "handler",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to addHandlerAsync."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "(type: EventType) => void"
                 },
                 "options": {
                   "name": "options",
@@ -27188,7 +27140,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Removes an event handler for a supported event."
+                  "text": "Removes the event handlers for a supported event type."
                 },
                 {
                   "kind": "paragraph"
@@ -35349,7 +35301,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeHandlerAsync(eventType:EventType, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -35369,18 +35321,6 @@
                   "isOptional": false,
                   "isSpread": false,
                   "type": "EventType"
-                },
-                "handler": {
-                  "name": "handler",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to removeHandlerAsync."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "any"
                 },
                 "options": {
                   "name": "options",
@@ -35411,7 +35351,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Removes an event handler for a supported event."
+                  "text": "Removes the event handlers for a supported event type."
                 },
                 {
                   "kind": "paragraph"
@@ -35564,7 +35504,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeHandlerAsync(eventType:EventType, callback?: (result: AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -41074,7 +41014,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeHandlerAsync(eventType:EventType, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -41094,18 +41034,6 @@
                   "isOptional": false,
                   "isSpread": false,
                   "type": "EventType"
-                },
-                "handler": {
-                  "name": "handler",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to removeHandlerAsync."
-                    }
-                  ],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "any"
                 },
                 "options": {
                   "name": "options",
@@ -41136,7 +41064,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Removes an event handler for a supported event."
+                  "text": "Removes the event handlers for a supported event type."
                 },
                 {
                   "kind": "paragraph"
@@ -41289,7 +41217,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeHandlerAsync(eventType:EventType, callback?: (result: AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],

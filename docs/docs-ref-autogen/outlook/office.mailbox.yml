@@ -1006,7 +1006,7 @@ items:
             - any
   - uid: outlook.Office.Mailbox.removeHandlerAsync
     summary: >-
-      Removes an event handler for a supported event.
+      Removes the event handlers for a supported event type.
 
 
       Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->. In Preview,
@@ -1021,15 +1021,15 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
-    name: 'removeHandlerAsync(eventType, handler, options, callback)'
+    name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: removeHandlerAsync
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, handler: (type: EventType) => void, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: Office.EventType, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -1039,12 +1039,6 @@ items:
           description: The event that should revoke the handler.
           type:
             - Office.EventType
-        - id: handler
-          description: >-
-            The function to handle the event. The function must accept a single parameter, which is an object literal.
-            The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
-          type:
-            - '(type: EventType) => void'
         - id: options
           description: 'Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:

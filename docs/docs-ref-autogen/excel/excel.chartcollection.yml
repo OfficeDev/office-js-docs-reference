@@ -355,6 +355,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              context.workbook.worksheets.getActiveWorksheet()
+                  .charts.onActivated.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The ID of the active chart is: " + event.chartId)
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.ChartCollection.onAdded
     summary: |-
       Occurs when a new chart is added to the worksheet.
@@ -370,6 +386,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartAddedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              context.workbook.worksheets.getActiveWorksheet()
+                  .charts.onAdded.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("A chart has been added with ID: " + event.chartId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.ChartCollection.onDeactivated
     summary: |-
       Occurs when a chart is deactivated.
@@ -385,6 +417,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              context.workbook.worksheets.getActiveWorksheet()
+                  .charts.onDeactivated.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The chart with this ID was deactivated: " + event.chartId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.ChartCollection.onDeleted
     summary: |-
       Occurs when a chart is deleted.
@@ -400,6 +448,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartDeletedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              context.workbook.worksheets.getActiveWorksheet()
+                  .charts.onDeleted.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The chart with this ID was deleted: " + event.chartId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.ChartCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

@@ -20,6 +20,7 @@ items:
       - onenote.OneNote.Page.classNotebookPageSource
       - onenote.OneNote.Page.clientUrl
       - onenote.OneNote.Page.contents
+      - onenote.OneNote.Page.context
       - onenote.OneNote.Page.copyToSection
       - onenote.OneNote.Page.copyToSectionAndSetClassNotebookPageSource
       - onenote.OneNote.Page.getRestApiId
@@ -187,6 +188,20 @@ items:
       return:
         type:
           - onenote.OneNote.PageContentCollection
+  - uid: onenote.OneNote.Page.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.Page.copyToSection
     summary: |-
       Copies this page to specified section.
@@ -585,6 +600,12 @@ items:
         type:
           - string
   - uid: onenote.OneNote.Page.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.Page object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `OneNote.Interfaces.PageData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

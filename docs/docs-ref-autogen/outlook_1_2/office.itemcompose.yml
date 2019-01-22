@@ -206,20 +206,22 @@ items:
 
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
-    name: 'getSelectedDataAsync(coerciontype, callback)'
+    name: 'getSelectedDataAsync(coercionType, callback)'
     fullName: getSelectedDataAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedDataAsync(coerciontype: Office.CoercionType, callback: (result: AsyncResult<any>) => void): void;'
+      content: 'getSelectedDataAsync(coercionType: Office.CoercionType, callback: (result: AsyncResult<any>) => void): void;'
       return:
         type:
           - void
         description: The selected data as a string with format determined by coercionType.
       parameters:
-        - id: coerciontype
-          description: ''
+        - id: coercionType
+          description: >-
+            Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML
+            tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
             - office.Office.CoercionType
         - id: callback
@@ -256,29 +258,29 @@ items:
       In addition to this signature, the method also has the following signatures:
 
 
-      `removeAttachmentAsync(attachmentIndex: string): void;`
+      `removeAttachmentAsync(attachmentId: string): void;`
 
 
-      `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
+      `removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;`
 
 
-      `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult<void>) => void): void;`
-    name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
+      `removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;`
+    name: 'removeAttachmentAsync(attachmentId, options, callback)'
     fullName: removeAttachmentAsync
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        removeAttachmentAsync(attachmentIndex: string, options?: Office.AsyncContextOptions, callback?: (result:
+        removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result:
         AsyncResult<void>) => void): void;
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: attachmentIndex
-          description: The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+        - id: attachmentId
+          description: The identifier of the attachment to remove.
           type:
             - string
         - id: options

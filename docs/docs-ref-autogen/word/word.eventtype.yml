@@ -1,0 +1,52 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.EventType
+    summary: >-
+      Provides information about the type of a raised event. For each object type, please keep the order of: deleted,
+      selection changed, data changed, added.
+
+
+      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.EventType
+    fullName: Word.EventType
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.EventType.contentControlAdded
+      - word.Word.EventType.contentControlDataChanged
+      - word.Word.EventType.contentControlDeleted
+      - word.Word.EventType.contentControlSelectionChanged
+  - uid: word.Word.EventType.contentControlAdded
+    summary: ContentControlAdded represents the event a content control has been added to the document.
+    name: contentControlAdded
+    fullName: contentControlAdded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ContentControlAdded"'
+  - uid: word.Word.EventType.contentControlDataChanged
+    summary: ContentControlDataChanged represents the event that the data in the content control have been changed.
+    name: contentControlDataChanged
+    fullName: contentControlDataChanged
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ContentControlDataChanged"'
+  - uid: word.Word.EventType.contentControlDeleted
+    summary: ContentControlDeleted represent the event that the content control has been deleted.
+    name: contentControlDeleted
+    fullName: contentControlDeleted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ContentControlDeleted"'
+  - uid: word.Word.EventType.contentControlSelectionChanged
+    summary: ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
+    name: contentControlSelectionChanged
+    fullName: contentControlSelectionChanged
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ContentControlSelectionChanged"'
