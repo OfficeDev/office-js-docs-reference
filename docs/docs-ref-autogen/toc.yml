@@ -1275,6 +1275,8 @@ items:
                 uid: word.Word.DocumentPropertyType
               - name: ErrorCodes
                 uid: word.Word.ErrorCodes
+              - name: EventType
+                uid: word.Word.EventType
               - name: FileContentFormat
                 uid: word.Word.FileContentFormat
               - name: HeaderFooterType

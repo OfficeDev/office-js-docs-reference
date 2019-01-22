@@ -34,6 +34,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "getActiveNotebook": {
               "kind": "method",
               "signature": "getActiveNotebook(): OneNote.Notebook;",
@@ -603,7 +624,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.Application object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.ApplicationData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -652,6 +732,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -814,7 +915,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.FloatingInk object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.FloatingInkData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -894,6 +1054,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "description": {
               "kind": "property",
               "signature": "description: string;",
@@ -1199,7 +1380,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.Image object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.ImageData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -1388,6 +1628,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -1522,7 +1783,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.InkAnalysis object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.InkAnalysisData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -1602,6 +1922,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -1736,7 +2077,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.InkAnalysisLine object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.InkAnalysisLineData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -1844,6 +2244,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -2059,7 +2480,75 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.InkAnalysisLineCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.InkAnalysisLineCollectionData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains an \"items\" array with shallow copies of any loaded properties from the collection's items."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -2139,6 +2628,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -2301,7 +2811,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.InkAnalysisParagraph object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.InkAnalysisParagraphData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -2381,6 +2950,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -2596,7 +3186,75 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.InkAnalysisParagraphCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.InkAnalysisParagraphCollectionData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains an \"items\" array with shallow copies of any loaded properties from the collection's items."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -2676,6 +3334,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -2866,7 +3545,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.InkAnalysisWord object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.InkAnalysisWordData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -2974,6 +3712,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -3189,7 +3948,75 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.InkAnalysisWordCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.InkAnalysisWordCollectionData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains an \"items\" array with shallow copies of any loaded properties from the collection's items."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -3269,6 +4096,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "floatingInk": {
               "kind": "property",
               "signature": "readonly floatingInk: OneNote.FloatingInk;",
@@ -3403,7 +4251,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.InkStroke object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.InkStrokeData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -3483,6 +4390,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -3698,7 +4626,75 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.InkStrokeCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.InkStrokeCollectionData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains an \"items\" array with shallow copies of any loaded properties from the collection's items."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -3859,6 +4855,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -4021,7 +5038,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.InkWord object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.InkWordData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -4129,6 +5205,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -4344,7 +5441,75 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.InkWordCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.InkWordCollectionData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains an \"items\" array with shallow copies of any loaded properties from the collection's items."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -4555,34 +5720,6 @@
                   "isVirtual": false,
                   "isOverride": false,
                   "isEventProperty": false
-                },
-                "pageContent": {
-                  "kind": "property",
-                  "signature": "pageContent?: OneNote.Interfaces.PageContentData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.PageContentData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the PageContent parent of the FloatingInk object. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
                 }
               }
             },
@@ -4726,62 +5863,6 @@
                     {
                       "kind": "text",
                       "text": "Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "pageContent": {
-                  "kind": "property",
-                  "signature": "pageContent?: OneNote.Interfaces.PageContentData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.PageContentData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent. This object defines the position of the Image on the page. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "paragraph": {
-                  "kind": "property",
-                  "signature": "paragraph?: OneNote.Interfaces.ParagraphData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.ParagraphData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -5014,34 +6095,6 @@
                     {
                       "kind": "text",
                       "text": "Gets the parent page object. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "paragraphs": {
-                  "kind": "property",
-                  "signature": "paragraphs?: OneNote.Interfaces.InkAnalysisParagraphData[];",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.InkAnalysisParagraphData[]",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the ink analysis paragraphs in this page. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -6092,34 +7145,6 @@
                   "isOverride": false,
                   "isEventProperty": false
                 },
-                "paragraph": {
-                  "kind": "property",
-                  "signature": "paragraph?: OneNote.Interfaces.ParagraphData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.ParagraphData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "The parent paragraph containing the ink word. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
                 "wordAlternates": {
                   "kind": "property",
                   "signature": "wordAlternates?: string[];",
@@ -6578,34 +7603,6 @@
                   "isOverride": false,
                   "isEventProperty": false
                 },
-                "pageContent": {
-                  "kind": "property",
-                  "signature": "pageContent?: OneNote.Interfaces.PageContentData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.PageContentData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the page. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
                 "paragraphs": {
                   "kind": "property",
                   "signature": "paragraphs?: OneNote.Interfaces.ParagraphData[];",
@@ -6912,34 +7909,6 @@
                     {
                       "kind": "text",
                       "text": "Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "parentPage": {
-                  "kind": "property",
-                  "signature": "parentPage?: OneNote.Interfaces.PageData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.PageData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the page that contains the PageContent object. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -7300,34 +8269,6 @@
                   "isOverride": false,
                   "isEventProperty": false
                 },
-                "parentSection": {
-                  "kind": "property",
-                  "signature": "parentSection?: OneNote.Interfaces.SectionData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.SectionData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the section that contains the page. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
                 "title": {
                   "kind": "property",
                   "signature": "title?: string;",
@@ -7656,34 +8597,6 @@
                   "isOverride": false,
                   "isEventProperty": false
                 },
-                "outline": {
-                  "kind": "property",
-                  "signature": "outline?: OneNote.Interfaces.OutlineData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.OutlineData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the Outline object that contains the Paragraph. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
                 "paragraphs": {
                   "kind": "property",
                   "signature": "paragraphs?: OneNote.Interfaces.ParagraphData[];",
@@ -7696,118 +8609,6 @@
                     {
                       "kind": "text",
                       "text": "The collection of paragraphs under this paragraph. Read only"
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "parentParagraph": {
-                  "kind": "property",
-                  "signature": "parentParagraph?: OneNote.Interfaces.ParagraphData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.ParagraphData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "parentParagraphOrNull": {
-                  "kind": "property",
-                  "signature": "parentParagraphOrNull?: OneNote.Interfaces.ParagraphData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.ParagraphData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "parentTableCell": {
-                  "kind": "property",
-                  "signature": "parentTableCell?: OneNote.Interfaces.TableCellData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.TableCellData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws ItemNotFound. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "parentTableCellOrNull": {
-                  "kind": "property",
-                  "signature": "parentTableCellOrNull?: OneNote.Interfaces.TableCellData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.TableCellData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -8040,34 +8841,6 @@
                     {
                       "kind": "text",
                       "text": "The language id of the text. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "paragraph": {
-                  "kind": "property",
-                  "signature": "paragraph?: OneNote.Interfaces.ParagraphData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.ParagraphData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the Paragraph object that contains the RichText object. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -8338,34 +9111,6 @@
                   "isOverride": false,
                   "isEventProperty": false
                 },
-                "notebook": {
-                  "kind": "property",
-                  "signature": "notebook?: OneNote.Interfaces.NotebookData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.NotebookData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the notebook that contains the section. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
                 "pages": {
                   "kind": "property",
                   "signature": "pages?: OneNote.Interfaces.PageData[];",
@@ -8378,62 +9123,6 @@
                     {
                       "kind": "text",
                       "text": "The collection of pages in the section. Read only"
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "parentSectionGroup": {
-                  "kind": "property",
-                  "signature": "parentSectionGroup?: OneNote.Interfaces.SectionGroupData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.SectionGroupData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the section group that contains the section. Throws ItemNotFound if the section is a direct child of the notebook. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "parentSectionGroupOrNull": {
-                  "kind": "property",
-                  "signature": "parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.SectionGroupData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the section group that contains the section. Returns null if the section is a direct child of the notebook. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -8632,90 +9321,6 @@
                     {
                       "kind": "text",
                       "text": "Gets the name of the section group. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "notebook": {
-                  "kind": "property",
-                  "signature": "notebook?: OneNote.Interfaces.NotebookData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.NotebookData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the notebook that contains the section group. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "parentSectionGroup": {
-                  "kind": "property",
-                  "signature": "parentSectionGroup?: OneNote.Interfaces.SectionGroupData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.SectionGroupData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child of the notebook. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "parentSectionGroupOrNull": {
-                  "kind": "property",
-                  "signature": "parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.SectionGroupData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the section group that contains the section group. Returns null if the section group is a direct child of the notebook. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -8958,34 +9563,6 @@
                   "isOverride": false,
                   "isEventProperty": false
                 },
-                "parentRow": {
-                  "kind": "property",
-                  "signature": "parentRow?: OneNote.Interfaces.TableRowData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.TableRowData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the parent row of the cell. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
                 "rowIndex": {
                   "kind": "property",
                   "signature": "rowIndex?: number;",
@@ -9174,34 +9751,6 @@
                     {
                       "kind": "text",
                       "text": "Gets the ID of the table. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "paragraph": {
-                  "kind": "property",
-                  "signature": "paragraph?: OneNote.Interfaces.ParagraphData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.ParagraphData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the Paragraph object that contains the Table object. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -9428,34 +9977,6 @@
                     {
                       "kind": "text",
                       "text": "Gets the ID of the row. Read-only."
-                    },
-                    {
-                      "kind": "paragraph"
-                    },
-                    {
-                      "kind": "text",
-                      "text": "[Api set: OneNoteApi 1.1]"
-                    }
-                  ],
-                  "remarks": [],
-                  "isBeta": false,
-                  "isSealed": false,
-                  "isVirtual": false,
-                  "isOverride": false,
-                  "isEventProperty": false
-                },
-                "parentTable": {
-                  "kind": "property",
-                  "signature": "parentTable?: OneNote.Interfaces.TableData;",
-                  "isOptional": true,
-                  "isReadOnly": false,
-                  "isStatic": false,
-                  "type": "OneNote.Interfaces.TableData",
-                  "deprecatedMessage": [],
-                  "summary": [
-                    {
-                      "kind": "text",
-                      "text": "Gets the parent table. Read-only."
                     },
                     {
                       "kind": "paragraph"
@@ -9755,6 +10276,27 @@
               "isOverride": false,
               "isEventProperty": false
             },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "getRestApiId": {
               "kind": "method",
               "signature": "getRestApiId(): OfficeExtension.ClientResult<string>;",
@@ -10004,7 +10546,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.Notebook object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.NotebookData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -10084,6 +10685,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -10343,7 +10965,75 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.NotebookCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.NotebookCollectionData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains an \"items\" array with shallow copies of any loaded properties from the collection's items."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -10423,6 +11113,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -10557,7 +11268,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.NoteTag object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.NoteTagData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -11593,6 +12363,27 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -11786,7 +12577,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.Outline object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.OutlineData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -12098,6 +12948,27 @@
                 {
                   "kind": "text",
                   "text": "[Api set: OneNoteApi 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
                 }
               ],
               "remarks": [],
@@ -12526,7 +13397,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.Page object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.PageData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -12634,6 +13564,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -12893,7 +13844,75 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.PageCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.PageCollectionData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains an \"items\" array with shallow copies of any loaded properties from the collection's items."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -12973,6 +13992,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "delete": {
               "kind": "method",
               "signature": "delete(): void;",
@@ -13250,7 +14290,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.PageContent object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.PageContentData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -13386,6 +14485,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -13601,7 +14721,75 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.PageContentCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.PageContentCollectionData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains an \"items\" array with shallow copies of any loaded properties from the collection's items."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -13782,6 +14970,27 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
+            },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
             },
             "delete": {
               "kind": "method",
@@ -14517,7 +15726,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.Paragraph object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.ParagraphData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -14625,6 +15893,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -14840,7 +16129,75 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.ParagraphCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.ParagraphCollectionData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains an \"items\" array with shallow copies of any loaded properties from the collection's items."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -15180,6 +16537,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "getHtml": {
               "kind": "method",
               "signature": "getHtml(): OfficeExtension.ClientResult<string>;",
@@ -15406,7 +16784,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.RichText object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.RichTextData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -15465,23 +16902,18 @@
         },
         "run": {
           "kind": "function",
-          "signature": "export function run<T>(object: OfficeExtension.ClientObject, batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;",
+          "signature": "export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;",
           "returnValue": {
             "type": "Promise<T>",
             "description": []
           },
           "parameters": {
-            "object": {
-              "name": "object",
-              "description": [
-                {
-                  "kind": "text",
-                  "text": "A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by \"context.sync()\"."
-                }
-              ],
+            "objects": {
+              "name": "objects",
+              "description": [],
               "isOptional": false,
               "isSpread": false,
-              "type": "OfficeExtension.ClientObject"
+              "type": "OfficeExtension.ClientObject[]"
             },
             "batch": {
               "name": "batch",
@@ -15500,31 +16932,10 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Executes a batch script that performs actions on the OneNote object model, using the request context of a previously-created API object."
+              "text": "Executes a batch script that performs actions on the OneNote object model, using the request context of previously-created API objects."
             }
           ],
-          "remarks": [
-            {
-              "kind": "text",
-              "text": "In addition to this signature, the method also has the following signatures:"
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "code",
-              "text": "run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;",
-              "highlighter": "plain"
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "code",
-              "text": "run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;",
-              "highlighter": "plain"
-            }
-          ],
+          "remarks": [],
           "isBeta": false
         },
         "Section": {
@@ -15613,6 +17024,27 @@
                 {
                   "kind": "text",
                   "text": "[Api set: OneNoteApi 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
                 }
               ],
               "remarks": [],
@@ -16099,7 +17531,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.Section object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.SectionData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -16207,6 +17698,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -16466,7 +17978,75 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.SectionCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.SectionCollectionData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains an \"items\" array with shallow copies of any loaded properties from the collection's items."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -16653,6 +18233,27 @@
                 {
                   "kind": "text",
                   "text": "[Api set: OneNoteApi 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
                 }
               ],
               "remarks": [],
@@ -16967,7 +18568,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.SectionGroup object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.SectionGroupData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -17047,6 +18707,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -17306,7 +18987,75 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.SectionGroupCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.SectionGroupCollectionData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains an \"items\" array with shallow copies of any loaded properties from the collection's items."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -17552,6 +19301,27 @@
                 {
                   "kind": "text",
                   "text": "[Api set: OneNoteApi 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
                 }
               ],
               "remarks": [],
@@ -17958,7 +19728,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.Table object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.TableData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -18335,6 +20164,27 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "id": {
               "kind": "property",
               "signature": "readonly id: string;",
@@ -18553,7 +20403,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.TableCell object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.TableCellData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -18633,6 +20542,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -18848,7 +20778,75 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.TableCellCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.TableCellCollectionData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains an \"items\" array with shallow copies of any loaded properties from the collection's items."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -19014,6 +21012,27 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
+            },
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
             },
             "id": {
               "kind": "property",
@@ -19272,7 +21291,66 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original OneNote.TableRow object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.TableRowData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains shallow copies of any loaded child properties from the original object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -19352,6 +21430,27 @@
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "context": {
+              "kind": "property",
+              "signature": "context: RequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object. This connects the add-in's process to the Office host application's process."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "count": {
               "kind": "property",
               "signature": "readonly count: number;",
@@ -19567,7 +21666,75 @@
               },
               "parameters": {},
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Overrides the JavaScript "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method in order to provide more useful output when an API object is passed to "
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify()",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ". ("
+                },
+                {
+                  "kind": "code",
+                  "text": "JSON.stringify",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ", in turn, calls the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method of the object that is passed to it.) Whereas the original "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.TableRowCollection",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " object is an API object, the "
+                },
+                {
+                  "kind": "code",
+                  "text": "toJSON",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " method returns a plain JavaScript object (typed as "
+                },
+                {
+                  "kind": "code",
+                  "text": "OneNote.Interfaces.TableRowCollectionData",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": ") that contains an \"items\" array with shallow copies of any loaded properties from the collection's items."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,

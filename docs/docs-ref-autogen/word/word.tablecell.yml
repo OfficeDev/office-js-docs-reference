@@ -17,6 +17,7 @@ items:
       - word.Word.TableCell.body
       - word.Word.TableCell.cellIndex
       - word.Word.TableCell.columnWidth
+      - word.Word.TableCell.context
       - word.Word.TableCell.deleteColumn
       - word.Word.TableCell.deleteRow
       - word.Word.TableCell.getBorder
@@ -83,6 +84,20 @@ items:
       return:
         type:
           - number
+  - uid: word.Word.TableCell.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.TableCell.deleteColumn
     summary: |-
       Deletes the column containing this cell. This is applicable to uniform tables.

@@ -18,6 +18,7 @@ items:
     children:
       - word.Word.DocumentCreated.body
       - word.Word.DocumentCreated.contentControls
+      - word.Word.DocumentCreated.context
       - word.Word.DocumentCreated.load
       - word.Word.DocumentCreated.open
       - word.Word.DocumentCreated.properties
@@ -63,6 +64,20 @@ items:
       return:
         type:
           - word.Word.ContentControlCollection
+  - uid: word.Word.DocumentCreated.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.DocumentCreated.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

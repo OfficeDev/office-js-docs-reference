@@ -10,7 +10,6 @@ items:
     package: onenote
     children:
       - onenote.OneNote.Interfaces.OutlineData.id
-      - onenote.OneNote.Interfaces.OutlineData.pageContent
       - onenote.OneNote.Interfaces.OutlineData.paragraphs
   - uid: onenote.OneNote.Interfaces.OutlineData.id
     summary: |-
@@ -27,23 +26,6 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.OutlineData.pageContent
-    summary: >-
-      Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the
-      page. Read-only.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: pageContent
-    fullName: pageContent
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'pageContent?: OneNote.Interfaces.PageContentData;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.PageContentData
   - uid: onenote.OneNote.Interfaces.OutlineData.paragraphs
     summary: |-
       Gets the collection of Paragraph objects in the Outline. Read-only.

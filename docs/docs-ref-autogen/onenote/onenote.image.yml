@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
+      - onenote.OneNote.Image.context
       - onenote.OneNote.Image.description
       - onenote.OneNote.Image.getBase64Image
       - onenote.OneNote.Image.height
@@ -27,6 +28,20 @@ items:
       - onenote.OneNote.Image.track
       - onenote.OneNote.Image.untrack
       - onenote.OneNote.Image.width
+  - uid: onenote.OneNote.Image.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.Image.description
     summary: |-
       Gets or sets the description of the Image.
@@ -357,6 +372,12 @@ items:
         type:
           - onenote.OneNote.Paragraph
   - uid: onenote.OneNote.Image.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.Image object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `OneNote.Interfaces.ImageData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

@@ -23,6 +23,7 @@ items:
       - word.Word.ContentControl.clear
       - word.Word.ContentControl.color
       - word.Word.ContentControl.contentControls
+      - word.Word.ContentControl.context
       - word.Word.ContentControl.delete
       - word.Word.ContentControl.font
       - word.Word.ContentControl.getHtml
@@ -197,6 +198,20 @@ items:
       return:
         type:
           - word.Word.ContentControlCollection
+  - uid: word.Word.ContentControl.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.ContentControl.delete
     summary: |-
       Deletes the content control and its content. If keepContent is set to true, the content is not deleted.
@@ -278,8 +293,13 @@ items:
         type:
           - word.Word.Font
   - uid: word.Word.ContentControl.getHtml
-    summary: |-
-      Gets the HTML representation of the content control object.
+    summary: >-
+      Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the
+      formatting will be a close, but not exact, match for of the formatting of the document. This method does not
+      return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you
+      need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML
+      to HTML.
+
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getHtml()
@@ -740,7 +760,7 @@ items:
   - uid: word.Word.ContentControl.insertParagraph
     summary: >-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or
-      'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
+      'After'.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -1203,8 +1223,10 @@ items:
         type:
           - Word.Table
   - uid: word.Word.ContentControl.placeholderText
-    summary: |-
-      Gets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+    summary: >-
+      Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control
+      is empty.
+
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: placeholderText

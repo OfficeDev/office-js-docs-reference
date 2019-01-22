@@ -16,6 +16,7 @@ items:
     children:
       - word.Word.InlinePicture.altTextDescription
       - word.Word.InlinePicture.altTextTitle
+      - word.Word.InlinePicture.context
       - word.Word.InlinePicture.delete
       - word.Word.InlinePicture.getBase64ImageSrc
       - word.Word.InlinePicture.getNext
@@ -75,6 +76,20 @@ items:
       return:
         type:
           - string
+  - uid: word.Word.InlinePicture.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.InlinePicture.delete
     summary: |-
       Deletes the inline picture from the document.
@@ -270,8 +285,10 @@ items:
         type:
           - string
   - uid: word.Word.InlinePicture.insertBreak
-    summary: |-
-      Inserts a break at the specified location in the main document.
+    summary: >-
+      Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
+      'After'.
+
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertBreak(breakType, insertLocation)'
@@ -312,7 +329,7 @@ items:
         description: ''
   - uid: word.Word.InlinePicture.insertFileFromBase64
     summary: |-
-      Inserts a document at the specified location.
+      Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertFileFromBase64(base64File, insertLocation)'
@@ -337,7 +354,7 @@ items:
             - Word.InsertLocation
   - uid: word.Word.InlinePicture.insertHtml
     summary: |-
-      Inserts HTML at the specified location.
+      Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertHtml(html, insertLocation)'
@@ -391,7 +408,7 @@ items:
             - Word.InsertLocation
   - uid: word.Word.InlinePicture.insertOoxml
     summary: |-
-      Inserts OOXML at the specified location.
+      Inserts OOXML at the specified location. The insertLocation value can be 'Before' or 'After'.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertOoxml(ooxml, insertLocation)'
@@ -416,7 +433,7 @@ items:
             - Word.InsertLocation
   - uid: word.Word.InlinePicture.insertParagraph
     summary: |-
-      Inserts a paragraph at the specified location.
+      Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
@@ -441,7 +458,7 @@ items:
             - Word.InsertLocation
   - uid: word.Word.InlinePicture.insertText
     summary: |-
-      Inserts text at the specified location.
+      Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertText(text, insertLocation)'
