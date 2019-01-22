@@ -14,8 +14,6 @@ items:
       - onenote.OneNote.Interfaces.ImageData.hyperlink
       - onenote.OneNote.Interfaces.ImageData.id
       - onenote.OneNote.Interfaces.ImageData.ocrData
-      - onenote.OneNote.Interfaces.ImageData.pageContent
-      - onenote.OneNote.Interfaces.ImageData.paragraph
       - onenote.OneNote.Interfaces.ImageData.width
   - uid: onenote.OneNote.Interfaces.ImageData.description
     summary: |-
@@ -92,40 +90,6 @@ items:
       return:
         type:
           - onenote.OneNote.ImageOcrData
-  - uid: onenote.OneNote.Interfaces.ImageData.pageContent
-    summary: >-
-      Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent.
-      This object defines the position of the Image on the page. Read-only.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: pageContent
-    fullName: pageContent
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'pageContent?: OneNote.Interfaces.PageContentData;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.PageContentData
-  - uid: onenote.OneNote.Interfaces.ImageData.paragraph
-    summary: >-
-      Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
-      Read-only.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: paragraph
-    fullName: paragraph
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'paragraph?: OneNote.Interfaces.ParagraphData;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.ParagraphData
   - uid: onenote.OneNote.Interfaces.ImageData.width
     summary: |-
       Gets or sets the width of the Image layout.

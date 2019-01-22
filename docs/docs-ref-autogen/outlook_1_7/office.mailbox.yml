@@ -194,8 +194,8 @@ items:
       Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs
       (such as the [Outlook Mail
       API](https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations) or
-      the [Microsoft Graph](http://graph.microsoft.io/)<!-- -->. The convertToRestId method converts an EWS-formatted ID
-      into the proper format for REST.
+      the [Microsoft Graph](https://graph.microsoft.io/)<!-- -->. The convertToRestId method converts an EWS-formatted
+      ID into the proper format for REST.
     name: 'convertToRestId(itemId, restVersion)'
     fullName: convertToRestId
     langs:
@@ -641,7 +641,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The token is provided as a string in the asyncResult.value property.
+            of type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property. If there
+            was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
+            information.
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: Outlook_1_7.Office.Mailbox.getUserIdentityTokenAsync
@@ -677,7 +679,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The token is provided as a string in the asyncResult.value property.
+            of type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property. If there
+            was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
+            information.
           type:
             - '(result: AsyncResult<string>) => void'
         - id: userContext
@@ -794,7 +798,7 @@ items:
             - any
   - uid: Outlook_1_7.Office.Mailbox.removeHandlerAsync
     summary: |-
-      Removes an event handler for a supported event.
+      Removes the event handlers for a supported event type.
 
       Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
 
@@ -806,15 +810,15 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
-    name: 'removeHandlerAsync(eventType, handler, options, callback)'
+    name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: removeHandlerAsync
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, handler: (type: EventType) => void, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: Office.EventType, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -824,12 +828,6 @@ items:
           description: The event that should revoke the handler.
           type:
             - Office.EventType
-        - id: handler
-          description: >-
-            The function to handle the event. The function must accept a single parameter, which is an object literal.
-            The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
-          type:
-            - '(type: EventType) => void'
         - id: options
           description: 'Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:

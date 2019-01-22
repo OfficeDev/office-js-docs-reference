@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
+      - onenote.OneNote.InkWord.context
       - onenote.OneNote.InkWord.id
       - onenote.OneNote.InkWord.languageId
       - onenote.OneNote.InkWord.load
@@ -22,6 +23,20 @@ items:
       - onenote.OneNote.InkWord.track
       - onenote.OneNote.InkWord.untrack
       - onenote.OneNote.InkWord.wordAlternates
+  - uid: onenote.OneNote.InkWord.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.InkWord.id
     summary: |-
       Gets the ID of the InkWord object. Read-only.
@@ -102,6 +117,12 @@ items:
         type:
           - onenote.OneNote.Paragraph
   - uid: onenote.OneNote.InkWord.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.InkWord object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `OneNote.Interfaces.InkWordData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

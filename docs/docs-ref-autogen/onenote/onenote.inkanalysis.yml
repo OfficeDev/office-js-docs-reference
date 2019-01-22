@@ -14,12 +14,27 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
+      - onenote.OneNote.InkAnalysis.context
       - onenote.OneNote.InkAnalysis.id
       - onenote.OneNote.InkAnalysis.load
       - onenote.OneNote.InkAnalysis.page
       - onenote.OneNote.InkAnalysis.toJSON
       - onenote.OneNote.InkAnalysis.track
       - onenote.OneNote.InkAnalysis.untrack
+  - uid: onenote.OneNote.InkAnalysis.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.InkAnalysis.id
     summary: |-
       Gets the ID of the InkAnalysis object. Read-only.
@@ -114,6 +129,12 @@ items:
         type:
           - onenote.OneNote.Page
   - uid: onenote.OneNote.InkAnalysis.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.InkAnalysis object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
     name: toJSON()
     fullName: toJSON
     langs:

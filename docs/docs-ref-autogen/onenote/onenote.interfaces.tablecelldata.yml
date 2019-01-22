@@ -12,7 +12,6 @@ items:
       - onenote.OneNote.Interfaces.TableCellData.cellIndex
       - onenote.OneNote.Interfaces.TableCellData.id
       - onenote.OneNote.Interfaces.TableCellData.paragraphs
-      - onenote.OneNote.Interfaces.TableCellData.parentRow
       - onenote.OneNote.Interfaces.TableCellData.rowIndex
       - onenote.OneNote.Interfaces.TableCellData.shadingColor
   - uid: onenote.OneNote.Interfaces.TableCellData.cellIndex
@@ -60,21 +59,6 @@ items:
       return:
         type:
           - 'OneNote.Interfaces.ParagraphData[]'
-  - uid: onenote.OneNote.Interfaces.TableCellData.parentRow
-    summary: |-
-      Gets the parent row of the cell. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: parentRow
-    fullName: parentRow
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentRow?: OneNote.Interfaces.TableRowData;'
-      return:
-        type:
-          - OneNote.Interfaces.TableRowData
   - uid: onenote.OneNote.Interfaces.TableCellData.rowIndex
     summary: |-
       Gets the index of the cell's row in the table. Read-only.

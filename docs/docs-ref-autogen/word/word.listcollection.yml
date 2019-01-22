@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: word
     children:
+      - word.Word.ListCollection.context
       - word.Word.ListCollection.getById
       - word.Word.ListCollection.getByIdOrNullObject
       - word.Word.ListCollection.getFirst
@@ -24,6 +25,20 @@ items:
       - word.Word.ListCollection.toJSON
       - word.Word.ListCollection.track
       - word.Word.ListCollection.untrack
+  - uid: word.Word.ListCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.ListCollection.getById
     summary: |-
       Gets a list by its identifier. Throws if there isn't a list with the identifier in this collection.

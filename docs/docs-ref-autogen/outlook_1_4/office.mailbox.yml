@@ -142,8 +142,8 @@ items:
       Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs
       (such as the [Outlook Mail
       API](https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations) or
-      the [Microsoft Graph](http://graph.microsoft.io/)<!-- -->. The convertToRestId method converts an EWS-formatted ID
-      into the proper format for REST.
+      the [Microsoft Graph](https://graph.microsoft.io/)<!-- -->. The convertToRestId method converts an EWS-formatted
+      ID into the proper format for REST.
     name: 'convertToRestId(itemId, restVersion)'
     fullName: convertToRestId
     langs:
@@ -477,7 +477,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The token is provided as a string in the asyncResult.value property.
+            of type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property. If there
+            was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
+            information.
           type:
             - '(result: AsyncResult<string>) => void'
         - id: userContext
@@ -517,7 +519,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The token is provided as a string in the asyncResult.value property.
+            of type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property. If there
+            was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
+            information.
           type:
             - '(result: AsyncResult<string>) => void'
         - id: userContext

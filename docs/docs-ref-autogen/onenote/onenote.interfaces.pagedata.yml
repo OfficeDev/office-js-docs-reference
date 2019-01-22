@@ -15,7 +15,6 @@ items:
       - onenote.OneNote.Interfaces.PageData.id
       - onenote.OneNote.Interfaces.PageData.inkAnalysisOrNull
       - onenote.OneNote.Interfaces.PageData.pageLevel
-      - onenote.OneNote.Interfaces.PageData.parentSection
       - onenote.OneNote.Interfaces.PageData.title
       - onenote.OneNote.Interfaces.PageData.webUrl
   - uid: onenote.OneNote.Interfaces.PageData.classNotebookPageSource
@@ -108,21 +107,6 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.Interfaces.PageData.parentSection
-    summary: |-
-      Gets the section that contains the page. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: parentSection
-    fullName: parentSection
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentSection?: OneNote.Interfaces.SectionData;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.SectionData
   - uid: onenote.OneNote.Interfaces.PageData.title
     summary: |-
       Gets or sets the title of the page.

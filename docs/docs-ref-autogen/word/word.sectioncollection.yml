@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: word
     children:
+      - word.Word.SectionCollection.context
       - word.Word.SectionCollection.getFirst
       - word.Word.SectionCollection.getFirstOrNullObject
       - word.Word.SectionCollection.items
@@ -21,6 +22,20 @@ items:
       - word.Word.SectionCollection.toJSON
       - word.Word.SectionCollection.track
       - word.Word.SectionCollection.untrack
+  - uid: word.Word.SectionCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.SectionCollection.getFirst
     summary: |-
       Gets the first section in this collection. Throws if this collection is empty.

@@ -18,6 +18,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: word
     children:
+      - word.Word.ContentControlCollection.context
       - word.Word.ContentControlCollection.getById
       - word.Word.ContentControlCollection.getByIdOrNullObject
       - word.Word.ContentControlCollection.getByTag
@@ -31,6 +32,20 @@ items:
       - word.Word.ContentControlCollection.toJSON
       - word.Word.ContentControlCollection.track
       - word.Word.ContentControlCollection.untrack
+  - uid: word.Word.ContentControlCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: word.Word.ContentControlCollection.getById
     summary: >-
       Gets a content control by its identifier. Throws if there isn't a content control with the identifier in this
