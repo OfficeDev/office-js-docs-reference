@@ -24,7 +24,7 @@ items:
       - outlook.Office.Item.addHandlerAsync
       - outlook.Office.Item.body
       - outlook.Office.Item.dateTimeCreated
-      - outlook.Office.Item.dateTimeModifed
+      - outlook.Office.Item.dateTimeModified
       - outlook.Office.Item.getAttachmentContentAsync
       - outlook.Office.Item.getInitializationContextAsync
       - outlook.Office.Item.getSharedPropertiesAsync
@@ -156,7 +156,7 @@ items:
       return:
         type:
           - Date
-  - uid: outlook.Office.Item.dateTimeModifed
+  - uid: outlook.Office.Item.dateTimeModified
     summary: |-
       Gets the date and time that an item was last modified. Read mode only.
 
@@ -171,13 +171,13 @@ items:
 
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
-    name: dateTimeModifed
-    fullName: dateTimeModifed
+    name: dateTimeModified
+    fullName: dateTimeModified
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'dateTimeModifed: Date;'
+      content: 'dateTimeModified: Date;'
       return:
         type:
           - Date

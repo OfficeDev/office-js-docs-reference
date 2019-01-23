@@ -1987,7 +1987,7 @@ export declare namespace Office {
          *
          * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          */
-        dateTimeModifed: Date;
+        dateTimeModified: Date;
         /**
          * Gets or sets the date and time that the appointment is to end.
          *
@@ -3002,7 +3002,7 @@ export declare namespace Office {
          *
          * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          */
-        dateTimeModifed: Date;
+        dateTimeModified: Date;
         /**
          * Gets the date and time that the appointment is to end.
          *
@@ -3675,7 +3675,7 @@ export declare namespace Office {
          *
          * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          */
-        dateTimeModifed: Date;
+        dateTimeModified: Date;
         /**
          * Gets the type of item that an instance represents.
          *
@@ -4302,7 +4302,7 @@ export declare namespace Office {
          *
          * @param attachmentId - The identifier of the attachment to remove.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
-         *                 type {@link Offfice.AsyncResult}. 
+         *                 type {@link Office.AsyncResult}. 
          *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
          */
         removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;
@@ -5058,7 +5058,7 @@ export declare namespace Office {
          *
          * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          */
-        dateTimeModifed: Date;
+        dateTimeModified: Date;
         /**
          * Gets the email address of the sender of a message.
          *
@@ -6060,7 +6060,7 @@ export declare namespace Office {
          *
          * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          */
-        dateTimeModifed: Date;
+        dateTimeModified: Date;
         /**
          * Gets the email address of the sender of a message.
          *
@@ -6686,7 +6686,7 @@ export declare namespace Office {
          */
         date: number;
         /**
-         * Integer value repesenting the year.
+         * Integer value representing the year.
          */
         year: number;
         /**

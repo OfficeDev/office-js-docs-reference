@@ -23,7 +23,7 @@ items:
       - outlook.Office.AppointmentCompose.body
       - outlook.Office.AppointmentCompose.close
       - outlook.Office.AppointmentCompose.dateTimeCreated
-      - outlook.Office.AppointmentCompose.dateTimeModifed
+      - outlook.Office.AppointmentCompose.dateTimeModified
       - outlook.Office.AppointmentCompose.end
       - outlook.Office.AppointmentCompose.getAttachmentsAsync
       - outlook.Office.AppointmentCompose.getInitializationContextAsync
@@ -493,7 +493,7 @@ items:
       return:
         type:
           - Date
-  - uid: outlook.Office.AppointmentCompose.dateTimeModifed
+  - uid: outlook.Office.AppointmentCompose.dateTimeModified
     summary: |-
       Gets the date and time that an item was last modified. Read mode only.
 
@@ -509,13 +509,13 @@ items:
 
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
-    name: dateTimeModifed
-    fullName: dateTimeModifed
+    name: dateTimeModified
+    fullName: dateTimeModified
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'dateTimeModifed: Date;'
+      content: 'dateTimeModified: Date;'
       return:
         type:
           - Date

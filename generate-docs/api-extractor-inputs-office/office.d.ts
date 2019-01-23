@@ -6574,7 +6574,7 @@ export declare namespace Office {
         /**
          * The start date for the baseline task.
          */
-        Basline3Start,
+        Baseline3Start,
         /**
          * The total person-hours scheduled for the baseline task, in minutes.
          */

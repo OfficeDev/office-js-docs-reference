@@ -20,7 +20,7 @@ items:
       - outlook.Office.AppointmentRead.attachments
       - outlook.Office.AppointmentRead.body
       - outlook.Office.AppointmentRead.dateTimeCreated
-      - outlook.Office.AppointmentRead.dateTimeModifed
+      - outlook.Office.AppointmentRead.dateTimeModified
       - outlook.Office.AppointmentRead.displayReplyAllForm
       - outlook.Office.AppointmentRead.displayReplyForm
       - outlook.Office.AppointmentRead.end
@@ -210,7 +210,7 @@ items:
       return:
         type:
           - Date
-  - uid: outlook.Office.AppointmentRead.dateTimeModifed
+  - uid: outlook.Office.AppointmentRead.dateTimeModified
     summary: |-
       Gets the date and time that an item was last modified. Read mode only.
 
@@ -225,13 +225,13 @@ items:
 
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
-    name: dateTimeModifed
-    fullName: dateTimeModifed
+    name: dateTimeModified
+    fullName: dateTimeModified
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'dateTimeModifed: Date;'
+      content: 'dateTimeModified: Date;'
       return:
         type:
           - Date
