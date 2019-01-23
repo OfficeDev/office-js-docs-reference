@@ -1,7 +1,6 @@
-////////////////////////////////////////////////////////////////
+import { OfficeExtension } from "../api-extractor-inputs-office/office"////////////////////////////////////////////////////////////////
 /////////////////////// Begin Excel APIs ///////////////////////
 ////////////////////////////////////////////////////////////////
-import { OfficeExtension } from "../api-extractor-inputs-office/office"
 
 export declare namespace Excel {
     /**
@@ -14258,7 +14257,7 @@ export declare namespace Excel {
         confidence_T(alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, size: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          *
-         * Converts a number from one measurement system to another.
+         * Converts a number from one measurement system to anOffice.
          *
          * [Api set: ExcelApi 1.2]
          *

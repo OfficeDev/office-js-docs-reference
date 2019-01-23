@@ -7,184 +7,184 @@ items:
       - typeScript
     type: package
     children:
-      - outlook.Outlook.Appointment
-      - outlook.Outlook.AppointmentCompose
-      - outlook.Outlook.AppointmentForm
-      - outlook.Outlook.AppointmentRead
-      - outlook.Outlook.AttachmentContent
-      - outlook.Outlook.AttachmentDetails
-      - outlook.Outlook.Body
-      - outlook.Outlook.CoercionTypeOptions
-      - outlook.Outlook.Contact
-      - outlook.Outlook.CustomProperties
-      - outlook.Outlook.Diagnostics
-      - outlook.Outlook.EmailAddressDetails
-      - outlook.Outlook.EmailUser
-      - outlook.Outlook.Entities
-      - outlook.Outlook.From
-      - outlook.Outlook.InternetHeaders
-      - outlook.Outlook.Item
-      - outlook.Outlook.ItemCompose
-      - outlook.Outlook.ItemRead
-      - outlook.Outlook.LocalClientTime
-      - outlook.Outlook.Location
-      - outlook.Outlook.Mailbox
-      - outlook.Outlook.MailboxEnums.AttachmentContentFormat
-      - outlook.Outlook.MailboxEnums.AttachmentStatus
-      - outlook.Outlook.MailboxEnums.AttachmentType
-      - outlook.Outlook.MailboxEnums.Days
-      - outlook.Outlook.MailboxEnums.DelegatePermissions
-      - outlook.Outlook.MailboxEnums.EntityType
-      - outlook.Outlook.MailboxEnums.ItemNotificationMessageType
-      - outlook.Outlook.MailboxEnums.ItemType
-      - outlook.Outlook.MailboxEnums.Month
-      - outlook.Outlook.MailboxEnums.OWAView
-      - outlook.Outlook.MailboxEnums.RecipientType
-      - outlook.Outlook.MailboxEnums.RecurrenceTimeZone
-      - outlook.Outlook.MailboxEnums.RecurrenceType
-      - outlook.Outlook.MailboxEnums.ResponseType
-      - outlook.Outlook.MailboxEnums.RestVersion
-      - outlook.Outlook.MailboxEnums.WeekNumber
-      - outlook.Outlook.MeetingSuggestion
-      - outlook.Outlook.Message
-      - outlook.Outlook.MessageCompose
-      - outlook.Outlook.MessageRead
-      - outlook.Outlook.NotificationMessageDetails
-      - outlook.Outlook.NotificationMessages
-      - outlook.Outlook.Organizer
-      - outlook.Outlook.PhoneNumber
-      - outlook.Outlook.Recipients
-      - outlook.Outlook.Recurrence
-      - outlook.Outlook.RecurrenceProperties
-      - outlook.Outlook.RecurrenceTimeZone
-      - outlook.Outlook.ReplyFormAttachment
-      - outlook.Outlook.ReplyFormData
-      - outlook.Outlook.RoamingSettings
-      - outlook.Outlook.SeriesTime
-      - outlook.Outlook.SharedProperties
-      - outlook.Outlook.SourceProperty
-      - outlook.Outlook.Subject
-      - outlook.Outlook.TaskSuggestion
-      - outlook.Outlook.Time
-      - outlook.Outlook.UserProfile
+      - outlook.Office.Appointment
+      - outlook.Office.AppointmentCompose
+      - outlook.Office.AppointmentForm
+      - outlook.Office.AppointmentRead
+      - outlook.Office.AttachmentContent
+      - outlook.Office.AttachmentDetails
+      - outlook.Office.Body
+      - outlook.Office.CoercionTypeOptions
+      - outlook.Office.Contact
+      - outlook.Office.CustomProperties
+      - outlook.Office.Diagnostics
+      - outlook.Office.EmailAddressDetails
+      - outlook.Office.EmailUser
+      - outlook.Office.Entities
+      - outlook.Office.From
+      - outlook.Office.InternetHeaders
+      - outlook.Office.Item
+      - outlook.Office.ItemCompose
+      - outlook.Office.ItemRead
+      - outlook.Office.LocalClientTime
+      - outlook.Office.Location
+      - outlook.Office.Mailbox
+      - outlook.Office.MailboxEnums.AttachmentContentFormat
+      - outlook.Office.MailboxEnums.AttachmentStatus
+      - outlook.Office.MailboxEnums.AttachmentType
+      - outlook.Office.MailboxEnums.Days
+      - outlook.Office.MailboxEnums.DelegatePermissions
+      - outlook.Office.MailboxEnums.EntityType
+      - outlook.Office.MailboxEnums.ItemNotificationMessageType
+      - outlook.Office.MailboxEnums.ItemType
+      - outlook.Office.MailboxEnums.Month
+      - outlook.Office.MailboxEnums.OWAView
+      - outlook.Office.MailboxEnums.RecipientType
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone
+      - outlook.Office.MailboxEnums.RecurrenceType
+      - outlook.Office.MailboxEnums.ResponseType
+      - outlook.Office.MailboxEnums.RestVersion
+      - outlook.Office.MailboxEnums.WeekNumber
+      - outlook.Office.MeetingSuggestion
+      - outlook.Office.Message
+      - outlook.Office.MessageCompose
+      - outlook.Office.MessageRead
+      - outlook.Office.NotificationMessageDetails
+      - outlook.Office.NotificationMessages
+      - outlook.Office.Organizer
+      - outlook.Office.PhoneNumber
+      - outlook.Office.Recipients
+      - outlook.Office.Recurrence
+      - outlook.Office.RecurrenceProperties
+      - outlook.Office.RecurrenceTimeZone
+      - outlook.Office.ReplyFormAttachment
+      - outlook.Office.ReplyFormData
+      - outlook.Office.RoamingSettings
+      - outlook.Office.SeriesTime
+      - outlook.Office.SharedProperties
+      - outlook.Office.SourceProperty
+      - outlook.Office.Subject
+      - outlook.Office.TaskSuggestion
+      - outlook.Office.Time
+      - outlook.Office.UserProfile
 references:
-  - uid: outlook.Outlook.Appointment
-    name: Outlook.Appointment
-  - uid: outlook.Outlook.AppointmentCompose
-    name: Outlook.AppointmentCompose
-  - uid: outlook.Outlook.AppointmentForm
-    name: Outlook.AppointmentForm
-  - uid: outlook.Outlook.AppointmentRead
-    name: Outlook.AppointmentRead
-  - uid: outlook.Outlook.AttachmentContent
-    name: Outlook.AttachmentContent
-  - uid: outlook.Outlook.AttachmentDetails
-    name: Outlook.AttachmentDetails
-  - uid: outlook.Outlook.Body
-    name: Outlook.Body
-  - uid: outlook.Outlook.CoercionTypeOptions
-    name: Outlook.CoercionTypeOptions
-  - uid: outlook.Outlook.Contact
-    name: Outlook.Contact
-  - uid: outlook.Outlook.CustomProperties
-    name: Outlook.CustomProperties
-  - uid: outlook.Outlook.Diagnostics
-    name: Outlook.Diagnostics
-  - uid: outlook.Outlook.EmailAddressDetails
-    name: Outlook.EmailAddressDetails
-  - uid: outlook.Outlook.EmailUser
-    name: Outlook.EmailUser
-  - uid: outlook.Outlook.Entities
-    name: Outlook.Entities
-  - uid: outlook.Outlook.From
-    name: Outlook.From
-  - uid: outlook.Outlook.InternetHeaders
-    name: Outlook.InternetHeaders
-  - uid: outlook.Outlook.Item
-    name: Outlook.Item
-  - uid: outlook.Outlook.ItemCompose
-    name: Outlook.ItemCompose
-  - uid: outlook.Outlook.ItemRead
-    name: Outlook.ItemRead
-  - uid: outlook.Outlook.LocalClientTime
-    name: Outlook.LocalClientTime
-  - uid: outlook.Outlook.Location
-    name: Outlook.Location
-  - uid: outlook.Outlook.Mailbox
-    name: Outlook.Mailbox
-  - uid: outlook.Outlook.MailboxEnums.AttachmentContentFormat
-    name: Outlook.MailboxEnums.AttachmentContentFormat
-  - uid: outlook.Outlook.MailboxEnums.AttachmentStatus
-    name: Outlook.MailboxEnums.AttachmentStatus
-  - uid: outlook.Outlook.MailboxEnums.AttachmentType
-    name: Outlook.MailboxEnums.AttachmentType
-  - uid: outlook.Outlook.MailboxEnums.Days
-    name: Outlook.MailboxEnums.Days
-  - uid: outlook.Outlook.MailboxEnums.DelegatePermissions
-    name: Outlook.MailboxEnums.DelegatePermissions
-  - uid: outlook.Outlook.MailboxEnums.EntityType
-    name: Outlook.MailboxEnums.EntityType
-  - uid: outlook.Outlook.MailboxEnums.ItemNotificationMessageType
-    name: Outlook.MailboxEnums.ItemNotificationMessageType
-  - uid: outlook.Outlook.MailboxEnums.ItemType
-    name: Outlook.MailboxEnums.ItemType
-  - uid: outlook.Outlook.MailboxEnums.Month
-    name: Outlook.MailboxEnums.Month
-  - uid: outlook.Outlook.MailboxEnums.OWAView
-    name: Outlook.MailboxEnums.OWAView
-  - uid: outlook.Outlook.MailboxEnums.RecipientType
-    name: Outlook.MailboxEnums.RecipientType
-  - uid: outlook.Outlook.MailboxEnums.RecurrenceTimeZone
-    name: Outlook.MailboxEnums.RecurrenceTimeZone
-  - uid: outlook.Outlook.MailboxEnums.RecurrenceType
-    name: Outlook.MailboxEnums.RecurrenceType
-  - uid: outlook.Outlook.MailboxEnums.ResponseType
-    name: Outlook.MailboxEnums.ResponseType
-  - uid: outlook.Outlook.MailboxEnums.RestVersion
-    name: Outlook.MailboxEnums.RestVersion
-  - uid: outlook.Outlook.MailboxEnums.WeekNumber
-    name: Outlook.MailboxEnums.WeekNumber
-  - uid: outlook.Outlook.MeetingSuggestion
-    name: Outlook.MeetingSuggestion
-  - uid: outlook.Outlook.Message
-    name: Outlook.Message
-  - uid: outlook.Outlook.MessageCompose
-    name: Outlook.MessageCompose
-  - uid: outlook.Outlook.MessageRead
-    name: Outlook.MessageRead
-  - uid: outlook.Outlook.NotificationMessageDetails
-    name: Outlook.NotificationMessageDetails
-  - uid: outlook.Outlook.NotificationMessages
-    name: Outlook.NotificationMessages
-  - uid: outlook.Outlook.Organizer
-    name: Outlook.Organizer
-  - uid: outlook.Outlook.PhoneNumber
-    name: Outlook.PhoneNumber
-  - uid: outlook.Outlook.Recipients
-    name: Outlook.Recipients
-  - uid: outlook.Outlook.Recurrence
-    name: Outlook.Recurrence
-  - uid: outlook.Outlook.RecurrenceProperties
-    name: Outlook.RecurrenceProperties
-  - uid: outlook.Outlook.RecurrenceTimeZone
-    name: Outlook.RecurrenceTimeZone
-  - uid: outlook.Outlook.ReplyFormAttachment
-    name: Outlook.ReplyFormAttachment
-  - uid: outlook.Outlook.ReplyFormData
-    name: Outlook.ReplyFormData
-  - uid: outlook.Outlook.RoamingSettings
-    name: Outlook.RoamingSettings
-  - uid: outlook.Outlook.SeriesTime
-    name: Outlook.SeriesTime
-  - uid: outlook.Outlook.SharedProperties
-    name: Outlook.SharedProperties
-  - uid: outlook.Outlook.SourceProperty
-    name: Outlook.SourceProperty
-  - uid: outlook.Outlook.Subject
-    name: Outlook.Subject
-  - uid: outlook.Outlook.TaskSuggestion
-    name: Outlook.TaskSuggestion
-  - uid: outlook.Outlook.Time
-    name: Outlook.Time
-  - uid: outlook.Outlook.UserProfile
-    name: Outlook.UserProfile
+  - uid: outlook.Office.Appointment
+    name: Office.Appointment
+  - uid: outlook.Office.AppointmentCompose
+    name: Office.AppointmentCompose
+  - uid: outlook.Office.AppointmentForm
+    name: Office.AppointmentForm
+  - uid: outlook.Office.AppointmentRead
+    name: Office.AppointmentRead
+  - uid: outlook.Office.AttachmentContent
+    name: Office.AttachmentContent
+  - uid: outlook.Office.AttachmentDetails
+    name: Office.AttachmentDetails
+  - uid: outlook.Office.Body
+    name: Office.Body
+  - uid: outlook.Office.CoercionTypeOptions
+    name: Office.CoercionTypeOptions
+  - uid: outlook.Office.Contact
+    name: Office.Contact
+  - uid: outlook.Office.CustomProperties
+    name: Office.CustomProperties
+  - uid: outlook.Office.Diagnostics
+    name: Office.Diagnostics
+  - uid: outlook.Office.EmailAddressDetails
+    name: Office.EmailAddressDetails
+  - uid: outlook.Office.EmailUser
+    name: Office.EmailUser
+  - uid: outlook.Office.Entities
+    name: Office.Entities
+  - uid: outlook.Office.From
+    name: Office.From
+  - uid: outlook.Office.InternetHeaders
+    name: Office.InternetHeaders
+  - uid: outlook.Office.Item
+    name: Office.Item
+  - uid: outlook.Office.ItemCompose
+    name: Office.ItemCompose
+  - uid: outlook.Office.ItemRead
+    name: Office.ItemRead
+  - uid: outlook.Office.LocalClientTime
+    name: Office.LocalClientTime
+  - uid: outlook.Office.Location
+    name: Office.Location
+  - uid: outlook.Office.Mailbox
+    name: Office.Mailbox
+  - uid: outlook.Office.MailboxEnums.AttachmentContentFormat
+    name: Office.MailboxEnums.AttachmentContentFormat
+  - uid: outlook.Office.MailboxEnums.AttachmentStatus
+    name: Office.MailboxEnums.AttachmentStatus
+  - uid: outlook.Office.MailboxEnums.AttachmentType
+    name: Office.MailboxEnums.AttachmentType
+  - uid: outlook.Office.MailboxEnums.Days
+    name: Office.MailboxEnums.Days
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions
+    name: Office.MailboxEnums.DelegatePermissions
+  - uid: outlook.Office.MailboxEnums.EntityType
+    name: Office.MailboxEnums.EntityType
+  - uid: outlook.Office.MailboxEnums.ItemNotificationMessageType
+    name: Office.MailboxEnums.ItemNotificationMessageType
+  - uid: outlook.Office.MailboxEnums.ItemType
+    name: Office.MailboxEnums.ItemType
+  - uid: outlook.Office.MailboxEnums.Month
+    name: Office.MailboxEnums.Month
+  - uid: outlook.Office.MailboxEnums.OWAView
+    name: Office.MailboxEnums.OWAView
+  - uid: outlook.Office.MailboxEnums.RecipientType
+    name: Office.MailboxEnums.RecipientType
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone
+    name: Office.MailboxEnums.RecurrenceTimeZone
+  - uid: outlook.Office.MailboxEnums.RecurrenceType
+    name: Office.MailboxEnums.RecurrenceType
+  - uid: outlook.Office.MailboxEnums.ResponseType
+    name: Office.MailboxEnums.ResponseType
+  - uid: outlook.Office.MailboxEnums.RestVersion
+    name: Office.MailboxEnums.RestVersion
+  - uid: outlook.Office.MailboxEnums.WeekNumber
+    name: Office.MailboxEnums.WeekNumber
+  - uid: outlook.Office.MeetingSuggestion
+    name: Office.MeetingSuggestion
+  - uid: outlook.Office.Message
+    name: Office.Message
+  - uid: outlook.Office.MessageCompose
+    name: Office.MessageCompose
+  - uid: outlook.Office.MessageRead
+    name: Office.MessageRead
+  - uid: outlook.Office.NotificationMessageDetails
+    name: Office.NotificationMessageDetails
+  - uid: outlook.Office.NotificationMessages
+    name: Office.NotificationMessages
+  - uid: outlook.Office.Organizer
+    name: Office.Organizer
+  - uid: outlook.Office.PhoneNumber
+    name: Office.PhoneNumber
+  - uid: outlook.Office.Recipients
+    name: Office.Recipients
+  - uid: outlook.Office.Recurrence
+    name: Office.Recurrence
+  - uid: outlook.Office.RecurrenceProperties
+    name: Office.RecurrenceProperties
+  - uid: outlook.Office.RecurrenceTimeZone
+    name: Office.RecurrenceTimeZone
+  - uid: outlook.Office.ReplyFormAttachment
+    name: Office.ReplyFormAttachment
+  - uid: outlook.Office.ReplyFormData
+    name: Office.ReplyFormData
+  - uid: outlook.Office.RoamingSettings
+    name: Office.RoamingSettings
+  - uid: outlook.Office.SeriesTime
+    name: Office.SeriesTime
+  - uid: outlook.Office.SharedProperties
+    name: Office.SharedProperties
+  - uid: outlook.Office.SourceProperty
+    name: Office.SourceProperty
+  - uid: outlook.Office.Subject
+    name: Office.Subject
+  - uid: outlook.Office.TaskSuggestion
+    name: Office.TaskSuggestion
+  - uid: outlook.Office.Time
+    name: Office.Time
+  - uid: outlook.Office.UserProfile
+    name: Office.UserProfile

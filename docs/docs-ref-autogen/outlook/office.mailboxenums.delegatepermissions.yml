@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions
+    summary: |-
+      This bit mask represents a delegate's permissions on a shared folder.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td> [Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
+      </td><td>Compose or read</td></tr></table>
+    isPreview: true
+    name: Office.MailboxEnums.DelegatePermissions
+    fullName: Office.MailboxEnums.DelegatePermissions
+    langs:
+      - typeScript
+    type: enum
+    package: outlook
+    children:
+      - outlook.Office.MailboxEnums.DelegatePermissions.DeleteAll
+      - outlook.Office.MailboxEnums.DelegatePermissions.DeleteOwn
+      - outlook.Office.MailboxEnums.DelegatePermissions.EditAll
+      - outlook.Office.MailboxEnums.DelegatePermissions.EditOwn
+      - outlook.Office.MailboxEnums.DelegatePermissions.Read
+      - outlook.Office.MailboxEnums.DelegatePermissions.Write
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions.DeleteAll
+    summary: Delegate has permission to delete any items.
+    isPreview: true
+    name: DeleteAll
+    fullName: DeleteAll
+    langs:
+      - typeScript
+    type: field
+    numericValue: '8'
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions.DeleteOwn
+    summary: Delegate has permission to delete only the items they created.
+    isPreview: true
+    name: DeleteOwn
+    fullName: DeleteOwn
+    langs:
+      - typeScript
+    type: field
+    numericValue: '4'
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions.EditAll
+    summary: Delegate has permission to edit any items.
+    isPreview: true
+    name: EditAll
+    fullName: EditAll
+    langs:
+      - typeScript
+    type: field
+    numericValue: '32'
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions.EditOwn
+    summary: Delegate has permission to edit only they items they created.
+    isPreview: true
+    name: EditOwn
+    fullName: EditOwn
+    langs:
+      - typeScript
+    type: field
+    numericValue: '16'
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions.Read
+    summary: Delegate has permission to read items.
+    isPreview: true
+    name: Read
+    fullName: Read
+    langs:
+      - typeScript
+    type: field
+    numericValue: '1'
+  - uid: outlook.Office.MailboxEnums.DelegatePermissions.Write
+    summary: Delegate has permission to create and write items.
+    isPreview: true
+    name: Write
+    fullName: Write
+    langs:
+      - typeScript
+    type: field
+    numericValue: '2'

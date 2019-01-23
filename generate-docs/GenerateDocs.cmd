@@ -11,7 +11,7 @@ call npm install
 pushd scripts
 call npm install
 call npm run build
-REM call node preprocessor.js
+call node preprocessor.js
 popd
 
 del package-lock.json

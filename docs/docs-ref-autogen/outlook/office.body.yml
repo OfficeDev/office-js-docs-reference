@@ -1,0 +1,900 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.Body
+    summary: >-
+      The body object provides methods for adding and updating the content of the message or appointment. It is returned
+      in the body property of the selected item.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
+    name: Office.Body
+    fullName: Office.Body
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.Body.getAsync
+      - outlook.Office.Body.getAsync_1
+      - outlook.Office.Body.getTypeAsync
+      - outlook.Office.Body.prependAsync
+      - outlook.Office.Body.prependAsync_1
+      - outlook.Office.Body.prependAsync_2
+      - outlook.Office.Body.prependAsync_3
+      - outlook.Office.Body.setAsync
+      - outlook.Office.Body.setAsync_1
+      - outlook.Office.Body.setAsync_2
+      - outlook.Office.Body.setAsync_3
+      - outlook.Office.Body.setSelectedDataAsync
+      - outlook.Office.Body.setSelectedDataAsync_1
+      - outlook.Office.Body.setSelectedDataAsync_2
+      - outlook.Office.Body.setSelectedDataAsync_3
+  - uid: outlook.Office.Body.getAsync
+    summary: >-
+      Returns the current body in a specified format.
+
+
+      This method returns the entire current body in the format specified by coercionType.
+
+
+      When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods
+      are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the
+      value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in
+      order to make it render efficiently with its rendering engine.
+
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
+
+
+      In addition to this signature, this method also has the following signature:
+
+
+      `getAsync(coercionType: CommonAPI.CoercionType, callback: (result:CommonAPI.AsyncResult<string>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      // This example gets the body of the message in plain text.
+
+      Office.context.mailbox.item.body.getAsync(
+          "text",
+          { asyncContext:"This is passed to the callback" },
+          function callback(result) {
+              // Do something with the result
+          });
+
+      //The following is an example of the result parameter passed to the callback function.
+
+      {
+          "value": "TEXT of whole body (including threads below)",
+          "status": "succeeded",
+          "asyncContext": "This is passed to the callback"
+      }
+
+      ```
+    name: 'getAsync(coercionType, options, callback)'
+    fullName: 'getAsync(coercionType, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getAsync(coercionType: CommonAPI.CoercionType, options?: CommonAPI.AsyncContextOptions, callback?: (result:
+        CommonAPI.AsyncResult<string>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: coercionType
+          description: The format for the returned body.
+          type:
+            - CommonAPI.CoercionType
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties: asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - CommonAPI.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of typeCommonAPI.AsyncResult. The body is provided in the requested format in
+            theCommonAPI.AsyncResult.value property.
+          type:
+            - '(result: CommonAPI.AsyncResult<string>) => void'
+  - uid: outlook.Office.Body.getAsync_1
+    summary: >-
+      Returns the current body in a specified format.
+
+
+      This method returns the entire current body in the format specified by coercionType.
+
+
+      When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods
+      are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the
+      value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in
+      order to make it render efficiently with its rendering engine.
+
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
+    name: 'getAsync(coercionType, callback)'
+    fullName: 'getAsync(coercionType, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(coercionType: CommonAPI.CoercionType, callback: (result: CommonAPI.AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: coercionType
+          description: The format for the returned body.
+          type:
+            - CommonAPI.CoercionType
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type CommonAPI.AsyncResult. The body is provided in the requested format in
+            theCommonAPI.AsyncResult.value property.
+          type:
+            - '(result: CommonAPI.AsyncResult<string>) => void'
+  - uid: outlook.Office.Body.getTypeAsync
+    summary: |-
+      Gets a value that indicates whether the content is in HTML or text format.
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+    name: 'getTypeAsync(options, callback)'
+    fullName: 'getTypeAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getTypeAsync(options?: CommonAPI.AsyncContextOptions, callback?: (result:
+        CommonAPI.AsyncResult<CommonAPI.CoercionType>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - CommonAPI.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type CommonAPI.AsyncResult. The content type is returned as one of the CoercionType values in
+            theCommonAPI.AsyncResult.value property.
+          type:
+            - '(result: CommonAPI.AsyncResult<CommonAPI.CoercionType>) => void'
+  - uid: outlook.Office.Body.prependAsync
+    summary: >-
+      Adds the specified content to the beginning of the item body.
+
+
+      The prependAsync method inserts the specified string at the beginning of the item body. After insertion, the
+      cursor is returned to its original place, relative to the inserted content.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (please see the Examples section for a sample).
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
+      characters.</td></tr></table>
+
+
+      In addition to this signature, this method also has the following signatures:
+
+
+      `prependAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions): void;`
+
+
+      `prependAsync(data: string, callback: (result:CommonAPI.AsyncResult<void>) => void): void;`
+
+
+      `prependAsync(data: string): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      // When including links in HTML markup, you can disable online link preview
+
+      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
+
+      Office.context.mailbox.item.body.prependAsync(
+          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
+          {coercionType: Office.CoercionType.Html},
+          callback);
+      ```
+    name: 'prependAsync(data, options, callback)'
+    fullName: 'prependAsync(data, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        prependAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (result:CommonAPI.AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.'
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. coercionType: The desired format for the
+            body. The string in the data parameter will be converted to this format.
+          type:
+            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type CommonAPI.AsyncResult. Any errors encountered will be provided in
+            theCommonAPI.AsyncResult.error property.
+          type:
+            - '(result:CommonAPI.AsyncResult<void>) => void'
+  - uid: outlook.Office.Body.prependAsync_1
+    summary: >-
+      Adds the specified content to the beginning of the item body.
+
+
+      The prependAsync method inserts the specified string at the beginning of the item body. After insertion, the
+      cursor is returned to its original place, relative to the inserted content.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (please see the Examples section for a sample).
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
+      characters.</td></tr></table>
+    name: 'prependAsync(data, options)'
+    fullName: 'prependAsync(data, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'prependAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.'
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. coercionType: The desired format for the
+            body. The string in the data parameter will be converted to this format.
+          type:
+            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
+  - uid: outlook.Office.Body.prependAsync_2
+    summary: >-
+      Adds the specified content to the beginning of the item body.
+
+
+      The prependAsync method inserts the specified string at the beginning of the item body. After insertion, the
+      cursor is returned to its original place, relative to the inserted content.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (please see the Examples section for a sample).
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
+      characters.</td></tr></table>
+    name: 'prependAsync(data, callback)'
+    fullName: 'prependAsync(data, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'prependAsync(data: string, callback: (result:CommonAPI.AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.'
+          type:
+            - string
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type CommonAPI.AsyncResult. Any errors encountered will be provided in
+            theCommonAPI.AsyncResult.error property.
+          type:
+            - '(result:CommonAPI.AsyncResult<void>) => void'
+  - uid: outlook.Office.Body.prependAsync_3
+    summary: >-
+      Adds the specified content to the beginning of the item body.
+
+
+      The prependAsync method inserts the specified string at the beginning of the item body. After insertion, the
+      cursor is returned to its original place, relative to the inserted content.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (please see the Examples section for a sample).
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
+      characters.</td></tr></table>
+    name: prependAsync(data)
+    fullName: prependAsync(data)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'prependAsync(data: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.'
+          type:
+            - string
+  - uid: outlook.Office.Body.setAsync
+    summary: >-
+      Replaces the entire body with the specified text.
+
+
+      When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods
+      are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the
+      value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in
+      order to make it render efficiently with its rendering engine.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (please see the Examples section for a sample).
+
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
+      characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
+      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+
+
+      In addition to this signature, this method also has the following signatures:
+
+
+      `setAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions): void;`
+
+
+      `setAsync(data: string, callback: (result:CommonAPI.AsyncResult<void>) => void): void;`
+
+
+      `setAsync(data: string): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      // When including links in HTML markup, you can disable online link preview
+
+      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
+
+      Office.context.mailbox.item.body.setAsync(
+          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
+          {coercionType: Office.CoercionType.Html},
+          callback);
+      Office.context.mailbox.item.body.setAsync(
+          "<b>(replaces all body, including threads you are replying to that may be on the bottom)</b>",
+          { coercionType:"html", asyncContext:"This is passed to the callback" },
+          function callback(result) {
+              // Process the result
+      });
+
+
+      // The following is an example of the result parameter passed to the callback function.
+
+      {
+          "value":null,
+          "status":"succeeded",
+          "asyncContext":"This is passed to the callback"
+      }
+
+      ```
+    name: 'setAsync(data, options, callback)'
+    fullName: 'setAsync(data, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
+        CommonAPI.AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. coercionType: The desired format for the
+            body. The string in the data parameter will be converted to this format.
+          type:
+            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type CommonAPI.AsyncResult. Any errors encountered will be provided in
+            theCommonAPI.AsyncResult.error property.
+          type:
+            - '(result: CommonAPI.AsyncResult<void>) => void'
+  - uid: outlook.Office.Body.setAsync_1
+    summary: >-
+      Replaces the entire body with the specified text.
+
+
+      When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods
+      are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the
+      value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in
+      order to make it render efficiently with its rendering engine.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (please see the Examples section for a sample).
+
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
+      characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
+      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+    name: 'setAsync(data, options)'
+    fullName: 'setAsync(data, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. coercionType: The desired format for the
+            body. The string in the data parameter will be converted to this format.
+          type:
+            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
+  - uid: outlook.Office.Body.setAsync_2
+    summary: >-
+      Replaces the entire body with the specified text.
+
+
+      When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods
+      are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the
+      value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in
+      order to make it render efficiently with its rendering engine.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (please see the Examples section for a sample).
+
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
+      characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
+      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+    name: 'setAsync(data, callback)'
+    fullName: 'setAsync(data, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(data: string, callback: (result:CommonAPI.AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
+          type:
+            - string
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type CommonAPI.AsyncResult. Any errors encountered will be provided in
+            theCommonAPI.AsyncResult.error property.
+          type:
+            - '(result:CommonAPI.AsyncResult<void>) => void'
+  - uid: outlook.Office.Body.setAsync_3
+    summary: >-
+      Replaces the entire body with the specified text.
+
+
+      When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods
+      are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the
+      value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in
+      order to make it render efficiently with its rendering engine.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (please see the Examples section for a sample).
+
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
+      characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
+      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+    name: setAsync(data)
+    fullName: setAsync(data)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(data: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
+          type:
+            - string
+  - uid: outlook.Office.Body.setSelectedDataAsync
+    summary: >-
+      Replaces the selection in the body with the specified text.
+
+
+      The setSelectedDataAsync method inserts the specified string at the cursor location in the body of the item, or,
+      if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
+      or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
+      insertion, the cursor is placed at the end of the inserted content.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (please see the Examples section for a sample).
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
+      characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
+      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+
+
+      In addition to this signature, this method also has the following signatures:
+
+
+      `setSelectedDataAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions): void;`
+
+
+      `setSelectedDataAsync(data: string, callback: (result:CommonAPI.AsyncResult<void>) => void): void;`
+
+
+      `setSelectedDataAsync(data: string): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      // When including links in HTML markup, you can disable online link preview
+
+      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
+
+      Office.context.mailbox.item.body.setSelectedDataAsync(
+          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
+          {coercionType: Office.CoercionType.Html},
+          callback);
+      ```
+    name: 'setSelectedDataAsync(data, options, callback)'
+    fullName: 'setSelectedDataAsync(data, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setSelectedDataAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (result:CommonAPI.AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. coercionType: The desired format for the
+            body. The string in the data parameter will be converted to this format.
+          type:
+            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type CommonAPI.AsyncResult. Any errors encountered will be provided in
+            theCommonAPI.AsyncResult.error property.
+          type:
+            - '(result:CommonAPI.AsyncResult<void>) => void'
+  - uid: outlook.Office.Body.setSelectedDataAsync_1
+    summary: >-
+      Replaces the selection in the body with the specified text.
+
+
+      The setSelectedDataAsync method inserts the specified string at the cursor location in the body of the item, or,
+      if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
+      or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
+      insertion, the cursor is placed at the end of the inserted content.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (please see the Examples section for a sample).
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
+      characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
+      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+    name: 'setSelectedDataAsync(data, options)'
+    fullName: 'setSelectedDataAsync(data, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSelectedDataAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. coercionType: The desired format for the
+            body. The string in the data parameter will be converted to this format.
+          type:
+            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
+  - uid: outlook.Office.Body.setSelectedDataAsync_2
+    summary: >-
+      Replaces the selection in the body with the specified text.
+
+
+      The setSelectedDataAsync method inserts the specified string at the cursor location in the body of the item, or,
+      if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
+      or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
+      insertion, the cursor is placed at the end of the inserted content.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (please see the Examples section for a sample).
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
+      characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
+      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+    name: 'setSelectedDataAsync(data, callback)'
+    fullName: 'setSelectedDataAsync(data, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSelectedDataAsync(data: string, callback: (result:CommonAPI.AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
+          type:
+            - string
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type CommonAPI.AsyncResult. Any errors encountered will be provided in
+            theCommonAPI.AsyncResult.error property.
+          type:
+            - '(result:CommonAPI.AsyncResult<void>) => void'
+  - uid: outlook.Office.Body.setSelectedDataAsync_3
+    summary: >-
+      Replaces the selection in the body with the specified text.
+
+
+      The setSelectedDataAsync method inserts the specified string at the cursor location in the body of the item, or,
+      if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
+      or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
+      insertion, the cursor is placed at the end of the inserted content.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (please see the Examples section for a sample).
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
+      characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
+      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+    name: setSelectedDataAsync(data)
+    fullName: setSelectedDataAsync(data)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSelectedDataAsync(data: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
+          type:
+            - string

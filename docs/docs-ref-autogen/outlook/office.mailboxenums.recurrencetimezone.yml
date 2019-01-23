@@ -1,0 +1,1241 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone
+    summary: |-
+      Specifies the time zone applied to the recurrence.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td> [Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
+      </td><td>Compose or read</td></tr></table>
+    name: Office.MailboxEnums.RecurrenceTimeZone
+    fullName: Office.MailboxEnums.RecurrenceTimeZone
+    langs:
+      - typeScript
+    type: enum
+    package: outlook
+    children:
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.AfghanistanStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.AlaskanStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.AleutianStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.AltaiStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.ArabianStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.ArabicStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.ArabStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.ArgentinaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.AstrakhanStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.AtlanticStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.AUSCentralStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.AusCentralW_StandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.AUSEasternStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.AzerbaijanStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.AzoresStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.BahiaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.BangladeshStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.BelarusStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.BougainvilleStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.CanadaCentralStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.CapeVerdeStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.CaucasusStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.CenAustraliaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralAmericaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralAsiaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralBrazilianStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralEuropeanStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralEuropeStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralPacificStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralStandardTime_Mexico
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.ChathamIslandsStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.ChinaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.CubaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.DatelineStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.E_AfricaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.E_AustraliaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.E_EuropeStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.E_SouthAmericaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.EasterIslandStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.EasternStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.EasternStandardTime_Mexico
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.EgyptStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.EkaterinburgStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.FijiStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.FLEStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.GeorgianStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.GMTStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.GreenlandStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.GreenwichStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.GTBStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.HaitiStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.HawaiianStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.IndiaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.IranStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.IsraelStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.JordanStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.KaliningradStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.KamchatkaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.KoreaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.LibyaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.LineIslandsStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.LordHoweStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.MagadanStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.MagallanesStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.MarquesasStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.MauritiusStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.MidAtlanticStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.MiddleEastStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.MontevideoStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.MoroccoStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.MountainStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.MountainStandardTime_Mexico
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.MyanmarStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.N_CentralAsiaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.NamibiaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.NepalStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.NewfoundlandStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.NewZealandStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.NorfolkStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.NorthAsiaEastStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.NorthAsiaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.NorthKoreaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.OmskStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.PacificSAStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTimeMexico
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.PakistanStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.ParaguayStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.RomanceStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.RussianStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.RussiaTimeZone10
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.RussiaTimeZone11
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.RussiaTimeZone3
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.SAEasternStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.SaintPierreStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.SakhalinStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.SamoaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.SAPacificStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.SaratovStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.SAWesternStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.SEAsiaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.SingaporeStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.SouthAfricaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.SriLankaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.SudanStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.SyriaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.TaipeiStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.TasmaniaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.TocantinsStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.TokyoStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.TomskStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.TongaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.TransbaikalStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.TurkeyStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.TurksAndCaicosStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.UlaanbaatarStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.USEasternStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.USMountainStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.UTC
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS02
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS08
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS09
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS11
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.UTCPLUS12
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.UTCPLUS13
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.VenezuelaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.VladivostokStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.W_AustraliaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.W_CentralAfricaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.W_EuropeStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.W_MongoliaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.WestAsiaStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.WestBankStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.WestPacificStandardTime
+      - outlook.Office.MailboxEnums.RecurrenceTimeZone.YakutskStandardTime
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.AfghanistanStandardTime
+    summary: Afghanistan Standard Time
+    name: AfghanistanStandardTime
+    fullName: AfghanistanStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Afghanistan Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.AlaskanStandardTime
+    summary: Alaskan Standard Time
+    name: AlaskanStandardTime
+    fullName: AlaskanStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Alaskan Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.AleutianStandardTime
+    summary: Aleutian Standard Time
+    name: AleutianStandardTime
+    fullName: AleutianStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Aleutian Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.AltaiStandardTime
+    summary: Altai Standard Time
+    name: AltaiStandardTime
+    fullName: AltaiStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Altai Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.ArabianStandardTime
+    summary: Arabian Standard Time
+    name: ArabianStandardTime
+    fullName: ArabianStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Arabian Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.ArabicStandardTime
+    summary: Arabic Standard Time
+    name: ArabicStandardTime
+    fullName: ArabicStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Arabic Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.ArabStandardTime
+    summary: Arab Standard Time
+    name: ArabStandardTime
+    fullName: ArabStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Arab Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.ArgentinaStandardTime
+    summary: Argentina Standard Time
+    name: ArgentinaStandardTime
+    fullName: ArgentinaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Argentina Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.AstrakhanStandardTime
+    summary: Astrakhan Standard Time
+    name: AstrakhanStandardTime
+    fullName: AstrakhanStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Astrakhan Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.AtlanticStandardTime
+    summary: Atlantic Standard Time
+    name: AtlanticStandardTime
+    fullName: AtlanticStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Atlantic Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.AUSCentralStandardTime
+    summary: Australia Central Standard Time
+    name: AUSCentralStandardTime
+    fullName: AUSCentralStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AUS Central Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.AusCentralW_StandardTime
+    summary: Australia Central West Standard Time
+    name: AusCentralW_StandardTime
+    fullName: AusCentralW_StandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Aus Central W. Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.AUSEasternStandardTime
+    summary: AUS Eastern Standard Time
+    name: AUSEasternStandardTime
+    fullName: AUSEasternStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AUS Eastern Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.AzerbaijanStandardTime
+    summary: Azerbaijan Standard Time
+    name: AzerbaijanStandardTime
+    fullName: AzerbaijanStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Azerbaijan Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.AzoresStandardTime
+    summary: Azores Standard Time
+    name: AzoresStandardTime
+    fullName: AzoresStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Azores Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.BahiaStandardTime
+    summary: Bahia Standard Time
+    name: BahiaStandardTime
+    fullName: BahiaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bahia Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.BangladeshStandardTime
+    summary: Bangladesh Standard Time
+    name: BangladeshStandardTime
+    fullName: BangladeshStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bangladesh Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.BelarusStandardTime
+    summary: Belarus Standard Time
+    name: BelarusStandardTime
+    fullName: BelarusStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Belarus Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.BougainvilleStandardTime
+    summary: Bougainville Standard Time
+    name: BougainvilleStandardTime
+    fullName: BougainvilleStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bougainville Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.CanadaCentralStandardTime
+    summary: Canada Central Standard Time
+    name: CanadaCentralStandardTime
+    fullName: CanadaCentralStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Canada Central Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.CapeVerdeStandardTime
+    summary: Cape Verde Standard Time
+    name: CapeVerdeStandardTime
+    fullName: CapeVerdeStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Cape Verde Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.CaucasusStandardTime
+    summary: Caucasus Standard Time
+    name: CaucasusStandardTime
+    fullName: CaucasusStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Caucasus Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.CenAustraliaStandardTime
+    summary: Central Australia Standard Time
+    name: CenAustraliaStandardTime
+    fullName: CenAustraliaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Cen. Australia Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralAmericaStandardTime
+    summary: Central America Standard Time
+    name: CentralAmericaStandardTime
+    fullName: CentralAmericaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Central America Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralAsiaStandardTime
+    summary: Central Asia Standard Time
+    name: CentralAsiaStandardTime
+    fullName: CentralAsiaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Central Asia Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralBrazilianStandardTime
+    summary: Central Brazilian Standard Time
+    name: CentralBrazilianStandardTime
+    fullName: CentralBrazilianStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Central Brazilian Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralEuropeanStandardTime
+    summary: Central European Standard Time
+    name: CentralEuropeanStandardTime
+    fullName: CentralEuropeanStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Central European Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralEuropeStandardTime
+    summary: Central Europe Standard Time
+    name: CentralEuropeStandardTime
+    fullName: CentralEuropeStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Central Europe Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralPacificStandardTime
+    summary: Central Pacific Standard Time
+    name: CentralPacificStandardTime
+    fullName: CentralPacificStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Central Pacific Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralStandardTime
+    summary: Central Standard Time
+    name: CentralStandardTime
+    fullName: CentralStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Central Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.CentralStandardTime_Mexico
+    summary: Central Standard Time (Mexico)
+    name: CentralStandardTime_Mexico
+    fullName: CentralStandardTime_Mexico
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Central Standard Time (Mexico)"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.ChathamIslandsStandardTime
+    summary: Chatham Islands Standard Time
+    name: ChathamIslandsStandardTime
+    fullName: ChathamIslandsStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Chatham Islands Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.ChinaStandardTime
+    summary: China Standard Time
+    name: ChinaStandardTime
+    fullName: ChinaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"China Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.CubaStandardTime
+    summary: Cuba Standard Time
+    name: CubaStandardTime
+    fullName: CubaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Cuba Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.DatelineStandardTime
+    summary: Dateline Standard Time
+    name: DatelineStandardTime
+    fullName: DatelineStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dateline Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.E_AfricaStandardTime
+    summary: East Africa Standard Time
+    name: E_AfricaStandardTime
+    fullName: E_AfricaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"E. Africa Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.E_AustraliaStandardTime
+    summary: East Australia Standard Time
+    name: E_AustraliaStandardTime
+    fullName: E_AustraliaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"E. Australia Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.E_EuropeStandardTime
+    summary: East Europe Standard Time
+    name: E_EuropeStandardTime
+    fullName: E_EuropeStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"E. Europe Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.E_SouthAmericaStandardTime
+    summary: East South America Standard Time
+    name: E_SouthAmericaStandardTime
+    fullName: E_SouthAmericaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"E. South America Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.EasterIslandStandardTime
+    summary: Easter Island Standard Time
+    name: EasterIslandStandardTime
+    fullName: EasterIslandStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Easter Island Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.EasternStandardTime
+    summary: Eastern Standard Time
+    name: EasternStandardTime
+    fullName: EasternStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Eastern Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.EasternStandardTime_Mexico
+    summary: Eastern Standard Time (Mexico)
+    name: EasternStandardTime_Mexico
+    fullName: EasternStandardTime_Mexico
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Eastern Standard Time (Mexico)"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.EgyptStandardTime
+    summary: Egypt Standard Time
+    name: EgyptStandardTime
+    fullName: EgyptStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Egypt Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.EkaterinburgStandardTime
+    summary: Ekaterinburg Standard Time
+    name: EkaterinburgStandardTime
+    fullName: EkaterinburgStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Ekaterinburg Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.FijiStandardTime
+    summary: Fiji Standard Time
+    name: FijiStandardTime
+    fullName: FijiStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Fiji Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.FLEStandardTime
+    summary: FLE Standard Time
+    name: FLEStandardTime
+    fullName: FLEStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FLE Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.GeorgianStandardTime
+    summary: Georgian Standard Time
+    name: GeorgianStandardTime
+    fullName: GeorgianStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Georgian Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.GMTStandardTime
+    summary: GMT Standard Time
+    name: GMTStandardTime
+    fullName: GMTStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GMT Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.GreenlandStandardTime
+    summary: Greenland Standard Time
+    name: GreenlandStandardTime
+    fullName: GreenlandStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Greenland Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.GreenwichStandardTime
+    summary: Greenwich Standard Time
+    name: GreenwichStandardTime
+    fullName: GreenwichStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Greenwich Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.GTBStandardTime
+    summary: GTB Standard Time
+    name: GTBStandardTime
+    fullName: GTBStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GTB Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.HaitiStandardTime
+    summary: Haiti Standard Time
+    name: HaitiStandardTime
+    fullName: HaitiStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Haiti Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.HawaiianStandardTime
+    summary: Hawaiian Standard Time
+    name: HawaiianStandardTime
+    fullName: HawaiianStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hawaiian Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.IndiaStandardTime
+    summary: India Standard Time
+    name: IndiaStandardTime
+    fullName: IndiaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"India Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.IranStandardTime
+    summary: Iran Standard Time
+    name: IranStandardTime
+    fullName: IranStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Iran Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.IsraelStandardTime
+    summary: Israel Standard Time
+    name: IsraelStandardTime
+    fullName: IsraelStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Israel Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.JordanStandardTime
+    summary: Jordan Standard Time
+    name: JordanStandardTime
+    fullName: JordanStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Jordan Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.KaliningradStandardTime
+    summary: Kaliningrad Standard Time
+    name: KaliningradStandardTime
+    fullName: KaliningradStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Kaliningrad Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.KamchatkaStandardTime
+    summary: Kamchatka Standard Time
+    name: KamchatkaStandardTime
+    fullName: KamchatkaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Kamchatka Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.KoreaStandardTime
+    summary: Korea Standard Time
+    name: KoreaStandardTime
+    fullName: KoreaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Korea Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.LibyaStandardTime
+    summary: Libya Standard Time
+    name: LibyaStandardTime
+    fullName: LibyaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Libya Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.LineIslandsStandardTime
+    summary: Line Islands Standard Time
+    name: LineIslandsStandardTime
+    fullName: LineIslandsStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Line Islands Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.LordHoweStandardTime
+    summary: Lord Howe Standard Time
+    name: LordHoweStandardTime
+    fullName: LordHoweStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Lord Howe Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.MagadanStandardTime
+    summary: Magadan Standard Time
+    name: MagadanStandardTime
+    fullName: MagadanStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Magadan Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.MagallanesStandardTime
+    summary: Magallanes Standard Time
+    name: MagallanesStandardTime
+    fullName: MagallanesStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Magallanes Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.MarquesasStandardTime
+    summary: Marquesas Standard Time
+    name: MarquesasStandardTime
+    fullName: MarquesasStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Marquesas Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.MauritiusStandardTime
+    summary: Mauritius Standard Time
+    name: MauritiusStandardTime
+    fullName: MauritiusStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mauritius Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.MidAtlanticStandardTime
+    summary: Mid-Atlantic Standard Time
+    name: MidAtlanticStandardTime
+    fullName: MidAtlanticStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mid-Atlantic Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.MiddleEastStandardTime
+    summary: Middle East Standard Time
+    name: MiddleEastStandardTime
+    fullName: MiddleEastStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Middle East Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.MontevideoStandardTime
+    summary: Montevideo Standard Time
+    name: MontevideoStandardTime
+    fullName: MontevideoStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Montevideo Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.MoroccoStandardTime
+    summary: Morocco Standard Time
+    name: MoroccoStandardTime
+    fullName: MoroccoStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Morocco Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.MountainStandardTime
+    summary: Mountain Standard Time
+    name: MountainStandardTime
+    fullName: MountainStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mountain Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.MountainStandardTime_Mexico
+    summary: Mountain Standard Time (Mexico)
+    name: MountainStandardTime_Mexico
+    fullName: MountainStandardTime_Mexico
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mountain Standard Time (Mexico)"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.MyanmarStandardTime
+    summary: Myanmar Standard Time
+    name: MyanmarStandardTime
+    fullName: MyanmarStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Myanmar Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.N_CentralAsiaStandardTime
+    summary: North Central Asia Standard Time
+    name: N_CentralAsiaStandardTime
+    fullName: N_CentralAsiaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"N. Central Asia Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.NamibiaStandardTime
+    summary: Namibia Standard Time
+    name: NamibiaStandardTime
+    fullName: NamibiaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Namibia Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.NepalStandardTime
+    summary: Nepal Standard Time
+    name: NepalStandardTime
+    fullName: NepalStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Nepal Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.NewfoundlandStandardTime
+    summary: Newfoundland Standard Time
+    name: NewfoundlandStandardTime
+    fullName: NewfoundlandStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Newfoundland Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.NewZealandStandardTime
+    summary: New Zealand Standard Time
+    name: NewZealandStandardTime
+    fullName: NewZealandStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"New Zealand Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.NorfolkStandardTime
+    summary: Norfolk Standard Time
+    name: NorfolkStandardTime
+    fullName: NorfolkStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Norfolk Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.NorthAsiaEastStandardTime
+    summary: North Asia East Standard Time
+    name: NorthAsiaEastStandardTime
+    fullName: NorthAsiaEastStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"North Asia East Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.NorthAsiaStandardTime
+    summary: North Asia Standard Time
+    name: NorthAsiaStandardTime
+    fullName: NorthAsiaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"North Asia Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.NorthKoreaStandardTime
+    summary: North Korea Standard Time
+    name: NorthKoreaStandardTime
+    fullName: NorthKoreaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"North Korea Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.OmskStandardTime
+    summary: Omsk Standard Time
+    name: OmskStandardTime
+    fullName: OmskStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Omsk Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.PacificSAStandardTime
+    summary: Pacific SA Standard Time
+    name: PacificSAStandardTime
+    fullName: PacificSAStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pacific SA Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime
+    summary: Pacific Standard Time
+    name: PacificStandardTime
+    fullName: PacificStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pacific Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTimeMexico
+    summary: Pacific Standard Time (Mexico)
+    name: PacificStandardTimeMexico
+    fullName: PacificStandardTimeMexico
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pacific Standard Time (Mexico)"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.PakistanStandardTime
+    summary: Pakistan Standard Time
+    name: PakistanStandardTime
+    fullName: PakistanStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pakistan Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.ParaguayStandardTime
+    summary: Paraguay Standard Time
+    name: ParaguayStandardTime
+    fullName: ParaguayStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Paraguay Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.RomanceStandardTime
+    summary: Romance Standard Time
+    name: RomanceStandardTime
+    fullName: RomanceStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Romance Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.RussianStandardTime
+    summary: Russian Standard Time
+    name: RussianStandardTime
+    fullName: RussianStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Russian Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.RussiaTimeZone10
+    summary: Russia Time Zone 10
+    name: RussiaTimeZone10
+    fullName: RussiaTimeZone10
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Russia Time Zone 10"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.RussiaTimeZone11
+    summary: Russia Time Zone 11
+    name: RussiaTimeZone11
+    fullName: RussiaTimeZone11
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Russia Time Zone 11"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.RussiaTimeZone3
+    summary: Russia Time Zone 3
+    name: RussiaTimeZone3
+    fullName: RussiaTimeZone3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Russia Time Zone 3"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.SAEasternStandardTime
+    summary: SA Eastern Standard Time
+    name: SAEasternStandardTime
+    fullName: SAEasternStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SA Eastern Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.SaintPierreStandardTime
+    summary: Saint Pierre Standard Time
+    name: SaintPierreStandardTime
+    fullName: SaintPierreStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Saint Pierre Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.SakhalinStandardTime
+    summary: Sakhalin Standard Time
+    name: SakhalinStandardTime
+    fullName: SakhalinStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Sakhalin Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.SamoaStandardTime
+    summary: Samoa Standard Time
+    name: SamoaStandardTime
+    fullName: SamoaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Samoa Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.SAPacificStandardTime
+    summary: SA Pacific Standard Time
+    name: SAPacificStandardTime
+    fullName: SAPacificStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SA Pacific Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.SaratovStandardTime
+    summary: Saratov Standard Time
+    name: SaratovStandardTime
+    fullName: SaratovStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Saratov Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.SAWesternStandardTime
+    summary: SA Western Standard Time
+    name: SAWesternStandardTime
+    fullName: SAWesternStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SA Western Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.SEAsiaStandardTime
+    summary: Southeast Asia Standard Time
+    name: SEAsiaStandardTime
+    fullName: SEAsiaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SE Asia Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.SingaporeStandardTime
+    summary: Singapore Standard Time
+    name: SingaporeStandardTime
+    fullName: SingaporeStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Singapore Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.SouthAfricaStandardTime
+    summary: South Africa Standard Time
+    name: SouthAfricaStandardTime
+    fullName: SouthAfricaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"South Africa Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.SriLankaStandardTime
+    summary: Sri Lanka Standard Time
+    name: SriLankaStandardTime
+    fullName: SriLankaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Sri Lanka Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.SudanStandardTime
+    summary: Sudan Standard Time
+    name: SudanStandardTime
+    fullName: SudanStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Sudan Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.SyriaStandardTime
+    summary: Syria Standard Time
+    name: SyriaStandardTime
+    fullName: SyriaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Syria Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.TaipeiStandardTime
+    summary: Taipei Standard Time
+    name: TaipeiStandardTime
+    fullName: TaipeiStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Taipei Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.TasmaniaStandardTime
+    summary: Tasmania Standard Time
+    name: TasmaniaStandardTime
+    fullName: TasmaniaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tasmania Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.TocantinsStandardTime
+    summary: Tocantins Standard Time
+    name: TocantinsStandardTime
+    fullName: TocantinsStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tocantins Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.TokyoStandardTime
+    summary: Tokyo Standard Time
+    name: TokyoStandardTime
+    fullName: TokyoStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tokyo Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.TomskStandardTime
+    summary: Tomsk Standard Time
+    name: TomskStandardTime
+    fullName: TomskStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tomsk Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.TongaStandardTime
+    summary: Tonga Standard Time
+    name: TongaStandardTime
+    fullName: TongaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tonga Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.TransbaikalStandardTime
+    summary: Transbaikal Standard Time
+    name: TransbaikalStandardTime
+    fullName: TransbaikalStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Transbaikal Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.TurkeyStandardTime
+    summary: Turkey Standard Time
+    name: TurkeyStandardTime
+    fullName: TurkeyStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Turkey Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.TurksAndCaicosStandardTime
+    summary: Turks And Caicos Standard Time
+    name: TurksAndCaicosStandardTime
+    fullName: TurksAndCaicosStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Turks And Caicos Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.UlaanbaatarStandardTime
+    summary: Ulaanbaatar Standard Time
+    name: UlaanbaatarStandardTime
+    fullName: UlaanbaatarStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Ulaanbaatar Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.USEasternStandardTime
+    summary: United States Eastern Standard Time
+    name: USEasternStandardTime
+    fullName: USEasternStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"US Eastern Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.USMountainStandardTime
+    summary: United States Mountain Standard Time
+    name: USMountainStandardTime
+    fullName: USMountainStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"US Mountain Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.UTC
+    summary: Coordinated Universal Time (UTC)
+    name: UTC
+    fullName: UTC
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UTC"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS02
+    summary: Coordinated Universal Time (UTC) - 2 hours
+    name: UTCMINUS02
+    fullName: UTCMINUS02
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UTC-02"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS08
+    summary: Coordinated Universal Time (UTC) - 8 hours
+    name: UTCMINUS08
+    fullName: UTCMINUS08
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UTC-08"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS09
+    summary: Coordinated Universal Time (UTC) - 9 hours
+    name: UTCMINUS09
+    fullName: UTCMINUS09
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UTC-09"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.UTCMINUS11
+    summary: Coordinated Universal Time (UTC) - 11 hours
+    name: UTCMINUS11
+    fullName: UTCMINUS11
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UTC-11"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.UTCPLUS12
+    summary: Coordinated Universal Time (UTC) + 12 hours
+    name: UTCPLUS12
+    fullName: UTCPLUS12
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UTC+12"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.UTCPLUS13
+    summary: Coordinated Universal Time (UTC) + 13 hours
+    name: UTCPLUS13
+    fullName: UTCPLUS13
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UTC+13"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.VenezuelaStandardTime
+    summary: Venezuela Standard Time
+    name: VenezuelaStandardTime
+    fullName: VenezuelaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Venezuela Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.VladivostokStandardTime
+    summary: Vladivostok Standard Time
+    name: VladivostokStandardTime
+    fullName: VladivostokStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Vladivostok Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.W_AustraliaStandardTime
+    summary: West Australia Standard Time
+    name: W_AustraliaStandardTime
+    fullName: W_AustraliaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"W. Australia Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.W_CentralAfricaStandardTime
+    summary: West Central Africa Standard Time
+    name: W_CentralAfricaStandardTime
+    fullName: W_CentralAfricaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"W. Central Africa Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.W_EuropeStandardTime
+    summary: West Europe Standard Time
+    name: W_EuropeStandardTime
+    fullName: W_EuropeStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"W. Europe Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.W_MongoliaStandardTime
+    summary: West Mongolia Standard Time
+    name: W_MongoliaStandardTime
+    fullName: W_MongoliaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"W. Mongolia Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.WestAsiaStandardTime
+    summary: West Asia Standard Time
+    name: WestAsiaStandardTime
+    fullName: WestAsiaStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"West Asia Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.WestBankStandardTime
+    summary: West Bank Standard Time
+    name: WestBankStandardTime
+    fullName: WestBankStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"West Bank Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.WestPacificStandardTime
+    summary: West Pacific Standard Time
+    name: WestPacificStandardTime
+    fullName: WestPacificStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"West Pacific Standard Time"'
+  - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone.YakutskStandardTime
+    summary: Yakutsk Standard Time
+    name: YakutskStandardTime
+    fullName: YakutskStandardTime
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Yakutsk Standard Time"'

@@ -81,12 +81,6 @@ tryCatch(async () => {
 
     console.log("\nCreating separate d.ts files...");
 
-    console.log("\ncreate file: excel.d.ts");
-    fsx.writeFileSync(
-        '../api-extractor-inputs-excel/excel.d.ts',
-        dtsBuilder.extractDtsSection(definitions, "Begin Excel APIs", "End Excel APIs")
-    );
-
     console.log("create file: office.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-office/office.d.ts',
@@ -96,16 +90,25 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(definitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime")
     );
 
+    console.log("\ncreate file: excel.d.ts");
+    fsx.writeFileSync(
+        '../api-extractor-inputs-excel/excel.d.ts',
+        "import \{ OfficeExtension \} from \"../api-extractor-inputs-office/office\"" +
+        dtsBuilder.extractDtsSection(definitions, "Begin Excel APIs", "End Excel APIs")
+    );
+
     console.log("create file: onenote.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-onenote/onenote.d.ts',
+        "import \{ OfficeExtension \} from \"../api-extractor-inputs-office/office\"" +
         dtsBuilder.extractDtsSection(definitions, "Begin OneNote APIs", "End OneNote APIs")
     );
 
     console.log("create file: outlook.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-outlook/outlook.d.ts',
-        dtsBuilder.extractDtsSection(definitions, "Begin Exchange APIs", "End Exchange APIs")
+        "import \{Office as CommonAPI\} from \"../api-extractor-inputs-office/office\"" +
+        dtsBuilder.extractDtsSection(definitions, "Begin Exchange APIs", "End Exchange APIs").replace(/Office\./g, "CommonAPI.")
     );
 
     console.log("create file: powerpoint.d.ts");
@@ -117,12 +120,14 @@ tryCatch(async () => {
     console.log("create file: visio.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-visio/visio.d.ts',
+        "import \{ OfficeExtension \} from \"../api-extractor-inputs-office/office\"" +
         dtsBuilder.extractDtsSection(definitions, "Begin Visio APIs", "End Visio APIs")
     );
 
     console.log("create file: word.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-word/word.d.ts',
+        "import \{ OfficeExtension \} from \"../api-extractor-inputs-office/office\"" +
         dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs")
     );
 

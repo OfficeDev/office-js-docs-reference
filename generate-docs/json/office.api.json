@@ -3723,7 +3723,7 @@
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "export enum "
+                  "text": "enum "
                 },
                 {
                   "kind": "Reference",

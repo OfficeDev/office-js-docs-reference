@@ -2102,7 +2102,7 @@ items:
           - RequestContext
   - uid: excel.Excel.Functions.convert
     summary: |-
-      Converts a number from one measurement system to another.
+      Converts a number from one measurement system to anOffice.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'convert(number, fromUnit, toUnit)'
