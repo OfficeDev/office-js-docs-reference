@@ -19,6 +19,7 @@ items:
       - excel.Excel.ChartPoint.format
       - excel.Excel.ChartPoint.hasDataLabel
       - excel.Excel.ChartPoint.load
+      - excel.Excel.ChartPoint.load_1
       - excel.Excel.ChartPoint.markerBackgroundColor
       - excel.Excel.ChartPoint.markerForegroundColor
       - excel.Excel.ChartPoint.markerSize
@@ -103,7 +104,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -118,6 +119,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartPoint.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartPoint;
+      return:
+        type:
+          - excel.Excel.ChartPoint
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.ChartPoint.markerBackgroundColor
     summary: |-
       HTML color code representation of the marker background color of data point. E.g. \#FF0000 represents Red.
@@ -190,7 +216,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.ChartPointData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

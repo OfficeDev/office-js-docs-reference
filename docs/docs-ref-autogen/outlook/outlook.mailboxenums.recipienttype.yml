@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Outlook.MailboxEnums.RecipientType
+    summary: |-
+      Specifies the type of recipient for an appointment.
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td> [Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
+      </td><td>Compose or read</td></tr></table>
+    name: Outlook.MailboxEnums.RecipientType
+    fullName: Outlook.MailboxEnums.RecipientType
+    langs:
+      - typeScript
+    type: enum
+    package: outlook
+    children:
+      - outlook.Outlook.MailboxEnums.RecipientType.DistributionList
+      - outlook.Outlook.MailboxEnums.RecipientType.ExternalUser
+      - outlook.Outlook.MailboxEnums.RecipientType.Other
+      - outlook.Outlook.MailboxEnums.RecipientType.User
+  - uid: outlook.Outlook.MailboxEnums.RecipientType.DistributionList
+    summary: Specifies that the recipient is a distribution list containing a list of email addresses.
+    name: DistributionList
+    fullName: DistributionList
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"distributionList"'
+  - uid: outlook.Outlook.MailboxEnums.RecipientType.ExternalUser
+    summary: Specifies that the recipient is an SMTP email address that is not on the Exchange server.
+    name: ExternalUser
+    fullName: ExternalUser
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"externalUser"'
+  - uid: outlook.Outlook.MailboxEnums.RecipientType.Other
+    summary: Specifies that the recipient is not one of the other recipient types.
+    name: Other
+    fullName: Other
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"other"'
+  - uid: outlook.Outlook.MailboxEnums.RecipientType.User
+    summary: Specifies that the recipient is an SMTP email address that is on the Exchange server.
+    name: User
+    fullName: User
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"user"'

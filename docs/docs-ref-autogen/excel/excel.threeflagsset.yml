@@ -8,27 +8,9 @@ items:
     type: interface
     package: excel
     children:
-      - excel.Excel.ThreeFlagsSet.__index
       - excel.Excel.ThreeFlagsSet.greenFlag
       - excel.Excel.ThreeFlagsSet.redFlag
       - excel.Excel.ThreeFlagsSet.yellowFlag
-  - uid: excel.Excel.ThreeFlagsSet.__index
-    name: __index(index)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[index: number]: Icon;'
-      return:
-        type:
-          - excel.Excel.Icon
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
   - uid: excel.Excel.ThreeFlagsSet.greenFlag
     name: greenFlag
     fullName: greenFlag

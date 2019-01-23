@@ -1662,7 +1662,7 @@ export declare namespace Office {
      *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
      *  </table>
      */
-    enum CoercionType {
+    export enum CoercionType {
         /**
          * Return or set data as text (string). Data is returned or set as a one-dimensional run of characters.
          */

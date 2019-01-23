@@ -17,6 +17,7 @@ items:
       - excel.Excel.ChartGridlines.context
       - excel.Excel.ChartGridlines.format
       - excel.Excel.ChartGridlines.load
+      - excel.Excel.ChartGridlines.load_1
       - excel.Excel.ChartGridlines.toJSON
       - excel.Excel.ChartGridlines.visible
   - uid: excel.Excel.ChartGridlines.context
@@ -109,7 +110,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -124,6 +125,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartGridlines.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartGridlines;
+      return:
+        type:
+          - excel.Excel.ChartGridlines
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.ChartGridlines.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -132,7 +158,7 @@ items:
       plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

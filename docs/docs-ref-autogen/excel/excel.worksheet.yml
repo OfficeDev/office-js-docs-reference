@@ -23,6 +23,7 @@ items:
       - excel.Excel.Worksheet.charts
       - excel.Excel.Worksheet.context
       - excel.Excel.Worksheet.copy
+      - excel.Excel.Worksheet.copy_1
       - excel.Excel.Worksheet.delete
       - excel.Excel.Worksheet.freezePanes
       - excel.Excel.Worksheet.getCell
@@ -36,6 +37,7 @@ items:
       - excel.Excel.Worksheet.getUsedRangeOrNullObject
       - excel.Excel.Worksheet.id
       - excel.Excel.Worksheet.load
+      - excel.Excel.Worksheet.load_1
       - excel.Excel.Worksheet.name
       - excel.Excel.Worksheet.names
       - excel.Excel.Worksheet.onActivated
@@ -60,7 +62,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: activate()
-    fullName: activate
+    fullName: activate()
     langs:
       - typeScript
     type: method
@@ -92,7 +94,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculate(markAllDirty)
-    fullName: calculate
+    fullName: calculate(markAllDirty)
     langs:
       - typeScript
     type: method
@@ -142,7 +144,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'copy(positionType, relativeTo)'
-    fullName: copy
+    fullName: 'copy(positionType, relativeTo)'
     langs:
       - typeScript
     type: method
@@ -179,13 +181,40 @@ items:
           description: Optional.
           type:
             - excel.Excel.Worksheet
+  - uid: excel.Excel.Worksheet.copy_1
+    summary: |-
+      Copy a worksheet and place it at the specified position. Return the copied worksheet.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'copy(positionType, relativeTo)'
+    fullName: 'copy(positionType, relativeTo)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        copy(positionType?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet):
+        Excel.Worksheet;
+      return:
+        type:
+          - excel.Excel.Worksheet
+        description: ''
+      parameters:
+        - id: positionType
+          description: Optional.
+          type:
+            - '"None" | "Before" | "After" | "Beginning" | "End"'
+        - id: relativeTo
+          description: Optional.
+          type:
+            - excel.Excel.Worksheet
   - uid: excel.Excel.Worksheet.delete
     summary: |-
       Deletes the worksheet from the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -234,7 +263,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getCell(row, column)'
-    fullName: getCell
+    fullName: 'getCell(row, column)'
     langs:
       - typeScript
     type: method
@@ -280,7 +309,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getNext(visibleOnly)
-    fullName: getNext
+    fullName: getNext(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -332,7 +361,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getNextOrNullObject(visibleOnly)
-    fullName: getNextOrNullObject
+    fullName: getNextOrNullObject(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -353,7 +382,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getPrevious(visibleOnly)
-    fullName: getPrevious
+    fullName: getPrevious(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -401,7 +430,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getPreviousOrNullObject(visibleOnly)
-    fullName: getPreviousOrNullObject
+    fullName: getPreviousOrNullObject(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -422,7 +451,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange(address)
-    fullName: getRange
+    fullName: getRange(address)
     langs:
       - typeScript
     type: method
@@ -485,7 +514,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
-    fullName: getRangeByIndexes
+    fullName: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
     langs:
       - typeScript
     type: method
@@ -520,7 +549,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getUsedRange(valuesOnly)
-    fullName: getUsedRange
+    fullName: getUsedRange(valuesOnly)
     langs:
       - typeScript
     type: method
@@ -564,7 +593,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getUsedRangeOrNullObject(valuesOnly)
-    fullName: getUsedRangeOrNullObject
+    fullName: getUsedRangeOrNullObject(valuesOnly)
     langs:
       - typeScript
     type: method
@@ -656,7 +685,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -671,6 +700,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.Worksheet.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Worksheet;
+      return:
+        type:
+          - excel.Excel.Worksheet
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.Worksheet.name
     summary: |-
       The display name of the worksheet.
@@ -1027,7 +1081,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.WorksheetData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

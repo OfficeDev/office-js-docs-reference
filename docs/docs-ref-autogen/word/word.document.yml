@@ -21,6 +21,7 @@ items:
       - word.Word.Document.context
       - word.Word.Document.getSelection
       - word.Word.Document.load
+      - word.Word.Document.load_1
       - word.Word.Document.properties
       - word.Word.Document.save
       - word.Word.Document.saved
@@ -82,7 +83,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getSelection()
-    fullName: getSelection
+    fullName: getSelection()
     langs:
       - typeScript
     type: method
@@ -182,7 +183,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -197,6 +198,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: word.Word.Document.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.Document;
+      return:
+        type:
+          - Word.Document
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: word.Word.Document.properties
     summary: |-
       Gets the properties of the document. Read-only.
@@ -233,7 +259,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: save()
-    fullName: save
+    fullName: save()
     langs:
       - typeScript
     type: method
@@ -315,7 +341,7 @@ items:
           - Word.SectionCollection
   - uid: word.Word.Document.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -333,7 +359,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -350,7 +376,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

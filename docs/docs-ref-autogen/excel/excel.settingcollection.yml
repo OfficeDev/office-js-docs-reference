@@ -23,6 +23,7 @@ items:
       - excel.Excel.SettingCollection.getItemOrNullObject
       - excel.Excel.SettingCollection.items
       - excel.Excel.SettingCollection.load
+      - excel.Excel.SettingCollection.load_1
       - excel.Excel.SettingCollection.onSettingsChanged
       - excel.Excel.SettingCollection.toJSON
   - uid: excel.Excel.SettingCollection.add
@@ -31,7 +32,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(key, value)'
-    fullName: add
+    fullName: 'add(key, value)'
     langs:
       - typeScript
     type: method
@@ -82,7 +83,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -98,7 +99,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
-    fullName: getItem
+    fullName: getItem(key)
     langs:
       - typeScript
     type: method
@@ -119,7 +120,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject
+    fullName: getItemOrNullObject(key)
     langs:
       - typeScript
     type: method
@@ -186,7 +187,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -201,6 +202,23 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.SettingCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.SettingCollection;'
+      return:
+        type:
+          - excel.Excel.SettingCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.SettingCollection.onSettingsChanged
     summary: |-
       Occurs when the Settings in the document are changed.
@@ -237,7 +255,7 @@ items:
       a plain JavaScript object (typed as `Excel.Interfaces.SettingCollectionData`<!-- -->) that contains an "items"
       array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

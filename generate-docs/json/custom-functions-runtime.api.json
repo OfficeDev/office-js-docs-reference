@@ -1,128 +1,351 @@
 {
-  "kind": "package",
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.0.13",
+    "schemaVersion": 1000
+  },
+  "kind": "Package",
+  "canonicalReference": "custom-functions-runtime",
+  "docComment": "",
   "name": "custom-functions-runtime",
-  "summary": [],
-  "remarks": [],
-  "exports": {
-    "CustomFunctions": {
-      "kind": "namespace",
-      "deprecatedMessage": [],
-      "summary": [
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "",
+      "name": "",
+      "members": [
         {
-          "kind": "text",
-          "text": "CustomFunctions namespace, used by Excel Custom Functions"
-        }
-      ],
-      "remarks": [],
-      "isBeta": true,
-      "exports": {
-        "associate": {
-          "kind": "function",
-          "signature": "export function associate(mappings: { [key: string]: Function }): void;",
-          "returnValue": {
-            "type": "void",
-            "description": []
-          },
-          "parameters": {
-            "mappings": {
-              "name": "mappings",
-              "description": [],
-              "isOptional": false,
-              "isSpread": false,
-              "type": "{ [key: string]: Function }"
-            }
-          },
-          "deprecatedMessage": [],
-          "summary": [
+          "kind": "Namespace",
+          "canonicalReference": "(CustomFunctions:namespace)",
+          "docComment": "/**\n * CustomFunctions namespace, used by Excel Custom Functions\n *\n * @beta\n */\n",
+          "excerptTokens": [
             {
-              "kind": "text",
-              "text": "Associates the JavaScript functions to the names given by the \"id\" properties in the metadata JSON file."
+              "kind": "Content",
+              "text": "export declare namespace "
+            },
+            {
+              "kind": "Reference",
+              "text": "CustomFunctions"
+            },
+            {
+              "kind": "Content",
+              "text": " "
             }
           ],
-          "remarks": [],
-          "isBeta": true
-        },
-        "CancelableHandler": {
-          "kind": "interface",
-          "extends": "",
-          "implements": "",
-          "typeParameters": [],
-          "deprecatedMessage": [],
-          "summary": [
+          "releaseTag": "Beta",
+          "name": "CustomFunctions",
+          "members": [
             {
-              "kind": "text",
-              "text": "CancelableHandler interface"
-            }
-          ],
-          "remarks": [],
-          "isBeta": true,
-          "isSealed": false,
-          "members": {
-            "onCanceled": {
-              "kind": "property",
-              "signature": "onCanceled: () => void;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "() => void",
-              "deprecatedMessage": [],
-              "summary": [
+              "kind": "Function",
+              "canonicalReference": "(associate:0)",
+              "docComment": "/**\n * Associates the JavaScript function to the name given by the \"id\" property in the metadata JSON file.\n *\n * @beta\n */\n",
+              "excerptTokens": [
                 {
-                  "kind": "text",
-                  "text": "Handles what should occur when a custom function is canceled."
+                  "kind": "Content",
+                  "text": "export function "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "associate"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "id"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "functionObject"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Function"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
                 }
               ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
-            }
-          }
-        },
-        "StreamingHandler": {
-          "kind": "interface",
-          "extends": "CancelableHandler",
-          "implements": "",
-          "typeParameters": [
-            "T"
-          ],
-          "deprecatedMessage": [],
-          "summary": [
-            {
-              "kind": "text",
-              "text": "A handler passed automatically as the last parameter to a streaming function. With this parameter, a function can use handler.setResult to set a cell value or hook into the handler.onCanceled event to to handle what happens when the function stops streaming."
-            }
-          ],
-          "remarks": [],
-          "isBeta": true,
-          "isSealed": false,
-          "members": {
-            "setResult": {
-              "kind": "property",
-              "signature": "setResult: (value: T | Error) => void;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "(value: T | Error) => void",
-              "deprecatedMessage": [],
-              "summary": [
+              "returnTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 12
+              },
+              "releaseTag": "Beta",
+              "overloadIndex": 0,
+              "parameters": [
                 {
-                  "kind": "text",
-                  "text": "Sets the returned result for a streaming custom function."
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                },
+                {
+                  "parameterName": "functionObject",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  }
                 }
               ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
+              "name": "associate"
+            },
+            {
+              "kind": "Function",
+              "canonicalReference": "(associate:1)",
+              "docComment": "/**\n * Associates the JavaScript functions to the names given by the \"id\" properties in the metadata JSON file.\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export function "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "associate"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "mappings"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{ ["
+                },
+                {
+                  "kind": "Reference",
+                  "text": "key"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": string]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Function"
+                },
+                {
+                  "kind": "Content",
+                  "text": " }"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 12
+              },
+              "releaseTag": "Beta",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "mappings",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 10
+                  }
+                }
+              ],
+              "name": "associate"
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(CancelableHandler:interface)",
+              "docComment": "/**\n * CancelableHandler interface\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CancelableHandler"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "CancelableHandler",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "onCanceled",
+                  "docComment": "/**\n * Handles what should occur when a custom function is canceled.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "onCanceled"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "() => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "onCanceled",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(StreamingHandler:interface)",
+              "docComment": "/**\n * A handler passed automatically as the last parameter to a streaming function. With this parameter, a function can use handler.setResult to set a cell value or hook into the handler.onCanceled event to to handle what happens when the function stops streaming.\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "StreamingHandler"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": "> extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CancelableHandler"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "StreamingHandler",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "setResult",
+                  "docComment": "/**\n * Sets the returned result for a streaming custom function.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "setResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "value"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "T"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ") => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "setResult",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 9
+                  }
+                }
+              ],
+              "extendsTokenRanges": [
+                {
+                  "startIndex": 5,
+                  "endIndex": 7
+                }
+              ]
             }
-          }
+          ]
         }
-      }
+      ]
     }
-  }
+  ]
 }

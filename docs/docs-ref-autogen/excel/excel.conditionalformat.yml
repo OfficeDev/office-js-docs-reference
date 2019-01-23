@@ -30,6 +30,7 @@ items:
       - excel.Excel.ConditionalFormat.iconSetOrNullObject
       - excel.Excel.ConditionalFormat.id
       - excel.Excel.ConditionalFormat.load
+      - excel.Excel.ConditionalFormat.load_1
       - excel.Excel.ConditionalFormat.preset
       - excel.Excel.ConditionalFormat.presetOrNullObject
       - excel.Excel.ConditionalFormat.priority
@@ -254,7 +255,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -272,7 +273,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
-    fullName: getRange
+    fullName: getRange()
     langs:
       - typeScript
     type: method
@@ -320,7 +321,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRangeOrNullObject()
-    fullName: getRangeOrNullObject
+    fullName: getRangeOrNullObject()
     langs:
       - typeScript
     type: method
@@ -438,7 +439,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -453,6 +454,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ConditionalFormat.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ConditionalFormat;
+      return:
+        type:
+          - excel.Excel.ConditionalFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.ConditionalFormat.preset
     summary: |-
       Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
@@ -594,7 +620,7 @@ items:
       plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatData`<!-- -->) that contains shallow copies
       of any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

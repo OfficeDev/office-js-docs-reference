@@ -25,7 +25,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
-    fullName: clear
+    fullName: clear()
     langs:
       - typeScript
     type: method
@@ -72,7 +72,7 @@ items:
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -93,7 +93,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setSolidColor(color)
-    fullName: setSolidColor
+    fullName: setSolidColor(color)
     langs:
       - typeScript
     type: method
@@ -150,12 +150,15 @@ items:
       JavaScript object (typed as `Excel.Interfaces.ChartFillData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: |-
+        toJSON(): {
+                    [key: string]: string;
+                };
       return:
         type:
           - |-

@@ -15,8 +15,10 @@ items:
     package: visio
     children:
       - visio.Visio.ShapeView.addOverlay
+      - visio.Visio.ShapeView.addOverlay_1
       - visio.Visio.ShapeView.highlight
       - visio.Visio.ShapeView.load
+      - visio.Visio.ShapeView.load_1
       - visio.Visio.ShapeView.removeOverlay
       - visio.Visio.ShapeView.toJSON
   - uid: visio.Visio.ShapeView.addOverlay
@@ -25,7 +27,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: 'addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
-    fullName: addOverlay
+    fullName: 'addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
     langs:
       - typeScript
     type: method
@@ -55,6 +57,50 @@ items:
           description: 'Vertical Alignment of Overlay. Can be ''Top'', ''Middle'', ''Bottom''.'
           type:
             - visio.Visio.OverlayVerticalAlignment
+        - id: Width
+          description: Overlay Width.
+          type:
+            - number
+        - id: Height
+          description: Overlay Height.
+          type:
+            - number
+  - uid: visio.Visio.ShapeView.addOverlay_1
+    summary: |-
+      Adds an overlay on top of the shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: 'addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
+    fullName: 'addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addOverlay(OverlayType: "Text" | "Image", Content: string, OverlayHorizontalAlignment: "Left" | "Center" |
+        "Right", OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number, Height: number):
+        OfficeExtension.ClientResult<number>;
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+      parameters:
+        - id: OverlayType
+          description: An Overlay Type. Can be 'Text' or 'Image'.
+          type:
+            - '"Text" | "Image"'
+        - id: Content
+          description: Content of Overlay.
+          type:
+            - string
+        - id: OverlayHorizontalAlignment
+          description: 'Horizontal Alignment of Overlay. Can be ''Left'', ''Center'', or ''Right''.'
+          type:
+            - '"Left" | "Center" | "Right"'
+        - id: OverlayVerticalAlignment
+          description: 'Vertical Alignment of Overlay. Can be ''Top'', ''Middle'', ''Bottom''.'
+          type:
+            - '"Top" | "Middle" | "Bottom"'
         - id: Width
           description: Overlay Width.
           type:
@@ -148,7 +194,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -163,13 +209,38 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.ShapeView.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Visio.ShapeView;
+      return:
+        type:
+          - visio.Visio.ShapeView
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: visio.Visio.ShapeView.removeOverlay
     summary: |-
       Removes particular overlay or all overlays on the Shape.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: removeOverlay(OverlayId)
-    fullName: removeOverlay
+    fullName: removeOverlay(OverlayId)
     langs:
       - typeScript
     type: method
@@ -186,7 +257,7 @@ items:
             - number
   - uid: visio.Visio.ShapeView.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

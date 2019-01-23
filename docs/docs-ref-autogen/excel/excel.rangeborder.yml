@@ -17,6 +17,7 @@ items:
       - excel.Excel.RangeBorder.color
       - excel.Excel.RangeBorder.context
       - excel.Excel.RangeBorder.load
+      - excel.Excel.RangeBorder.load_1
       - excel.Excel.RangeBorder.sideIndex
       - excel.Excel.RangeBorder.style
       - excel.Excel.RangeBorder.toJSON
@@ -123,7 +124,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -138,6 +139,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.RangeBorder.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.RangeBorder;
+      return:
+        type:
+          - excel.Excel.RangeBorder
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.RangeBorder.sideIndex
     summary: |-
       Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
@@ -186,7 +212,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.RangeBorderData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

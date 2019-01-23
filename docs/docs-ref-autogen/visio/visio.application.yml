@@ -15,8 +15,10 @@ items:
     package: visio
     children:
       - visio.Visio.Application.load
+      - visio.Visio.Application.load_1
       - visio.Visio.Application.showBorders
       - visio.Visio.Application.showToolbar
+      - visio.Visio.Application.showToolbar_1
       - visio.Visio.Application.showToolbars
       - visio.Visio.Application.toJSON
   - uid: visio.Visio.Application.load
@@ -57,7 +59,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -72,6 +74,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.Application.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Visio.Application;
+      return:
+        type:
+          - Visio.Application
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: visio.Visio.Application.showBorders
     summary: |-
       Show or hide the iFrame application borders.
@@ -93,7 +120,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: 'showToolbar(id, show)'
-    fullName: showToolbar
+    fullName: 'showToolbar(id, show)'
     langs:
       - typeScript
     type: method
@@ -108,6 +135,31 @@ items:
           description: The type of the Toolbar
           type:
             - visio.Visio.ToolBarType
+        - id: show
+          description: Whether the toolbar is visibile or not.
+          type:
+            - boolean
+  - uid: visio.Visio.Application.showToolbar_1
+    summary: |-
+      Sets the visibility of a specific toolbar in the application.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: 'showToolbar(id, show)'
+    fullName: 'showToolbar(id, show)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'showToolbar(id: "CommandBar" | "PageNavigationBar" | "StatusBar", show: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: id
+          description: The type of the Toolbar
+          type:
+            - '"CommandBar" | "PageNavigationBar" | "StatusBar"'
         - id: show
           description: Whether the toolbar is visibile or not.
           type:
@@ -129,7 +181,7 @@ items:
           - boolean
   - uid: visio.Visio.Application.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

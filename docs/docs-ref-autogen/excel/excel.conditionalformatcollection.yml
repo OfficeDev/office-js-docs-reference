@@ -15,6 +15,7 @@ items:
     package: excel
     children:
       - excel.Excel.ConditionalFormatCollection.add
+      - excel.Excel.ConditionalFormatCollection.add_1
       - excel.Excel.ConditionalFormatCollection.clearAll
       - excel.Excel.ConditionalFormatCollection.context
       - excel.Excel.ConditionalFormatCollection.getCount
@@ -22,6 +23,7 @@ items:
       - excel.Excel.ConditionalFormatCollection.getItemAt
       - excel.Excel.ConditionalFormatCollection.items
       - excel.Excel.ConditionalFormatCollection.load
+      - excel.Excel.ConditionalFormatCollection.load_1
       - excel.Excel.ConditionalFormatCollection.toJSON
   - uid: excel.Excel.ConditionalFormatCollection.add
     summary: |-
@@ -29,7 +31,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(type)
-    fullName: add
+    fullName: add(type)
     langs:
       - typeScript
     type: method
@@ -80,13 +82,38 @@ items:
           description: The type of conditional format being added. See Excel.ConditionalFormatType for details.
           type:
             - excel.Excel.ConditionalFormatType
+  - uid: excel.Excel.ConditionalFormatCollection.add_1
+    summary: |-
+      Adds a new conditional format to the collection at the first/top priority.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: add(type)
+    fullName: add(type)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        add(type: "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" |
+        "CellValue"): Excel.ConditionalFormat;
+      return:
+        type:
+          - excel.Excel.ConditionalFormat
+        description: ''
+      parameters:
+        - id: type
+          description: The type of conditional format being added. See Excel.ConditionalFormatType for details.
+          type:
+            - >-
+              "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" |
+              "CellValue"
   - uid: excel.Excel.ConditionalFormatCollection.clearAll
     summary: |-
       Clears all conditional formats active on the current specified range.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clearAll()
-    fullName: clearAll
+    fullName: clearAll()
     langs:
       - typeScript
     type: method
@@ -147,7 +174,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -185,7 +212,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(id)
-    fullName: getItem
+    fullName: getItem(id)
     langs:
       - typeScript
     type: method
@@ -226,7 +253,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: getItemAt
+    fullName: getItemAt(index)
     langs:
       - typeScript
     type: method
@@ -319,7 +346,7 @@ items:
       specifies the number of items that are to be skipped and not included in the result. If option.top is specified,
       the result set will start after skipping the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -334,6 +361,23 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ConditionalFormatCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.ConditionalFormatCollection;'
+      return:
+        type:
+          - excel.Excel.ConditionalFormatCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.ConditionalFormatCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -342,7 +386,7 @@ items:
       method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatCollectionData`<!-- -->)
       that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

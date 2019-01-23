@@ -23,6 +23,7 @@ items:
       - excel.Excel.Workbook.getActiveCell
       - excel.Excel.Workbook.getSelectedRange
       - excel.Excel.Workbook.load
+      - excel.Excel.Workbook.load_1
       - excel.Excel.Workbook.name
       - excel.Excel.Workbook.names
       - excel.Excel.Workbook.onSelectionChanged
@@ -130,7 +131,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveCell()
-    fullName: getActiveCell
+    fullName: getActiveCell()
     langs:
       - typeScript
     type: method
@@ -163,7 +164,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getSelectedRange()
-    fullName: getSelectedRange
+    fullName: getSelectedRange()
     langs:
       - typeScript
     type: method
@@ -209,7 +210,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -224,6 +225,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.Workbook.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Workbook;
+      return:
+        type:
+          - excel.Excel.Workbook
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.Workbook.name
     summary: |-
       Gets the workbook name. Read-only.
@@ -412,7 +438,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.WorkbookData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

@@ -26,6 +26,7 @@ items:
       - excel.Excel.ChartAxis.isBetweenCategories
       - excel.Excel.ChartAxis.left
       - excel.Excel.ChartAxis.load
+      - excel.Excel.ChartAxis.load_1
       - excel.Excel.ChartAxis.logBase
       - excel.Excel.ChartAxis.majorGridlines
       - excel.Excel.ChartAxis.majorTickMark
@@ -314,7 +315,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -329,6 +330,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartAxis.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartAxis;
+      return:
+        type:
+          - excel.Excel.ChartAxis
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.ChartAxis.logBase
     summary: |-
       Represents the base of the logarithm when using logarithmic scales.
@@ -621,7 +647,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setCategoryNames(sourceData)
-    fullName: setCategoryNames
+    fullName: setCategoryNames(sourceData)
     langs:
       - typeScript
     type: method
@@ -642,7 +668,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setCustomDisplayUnit(value)
-    fullName: setCustomDisplayUnit
+    fullName: setCustomDisplayUnit(value)
     langs:
       - typeScript
     type: method
@@ -663,7 +689,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setPositionAt(value)
-    fullName: setPositionAt
+    fullName: setPositionAt(value)
     langs:
       - typeScript
     type: method
@@ -798,7 +824,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.ChartAxisData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

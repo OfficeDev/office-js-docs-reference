@@ -15,9 +15,11 @@ items:
     package: excel
     children:
       - excel.Excel.Application.calculate
+      - excel.Excel.Application.calculate_1
       - excel.Excel.Application.calculationMode
       - excel.Excel.Application.context
       - excel.Excel.Application.load
+      - excel.Excel.Application.load_1
       - excel.Excel.Application.suspendApiCalculationUntilNextSync
       - excel.Excel.Application.toJSON
   - uid: excel.Excel.Application.calculate
@@ -26,7 +28,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculate(calculationType)
-    fullName: calculate
+    fullName: calculate(calculationType)
     langs:
       - typeScript
     type: method
@@ -55,6 +57,27 @@ items:
           description: Specifies the calculation type to use. See Excel.CalculationType for details.
           type:
             - excel.Excel.CalculationType
+  - uid: excel.Excel.Application.calculate_1
+    summary: |-
+      Recalculate all currently opened workbooks in Excel.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: calculate(calculationType)
+    fullName: calculate(calculationType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'calculate(calculationType: "Recalculate" | "Full" | "FullRebuild"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: calculationType
+          description: Specifies the calculation type to use. See Excel.CalculationType for details.
+          type:
+            - '"Recalculate" | "Full" | "FullRebuild"'
   - uid: excel.Excel.Application.calculationMode
     summary: >-
       Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible
@@ -128,7 +151,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -143,6 +166,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.Application.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Application;
+      return:
+        type:
+          - excel.Excel.Application
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.Application.suspendApiCalculationUntilNextSync
     summary: >-
       Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to
@@ -151,7 +199,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: suspendApiCalculationUntilNextSync()
-    fullName: suspendApiCalculationUntilNextSync
+    fullName: suspendApiCalculationUntilNextSync()
     langs:
       - typeScript
     type: method
@@ -169,7 +217,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

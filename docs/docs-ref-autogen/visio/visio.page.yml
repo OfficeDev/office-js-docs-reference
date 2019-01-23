@@ -21,6 +21,7 @@ items:
       - visio.Visio.Page.index
       - visio.Visio.Page.isBackground
       - visio.Visio.Page.load
+      - visio.Visio.Page.load_1
       - visio.Visio.Page.name
       - visio.Visio.Page.shapes
       - visio.Visio.Page.toJSON
@@ -32,7 +33,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: activate()
-    fullName: activate
+    fullName: activate()
     langs:
       - typeScript
     type: method
@@ -136,7 +137,7 @@ items:
       included in the result. If option.top is specified, the result set will start after skipping the specified number
       of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -151,6 +152,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.Page.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Visio.Page;
+      return:
+        type:
+          - Visio.Page
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: visio.Visio.Page.name
     summary: |-
       Page name. Read-only.
@@ -183,7 +209,7 @@ items:
           - visio.Visio.ShapeCollection
   - uid: visio.Visio.Page.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

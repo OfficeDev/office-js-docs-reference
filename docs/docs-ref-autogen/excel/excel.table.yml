@@ -32,6 +32,7 @@ items:
       - excel.Excel.Table.id
       - excel.Excel.Table.legacyId
       - excel.Excel.Table.load
+      - excel.Excel.Table.load_1
       - excel.Excel.Table.name
       - excel.Excel.Table.onChanged
       - excel.Excel.Table.onSelectionChanged
@@ -52,7 +53,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clearFilters()
-    fullName: clearFilters
+    fullName: clearFilters()
     langs:
       - typeScript
     type: method
@@ -97,7 +98,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: convertToRange()
-    fullName: convertToRange
+    fullName: convertToRange()
     langs:
       - typeScript
     type: method
@@ -129,7 +130,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -161,7 +162,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getDataBodyRange()
-    fullName: getDataBodyRange
+    fullName: getDataBodyRange()
     langs:
       - typeScript
     type: method
@@ -196,7 +197,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getHeaderRowRange()
-    fullName: getHeaderRowRange
+    fullName: getHeaderRowRange()
     langs:
       - typeScript
     type: method
@@ -231,7 +232,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
-    fullName: getRange
+    fullName: getRange()
     langs:
       - typeScript
     type: method
@@ -266,7 +267,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getTotalRowRange()
-    fullName: getTotalRowRange
+    fullName: getTotalRowRange()
     langs:
       - typeScript
     type: method
@@ -442,7 +443,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -457,6 +458,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.Table.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Table;
+      return:
+        type:
+          - excel.Excel.Table
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.Table.name
     summary: |-
       Name of the table.
@@ -534,7 +560,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reapplyFilters()
-    fullName: reapplyFilters
+    fullName: reapplyFilters()
     langs:
       - typeScript
     type: method
@@ -681,7 +707,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.TableData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

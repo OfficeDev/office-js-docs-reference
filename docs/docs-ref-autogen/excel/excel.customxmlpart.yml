@@ -19,6 +19,7 @@ items:
       - excel.Excel.CustomXmlPart.getXml
       - excel.Excel.CustomXmlPart.id
       - excel.Excel.CustomXmlPart.load
+      - excel.Excel.CustomXmlPart.load_1
       - excel.Excel.CustomXmlPart.namespaceUri
       - excel.Excel.CustomXmlPart.setXml
       - excel.Excel.CustomXmlPart.toJSON
@@ -42,7 +43,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -90,7 +91,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getXml()
-    fullName: getXml
+    fullName: getXml()
     langs:
       - typeScript
     type: method
@@ -183,7 +184,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -198,6 +199,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.CustomXmlPart.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.CustomXmlPart;
+      return:
+        type:
+          - excel.Excel.CustomXmlPart
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.CustomXmlPart.namespaceUri
     summary: |-
       The custom XML part's namespace URI. Read-only.
@@ -219,7 +245,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setXml(xml)
-    fullName: setXml
+    fullName: setXml(xml)
     langs:
       - typeScript
     type: method
@@ -266,7 +292,7 @@ items:
       plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

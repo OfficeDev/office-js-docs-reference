@@ -22,6 +22,7 @@ items:
       - excel.Excel.ChartTrendlineLabel.horizontalAlignment
       - excel.Excel.ChartTrendlineLabel.left
       - excel.Excel.ChartTrendlineLabel.load
+      - excel.Excel.ChartTrendlineLabel.load_1
       - excel.Excel.ChartTrendlineLabel.numberFormat
       - excel.Excel.ChartTrendlineLabel.text
       - excel.Excel.ChartTrendlineLabel.textOrientation
@@ -160,7 +161,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -175,6 +176,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartTrendlineLabel.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartTrendlineLabel;
+      return:
+        type:
+          - excel.Excel.ChartTrendlineLabel
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.ChartTrendlineLabel.numberFormat
     summary: |-
       String value that represents the format code for trendline label.
@@ -230,7 +256,7 @@ items:
       a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineLabelData`<!-- -->) that contains shallow
       copies of any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

@@ -19,6 +19,7 @@ items:
       - onenote.OneNote.InkAnalysisParagraph.inkAnalysis
       - onenote.OneNote.InkAnalysisParagraph.lines
       - onenote.OneNote.InkAnalysisParagraph.load
+      - onenote.OneNote.InkAnalysisParagraph.load_1
       - onenote.OneNote.InkAnalysisParagraph.toJSON
       - onenote.OneNote.InkAnalysisParagraph.track
       - onenote.OneNote.InkAnalysisParagraph.untrack
@@ -137,7 +138,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -152,6 +153,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.InkAnalysisParagraph.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): OneNote.InkAnalysisParagraph;
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisParagraph
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: onenote.OneNote.InkAnalysisParagraph.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -160,7 +186,7 @@ items:
       returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisParagraphData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -178,7 +204,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -195,7 +221,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

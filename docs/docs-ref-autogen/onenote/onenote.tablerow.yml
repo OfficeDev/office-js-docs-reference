@@ -20,7 +20,9 @@ items:
       - onenote.OneNote.TableRow.context
       - onenote.OneNote.TableRow.id
       - onenote.OneNote.TableRow.insertRowAsSibling
+      - onenote.OneNote.TableRow.insertRowAsSibling_1
       - onenote.OneNote.TableRow.load
+      - onenote.OneNote.TableRow.load_1
       - onenote.OneNote.TableRow.parentTable
       - onenote.OneNote.TableRow.rowIndex
       - onenote.OneNote.TableRow.setShadingColor
@@ -63,7 +65,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clear()
-    fullName: clear
+    fullName: clear()
     langs:
       - typeScript
     type: method
@@ -108,7 +110,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertRowAsSibling(insertLocation, values)'
-    fullName: insertRowAsSibling
+    fullName: 'insertRowAsSibling(insertLocation, values)'
     langs:
       - typeScript
     type: method
@@ -164,6 +166,33 @@ items:
           description: Where the new rows should be inserted relative to the current row.
           type:
             - onenote.OneNote.InsertLocation
+        - id: values
+          description: >-
+            Strings to insert in the new row, specified as an array. Must not have more cells than in the current row.
+            Optional.
+          type:
+            - 'string[]'
+  - uid: onenote.OneNote.TableRow.insertRowAsSibling_1
+    summary: |-
+      Inserts a row before or after the current row.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: 'insertRowAsSibling(insertLocation, values)'
+    fullName: 'insertRowAsSibling(insertLocation, values)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertRowAsSibling(insertLocation: "Before" | "After", values?: string[]): OneNote.TableRow;'
+      return:
+        type:
+          - OneNote.TableRow
+        description: ''
+      parameters:
+        - id: insertLocation
+          description: Where the new rows should be inserted relative to the current row.
+          type:
+            - '"Before" | "After"'
         - id: values
           description: >-
             Strings to insert in the new row, specified as an array. Must not have more cells than in the current row.
@@ -286,7 +315,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -301,6 +330,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.TableRow.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): OneNote.TableRow;
+      return:
+        type:
+          - OneNote.TableRow
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: onenote.OneNote.TableRow.parentTable
     summary: |-
       Gets the parent table. Read-only.
@@ -337,7 +391,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: setShadingColor(colorCode)
-    fullName: setShadingColor
+    fullName: setShadingColor(colorCode)
     langs:
       - typeScript
     type: method
@@ -360,7 +414,7 @@ items:
       JavaScript object (typed as `OneNote.Interfaces.TableRowData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -378,7 +432,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -395,7 +449,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

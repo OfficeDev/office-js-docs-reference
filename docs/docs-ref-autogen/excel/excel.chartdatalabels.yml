@@ -19,6 +19,7 @@ items:
       - excel.Excel.ChartDataLabels.format
       - excel.Excel.ChartDataLabels.horizontalAlignment
       - excel.Excel.ChartDataLabels.load
+      - excel.Excel.ChartDataLabels.load_1
       - excel.Excel.ChartDataLabels.numberFormat
       - excel.Excel.ChartDataLabels.position
       - excel.Excel.ChartDataLabels.separator
@@ -137,7 +138,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -152,6 +153,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartDataLabels.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartDataLabels;
+      return:
+        type:
+          - excel.Excel.ChartDataLabels
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.ChartDataLabels.numberFormat
     summary: |-
       Represents the format code for data labels.
@@ -318,7 +344,7 @@ items:
       plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelsData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

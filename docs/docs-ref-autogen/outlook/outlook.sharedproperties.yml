@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Outlook.SharedProperties
+    summary: |-
+      Represents the properties of an appointment or message in a shared folder, mailbox, or calendar.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
+    isPreview: true
+    name: Outlook.SharedProperties
+    fullName: Outlook.SharedProperties
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Outlook.SharedProperties.delegatePermissions
+      - outlook.Outlook.SharedProperties.owner
+      - outlook.Outlook.SharedProperties.restUrl
+  - uid: outlook.Outlook.SharedProperties.delegatePermissions
+    summary: The permissions that the delegate has on a shared folder.
+    isPreview: true
+    name: delegatePermissions
+    fullName: delegatePermissions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'delegatePermissions: MailboxEnums.DelegatePermissions;'
+      return:
+        type:
+          - MailboxEnums.DelegatePermissions
+  - uid: outlook.Outlook.SharedProperties.owner
+    summary: The email address of the owner of a shared item.
+    isPreview: true
+    name: owner
+    fullName: owner
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'owner: String;'
+      return:
+        type:
+          - String
+  - uid: outlook.Outlook.SharedProperties.restUrl
+    summary: The remote REST URL related to the owner’s mailbox.
+    isPreview: true
+    name: restUrl
+    fullName: restUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'restUrl: String;'
+      return:
+        type:
+          - String

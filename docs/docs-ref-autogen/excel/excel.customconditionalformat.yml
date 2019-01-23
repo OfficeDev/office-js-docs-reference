@@ -17,6 +17,7 @@ items:
       - excel.Excel.CustomConditionalFormat.context
       - excel.Excel.CustomConditionalFormat.format
       - excel.Excel.CustomConditionalFormat.load
+      - excel.Excel.CustomConditionalFormat.load_1
       - excel.Excel.CustomConditionalFormat.rule
       - excel.Excel.CustomConditionalFormat.toJSON
   - uid: excel.Excel.CustomConditionalFormat.context
@@ -84,7 +85,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -99,6 +100,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.CustomConditionalFormat.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.CustomConditionalFormat;
+      return:
+        type:
+          - excel.Excel.CustomConditionalFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.CustomConditionalFormat.rule
     summary: |-
       Represents the Rule object on this conditional format. Read-only.
@@ -145,7 +171,7 @@ items:
       returns a plain JavaScript object (typed as `Excel.Interfaces.CustomConditionalFormatData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

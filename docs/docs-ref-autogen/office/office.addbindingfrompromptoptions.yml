@@ -23,7 +23,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type:
           - any
@@ -35,7 +35,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id?: string;'
+      content: 'id?: string'
       return:
         type:
           - string
@@ -49,7 +49,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'promptText?: string;'
+      content: 'promptText?: string'
       return:
         type:
           - string
@@ -65,7 +65,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'sampleData?: Office.TableData;'
+      content: 'sampleData?: Office.TableData'
       return:
         type:
           - Office.TableData

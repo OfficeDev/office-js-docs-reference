@@ -19,6 +19,7 @@ items:
       - excel.Excel.ConditionalRangeFormat.fill
       - excel.Excel.ConditionalRangeFormat.font
       - excel.Excel.ConditionalRangeFormat.load
+      - excel.Excel.ConditionalRangeFormat.load_1
       - excel.Excel.ConditionalRangeFormat.numberFormat
       - excel.Excel.ConditionalRangeFormat.toJSON
   - uid: excel.Excel.ConditionalRangeFormat.borders
@@ -99,7 +100,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -114,6 +115,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ConditionalRangeFormat.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ConditionalRangeFormat;
+      return:
+        type:
+          - excel.Excel.ConditionalRangeFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.ConditionalRangeFormat.numberFormat
     summary: |-
       Represents Excel's number format code for the given range. Cleared if null is passed in.
@@ -137,7 +163,7 @@ items:
       returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFormatData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

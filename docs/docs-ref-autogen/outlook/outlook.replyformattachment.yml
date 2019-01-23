@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Outlook.ReplyFormAttachment
+    summary: A file or item attachment. Used when displaying a reply form.
+    name: Outlook.ReplyFormAttachment
+    fullName: Outlook.ReplyFormAttachment
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Outlook.ReplyFormAttachment.inLine
+      - outlook.Outlook.ReplyFormAttachment.itemId
+      - outlook.Outlook.ReplyFormAttachment.name
+      - outlook.Outlook.ReplyFormAttachment.type
+      - outlook.Outlook.ReplyFormAttachment.url
+  - uid: outlook.Outlook.ReplyFormAttachment.inLine
+    summary: >-
+      Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body,
+      and should not be displayed in the attachment list.
+    name: inLine
+    fullName: inLine
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inLine?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: outlook.Outlook.ReplyFormAttachment.itemId
+    summary: Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
+    name: itemId
+    fullName: itemId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemId?: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Outlook.ReplyFormAttachment.name
+    summary: 'A string that contains the name of the attachment, up to 255 characters in length.'
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Outlook.ReplyFormAttachment.type
+    summary: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Outlook.ReplyFormAttachment.url
+    summary: Only used if type is set to file. The URI of the location for the file.
+    name: url
+    fullName: url
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'url?: string;'
+      return:
+        type:
+          - string

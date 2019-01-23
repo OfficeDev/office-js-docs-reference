@@ -19,6 +19,7 @@ items:
       - excel.Excel.PresetCriteriaConditionalFormat.context
       - excel.Excel.PresetCriteriaConditionalFormat.format
       - excel.Excel.PresetCriteriaConditionalFormat.load
+      - excel.Excel.PresetCriteriaConditionalFormat.load_1
       - excel.Excel.PresetCriteriaConditionalFormat.rule
       - excel.Excel.PresetCriteriaConditionalFormat.toJSON
   - uid: excel.Excel.PresetCriteriaConditionalFormat.context
@@ -69,7 +70,7 @@ items:
       Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is
       specified, the result set will start after skipping the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -84,6 +85,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.PresetCriteriaConditionalFormat.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.PresetCriteriaConditionalFormat;
+      return:
+        type:
+          - excel.Excel.PresetCriteriaConditionalFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.PresetCriteriaConditionalFormat.rule
     summary: |-
       The rule of the conditional format.
@@ -134,7 +160,7 @@ items:
       method returns a plain JavaScript object (typed as `Excel.Interfaces.PresetCriteriaConditionalFormatData`<!-- -->)
       that contains shallow copies of any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

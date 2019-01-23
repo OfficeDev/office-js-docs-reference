@@ -19,6 +19,7 @@ items:
       - visio.Visio.Shape.hyperlinks
       - visio.Visio.Shape.id
       - visio.Visio.Shape.load
+      - visio.Visio.Shape.load_1
       - visio.Visio.Shape.name
       - visio.Visio.Shape.select
       - visio.Visio.Shape.shapeDataItems
@@ -47,7 +48,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getBounds()
-    fullName: getBounds
+    fullName: getBounds()
     langs:
       - typeScript
     type: method
@@ -147,7 +148,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -162,6 +163,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.Shape.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Visio.Shape;
+      return:
+        type:
+          - visio.Visio.Shape
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: visio.Visio.Shape.name
     summary: |-
       Shape's name. Read-only.
@@ -239,7 +265,7 @@ items:
           - string
   - uid: visio.Visio.Shape.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

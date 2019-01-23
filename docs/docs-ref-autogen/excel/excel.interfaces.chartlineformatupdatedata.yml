@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartLineFormatUpdateData
-    summary: 'An interface for updating data on the ChartLineFormat object, for use in "chartLineFormat.set({ ... })".'
+    summary: >-
+      An interface for updating data on the ChartLineFormat object, for use in "chartLineFormat.set(<!-- -->{ ... }<!--
+      -->)".
     name: Excel.Interfaces.ChartLineFormatUpdateData
     fullName: Excel.Interfaces.ChartLineFormatUpdateData
     langs:

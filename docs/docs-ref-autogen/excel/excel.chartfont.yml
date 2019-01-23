@@ -41,6 +41,7 @@ items:
       - excel.Excel.ChartFont.context
       - excel.Excel.ChartFont.italic
       - excel.Excel.ChartFont.load
+      - excel.Excel.ChartFont.load_1
       - excel.Excel.ChartFont.name
       - excel.Excel.ChartFont.size
       - excel.Excel.ChartFont.toJSON
@@ -123,7 +124,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -138,6 +139,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartFont.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartFont;
+      return:
+        type:
+          - excel.Excel.ChartFont
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.ChartFont.name
     summary: |-
       Font name (e.g. "Calibri")
@@ -176,7 +202,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.ChartFontData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

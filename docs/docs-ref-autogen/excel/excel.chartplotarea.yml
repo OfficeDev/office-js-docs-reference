@@ -23,6 +23,7 @@ items:
       - excel.Excel.ChartPlotArea.insideWidth
       - excel.Excel.ChartPlotArea.left
       - excel.Excel.ChartPlotArea.load
+      - excel.Excel.ChartPlotArea.load_1
       - excel.Excel.ChartPlotArea.position
       - excel.Excel.ChartPlotArea.toJSON
       - excel.Excel.ChartPlotArea.top
@@ -165,7 +166,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -180,6 +181,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartPlotArea.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartPlotArea;
+      return:
+        type:
+          - excel.Excel.ChartPlotArea
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.ChartPlotArea.position
     summary: |-
       Represents the position of plotArea.
@@ -203,7 +229,7 @@ items:
       plain JavaScript object (typed as `Excel.Interfaces.ChartPlotAreaData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

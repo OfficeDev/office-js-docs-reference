@@ -25,6 +25,7 @@ items:
       - excel.Excel.NamedItem.getRange
       - excel.Excel.NamedItem.getRangeOrNullObject
       - excel.Excel.NamedItem.load
+      - excel.Excel.NamedItem.load_1
       - excel.Excel.NamedItem.name
       - excel.Excel.NamedItem.scope
       - excel.Excel.NamedItem.toJSON
@@ -83,7 +84,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -163,7 +164,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
-    fullName: getRange
+    fullName: getRange()
     langs:
       - typeScript
     type: method
@@ -202,7 +203,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRangeOrNullObject()
-    fullName: getRangeOrNullObject
+    fullName: getRangeOrNullObject()
     langs:
       - typeScript
     type: method
@@ -252,7 +253,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -267,6 +268,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.NamedItem.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.NamedItem;
+      return:
+        type:
+          - excel.Excel.NamedItem
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.NamedItem.name
     summary: |-
       The name of the object. Read-only.
@@ -307,7 +333,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.NamedItemData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

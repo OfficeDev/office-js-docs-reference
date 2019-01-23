@@ -23,6 +23,7 @@ items:
       - excel.Excel.Range.calculate
       - excel.Excel.Range.cellCount
       - excel.Excel.Range.clear
+      - excel.Excel.Range.clear_1
       - excel.Excel.Range.columnCount
       - excel.Excel.Range.columnHidden
       - excel.Excel.Range.columnIndex
@@ -30,6 +31,7 @@ items:
       - excel.Excel.Range.context
       - excel.Excel.Range.dataValidation
       - excel.Excel.Range.delete
+      - excel.Excel.Range.delete_1
       - excel.Excel.Range.format
       - excel.Excel.Range.formulas
       - excel.Excel.Range.formulasLocal
@@ -60,9 +62,11 @@ items:
       - excel.Excel.Range.hidden
       - excel.Excel.Range.hyperlink
       - excel.Excel.Range.insert
+      - excel.Excel.Range.insert_1
       - excel.Excel.Range.isEntireColumn
       - excel.Excel.Range.isEntireRow
       - excel.Excel.Range.load
+      - excel.Excel.Range.load_1
       - excel.Excel.Range.merge
       - excel.Excel.Range.numberFormat
       - excel.Excel.Range.numberFormatLocal
@@ -119,7 +123,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculate()
-    fullName: calculate
+    fullName: calculate()
     langs:
       - typeScript
     type: method
@@ -150,7 +154,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear(applyTo)
-    fullName: clear
+    fullName: clear(applyTo)
     langs:
       - typeScript
     type: method
@@ -183,6 +187,27 @@ items:
           description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
           type:
             - excel.Excel.ClearApplyTo
+  - uid: excel.Excel.Range.clear_1
+    summary: |-
+      Clear range values, format, fill, border, etc.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: clear(applyTo)
+    fullName: clear(applyTo)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(applyTo?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: applyTo
+          description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
+          type:
+            - '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
   - uid: excel.Excel.Range.columnCount
     summary: |-
       Represents the total number of columns in the range. Read-only.
@@ -278,7 +303,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete(shift)
-    fullName: delete
+    fullName: delete(shift)
     langs:
       - typeScript
     type: method
@@ -310,6 +335,27 @@ items:
           description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
           type:
             - excel.Excel.DeleteShiftDirection
+  - uid: excel.Excel.Range.delete_1
+    summary: |-
+      Deletes the cells associated with the range.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: delete(shift)
+    fullName: delete(shift)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(shift: "Up" | "Left"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: shift
+          description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
+          type:
+            - '"Up" | "Left"'
   - uid: excel.Excel.Range.format
     summary: >-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
@@ -390,7 +436,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getAbsoluteResizedRange(numRows, numColumns)'
-    fullName: getAbsoluteResizedRange
+    fullName: 'getAbsoluteResizedRange(numRows, numColumns)'
     langs:
       - typeScript
     type: method
@@ -417,7 +463,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getBoundingRect(anotherRange)
-    fullName: getBoundingRect
+    fullName: getBoundingRect(anotherRange)
     langs:
       - typeScript
     type: method
@@ -461,7 +507,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getCell(row, column)'
-    fullName: getCell
+    fullName: 'getCell(row, column)'
     langs:
       - typeScript
     type: method
@@ -507,7 +553,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getColumn(column)
-    fullName: getColumn
+    fullName: getColumn(column)
     langs:
       - typeScript
     type: method
@@ -547,7 +593,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getColumnsAfter(count)
-    fullName: getColumnsAfter
+    fullName: getColumnsAfter(count)
     langs:
       - typeScript
     type: method
@@ -571,7 +617,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getColumnsBefore(count)
-    fullName: getColumnsBefore
+    fullName: getColumnsBefore(count)
     langs:
       - typeScript
     type: method
@@ -597,7 +643,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getEntireColumn()
-    fullName: getEntireColumn
+    fullName: getEntireColumn()
     langs:
       - typeScript
     type: method
@@ -637,7 +683,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getEntireRow()
-    fullName: getEntireRow
+    fullName: getEntireRow()
     langs:
       - typeScript
     type: method
@@ -676,7 +722,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getImage()
-    fullName: getImage
+    fullName: getImage()
     langs:
       - typeScript
     type: method
@@ -692,7 +738,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getIntersection(anotherRange)
-    fullName: getIntersection
+    fullName: getIntersection(anotherRange)
     langs:
       - typeScript
     type: method
@@ -735,7 +781,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getIntersectionOrNullObject(anotherRange)
-    fullName: getIntersectionOrNullObject
+    fullName: getIntersectionOrNullObject(anotherRange)
     langs:
       - typeScript
     type: method
@@ -815,7 +861,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLastCell()
-    fullName: getLastCell
+    fullName: getLastCell()
     langs:
       - typeScript
     type: method
@@ -850,7 +896,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLastColumn()
-    fullName: getLastColumn
+    fullName: getLastColumn()
     langs:
       - typeScript
     type: method
@@ -885,7 +931,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLastRow()
-    fullName: getLastRow
+    fullName: getLastRow()
     langs:
       - typeScript
     type: method
@@ -923,7 +969,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getOffsetRange(rowOffset, columnOffset)'
-    fullName: getOffsetRange
+    fullName: 'getOffsetRange(rowOffset, columnOffset)'
     langs:
       - typeScript
     type: method
@@ -974,7 +1020,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getResizedRange(deltaRows, deltaColumns)'
-    fullName: getResizedRange
+    fullName: 'getResizedRange(deltaRows, deltaColumns)'
     langs:
       - typeScript
     type: method
@@ -1003,7 +1049,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRow(row)
-    fullName: getRow
+    fullName: getRow(row)
     langs:
       - typeScript
     type: method
@@ -1043,7 +1089,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRowsAbove(count)
-    fullName: getRowsAbove
+    fullName: getRowsAbove(count)
     langs:
       - typeScript
     type: method
@@ -1067,7 +1113,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRowsBelow(count)
-    fullName: getRowsBelow
+    fullName: getRowsBelow(count)
     langs:
       - typeScript
     type: method
@@ -1093,7 +1139,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getSurroundingRegion()
-    fullName: getSurroundingRegion
+    fullName: getSurroundingRegion()
     langs:
       - typeScript
     type: method
@@ -1111,7 +1157,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getUsedRange(valuesOnly)
-    fullName: getUsedRange
+    fullName: getUsedRange(valuesOnly)
     langs:
       - typeScript
     type: method
@@ -1210,7 +1256,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getUsedRangeOrNullObject(valuesOnly)
-    fullName: getUsedRangeOrNullObject
+    fullName: getUsedRangeOrNullObject(valuesOnly)
     langs:
       - typeScript
     type: method
@@ -1270,7 +1316,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getVisibleView()
-    fullName: getVisibleView
+    fullName: getVisibleView()
     langs:
       - typeScript
     type: method
@@ -1348,7 +1394,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insert(shift)
-    fullName: insert
+    fullName: insert(shift)
     langs:
       - typeScript
     type: method
@@ -1381,6 +1427,29 @@ items:
           description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
           type:
             - excel.Excel.InsertShiftDirection
+  - uid: excel.Excel.Range.insert_1
+    summary: >-
+      Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
+      space. Returns a new Range object at the now blank space.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: insert(shift)
+    fullName: insert(shift)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insert(shift: "Down" | "Right"): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: shift
+          description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
+          type:
+            - '"Down" | "Right"'
   - uid: excel.Excel.Range.isEntireColumn
     summary: |-
       Represents if the current range is an entire column. Read-only.
@@ -1502,7 +1571,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -1517,13 +1586,38 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.Range.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Range;
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.Range.merge
     summary: |-
       Merge the range cells into one region in the worksheet.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: merge(across)
-    fullName: merge
+    fullName: merge(across)
     langs:
       - typeScript
     type: method
@@ -1658,7 +1752,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: select()
-    fullName: select
+    fullName: select()
     langs:
       - typeScript
     type: method
@@ -1691,7 +1785,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showCard()
-    fullName: showCard
+    fullName: showCard()
     langs:
       - typeScript
     type: method
@@ -1776,7 +1870,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.RangeData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -1794,7 +1888,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -1810,7 +1904,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: unmerge()
-    fullName: unmerge
+    fullName: unmerge()
     langs:
       - typeScript
     type: method
@@ -1844,7 +1938,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

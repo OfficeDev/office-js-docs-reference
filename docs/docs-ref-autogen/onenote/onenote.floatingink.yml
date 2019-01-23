@@ -18,6 +18,7 @@ items:
       - onenote.OneNote.FloatingInk.id
       - onenote.OneNote.FloatingInk.inkStrokes
       - onenote.OneNote.FloatingInk.load
+      - onenote.OneNote.FloatingInk.load_1
       - onenote.OneNote.FloatingInk.pageContent
       - onenote.OneNote.FloatingInk.toJSON
       - onenote.OneNote.FloatingInk.track
@@ -131,7 +132,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -146,6 +147,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.FloatingInk.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): OneNote.FloatingInk;
+      return:
+        type:
+          - onenote.OneNote.FloatingInk
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: onenote.OneNote.FloatingInk.pageContent
     summary: |-
       Gets the PageContent parent of the FloatingInk object. Read-only.
@@ -169,7 +195,7 @@ items:
       plain JavaScript object (typed as `OneNote.Interfaces.FloatingInkData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -187,7 +213,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -204,7 +230,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

@@ -15,6 +15,7 @@ items:
     package: visio
     children:
       - visio.Visio.Selection.load
+      - visio.Visio.Selection.load_1
       - visio.Visio.Selection.shapes
       - visio.Visio.Selection.toJSON
   - uid: visio.Visio.Selection.load
@@ -36,7 +37,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -51,6 +52,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.Selection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Visio.Selection;
+      return:
+        type:
+          - visio.Visio.Selection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: visio.Visio.Selection.shapes
     summary: |-
       Gets the Shapes of the Selection. Read-only.
@@ -68,7 +94,7 @@ items:
           - visio.Visio.ShapeCollection
   - uid: visio.Visio.Selection.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

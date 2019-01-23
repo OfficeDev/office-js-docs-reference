@@ -19,6 +19,7 @@ items:
       - excel.Excel.RangeFont.context
       - excel.Excel.RangeFont.italic
       - excel.Excel.RangeFont.load
+      - excel.Excel.RangeFont.load_1
       - excel.Excel.RangeFont.name
       - excel.Excel.RangeFont.size
       - excel.Excel.RangeFont.toJSON
@@ -144,7 +145,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -159,6 +160,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.RangeFont.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.RangeFont;
+      return:
+        type:
+          - excel.Excel.RangeFont
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.RangeFont.name
     summary: |-
       Font name (e.g. "Calibri")
@@ -197,7 +223,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.RangeFontData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

@@ -18,6 +18,7 @@ items:
       - word.Word.SearchOptions.ignorePunct
       - word.Word.SearchOptions.ignoreSpace
       - word.Word.SearchOptions.load
+      - word.Word.SearchOptions.load_1
       - word.Word.SearchOptions.matchCase
       - word.Word.SearchOptions.matchPrefix
       - word.Word.SearchOptions.matchSuffix
@@ -261,7 +262,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -276,6 +277,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: word.Word.SearchOptions.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.SearchOptions;
+      return:
+        type:
+          - word.Word.SearchOptions
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: word.Word.SearchOptions.matchCase
     summary: >-
       Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
@@ -375,7 +401,7 @@ items:
   - uid: word.Word.SearchOptions.newObject
     summary: Create a new instance of Word.SearchOptions object
     name: newObject(context)
-    fullName: newObject
+    fullName: newObject(context)
     langs:
       - typeScript
     type: method
@@ -392,7 +418,7 @@ items:
             - office.OfficeExtension.ClientRequestContext
   - uid: word.Word.SearchOptions.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

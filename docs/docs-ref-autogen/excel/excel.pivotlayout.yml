@@ -22,6 +22,7 @@ items:
       - excel.Excel.PivotLayout.getRowLabelRange
       - excel.Excel.PivotLayout.layoutType
       - excel.Excel.PivotLayout.load
+      - excel.Excel.PivotLayout.load_1
       - excel.Excel.PivotLayout.showColumnGrandTotals
       - excel.Excel.PivotLayout.showRowGrandTotals
       - excel.Excel.PivotLayout.subtotalLocation
@@ -46,7 +47,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getColumnLabelRange()
-    fullName: getColumnLabelRange
+    fullName: getColumnLabelRange()
     langs:
       - typeScript
     type: method
@@ -62,7 +63,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getDataBodyRange()
-    fullName: getDataBodyRange
+    fullName: getDataBodyRange()
     langs:
       - typeScript
     type: method
@@ -99,7 +100,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getFilterAxisRange()
-    fullName: getFilterAxisRange
+    fullName: getFilterAxisRange()
     langs:
       - typeScript
     type: method
@@ -115,7 +116,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
-    fullName: getRange
+    fullName: getRange()
     langs:
       - typeScript
     type: method
@@ -131,7 +132,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRowLabelRange()
-    fullName: getRowLabelRange
+    fullName: getRowLabelRange()
     langs:
       - typeScript
     type: method
@@ -177,7 +178,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -192,6 +193,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.PivotLayout.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.PivotLayout;
+      return:
+        type:
+          - excel.Excel.PivotLayout
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.PivotLayout.showColumnGrandTotals
     summary: |-
       True if the PivotTable report shows grand totals for columns.
@@ -247,7 +273,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.PivotLayoutData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

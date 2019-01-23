@@ -19,6 +19,7 @@ items:
       - visio.Visio.DocumentView.disableZoom
       - visio.Visio.DocumentView.hideDiagramBoundary
       - visio.Visio.DocumentView.load
+      - visio.Visio.DocumentView.load_1
       - visio.Visio.DocumentView.toJSON
   - uid: visio.Visio.DocumentView.disableHyperlinks
     summary: |-
@@ -99,7 +100,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -114,9 +115,34 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.DocumentView.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Visio.DocumentView;
+      return:
+        type:
+          - visio.Visio.DocumentView
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: visio.Visio.DocumentView.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

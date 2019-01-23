@@ -20,6 +20,7 @@ items:
       - onenote.OneNote.ParagraphCollection.getItemAt
       - onenote.OneNote.ParagraphCollection.items
       - onenote.OneNote.ParagraphCollection.load
+      - onenote.OneNote.ParagraphCollection.load_1
       - onenote.OneNote.ParagraphCollection.toJSON
       - onenote.OneNote.ParagraphCollection.track
       - onenote.OneNote.ParagraphCollection.untrack
@@ -58,7 +59,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
-    fullName: getItem
+    fullName: getItem(index)
     langs:
       - typeScript
     type: method
@@ -79,7 +80,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: getItemAt
+    fullName: getItemAt(index)
     langs:
       - typeScript
     type: method
@@ -260,7 +261,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -275,6 +276,23 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.ParagraphCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): OneNote.ParagraphCollection;'
+      return:
+        type:
+          - onenote.OneNote.ParagraphCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: onenote.OneNote.ParagraphCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -283,7 +301,7 @@ items:
       returns a plain JavaScript object (typed as `OneNote.Interfaces.ParagraphCollectionData`<!-- -->) that contains an
       "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -301,7 +319,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -318,7 +336,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

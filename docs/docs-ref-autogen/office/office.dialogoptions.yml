@@ -24,7 +24,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type:
           - any
@@ -40,7 +40,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'displayInIframe?: boolean;'
+      content: 'displayInIframe?: boolean'
       return:
         type:
           - boolean
@@ -52,7 +52,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'height?: number;'
+      content: 'height?: number,'
       return:
         type:
           - number
@@ -82,7 +82,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'width?: number;'
+      content: 'width?: number,'
       return:
         type:
           - number

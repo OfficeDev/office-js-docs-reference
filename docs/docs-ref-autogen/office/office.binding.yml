@@ -43,11 +43,15 @@ items:
     package: office
     children:
       - office.Office.Binding.addHandlerAsync
-      - office.Office.Binding.document
+      - office.Office.Binding.addHandlerAsync_1
       - office.Office.Binding.getDataAsync
-      - office.Office.Binding.id
+      - office.Office.Binding.getDataAsync_1
       - office.Office.Binding.removeHandlerAsync
+      - office.Office.Binding.removeHandlerAsync_1
       - office.Office.Binding.setDataAsync
+      - office.Office.Binding.setDataAsync_1
+      - office.Office.Binding.document
+      - office.Office.Binding.id
       - office.Office.Binding.type
   - uid: office.Office.Binding.addHandlerAsync
     summary: >-
@@ -114,7 +118,7 @@ items:
 
       ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
-    fullName: addHandlerAsync
+    fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     langs:
       - typeScript
     type: method
@@ -150,32 +154,33 @@ items:
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: Office.AsyncResult<void>) => void'
-  - uid: office.Office.Binding.document
-    summary: Get the Document object associated with the binding.
-    name: document
-    fullName: document
+  - uid: office.Office.Binding.addHandlerAsync_1
+    name: 'addHandlerAsync(eventType, handler, callback)'
+    fullName: 'addHandlerAsync(eventType, handler, callback)'
     langs:
       - typeScript
-    type: property
+    type: method
     syntax:
-      content: 'document: Office.Document;'
+      content: >-
+        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
-          - office.Office.Document
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-              write(asyncResult.value.document.url);
-          });
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: ''
+          type:
+            - Office.EventType
+        - id: handler
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: office.Office.Binding.getDataAsync
     summary: Returns the data contained within the binding.
     remarks: >-
@@ -271,7 +276,7 @@ items:
 
       ```
     name: 'getDataAsync(options, callback)'
-    fullName: getDataAsync
+    fullName: 'getDataAsync(options, callback)'
     langs:
       - typeScript
     type: method
@@ -294,34 +299,23 @@ items:
             the data is returned in the format described in the CoercionType enumeration topic.
           type:
             - '(result: AsyncResult<T>) => void'
-  - uid: office.Office.Binding.id
-    summary: >-
-      A string that uniquely identifies this binding among the bindings in the same
-      [Office.Document](xref:office.Office.Document) object.
-    name: id
-    fullName: id
+  - uid: office.Office.Binding.getDataAsync_1
+    name: getDataAsync(callback)
+    fullName: getDataAsync(callback)
     langs:
       - typeScript
-    type: property
+    type: method
     syntax:
-      content: 'id: string;'
+      content: 'getDataAsync<T>(callback?: (result: AsyncResult<T>) => void): void;'
       return:
         type:
-          - string
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-              write(asyncResult.value.id);
-          });
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult<T>) => void'
   - uid: office.Office.Binding.removeHandlerAsync
     summary: Removes the specified handler from the binding for the specified event type.
     remarks: |-
@@ -335,7 +329,7 @@ items:
       }
       ```
     name: 'removeHandlerAsync(eventType, options, callback)'
-    fullName: removeHandlerAsync
+    fullName: 'removeHandlerAsync(eventType, options, callback)'
     langs:
       - typeScript
     type: method
@@ -362,6 +356,27 @@ items:
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Binding.removeHandlerAsync_1
+    name: 'removeHandlerAsync(eventType, callback)'
+    fullName: 'removeHandlerAsync(eventType, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeHandlerAsync(eventType: Office.EventType, callback?: (result: AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: ''
+          type:
+            - Office.EventType
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Binding.setDataAsync
@@ -564,7 +579,7 @@ items:
         function (asyncResult){});
       ```
     name: 'setDataAsync(data, options, callback)'
-    fullName: setDataAsync
+    fullName: 'setDataAsync(data, options, callback)'
     langs:
       - typeScript
     type: method
@@ -602,6 +617,81 @@ items:
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Binding.setDataAsync_1
+    name: 'setDataAsync(data, callback)'
+    fullName: 'setDataAsync(data, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDataAsync(data: TableData | any, callback?: (result: AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: ''
+          type:
+            - TableData | any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Binding.document
+    summary: Get the Document object associated with the binding.
+    name: document
+    fullName: document
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'document: Office.Document;'
+      return:
+        type:
+          - office.Office.Document
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              write(asyncResult.value.document.url);
+          });
+
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
+  - uid: office.Office.Binding.id
+    summary: >-
+      A string that uniquely identifies this binding among the bindings in the same
+      [Office.Document](xref:office.Office.Document) object.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              write(asyncResult.value.id);
+          });
+
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
   - uid: office.Office.Binding.type
     summary: Gets the type of the binding.
     name: type

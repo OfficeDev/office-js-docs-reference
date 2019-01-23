@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Outlook.MailboxEnums.AttachmentStatus
+    summary: |-
+      Specifies whether an attachment was added to or removed from an item.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td> [Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
+      </td><td>Compose or read</td></tr></table>
+    isPreview: true
+    name: Outlook.MailboxEnums.AttachmentStatus
+    fullName: Outlook.MailboxEnums.AttachmentStatus
+    langs:
+      - typeScript
+    type: enum
+    package: outlook
+    children:
+      - outlook.Outlook.MailboxEnums.AttachmentStatus.Added
+      - outlook.Outlook.MailboxEnums.AttachmentStatus.Removed
+  - uid: outlook.Outlook.MailboxEnums.AttachmentStatus.Added
+    summary: An attachment was added to the item.
+    isPreview: true
+    name: Added
+    fullName: Added
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"added"'
+  - uid: outlook.Outlook.MailboxEnums.AttachmentStatus.Removed
+    summary: An attachment was removed from the item.
+    isPreview: true
+    name: Removed
+    fullName: Removed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"removed"'

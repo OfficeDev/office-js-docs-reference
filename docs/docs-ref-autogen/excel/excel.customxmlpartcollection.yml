@@ -22,6 +22,7 @@ items:
       - excel.Excel.CustomXmlPartCollection.getItemOrNullObject
       - excel.Excel.CustomXmlPartCollection.items
       - excel.Excel.CustomXmlPartCollection.load
+      - excel.Excel.CustomXmlPartCollection.load_1
       - excel.Excel.CustomXmlPartCollection.toJSON
   - uid: excel.Excel.CustomXmlPartCollection.add
     summary: |-
@@ -29,7 +30,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(xml)
-    fullName: add
+    fullName: add(xml)
     langs:
       - typeScript
     type: method
@@ -88,7 +89,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getByNamespace(namespaceUri)
-    fullName: getByNamespace
+    fullName: getByNamespace(namespaceUri)
     langs:
       - typeScript
     type: method
@@ -142,7 +143,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -158,7 +159,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(id)
-    fullName: getItem
+    fullName: getItem(id)
     langs:
       - typeScript
     type: method
@@ -205,7 +206,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(id)
-    fullName: getItemOrNullObject
+    fullName: getItemOrNullObject(id)
     langs:
       - typeScript
     type: method
@@ -251,7 +252,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -266,6 +267,23 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.CustomXmlPartCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.CustomXmlPartCollection;'
+      return:
+        type:
+          - excel.Excel.CustomXmlPartCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.CustomXmlPartCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -274,7 +292,7 @@ items:
       returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartCollectionData`<!-- -->) that contains
       an "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

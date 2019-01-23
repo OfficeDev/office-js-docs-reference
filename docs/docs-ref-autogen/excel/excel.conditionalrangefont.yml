@@ -20,6 +20,7 @@ items:
       - excel.Excel.ConditionalRangeFont.context
       - excel.Excel.ConditionalRangeFont.italic
       - excel.Excel.ConditionalRangeFont.load
+      - excel.Excel.ConditionalRangeFont.load_1
       - excel.Excel.ConditionalRangeFont.strikethrough
       - excel.Excel.ConditionalRangeFont.toJSON
       - excel.Excel.ConditionalRangeFont.underline
@@ -44,7 +45,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
-    fullName: clear
+    fullName: clear()
     langs:
       - typeScript
     type: method
@@ -117,7 +118,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -132,6 +133,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ConditionalRangeFont.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ConditionalRangeFont;
+      return:
+        type:
+          - excel.Excel.ConditionalRangeFont
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.ConditionalRangeFont.strikethrough
     summary: |-
       Represents the strikethrough status of the font.
@@ -155,7 +181,7 @@ items:
       returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFontData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

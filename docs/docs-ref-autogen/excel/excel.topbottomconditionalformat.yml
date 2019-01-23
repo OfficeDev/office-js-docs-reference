@@ -17,6 +17,7 @@ items:
       - excel.Excel.TopBottomConditionalFormat.context
       - excel.Excel.TopBottomConditionalFormat.format
       - excel.Excel.TopBottomConditionalFormat.load
+      - excel.Excel.TopBottomConditionalFormat.load_1
       - excel.Excel.TopBottomConditionalFormat.rule
       - excel.Excel.TopBottomConditionalFormat.toJSON
   - uid: excel.Excel.TopBottomConditionalFormat.context
@@ -69,7 +70,7 @@ items:
       specifies the number of items that are to be skipped and not included in the result. If option.top is specified,
       the result set will start after skipping the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -84,6 +85,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.TopBottomConditionalFormat.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.TopBottomConditionalFormat;
+      return:
+        type:
+          - excel.Excel.TopBottomConditionalFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.TopBottomConditionalFormat.rule
     summary: |-
       The criteria of the Top/Bottom conditional format.
@@ -107,7 +133,7 @@ items:
       returns a plain JavaScript object (typed as `Excel.Interfaces.TopBottomConditionalFormatData`<!-- -->) that
       contains shallow copies of any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

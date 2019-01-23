@@ -15,7 +15,7 @@ items:
     summary: Method that closes a dialog box.
     isPreview: true
     name: close()
-    fullName: close
+    fullName: close()
     langs:
       - typeScript
     type: method

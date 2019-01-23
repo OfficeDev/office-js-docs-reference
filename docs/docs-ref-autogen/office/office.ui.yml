@@ -18,6 +18,7 @@ items:
     children:
       - office.Office.UI.closeContainer
       - office.Office.UI.displayDialogAsync
+      - office.Office.UI.displayDialogAsync_1
       - office.Office.UI.messageParent
   - uid: office.Office.UI.closeContainer
     summary: Closes the UI container where the JavaScript is executing.
@@ -38,7 +39,7 @@ items:
 
       - Called from a module extension: No effect.
     name: closeContainer()
-    fullName: closeContainer
+    fullName: closeContainer()
     langs:
       - typeScript
     type: method
@@ -134,7 +135,7 @@ items:
       failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>Access your user-defined object or value, if you
       passed one as the asyncContext parameter.</td> </tr> </table>
     name: 'displayDialogAsync(startAddress, options, callback)'
-    fullName: displayDialogAsync
+    fullName: 'displayDialogAsync(startAddress, options, callback)'
     langs:
       - typeScript
     type: method
@@ -163,12 +164,33 @@ items:
             AsyncResult.value is a Dialog object.
           type:
             - '(result: AsyncResult<Dialog>) => void'
+  - uid: office.Office.UI.displayDialogAsync_1
+    name: 'displayDialogAsync(startAddress, callback)'
+    fullName: 'displayDialogAsync(startAddress, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'displayDialogAsync(startAddress: string, callback?: (result: AsyncResult<Dialog>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: startAddress
+          description: ''
+          type:
+            - string
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult<Dialog>) => void'
   - uid: office.Office.UI.messageParent
     summary: >-
       Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same
       domain as the parent.
     name: messageParent(message)
-    fullName: messageParent
+    fullName: messageParent(message)
     langs:
       - typeScript
     type: method

@@ -28,6 +28,7 @@ items:
       - word.Word.DocumentProperties.lastPrintDate
       - word.Word.DocumentProperties.lastSaveTime
       - word.Word.DocumentProperties.load
+      - word.Word.DocumentProperties.load_1
       - word.Word.DocumentProperties.manager
       - word.Word.DocumentProperties.revisionNumber
       - word.Word.DocumentProperties.security
@@ -250,7 +251,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -265,6 +266,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: word.Word.DocumentProperties.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.DocumentProperties;
+      return:
+        type:
+          - Word.DocumentProperties
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: word.Word.DocumentProperties.manager
     summary: |-
       Gets or sets the manager of the document.
@@ -357,7 +383,7 @@ items:
           - string
   - uid: word.Word.DocumentProperties.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -375,7 +401,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -392,7 +418,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

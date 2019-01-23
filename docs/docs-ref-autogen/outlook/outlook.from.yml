@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Outlook.From
+    summary: |-
+      Provides a method to get the from value of a message in an Outlook add-in.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+    name: Outlook.From
+    fullName: Outlook.From
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Outlook.From.getAsync
+      - outlook.Outlook.From.getAsync_1
+  - uid: outlook.Outlook.From.getAsync
+    summary: |-
+      Gets the from value of a message.
+
+      The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
+
+      The from value of the item is provided as an  in theOffice.AsyncResult.value property.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+
+
+      In addition to this signature, the method also has the following signature:
+
+
+      `getAsync(callback?: (result:Office.AsyncResult<EmailAddressDetails>) => void): void;`
+    name: 'getAsync(options, callback)'
+    fullName: 'getAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback: (result:Office.AsyncResult<EmailAddressDetails>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single
+            parameter,Office.AsyncResult, which is an Office.AsyncResult object. The `value` property of the result is
+            message's from value, as an EmailAddressDetails object.
+          type:
+            - '(result:Office.AsyncResult<EmailAddressDetails>) => void'
+  - uid: outlook.Outlook.From.getAsync_1
+    summary: |-
+      Gets the from value of a message.
+
+      The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
+
+      The from value of the item is provided as an  in theOffice.AsyncResult.value property.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+    name: getAsync(callback)
+    fullName: getAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(callback?: (result:Office.AsyncResult<EmailAddressDetails>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single
+            parameter,Office.AsyncResult, which is an Office.AsyncResult object. The `value` property of the result is
+            message's from value, as an EmailAddressDetails object.
+          type:
+            - '(result:Office.AsyncResult<EmailAddressDetails>) => void'

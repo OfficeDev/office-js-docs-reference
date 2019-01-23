@@ -17,6 +17,7 @@ items:
       - excel.Excel.ChartAxisTitle.context
       - excel.Excel.ChartAxisTitle.format
       - excel.Excel.ChartAxisTitle.load
+      - excel.Excel.ChartAxisTitle.load_1
       - excel.Excel.ChartAxisTitle.setFormula
       - excel.Excel.ChartAxisTitle.text
       - excel.Excel.ChartAxisTitle.toJSON
@@ -111,7 +112,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -126,13 +127,38 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartAxisTitle.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartAxisTitle;
+      return:
+        type:
+          - excel.Excel.ChartAxisTitle
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.ChartAxisTitle.setFormula
     summary: |-
       A string value that represents the formula of chart axis title using A1-style notation.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setFormula(formula)
-    fullName: setFormula
+    fullName: setFormula(formula)
     langs:
       - typeScript
     type: method
@@ -170,7 +196,7 @@ items:
       plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

@@ -19,6 +19,7 @@ items:
       - onenote.OneNote.RichText.id
       - onenote.OneNote.RichText.languageId
       - onenote.OneNote.RichText.load
+      - onenote.OneNote.RichText.load_1
       - onenote.OneNote.RichText.paragraph
       - onenote.OneNote.RichText.text
       - onenote.OneNote.RichText.toJSON
@@ -44,7 +45,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getHtml()
-    fullName: getHtml
+    fullName: getHtml()
     langs:
       - typeScript
     type: method
@@ -169,7 +170,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -184,6 +185,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.RichText.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): OneNote.RichText;
+      return:
+        type:
+          - onenote.OneNote.RichText
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: onenote.OneNote.RichText.paragraph
     summary: |-
       Gets the Paragraph object that contains the RichText object. Read-only.
@@ -222,7 +248,7 @@ items:
       JavaScript object (typed as `OneNote.Interfaces.RichTextData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -240,7 +266,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -257,7 +283,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

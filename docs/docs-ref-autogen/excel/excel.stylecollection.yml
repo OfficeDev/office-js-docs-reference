@@ -22,6 +22,7 @@ items:
       - excel.Excel.StyleCollection.getItem
       - excel.Excel.StyleCollection.items
       - excel.Excel.StyleCollection.load
+      - excel.Excel.StyleCollection.load_1
       - excel.Excel.StyleCollection.toJSON
   - uid: excel.Excel.StyleCollection.add
     summary: |-
@@ -29,7 +30,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(name)
-    fullName: add
+    fullName: add(name)
     langs:
       - typeScript
     type: method
@@ -89,7 +90,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
-    fullName: getItem
+    fullName: getItem(name)
     langs:
       - typeScript
     type: method
@@ -148,7 +149,7 @@ items:
       WARNING: The StyleCollection items array has a known issue when loading items from the collection. Do not use
       `StyleCollection.items`<!-- -->, any `load()` method, and the `toJSON()` method.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -163,12 +164,29 @@ items:
           description: ''
           type:
             - 'string | string[]'
+  - uid: excel.Excel.StyleCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.StyleCollection;'
+      return:
+        type:
+          - excel.Excel.StyleCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.StyleCollection.toJSON
     summary: >-
       WARNING: The StyleCollection items array has a known issue when loading items from the collection. Do not use
       `StyleCollection.items`<!-- -->, any `load()` method, and the `toJSON()` method.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

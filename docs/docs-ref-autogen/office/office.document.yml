@@ -11,30 +11,52 @@ items:
     package: office
     children:
       - office.Office.Document.addHandlerAsync
+      - office.Office.Document.addHandlerAsync_1
+      - office.Office.Document.getActiveViewAsync
+      - office.Office.Document.getActiveViewAsync_1
+      - office.Office.Document.getFileAsync
+      - office.Office.Document.getFileAsync_1
+      - office.Office.Document.getFilePropertiesAsync
+      - office.Office.Document.getFilePropertiesAsync_1
+      - office.Office.Document.getMaxResourceIndexAsync
+      - office.Office.Document.getMaxResourceIndexAsync_1
+      - office.Office.Document.getMaxTaskIndexAsync
+      - office.Office.Document.getMaxTaskIndexAsync_1
+      - office.Office.Document.getProjectFieldAsync
+      - office.Office.Document.getProjectFieldAsync_1
+      - office.Office.Document.getResourceByIndexAsync
+      - office.Office.Document.getResourceByIndexAsync_1
+      - office.Office.Document.getResourceFieldAsync
+      - office.Office.Document.getResourceFieldAsync_1
+      - office.Office.Document.getSelectedDataAsync
+      - office.Office.Document.getSelectedDataAsync_1
+      - office.Office.Document.getSelectedResourceAsync
+      - office.Office.Document.getSelectedResourceAsync_1
+      - office.Office.Document.getSelectedTaskAsync
+      - office.Office.Document.getSelectedTaskAsync_1
+      - office.Office.Document.getSelectedViewAsync
+      - office.Office.Document.getSelectedViewAsync_1
+      - office.Office.Document.getTaskAsync
+      - office.Office.Document.getTaskAsync_1
+      - office.Office.Document.getTaskByIndexAsync
+      - office.Office.Document.getTaskByIndexAsync_1
+      - office.Office.Document.getTaskFieldAsync
+      - office.Office.Document.getTaskFieldAsync_1
+      - office.Office.Document.getWSSUrlAsync
+      - office.Office.Document.getWSSUrlAsync_1
+      - office.Office.Document.goToByIdAsync
+      - office.Office.Document.goToByIdAsync_1
+      - office.Office.Document.removeHandlerAsync
+      - office.Office.Document.removeHandlerAsync_1
+      - office.Office.Document.setResourceFieldAsync
+      - office.Office.Document.setResourceFieldAsync_1
+      - office.Office.Document.setSelectedDataAsync
+      - office.Office.Document.setSelectedDataAsync_1
+      - office.Office.Document.setTaskFieldAsync
+      - office.Office.Document.setTaskFieldAsync_1
       - office.Office.Document.bindings
       - office.Office.Document.customXmlParts
-      - office.Office.Document.getActiveViewAsync
-      - office.Office.Document.getFileAsync
-      - office.Office.Document.getFilePropertiesAsync
-      - office.Office.Document.getMaxResourceIndexAsync
-      - office.Office.Document.getMaxTaskIndexAsync
-      - office.Office.Document.getProjectFieldAsync
-      - office.Office.Document.getResourceByIndexAsync
-      - office.Office.Document.getResourceFieldAsync
-      - office.Office.Document.getSelectedDataAsync
-      - office.Office.Document.getSelectedResourceAsync
-      - office.Office.Document.getSelectedTaskAsync
-      - office.Office.Document.getSelectedViewAsync
-      - office.Office.Document.getTaskAsync
-      - office.Office.Document.getTaskByIndexAsync
-      - office.Office.Document.getTaskFieldAsync
-      - office.Office.Document.getWSSUrlAsync
-      - office.Office.Document.goToByIdAsync
       - office.Office.Document.mode
-      - office.Office.Document.removeHandlerAsync
-      - office.Office.Document.setResourceFieldAsync
-      - office.Office.Document.setSelectedDataAsync
-      - office.Office.Document.setTaskFieldAsync
       - office.Office.Document.settings
       - office.Office.Document.url
   - uid: office.Office.Document.addHandlerAsync
@@ -358,7 +380,7 @@ items:
 
       ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
-    fullName: addHandlerAsync
+    fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     langs:
       - typeScript
     type: method
@@ -395,110 +417,33 @@ items:
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Document.bindings
-    summary: Gets an object that provides access to the bindings defined in the document.
-    remarks: >-
-      You don't instantiate the Document object directly in your script. To call members of the Document object to
-      interact with the current document or worksheet, use `Office.context.document` in your script.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this property.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td>
-      Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      function displayAllBindings() {
-          Office.context.document.bindings.getAllAsync(function (asyncResult) {
-              var bindingString = '';
-              for (var i in asyncResult.value) {
-                  bindingString += asyncResult.value[i].id + '\n';
-              }
-              write('Existing bindings: ' + bindingString);
-          });
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-    name: bindings
-    fullName: bindings
+  - uid: office.Office.Document.addHandlerAsync_1
+    name: 'addHandlerAsync(eventType, handler, callback)'
+    fullName: 'addHandlerAsync(eventType, handler, callback)'
     langs:
       - typeScript
-    type: property
+    type: method
     syntax:
-      content: 'bindings: Bindings;'
+      content: >-
+        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void):
+        void;
       return:
         type:
-          - office.Office.Bindings
-  - uid: office.Office.Document.customXmlParts
-    summary: Gets an object that represents the custom XML parts in the document.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this property.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Word </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      function getCustomXmlParts(){
-          Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
-              write('Retrieved ' + asyncResult.value.length + ' custom XML parts');
-          });
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-    name: customXmlParts
-    fullName: customXmlParts
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'customXmlParts: CustomXmlParts;'
-      return:
-        type:
-          - office.Office.CustomXmlParts
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: ''
+          type:
+            - Office.EventType
+        - id: handler
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.getActiveViewAsync
     summary: Returns the state of the current view of the presentation (edit or read).
     remarks: >-
@@ -542,7 +487,7 @@ items:
 
       ```
     name: 'getActiveViewAsync(options, callback)'
-    fullName: getActiveViewAsync
+    fullName: 'getActiveViewAsync(options, callback)'
     langs:
       - typeScript
     type: method
@@ -566,6 +511,23 @@ items:
             state of the presentation's current view. The value returned can be either "edit" or "read". "edit"
             corresponds to any of the views in which you can edit slides, such as Normal or Outline View. "read"
             corresponds to either Slide Show or Reading View.
+          type:
+            - '(result: AsyncResult<"edit" | "read">) => void'
+  - uid: office.Office.Document.getActiveViewAsync_1
+    name: getActiveViewAsync(callback)
+    fullName: getActiveViewAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveViewAsync(callback?: (result: AsyncResult<"edit" | "read">) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<"edit" | "read">) => void'
   - uid: office.Office.Document.getFileAsync
@@ -715,7 +677,7 @@ items:
 
       ```
     name: 'getFileAsync(fileType, options, callback)'
-    fullName: getFileAsync
+    fullName: 'getFileAsync(fileType, options, callback)'
     langs:
       - typeScript
     type: method
@@ -741,6 +703,27 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the File
             object.
+          type:
+            - '(result: AsyncResult<Office.File>) => void'
+  - uid: office.Office.Document.getFileAsync_1
+    name: 'getFileAsync(fileType, callback)'
+    fullName: 'getFileAsync(fileType, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFileAsync(fileType: FileType, callback?: (result: AsyncResult<Office.File>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fileType
+          description: ''
+          type:
+            - office.Office.FileType
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<Office.File>) => void'
   - uid: office.Office.Document.getFilePropertiesAsync
@@ -799,7 +782,7 @@ items:
 
       ```
     name: 'getFilePropertiesAsync(options, callback)'
-    fullName: getFilePropertiesAsync
+    fullName: 'getFilePropertiesAsync(options, callback)'
     langs:
       - typeScript
     type: method
@@ -821,6 +804,23 @@ items:
             A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
             file's properties (with the URL found at `asyncResult.value.url`<!-- -->).
+          type:
+            - '(result: AsyncResult<Office.FileProperties>) => void'
+  - uid: office.Office.Document.getFilePropertiesAsync_1
+    name: getFilePropertiesAsync(callback)
+    fullName: getFilePropertiesAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFilePropertiesAsync(callback?: (result: AsyncResult<Office.FileProperties>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<Office.FileProperties>) => void'
   - uid: office.Office.Document.getMaxResourceIndexAsync
@@ -932,7 +932,7 @@ items:
 
       ```
     name: 'getMaxResourceIndexAsync(options, callback)'
-    fullName: getMaxResourceIndexAsync
+    fullName: 'getMaxResourceIndexAsync(options, callback)'
     langs:
       - typeScript
     type: method
@@ -954,6 +954,23 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
             highest index number in the current project's resource collection.
+          type:
+            - '(result: AsyncResult<number>) => void'
+  - uid: office.Office.Document.getMaxResourceIndexAsync_1
+    name: getMaxResourceIndexAsync(callback)
+    fullName: getMaxResourceIndexAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMaxResourceIndexAsync(callback?: (result: AsyncResult<number>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<number>) => void'
   - uid: office.Office.Document.getMaxTaskIndexAsync
@@ -1066,7 +1083,7 @@ items:
 
       ```
     name: 'getMaxTaskIndexAsync(options, callback)'
-    fullName: getMaxTaskIndexAsync
+    fullName: 'getMaxTaskIndexAsync(options, callback)'
     langs:
       - typeScript
     type: method
@@ -1088,6 +1105,23 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
             highest index number in the current project's task collection.
+          type:
+            - '(result: AsyncResult<number>) => void'
+  - uid: office.Office.Document.getMaxTaskIndexAsync_1
+    name: getMaxTaskIndexAsync(callback)
+    fullName: getMaxTaskIndexAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMaxTaskIndexAsync(callback?: (result: AsyncResult<number>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<number>) => void'
   - uid: office.Office.Document.getProjectFieldAsync
@@ -1184,7 +1218,7 @@ items:
 
       ```
     name: 'getProjectFieldAsync(fieldId, options, callback)'
-    fullName: getProjectFieldAsync
+    fullName: 'getProjectFieldAsync(fieldId, options, callback)'
     langs:
       - typeScript
     type: method
@@ -1210,6 +1244,27 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
             the `fieldValue` property, which represents the value of the specified field.
+          type:
+            - '(result: AsyncResult<any>) => void'
+  - uid: office.Office.Document.getProjectFieldAsync_1
+    name: 'getProjectFieldAsync(fieldId, callback)'
+    fullName: 'getProjectFieldAsync(fieldId, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getProjectFieldAsync(fieldId: number, callback?: (result: AsyncResult<any>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fieldId
+          description: ''
+          type:
+            - number
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getResourceByIndexAsync
@@ -1321,7 +1376,7 @@ items:
 
       ```
     name: 'getResourceByIndexAsync(resourceIndex, options, callback)'
-    fullName: getResourceByIndexAsync
+    fullName: 'getResourceByIndexAsync(resourceIndex, options, callback)'
     langs:
       - typeScript
     type: method
@@ -1347,6 +1402,27 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
             of the resource as a string.
+          type:
+            - '(result: AsyncResult<string>) => void'
+  - uid: office.Office.Document.getResourceByIndexAsync_1
+    name: 'getResourceByIndexAsync(resourceIndex, callback)'
+    fullName: 'getResourceByIndexAsync(resourceIndex, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getResourceByIndexAsync(resourceIndex: number, callback?: (result: AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: resourceIndex
+          description: ''
+          type:
+            - number
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getResourceFieldAsync
@@ -1469,7 +1545,7 @@ items:
 
       ```
     name: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
-    fullName: getResourceFieldAsync
+    fullName: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
     langs:
       - typeScript
     type: method
@@ -1499,6 +1575,33 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
             of the resource as a string.
+          type:
+            - '(result: AsyncResult<string>) => void'
+  - uid: office.Office.Document.getResourceFieldAsync_1
+    name: 'getResourceFieldAsync(resourceId, fieldId, callback)'
+    fullName: 'getResourceFieldAsync(resourceId, fieldId, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getResourceFieldAsync(resourceId: string, fieldId: number, callback?: (result: AsyncResult<string>) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: resourceId
+          description: ''
+          type:
+            - string
+        - id: fieldId
+          description: ''
+          type:
+            - number
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getSelectedDataAsync
@@ -1672,7 +1775,7 @@ items:
 
       ```
     name: 'getSelectedDataAsync(coercionType, options, callback)'
-    fullName: getSelectedDataAsync
+    fullName: 'getSelectedDataAsync(coercionType, options, callback)'
     langs:
       - typeScript
     type: method
@@ -1699,6 +1802,27 @@ items:
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the data
             in the current selection. This is returned in the data structure or format you specified with the
             coercionType parameter. (See Remarks for more information about data coercion.)
+          type:
+            - '(result: AsyncResult<T>) => void'
+  - uid: office.Office.Document.getSelectedDataAsync_1
+    name: 'getSelectedDataAsync(coercionType, callback)'
+    fullName: 'getSelectedDataAsync(coercionType, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedDataAsync<T>(coercionType: Office.CoercionType, callback?: (result: AsyncResult<T>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: coercionType
+          description: ''
+          type:
+            - office.Office.CoercionType
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<T>) => void'
   - uid: office.Office.Document.getSelectedResourceAsync
@@ -1821,7 +1945,7 @@ items:
 
       ```
     name: 'getSelectedResourceAsync(options, callback)'
-    fullName: getSelectedResourceAsync
+    fullName: 'getSelectedResourceAsync(options, callback)'
     langs:
       - typeScript
     type: method
@@ -1843,6 +1967,23 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
             of the resource as a string.
+          type:
+            - '(result: AsyncResult<string>) => void'
+  - uid: office.Office.Document.getSelectedResourceAsync_1
+    name: getSelectedResourceAsync(callback)
+    fullName: getSelectedResourceAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedResourceAsync(callback?: (result: AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getSelectedTaskAsync
@@ -1943,7 +2084,7 @@ items:
 
       ```
     name: 'getSelectedTaskAsync(options, callback)'
-    fullName: getSelectedTaskAsync
+    fullName: 'getSelectedTaskAsync(options, callback)'
     langs:
       - typeScript
     type: method
@@ -1965,6 +2106,23 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
             of the resource as a string.
+          type:
+            - '(result: AsyncResult<string>) => void'
+  - uid: office.Office.Document.getSelectedTaskAsync_1
+    name: getSelectedTaskAsync(callback)
+    fullName: getSelectedTaskAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedTaskAsync(callback?: (result: AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getSelectedViewAsync
@@ -2039,7 +2197,7 @@ items:
 
       ```
     name: 'getSelectedViewAsync(options, callback)'
-    fullName: getSelectedViewAsync
+    fullName: 'getSelectedViewAsync(options, callback)'
     langs:
       - typeScript
     type: method
@@ -2060,6 +2218,23 @@ items:
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
             the following properties: `viewName` - The name of the view, as a ProjectViewTypes constant. `viewType` -
             The type of view, as the integer value of a ProjectViewTypes constant.
+          type:
+            - '(result: AsyncResult<any>) => void'
+  - uid: office.Office.Document.getSelectedViewAsync_1
+    name: getSelectedViewAsync(callback)
+    fullName: getSelectedViewAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedViewAsync(callback?: (result: AsyncResult<any>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getTaskAsync
@@ -2162,7 +2337,7 @@ items:
 
       ```
     name: 'getTaskAsync(taskId, options, callback)'
-    fullName: getTaskAsync
+    fullName: 'getTaskAsync(taskId, options, callback)'
     langs:
       - typeScript
     type: method
@@ -2190,6 +2365,27 @@ items:
             the following properties: `taskName` - The name of the task. `wssTaskId` - The ID of the task in the
             synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value
             is 0. `resourceNames` - The comma-separated list of the names of resources that are assigned to the task.
+          type:
+            - '(result: AsyncResult<any>) => void'
+  - uid: office.Office.Document.getTaskAsync_1
+    name: 'getTaskAsync(taskId, callback)'
+    fullName: 'getTaskAsync(taskId, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTaskAsync(taskId: string, callback?: (result: AsyncResult<any>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: taskId
+          description: ''
+          type:
+            - string
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getTaskByIndexAsync
@@ -2304,7 +2500,7 @@ items:
 
       ```
     name: 'getTaskByIndexAsync(taskIndex, options, callback)'
-    fullName: getTaskByIndexAsync
+    fullName: 'getTaskByIndexAsync(taskIndex, options, callback)'
     langs:
       - typeScript
     type: method
@@ -2330,6 +2526,27 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
             of the task as a string.
+          type:
+            - '(result: AsyncResult<string>) => void'
+  - uid: office.Office.Document.getTaskByIndexAsync_1
+    name: 'getTaskByIndexAsync(taskIndex, callback)'
+    fullName: 'getTaskByIndexAsync(taskIndex, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTaskByIndexAsync(taskIndex: number, callback?: (result: AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: taskIndex
+          description: ''
+          type:
+            - number
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getTaskFieldAsync
@@ -2447,7 +2664,7 @@ items:
 
       ```
     name: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
-    fullName: getTaskFieldAsync
+    fullName: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
     langs:
       - typeScript
     type: method
@@ -2479,6 +2696,31 @@ items:
             the `fieldValue` property, which represents the value of the specified field.
           type:
             - '(result: AsyncResult<any>) => void'
+  - uid: office.Office.Document.getTaskFieldAsync_1
+    name: 'getTaskFieldAsync(taskId, fieldId, callback)'
+    fullName: 'getTaskFieldAsync(taskId, fieldId, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTaskFieldAsync(taskId: string, fieldId: number, callback?: (result: AsyncResult<any>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: taskId
+          description: ''
+          type:
+            - string
+        - id: fieldId
+          description: ''
+          type:
+            - number
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getWSSUrlAsync
     summary: 'Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.'
     remarks: >-
@@ -2496,7 +2738,7 @@ items:
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
       browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getWSSUrlAsync(options, callback)'
-    fullName: getWSSUrlAsync
+    fullName: 'getWSSUrlAsync(options, callback)'
     langs:
       - typeScript
     type: method
@@ -2517,6 +2759,23 @@ items:
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
             the following properties: `listName` - the name of the synchronized SharePoint task list. `serverUrl` - the
             URL of the synchronized SharePoint task list.
+          type:
+            - '(result: AsyncResult<any>) => void'
+  - uid: office.Office.Document.getWSSUrlAsync_1
+    name: getWSSUrlAsync(callback)
+    fullName: getWSSUrlAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWSSUrlAsync(callback?: (result: AsyncResult<any>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.goToByIdAsync
@@ -2699,7 +2958,7 @@ items:
 
       ```
     name: 'goToByIdAsync(id, goToType, options, callback)'
-    fullName: goToByIdAsync
+    fullName: 'goToByIdAsync(id, goToType, options, callback)'
     langs:
       - typeScript
     type: method
@@ -2731,96 +2990,31 @@ items:
             current view.
           type:
             - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.Document.mode
-    summary: Gets the mode the document is in.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this property.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
-      </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      function displayDocumentMode() {
-          write(Office.context.document.mode);
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-
-      ```javascript
-
-      // The following example initializes the add-in and then gets properties of the
-
-      // Document object that are available in the context of a Project document.
-
-      // A Project document is the opened, active project. To access members of the
-
-      // ProjectDocument object, use the Office.context.document object as shown in
-
-      // the code examples for ProjectDocument methods and events.
-
-      // The example assumes your add-in has a reference to the jQuery library and
-
-      // that the following page control is defined in the content div in the page body:
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-
-                  // Get information about the document.
-                  showDocumentProperties();
-              });
-          };
-
-          // Get the document mode and the URL of the active project.
-          function showDocumentProperties() {
-              var output = String.format(
-                  'The document mode is {0}.<br/>The URL of the active project is {1}.',
-                  Office.context.document.mode,
-                  Office.context.document.url);
-              $('#message').html(output);
-          }
-      })();
-
-      ```
-    name: mode
-    fullName: mode
+  - uid: office.Office.Document.goToByIdAsync_1
+    name: 'goToByIdAsync(id, goToType, callback)'
+    fullName: 'goToByIdAsync(id, goToType, callback)'
     langs:
       - typeScript
-    type: property
+    type: method
     syntax:
-      content: 'mode: DocumentMode;'
+      content: 'goToByIdAsync(id: string | number, goToType: GoToType, callback?: (result: AsyncResult<any>) => void): void;'
       return:
         type:
-          - office.Office.DocumentMode
+          - void
+        description: ''
+      parameters:
+        - id: id
+          description: ''
+          type:
+            - string | number
+        - id: goToType
+          description: ''
+          type:
+            - office.Office.GoToType
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.removeHandlerAsync
     summary: Removes an event handler for the specified event type.
     remarks: >-
@@ -2936,7 +3130,7 @@ items:
 
       ```
     name: 'removeHandlerAsync(eventType, options, callback)'
-    fullName: removeHandlerAsync
+    fullName: 'removeHandlerAsync(eventType, options, callback)'
     langs:
       - typeScript
     type: method
@@ -2961,6 +3155,27 @@ items:
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Document.removeHandlerAsync_1
+    name: 'removeHandlerAsync(eventType, callback)'
+    fullName: 'removeHandlerAsync(eventType, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeHandlerAsync(eventType: Office.EventType, callback?: (result: AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: ''
+          type:
+            - Office.EventType
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.setResourceFieldAsync
@@ -3078,7 +3293,7 @@ items:
 
       ```
     name: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, options, callback)'
-    fullName: setResourceFieldAsync
+    fullName: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, options, callback)'
     langs:
       - typeScript
     type: method
@@ -3111,6 +3326,37 @@ items:
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Document.setResourceFieldAsync_1
+    name: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, callback)'
+    fullName: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object,
+        callback?: (result: AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: resourceId
+          description: ''
+          type:
+            - string
+        - id: fieldId
+          description: ''
+          type:
+            - number
+        - id: fieldValue
+          description: ''
+          type:
+            - string | number | boolean | object
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.setSelectedDataAsync
@@ -3328,7 +3574,7 @@ items:
 
       ```
     name: 'setSelectedDataAsync(data, options, callback)'
-    fullName: setSelectedDataAsync
+    fullName: 'setSelectedDataAsync(data, options, callback)'
     langs:
       - typeScript
     type: method
@@ -3388,6 +3634,27 @@ items:
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The AsyncResult.value property always returns
             undefined because there is no object or data to retrieve.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Document.setSelectedDataAsync_1
+    name: 'setSelectedDataAsync(data, callback)'
+    fullName: 'setSelectedDataAsync(data, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSelectedDataAsync(data: string | TableData | any[][], callback?: (result: AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: ''
+          type:
+            - 'string | TableData | any[][]'
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.setTaskFieldAsync
@@ -3505,7 +3772,7 @@ items:
 
       ```
     name: 'setTaskFieldAsync(taskId, fieldId, fieldValue, options, callback)'
-    fullName: setTaskFieldAsync
+    fullName: 'setTaskFieldAsync(taskId, fieldId, fieldValue, options, callback)'
     langs:
       - typeScript
     type: method
@@ -3540,6 +3807,231 @@ items:
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Document.setTaskFieldAsync_1
+    name: 'setTaskFieldAsync(taskId, fieldId, fieldValue, callback)'
+    fullName: 'setTaskFieldAsync(taskId, fieldId, fieldValue, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, callback?:
+        (result: AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: taskId
+          description: ''
+          type:
+            - string
+        - id: fieldId
+          description: ''
+          type:
+            - number
+        - id: fieldValue
+          description: ''
+          type:
+            - string | number | boolean | object
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Document.bindings
+    summary: Gets an object that provides access to the bindings defined in the document.
+    remarks: >-
+      You don't instantiate the Document object directly in your script. To call members of the Document object to
+      interact with the current document or worksheet, use `Office.context.document` in your script.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this property.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
+      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td>
+      Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function displayAllBindings() {
+          Office.context.document.bindings.getAllAsync(function (asyncResult) {
+              var bindingString = '';
+              for (var i in asyncResult.value) {
+                  bindingString += asyncResult.value[i].id + '\n';
+              }
+              write('Existing bindings: ' + bindingString);
+          });
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
+    name: bindings
+    fullName: bindings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bindings: Bindings;'
+      return:
+        type:
+          - office.Office.Bindings
+  - uid: office.Office.Document.customXmlParts
+    summary: Gets an object that represents the custom XML parts in the document.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this property.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Word </strong></td><td> Y
+      </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function getCustomXmlParts(){
+          Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
+              write('Retrieved ' + asyncResult.value.length + ' custom XML parts');
+          });
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
+    name: customXmlParts
+    fullName: customXmlParts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'customXmlParts: CustomXmlParts;'
+      return:
+        type:
+          - office.Office.CustomXmlParts
+  - uid: office.Office.Document.mode
+    summary: Gets the mode the document is in.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this property.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
+      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
+      </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
+      </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function displayDocumentMode() {
+          write(Office.context.document.mode);
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
+
+      ```javascript
+
+      // The following example initializes the add-in and then gets properties of the
+
+      // Document object that are available in the context of a Project document.
+
+      // A Project document is the opened, active project. To access members of the
+
+      // ProjectDocument object, use the Office.context.document object as shown in
+
+      // the code examples for ProjectDocument methods and events.
+
+      // The example assumes your add-in has a reference to the jQuery library and
+
+      // that the following page control is defined in the content div in the page body:
+
+      // <span id="message"></span>
+
+
+      (function () {
+          "use strict";
+
+          // The initialize function must be run each time a new page is loaded.
+          Office.initialize = function (reason) {
+              $(document).ready(function () {
+
+                  // Get information about the document.
+                  showDocumentProperties();
+              });
+          };
+
+          // Get the document mode and the URL of the active project.
+          function showDocumentProperties() {
+              var output = String.format(
+                  'The document mode is {0}.<br/>The URL of the active project is {1}.',
+                  Office.context.document.mode,
+                  Office.context.document.url);
+              $('#message').html(output);
+          }
+      })();
+
+      ```
+    name: mode
+    fullName: mode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'mode: DocumentMode;'
+      return:
+        type:
+          - office.Office.DocumentMode
   - uid: office.Office.Document.settings
     summary: >-
       Gets an object that represents the saved custom settings of the content or task pane add-in for the current

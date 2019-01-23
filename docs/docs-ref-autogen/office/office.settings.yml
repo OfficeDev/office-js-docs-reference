@@ -32,11 +32,14 @@ items:
     package: office
     children:
       - office.Office.Settings.addHandlerAsync
+      - office.Office.Settings.addHandlerAsync_1
       - office.Office.Settings.get
       - office.Office.Settings.refreshAsync
       - office.Office.Settings.remove
       - office.Office.Settings.removeHandlerAsync
+      - office.Office.Settings.removeHandlerAsync_1
       - office.Office.Settings.saveAsync
+      - office.Office.Settings.saveAsync_1
       - office.Office.Settings.set
   - uid: office.Office.Settings.addHandlerAsync
     summary: >-
@@ -78,7 +81,7 @@ items:
 
       ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
-    fullName: addHandlerAsync
+    fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     langs:
       - typeScript
     type: method
@@ -137,6 +140,33 @@ items:
             </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> </td><td> Y </td><td> </td></tr> </table>
           type:
             - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Settings.addHandlerAsync_1
+    name: 'addHandlerAsync(eventType, handler, callback)'
+    fullName: 'addHandlerAsync(eventType, handler, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: ''
+          type:
+            - Office.EventType
+        - id: handler
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Settings.get
     summary: Retrieves the specified setting.
     remarks: >-
@@ -177,7 +207,7 @@ items:
 
       ```
     name: get(name)
-    fullName: get
+    fullName: get(name)
     langs:
       - typeScript
     type: method
@@ -255,7 +285,7 @@ items:
 
       ```
     name: refreshAsync(callback)
-    fullName: refreshAsync
+    fullName: refreshAsync(callback)
     langs:
       - typeScript
     type: method
@@ -317,7 +347,7 @@ items:
 
       ```
     name: remove(name)
-    fullName: remove
+    fullName: remove(name)
     langs:
       - typeScript
     type: method
@@ -389,7 +419,7 @@ items:
 
       ```
     name: 'removeHandlerAsync(eventType, options, callback)'
-    fullName: removeHandlerAsync
+    fullName: 'removeHandlerAsync(eventType, options, callback)'
     langs:
       - typeScript
     type: method
@@ -414,6 +444,27 @@ items:
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Settings.removeHandlerAsync_1
+    name: 'removeHandlerAsync(eventType, callback)'
+    fullName: 'removeHandlerAsync(eventType, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeHandlerAsync(eventType: Office.EventType, callback?: (result: AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: ''
+          type:
+            - Office.EventType
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Settings.saveAsync
@@ -475,7 +526,7 @@ items:
 
       ```
     name: 'saveAsync(options, callback)'
-    fullName: saveAsync
+    fullName: 'saveAsync(options, callback)'
     langs:
       - typeScript
     type: method
@@ -494,6 +545,23 @@ items:
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Settings.saveAsync_1
+    name: saveAsync(callback)
+    fullName: saveAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'saveAsync(callback?: (result: AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Settings.set
@@ -543,7 +611,7 @@ items:
 
       ```
     name: 'set(name, value)'
-    fullName: set
+    fullName: 'set(name, value)'
     langs:
       - typeScript
     type: method

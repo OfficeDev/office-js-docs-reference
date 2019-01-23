@@ -31,6 +31,7 @@ items:
       - excel.Excel.Style.includeProtection
       - excel.Excel.Style.indentLevel
       - excel.Excel.Style.load
+      - excel.Excel.Style.load_1
       - excel.Excel.Style.locked
       - excel.Excel.Style.name
       - excel.Excel.Style.numberFormat
@@ -106,7 +107,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -386,7 +387,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -401,6 +402,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.Style.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Style;
+      return:
+        type:
+          - excel.Excel.Style
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.Style.locked
     summary: |-
       Indicates if the object is locked when the worksheet is protected.
@@ -514,7 +540,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.StyleData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

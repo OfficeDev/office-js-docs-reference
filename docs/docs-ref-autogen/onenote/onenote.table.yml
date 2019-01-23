@@ -25,6 +25,7 @@ items:
       - onenote.OneNote.Table.insertColumn
       - onenote.OneNote.Table.insertRow
       - onenote.OneNote.Table.load
+      - onenote.OneNote.Table.load_1
       - onenote.OneNote.Table.paragraph
       - onenote.OneNote.Table.rowCount
       - onenote.OneNote.Table.rows
@@ -40,7 +41,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendColumn(values)
-    fullName: appendColumn
+    fullName: appendColumn(values)
     langs:
       - typeScript
     type: method
@@ -96,7 +97,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendRow(values)
-    fullName: appendRow
+    fullName: appendRow(values)
     langs:
       - typeScript
     type: method
@@ -167,7 +168,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clear()
-    fullName: clear
+    fullName: clear()
     langs:
       - typeScript
     type: method
@@ -212,7 +213,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'getCell(rowIndex, cellIndex)'
-    fullName: getCell
+    fullName: 'getCell(rowIndex, cellIndex)'
     langs:
       - typeScript
     type: method
@@ -287,7 +288,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertColumn(index, values)'
-    fullName: insertColumn
+    fullName: 'insertColumn(index, values)'
     langs:
       - typeScript
     type: method
@@ -349,7 +350,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertRow(index, values)'
-    fullName: insertRow
+    fullName: 'insertRow(index, values)'
     langs:
       - typeScript
     type: method
@@ -507,7 +508,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -522,6 +523,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.Table.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): OneNote.Table;
+      return:
+        type:
+          - OneNote.Table
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: onenote.OneNote.Table.paragraph
     summary: |-
       Gets the Paragraph object that contains the Table object. Read-only.
@@ -573,7 +599,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: setShadingColor(colorCode)
-    fullName: setShadingColor
+    fullName: setShadingColor(colorCode)
     langs:
       - typeScript
     type: method
@@ -596,7 +622,7 @@ items:
       JavaScript object (typed as `OneNote.Interfaces.TableData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -614,7 +640,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -631,7 +657,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

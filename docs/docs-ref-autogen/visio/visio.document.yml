@@ -17,6 +17,7 @@ items:
       - visio.Visio.Document.application
       - visio.Visio.Document.getActivePage
       - visio.Visio.Document.load
+      - visio.Visio.Document.load_1
       - visio.Visio.Document.onDataRefreshComplete
       - visio.Visio.Document.onDocumentLoadComplete
       - visio.Visio.Document.onPageLoadComplete
@@ -49,7 +50,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getActivePage()
-    fullName: getActivePage
+    fullName: getActivePage()
     langs:
       - typeScript
     type: method
@@ -146,7 +147,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -161,6 +162,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.Document.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Visio.Document;
+      return:
+        type:
+          - Visio.Document
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: visio.Visio.Document.onDataRefreshComplete
     summary: |-
       Occurs when the data is refreshed in the diagram.
@@ -272,7 +298,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: setActivePage(PageName)
-    fullName: setActivePage
+    fullName: setActivePage(PageName)
     langs:
       - typeScript
     type: method
@@ -309,7 +335,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: startDataRefresh()
-    fullName: startDataRefresh
+    fullName: startDataRefresh()
     langs:
       - typeScript
     type: method
@@ -336,7 +362,7 @@ items:
           ```
   - uid: visio.Visio.Document.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

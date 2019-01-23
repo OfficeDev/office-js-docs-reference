@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.TableCellCollectionUpdateData
-    summary: 'An interface for updating data on the TableCellCollection object, for use in "tableCellCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the TableCellCollection object, for use in "tableCellCollection.set(<!-- -->{
+      ... }<!-- -->)".
     name: OneNote.Interfaces.TableCellCollectionUpdateData
     fullName: OneNote.Interfaces.TableCellCollectionUpdateData
     langs:

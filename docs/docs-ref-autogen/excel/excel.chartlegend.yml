@@ -20,6 +20,7 @@ items:
       - excel.Excel.ChartLegend.left
       - excel.Excel.ChartLegend.legendEntries
       - excel.Excel.ChartLegend.load
+      - excel.Excel.ChartLegend.load_1
       - excel.Excel.ChartLegend.overlay
       - excel.Excel.ChartLegend.position
       - excel.Excel.ChartLegend.showShadow
@@ -164,7 +165,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -179,6 +180,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartLegend.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartLegend;
+      return:
+        type:
+          - excel.Excel.ChartLegend
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.ChartLegend.overlay
     summary: |-
       Boolean value for whether the chart legend should overlap with the main body of the chart.
@@ -232,7 +258,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.ChartLegendData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

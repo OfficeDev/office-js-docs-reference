@@ -24,6 +24,7 @@ items:
       - excel.Excel.DocumentProperties.keywords
       - excel.Excel.DocumentProperties.lastAuthor
       - excel.Excel.DocumentProperties.load
+      - excel.Excel.DocumentProperties.load_1
       - excel.Excel.DocumentProperties.manager
       - excel.Excel.DocumentProperties.revisionNumber
       - excel.Excel.DocumentProperties.subject
@@ -182,7 +183,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -197,6 +198,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.DocumentProperties.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.DocumentProperties;
+      return:
+        type:
+          - excel.Excel.DocumentProperties
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.DocumentProperties.manager
     summary: |-
       Gets or sets the manager of the workbook.
@@ -265,7 +291,7 @@ items:
       a plain JavaScript object (typed as `Excel.Interfaces.DocumentPropertiesData`<!-- -->) that contains shallow
       copies of any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

@@ -30,17 +30,26 @@ items:
       - word.Word.Paragraph.getPrevious
       - word.Word.Paragraph.getPreviousOrNullObject
       - word.Word.Paragraph.getRange
+      - word.Word.Paragraph.getRange_1
       - word.Word.Paragraph.getTextRanges
       - word.Word.Paragraph.inlinePictures
       - word.Word.Paragraph.insertBreak
+      - word.Word.Paragraph.insertBreak_1
       - word.Word.Paragraph.insertContentControl
       - word.Word.Paragraph.insertFileFromBase64
+      - word.Word.Paragraph.insertFileFromBase64_1
       - word.Word.Paragraph.insertHtml
+      - word.Word.Paragraph.insertHtml_1
       - word.Word.Paragraph.insertInlinePictureFromBase64
+      - word.Word.Paragraph.insertInlinePictureFromBase64_1
       - word.Word.Paragraph.insertOoxml
+      - word.Word.Paragraph.insertOoxml_1
       - word.Word.Paragraph.insertParagraph
+      - word.Word.Paragraph.insertParagraph_1
       - word.Word.Paragraph.insertTable
+      - word.Word.Paragraph.insertTable_1
       - word.Word.Paragraph.insertText
+      - word.Word.Paragraph.insertText_1
       - word.Word.Paragraph.isLastParagraph
       - word.Word.Paragraph.isListItem
       - word.Word.Paragraph.leftIndent
@@ -52,6 +61,7 @@ items:
       - word.Word.Paragraph.listItemOrNullObject
       - word.Word.Paragraph.listOrNullObject
       - word.Word.Paragraph.load
+      - word.Word.Paragraph.load_1
       - word.Word.Paragraph.outlineLevel
       - word.Word.Paragraph.parentBody
       - word.Word.Paragraph.parentContentControl
@@ -63,6 +73,7 @@ items:
       - word.Word.Paragraph.rightIndent
       - word.Word.Paragraph.search
       - word.Word.Paragraph.select
+      - word.Word.Paragraph.select_1
       - word.Word.Paragraph.spaceAfter
       - word.Word.Paragraph.spaceBefore
       - word.Word.Paragraph.split
@@ -110,7 +121,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'attachToList(listId, level)'
-    fullName: attachToList
+    fullName: 'attachToList(listId, level)'
     langs:
       - typeScript
     type: method
@@ -135,7 +146,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: clear()
-    fullName: clear
+    fullName: clear()
     langs:
       - typeScript
     type: method
@@ -214,7 +225,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -264,7 +275,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: detachFromList()
-    fullName: detachFromList
+    fullName: detachFromList()
     langs:
       - typeScript
     type: method
@@ -318,7 +329,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getHtml()
-    fullName: getHtml
+    fullName: getHtml()
     langs:
       - typeScript
     type: method
@@ -368,7 +379,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNext()
-    fullName: getNext
+    fullName: getNext()
     langs:
       - typeScript
     type: method
@@ -384,7 +395,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNextOrNullObject()
-    fullName: getNextOrNullObject
+    fullName: getNextOrNullObject()
     langs:
       - typeScript
     type: method
@@ -400,7 +411,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getOoxml()
-    fullName: getOoxml
+    fullName: getOoxml()
     langs:
       - typeScript
     type: method
@@ -450,7 +461,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getPrevious()
-    fullName: getPrevious
+    fullName: getPrevious()
     langs:
       - typeScript
     type: method
@@ -466,7 +477,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getPreviousOrNullObject()
-    fullName: getPreviousOrNullObject
+    fullName: getPreviousOrNullObject()
     langs:
       - typeScript
     type: method
@@ -523,7 +534,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getRange(rangeLocation)
-    fullName: getRange
+    fullName: getRange(rangeLocation)
     langs:
       - typeScript
     type: method
@@ -538,13 +549,34 @@ items:
           description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'', ''After'', or ''Content''.'
           type:
             - word.Word.RangeLocation
+  - uid: word.Word.Paragraph.getRange_1
+    summary: |-
+      Gets the whole paragraph, or the starting or ending point of the paragraph, as a range.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getRange(rangeLocation)
+    fullName: getRange(rangeLocation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: rangeLocation
+          description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'', ''After'', or ''Content''.'
+          type:
+            - '"Whole" | "Start" | "End" | "Before" | "After" | "Content"'
   - uid: word.Word.Paragraph.getTextRanges
     summary: |-
       Gets the text ranges in the paragraph by using punctuation marks and/or other ending marks.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'getTextRanges(endingMarks, trimSpacing)'
-    fullName: getTextRanges
+    fullName: 'getTextRanges(endingMarks, trimSpacing)'
     langs:
       - typeScript
     type: method
@@ -591,7 +623,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertBreak(breakType, insertLocation)'
-    fullName: insertBreak
+    fullName: 'insertBreak(breakType, insertLocation)'
     langs:
       - typeScript
     type: method
@@ -664,13 +696,42 @@ items:
           description: Required. The value can be 'Before' or 'After'.
           type:
             - Word.InsertLocation
+  - uid: word.Word.Paragraph.insertBreak_1
+    summary: >-
+      Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
+      'After'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertBreak(breakType, insertLocation)'
+    fullName: 'insertBreak(breakType, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertBreak(breakType: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" |
+        "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: breakType
+          description: Required. The break type to add to the document.
+          type:
+            - '"Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line"'
+        - id: insertLocation
+          description: Required. The value can be 'Before' or 'After'.
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: word.Word.Paragraph.insertContentControl
     summary: |-
       Wraps the paragraph object with a rich text content control.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: insertContentControl()
-    fullName: insertContentControl
+    fullName: insertContentControl()
     langs:
       - typeScript
     type: method
@@ -726,7 +787,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertFileFromBase64(base64File, insertLocation)'
-    fullName: insertFileFromBase64
+    fullName: 'insertFileFromBase64(base64File, insertLocation)'
     langs:
       - typeScript
     type: method
@@ -745,6 +806,35 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
             - Word.InsertLocation
+  - uid: word.Word.Paragraph.insertFileFromBase64_1
+    summary: >-
+      Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace',
+      'Start', or 'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertFileFromBase64(base64File, insertLocation)'
+    fullName: 'insertFileFromBase64(base64File, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"):
+        Word.Range;
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: base64File
+          description: Required. The base64 encoded content of a .docx file.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: word.Word.Paragraph.insertHtml
     summary: >-
       Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
@@ -753,7 +843,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertHtml(html, insertLocation)'
-    fullName: insertHtml
+    fullName: 'insertHtml(html, insertLocation)'
     langs:
       - typeScript
     type: method
@@ -810,6 +900,33 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
             - Word.InsertLocation
+  - uid: word.Word.Paragraph.insertHtml_1
+    summary: >-
+      Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
+      'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertHtml(html, insertLocation)'
+    fullName: 'insertHtml(html, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: html
+          description: Required. The HTML to be inserted in the paragraph.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: word.Word.Paragraph.insertInlinePictureFromBase64
     summary: >-
       Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace',
@@ -818,7 +935,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
-    fullName: insertInlinePictureFromBase64
+    fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
     langs:
       - typeScript
     type: method
@@ -878,6 +995,35 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
             - Word.InsertLocation
+  - uid: word.Word.Paragraph.insertInlinePictureFromBase64_1
+    summary: >-
+      Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace',
+      'Start', or 'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
+    fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" |
+        "Replace"): Word.InlinePicture;
+      return:
+        type:
+          - word.Word.InlinePicture
+        description: ''
+      parameters:
+        - id: base64EncodedImage
+          description: Required. The base64 encoded image to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: word.Word.Paragraph.insertOoxml
     summary: >-
       Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
@@ -886,7 +1032,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertOoxml(ooxml, insertLocation)'
-    fullName: insertOoxml
+    fullName: 'insertOoxml(ooxml, insertLocation)'
     langs:
       - typeScript
     type: method
@@ -905,13 +1051,40 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
             - Word.InsertLocation
+  - uid: word.Word.Paragraph.insertOoxml_1
+    summary: >-
+      Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
+      'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertOoxml(ooxml, insertLocation)'
+    fullName: 'insertOoxml(ooxml, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: ooxml
+          description: Required. The OOXML to be inserted in the paragraph.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: word.Word.Paragraph.insertParagraph
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
-    fullName: insertParagraph
+    fullName: 'insertParagraph(paragraphText, insertLocation)'
     langs:
       - typeScript
     type: method
@@ -986,6 +1159,33 @@ items:
           description: Required. The value can be 'Before' or 'After'.
           type:
             - Word.InsertLocation
+  - uid: word.Word.Paragraph.insertParagraph_1
+    summary: |-
+      Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertParagraph(paragraphText, insertLocation)'
+    fullName: 'insertParagraph(paragraphText, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"):
+        Word.Paragraph;
+      return:
+        type:
+          - Word.Paragraph
+        description: ''
+      parameters:
+        - id: paragraphText
+          description: Required. The paragraph text to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: Required. The value can be 'Before' or 'After'.
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: word.Word.Paragraph.insertTable
     summary: >-
       Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or
@@ -994,7 +1194,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertTable(rowCount, columnCount, insertLocation, values)'
-    fullName: insertTable
+    fullName: 'insertTable(rowCount, columnCount, insertLocation, values)'
     langs:
       - typeScript
     type: method
@@ -1023,6 +1223,43 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
+  - uid: word.Word.Paragraph.insertTable_1
+    summary: >-
+      Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or
+      'After'.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertTable(rowCount, columnCount, insertLocation, values)'
+    fullName: 'insertTable(rowCount, columnCount, insertLocation, values)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" |
+        "Replace", values?: string[][]): Word.Table;
+      return:
+        type:
+          - Word.Table
+        description: ''
+      parameters:
+        - id: rowCount
+          description: Required. The number of rows in the table.
+          type:
+            - number
+        - id: columnCount
+          description: Required. The number of columns in the table.
+          type:
+            - number
+        - id: insertLocation
+          description: Required. The value can be 'Before' or 'After'.
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
+        - id: values
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
   - uid: word.Word.Paragraph.insertText
     summary: >-
       Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
@@ -1031,7 +1268,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertText(text, insertLocation)'
-    fullName: insertText
+    fullName: 'insertText(text, insertLocation)'
     langs:
       - typeScript
     type: method
@@ -1099,6 +1336,33 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
             - Word.InsertLocation
+  - uid: word.Word.Paragraph.insertText_1
+    summary: >-
+      Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
+      'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertText(text, insertLocation)'
+    fullName: 'insertText(text, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: text
+          description: Required. Text to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: word.Word.Paragraph.isLastParagraph
     summary: |-
       Indicates the paragraph is the last one inside its parent body. Read-only.
@@ -1296,7 +1560,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -1311,6 +1575,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: word.Word.Paragraph.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.Paragraph;
+      return:
+        type:
+          - Word.Paragraph
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: word.Word.Paragraph.outlineLevel
     summary: |-
       Gets or sets the outline level for the paragraph.
@@ -1458,7 +1747,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'search(searchText, searchOptions)'
-    fullName: search
+    fullName: 'search(searchText, searchOptions)'
     langs:
       - typeScript
     type: method
@@ -1501,7 +1790,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: select(selectionMode)
-    fullName: select
+    fullName: select(selectionMode)
     langs:
       - typeScript
     type: method
@@ -1571,6 +1860,27 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - Word.SelectionMode
+  - uid: word.Word.Paragraph.select_1
+    summary: |-
+      Selects and navigates the Word UI to the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: select(selectionMode)
+    fullName: select(selectionMode)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'select(selectionMode?: "Select" | "Start" | "End"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: selectionMode
+          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          type:
+            - '"Select" | "Start" | "End"'
   - uid: word.Word.Paragraph.spaceAfter
     summary: |-
       Gets or sets the spacing, in points, after the paragraph.
@@ -1620,7 +1930,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'split(delimiters, trimDelimiters, trimSpacing)'
-    fullName: split
+    fullName: 'split(delimiters, trimDelimiters, trimSpacing)'
     langs:
       - typeScript
     type: method
@@ -1677,7 +1987,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: startNewList()
-    fullName: startNewList
+    fullName: startNewList()
     langs:
       - typeScript
     type: method
@@ -1857,7 +2167,7 @@ items:
           ```
   - uid: word.Word.Paragraph.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -1875,7 +2185,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -1892,7 +2202,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

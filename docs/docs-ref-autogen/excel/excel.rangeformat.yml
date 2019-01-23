@@ -23,6 +23,7 @@ items:
       - excel.Excel.RangeFormat.font
       - excel.Excel.RangeFormat.horizontalAlignment
       - excel.Excel.RangeFormat.load
+      - excel.Excel.RangeFormat.load_1
       - excel.Excel.RangeFormat.protection
       - excel.Excel.RangeFormat.rowHeight
       - excel.Excel.RangeFormat.textOrientation
@@ -39,7 +40,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autofitColumns()
-    fullName: autofitColumns
+    fullName: autofitColumns()
     langs:
       - typeScript
     type: method
@@ -57,7 +58,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autofitRows()
-    fullName: autofitRows
+    fullName: autofitRows()
     langs:
       - typeScript
     type: method
@@ -253,7 +254,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -268,6 +269,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.RangeFormat.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.RangeFormat;
+      return:
+        type:
+          - excel.Excel.RangeFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.RangeFormat.protection
     summary: |-
       Returns the format protection object for a range. Read-only.
@@ -340,7 +366,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.RangeFormatData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

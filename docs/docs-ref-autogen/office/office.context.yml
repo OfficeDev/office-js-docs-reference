@@ -321,7 +321,7 @@ items:
       content: 'mailbox: Office.Mailbox;'
       return:
         type:
-          - outlook.Office.Mailbox
+          - Office.Mailbox
   - uid: office.Office.Context.officeTheme
     summary: Provides access to the properties for Office theme colors.
     name: officeTheme
@@ -400,7 +400,7 @@ items:
       content: 'roamingSettings: Office.RoamingSettings;'
       return:
         type:
-          - outlook.Office.RoamingSettings
+          - Office.RoamingSettings
   - uid: office.Office.Context.touchEnabled
     summary: >-
       Specifies whether the platform and device allows touch interaction. True if the add-in is running on a touch

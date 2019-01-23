@@ -19,6 +19,7 @@ items:
       - excel.Excel.ConditionalDataBarPositiveFormat.fillColor
       - excel.Excel.ConditionalDataBarPositiveFormat.gradientFill
       - excel.Excel.ConditionalDataBarPositiveFormat.load
+      - excel.Excel.ConditionalDataBarPositiveFormat.load_1
       - excel.Excel.ConditionalDataBarPositiveFormat.toJSON
   - uid: excel.Excel.ConditionalDataBarPositiveFormat.borderColor
     summary: >-
@@ -102,7 +103,7 @@ items:
       Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is
       specified, the result set will start after skipping the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -117,6 +118,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ConditionalDataBarPositiveFormat.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ConditionalDataBarPositiveFormat;
+      return:
+        type:
+          - excel.Excel.ConditionalDataBarPositiveFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.ConditionalDataBarPositiveFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -125,7 +151,7 @@ items:
       method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalDataBarPositiveFormatData`<!--
       -->) that contains shallow copies of any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

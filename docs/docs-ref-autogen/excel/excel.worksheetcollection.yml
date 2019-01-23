@@ -24,6 +24,7 @@ items:
       - excel.Excel.WorksheetCollection.getLast
       - excel.Excel.WorksheetCollection.items
       - excel.Excel.WorksheetCollection.load
+      - excel.Excel.WorksheetCollection.load_1
       - excel.Excel.WorksheetCollection.onActivated
       - excel.Excel.WorksheetCollection.onAdded
       - excel.Excel.WorksheetCollection.onCalculated
@@ -38,7 +39,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(name)
-    fullName: add
+    fullName: add(name)
     langs:
       - typeScript
     type: method
@@ -93,7 +94,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveWorksheet()
-    fullName: getActiveWorksheet
+    fullName: getActiveWorksheet()
     langs:
       - typeScript
     type: method
@@ -126,7 +127,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount(visibleOnly)
-    fullName: getCount
+    fullName: getCount(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -147,7 +148,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getFirst(visibleOnly)
-    fullName: getFirst
+    fullName: getFirst(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -197,7 +198,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
-    fullName: getItem
+    fullName: getItem(key)
     langs:
       - typeScript
     type: method
@@ -218,7 +219,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject
+    fullName: getItemOrNullObject(key)
     langs:
       - typeScript
     type: method
@@ -239,7 +240,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLast(visibleOnly)
-    fullName: getLast
+    fullName: getLast(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -338,7 +339,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -353,6 +354,23 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.WorksheetCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.WorksheetCollection;'
+      return:
+        type:
+          - excel.Excel.WorksheetCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.WorksheetCollection.onActivated
     summary: |-
       Occurs when any worksheet in the workbook is activated.
@@ -475,7 +493,7 @@ items:
       returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`<!-- -->) that contains an
       "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

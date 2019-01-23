@@ -28,7 +28,9 @@ items:
       - onenote.OneNote.Page.id
       - onenote.OneNote.Page.inkAnalysisOrNull
       - onenote.OneNote.Page.insertPageAsSibling
+      - onenote.OneNote.Page.insertPageAsSibling_1
       - onenote.OneNote.Page.load
+      - onenote.OneNote.Page.load_1
       - onenote.OneNote.Page.pageLevel
       - onenote.OneNote.Page.parentSection
       - onenote.OneNote.Page.title
@@ -42,7 +44,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'addOutline(left, top, html)'
-    fullName: addOutline
+    fullName: 'addOutline(left, top, html)'
     langs:
       - typeScript
     type: method
@@ -112,7 +114,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: analyzePage()
-    fullName: analyzePage
+    fullName: analyzePage()
     langs:
       - typeScript
     type: method
@@ -128,7 +130,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: applyTranslation(translatedContent)
-    fullName: applyTranslation
+    fullName: applyTranslation(translatedContent)
     langs:
       - typeScript
     type: method
@@ -208,7 +210,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: copyToSection(destinationSection)
-    fullName: copyToSection
+    fullName: copyToSection(destinationSection)
     langs:
       - typeScript
     type: method
@@ -268,7 +270,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: copyToSectionAndSetClassNotebookPageSource(destinationSection)
-    fullName: copyToSectionAndSetClassNotebookPageSource
+    fullName: copyToSectionAndSetClassNotebookPageSource(destinationSection)
     langs:
       - typeScript
     type: method
@@ -289,7 +291,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getRestApiId()
-    fullName: getRestApiId
+    fullName: getRestApiId()
     langs:
       - typeScript
     type: method
@@ -325,7 +327,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: hasTitleContent()
-    fullName: hasTitleContent
+    fullName: hasTitleContent()
     langs:
       - typeScript
     type: method
@@ -371,7 +373,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertPageAsSibling(location, title)'
-    fullName: insertPageAsSibling
+    fullName: 'insertPageAsSibling(location, title)'
     langs:
       - typeScript
     type: method
@@ -414,6 +416,31 @@ items:
           description: The location of the new page relative to the current page.
           type:
             - onenote.OneNote.InsertLocation
+        - id: title
+          description: The title of the new page.
+          type:
+            - string
+  - uid: onenote.OneNote.Page.insertPageAsSibling_1
+    summary: |-
+      Inserts a new page before or after the current page.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: 'insertPageAsSibling(location, title)'
+    fullName: 'insertPageAsSibling(location, title)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertPageAsSibling(location: "Before" | "After", title: string): OneNote.Page;'
+      return:
+        type:
+          - onenote.OneNote.Page
+        description: ''
+      parameters:
+        - id: location
+          description: The location of the new page relative to the current page.
+          type:
+            - '"Before" | "After"'
         - id: title
           description: The title of the new page.
           type:
@@ -539,7 +566,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -554,6 +581,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.Page.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): OneNote.Page;
+      return:
+        type:
+          - onenote.OneNote.Page
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: onenote.OneNote.Page.pageLevel
     summary: |-
       Gets or sets the indentation level of the page.
@@ -607,7 +659,7 @@ items:
       JavaScript object (typed as `OneNote.Interfaces.PageData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -625,7 +677,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -642,7 +694,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

@@ -27,6 +27,7 @@ items:
       - excel.Excel.TableRowCollection.getItemAt
       - excel.Excel.TableRowCollection.items
       - excel.Excel.TableRowCollection.load
+      - excel.Excel.TableRowCollection.load_1
       - excel.Excel.TableRowCollection.toJSON
   - uid: excel.Excel.TableRowCollection.add
     summary: >-
@@ -41,7 +42,7 @@ items:
       \[ [API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple
       rows.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(index, values)'
-    fullName: add
+    fullName: 'add(index, values)'
     langs:
       - typeScript
     type: method
@@ -118,7 +119,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -140,7 +141,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: getItemAt
+    fullName: getItemAt(index)
     langs:
       - typeScript
     type: method
@@ -250,7 +251,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -265,6 +266,23 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.TableRowCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.TableRowCollection;'
+      return:
+        type:
+          - excel.Excel.TableRowCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.TableRowCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -273,7 +291,7 @@ items:
       returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowCollectionData`<!-- -->) that contains an
       "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

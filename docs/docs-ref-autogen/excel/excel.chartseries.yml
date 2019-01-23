@@ -28,6 +28,7 @@ items:
       - excel.Excel.ChartSeries.hasDataLabels
       - excel.Excel.ChartSeries.invertIfNegative
       - excel.Excel.ChartSeries.load
+      - excel.Excel.ChartSeries.load_1
       - excel.Excel.ChartSeries.markerBackgroundColor
       - excel.Excel.ChartSeries.markerForegroundColor
       - excel.Excel.ChartSeries.markerSize
@@ -140,7 +141,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -339,7 +340,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -354,6 +355,31 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartSeries.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartSeries;
+      return:
+        type:
+          - excel.Excel.ChartSeries
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.ChartSeries.markerBackgroundColor
     summary: |-
       Represents markers background color of a chart series.
@@ -635,7 +661,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setBubbleSizes(sourceData)
-    fullName: setBubbleSizes
+    fullName: setBubbleSizes(sourceData)
     langs:
       - typeScript
     type: method
@@ -656,7 +682,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setValues(sourceData)
-    fullName: setValues
+    fullName: setValues(sourceData)
     langs:
       - typeScript
     type: method
@@ -696,7 +722,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setXAxisValues(sourceData)
-    fullName: setXAxisValues
+    fullName: setXAxisValues(sourceData)
     langs:
       - typeScript
     type: method
@@ -766,7 +792,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

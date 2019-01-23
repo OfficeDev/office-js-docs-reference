@@ -17,9 +17,11 @@ items:
       - excel.Excel.RangeBorderCollection.context
       - excel.Excel.RangeBorderCollection.count
       - excel.Excel.RangeBorderCollection.getItem
+      - excel.Excel.RangeBorderCollection.getItem_1
       - excel.Excel.RangeBorderCollection.getItemAt
       - excel.Excel.RangeBorderCollection.items
       - excel.Excel.RangeBorderCollection.load
+      - excel.Excel.RangeBorderCollection.load_1
       - excel.Excel.RangeBorderCollection.toJSON
   - uid: excel.Excel.RangeBorderCollection.context
     summary: >-
@@ -56,7 +58,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(index)
-    fullName: getItem
+    fullName: getItem(index)
     langs:
       - typeScript
     type: method
@@ -111,13 +113,38 @@ items:
           description: Index value of the border object to be retrieved. See Excel.BorderIndex for details.
           type:
             - excel.Excel.BorderIndex
+  - uid: excel.Excel.RangeBorderCollection.getItem_1
+    summary: |-
+      Gets a border object using its name.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getItem(index: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" |
+        "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
+      return:
+        type:
+          - excel.Excel.RangeBorder
+        description: ''
+      parameters:
+        - id: index
+          description: Index value of the border object to be retrieved. See Excel.BorderIndex for details.
+          type:
+            - >-
+              "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" |
+              "DiagonalDown" | "DiagonalUp"
   - uid: excel.Excel.RangeBorderCollection.getItemAt
     summary: |-
       Gets a border object using its index.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: getItemAt
+    fullName: getItemAt(index)
     langs:
       - typeScript
     type: method
@@ -236,7 +263,7 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -251,6 +278,23 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.RangeBorderCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;'
+      return:
+        type:
+          - excel.Excel.RangeBorderCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.RangeBorderCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -259,7 +303,7 @@ items:
       returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderCollectionData`<!-- -->) that contains an
       "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
