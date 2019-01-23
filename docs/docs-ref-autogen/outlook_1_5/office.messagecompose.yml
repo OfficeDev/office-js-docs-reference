@@ -24,7 +24,7 @@ items:
       - Outlook_1_5.Office.MessageCompose.close
       - Outlook_1_5.Office.MessageCompose.conversationId
       - Outlook_1_5.Office.MessageCompose.dateTimeCreated
-      - Outlook_1_5.Office.MessageCompose.dateTimeModifed
+      - Outlook_1_5.Office.MessageCompose.dateTimeModified
       - Outlook_1_5.Office.MessageCompose.getSelectedDataAsync
       - Outlook_1_5.Office.MessageCompose.itemType
       - Outlook_1_5.Office.MessageCompose.loadCustomPropertiesAsync
@@ -360,7 +360,7 @@ items:
       return:
         type:
           - Date
-  - uid: Outlook_1_5.Office.MessageCompose.dateTimeModifed
+  - uid: Outlook_1_5.Office.MessageCompose.dateTimeModified
     summary: |-
       Gets the date and time that an item was last modified. Read mode only.
 
@@ -375,13 +375,13 @@ items:
 
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
-    name: dateTimeModifed
-    fullName: dateTimeModifed
+    name: dateTimeModified
+    fullName: dateTimeModified
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'dateTimeModifed: Date;'
+      content: 'dateTimeModified: Date;'
       return:
         type:
           - Date

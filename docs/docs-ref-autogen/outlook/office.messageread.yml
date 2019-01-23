@@ -22,7 +22,7 @@ items:
       - outlook.Office.MessageRead.cc
       - outlook.Office.MessageRead.conversationId
       - outlook.Office.MessageRead.dateTimeCreated
-      - outlook.Office.MessageRead.dateTimeModifed
+      - outlook.Office.MessageRead.dateTimeModified
       - outlook.Office.MessageRead.displayReplyAllForm
       - outlook.Office.MessageRead.displayReplyForm
       - outlook.Office.MessageRead.from
@@ -288,7 +288,7 @@ items:
       return:
         type:
           - Date
-  - uid: outlook.Office.MessageRead.dateTimeModifed
+  - uid: outlook.Office.MessageRead.dateTimeModified
     summary: |-
       Gets the date and time that an item was last modified. Read mode only.
 
@@ -303,13 +303,13 @@ items:
 
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
-    name: dateTimeModifed
-    fullName: dateTimeModifed
+    name: dateTimeModified
+    fullName: dateTimeModified
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'dateTimeModifed: Date;'
+      content: 'dateTimeModified: Date;'
       return:
         type:
           - Date
