@@ -5,8 +5,9 @@ items:
       Represents a suggested task identified in an item. Read mode only.
 
 
-      The list of tasks suggested in an email message is returned in the taskSuggestions property of the  object that is
-      returned when the getEntities or getEntitiesByType method is called on the active item.
+      The list of tasks suggested in an email message is returned in the taskSuggestions property of the
+      [Entities](xref:outlook.Office.Entities) object that is returned when the getEntities or getEntitiesByType method
+      is called on the active item.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

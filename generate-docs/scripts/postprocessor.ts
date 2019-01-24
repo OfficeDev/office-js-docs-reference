@@ -326,6 +326,16 @@ tryCatch(async () => {
         .filter(filename => filename !== "overview")
         .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
 
+    fsx.readdirSync(docsSource)
+        .filter(filename => filename.indexOf("outlook") >= 0 && filename.indexOf(".yml") < 0)
+        .forEach(filename => {
+            let subfolder = docsSource + '/' + filename;
+            fsx.readdirSync(subfolder)
+                .forEach(subfilename => {
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/CommonAPI/g, "Office"));
+                });
+        });
+
     // copy docs output to /docs/docs-ref-autogen folder
     fsx.readdirSync(docsSource)
         .forEach(filename => {

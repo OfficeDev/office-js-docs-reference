@@ -51,7 +51,7 @@ items:
       In addition to this signature, this method also has the following signature:
 
 
-      `getAsync(names: string[], callback: (result:CommonAPI.AsyncResult<InternetHeaders>) => void): void;`
+      `getAsync(names: string[], callback: (result: Office.AsyncResult<InternetHeaders>) => void): void;`
 
       #### Examples
 
@@ -75,8 +75,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(names: string[], options?: CommonAPI.AsyncContextOptions, callback?:
-        (result:CommonAPI.AsyncResult<InternetHeaders>) => void): void;
+        getAsync(names: string[], options?: Office.AsyncContextOptions, callback?: (result:
+        Office.AsyncResult<InternetHeaders>) => void): void;
       return:
         type:
           - void
@@ -91,13 +91,13 @@ items:
             Optional. An object literal that contains one or more of the following properties: asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, CommonAPI.AsyncResult, which is an CommonAPI.AsyncResult object.
+            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result:CommonAPI.AsyncResult<InternetHeaders>) => void'
+            - '(result: Office.AsyncResult<InternetHeaders>) => void'
   - uid: outlook.Office.InternetHeaders.getAsync_1
     summary: >-
       Given an array of internet header names, this method returns a dictionary containing those internet headers and
@@ -120,7 +120,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(names: string[], callback?: (result:CommonAPI.AsyncResult<InternetHeaders>) => void): void;'
+      content: 'getAsync(names: string[], callback?: (result: Office.AsyncResult<InternetHeaders>) => void): void;'
       return:
         type:
           - void
@@ -133,9 +133,9 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, CommonAPI.AsyncResult, which is an CommonAPI.AsyncResult object.
+            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result:CommonAPI.AsyncResult<InternetHeaders>) => void'
+            - '(result: Office.AsyncResult<InternetHeaders>) => void'
   - uid: outlook.Office.InternetHeaders.removeAsync
     summary: >-
       Given an array of internet header names, this method removes the specified headers from the internet header
@@ -155,7 +155,7 @@ items:
       In addition to this signature, this method also has the following signature:
 
 
-      `removeAsync(names: string[], callback: (result:CommonAPI.AsyncResult<Body>) => void): void;`
+      `removeAsync(names: string[], callback: (result: Office.AsyncResult<Body>) => void): void;`
 
       #### Examples
 
@@ -173,8 +173,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeAsync(names: string[], options?: CommonAPI.AsyncContextOptions, callback?:
-        (result:CommonAPI.AsyncResult<InternetHeaders>) => void): void;
+        removeAsync(names: string[], options?: Office.AsyncContextOptions, callback?: (result:
+        Office.AsyncResult<InternetHeaders>) => void): void;
       return:
         type:
           - void
@@ -189,13 +189,13 @@ items:
             Optional. An object literal that contains one or more of the following properties: asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, CommonAPI.AsyncResult, which is an CommonAPI.AsyncResult object.
+            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result:CommonAPI.AsyncResult<InternetHeaders>) => void'
+            - '(result: Office.AsyncResult<InternetHeaders>) => void'
   - uid: outlook.Office.InternetHeaders.removeAsync_1
     summary: >-
       Given an array of internet header names, this method removes the specified headers from the internet header
@@ -217,7 +217,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'removeAsync(names: string[], callback?: (result:CommonAPI.AsyncResult<InternetHeaders>) => void): void;'
+      content: 'removeAsync(names: string[], callback?: (result: Office.AsyncResult<InternetHeaders>) => void): void;'
       return:
         type:
           - void
@@ -230,9 +230,9 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, CommonAPI.AsyncResult, which is an CommonAPI.AsyncResult object.
+            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result:CommonAPI.AsyncResult<InternetHeaders>) => void'
+            - '(result: Office.AsyncResult<InternetHeaders>) => void'
   - uid: outlook.Office.InternetHeaders.setAsync
     summary: >-
       Sets the specified internet headers to the specified values.
@@ -255,7 +255,7 @@ items:
       In addition to this signature, this method also has the following signatures:
 
 
-      `setAsync(headers: string, callback: (result:CommonAPI.AsyncResult<void>) => void): void;`
+      `setAsync(headers: string, callback: (result: Office.AsyncResult<void>) => void): void;`
 
       #### Examples
 
@@ -273,8 +273,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(headers: Object, options?: CommonAPI.AsyncContextOptions, callback?:
-        (result:CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(headers: Object, options?: Office.AsyncContextOptions, callback?: (result:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -291,14 +291,14 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type CommonAPI.AsyncResult. Any errors encountered will be provided in
-            theCommonAPI.AsyncResult.error property.
+            parameter of type Office.AsyncResult. Any errors encountered will be provided in theOffice.AsyncResult.error
+            property.
           type:
-            - '(result:CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.InternetHeaders.setAsync_1
     summary: >-
       Sets the specified internet headers to the specified values.
@@ -323,7 +323,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(headers: Object, callback?: (result:CommonAPI.AsyncResult<void>) => void): void;'
+      content: 'setAsync(headers: Object, callback?: (result: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -338,7 +338,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type CommonAPI.AsyncResult. Any errors encountered will be provided in
-            theCommonAPI.AsyncResult.error property.
+            parameter of type Office.AsyncResult. Any errors encountered will be provided in theOffice.AsyncResult.error
+            property.
           type:
-            - '(result:CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'

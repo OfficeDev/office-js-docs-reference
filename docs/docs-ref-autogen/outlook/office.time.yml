@@ -30,7 +30,7 @@ items:
       Gets the start or end time of an appointment.
 
 
-      The date and time is provided as a Date object in theCommonAPI.AsyncResult.value property. The value is in
+      The date and time is provided as a Date object in theOffice.AsyncResult.value property. The value is in
       Coordinated Universal Time (UTC). You can convert the UTC time to the local client time by using the
       convertToLocalClientTime method.
 
@@ -48,14 +48,14 @@ items:
       In addition to this signature, this method also has the following signature:
 
 
-      `getAsync(callback: (result:CommonAPI.AsyncResult<Date>) => void): void;`
+      `getAsync(callback: (result: Office.AsyncResult<Date>) => void): void;`
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options: CommonAPI.AsyncContextOptions, callback: (result:CommonAPI.AsyncResult<Date>) => void): void;'
+      content: 'getAsync(options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<Date>) => void): void;'
       return:
         type:
           - void
@@ -66,19 +66,19 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of typeCommonAPI.AsyncResult. The `value` property of the result is a Date object.
+            of typeOffice.AsyncResult. The `value` property of the result is a Date object.
           type:
-            - '(result:CommonAPI.AsyncResult<Date>) => void'
+            - '(result: Office.AsyncResult<Date>) => void'
   - uid: outlook.Office.Time.getAsync_1
     summary: >-
       Gets the start or end time of an appointment.
 
 
-      The date and time is provided as a Date object in theCommonAPI.AsyncResult.value property. The value is in
+      The date and time is provided as a Date object in theOffice.AsyncResult.value property. The value is in
       Coordinated Universal Time (UTC). You can convert the UTC time to the local client time by using the
       convertToLocalClientTime method.
 
@@ -97,7 +97,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback: (result:CommonAPI.AsyncResult<Date>) => void): void;'
+      content: 'getAsync(callback: (result: Office.AsyncResult<Date>) => void): void;'
       return:
         type:
           - void
@@ -106,9 +106,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of typeCommonAPI.AsyncResult. The `value` property of the result is a Date object.
+            of typeOffice.AsyncResult. The `value` property of the result is a Date object.
           type:
-            - '(result:CommonAPI.AsyncResult<Date>) => void'
+            - '(result: Office.AsyncResult<Date>) => void'
   - uid: outlook.Office.Time.setAsync
     summary: >-
       Sets the start or end time of an appointment.
@@ -142,10 +142,10 @@ items:
       `setAsync(dateTime: Date): void;`
 
 
-      `setAsync(dateTime: Date, options: CommonAPI.AsyncContextOptions): void;`
+      `setAsync(dateTime: Date, options: Office.AsyncContextOptions): void;`
 
 
-      `setAsync(dateTime: Date, callback: (result:CommonAPI.AsyncResult<void>) => void): void;`
+      `setAsync(dateTime: Date, callback: (result: Office.AsyncResult<void>) => void): void;`
 
       #### Examples
 
@@ -177,8 +177,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(dateTime: Date, options?: CommonAPI.AsyncContextOptions, callback?:
-        (result:CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(dateTime: Date, options?: Office.AsyncContextOptions, callback?: (result:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -193,14 +193,14 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type CommonAPI.AsyncResult. If setting the date and time fails, theCommonAPI.AsyncResult.error property
-            will contain an error code.
+            of type Office.AsyncResult. If setting the date and time fails, theOffice.AsyncResult.error property will
+            contain an error code.
           type:
-            - '(result:CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Time.setAsync_1
     summary: >-
       Sets the start or end time of an appointment.
@@ -273,7 +273,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(dateTime: Date, options: CommonAPI.AsyncContextOptions): void;'
+      content: 'setAsync(dateTime: Date, options: Office.AsyncContextOptions): void;'
       return:
         type:
           - void
@@ -288,7 +288,7 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
   - uid: outlook.Office.Time.setAsync_3
     summary: >-
       Sets the start or end time of an appointment.
@@ -320,7 +320,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(dateTime: Date, callback: (result:CommonAPI.AsyncResult<void>) => void): void;'
+      content: 'setAsync(dateTime: Date, callback: (result: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -333,7 +333,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type CommonAPI.AsyncResult. If setting the date and time fails, theCommonAPI.AsyncResult.error property
-            will contain an error code.
+            of type Office.AsyncResult. If setting the date and time fails, theOffice.AsyncResult.error property will
+            contain an error code.
           type:
-            - '(result:CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'

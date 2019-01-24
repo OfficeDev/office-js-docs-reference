@@ -27,7 +27,7 @@ items:
 
       The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
 
-      The from value of the item is provided as an  in theCommonAPI.AsyncResult.value property.
+      The from value of the item is provided as an  in theOffice.AsyncResult.value property.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -42,7 +42,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `getAsync(callback?: (result:CommonAPI.AsyncResult<EmailAddressDetails>) => void): void;`
+      `getAsync(callback?: (result: Office.AsyncResult<EmailAddressDetails>) => void): void;`
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
     langs:
@@ -50,7 +50,7 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(options: CommonAPI.AsyncContextOptions, callback: (result:CommonAPI.AsyncResult<EmailAddressDetails>)
+        getAsync(options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<EmailAddressDetails>)
         => void): void;
       return:
         type:
@@ -62,21 +62,21 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single
-            parameter,CommonAPI.AsyncResult, which is an CommonAPI.AsyncResult object. The `value` property of the
-            result is message's from value, as an EmailAddressDetails object.
+            parameter,Office.AsyncResult, which is an Office.AsyncResult object. The `value` property of the result is
+            message's from value, as an EmailAddressDetails object.
           type:
-            - '(result:CommonAPI.AsyncResult<EmailAddressDetails>) => void'
+            - '(result: Office.AsyncResult<EmailAddressDetails>) => void'
   - uid: outlook.Office.From.getAsync_1
     summary: |-
       Gets the from value of a message.
 
       The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
 
-      The from value of the item is provided as an  in theCommonAPI.AsyncResult.value property.
+      The from value of the item is provided as an  in theOffice.AsyncResult.value property.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -92,7 +92,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback?: (result:CommonAPI.AsyncResult<EmailAddressDetails>) => void): void;'
+      content: 'getAsync(callback?: (result: Office.AsyncResult<EmailAddressDetails>) => void): void;'
       return:
         type:
           - void
@@ -101,7 +101,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single
-            parameter,CommonAPI.AsyncResult, which is an CommonAPI.AsyncResult object. The `value` property of the
-            result is message's from value, as an EmailAddressDetails object.
+            parameter,Office.AsyncResult, which is an Office.AsyncResult object. The `value` property of the result is
+            message's from value, as an EmailAddressDetails object.
           type:
-            - '(result:CommonAPI.AsyncResult<EmailAddressDetails>) => void'
+            - '(result: Office.AsyncResult<EmailAddressDetails>) => void'

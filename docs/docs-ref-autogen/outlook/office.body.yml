@@ -63,7 +63,7 @@ items:
       In addition to this signature, this method also has the following signature:
 
 
-      `getAsync(coercionType: CommonAPI.CoercionType, callback: (result:CommonAPI.AsyncResult<string>) => void): void;`
+      `getAsync(coercionType: Office.CoercionType, callback: (result: Office.AsyncResult<string>) => void): void;`
 
       #### Examples
 
@@ -95,8 +95,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(coercionType: CommonAPI.CoercionType, options?: CommonAPI.AsyncContextOptions, callback?: (result:
-        CommonAPI.AsyncResult<string>) => void): void;
+        getAsync(coercionType: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result:
+        Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -105,20 +105,20 @@ items:
         - id: coercionType
           description: The format for the returned body.
           type:
-            - CommonAPI.CoercionType
+            - Office.CoercionType
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties: asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of typeCommonAPI.AsyncResult. The body is provided in the requested format in
-            theCommonAPI.AsyncResult.value property.
+            parameter of typeOffice.AsyncResult. The body is provided in the requested format in
+            theOffice.AsyncResult.value property.
           type:
-            - '(result: CommonAPI.AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.Body.getAsync_1
     summary: >-
       Returns the current body in a specified format.
@@ -147,7 +147,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(coercionType: CommonAPI.CoercionType, callback: (result: CommonAPI.AsyncResult<string>) => void): void;'
+      content: 'getAsync(coercionType: Office.CoercionType, callback: (result: Office.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -156,14 +156,14 @@ items:
         - id: coercionType
           description: The format for the returned body.
           type:
-            - CommonAPI.CoercionType
+            - Office.CoercionType
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type CommonAPI.AsyncResult. The body is provided in the requested format in
-            theCommonAPI.AsyncResult.value property.
+            parameter of type Office.AsyncResult. The body is provided in the requested format in
+            theOffice.AsyncResult.value property.
           type:
-            - '(result: CommonAPI.AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.Body.getTypeAsync
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
@@ -183,8 +183,8 @@ items:
     type: method
     syntax:
       content: >-
-        getTypeAsync(options?: CommonAPI.AsyncContextOptions, callback?: (result:
-        CommonAPI.AsyncResult<CommonAPI.CoercionType>) => void): void;
+        getTypeAsync(options?: Office.AsyncContextOptions, callback?: (result:
+        Office.AsyncResult<Office.CoercionType>) => void): void;
       return:
         type:
           - void
@@ -195,14 +195,14 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type CommonAPI.AsyncResult. The content type is returned as one of the CoercionType values in
-            theCommonAPI.AsyncResult.value property.
+            parameter of type Office.AsyncResult. The content type is returned as one of the CoercionType values in
+            theOffice.AsyncResult.value property.
           type:
-            - '(result: CommonAPI.AsyncResult<CommonAPI.CoercionType>) => void'
+            - '(result: Office.AsyncResult<Office.CoercionType>) => void'
   - uid: outlook.Office.Body.prependAsync
     summary: >-
       Adds the specified content to the beginning of the item body.
@@ -233,10 +233,10 @@ items:
       In addition to this signature, this method also has the following signatures:
 
 
-      `prependAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions): void;`
+      `prependAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
 
 
-      `prependAsync(data: string, callback: (result:CommonAPI.AsyncResult<void>) => void): void;`
+      `prependAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
 
 
       `prependAsync(data: string): void;`
@@ -262,8 +262,8 @@ items:
     type: method
     syntax:
       content: >-
-        prependAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (result:CommonAPI.AsyncResult<void>) => void): void;
+        prependAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -279,14 +279,14 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
+            - Office.AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type CommonAPI.AsyncResult. Any errors encountered will be provided in
-            theCommonAPI.AsyncResult.error property.
+            parameter of type Office.AsyncResult. Any errors encountered will be provided in theOffice.AsyncResult.error
+            property.
           type:
-            - '(result:CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Body.prependAsync_1
     summary: >-
       Adds the specified content to the beginning of the item body.
@@ -318,7 +318,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'prependAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions): void;'
+      content: 'prependAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;'
       return:
         type:
           - void
@@ -334,7 +334,7 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
+            - Office.AsyncContextOptions & CoercionTypeOptions
   - uid: outlook.Office.Body.prependAsync_2
     summary: >-
       Adds the specified content to the beginning of the item body.
@@ -362,7 +362,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'prependAsync(data: string, callback: (result:CommonAPI.AsyncResult<void>) => void): void;'
+      content: 'prependAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -375,10 +375,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type CommonAPI.AsyncResult. Any errors encountered will be provided in
-            theCommonAPI.AsyncResult.error property.
+            parameter of type Office.AsyncResult. Any errors encountered will be provided in theOffice.AsyncResult.error
+            property.
           type:
-            - '(result:CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Body.prependAsync_3
     summary: >-
       Adds the specified content to the beginning of the item body.
@@ -443,16 +443,16 @@ items:
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
       characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
-      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+      Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
 
 
       In addition to this signature, this method also has the following signatures:
 
 
-      `setAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions): void;`
+      `setAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
 
 
-      `setAsync(data: string, callback: (result:CommonAPI.AsyncResult<void>) => void): void;`
+      `setAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
 
 
       `setAsync(data: string): void;`
@@ -494,8 +494,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
-        CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -511,14 +511,14 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
+            - Office.AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type CommonAPI.AsyncResult. Any errors encountered will be provided in
-            theCommonAPI.AsyncResult.error property.
+            parameter of type Office.AsyncResult. Any errors encountered will be provided in theOffice.AsyncResult.error
+            property.
           type:
-            - '(result: CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Body.setAsync_1
     summary: >-
       Replaces the entire body with the specified text.
@@ -546,14 +546,14 @@ items:
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
       characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
-      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+      Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
     name: 'setAsync(data, options)'
     fullName: 'setAsync(data, options)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions): void;'
+      content: 'setAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;'
       return:
         type:
           - void
@@ -569,7 +569,7 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
+            - Office.AsyncContextOptions & CoercionTypeOptions
   - uid: outlook.Office.Body.setAsync_2
     summary: >-
       Replaces the entire body with the specified text.
@@ -597,14 +597,14 @@ items:
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
       characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
-      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+      Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
     name: 'setAsync(data, callback)'
     fullName: 'setAsync(data, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(data: string, callback: (result:CommonAPI.AsyncResult<void>) => void): void;'
+      content: 'setAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -617,10 +617,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type CommonAPI.AsyncResult. Any errors encountered will be provided in
-            theCommonAPI.AsyncResult.error property.
+            parameter of type Office.AsyncResult. Any errors encountered will be provided in theOffice.AsyncResult.error
+            property.
           type:
-            - '(result:CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Body.setAsync_3
     summary: >-
       Replaces the entire body with the specified text.
@@ -648,7 +648,7 @@ items:
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
       characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
-      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+      Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
     name: setAsync(data)
     fullName: setAsync(data)
     langs:
@@ -692,16 +692,16 @@ items:
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
       characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
-      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+      Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
 
 
       In addition to this signature, this method also has the following signatures:
 
 
-      `setSelectedDataAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions): void;`
+      `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
 
 
-      `setSelectedDataAsync(data: string, callback: (result:CommonAPI.AsyncResult<void>) => void): void;`
+      `setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
 
 
       `setSelectedDataAsync(data: string): void;`
@@ -727,8 +727,8 @@ items:
     type: method
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (result:CommonAPI.AsyncResult<void>) => void): void;
+        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (result: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -744,14 +744,14 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
+            - Office.AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type CommonAPI.AsyncResult. Any errors encountered will be provided in
-            theCommonAPI.AsyncResult.error property.
+            parameter of type Office.AsyncResult. Any errors encountered will be provided in theOffice.AsyncResult.error
+            property.
           type:
-            - '(result:CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Body.setSelectedDataAsync_1
     summary: >-
       Replaces the selection in the body with the specified text.
@@ -779,14 +779,14 @@ items:
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
       characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
-      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+      Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
     name: 'setSelectedDataAsync(data, options)'
     fullName: 'setSelectedDataAsync(data, options)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setSelectedDataAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions): void;'
+      content: 'setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;'
       return:
         type:
           - void
@@ -802,7 +802,7 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
+            - Office.AsyncContextOptions & CoercionTypeOptions
   - uid: outlook.Office.Body.setSelectedDataAsync_2
     summary: >-
       Replaces the selection in the body with the specified text.
@@ -830,14 +830,14 @@ items:
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
       characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
-      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+      Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
     name: 'setSelectedDataAsync(data, callback)'
     fullName: 'setSelectedDataAsync(data, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setSelectedDataAsync(data: string, callback: (result:CommonAPI.AsyncResult<void>) => void): void;'
+      content: 'setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -850,10 +850,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type CommonAPI.AsyncResult. Any errors encountered will be provided in
-            theCommonAPI.AsyncResult.error property.
+            parameter of type Office.AsyncResult. Any errors encountered will be provided in theOffice.AsyncResult.error
+            property.
           type:
-            - '(result:CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Body.setSelectedDataAsync_3
     summary: >-
       Replaces the selection in the body with the specified text.
@@ -881,7 +881,7 @@ items:
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
       characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
-      CommonAPI.CoercionType.Html and the message body is in plain text.</td></tr></table>
+      Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
     name: setSelectedDataAsync(data)
     fullName: setSelectedDataAsync(data)
     langs:
