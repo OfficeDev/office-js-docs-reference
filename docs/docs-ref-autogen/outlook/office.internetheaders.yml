@@ -48,7 +48,7 @@ items:
       In addition to this signature, this method also has the following signature:
 
 
-      `getAsync(names: string[], callback: (result: AsyncResult<Office.InternetHeaders>) => void): void;`
+      `getAsync(names: string[], callback: (result: Office.AsyncResult<InternetHeaders>) => void): void;`
 
       #### Examples
 
@@ -73,7 +73,7 @@ items:
     syntax:
       content: >-
         getAsync(names: string[], options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<Office.InternetHeaders>) => void): void;
+        Office.AsyncResult<InternetHeaders>) => void): void;
       return:
         type:
           - void
@@ -94,7 +94,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: AsyncResult<Office.InternetHeaders>) => void'
+            - '(result: Office.AsyncResult<InternetHeaders>) => void'
   - uid: outlook.Office.InternetHeaders.removeAsync
     summary: >-
       Given an array of internet header names, this method removes the specified headers from the internet header
@@ -114,7 +114,7 @@ items:
       In addition to this signature, this method also has the following signature:
 
 
-      `removeAsync(names: string[], callback: (result: AsyncResult<Office.Body>) => void): void;`
+      `removeAsync(names: string[], callback: (result: Office.AsyncResult<Body>) => void): void;`
 
       #### Examples
 
@@ -133,7 +133,7 @@ items:
     syntax:
       content: >-
         removeAsync(names: string[], options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<Office.InternetHeaders>) => void): void;
+        Office.AsyncResult<InternetHeaders>) => void): void;
       return:
         type:
           - void
@@ -154,7 +154,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: AsyncResult<Office.InternetHeaders>) => void'
+            - '(result: Office.AsyncResult<InternetHeaders>) => void'
   - uid: outlook.Office.InternetHeaders.setAsync
     summary: >-
       Sets the specified internet headers to the specified values.
@@ -177,7 +177,7 @@ items:
       In addition to this signature, this method also has the following signatures:
 
 
-      `setAsync(headers: string, callback: (result: AsyncResult<void>) => void): void;`
+      `setAsync(headers: string, callback: (result: Office.AsyncResult<void>) => void): void;`
 
       #### Examples
 
@@ -195,8 +195,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(headers: Object, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void):
-        void;
+        setAsync(headers: Object, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -220,4 +220,4 @@ items:
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'

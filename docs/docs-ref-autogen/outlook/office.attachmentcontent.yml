@@ -53,7 +53,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'format: Office.MailboxEnums.AttachmentContentFormat;'
+      content: 'format: MailboxEnums.AttachmentContentFormat;'
       return:
         type:
-          - outlook.Office.MailboxEnums.AttachmentContentFormat
+          - MailboxEnums.AttachmentContentFormat

@@ -44,14 +44,14 @@ items:
       In addition to this signature, this method also has the following signature:
 
 
-      `getAsync(callback: (result: AsyncResult<Date>) => void): void;`
+      `getAsync(callback: (result: Office.AsyncResult<Date>) => void): void;`
     name: 'getAsync(options, callback)'
     fullName: getAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult<Date>) => void): void;'
+      content: 'getAsync(options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<Date>) => void): void;'
       return:
         type:
           - void
@@ -66,9 +66,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type AsyncResult. The `value` property of the result is a Date object.
+            of type Office.AsyncResult. The `value` property of the result is a Date object.
           type:
-            - '(result: AsyncResult<Date>) => void'
+            - '(result: Office.AsyncResult<Date>) => void'
   - uid: outlook.Office.Time.setAsync
     summary: >-
       Sets the start or end time of an appointment.
@@ -105,7 +105,7 @@ items:
       `setAsync(dateTime: Date, options: Office.AsyncContextOptions): void;`
 
 
-      `setAsync(dateTime: Date, callback: (result: AsyncResult<void>) => void): void;`
+      `setAsync(dateTime: Date, callback: (result: Office.AsyncResult<void>) => void): void;`
 
       #### Examples
 
@@ -137,8 +137,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(dateTime: Date, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void):
-        void;
+        setAsync(dateTime: Date, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -160,4 +160,4 @@ items:
             of type Office.AsyncResult. If setting the date and time fails, the asyncResult.error property will contain
             an error code.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
