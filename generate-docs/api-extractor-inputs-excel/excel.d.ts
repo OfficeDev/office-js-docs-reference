@@ -14257,7 +14257,7 @@ export declare namespace Excel {
         confidence_T(alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, size: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
          *
-         * Converts a number from one measurement system to anOffice.
+         * Converts a number from one measurement system to another.
          *
          * [Api set: ExcelApi 1.2]
          *

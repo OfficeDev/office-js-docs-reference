@@ -31,7 +31,7 @@ items:
   - uid: outlook.Office.ReplyFormData.callback
     summary: >-
       When the reply display call completes, the function passed in the callback parameter is called with a single
-      parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+      parameter, asyncResult, which is an Office.AsyncResult object.
     name: callback
     fullName: callback
     langs:

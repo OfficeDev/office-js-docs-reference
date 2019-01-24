@@ -23,8 +23,10 @@ items:
     children:
       - outlook.Office.Organizer.getAsync
   - uid: outlook.Office.Organizer.getAsync
-    summary: |-
-      Gets the organizer value of an appointment as an  in theOffice.AsyncResult.value property.
+    summary: >-
+      Gets the organizer value of an appointment as an
+      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) in the asyncResult.value property.
+
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -56,8 +58,8 @@ items:
             - Office.AsyncContextOptions
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single
-            parameter,Office.AsyncResult, which is anOffice.AsyncResult object. The `value` property of the result is
-            message's organizer value, as an EmailAddressDetails object.
+            When the method completes, the function passed in the callback parameter is called with a single parameter,
+            asyncResult, which is anOffice.AsyncResult object. The `value` property of the result is message's organizer
+            value, as an EmailAddressDetails object.
           type:
             - '(result: Office.AsyncResult<EmailAddressDetails>) => void'

@@ -188,9 +188,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. On success, the attachment identifier will be provided in
-            theOffice.AsyncResult.value property. If uploading the attachment fails, theOffice.AsyncResult object will
-            contain an Error object that provides a description of the error.
+            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
+            property. If uploading the attachment fails, the asyncResult object will contain an Error object that
+            provides a description of the error.
           type:
             - '(result: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.MessageCompose.addFileAttachmentAsync_1
@@ -358,9 +358,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. On success, the attachment identifier will be provided in
-            theOffice.AsyncResult.value property. If uploading the attachment fails, theOffice.AsyncResult object will
-            contain an Error object that provides a description of the error.
+            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
+            property. If uploading the attachment fails, the asyncResult object will contain an Error object that
+            provides a description of the error.
           type:
             - '(result: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.MessageCompose.addFileAttachmentFromBase64Async
@@ -369,7 +369,7 @@ items:
 
 
       The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item
-      in the compose form. This method returns the attachment identifier in theOffice.AsyncResult.value object.
+      in the compose form. This method returns the attachment identifier in the asyncResult.value object.
 
 
       You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
@@ -447,9 +447,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of typeOffice.AsyncResult. On success, the attachment identifier will be provided in
-            theOffice.AsyncResult.value property. If uploading the attachment fails, theOffice.AsyncResult object will
-            contain an Error object that provides a description of the error.
+            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
+            property. If uploading the attachment fails, the asyncResult object will contain an Error object that
+            provides a description of the error.
           type:
             - '(result: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.MessageCompose.addHandlerAsync
@@ -510,7 +510,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.MessageCompose.addHandlerAsync_1
@@ -558,7 +558,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.MessageCompose.addItemAttachmentAsync
@@ -567,7 +567,7 @@ items:
 
 
       The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the
-      compose form. If you specify a callback method, the method is called with one parameter,Office.AsyncResult, which
+      compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which
       contains either the attachment identifier or a code that indicates any error that occurred while attaching the
       item. You can use the options parameter to pass state information to the callback method, if needed.
 
@@ -669,9 +669,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of typeOffice.AsyncResult. On success, the attachment identifier will be provided in
-            theOffice.AsyncResult.value property. If adding the attachment fails, theOffice.AsyncResult object will
-            contain an Error object that provides a description of the error.
+            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
+            property. If adding the attachment fails, the asyncResult object will contain an Error object that provides
+            a description of the error.
           type:
             - '(result: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.MessageCompose.addItemAttachmentAsync_1
@@ -680,7 +680,7 @@ items:
 
 
       The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the
-      compose form. If you specify a callback method, the method is called with one parameter,Office.AsyncResult, which
+      compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which
       contains either the attachment identifier or a code that indicates any error that occurred while attaching the
       item. You can use the options parameter to pass state information to the callback method, if needed.
 
@@ -733,7 +733,7 @@ items:
 
 
       The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the
-      compose form. If you specify a callback method, the method is called with one parameter,Office.AsyncResult, which
+      compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which
       contains either the attachment identifier or a code that indicates any error that occurred while attaching the
       item. You can use the options parameter to pass state information to the callback method, if needed.
 
@@ -792,7 +792,7 @@ items:
 
 
       The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the
-      compose form. If you specify a callback method, the method is called with one parameter,Office.AsyncResult, which
+      compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which
       contains either the attachment identifier or a code that indicates any error that occurred while attaching the
       item. You can use the options parameter to pass state information to the callback method, if needed.
 
@@ -844,9 +844,9 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. On success, the attachment identifier will be provided in
-            theOffice.AsyncResult.value property. If adding the attachment fails, theOffice.AsyncResult object will
-            contain an Error object that provides a description of the error.
+            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
+            property. If adding the attachment fails, the asyncResult object will contain an Error object that provides
+            a description of the error.
           type:
             - '(result: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.MessageCompose.close
@@ -948,8 +948,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If the call fails, theOffice.AsyncResult.error property will contain
-            and error code with the reason for the failure.
+            parameter of type Office.AsyncResult. If the call fails, the asyncResult.error property will contain and
+            error code with the reason for the failure.
           type:
             - '(result: Office.AsyncResult<AttachmentDetails[]>) => void'
   - uid: outlook.Office.MessageCompose.getInitializationContextAsync
@@ -997,10 +997,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. On success, the initialization data is provided in
-            theOffice.AsyncResult.value property as a string. If there is no initialization context,
-            theOffice.AsyncResult object will contain an Error object with its code property set to 9020 and its name
-            property set to GenericResponseError.
+            parameter of type Office.AsyncResult. On success, the initialization data is provided in the
+            asyncResult.value property as a string. If there is no initialization context, the asyncResult object will
+            contain an Error object with its code property set to 9020 and its name property set to
+            GenericResponseError.
           type:
             - '(result: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.MessageCompose.getSelectedDataAsync
@@ -1012,9 +1012,8 @@ items:
       If a field other than the body or subject is selected, the method returns the InvalidSelection error.
 
 
-      To access the selected data from the callback method, callOffice.AsyncResult.value.data. To access the source
-      property that the selection comes from, callOffice.AsyncResult.value.sourceProperty, which will be either body or
-      subject.
+      To access the selected data from the callback method, call asyncResult.value.data. To access the source property
+      that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
 
 
       \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1086,9 +1085,8 @@ items:
       If a field other than the body or subject is selected, the method returns the InvalidSelection error.
 
 
-      To access the selected data from the callback method, callOffice.AsyncResult.value.data. To access the source
-      property that the selection comes from, callOffice.AsyncResult.value.sourceProperty, which will be either body or
-      subject.
+      To access the selected data from the callback method, call asyncResult.value.data. To access the source property
+      that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
 
 
       \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1142,9 +1140,9 @@ items:
       as secure storage.
 
 
-      The custom properties are provided as a CustomProperties object in theOffice.AsyncResult.value property. This
-      object can be used to get, set, and remove custom properties from the item and save changes to the custom property
-      set back to the server.
+      The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can
+      be used to get, set, and remove custom properties from the item and save changes to the custom property set back
+      to the server.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1178,7 +1176,7 @@ items:
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
-            accessed by theOffice.AsyncResult.asyncContext property in the callback function.
+            accessed by the asyncResult.asyncContext property in the callback function.
           type:
             - any
   - uid: outlook.Office.MessageCompose.removeAttachmentAsync
@@ -1261,8 +1259,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If removing the attachment fails, theOffice.AsyncResult.error property
-            will contain an error code with the reason for the failure.
+            parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
+            contain an error code with the reason for the failure.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.MessageCompose.removeAttachmentAsync_1
@@ -1391,8 +1389,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If removing the attachment fails, theOffice.AsyncResult.error property
-            will contain an error code with the reason for the failure.
+            parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
+            contain an error code with the reason for the failure.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.MessageCompose.removeHandlerAsync
@@ -1447,7 +1445,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.MessageCompose.removeHandlerAsync_1
@@ -1489,7 +1487,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.MessageCompose.saveAsync
@@ -1984,7 +1982,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of typeOffice.AsyncResult.
+            parameter of type Office.AsyncResult.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.MessageCompose.bcc

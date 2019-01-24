@@ -30,9 +30,9 @@ items:
       Gets the start or end time of an appointment.
 
 
-      The date and time is provided as a Date object in theOffice.AsyncResult.value property. The value is in
-      Coordinated Universal Time (UTC). You can convert the UTC time to the local client time by using the
-      convertToLocalClientTime method.
+      The date and time is provided as a Date object in the asyncResult.value property. The value is in Coordinated
+      Universal Time (UTC). You can convert the UTC time to the local client time by using the convertToLocalClientTime
+      method.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -70,7 +70,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of typeOffice.AsyncResult. The `value` property of the result is a Date object.
+            of type Office.AsyncResult. The `value` property of the result is a Date object.
           type:
             - '(result: Office.AsyncResult<Date>) => void'
   - uid: outlook.Office.Time.getAsync_1
@@ -78,9 +78,9 @@ items:
       Gets the start or end time of an appointment.
 
 
-      The date and time is provided as a Date object in theOffice.AsyncResult.value property. The value is in
-      Coordinated Universal Time (UTC). You can convert the UTC time to the local client time by using the
-      convertToLocalClientTime method.
+      The date and time is provided as a Date object in the asyncResult.value property. The value is in Coordinated
+      Universal Time (UTC). You can convert the UTC time to the local client time by using the convertToLocalClientTime
+      method.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -106,7 +106,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of typeOffice.AsyncResult. The `value` property of the result is a Date object.
+            of type Office.AsyncResult. The `value` property of the result is a Date object.
           type:
             - '(result: Office.AsyncResult<Date>) => void'
   - uid: outlook.Office.Time.setAsync
@@ -197,8 +197,8 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. If setting the date and time fails, theOffice.AsyncResult.error property will
-            contain an error code.
+            of type Office.AsyncResult. If setting the date and time fails, the asyncResult.error property will contain
+            an error code.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Time.setAsync_1
@@ -333,7 +333,7 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. If setting the date and time fails, theOffice.AsyncResult.error property will
-            contain an error code.
+            of type Office.AsyncResult. If setting the date and time fails, the asyncResult.error property will contain
+            an error code.
           type:
             - '(result: Office.AsyncResult<void>) => void'

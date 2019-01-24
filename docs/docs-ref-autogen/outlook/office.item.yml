@@ -112,7 +112,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Item.addHandlerAsync_1
@@ -160,7 +160,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Item.getAttachmentContentAsync
@@ -253,8 +253,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object. If the call fails,
-            theOffice.AsyncResult.error property will contain and error code with the reason for the failure.
+            parameter, asyncResult, which is an Office.AsyncResult object. If the call fails, the asyncResult.error
+            property will contain and error code with the reason for the failure.
           type:
             - '(result: Office.AsyncResult<AttachmentContent>) => void'
   - uid: outlook.Office.Item.getInitializationContextAsync
@@ -335,10 +335,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object. On success, the initialization data is
-            provided in theOffice.AsyncResult.value property as a string. If there is no initialization context,
-            theOffice.AsyncResult object will contain an Error object with its code property set to 9020 and its name
-            property set to GenericResponseError.
+            parameter, asyncResult, which is an Office.AsyncResult object. On success, the initialization data is
+            provided in the asyncResult.value property as a string. If there is no initialization context, the
+            asyncResult object will contain an Error object with its code property set to 9020 and its name property set
+            to GenericResponseError.
           type:
             - '(result: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.Item.getSharedPropertiesAsync
@@ -442,9 +442,9 @@ items:
       as secure storage.
 
 
-      The custom properties are provided as a CustomProperties object in theOffice.AsyncResult.value property. This
-      object can be used to get, set, and remove custom properties from the item and save changes to the custom property
-      set back to the server.
+      The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can
+      be used to get, set, and remove custom properties from the item and save changes to the custom property set back
+      to the server.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -521,7 +521,7 @@ items:
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
-            accessed by theOffice.AsyncResult.asyncContext property in the callback function.
+            accessed by the asyncResult.asyncContext property in the callback function.
           type:
             - any
   - uid: outlook.Office.Item.removeHandlerAsync
@@ -576,7 +576,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Item.removeHandlerAsync_1
@@ -618,7 +618,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Item.body

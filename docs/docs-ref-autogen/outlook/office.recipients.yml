@@ -122,8 +122,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If adding the recipients fails, theOffice.AsyncResult.error property
-            will contain an error code.
+            parameter of type Office.AsyncResult. If adding the recipients fails, the asyncResult.error property will
+            contain an error code.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Recipients.addAsync_1
@@ -176,7 +176,7 @@ items:
 
       - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
 
-      -  objects
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -224,7 +224,7 @@ items:
 
       - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
 
-      -  objects
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -259,15 +259,18 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If adding the recipients fails, theOffice.AsyncResult.error property
-            will contain an error code.
+            parameter of type Office.AsyncResult. If adding the recipients fails, the asyncResult.error property will
+            contain an error code.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Recipients.getAsync
-    summary: |-
+    summary: >-
       Gets a recipient list for an appointment or message.
 
-      When the call completes, theOffice.AsyncResult.value property will contain an array of  objects.
+
+      When the call completes, the asyncResult.value property will contain an array of
+      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects.
+
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -331,10 +334,13 @@ items:
           type:
             - '(result: Office.AsyncResult<EmailAddressDetails[]>) => void'
   - uid: outlook.Office.Recipients.getAsync_1
-    summary: |-
+    summary: >-
       Gets a recipient list for an appointment or message.
 
-      When the call completes, theOffice.AsyncResult.value property will contain an array of  objects.
+
+      When the call completes, the asyncResult.value property will contain an array of
+      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects.
+
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -374,7 +380,7 @@ items:
 
       - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
 
-      -  objects
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -460,8 +466,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If setting the recipients fails theOffice.AsyncResult.error property
-            will contain a code that indicates any error that occurred while adding the data.
+            parameter of type Office.AsyncResult. If setting the recipients fails the asyncResult.error property will
+            contain a code that indicates any error that occurred while adding the data.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Recipients.setAsync_1
@@ -476,7 +482,7 @@ items:
 
       - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
 
-      -  objects
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -518,7 +524,7 @@ items:
 
       - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
 
-      -  objects
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -568,7 +574,7 @@ items:
 
       - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
 
-      -  objects
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -603,7 +609,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If setting the recipients fails theOffice.AsyncResult.error property
-            will contain a code that indicates any error that occurred while adding the data.
+            parameter of type Office.AsyncResult. If setting the recipients fails the asyncResult.error property will
+            contain a code that indicates any error that occurred while adding the data.
           type:
             - '(result: Office.AsyncResult<void>) => void'

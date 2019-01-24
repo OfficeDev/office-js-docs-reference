@@ -95,7 +95,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<InternetHeaders>) => void'
   - uid: outlook.Office.InternetHeaders.getAsync_1
@@ -133,7 +133,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<InternetHeaders>) => void'
   - uid: outlook.Office.InternetHeaders.removeAsync
@@ -193,7 +193,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<InternetHeaders>) => void'
   - uid: outlook.Office.InternetHeaders.removeAsync_1
@@ -230,7 +230,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<InternetHeaders>) => void'
   - uid: outlook.Office.InternetHeaders.setAsync
@@ -295,7 +295,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. Any errors encountered will be provided in theOffice.AsyncResult.error
+            parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
             - '(result: Office.AsyncResult<void>) => void'
@@ -338,7 +338,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. Any errors encountered will be provided in theOffice.AsyncResult.error
+            parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
             - '(result: Office.AsyncResult<void>) => void'

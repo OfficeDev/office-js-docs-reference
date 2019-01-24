@@ -31,7 +31,7 @@ items:
 
 
       The getAsync method starts an asynchronous call to the Exchange server to get the location of an appointment. The
-      location of the appointment is provided as a string in theOffice.AsyncResult.value property.
+      location of the appointment is provided as a string in the asyncResult.value property.
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -80,7 +80,7 @@ items:
 
 
       The getAsync method starts an asynchronous call to the Exchange server to get the location of an appointment. The
-      location of the appointment is provided as a string in theOffice.AsyncResult.value property.
+      location of the appointment is provided as a string in the asyncResult.value property.
     remarks: >-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
@@ -166,8 +166,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If setting the location fails, theOffice.AsyncResult.error property
-            will contain an error code.
+            parameter of type Office.AsyncResult. If setting the location fails, the asyncResult.error property will
+            contain an error code.
 
 
             \[Api set: Mailbox 1.1\]
@@ -290,8 +290,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If setting the location fails, theOffice.AsyncResult.error property
-            will contain an error code.
+            parameter of type Office.AsyncResult. If setting the location fails, the asyncResult.error property will
+            contain an error code.
 
 
             \[Api set: Mailbox 1.1\]

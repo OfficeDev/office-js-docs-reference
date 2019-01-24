@@ -22,12 +22,16 @@ items:
       - outlook.Office.From.getAsync
       - outlook.Office.From.getAsync_1
   - uid: outlook.Office.From.getAsync
-    summary: |-
+    summary: >-
       Gets the from value of a message.
+
 
       The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
 
-      The from value of the item is provided as an  in theOffice.AsyncResult.value property.
+
+      The from value of the item is provided as an [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails)
+      in the asyncResult.value property.
+
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -65,18 +69,22 @@ items:
             - Office.AsyncContextOptions
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single
-            parameter,Office.AsyncResult, which is an Office.AsyncResult object. The `value` property of the result is
-            message's from value, as an EmailAddressDetails object.
+            When the method completes, the function passed in the callback parameter is called with a single parameter,
+            asyncResult, which is an Office.AsyncResult object. The `value` property of the result is message's from
+            value, as an EmailAddressDetails object.
           type:
             - '(result: Office.AsyncResult<EmailAddressDetails>) => void'
   - uid: outlook.Office.From.getAsync_1
-    summary: |-
+    summary: >-
       Gets the from value of a message.
+
 
       The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
 
-      The from value of the item is provided as an  in theOffice.AsyncResult.value property.
+
+      The from value of the item is provided as an [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails)
+      in the asyncResult.value property.
+
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -100,8 +108,8 @@ items:
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single
-            parameter,Office.AsyncResult, which is an Office.AsyncResult object. The `value` property of the result is
-            message's from value, as an EmailAddressDetails object.
+            When the method completes, the function passed in the callback parameter is called with a single parameter,
+            asyncResult, which is an Office.AsyncResult object. The `value` property of the result is message's from
+            value, as an EmailAddressDetails object.
           type:
             - '(result: Office.AsyncResult<EmailAddressDetails>) => void'

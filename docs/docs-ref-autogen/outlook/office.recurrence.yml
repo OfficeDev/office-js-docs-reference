@@ -122,8 +122,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object. The `value` property of the result is
-            a Recurrence object.
+            parameter, asyncResult, which is an Office.AsyncResult object. The `value` property of the result is a
+            Recurrence object.
           type:
             - '(result: Office.AsyncResult<Recurrence>) => void'
   - uid: outlook.Office.Recurrence.getAsync_1
@@ -155,8 +155,8 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object. The `value` property of the result is
-            a Recurrence object.
+            parameter, asyncResult, which is an Office.AsyncResult object. The `value` property of the result is a
+            Recurrence object.
           type:
             - '(result: Office.AsyncResult<Recurrence>) => void'
   - uid: outlook.Office.Recurrence.setAsync
@@ -249,7 +249,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Recurrence.setAsync_1
@@ -288,7 +288,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Recurrence.recurrenceProperties
@@ -359,9 +359,10 @@ items:
           - MailboxEnums.RecurrenceType
   - uid: outlook.Office.Recurrence.seriesTime
     summary: >-
-      The  object enables you to manage the start and end dates of the recurring appointment series and the usual start
-      and end times of instances. **This object is not in UTC time.** Instead, it is set in the time zone specified by
-      the recurrenceTimeZone value or defaulted to the item's time zone.
+      The [Office.SeriesTime](xref:outlook.Office.SeriesTime) object enables you to manage the start and end dates of
+      the recurring appointment series and the usual start and end times of instances. **This object is not in UTC
+      time.** Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's
+      time zone.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

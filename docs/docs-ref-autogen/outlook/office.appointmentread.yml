@@ -109,7 +109,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentRead.addHandlerAsync_1
@@ -157,7 +157,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentRead.displayReplyAllForm
@@ -619,10 +619,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object. On success, the initialization data is
-            provided in theOffice.AsyncResult.value property as a string. If there is no initialization context,
-            theOffice.AsyncResult object will contain an Error object with its code property set to 9020 and its name
-            property set to GenericResponseError.
+            parameter, asyncResult, which is an Office.AsyncResult object. On success, the initialization data is
+            provided in the asyncResult.value property as a string. If there is no initialization context, the
+            asyncResult object will contain an Error object with its code property set to 9020 and its name property set
+            to GenericResponseError.
           type:
             - '(result: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.AppointmentRead.getInitializationContextAsync_1
@@ -659,10 +659,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object. On success, the initialization data is
-            provided in theOffice.AsyncResult.value property as a string. If there is no initialization context,
-            theOffice.AsyncResult object will contain an Error object with its code property set to 9020 and its name
-            property set to GenericResponseError.
+            parameter, asyncResult, which is an Office.AsyncResult object. On success, the initialization data is
+            provided in the asyncResult.value property as a string. If there is no initialization context, the
+            asyncResult object will contain an Error object with its code property set to 9020 and its name property set
+            to GenericResponseError.
           type:
             - '(result: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.AppointmentRead.getRegExMatches
@@ -893,9 +893,9 @@ items:
       as secure storage.
 
 
-      The custom properties are provided as a CustomProperties object in theOffice.AsyncResult.value property. This
-      object can be used to get, set, and remove custom properties from the item and save changes to the custom property
-      set back to the server.
+      The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can
+      be used to get, set, and remove custom properties from the item and save changes to the custom property set back
+      to the server.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -929,7 +929,7 @@ items:
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
-            accessed by theOffice.AsyncResult.asyncContext property in the callback function.
+            accessed by the asyncResult.asyncContext property in the callback function.
           type:
             - any
   - uid: outlook.Office.AppointmentRead.removeHandlerAsync
@@ -984,7 +984,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentRead.removeHandlerAsync_1
@@ -1026,7 +1026,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, Office.AsyncResult, which is an Office.AsyncResult object.
+            parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentRead.attachments
@@ -1045,7 +1045,7 @@ items:
 
       Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
       returned. For more information, see [Blocked attachments in
-      Outlook](https://support.Office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)<!--
+      Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)<!--
       -->.
 
       #### Examples
@@ -1233,8 +1233,8 @@ items:
 
 
       The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can
-      be used to save the item to the store, which will return the item identifier in theOffice.AsyncResult.value
-      parameter in the callback function.
+      be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in
+      the callback function.
 
 
       Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The
@@ -1408,7 +1408,8 @@ items:
       of the current item.
 
 
-      The optionalAttendees property returns an array that contains an  object for each optional attendee to the
+      The optionalAttendees property returns an array that contains an
+      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) object for each optional attendee to the
       meeting.
 
 
@@ -1522,7 +1523,8 @@ items:
       of the current item.
 
 
-      The requiredAttendees property returns an array that contains an  object for each required attendee to the
+      The requiredAttendees property returns an array that contains an
+      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) object for each required attendee to the
       meeting.
 
 
