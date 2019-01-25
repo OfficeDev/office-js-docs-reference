@@ -13,6 +13,9 @@ items:
       - excel.Excel.CalculationMode.automaticExceptTables
       - excel.Excel.CalculationMode.manual
   - uid: excel.Excel.CalculationMode.automatic
+    summary: >-
+      The default recalculation behavior where Excel calculates new formula results every time the relevant data is
+      changed.
     name: automatic
     fullName: automatic
     langs:
@@ -20,6 +23,7 @@ items:
     type: field
     numericValue: '"Automatic"'
   - uid: excel.Excel.CalculationMode.automaticExceptTables
+    summary: 'Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.'
     name: automaticExceptTables
     fullName: automaticExceptTables
     langs:
@@ -27,6 +31,7 @@ items:
     type: field
     numericValue: '"AutomaticExceptTables"'
   - uid: excel.Excel.CalculationMode.manual
+    summary: Calculations only occur when the user or add-in requests them.
     name: manual
     fullName: manual
     langs:
