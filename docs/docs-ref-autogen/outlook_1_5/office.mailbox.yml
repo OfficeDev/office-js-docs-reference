@@ -65,8 +65,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: (type: EventType) => void, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, options?:
+        Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -81,7 +81,7 @@ items:
             The function to handle the event. The function must accept a single parameter, which is an object literal.
             The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
           type:
-            - '(type: EventType) => void'
+            - '(type: Office.EventType) => void'
         - id: options
           description: 'Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
@@ -91,7 +91,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_5.Office.Mailbox.convertToEwsId
     summary: >-
       Converts an item ID formatted for REST into EWS format.
@@ -119,7 +119,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'convertToEwsId(itemId: string, restVersion: Office.MailboxEnums.RestVersion): string;'
+      content: 'convertToEwsId(itemId: string, restVersion: MailboxEnums.RestVersion): string;'
       return:
         type:
           - string
@@ -132,7 +132,7 @@ items:
         - id: restVersion
           description: A value indicating the version of the Outlook REST API used to retrieve the item ID.
           type:
-            - outlook.Office.MailboxEnums.RestVersion
+            - MailboxEnums.RestVersion
   - uid: Outlook_1_5.Office.Mailbox.convertToLocalClientTime
     summary: >-
       Gets a dictionary containing time information in local client time.
@@ -201,7 +201,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'convertToRestId(itemId: string, restVersion: Office.MailboxEnums.RestVersion): string;'
+      content: 'convertToRestId(itemId: string, restVersion: MailboxEnums.RestVersion): string;'
       return:
         type:
           - string
@@ -214,7 +214,7 @@ items:
         - id: restVersion
           description: A value indicating the version of the Outlook REST API that the converted ID will be used with.
           type:
-            - outlook.Office.MailboxEnums.RestVersion
+            - MailboxEnums.RestVersion
   - uid: Outlook_1_5.Office.Mailbox.convertToUtcClientTime
     summary: >-
       Gets a Date object from a dictionary containing time information.
@@ -290,10 +290,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'diagnostics: Office.Diagnostics;'
+      content: 'diagnostics: Diagnostics;'
       return:
         type:
-          - outlook.Office.Diagnostics
+          - Diagnostics
   - uid: Outlook_1_5.Office.Mailbox.displayAppointmentForm
     summary: >-
       Displays an existing calendar appointment.
@@ -530,10 +530,10 @@ items:
       In addition to this signature, the method has the following signatures:
 
 
-      `getCallbackTokenAsync(callback: (result: AsyncResult<string>) => void): void;`
+      `getCallbackTokenAsync(callback: (result: Office.AsyncResult<string>) => void): void;`
 
 
-      `getCallbackTokenAsync(callback: (result: AsyncResult<string>) => void, userContext?: any): void;`
+      `getCallbackTokenAsync(callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;`
     name: 'getCallbackTokenAsync(options, callback)'
     fullName: getCallbackTokenAsync
     langs:
@@ -542,7 +542,7 @@ items:
     syntax:
       content: >-
         getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (result:
-        AsyncResult<string>) => void): void;
+        Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -562,7 +562,7 @@ items:
             was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
             information.
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
   - uid: Outlook_1_5.Office.Mailbox.getUserIdentityTokenAsync
     summary: |-
       Gets a token identifying the user and the Office Add-in.
@@ -587,7 +587,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getUserIdentityTokenAsync(callback: (result: AsyncResult<string>) => void, userContext?: any): void;'
+      content: 'getUserIdentityTokenAsync(callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;'
       return:
         type:
           - void
@@ -600,7 +600,7 @@ items:
             was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
             information.
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.\|
           type:
@@ -692,7 +692,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'makeEwsRequestAsync(data: any, callback: (result: AsyncResult<string>) => void, userContext?: any): void;'
+      content: 'makeEwsRequestAsync(data: any, callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;'
       return:
         type:
           - void
@@ -708,7 +708,7 @@ items:
             of type Office.AsyncResult. The `value` property of the result is the XML of the EWS request provided as a
             string. If the result exceeds 1 MB in size, an error message is returned instead.
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
@@ -735,7 +735,7 @@ items:
     syntax:
       content: >-
         removeHandlerAsync(eventType: Office.EventType, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -754,7 +754,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_5.Office.Mailbox.restUrl
     summary: >-
       Gets the URL of the REST endpoint for this email account.
@@ -802,7 +802,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'userProfile: Office.UserProfile;'
+      content: 'userProfile: UserProfile;'
       return:
         type:
-          - outlook.Office.UserProfile
+          - UserProfile

@@ -32,10 +32,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'delegatePermissions: Office.MailboxEnums.DelegatePermissions;'
+      content: 'delegatePermissions: MailboxEnums.DelegatePermissions;'
       return:
         type:
-          - outlook.Office.MailboxEnums.DelegatePermissions
+          - MailboxEnums.DelegatePermissions
   - uid: outlook.Office.SharedProperties.owner
     summary: The email address of the owner of a shared item.
     isPreview: true

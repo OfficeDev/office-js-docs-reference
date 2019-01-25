@@ -60,7 +60,7 @@ items:
       In addition to this signature, this method also has the following signature:
 
 
-      `getAsync(callback?: (result: AsyncResult<Office.Recurrence>) => void): void;`
+      `getAsync(callback?: (result: Office.AsyncResult<Recurrence>) => void): void;`
     name: 'getAsync(options, callback)'
     fullName: getAsync
     langs:
@@ -68,7 +68,7 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.Recurrence>) => void):
+        getAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<Recurrence>) => void):
         void;
       return:
         type:
@@ -87,7 +87,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object. The `value` property of the result is a
             Recurrence object.
           type:
-            - '(result: AsyncResult<Office.Recurrence>) => void'
+            - '(result: Office.AsyncResult<Recurrence>) => void'
   - uid: Outlook_1_7.Office.Recurrence.recurrenceProperties
     summary: |-
       Gets or sets the properties of the recurring appointment series.
@@ -106,10 +106,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'recurrenceProperties: Office.RecurrenceProperties;'
+      content: 'recurrenceProperties: RecurrenceProperties;'
       return:
         type:
-          - outlook.Office.RecurrenceProperties
+          - RecurrenceProperties
   - uid: Outlook_1_7.Office.Recurrence.recurrenceTimeZone
     summary: |-
       Gets or sets the properties of the recurring appointment series.
@@ -128,10 +128,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'recurrenceTimeZone: Office.RecurrenceTimeZone;'
+      content: 'recurrenceTimeZone: RecurrenceTimeZone;'
       return:
         type:
-          - Office.RecurrenceTimeZone
+          - RecurrenceTimeZone
   - uid: Outlook_1_7.Office.Recurrence.recurrenceType
     summary: |-
       Gets or sets the type of the recurring appointment series.
@@ -150,10 +150,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'recurrenceType: Office.MailboxEnums.RecurrenceType;'
+      content: 'recurrenceType: MailboxEnums.RecurrenceType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.RecurrenceType
+          - MailboxEnums.RecurrenceType
   - uid: Outlook_1_7.Office.Recurrence.seriesTime
     summary: >-
       The [Office.SeriesTime](xref:Outlook_1_7.Office.SeriesTime) object enables you to manage the start and end dates
@@ -176,10 +176,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'seriesTime: Office.SeriesTime;'
+      content: 'seriesTime: SeriesTime;'
       return:
         type:
-          - outlook.Office.SeriesTime
+          - SeriesTime
   - uid: Outlook_1_7.Office.Recurrence.setAsync
     summary: |-
       Sets the recurrence pattern of an appointment series.
@@ -202,7 +202,7 @@ items:
       In addition to this signature, this method also has the following signature:
 
 
-      `setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult<void>) => void): void;`
+      `setAsync(recurrencePattern: Recurrence, callback?: (result: Office.AsyncResult<void>) => void): void;`
     name: 'setAsync(recurrencePattern, options, callback)'
     fullName: setAsync
     langs:
@@ -211,7 +211,7 @@ items:
     syntax:
       content: >-
         setAsync(recurrencePattern: Recurrence, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -232,4 +232,4 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'

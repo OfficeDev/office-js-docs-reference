@@ -29,10 +29,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'name: Office.MailboxEnums.RecurrenceTimeZone;'
+      content: 'name: MailboxEnums.RecurrenceTimeZone;'
       return:
         type:
-          - outlook.Office.MailboxEnums.RecurrenceTimeZone
+          - MailboxEnums.RecurrenceTimeZone
   - uid: Outlook_1_7.Office.RecurrenceTimeZone.offset
     summary: >-
       Integer value representing the difference in minutes between the local time zone and UTC at the date that the

@@ -68,7 +68,8 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
+      `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) =>
+      void): void;`
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: addHandlerAsync
     langs:
@@ -76,8 +77,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) =>
-        void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -86,7 +87,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - EventType
+            - Office.EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -104,7 +105,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.MessageRead.attachments
     summary: |-
       Gets the item's attachments as an array.
@@ -129,10 +130,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'attachments: Office.AttachmentDetails[];'
+      content: 'attachments: AttachmentDetails[];'
       return:
         type:
-          - 'Office.AttachmentDetails[]'
+          - 'AttachmentDetails[]'
   - uid: Outlook_1_7.Office.MessageRead.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
@@ -151,10 +152,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'body: Office.Body;'
+      content: 'body: Body;'
       return:
         type:
-          - outlook.Office.Body
+          - Body
   - uid: Outlook_1_7.Office.MessageRead.cc
     summary: >-
       Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
@@ -449,8 +450,8 @@ items:
     type: method
     syntax:
       content: >-
-        getEntitiesByType(entityType: Office.MailboxEnums.EntityType): (string | Contact | MeetingSuggestion |
-        PhoneNumber | TaskSuggestion)[];
+        getEntitiesByType(entityType: MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber |
+        TaskSuggestion)[];
       return:
         type:
           - '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
@@ -463,7 +464,7 @@ items:
         - id: entityType
           description: One of the EntityType enumeration values.
           type:
-            - outlook.Office.MailboxEnums.EntityType
+            - MailboxEnums.EntityType
   - uid: Outlook_1_7.Office.MessageRead.getFilteredEntitiesByName
     summary: >-
       Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
@@ -728,7 +729,7 @@ items:
 
 
       The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can
-      be used to save the item to the store, which will return the item identifier in the AsyncResult.value parameter in
+      be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in
       the callback function.
 
 
@@ -780,10 +781,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'itemType: Office.MailboxEnums.ItemType;'
+      content: 'itemType: MailboxEnums.ItemType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.ItemType
+          - MailboxEnums.ItemType
   - uid: Outlook_1_7.Office.MessageRead.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
@@ -815,7 +816,7 @@ items:
     type: method
     syntax:
       content: >-
-        loadCustomPropertiesAsync(callback: (result: AsyncResult<Office.CustomProperties>) => void, userContext?: any):
+        loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?: any):
         void;
       return:
         type:
@@ -827,7 +828,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult<Office.CustomProperties>) => void'
+            - '(result: Office.AsyncResult<CustomProperties>) => void'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
@@ -879,10 +880,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'notificationMessages: Office.NotificationMessages;'
+      content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - outlook.Office.NotificationMessages
+          - NotificationMessages
   - uid: Outlook_1_7.Office.MessageRead.recurrence
     summary: >-
       Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and compose
@@ -941,14 +942,16 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `removeHandlerAsync(eventType:EventType, callback?: (result: AsyncResult<void>) => void): void;`
+      `removeHandlerAsync(eventType: Office.EventType, callback?: (result: Office.AsyncResult<void>) => void): void;`
     name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: removeHandlerAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'removeHandlerAsync(eventType:EventType, options?: any, callback?: (result: AsyncResult<void>) => void): void;'
+      content: >-
+        removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (result: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -957,7 +960,7 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - EventType
+            - Office.EventType
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
@@ -969,7 +972,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.MessageRead.sender
     summary: >-
       Gets the email address of the sender of an email message.
