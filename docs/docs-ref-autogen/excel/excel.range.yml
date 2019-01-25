@@ -5,10 +5,6 @@ items:
       Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: >-
-      Our [how-to guide on working with
-      ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges) has detailed walkthroughs,
-      images, and code samples.
     name: Excel.Range
     fullName: Excel.Range
     langs:

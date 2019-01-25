@@ -790,7 +790,7 @@ export declare namespace Excel {
         context: RequestContext; 
         /**
          *
-         * Turn on/off JavaScript events in current taskpane or content add-in.
+         * Toggle JavaScript events in the current task pane or content add-in.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -1150,9 +1150,6 @@ export declare namespace Excel {
      * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
      *
      * [Api set: ExcelApi 1.1]
-     * 
-     * @remarks 
-     * Our {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | how-to guide on working with worksheets} has detailed walkthroughs and code samples.
      */
     export class Worksheet extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -1849,9 +1846,6 @@ export declare namespace Excel {
      * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
      *
      * [Api set: ExcelApi 1.1]
-     * 
-     * @remarks
-     * Our {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | how-to guide on working with ranges} has detailed walkthroughs, images, and code samples.
      */
     export class Range extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3325,9 +3319,6 @@ export declare namespace Excel {
      * Represents an Excel table.
      *
      * [Api set: ExcelApi 1.1]
-     * 
-     * @remarks
-     * Our {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | how-to guide on working with tables} has detailed walkthroughs, images, and code samples.
      */
     export class Table extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3908,7 +3899,7 @@ export declare namespace Excel {
         prompt: Excel.DataValidationPrompt;
         /**
          *
-         * Data Validation rule that contains different type of data validation criteria.
+         * Data validation rule that contains different type of data validation criteria.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -4028,19 +4019,19 @@ export declare namespace Excel {
     export interface BasicDataValidation {
         /**
          *
-         * Specifies the right-hand operand when the operator property is set to a binary operator such as GreaterThan (the left-hand operand is the value the user tries to enter in the cell). With the ternary operators Between and NotBetween, specifies the lower bound operand. 
-         * For example, setting formula1 to 10 and operator to GreaterThan means that valid data for the range must be greater than 10.
-         * When setting the value, it can be passed in as a number, a range object, or a string formula (where the string is either a stringified number, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
-         * When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
+         * Specifies the right-hand operand when the operator property is set to a binary operator such as GreaterThan (the left-hand operand is the value the user tries to enter in the cell). With the ternary operators Between and NotBetween, specifies the lower bound operand.
+            For example, setting formula1 to 10 and operator to GreaterThan means that valid data for the range must be greater than 10.
+            When setting the value, it can be passed in as a number, a range object, or a string formula (where the string is either a stringified number, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
+            When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
          *
          * [Api set: ExcelApi 1.8]
          */
         formula1: string | number | Range;
         /**
          *
-         * With the ternary operators Between and NotBetween, specifies the upper bound operand. Is not used with the binary operators, such as GreaterThan. 
-         * When setting the value, it can be passed in as a number, a range object, or a string formula (where the string is either a stringified number, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
-         * When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
+         * With the ternary operators Between and NotBetween, specifies the upper bound operand. Is not used with the binary operators, such as GreaterThan.
+            When setting the value, it can be passed in as a number, a range object, or a string formula (where the string is either a stringified number, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
+            When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -4062,18 +4053,18 @@ export declare namespace Excel {
     export interface DateTimeDataValidation {
         /**
          *
-         * Specifies the right-hand operand when the operator property is set to a binary operator such as GreaterThan (the left-hand operand is the value the user tries to enter in the cell). With the ternary operators Between and NotBetween, specifies the lower bound operand. 
-         * When setting the value, it can be passed in as a Date, a Range object, or a string formula (where the string is either a stringified date/time in ISO8601 format, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
-         * When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
+         * Specifies the right-hand operand when the operator property is set to a binary operator such as GreaterThan (the left-hand operand is the value the user tries to enter in the cell). With the ternary operators Between and NotBetween, specifies the lower bound operand.
+            When setting the value, it can be passed in as a Date, a Range object, or a string formula (where the string is either a stringified date/time in ISO8601 format, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
+            When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
          *
          * [Api set: ExcelApi 1.8]
          */
         formula1: string | Date | Range;
         /**
          *
-         * With the ternary operators Between and NotBetween, specifies the upper bound operand. Is not used with the binary operators, such as GreaterThan. 
-         * When setting the value, it can be passed in as a Date, a Range object, or a string (where the string is either a stringified date/time in ISO8601 format, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
-         * When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
+         * With the ternary operators Between and NotBetween, specifies the upper bound operand. Is not used with the binary operators, such as GreaterThan.
+            When setting the value, it can be passed in as a Date, a Range object, or a string (where the string is either a stringified date/time in ISO8601 format, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
+            When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -4117,7 +4108,7 @@ export declare namespace Excel {
     export interface CustomDataValidation {
         /**
          *
-         * Custom data validation formula, it is to create special rules, such as preventing duplicates, or limiting the total in a range of cells.
+         * A custom data validation formula. This creates special input rules, such as preventing duplicates, or limiting the total in a range of cells.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -4139,14 +4130,14 @@ export declare namespace Excel {
         message: string;
         /**
          *
-         * It determines show error alert dialog or not when users enter invalid data, it defaults to true.
+         * Determines whether to show an error alert dialog or not when a user enters invalid data. The default is true.
          *
          * [Api set: ExcelApi 1.8]
          */
         showAlert: boolean;
         /**
          *
-         * Represents Data validation alert type, please see Excel.DataValidationAlertStyle for details.
+         * Represents data validation alert type, please see Excel.DataValidationAlertStyle for details.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -4175,7 +4166,7 @@ export declare namespace Excel {
         message: string;
         /**
          *
-         * It determines showing the prompt or not when user selects a cell with the data validation.
+         * Determines whether or not to show the prompt when user selects a cell with data validation.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -4772,9 +4763,6 @@ export declare namespace Excel {
      * Represents a chart object in a workbook.
      *
      * [Api set: ExcelApi 1.1]
-     * 
-     * @remarks
-     * Our {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | how-to guide on working with charts} has detailed walkthroughs, images, and code samples.
      */
     export class Chart extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -4823,7 +4811,7 @@ export declare namespace Excel {
         readonly series: Excel.ChartSeriesCollection;
         /**
          *
-         * Represents the title of the specified chart, including the text, visibility, position, and formating of the title. Read-only.
+         * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title. Read-only.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -4916,7 +4904,7 @@ export declare namespace Excel {
         showAllFieldButtons: boolean;
         /**
          *
-         * Represents whether to to show the data labels when the value is greater than the maximum value on the value axis.
+         * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
             If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
             This property applies to 2-D charts only.
          *
@@ -5310,7 +5298,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * Specifies how bars and columns are positioned. Can be a value between – 100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
+         * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -5428,7 +5416,7 @@ export declare namespace Excel {
         context: RequestContext; 
         /**
          *
-         * Represents the fill format of a chart series, which includes background formating information. Read-only.
+         * Represents the fill format of a chart series, which includes background formatting information. Read-only.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -5631,7 +5619,7 @@ export declare namespace Excel {
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of a chart, which includes background formating information. Read-only.
+         * Represents the fill format of a chart, which includes background formatting information. Read-only.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -6818,14 +6806,14 @@ export declare namespace Excel {
         context: RequestContext; 
         /**
          *
-         * Represents the height of the legendEntry on the chart Legend.
+         * Represents the height of the legendEntry on the chart legend.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly height: number;
         /**
          *
-         * Represents the index of the LegendEntry in the Chart Legend.
+         * Represents the index of the legendEntry in the chart legend.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -6951,7 +6939,7 @@ export declare namespace Excel {
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of an object, which includes background formating information. Read-only.
+         * Represents the fill format of an object, which includes background formatting information. Read-only.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -7194,7 +7182,7 @@ export declare namespace Excel {
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of an object, which includes background formating information. Read-only.
+         * Represents the fill format of an object, which includes background formatting information. Read-only.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -8000,7 +7988,7 @@ export declare namespace Excel {
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of an object, which includes background formating information.
+         * Represents the fill format of an object, which includes background formatting information.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -8802,9 +8790,6 @@ export declare namespace Excel {
      * Represents an Excel PivotTable.
      *
      * [Api set: ExcelApi 1.3]
-     * 
-     * @remarks
-     * Our {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables | how-to guide on working with PivotTables} has detailed walkthroughs, images, and code samples.
      */
     export class PivotTable extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -9535,7 +9520,7 @@ export declare namespace Excel {
         position: number;
         /**
          *
-         * Determines whether the data should be sown as a specific summary calculation or not.
+         * Determines whether the data should be shown as a specific summary calculation or not.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -9586,14 +9571,14 @@ export declare namespace Excel {
     export interface ShowAsRule {
         /**
          *
-         * The Base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.
+         * The base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.
          *
          * [Api set: ExcelApi 1.8]
          */
         baseField?: Excel.PivotField;
         /**
          *
-         * The Base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null.
+         * The base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -11189,7 +11174,7 @@ export declare namespace Excel {
         formula?: string;
         /**
          *
-         * What the icon conditional formula should be based on.
+         * What the criterion conditional formula should be based on.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -12591,8 +12576,23 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1]
      */
     enum CalculationMode {
+        /**
+         *
+         * The default recalculation behavior where Excel calculates new formula results every time the relevant data is changed.
+         *
+         */
         automatic = "Automatic",
+        /**
+         *
+         * Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.
+         *
+         */
         automaticExceptTables = "AutomaticExceptTables",
+        /**
+         *
+         * Calculations only occur when the user or add-in requests them.
+         *
+         */
         manual = "Manual",
     }
     /**
@@ -17421,7 +17421,7 @@ export declare namespace Excel {
         export interface RuntimeUpdateData {
             /**
              *
-             * Turn on/off JavaScript events in current taskpane or content add-in.
+             * Toggle JavaScript events in the current task pane or content add-in.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -17821,7 +17821,7 @@ export declare namespace Excel {
             prompt?: Excel.DataValidationPrompt;
             /**
              *
-             * Data Validation rule that contains different type of data validation criteria.
+             * Data validation rule that contains different type of data validation criteria.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -18058,7 +18058,7 @@ export declare namespace Excel {
             plotArea?: Excel.Interfaces.ChartPlotAreaUpdateData;
             /**
             *
-            * Represents the title of the specified chart, including the text, visibility, position, and formating of the title.
+            * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -18137,7 +18137,7 @@ export declare namespace Excel {
             showAllFieldButtons?: boolean;
             /**
              *
-             * Represents whether to to show the data labels when the value is greater than the maximum value on the value axis.
+             * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
             If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
             This property applies to 2-D charts only.
              *
@@ -18305,7 +18305,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Specifies how bars and columns are positioned. Can be a value between – 100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
+             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -18735,7 +18735,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;
             /**
              *
-             * Represents whether data labels automatically generates appropriate text based on context.
+             * Represents whether data labels automatically generate appropriate text based on context.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -19720,7 +19720,7 @@ export declare namespace Excel {
             position?: number;
             /**
              *
-             * Determines whether the data should be sown as a specific summary calculation or not.
+             * Determines whether the data should be shown as a specific summary calculation or not.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -20559,7 +20559,7 @@ export declare namespace Excel {
         export interface RuntimeData {
             /**
              *
-             * Turn on/off JavaScript events in current taskpane or content add-in.
+             * Toggle JavaScript events in the current task pane or content add-in.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -21394,7 +21394,7 @@ export declare namespace Excel {
             prompt?: Excel.DataValidationPrompt;
             /**
              *
-             * Data Validation rule that contains different type of data validation criteria.
+             * Data validation rule that contains different type of data validation criteria.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -21668,7 +21668,7 @@ export declare namespace Excel {
             series?: Excel.Interfaces.ChartSeriesData[];
             /**
             *
-            * Represents the title of the specified chart, including the text, visibility, position, and formating of the title. Read-only.
+            * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title. Read-only.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -21754,7 +21754,7 @@ export declare namespace Excel {
             showAllFieldButtons?: boolean;
             /**
              *
-             * Represents whether to to show the data labels when the value is greater than the maximum value on the value axis.
+             * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
             If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
             This property applies to 2-D charts only.
              *
@@ -21936,7 +21936,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Specifies how bars and columns are positioned. Can be a value between – 100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
+             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -22277,7 +22277,7 @@ export declare namespace Excel {
             position?: Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom";
             /**
              *
-             * Represents the specified axis position where the other axis crosses at. Read Only. Set to this property should use SetPositionAt(double) method.
+             * Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -22429,7 +22429,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartDataLabelFormatData;
             /**
              *
-             * Represents whether data labels automatically generates appropriate text based on context.
+             * Represents whether data labels automatically generate appropriate text based on context.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -22787,14 +22787,14 @@ export declare namespace Excel {
         export interface ChartLegendEntryData {
             /**
              *
-             * Represents the height of the legendEntry on the chart Legend.
+             * Represents the height of the legendEntry on the chart legend.
              *
              * [Api set: ExcelApi 1.8]
              */
             height?: number;
             /**
              *
-             * Represents the index of the LegendEntry in the Chart Legend.
+             * Represents the index of the legendEntry in the chart legend.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -23640,7 +23640,7 @@ export declare namespace Excel {
             position?: number;
             /**
              *
-             * Determines whether the data should be sown as a specific summary calculation or not.
+             * Determines whether the data should be shown as a specific summary calculation or not.
              *
              * [Api set: ExcelApi 1.8]
              */

@@ -40,7 +40,7 @@ items:
           - RequestContext
   - uid: excel.Excel.ChartLegendEntry.height
     summary: |-
-      Represents the height of the legendEntry on the chart Legend.
+      Represents the height of the legendEntry on the chart legend.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -55,7 +55,7 @@ items:
           - number
   - uid: excel.Excel.ChartLegendEntry.index
     summary: |-
-      Represents the index of the LegendEntry in the Chart Legend.
+      Represents the index of the legendEntry in the chart legend.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index

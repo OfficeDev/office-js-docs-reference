@@ -53,7 +53,7 @@ items:
           - RequestContext
   - uid: excel.Excel.ChartPointFormat.fill
     summary: |-
-      Represents the fill format of a chart, which includes background formating information. Read-only.
+      Represents the fill format of a chart, which includes background formatting information. Read-only.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill

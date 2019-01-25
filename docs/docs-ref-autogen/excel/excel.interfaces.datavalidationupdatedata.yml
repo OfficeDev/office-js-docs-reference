@@ -62,7 +62,7 @@ items:
           - excel.Excel.DataValidationPrompt
   - uid: excel.Excel.Interfaces.DataValidationUpdateData.rule
     summary: |-
-      Data Validation rule that contains different type of data validation criteria.
+      Data validation rule that contains different type of data validation criteria.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule
