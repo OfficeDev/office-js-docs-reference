@@ -9,13 +9,13 @@ let indexOfApiSetTag = wholeDTS.indexOf("Api set: " + process.argv[3]);
 while (indexOfApiSetTag >= 0) {
     // find the comment block around the API tag
     let commentStart = wholeDTS.lastIndexOf("/**", indexOfApiSetTag);
-    let commentEnd = wholeDTS.indexOf("*/", indexOfApiSetTag) + 2; // +2 to include the ending characters
+    let commentEnd = wholeDTS.indexOf("*/", indexOfApiSetTag) + 3; // +3 to include the ending characters and newline
 
     // the declaration string is the line following the comment
-    let declarationString = wholeDTS.substring(commentEnd + 1, wholeDTS.indexOf("\n", commentEnd + 2));
+    let declarationString = wholeDTS.substring(commentEnd, wholeDTS.indexOf("\n", commentEnd + 2));
     let endPosition;
     if (declarationString.indexOf("class") >= 0 || declarationString.indexOf("enum") >= 0 || declarationString.indexOf("interface") >= 0) {
-        endPosition = wholeDTS.indexOf("}\n", commentEnd);
+        endPosition = Math.max(wholeDTS.indexOf("}\r\n", commentEnd), wholeDTS.indexOf("}\n", commentEnd));
     } else {
         endPosition = wholeDTS.indexOf(";", commentEnd);
     }
