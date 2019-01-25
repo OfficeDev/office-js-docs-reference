@@ -125,7 +125,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(callback?: (result: AsyncResult<void>) => void): void;'
+      content: 'saveAsync(callback?: (result: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -136,7 +136,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_1.Office.RoamingSettings.set
     summary: >-
       Sets or creates the specified setting.

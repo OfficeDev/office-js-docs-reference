@@ -43,8 +43,8 @@ items:
     type: method
     syntax:
       content: >-
-        getTypeAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.CoercionType>) =>
-        void): void;
+        getTypeAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<Office.CoercionType>)
+        => void): void;
       return:
         type:
           - void
@@ -62,7 +62,7 @@ items:
             parameter of type Office.AsyncResult. The content type is returned as one of the CoercionType values in the
             asyncResult.value property.
           type:
-            - '(result: AsyncResult<Office.CoercionType>) => void'
+            - '(result: Office.AsyncResult<Office.CoercionType>) => void'
   - uid: Outlook_1_1.Office.Body.prependAsync
     summary: >-
       Adds the specified content to the beginning of the item body.
@@ -96,7 +96,7 @@ items:
       `prependAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
 
 
-      `prependAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
+      `prependAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
 
 
       `prependAsync(data: string): void;`
@@ -108,7 +108,7 @@ items:
     syntax:
       content: >-
         prependAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -131,7 +131,7 @@ items:
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_1.Office.Body.setSelectedDataAsync
     summary: >-
       Replaces the selection in the body with the specified text.
@@ -168,7 +168,7 @@ items:
       `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
 
 
-      `setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
+      `setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
 
 
       `setSelectedDataAsync(data: string): void;`
@@ -180,7 +180,7 @@ items:
     syntax:
       content: >-
         setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (result: AsyncResult<void>) => void): void;
+        (result: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -203,4 +203,4 @@ items:
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'

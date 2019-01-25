@@ -35,10 +35,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'attachmentType: Office.MailboxEnums.AttachmentType;'
+      content: 'attachmentType: MailboxEnums.AttachmentType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.AttachmentType
+          - MailboxEnums.AttachmentType
   - uid: Outlook_1_7.Office.AttachmentDetails.contentType
     summary: Gets the MIME content type of the attachment.
     name: contentType

@@ -154,10 +154,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'diagnostics: Office.Diagnostics;'
+      content: 'diagnostics: Diagnostics;'
       return:
         type:
-          - outlook.Office.Diagnostics
+          - Diagnostics
   - uid: Outlook_1_1.Office.Mailbox.displayAppointmentForm
     summary: >-
       Displays an existing calendar appointment.
@@ -370,7 +370,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getUserIdentityTokenAsync(callback: (result: AsyncResult<string>) => void, userContext?: any): void;'
+      content: 'getUserIdentityTokenAsync(callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;'
       return:
         type:
           - void
@@ -383,7 +383,7 @@ items:
             was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
             information.
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.\|
           type:
@@ -475,7 +475,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'makeEwsRequestAsync(data: any, callback: (result: AsyncResult<string>) => void, userContext?: any): void;'
+      content: 'makeEwsRequestAsync(data: any, callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;'
       return:
         type:
           - void
@@ -491,7 +491,7 @@ items:
             of type Office.AsyncResult. The `value` property of the result is the XML of the EWS request provided as a
             string. If the result exceeds 1 MB in size, an error message is returned instead.
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
@@ -509,7 +509,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'userProfile: Office.UserProfile;'
+      content: 'userProfile: UserProfile;'
       return:
         type:
-          - outlook.Office.UserProfile
+          - UserProfile

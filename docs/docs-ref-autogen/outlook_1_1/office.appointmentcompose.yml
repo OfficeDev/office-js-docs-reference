@@ -68,8 +68,8 @@ items:
       `addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;`
 
 
-      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult<string>) => void):
-      void;`
+      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: Office.AsyncResult<string>) =>
+      void): void;`
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: addFileAttachmentAsync
     langs:
@@ -78,7 +78,7 @@ items:
     syntax:
       content: >-
         addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<string>) => void): void;
+        (result: Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -106,11 +106,11 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value
+            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
             property. If uploading the attachment fails, the asyncResult object will contain an Error object that
             provides a description of the error.
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
   - uid: Outlook_1_1.Office.AppointmentCompose.addItemAttachmentAsync
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
@@ -153,8 +153,8 @@ items:
       `addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`
 
 
-      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult<string>) => void):
-      void;`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: Office.AsyncResult<string>) =>
+      void): void;`
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: addItemAttachmentAsync
     langs:
@@ -163,7 +163,7 @@ items:
     syntax:
       content: >-
         addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<string>) => void): void;
+        (result: Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -192,7 +192,7 @@ items:
             property. If adding the attachment fails, the asyncResult object will contain an Error object that provides
             a description of the error.
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
   - uid: Outlook_1_1.Office.AppointmentCompose.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
@@ -212,10 +212,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'body: Office.Body;'
+      content: 'body: Body;'
       return:
         type:
-          - outlook.Office.Body
+          - Body
   - uid: Outlook_1_1.Office.AppointmentCompose.dateTimeCreated
     summary: |-
       Gets the date and time that an item was created. Read mode only.
@@ -322,10 +322,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'itemType: Office.MailboxEnums.ItemType;'
+      content: 'itemType: MailboxEnums.ItemType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.ItemType
+          - MailboxEnums.ItemType
   - uid: Outlook_1_1.Office.AppointmentCompose.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
@@ -358,7 +358,7 @@ items:
     type: method
     syntax:
       content: >-
-        loadCustomPropertiesAsync(callback: (result: AsyncResult<Office.CustomProperties>) => void, userContext?: any):
+        loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?: any):
         void;
       return:
         type:
@@ -370,7 +370,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult<Office.CustomProperties>) => void'
+            - '(result: Office.AsyncResult<CustomProperties>) => void'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
@@ -463,7 +463,7 @@ items:
       `removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;`
 
 
-      `removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;`
+      `removeAttachmentAsync(attachmentId: string, callback: (result: Office.AsyncResult<void>) => void): void;`
     name: 'removeAttachmentAsync(attachmentId, options, callback)'
     fullName: removeAttachmentAsync
     langs:
@@ -472,7 +472,7 @@ items:
     syntax:
       content: >-
         removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -494,7 +494,7 @@ items:
             parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
             contain an error code with the reason for the failure.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_1.Office.AppointmentCompose.requiredAttendees
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode

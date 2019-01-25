@@ -48,8 +48,8 @@ items:
       `addAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions): void;`
 
 
-      `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult<void>) => void):
-      void;`
+      `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: Office.AsyncResult<void>) =>
+      void): void;`
     name: 'addAsync(key, JSONmessage, options, callback)'
     fullName: addAsync
     langs:
@@ -58,7 +58,7 @@ items:
     syntax:
       content: >-
         addAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<void>) => void): void;
+        (result: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -90,7 +90,7 @@ items:
 
             \[Api set: Mailbox 1.3\]
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.NotificationMessages.getAllAsync
     summary: |-
       Returns all keys and messages for an item.
@@ -108,7 +108,7 @@ items:
       In addition to this signature, this method also has the following signature:
 
 
-      `getAllAsync(callback: (result: AsyncResult<Office.NotificationMessageDetails[]>) => void): void;`
+      `getAllAsync(callback: (result: Office.AsyncResult<NotificationMessageDetails[]>) => void): void;`
     name: 'getAllAsync(options, callback)'
     fullName: getAllAsync
     langs:
@@ -117,7 +117,7 @@ items:
     syntax:
       content: >-
         getAllAsync(options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<Office.NotificationMessageDetails[]>) => void): void;
+        Office.AsyncResult<NotificationMessageDetails[]>) => void): void;
       return:
         type:
           - void
@@ -135,7 +135,7 @@ items:
             parameter of type Office.AsyncResult. The `value` property of the result is an array of
             NotificationMessageDetails objects.
           type:
-            - '(result: AsyncResult<Office.NotificationMessageDetails[]>) => void'
+            - '(result: Office.AsyncResult<NotificationMessageDetails[]>) => void'
   - uid: Outlook_1_6.Office.NotificationMessages.removeAsync
     summary: |-
       Removes a notification message for an item.
@@ -159,7 +159,7 @@ items:
       `removeAsync(key: string, options: Office.AsyncContextOptions): void;`
 
 
-      `removeAsync(key: string, callback: (result: AsyncResult<void>) => void): void;`
+      `removeAsync(key: string, callback: (result: Office.AsyncResult<void>) => void): void;`
     name: 'removeAsync(key, options, callback)'
     fullName: removeAsync
     langs:
@@ -167,8 +167,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeAsync(key: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void):
-        void;
+        removeAsync(key: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -189,7 +189,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.NotificationMessages.replaceAsync
     summary: |-
       Replaces a notification message that has a given key with another message.
@@ -215,8 +215,8 @@ items:
       `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions): void;`
 
 
-      `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult<void>) =>
-      void): void;`
+      `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: Office.AsyncResult<void>)
+      => void): void;`
     name: 'replaceAsync(key, JSONmessage, options, callback)'
     fullName: replaceAsync
     langs:
@@ -225,7 +225,7 @@ items:
     syntax:
       content: >-
         replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult<void>) => void): void;
+        callback?: (result: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -252,4 +252,4 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
