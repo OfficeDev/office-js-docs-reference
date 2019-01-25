@@ -212,7 +212,7 @@ items:
       content: 'convertToLocalClientTime(timeValue: Date): LocalClientTime;'
       return:
         type:
-          - outlook.Office.LocalClientTime
+          - LocalClientTime
         description: ''
       parameters:
         - id: timeValue
@@ -308,7 +308,7 @@ items:
         - id: input
           description: The local time value to convert.
           type:
-            - outlook.Office.LocalClientTime
+            - LocalClientTime
   - uid: outlook.Office.Mailbox.displayAppointmentForm
     summary: >-
       Displays an existing calendar appointment.
@@ -485,7 +485,7 @@ items:
         - id: parameters
           description: An AppointmentForm describing the new appointment. All properties are optional.
           type:
-            - outlook.Office.AppointmentForm
+            - AppointmentForm
   - uid: outlook.Office.Mailbox.displayNewMessageForm
     summary: >-
       Displays a form for creating a new message.
@@ -1104,7 +1104,7 @@ items:
       content: 'diagnostics: Diagnostics;'
       return:
         type:
-          - outlook.Office.Diagnostics
+          - Diagnostics
   - uid: outlook.Office.Mailbox.ewsUrl
     summary: >-
       Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.
@@ -1209,4 +1209,4 @@ items:
       content: 'userProfile: UserProfile;'
       return:
         type:
-          - outlook.Office.UserProfile
+          - UserProfile

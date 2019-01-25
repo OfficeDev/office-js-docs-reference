@@ -111,7 +111,7 @@ items:
             A JSON object that contains the notification message to be added to the item. It contains a
             NotificationMessageDetails object.
           type:
-            - outlook.Office.NotificationMessageDetails
+            - NotificationMessageDetails
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
@@ -167,7 +167,7 @@ items:
 
             \[Api set: Mailbox 1.3\]
           type:
-            - outlook.Office.NotificationMessageDetails
+            - NotificationMessageDetails
   - uid: outlook.Office.NotificationMessages.addAsync_2
     summary: >-
       Adds a notification to an item.
@@ -205,7 +205,7 @@ items:
             A JSON object that contains the notification message to be added to the item. It contains a
             NotificationMessageDetails object.
           type:
-            - outlook.Office.NotificationMessageDetails
+            - NotificationMessageDetails
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
@@ -254,7 +254,7 @@ items:
             A JSON object that contains the notification message to be added to the item. It contains a
             NotificationMessageDetails object.
           type:
-            - outlook.Office.NotificationMessageDetails
+            - NotificationMessageDetails
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -588,7 +588,7 @@ items:
             A JSON object that contains the new notification message to replace the existing message. It contains a
             NotificationMessageDetails object.
           type:
-            - outlook.Office.NotificationMessageDetails
+            - NotificationMessageDetails
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
@@ -636,7 +636,7 @@ items:
             A JSON object that contains the new notification message to replace the existing message. It contains a
             NotificationMessageDetails object.
           type:
-            - outlook.Office.NotificationMessageDetails
+            - NotificationMessageDetails
   - uid: outlook.Office.NotificationMessages.replaceAsync_2
     summary: |-
       Replaces a notification message that has a given key with another message.
@@ -674,7 +674,7 @@ items:
             A JSON object that contains the new notification message to replace the existing message. It contains a
             NotificationMessageDetails object.
           type:
-            - outlook.Office.NotificationMessageDetails
+            - NotificationMessageDetails
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
@@ -718,7 +718,7 @@ items:
             A JSON object that contains the new notification message to replace the existing message. It contains a
             NotificationMessageDetails object.
           type:
-            - outlook.Office.NotificationMessageDetails
+            - NotificationMessageDetails
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single

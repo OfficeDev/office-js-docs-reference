@@ -13,8 +13,8 @@ items:
       - typeScript
     type: interface
     extends:
-      - outlook.Office.Message
-      - outlook.Office.ItemRead
+      - Message
+      - 'ItemRead '
     package: outlook
     children:
       - outlook.Office.MessageRead.addHandlerAsync
@@ -456,7 +456,7 @@ items:
       content: 'getEntities(): Entities;'
       return:
         type:
-          - outlook.Office.Entities
+          - Entities
         description: ''
   - uid: outlook.Office.MessageRead.getEntitiesByType
     summary: |-
@@ -819,7 +819,7 @@ items:
       content: 'getSelectedEntities(): Entities;'
       return:
         type:
-          - outlook.Office.Entities
+          - Entities
         description: ''
   - uid: outlook.Office.MessageRead.getSelectedRegExMatches
     summary: >-
@@ -1267,7 +1267,7 @@ items:
       content: 'from: EmailAddressDetails;'
       return:
         type:
-          - outlook.Office.EmailAddressDetails
+          - EmailAddressDetails
   - uid: outlook.Office.MessageRead.internetHeaders
     summary: >-
       Gets the internet headers of a message.
@@ -1491,7 +1491,7 @@ items:
       content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - outlook.Office.NotificationMessages
+          - NotificationMessages
   - uid: outlook.Office.MessageRead.recurrence
     summary: >-
       Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and compose
@@ -1527,7 +1527,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - outlook.Office.Recurrence
+          - Recurrence
   - uid: outlook.Office.MessageRead.sender
     summary: >-
       Gets the email address of the sender of an email message.
@@ -1568,7 +1568,7 @@ items:
       content: 'sender: EmailAddressDetails;'
       return:
         type:
-          - outlook.Office.EmailAddressDetails
+          - EmailAddressDetails
   - uid: outlook.Office.MessageRead.seriesId
     summary: >-
       Gets the id of the series that an instance belongs to.

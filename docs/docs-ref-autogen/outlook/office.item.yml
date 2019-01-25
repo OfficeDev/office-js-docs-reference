@@ -749,7 +749,7 @@ items:
       content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - outlook.Office.NotificationMessages
+          - NotificationMessages
   - uid: outlook.Office.Item.recurrence
     summary: >-
       Gets or sets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and
@@ -785,7 +785,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - outlook.Office.Recurrence
+          - Recurrence
   - uid: outlook.Office.Item.seriesId
     summary: >-
       Gets the id of the series that an instance belongs to.

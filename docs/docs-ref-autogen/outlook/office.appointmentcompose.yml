@@ -13,8 +13,8 @@ items:
       - typeScript
     type: interface
     extends:
-      - outlook.Office.Appointment
-      - outlook.Office.ItemCompose
+      - Appointment
+      - 'ItemCompose '
     package: outlook
     children:
       - outlook.Office.AppointmentCompose.addFileAttachmentAsync
@@ -2100,7 +2100,7 @@ items:
       content: 'end: Time;'
       return:
         type:
-          - outlook.Office.Time
+          - Time
   - uid: outlook.Office.AppointmentCompose.itemType
     summary: >-
       Gets the type of item that an instance represents.
@@ -2170,7 +2170,7 @@ items:
       content: 'location: Location;'
       return:
         type:
-          - outlook.Office.Location
+          - Location
   - uid: outlook.Office.AppointmentCompose.notificationMessages
     summary: |-
       Gets the notification messages for an item.
@@ -2193,7 +2193,7 @@ items:
       content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - outlook.Office.NotificationMessages
+          - NotificationMessages
   - uid: outlook.Office.AppointmentCompose.optionalAttendees
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
@@ -2237,7 +2237,7 @@ items:
       content: 'optionalAttendees: Recipients;'
       return:
         type:
-          - outlook.Office.Recipients
+          - Recipients
   - uid: outlook.Office.AppointmentCompose.organizer
     summary: >-
       Gets the organizer for the specified meeting.
@@ -2276,7 +2276,7 @@ items:
       content: 'organizer: Organizer;'
       return:
         type:
-          - outlook.Office.Organizer
+          - Organizer
   - uid: outlook.Office.AppointmentCompose.recurrence
     summary: >-
       Gets or sets the recurrence pattern of an appointment.
@@ -2312,7 +2312,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - outlook.Office.Recurrence
+          - Recurrence
   - uid: outlook.Office.AppointmentCompose.requiredAttendees
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode
@@ -2356,7 +2356,7 @@ items:
       content: 'requiredAttendees: Recipients;'
       return:
         type:
-          - outlook.Office.Recipients
+          - Recipients
   - uid: outlook.Office.AppointmentCompose.seriesId
     summary: >-
       Gets the id of the series that an instance belongs to.
@@ -2456,7 +2456,7 @@ items:
       content: 'start: Time;'
       return:
         type:
-          - outlook.Office.Time
+          - Time
   - uid: outlook.Office.AppointmentCompose.subject
     summary: |-
       Gets or sets the description that appears in the subject field of an item.
@@ -2497,4 +2497,4 @@ items:
       content: 'subject: Subject;'
       return:
         type:
-          - outlook.Office.Subject
+          - Subject

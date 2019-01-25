@@ -13,7 +13,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - outlook.Office.Item
+      - 'Item '
     package: outlook
     children:
       - outlook.Office.ItemRead.displayReplyAllForm
@@ -151,7 +151,7 @@ items:
       content: 'getEntities(): Entities;'
       return:
         type:
-          - outlook.Office.Entities
+          - Entities
         description: ''
   - uid: outlook.Office.ItemRead.getEntitiesByType
     summary: |-
@@ -446,7 +446,7 @@ items:
       content: 'getSelectedEntities(): Entities;'
       return:
         type:
-          - outlook.Office.Entities
+          - Entities
         description: ''
   - uid: outlook.Office.ItemRead.getSelectedRegExMatches
     summary: >-

@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_7.Office.TaskSuggestion
+    summary: >-
+      Represents a suggested task identified in an item. Read mode only.
+
+
+      The list of tasks suggested in an email message is returned in the taskSuggestions property of the
+      [Entities](xref:Outlook_1_7.Office.Entities) object that is returned when the getEntities or getEntitiesByType
+      method is called on the active item.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+    name: Office.TaskSuggestion
+    fullName: Office.TaskSuggestion
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1_7
+    children:
+      - Outlook_1_7.Office.TaskSuggestion.assignees
+      - Outlook_1_7.Office.TaskSuggestion.taskString
+  - uid: Outlook_1_7.Office.TaskSuggestion.assignees
+    summary: Gets the users that should be assigned a suggested task.
+    name: assignees
+    fullName: assignees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'assignees: EmailUser[];'
+      return:
+        type:
+          - 'EmailUser[]'
+  - uid: Outlook_1_7.Office.TaskSuggestion.taskString
+    summary: Gets the text of an item that was identified as a task suggestion.
+    name: taskString
+    fullName: taskString
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'taskString: string;'
+      return:
+        type:
+          - string

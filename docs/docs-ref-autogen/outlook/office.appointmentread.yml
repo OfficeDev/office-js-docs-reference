@@ -13,8 +13,8 @@ items:
       - typeScript
     type: interface
     extends:
-      - outlook.Office.Appointment
-      - outlook.Office.ItemRead
+      - Appointment
+      - 'ItemRead '
     package: outlook
     children:
       - outlook.Office.AppointmentRead.addHandlerAsync
@@ -455,7 +455,7 @@ items:
       content: 'getEntities(): Entities;'
       return:
         type:
-          - outlook.Office.Entities
+          - Entities
         description: ''
   - uid: outlook.Office.AppointmentRead.getEntitiesByType
     summary: |-
@@ -818,7 +818,7 @@ items:
       content: 'getSelectedEntities(): Entities;'
       return:
         type:
-          - outlook.Office.Entities
+          - Entities
         description: ''
   - uid: outlook.Office.AppointmentRead.getSelectedRegExMatches
     summary: >-
@@ -1401,7 +1401,7 @@ items:
       content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - outlook.Office.NotificationMessages
+          - NotificationMessages
   - uid: outlook.Office.AppointmentRead.optionalAttendees
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
@@ -1481,7 +1481,7 @@ items:
       content: 'organizer: EmailAddressDetails;'
       return:
         type:
-          - outlook.Office.EmailAddressDetails
+          - EmailAddressDetails
   - uid: outlook.Office.AppointmentRead.recurrence
     summary: >-
       Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request.
@@ -1516,7 +1516,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - outlook.Office.Recurrence
+          - Recurrence
   - uid: outlook.Office.AppointmentRead.requiredAttendees
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode

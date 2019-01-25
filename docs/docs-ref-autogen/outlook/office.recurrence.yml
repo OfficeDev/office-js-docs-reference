@@ -239,7 +239,7 @@ items:
         - id: recurrencePattern
           description: A recurrence object.
           type:
-            - outlook.Office.Recurrence
+            - Recurrence
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
@@ -284,7 +284,7 @@ items:
         - id: recurrencePattern
           description: A recurrence object.
           type:
-            - outlook.Office.Recurrence
+            - Recurrence
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -312,7 +312,7 @@ items:
       content: 'recurrenceProperties: RecurrenceProperties;'
       return:
         type:
-          - outlook.Office.RecurrenceProperties
+          - RecurrenceProperties
   - uid: outlook.Office.Recurrence.recurrenceTimeZone
     summary: |-
       Gets or sets the properties of the recurring appointment series.
@@ -382,4 +382,4 @@ items:
       content: 'seriesTime: SeriesTime;'
       return:
         type:
-          - outlook.Office.SeriesTime
+          - SeriesTime

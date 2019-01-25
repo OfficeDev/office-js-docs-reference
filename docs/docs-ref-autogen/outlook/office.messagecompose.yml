@@ -13,8 +13,8 @@ items:
       - typeScript
     type: interface
     extends:
-      - outlook.Office.Message
-      - outlook.Office.ItemCompose
+      - Message
+      - 'ItemCompose '
     package: outlook
     children:
       - outlook.Office.MessageCompose.addFileAttachmentAsync
@@ -2026,7 +2026,7 @@ items:
       content: 'bcc: Recipients;'
       return:
         type:
-          - outlook.Office.Recipients
+          - Recipients
   - uid: outlook.Office.MessageCompose.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
@@ -2094,7 +2094,7 @@ items:
       content: 'cc: Recipients;'
       return:
         type:
-          - outlook.Office.Recipients
+          - Recipients
   - uid: outlook.Office.MessageCompose.conversationId
     summary: >-
       Gets an identifier for the email conversation that contains a particular message.
@@ -2217,7 +2217,7 @@ items:
       content: 'from: From;'
       return:
         type:
-          - outlook.Office.From
+          - From
   - uid: outlook.Office.MessageCompose.internetHeaders
     summary: >-
       Sets the internet headers of a message.
@@ -2294,7 +2294,7 @@ items:
       content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - outlook.Office.NotificationMessages
+          - NotificationMessages
   - uid: outlook.Office.MessageCompose.recurrence
     summary: >-
       Gets or sets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and
@@ -2330,7 +2330,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - outlook.Office.Recurrence
+          - Recurrence
   - uid: outlook.Office.MessageCompose.seriesId
     summary: >-
       Gets the id of the series that an instance belongs to.
@@ -2408,7 +2408,7 @@ items:
       content: 'subject: Subject;'
       return:
         type:
-          - outlook.Office.Subject
+          - Subject
   - uid: outlook.Office.MessageCompose.to
     summary: >-
       Provides access to the recipients on the To line of a message. The type of object and level of access depends on
@@ -2454,4 +2454,4 @@ items:
       content: 'to: Recipients;'
       return:
         type:
-          - outlook.Office.Recipients
+          - Recipients
