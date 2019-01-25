@@ -23,7 +23,7 @@ items:
     children:
       - Outlook_1_3.Office.Item.body
       - Outlook_1_3.Office.Item.dateTimeCreated
-      - Outlook_1_3.Office.Item.dateTimeModifed
+      - Outlook_1_3.Office.Item.dateTimeModified
       - Outlook_1_3.Office.Item.itemType
       - Outlook_1_3.Office.Item.loadCustomPropertiesAsync
       - Outlook_1_3.Office.Item.notificationMessages
@@ -71,7 +71,7 @@ items:
       return:
         type:
           - Date
-  - uid: Outlook_1_3.Office.Item.dateTimeModifed
+  - uid: Outlook_1_3.Office.Item.dateTimeModified
     summary: |-
       Gets the date and time that an item was last modified. Read mode only.
 
@@ -86,13 +86,13 @@ items:
 
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
-    name: dateTimeModifed
-    fullName: dateTimeModifed
+    name: dateTimeModified
+    fullName: dateTimeModified
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'dateTimeModifed: Date;'
+      content: 'dateTimeModified: Date;'
       return:
         type:
           - Date

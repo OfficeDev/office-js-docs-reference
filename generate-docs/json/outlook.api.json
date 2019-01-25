@@ -1534,9 +1534,9 @@
               "isOverride": false,
               "isEventProperty": false
             },
-            "dateTimeModifed": {
+            "dateTimeModified": {
               "kind": "property",
-              "signature": "dateTimeModifed: Date;",
+              "signature": "dateTimeModified: Date;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
@@ -6525,9 +6525,9 @@
               "isOverride": false,
               "isEventProperty": false
             },
-            "dateTimeModifed": {
+            "dateTimeModified": {
               "kind": "property",
-              "signature": "dateTimeModifed: Date;",
+              "signature": "dateTimeModified: Date;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
@@ -16475,9 +16475,9 @@
               "isOverride": false,
               "isEventProperty": false
             },
-            "dateTimeModifed": {
+            "dateTimeModified": {
               "kind": "property",
-              "signature": "dateTimeModifed: Date;",
+              "signature": "dateTimeModified: Date;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
@@ -23695,7 +23695,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Integer value repesenting the year."
+                  "text": "Integer value representing the year."
                 }
               ],
               "remarks": [],
@@ -33663,9 +33663,9 @@
               "isOverride": false,
               "isEventProperty": false
             },
-            "dateTimeModifed": {
+            "dateTimeModified": {
               "kind": "property",
-              "signature": "dateTimeModifed: Date;",
+              "signature": "dateTimeModified: Date;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
@@ -37290,9 +37290,9 @@
               "isOverride": false,
               "isEventProperty": false
             },
-            "dateTimeModifed": {
+            "dateTimeModified": {
               "kind": "property",
-              "signature": "dateTimeModifed: Date;",
+              "signature": "dateTimeModified: Date;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,

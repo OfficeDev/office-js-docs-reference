@@ -76,6 +76,7 @@ items:
       - office.Office.ProjectTaskFields.Baseline3Finish
       - office.Office.ProjectTaskFields.Baseline3FixedCost
       - office.Office.ProjectTaskFields.Baseline3FixedCostAccrual
+      - office.Office.ProjectTaskFields.Baseline3Start
       - office.Office.ProjectTaskFields.Baseline3Work
       - office.Office.ProjectTaskFields.Baseline4BudgetCost
       - office.Office.ProjectTaskFields.Baseline4BudgetWork
@@ -140,7 +141,6 @@ items:
       - office.Office.ProjectTaskFields.BaselineFixedCostAccrual
       - office.Office.ProjectTaskFields.BaselineStart
       - office.Office.ProjectTaskFields.BaselineWork
-      - office.Office.ProjectTaskFields.Basline3Start
       - office.Office.ProjectTaskFields.BudgetCost
       - office.Office.ProjectTaskFields.BudgetFixedCost
       - office.Office.ProjectTaskFields.BudgetFixedWork
@@ -619,6 +619,13 @@ items:
     langs:
       - typeScript
     type: field
+  - uid: office.Office.ProjectTaskFields.Baseline3Start
+    summary: The start date for the baseline task.
+    name: Baseline3Start
+    fullName: Baseline3Start
+    langs:
+      - typeScript
+    type: field
   - uid: office.Office.ProjectTaskFields.Baseline3Work
     summary: 'The total person-hours scheduled for the baseline task, in minutes.'
     name: Baseline3Work
@@ -1078,13 +1085,6 @@ items:
     summary: 'The total person-hours scheduled for the baseline task, in minutes.'
     name: BaselineWork
     fullName: BaselineWork
-    langs:
-      - typeScript
-    type: field
-  - uid: office.Office.ProjectTaskFields.Basline3Start
-    summary: The start date for the baseline task.
-    name: Basline3Start
-    fullName: Basline3Start
     langs:
       - typeScript
     type: field

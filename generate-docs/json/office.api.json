@@ -48275,6 +48275,19 @@
               "remarks": [],
               "isBeta": false
             },
+            "Baseline3Start": {
+              "kind": "enum value",
+              "value": "",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The start date for the baseline task."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
             "Baseline3Work": {
               "kind": "enum value",
               "value": "",
@@ -49102,19 +49115,6 @@
                 {
                   "kind": "text",
                   "text": "The total person-hours scheduled for the baseline task, in minutes."
-                }
-              ],
-              "remarks": [],
-              "isBeta": false
-            },
-            "Basline3Start": {
-              "kind": "enum value",
-              "value": "",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "The start date for the baseline task."
                 }
               ],
               "remarks": [],
