@@ -9073,7 +9073,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence."
+                  "text": "These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence."
                 },
                 {
                   "kind": "html-tag",
@@ -9089,7 +9089,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "IPM.Appointment,IPM.Appointment.Occurence"
+                  "text": "IPM.Appointment,IPM.Appointment.Occurrence"
                 },
                 {
                   "kind": "html-tag",
@@ -22918,7 +22918,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence."
+                  "text": "These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence."
                 },
                 {
                   "kind": "html-tag",
@@ -22934,7 +22934,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "IPM.Appointment,IPM.Appointment.Occurence"
+                  "text": "IPM.Appointment,IPM.Appointment.Occurrence"
                 },
                 {
                   "kind": "html-tag",
@@ -40084,7 +40084,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence."
+                  "text": "These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence."
                 },
                 {
                   "kind": "html-tag",
@@ -40100,7 +40100,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "IPM.Appointment,IPM.Appointment.Occurence"
+                  "text": "IPM.Appointment,IPM.Appointment.Occurrence"
                 },
                 {
                   "kind": "html-tag",
