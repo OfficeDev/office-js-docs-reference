@@ -571,6 +571,8 @@ items:
                     uid: outlook.Office.MailboxEnums.ItemNotificationMessageType
                   - name: ItemType
                     uid: outlook.Office.MailboxEnums.ItemType
+                  - name: LocationType
+                    uid: outlook.Office.MailboxEnums.LocationType
                   - name: Month
                     uid: outlook.Office.MailboxEnums.Month
                   - name: OWAView
@@ -605,6 +607,8 @@ items:
                 uid: outlook.Office.EmailAddressDetails
               - name: EmailUser
                 uid: outlook.Office.EmailUser
+              - name: EnhancedLocation
+                uid: outlook.Office.EnhancedLocation
               - name: Entities
                 uid: outlook.Office.Entities
               - name: From
@@ -617,6 +621,10 @@ items:
                 uid: outlook.Office.LocalClientTime
               - name: Location
                 uid: outlook.Office.Location
+              - name: LocationDetails
+                uid: outlook.Office.LocationDetails
+              - name: LocationIdentifier
+                uid: outlook.Office.LocationIdentifier
               - name: Mailbox
                 uid: outlook.Office.Mailbox
               - name: MeetingSuggestion
