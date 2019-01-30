@@ -458,19 +458,6 @@ items:
       }
 
       ```
-
-      ```javascript
-
-      function getCallbackToken() {
-          Office.context.mailbox.getCallbackTokenAsync(cb);
-      }
-
-
-      function cb(asyncResult) {
-          var token = asyncResult.value;
-      }
-
-      ```
     name: 'getCallbackTokenAsync(callback, userContext)'
     fullName: 'getCallbackTokenAsync(callback, userContext)'
     langs:

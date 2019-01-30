@@ -320,11 +320,6 @@ items:
 
       seriesTimeObject.setEndDate(2017, 10, 2);
 
-
-      // Alternative: Set the end date using ISO 8601 date standard
-
-      seriesTimeObject.setEndDate("2017-11-02");
-
       ```
     name: 'setEndDate(year, month, day)'
     fullName: 'setEndDate(year, month, day)'
@@ -367,6 +362,20 @@ items:
 
 
       <tr><td>Errors</td><td>Invalid date format - The date is not in an acceptable format.</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // This example sets the end date of a recurring appointment series to November 2, 2017 using ISO 8601 date
+      standard.
+
+      var seriesTimeObject = new SeriesTime()
+
+      seriesTimeObject.setEndDate("2017-11-02");
+
+      ```
     name: setEndDate(date)
     fullName: setEndDate(date)
     langs:
@@ -419,11 +428,6 @@ items:
 
       seriesTimeObject.setStartDate(2017, 10, 2);
 
-
-      // Alternative: Set the start date using ISO 8601 date standard
-
-      seriesTimeObject.setStartDate("2017-11-02");
-
       ```
     name: 'setStartDate(year, month, day)'
     fullName: 'setStartDate(year, month, day)'
@@ -466,6 +470,20 @@ items:
 
 
       <tr><td>Errors</td><td>Invalid date format - The date is not in an acceptable format.</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // This example sets the start date of a recurring appointment series to November 2, 2017 using ISO 8601 date
+      standard.
+
+      var seriesTimeObject = new SeriesTime()
+
+      seriesTimeObject.setStartDate("2017-11-02");
+
+      ```
     name: setStartDate(date)
     fullName: setStartDate(date)
     langs:
@@ -525,11 +543,6 @@ items:
 
       seriesTimeObject.setStartTime(11, 30);
 
-
-      // Alternative: Set the start time of all instances of a recurring appointment series to 11:30 PM.
-
-      seriesTimeObject.setStartTime("T23:30:00");
-
       ```
     name: 'setStartTime(hours, minutes)'
     fullName: 'setStartTime(hours, minutes)'
@@ -568,6 +581,19 @@ items:
 
 
       <tr><td>Errors</td><td>Invalid time format - The time is not in an acceptable format.</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // This example sets the start time of each instance of a recurring appointment series to 11:30 PM.
+
+      var seriesTimeObject = new SeriesTime()
+
+      seriesTimeObject.setStartTime("T23:30:00");
+
+      ```
     name: setStartTime(time)
     fullName: setStartTime(time)
     langs:

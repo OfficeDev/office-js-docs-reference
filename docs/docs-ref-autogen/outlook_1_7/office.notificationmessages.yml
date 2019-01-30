@@ -60,32 +60,6 @@ items:
 
       `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: Office.AsyncResult<void>) =>
       void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      // Create three notifications, each with a different key
-
-      Office.context.mailbox.item.notificationMessages.addAsync("progress", {
-          type: "progressIndicator",
-          message : "An add-in is processing this message."
-      });
-
-      Office.context.mailbox.item.notificationMessages.addAsync("information", {
-          type: "informationalMessage",
-          message : "The add-in processed this message.",
-          icon : "iconid",
-          persistent: false
-      });
-
-      Office.context.mailbox.item.notificationMessages.addAsync("error", {
-          type: "errorMessage",
-          message : "The add-in failed to process this message."
-      });
-
-      ```
     name: 'addAsync(key, JSONmessage, options, callback)'
     fullName: 'addAsync(key, JSONmessage, options, callback)'
     langs:
@@ -141,6 +115,32 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Create three notifications, each with a different key
+
+      Office.context.mailbox.item.notificationMessages.addAsync("progress", {
+          type: "progressIndicator",
+          message : "An add-in is processing this message."
+      });
+
+      Office.context.mailbox.item.notificationMessages.addAsync("information", {
+          type: "informationalMessage",
+          message : "The add-in processed this message.",
+          icon : "iconid",
+          persistent: false
+      });
+
+      Office.context.mailbox.item.notificationMessages.addAsync("error", {
+          type: "errorMessage",
+          message : "The add-in failed to process this message."
+      });
+
+      ```
     name: 'addAsync(key, JSONmessage)'
     fullName: 'addAsync(key, JSONmessage)'
     langs:
@@ -282,26 +282,6 @@ items:
 
 
       `getAllAsync(callback: (result: Office.AsyncResult<NotificationMessageDetails[]>) => void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      // Get all notifications
-
-      Office.context.mailbox.item.notificationMessages.getAllAsync(function (asyncResult) {
-          if (asyncResult.status != "failed") {
-              Office.context.mailbox.item.notificationMessages.replaceAsync( "notifications", {
-                  type: "informationalMessage",
-                  message : "Found " + asyncResult.value.length + " notifications.",
-                  icon : "iconid",
-                  persistent: false
-              });
-          }
-      });
-
-      ```
     name: 'getAllAsync(options, callback)'
     fullName: 'getAllAsync(options, callback)'
     langs:
@@ -341,6 +321,26 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get all notifications
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(function (asyncResult) {
+          if (asyncResult.status != "failed") {
+              Office.context.mailbox.item.notificationMessages.replaceAsync( "notifications", {
+                  type: "informationalMessage",
+                  message : "Found " + asyncResult.value.length + " notifications.",
+                  icon : "iconid",
+                  persistent: false
+              });
+          }
+      });
+
+      ```
     name: getAllAsync(callback)
     fullName: getAllAsync(callback)
     langs:
@@ -384,17 +384,6 @@ items:
 
 
       `removeAsync(key: string, callback: (result: Office.AsyncResult<void>) => void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      // Remove a notification
-
-      Office.context.mailbox.item.notificationMessages.removeAsync("progress");
-
-      ```
     name: 'removeAsync(key, options, callback)'
     fullName: 'removeAsync(key, options, callback)'
     langs:
@@ -437,6 +426,17 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Remove a notification
+
+      Office.context.mailbox.item.notificationMessages.removeAsync("progress");
+
+      ```
     name: removeAsync(key)
     fullName: removeAsync(key)
     langs:
@@ -549,22 +549,6 @@ items:
 
       `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result:
       Office.AsyncResult<void>) => void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      // Replace a notification with an informational notification
-
-      Office.context.mailbox.item.notificationMessages.replaceAsync("progress", {
-          type: "informationalMessage",
-          message : "The message was processed successfully.",
-          icon : "iconid",
-          persistent: false
-      });
-
-      ```
     name: 'replaceAsync(key, JSONmessage, options, callback)'
     fullName: 'replaceAsync(key, JSONmessage, options, callback)'
     langs:
@@ -615,6 +599,22 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Replace a notification with an informational notification
+
+      Office.context.mailbox.item.notificationMessages.replaceAsync("progress", {
+          type: "informationalMessage",
+          message : "The message was processed successfully.",
+          icon : "iconid",
+          persistent: false
+      });
+
+      ```
     name: 'replaceAsync(key, JSONmessage)'
     fullName: 'replaceAsync(key, JSONmessage)'
     langs:
