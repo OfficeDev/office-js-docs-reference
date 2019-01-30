@@ -38,21 +38,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) {
-              ctx.workbook.application.calculate('Full');
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: calculationType
           description: Specifies the calculation type to use. See Excel.CalculationType for details.
@@ -73,7 +59,21 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) {
+              ctx.workbook.application.calculate('Full');
+              return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: calculationType
           description: Specifies the calculation type to use. See Excel.CalculationType for details.
