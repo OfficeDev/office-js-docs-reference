@@ -103,7 +103,7 @@ tryCatch(async () => {
     console.log("create file: outlook.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-outlook/outlook.d.ts',
-        "import \{Office as CommonAPI\} from \"../api-extractor-inputs-office/office\"" +
+        "import \{Office as CommonAPI\} from \"../api-extractor-inputs-office/office\"\n" +
         dtsBuilder.extractDtsSection(definitions, "Begin Exchange APIs", "End Exchange APIs").replace(/: Office\./g, ": CommonAPI.").replace(/\<Office\./g, "<CommonAPI.")
     );
 
