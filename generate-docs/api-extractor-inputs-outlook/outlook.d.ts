@@ -1960,6 +1960,8 @@ export declare namespace Office {
         /**
          * Adds to the set of locations associated with the appointment.
          * 
+         * [Api set: Mailbox Preview]
+         * 
          * @remarks
          * <table>
          *   <tr>
@@ -1969,6 +1971,10 @@ export declare namespace Office {
          *   <tr>
          *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
          *     <td>Compose</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Errors</td>
+         *     <td>InvalidFormatError - The format of the specified data object is not valid.</td>
          *   </tr>
          * </table>
          * 
@@ -1981,10 +1987,14 @@ export declare namespace Office {
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to determine if the call succeeded.
+         * 
+         * @beta
          */
         addAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResultStatus) => void): void;
         /**
          * Adds to the set of locations associated with the appointment.
+         * 
+         * [Api set: Mailbox Preview]
          * 
          * @remarks
          * <table>
@@ -1996,15 +2006,23 @@ export declare namespace Office {
          *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
          *     <td>Compose</td>
          *   </tr>
+         *   <tr>
+         *     <td>Errors</td>
+         *     <td>InvalidFormatError - The format of the specified data object is not valid.</td>
+         *   </tr>
          * </table>
          * 
          * @param locationIdentifiers - The locations to be added to the current list of locations.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to determine if the call succeeded.
+         * 
+         * @beta
          */
         addAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void): void;
         /**
          * Gets the set of locations associated with the appointment.
+         * 
+         * [Api set: Mailbox Preview]
          * 
          * @remarks
          * <table>
@@ -2026,10 +2044,14 @@ export declare namespace Office {
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
+         * 
+         * @beta
          */
         getAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<LocationDetails[]>) => void): void;
         /**
          * Gets the set of locations associated with the appointment.
+         * 
+         * [Api set: Mailbox Preview]
          * 
          * @remarks
          * <table>
@@ -2045,12 +2067,16 @@ export declare namespace Office {
          * 
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
+         * 
+         * @beta
          */
         getAsync(callback?: (result: Office.AsyncResult<LocationDetails[]>) => void): void;
         /**
          * Removes the set of locations associated with the appointment.
          * 
          * If there are multiple locations with the same name, all matching locations will be removed even if only one was specified in locationIdentifiers.
+         * 
+         * [Api set: Mailbox Preview]
          * 
          * @remarks
          * <table>
@@ -2073,12 +2099,16 @@ export declare namespace Office {
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to determine if the call succeeded.
+         * 
+         * @beta
          */
         removeAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResultStatus) => void): void;
         /**
          * Removes the set of locations associated with the appointment.
          * 
          * If there are multiple locations with the same name, all matching locations will be removed even if only one was specified in locationIdentifiers.
+         * 
+         * [Api set: Mailbox Preview]
          * 
          * @remarks
          * <table>
@@ -2095,6 +2125,8 @@ export declare namespace Office {
          * @param locationIdentifiers - The locations to be removed from the current list of locations.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to determine if the call succeeded.
+         * 
+         * @beta
          */
         removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void): void;
     }
@@ -2509,7 +2541,7 @@ export declare namespace Office {
          */
         end: Time;
         /**
-         * Gets or sets the locations of the appointment. The `enhancedLocation` property returns an {@link EnhancedLocation} object that 
+         * Gets or sets the locations of the appointment. The `enhancedLocation` property returns an {@link Office.EnhancedLocation} object that 
          * provides methods to get, remove, or add locations on an item.
          * 
          * [Api set: Mailbox Preview]
@@ -3620,8 +3652,8 @@ export declare namespace Office {
         /**
          * Gets the locations of an appointment.
          *
-         * The enhancedLocation property returns an {@link EnhancedLocation} object that allows you to get the set of locations (each represented by 
-         * a {@link LocationDetails} object) associated with the appointment.
+         * The enhancedLocation property returns an {@link Office.EnhancedLocation} object that allows you to get the set of locations (each represented by 
+         * a {@link Office.LocationDetails} object) associated with the appointment.
          * 
          * [Api set: Mailbox Preview]
          * 

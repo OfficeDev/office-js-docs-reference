@@ -544,8 +544,9 @@ items:
       Gets the locations of an appointment.
 
 
-      The enhancedLocation property returns an EnhancedLocation object that allows you to get the set of locations (each
-      represented by a LocationDetails object) associated with the appointment.
+      The enhancedLocation property returns an [Office.EnhancedLocation](xref:outlook.Office.EnhancedLocation) object
+      that allows you to get the set of locations (each represented by a
+      [Office.LocationDetails](xref:outlook.Office.LocationDetails) object) associated with the appointment.
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

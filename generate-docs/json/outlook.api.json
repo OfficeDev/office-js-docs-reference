@@ -1833,14 +1833,14 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": "EnhancedLocation"
+                      "text": "Office.EnhancedLocation"
                     }
                   ],
                   "target": {
                     "scopeName": "",
                     "packageName": "outlook",
-                    "exportName": "EnhancedLocation",
-                    "memberName": ""
+                    "exportName": "Office",
+                    "memberName": "EnhancedLocation"
                   }
                 },
                 {
@@ -7338,14 +7338,14 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": "EnhancedLocation"
+                      "text": "Office.EnhancedLocation"
                     }
                   ],
                   "target": {
                     "scopeName": "",
                     "packageName": "outlook",
-                    "exportName": "EnhancedLocation",
-                    "memberName": ""
+                    "exportName": "Office",
+                    "memberName": "EnhancedLocation"
                   }
                 },
                 {
@@ -7357,14 +7357,14 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": "LocationDetails"
+                      "text": "Office.LocationDetails"
                     }
                   ],
                   "target": {
                     "scopeName": "",
                     "packageName": "outlook",
-                    "exportName": "LocationDetails",
-                    "memberName": ""
+                    "exportName": "Office",
+                    "memberName": "LocationDetails"
                   }
                 },
                 {
@@ -15222,6 +15222,13 @@
                 {
                   "kind": "text",
                   "text": "Adds to the set of locations associated with the appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -15343,6 +15350,54 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Errors"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "InvalidFormatError - The format of the specified data object is not valid."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
                   "token": "</table>"
                 },
                 {
@@ -15407,6 +15462,13 @@
                 {
                   "kind": "text",
                   "text": "Gets the set of locations associated with the appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -15620,6 +15682,13 @@
                 {
                   "kind": "text",
                   "text": "If there are multiple locations with the same name, all matching locations will be removed even if only one was specified in locationIdentifiers."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [

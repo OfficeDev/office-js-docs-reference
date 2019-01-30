@@ -584,8 +584,9 @@ items:
           - Time
   - uid: outlook.Office.AppointmentCompose.enhancedLocation
     summary: >-
-      Gets or sets the locations of the appointment. The `enhancedLocation` property returns an EnhancedLocation object
-      that provides methods to get, remove, or add locations on an item.
+      Gets or sets the locations of the appointment. The `enhancedLocation` property returns an
+      [Office.EnhancedLocation](xref:outlook.Office.EnhancedLocation) object that provides methods to get, remove, or
+      add locations on an item.
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

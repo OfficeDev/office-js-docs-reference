@@ -22,12 +22,16 @@ items:
       - outlook.Office.EnhancedLocation.getAsync
       - outlook.Office.EnhancedLocation.removeAsync
   - uid: outlook.Office.EnhancedLocation.addAsync
-    summary: Adds to the set of locations associated with the appointment.
+    summary: |-
+      Adds to the set of locations associated with the appointment.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table> <tr> <td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td>
       <td>ReadWriteItem</td> </tr> <tr> <td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td> <td>Compose</td> </tr> </table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td> <td>Compose</td> </tr> <tr>
+      <td>Errors</td> <td>InvalidFormatError - The format of the specified data object is not valid.</td> </tr> </table>
 
 
       In addition to this signature, this method also has the following signatures:
@@ -68,7 +72,10 @@ items:
           type:
             - '(result: Office.AsyncResultStatus) => void'
   - uid: outlook.Office.EnhancedLocation.getAsync
-    summary: Gets the set of locations associated with the appointment.
+    summary: |-
+      Gets the set of locations associated with the appointment.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table> <tr> <td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td> <td>ReadItem</td>
@@ -114,6 +121,9 @@ items:
 
       If there are multiple locations with the same name, all matching locations will be removed even if only one was
       specified in locationIdentifiers.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table> <tr> <td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td>
