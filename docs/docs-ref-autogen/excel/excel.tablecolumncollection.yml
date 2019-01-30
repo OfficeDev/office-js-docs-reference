@@ -24,6 +24,7 @@ items:
       - excel.Excel.TableColumnCollection.items
       - excel.Excel.TableColumnCollection.load
       - excel.Excel.TableColumnCollection.load_1
+      - excel.Excel.TableColumnCollection.load_2
       - excel.Excel.TableColumnCollection.toJSON
   - uid: excel.Excel.TableColumnCollection.add
     summary: >-
@@ -256,6 +257,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.TableColumnCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.TableColumnCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -296,6 +301,25 @@ items:
       - typeScript
     type: method
     syntax:
+      content: >-
+        load(option?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.TableColumnCollection;
+      return:
+        type:
+          - excel.Excel.TableColumnCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.TableColumnCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.TableColumnCollection;'
       return:
         type:
@@ -303,10 +327,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TableColumnCollection.load_1
+  - uid: excel.Excel.TableColumnCollection.load_2
     name: load(option)
     fullName: load(option)
     langs:

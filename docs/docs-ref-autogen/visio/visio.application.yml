@@ -16,6 +16,7 @@ items:
     children:
       - visio.Visio.Application.load
       - visio.Visio.Application.load_1
+      - visio.Visio.Application.load_2
       - visio.Visio.Application.showBorders
       - visio.Visio.Application.showToolbar
       - visio.Visio.Application.showToolbar_1
@@ -27,6 +28,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Visio.Application` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a
@@ -64,6 +69,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Visio.Interfaces.ApplicationLoadOptions): Visio.Application;'
+      return:
+        type:
+          - Visio.Application
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.ApplicationLoadOptions
+  - uid: visio.Visio.Application.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Visio.Application;'
       return:
         type:
@@ -71,10 +93,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: visio.Visio.Application.load_1
+  - uid: visio.Visio.Application.load_2
     name: load(option)
     fullName: load(option)
     langs:

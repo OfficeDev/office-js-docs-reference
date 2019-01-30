@@ -26,6 +26,7 @@ items:
       - excel.Excel.TableCollection.items
       - excel.Excel.TableCollection.load
       - excel.Excel.TableCollection.load_1
+      - excel.Excel.TableCollection.load_2
       - excel.Excel.TableCollection.onChanged
       - excel.Excel.TableCollection.toJSON
   - uid: excel.Excel.TableCollection.add
@@ -257,6 +258,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.TableCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.TableCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -316,6 +321,25 @@ items:
       - typeScript
     type: method
     syntax:
+      content: >-
+        load(option?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.TableCollection;
+      return:
+        type:
+          - excel.Excel.TableCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.TableCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.TableCollection;'
       return:
         type:
@@ -323,10 +347,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TableCollection.load_1
+  - uid: excel.Excel.TableCollection.load_2
     name: load(option)
     fullName: load(option)
     langs:

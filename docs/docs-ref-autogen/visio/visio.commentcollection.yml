@@ -19,6 +19,7 @@ items:
       - visio.Visio.CommentCollection.items
       - visio.Visio.CommentCollection.load
       - visio.Visio.CommentCollection.load_1
+      - visio.Visio.CommentCollection.load_2
       - visio.Visio.CommentCollection.toJSON
   - uid: visio.Visio.CommentCollection.getCount
     summary: |-
@@ -77,6 +78,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.CommentCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.CommentCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -122,6 +127,25 @@ items:
       - typeScript
     type: method
     syntax:
+      content: >-
+        load(option?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.CommentCollection;
+      return:
+        type:
+          - visio.Visio.CommentCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+  - uid: visio.Visio.CommentCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Visio.CommentCollection;'
       return:
         type:
@@ -129,10 +153,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: visio.Visio.CommentCollection.load_1
+  - uid: visio.Visio.CommentCollection.load_2
     name: load(option)
     fullName: load(option)
     langs:

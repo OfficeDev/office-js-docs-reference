@@ -23,6 +23,7 @@ items:
       - excel.Excel.StyleCollection.items
       - excel.Excel.StyleCollection.load
       - excel.Excel.StyleCollection.load_1
+      - excel.Excel.StyleCollection.load_2
       - excel.Excel.StyleCollection.toJSON
   - uid: excel.Excel.StyleCollection.add
     summary: |-
@@ -154,6 +155,25 @@ items:
       - typeScript
     type: method
     syntax:
+      content: >-
+        load(option?: Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.StyleCollection;
+      return:
+        type:
+          - excel.Excel.StyleCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.StyleCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.StyleCollection;'
       return:
         type:
@@ -164,7 +184,7 @@ items:
           description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.StyleCollection.load_1
+  - uid: excel.Excel.StyleCollection.load_2
     name: load(option)
     fullName: load(option)
     langs:

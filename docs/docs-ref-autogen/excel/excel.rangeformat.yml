@@ -24,6 +24,7 @@ items:
       - excel.Excel.RangeFormat.horizontalAlignment
       - excel.Excel.RangeFormat.load
       - excel.Excel.RangeFormat.load_1
+      - excel.Excel.RangeFormat.load_2
       - excel.Excel.RangeFormat.protection
       - excel.Excel.RangeFormat.rowHeight
       - excel.Excel.RangeFormat.textOrientation
@@ -171,6 +172,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.RangeFormat` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.RangeFormat` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -259,6 +264,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;'
+      return:
+        type:
+          - excel.Excel.RangeFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.RangeFormatLoadOptions
+  - uid: excel.Excel.RangeFormat.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.RangeFormat;'
       return:
         type:
@@ -266,10 +288,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.RangeFormat.load_1
+  - uid: excel.Excel.RangeFormat.load_2
     name: load(option)
     fullName: load(option)
     langs:

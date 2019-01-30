@@ -22,6 +22,7 @@ items:
       - excel.Excel.FilterPivotHierarchyCollection.items
       - excel.Excel.FilterPivotHierarchyCollection.load
       - excel.Excel.FilterPivotHierarchyCollection.load_1
+      - excel.Excel.FilterPivotHierarchyCollection.load_2
       - excel.Excel.FilterPivotHierarchyCollection.remove
       - excel.Excel.FilterPivotHierarchyCollection.toJSON
   - uid: excel.Excel.FilterPivotHierarchyCollection.add
@@ -139,6 +140,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.FilterPivotHierarchyCollection` - Where option is a comma-delimited
+      string or an array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.FilterPivotHierarchyCollection` - Where option.select
       is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string
       that specifies the navigation properties to load.
@@ -155,6 +160,25 @@ items:
       - typeScript
     type: method
     syntax:
+      content: >-
+        load(option?: Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.FilterPivotHierarchyCollection;
+      return:
+        type:
+          - excel.Excel.FilterPivotHierarchyCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.FilterPivotHierarchyCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.FilterPivotHierarchyCollection;'
       return:
         type:
@@ -162,10 +186,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.FilterPivotHierarchyCollection.load_1
+  - uid: excel.Excel.FilterPivotHierarchyCollection.load_2
     name: load(option)
     fullName: load(option)
     langs:

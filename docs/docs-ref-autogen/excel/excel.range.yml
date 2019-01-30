@@ -63,6 +63,7 @@ items:
       - excel.Excel.Range.isEntireRow
       - excel.Excel.Range.load
       - excel.Excel.Range.load_1
+      - excel.Excel.Range.load_2
       - excel.Excel.Range.merge
       - excel.Excel.Range.numberFormat
       - excel.Excel.Range.numberFormatLocal
@@ -1484,6 +1485,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Range` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Range` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -1572,6 +1577,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.RangeLoadOptions
+  - uid: excel.Excel.Range.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.Range;'
       return:
         type:
@@ -1579,10 +1601,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Range.load_1
+  - uid: excel.Excel.Range.load_2
     name: load(option)
     fullName: load(option)
     langs:

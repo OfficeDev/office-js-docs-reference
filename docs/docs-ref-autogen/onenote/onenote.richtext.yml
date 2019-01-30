@@ -20,6 +20,7 @@ items:
       - onenote.OneNote.RichText.languageId
       - onenote.OneNote.RichText.load
       - onenote.OneNote.RichText.load_1
+      - onenote.OneNote.RichText.load_2
       - onenote.OneNote.RichText.paragraph
       - onenote.OneNote.RichText.text
       - onenote.OneNote.RichText.toJSON
@@ -91,6 +92,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): OneNote.RichText` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): OneNote.RichText` - Where option.select is a
@@ -175,6 +180,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: OneNote.Interfaces.RichTextLoadOptions): OneNote.RichText;'
+      return:
+        type:
+          - onenote.OneNote.RichText
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.RichTextLoadOptions
+  - uid: onenote.OneNote.RichText.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): OneNote.RichText;'
       return:
         type:
@@ -182,10 +204,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.RichText.load_1
+  - uid: onenote.OneNote.RichText.load_2
     name: load(option)
     fullName: load(option)
     langs:

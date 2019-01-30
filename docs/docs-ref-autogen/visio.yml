@@ -20,33 +20,49 @@ items:
       - visio.Visio.Hyperlink
       - visio.Visio.HyperlinkCollection
       - visio.Visio.Interfaces.ApplicationData
+      - visio.Visio.Interfaces.ApplicationLoadOptions
       - visio.Visio.Interfaces.ApplicationUpdateData
+      - visio.Visio.Interfaces.CollectionLoadOptions
       - visio.Visio.Interfaces.CommentCollectionData
+      - visio.Visio.Interfaces.CommentCollectionLoadOptions
       - visio.Visio.Interfaces.CommentCollectionUpdateData
       - visio.Visio.Interfaces.CommentData
+      - visio.Visio.Interfaces.CommentLoadOptions
       - visio.Visio.Interfaces.CommentUpdateData
       - visio.Visio.Interfaces.DocumentData
+      - visio.Visio.Interfaces.DocumentLoadOptions
       - visio.Visio.Interfaces.DocumentUpdateData
       - visio.Visio.Interfaces.DocumentViewData
+      - visio.Visio.Interfaces.DocumentViewLoadOptions
       - visio.Visio.Interfaces.DocumentViewUpdateData
       - visio.Visio.Interfaces.HyperlinkCollectionData
+      - visio.Visio.Interfaces.HyperlinkCollectionLoadOptions
       - visio.Visio.Interfaces.HyperlinkCollectionUpdateData
       - visio.Visio.Interfaces.HyperlinkData
+      - visio.Visio.Interfaces.HyperlinkLoadOptions
       - visio.Visio.Interfaces.PageCollectionData
+      - visio.Visio.Interfaces.PageCollectionLoadOptions
       - visio.Visio.Interfaces.PageCollectionUpdateData
       - visio.Visio.Interfaces.PageData
+      - visio.Visio.Interfaces.PageLoadOptions
       - visio.Visio.Interfaces.PageUpdateData
       - visio.Visio.Interfaces.PageViewData
+      - visio.Visio.Interfaces.PageViewLoadOptions
       - visio.Visio.Interfaces.PageViewUpdateData
       - visio.Visio.Interfaces.SelectionData
       - visio.Visio.Interfaces.ShapeCollectionData
+      - visio.Visio.Interfaces.ShapeCollectionLoadOptions
       - visio.Visio.Interfaces.ShapeCollectionUpdateData
       - visio.Visio.Interfaces.ShapeData
       - visio.Visio.Interfaces.ShapeDataItemCollectionData
+      - visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions
       - visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData
       - visio.Visio.Interfaces.ShapeDataItemData
+      - visio.Visio.Interfaces.ShapeDataItemLoadOptions
+      - visio.Visio.Interfaces.ShapeLoadOptions
       - visio.Visio.Interfaces.ShapeUpdateData
       - visio.Visio.Interfaces.ShapeViewData
+      - visio.Visio.Interfaces.ShapeViewLoadOptions
       - visio.Visio.Interfaces.ShapeViewUpdateData
       - visio.Visio.OverlayHorizontalAlignment
       - visio.Visio.OverlayType
@@ -233,60 +249,92 @@ references:
     name: Visio.HyperlinkCollection
   - uid: visio.Visio.Interfaces.ApplicationData
     name: Visio.Interfaces.ApplicationData
+  - uid: visio.Visio.Interfaces.ApplicationLoadOptions
+    name: Visio.Interfaces.ApplicationLoadOptions
   - uid: visio.Visio.Interfaces.ApplicationUpdateData
     name: Visio.Interfaces.ApplicationUpdateData
+  - uid: visio.Visio.Interfaces.CollectionLoadOptions
+    name: Visio.Interfaces.CollectionLoadOptions
   - uid: visio.Visio.Interfaces.CommentCollectionData
     name: Visio.Interfaces.CommentCollectionData
+  - uid: visio.Visio.Interfaces.CommentCollectionLoadOptions
+    name: Visio.Interfaces.CommentCollectionLoadOptions
   - uid: visio.Visio.Interfaces.CommentCollectionUpdateData
     name: Visio.Interfaces.CommentCollectionUpdateData
   - uid: visio.Visio.Interfaces.CommentData
     name: Visio.Interfaces.CommentData
+  - uid: visio.Visio.Interfaces.CommentLoadOptions
+    name: Visio.Interfaces.CommentLoadOptions
   - uid: visio.Visio.Interfaces.CommentUpdateData
     name: Visio.Interfaces.CommentUpdateData
   - uid: visio.Visio.Interfaces.DocumentData
     name: Visio.Interfaces.DocumentData
+  - uid: visio.Visio.Interfaces.DocumentLoadOptions
+    name: Visio.Interfaces.DocumentLoadOptions
   - uid: visio.Visio.Interfaces.DocumentUpdateData
     name: Visio.Interfaces.DocumentUpdateData
   - uid: visio.Visio.Interfaces.DocumentViewData
     name: Visio.Interfaces.DocumentViewData
+  - uid: visio.Visio.Interfaces.DocumentViewLoadOptions
+    name: Visio.Interfaces.DocumentViewLoadOptions
   - uid: visio.Visio.Interfaces.DocumentViewUpdateData
     name: Visio.Interfaces.DocumentViewUpdateData
   - uid: visio.Visio.Interfaces.HyperlinkCollectionData
     name: Visio.Interfaces.HyperlinkCollectionData
+  - uid: visio.Visio.Interfaces.HyperlinkCollectionLoadOptions
+    name: Visio.Interfaces.HyperlinkCollectionLoadOptions
   - uid: visio.Visio.Interfaces.HyperlinkCollectionUpdateData
     name: Visio.Interfaces.HyperlinkCollectionUpdateData
   - uid: visio.Visio.Interfaces.HyperlinkData
     name: Visio.Interfaces.HyperlinkData
+  - uid: visio.Visio.Interfaces.HyperlinkLoadOptions
+    name: Visio.Interfaces.HyperlinkLoadOptions
   - uid: visio.Visio.Interfaces.PageCollectionData
     name: Visio.Interfaces.PageCollectionData
+  - uid: visio.Visio.Interfaces.PageCollectionLoadOptions
+    name: Visio.Interfaces.PageCollectionLoadOptions
   - uid: visio.Visio.Interfaces.PageCollectionUpdateData
     name: Visio.Interfaces.PageCollectionUpdateData
   - uid: visio.Visio.Interfaces.PageData
     name: Visio.Interfaces.PageData
+  - uid: visio.Visio.Interfaces.PageLoadOptions
+    name: Visio.Interfaces.PageLoadOptions
   - uid: visio.Visio.Interfaces.PageUpdateData
     name: Visio.Interfaces.PageUpdateData
   - uid: visio.Visio.Interfaces.PageViewData
     name: Visio.Interfaces.PageViewData
+  - uid: visio.Visio.Interfaces.PageViewLoadOptions
+    name: Visio.Interfaces.PageViewLoadOptions
   - uid: visio.Visio.Interfaces.PageViewUpdateData
     name: Visio.Interfaces.PageViewUpdateData
   - uid: visio.Visio.Interfaces.SelectionData
     name: Visio.Interfaces.SelectionData
   - uid: visio.Visio.Interfaces.ShapeCollectionData
     name: Visio.Interfaces.ShapeCollectionData
+  - uid: visio.Visio.Interfaces.ShapeCollectionLoadOptions
+    name: Visio.Interfaces.ShapeCollectionLoadOptions
   - uid: visio.Visio.Interfaces.ShapeCollectionUpdateData
     name: Visio.Interfaces.ShapeCollectionUpdateData
   - uid: visio.Visio.Interfaces.ShapeData
     name: Visio.Interfaces.ShapeData
   - uid: visio.Visio.Interfaces.ShapeDataItemCollectionData
     name: Visio.Interfaces.ShapeDataItemCollectionData
+  - uid: visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions
+    name: Visio.Interfaces.ShapeDataItemCollectionLoadOptions
   - uid: visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData
     name: Visio.Interfaces.ShapeDataItemCollectionUpdateData
   - uid: visio.Visio.Interfaces.ShapeDataItemData
     name: Visio.Interfaces.ShapeDataItemData
+  - uid: visio.Visio.Interfaces.ShapeDataItemLoadOptions
+    name: Visio.Interfaces.ShapeDataItemLoadOptions
+  - uid: visio.Visio.Interfaces.ShapeLoadOptions
+    name: Visio.Interfaces.ShapeLoadOptions
   - uid: visio.Visio.Interfaces.ShapeUpdateData
     name: Visio.Interfaces.ShapeUpdateData
   - uid: visio.Visio.Interfaces.ShapeViewData
     name: Visio.Interfaces.ShapeViewData
+  - uid: visio.Visio.Interfaces.ShapeViewLoadOptions
+    name: Visio.Interfaces.ShapeViewLoadOptions
   - uid: visio.Visio.Interfaces.ShapeViewUpdateData
     name: Visio.Interfaces.ShapeViewUpdateData
   - uid: visio.Visio.OverlayHorizontalAlignment

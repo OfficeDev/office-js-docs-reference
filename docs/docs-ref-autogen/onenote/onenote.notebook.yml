@@ -24,6 +24,7 @@ items:
       - onenote.OneNote.Notebook.isVirtual
       - onenote.OneNote.Notebook.load
       - onenote.OneNote.Notebook.load_1
+      - onenote.OneNote.Notebook.load_2
       - onenote.OneNote.Notebook.name
       - onenote.OneNote.Notebook.sectionGroups
       - onenote.OneNote.Notebook.sections
@@ -246,6 +247,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.Notebook` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.Notebook` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -410,6 +415,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: OneNote.Interfaces.NotebookLoadOptions): OneNote.Notebook;'
+      return:
+        type:
+          - onenote.OneNote.Notebook
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.NotebookLoadOptions
+  - uid: onenote.OneNote.Notebook.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): OneNote.Notebook;'
       return:
         type:
@@ -417,10 +439,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.Notebook.load_1
+  - uid: onenote.OneNote.Notebook.load_2
     name: load(option)
     fullName: load(option)
     langs:

@@ -22,6 +22,7 @@ items:
       - excel.Excel.PivotTableCollection.items
       - excel.Excel.PivotTableCollection.load
       - excel.Excel.PivotTableCollection.load_1
+      - excel.Excel.PivotTableCollection.load_2
       - excel.Excel.PivotTableCollection.refreshAll
       - excel.Excel.PivotTableCollection.toJSON
   - uid: excel.Excel.PivotTableCollection.add
@@ -161,6 +162,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.PivotTableCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.PivotTableCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -177,6 +182,25 @@ items:
       - typeScript
     type: method
     syntax:
+      content: >-
+        load(option?: Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.PivotTableCollection;
+      return:
+        type:
+          - excel.Excel.PivotTableCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.PivotTableCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.PivotTableCollection;'
       return:
         type:
@@ -184,10 +208,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.PivotTableCollection.load_1
+  - uid: excel.Excel.PivotTableCollection.load_2
     name: load(option)
     fullName: load(option)
     langs:

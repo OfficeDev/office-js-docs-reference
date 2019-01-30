@@ -19,6 +19,7 @@ items:
       - visio.Visio.ShapeView.highlight
       - visio.Visio.ShapeView.load
       - visio.Visio.ShapeView.load_1
+      - visio.Visio.ShapeView.load_2
       - visio.Visio.ShapeView.removeOverlay
       - visio.Visio.ShapeView.toJSON
   - uid: visio.Visio.ShapeView.addOverlay
@@ -132,6 +133,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.ShapeView` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.ShapeView` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -199,6 +204,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Visio.Interfaces.ShapeViewLoadOptions): Visio.ShapeView;'
+      return:
+        type:
+          - visio.Visio.ShapeView
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - visio.Visio.Interfaces.ShapeViewLoadOptions
+  - uid: visio.Visio.ShapeView.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Visio.ShapeView;'
       return:
         type:
@@ -206,10 +228,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: visio.Visio.ShapeView.load_1
+  - uid: visio.Visio.ShapeView.load_2
     name: load(option)
     fullName: load(option)
     langs:

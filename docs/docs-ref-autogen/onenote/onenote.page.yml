@@ -31,6 +31,7 @@ items:
       - onenote.OneNote.Page.insertPageAsSibling_1
       - onenote.OneNote.Page.load
       - onenote.OneNote.Page.load_1
+      - onenote.OneNote.Page.load_2
       - onenote.OneNote.Page.pageLevel
       - onenote.OneNote.Page.parentSection
       - onenote.OneNote.Page.title
@@ -453,6 +454,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.Page` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.Page` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -571,6 +576,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: OneNote.Interfaces.PageLoadOptions): OneNote.Page;'
+      return:
+        type:
+          - onenote.OneNote.Page
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.PageLoadOptions
+  - uid: onenote.OneNote.Page.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): OneNote.Page;'
       return:
         type:
@@ -578,10 +600,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.Page.load_1
+  - uid: onenote.OneNote.Page.load_2
     name: load(option)
     fullName: load(option)
     langs:

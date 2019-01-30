@@ -20,6 +20,7 @@ items:
       - excel.Excel.ChartLegendEntryCollection.items
       - excel.Excel.ChartLegendEntryCollection.load
       - excel.Excel.ChartLegendEntryCollection.load_1
+      - excel.Excel.ChartLegendEntryCollection.load_2
       - excel.Excel.ChartLegendEntryCollection.toJSON
   - uid: excel.Excel.ChartLegendEntryCollection.context
     summary: >-
@@ -92,6 +93,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartLegendEntryCollection` - Where option is a comma-delimited string or
+      an array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartLegendEntryCollection` - Where option.select is
       a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string
       that specifies the navigation properties to load.
@@ -108,6 +113,25 @@ items:
       - typeScript
     type: method
     syntax:
+      content: >-
+        load(option?: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ChartLegendEntryCollection;
+      return:
+        type:
+          - excel.Excel.ChartLegendEntryCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.ChartLegendEntryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.ChartLegendEntryCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.ChartLegendEntryCollection;'
       return:
         type:
@@ -115,10 +139,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartLegendEntryCollection.load_1
+  - uid: excel.Excel.ChartLegendEntryCollection.load_2
     name: load(option)
     fullName: load(option)
     langs:

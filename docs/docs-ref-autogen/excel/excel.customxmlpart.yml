@@ -20,6 +20,7 @@ items:
       - excel.Excel.CustomXmlPart.id
       - excel.Excel.CustomXmlPart.load
       - excel.Excel.CustomXmlPart.load_1
+      - excel.Excel.CustomXmlPart.load_2
       - excel.Excel.CustomXmlPart.namespaceUri
       - excel.Excel.CustomXmlPart.setXml
       - excel.Excel.CustomXmlPart.toJSON
@@ -173,6 +174,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.CustomXmlPart` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPart` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -189,6 +194,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.CustomXmlPartLoadOptions): Excel.CustomXmlPart;'
+      return:
+        type:
+          - excel.Excel.CustomXmlPart
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.CustomXmlPartLoadOptions
+  - uid: excel.Excel.CustomXmlPart.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.CustomXmlPart;'
       return:
         type:
@@ -196,10 +218,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.CustomXmlPart.load_1
+  - uid: excel.Excel.CustomXmlPart.load_2
     name: load(option)
     fullName: load(option)
     langs:

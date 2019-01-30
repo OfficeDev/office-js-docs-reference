@@ -22,6 +22,7 @@ items:
       - onenote.OneNote.Image.id
       - onenote.OneNote.Image.load
       - onenote.OneNote.Image.load_1
+      - onenote.OneNote.Image.load_2
       - onenote.OneNote.Image.ocrData
       - onenote.OneNote.Image.pageContent
       - onenote.OneNote.Image.paragraph
@@ -164,6 +165,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): OneNote.Image` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): OneNote.Image` - Where option.select is a comma-delimited
@@ -313,6 +318,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: OneNote.Interfaces.ImageLoadOptions): OneNote.Image;'
+      return:
+        type:
+          - onenote.OneNote.Image
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.ImageLoadOptions
+  - uid: onenote.OneNote.Image.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): OneNote.Image;'
       return:
         type:
@@ -320,10 +342,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.Image.load_1
+  - uid: onenote.OneNote.Image.load_2
     name: load(option)
     fullName: load(option)
     langs:

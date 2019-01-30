@@ -19,6 +19,7 @@ items:
       - onenote.OneNote.FloatingInk.inkStrokes
       - onenote.OneNote.FloatingInk.load
       - onenote.OneNote.FloatingInk.load_1
+      - onenote.OneNote.FloatingInk.load_2
       - onenote.OneNote.FloatingInk.pageContent
       - onenote.OneNote.FloatingInk.toJSON
       - onenote.OneNote.FloatingInk.track
@@ -73,6 +74,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): OneNote.FloatingInk` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): OneNote.FloatingInk` - Where option.select is a
@@ -137,6 +142,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: OneNote.Interfaces.FloatingInkLoadOptions): OneNote.FloatingInk;'
+      return:
+        type:
+          - onenote.OneNote.FloatingInk
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.FloatingInkLoadOptions
+  - uid: onenote.OneNote.FloatingInk.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): OneNote.FloatingInk;'
       return:
         type:
@@ -144,10 +166,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.FloatingInk.load_1
+  - uid: onenote.OneNote.FloatingInk.load_2
     name: load(option)
     fullName: load(option)
     langs:

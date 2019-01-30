@@ -21,6 +21,7 @@ items:
       - onenote.OneNote.InkStrokeCollection.items
       - onenote.OneNote.InkStrokeCollection.load
       - onenote.OneNote.InkStrokeCollection.load_1
+      - onenote.OneNote.InkStrokeCollection.load_2
       - onenote.OneNote.InkStrokeCollection.toJSON
       - onenote.OneNote.InkStrokeCollection.track
       - onenote.OneNote.InkStrokeCollection.untrack
@@ -115,6 +116,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.InkStrokeCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.InkStrokeCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -131,6 +136,25 @@ items:
       - typeScript
     type: method
     syntax:
+      content: >-
+        load(option?: OneNote.Interfaces.InkStrokeCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
+        OneNote.InkStrokeCollection;
+      return:
+        type:
+          - onenote.OneNote.InkStrokeCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - OneNote.Interfaces.InkStrokeCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+  - uid: onenote.OneNote.InkStrokeCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): OneNote.InkStrokeCollection;'
       return:
         type:
@@ -138,10 +162,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.InkStrokeCollection.load_1
+  - uid: onenote.OneNote.InkStrokeCollection.load_2
     name: load(option)
     fullName: load(option)
     langs:

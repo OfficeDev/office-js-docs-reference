@@ -23,6 +23,7 @@ items:
       - excel.Excel.CustomPropertyCollection.items
       - excel.Excel.CustomPropertyCollection.load
       - excel.Excel.CustomPropertyCollection.load_1
+      - excel.Excel.CustomPropertyCollection.load_2
       - excel.Excel.CustomPropertyCollection.toJSON
   - uid: excel.Excel.CustomPropertyCollection.add
     summary: |-
@@ -159,6 +160,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.CustomPropertyCollection` - Where option is a comma-delimited string or
+      an array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.CustomPropertyCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -175,6 +180,25 @@ items:
       - typeScript
     type: method
     syntax:
+      content: >-
+        load(option?: Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.CustomPropertyCollection;
+      return:
+        type:
+          - excel.Excel.CustomPropertyCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.CustomPropertyCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.CustomPropertyCollection;'
       return:
         type:
@@ -182,10 +206,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.CustomPropertyCollection.load_1
+  - uid: excel.Excel.CustomPropertyCollection.load_2
     name: load(option)
     fullName: load(option)
     langs:

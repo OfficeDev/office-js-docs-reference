@@ -20,6 +20,7 @@ items:
       - excel.Excel.ChartLineFormat.lineStyle
       - excel.Excel.ChartLineFormat.load
       - excel.Excel.ChartLineFormat.load_1
+      - excel.Excel.ChartLineFormat.load_2
       - excel.Excel.ChartLineFormat.toJSON
       - excel.Excel.ChartLineFormat.weight
   - uid: excel.Excel.ChartLineFormat.clear
@@ -112,6 +113,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartLineFormat` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartLineFormat` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -150,6 +155,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.ChartLineFormatLoadOptions): Excel.ChartLineFormat;'
+      return:
+        type:
+          - excel.Excel.ChartLineFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ChartLineFormatLoadOptions
+  - uid: excel.Excel.ChartLineFormat.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.ChartLineFormat;'
       return:
         type:
@@ -157,10 +179,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartLineFormat.load_1
+  - uid: excel.Excel.ChartLineFormat.load_2
     name: load(option)
     fullName: load(option)
     langs:

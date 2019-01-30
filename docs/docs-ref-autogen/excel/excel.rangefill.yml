@@ -19,6 +19,7 @@ items:
       - excel.Excel.RangeFill.context
       - excel.Excel.RangeFill.load
       - excel.Excel.RangeFill.load_1
+      - excel.Excel.RangeFill.load_2
       - excel.Excel.RangeFill.toJSON
   - uid: excel.Excel.RangeFill.clear
     summary: |-
@@ -94,6 +95,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.RangeFill` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.RangeFill` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -153,6 +158,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;'
+      return:
+        type:
+          - excel.Excel.RangeFill
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.RangeFillLoadOptions
+  - uid: excel.Excel.RangeFill.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.RangeFill;'
       return:
         type:
@@ -160,10 +182,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.RangeFill.load_1
+  - uid: excel.Excel.RangeFill.load_2
     name: load(option)
     fullName: load(option)
     langs:

@@ -18,6 +18,7 @@ items:
       - visio.Visio.Comment.date
       - visio.Visio.Comment.load
       - visio.Visio.Comment.load_1
+      - visio.Visio.Comment.load_2
       - visio.Visio.Comment.text
       - visio.Visio.Comment.toJSON
   - uid: visio.Visio.Comment.author
@@ -56,6 +57,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Visio.Comment` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Visio.Comment` - Where option.select is a comma-delimited
@@ -103,6 +108,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Visio.Interfaces.CommentLoadOptions): Visio.Comment;'
+      return:
+        type:
+          - visio.Visio.Comment
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - visio.Visio.Interfaces.CommentLoadOptions
+  - uid: visio.Visio.Comment.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Visio.Comment;'
       return:
         type:
@@ -110,10 +132,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: visio.Visio.Comment.load_1
+  - uid: visio.Visio.Comment.load_2
     name: load(option)
     fullName: load(option)
     langs:

@@ -19,6 +19,7 @@ items:
       - visio.Visio.HyperlinkCollection.items
       - visio.Visio.HyperlinkCollection.load
       - visio.Visio.HyperlinkCollection.load_1
+      - visio.Visio.HyperlinkCollection.load_2
       - visio.Visio.HyperlinkCollection.toJSON
   - uid: visio.Visio.HyperlinkCollection.getCount
     summary: |-
@@ -77,6 +78,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.HyperlinkCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.HyperlinkCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -122,6 +127,25 @@ items:
       - typeScript
     type: method
     syntax:
+      content: >-
+        load(option?: Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.HyperlinkCollection;
+      return:
+        type:
+          - visio.Visio.HyperlinkCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+  - uid: visio.Visio.HyperlinkCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Visio.HyperlinkCollection;'
       return:
         type:
@@ -129,10 +153,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: visio.Visio.HyperlinkCollection.load_1
+  - uid: visio.Visio.HyperlinkCollection.load_2
     name: load(option)
     fullName: load(option)
     langs:

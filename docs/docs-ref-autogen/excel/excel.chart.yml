@@ -30,6 +30,7 @@ items:
       - excel.Excel.Chart.legend
       - excel.Excel.Chart.load
       - excel.Excel.Chart.load_1
+      - excel.Excel.Chart.load_2
       - excel.Excel.Chart.name
       - excel.Excel.Chart.onActivated
       - excel.Excel.Chart.onDeactivated
@@ -368,6 +369,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Chart` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Chart` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -406,6 +411,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;'
+      return:
+        type:
+          - excel.Excel.Chart
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ChartLoadOptions
+  - uid: excel.Excel.Chart.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.Chart;'
       return:
         type:
@@ -413,10 +435,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Chart.load_1
+  - uid: excel.Excel.Chart.load_2
     name: load(option)
     fullName: load(option)
     langs:

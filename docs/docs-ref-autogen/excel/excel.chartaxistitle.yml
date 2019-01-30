@@ -18,6 +18,7 @@ items:
       - excel.Excel.ChartAxisTitle.format
       - excel.Excel.ChartAxisTitle.load
       - excel.Excel.ChartAxisTitle.load_1
+      - excel.Excel.ChartAxisTitle.load_2
       - excel.Excel.ChartAxisTitle.setFormula
       - excel.Excel.ChartAxisTitle.text
       - excel.Excel.ChartAxisTitle.toJSON
@@ -57,6 +58,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.ChartAxisTitle` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.ChartAxisTitle` - Where option.select is a
@@ -117,6 +122,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.ChartAxisTitleLoadOptions): Excel.ChartAxisTitle;'
+      return:
+        type:
+          - excel.Excel.ChartAxisTitle
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ChartAxisTitleLoadOptions
+  - uid: excel.Excel.ChartAxisTitle.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.ChartAxisTitle;'
       return:
         type:
@@ -124,10 +146,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartAxisTitle.load_1
+  - uid: excel.Excel.ChartAxisTitle.load_2
     name: load(option)
     fullName: load(option)
     langs:

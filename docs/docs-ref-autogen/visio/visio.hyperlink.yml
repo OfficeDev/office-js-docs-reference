@@ -19,6 +19,7 @@ items:
       - visio.Visio.Hyperlink.extraInfo
       - visio.Visio.Hyperlink.load
       - visio.Visio.Hyperlink.load_1
+      - visio.Visio.Hyperlink.load_2
       - visio.Visio.Hyperlink.subAddress
       - visio.Visio.Hyperlink.toJSON
   - uid: visio.Visio.Hyperlink.address
@@ -74,6 +75,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.Hyperlink` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.Hyperlink` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -115,6 +120,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Visio.Interfaces.HyperlinkLoadOptions): Visio.Hyperlink;'
+      return:
+        type:
+          - visio.Visio.Hyperlink
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - visio.Visio.Interfaces.HyperlinkLoadOptions
+  - uid: visio.Visio.Hyperlink.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Visio.Hyperlink;'
       return:
         type:
@@ -122,10 +144,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: visio.Visio.Hyperlink.load_1
+  - uid: visio.Visio.Hyperlink.load_2
     name: load(option)
     fullName: load(option)
     langs:

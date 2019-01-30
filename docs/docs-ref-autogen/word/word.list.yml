@@ -24,6 +24,7 @@ items:
       - word.Word.List.levelTypes
       - word.Word.List.load
       - word.Word.List.load_1
+      - word.Word.List.load_2
       - word.Word.List.paragraphs
       - word.Word.List.setLevelAlignment
       - word.Word.List.setLevelAlignment_1
@@ -203,6 +204,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.List` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.List` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -219,6 +224,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Word.Interfaces.ListLoadOptions): Word.List;'
+      return:
+        type:
+          - word.Word.List
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - word.Word.Interfaces.ListLoadOptions
+  - uid: word.Word.List.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Word.List;'
       return:
         type:
@@ -226,10 +248,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: word.Word.List.load_1
+  - uid: word.Word.List.load_2
     name: load(option)
     fullName: load(option)
     langs:

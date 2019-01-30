@@ -25,6 +25,7 @@ items:
       - excel.Excel.DocumentProperties.lastAuthor
       - excel.Excel.DocumentProperties.load
       - excel.Excel.DocumentProperties.load_1
+      - excel.Excel.DocumentProperties.load_2
       - excel.Excel.DocumentProperties.manager
       - excel.Excel.DocumentProperties.revisionNumber
       - excel.Excel.DocumentProperties.subject
@@ -172,6 +173,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.DocumentProperties` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.DocumentProperties` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -188,6 +193,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.DocumentPropertiesLoadOptions): Excel.DocumentProperties;'
+      return:
+        type:
+          - excel.Excel.DocumentProperties
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.DocumentPropertiesLoadOptions
+  - uid: excel.Excel.DocumentProperties.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.DocumentProperties;'
       return:
         type:
@@ -195,10 +217,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.DocumentProperties.load_1
+  - uid: excel.Excel.DocumentProperties.load_2
     name: load(option)
     fullName: load(option)
     langs:

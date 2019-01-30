@@ -18,6 +18,7 @@ items:
       - onenote.OneNote.NoteTag.id
       - onenote.OneNote.NoteTag.load
       - onenote.OneNote.NoteTag.load_1
+      - onenote.OneNote.NoteTag.load_2
       - onenote.OneNote.NoteTag.status
       - onenote.OneNote.NoteTag.toJSON
       - onenote.OneNote.NoteTag.track
@@ -60,6 +61,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.NoteTag` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.NoteTag` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -76,6 +81,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: OneNote.Interfaces.NoteTagLoadOptions): OneNote.NoteTag;'
+      return:
+        type:
+          - onenote.OneNote.NoteTag
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.NoteTagLoadOptions
+  - uid: onenote.OneNote.NoteTag.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): OneNote.NoteTag;'
       return:
         type:
@@ -83,10 +105,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.NoteTag.load_1
+  - uid: onenote.OneNote.NoteTag.load_2
     name: load(option)
     fullName: load(option)
     langs:

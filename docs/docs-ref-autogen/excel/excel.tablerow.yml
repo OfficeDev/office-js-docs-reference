@@ -26,6 +26,7 @@ items:
       - excel.Excel.TableRow.index
       - excel.Excel.TableRow.load
       - excel.Excel.TableRow.load_1
+      - excel.Excel.TableRow.load_2
       - excel.Excel.TableRow.toJSON
       - excel.Excel.TableRow.values
   - uid: excel.Excel.TableRow.context
@@ -132,6 +133,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.TableRow` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.TableRow` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -190,6 +195,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.TableRowLoadOptions): Excel.TableRow;'
+      return:
+        type:
+          - excel.Excel.TableRow
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.TableRowLoadOptions
+  - uid: excel.Excel.TableRow.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.TableRow;'
       return:
         type:
@@ -197,10 +219,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TableRow.load_1
+  - uid: excel.Excel.TableRow.load_2
     name: load(option)
     fullName: load(option)
     langs:

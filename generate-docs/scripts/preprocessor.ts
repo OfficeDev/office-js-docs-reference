@@ -70,10 +70,7 @@ tryCatch(async () => {
     // LoadOptions are removed, and the corresponding comments are modified to reflect a different overload.
     // set() is removed from RichAPI, along with corresponding comments. This is to reduce traffic to the method pending a decision about modifying the underlying behavior.
     definitions = applyRegularExpressions(
-        definitions.replace(/\s*\* \@param options Provides options for which properties of the object to load\.(\s*\*\/)/gm, ' @param option A comma-delimited string or an array of strings that specify the properties to load.$1\n')
-        .replace(/\s*load\(option\?: (Excel|Word|OneNote|Visio)\.Interfaces\.\S*LoadOptions.*\): \S*?;/gm, '')
-        .replace(/\*\s*?`load\(option\?: string \| string\[\]\): (Excel|Word|OneNote|Visio)\..*?` - Where option is a comma-delimited string or an array of strings that specify the properties to load\./g, '')
-        .replace(/interface .*?LoadOptions \{[^}]*?}/gm, '')
+        definitions
         .replace(/\/\*\* Sets multiple properties.*\s*\*\s*\*.@remarks\s*\*\s*\* This method has the following additional signature:\s*\*\s*\* \`set\(properties:.*\s*\*\s*\* @param.*\s*\*.*\s*\*\/\s*set\(properties:.*\s*\/\*\* Sets multiple properties.*\s*set\(properties:.*;/gm, '')
         .replace(/(extends OfficeCore.RequestContext)/g, `extends OfficeExtension.ClientRequestContext`));
 
@@ -106,7 +103,8 @@ tryCatch(async () => {
     console.log("create file: outlook.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-outlook/outlook.d.ts',
-        commonApiNamespaceImport + dtsBuilder.extractDtsSection(definitions, "Begin Exchange APIs", "End Exchange APIs").replace(/: Office\./g, ": CommonAPI.").replace(/\<Office\./g, "<CommonAPI.")
+        "import \{Office as CommonAPI\} from \"../api-extractor-inputs-office/office\"" +
+        dtsBuilder.extractDtsSection(definitions, "Begin Exchange APIs", "End Exchange APIs").replace(/: Office\./g, ": CommonAPI.").replace(/\<Office\./g, "<CommonAPI.")
     );
 
     console.log("create file: powerpoint.d.ts");

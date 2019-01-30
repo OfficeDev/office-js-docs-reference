@@ -62,6 +62,7 @@ items:
       - word.Word.Paragraph.listOrNullObject
       - word.Word.Paragraph.load
       - word.Word.Paragraph.load_1
+      - word.Word.Paragraph.load_2
       - word.Word.Paragraph.outlineLevel
       - word.Word.Paragraph.parentBody
       - word.Word.Paragraph.parentContentControl
@@ -1549,6 +1550,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.Paragraph` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.Paragraph` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -1565,6 +1570,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Word.Interfaces.ParagraphLoadOptions): Word.Paragraph;'
+      return:
+        type:
+          - Word.Paragraph
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Word.Interfaces.ParagraphLoadOptions
+  - uid: word.Word.Paragraph.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Word.Paragraph;'
       return:
         type:
@@ -1572,10 +1594,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: word.Word.Paragraph.load_1
+  - uid: word.Word.Paragraph.load_2
     name: load(option)
     fullName: load(option)
     langs:

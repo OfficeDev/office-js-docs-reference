@@ -21,6 +21,7 @@ items:
       - onenote.OneNote.PageContentCollection.items
       - onenote.OneNote.PageContentCollection.load
       - onenote.OneNote.PageContentCollection.load_1
+      - onenote.OneNote.PageContentCollection.load_2
       - onenote.OneNote.PageContentCollection.toJSON
       - onenote.OneNote.PageContentCollection.track
       - onenote.OneNote.PageContentCollection.untrack
@@ -140,6 +141,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.PageContentCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.PageContentCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -218,6 +223,25 @@ items:
       - typeScript
     type: method
     syntax:
+      content: >-
+        load(option?: OneNote.Interfaces.PageContentCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
+        OneNote.PageContentCollection;
+      return:
+        type:
+          - onenote.OneNote.PageContentCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - OneNote.Interfaces.PageContentCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+  - uid: onenote.OneNote.PageContentCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): OneNote.PageContentCollection;'
       return:
         type:
@@ -225,10 +249,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.PageContentCollection.load_1
+  - uid: onenote.OneNote.PageContentCollection.load_2
     name: load(option)
     fullName: load(option)
     langs:

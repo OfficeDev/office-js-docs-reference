@@ -20,6 +20,7 @@ items:
       - word.Word.SectionCollection.items
       - word.Word.SectionCollection.load
       - word.Word.SectionCollection.load_1
+      - word.Word.SectionCollection.load_2
       - word.Word.SectionCollection.toJSON
       - word.Word.SectionCollection.track
       - word.Word.SectionCollection.untrack
@@ -89,6 +90,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.SectionCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.SectionCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -105,6 +110,25 @@ items:
       - typeScript
     type: method
     syntax:
+      content: >-
+        load(option?: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.SectionCollection;
+      return:
+        type:
+          - Word.SectionCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+  - uid: word.Word.SectionCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Word.SectionCollection;'
       return:
         type:
@@ -112,10 +136,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: word.Word.SectionCollection.load_1
+  - uid: word.Word.SectionCollection.load_2
     name: load(option)
     fullName: load(option)
     langs:

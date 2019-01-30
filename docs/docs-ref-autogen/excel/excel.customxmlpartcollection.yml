@@ -23,6 +23,7 @@ items:
       - excel.Excel.CustomXmlPartCollection.items
       - excel.Excel.CustomXmlPartCollection.load
       - excel.Excel.CustomXmlPartCollection.load_1
+      - excel.Excel.CustomXmlPartCollection.load_2
       - excel.Excel.CustomXmlPartCollection.toJSON
   - uid: excel.Excel.CustomXmlPartCollection.add
     summary: |-
@@ -241,6 +242,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.CustomXmlPartCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.CustomXmlPartCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -257,6 +262,25 @@ items:
       - typeScript
     type: method
     syntax:
+      content: >-
+        load(option?: Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.CustomXmlPartCollection;
+      return:
+        type:
+          - excel.Excel.CustomXmlPartCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.CustomXmlPartCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.CustomXmlPartCollection;'
       return:
         type:
@@ -264,10 +288,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.CustomXmlPartCollection.load_1
+  - uid: excel.Excel.CustomXmlPartCollection.load_2
     name: load(option)
     fullName: load(option)
     langs:

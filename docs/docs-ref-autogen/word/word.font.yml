@@ -22,6 +22,7 @@ items:
       - word.Word.Font.italic
       - word.Word.Font.load
       - word.Word.Font.load_1
+      - word.Word.Font.load_2
       - word.Word.Font.name
       - word.Word.Font.size
       - word.Word.Font.strikeThrough
@@ -137,6 +138,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Word.Font` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Word.Font` - Where option.select is a comma-delimited
@@ -368,6 +373,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Word.Interfaces.FontLoadOptions): Word.Font;'
+      return:
+        type:
+          - word.Word.Font
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - word.Word.Interfaces.FontLoadOptions
+  - uid: word.Word.Font.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Word.Font;'
       return:
         type:
@@ -375,10 +397,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: word.Word.Font.load_1
+  - uid: word.Word.Font.load_2
     name: load(option)
     fullName: load(option)
     langs:

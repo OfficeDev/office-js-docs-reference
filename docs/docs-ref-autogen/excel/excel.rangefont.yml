@@ -20,6 +20,7 @@ items:
       - excel.Excel.RangeFont.italic
       - excel.Excel.RangeFont.load
       - excel.Excel.RangeFont.load_1
+      - excel.Excel.RangeFont.load_2
       - excel.Excel.RangeFont.name
       - excel.Excel.RangeFont.size
       - excel.Excel.RangeFont.toJSON
@@ -91,6 +92,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.RangeFont` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.RangeFont` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -150,6 +155,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;'
+      return:
+        type:
+          - excel.Excel.RangeFont
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.RangeFontLoadOptions
+  - uid: excel.Excel.RangeFont.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.RangeFont;'
       return:
         type:
@@ -157,10 +179,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.RangeFont.load_1
+  - uid: excel.Excel.RangeFont.load_2
     name: load(option)
     fullName: load(option)
     langs:

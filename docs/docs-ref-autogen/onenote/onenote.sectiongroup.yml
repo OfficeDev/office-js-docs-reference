@@ -22,6 +22,7 @@ items:
       - onenote.OneNote.SectionGroup.id
       - onenote.OneNote.SectionGroup.load
       - onenote.OneNote.SectionGroup.load_1
+      - onenote.OneNote.SectionGroup.load_2
       - onenote.OneNote.SectionGroup.name
       - onenote.OneNote.SectionGroup.notebook
       - onenote.OneNote.SectionGroup.parentSectionGroup
@@ -214,6 +215,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.SectionGroup` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.SectionGroup` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -363,6 +368,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: OneNote.Interfaces.SectionGroupLoadOptions): OneNote.SectionGroup;'
+      return:
+        type:
+          - onenote.OneNote.SectionGroup
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.SectionGroupLoadOptions
+  - uid: onenote.OneNote.SectionGroup.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): OneNote.SectionGroup;'
       return:
         type:
@@ -370,10 +392,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.SectionGroup.load_1
+  - uid: onenote.OneNote.SectionGroup.load_2
     name: load(option)
     fullName: load(option)
     langs:

@@ -405,13 +405,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.Body` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Body` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Body` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.BodyLoadOptions): Word.Body;
         load(option?: string | string[]): Word.Body;
         load(option?: {
             select?: string;
@@ -903,13 +905,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.ContentControl` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.ContentControl` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControl` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.ContentControlLoadOptions): Word.ContentControl;
         load(option?: string | string[]): Word.ContentControl;
         load(option?: {
             select?: string;
@@ -1011,13 +1015,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.ContentControlCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.ContentControlCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControlCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ContentControlCollection;
         load(option?: string | string[]): Word.ContentControlCollection;
         load(option?: OfficeExtension.LoadOption): Word.ContentControlCollection;
         /**
@@ -1075,13 +1081,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.CustomProperty` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.CustomProperty` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomProperty` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.CustomPropertyLoadOptions): Word.CustomProperty;
         load(option?: string | string[]): Word.CustomProperty;
         load(option?: {
             select?: string;
@@ -1157,13 +1165,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.CustomPropertyCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.CustomPropertyCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomPropertyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CustomPropertyCollection;
         load(option?: string | string[]): Word.CustomPropertyCollection;
         load(option?: OfficeExtension.LoadOption): Word.CustomPropertyCollection;
         /**
@@ -1242,13 +1252,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.Document` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Document` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Document` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.DocumentLoadOptions): Word.Document;
         load(option?: string | string[]): Word.Document;
         load(option?: {
             select?: string;
@@ -1330,13 +1342,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.DocumentCreated` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.DocumentCreated` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.DocumentCreated` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.DocumentCreatedLoadOptions): Word.DocumentCreated;
         load(option?: string | string[]): Word.DocumentCreated;
         load(option?: {
             select?: string;
@@ -1495,13 +1509,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.DocumentProperties` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.DocumentProperties` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.DocumentProperties` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.DocumentPropertiesLoadOptions): Word.DocumentProperties;
         load(option?: string | string[]): Word.DocumentProperties;
         load(option?: {
             select?: string;
@@ -1611,13 +1627,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.Font` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Font` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Font` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.FontLoadOptions): Word.Font;
         load(option?: string | string[]): Word.Font;
         load(option?: {
             select?: string;
@@ -1952,13 +1970,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.InlinePicture` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.InlinePicture` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePicture` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.InlinePictureLoadOptions): Word.InlinePicture;
         load(option?: string | string[]): Word.InlinePicture;
         load(option?: {
             select?: string;
@@ -2006,13 +2026,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.InlinePictureCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.InlinePictureCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePictureCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.InlinePictureCollection;
         load(option?: string | string[]): Word.InlinePictureCollection;
         load(option?: OfficeExtension.LoadOption): Word.InlinePictureCollection;
         /**
@@ -2194,13 +2216,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.List` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.List` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.List` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.ListLoadOptions): Word.List;
         load(option?: string | string[]): Word.List;
         load(option?: {
             select?: string;
@@ -2275,13 +2299,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.ListCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.ListCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ListCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ListCollection;
         load(option?: string | string[]): Word.ListCollection;
         load(option?: OfficeExtension.LoadOption): Word.ListCollection;
         /**
@@ -2359,13 +2385,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.ListItem` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.ListItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ListItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.ListItemLoadOptions): Word.ListItem;
         load(option?: string | string[]): Word.ListItem;
         load(option?: {
             select?: string;
@@ -2934,13 +2962,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.Paragraph` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Paragraph` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Paragraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.ParagraphLoadOptions): Word.Paragraph;
         load(option?: string | string[]): Word.Paragraph;
         load(option?: {
             select?: string;
@@ -3002,13 +3032,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.ParagraphCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.ParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ParagraphCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ParagraphCollection;
         load(option?: string | string[]): Word.ParagraphCollection;
         load(option?: OfficeExtension.LoadOption): Word.ParagraphCollection;
         /**
@@ -3511,13 +3543,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.Range` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Range` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Range` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.RangeLoadOptions): Word.Range;
         load(option?: string | string[]): Word.Range;
         load(option?: {
             select?: string;
@@ -3565,13 +3599,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.RangeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.RangeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.RangeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.RangeCollection;
         load(option?: string | string[]): Word.RangeCollection;
         load(option?: OfficeExtension.LoadOption): Word.RangeCollection;
         /**
@@ -3651,13 +3687,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.SearchOptions` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.SearchOptions` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SearchOptions` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;
         load(option?: string | string[]): Word.SearchOptions;
         load(option?: {
             select?: string;
@@ -3743,13 +3781,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.Section` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Section` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Section` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.SectionLoadOptions): Word.Section;
         load(option?: string | string[]): Word.Section;
         load(option?: {
             select?: string;
@@ -3797,13 +3837,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.SectionCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.SectionCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SectionCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.SectionCollection;
         load(option?: string | string[]): Word.SectionCollection;
         load(option?: OfficeExtension.LoadOption): Word.SectionCollection;
         /**
@@ -4337,13 +4379,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.Table` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.Table` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Table` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.TableLoadOptions): Word.Table;
         load(option?: string | string[]): Word.Table;
         load(option?: {
             select?: string;
@@ -4391,13 +4435,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.TableCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.TableCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.TableCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableCollection;
         load(option?: string | string[]): Word.TableCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableCollection;
         /**
@@ -4646,13 +4692,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.TableRow` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.TableRow` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableRow` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.TableRowLoadOptions): Word.TableRow;
         load(option?: string | string[]): Word.TableRow;
         load(option?: {
             select?: string;
@@ -4700,13 +4748,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.TableRowCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableRowCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableRowCollection;
         load(option?: string | string[]): Word.TableRowCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableRowCollection;
         /**
@@ -4941,13 +4991,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.TableCell` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.TableCell` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCell` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.TableCellLoadOptions): Word.TableCell;
         load(option?: string | string[]): Word.TableCell;
         load(option?: {
             select?: string;
@@ -4995,13 +5047,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.TableCellCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.TableCellCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableCellCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableCellCollection;
         load(option?: string | string[]): Word.TableCellCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableCellCollection;
         /**
@@ -5052,13 +5106,15 @@ export declare namespace Word {
          *
          * In addition to this signature, this method has the following signatures:
          *
-         
+         * `load(option?: string | string[]): Word.TableBorder` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
          *
          * `load(option?: { select?: string; expand?: string; }): Word.TableBorder` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.TableBorder` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-         * @param option - A comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * @param options - Provides options for which properties of the object to load.
          */
+        load(option?: Word.Interfaces.TableBorderLoadOptions): Word.TableBorder;
         load(option?: string | string[]): Word.TableBorder;
         load(option?: {
             select?: string;
@@ -5923,7 +5979,16 @@ export declare namespace Word {
         /**
         * Provides ways to load properties of only a subset of members of a collection.
         */
-        
+        export interface CollectionLoadOptions {
+            /**
+            * Specify the number of items in the queried collection to be included in the result.
+            */
+            $top?: number;
+            /**
+            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+            */
+            $skip?: number;
+        }
         /** An interface for updating data on the Body object, for use in "body.set({ ... })". */
         export interface BodyUpdateData {
             /**
@@ -8327,196 +8392,2471 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          */
-        
+        export interface BodyLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+            *
+            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentBody?: Word.Interfaces.BodyLoadOptions;
+            /**
+            *
+            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentBodyOrNullObject?: Word.Interfaces.BodyLoadOptions;
+            /**
+            *
+            * Gets the content control that contains the body. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * Gets the content control that contains the body. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * Gets the parent section of the body. Throws if there isn't a parent section.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentSection?: Word.Interfaces.SectionLoadOptions;
+            /**
+            *
+            * Gets the parent section of the body. Returns a null object if there isn't a parent section.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentSectionOrNullObject?: Word.Interfaces.SectionLoadOptions;
+            /**
+             *
+             * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            style?: boolean;
+            /**
+             *
+             * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleBuiltIn?: boolean;
+            /**
+             *
+             * Gets the text of the body. Use the insertText method to insert text. Read-only.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            text?: boolean;
+            /**
+             *
+             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            type?: boolean;
+        }
         /**
          *
          * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
          *
          * [Api set: WordApi 1.1]
          */
-        
+        export interface ContentControlLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+            *
+            * Gets the parent body of the content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentBody?: Word.Interfaces.BodyLoadOptions;
+            /**
+            *
+            * Gets the content control that contains the content control. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * Gets the table that contains the content control. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTable?: Word.Interfaces.TableLoadOptions;
+            /**
+            *
+            * Gets the table cell that contains the content control. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * Gets the table that contains the content control. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
+            /**
+             *
+             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            appearance?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            cannotDelete?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether the user can edit the contents of the content control.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            cannotEdit?: boolean;
+            /**
+             *
+             * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            color?: boolean;
+            /**
+             *
+             * Gets an integer that represents the content control identifier. Read-only.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            placeholderText?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            removeWhenEdited?: boolean;
+            /**
+             *
+             * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            style?: boolean;
+            /**
+             *
+             * Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleBuiltIn?: boolean;
+            /**
+             *
+             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            subtype?: boolean;
+            /**
+             *
+             * Gets or sets a tag to identify a content control.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            tag?: boolean;
+            /**
+             *
+             * Gets the text of the content control. Read-only.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            text?: boolean;
+            /**
+             *
+             * Gets or sets the title for a content control.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            title?: boolean;
+            /**
+             *
+             * Gets the content control type. Only rich text content controls are supported currently. Read-only.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            type?: boolean;
+        }
         /**
          *
          * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
          *
          * [Api set: WordApi 1.1]
          */
-        
+        export interface ContentControlCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the parent body of the content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentBody?: Word.Interfaces.BodyLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the content control that contains the content control. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table that contains the content control. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTable?: Word.Interfaces.TableLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table that contains the content control. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            appearance?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            cannotDelete?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can edit the contents of the content control.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            cannotEdit?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            color?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets an integer that represents the content control identifier. Read-only.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            placeholderText?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            removeWhenEdited?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            style?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleBuiltIn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            subtype?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets a tag to identify a content control.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            tag?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the text of the content control. Read-only.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            text?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the title for a content control.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            title?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported currently. Read-only.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            type?: boolean;
+        }
         /**
          *
          * Represents a custom property.
          *
          * [Api set: WordApi 1.3]
          */
-        
+        export interface CustomPropertyLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets the key of the custom property. Read only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            key?: boolean;
+            /**
+             *
+             * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            type?: boolean;
+            /**
+             *
+             * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+             *
+             * [Api set: WordApi 1.3]
+             */
+            value?: boolean;
+        }
         /**
          *
          * Contains the collection of {@link Word.CustomProperty} objects.
          *
          * [Api set: WordApi 1.3]
          */
-        
+        export interface CustomPropertyCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the key of the custom property. Read only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            key?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            type?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+             *
+             * [Api set: WordApi 1.3]
+             */
+            value?: boolean;
+        }
         /**
          *
          * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
          *
          * [Api set: WordApi 1.1]
          */
-        
+        export interface DocumentLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
+            *
+            * [Api set: WordApi 1.1]
+            */
+            body?: Word.Interfaces.BodyLoadOptions;
+            /**
+            *
+            * Gets the properties of the document.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
+            /**
+             *
+             * Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this document even if this document is untitled. True to close, false otherwise.
+             *
+             * [Api set: WordApi]
+             */
+            allowCloseOnUntitled?: boolean;
+            /**
+             *
+             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            saved?: boolean;
+        }
         /**
          *
          * The DocumentCreated object is the top level object created by Application.CreateDocument. A DocumentCreated object is a special Document object.
          *
          * [Api set: WordApi 1.3]
          */
-        
+        export interface DocumentCreatedLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
+            *
+            * [Api set: WordApiHiddenDocument 1.3]
+            */
+            body?: Word.Interfaces.BodyLoadOptions;
+            /**
+            *
+            * Gets the properties of the document.
+            *
+            * [Api set: WordApiHiddenDocument 1.3]
+            */
+            properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
+            /**
+             *
+             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+             *
+             * [Api set: WordApiHiddenDocument 1.3]
+             */
+            saved?: boolean;
+        }
         /**
          *
          * Represents document properties.
          *
          * [Api set: WordApi 1.3]
          */
-        
+        export interface DocumentPropertiesLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets the application name of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            applicationName?: boolean;
+            /**
+             *
+             * Gets or sets the author of the document.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            author?: boolean;
+            /**
+             *
+             * Gets or sets the category of the document.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            category?: boolean;
+            /**
+             *
+             * Gets or sets the comments of the document.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            comments?: boolean;
+            /**
+             *
+             * Gets or sets the company of the document.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            company?: boolean;
+            /**
+             *
+             * Gets the creation date of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            creationDate?: boolean;
+            /**
+             *
+             * Gets or sets the format of the document.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            format?: boolean;
+            /**
+             *
+             * Gets or sets the keywords of the document.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            keywords?: boolean;
+            /**
+             *
+             * Gets the last author of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            lastAuthor?: boolean;
+            /**
+             *
+             * Gets the last print date of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            lastPrintDate?: boolean;
+            /**
+             *
+             * Gets the last save time of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            lastSaveTime?: boolean;
+            /**
+             *
+             * Gets or sets the manager of the document.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            manager?: boolean;
+            /**
+             *
+             * Gets the revision number of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            revisionNumber?: boolean;
+            /**
+             *
+             * Gets the security of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            security?: boolean;
+            /**
+             *
+             * Gets or sets the subject of the document.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            subject?: boolean;
+            /**
+             *
+             * Gets the template of the document. Read only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            template?: boolean;
+            /**
+             *
+             * Gets or sets the title of the document.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            title?: boolean;
+        }
         /**
          *
          * Represents a font.
          *
          * [Api set: WordApi 1.1]
          */
-        
+        export interface FontLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            bold?: boolean;
+            /**
+             *
+             * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            color?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            doubleStrikeThrough?: boolean;
+            /**
+             *
+             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            highlightColor?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            italic?: boolean;
+            /**
+             *
+             * Gets or sets a value that represents the name of the font.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Gets or sets a value that represents the font size in points.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            size?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            strikeThrough?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            subscript?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            superscript?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            underline?: boolean;
+        }
         /**
          *
          * Represents an inline picture.
          *
          * [Api set: WordApi 1.1]
          */
-        
+        export interface InlinePictureLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Gets the parent paragraph that contains the inline image.
+            *
+            * [Api set: WordApi 1.2]
+            */
+            paragraph?: Word.Interfaces.ParagraphLoadOptions;
+            /**
+            *
+            * Gets the content control that contains the inline image. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * Gets the table that contains the inline image. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTable?: Word.Interfaces.TableLoadOptions;
+            /**
+            *
+            * Gets the table cell that contains the inline image. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * Gets the table that contains the inline image. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
+            /**
+             *
+             * Gets or sets a string that represents the alternative text associated with the inline image.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            altTextDescription?: boolean;
+            /**
+             *
+             * Gets or sets a string that contains the title for the inline image.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            altTextTitle?: boolean;
+            /**
+             *
+             * Gets or sets a number that describes the height of the inline image.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            height?: boolean;
+            /**
+             *
+             * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            hyperlink?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            lockAspectRatio?: boolean;
+            /**
+             *
+             * Gets or sets a number that describes the width of the inline image.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Contains a collection of {@link Word.InlinePicture} objects.
          *
          * [Api set: WordApi 1.1]
          */
-        
+        export interface InlinePictureCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the parent paragraph that contains the inline image.
+            *
+            * [Api set: WordApi 1.2]
+            */
+            paragraph?: Word.Interfaces.ParagraphLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table that contains the inline image. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTable?: Word.Interfaces.TableLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table that contains the inline image. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the inline image.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            altTextDescription?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets a string that contains the title for the inline image.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            altTextTitle?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets a number that describes the height of the inline image.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            height?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            hyperlink?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            lockAspectRatio?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Contains a collection of {@link Word.Paragraph} objects.
          *
          * [Api set: WordApi 1.3]
          */
-        
+        export interface ListLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets the list's id.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            id?: boolean;
+            /**
+             *
+             * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            levelExistences?: boolean;
+            /**
+             *
+             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            levelTypes?: boolean;
+        }
         /**
          *
          * Contains a collection of {@link Word.List} objects.
          *
          * [Api set: WordApi 1.3]
          */
-        
+        export interface ListCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the list's id.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            levelExistences?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            levelTypes?: boolean;
+        }
         /**
          *
          * Represents the paragraph list item format.
          *
          * [Api set: WordApi 1.3]
          */
-        
+        export interface ListItemLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets or sets the level of the item in the list.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            level?: boolean;
+            /**
+             *
+             * Gets the list item bullet, number, or picture as a string. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            listString?: boolean;
+            /**
+             *
+             * Gets the list item order number in relation to its siblings. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            siblingIndex?: boolean;
+        }
         /**
          *
          * Represents a single paragraph in a selection, range, content control, or document body.
          *
          * [Api set: WordApi 1.1]
          */
-        
+        export interface ParagraphLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+            *
+            * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            list?: Word.Interfaces.ListLoadOptions;
+            /**
+            *
+            * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            listItem?: Word.Interfaces.ListItemLoadOptions;
+            /**
+            *
+            * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            listItemOrNullObject?: Word.Interfaces.ListItemLoadOptions;
+            /**
+            *
+            * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            listOrNullObject?: Word.Interfaces.ListLoadOptions;
+            /**
+            *
+            * Gets the parent body of the paragraph.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentBody?: Word.Interfaces.BodyLoadOptions;
+            /**
+            *
+            * Gets the content control that contains the paragraph. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * Gets the table that contains the paragraph. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTable?: Word.Interfaces.TableLoadOptions;
+            /**
+            *
+            * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
+            /**
+             *
+             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            alignment?: boolean;
+            /**
+             *
+             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            firstLineIndent?: boolean;
+            /**
+             *
+             * Indicates the paragraph is the last one inside its parent body. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            isLastParagraph?: boolean;
+            /**
+             *
+             * Checks whether the paragraph is a list item. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            isListItem?: boolean;
+            /**
+             *
+             * Gets or sets the left indent value, in points, for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            leftIndent?: boolean;
+            /**
+             *
+             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            lineSpacing?: boolean;
+            /**
+             *
+             * Gets or sets the amount of spacing, in grid lines, after the paragraph.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            lineUnitAfter?: boolean;
+            /**
+             *
+             * Gets or sets the amount of spacing, in grid lines, before the paragraph.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            lineUnitBefore?: boolean;
+            /**
+             *
+             * Gets or sets the outline level for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            outlineLevel?: boolean;
+            /**
+             *
+             * Gets or sets the right indent value, in points, for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            rightIndent?: boolean;
+            /**
+             *
+             * Gets or sets the spacing, in points, after the paragraph.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            spaceAfter?: boolean;
+            /**
+             *
+             * Gets or sets the spacing, in points, before the paragraph.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            spaceBefore?: boolean;
+            /**
+             *
+             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            style?: boolean;
+            /**
+             *
+             * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleBuiltIn?: boolean;
+            /**
+             *
+             * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            tableNestingLevel?: boolean;
+            /**
+             *
+             * Gets the text of the paragraph. Read-only.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            text?: boolean;
+        }
         /**
          *
          * Contains a collection of {@link Word.Paragraph} objects.
          *
          * [Api set: WordApi 1.1]
          */
-        
+        export interface ParagraphCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            list?: Word.Interfaces.ListLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            listItem?: Word.Interfaces.ListItemLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            listItemOrNullObject?: Word.Interfaces.ListItemLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            listOrNullObject?: Word.Interfaces.ListLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the parent body of the paragraph.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentBody?: Word.Interfaces.BodyLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTable?: Word.Interfaces.TableLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table that contains the paragraph. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            alignment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            firstLineIndent?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates the paragraph is the last one inside its parent body. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            isLastParagraph?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Checks whether the paragraph is a list item. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            isListItem?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the left indent value, in points, for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            leftIndent?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            lineSpacing?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, after the paragraph.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            lineUnitAfter?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, before the paragraph.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            lineUnitBefore?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the outline level for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            outlineLevel?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the right indent value, in points, for the paragraph.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            rightIndent?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the spacing, in points, after the paragraph.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            spaceAfter?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the spacing, in points, before the paragraph.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            spaceBefore?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            style?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleBuiltIn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            tableNestingLevel?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the text of the paragraph. Read-only.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            text?: boolean;
+        }
         /**
          *
          * Represents a contiguous area in a document.
          *
          * [Api set: WordApi 1.1]
          */
-        
+        export interface RangeLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+            *
+            * Gets the parent body of the range.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentBody?: Word.Interfaces.BodyLoadOptions;
+            /**
+            *
+            * Gets the content control that contains the range. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * Gets the table that contains the range. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTable?: Word.Interfaces.TableLoadOptions;
+            /**
+            *
+            * Gets the table cell that contains the range. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * Gets the table that contains the range. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
+            /**
+             *
+             * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            hyperlink?: boolean;
+            /**
+             *
+             * Checks whether the range length is zero. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            isEmpty?: boolean;
+            /**
+             *
+             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            style?: boolean;
+            /**
+             *
+             * Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleBuiltIn?: boolean;
+            /**
+             *
+             * Gets the text of the range. Read-only.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            text?: boolean;
+        }
         /**
          *
          * Contains a collection of {@link Word.Range} objects.
          *
          * [Api set: WordApi 1.1]
          */
-        
+        export interface RangeCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the parent body of the range.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentBody?: Word.Interfaces.BodyLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the content control that contains the range. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table that contains the range. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTable?: Word.Interfaces.TableLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table cell that contains the range. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table that contains the range. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            hyperlink?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Checks whether the range length is zero. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            isEmpty?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            style?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleBuiltIn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the text of the range. Read-only.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            text?: boolean;
+        }
         /**
          *
          * Specifies the options to be included in a search operation.
          *
          * [Api set: WordApi 1.1]
          */
-        
+        export interface SearchOptionsLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            ignorePunct?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            ignoreSpace?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            matchCase?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            matchPrefix?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            matchSuffix?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            matchWholeWord?: boolean;
+            /**
+             *
+             * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+             *
+             * [Api set: WordApi 1.1]
+             */
+            matchWildcards?: boolean;
+        }
         /**
          *
          * Represents a section in a Word document.
          *
          * [Api set: WordApi 1.1]
          */
-        
+        export interface SectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Gets the body object of the section. This does not include the header/footer and other section metadata.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            body?: Word.Interfaces.BodyLoadOptions;
+        }
         /**
          *
          * Contains the collection of the document's {@link Word.Section} objects.
          *
          * [Api set: WordApi 1.1]
          */
-        
+        export interface SectionCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the body object of the section. This does not include the header/footer and other section metadata.
+            *
+            * [Api set: WordApi 1.1]
+            */
+            body?: Word.Interfaces.BodyLoadOptions;
+        }
         /**
          *
          * Represents a table in a Word document.
          *
          * [Api set: WordApi 1.3]
          */
-        
+        export interface TableLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Gets the font. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+            *
+            * Gets the parent body of the table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentBody?: Word.Interfaces.BodyLoadOptions;
+            /**
+            *
+            * Gets the content control that contains the table. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * Gets the table that contains this table. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTable?: Word.Interfaces.TableLoadOptions;
+            /**
+            *
+            * Gets the table cell that contains this table. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * Gets the table that contains this table. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
+            /**
+             *
+             * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            alignment?: boolean;
+            /**
+             *
+             * Gets and sets the number of header rows.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            headerRowCount?: boolean;
+            /**
+             *
+             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * Indicates whether all of the table rows are uniform. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            isUniform?: boolean;
+            /**
+             *
+             * Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            nestingLevel?: boolean;
+            /**
+             *
+             * Gets the number of rows in the table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            rowCount?: boolean;
+            /**
+             *
+             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            shadingColor?: boolean;
+            /**
+             *
+             * Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            style?: boolean;
+            /**
+             *
+             * Gets and sets whether the table has banded columns.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleBandedColumns?: boolean;
+            /**
+             *
+             * Gets and sets whether the table has banded rows.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleBandedRows?: boolean;
+            /**
+             *
+             * Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleBuiltIn?: boolean;
+            /**
+             *
+             * Gets and sets whether the table has a first column with a special style.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleFirstColumn?: boolean;
+            /**
+             *
+             * Gets and sets whether the table has a last column with a special style.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleLastColumn?: boolean;
+            /**
+             *
+             * Gets and sets whether the table has a total (last) row with a special style.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleTotalRow?: boolean;
+            /**
+             *
+             * Gets and sets the text values in the table, as a 2D Javascript array.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            values?: boolean;
+            /**
+             *
+             * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * Gets and sets the width of the table in points.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Contains the collection of the document's Table objects.
          *
          * [Api set: WordApi 1.3]
          */
-        
+        export interface TableCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the font. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the parent body of the table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentBody?: Word.Interfaces.BodyLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the content control that contains the table. Throws if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table that contains this table. Throws if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTable?: Word.Interfaces.TableLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table cell that contains this table. Throws if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the table that contains this table. Returns a null object if it is not contained in a table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            alignment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the number of header rows.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            headerRowCount?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Indicates whether all of the table rows are uniform. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            isUniform?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            nestingLevel?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the number of rows in the table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            rowCount?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            shadingColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            style?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets whether the table has banded columns.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleBandedColumns?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets whether the table has banded rows.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleBandedRows?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleBuiltIn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets whether the table has a first column with a special style.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleFirstColumn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets whether the table has a last column with a special style.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleLastColumn?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets whether the table has a total (last) row with a special style.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            styleTotalRow?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the text values in the table, as a 2D Javascript array.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            values?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the width of the table in points.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Represents a row in a Word document.
          *
          * [Api set: WordApi 1.3]
          */
-        
+        export interface TableRowLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Gets the font. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+            *
+            * Gets parent table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTable?: Word.Interfaces.TableLoadOptions;
+            /**
+             *
+             * Gets the number of cells in the row. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            cellCount?: boolean;
+            /**
+             *
+             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            isHeader?: boolean;
+            /**
+             *
+             * Gets and sets the preferred height of the row in points.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            preferredHeight?: boolean;
+            /**
+             *
+             * Gets the index of the row in its parent table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            rowIndex?: boolean;
+            /**
+             *
+             * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            shadingColor?: boolean;
+            /**
+             *
+             * Gets and sets the text values in the row, as a 2D Javascript array.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            values?: boolean;
+            /**
+             *
+             * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            verticalAlignment?: boolean;
+        }
         /**
          *
          * Contains the collection of the document's TableRow objects.
          *
          * [Api set: WordApi 1.3]
          */
-        
+        export interface TableRowCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the font. Use this to get and set font name, size, color, and other properties.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets parent table.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTable?: Word.Interfaces.TableLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the number of cells in the row. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            cellCount?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            isHeader?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the preferred height of the row in points.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            preferredHeight?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the index of the row in its parent table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            rowIndex?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            shadingColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the text values in the row, as a 2D Javascript array.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            values?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            verticalAlignment?: boolean;
+        }
         /**
          *
          * Represents a table cell in a Word document.
          *
          * [Api set: WordApi 1.3]
          */
-        
+        export interface TableCellLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Gets the body object of the cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            body?: Word.Interfaces.BodyLoadOptions;
+            /**
+            *
+            * Gets the parent row of the cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentRow?: Word.Interfaces.TableRowLoadOptions;
+            /**
+            *
+            * Gets the parent table of the cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTable?: Word.Interfaces.TableLoadOptions;
+            /**
+             *
+             * Gets the index of the cell in its row. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            cellIndex?: boolean;
+            /**
+             *
+             * Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            columnWidth?: boolean;
+            /**
+             *
+             * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * Gets the index of the cell's row in the table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            rowIndex?: boolean;
+            /**
+             *
+             * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            shadingColor?: boolean;
+            /**
+             *
+             * Gets and sets the text of the cell.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            value?: boolean;
+            /**
+             *
+             * Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * Gets the width of the cell in points. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Contains the collection of the document's TableCell objects.
          *
          * [Api set: WordApi 1.3]
          */
-        
+        export interface TableCellCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the body object of the cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            body?: Word.Interfaces.BodyLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the parent row of the cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentRow?: Word.Interfaces.TableRowLoadOptions;
+            /**
+            *
+            * For EACH ITEM in the collection: Gets the parent table of the cell.
+            *
+            * [Api set: WordApi 1.3]
+            */
+            parentTable?: Word.Interfaces.TableLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            cellIndex?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            columnWidth?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            horizontalAlignment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the index of the cell's row in the table. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            rowIndex?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            shadingColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the text of the cell.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            value?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            verticalAlignment?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the width of the cell in points. Read-only.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            width?: boolean;
+        }
         /**
          *
          * Specifies the border style.
          *
          * [Api set: WordApi 1.3]
          */
-        
+        export interface TableBorderLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets or sets the table border color.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            color?: boolean;
+            /**
+             *
+             * Gets or sets the type of the table border.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            type?: boolean;
+            /**
+             *
+             * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths.
+             *
+             * [Api set: WordApi 1.3]
+             */
+            width?: boolean;
+        }
     }
 }
 export declare namespace Word {

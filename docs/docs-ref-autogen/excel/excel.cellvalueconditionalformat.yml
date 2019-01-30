@@ -18,6 +18,7 @@ items:
       - excel.Excel.CellValueConditionalFormat.format
       - excel.Excel.CellValueConditionalFormat.load
       - excel.Excel.CellValueConditionalFormat.load_1
+      - excel.Excel.CellValueConditionalFormat.load_2
       - excel.Excel.CellValueConditionalFormat.rule
       - excel.Excel.CellValueConditionalFormat.toJSON
   - uid: excel.Excel.CellValueConditionalFormat.context
@@ -73,6 +74,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.CellValueConditionalFormat` - Where option is a comma-delimited string or
+      an array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.CellValueConditionalFormat` - Where option.select is
       a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string
       that specifies the navigation properties to load.
@@ -89,6 +94,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.CellValueConditionalFormatLoadOptions): Excel.CellValueConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.CellValueConditionalFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions
+  - uid: excel.Excel.CellValueConditionalFormat.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.CellValueConditionalFormat;'
       return:
         type:
@@ -96,10 +118,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.CellValueConditionalFormat.load_1
+  - uid: excel.Excel.CellValueConditionalFormat.load_2
     name: load(option)
     fullName: load(option)
     langs:

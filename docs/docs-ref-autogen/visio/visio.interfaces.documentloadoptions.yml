@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.DocumentLoadOptions
+    summary: |-
+      Represents the Document class.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: Visio.Interfaces.DocumentLoadOptions
+    fullName: Visio.Interfaces.DocumentLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.DocumentLoadOptions.$all
+      - visio.Visio.Interfaces.DocumentLoadOptions.application
+      - visio.Visio.Interfaces.DocumentLoadOptions.view
+  - uid: visio.Visio.Interfaces.DocumentLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.DocumentLoadOptions.application
+    summary: |-
+      Represents a Visio application instance that contains this document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: application
+    fullName: application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'application?: Visio.Interfaces.ApplicationLoadOptions;'
+      return:
+        type:
+          - Visio.Interfaces.ApplicationLoadOptions
+  - uid: visio.Visio.Interfaces.DocumentLoadOptions.view
+    summary: |-
+      Returns the DocumentView object.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: view
+    fullName: view
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'view?: Visio.Interfaces.DocumentViewLoadOptions;'
+      return:
+        type:
+          - visio.Visio.Interfaces.DocumentViewLoadOptions

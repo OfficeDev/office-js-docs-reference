@@ -20,6 +20,7 @@ items:
       - excel.Excel.ChartBorder.lineStyle
       - excel.Excel.ChartBorder.load
       - excel.Excel.ChartBorder.load_1
+      - excel.Excel.ChartBorder.load_2
       - excel.Excel.ChartBorder.toJSON
       - excel.Excel.ChartBorder.weight
   - uid: excel.Excel.ChartBorder.clear
@@ -94,6 +95,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartBorder` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartBorder` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -110,6 +115,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.ChartBorderLoadOptions): Excel.ChartBorder;'
+      return:
+        type:
+          - excel.Excel.ChartBorder
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ChartBorderLoadOptions
+  - uid: excel.Excel.ChartBorder.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.ChartBorder;'
       return:
         type:
@@ -117,10 +139,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartBorder.load_1
+  - uid: excel.Excel.ChartBorder.load_2
     name: load(option)
     fullName: load(option)
     langs:

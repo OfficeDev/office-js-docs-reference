@@ -20,6 +20,7 @@ items:
       - excel.Excel.ChartTitleFormat.font
       - excel.Excel.ChartTitleFormat.load
       - excel.Excel.ChartTitleFormat.load_1
+      - excel.Excel.ChartTitleFormat.load_2
       - excel.Excel.ChartTitleFormat.toJSON
   - uid: excel.Excel.ChartTitleFormat.border
     summary: |-
@@ -88,6 +89,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartTitleFormat` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartTitleFormat` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -104,6 +109,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.ChartTitleFormatLoadOptions): Excel.ChartTitleFormat;'
+      return:
+        type:
+          - excel.Excel.ChartTitleFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ChartTitleFormatLoadOptions
+  - uid: excel.Excel.ChartTitleFormat.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.ChartTitleFormat;'
       return:
         type:
@@ -111,10 +133,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartTitleFormat.load_1
+  - uid: excel.Excel.ChartTitleFormat.load_2
     name: load(option)
     fullName: load(option)
     langs:

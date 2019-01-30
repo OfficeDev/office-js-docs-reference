@@ -19,6 +19,7 @@ items:
       - excel.Excel.ConditionalRangeFill.context
       - excel.Excel.ConditionalRangeFill.load
       - excel.Excel.ConditionalRangeFill.load_1
+      - excel.Excel.ConditionalRangeFill.load_2
       - excel.Excel.ConditionalRangeFill.toJSON
   - uid: excel.Excel.ConditionalRangeFill.clear
     summary: |-
@@ -75,6 +76,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ConditionalRangeFill` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFill` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -91,6 +96,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.ConditionalRangeFillLoadOptions): Excel.ConditionalRangeFill;'
+      return:
+        type:
+          - excel.Excel.ConditionalRangeFill
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ConditionalRangeFillLoadOptions
+  - uid: excel.Excel.ConditionalRangeFill.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.ConditionalRangeFill;'
       return:
         type:
@@ -98,10 +120,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ConditionalRangeFill.load_1
+  - uid: excel.Excel.ConditionalRangeFill.load_2
     name: load(option)
     fullName: load(option)
     langs:

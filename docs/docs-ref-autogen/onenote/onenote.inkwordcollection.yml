@@ -21,6 +21,7 @@ items:
       - onenote.OneNote.InkWordCollection.items
       - onenote.OneNote.InkWordCollection.load
       - onenote.OneNote.InkWordCollection.load_1
+      - onenote.OneNote.InkWordCollection.load_2
       - onenote.OneNote.InkWordCollection.toJSON
       - onenote.OneNote.InkWordCollection.track
       - onenote.OneNote.InkWordCollection.untrack
@@ -115,6 +116,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.InkWordCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.InkWordCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -131,6 +136,25 @@ items:
       - typeScript
     type: method
     syntax:
+      content: >-
+        load(option?: OneNote.Interfaces.InkWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
+        OneNote.InkWordCollection;
+      return:
+        type:
+          - onenote.OneNote.InkWordCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - OneNote.Interfaces.InkWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+  - uid: onenote.OneNote.InkWordCollection.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): OneNote.InkWordCollection;'
       return:
         type:
@@ -138,10 +162,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.InkWordCollection.load_1
+  - uid: onenote.OneNote.InkWordCollection.load_2
     name: load(option)
     fullName: load(option)
     langs:

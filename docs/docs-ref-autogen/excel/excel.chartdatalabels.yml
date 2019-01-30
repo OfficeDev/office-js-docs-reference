@@ -20,6 +20,7 @@ items:
       - excel.Excel.ChartDataLabels.horizontalAlignment
       - excel.Excel.ChartDataLabels.load
       - excel.Excel.ChartDataLabels.load_1
+      - excel.Excel.ChartDataLabels.load_2
       - excel.Excel.ChartDataLabels.numberFormat
       - excel.Excel.ChartDataLabels.position
       - excel.Excel.ChartDataLabels.separator
@@ -103,6 +104,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartDataLabels` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabels` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -143,6 +148,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.ChartDataLabelsLoadOptions): Excel.ChartDataLabels;'
+      return:
+        type:
+          - excel.Excel.ChartDataLabels
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
+  - uid: excel.Excel.ChartDataLabels.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.ChartDataLabels;'
       return:
         type:
@@ -150,10 +172,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartDataLabels.load_1
+  - uid: excel.Excel.ChartDataLabels.load_2
     name: load(option)
     fullName: load(option)
     langs:

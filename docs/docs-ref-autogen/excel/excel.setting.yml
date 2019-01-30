@@ -23,6 +23,7 @@ items:
       - excel.Excel.Setting.key
       - excel.Excel.Setting.load
       - excel.Excel.Setting.load_1
+      - excel.Excel.Setting.load_2
       - excel.Excel.Setting.toJSON
       - excel.Excel.Setting.value
   - uid: excel.Excel.Setting.context
@@ -99,6 +100,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Setting` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Setting` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -115,6 +120,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.SettingLoadOptions): Excel.Setting;'
+      return:
+        type:
+          - excel.Excel.Setting
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.SettingLoadOptions
+  - uid: excel.Excel.Setting.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.Setting;'
       return:
         type:
@@ -122,10 +144,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Setting.load_1
+  - uid: excel.Excel.Setting.load_2
     name: load(option)
     fullName: load(option)
     langs:

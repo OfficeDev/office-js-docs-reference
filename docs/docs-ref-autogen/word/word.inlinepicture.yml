@@ -42,6 +42,7 @@ items:
       - word.Word.InlinePicture.insertText_1
       - word.Word.InlinePicture.load
       - word.Word.InlinePicture.load_1
+      - word.Word.InlinePicture.load_2
       - word.Word.InlinePicture.lockAspectRatio
       - word.Word.InlinePicture.paragraph
       - word.Word.InlinePicture.parentContentControl
@@ -707,6 +708,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.InlinePicture` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.InlinePicture` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -723,6 +728,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Word.Interfaces.InlinePictureLoadOptions): Word.InlinePicture;'
+      return:
+        type:
+          - word.Word.InlinePicture
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - word.Word.Interfaces.InlinePictureLoadOptions
+  - uid: word.Word.InlinePicture.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Word.InlinePicture;'
       return:
         type:
@@ -730,10 +752,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: word.Word.InlinePicture.load_1
+  - uid: word.Word.InlinePicture.load_2
     name: load(option)
     fullName: load(option)
     langs:

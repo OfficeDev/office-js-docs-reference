@@ -24,6 +24,7 @@ items:
       - excel.Excel.RangeView.index
       - excel.Excel.RangeView.load
       - excel.Excel.RangeView.load_1
+      - excel.Excel.RangeView.load_2
       - excel.Excel.RangeView.numberFormat
       - excel.Excel.RangeView.rowCount
       - excel.Excel.RangeView.rows
@@ -161,6 +162,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.RangeView` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.RangeView` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -177,6 +182,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.RangeViewLoadOptions): Excel.RangeView;'
+      return:
+        type:
+          - excel.Excel.RangeView
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.RangeViewLoadOptions
+  - uid: excel.Excel.RangeView.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.RangeView;'
       return:
         type:
@@ -184,10 +206,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.RangeView.load_1
+  - uid: excel.Excel.RangeView.load_2
     name: load(option)
     fullName: load(option)
     langs:

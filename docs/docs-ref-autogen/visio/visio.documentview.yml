@@ -20,6 +20,7 @@ items:
       - visio.Visio.DocumentView.hideDiagramBoundary
       - visio.Visio.DocumentView.load
       - visio.Visio.DocumentView.load_1
+      - visio.Visio.DocumentView.load_2
       - visio.Visio.DocumentView.toJSON
   - uid: visio.Visio.DocumentView.disableHyperlinks
     summary: |-
@@ -89,6 +90,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.DocumentView` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.DocumentView` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -105,6 +110,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Visio.Interfaces.DocumentViewLoadOptions): Visio.DocumentView;'
+      return:
+        type:
+          - visio.Visio.DocumentView
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - visio.Visio.Interfaces.DocumentViewLoadOptions
+  - uid: visio.Visio.DocumentView.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Visio.DocumentView;'
       return:
         type:
@@ -112,10 +134,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: visio.Visio.DocumentView.load_1
+  - uid: visio.Visio.DocumentView.load_2
     name: load(option)
     fullName: load(option)
     langs:

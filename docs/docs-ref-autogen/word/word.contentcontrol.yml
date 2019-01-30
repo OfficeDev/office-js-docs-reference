@@ -52,6 +52,7 @@ items:
       - word.Word.ContentControl.lists
       - word.Word.ContentControl.load
       - word.Word.ContentControl.load_1
+      - word.Word.ContentControl.load_2
       - word.Word.ContentControl.paragraphs
       - word.Word.ContentControl.parentBody
       - word.Word.ContentControl.parentContentControl
@@ -1239,6 +1240,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.ContentControl` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.ContentControl` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -1365,6 +1370,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Word.Interfaces.ContentControlLoadOptions): Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - word.Word.Interfaces.ContentControlLoadOptions
+  - uid: word.Word.ContentControl.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Word.ContentControl;'
       return:
         type:
@@ -1372,10 +1394,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: word.Word.ContentControl.load_1
+  - uid: word.Word.ContentControl.load_2
     name: load(option)
     fullName: load(option)
     langs:

@@ -34,6 +34,7 @@ items:
       - excel.Excel.Worksheet.id
       - excel.Excel.Worksheet.load
       - excel.Excel.Worksheet.load_1
+      - excel.Excel.Worksheet.load_2
       - excel.Excel.Worksheet.name
       - excel.Excel.Worksheet.names
       - excel.Excel.Worksheet.onActivated
@@ -629,6 +630,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Worksheet` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Worksheet` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -686,6 +691,23 @@ items:
       - typeScript
     type: method
     syntax:
+      content: 'load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;'
+      return:
+        type:
+          - excel.Excel.Worksheet
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.WorksheetLoadOptions
+  - uid: excel.Excel.Worksheet.load_1
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
       content: 'load(option?: string | string[]): Excel.Worksheet;'
       return:
         type:
@@ -693,10 +715,10 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Worksheet.load_1
+  - uid: excel.Excel.Worksheet.load_2
     name: load(option)
     fullName: load(option)
     langs:
