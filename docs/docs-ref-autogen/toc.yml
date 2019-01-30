@@ -13,8 +13,16 @@ items:
                 items:
                   - name: CancelableHandler
                     uid: custom-functions-runtime.CustomFunctions.CancelableHandler
+                  - name: CancelableInvocation
+                    uid: >-
+                      custom-functions-runtime.CustomFunctions.CancelableInvocation
+                  - name: Invocation
+                    uid: custom-functions-runtime.CustomFunctions.Invocation
                   - name: StreamingHandler
                     uid: custom-functions-runtime.CustomFunctions.StreamingHandler
+                  - name: StreamingInvocation
+                    uid: >-
+                      custom-functions-runtime.CustomFunctions.StreamingInvocation
               - name: Office runtime
                 uid: office-runtime
                 items:

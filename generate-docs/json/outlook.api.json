@@ -29954,7 +29954,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies an appointment's location type."
+                  "text": "Specifies an appointment location's type."
                 },
                 {
                   "kind": "paragraph"

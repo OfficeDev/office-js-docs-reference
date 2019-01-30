@@ -2,7 +2,7 @@
 items:
   - uid: outlook.Office.MailboxEnums.LocationType
     summary: |-
-      Specifies an appointment's location type.
+      Specifies an appointment location's type.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
