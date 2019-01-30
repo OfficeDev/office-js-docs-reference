@@ -2785,7 +2785,7 @@ Office.Auth.getAccessTokenAsync:
             console.log("Error obtaining token", result.error);
         }
     });
-Office.Binding.addHandlerAsync:
+Office.Binding.addHandlerAsync_1:
   - >-
     // The following code sample calls the select method of the Office object to
     access the binding
@@ -2968,7 +2968,7 @@ Office.Binding.document:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.getDataAsync:
+Office.Binding.getDataAsync_1:
   - >-
     function showBindingData() {
         Office.select("bindings#MyBinding").getDataAsync(function (asyncResult) {
@@ -3068,13 +3068,13 @@ Office.Binding.id:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.removeHandlerAsync:
+Office.Binding.removeHandlerAsync_1:
   - |-
     function removeEventHandlerFromBinding() {
         Office.select("bindings#MyBinding").removeHandlerAsync(
             Office.EventType.BindingDataChanged, {handler:onBindingDataChanged});
     }
-Office.Binding.setDataAsync:
+Office.Binding.setDataAsync_1:
   - >-
     function setBindingData() {
         Office.select("bindings#MyBinding").setDataAsync('Hello World!', function (asyncResult) { });
@@ -3308,7 +3308,7 @@ Office.Bindings.addFromSelectionAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Bindings.getAllAsync:
+Office.Bindings.getAllAsync_1:
   - |-
     function displayAllBindingNames() {
         Office.context.document.bindings.getAllAsync(function (asyncResult) {
@@ -3323,7 +3323,7 @@ Office.Bindings.getAllAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Bindings.getByIdAsync:
+Office.Bindings.getByIdAsync_1:
   - |-
     function displayBindingType() {
         Office.context.document.bindings.getByIdAsync('MyBinding', function (asyncResult) {
@@ -3334,7 +3334,7 @@ Office.Bindings.getByIdAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Bindings.releaseByIdAsync:
+Office.Bindings.releaseByIdAsync_1:
   - >-
     Office.context.document.bindings.releaseByIdAsync("MyBinding", function
     (asyncResult) { 
@@ -3445,7 +3445,7 @@ Office.CustomXmlNode.baseName:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlNode.getNodesAsync:
+Office.CustomXmlNode.getNodesAsync_1:
   - |-
     function showXmlChildNodes() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -3465,7 +3465,7 @@ Office.CustomXmlNode.getNodesAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlNode.getNodeValueAsync:
+Office.CustomXmlNode.getNodeValueAsync_1:
   - |-
     function showXmlNodeValues() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -3522,7 +3522,7 @@ Office.CustomXmlNode.getTextAsync:
             });
         });
     });
-Office.CustomXmlNode.getXmlAsync:
+Office.CustomXmlNode.getXmlAsync_1:
   - |-
     function showXmlNodeInnerXml() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -3578,7 +3578,7 @@ Office.CustomXmlNode.nodeType:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlNode.setNodeValueAsync:
+Office.CustomXmlNode.setNodeValueAsync_1:
   - |-
     function setXmlNodeValue() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -3588,7 +3588,7 @@ Office.CustomXmlNode.setNodeValueAsync:
                 for (i = 0; i < nodeResults.value.length; i++) {
                     var node = nodeResults.value[i];
                     write(node);
-                    node.setNodeValueAsync("item number" + i, {}, function (result) { });
+                    node.setNodeValueAsync("item number" + i, function (result) { });
                 }
             });
         });
@@ -3657,7 +3657,7 @@ Office.CustomXmlNode.setXmlAsync:
             });
         });
     }
-Office.CustomXmlPart.addHandlerAsync:
+Office.CustomXmlPart.addHandlerAsync_1:
   - >-
     // To add an event handler for the NodeDeleted event, use the
     addHandlerAsync method of the CustomXmlPart object.
@@ -3729,7 +3729,7 @@ Office.CustomXmlPart.builtIn:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlPart.deleteAsync:
+Office.CustomXmlPart.deleteAsync_1:
   - |-
     function deleteXMLPart() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -3744,7 +3744,7 @@ Office.CustomXmlPart.deleteAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlPart.getNodesAsync:
+Office.CustomXmlPart.getNodesAsync_1:
   - |-
     function showXmlNodeType() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -3762,13 +3762,13 @@ Office.CustomXmlPart.getNodesAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlPart.getXmlAsync:
+Office.CustomXmlPart.getXmlAsync_1:
   - |-
     function showXMLPartInnerXML() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
-            xmlPart.getXmlAsync({}, function (eventArgs) {
+            xmlPart.getXmlAsync(function (eventArgs) {
                 write(eventArgs.value);
             });
         });
@@ -3799,7 +3799,7 @@ Office.CustomXmlPart.namespaceManager:
             xmlPart.namespaceManager.addNamespaceAsync("myPrefix", "myNamespace");
         });
     }
-Office.CustomXmlPart.removeHandlerAsync:
+Office.CustomXmlPart.removeHandlerAsync_1:
   - |-
     function removeNodeInsertedEventHandler() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -3809,7 +3809,7 @@ Office.CustomXmlPart.removeHandlerAsync:
                 xmlPart.removeHandlerAsync(Office.EventType.DataNodeInserted, {handler:myHandler});
         });
     }
-Office.CustomXmlParts.addAsync:
+Office.CustomXmlParts.addAsync_1:
   - |-
     function addXMLPart() {
         Office.context.document.customXmlParts.addAsync(
@@ -3847,7 +3847,7 @@ Office.CustomXmlParts.getByIdAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlParts.getByNamespaceAsync:
+Office.CustomXmlParts.getByNamespaceAsync_1:
   - |-
     function showXMLPartsInNamespace() {
         Office.context.document.customXmlParts.getByNamespaceAsync(
@@ -3860,7 +3860,7 @@ Office.CustomXmlParts.getByNamespaceAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Document.addHandlerAsync:
+Office.Document.addHandlerAsync_1:
   - >-
     // The following example adds an event handler for the SelectionChanged
     event of a document
@@ -4180,7 +4180,7 @@ Office.Document.customXmlParts:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Document.getActiveViewAsync:
+Office.Document.getActiveViewAsync_1:
   - |-
     function getFileView() {
         // Get whether the current view is edit or read.
@@ -4287,7 +4287,7 @@ Office.Document.getFileAsync:
     }
 
     );
-Office.Document.getFilePropertiesAsync:
+Office.Document.getFilePropertiesAsync_1:
   - >-
     // To read the URL of the current file, you need to write a callback
     function that returns the URL.
@@ -4429,7 +4429,7 @@ Office.Document.getSelectedDataAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.goToByIdAsync:
+Office.Document.goToByIdAsync_1:
   - >-
     // Go to a binding by id (Word and Excel)
 
@@ -4622,7 +4622,7 @@ Office.Document.mode:
             $('#message').html(output);
         }
     })();
-Office.Document.removeHandlerAsync:
+Office.Document.removeHandlerAsync_1:
   - |-
     // The following example removes the event handler named 'MyHandler'.
     function removeSelectionChangedEventHandler() {
@@ -4972,7 +4972,7 @@ Office.OfficeTheme:
         // Apply body background color to a CSS class.
         $('.body').css('background-color', bodyBackgroundColor);
     }
-Office.Document.getMaxResourceIndexAsync:
+Office.Document.getMaxResourceIndexAsync_1:
   - >-
     // The following code example calls getResourceTaskIndexAsync to get the
     maximum index of the collection 
@@ -5059,7 +5059,7 @@ Office.Document.getMaxResourceIndexAsync:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getMaxTaskIndexAsync:
+Office.Document.getMaxTaskIndexAsync_1:
   - >-
     // The following code example calls getMaxTaskIndexAsync to get the maximum
     index
@@ -5146,7 +5146,7 @@ Office.Document.getMaxTaskIndexAsync:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getProjectFieldAsync:
+Office.Document.getProjectFieldAsync_1:
   - >-
     // The following code example gets the values of three specified fields for
     the active project, 
@@ -5220,7 +5220,7 @@ Office.Document.getProjectFieldAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getResourceByIndexAsync:
+Office.Document.getResourceByIndexAsync_1:
   - >-
     // The following code example calls getMaxResourceIndexAsync to get the
     maximum index in the project's resource
@@ -5306,7 +5306,7 @@ Office.Document.getResourceByIndexAsync:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getResourceFieldAsync:
+Office.Document.getResourceFieldAsync_1:
   - >-
     // The following code example calls getSelectedResourceAsync to get the GUID
     of the resource
@@ -5406,7 +5406,7 @@ Office.Document.getResourceFieldAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getSelectedResourceAsync:
+Office.Document.getSelectedResourceAsync_1:
   - >-
     // The following code example calls getSelectedResourceAsync to get the GUID
     of the resource that's 
@@ -5506,7 +5506,7 @@ Office.Document.getSelectedResourceAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getSelectedTaskAsync:
+Office.Document.getSelectedTaskAsync_1:
   - >-
     // The following code example calls getSelectedTaskAsync to get the GUID of
     the task that's currently
@@ -5584,7 +5584,7 @@ Office.Document.getSelectedTaskAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getSelectedViewAsync:
+Office.Document.getSelectedViewAsync_1:
   - >-
     // The following code example calls adds a ViewSelectionChanged event
     handler that
@@ -5637,7 +5637,7 @@ Office.Document.getSelectedViewAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getTaskAsync:
+Office.Document.getTaskAsync_1:
   - >-
     // The following code example calls getSelectedTaskAsync to get the task
     GUID of the currently
@@ -5717,7 +5717,7 @@ Office.Document.getTaskAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getTaskByIndexAsync:
+Office.Document.getTaskByIndexAsync_1:
   - |-
     // The following code example calls getMaxTaskIndexAsync to get the
     // maximum index in the project's task collection, and then
@@ -5795,7 +5795,7 @@ Office.Document.getTaskByIndexAsync:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getTaskFieldAsync:
+Office.Document.getTaskFieldAsync_1:
   - >-
     // The following code example calls getSelectedTaskAsync to get the GUID of
     the task that's currently
@@ -5890,7 +5890,7 @@ Office.Document.getTaskFieldAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.setResourceFieldAsync:
+Office.Document.setResourceFieldAsync_1:
   - >-
     // The following code example calls getSelectedResourceAsync to get the GUID
     of the resource that's
@@ -5985,7 +5985,7 @@ Office.Document.setResourceFieldAsync:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.setTaskFieldAsync:
+Office.Document.setTaskFieldAsync_1:
   - >-
     // The following code example calls getSelectedTaskAsync to get the GUID of
     the task that's
@@ -6096,7 +6096,7 @@ Office.select:
             doSomethingWithBinding(eventArgs.binding);
         });
     }
-Office.Settings.addHandlerAsync:
+Office.Settings.addHandlerAsync_1:
   - |-
     function addSelectionChangedEventHandler() {
         Office.context.document.settings.addHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
@@ -6120,7 +6120,7 @@ Office.Settings.get:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Settings.refreshAsync:
+Office.Settings.refreshAsync_1:
   - |-
     function refreshSettings() {
         Office.context.document.settings.refreshAsync(function (asyncResult) {
@@ -6136,7 +6136,7 @@ Office.Settings.remove:
     function removeMySetting() {
         Office.context.document.settings.remove('mySetting');
     }
-Office.Settings.removeHandlerAsync:
+Office.Settings.removeHandlerAsync_1:
   - |-
     function removeSettingsChangedEventHandler() {
         Office.context.document.settings.removeHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
@@ -6151,7 +6151,7 @@ Office.Settings.removeHandlerAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Settings.saveAsync:
+Office.Settings.saveAsync_1:
   - |-
     function persistSettings() {
         Office.context.document.settings.saveAsync(function (asyncResult) {

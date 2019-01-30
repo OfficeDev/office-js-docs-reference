@@ -46,30 +46,7 @@ items:
       - office.Office.CustomXmlNode.nodeType
   - uid: office.Office.CustomXmlNode.getNodesAsync
     summary: Gets the nodes associated with the XPath expression.
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-      #### Examples
-
-      ```javascript
-      function showXmlChildNodes() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              var xmlPart = result.value;
-              xmlPart.getNodesAsync('*', function (nodeResults) {
-                  for (i = 0; i < nodeResults.value.length; i++) {
-                      var node = nodeResults.value[i];
-                      node.getNodesAsync('*', function (nodeResults) {
-                          write(nodeResults.value.length + " childNodes");
-                      });
-                  }
-              });
-          });
-      }
-      // Function that writes to a div with id='message' on the page.
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-      ```
+    remarks: <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     name: 'getNodesAsync(xPath, options, callback)'
     fullName: 'getNodesAsync(xPath, options, callback)'
     langs:
@@ -111,7 +88,30 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          function showXmlChildNodes() {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+                  var xmlPart = result.value;
+                  xmlPart.getNodesAsync('*', function (nodeResults) {
+                      for (i = 0; i < nodeResults.value.length; i++) {
+                          var node = nodeResults.value[i];
+                          node.getNodesAsync('*', function (nodeResults) {
+                              write(nodeResults.value.length + " childNodes");
+                          });
+                      }
+                  });
+              });
+          }
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
       parameters:
         - id: xPath
           description: ''
@@ -123,30 +123,7 @@ items:
             - '(result: AsyncResult<CustomXmlNode[]>) => void'
   - uid: office.Office.CustomXmlNode.getNodeValueAsync
     summary: Gets the node value.
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-      #### Examples
-
-      ```javascript
-      function showXmlNodeValues() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              var xmlPart = result.value;
-              xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                  for (i = 0; i < nodeResults.value.length; i++) {
-                      var node = nodeResults.value[i];
-                      node.getNodeValueAsync(function (asyncResult) {
-                          write(asyncResult.value);
-                      });
-                  }
-              });
-          });
-      }
-      // Function that writes to a div with id='message' on the page.
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-      ```
+    remarks: <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     name: 'getNodeValueAsync(options, callback)'
     fullName: 'getNodeValueAsync(options, callback)'
     langs:
@@ -181,7 +158,30 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          function showXmlNodeValues() {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+                  var xmlPart = result.value;
+                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                      for (i = 0; i < nodeResults.value.length; i++) {
+                          var node = nodeResults.value[i];
+                          node.getNodeValueAsync(function (asyncResult) {
+                              write(asyncResult.value);
+                          });
+                      }
+                  });
+              });
+          }
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
       parameters:
         - id: callback
           description: ''
@@ -270,30 +270,7 @@ items:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.CustomXmlNode.getXmlAsync
     summary: Gets the node's XML.
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-      #### Examples
-
-      ```javascript
-      function showXmlNodeInnerXml() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              var xmlPart = result.value;
-              xmlPart.getNodesAsync('*', function (nodeResults) {
-                  for (i = 0; i < nodeResults.value.length; i++) {
-                      var node = nodeResults.value[i];
-                      node.getXmlAsync(function (asyncResult) {
-                          write(asyncResult.value);
-                      });
-                  }
-              });
-          });
-      }
-      // Function that writes to a div with id='message' on the page.
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-      ```
+    remarks: <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     name: 'getXmlAsync(options, callback)'
     fullName: 'getXmlAsync(options, callback)'
     langs:
@@ -328,7 +305,30 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          function showXmlNodeInnerXml() {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+                  var xmlPart = result.value;
+                  xmlPart.getNodesAsync('*', function (nodeResults) {
+                      for (i = 0; i < nodeResults.value.length; i++) {
+                          var node = nodeResults.value[i];
+                          node.getXmlAsync(function (asyncResult) {
+                              write(asyncResult.value);
+                          });
+                      }
+                  });
+              });
+          }
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
       parameters:
         - id: callback
           description: ''
@@ -336,29 +336,7 @@ items:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.CustomXmlNode.setNodeValueAsync
     summary: Sets the node value.
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-      #### Examples
-
-      ```javascript
-      function setXmlNodeValue() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              var xmlPart = result.value;
-              xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                  for (i = 0; i < nodeResults.value.length; i++) {
-                      var node = nodeResults.value[i];
-                      write(node);
-                      node.setNodeValueAsync("item number" + i, {}, function (result) { });
-                  }
-              });
-          });
-      }
-      // Function that writes to a div with id='message' on the page.
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-      ```
+    remarks: <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     name: 'setNodeValueAsync(value, options, callback)'
     fullName: 'setNodeValueAsync(value, options, callback)'
     langs:
@@ -398,7 +376,29 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          function setXmlNodeValue() {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+                  var xmlPart = result.value;
+                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                      for (i = 0; i < nodeResults.value.length; i++) {
+                          var node = nodeResults.value[i];
+                          write(node);
+                          node.setNodeValueAsync("item number" + i, function (result) { });
+                      }
+                  });
+              });
+          }
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
       parameters:
         - id: value
           description: ''

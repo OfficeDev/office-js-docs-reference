@@ -47,33 +47,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          function addXMLPart() {
-              Office.context.document.customXmlParts.addAsync(
-                  '<root categoryId="1" xmlns="http://tempuri.org"><item name="Cheap Item" price="$193.95"/><item name="Expensive Item" price="$931.88"/></root>',
-                  function (result) {});
-          }
-
-          function addXMLPartandHandler() {
-              Office.context.document.customXmlParts.addAsync(
-                  "<testns:book xmlns:testns='http://testns.com'><testns:page number='1'>Hello</testns:page><testns:page number='2'>world!</testns:page></testns:book>",
-                  function(r) { r.value.addHandlerAsync(Office.EventType.DataNodeDeleted,
-                      function(a) {write(a.type)
-                      },
-                          function(s) {write(s.status)
-                          });
-                  });
-          }
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message;
-          }
-          ```
+        description: ''
       parameters:
         - id: xml
           description: The XML to add to the newly created custom XML part.
@@ -101,7 +75,33 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          function addXMLPart() {
+              Office.context.document.customXmlParts.addAsync(
+                  '<root categoryId="1" xmlns="http://tempuri.org"><item name="Cheap Item" price="$193.95"/><item name="Expensive Item" price="$931.88"/></root>',
+                  function (result) {});
+          }
+
+          function addXMLPartandHandler() {
+              Office.context.document.customXmlParts.addAsync(
+                  "<testns:book xmlns:testns='http://testns.com'><testns:page number='1'>Hello</testns:page><testns:page number='2'>world!</testns:page></testns:book>",
+                  function(r) { r.value.addHandlerAsync(Office.EventType.DataNodeDeleted,
+                      function(a) {write(a.type)
+                      },
+                          function(s) {write(s.status)
+                          });
+                  });
+          }
+
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message;
+          }
+          ```
       parameters:
         - id: xml
           description: ''
@@ -196,23 +196,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          function showXMLPartsInNamespace() {
-              Office.context.document.customXmlParts.getByNamespaceAsync(
-                  "http://tempuri.org", 
-                  function (eventArgs) {
-                      write("Found " + eventArgs.value.length + " parts with this namespace");
-              }); 
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
+        description: ''
       parameters:
         - id: ns
           description: The namespace URI.
@@ -240,7 +224,23 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          function showXMLPartsInNamespace() {
+              Office.context.document.customXmlParts.getByNamespaceAsync(
+                  "http://tempuri.org", 
+                  function (eventArgs) {
+                      write("Found " + eventArgs.value.length + " parts with this namespace");
+              }); 
+          }
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
       parameters:
         - id: ns
           description: ''
