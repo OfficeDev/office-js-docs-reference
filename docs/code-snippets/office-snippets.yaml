@@ -1774,7 +1774,7 @@ Office.Document.setSelectedDataAsync:
 
     // Specifying the optional coercionType parameter lets you specify the kind of data you want to write
     // to a selection. The following example writes data as an array of three rows of two columns, 
-    // specifying the coercionType as "matrix" for that data structure, and if that fails, 
+    // specifying the coercionType as `Matrix` for that data structure, and if that fails, 
     // displays the value of the error.message property.
     function writeMatrix() {
         Office.context.document.setSelectedDataAsync(
@@ -1794,7 +1794,7 @@ Office.Document.setSelectedDataAsync:
     }
 
     // The following example writes data as a one column table with a header and four rows, 
-    // specifying the coercionType as "table" for that data structure, and if that fails, 
+    // specifying the coercionType as `Table` for that data structure, and if that fails, 
     // displays the value of the error.message property.
     function writeTable() {
         // Build table.
@@ -1817,7 +1817,7 @@ Office.Document.setSelectedDataAsync:
         document.getElementById('message').innerText += message; 
     }
 
-    // In Word if you want to write HTML to the selection, you can specify the coercionType parameter as "html"
+    // In Word if you want to write HTML to the selection, you can specify the coercionType parameter as `Html`
     // as shown in the following example, which uses HTML <b> tags to make "Hello" bold.
     function writeHtmlData() {
         Office.context.document.setSelectedDataAsync(
@@ -1834,21 +1834,37 @@ Office.Document.setSelectedDataAsync:
     }
 
     // In Word, PowerPoint, or Excel, if you want to write an image to the selection, you can specify the coercionType
-    // parameter as "image" as shown in the following example. Note that imageLeft and imageTop are ignored by Word.
+    // parameter as `Image` as shown in the following example. Note that imageLeft and imageTop are ignored by Word.
     function insertPictureAtSelection(base64EncodedImageStr) {
 
         Office.context.document.setSelectedDataAsync(base64EncodedImageStr, {
-        coercionType: Office.CoercionType.Image,
-        imageLeft: 50,
-        imageTop: 50,
-        imageWidth: 100,
-        imageHeight: 100
+            coercionType: Office.CoercionType.Image,
+            imageLeft: 50,
+            imageTop: 50,
+            imageWidth: 100,
+            imageHeight: 100
         },
         function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                 console.log("Action failed with error: " + asyncResult.error.message);
             }
         });
+    }
+
+    // In Word, PowerPoint, or Excel, if you want to write an scalable vector graphic (SVG) to the selection, you can specify the 
+    // coercionType parameter as `XmlSvg` as shown in the following example. Note that imageLeft and imageTop are ignored by Word.
+    function insertSvgAtSelection(base64EncodedImageStr) {
+        Office.context.document.setSelectedDataAsync(getImageAsBase64String(), {
+            coercionType: Office.CoercionType.XmlSvg,
+            imageLeft: 50,
+            imageTop: 50,
+            imageWidth: 400
+        },
+            function (asyncResult) {
+                if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                    console.log(asyncResult.error.message);
+                }
+            });
     }
 Office.Document.url:
   - |-
