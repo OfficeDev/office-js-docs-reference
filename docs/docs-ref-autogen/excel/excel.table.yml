@@ -377,72 +377,6 @@ items:
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      // Get a table by name. 
-
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var table = ctx.workbook.tables.getItem(tableName);
-          table.load('index')
-          return ctx.sync().then(function() {
-                  console.log(table.index);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      // Get a table by index.
-
-      Excel.run(function (ctx) { 
-          var index = 0;
-          var table = ctx.workbook.tables.getItemAt(0);
-          table.load('id')
-          return ctx.sync().then(function() {
-                  console.log(table.id);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      // Set table style. 
-
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var table = ctx.workbook.tables.getItem(tableName);
-          table.name = 'Table1-Renamed';
-          table.showTotals = false;
-          table.style = 'TableStyleMedium2';
-          table.load('tableStyle');
-          return ctx.sync().then(function() {
-                  console.log(table.style);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
     fullName: load(option)
     langs:
@@ -470,7 +404,61 @@ items:
       return:
         type:
           - excel.Excel.Table
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // Get a table by name. 
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              table.load('index')
+              return ctx.sync().then(function() {
+                      console.log(table.index);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          // Get a table by index.
+          Excel.run(function (ctx) { 
+              var index = 0;
+              var table = ctx.workbook.tables.getItemAt(0);
+              table.load('id')
+              return ctx.sync().then(function() {
+                      console.log(table.id);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          // Set table style. 
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              table.name = 'Table1-Renamed';
+              table.showTotals = false;
+              table.style = 'TableStyleMedium2';
+              table.load('tableStyle');
+              return ctx.sync().then(function() {
+                      console.log(table.style);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: option
           description: ''

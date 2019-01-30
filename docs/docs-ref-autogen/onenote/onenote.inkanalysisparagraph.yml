@@ -105,43 +105,6 @@ items:
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      OneNote.run(function (ctx) {        
-          var app = ctx.application;
-          
-          // Gets the active page.
-          var page = app.getActivePage();
-          
-          // Load a line of ink words.
-          page.load('inkAnalysisOrNull/paragraphs/lines');
-          
-          return ctx.sync()
-              .then(function() {
-                  var inkParagraphs = page.inkAnalysisOrNull.paragraphs;
-                  
-                  // Log id of each line in ink paragraphs.
-                  $.each(inkParagraphs.items, function(i, inkParagraph){
-                      var inkLines = inkParagraph.lines;
-                      $.each(inkLines.items, function (j, inkLine) {
-                          console.log(inkLine.id);
-                      })
-                  })
-              })
-      })
-
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      }); 
-
-      ```
     name: load(option)
     fullName: load(option)
     langs:
@@ -169,7 +132,40 @@ items:
       return:
         type:
           - onenote.OneNote.InkAnalysisParagraph
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function (ctx) {        
+              var app = ctx.application;
+              
+              // Gets the active page.
+              var page = app.getActivePage();
+              
+              // Load a line of ink words.
+              page.load('inkAnalysisOrNull/paragraphs/lines');
+              
+              return ctx.sync()
+                  .then(function() {
+                      var inkParagraphs = page.inkAnalysisOrNull.paragraphs;
+                      
+                      // Log id of each line in ink paragraphs.
+                      $.each(inkParagraphs.items, function(i, inkParagraph){
+                          var inkLines = inkParagraph.lines;
+                          $.each(inkLines.items, function (j, inkLine) {
+                              console.log(inkLine.id);
+                          })
+                      })
+                  })
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          }); 
+          ```
       parameters:
         - id: option
           description: ''

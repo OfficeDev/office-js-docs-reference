@@ -181,137 +181,6 @@ items:
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      OneNote.run(function(ctx){
-          // Get the current outline.         
-          var outline = ctx.application.getActiveOutline();
-          var image = null;
-          
-          // Queue a command to load paragraphs and their types. 
-          outline.load("paragraphs/type")
-          return ctx.sync().
-              then(function(){
-                  for (var i=0; i < outline.paragraphs.items.length; i++)
-                  {
-                      var paragraph = outline.paragraphs.items[i];
-                      if (paragraph.type == "Image")
-                      {
-                          image = paragraph.image;
-                      }
-                  }
-              })
-              .then(function(){
-                  if (image != null)
-                  {
-                      // load every properties and relationships
-                      ctx.load(image);
-                      return ctx.sync();
-                  }
-              })
-              .then(function(){
-                  if (image != null)
-                  {                   
-                      console.log("image " + image.id + " width is " + image.width + " height is " + image.height);
-                      console.log("description: " + image.description);                   
-                      console.log("hyperlink: " + image.hyperlink);
-                  }
-              });
-      });
-
-      ```
-
-      ```javascript
-
-      var image = null;
-
-
-      OneNote.run(function(ctx){
-          // Get the current outline.
-          var outline = ctx.application.getActiveOutline();
-
-          // Queue a command to load paragraphs and their types.
-          outline.load("paragraphs")
-          return ctx.sync().
-              then(function(){
-                  for (var i=0; i < outline.paragraphs.items.length; i++)
-                  {
-                      var paragraph = outline.paragraphs.items[i];
-                      if (paragraph.type == "Image")
-                      {
-                          image = paragraph.image;
-                      }
-                  }
-                  if (image != null)
-                  {
-                     image.load("ocrData");
-                  }
-                  return ctx.sync();
-              })
-              .then(function(){
-                  console.log(image.ocrData);
-              });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      OneNote.run(function(ctx){
-          // Get the current outline.         
-          var outline = ctx.application.getActiveOutline();
-          var searchedParagraph = null;
-          
-          // Queue a command to load paragraphs and their types. 
-          outline.load("paragraphs/type")
-          return ctx.sync().
-              then(function() {
-                  for (var i=0; i < outline.paragraphs.items.length; i++)
-                  {
-                      var paragraph = outline.paragraphs.items[i];
-                      if (paragraph.type == "Image")
-                      {
-                          searchedParagraph = paragraph;
-                          break;
-                      }
-                  }
-              })
-              .then(function() {
-                  if (searchedParagraph != null)
-                  {
-                      // load every properties and relationships
-                      searchedParagraph.image.load('paragraph');
-                      return ctx.sync();
-                  }
-              })
-              .then(function() {
-                  if (searchedParagraph != null)
-                  {                   
-                      if (searchedParagraph.id != searchedParagraph.image.paragraph.id)
-                      {
-                          console.log("id must match");
-                      }
-                  }
-              });
-      })
-
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      }); 
-
-      ```
     name: load(option)
     fullName: load(option)
     langs:
@@ -339,7 +208,127 @@ items:
       return:
         type:
           - onenote.OneNote.Image
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function(ctx){
+              // Get the current outline.         
+              var outline = ctx.application.getActiveOutline();
+              var image = null;
+              
+              // Queue a command to load paragraphs and their types. 
+              outline.load("paragraphs/type")
+              return ctx.sync().
+                  then(function(){
+                      for (var i=0; i < outline.paragraphs.items.length; i++)
+                      {
+                          var paragraph = outline.paragraphs.items[i];
+                          if (paragraph.type == "Image")
+                          {
+                              image = paragraph.image;
+                          }
+                      }
+                  })
+                  .then(function(){
+                      if (image != null)
+                      {
+                          // load every properties and relationships
+                          ctx.load(image);
+                          return ctx.sync();
+                      }
+                  })
+                  .then(function(){
+                      if (image != null)
+                      {                   
+                          console.log("image " + image.id + " width is " + image.width + " height is " + image.height);
+                          console.log("description: " + image.description);                   
+                          console.log("hyperlink: " + image.hyperlink);
+                      }
+                  });
+          });
+          ```
+          ```javascript
+          var image = null;
+
+          OneNote.run(function(ctx){
+              // Get the current outline.
+              var outline = ctx.application.getActiveOutline();
+
+              // Queue a command to load paragraphs and their types.
+              outline.load("paragraphs")
+              return ctx.sync().
+                  then(function(){
+                      for (var i=0; i < outline.paragraphs.items.length; i++)
+                      {
+                          var paragraph = outline.paragraphs.items[i];
+                          if (paragraph.type == "Image")
+                          {
+                              image = paragraph.image;
+                          }
+                      }
+                      if (image != null)
+                      {
+                         image.load("ocrData");
+                      }
+                      return ctx.sync();
+                  })
+                  .then(function(){
+                      console.log(image.ocrData);
+                  });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          OneNote.run(function(ctx){
+              // Get the current outline.         
+              var outline = ctx.application.getActiveOutline();
+              var searchedParagraph = null;
+              
+              // Queue a command to load paragraphs and their types. 
+              outline.load("paragraphs/type")
+              return ctx.sync().
+                  then(function() {
+                      for (var i=0; i < outline.paragraphs.items.length; i++)
+                      {
+                          var paragraph = outline.paragraphs.items[i];
+                          if (paragraph.type == "Image")
+                          {
+                              searchedParagraph = paragraph;
+                              break;
+                          }
+                      }
+                  })
+                  .then(function() {
+                      if (searchedParagraph != null)
+                      {
+                          // load every properties and relationships
+                          searchedParagraph.image.load('paragraph');
+                          return ctx.sync();
+                      }
+                  })
+                  .then(function() {
+                      if (searchedParagraph != null)
+                      {                   
+                          if (searchedParagraph.id != searchedParagraph.image.paragraph.id)
+                          {
+                              console.log("id must match");
+                          }
+                      }
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          }); 
+          ```
       parameters:
         - id: option
           description: ''

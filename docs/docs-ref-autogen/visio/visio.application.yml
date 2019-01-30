@@ -44,25 +44,6 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      Visio.run(session, function (ctx) {
-          var application = ctx.document.application;
-          application.showToolbars = false;
-          application.showBorders = false;
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
     fullName: load(option)
     langs:
@@ -136,6 +117,23 @@ items:
       return:
         type:
           - boolean
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Visio.run(session, function (ctx) {
+              var application = ctx.document.application;
+              application.showToolbars = false;
+              application.showBorders = false;
+              return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: visio.Visio.Application.showToolbar
     summary: |-
       Sets the visibility of a specific toolbar in the application.

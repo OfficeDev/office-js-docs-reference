@@ -24,7 +24,7 @@ Excel.Application.calculate_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Application.load:
+Excel.Application.load_1:
   - |-
     Excel.run(function (ctx) {
         var application = ctx.workbook.application;
@@ -83,7 +83,7 @@ Excel.Binding.getText:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Binding.load:
+Excel.Binding.load_1:
   - |-
     Excel.run(function (ctx) { 
         var binding = ctx.workbook.bindings.getItemAt(0);
@@ -105,61 +105,44 @@ Excel.BindingCollection.getItem:
     to orange.
 
     function addEventHandler() {
-        //Create Table1
-    Excel.run(function (ctx) { 
-        ctx.workbook.tables.add("Sheet1!A1:C4", true);
-        return ctx.sync().then(function() {
-                 console.log("My Diet Data Inserted!");
-        })
-        .catch(function (error) {
-                 console.log(JSON.stringify(error));
+        // Create Table1
+        Excel.run(function (ctx) { 
+            ctx.workbook.tables.add("Sheet1!A1:C4", true);
+            return ctx.sync().then(function() {
+                    console.log("My Diet Data Inserted!");
+            })
+            .catch(function (error) {
+                    console.log(JSON.stringify(error));
+            });
         });
-    });
         //Create a new table binding for Table1
-    Office.context.document.bindings.addFromNamedItemAsync(
-        "Table1", Office.CoercionType.Table, { id: "myBinding" }, function (asyncResult) {
-        if (asyncResult.status == "failed") {
-            console.log("Action failed with error: " + asyncResult.error.message);
-        }
-        else {
-            // If succeeded, then add event handler to the table binding.
-            Office.select("bindings#myBinding").addHandlerAsync(
-                Office.EventType.BindingDataChanged, onBindingDataChanged);
-        }
-    });
-
+        Office.context.document.bindings.addFromNamedItemAsync(
+            "Table1", Office.CoercionType.Table, { id: "myBinding" }, function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                console.log("Action failed with error: " + asyncResult.error.message);
+            }
+            else {
+                // If succeeded, then add event handler to the table binding.
+                Office.select("bindings#myBinding").addHandlerAsync(
+                    Office.EventType.BindingDataChanged, onBindingDataChanged);
+            }
+        });
     }
         
     // when data in the table is changed, this event will be triggered.
 
     function onBindingDataChanged(eventArgs) {
-
-    Excel.run(function (ctx) { 
-        // highlight the table in orange to indicate data has been changed.
-        ctx.workbook.bindings.getItem(eventArgs.binding.id).getTable().getDataBodyRange().format.fill.color = "Orange";
-        return ctx.sync().then(function() {
-                console.log("The value in this table got changed!");
-        })
-        .catch(function (error) {
-                console.log(JSON.stringify(error));
+        Excel.run(function (ctx) { 
+            // highlight the table in orange to indicate data has been changed.
+            ctx.workbook.bindings.getItem(eventArgs.binding.id).getTable().getDataBodyRange().format.fill.color = "Orange";
+            return ctx.sync().then(function() {
+                    console.log("The value in this table got changed!");
+            })
+            .catch(function (error) {
+                    console.log(JSON.stringify(error));
+            });
         });
-    });
-
     }
-  - |-
-    Excel.run(function (ctx) { 
-        var lastPosition = ctx.workbook.bindings.count - 1;
-        var binding = ctx.workbook.bindings.getItemAt(lastPosition);
-        binding.load('type')
-        return ctx.sync().then(function() {
-                console.log(binding.type); 
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.BindingCollection.getItemAt:
   - |-
     Excel.run(function (ctx) { 
@@ -175,7 +158,7 @@ Excel.BindingCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.BindingCollection.load:
+Excel.BindingCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var bindings = ctx.workbook.bindings;
@@ -251,7 +234,7 @@ Excel.Chart.name:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.setData:
+Excel.Chart.setData_1:
   - |-
     // Set the sourceData to be "A1:B4" and seriesBy to be "Columns"
     Excel.run(function (ctx) { 
@@ -283,7 +266,7 @@ Excel.Chart.setPosition:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.load:
+Excel.Chart.load_1:
   - |-
     // Get a chart named "Chart1"
     Excel.run(function (ctx) { 
@@ -298,7 +281,7 @@ Excel.Chart.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartAxis.load:
+Excel.ChartAxis.load_1:
   - |-
     // Get the maximum of Chart Axis from Chart1
     Excel.run(function (ctx) { 
@@ -331,7 +314,7 @@ Excel.ChartAxis.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartAxisTitle.load:
+Excel.ChartAxisTitle.load_1:
   - |-
     // Get the text of Chart Axis Title from the value axis of Chart1.
     Excel.run(function (ctx) { 
@@ -385,7 +368,7 @@ Excel.Chart.onDeactivated:
         });
         return context.sync();
     });
-Excel.ChartCollection.add:
+Excel.ChartCollection.add_1:
   - |-
     // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
     // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
@@ -419,7 +402,7 @@ Excel.ChartCollection.getItem:
     });
   - |-
     Excel.run(function (ctx) { 
-        var chartId = 'SamplChartId';
+        var chartId = 'SampleChartId';
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartId);
         return ctx.sync().then(function() {
                 console.log(chart.height);
@@ -457,7 +440,7 @@ Excel.ChartCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartCollection.load:
+Excel.ChartCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
@@ -536,7 +519,7 @@ Excel.ChartCollection.onDeleted:
         });
         return context.sync();
     });
-Excel.ChartDataLabels.load:
+Excel.ChartDataLabels.load_1:
   - >-
     // Make Series Name shown in Datalabels and set the position of datalabels
     to be "top";
@@ -618,7 +601,7 @@ Excel.ChartFont:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartGridlines.load:
+Excel.ChartGridlines.load_1:
   - |-
     // Get the visible of Major Gridlines on value axis of Chart1
     Excel.run(function (ctx) { 
@@ -648,7 +631,7 @@ Excel.ChartGridlines.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartLegend.load:
+Excel.ChartLegend.load_1:
   - |-
     // Get the position of Chart Legend from Chart1
     Excel.run(function (ctx) { 
@@ -695,7 +678,7 @@ Excel.ChartLineFormat.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartLineFormat.load:
+Excel.ChartLineFormat.load_1:
   - |-
     // Set chart major gridlines on value axis to be red.
     Excel.run(function (ctx) {
@@ -725,7 +708,7 @@ Excel.ChartPointsCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartPointsCollection.load:
+Excel.ChartPointsCollection.load_1:
   - |-
     // Get the names of points in the points collection
     Excel.run(function (ctx) { 
@@ -756,7 +739,7 @@ Excel.ChartPointsCollection.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartSeries.load:
+Excel.ChartSeries.load_1:
   - |-
     // Rename the 1st series of Chart1 to "New Series Name"
     Excel.run(function (ctx) { 
@@ -786,7 +769,7 @@ Excel.ChartSeriesCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartSeriesCollection.load:
+Excel.ChartSeriesCollection.load_1:
   - |-
     // Getting the names of series in the series collection.
     Excel.run(function (ctx) { 
@@ -818,7 +801,7 @@ Excel.ChartSeriesCollection.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartTitle.load:
+Excel.ChartTitle.load_1:
   - |-
     // Get the text of Chart Title from Chart1.
     Excel.run(function (ctx) { 
@@ -1030,7 +1013,7 @@ Excel.NamedItem.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.NamedItem.load:
+Excel.NamedItem.load_1:
   - |-
     Excel.run(function (ctx) { 
         var names = ctx.workbook.names;
@@ -1060,7 +1043,7 @@ Excel.NamedItemCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.NamedItemCollection.load:
+Excel.NamedItemCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var nameditems = ctx.workbook.names;
@@ -1093,7 +1076,7 @@ Excel.Range.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.delete:
+Excel.Range.delete_1:
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1456,7 +1439,7 @@ Excel.Range.untrack:
 
         await context.sync();
     });
-Excel.Range.load:
+Excel.Range.load_1:
   - |-
     // Below example uses range address to get the range object.
     Excel.run(function (ctx) {
@@ -1513,7 +1496,7 @@ Excel.Range.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeBorder.load:
+Excel.RangeBorder.load_1:
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1573,23 +1556,6 @@ Excel.RangeBorderCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    Excel.run(function (ctx) { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-        var range = worksheet.getRange(rangeAddress);
-        var border = range.format.borders.getItemAt(0);
-        border.load('sideIndex');
-        return ctx.sync().then(function() {
-                console.log(border.sideIndex);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.RangeBorderCollection.getItemAt:
   - |-
     Excel.run(function (ctx) { 
@@ -1608,7 +1574,7 @@ Excel.RangeBorderCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeBorderCollection.load:
+Excel.RangeBorderCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1665,7 +1631,7 @@ Excel.RangeFill.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFill.load:
+Excel.RangeFill.load_1:
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1697,7 +1663,7 @@ Excel.RangeFill.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFont.load:
+Excel.RangeFont.load_1:
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1729,7 +1695,7 @@ Excel.RangeFont.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFormat.load:
+Excel.RangeFormat.load_1:
   - |-
     // Below example selects all of the Range's format properties. 
     Excel.run(function (ctx) { 
@@ -1874,7 +1840,7 @@ Excel.Table.getTotalRowRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.load:
+Excel.Table.load_1:
   - |-
     // Get a table by name. 
     Excel.run(function (ctx) { 
@@ -1952,19 +1918,6 @@ Excel.TableCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    Excel.run(function (ctx) { 
-        var table = ctx.workbook.tables.getItemAt(0);
-        table.load('name');
-        return ctx.sync().then(function() {
-                console.log(table.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.TableCollection.getItemAt:
   - |-
     Excel.run(function (ctx) { 
@@ -1979,7 +1932,7 @@ Excel.TableCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableCollection.load:
+Excel.TableCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var tables = ctx.workbook.tables;
@@ -2087,7 +2040,7 @@ Excel.TableColumn.getTotalRowRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumn.load:
+Excel.TableColumn.load_1:
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -2149,19 +2102,6 @@ Excel.TableColumnCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    Excel.run(function (ctx) { 
-        var tablecolumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
-        tablecolumn.load('name');
-        return ctx.sync().then(function() {
-                console.log(tablecolumn.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.TableColumnCollection.getItemAt:
   - |-
     Excel.run(function (ctx) { 
@@ -2176,15 +2116,14 @@ Excel.TableColumnCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumnCollection.load:
+Excel.TableColumnCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var tablecolumns = ctx.workbook.tables.getItem('Table1').columns;
         tablecolumns.load('items');
         return ctx.sync().then(function() {
             console.log("tablecolumns Count: " + tablecolumns.count);
-            for (var i = 0; i < tablecolumns.items.length; i++)
-            {
+            for (var i = 0; i < tablecolumns.items.length; i++) {
                 console.log(tablecolumns.items[i].name);
             }
         });
@@ -2223,7 +2162,7 @@ Excel.TableRow.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRow.load:
+Excel.TableRow.load_1:
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -2285,7 +2224,7 @@ Excel.TableRowCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRowCollection.load:
+Excel.TableRowCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var tablerows = ctx.workbook.tables.getItem('Table1').rows;
@@ -2445,7 +2384,7 @@ Excel.Worksheet.getUsedRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.load:
+Excel.Worksheet.load_1:
   - |-
     // Get worksheet properties based on sheet name.
     Excel.run(function (ctx) { 
@@ -2551,7 +2490,7 @@ Excel.WorksheetCollection.getActiveWorksheet:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.WorksheetCollection.load:
+Excel.WorksheetCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var worksheets = ctx.workbook.worksheets;
@@ -6767,7 +6706,7 @@ OneNote.Application.navigateToPageWithClientUrl:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.FloatingInk.load:
+OneNote.FloatingInk.load_1:
   - |-
     OneNote.run(function(context) {
 
@@ -6840,7 +6779,7 @@ OneNote.Image.getBase64Image:
                 console.log(imageString);
             });
     });
-OneNote.Image.load:
+OneNote.Image.load_1:
   - |-
     OneNote.run(function(ctx){
         // Get the current outline.         
@@ -6955,7 +6894,7 @@ OneNote.Image.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.ImageOcrData.load:
+OneNote.ImageOcrData.load_1:
   - |-
     var image = null;
 
@@ -6993,7 +6932,7 @@ OneNote.ImageOcrData.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.InkAnalysis.load:
+OneNote.InkAnalysis.load_1:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -7015,7 +6954,7 @@ OneNote.InkAnalysis.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisLine.load:
+OneNote.InkAnalysisLine.load_1:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -7042,7 +6981,7 @@ OneNote.InkAnalysisLine.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisParagraph.load:
+OneNote.InkAnalysisParagraph.load_1:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -7072,7 +7011,7 @@ OneNote.InkAnalysisParagraph.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisWord.load:
+OneNote.InkAnalysisWord.load_1:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -7175,7 +7114,7 @@ OneNote.Notebook.getRestApiId:
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
-OneNote.Notebook.load:
+OneNote.Notebook.load_1:
   - |-
     OneNote.run(function (context) {
             
@@ -7326,7 +7265,7 @@ OneNote.NotebookCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.NotebookCollection.load:
+OneNote.NotebookCollection.load_1:
   - |-
     OneNote.run(function (context) {
 
@@ -7515,7 +7454,7 @@ OneNote.Page.getRestApiId:
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
-OneNote.Page.insertPageAsSibling:
+OneNote.Page.insertPageAsSibling_1:
   - |-
     OneNote.run(function (context) {
 
@@ -7540,7 +7479,7 @@ OneNote.Page.insertPageAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Page.load:
+OneNote.Page.load_1:
   - |-
     OneNote.run(function (context) {
 
@@ -7664,7 +7603,7 @@ OneNote.PageCollection.getByTitle:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.PageCollection.load:
+OneNote.PageCollection.load_1:
   - |-
     OneNote.run(function (context) {
         
@@ -7738,7 +7677,7 @@ OneNote.PageContentCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.PageContentCollection.load:
+OneNote.PageContentCollection.load_1:
   - |-
     OneNote.run(function (context) {
 
@@ -7926,7 +7865,7 @@ OneNote.Paragraph.insertRichTextAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.Paragraph.load:
+OneNote.Paragraph.load_1:
   - |-
     OneNote.run(function (context) {
 
@@ -8025,7 +7964,7 @@ OneNote.ParagraphCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.ParagraphCollection.load:
+OneNote.ParagraphCollection.load_1:
   - |-
     OneNote.run(function (context) {
 
@@ -8113,7 +8052,7 @@ OneNote.ParagraphCollection.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.RichText.load:
+OneNote.RichText.load_1:
   - |-
     OneNote.run(function (context) {
 
@@ -8258,7 +8197,7 @@ OneNote.Section.copyToSectionGroup:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Section.insertSectionAsSibling:
+OneNote.Section.insertSectionAsSibling_1:
   - |-
     OneNote.run(function (context) {
                 
@@ -8301,7 +8240,7 @@ OneNote.Section.getRestApiId:
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
-OneNote.Section.load:
+OneNote.Section.load_1:
   - |-
     OneNote.run(function (context) {
             
@@ -8404,7 +8343,7 @@ OneNote.SectionCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.SectionCollection.load:
+OneNote.SectionCollection.load_1:
   - |-
     OneNote.run(function (context) {
 
@@ -8503,7 +8442,7 @@ OneNote.SectionGroup.addSectionGroup:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.SectionGroup.load:
+OneNote.SectionGroup.load_1:
   - |-
     OneNote.run(function (context) {
             
@@ -8648,7 +8587,7 @@ OneNote.SectionGroupCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.SectionGroupCollection.load:
+OneNote.SectionGroupCollection.load_1:
   - |-
     OneNote.run(function (context) {
 
@@ -8827,7 +8766,7 @@ OneNote.Table.insertRow:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Table.load:
+OneNote.Table.load_1:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -8963,7 +8902,7 @@ OneNote.TableCell.appendRichText:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.TableCell.load:
+OneNote.TableCell.load_1:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -9082,7 +9021,7 @@ OneNote.TableRow.insertRowAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.TableRow.load:
+OneNote.TableRow.load_1:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -10856,7 +10795,7 @@ PowerPoint.createPresentation:
 
     // read in the file as a data URL so we can parse the base64-encoded string
     reader.readAsDataURL(myFile.files[0]);
-Visio.Application.load:
+Visio.Application.showBorders:
   - |-
     Visio.run(session, function (ctx) {
         var application = ctx.document.application;
@@ -10973,7 +10912,7 @@ Visio.Document.startDataRefresh:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.Document.load:
+Visio.Document.pages:
   - |-
     Visio.run(session, function (ctx) {
         var pages = ctx.document.pages;
@@ -10981,28 +10920,6 @@ Visio.Document.load:
         return ctx.sync().then(function () {
             console.log("Pages Count: " +pageCount.value);
         });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    Visio.run(session, function (ctx) {
-        var documentView = ctx.document.view;
-        documentView.disableHyperlinks();
-        return ctx.sync();
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    Visio.run(session, function (ctx) {
-        var application = ctx.document.application;
-        application.showToolbars = false;
-        return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);
         if (error instanceof OfficeExtension.Error) {
@@ -11021,6 +10938,18 @@ Visio.DocumentLoadCompleteEventArgs:
         return ctx.sync().then(function () {
             console.log("Success");
         });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Visio.DocumentView.disableHyperlinks:
+  - |-
+    Visio.run(session, function (ctx) {
+        var documentView = ctx.document.view;
+        documentView.disableHyperlinks();
+        return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);
         if (error instanceof OfficeExtension.Error) {
@@ -11127,7 +11056,7 @@ Visio.PageView.centerViewportOnShape:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.PageView.load:
+Visio.PageView.zoom:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -11311,7 +11240,7 @@ Visio.ShapeMouseLeaveEventArgs:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeView.load:
+Visio.ShapeView.highlight:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -11324,11 +11253,12 @@ Visio.ShapeView.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Visio.ShapeView.addOverlay:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
-        var overlayId=shape.view.addOverlay(1, "Visio Online", 2, 2, 50, 50);
+        var overlayId=shape.view.addOverlay("Image", "Visio Online", "Center", "Center", 50, 50);
         return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -11336,6 +11266,7 @@ Visio.ShapeView.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Visio.ShapeView.removeOverlay:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -11375,6 +11306,41 @@ Word.Body.clear:
     // The Silly stories add-in sample shows how the 
     // clear method can be used to clear the contents of a document.
     // https://aka.ms/sillystorywordaddin
+Word.Body.font:
+  - >-
+    // Get the style and the font size, font name, and font color properties on
+    the body object.
+
+    // Run a batch operation against the Word object model.
+
+    Word.run(function (context) {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a commmand to load font and style information for the document body.
+        context.load(body, 'font/size, font/name, font/color, style');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            // Show the results of the load method. Here we show the
+            // property values on the body object.
+            var results = 'Font size: ' + body.font.size +
+                          '; Font name: ' + body.font.name +
+                          '; Font color: ' + body.font.color +
+                          '; Body style: ' + body.style;
+
+            console.log(results);
+        });
+    })
+
+    .catch(function (error) {
+        console.log('Error: ' + JSON.stringify(error));
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+        }
+    });
 Word.Body.getHtml:
   - |-
     // Run a batch operation against the Word object model.
@@ -11739,7 +11705,7 @@ Word.Body.select:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.load:
+Word.Body.text:
   - |-
     // Get the text property on the body object
     // Run a batch operation against the Word object model.
@@ -11761,40 +11727,6 @@ Word.Body.load:
         console.log("Error: " + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - >-
-    // Get the style and the font size, font name, and font color properties on
-    the body object.
-
-    // Run a batch operation against the Word object model.
-
-    Word.run(function (context) {
-
-        // Create a proxy object for the document body.
-        var body = context.document.body;
-
-        // Queue a commmand to load font and style information for the document body.
-        context.load(body, 'font/size, font/name, font/color, style');
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            // Show the results of the load method. Here we show the
-            // property values on the body object.
-            var results = 'Font size: ' + body.font.size +
-                          '; Font name: ' + body.font.name +
-                          '; Font color: ' + body.font.color +
-                          '; Body style: ' + body.style;
-
-            console.log(results);
-        });
-    })
-
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
 Word.ContentControl.clear:
@@ -11942,7 +11874,7 @@ Word.ContentControl.getOoxml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertBreak:
+Word.ContentControl.insertBreak_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -11979,7 +11911,7 @@ Word.ContentControl.insertBreak:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertFileFromBase64:
+Word.ContentControl.insertHtml_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -12017,7 +11949,7 @@ Word.ContentControl.insertFileFromBase64:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertInlinePictureFromBase64:
+Word.ContentControl.insertOoxml_1:
   - >-
     // Run a batch operation against the Word object model.
 
@@ -12062,7 +11994,7 @@ Word.ContentControl.insertInlinePictureFromBase64:
 
     //
     https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
-Word.ContentControl.insertParagraph:
+Word.ContentControl.insertParagraph_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -12098,7 +12030,7 @@ Word.ContentControl.insertParagraph:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertText:
+Word.ContentControl.insertText_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -12137,7 +12069,7 @@ Word.ContentControl.insertText:
 
     // The Silly stories add-in sample shows how to use the insertText method.
     // https://aka.ms/sillystorywordaddin
-Word.ContentControl.load:
+Word.ContentControl.tag:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -12168,6 +12100,32 @@ Word.ContentControl.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+  - >
+    // Traverses each paragraph of the document and wraps a content control on
+    each with either a even or odd tags
+
+    await Word.run(async (context) => {
+        let paragraphs = context.document.body.paragraphs;
+        paragraphs.load("$none"); //Don't need any properties, we'll just wrap each paragraph with a content control
+
+        await context.sync();
+
+        for (let i = 0; i < paragraphs.items.length; i++) {
+            let contentControl = paragraphs.items[i].insertContentControl();
+            // For even we tag "even"
+            if (i % 2 === 0) {
+                contentControl.tag = "even";
+            }
+
+            else {
+                contentControl.tag = "odd";
+            }
+        }
+        console.log("Content controls inserted: " + paragraphs.items.length)
+
+        await context.sync();
+    });
+Word.ContentControl.load_1:
   - |-
     // Load all of the content control properties
     // Run a batch operation against the Word object model.
@@ -13099,7 +13057,7 @@ Word.Paragraph.getPreviousOrNullObject:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Paragraph.insertBreak:
+Word.Paragraph.insertBreak_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -13133,20 +13091,6 @@ Word.Paragraph.insertBreak:
         if (error instanceof OfficeExtension.Error) {
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
-    });
-  - |-
-    Word.run(async (context) => {
-        context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
-
-        await context.sync();
-        console.log("success");
-    });
-  - |-
-    await Word.run(async (context) => {
-        context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.page, "After");
-
-        await context.sync();
-        console.log("success");
     });
 Word.Paragraph.insertContentControl:
   - |-
@@ -13526,7 +13470,7 @@ Word.Range.getOoxml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Range.insertBreak:
+Word.Range.insertBreak_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -13979,7 +13923,7 @@ Word.SearchOptions.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Section.getFooter:
+Word.Section.getFooter_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -14017,14 +13961,7 @@ Word.Section.getFooter:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    await Word.run(async (context) => {
-      context.document.sections.getFirst().getFooter("Primary")
-        .insertParagraph("This is a footer", "End");
-
-      await context.sync();
-    });
-Word.Section.getHeader:
+Word.Section.getHeader_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -14061,13 +13998,6 @@ Word.Section.getHeader:
         if (error instanceof OfficeExtension.Error) {
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
-    });
-  - |-
-    await Word.run(async (context) => {
-      context.document.sections.getFirst().getHeader("Primary")
-        .insertParagraph("This is a header", "End");
-
-      await context.sync();
     });
 Word.Setting.delete:
   - |-
@@ -16464,6 +16394,37 @@ Word.InlinePicture.getBase64ImageSrc:
         await context.sync();
         console.log(base64.value);
     });
+Word.Section.getHeader:
+  - |-
+    await Word.run(async (context) => {
+      context.document.sections.getFirst().getHeader("Primary")
+        .insertParagraph("This is a header", "End");
+
+      await context.sync();
+    });
+Word.Paragraph.insertBreak:
+  - |-
+    Word.run(async (context) => {
+        context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
+
+        await context.sync();
+        console.log("success");
+    });
+  - |-
+    await Word.run(async (context) => {
+        context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.page, "After");
+
+        await context.sync();
+        console.log("success");
+    });
+Word.Section.getFooter:
+  - |-
+    await Word.run(async (context) => {
+      context.document.sections.getFirst().getFooter("Primary")
+        .insertParagraph("This is a footer", "End");
+
+      await context.sync();
+    });
 Word.Paragraph.text:
   - |-
     await Word.run(async (context) => {
@@ -16529,32 +16490,6 @@ Word.Paragraph.alignment:
         // Centers last paragraph alignment
         context.document.body.paragraphs
             .getLast().alignment = "Centered";
-
-        await context.sync();
-    });
-Word.ContentControl.tag:
-  - >
-    // Traverses each paragraph of the document and wraps a content control on
-    each with either a even or odd tags
-
-    await Word.run(async (context) => {
-        let paragraphs = context.document.body.paragraphs;
-        paragraphs.load("$none"); //Don't need any properties, we'll just wrap each paragraph with a content control
-
-        await context.sync();
-
-        for (let i = 0; i < paragraphs.items.length; i++) {
-            let contentControl = paragraphs.items[i].insertContentControl();
-            // For even we tag "even"
-            if (i % 2 === 0) {
-                contentControl.tag = "even";
-            }
-
-            else {
-                contentControl.tag = "odd";
-            }
-        }
-        console.log("Content controls inserted: " + paragraphs.items.length)
 
         await context.sync();
     });

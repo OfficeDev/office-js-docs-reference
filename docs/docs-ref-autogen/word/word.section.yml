@@ -78,6 +78,38 @@ items:
 
           #### Examples
 
+          ```typescript
+          await Word.run(async (context) => {
+            context.document.sections.getFirst().getFooter("Primary")
+              .insertParagraph("This is a footer", "End");
+
+            await context.sync();
+          });
+          ```
+      parameters:
+        - id: type
+          description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
+          type:
+            - word.Word.HeaderFooterType
+  - uid: word.Word.Section.getFooter_1
+    summary: |-
+      Gets one of the section's footers.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getFooter(type)
+    fullName: getFooter(type)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFooter(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
+      return:
+        type:
+          - Word.Body
+        description: |-
+
+          #### Examples
+
           ```javascript
           // Run a batch operation against the Word object model.
           Word.run(function (context) {
@@ -116,35 +148,6 @@ items:
               }
           });
           ```
-          ```typescript
-          await Word.run(async (context) => {
-            context.document.sections.getFirst().getFooter("Primary")
-              .insertParagraph("This is a footer", "End");
-
-            await context.sync();
-          });
-          ```
-      parameters:
-        - id: type
-          description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
-          type:
-            - word.Word.HeaderFooterType
-  - uid: word.Word.Section.getFooter_1
-    summary: |-
-      Gets one of the section's footers.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getFooter(type)
-    fullName: getFooter(type)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFooter(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
-      return:
-        type:
-          - Word.Body
-        description: ''
       parameters:
         - id: type
           description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
@@ -162,6 +165,38 @@ items:
     type: method
     syntax:
       content: 'getHeader(type: Word.HeaderFooterType): Word.Body;'
+      return:
+        type:
+          - Word.Body
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Word.run(async (context) => {
+            context.document.sections.getFirst().getHeader("Primary")
+              .insertParagraph("This is a header", "End");
+
+            await context.sync();
+          });
+          ```
+      parameters:
+        - id: type
+          description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
+          type:
+            - word.Word.HeaderFooterType
+  - uid: word.Word.Section.getHeader_1
+    summary: |-
+      Gets one of the section's headers.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getHeader(type)
+    fullName: getHeader(type)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeader(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
       return:
         type:
           - Word.Body
@@ -207,35 +242,6 @@ items:
               }
           });
           ```
-          ```typescript
-          await Word.run(async (context) => {
-            context.document.sections.getFirst().getHeader("Primary")
-              .insertParagraph("This is a header", "End");
-
-            await context.sync();
-          });
-          ```
-      parameters:
-        - id: type
-          description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
-          type:
-            - word.Word.HeaderFooterType
-  - uid: word.Word.Section.getHeader_1
-    summary: |-
-      Gets one of the section's headers.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getHeader(type)
-    fullName: getHeader(type)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHeader(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
-      return:
-        type:
-          - Word.Body
-        description: ''
       parameters:
         - id: type
           description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
