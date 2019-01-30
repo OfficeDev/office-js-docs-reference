@@ -52,21 +52,6 @@ items:
 
 
       `getAsync(names: string[], callback: (result: Office.AsyncResult<InternetHeaders>) => void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback); 
-
-
-      function callback(asyncResult) { 
-          var dictionary = asyncResult.value; 
-          var header1_value = dictionary["header1"]; 
-      }
-
-      ```
     isPreview: true
     name: 'getAsync(names, options, callback)'
     fullName: 'getAsync(names, options, callback)'
@@ -113,6 +98,21 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback); 
+
+
+      function callback(asyncResult) { 
+          var dictionary = asyncResult.value; 
+          var header1_value = dictionary["header1"]; 
+      }
+
+      ```
     isPreview: true
     name: 'getAsync(names, callback)'
     fullName: 'getAsync(names, callback)'
@@ -156,15 +156,6 @@ items:
 
 
       `removeAsync(names: string[], callback: (result: Office.AsyncResult<Body>) => void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.internetHeaders.removeAsync(["header1", "header2"]);
-
-      ```
     isPreview: true
     name: 'removeAsync(names, options, callback)'
     fullName: 'removeAsync(names, options, callback)'
@@ -210,6 +201,15 @@ items:
 
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.internetHeaders.removeAsync(["header1", "header2"]);
+
+      ```
     isPreview: true
     name: 'removeAsync(names, callback)'
     fullName: 'removeAsync(names, callback)'
@@ -256,15 +256,6 @@ items:
 
 
       `setAsync(headers: string, callback: (result: Office.AsyncResult<void>) => void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1", "header2": "value2"});
-
-      ```
     isPreview: true
     name: 'setAsync(headers, options, callback)'
     fullName: 'setAsync(headers, options, callback)'
@@ -316,6 +307,15 @@ items:
 
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1", "header2": "value2"});
+
+      ```
     isPreview: true
     name: 'setAsync(headers, callback)'
     fullName: 'setAsync(headers, callback)'

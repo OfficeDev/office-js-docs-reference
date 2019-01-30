@@ -150,7 +150,7 @@ Office.AppointmentCompose.requiredAttendees:
     function callback(asyncResult) {
         var arrayOfRequiredAttendeesRecipients = asyncResult.value;
     }
-Office.AppointmentCompose.saveAsync:
+Office.AppointmentCompose.saveAsync_3:
   - |-
     Office.context.mailbox.item.saveAsync(
         function callback(result) {
@@ -166,9 +166,11 @@ Office.AppointmentCompose.saveAsync:
         "value":"AAMkADI5...AAA=",
         "status":"succeeded"
     }
-Office.AppointmentCompose.setSelectedDataAsync:
+Office.AppointmentCompose.setSelectedDataAsync_1:
   - |-
     Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+Office.AppointmentCompose.setSelectedDataAsync_2:
+  - |-
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
 Office.AppointmentCompose.start:
   - |-
@@ -557,7 +559,7 @@ Office.CustomProperties.saveAsync:
     function write(message){
         document.getElementById('message').innerText += message;
     }
-Office.InternetHeaders.getAsync:
+Office.InternetHeaders.getAsync_1:
   - |-
     Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback); 
 
@@ -565,13 +567,13 @@ Office.InternetHeaders.getAsync:
         var dictionary = asyncResult.value; 
         var header1_value = dictionary["header1"]; 
     }
-Office.InternetHeaders.removeAsync:
+Office.InternetHeaders.removeAsync_1:
   - |-
     Office.context.mailbox.item.internetHeaders.removeAsync(["header1", "header2"]);
-Office.InternetHeaders.setAsync:
+Office.InternetHeaders.setAsync_1:
   - |-
     Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1", "header2": "value2"});
-Office.Item.addHandlerAsync:
+Office.Item.addHandlerAsync_1:
   - |-
     function myHandlerFunction(eventarg) { 
         if (eventarg.attachmentStatus == Office.MailboxEnums.AttachmentStatus.Added) { 
@@ -633,7 +635,7 @@ Office.Item.getInitializationContextAsync:
             }
         }
     );
-Office.Item.getSharedPropertiesAsync:
+Office.Item.getSharedPropertiesAsync_1:
   - |-
     Office.context.mailbox.item.getSharedPropertiesAsync(callback);
     function callback (asyncResult) {
@@ -755,6 +757,7 @@ Office.Mailbox.getCallbackTokenAsync:
     function cb(asyncResult) {
         var token = asyncResult.value;
     }
+Office.Mailbox.getCallbackTokenAsync_1:
   - |-
     function getCallbackToken() {
         Office.context.mailbox.getCallbackTokenAsync(cb);
@@ -933,7 +936,7 @@ Office.MessageCompose.getAttachmentsAsync:
             }
         }
     }
-Office.MessageCompose.getSelectedDataAsync:
+Office.MessageCompose.getSelectedDataAsync_1:
   - |-
     // getting selected data
     Office.initialize = function () {
@@ -961,7 +964,7 @@ Office.MessageCompose.removeAttachmentAsync:
             console.log(asyncResult.status);
         }
     );
-Office.MessageCompose.saveAsync:
+Office.MessageCompose.saveAsync_3:
   - |-
     Office.context.mailbox.item.saveAsync(
         function callback(result) {
@@ -977,9 +980,11 @@ Office.MessageCompose.saveAsync:
         "value":"AAMkADI5...AAA=",
         "status":"succeeded"
     }
-Office.MessageCompose.setSelectedDataAsync:
+Office.MessageCompose.setSelectedDataAsync_1:
   - |-
     Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+Office.MessageCompose.setSelectedDataAsync_2:
+  - |-
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
 Office.MessageCompose.subject:
   - |-
@@ -1238,7 +1243,7 @@ Office.MessageRead.to:
     function callback(asyncResult) {
         var arrayOfToRecipients = asyncResult.value;
     }
-Office.NotificationMessages.addAsync:
+Office.NotificationMessages.addAsync_1:
   - |-
     // Create three notifications, each with a different key
     Office.context.mailbox.item.notificationMessages.addAsync("progress", {
@@ -1255,7 +1260,7 @@ Office.NotificationMessages.addAsync:
         type: "errorMessage",
         message : "The add-in failed to process this message."
     });
-Office.NotificationMessages.getAllAsync:
+Office.NotificationMessages.getAllAsync_1:
   - |-
     // Get all notifications
     Office.context.mailbox.item.notificationMessages.getAllAsync(function (asyncResult) {
@@ -1268,11 +1273,11 @@ Office.NotificationMessages.getAllAsync:
             });
         }
     });
-Office.NotificationMessages.removeAsync:
+Office.NotificationMessages.removeAsync_1:
   - |-
     // Remove a notification
     Office.context.mailbox.item.notificationMessages.removeAsync("progress");
-Office.NotificationMessages.replaceAsync:
+Office.NotificationMessages.replaceAsync_1:
   - |-
     // Replace a notification with an informational notification
     Office.context.mailbox.item.notificationMessages.replaceAsync("progress", {
@@ -1281,7 +1286,7 @@ Office.NotificationMessages.replaceAsync:
         icon : "iconid",
         persistent: false
     });
-Office.Recipients.addAsync:
+Office.Recipients.addAsync_3:
   - |-
     // The following example creates an array of EmailUser objects
     // and adds them to the To recipients of the message.
@@ -1303,7 +1308,7 @@ Office.Recipients.addAsync:
             showMessage("Recipients added");
         }
     });
-Office.Recipients.getAsync:
+Office.Recipients.getAsync_1:
   - |-
     // The following example gets the optional attendees of a meeting.
     Office.context.mailbox.item.optionalAttendees.getAsync(function(result) {
@@ -1317,7 +1322,7 @@ Office.Recipients.getAsync:
             showMessage(msg);
         }
     });
-Office.Recipients.setAsync:
+Office.Recipients.setAsync_3:
   - |-
     // The following example creates an array of EmailUser objects and
     // replaces the CC recipients of the message with the array.
@@ -1339,7 +1344,7 @@ Office.Recipients.setAsync:
             showMessage("Recipients overwritten");
         }
     });
-Office.Recurrence.getAsync:
+Office.Recurrence.getAsync_1:
   - |-
     // This example gets the recurrence object of an appointment or meeting request item.
     Office.context.mailbox.item.recurrence.getAsync(callback);
@@ -1363,7 +1368,7 @@ Office.Recurrence.getAsync:
         "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
         "seriesTime": {seriesTimeObject}, 
         "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
-Office.Recurrence.setAsync:
+Office.Recurrence.setAsync_1:
   - |-
     // The following example sets the recurrence pattern of an appointment series.
     var seriesTimeObject = new Office.SeriesTime(); 
@@ -1450,16 +1455,20 @@ Office.SeriesTime.setEndDate:
     // This example sets the end date of a recurring appointment series to November 2, 2017.
     var seriesTimeObject = new SeriesTime()
     seriesTimeObject.setEndDate(2017, 10, 2);
-
-    // Alternative: Set the end date using ISO 8601 date standard
+Office.SeriesTime.setEndDate_1:
+  - |-
+    // This example sets the end date of a recurring appointment series to November 2, 2017 using ISO 8601 date standard.
+    var seriesTimeObject = new SeriesTime()
     seriesTimeObject.setEndDate("2017-11-02");
 Office.SeriesTime.setStartDate:
   - |-
     // This example sets the start date of a recurring appointment series to November 2, 2017.
     var seriesTimeObject = new SeriesTime()
     seriesTimeObject.setStartDate(2017, 10, 2);
-
-    // Alternative: Set the start date using ISO 8601 date standard
+Office.SeriesTime.setStartDate_1:
+  - |-
+    // This example sets the start date of a recurring appointment series to November 2, 2017 using ISO 8601 date standard.
+    var seriesTimeObject = new SeriesTime()
     seriesTimeObject.setStartDate("2017-11-02");
 Office.SeriesTime.setStartTime:
   - |-
@@ -1469,8 +1478,10 @@ Office.SeriesTime.setStartTime:
 
     // This example sets the start time of each instance of a recurring appointment series to 11:30 AM.
     seriesTimeObject.setStartTime(11, 30);
-
-    // Alternative: Set the start time of all instances of a recurring appointment series to 11:30 PM.
+Office.SeriesTime.setStartTime_1:
+  - |-
+    // This example sets the start time of each instance of a recurring appointment series to 11:30 PM.
+    var seriesTimeObject = new SeriesTime()
     seriesTimeObject.setStartTime("T23:30:00");
 Office.Time.setAsync:
   - |-

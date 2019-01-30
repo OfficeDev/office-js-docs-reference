@@ -1035,17 +1035,6 @@ items:
 
 
       `setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
-
-      Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
-
-      ```
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: 'setSelectedDataAsync(data, options, callback)'
     langs:
@@ -1104,6 +1093,15 @@ items:
 
 
       <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+
+      ```
     name: setSelectedDataAsync(data)
     fullName: setSelectedDataAsync(data)
     langs:
@@ -1143,6 +1141,15 @@ items:
 
 
       <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
+
+      ```
     name: 'setSelectedDataAsync(data, options)'
     fullName: 'setSelectedDataAsync(data, options)'
     langs:

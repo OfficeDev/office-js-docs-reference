@@ -662,19 +662,6 @@ items:
       }
 
       ```
-
-      ```javascript
-
-      function getCallbackToken() {
-          Office.context.mailbox.getCallbackTokenAsync(cb);
-      }
-
-
-      function cb(asyncResult) {
-          var token = asyncResult.value;
-      }
-
-      ```
     name: 'getCallbackTokenAsync(options, callback)'
     fullName: 'getCallbackTokenAsync(options, callback)'
     langs:
@@ -735,6 +722,22 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       and read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function getCallbackToken() {
+          Office.context.mailbox.getCallbackTokenAsync(cb);
+      }
+
+
+      function cb(asyncResult) {
+          var token = asyncResult.value;
+      }
+
+      ```
     name: getCallbackTokenAsync(callback)
     fullName: getCallbackTokenAsync(callback)
     langs:
