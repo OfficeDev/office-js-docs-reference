@@ -3653,7 +3653,7 @@ export declare namespace Office {
          * Gets the locations of an appointment.
          *
          * The enhancedLocation property returns an {@link Office.EnhancedLocation} object that allows you to get the set of locations (each represented by 
-         * a {@link Office.LocationDetails} object) associated with the appointment.
+         * an {@link Office.LocationDetails} object) associated with the appointment.
          * 
          * [Api set: Mailbox Preview]
          * 
@@ -5934,7 +5934,7 @@ export declare namespace Office {
          * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the 
          * current item.
          *
-         * The cc property returns a {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of 
+         * The cc property returns an {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of 
          * the message.
          *
          * [Api set: Mailbox 1.0]

@@ -7350,7 +7350,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": " object that allows you to get the set of locations (each represented by a "
+                  "text": " object that allows you to get the set of locations (each represented by an "
                 },
                 {
                   "kind": "api-link",
@@ -34626,7 +34626,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The cc property returns a "
+                  "text": "The cc property returns an "
                 },
                 {
                   "kind": "api-link",

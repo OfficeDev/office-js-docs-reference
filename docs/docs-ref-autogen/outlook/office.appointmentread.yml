@@ -545,7 +545,7 @@ items:
 
 
       The enhancedLocation property returns an [Office.EnhancedLocation](xref:outlook.Office.EnhancedLocation) object
-      that allows you to get the set of locations (each represented by a
+      that allows you to get the set of locations (each represented by an
       [Office.LocationDetails](xref:outlook.Office.LocationDetails) object) associated with the appointment.
 
 
