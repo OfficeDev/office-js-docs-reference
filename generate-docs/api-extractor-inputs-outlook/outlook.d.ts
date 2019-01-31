@@ -259,6 +259,31 @@ export declare namespace Office {
             Appointment = "appointment"
         }
         /**
+         * Specifies an appointment location's type.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @remarks
+         * <table>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
+         *     <td>Compose or read</td>
+         *   </tr>
+         * </table>
+         * 
+         * @beta
+         */
+        enum LocationType {
+            /**
+             * A custom location.
+             */
+            Custom = "custom",
+            /**
+             * A conference room or similar resource.
+             */
+            Room = "room"
+        }
+        /**
          * Specifies the month.
          * 
          * [Api set: Mailbox 1.7]
@@ -1913,6 +1938,199 @@ export declare namespace Office {
         emailAddress: string;
     }
     /**
+     * Represents the set of locations on an appointment.
+     * 
+     * [Api set: Mailbox Preview]
+     * 
+     * @remarks
+     * <table>
+     *   <tr>
+     *     <td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td>
+     *     <td>ReadItem</td>
+     *   </tr>
+     *   <tr>
+     *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
+     *     <td>Compose or read</td>
+     *   </tr>
+     * </table>
+     * 
+     * @beta
+     */
+    export interface EnhancedLocation {
+        /**
+         * Adds to the set of locations associated with the appointment.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @remarks
+         * <table>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td>
+         *     <td>ReadWriteItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
+         *     <td>Compose</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Errors</td>
+         *     <td>InvalidFormatError - The format of the specified data object is not valid.</td>
+         *   </tr>
+         * </table>
+         * 
+         * In addition to this signature, this method also has the following signatures:
+         * 
+         * `addAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void): void;`
+         * 
+         * @param locationIdentifiers - The locations to be added to the current list of locations.
+         * @param options - Optional. An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+         *                asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to determine if the call succeeded.
+         * 
+         * @beta
+         */
+        addAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResultStatus) => void): void;
+        /**
+         * Adds to the set of locations associated with the appointment.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @remarks
+         * <table>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td>
+         *     <td>ReadWriteItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
+         *     <td>Compose</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Errors</td>
+         *     <td>InvalidFormatError - The format of the specified data object is not valid.</td>
+         *   </tr>
+         * </table>
+         * 
+         * @param locationIdentifiers - The locations to be added to the current list of locations.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+         *                asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to determine if the call succeeded.
+         * 
+         * @beta
+         */
+        addAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void): void;
+        /**
+         * Gets the set of locations associated with the appointment.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @remarks
+         * <table>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
+         *     <td>Compose or read</td>
+         *   </tr>
+         * </table>
+         * 
+         * In addition to this signature, this method also has the following signatures:
+         * 
+         * `getAsync(callback?: (result: Office.AsyncResult<LocationDetails[]>) => void): void;`
+         * 
+         * @param options - Optional. An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+         *                asyncResult, which is an Office.AsyncResult object.
+         * 
+         * @beta
+         */
+        getAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<LocationDetails[]>) => void): void;
+        /**
+         * Gets the set of locations associated with the appointment.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @remarks
+         * <table>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
+         *     <td>Compose or read</td>
+         *   </tr>
+         * </table>
+         * 
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+         *                asyncResult, which is an Office.AsyncResult object.
+         * 
+         * @beta
+         */
+        getAsync(callback?: (result: Office.AsyncResult<LocationDetails[]>) => void): void;
+        /**
+         * Removes the set of locations associated with the appointment.
+         * 
+         * If there are multiple locations with the same name, all matching locations will be removed even if only one was specified in locationIdentifiers.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @remarks
+         * <table>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td>
+         *     <td>ReadWriteItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
+         *     <td>Compose</td>
+         *   </tr>
+         * </table>
+         * 
+         * In addition to this signature, this method also has the following signatures:
+         * 
+         * `removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void): void;`
+         * 
+         * @param locationIdentifiers - The locations to be removed from the current list of locations.
+         * @param options - Optional. An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+         *                asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to determine if the call succeeded.
+         * 
+         * @beta
+         */
+        removeAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResultStatus) => void): void;
+        /**
+         * Removes the set of locations associated with the appointment.
+         * 
+         * If there are multiple locations with the same name, all matching locations will be removed even if only one was specified in locationIdentifiers.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @remarks
+         * <table>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td>
+         *     <td>ReadWriteItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
+         *     <td>Compose</td>
+         *   </tr>
+         * </table>
+         * 
+         * @param locationIdentifiers - The locations to be removed from the current list of locations.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+         *                asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to determine if the call succeeded.
+         * 
+         * @beta
+         */
+        removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void): void;
+    }
+    /**
      * Represents a collection of entities found in an email message or appointment. Read mode only.
      *
      * The Entities object is a container for the entity arrays returned by the getEntities and getEntitiesByType methods when the item 
@@ -2178,6 +2396,50 @@ export declare namespace Office {
     }
 
     /**
+     * Represents a location. Read only.
+     * 
+     * [Api set: Mailbox Preview]
+     * 
+     * @beta
+     */
+    export interface LocationDetails {
+        /**
+         * The LocationIdentifier of the location.
+         */
+        locationIdentifier: LocationIdentifier;
+        /**
+         * The location's display name.
+         */
+        displayName: string;
+        /**
+         * The email address associated with the location.
+         */
+        emailAddress: string;
+    }
+
+    /**
+     * Represents the id of a location.
+     * 
+     * [Api set: Mailbox Preview]
+     * 
+     * @beta
+     */
+    export interface LocationIdentifier {
+        /**
+         * The location's unique id.
+         * 
+         * For **Room** type, it's the room's email address.
+         * 
+         * For **Custom** type, it's the displayName.
+         */
+        id: string;
+        /**
+         * The location's type.
+         */
+        type: MailboxEnums.LocationType;
+    }
+
+    /**
      * Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. 
      * This object provides a method to get the organizer value of an appointment in an Outlook add-in.
      * 
@@ -2278,6 +2540,28 @@ export declare namespace Office {
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr></table>
          */
         end: Time;
+        /**
+         * Gets or sets the locations of the appointment. The `enhancedLocation` property returns an {@link Office.EnhancedLocation} object that 
+         * provides methods to get, remove, or add locations on an item.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @remarks
+         * 
+         * <table>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
+         *     <td>Appointment Organizer</td>
+         *   </tr>
+         * </table>
+         * 
+         * @beta
+         */
+        enhancedLocation: EnhancedLocation;
         /**
          * Gets the type of item that an instance represents.
          *
@@ -3365,6 +3649,30 @@ export declare namespace Office {
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>
          */
         end: Date;
+        /**
+         * Gets the locations of an appointment.
+         *
+         * The enhancedLocation property returns an {@link Office.EnhancedLocation} object that allows you to get the set of locations (each represented by 
+         * an {@link Office.LocationDetails} object) associated with the appointment.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @remarks
+         * 
+         * <table>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
+         *     <td>Appointment Attendee</td>
+         *   </tr>
+         * </table>
+         * 
+         * @beta
+         */
+        enhancedLocation: EnhancedLocation;
         /**
          * Gets the Exchange Web Services item class of the selected item.
          *
@@ -5626,7 +5934,7 @@ export declare namespace Office {
          * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the 
          * current item.
          *
-         * The cc property returns a {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of 
+         * The cc property returns an {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of 
          * the message.
          *
          * [Api set: Mailbox 1.0]

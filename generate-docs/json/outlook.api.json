@@ -1806,6 +1806,183 @@
               "isOverride": false,
               "isEventProperty": false
             },
+            "enhancedLocation": {
+              "kind": "property",
+              "signature": "enhancedLocation: EnhancedLocation;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "EnhancedLocation",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets or sets the locations of the appointment. The "
+                },
+                {
+                  "kind": "code",
+                  "text": "enhancedLocation",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " property returns an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.EnhancedLocation"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "EnhancedLocation"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object that provides methods to get, remove, or add locations on an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Appointment Organizer"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                }
+              ],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "getAttachmentsAsync": {
               "kind": "method",
               "signature": "getAttachmentsAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<AttachmentDetails[]>) => void): void;",
@@ -7131,6 +7308,200 @@
                 }
               ],
               "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "enhancedLocation": {
+              "kind": "property",
+              "signature": "enhancedLocation: EnhancedLocation;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "EnhancedLocation",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the locations of an appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The enhancedLocation property returns an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.EnhancedLocation"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "EnhancedLocation"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object that allows you to get the set of locations (each represented by an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.LocationDetails"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "LocationDetails"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object) associated with the appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Appointment Attendee"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                }
+              ],
+              "isBeta": true,
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false,
@@ -14642,6 +15013,825 @@
               "isVirtual": false,
               "isOverride": false,
               "isEventProperty": false
+            }
+          }
+        },
+        "EnhancedLocation": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents the set of locations on an appointment."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "html-tag",
+              "token": "<table>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "ReadItem"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "Compose or read"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</table>"
+            }
+          ],
+          "isBeta": true,
+          "isSealed": false,
+          "members": {
+            "addAsync": {
+              "kind": "method",
+              "signature": "addAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResultStatus) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "locationIdentifiers": {
+                  "name": "locationIdentifiers",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The locations to be added to the current list of locations."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "LocationIdentifier[]"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "Office.AsyncContextOptions"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an Office.AsyncResult object. Check the "
+                    },
+                    {
+                      "kind": "code",
+                      "text": "status",
+                      "highlighter": "plain"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " property of asyncResult to determine if the call succeeded."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: Office.AsyncResultStatus) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Adds to the set of locations associated with the appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadWriteItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Errors"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "InvalidFormatError - The format of the specified data object is not valid."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method also has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "addAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void): void;",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "getAsync": {
+              "kind": "method",
+              "signature": "getAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<LocationDetails[]>) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "Office.AsyncContextOptions"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an Office.AsyncResult object."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: Office.AsyncResult<LocationDetails[]>) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the set of locations associated with the appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method also has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "getAsync(callback?: (result: Office.AsyncResult<LocationDetails[]>) => void): void;",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "removeAsync": {
+              "kind": "method",
+              "signature": "removeAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResultStatus) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "locationIdentifiers": {
+                  "name": "locationIdentifiers",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The locations to be removed from the current list of locations."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "LocationIdentifier[]"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "Office.AsyncContextOptions"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an Office.AsyncResult object. Check the "
+                    },
+                    {
+                      "kind": "code",
+                      "text": "status",
+                      "highlighter": "plain"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " property of asyncResult to determine if the call succeeded."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: Office.AsyncResultStatus) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Removes the set of locations associated with the appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "If there are multiple locations with the same name, all matching locations will be removed even if only one was specified in locationIdentifiers."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadWriteItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method also has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void): void;",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -24215,6 +25405,175 @@
             }
           }
         },
+        "LocationDetails": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents a location. Read only."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
+            }
+          ],
+          "remarks": [],
+          "isBeta": true,
+          "isSealed": false,
+          "members": {
+            "displayName": {
+              "kind": "property",
+              "signature": "displayName: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The location's display name."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "emailAddress": {
+              "kind": "property",
+              "signature": "emailAddress: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The email address associated with the location."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "locationIdentifier": {
+              "kind": "property",
+              "signature": "locationIdentifier: LocationIdentifier;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "LocationIdentifier",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The LocationIdentifier of the location."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            }
+          }
+        },
+        "LocationIdentifier": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents the id of a location."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
+            }
+          ],
+          "remarks": [],
+          "isBeta": true,
+          "isSealed": false,
+          "members": {
+            "id": {
+              "kind": "property",
+              "signature": "id: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The location's unique id."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For **Room** type, it's the room's email address."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For **Custom** type, it's the displayName."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "type": {
+              "kind": "property",
+              "signature": "type: MailboxEnums.LocationType;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "MailboxEnums.LocationType",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The location's type."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            }
+          }
+        },
         "Mailbox": {
           "kind": "interface",
           "extends": "",
@@ -28560,6 +29919,120 @@
                 }
               ],
               "isBeta": false
+            },
+            "LocationType": {
+              "kind": "enum",
+              "values": {
+                "Custom": {
+                  "kind": "enum value",
+                  "value": "\"custom\"",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A custom location."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": true
+                },
+                "Room": {
+                  "kind": "enum value",
+                  "value": "\"room\"",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A conference room or similar resource."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": true
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Specifies an appointment location's type."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                }
+              ],
+              "isBeta": true
             },
             "Month": {
               "kind": "enum",
@@ -33153,7 +34626,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The cc property returns a "
+                  "text": "The cc property returns an "
                 },
                 {
                   "kind": "api-link",

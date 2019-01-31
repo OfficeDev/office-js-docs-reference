@@ -25,6 +25,7 @@ items:
       - outlook.Office.AppointmentCompose.dateTimeCreated
       - outlook.Office.AppointmentCompose.dateTimeModified
       - outlook.Office.AppointmentCompose.end
+      - outlook.Office.AppointmentCompose.enhancedLocation
       - outlook.Office.AppointmentCompose.getAttachmentsAsync
       - outlook.Office.AppointmentCompose.getInitializationContextAsync
       - outlook.Office.AppointmentCompose.getSelectedDataAsync
@@ -581,6 +582,30 @@ items:
       return:
         type:
           - Time
+  - uid: outlook.Office.AppointmentCompose.enhancedLocation
+    summary: >-
+      Gets or sets the locations of the appointment. The `enhancedLocation` property returns an
+      [Office.EnhancedLocation](xref:outlook.Office.EnhancedLocation) object that provides methods to get, remove, or
+      add locations on an item.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr> <td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td> <td>ReadItem</td>
+      </tr> <tr> <td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td>
+      <td>Appointment Organizer</td> </tr> </table>
+    isPreview: true
+    name: enhancedLocation
+    fullName: enhancedLocation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enhancedLocation: EnhancedLocation;'
+      return:
+        type:
+          - outlook.Office.EnhancedLocation
   - uid: outlook.Office.AppointmentCompose.getAttachmentsAsync
     summary: |-
       Gets the item's attachments as an array.

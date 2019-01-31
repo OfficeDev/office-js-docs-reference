@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: custom-functions-runtime.CustomFunctions.Invocation
+    summary: Provides information about the invocation of a custom function.
+    isPreview: true
+    name: CustomFunctions.Invocation
+    fullName: CustomFunctions.Invocation
+    langs:
+      - typeScript
+    type: interface
+    package: custom-functions-runtime
+    children:
+      - custom-functions-runtime.CustomFunctions.Invocation.address
+  - uid: custom-functions-runtime.CustomFunctions.Invocation.address
+    summary: >-
+      The cell address where the function is being called, if requested, otherwise undefined.
+
+
+      To request the address for the function, in the metadata JSON file, the function options should specify: `{
+      "requiresAddress": true }`
+
+
+      If the metadata JSON file is being generated from JSDoc comments, include the tag `@requiresAddress`<!-- -->.
+    isPreview: true
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: string;'
+      return:
+        type:
+          - string

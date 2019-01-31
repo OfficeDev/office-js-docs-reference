@@ -507,7 +507,7 @@ items:
       the mode of the current item.
 
 
-      The cc property returns a [Office.Recipients](xref:outlook.Office.Recipients) object that provides methods to get
+      The cc property returns an [Office.Recipients](xref:outlook.Office.Recipients) object that provides methods to get
       or update the recipients on the Cc line of the message.
 
 
