@@ -54,8 +54,8 @@ items:
       `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`
 
 
-      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult<void>) =>
-      void): void;`
+      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: Office.AsyncResult<void>)
+      => void): void;`
     name: 'addAsync(recipients, options, callback)'
     fullName: addAsync
     langs:
@@ -64,7 +64,7 @@ items:
     syntax:
       content: >-
         addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult<void>) => void): void;
+        callback?: (result: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -86,7 +86,7 @@ items:
             parameter of type Office.AsyncResult. If adding the recipients fails, the asyncResult.error property will
             contain an error code.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.Recipients.getAsync
     summary: >-
       Gets a recipient list for an appointment or message.
@@ -109,7 +109,7 @@ items:
       In addition to this signature, this method also has the following signature:
 
 
-      `getAsync(callback: (result: AsyncResult<Office.EmailAddressDetails[]>) => void): void;`
+      `getAsync(callback: (result: Office.AsyncResult<EmailAddressDetails[]>) => void): void;`
     name: 'getAsync(options, callback)'
     fullName: getAsync
     langs:
@@ -117,7 +117,7 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult<Office.EmailAddressDetails[]>) =>
+        getAsync(options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<EmailAddressDetails[]>) =>
         void): void;
       return:
         type:
@@ -135,7 +135,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. The `value` property of the result is an array of EmailAddressDetails objects.
           type:
-            - '(result: AsyncResult<Office.EmailAddressDetails[]>) => void'
+            - '(result: Office.AsyncResult<EmailAddressDetails[]>) => void'
   - uid: Outlook_1_6.Office.Recipients.setAsync
     summary: |-
       Sets a recipient list for an appointment or message.
@@ -173,8 +173,8 @@ items:
       `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`
 
 
-      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult<void>) =>
-      void): void;`
+      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: Office.AsyncResult<void>)
+      => void): void;`
     name: 'setAsync(recipients, options, callback)'
     fullName: setAsync
     langs:
@@ -183,7 +183,7 @@ items:
     syntax:
       content: >-
         setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult<void>) => void): void;
+        callback?: (result: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -205,4 +205,4 @@ items:
             parameter of type Office.AsyncResult. If setting the recipients fails the asyncResult.error property will
             contain a code that indicates any error that occurred while adding the data.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'

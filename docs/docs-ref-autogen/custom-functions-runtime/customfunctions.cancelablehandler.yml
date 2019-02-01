@@ -1,26 +1,14 @@
 ### YamlMime:UniversalReference
 items:
   - uid: custom-functions-runtime.CustomFunctions.CancelableHandler
-    summary: CancelableHandler interface
+    deprecated:
+      content: Use `CancelableInvocation` instead.
     isPreview: true
     name: CustomFunctions.CancelableHandler
     fullName: CustomFunctions.CancelableHandler
     langs:
       - typeScript
     type: interface
+    extends:
+      - custom-functions-runtime.CustomFunctions.CancelableInvocation
     package: custom-functions-runtime
-    children:
-      - custom-functions-runtime.CustomFunctions.CancelableHandler.onCanceled
-  - uid: custom-functions-runtime.CustomFunctions.CancelableHandler.onCanceled
-    summary: Handles what should occur when a custom function is canceled.
-    isPreview: true
-    name: onCanceled
-    fullName: onCanceled
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'onCanceled: () => void;'
-      return:
-        type:
-          - () => void

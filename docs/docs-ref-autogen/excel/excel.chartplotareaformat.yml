@@ -50,7 +50,7 @@ items:
           - RequestContext
   - uid: excel.Excel.ChartPlotAreaFormat.fill
     summary: |-
-      Represents the fill format of an object, which includes background formating information.
+      Represents the fill format of an object, which includes background formatting information.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill

@@ -34,10 +34,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'appointmentResponse: Office.MailboxEnums.ResponseType;'
+      content: 'appointmentResponse: MailboxEnums.ResponseType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.ResponseType
+          - MailboxEnums.ResponseType
   - uid: Outlook_1_4.Office.EmailAddressDetails.displayName
     summary: Gets the display name associated with an email address.
     name: displayName
@@ -70,7 +70,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'recipientType: Office.MailboxEnums.RecipientType;'
+      content: 'recipientType: MailboxEnums.RecipientType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.RecipientType
+          - MailboxEnums.RecipientType

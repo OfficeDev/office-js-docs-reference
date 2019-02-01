@@ -45,7 +45,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `getAsync(callback?: (result: AsyncResult<Office.EmailAddressDetails>) => void): void;`
+      `getAsync(callback?: (result: Office.AsyncResult<EmailAddressDetails>) => void): void;`
     name: 'getAsync(options, callback)'
     fullName: getAsync
     langs:
@@ -53,7 +53,7 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult<Office.EmailAddressDetails>) =>
+        getAsync(options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<EmailAddressDetails>) =>
         void): void;
       return:
         type:
@@ -72,4 +72,4 @@ items:
             asyncResult, which is an Office.AsyncResult object. The `value` property of the result is message's from
             value, as an EmailAddressDetails object.
           type:
-            - '(result: AsyncResult<Office.EmailAddressDetails>) => void'
+            - '(result: Office.AsyncResult<EmailAddressDetails>) => void'

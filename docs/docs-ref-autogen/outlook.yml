@@ -20,6 +20,7 @@ items:
       - outlook.Office.Diagnostics
       - outlook.Office.EmailAddressDetails
       - outlook.Office.EmailUser
+      - outlook.Office.EnhancedLocation
       - outlook.Office.Entities
       - outlook.Office.From
       - outlook.Office.InternetHeaders
@@ -28,6 +29,8 @@ items:
       - outlook.Office.ItemRead
       - outlook.Office.LocalClientTime
       - outlook.Office.Location
+      - outlook.Office.LocationDetails
+      - outlook.Office.LocationIdentifier
       - outlook.Office.Mailbox
       - outlook.Office.MailboxEnums.AttachmentContentFormat
       - outlook.Office.MailboxEnums.AttachmentStatus
@@ -37,6 +40,7 @@ items:
       - outlook.Office.MailboxEnums.EntityType
       - outlook.Office.MailboxEnums.ItemNotificationMessageType
       - outlook.Office.MailboxEnums.ItemType
+      - outlook.Office.MailboxEnums.LocationType
       - outlook.Office.MailboxEnums.Month
       - outlook.Office.MailboxEnums.OWAView
       - outlook.Office.MailboxEnums.RecipientType
@@ -94,6 +98,8 @@ references:
     name: Office.EmailAddressDetails
   - uid: outlook.Office.EmailUser
     name: Office.EmailUser
+  - uid: outlook.Office.EnhancedLocation
+    name: Office.EnhancedLocation
   - uid: outlook.Office.Entities
     name: Office.Entities
   - uid: outlook.Office.From
@@ -110,6 +116,10 @@ references:
     name: Office.LocalClientTime
   - uid: outlook.Office.Location
     name: Office.Location
+  - uid: outlook.Office.LocationDetails
+    name: Office.LocationDetails
+  - uid: outlook.Office.LocationIdentifier
+    name: Office.LocationIdentifier
   - uid: outlook.Office.Mailbox
     name: Office.Mailbox
   - uid: outlook.Office.MailboxEnums.AttachmentContentFormat
@@ -128,6 +138,8 @@ references:
     name: Office.MailboxEnums.ItemNotificationMessageType
   - uid: outlook.Office.MailboxEnums.ItemType
     name: Office.MailboxEnums.ItemType
+  - uid: outlook.Office.MailboxEnums.LocationType
+    name: Office.MailboxEnums.LocationType
   - uid: outlook.Office.MailboxEnums.Month
     name: Office.MailboxEnums.Month
   - uid: outlook.Office.MailboxEnums.OWAView

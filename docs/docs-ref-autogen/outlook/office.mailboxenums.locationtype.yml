@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.MailboxEnums.LocationType
+    summary: |-
+      Specifies an appointment location's type.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr> <td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td>
+      <td>Compose or read</td> </tr> </table>
+    isPreview: true
+    name: Office.MailboxEnums.LocationType
+    fullName: Office.MailboxEnums.LocationType
+    langs:
+      - typeScript
+    type: enum
+    package: outlook
+    children:
+      - outlook.Office.MailboxEnums.LocationType.Custom
+      - outlook.Office.MailboxEnums.LocationType.Room
+  - uid: outlook.Office.MailboxEnums.LocationType.Custom
+    summary: A custom location.
+    isPreview: true
+    name: Custom
+    fullName: Custom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"custom"'
+  - uid: outlook.Office.MailboxEnums.LocationType.Room
+    summary: A conference room or similar resource.
+    isPreview: true
+    name: Room
+    fullName: Room
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"room"'

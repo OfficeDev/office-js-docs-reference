@@ -24,6 +24,7 @@ items:
       - outlook.Office.AppointmentRead.displayReplyAllForm
       - outlook.Office.AppointmentRead.displayReplyForm
       - outlook.Office.AppointmentRead.end
+      - outlook.Office.AppointmentRead.enhancedLocation
       - outlook.Office.AppointmentRead.getEntities
       - outlook.Office.AppointmentRead.getEntitiesByType
       - outlook.Office.AppointmentRead.getFilteredEntitiesByName
@@ -70,8 +71,8 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void):
-      void;`
+      `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) =>
+      void): void;`
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: addHandlerAsync
     langs:
@@ -79,8 +80,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>)
-        => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -107,7 +108,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentRead.attachments
     summary: |-
       Gets the item's attachments as an array.
@@ -162,10 +163,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'attachments: Office.AttachmentDetails[];'
+      content: 'attachments: AttachmentDetails[];'
       return:
         type:
-          - 'Office.AttachmentDetails[]'
+          - 'AttachmentDetails[]'
   - uid: outlook.Office.AppointmentRead.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
@@ -184,10 +185,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'body: Office.Body;'
+      content: 'body: Body;'
       return:
         type:
-          - outlook.Office.Body
+          - Body
   - uid: outlook.Office.AppointmentRead.dateTimeCreated
     summary: |-
       Gets the date and time that an item was created. Read mode only.
@@ -538,6 +539,53 @@ items:
       return:
         type:
           - Date
+  - uid: outlook.Office.AppointmentRead.enhancedLocation
+    summary: >-
+      Gets the locations of an appointment.
+
+
+      The enhancedLocation property returns an [Office.EnhancedLocation](xref:outlook.Office.EnhancedLocation) object
+      that allows you to get the set of locations (each represented by an
+      [Office.LocationDetails](xref:outlook.Office.LocationDetails) object) associated with the appointment.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr> <td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td> <td>ReadItem</td>
+      </tr> <tr> <td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td>
+      <td>Appointment Attendee</td> </tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+
+      function callbackFunction(asyncResult) {
+          asyncResult.value.forEach(function (place) {
+              console.log("Display name: " + place.displayName);
+              console.log("Type: " + place.locationIdentifier.type);
+              if (place.locationIdentifier.type == Office.MailboxEnums.LocationType.Room) {
+                  console.log("Email address: " + place.emailAddress);
+              }
+          });
+      }
+
+      ```
+    isPreview: true
+    name: enhancedLocation
+    fullName: enhancedLocation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enhancedLocation: EnhancedLocation;'
+      return:
+        type:
+          - outlook.Office.EnhancedLocation
   - uid: outlook.Office.AppointmentRead.getEntities
     summary: |-
       Gets the entities found in the selected item's body.
@@ -621,8 +669,8 @@ items:
     type: method
     syntax:
       content: >-
-        getEntitiesByType(entityType: Office.MailboxEnums.EntityType): (string | Contact | MeetingSuggestion |
-        PhoneNumber | TaskSuggestion)[];
+        getEntitiesByType(entityType: MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber |
+        TaskSuggestion)[];
       return:
         type:
           - '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
@@ -635,7 +683,7 @@ items:
         - id: entityType
           description: One of the EntityType enumeration values.
           type:
-            - outlook.Office.MailboxEnums.EntityType
+            - MailboxEnums.EntityType
   - uid: outlook.Office.AppointmentRead.getFilteredEntitiesByName
     summary: >-
       Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
@@ -700,7 +748,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `getInitializationContextAsync(callback?: (result: AsyncResult<string>) => void): void;`
+      `getInitializationContextAsync(callback?: (result: Office.AsyncResult<string>) => void): void;`
     isPreview: true
     name: 'getInitializationContextAsync(options, callback)'
     fullName: getInitializationContextAsync
@@ -709,8 +757,8 @@ items:
     type: method
     syntax:
       content: >-
-        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) =>
-        void): void;
+        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result:
+        Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -730,7 +778,7 @@ items:
             asyncResult object will contain an Error object with its code property set to 9020 and its name property set
             to GenericResponseError.
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.AppointmentRead.getRegExMatches
     summary: >-
       Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
@@ -972,8 +1020,8 @@ items:
 
 
       <table> <tr> <th>Type</th> <th>Description</th> <th>Item Class</th> </tr> <tr> <td>Appointment items</td>
-      <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.</td>
-      <td>IPM.Appointment,IPM.Appointment.Occurence</td> </tr> <tr> <td>Message items</td> <td>These include email
+      <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td>
+      <td>IPM.Appointment,IPM.Appointment.Occurrence</td> </tr> <tr> <td>Message items</td> <td>These include email
       messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that
       use IPM.Schedule.Meeting as the base message class.</td>
       <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
@@ -994,7 +1042,7 @@ items:
 
 
       The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can
-      be used to save the item to the store, which will return the item identifier in the AsyncResult.value parameter in
+      be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in
       the callback function.
 
 
@@ -1069,10 +1117,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'itemType: Office.MailboxEnums.ItemType;'
+      content: 'itemType: MailboxEnums.ItemType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.ItemType
+          - MailboxEnums.ItemType
   - uid: outlook.Office.AppointmentRead.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
@@ -1104,7 +1152,7 @@ items:
     type: method
     syntax:
       content: >-
-        loadCustomPropertiesAsync(callback: (result: AsyncResult<Office.CustomProperties>) => void, userContext?: any):
+        loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?: any):
         void;
       return:
         type:
@@ -1116,7 +1164,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult<Office.CustomProperties>) => void'
+            - '(result: Office.AsyncResult<CustomProperties>) => void'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
@@ -1209,10 +1257,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'notificationMessages: Office.NotificationMessages;'
+      content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - outlook.Office.NotificationMessages
+          - NotificationMessages
   - uid: outlook.Office.AppointmentRead.optionalAttendees
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
@@ -1351,14 +1399,16 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `removeHandlerAsync(eventType:EventType, callback?: (result: AsyncResult<void>) => void): void;`
+      `removeHandlerAsync(eventType: Office.EventType, callback?: (result: Office.AsyncResult<void>) => void): void;`
     name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: removeHandlerAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'removeHandlerAsync(eventType:EventType, options?: any, callback?: (result: AsyncResult<void>) => void): void;'
+      content: >-
+        removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (result: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -1367,7 +1417,7 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - EventType
+            - Office.EventType
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
@@ -1379,7 +1429,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentRead.requiredAttendees
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode

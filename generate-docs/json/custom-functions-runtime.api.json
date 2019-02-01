@@ -44,14 +44,67 @@
         },
         "CancelableHandler": {
           "kind": "interface",
-          "extends": "",
+          "extends": "CancelableInvocation",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [
+            {
+              "kind": "text",
+              "text": "Use "
+            },
+            {
+              "kind": "code",
+              "text": "CancelableInvocation",
+              "highlighter": "plain"
+            },
+            {
+              "kind": "text",
+              "text": " instead."
+            }
+          ],
+          "summary": [],
+          "remarks": [],
+          "isBeta": true,
+          "isSealed": false
+        },
+        "CancelableInvocation": {
+          "kind": "interface",
+          "extends": "Invocation",
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
           "summary": [
             {
               "kind": "text",
-              "text": "CancelableHandler interface"
+              "text": "Provides information about the invocation of a cancelable custom function. A cancelable custom function can provide a handler for the onCanceled event."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "To indicate that a function is cancelable, in the metadata JSON file, the function options should specify: "
+            },
+            {
+              "kind": "code",
+              "text": "{ \"cancelable\": true }",
+              "highlighter": "plain"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "If the metadata JSON file is being generated from JSDoc comments, include the tag "
+            },
+            {
+              "kind": "code",
+              "text": "@cancelable",
+              "highlighter": "plain"
+            },
+            {
+              "kind": "text",
+              "text": "."
             }
           ],
           "remarks": [],
@@ -69,7 +122,74 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Handles what should occur when a custom function is canceled."
+                  "text": "Event handler called when the custom function is canceled."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            }
+          }
+        },
+        "Invocation": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Provides information about the invocation of a custom function."
+            }
+          ],
+          "remarks": [],
+          "isBeta": true,
+          "isSealed": false,
+          "members": {
+            "address": {
+              "kind": "property",
+              "signature": "address?: string;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The cell address where the function is being called, if requested, otherwise undefined."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "To request the address for the function, in the metadata JSON file, the function options should specify: "
+                },
+                {
+                  "kind": "code",
+                  "text": "{ \"requiresAddress\": true }",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "If the metadata JSON file is being generated from JSDoc comments, include the tag "
+                },
+                {
+                  "kind": "code",
+                  "text": "@requiresAddress",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 }
               ],
               "remarks": [],
@@ -83,16 +203,59 @@
         },
         "StreamingHandler": {
           "kind": "interface",
-          "extends": "CancelableHandler",
+          "extends": "StreamingInvocation",
           "implements": "",
           "typeParameters": [
-            "T"
+            "ResultType"
+          ],
+          "deprecatedMessage": [
+            {
+              "kind": "text",
+              "text": "Use "
+            },
+            {
+              "kind": "code",
+              "text": "StreamingInvocation<ResultType>",
+              "highlighter": "plain"
+            },
+            {
+              "kind": "text",
+              "text": " instead."
+            }
+          ],
+          "summary": [],
+          "remarks": [],
+          "isBeta": true,
+          "isSealed": false
+        },
+        "StreamingInvocation": {
+          "kind": "interface",
+          "extends": "CancelableInvocation",
+          "implements": "",
+          "typeParameters": [
+            "ResultType"
           ],
           "deprecatedMessage": [],
           "summary": [
             {
               "kind": "text",
-              "text": "A handler passed automatically as the last parameter to a streaming function. With this parameter, a function can use handler.setResult to set a cell value or hook into the handler.onCanceled event to to handle what happens when the function stops streaming."
+              "text": "Provides information about the invocation of a streaming custom function. A streaming custom function can provide results which can change over time."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "Call "
+            },
+            {
+              "kind": "code",
+              "text": "setResult()",
+              "highlighter": "plain"
+            },
+            {
+              "kind": "text",
+              "text": " one or more times to provide the result instead of returning a result from the function."
             }
           ],
           "remarks": [],
@@ -101,16 +264,16 @@
           "members": {
             "setResult": {
               "kind": "property",
-              "signature": "setResult: (value: T | Error) => void;",
+              "signature": "setResult: (value: ResultType | Error) => void;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "(value: T | Error) => void",
+              "type": "(value: ResultType | Error) => void",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Sets the returned result for a streaming custom function."
+                  "text": "Set the result for the custom function. May be called more than once."
                 }
               ],
               "remarks": [],

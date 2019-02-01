@@ -57,8 +57,8 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void):
-      void;`
+      `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) =>
+      void): void;`
 
       #### Examples
 
@@ -83,8 +83,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>)
-        => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -111,7 +111,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Item.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
@@ -130,10 +130,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'body: Office.Body;'
+      content: 'body: Body;'
       return:
         type:
-          - outlook.Office.Body
+          - Body
   - uid: outlook.Office.Item.dateTimeCreated
     summary: |-
       Gets the date and time that an item was created. Read mode only.
@@ -183,7 +183,7 @@ items:
           - Date
   - uid: outlook.Office.Item.getAttachmentContentAsync
     summary: >-
-      Gets an attachment from a message or appointment and returns it as an `Office.AttachmentContent` object.
+      Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
 
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
@@ -252,7 +252,7 @@ items:
     syntax:
       content: >-
         getAttachmentContentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<Office.AttachmentContent>) => void): void;
+        Office.AsyncResult<AttachmentContent>) => void): void;
       return:
         type:
           - void
@@ -274,7 +274,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object. If the call fails, the asyncResult.error
             property will contain and error code with the reason for the failure.
           type:
-            - '(result: AsyncResult<Office.AttachmentContent>) => void'
+            - '(result: Office.AsyncResult<AttachmentContent>) => void'
   - uid: outlook.Office.Item.getInitializationContextAsync
     summary: >-
       Gets initialization data passed when the add-in is [activated by an actionable
@@ -298,7 +298,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `getInitializationContextAsync(callback?: (result: AsyncResult<string>) => void): void;`
+      `getInitializationContextAsync(callback?: (result: Office.AsyncResult<string>) => void): void;`
 
       #### Examples
 
@@ -337,8 +337,8 @@ items:
     type: method
     syntax:
       content: >-
-        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) =>
-        void): void;
+        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result:
+        Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -358,7 +358,7 @@ items:
             asyncResult object will contain an Error object with its code property set to 9020 and its name property set
             to GenericResponseError.
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.Item.getSharedPropertiesAsync
     summary: |-
       Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
@@ -376,7 +376,7 @@ items:
       In addition to this signature, this method also has the following signature:
 
 
-      `getAsync(callback: (result: AsyncResult<Office.SharedProperties>) => void): void;`
+      `getAsync(callback: (result: Office.AsyncResult<SharedProperties>) => void): void;`
 
       #### Examples
 
@@ -400,7 +400,7 @@ items:
     syntax:
       content: >-
         getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (result:
-        AsyncResult<Office.SharedProperties>) => void): void;
+        Office.AsyncResult<SharedProperties>) => void): void;
       return:
         type:
           - void
@@ -417,7 +417,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. The `value` property of the result is the properties of the shared item.
           type:
-            - '(result: AsyncResult<Office.SharedProperties>) => void'
+            - '(result: Office.AsyncResult<SharedProperties>) => void'
   - uid: outlook.Office.Item.itemType
     summary: >-
       Gets the type of item that an instance represents.
@@ -452,10 +452,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'itemType: Office.MailboxEnums.ItemType;'
+      content: 'itemType: MailboxEnums.ItemType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.ItemType
+          - MailboxEnums.ItemType
   - uid: outlook.Office.Item.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
@@ -530,7 +530,7 @@ items:
     type: method
     syntax:
       content: >-
-        loadCustomPropertiesAsync(callback: (result: AsyncResult<Office.CustomProperties>) => void, userContext?: any):
+        loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?: any):
         void;
       return:
         type:
@@ -542,7 +542,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: AsyncResult<Office.CustomProperties>) => void'
+            - '(result: Office.AsyncResult<CustomProperties>) => void'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
@@ -567,10 +567,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'notificationMessages: Office.NotificationMessages;'
+      content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - outlook.Office.NotificationMessages
+          - NotificationMessages
   - uid: outlook.Office.Item.recurrence
     summary: >-
       Gets or sets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and
@@ -603,10 +603,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'recurrence: Office.Recurrence;'
+      content: 'recurrence: Recurrence;'
       return:
         type:
-          - outlook.Office.Recurrence
+          - Recurrence
   - uid: outlook.Office.Item.removeHandlerAsync
     summary: >-
       Removes the event handlers for a supported event type.
@@ -630,7 +630,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `removeHandlerAsync(eventType: Office.EventType, callback?: (result: AsyncResult<void>) => void): void;`
+      `removeHandlerAsync(eventType: Office.EventType, callback?: (result: Office.AsyncResult<void>) => void): void;`
     name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: removeHandlerAsync
     langs:
@@ -638,8 +638,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (result: AsyncResult<void>) => void):
-        void;
+        removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (result: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -660,7 +660,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Item.seriesId
     summary: >-
       Gets the id of the series that an instance belongs to.

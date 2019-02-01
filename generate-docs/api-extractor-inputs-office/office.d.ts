@@ -5169,7 +5169,7 @@ export declare namespace Office {
         setTableOptionsAsync(tableOptions: any, callback?: (result: AsyncResult<void>) => void): void;
     }
     /**
-     * Represents the data in a table or a {@link Office.TableBinding}.
+     * Represents the data in a table or an {@link Office.TableBinding}.
      *
      * @remarks
      * <table><tr><td>Hosts</td><td>Excel, Word</td></tr>

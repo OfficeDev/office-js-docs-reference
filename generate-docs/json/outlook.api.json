@@ -106,7 +106,7 @@
           "members": {
             "addFileAttachmentAsync": {
               "kind": "method",
-              "signature": "addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -156,12 +156,12 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -399,7 +399,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult<string>) => void): void;",
+                  "text": "addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -410,7 +410,7 @@
             },
             "addFileAttachmentFromBase64Async": {
               "kind": "method",
-              "signature": "addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -460,12 +460,12 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -479,7 +479,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the AsyncResult.value object."
+                  "text": "The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the asyncResult.value object."
                 },
                 {
                   "kind": "paragraph"
@@ -683,7 +683,7 @@
             },
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -702,7 +702,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "handler": {
                   "name": "handler",
@@ -738,7 +738,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -898,7 +898,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -909,7 +909,7 @@
             },
             "addItemAttachmentAsync": {
               "kind": "method",
-              "signature": "addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -964,7 +964,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -1153,7 +1153,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult<string>) => void): void;",
+                  "text": "addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -1164,11 +1164,11 @@
             },
             "body": {
               "kind": "property",
-              "signature": "body: Office.Body;",
+              "signature": "body: Body;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Body",
+              "type": "Body",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -1806,9 +1806,186 @@
               "isOverride": false,
               "isEventProperty": false
             },
+            "enhancedLocation": {
+              "kind": "property",
+              "signature": "enhancedLocation: EnhancedLocation;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "EnhancedLocation",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets or sets the locations of the appointment. The "
+                },
+                {
+                  "kind": "code",
+                  "text": "enhancedLocation",
+                  "highlighter": "plain"
+                },
+                {
+                  "kind": "text",
+                  "text": " property returns an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.EnhancedLocation"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "EnhancedLocation"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object that provides methods to get, remove, or add locations on an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Appointment Organizer"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                }
+              ],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "getAttachmentsAsync": {
               "kind": "method",
-              "signature": "getAttachmentsAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.AttachmentDetails[]>) => void): void;",
+              "signature": "getAttachmentsAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<AttachmentDetails[]>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1839,7 +2016,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.AttachmentDetails[]>) => void"
+                  "type": "(result: Office.AsyncResult<AttachmentDetails[]>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -1952,7 +2129,7 @@
             },
             "getInitializationContextAsync": {
               "kind": "method",
-              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1983,7 +2160,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -2124,7 +2301,7 @@
             },
             "getSelectedDataAsync": {
               "kind": "method",
-              "signature": "getSelectedDataAsync(coercionType: Office.CoercionType, options: Office.AsyncContextOptions, callback: (result: AsyncResult<any>) => void): void;",
+              "signature": "getSelectedDataAsync(coercionType: Office.CoercionType, options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<any>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2167,12 +2344,12 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult."
                     }
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<any>) => void"
+                  "type": "(result: Office.AsyncResult<any>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -2299,11 +2476,11 @@
             },
             "itemType": {
               "kind": "property",
-              "signature": "itemType: Office.MailboxEnums.ItemType;",
+              "signature": "itemType: MailboxEnums.ItemType;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.ItemType",
+              "type": "MailboxEnums.ItemType",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -2422,7 +2599,7 @@
             },
             "loadCustomPropertiesAsync": {
               "kind": "method",
-              "signature": "loadCustomPropertiesAsync(callback: (result: AsyncResult<Office.CustomProperties>) => void, userContext?: any): void;",
+              "signature": "loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?: any): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2441,7 +2618,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.CustomProperties>) => void"
+                  "type": "(result: Office.AsyncResult<CustomProperties>) => void"
                 },
                 "userContext": {
                   "name": "userContext",
@@ -2715,11 +2892,11 @@
             },
             "notificationMessages": {
               "kind": "property",
-              "signature": "notificationMessages: Office.NotificationMessages;",
+              "signature": "notificationMessages: NotificationMessages;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.NotificationMessages",
+              "type": "NotificationMessages",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -2966,11 +3143,11 @@
             },
             "organizer": {
               "kind": "property",
-              "signature": "organizer: Office.Organizer;",
+              "signature": "organizer: Organizer;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Organizer",
+              "type": "Organizer",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -3254,7 +3431,7 @@
             },
             "removeAttachmentAsync": {
               "kind": "method",
-              "signature": "removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3297,7 +3474,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -3472,7 +3649,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -3483,7 +3660,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType:EventType, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3502,7 +3679,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "options": {
                   "name": "options",
@@ -3526,7 +3703,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -3686,7 +3863,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeHandlerAsync(eventType:EventType, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeHandlerAsync(eventType: Office.EventType, callback?: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -3832,7 +4009,7 @@
             },
             "saveAsync": {
               "kind": "method",
-              "signature": "saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "saveAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3863,7 +4040,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -4073,7 +4250,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "saveAsync(callback: (result: AsyncResult<string>) => void): void;",
+                  "text": "saveAsync(callback: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -4235,7 +4412,7 @@
             },
             "setSelectedDataAsync": {
               "kind": "method",
-              "signature": "setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4278,7 +4455,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -4453,7 +4630,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -5932,7 +6109,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5987,7 +6164,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -6147,7 +6324,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -6158,11 +6335,11 @@
             },
             "attachments": {
               "kind": "property",
-              "signature": "attachments: Office.AttachmentDetails[];",
+              "signature": "attachments: AttachmentDetails[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.AttachmentDetails[]",
+              "type": "AttachmentDetails[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -6295,11 +6472,11 @@
             },
             "body": {
               "kind": "property",
-              "signature": "body: Office.Body;",
+              "signature": "body: Body;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Body",
+              "type": "Body",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -7136,6 +7313,200 @@
               "isOverride": false,
               "isEventProperty": false
             },
+            "enhancedLocation": {
+              "kind": "property",
+              "signature": "enhancedLocation: EnhancedLocation;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "EnhancedLocation",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the locations of an appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The enhancedLocation property returns an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.EnhancedLocation"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "EnhancedLocation"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object that allows you to get the set of locations (each represented by an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.LocationDetails"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "LocationDetails"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object) associated with the appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Appointment Attendee"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                }
+              ],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
             "getEntities": {
               "kind": "method",
               "signature": "getEntities(): Entities;",
@@ -7264,7 +7635,7 @@
             },
             "getEntitiesByType": {
               "kind": "method",
-              "signature": "getEntitiesByType(entityType: Office.MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];",
+              "signature": "getEntitiesByType(entityType: MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7288,7 +7659,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.MailboxEnums.EntityType"
+                  "type": "MailboxEnums.EntityType"
                 }
               },
               "deprecatedMessage": [],
@@ -8093,7 +8464,7 @@
             },
             "getInitializationContextAsync": {
               "kind": "method",
-              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8124,7 +8495,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -8262,7 +8633,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getInitializationContextAsync(callback?: (result: AsyncResult<string>) => void): void;",
+                  "text": "getInitializationContextAsync(callback?: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -9073,7 +9444,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence."
+                  "text": "These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence."
                 },
                 {
                   "kind": "html-tag",
@@ -9089,7 +9460,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "IPM.Appointment,IPM.Appointment.Occurence"
+                  "text": "IPM.Appointment,IPM.Appointment.Occurrence"
                 },
                 {
                   "kind": "html-tag",
@@ -9200,7 +9571,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the AsyncResult.value parameter in the callback function."
+                  "text": "The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function."
                 },
                 {
                   "kind": "paragraph"
@@ -9328,11 +9699,11 @@
             },
             "itemType": {
               "kind": "property",
-              "signature": "itemType: Office.MailboxEnums.ItemType;",
+              "signature": "itemType: MailboxEnums.ItemType;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.ItemType",
+              "type": "MailboxEnums.ItemType",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -9451,7 +9822,7 @@
             },
             "loadCustomPropertiesAsync": {
               "kind": "method",
-              "signature": "loadCustomPropertiesAsync(callback: (result: AsyncResult<Office.CustomProperties>) => void, userContext?: any): void;",
+              "signature": "loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?: any): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9470,7 +9841,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.CustomProperties>) => void"
+                  "type": "(result: Office.AsyncResult<CustomProperties>) => void"
                 },
                 "userContext": {
                   "name": "userContext",
@@ -9855,11 +10226,11 @@
             },
             "notificationMessages": {
               "kind": "property",
-              "signature": "notificationMessages: Office.NotificationMessages;",
+              "signature": "notificationMessages: NotificationMessages;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.NotificationMessages",
+              "type": "NotificationMessages",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -10375,7 +10746,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType:EventType, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10394,7 +10765,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "options": {
                   "name": "options",
@@ -10418,7 +10789,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -10578,7 +10949,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeHandlerAsync(eventType:EventType, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeHandlerAsync(eventType: Office.EventType, callback?: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -11269,11 +11640,11 @@
             },
             "format": {
               "kind": "property",
-              "signature": "format: Office.MailboxEnums.AttachmentContentFormat;",
+              "signature": "format: MailboxEnums.AttachmentContentFormat;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.AttachmentContentFormat",
+              "type": "MailboxEnums.AttachmentContentFormat",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -11438,11 +11809,11 @@
           "members": {
             "attachmentType": {
               "kind": "property",
-              "signature": "attachmentType: Office.MailboxEnums.AttachmentType;",
+              "signature": "attachmentType: MailboxEnums.AttachmentType;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.AttachmentType",
+              "type": "MailboxEnums.AttachmentType",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -11677,7 +12048,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(coercionType: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "getAsync(coercionType: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11715,12 +12086,12 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. The body is provided in the requested format in the asyncResult.value property."
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. The body is provided in the requested format in the asyncResult.value property."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -11851,7 +12222,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getAsync(coercionType: Office.CoercionType, callback: (result: AsyncResult<string>) => void): void;",
+                  "text": "getAsync(coercionType: Office.CoercionType, callback: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -11862,7 +12233,7 @@
             },
             "getTypeAsync": {
               "kind": "method",
-              "signature": "getTypeAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.CoercionType>) => void): void;",
+              "signature": "getTypeAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<Office.CoercionType>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11893,7 +12264,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.CoercionType>) => void"
+                  "type": "(result: Office.AsyncResult<Office.CoercionType>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -12006,7 +12377,7 @@
             },
             "prependAsync": {
               "kind": "method",
-              "signature": "prependAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "prependAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12049,7 +12420,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -12223,7 +12594,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "prependAsync(data: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "prependAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -12242,7 +12613,7 @@
             },
             "setAsync": {
               "kind": "method",
-              "signature": "setAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "setAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12285,7 +12656,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -12487,7 +12858,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "setAsync(data: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "setAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -12506,7 +12877,7 @@
             },
             "setSelectedDataAsync": {
               "kind": "method",
-              "signature": "setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12549,7 +12920,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -12751,7 +13122,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -12783,11 +13154,11 @@
           "members": {
             "coercionType": {
               "kind": "property",
-              "signature": "coercionType?: CoercionType;",
+              "signature": "coercionType?: Office.CoercionType;",
               "isOptional": true,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "CoercionType",
+              "type": "Office.CoercionType",
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
@@ -13460,7 +13831,7 @@
             },
             "saveAsync": {
               "kind": "method",
-              "signature": "saveAsync(callback?: (result: AsyncResult<void>) => void, asyncContext?: any): void;",
+              "signature": "saveAsync(callback?: (result: Office.AsyncResult<void>) => void, asyncContext?: any): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -13479,7 +13850,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 },
                 "asyncContext": {
                   "name": "asyncContext",
@@ -14406,11 +14777,11 @@
           "members": {
             "appointmentResponse": {
               "kind": "property",
-              "signature": "appointmentResponse: Office.MailboxEnums.ResponseType;",
+              "signature": "appointmentResponse: MailboxEnums.ResponseType;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.ResponseType",
+              "type": "MailboxEnums.ResponseType",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -14469,11 +14840,11 @@
             },
             "recipientType": {
               "kind": "property",
-              "signature": "recipientType: Office.MailboxEnums.RecipientType;",
+              "signature": "recipientType: MailboxEnums.RecipientType;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.RecipientType",
+              "type": "MailboxEnums.RecipientType",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -14642,6 +15013,825 @@
               "isVirtual": false,
               "isOverride": false,
               "isEventProperty": false
+            }
+          }
+        },
+        "EnhancedLocation": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents the set of locations on an appointment."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "html-tag",
+              "token": "<table>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "ReadItem"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "Compose or read"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "html-tag",
+              "token": "</table>"
+            }
+          ],
+          "isBeta": true,
+          "isSealed": false,
+          "members": {
+            "addAsync": {
+              "kind": "method",
+              "signature": "addAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResultStatus) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "locationIdentifiers": {
+                  "name": "locationIdentifiers",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The locations to be added to the current list of locations."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "LocationIdentifier[]"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "Office.AsyncContextOptions"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an Office.AsyncResult object. Check the "
+                    },
+                    {
+                      "kind": "code",
+                      "text": "status",
+                      "highlighter": "plain"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " property of asyncResult to determine if the call succeeded."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: Office.AsyncResultStatus) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Adds to the set of locations associated with the appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadWriteItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Errors"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "InvalidFormatError - The format of the specified data object is not valid."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method also has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "addAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void): void;",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "getAsync": {
+              "kind": "method",
+              "signature": "getAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<LocationDetails[]>) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "Office.AsyncContextOptions"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an Office.AsyncResult object."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: Office.AsyncResult<LocationDetails[]>) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the set of locations associated with the appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method also has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "getAsync(callback?: (result: Office.AsyncResult<LocationDetails[]>) => void): void;",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "removeAsync": {
+              "kind": "method",
+              "signature": "removeAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResultStatus) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "locationIdentifiers": {
+                  "name": "locationIdentifiers",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The locations to be removed from the current list of locations."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "LocationIdentifier[]"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "Office.AsyncContextOptions"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an Office.AsyncResult object. Check the "
+                    },
+                    {
+                      "kind": "code",
+                      "text": "status",
+                      "highlighter": "plain"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " property of asyncResult to determine if the call succeeded."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: Office.AsyncResultStatus) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Removes the set of locations associated with the appointment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "If there are multiple locations with the same name, all matching locations will be removed even if only one was specified in locationIdentifiers."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadWriteItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, this method also has the following signatures:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void): void;",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -15060,7 +16250,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult<Office.EmailAddressDetails>) => void): void;",
+              "signature": "getAsync(options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<EmailAddressDetails>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -15100,7 +16290,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.EmailAddressDetails>) => void"
+                  "type": "(result: Office.AsyncResult<EmailAddressDetails>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -15250,7 +16440,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getAsync(callback?: (result: AsyncResult<Office.EmailAddressDetails>) => void): void;",
+                  "text": "getAsync(callback?: (result: Office.AsyncResult<EmailAddressDetails>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -15381,7 +16571,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(names: string[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.InternetHeaders>) => void): void;",
+              "signature": "getAsync(names: string[], options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<InternetHeaders>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -15424,7 +16614,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.InternetHeaders>) => void"
+                  "type": "(result: Office.AsyncResult<InternetHeaders>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -15541,7 +16731,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getAsync(names: string[], callback: (result: AsyncResult<Office.InternetHeaders>) => void): void;",
+                  "text": "getAsync(names: string[], callback: (result: Office.AsyncResult<InternetHeaders>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -15552,7 +16742,7 @@
             },
             "removeAsync": {
               "kind": "method",
-              "signature": "removeAsync(names: string[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.InternetHeaders>) => void): void;",
+              "signature": "removeAsync(names: string[], options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<InternetHeaders>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -15595,7 +16785,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.InternetHeaders>) => void"
+                  "type": "(result: Office.AsyncResult<InternetHeaders>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -15712,7 +16902,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAsync(names: string[], callback: (result: AsyncResult<Office.Body>) => void): void;",
+                  "text": "removeAsync(names: string[], callback: (result: Office.AsyncResult<Body>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -15723,7 +16913,7 @@
             },
             "setAsync": {
               "kind": "method",
-              "signature": "setAsync(headers: Object, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "setAsync(headers: Object, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -15766,7 +16956,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -15886,7 +17076,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "setAsync(headers: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "setAsync(headers: string, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -16019,7 +17209,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16074,7 +17264,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -16234,7 +17424,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -16245,11 +17435,11 @@
             },
             "body": {
               "kind": "property",
-              "signature": "body: Office.Body;",
+              "signature": "body: Body;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Body",
+              "type": "Body",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -16600,7 +17790,7 @@
             },
             "getAttachmentContentAsync": {
               "kind": "method",
-              "signature": "getAttachmentContentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.AttachmentContent>) => void): void;",
+              "signature": "getAttachmentContentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<AttachmentContent>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16643,7 +17833,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.AttachmentContent>) => void"
+                  "type": "(result: Office.AsyncResult<AttachmentContent>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -16654,7 +17844,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "Office.AttachmentContent",
+                  "text": "AttachmentContent",
                   "highlighter": "plain"
                 },
                 {
@@ -16834,7 +18024,7 @@
             },
             "getInitializationContextAsync": {
               "kind": "method",
-              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16865,7 +18055,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -17003,7 +18193,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getInitializationContextAsync(callback?: (result: AsyncResult<string>) => void): void;",
+                  "text": "getInitializationContextAsync(callback?: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -17014,7 +18204,7 @@
             },
             "getSharedPropertiesAsync": {
               "kind": "method",
-              "signature": "getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult<Office.SharedProperties>) => void): void;",
+              "signature": "getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<SharedProperties>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -17054,7 +18244,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.SharedProperties>) => void"
+                  "type": "(result: Office.AsyncResult<SharedProperties>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -17171,7 +18361,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getAsync(callback: (result: AsyncResult<Office.SharedProperties>) => void): void;",
+                  "text": "getAsync(callback: (result: Office.AsyncResult<SharedProperties>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -17182,11 +18372,11 @@
             },
             "itemType": {
               "kind": "property",
-              "signature": "itemType: Office.MailboxEnums.ItemType;",
+              "signature": "itemType: MailboxEnums.ItemType;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.ItemType",
+              "type": "MailboxEnums.ItemType",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -17305,7 +18495,7 @@
             },
             "loadCustomPropertiesAsync": {
               "kind": "method",
-              "signature": "loadCustomPropertiesAsync(callback: (result: AsyncResult<Office.CustomProperties>) => void, userContext?: any): void;",
+              "signature": "loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?: any): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -17324,7 +18514,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.CustomProperties>) => void"
+                  "type": "(result: Office.AsyncResult<CustomProperties>) => void"
                 },
                 "userContext": {
                   "name": "userContext",
@@ -17463,11 +18653,11 @@
             },
             "notificationMessages": {
               "kind": "property",
-              "signature": "notificationMessages: Office.NotificationMessages;",
+              "signature": "notificationMessages: NotificationMessages;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.NotificationMessages",
+              "type": "NotificationMessages",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -17579,11 +18769,11 @@
             },
             "recurrence": {
               "kind": "property",
-              "signature": "recurrence: Office.Recurrence;",
+              "signature": "recurrence: Recurrence;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Recurrence",
+              "type": "Recurrence",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -17734,7 +18924,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -17777,7 +18967,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -17937,7 +19127,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeHandlerAsync(eventType: Office.EventType, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeHandlerAsync(eventType: Office.EventType, callback?: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -18152,7 +19342,7 @@
           "members": {
             "addFileAttachmentAsync": {
               "kind": "method",
-              "signature": "addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -18202,12 +19392,12 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -18437,7 +19627,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult<string>) => void): void;",
+                  "text": "addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -18448,7 +19638,7 @@
             },
             "addFileAttachmentFromBase64Async": {
               "kind": "method",
-              "signature": "addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -18498,12 +19688,12 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -18517,7 +19707,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the AsyncResult.value object."
+                  "text": "The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the asyncResult.value object."
                 },
                 {
                   "kind": "paragraph"
@@ -18721,7 +19911,7 @@
             },
             "addItemAttachmentAsync": {
               "kind": "method",
-              "signature": "addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -18776,7 +19966,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -18965,7 +20155,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult<string>) => void): void;",
+                  "text": "addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -19116,7 +20306,7 @@
             },
             "getAttachmentsAsync": {
               "kind": "method",
-              "signature": "getAttachmentsAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.AttachmentDetails[]>) => void): void;",
+              "signature": "getAttachmentsAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<AttachmentDetails[]>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -19147,7 +20337,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.AttachmentDetails[]>) => void"
+                  "type": "(result: Office.AsyncResult<AttachmentDetails[]>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -19260,7 +20450,7 @@
             },
             "getInitializationContextAsync": {
               "kind": "method",
-              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -19291,7 +20481,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -19432,7 +20622,7 @@
             },
             "getSelectedDataAsync": {
               "kind": "method",
-              "signature": "getSelectedDataAsync(coercionType: Office.CoercionType, callback: (result: AsyncResult<any>) => void): void;",
+              "signature": "getSelectedDataAsync(coercionType: Office.CoercionType, callback: (result: Office.AsyncResult<any>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -19468,7 +20658,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<any>) => void"
+                  "type": "(result: Office.AsyncResult<any>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -19595,7 +20785,7 @@
             },
             "removeAttachmentAsync": {
               "kind": "method",
-              "signature": "removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -19638,7 +20828,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -19813,7 +21003,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -19824,7 +21014,7 @@
             },
             "saveAsync": {
               "kind": "method",
-              "signature": "saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "saveAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -19855,7 +21045,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -20065,7 +21255,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "saveAsync(callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "saveAsync(callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -20076,7 +21266,7 @@
             },
             "setSelectedDataAsync": {
               "kind": "method",
-              "signature": "setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -20119,7 +21309,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -20294,7 +21484,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -20488,11 +21678,11 @@
           "members": {
             "attachments": {
               "kind": "property",
-              "signature": "attachments: Office.AttachmentDetails[];",
+              "signature": "attachments: AttachmentDetails[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.AttachmentDetails[]",
+              "type": "AttachmentDetails[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -21109,7 +22299,7 @@
             },
             "getEntitiesByType": {
               "kind": "method",
-              "signature": "getEntitiesByType(entityType: Office.MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];",
+              "signature": "getEntitiesByType(entityType: MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -21133,7 +22323,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.MailboxEnums.EntityType"
+                  "type": "MailboxEnums.EntityType"
                 }
               },
               "deprecatedMessage": [],
@@ -21938,7 +23128,7 @@
             },
             "getInitializationContextAsync": {
               "kind": "method",
-              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -21969,7 +23159,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -22107,7 +23297,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getInitializationContextAsync(callback?: (result: AsyncResult<string>) => void): void;",
+                  "text": "getInitializationContextAsync(callback?: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -22918,7 +24108,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence."
+                  "text": "These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence."
                 },
                 {
                   "kind": "html-tag",
@@ -22934,7 +24124,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "IPM.Appointment,IPM.Appointment.Occurence"
+                  "text": "IPM.Appointment,IPM.Appointment.Occurrence"
                 },
                 {
                   "kind": "html-tag",
@@ -23045,7 +24235,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the AsyncResult.value parameter in the callback function."
+                  "text": "The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function."
                 },
                 {
                   "kind": "paragraph"
@@ -23820,7 +25010,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "getAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -23858,7 +25048,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -23975,7 +25165,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getAsync(callback: (result: AsyncResult<string>) => void): void;",
+                  "text": "getAsync(callback: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -23986,7 +25176,7 @@
             },
             "setAsync": {
               "kind": "method",
-              "signature": "setAsync(location: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "setAsync(location: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -24036,7 +25226,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -24204,7 +25394,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "setAsync(location: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "setAsync(location: string, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -24212,6 +25402,175 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
+            }
+          }
+        },
+        "LocationDetails": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents a location. Read only."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
+            }
+          ],
+          "remarks": [],
+          "isBeta": true,
+          "isSealed": false,
+          "members": {
+            "displayName": {
+              "kind": "property",
+              "signature": "displayName: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The location's display name."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "emailAddress": {
+              "kind": "property",
+              "signature": "emailAddress: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The email address associated with the location."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "locationIdentifier": {
+              "kind": "property",
+              "signature": "locationIdentifier: LocationIdentifier;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "LocationIdentifier",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The LocationIdentifier of the location."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            }
+          }
+        },
+        "LocationIdentifier": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents the id of a location."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
+            }
+          ],
+          "remarks": [],
+          "isBeta": true,
+          "isSealed": false,
+          "members": {
+            "id": {
+              "kind": "property",
+              "signature": "id: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The location's unique id."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For **Room** type, it's the room's email address."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For **Custom** type, it's the displayName."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
+            },
+            "type": {
+              "kind": "property",
+              "signature": "type: MailboxEnums.LocationType;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "MailboxEnums.LocationType",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The location's type."
+                }
+              ],
+              "remarks": [],
+              "isBeta": true,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false,
+              "isEventProperty": false
             }
           }
         },
@@ -24356,7 +25715,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType: Office.EventType, handler: (type: EventType) => void, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -24387,7 +25746,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(type: EventType) => void"
+                  "type": "(type: Office.EventType) => void"
                 },
                 "options": {
                   "name": "options",
@@ -24411,7 +25770,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -24549,7 +25908,7 @@
             },
             "convertToEwsId": {
               "kind": "method",
-              "signature": "convertToEwsId(itemId: string, restVersion: Office.MailboxEnums.RestVersion): string;",
+              "signature": "convertToEwsId(itemId: string, restVersion: MailboxEnums.RestVersion): string;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -24580,7 +25939,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.MailboxEnums.RestVersion"
+                  "type": "MailboxEnums.RestVersion"
                 }
               },
               "deprecatedMessage": [],
@@ -24853,7 +26212,7 @@
             },
             "convertToRestId": {
               "kind": "method",
-              "signature": "convertToRestId(itemId: string, restVersion: Office.MailboxEnums.RestVersion): string;",
+              "signature": "convertToRestId(itemId: string, restVersion: MailboxEnums.RestVersion): string;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -24884,7 +26243,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.MailboxEnums.RestVersion"
+                  "type": "MailboxEnums.RestVersion"
                 }
               },
               "deprecatedMessage": [],
@@ -25183,11 +26542,11 @@
             },
             "diagnostics": {
               "kind": "property",
-              "signature": "diagnostics: Office.Diagnostics;",
+              "signature": "diagnostics: Diagnostics;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Diagnostics",
+              "type": "Diagnostics",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -26292,7 +27651,7 @@
             },
             "getCallbackTokenAsync": {
               "kind": "method",
-              "signature": "getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (result: AsyncResult<string>) => void): void;",
+              "signature": "getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -26350,7 +27709,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -26523,7 +27882,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getCallbackTokenAsync(callback: (result: AsyncResult<string>) => void): void;",
+                  "text": "getCallbackTokenAsync(callback: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 },
                 {
@@ -26531,7 +27890,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getCallbackTokenAsync(callback: (result: AsyncResult<string>) => void, userContext?: any): void;",
+                  "text": "getCallbackTokenAsync(callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -26542,7 +27901,7 @@
             },
             "getUserIdentityTokenAsync": {
               "kind": "method",
-              "signature": "getUserIdentityTokenAsync(callback: (result: AsyncResult<string>) => void, userContext?: any): void;",
+              "signature": "getUserIdentityTokenAsync(callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -26588,7 +27947,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 },
                 "userContext": {
                   "name": "userContext",
@@ -26812,7 +28171,7 @@
             },
             "makeEwsRequestAsync": {
               "kind": "method",
-              "signature": "makeEwsRequestAsync(data: any, callback: (result: AsyncResult<string>) => void, userContext?: any): void;",
+              "signature": "makeEwsRequestAsync(data: any, callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -26852,7 +28211,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 },
                 "userContext": {
                   "name": "userContext",
@@ -27090,7 +28449,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -27133,7 +28492,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -27422,11 +28781,11 @@
             },
             "userProfile": {
               "kind": "property",
-              "signature": "userProfile: Office.UserProfile;",
+              "signature": "userProfile: UserProfile;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.UserProfile",
+              "type": "UserProfile",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -28560,6 +29919,120 @@
                 }
               ],
               "isBeta": false
+            },
+            "LocationType": {
+              "kind": "enum",
+              "values": {
+                "Custom": {
+                  "kind": "enum value",
+                  "value": "\"custom\"",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A custom location."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": true
+                },
+                "Room": {
+                  "kind": "enum value",
+                  "value": "\"room\"",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A conference room or similar resource."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": true
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Specifies an appointment location's type."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Applicable Outlook mode"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "text",
+                  "text": " "
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                }
+              ],
+              "isBeta": true
             },
             "Month": {
               "kind": "enum",
@@ -31847,7 +33320,7 @@
           "members": {
             "addFileAttachmentAsync": {
               "kind": "method",
-              "signature": "addFileAttachmentAsync(uri: string, attachmentName: string, options?: AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -31890,7 +33363,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "AsyncContextOptions"
+                  "type": "Office.AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -31902,7 +33375,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -32140,7 +33613,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult<string>) => void): void;",
+                  "text": "addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -32151,7 +33624,7 @@
             },
             "addFileAttachmentFromBase64Async": {
               "kind": "method",
-              "signature": "addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -32201,12 +33674,12 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -32220,7 +33693,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the AsyncResult.value object."
+                  "text": "The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the asyncResult.value object."
                 },
                 {
                   "kind": "paragraph"
@@ -32424,7 +33897,7 @@
             },
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -32443,7 +33916,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "handler": {
                   "name": "handler",
@@ -32479,7 +33952,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -32639,7 +34112,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -32650,7 +34123,7 @@
             },
             "addItemAttachmentAsync": {
               "kind": "method",
-              "signature": "addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -32700,12 +34173,12 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error."
                     }
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -32894,7 +34367,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult<string>) => void): void;",
+                  "text": "addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -33021,11 +34494,11 @@
             },
             "body": {
               "kind": "property",
-              "signature": "body: Office.Body;",
+              "signature": "body: Body;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Body",
+              "type": "Body",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -33153,7 +34626,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The cc property returns a "
+                  "text": "The cc property returns an "
                 },
                 {
                   "kind": "api-link",
@@ -33788,11 +35261,11 @@
             },
             "from": {
               "kind": "property",
-              "signature": "from: Office.From;",
+              "signature": "from: From;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.From",
+              "type": "From",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -33918,7 +35391,7 @@
             },
             "getAttachmentsAsync": {
               "kind": "method",
-              "signature": "getAttachmentsAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.AttachmentDetails[]>) => void): void;",
+              "signature": "getAttachmentsAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<AttachmentDetails[]>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -33949,7 +35422,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.AttachmentDetails[]>) => void"
+                  "type": "(result: Office.AsyncResult<AttachmentDetails[]>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -34062,7 +35535,7 @@
             },
             "getInitializationContextAsync": {
               "kind": "method",
-              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -34093,7 +35566,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -34234,7 +35707,7 @@
             },
             "getSelectedDataAsync": {
               "kind": "method",
-              "signature": "getSelectedDataAsync(coercionType: Office.CoercionType, callback: (result: AsyncResult<any>) => void): void;",
+              "signature": "getSelectedDataAsync(coercionType: Office.CoercionType, callback: (result: Office.AsyncResult<any>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -34270,7 +35743,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<any>) => void"
+                  "type": "(result: Office.AsyncResult<any>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -34397,11 +35870,11 @@
             },
             "internetHeaders": {
               "kind": "property",
-              "signature": "internetHeaders: Office.InternetHeaders;",
+              "signature": "internetHeaders: InternetHeaders;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.InternetHeaders",
+              "type": "InternetHeaders",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -34520,11 +35993,11 @@
             },
             "itemType": {
               "kind": "property",
-              "signature": "itemType: Office.MailboxEnums.ItemType;",
+              "signature": "itemType: MailboxEnums.ItemType;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.ItemType",
+              "type": "MailboxEnums.ItemType",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -34643,7 +36116,7 @@
             },
             "loadCustomPropertiesAsync": {
               "kind": "method",
-              "signature": "loadCustomPropertiesAsync(callback: (result: AsyncResult<Office.CustomProperties>) => void, userContext?: any): void;",
+              "signature": "loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?: any): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -34662,7 +36135,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.CustomProperties>) => void"
+                  "type": "(result: Office.AsyncResult<CustomProperties>) => void"
                 },
                 "userContext": {
                   "name": "userContext",
@@ -34801,11 +36274,11 @@
             },
             "notificationMessages": {
               "kind": "property",
-              "signature": "notificationMessages: Office.NotificationMessages;",
+              "signature": "notificationMessages: NotificationMessages;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.NotificationMessages",
+              "type": "NotificationMessages",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -35072,7 +36545,7 @@
             },
             "removeAttachmentAsync": {
               "kind": "method",
-              "signature": "removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -35115,7 +36588,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -35290,7 +36763,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeAttachmentAsync(attachmentId: string, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -35301,7 +36774,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType:EventType, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -35320,7 +36793,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "options": {
                   "name": "options",
@@ -35344,7 +36817,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -35504,7 +36977,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeHandlerAsync(eventType:EventType, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeHandlerAsync(eventType: Office.EventType, callback?: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -35515,7 +36988,7 @@
             },
             "saveAsync": {
               "kind": "method",
-              "signature": "saveAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "saveAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -35546,7 +37019,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -35756,7 +37229,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "saveAsync(callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "saveAsync(callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -35918,7 +37391,7 @@
             },
             "setSelectedDataAsync": {
               "kind": "method",
-              "signature": "setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -35961,7 +37434,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -36136,7 +37609,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -36444,7 +37917,7 @@
           "members": {
             "addHandlerAsync": {
               "kind": "method",
-              "signature": "addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -36463,7 +37936,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "handler": {
                   "name": "handler",
@@ -36499,7 +37972,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -36659,7 +38132,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -36670,11 +38143,11 @@
             },
             "attachments": {
               "kind": "property",
-              "signature": "attachments: Office.AttachmentDetails[];",
+              "signature": "attachments: AttachmentDetails[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.AttachmentDetails[]",
+              "type": "AttachmentDetails[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -36807,11 +38280,11 @@
             },
             "body": {
               "kind": "property",
-              "signature": "body: Office.Body;",
+              "signature": "body: Body;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.Body",
+              "type": "Body",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -38036,7 +39509,7 @@
             },
             "getEntitiesByType": {
               "kind": "method",
-              "signature": "getEntitiesByType(entityType: Office.MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];",
+              "signature": "getEntitiesByType(entityType: MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38060,7 +39533,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "Office.MailboxEnums.EntityType"
+                  "type": "MailboxEnums.EntityType"
                 }
               },
               "deprecatedMessage": [],
@@ -38865,7 +40338,7 @@
             },
             "getInitializationContextAsync": {
               "kind": "method",
-              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void): void;",
+              "signature": "getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38896,7 +40369,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -39034,7 +40507,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getInitializationContextAsync(callback?: (result: AsyncResult<string>) => void): void;",
+                  "text": "getInitializationContextAsync(callback?: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -39619,11 +41092,11 @@
             },
             "internetHeaders": {
               "kind": "property",
-              "signature": "internetHeaders: Office.InternetHeaders;",
+              "signature": "internetHeaders: InternetHeaders;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.InternetHeaders",
+              "type": "InternetHeaders",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -40084,7 +41557,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence."
+                  "text": "These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence."
                 },
                 {
                   "kind": "html-tag",
@@ -40100,7 +41573,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "IPM.Appointment,IPM.Appointment.Occurence"
+                  "text": "IPM.Appointment,IPM.Appointment.Occurrence"
                 },
                 {
                   "kind": "html-tag",
@@ -40211,7 +41684,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the AsyncResult.value parameter in the callback function."
+                  "text": "The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function."
                 },
                 {
                   "kind": "paragraph"
@@ -40339,11 +41812,11 @@
             },
             "itemType": {
               "kind": "property",
-              "signature": "itemType: Office.MailboxEnums.ItemType;",
+              "signature": "itemType: MailboxEnums.ItemType;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.ItemType",
+              "type": "MailboxEnums.ItemType",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -40462,7 +41935,7 @@
             },
             "loadCustomPropertiesAsync": {
               "kind": "method",
-              "signature": "loadCustomPropertiesAsync(callback: (result: AsyncResult<Office.CustomProperties>) => void, userContext?: any): void;",
+              "signature": "loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?: any): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -40481,7 +41954,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.CustomProperties>) => void"
+                  "type": "(result: Office.AsyncResult<CustomProperties>) => void"
                 },
                 "userContext": {
                   "name": "userContext",
@@ -40743,11 +42216,11 @@
             },
             "notificationMessages": {
               "kind": "property",
-              "signature": "notificationMessages: Office.NotificationMessages;",
+              "signature": "notificationMessages: NotificationMessages;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.NotificationMessages",
+              "type": "NotificationMessages",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -41014,7 +42487,7 @@
             },
             "removeHandlerAsync": {
               "kind": "method",
-              "signature": "removeHandlerAsync(eventType:EventType, options?: any, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -41033,7 +42506,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "EventType"
+                  "type": "Office.EventType"
                 },
                 "options": {
                   "name": "options",
@@ -41057,7 +42530,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -41217,7 +42690,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeHandlerAsync(eventType:EventType, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeHandlerAsync(eventType: Office.EventType, callback?: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -41959,11 +43432,11 @@
             },
             "type": {
               "kind": "property",
-              "signature": "type: Office.MailboxEnums.ItemNotificationMessageType;",
+              "signature": "type: MailboxEnums.ItemNotificationMessageType;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.ItemNotificationMessageType",
+              "type": "MailboxEnums.ItemNotificationMessageType",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -42093,7 +43566,7 @@
           "members": {
             "addAsync": {
               "kind": "method",
-              "signature": "addAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "addAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -42155,7 +43628,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -42288,7 +43761,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -42299,7 +43772,7 @@
             },
             "getAllAsync": {
               "kind": "method",
-              "signature": "getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.NotificationMessageDetails[]>) => void): void;",
+              "signature": "getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<NotificationMessageDetails[]>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -42339,7 +43812,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.NotificationMessageDetails[]>) => void"
+                  "type": "(result: Office.AsyncResult<NotificationMessageDetails[]>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -42456,7 +43929,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getAllAsync(callback: (result: AsyncResult<Office.NotificationMessageDetails[]>) => void): void;",
+                  "text": "getAllAsync(callback: (result: Office.AsyncResult<NotificationMessageDetails[]>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -42467,7 +43940,7 @@
             },
             "removeAsync": {
               "kind": "method",
-              "signature": "removeAsync(key: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "removeAsync(key: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -42510,7 +43983,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -42643,7 +44116,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "removeAsync(key: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "removeAsync(key: string, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -42654,7 +44127,7 @@
             },
             "replaceAsync": {
               "kind": "method",
-              "signature": "replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -42709,7 +44182,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -42849,7 +44322,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -42973,7 +44446,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.EmailAddressDetails>) => void): void;",
+              "signature": "getAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<EmailAddressDetails>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -42999,7 +44472,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. The "
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an asyncResult object. The "
                     },
                     {
                       "kind": "code",
@@ -43013,7 +44486,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.EmailAddressDetails>) => void"
+                  "type": "(result: Office.AsyncResult<EmailAddressDetails>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -43434,7 +44907,7 @@
           "members": {
             "addAsync": {
               "kind": "method",
-              "signature": "addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -43477,7 +44950,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -43673,7 +45146,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -43684,7 +45157,7 @@
             },
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult<Office.EmailAddressDetails[]>) => void): void;",
+              "signature": "getAsync(options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<EmailAddressDetails[]>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -43724,7 +45197,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.EmailAddressDetails[]>) => void"
+                  "type": "(result: Office.AsyncResult<EmailAddressDetails[]>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -43867,7 +45340,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getAsync(callback: (result: AsyncResult<Office.EmailAddressDetails[]>) => void): void;",
+                  "text": "getAsync(callback: (result: Office.AsyncResult<EmailAddressDetails[]>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -43878,7 +45351,7 @@
             },
             "setAsync": {
               "kind": "method",
-              "signature": "setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -43921,7 +45394,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -44162,7 +45635,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -44756,7 +46229,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Office.Recurrence>) => void): void;",
+              "signature": "getAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<Recurrence>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -44796,7 +46269,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Office.Recurrence>) => void"
+                  "type": "(result: Office.AsyncResult<Recurrence>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -44920,7 +46393,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getAsync(callback?: (result: AsyncResult<Office.Recurrence>) => void): void;",
+                  "text": "getAsync(callback?: (result: Office.AsyncResult<Recurrence>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -44931,11 +46404,11 @@
             },
             "recurrenceProperties": {
               "kind": "property",
-              "signature": "recurrenceProperties: Office.RecurrenceProperties;",
+              "signature": "recurrenceProperties: RecurrenceProperties;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.RecurrenceProperties",
+              "type": "RecurrenceProperties",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -45047,11 +46520,11 @@
             },
             "recurrenceTimeZone": {
               "kind": "property",
-              "signature": "recurrenceTimeZone: Office.RecurrenceTimeZone;",
+              "signature": "recurrenceTimeZone: RecurrenceTimeZone;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.RecurrenceTimeZone",
+              "type": "RecurrenceTimeZone",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -45163,11 +46636,11 @@
             },
             "recurrenceType": {
               "kind": "property",
-              "signature": "recurrenceType: Office.MailboxEnums.RecurrenceType;",
+              "signature": "recurrenceType: MailboxEnums.RecurrenceType;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.RecurrenceType",
+              "type": "MailboxEnums.RecurrenceType",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -45279,11 +46752,11 @@
             },
             "seriesTime": {
               "kind": "property",
-              "signature": "seriesTime: Office.SeriesTime;",
+              "signature": "seriesTime: SeriesTime;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.SeriesTime",
+              "type": "SeriesTime",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -45414,7 +46887,7 @@
             },
             "setAsync": {
               "kind": "method",
-              "signature": "setAsync(recurrencePattern: Recurrence, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "setAsync(recurrencePattern: Recurrence, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -45457,7 +46930,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -45616,7 +47089,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult<void>) => void): void;",
+                  "text": "setAsync(recurrencePattern: Recurrence, callback?: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -45761,11 +47234,11 @@
             },
             "dayOfWeek": {
               "kind": "property",
-              "signature": "dayOfWeek: Office.MailboxEnums.Days;",
+              "signature": "dayOfWeek: MailboxEnums.Days;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.Days",
+              "type": "MailboxEnums.Days",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -45782,11 +47255,11 @@
             },
             "days": {
               "kind": "property",
-              "signature": "days: Office.MailboxEnums.Days[];",
+              "signature": "days: MailboxEnums.Days[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.Days[]",
+              "type": "MailboxEnums.Days[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -45803,11 +47276,11 @@
             },
             "firstDayOfWeek": {
               "kind": "property",
-              "signature": "firstDayOfWeek: Office.MailboxEnums.Days;",
+              "signature": "firstDayOfWeek: MailboxEnums.Days;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.Days",
+              "type": "MailboxEnums.Days",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -45845,11 +47318,11 @@
             },
             "month": {
               "kind": "property",
-              "signature": "month: Office.MailboxEnums.Month;",
+              "signature": "month: MailboxEnums.Month;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.Month",
+              "type": "MailboxEnums.Month",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -45866,11 +47339,11 @@
             },
             "weekNumber": {
               "kind": "property",
-              "signature": "weekNumber: Office.MailboxEnums.WeekNumber;",
+              "signature": "weekNumber: MailboxEnums.WeekNumber;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.WeekNumber",
+              "type": "MailboxEnums.WeekNumber",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -46000,11 +47473,11 @@
           "members": {
             "name": {
               "kind": "property",
-              "signature": "name: Office.MailboxEnums.RecurrenceTimeZone;",
+              "signature": "name: MailboxEnums.RecurrenceTimeZone;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.RecurrenceTimeZone",
+              "type": "MailboxEnums.RecurrenceTimeZone",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -46223,11 +47696,11 @@
             },
             "callback": {
               "kind": "property",
-              "signature": "callback?: (result: AsyncResult<any>) => void;",
+              "signature": "callback?: (result: Office.AsyncResult<any>) => void;",
               "isOptional": true,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "(result: AsyncResult<any>) => void",
+              "type": "(result: Office.AsyncResult<any>) => void",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -46675,7 +48148,7 @@
             },
             "saveAsync": {
               "kind": "method",
-              "signature": "saveAsync(callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "saveAsync(callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -46694,7 +48167,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -48634,11 +50107,11 @@
           "members": {
             "delegatePermissions": {
               "kind": "property",
-              "signature": "delegatePermissions: Office.MailboxEnums.DelegatePermissions;",
+              "signature": "delegatePermissions: MailboxEnums.DelegatePermissions;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Office.MailboxEnums.DelegatePermissions",
+              "type": "MailboxEnums.DelegatePermissions",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -48845,7 +50318,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult<string>) => void): void;",
+              "signature": "getAsync(options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<string>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -48885,7 +50358,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<string>) => void"
+                  "type": "(result: Office.AsyncResult<string>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -49009,7 +50482,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getAsync(callback: (result: AsyncResult<string>) => void): void;",
+                  "text": "getAsync(callback: (result: Office.AsyncResult<string>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -49020,7 +50493,7 @@
             },
             "setAsync": {
               "kind": "method",
-              "signature": "setAsync(subject: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "setAsync(subject: string, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -49063,7 +50536,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -49238,7 +50711,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "setAsync(subject: string, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "setAsync(subject: string, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -49543,7 +51016,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(options: Office.AsyncContextOptions, callback: (result: AsyncResult<Date>) => void): void;",
+              "signature": "getAsync(options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<Date>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -49569,7 +51042,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. The "
+                      "text": "When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. The "
                     },
                     {
                       "kind": "code",
@@ -49583,7 +51056,7 @@
                   ],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<Date>) => void"
+                  "type": "(result: Office.AsyncResult<Date>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -49707,7 +51180,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "getAsync(callback: (result: AsyncResult<Date>) => void): void;",
+                  "text": "getAsync(callback: (result: Office.AsyncResult<Date>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
@@ -49718,7 +51191,7 @@
             },
             "setAsync": {
               "kind": "method",
-              "signature": "setAsync(dateTime: Date, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;",
+              "signature": "setAsync(dateTime: Date, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -49761,7 +51234,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "(result: AsyncResult<void>) => void"
+                  "type": "(result: Office.AsyncResult<void>) => void"
                 }
               },
               "deprecatedMessage": [],
@@ -49943,7 +51416,7 @@
                 },
                 {
                   "kind": "code",
-                  "text": "setAsync(dateTime: Date, callback: (result: AsyncResult<void>) => void): void;",
+                  "text": "setAsync(dateTime: Date, callback: (result: Office.AsyncResult<void>) => void): void;",
                   "highlighter": "plain"
                 }
               ],
