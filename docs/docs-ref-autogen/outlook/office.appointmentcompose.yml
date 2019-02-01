@@ -595,6 +595,49 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td> <td>ReadItem</td>
       </tr> <tr> <td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td>
       <td>Appointment Organizer</td> </tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var locationDetails = [ 
+          {
+              "id": "Contoso",
+              "type": Office.MailboxEnums.LocationType.Custom
+          }
+      ];
+
+      Office.context.mailbox.item.enhancedLocation.addAsync(locationDetails);
+
+
+      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+
+      function callbackFunction(asyncResult) {
+          asyncResult.value.forEach(function (place) {
+              console.log("Display name: " + place.displayName);
+              console.log("Type: " + place.locationIdentifier.type);
+              if (place.locationIdentifier.type == Office.MailboxEnums.LocationType.Room) {
+                  console.log("Email address: " + place.emailAddress);
+              }
+          });
+      }
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+
+      function callbackFunction(asyncResult) {
+          asyncResult.value.forEach(function (currentValue) {
+              Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
+          });
+      }
+
+      ```
     isPreview: true
     name: enhancedLocation
     fullName: enhancedLocation
