@@ -81,14 +81,15 @@ Office.AppointmentCompose.enhancedLocation:
         }
     ];
     Office.context.mailbox.item.enhancedLocation.addAsync(locationDetails);
+
     Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
 
     function callbackFunction(asyncResult) {
         asyncResult.value.forEach(function (place) {
-                console.log("Display name: " + place.displayName);
-                console.log("Type: " + place.locationIdentifier.type);
-                if (place.locationIdentifier.type == Office.MailboxEnums.LocationType.Room) {
-                    console.log("Email address: " + place.emailAddress);
+            console.log("Display name: " + place.displayName);
+            console.log("Type: " + place.locationIdentifier.type);
+            if (place.locationIdentifier.type == Office.MailboxEnums.LocationType.Room) {
+                console.log("Email address: " + place.emailAddress);
             }
         });
     }
@@ -379,10 +380,10 @@ Office.AppointmentRead.enhancedLocation:
 
     function callbackFunction(asyncResult) {
         asyncResult.value.forEach(function (place) {
-                console.log("Display name: " + place.displayName);
-                console.log("Type: " + place.locationIdentifier.type);
-                if (place.locationIdentifier.type == Office.MailboxEnums.LocationType.Room) {
-                    console.log("Email address: " + place.emailAddress);
+            console.log("Display name: " + place.displayName);
+            console.log("Type: " + place.locationIdentifier.type);
+            if (place.locationIdentifier.type == Office.MailboxEnums.LocationType.Room) {
+                console.log("Email address: " + place.emailAddress);
             }
         });
     }
@@ -613,10 +614,10 @@ Office.EnhancedLocation.getAsync:
 
     function callbackFunction(asyncResult) {
         asyncResult.value.forEach(function (place) {
-                console.log("Display name: " + place.displayName);
-                console.log("Type: " + place.locationIdentifier.type);
-                if (place.locationIdentifier.type == Office.MailboxEnums.LocationType.Room) {
-                    console.log("Email address: " + place.emailAddress);
+            console.log("Display name: " + place.displayName);
+            console.log("Type: " + place.locationIdentifier.type);
+            if (place.locationIdentifier.type == Office.MailboxEnums.LocationType.Room) {
+                console.log("Email address: " + place.emailAddress);
             }
         });
     }
