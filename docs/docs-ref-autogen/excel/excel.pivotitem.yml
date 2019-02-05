@@ -19,6 +19,7 @@ items:
       - excel.Excel.PivotItem.isExpanded
       - excel.Excel.PivotItem.load
       - excel.Excel.PivotItem.name
+      - excel.Excel.PivotItem.set
       - excel.Excel.PivotItem.toJSON
       - excel.Excel.PivotItem.visible
   - uid: excel.Excel.PivotItem.context
@@ -114,6 +115,36 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.PivotItem.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.PivotItem): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.PivotItemUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.PivotItemUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.PivotItem.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

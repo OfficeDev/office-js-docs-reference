@@ -25,6 +25,7 @@ items:
       - onenote.OneNote.PageContent.load
       - onenote.OneNote.PageContent.outline
       - onenote.OneNote.PageContent.parentPage
+      - onenote.OneNote.PageContent.set
       - onenote.OneNote.PageContent.toJSON
       - onenote.OneNote.PageContent.top
       - onenote.OneNote.PageContent.track
@@ -212,6 +213,36 @@ items:
       return:
         type:
           - onenote.OneNote.Page
+  - uid: onenote.OneNote.PageContent.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: OneNote.PageContent): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.PageContentUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.PageContentUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: onenote.OneNote.PageContent.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

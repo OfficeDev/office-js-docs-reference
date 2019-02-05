@@ -36,6 +36,7 @@ items:
       - excel.Excel.Chart.plotVisibleOnly
       - excel.Excel.Chart.series
       - excel.Excel.Chart.seriesNameLevel
+      - excel.Excel.Chart.set
       - excel.Excel.Chart.setData
       - excel.Excel.Chart.setPosition
       - excel.Excel.Chart.showAllFieldButtons
@@ -554,6 +555,36 @@ items:
       return:
         type:
           - number
+  - uid: excel.Excel.Chart.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Chart): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Chart.setData
     summary: |-
       Resets the source data for the chart.

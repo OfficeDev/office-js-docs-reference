@@ -42,6 +42,7 @@ items:
       - word.Word.InlinePicture.parentTableCellOrNullObject
       - word.Word.InlinePicture.parentTableOrNullObject
       - word.Word.InlinePicture.select
+      - word.Word.InlinePicture.set
       - word.Word.InlinePicture.toJSON
       - word.Word.InlinePicture.track
       - word.Word.InlinePicture.untrack
@@ -662,6 +663,36 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - Word.SelectionMode
+  - uid: word.Word.InlinePicture.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Word.InlinePicture): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.InlinePictureUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.InlinePictureUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.InlinePicture.toJSON
     name: toJSON()
     fullName: toJSON
