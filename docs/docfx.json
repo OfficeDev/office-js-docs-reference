@@ -185,6 +185,24 @@
         "docs-ref-autogen/word/**": [
           "word"
         ]
+      },
+      "ms.prod": {
+        "docs-ref-autogen/custom-functions-runtime/**": "excel",
+        "docs-ref-autogen/excel/**": "excel",
+        "docs-ref-autogen/office/**": "non-product-specific",
+        "docs-ref-autogen/office-runtime/**": "non-product-specific",
+        "docs-ref-autogen/onenote/**": "onenote",
+        "docs-ref-autogen/outlook/**": "outlook preview",
+        "docs-ref-autogen/outlook_1_1/**": "outlook 1.1",
+        "docs-ref-autogen/outlook_1_2/**": "outlook 1.2",
+        "docs-ref-autogen/outlook_1_3/**": "outlook 1.3",
+        "docs-ref-autogen/outlook_1_4/**": "outlook 1.4",
+        "docs-ref-autogen/outlook_1_5/**": "outlook 1.5",
+        "docs-ref-autogen/outlook_1_6/**": "outlook 1.6",
+        "docs-ref-autogen/outlook_1_7/**": "outlook 1.7",
+        "docs-ref-autogen/overview/**": "non-product-specific",
+        "docs-ref-autogen/visio/**": "visio",
+        "docs-ref-autogen/word/**": "word"
       }
     },
     "template": [],
