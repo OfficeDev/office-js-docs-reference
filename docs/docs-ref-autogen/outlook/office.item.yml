@@ -68,7 +68,7 @@ items:
       function myHandlerFunction(eventarg) { 
           if (eventarg.attachmentStatus == Office.MailboxEnums.AttachmentStatus.Added) { 
               var _att = eventarg.attachmentDetails; 
-              showMessage("Event Fired and Attachment Added!"); 
+              console.log("Event Fired and Attachment Added!"); 
               getAttachmentContentAsync(_att.id, options, callback); 
           } 
       } 

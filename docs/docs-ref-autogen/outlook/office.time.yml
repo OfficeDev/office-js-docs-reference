@@ -45,6 +45,22 @@ items:
 
 
       `getAsync(callback: (result: Office.AsyncResult<Date>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.start.getAsync(function (asyncResult) {
+          if (asyncResult.status == "failed") {
+              console.log("Action failed with error: " + asyncResult.error.message);
+          }
+          else {
+              console.log("Start date and time: " + asyncResult.value);
+          }
+      });
+
+      ```
     name: 'getAsync(options, callback)'
     fullName: getAsync
     langs:

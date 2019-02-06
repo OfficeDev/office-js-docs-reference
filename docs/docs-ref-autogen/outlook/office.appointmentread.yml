@@ -1191,15 +1191,7 @@ items:
 
       ```javascript
 
-      var userContext = { value : 1 };
-
-      Office.context.mailbox.item.location.getAsync( { context: userContext}, callback);
-
-
-      function callback(asyncResult) {
-          var context = asyncResult.context;
-          var location = asyncResult.value;
-      }
+      var location = Office.context.mailbox.item.location;
 
       ```
     name: location
@@ -1286,16 +1278,7 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.optionalAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-
-      Office.context.mailbox.item.optionalAttendees.addAsync( ['jason@contoso.com'] );
-
-      Office.context.mailbox.item.optionalAttendees.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var arrayOfOptionalAttendeesRecipients = asyncResult.value;
-      }
+      var optionalAttendees = Office.context.mailbox.item.optionalAttendees;
 
       ```
     name: optionalAttendees
@@ -1455,16 +1438,7 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.requiredAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-
-      Office.context.mailbox.item.requiredAttendees.addAsync( ['jason@contoso.com'] );
-
-      Office.context.mailbox.item.requiredAttendees.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var arrayOfRequiredAttendeesRecipients = asyncResult.value;
-      }
+      var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
 
       ```
     name: requiredAttendees
@@ -1538,26 +1512,7 @@ items:
 
       ```javascript
 
-      // The following example sets the start time of an appointment in compose mode by
-
-      // using the `setAsync` method of the `Time` object.
-
-      var startTime = new Date("3/14/2015");
-
-      var options = {
-          // Pass information that can be used
-          // in the callback
-          asyncContext: {verb:"Set"}
-      }
-
-      Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
-          if (result.error) {
-              console.debug(result.error);
-          } else {
-              // Access the asyncContext that was passed to the setAsync function
-              console.debug("Start Time " + result.asyncContext.verb);
-          }
-      });
+      var start = Office.context.mailbox.item.start;
 
       ```
     name: start

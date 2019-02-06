@@ -91,9 +91,9 @@ items:
 
       function callback(result) {
           if (result.error) {
-              showMessage(result.error);
+              console.log(result.error);
           } else {
-              showMessage("Attachment added");
+              console.log("Attachment added");
           }
       }
 
@@ -380,9 +380,9 @@ items:
 
       function callback(result) {
           if (result.error) {
-              showMessage(result.error);
+              console.log(result.error);
           } else {
-              showMessage("Attachment added");
+              console.log("Attachment added");
           }
       }
 

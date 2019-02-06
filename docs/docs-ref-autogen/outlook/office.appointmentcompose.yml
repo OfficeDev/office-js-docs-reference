@@ -92,9 +92,9 @@ items:
 
       function callback(result) {
           if (result.error) {
-              showMessage(result.error);
+              console.log(result.error);
           } else {
-              showMessage("Attachment added");
+              console.log("Attachment added");
           }
       }
 
@@ -356,9 +356,9 @@ items:
 
       function callback(result) {
           if (result.error) {
-              showMessage(result.error);
+              console.log(result.error);
           } else {
-              showMessage("Attachment added");
+              console.log("Attachment added");
           }
       }
 
@@ -1061,9 +1061,11 @@ items:
 
       ```javascript
 
-      var organizerName = Office.context.mailbox.item.organizer.displayName;
-
-      var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
+      Office.context.mailbox.item.organizer.getAsync(
+          function(asyncResult) {
+              console.log(JSON.stringify(asyncResult));
+          }
+      );
 
       ```
     name: organizer
