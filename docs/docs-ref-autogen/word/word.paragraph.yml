@@ -63,6 +63,7 @@ items:
       - word.Word.Paragraph.rightIndent
       - word.Word.Paragraph.search
       - word.Word.Paragraph.select
+      - word.Word.Paragraph.set
       - word.Word.Paragraph.spaceAfter
       - word.Word.Paragraph.spaceBefore
       - word.Word.Paragraph.split
@@ -1571,6 +1572,65 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - Word.SelectionMode
+  - uid: word.Word.Paragraph.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Word.Paragraph): void`
+      #### Examples
+
+      ```typescript
+      await Word.run(async (context) => {
+        const paragraph = context.document.body.paragraphs.getFirst();
+        paragraph.set({
+          leftIndent: 30,
+          font: {
+            bold: true,
+            color: "red"
+          }
+        });
+
+        await context.sync();
+      });
+      ```
+      ```typescript
+      await Word.run(async (context) => {
+        const firstParagraph = context.document.body.paragraphs.getFirst();
+        const secondParagraph = firstParagraph.getNext();
+        firstParagraph.load("text, font/color, font/bold, leftIndent");
+
+        await context.sync();
+
+        secondParagraph.set(firstParagraph);
+
+        await context.sync();
+      });
+      ```
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ParagraphUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Paragraph.spaceAfter
     summary: |-
       Gets or sets the spacing, in points, after the paragraph.

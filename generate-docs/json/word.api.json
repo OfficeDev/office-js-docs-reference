@@ -1406,6 +1406,68 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.BodyUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.BodyUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.Body): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "style": {
               "kind": "property",
               "signature": "style: string;",
@@ -3587,6 +3649,68 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.ContentControlUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.ContentControlUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.ContentControl): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "split": {
               "kind": "method",
               "signature": "split(delimiters: string[], multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean): Word.RangeCollection;",
@@ -4911,6 +5035,68 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.CustomPropertyUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.CustomPropertyUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.CustomProperty): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "toJSON": {
               "kind": "method",
               "signature": "toJSON(): Word.Interfaces.CustomPropertyData;",
@@ -5773,6 +5959,68 @@
               "isOverride": false,
               "isEventProperty": false
             },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.DocumentUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.Document): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "toJSON": {
               "kind": "method",
               "signature": "toJSON(): Word.Interfaces.DocumentData;",
@@ -6153,6 +6401,68 @@
               "isVirtual": false,
               "isOverride": false,
               "isEventProperty": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.DocumentCreatedUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.DocumentCreatedUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.DocumentCreated): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -6752,6 +7062,68 @@
               "isVirtual": false,
               "isOverride": false,
               "isEventProperty": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.DocumentPropertiesUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.DocumentPropertiesUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.DocumentProperties): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "subject": {
               "kind": "property",
@@ -7389,6 +7761,68 @@
               "isVirtual": false,
               "isOverride": false,
               "isEventProperty": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.FontUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.FontUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.Font): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "size": {
               "kind": "property",
@@ -8854,6 +9288,68 @@
                 }
               ],
               "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.InlinePictureUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.InlinePictureUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.InlinePicture): void",
+                  "highlighter": "plain"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -21053,6 +21549,68 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.ListItemUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.ListItemUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.ListItem): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "siblingIndex": {
               "kind": "property",
               "signature": "readonly siblingIndex: number;",
@@ -23270,6 +23828,68 @@
                 }
               ],
               "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.ParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.ParagraphUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.Paragraph): void",
+                  "highlighter": "plain"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -25655,6 +26275,68 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.RangeUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.Range): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "split": {
               "kind": "method",
               "signature": "split(delimiters: string[], multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean): Word.RangeCollection;",
@@ -26831,6 +27513,68 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.SearchOptionsUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.SearchOptionsUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.SearchOptions): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "toJSON": {
               "kind": "method",
               "signature": "toJSON(): Word.Interfaces.SearchOptionsData;",
@@ -27133,6 +27877,68 @@
                 {
                   "kind": "text",
                   "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.SectionUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.SectionUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.Section): void",
+                  "highlighter": "plain"
                 }
               ],
               "isBeta": false,
@@ -30385,6 +31191,68 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.TableUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.Table): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "setCellPadding": {
               "kind": "method",
               "signature": "setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;",
@@ -30977,6 +31845,68 @@
                 {
                   "kind": "text",
                   "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.TableBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.TableBorderUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.TableBorder): void",
+                  "highlighter": "plain"
                 }
               ],
               "isBeta": false,
@@ -31762,6 +32692,68 @@
               "isVirtual": false,
               "isOverride": false,
               "isEventProperty": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.TableCellUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.TableCellUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.TableCell): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setCellPadding": {
               "kind": "method",
@@ -33233,6 +34225,68 @@
                 }
               ],
               "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.TableRowUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.TableRowUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Word.TableRow): void",
+                  "highlighter": "plain"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,

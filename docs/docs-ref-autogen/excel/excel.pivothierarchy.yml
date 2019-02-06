@@ -19,6 +19,7 @@ items:
       - excel.Excel.PivotHierarchy.id
       - excel.Excel.PivotHierarchy.load
       - excel.Excel.PivotHierarchy.name
+      - excel.Excel.PivotHierarchy.set
       - excel.Excel.PivotHierarchy.toJSON
   - uid: excel.Excel.PivotHierarchy.context
     summary: >-
@@ -113,6 +114,36 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.PivotHierarchy.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.PivotHierarchy): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.PivotHierarchyUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.PivotHierarchyUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.PivotHierarchy.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

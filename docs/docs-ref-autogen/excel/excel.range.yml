@@ -66,6 +66,7 @@ items:
       - excel.Excel.Range.rowHidden
       - excel.Excel.Range.rowIndex
       - excel.Excel.Range.select
+      - excel.Excel.Range.set
       - excel.Excel.Range.showCard
       - excel.Excel.Range.sort
       - excel.Excel.Range.style
@@ -1681,6 +1682,74 @@ items:
               }
           });
           ```
+  - uid: excel.Excel.Range.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Range): void`
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          const range = sheet.getRange("B2:E2");
+          range.set({
+              format: {
+                  fill: {
+                      color: "#4472C4"
+                  },
+                  font: {
+                      name: "Verdana",
+                      color: "white"
+                  }
+              }
+          })
+          range.format.autofitColumns();
+          await context.sync();
+      });
+      ```
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          const sourceRange = sheet.getRange("B2:E2");
+          sourceRange.load("format/fill/color, format/font/name, format/font/color");
+          await context.sync();
+
+          // Set properties based on the loaded and synced 
+          // source range.
+          const targetRange = sheet.getRange("B7:E7");
+          targetRange.set(sourceRange); 
+          targetRange.format.autofitColumns();
+          await context.sync();
+      });
+      ```
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.RangeUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Range.showCard
     summary: |-
       Displays the card for an active cell if it has rich value content.

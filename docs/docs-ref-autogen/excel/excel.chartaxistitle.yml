@@ -17,6 +17,7 @@ items:
       - excel.Excel.ChartAxisTitle.context
       - excel.Excel.ChartAxisTitle.format
       - excel.Excel.ChartAxisTitle.load
+      - excel.Excel.ChartAxisTitle.set
       - excel.Excel.ChartAxisTitle.setFormula
       - excel.Excel.ChartAxisTitle.text
       - excel.Excel.ChartAxisTitle.toJSON
@@ -126,6 +127,36 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartAxisTitle.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartAxisTitle): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartAxisTitleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartAxisTitleUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartAxisTitle.setFormula
     summary: |-
       A string value that represents the formula of chart axis title using A1-style notation.

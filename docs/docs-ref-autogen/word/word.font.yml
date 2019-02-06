@@ -22,6 +22,7 @@ items:
       - word.Word.Font.italic
       - word.Word.Font.load
       - word.Word.Font.name
+      - word.Word.Font.set
       - word.Word.Font.size
       - word.Word.Font.strikeThrough
       - word.Word.Font.subscript
@@ -392,6 +393,36 @@ items:
       return:
         type:
           - string
+  - uid: word.Word.Font.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Word.Font): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.FontUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.FontUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Font.size
     summary: |-
       Gets or sets a value that represents the font size in points.
