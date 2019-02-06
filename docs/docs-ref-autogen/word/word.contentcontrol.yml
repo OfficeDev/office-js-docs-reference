@@ -54,6 +54,7 @@ items:
       - word.Word.ContentControl.removeWhenEdited
       - word.Word.ContentControl.search
       - word.Word.ContentControl.select
+      - word.Word.ContentControl.set
       - word.Word.ContentControl.split
       - word.Word.ContentControl.style
       - word.Word.ContentControl.styleBuiltIn
@@ -1361,6 +1362,72 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - Word.SelectionMode
+  - uid: word.Word.ContentControl.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Word.ContentControl): void`
+      #### Examples
+
+      ```typescript
+      // Adds title and colors to odd and even content controls and changes their appearance.
+      await Word.run(async (context) => {
+          // Gets the complete sentence  (as range) associated with the insertion point.
+          let evenContentControls = context.document.contentControls.getByTag("even");
+          let oddContentControls = context.document.contentControls.getByTag("odd");
+          evenContentControls.load("color,title,appearance");
+          oddContentControls.load("color,title,appearance");
+
+          await context.sync();
+
+          for (let i = 0; i < evenContentControls.items.length; i++) {
+              // Change a few properties and append a paragraph
+              evenContentControls.items[i].set({
+                  color: 'red',
+                  title: 'Odd ContentControl #' + (i + 1),
+                  appearance: 'Tags'
+              });
+              evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
+          }
+
+          for (let j = 0; j < oddContentControls.items.length; j++) {
+              // Change a few properties and append a paragraph
+              oddContentControls.items[j].set({
+                  color: 'green',
+                  title: 'Even ContentControl #' + (j + 1),
+                  appearance: 'Tags'
+              });
+              oddContentControls.items[j].insertHtml("This is an <b>even</b> content control", "End");
+          }
+
+          await context.sync();
+      });
+      ```
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ContentControlUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ContentControlUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.ContentControl.split
     summary: |-
       Splits the content control into child ranges by using delimiters.

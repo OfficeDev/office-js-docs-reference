@@ -19,6 +19,7 @@ items:
       - excel.Excel.ChartAxes.getItem
       - excel.Excel.ChartAxes.load
       - excel.Excel.ChartAxes.seriesAxis
+      - excel.Excel.ChartAxes.set
       - excel.Excel.ChartAxes.toJSON
       - excel.Excel.ChartAxes.valueAxis
   - uid: excel.Excel.ChartAxes.categoryAxis
@@ -124,6 +125,36 @@ items:
       return:
         type:
           - excel.Excel.ChartAxis
+  - uid: excel.Excel.ChartAxes.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartAxes): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartAxesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartAxesUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartAxes.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

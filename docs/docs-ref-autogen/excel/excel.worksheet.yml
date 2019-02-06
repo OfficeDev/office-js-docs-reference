@@ -42,6 +42,7 @@ items:
       - excel.Excel.Worksheet.pivotTables
       - excel.Excel.Worksheet.position
       - excel.Excel.Worksheet.protection
+      - excel.Excel.Worksheet.set
       - excel.Excel.Worksheet.showGridlines
       - excel.Excel.Worksheet.showHeadings
       - excel.Excel.Worksheet.standardHeight
@@ -894,6 +895,36 @@ items:
       return:
         type:
           - excel.Excel.WorksheetProtection
+  - uid: excel.Excel.Worksheet.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Worksheet): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.WorksheetUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.WorksheetUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Worksheet.showGridlines
     summary: |-
       Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.

@@ -55,6 +55,7 @@ items:
       - word.Word.Range.parentTableOrNullObject
       - word.Word.Range.search
       - word.Word.Range.select
+      - word.Word.Range.set
       - word.Word.Range.split
       - word.Word.Range.style
       - word.Word.Range.styleBuiltIn
@@ -1328,6 +1329,36 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - Word.SelectionMode
+  - uid: word.Word.Range.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Word.Range): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.RangeUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Range.split
     summary: |-
       Splits the range into child ranges by using delimiters.

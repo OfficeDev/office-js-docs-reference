@@ -20,6 +20,7 @@ items:
       - excel.Excel.RangeFont.italic
       - excel.Excel.RangeFont.load
       - excel.Excel.RangeFont.name
+      - excel.Excel.RangeFont.set
       - excel.Excel.RangeFont.size
       - excel.Excel.RangeFont.toJSON
       - excel.Excel.RangeFont.underline
@@ -174,6 +175,36 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.RangeFont.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.RangeFont): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.RangeFontUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.RangeFontUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.RangeFont.size
     summary: |-
       Font size.

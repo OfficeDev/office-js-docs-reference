@@ -100,6 +100,68 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.ApplicationUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.ApplicationUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Visio.Application): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "showBorders": {
               "kind": "property",
               "signature": "showBorders: boolean;",
@@ -508,6 +570,68 @@
                 {
                   "kind": "text",
                   "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.CommentUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.CommentUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Visio.Comment): void",
+                  "highlighter": "plain"
                 }
               ],
               "isBeta": false,
@@ -1195,6 +1319,68 @@
               "isOverride": false,
               "isEventProperty": false
             },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.DocumentUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Visio.Document): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "setActivePage": {
               "kind": "method",
               "signature": "setActivePage(PageName: string): void;",
@@ -1566,6 +1752,68 @@
                 {
                   "kind": "text",
                   "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.DocumentViewUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.DocumentViewUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Visio.DocumentView): void",
+                  "highlighter": "plain"
                 }
               ],
               "isBeta": false,
@@ -4902,6 +5150,68 @@
               "isOverride": false,
               "isEventProperty": false
             },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.PageUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.PageUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Visio.Page): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "shapes": {
               "kind": "property",
               "signature": "readonly shapes: Visio.ShapeCollection;",
@@ -5638,6 +5948,68 @@
                 {
                   "kind": "text",
                   "text": " - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.PageViewUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.PageViewUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Visio.PageView): void",
+                  "highlighter": "plain"
                 }
               ],
               "isBeta": false,
@@ -6443,6 +6815,68 @@
               "isVirtual": false,
               "isOverride": false,
               "isEventProperty": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.ShapeUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.ShapeUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Visio.Shape): void",
+                  "highlighter": "plain"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "shapeDataItems": {
               "kind": "property",
@@ -7633,6 +8067,68 @@
                 }
               ],
               "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.ShapeViewUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.ShapeViewUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Provides an option to suppress errors if the properties object tries to set any read-only properties."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "This method has the following additional signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "code",
+                  "text": "set(properties: Visio.ShapeView): void",
+                  "highlighter": "plain"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,

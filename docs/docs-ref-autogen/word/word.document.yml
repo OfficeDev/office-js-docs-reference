@@ -25,6 +25,7 @@ items:
       - word.Word.Document.save
       - word.Word.Document.saved
       - word.Word.Document.sections
+      - word.Word.Document.set
       - word.Word.Document.toJSON
       - word.Word.Document.track
       - word.Word.Document.untrack
@@ -313,6 +314,36 @@ items:
       return:
         type:
           - Word.SectionCollection
+  - uid: word.Word.Document.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Word.Document): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.DocumentUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Document.toJSON
     name: toJSON()
     fullName: toJSON

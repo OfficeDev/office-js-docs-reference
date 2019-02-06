@@ -22,6 +22,7 @@ items:
       - excel.Excel.ChartLegend.load
       - excel.Excel.ChartLegend.overlay
       - excel.Excel.ChartLegend.position
+      - excel.Excel.ChartLegend.set
       - excel.Excel.ChartLegend.showShadow
       - excel.Excel.ChartLegend.toJSON
       - excel.Excel.ChartLegend.top
@@ -209,6 +210,36 @@ items:
       return:
         type:
           - Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
+  - uid: excel.Excel.ChartLegend.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartLegend): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartLegendUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartLegendUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartLegend.showShadow
     summary: |-
       Represents if the legend has a shadow on the chart.

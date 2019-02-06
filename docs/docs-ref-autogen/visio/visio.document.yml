@@ -24,6 +24,7 @@ items:
       - visio.Visio.Document.onShapeMouseEnter
       - visio.Visio.Document.onShapeMouseLeave
       - visio.Visio.Document.pages
+      - visio.Visio.Document.set
       - visio.Visio.Document.setActivePage
       - visio.Visio.Document.startDataRefresh
       - visio.Visio.Document.toJSON
@@ -266,6 +267,36 @@ items:
       return:
         type:
           - Visio.PageCollection
+  - uid: visio.Visio.Document.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Visio.Document): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.DocumentUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: visio.Visio.Document.setActivePage
     summary: |-
       Set the Active Page of the document.
