@@ -12,6 +12,18 @@ items:
       - typeScript
     type: interface
     package: outlook
+    remarks: |-
+
+      #### Examples
+
+      ```javascript
+      var locations = [
+          {
+              "id": "Contoso",
+              "type": Office.MailboxEnums.LocationType.Custom
+          }
+      ];
+      ```
     children:
       - outlook.Office.LocationIdentifier.id
       - outlook.Office.LocationIdentifier.type

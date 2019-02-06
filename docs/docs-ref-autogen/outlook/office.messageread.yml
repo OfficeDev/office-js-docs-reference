@@ -179,6 +179,30 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // This example gets the body of the message in plain text.
+
+      Office.context.mailbox.item.body.getAsync(
+          "text",
+          { asyncContext:"This is passed to the callback" },
+          function callback(result) {
+              // Do something with the result
+          });
+
+      //The following is an example of the result parameter passed to the callback function.
+
+      {
+          "value": "TEXT of whole body (including threads below)",
+          "status": "succeeded",
+          "asyncContext": "This is passed to the callback"
+      }
+
+      ```
     name: body
     fullName: body
     langs:
@@ -257,6 +281,15 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var conversationId = Office.context.mailbox.item.conversationId;
+
+      ```
     name: conversationId
     fullName: conversationId
     langs:
@@ -279,6 +312,15 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var dateTimeCreated = Office.context.mailbox.item.dateTimeCreated; 
+
+      ```
     name: dateTimeCreated
     fullName: dateTimeCreated
     langs:
@@ -304,6 +346,15 @@ items:
 
 
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
+
+      #### Examples
+
+
+      ```javascript
+
+      var dateTimeModified = Office.context.mailbox.item.dateTimeModified; 
+
+      ```
     name: dateTimeModified
     fullName: dateTimeModified
     langs:
@@ -609,6 +660,15 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var from = Office.context.mailbox.item.from;
+
+      ```
     name: from
     fullName: from
     langs:
@@ -953,7 +1013,7 @@ items:
 
       // match selected by the user.
 
-      var contacts = Office.context.mailbox.item.getSelectedEntities().addresses;
+      var addresses = Office.context.mailbox.item.getSelectedEntities().addresses;
 
       ```
     name: getSelectedEntities()
@@ -1046,6 +1106,21 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback); 
+
+
+      function callback(asyncResult) { 
+          var dictionary = asyncResult.value; 
+          var header1_value = dictionary["header1"]; 
+      }
+
+      ```
     isPreview: true
     name: internetHeaders
     fullName: internetHeaders
@@ -1069,6 +1144,15 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var internetMessageId = Office.context.mailbox.item.internetMessageId;
+
+      ```
     name: internetMessageId
     fullName: internetMessageId
     langs:
@@ -1109,6 +1193,15 @@ items:
       use IPM.Schedule.Meeting as the base message class.</td>
       <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
       </tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var itemClass = Office.context.mailbox.item.itemClass;
+
+      ```
     name: itemClass
     fullName: itemClass
     langs:
@@ -1194,6 +1287,19 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      if (Office.context.mailbox.item.itemType == Office.MailboxEnums.ItemType.Message) {
+          // do something
+      } else {
+          // do something else
+      }
+
+      ```
     name: itemType
     fullName: itemType
     langs:
@@ -1271,6 +1377,15 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var normalizedSubject = Office.context.mailbox.item.normalizedSubject;
+
+      ```
     name: normalizedSubject
     fullName: normalizedSubject
     langs:
@@ -1293,6 +1408,21 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get all notifications
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(
+          function (asyncResult) {
+              console.log(JSON.stringify(asyncResult));
+          }
+      );
+
+      ```
     name: notificationMessages
     fullName: notificationMessages
     langs:
@@ -1329,6 +1459,15 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var recurrence = Office.context.mailbox.item.recurrence;
+
+      ```
     name: recurrence
     fullName: recurrence
     langs:
@@ -1462,6 +1601,17 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var seriesId = Office.context.mailbox.item.seriesId; 
+
+      var isSeries = (seriesId == null);
+
+      ```
     name: seriesId
     fullName: seriesId
     langs:

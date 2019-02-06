@@ -491,6 +491,30 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // This example gets the body of the message in plain text.
+
+      Office.context.mailbox.item.body.getAsync(
+          "text",
+          { asyncContext:"This is passed to the callback" },
+          function callback(result) {
+              // Do something with the result
+          });
+
+      //The following is an example of the result parameter passed to the callback function.
+
+      {
+          "value": "TEXT of whole body (including threads below)",
+          "status": "succeeded",
+          "asyncContext": "This is passed to the callback"
+      }
+
+      ```
     name: body
     fullName: body
     langs:
@@ -604,6 +628,15 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var conversationId = Office.context.mailbox.item.conversationId;
+
+      ```
     name: conversationId
     fullName: conversationId
     langs:
@@ -914,6 +947,21 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback); 
+
+
+      function callback(asyncResult) { 
+          var dictionary = asyncResult.value; 
+          var header1_value = dictionary["header1"]; 
+      }
+
+      ```
     isPreview: true
     name: internetHeaders
     fullName: internetHeaders
@@ -942,6 +990,19 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      if (Office.context.mailbox.item.itemType == Office.MailboxEnums.ItemType.Message) {
+          // do something
+      } else {
+          // do something else
+      }
+
+      ```
     name: itemType
     fullName: itemType
     langs:
@@ -1014,6 +1075,21 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get all notifications
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(
+          function (asyncResult) {
+              console.log(JSON.stringify(asyncResult));
+          }
+      );
+
+      ```
     name: notificationMessages
     fullName: notificationMessages
     langs:
@@ -1331,6 +1407,17 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var seriesId = Office.context.mailbox.item.seriesId; 
+
+      var isSeries = (seriesId == null);
+
+      ```
     name: seriesId
     fullName: seriesId
     langs:

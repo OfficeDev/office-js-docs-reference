@@ -8475,6 +8475,22 @@ Office.AppointmentCompose.addItemAttachmentAsync:
 
         Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
     }
+Office.AppointmentCompose.body:
+  - |-
+    // This example gets the body of the message in plain text.
+    Office.context.mailbox.item.body.getAsync(
+        "text",
+        { asyncContext:"This is passed to the callback" },
+        function callback(result) {
+            // Do something with the result
+        });
+
+    //The following is an example of the result parameter passed to the callback function.
+    {
+        "value": "TEXT of whole body (including threads below)",
+        "status": "succeeded",
+        "asyncContext": "This is passed to the callback"
+    }
 Office.AppointmentCompose.end:
   - |-
     // The following example sets the end time of an appointment in compose mode by
@@ -8495,13 +8511,13 @@ Office.AppointmentCompose.end:
     });
 Office.AppointmentCompose.enhancedLocation:
   - |-
-    var locationDetails = [ 
+    var locations = [
         {
             "id": "Contoso",
             "type": Office.MailboxEnums.LocationType.Custom
         }
     ];
-    Office.context.mailbox.item.enhancedLocation.addAsync(locationDetails);
+    Office.context.mailbox.item.enhancedLocation.addAsync(locations);
 
     Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
 
@@ -8558,6 +8574,13 @@ Office.AppointmentCompose.getSelectedDataAsync:
     function setCallback(asyncResult) {
         // check for errors
     }
+Office.AppointmentCompose.itemType:
+  - |-
+    if (Office.context.mailbox.item.itemType == Office.MailboxEnums.ItemType.Appointment) {
+        // do something
+    } else {
+        // do something else
+    }
 Office.AppointmentCompose.location:
   - |-
     var userContext = { value : 1 };
@@ -8567,6 +8590,14 @@ Office.AppointmentCompose.location:
         var context = asyncResult.context;
         var location = asyncResult.value;
     }
+Office.AppointmentCompose.notificationMessages:
+  - |-
+    // Get all notifications
+    Office.context.mailbox.item.notificationMessages.getAllAsync(
+        function (asyncResult) {
+            console.log(JSON.stringify(asyncResult));
+        }
+    );
 Office.AppointmentCompose.optionalAttendees:
   - |-
     Office.context.mailbox.item.optionalAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
@@ -8583,6 +8614,30 @@ Office.AppointmentCompose.organizer:
             console.log(JSON.stringify(asyncResult));
         }
     );
+Office.AppointmentCompose.recurrence:
+  - |-
+    // This example gets the recurrence object of an appointment or meeting request item.
+    Office.context.mailbox.item.recurrence.getAsync(callback);
+    function callback(asyncResult){
+        var context = asyncResult.context;
+        var recurrence = asyncResult.value;
+        if (recurrence == null) {
+            console.log("Non-recurring meeting");
+            return;
+        }
+
+        console.log(JSON.stringify(recurrence));
+    }
+
+    // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
+    // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the 
+    // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the 
+    // recurrence date and time properties.
+    Recurrence = {
+        "recurrenceType": "weekly",
+        "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
+        "seriesTime": {seriesTimeObject}, 
+        "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
 Office.AppointmentCompose.removeAttachmentAsync:
   - |-
     // The following code removes an attachment with an identifier of '0'.
@@ -8619,6 +8674,10 @@ Office.AppointmentCompose.saveAsync:
         "value":"AAMkADI5...AAA=",
         "status":"succeeded"
     }
+Office.AppointmentCompose.seriesId:
+  - |-
+    var seriesId = Office.context.mailbox.item.seriesId; 
+    var isSeries = (seriesId == null);
 Office.AppointmentCompose.setSelectedDataAsync:
   - |-
     Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
@@ -8668,6 +8727,28 @@ Office.AppointmentRead.attachments:
     }
 
     // Do something with outputString
+Office.AppointmentRead.body:
+  - |-
+    // This example gets the body of the message in plain text.
+    Office.context.mailbox.item.body.getAsync(
+        "text",
+        { asyncContext:"This is passed to the callback" },
+        function callback(result) {
+            // Do something with the result
+        });
+
+    //The following is an example of the result parameter passed to the callback function.
+    {
+        "value": "TEXT of whole body (including threads below)",
+        "status": "succeeded",
+        "asyncContext": "This is passed to the callback"
+    }
+Office.AppointmentRead.dateTimeCreated:
+  - |-
+    var dateTimeCreated = Office.context.mailbox.item.dateTimeCreated; 
+Office.AppointmentRead.dateTimeModified:
+  - |-
+    var dateTimeModified = Office.context.mailbox.item.dateTimeModified; 
 Office.AppointmentRead.displayReplyAllForm:
   - |-
     // The following code passes a string to the `displayReplyAllForm` function.
@@ -8798,6 +8879,9 @@ Office.AppointmentRead.displayReplyForm:
             console.log(asyncResult.value);
         }
     });
+Office.AppointmentRead.end:
+  - |-
+    var end = Office.context.mailbox.item.end;
 Office.AppointmentRead.enhancedLocation:
   - |-
     Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
@@ -8843,7 +8927,7 @@ Office.AppointmentRead.getSelectedEntities:
   - |-
     // The following example accesses the addresses entities in the highlighted
     // match selected by the user.
-    var contacts = Office.context.mailbox.item.getSelectedEntities().addresses;
+    var addresses = Office.context.mailbox.item.getSelectedEntities().addresses;
 Office.AppointmentRead.getSelectedRegExMatches:
   - |-
     // The following example shows how to access the array of matches for the
@@ -8852,6 +8936,9 @@ Office.AppointmentRead.getSelectedRegExMatches:
     var selectedMatches = Office.context.mailbox.item.getSelectedRegExMatches();
     var fruits = selectedMatches.fruits;
     var veggies = selectedMatches.veggies;
+Office.AppointmentRead.itemClass:
+  - |-
+    var itemClass = Office.context.mailbox.item.itemClass;
 Office.AppointmentRead.itemId:
   - |-
     // The following code checks for the presence of an item
@@ -8864,9 +8951,27 @@ Office.AppointmentRead.itemId:
             itemId = result.value;
         });
     }
+Office.AppointmentRead.itemType:
+  - |-
+    if (Office.context.mailbox.item.itemType == Office.MailboxEnums.ItemType.Appointment) {
+        // do something
+    } else {
+        // do something else
+    }
 Office.AppointmentRead.location:
   - |-
     var location = Office.context.mailbox.item.location;
+Office.AppointmentRead.normalizedSubject:
+  - |-
+    var normalizedSubject = Office.context.mailbox.item.normalizedSubject;
+Office.AppointmentRead.notificationMessages:
+  - |-
+    // Get all notifications
+    Office.context.mailbox.item.notificationMessages.getAllAsync(
+        function (asyncResult) {
+            console.log(JSON.stringify(asyncResult));
+        }
+    );
 Office.AppointmentRead.optionalAttendees:
   - |-
     var optionalAttendees = Office.context.mailbox.item.optionalAttendees;
@@ -8874,9 +8979,16 @@ Office.AppointmentRead.organizer:
   - |-
     var organizerName = Office.context.mailbox.item.organizer.displayName;
     var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
+Office.AppointmentRead.recurrence:
+  - |-
+    var recurrence = Office.context.mailbox.item.recurrence;
 Office.AppointmentRead.requiredAttendees:
   - |-
     var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
+Office.AppointmentRead.seriesId:
+  - |-
+    var seriesId = Office.context.mailbox.item.seriesId; 
+    var isSeries = (seriesId == null);
 Office.AppointmentRead.start:
   - |-
     var start = Office.context.mailbox.item.start;
@@ -8895,6 +9007,35 @@ Office.AppointmentRead.subject:
             // Continue with processing the subject of the current item,
             // which can be a message or appointment.
         });
+    }
+Office.AttachmentContent.format:
+  - |-
+    var item = Office.context.mailbox.item;
+    var listOfAttachments = [];
+    item.getAttachmentsAsync(callback);
+    function callback(result) {
+        if (result.value.length > 0) {
+            for (i = 0 ; i < result.value.length ; i++) {
+                var options = {asyncContext: {type: result.value[i].attachmentType}};
+                getAttachmentContentAsync(result.value[i].id, options, handleAttachmentsCallback);  
+            }
+        }
+    }
+
+    function handleAttachmentsCallback(result) {
+        // parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file
+        if (result.format == Office.MailboxEnums.AttachmentContentFormat.Base64) {
+            // handle file attachment
+        }
+        else if (result.format == Office.MailboxEnums.AttachmentContentFormat.Eml) {
+            // handle item attachment
+        }
+        else if (result.format == Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
+            // handle .icalender attachment
+        }
+        else {
+            // handle cloud attachment  
+        }
     }
 Office.AttachmentDetails:
   - |-
@@ -8932,6 +9073,15 @@ Office.Body.getAsync:
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
+Office.Body.getTypeAsync:
+  - |-
+    Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
+        if (asyncResult.status == "failed") {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        } else {
+            console.log("Body type: " + asyncResult.value);
+        }
+    });
 Office.Body.prependAsync:
   - |-
     // When including links in HTML markup, you can disable online link preview
@@ -9012,13 +9162,13 @@ Office.CustomProperties.saveAsync:
     }
 Office.EnhancedLocation.addAsync:
   - |-
-    var locationDetails = [ 
+    var locations = [ 
         {
             "id": "Contoso",
             "type": Office.MailboxEnums.LocationType.Custom
         }
     ];
-    Office.context.mailbox.item.enhancedLocation.addAsync(locationDetails);
+    Office.context.mailbox.item.enhancedLocation.addAsync(locations);
 Office.EnhancedLocation.getAsync:
   - |-
     Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
@@ -9040,6 +9190,13 @@ Office.EnhancedLocation.removeAsync:
         asyncResult.value.forEach(function (currentValue) {
             Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
         });
+    }
+Office.From.getASync:
+  - |-
+    Office.context.mailbox.item.from.getAsync(callback);
+
+    function callback(asyncResult) {
+        var from = asyncResult.value;
     }
 Office.InternetHeaders.getAsync:
   - |-
@@ -9065,6 +9222,22 @@ Office.Item.addHandlerAsync:
         } 
     } 
     Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+Office.Item.body:
+  - |-
+    // This example gets the body of the message in plain text.
+    Office.context.mailbox.item.body.getAsync(
+        "text",
+        { asyncContext:"This is passed to the callback" },
+        function callback(result) {
+            // Do something with the result
+        });
+
+    //The following is an example of the result parameter passed to the callback function.
+    {
+        "value": "TEXT of whole body (including threads below)",
+        "status": "succeeded",
+        "asyncContext": "This is passed to the callback"
+    }
 Office.Item.getAttachmentContentAsync:
   - |-
     var item = Office.context.mailbox.item;
@@ -9126,10 +9299,11 @@ Office.Item.getSharedPropertiesAsync:
     }
 Office.Item.itemType:
   - |-
-    if (Office.context.mailbox.item.itemType == Office.MailboxEnums.ItemType.Message)
+    if (Office.context.mailbox.item.itemType == Office.MailboxEnums.ItemType.Message) {
         // do something
-    else
+    } else {
         // do something else
+    }
 Office.Item.loadCustomPropertiesAsync:
   - |-
     // The following example shows how to use the loadCustomPropertiesAsync method
@@ -9157,6 +9331,14 @@ Office.Item.loadCustomPropertiesAsync:
 
     function saveCallback(asyncResult) {
     }
+Office.Item.notificationMessages:
+  - |-
+    // Get all notifications
+    Office.context.mailbox.item.notificationMessages.getAllAsync(
+        function (asyncResult) {
+            console.log(JSON.stringify(asyncResult));
+        }
+    );
 Office.Item.seriesId:
   - |-
     var seriesId = Office.context.mailbox.item.seriesId; 
@@ -9180,6 +9362,27 @@ Office.Location.setAsync:
             }
         }
     );
+Office.LocationDetails:
+  - |-
+    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+    function callbackFunction(asyncResult) {
+        asyncResult.value.forEach(function (place) {
+            console.log("Display name: " + place.displayName);
+            console.log("Type: " + place.locationIdentifier.type);
+            if (place.locationIdentifier.type == Office.MailboxEnums.LocationType.Room) {
+                console.log("Email address: " + place.emailAddress);
+            }
+        });
+    }
+Office.LocationIdentifier:
+  - |-
+    var locations = [
+        {
+            "id": "Contoso",
+            "type": Office.MailboxEnums.LocationType.Custom
+        }
+    ];
 Office.Mailbox.addHandlerAsync:
   - |-
     Office.initialize = function (reason) {
@@ -9401,6 +9604,22 @@ Office.MessageCompose.bcc:
     function callback(asyncResult) {
         var arrayOfBccRecipients = asyncResult.value;
     }
+Office.MessageCompose.body:
+  - |-
+    // This example gets the body of the message in plain text.
+    Office.context.mailbox.item.body.getAsync(
+        "text",
+        { asyncContext:"This is passed to the callback" },
+        function callback(result) {
+            // Do something with the result
+        });
+
+    //The following is an example of the result parameter passed to the callback function.
+    {
+        "value": "TEXT of whole body (including threads below)",
+        "status": "succeeded",
+        "asyncContext": "This is passed to the callback"
+    }
 Office.MessageCompose.cc:
   - |-
     Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
@@ -9410,6 +9629,9 @@ Office.MessageCompose.cc:
     function callback(asyncResult) {
         var arrayOfCcRecipients = asyncResult.value;
     }
+Office.MessageCompose.conversationId:
+  - |-
+    var conversationId = Office.context.mailbox.item.conversationId;
 Office.MessageCompose.from:
   - |-
     Office.context.mailbox.item.from.getAsync(callback);
@@ -9453,6 +9675,29 @@ Office.MessageCompose.getSelectedDataAsync:
     function setCallback(asyncResult) {
         // check for errors
     }
+Office.MessageCompose.internetHeaders:
+  - |-
+    Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback); 
+
+    function callback(asyncResult) { 
+        var dictionary = asyncResult.value; 
+        var header1_value = dictionary["header1"]; 
+    }
+Office.MessageCompose.itemType:
+  - |-
+    if (Office.context.mailbox.item.itemType == Office.MailboxEnums.ItemType.Message) {
+        // do something
+    } else {
+        // do something else
+    }
+Office.MessageCompose.notificationMessages:
+  - |-
+    // Get all notifications
+    Office.context.mailbox.item.notificationMessages.getAllAsync(
+        function (asyncResult) {
+            console.log(JSON.stringify(asyncResult));
+        }
+    );
 Office.MessageCompose.removeAttachmentAsync:
   - |-
     // The following code removes an attachment with an identifier of '0'.
@@ -9480,6 +9725,10 @@ Office.MessageCompose.saveAsync:
         "value":"AAMkADI5...AAA=",
         "status":"succeeded"
     }
+Office.MessageCompose.seriesId:
+  - |-
+    var seriesId = Office.context.mailbox.item.seriesId; 
+    var isSeries = (seriesId == null);
 Office.MessageCompose.setSelectedDataAsync:
   - |-
     Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
@@ -9520,6 +9769,22 @@ Office.MessageRead.attachments:
     }
 
     // Do something with outputString
+Office.MessageRead.body:
+  - |-
+    // This example gets the body of the message in plain text.
+    Office.context.mailbox.item.body.getAsync(
+        "text",
+        { asyncContext:"This is passed to the callback" },
+        function callback(result) {
+            // Do something with the result
+        });
+
+    //The following is an example of the result parameter passed to the callback function.
+    {
+        "value": "TEXT of whole body (including threads below)",
+        "status": "succeeded",
+        "asyncContext": "This is passed to the callback"
+    }
 Office.MessageRead.cc:
   - |-
     Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
@@ -9529,6 +9794,15 @@ Office.MessageRead.cc:
     function callback(asyncResult) {
         var arrayOfCcRecipients = asyncResult.value;
     }
+Office.MessageRead.conversationId:
+  - |-
+    var conversationId = Office.context.mailbox.item.conversationId;
+Office.MessageRead.dateTimeCreated:
+  - |-
+    var dateTimeCreated = Office.context.mailbox.item.dateTimeCreated; 
+Office.MessageRead.dateTimeModified:
+  - |-
+    var dateTimeModified = Office.context.mailbox.item.dateTimeModified; 
 Office.MessageRead.displayReplyAllForm:
   - |-
     // The following code passes a string to the `displayReplyAllForm` function.
@@ -9659,6 +9933,9 @@ Office.MessageRead.displayReplyForm:
             console.log(asyncResult.value);
         }
     });
+Office.MessageRead.from:
+  - |-
+    var from = Office.context.mailbox.item.from;
 Office.MessageRead.getEntitiesByType:
   - |-
     // The following example shows how to access an array of strings that represent postal addresses
@@ -9691,7 +9968,7 @@ Office.MessageRead.getSelectedEntities:
   - |-
     // The following example accesses the addresses entities in the highlighted
     // match selected by the user.
-    var contacts = Office.context.mailbox.item.getSelectedEntities().addresses;
+    var addresses = Office.context.mailbox.item.getSelectedEntities().addresses;
 Office.MessageRead.getSelectedRegExMatches:
   - |-
     // The following example shows how to access the array of matches for the
@@ -9700,6 +9977,20 @@ Office.MessageRead.getSelectedRegExMatches:
     var selectedMatches = Office.context.mailbox.item.getSelectedRegExMatches();
     var fruits = selectedMatches.fruits;
     var veggies = selectedMatches.veggies;
+Office.MessageRead.internetHeaders:
+  - |-
+    Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback); 
+
+    function callback(asyncResult) { 
+        var dictionary = asyncResult.value; 
+        var header1_value = dictionary["header1"]; 
+    }
+Office.MessageRead.internetMessageId:
+  - |-
+    var internetMessageId = Office.context.mailbox.item.internetMessageId;
+Office.MessageRead.itemClass:
+  - |-
+    var itemClass = Office.context.mailbox.item.itemClass;
 Office.MessageRead.itemId:
   - |-
     // The following code checks for the presence of an item
@@ -9712,10 +10003,35 @@ Office.MessageRead.itemId:
             itemId = result.value;
         });
     }
+Office.MessageRead.itemType:
+  - |-
+    if (Office.context.mailbox.item.itemType == Office.MailboxEnums.ItemType.Message) {
+        // do something
+    } else {
+        // do something else
+    }
+Office.MessageRead.normalizedSubject:
+  - |-
+    var normalizedSubject = Office.context.mailbox.item.normalizedSubject;
+Office.MessageRead.notificationMessages:
+  - |-
+    // Get all notifications
+    Office.context.mailbox.item.notificationMessages.getAllAsync(
+        function (asyncResult) {
+            console.log(JSON.stringify(asyncResult));
+        }
+    );
+Office.MessageRead.recurrence:
+  - |-
+    var recurrence = Office.context.mailbox.item.recurrence;
 Office.MessageRead.sender:
   - |-
     var senderName = Office.context.mailbox.item.sender.displayName;
     var senderAddress = Office.context.mailbox.item.sender.emailAddress;
+Office.MessageRead.seriesId:
+  - |-
+    var seriesId = Office.context.mailbox.item.seriesId; 
+    var isSeries = (seriesId == null);
 Office.MessageRead.subject:
   - |-
     // The following JavaScript code example shows how to access the

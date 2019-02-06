@@ -45,14 +45,14 @@ items:
 
       ```javascript
 
-      var locationDetails = [ 
+      var locations = [ 
           {
               "id": "Contoso",
               "type": Office.MailboxEnums.LocationType.Custom
           }
       ];
 
-      Office.context.mailbox.item.enhancedLocation.addAsync(locationDetails);
+      Office.context.mailbox.item.enhancedLocation.addAsync(locations);
 
       ```
     isPreview: true
