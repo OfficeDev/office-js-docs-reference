@@ -100,7 +100,6 @@
       "ms.author": "o365devx",
       "apiPlatform": "javascript",
       "author": "o365devx",
-      "ms.prod": "office 365",
       "ms.technology": "add-ins",
       "ms.topic": "reference",
       "titleSuffix": "Office Add-ins",
@@ -177,6 +176,33 @@
         "docs-ref-autogen/word/**": [
           "word"
         ]
+      },
+      "ms.prod": {
+        "docs-ref-autogen/custom-functions-runtime/**": "excel",
+        "docs-ref-autogen/excel/**": "excel",
+        "docs-ref-autogen/office/**": "non-product-specific",
+        "docs-ref-autogen/office-runtime/**": "non-product-specific",
+        "docs-ref-autogen/onenote/**": "onenote",
+        "docs-ref-autogen/outlook/**": "outlook",
+        "docs-ref-autogen/outlook_1_1/**": "outlook",
+        "docs-ref-autogen/outlook_1_2/**": "outlook",
+        "docs-ref-autogen/outlook_1_3/**": "outlook",
+        "docs-ref-autogen/outlook_1_4/**": "outlook",
+        "docs-ref-autogen/outlook_1_5/**": "outlook",
+        "docs-ref-autogen/outlook_1_6/**": "outlook",
+        "docs-ref-autogen/outlook_1_7/**": "outlook",
+        "docs-ref-autogen/overview/**": "non-product-specific",
+        "docs-ref-autogen/visio/**": "visio",
+        "docs-ref-autogen/word/**": "word",
+        "docs-ref-autogen/custom-functions-runtime.yml": "excel",
+        "docs-ref-autogen/excel.yml": "excel",
+        "docs-ref-autogen/office-runtime.yml": "non-product-specific",
+        "docs-ref-autogen/office.yml": "non-product-specific",
+        "docs-ref-autogen/onenote.yml": "onenote",
+        "docs-ref-autogen/outlook*.yml": "outlook",
+        "docs-ref-autogen/powerpoint.yml": "powerpoint",
+        "docs-ref-autogen/visio.yml": "visio",
+        "docs-ref-autogen/word.yml": "word"
       }
     },
     "template": [],
