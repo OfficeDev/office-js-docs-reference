@@ -19,6 +19,7 @@ items:
       - visio.Visio.DocumentView.disableZoom
       - visio.Visio.DocumentView.hideDiagramBoundary
       - visio.Visio.DocumentView.load
+      - visio.Visio.DocumentView.set
       - visio.Visio.DocumentView.toJSON
   - uid: visio.Visio.DocumentView.disableHyperlinks
     summary: |-
@@ -114,6 +115,36 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.DocumentView.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Visio.DocumentView): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.DocumentViewUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.DocumentViewUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: visio.Visio.DocumentView.toJSON
     name: toJSON()
     fullName: toJSON

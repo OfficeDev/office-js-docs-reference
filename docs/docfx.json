@@ -55,15 +55,6 @@
         "src": "breadcrumb",
         "version": "office-js",
         "dest": "office_js_breadcrumb"
-      },
-      {
-        "files": [
-          "**/**.md",
-          "**/**.yml"
-        ],
-        "exclude": [
-          "**/obj/**"
-        ]
       }
     ],
     "resource": [
@@ -105,6 +96,7 @@
       "uhfHeaderId": "MSDocsHeader-Dev_Office",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
+      "ms.suite": "office365",
       "ms.author": "o365devx",
       "apiPlatform": "javascript",
       "author": "o365devx",

@@ -26,6 +26,7 @@ items:
       - onenote.OneNote.TableCell.paragraphs
       - onenote.OneNote.TableCell.parentRow
       - onenote.OneNote.TableCell.rowIndex
+      - onenote.OneNote.TableCell.set
       - onenote.OneNote.TableCell.shadingColor
       - onenote.OneNote.TableCell.toJSON
       - onenote.OneNote.TableCell.track
@@ -435,6 +436,36 @@ items:
       return:
         type:
           - number
+  - uid: onenote.OneNote.TableCell.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: OneNote.TableCell): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.TableCellUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.TableCellUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: onenote.OneNote.TableCell.shadingColor
     summary: |-
       Gets and sets the shading color of the cell

@@ -23,6 +23,7 @@ items:
       - excel.Excel.ChartTrendlineLabel.left
       - excel.Excel.ChartTrendlineLabel.load
       - excel.Excel.ChartTrendlineLabel.numberFormat
+      - excel.Excel.ChartTrendlineLabel.set
       - excel.Excel.ChartTrendlineLabel.text
       - excel.Excel.ChartTrendlineLabel.textOrientation
       - excel.Excel.ChartTrendlineLabel.toJSON
@@ -190,6 +191,36 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.ChartTrendlineLabel.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartTrendlineLabel): void`
+    name: 'set(properties, options)'
+    fullName: set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartTrendlineLabelUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartTrendlineLabelUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartTrendlineLabel.text
     summary: |-
       String representing the text of the trendline label on a chart.
