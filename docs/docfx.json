@@ -55,15 +55,6 @@
         "src": "breadcrumb",
         "version": "office-js",
         "dest": "office_js_breadcrumb"
-      },
-      {
-        "files": [
-          "**/**.md",
-          "**/**.yml"
-        ],
-        "exclude": [
-          "**/obj/**"
-        ]
       }
     ],
     "resource": [
