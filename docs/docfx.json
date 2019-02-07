@@ -201,7 +201,16 @@
         "docs-ref-autogen/outlook_1_7/**": "outlook 1.7",
         "docs-ref-autogen/overview/**": "non-product-specific",
         "docs-ref-autogen/visio/**": "visio",
-        "docs-ref-autogen/word/**": "word"
+        "docs-ref-autogen/word/**": "word",
+        "docs-ref-autogen/custom-functions-runtime.yml": "excel",
+        "docs-ref-autogen/excel.yml": "excel",
+        "docs-ref-autogen/office-runtime.yml": "non-product-specific",
+        "docs-ref-autogen/office.yml": "non-product-specific",
+        "docs-ref-autogen/onenote.yml": "onenote",
+        "docs-ref-autogen/outlook*.yml": "outlook",
+        "docs-ref-autogen/powerpoint.yml": "powerpoint",
+        "docs-ref-autogen/visio.yml": "visio",
+        "docs-ref-autogen/word.yml": "word"
       }
     },
     "template": [],
