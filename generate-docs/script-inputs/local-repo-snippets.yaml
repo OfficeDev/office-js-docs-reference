@@ -10477,6 +10477,21 @@ Office.Time.setAsync:
             console.debug("Start Time " + result.asyncContext.verb);
         }
     });
+Office.UserProfile.accountType:
+  - |-
+    console.log(Office.context.mailbox.userProfile.accountType);
+Office.UserProfile.displayName:
+  - |-
+    // Example: Allie Bellew
+    console.log(Office.context.mailbox.userProfile.displayName);
+Office.UserProfile.emailAddress:
+  - |-
+    // Example: allieb@contoso.com
+    console.log(Office.context.mailbox.userProfile.emailAddress);
+Office.UserProfile.timeZone:
+  - |-
+    // Example: Pacific Standard Time
+    console.log(Office.context.mailbox.userProfile.timeZone);
 PowerPoint.createPresentation:
   - |-
     var myFile = document.getElementById("file");
