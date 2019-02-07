@@ -105,6 +105,7 @@
       "uhfHeaderId": "MSDocsHeader-Dev_Office",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
+      "ms.suite": "office365",
       "ms.author": "o365devx",
       "apiPlatform": "javascript",
       "author": "o365devx",
