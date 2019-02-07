@@ -46,6 +46,20 @@ items:
 
 
       `getAsync(callback?: (result: Office.AsyncResult<EmailAddressDetails>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.from.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var from = asyncResult.value;
+      }
+
+      ```
     name: 'getAsync(options, callback)'
     fullName: getAsync
     langs:
