@@ -605,14 +605,11 @@ Office.AttachmentContent.format:
         // parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file
         if (result.format == Office.MailboxEnums.AttachmentContentFormat.Base64) {
             // handle file attachment
-        }
-        else if (result.format == Office.MailboxEnums.AttachmentContentFormat.Eml) {
+        } else if (result.format == Office.MailboxEnums.AttachmentContentFormat.Eml) {
             // handle item attachment
-        }
-        else if (result.format == Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
+        } else if (result.format == Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
             // handle .icalender attachment
-        }
-        else {
+        } else {
             // handle cloud attachment  
         }
     }
@@ -698,6 +695,20 @@ Office.Body.setSelectedDataAsync:
         '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
         {coercionType: Office.CoercionType.Html},
         callback);
+Office.Contact:
+  - |-
+    var item = Office.context.mailbox.item;
+    // Get an array of strings that represent contacts in the current item's body.
+    var contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
+    console.log("There are " + contacts.length + " contacts.")
+    contacts.forEach(function (contact) {
+        console.log("Person name: " + JSON.stringify(contact.personName));
+        console.log("Business name: " + JSON.stringify(contact.businessName));
+        console.log("Addresses: " + JSON.stringify(contact.addresses));
+        console.log("Phone numbers: " + JSON.stringify(contact.phoneNumbers));
+        console.log("Email addresses: " + JSON.stringify(contact.emailAddresses));
+        console.log("Urls: " + JSON.stringify(contact.urls));
+    });
 Office.CustomProperties.saveAsync:
   - |-
     // The following JavaScript code sample shows how to asynchronously use
@@ -739,6 +750,26 @@ Office.CustomProperties.saveAsync:
     function write(message){
         document.getElementById('message').innerText += message;
     }
+Office.EmailAddressDetails.appointmentResponse:
+  - |-
+    var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
+    console.log("There are " + requiredAttendees.length + " required attendees.")
+    requiredAttendees.forEach(function (requiredAttendee) {
+        console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.appointmentResponse);
+    });
+Office.EmailAddressDetails.displayName:
+  - |-
+    var organizerName = Office.context.mailbox.item.organizer.displayName;
+Office.EmailAddressDetails.emailAddress:
+  - |-
+    var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
+Office.EmailAddressDetails.recipientType:
+  - |-
+    var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
+    console.log("There are " + requiredAttendees.length + " required attendees.")
+    requiredAttendees.forEach(function (requiredAttendee) {
+        console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.recipientType);
+    });
 Office.EnhancedLocation.addAsync:
   - |-
     var locations = [ 
@@ -770,7 +801,35 @@ Office.EnhancedLocation.removeAsync:
             Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
         });
     }
-Office.From.getASync:
+Office.Entities.addresses:
+  - |-
+    var item = Office.context.mailbox.item;
+    var addresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
+Office.Entities.contacts:
+  - |-
+    var item = Office.context.mailbox.item;
+    var contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
+Office.Entities.emailAddresses:
+  - |-
+    var item = Office.context.mailbox.item;
+    var emailAddresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.EmailAddress);
+Office.Entities.meetingSuggestions:
+  - |-
+    var item = Office.context.mailbox.item;
+    var meetingSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
+Office.Entities.phoneNumbers:
+  - |-
+    var item = Office.context.mailbox.item;
+    var phoneNumbers = item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
+Office.Entities.taskSuggestions:
+  - |-
+    var item = Office.context.mailbox.item;
+    var taskSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
+Office.Entities.urls:
+  - |-
+    var item = Office.context.mailbox.item;
+    var urls = item.getEntitiesByType(Office.MailboxEnums.EntityType.Url);
+Office.From.getAsync:
   - |-
     Office.context.mailbox.item.from.getAsync(callback);
 
@@ -835,14 +894,11 @@ Office.Item.getAttachmentContentAsync:
         // parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file
         if (result.format == Office.MailboxEnums.AttachmentContentFormat.Base64) {
             // handle file attachment
-        }
-        else if (result.format == Office.MailboxEnums.AttachmentContentFormat.Eml) {
+        } else if (result.format == Office.MailboxEnums.AttachmentContentFormat.Eml) {
             // handle item attachment
-        }
-        else if (result.format == Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
+        } else if (result.format == Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
             // handle .icalender attachment
-        }
-        else {
+        } else {
             // handle cloud attachment  
         }
     }
@@ -1098,6 +1154,20 @@ Office.Mailbox.makeEwsRequestAsync:
 
         // Process the returned response here.
     }
+Office.MeetingSuggestion:
+  - |-
+    var item = Office.context.mailbox.item;
+    // Get an array of strings that represent meeting suggestions in the current item's body.
+    var meetingSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
+    console.log("There are " + meetingSuggestions.length + " meeting suggestions.")
+    meetingSuggestions.forEach(function (meetingSuggestion) {
+        console.log("Subject: " + JSON.stringify(meetingSuggestion.subject));
+        console.log("Attendees: " + JSON.stringify(meetingSuggestion.attendees));
+        console.log("Location: " + JSON.stringify(meetingSuggestion.location));
+        console.log("Start: " + JSON.stringify(meetingSuggestion.start));
+        console.log("End: " + JSON.stringify(meetingSuggestion.end));
+        console.log("Meeting: " + JSON.stringify(meetingSuggestion.meetingString));
+    });
 Office.MessageCompose.addFileAttachmentAsync:
   - |-
     function callback(result) {
@@ -1686,6 +1756,17 @@ Office.Organizer.getAsync:
             console.log(JSON.stringify(asyncResult));
         }
     );
+Office.PhoneNumber:
+  - |-
+    var item = Office.context.mailbox.item;
+    // Get an array of strings that represent phone numbers in the current item's body.
+    var phoneNumbers = item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
+    console.log("There are " + phoneNumbers.length + " phone numbers.")
+    phoneNumbers.forEach(function (phoneNumber) {
+        console.log("Phone number: " + JSON.stringify(phoneNumber.phoneString));
+        console.log("Type: " + JSON.stringify(phoneNumber.type));
+        console.log("Source text: " + JSON.stringify(phoneNumber.originalPhoneString));
+    });
 Office.Recipients.addAsync:
   - |-
     // The following example creates an array of EmailUser objects
@@ -1792,6 +1873,54 @@ Office.Recurrence.setAsync:
 
     //Result: This created a recurring event from November 2, 2019 to December 2, 2019
     //        at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
+Office.RecurrenceProperties:
+  - |-
+    // This example gets the recurrence object of an appointment or meeting request item.
+    Office.context.mailbox.item.recurrence.getAsync(callback);
+    function callback(asyncResult){
+        var context = asyncResult.context;
+        var recurrence = asyncResult.value;
+        if (recurrence == null) {
+            console.log("Non-recurring meeting");
+            return;
+        }
+
+        console.log(JSON.stringify(recurrence));
+    }
+
+    // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
+    // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the 
+    // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the 
+    // recurrence date and time properties.
+    Recurrence = {
+        "recurrenceType": "weekly",
+        "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
+        "seriesTime": {seriesTimeObject}, 
+        "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
+Office.RecurrenceTimeZone:
+  - |-
+    // This example gets the recurrence object of an appointment or meeting request item.
+    Office.context.mailbox.item.recurrence.getAsync(callback);
+    function callback(asyncResult){
+        var context = asyncResult.context;
+        var recurrence = asyncResult.value;
+        if (recurrence == null) {
+            console.log("Non-recurring meeting");
+            return;
+        }
+
+        console.log(JSON.stringify(recurrence));
+    }
+
+    // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
+    // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the 
+    // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the 
+    // recurrence date and time properties.
+    Recurrence = {
+        "recurrenceType": "weekly",
+        "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
+        "seriesTime": {seriesTimeObject}, 
+        "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
 Office.RoamingSettings:
   - |-
     // Get the current value of the 'myKey' setting
@@ -1890,6 +2019,16 @@ Office.Subject.setAsync:
         if (asyncResult.status == "failed") {
             console.log("Action failed with error: " + asyncResult.error.message);
         }
+    });
+Office.TaskSuggestion:
+  - |-
+    var item = Office.context.mailbox.item;
+    // Get an array of strings that represent task suggestions in the current item's body.
+    var taskSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
+    console.log("There are " + taskSuggestions.length + " task suggestions.")
+    taskSuggestions.forEach(function (taskSuggestion) {
+        console.log("Assignees: " + JSON.stringify(taskSuggestion.assignees));
+        console.log("Task: " + JSON.stringify(taskSuggestion.taskString));
     });
 Office.Time.getAsync:
   - |-
