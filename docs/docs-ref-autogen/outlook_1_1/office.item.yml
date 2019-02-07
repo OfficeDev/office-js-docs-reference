@@ -22,8 +22,6 @@ items:
     package: Outlook_1_1
     children:
       - Outlook_1_1.Office.Item.body
-      - Outlook_1_1.Office.Item.dateTimeCreated
-      - Outlook_1_1.Office.Item.dateTimeModified
       - Outlook_1_1.Office.Item.itemType
       - Outlook_1_1.Office.Item.loadCustomPropertiesAsync
   - uid: Outlook_1_1.Office.Item.body
@@ -48,53 +46,6 @@ items:
       return:
         type:
           - Body
-  - uid: Outlook_1_1.Office.Item.dateTimeCreated
-    summary: |-
-      Gets the date and time that an item was created. Read mode only.
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
-    name: dateTimeCreated
-    fullName: dateTimeCreated
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'dateTimeCreated: Date;'
-      return:
-        type:
-          - Date
-  - uid: Outlook_1_1.Office.Item.dateTimeModified
-    summary: |-
-      Gets the date and time that an item was last modified. Read mode only.
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
-
-
-      Note: This member is not supported in Outlook for iOS or Outlook for Android.
-    name: dateTimeModified
-    fullName: dateTimeModified
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'dateTimeModified: Date;'
-      return:
-        type:
-          - Date
   - uid: Outlook_1_1.Office.Item.itemType
     summary: >-
       Gets the type of item that an instance represents.

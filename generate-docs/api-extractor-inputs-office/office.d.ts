@@ -8,7 +8,7 @@ export declare namespace Office {
      */
     var Promise: IPromiseConstructor;
 
-    // Note: this is a copy of the PromiseConstructor object from
+    // **Note**: this is a copy of the PromiseConstructor object from
     //     https://github.com/Microsoft/TypeScript/blob/master/lib/lib.es2015.promise.d.ts
     // It is necessary so that even with targeting "ES5" and not specifying any libs,
     //     developers will still get IntelliSense for "Office.Promise" just as they would with a regular Promise.
@@ -616,7 +616,7 @@ export declare namespace Office {
         * You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async" method, such as the 
         * `getSelectedDataAsync` and `setSelectedDataAsync` methods of the {@link Office.Document | Document} object.
         *
-        * Note: What the value property returns for a particular "Async" method varies depending on the purpose and context of that method. 
+        * **Note**: What the value property returns for a particular "Async" method varies depending on the purpose and context of that method. 
         * To determine what is returned by the value property for an "Async" method, refer to the "Callback value" section of the method's topic.
         * 
         * **Support details**
@@ -1434,7 +1434,7 @@ export declare namespace Office {
         /**
          * Specifies a table of sample data displayed in the prompt UI as an example of the kinds of fields (columns) that can be bound by your add-in. 
          * The headers provided in the TableData object specify the labels used in the field selection UI. 
-         * Note: This parameter is used only in add-ins for Access. It is ignored if provided when calling the method in an add-in for Excel.
+         * **Note**: This parameter is used only in add-ins for Access. It is ignored if provided when calling the method in an add-in for Excel.
          */
         sampleData?: Office.TableData
         /**
@@ -1769,43 +1769,43 @@ export declare namespace Office {
          * Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing one-dimensional runs of 
          * characters. For example, three rows of  string values in two columns would be: [["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]].
          *
-         * Note: Only applies to data in Excel and Word.
+         * **Note**: Only applies to data in Excel and Word.
          */
         Matrix,
         /**
          * Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with optional headers.
          * 
-         * Note: Only applies to data in Access, Excel, and Word.
+         * **Note**: Only applies to data in Access, Excel, and Word.
          */
         Table,
         /**
          * Return or set data as HTML.
          * 
-         * Note: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
+         * **Note**: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
          */
         Html,
         /**
          * Return or set data as Office Open XML.
          * 
-         * Note: Only applies to data in Word.
+         * **Note**: Only applies to data in Word.
          */
         Ooxml,
         /**
          * Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides. For example, 
          * `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of two slides.
          * 
-         * Note: Only applies to data in PowerPoint when calling the {@link Office.Document | Document}.getSelectedData method to get the current 
+         * **Note**: Only applies to data in PowerPoint when calling the {@link Office.Document | Document}.getSelectedData method to get the current 
          * slide or selected range of slides.
          */
         SlideRange,
         /**
         * Data is returned or set as an image stream.
-        * Note: Only applies to data in Excel, Word, and PowerPoint.
+        * **Note**: Only applies to data in Excel, Word, and PowerPoint.
         */
         Image,
         /**
          * Data is returned or set as XML data containing an SVG image.
-         * Note: Only applies to data in Excel, Word, and PowerPoint.
+         * **Note**: Only applies to data in Excel, Word, and PowerPoint.
          */
         XmlSvg
     }
@@ -2511,7 +2511,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td>An {@link Office.TableData} object, and the shape of the table matches the bound table.</td>
-         *     <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. Note: If you specify formulas in the TableData object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
+         *     <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the TableData object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
          *   </tr>
          * </table>
          * 
@@ -2642,7 +2642,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td>An {@link Office.TableData} object, and the shape of the table matches the bound table.</td>
-         *     <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. Note: If you specify formulas in the TableData object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
+         *     <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the TableData object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
          *   </tr>
          * </table>
          * 
@@ -2813,7 +2813,7 @@ export declare namespace Office {
          * By default, adding a table in Excel assigns the name "Table1" for the first table you add, "Table2" for the second table you add, and so on. 
          * To assign a meaningful name for a table in the Excel UI, use the Table Name property on the Table Tools | Design tab of the ribbon.
          *
-         *     Note: In Excel, when specifying a table as a named item, you must fully qualify the name to include the worksheet name in the name of 
+         *     **Note**: In Excel, when specifying a table as a named item, you must fully qualify the name to include the worksheet name in the name of 
          * the table in this format: "Sheet1!Table1"
          *
          * For Word, the itemName parameter refers to the Title property of a Rich Text content control. (You can't bind to content controls other 
@@ -2823,7 +2823,7 @@ export declare namespace Office {
          * control from the Controls group on the Developer tab of the ribbon, use the Properties command in the Controls group to display the Content 
          * Control Properties dialog box. Then set the Title property of the content control to the name you want to reference from your code.
          *
-         *     Note: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and you try to bind to one 
+         *     **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and you try to bind to one 
          * these content controls with this method (by specifying its name as the itemName parameter), the operation will fail.
          *
          * **Support details**
@@ -2859,7 +2859,7 @@ export declare namespace Office {
          * By default, adding a table in Excel assigns the name "Table1" for the first table you add, "Table2" for the second table you add, and so on. 
          * To assign a meaningful name for a table in the Excel UI, use the Table Name property on the Table Tools | Design tab of the ribbon.
          *
-         *     Note: In Excel, when specifying a table as a named item, you must fully qualify the name to include the worksheet name in the name of 
+         *     **Note**: In Excel, when specifying a table as a named item, you must fully qualify the name to include the worksheet name in the name of 
          * the table in this format: "Sheet1!Table1"
          *
          * For Word, the itemName parameter refers to the Title property of a Rich Text content control. (You can't bind to content controls other 
@@ -2869,7 +2869,7 @@ export declare namespace Office {
          * control from the Controls group on the Developer tab of the ribbon, use the Properties command in the Controls group to display the Content 
          * Control Properties dialog box. Then set the Title property of the content control to the name you want to reference from your code.
          *
-         *     Note: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and you try to bind to one 
+         *     **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and you try to bind to one 
          * these content controls with this method (by specifying its name as the itemName parameter), the operation will fail.
          *
          * **Support details**
@@ -4530,7 +4530,7 @@ export declare namespace Office {
          * <table>
          * <tr><td>Word</td><td>If there is no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point</td><td>If `data` is a string, the specified text is inserted.</td></tr>
          * <tr><td></td><td></td><td>If `data` is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td></tr>
-         * <tr><td></td><td></td><td>If `data` is HTML, the specified HTML is inserted. (Important: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td></tr>
+         * <tr><td></td><td></td><td>If `data` is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td></tr>
          * <tr><td></td><td></td><td>If `data` is Office Open XML, the specified XML is inserted.</td></tr>
          * <tr><td></td><td></td><td>If `data` is a base64 encoded image stream, the specified image is inserted.</td></tr></td></tr>
          * <tr><td></td><td>If there is a selection</td><td>It will be replaced with the specified `data` following the same rules as above.</td></tr>
@@ -4647,7 +4647,7 @@ export declare namespace Office {
          * <table>
          * <tr><td>Word</td><td>If there is no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point</td><td>If `data` is a string, the specified text is inserted.</td></tr>
          * <tr><td></td><td></td><td>If `data` is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td></tr>
-         * <tr><td></td><td></td><td>If `data` is HTML, the specified HTML is inserted. (Important: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td></tr>
+         * <tr><td></td><td></td><td>If `data` is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td></tr>
          * <tr><td></td><td></td><td>If `data` is Office Open XML, the specified XML is inserted.</td></tr>
          * <tr><td></td><td></td><td>If `data` is a base64 encoded image stream, the specified image is inserted.</td></tr></td></tr>
          * <tr><td></td><td>If there is a selection</td><td>It will be replaced with the specified `data` following the same rules as above.</td></tr>
@@ -5139,7 +5139,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the maximum index of the collection of resources in the current project.
          * 
-         * Important: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project 2016 on Windows desktop.
          * 
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -5165,7 +5165,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the maximum index of the collection of resources in the current project.
          * 
-         * Important: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project 2016 on Windows desktop.
          * 
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the highest index number in the current project's resource collection.
@@ -5190,7 +5190,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the maximum index of the collection of tasks in the current project.
          * 
-         * Important: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project 2016 on Windows desktop.
          * 
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -5216,7 +5216,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the maximum index of the collection of tasks in the current project.
          * 
-         * Important: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project 2016 on Windows desktop.
          * 
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the highest index number in the current project's task collection.
@@ -5241,7 +5241,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
          * 
-         * Important: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project 2016 on Windows desktop.
          * 
          * @param resourceIndex - The index of the resource in the collection of resources for the project.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -5268,7 +5268,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
          * 
-         * Important: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project 2016 on Windows desktop.
          * 
          * @param resourceIndex - The index of the resource in the collection of resources for the project.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -5294,7 +5294,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the GUID of the task that has the specified index in the task collection.
          * 
-         * Important: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project 2016 on Windows desktop.
          * 
          * @param taskIndex - The index of the task in the collection of tasks for the project.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -5321,7 +5321,7 @@ export declare namespace Office {
         /**
          * Project documents only. Get the GUID of the task that has the specified index in the task collection.
          * 
-         * Important: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project 2016 on Windows desktop.
          * 
          * @param taskIndex - The index of the task in the collection of tasks for the project.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -5347,7 +5347,7 @@ export declare namespace Office {
         /**
          * Project documents only. Set resource field for specified resource Id.
          * 
-         * Important: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project 2016 on Windows desktop.
          * 
          * @param resourceId - Either a string or value of the Resource Id.
          * @param fieldId - Resource Fields.
@@ -5375,7 +5375,7 @@ export declare namespace Office {
         /**
          * Project documents only. Set resource field for specified resource Id.
          * 
-         * Important: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project 2016 on Windows desktop.
          * 
          * @param resourceId - Either a string or value of the Resource Id.
          * @param fieldId - Resource Fields.
@@ -5402,7 +5402,7 @@ export declare namespace Office {
         /**
          * Project documents only. Set task field for specified task Id.
          * 
-         * Important: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project 2016 on Windows desktop.
          * 
          * @param taskId - Either a string or value of the Task Id.
          * @param fieldId - Task Fields.
@@ -5430,7 +5430,7 @@ export declare namespace Office {
         /**
          * Project documents only. Set task field for specified task Id.
          * 
-         * Important: This API works only in Project 2016 on Windows desktop.
+         * **Important**: This API works only in Project 2016 on Windows desktop.
          * 
          * @param taskId - Either a string or value of the Task Id.
          * @param fieldId - Task Fields.
@@ -5650,7 +5650,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for the settingsChanged event.
          *
-         * Important: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but 
+         * **Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but 
          * the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the 
          * spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios.
          *
@@ -5707,7 +5707,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for the settingsChanged event.
          *
-         * Important: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but 
+         * **Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but 
          * the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the 
          * spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios.
          *
@@ -5850,7 +5850,7 @@ export declare namespace Office {
         /**
          * Removes the specified setting.
          *
-         * Important: Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of 
+         * **Important**: Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of 
          * the specified setting in the document, at some point after calling the Settings.remove method and before the add-in is closed, you must 
          * call the Settings.saveAsync method.
          *
@@ -5958,7 +5958,7 @@ export declare namespace Office {
          * set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are 
          * available the next time the add-in is used, use the saveAsync method.
          *
-         * Note: The saveAsync method persists the in-memory settings property bag into the document file. However, the changes to the document file 
+         * **Note**: The saveAsync method persists the in-memory settings property bag into the document file. However, the changes to the document file 
          * itself are saved only when the user (or AutoRecover setting) saves the document to the file system. The refreshAsync method is only useful 
          * in coauthoring scenarios when other instances of the same add-in might change the settings and those changes should be made available to 
          * all instances.
@@ -6015,7 +6015,7 @@ export declare namespace Office {
          * set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are 
          * available the next time the add-in is used, use the saveAsync method.
          *
-         * Note: The saveAsync method persists the in-memory settings property bag into the document file. However, the changes to the document file 
+         * **Note**: The saveAsync method persists the in-memory settings property bag into the document file. However, the changes to the document file 
          * itself are saved only when the user (or AutoRecover setting) saves the document to the file system. The refreshAsync method is only useful 
          * in coauthoring scenarios when other instances of the same add-in might change the settings and those changes should be made available to 
          * all instances.
@@ -6066,7 +6066,7 @@ export declare namespace Office {
         /**
          * Sets or creates the specified setting.
          *
-         * Important: Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. 
+         * **Important**: Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. 
          * To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point 
          * after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in 
          * the document.
@@ -6116,7 +6116,7 @@ export declare namespace Office {
      * The settingsChanged event was designed to let you to handle potential conflicts when two or more users are 
      * attempting to save settings at the same time when your add-in is used in a shared (co-authored) document.
      * 
-     * **Important:** Your add-in's code can register a handler for the settingsChanged event when the add-in 
+     * **Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in 
      * is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet 
      * that is opened in Excel Online, and more than one user is editing the spreadsheet (co-authoring). 
      * Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios.
