@@ -545,19 +545,19 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    name: load(properties)
-    fullName: load(properties)
+    name: load(propertyNames)
+    fullName: load(propertyNames)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(properties?: string | string[]): Word.ContentControlCollection;'
+      content: 'load(propertyNames?: string | string[]): Word.ContentControlCollection;'
       return:
         type:
           - word.Word.ContentControlCollection
         description: ''
       parameters:
-        - id: properties
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'

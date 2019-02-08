@@ -110,13 +110,13 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    name: load(properties)
-    fullName: load(properties)
+    name: load(propertyNames)
+    fullName: load(propertyNames)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(properties?: string | string[]): OneNote.FloatingInk;'
+      content: 'load(propertyNames?: string | string[]): OneNote.FloatingInk;'
       return:
         type:
           - onenote.OneNote.FloatingInk
@@ -164,7 +164,7 @@ items:
           }); 
           ```
       parameters:
-        - id: properties
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
@@ -172,22 +172,22 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    name: load(loadOptions)
-    fullName: load(loadOptions)
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(loadOptions?: { select?: string; expand?: string; }): OneNote.FloatingInk;'
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.FloatingInk;'
       return:
         type:
           - onenote.OneNote.FloatingInk
         description: ''
       parameters:
-        - id: loadOptions
+        - id: propertyNamesAndPaths
           description: >-
-            Where loadOptions.select is a comma-delimited string that specifies the properties to load, and
-            loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
   - uid: onenote.OneNote.FloatingInk.pageContent

@@ -129,14 +129,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.ApplicationLoadOptions): OneNote.Application;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.Application;
+        load(propertyNames?: string | string[]): OneNote.Application;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.Application;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Application;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original OneNote.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
@@ -198,14 +198,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkAnalysisLoadOptions): OneNote.InkAnalysis;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.InkAnalysis;
+        load(propertyNames?: string | string[]): OneNote.InkAnalysis;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.InkAnalysis;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.InkAnalysis;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -282,14 +282,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions): OneNote.InkAnalysisParagraph;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.InkAnalysisParagraph;
+        load(propertyNames?: string | string[]): OneNote.InkAnalysisParagraph;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraph;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraph;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -358,9 +358,9 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisParagraphCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.InkAnalysisParagraphCollection;
+        load(propertyNames?: string | string[]): OneNote.InkAnalysisParagraphCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkAnalysisParagraphCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -438,14 +438,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkAnalysisLineLoadOptions): OneNote.InkAnalysisLine;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.InkAnalysisLine;
+        load(propertyNames?: string | string[]): OneNote.InkAnalysisLine;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.InkAnalysisLine;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.InkAnalysisLine;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -514,9 +514,9 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisLineCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.InkAnalysisLineCollection;
+        load(propertyNames?: string | string[]): OneNote.InkAnalysisLineCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkAnalysisLineCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -608,14 +608,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkAnalysisWordLoadOptions): OneNote.InkAnalysisWord;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.InkAnalysisWord;
+        load(propertyNames?: string | string[]): OneNote.InkAnalysisWord;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.InkAnalysisWord;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.InkAnalysisWord;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -684,9 +684,9 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisWordCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.InkAnalysisWordCollection;
+        load(propertyNames?: string | string[]): OneNote.InkAnalysisWordCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkAnalysisWordCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -750,14 +750,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.FloatingInkLoadOptions): OneNote.FloatingInk;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.FloatingInk;
+        load(propertyNames?: string | string[]): OneNote.FloatingInk;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.FloatingInk;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.FloatingInk;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -813,14 +813,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkStrokeLoadOptions): OneNote.InkStroke;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.InkStroke;
+        load(propertyNames?: string | string[]): OneNote.InkStroke;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.InkStroke;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.InkStroke;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -889,9 +889,9 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkStrokeCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkStrokeCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.InkStrokeCollection;
+        load(propertyNames?: string | string[]): OneNote.InkStrokeCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkStrokeCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -962,14 +962,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkWordLoadOptions): OneNote.InkWord;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.InkWord;
+        load(propertyNames?: string | string[]): OneNote.InkWord;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.InkWord;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.InkWord;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1038,9 +1038,9 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkWordCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.InkWordCollection;
+        load(propertyNames?: string | string[]): OneNote.InkWordCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkWordCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -1157,14 +1157,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.NotebookLoadOptions): OneNote.Notebook;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.Notebook;
+        load(propertyNames?: string | string[]): OneNote.Notebook;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.Notebook;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Notebook;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1242,9 +1242,9 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.NotebookCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.NotebookCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.NotebookCollection;
+        load(propertyNames?: string | string[]): OneNote.NotebookCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.NotebookCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -1368,14 +1368,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.SectionGroupLoadOptions): OneNote.SectionGroup;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.SectionGroup;
+        load(propertyNames?: string | string[]): OneNote.SectionGroup;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.SectionGroup;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.SectionGroup;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1453,9 +1453,9 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.SectionGroupCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.SectionGroupCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.SectionGroupCollection;
+        load(propertyNames?: string | string[]): OneNote.SectionGroupCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.SectionGroupCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -1622,14 +1622,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.SectionLoadOptions): OneNote.Section;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.Section;
+        load(propertyNames?: string | string[]): OneNote.Section;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.Section;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Section;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1707,9 +1707,9 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.SectionCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.SectionCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.SectionCollection;
+        load(propertyNames?: string | string[]): OneNote.SectionCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.SectionCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -1906,14 +1906,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.PageLoadOptions): OneNote.Page;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.Page;
+        load(propertyNames?: string | string[]): OneNote.Page;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.Page;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Page;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1991,9 +1991,9 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.PageCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.PageCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.PageCollection;
+        load(propertyNames?: string | string[]): OneNote.PageCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.PageCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -2113,14 +2113,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.PageContentLoadOptions): OneNote.PageContent;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.PageContent;
+        load(propertyNames?: string | string[]): OneNote.PageContent;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.PageContent;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.PageContent;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -2189,9 +2189,9 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.PageContentCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.PageContentCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.PageContentCollection;
+        load(propertyNames?: string | string[]): OneNote.PageContentCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.PageContentCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -2302,14 +2302,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.OutlineLoadOptions): OneNote.Outline;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.Outline;
+        load(propertyNames?: string | string[]): OneNote.Outline;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.Outline;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Outline;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -2571,14 +2571,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.ParagraphLoadOptions): OneNote.Paragraph;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.Paragraph;
+        load(propertyNames?: string | string[]): OneNote.Paragraph;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.Paragraph;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Paragraph;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -2647,9 +2647,9 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.ParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.ParagraphCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.ParagraphCollection;
+        load(propertyNames?: string | string[]): OneNote.ParagraphCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.ParagraphCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -2713,14 +2713,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.NoteTagLoadOptions): OneNote.NoteTag;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.NoteTag;
+        load(propertyNames?: string | string[]): OneNote.NoteTag;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.NoteTag;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.NoteTag;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -2798,14 +2798,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.RichTextLoadOptions): OneNote.RichText;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.RichText;
+        load(propertyNames?: string | string[]): OneNote.RichText;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.RichText;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.RichText;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -2925,14 +2925,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.ImageLoadOptions): OneNote.Image;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.Image;
+        load(propertyNames?: string | string[]): OneNote.Image;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.Image;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Image;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -3093,14 +3093,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.TableLoadOptions): OneNote.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.Table;
+        load(propertyNames?: string | string[]): OneNote.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.Table;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Table;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -3212,14 +3212,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.TableRowLoadOptions): OneNote.TableRow;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.TableRow;
+        load(propertyNames?: string | string[]): OneNote.TableRow;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.TableRow;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.TableRow;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -3288,9 +3288,9 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.TableRowCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.TableRowCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.TableRowCollection;
+        load(propertyNames?: string | string[]): OneNote.TableRowCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.TableRowCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -3436,14 +3436,14 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.TableCellLoadOptions): OneNote.TableCell;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.TableCell;
+        load(propertyNames?: string | string[]): OneNote.TableCell;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(loadOptions?: { select?: string; expand?: string; }): OneNote.TableCell;
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.TableCell;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -3512,9 +3512,9 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.TableCellCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
-        load(properties?: string | string[]): OneNote.TableCellCollection;
+        load(propertyNames?: string | string[]): OneNote.TableCellCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.TableCellCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
