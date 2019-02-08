@@ -51,7 +51,7 @@ items:
       the proper format for EWS.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -143,7 +143,7 @@ items:
     summary: |-
       Converts an item ID formatted for EWS into REST format.
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -252,7 +252,7 @@ items:
       computer or device, and no error message will be returned.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -301,7 +301,7 @@ items:
       appointment.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -352,7 +352,7 @@ items:
       exception is thrown.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -568,7 +568,7 @@ items:
       MB in size, an error message is returned instead.
 
 
-      Note: This method is not supported in the following scenarios:
+      **Note**: This method is not supported in the following scenarios:
 
 
       - In Outlook for iOS or Outlook for Android.
@@ -577,8 +577,8 @@ items:
       - When the add-in is loaded in a Gmail mailbox.
 
 
-      Note: The server administrator must set OAuthAuthentication to true on the Client Access Server EWS directory to
-      enable the makeEwsRequestAsync method to make EWS requests.
+      **Note**: The server administrator must set OAuthAuthentication to true on the Client Access Server EWS directory
+      to enable the makeEwsRequestAsync method to make EWS requests.
 
 
       *Version differences*
@@ -756,7 +756,7 @@ items:
       item](https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item)<!-- -->.
 
 
-      Note: This member is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
     name: ewsUrl
     fullName: ewsUrl
     langs:

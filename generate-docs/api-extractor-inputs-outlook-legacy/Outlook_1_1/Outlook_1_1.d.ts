@@ -341,7 +341,7 @@ export declare namespace Office {
     /**
      * Represents an attachment on an item from the server. Read mode only.
      *
-     * An array of AttachmentDetail objects is returned as the attachments property of an Appointment or Message object.
+     * An array of **AttachmentDetails** objects is returned as the attachments property of an appointment or message item.
      *
      * [Api set: Mailbox 1.0]
      *
@@ -913,16 +913,18 @@ export declare namespace Office {
     /**
      * The subclass of {@link Office.Item} dealing with appointments.
      * 
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. 
-     * You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
+     * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
      */
     export interface Appointment extends Item {
     }
     /**
      * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. 
-     * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
+     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
+     * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
      */
     export interface AppointmentCompose extends Appointment, ItemCompose {
          /**
@@ -937,32 +939,6 @@ export declare namespace Office {
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr></table>
          */
         body: Body;
-        /**
-         * Gets the date and time that an item was created.  Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
-         *
-         * @remarks
-         *
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr></table>
-         */
-        dateTimeCreated: Date;
-        /**
-         * Gets the date and time that an item was last modified. Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
-         *
-         * @remarks
-         *
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr></table>
-         *
-         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
-         */
-        dateTimeModified: Date;
         /**
          * Gets or sets the date and time that the appointment is to end.
          *
@@ -1428,8 +1404,9 @@ export declare namespace Office {
     /**
      * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. 
-     * You should treat this as a mode of 'Office.context.mailbox.item'. Refer to the Object Model pages for more information.
+     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
+     * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
      */
     export interface AppointmentRead extends Appointment, ItemRead {
         /**
@@ -1443,7 +1420,7 @@ export declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>
          *
-         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see 
+         * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see 
          * {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
          *
          */
@@ -1461,7 +1438,7 @@ export declare namespace Office {
          */
         body: Body;
         /**
-         * Gets the date and time that an item was created. Read mode only.
+         * Gets the date and time that an item was created.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -1473,7 +1450,7 @@ export declare namespace Office {
          */
         dateTimeCreated: Date;
         /**
-         * Gets the date and time that an item was last modified. Read mode only.
+         * Gets the date and time that an item was last modified.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -1483,7 +1460,7 @@ export declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>
          *
-         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
          */
         dateTimeModified: Date;
         /**
@@ -1547,7 +1524,7 @@ export declare namespace Office {
          * If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier 
          * in the asyncResult.value parameter in the callback function.
          *
-         * Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. 
+         * **Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. 
          * The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. 
          * Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. 
          * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
@@ -1690,7 +1667,7 @@ export declare namespace Office {
          * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
          * If this isn't possible, then no error message is thrown.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -1715,7 +1692,7 @@ export declare namespace Office {
          * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
          * If this isn't possible, then no error message is thrown.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -1733,7 +1710,7 @@ export declare namespace Office {
         /**
          * Gets the entities found in the selected item's body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -1747,7 +1724,7 @@ export declare namespace Office {
         /**
          * Gets an array of all the entities of the specified entity type found in the selected item's body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          * 
@@ -1815,7 +1792,7 @@ export declare namespace Office {
          * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element 
          * in the manifest XML file with the specified FilterName element value.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -1845,7 +1822,7 @@ export declare namespace Office {
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
          * Instead, use the Body.getAsync method to retrieve the entire body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -1871,7 +1848,7 @@ export declare namespace Office {
          * and should not attempt to return the entire body of the item. 
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -1939,32 +1916,6 @@ export declare namespace Office {
          */
         body: Body;
         /**
-         * Gets the date and time that an item was created. Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
-         *
-         * @remarks
-         *
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
-         */
-        dateTimeCreated: Date;
-        /**
-         * Gets the date and time that an item was last modified. Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
-         *
-         * @remarks
-         *
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
-         *
-         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
-         */
-        dateTimeModified: Date;
-        /**
          * Gets the type of item that an instance represents.
          *
          * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or 
@@ -2009,8 +1960,9 @@ export declare namespace Office {
     /**
      * The compose mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. 
-     * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
+     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
+     * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
      */
     export interface ItemCompose extends Item {
         /**
@@ -2368,8 +2320,9 @@ export declare namespace Office {
     /**
      * The read mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. 
-     * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
+     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
+     * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
      */
     export interface ItemRead extends Item {
         /**
@@ -2382,7 +2335,7 @@ export declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
          *
-         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. 
+         * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. 
          * For more information, see 
          * {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
          *
@@ -2432,7 +2385,7 @@ export declare namespace Office {
          * If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier 
          * in the asyncResult.value parameter in the callback function.
          *
-         * Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. 
+         * **Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. 
          * The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. 
          * Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. 
          * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
@@ -2489,7 +2442,7 @@ export declare namespace Office {
          * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
          * If this isn't possible, then no error message is thrown.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -2514,7 +2467,7 @@ export declare namespace Office {
          * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
          * If this isn't possible, then no error message is thrown.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -2532,7 +2485,7 @@ export declare namespace Office {
         /**
          * Gets the entities found in the selected item's body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -2546,7 +2499,7 @@ export declare namespace Office {
         /**
          * Gets an array of all the entities of the specified entity type found in the selected item's body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          * 
@@ -2615,7 +2568,7 @@ export declare namespace Office {
          * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element 
          * in the manifest XML file with the specified FilterName element value.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -2645,7 +2598,7 @@ export declare namespace Office {
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
          * Instead, use the Body.getAsync method to retrieve the entire body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -2671,7 +2624,7 @@ export declare namespace Office {
          * and should not attempt to return the entire body of the item. 
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -2691,8 +2644,9 @@ export declare namespace Office {
     /**
      * A subclass of {@link Office.Item} for messages.
      * 
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. 
-     * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
+     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
+     * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
      */
     export interface Message extends Item {
         /**
@@ -2719,8 +2673,9 @@ export declare namespace Office {
      /**
      * The message compose mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. 
-     * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
+     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
+     * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
      */
     export interface MessageCompose extends Message, ItemCompose {
         /**
@@ -2751,7 +2706,7 @@ export declare namespace Office {
          * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the 
          * current item.
          *
-         * The cc property returns a {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of 
+         * The cc property returns an {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of 
          * the message.
          *
          * [Api set: Mailbox 1.0]
@@ -2782,32 +2737,6 @@ export declare namespace Office {
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
          */
         conversationId: string;
-        /**
-         * Gets the date and time that an item was created. Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
-         *
-         * @remarks
-         *
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
-         */
-        dateTimeCreated: Date;
-        /**
-         * Gets the date and time that an item was last modified. Read mode only.
-         *
-         * [Api set: Mailbox 1.0]
-         *
-         * @remarks
-         *
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
-         *
-         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
-         */
-        dateTimeModified: Date;
         /**
          * Gets the type of item that an instance represents.
          *
@@ -3217,8 +3146,9 @@ export declare namespace Office {
     /**
      * The message read mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. 
-     * You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
+     * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
      */
     export interface MessageRead extends Message, ItemRead {
         /**
@@ -3232,7 +3162,7 @@ export declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
          * 
-         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. 
+         * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. 
          * For more information, see 
          * {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
          *
@@ -3286,7 +3216,7 @@ export declare namespace Office {
          */
         conversationId: string;
         /**
-         * Gets the date and time that an item was created. Read mode only.
+         * Gets the date and time that an item was created.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -3298,7 +3228,7 @@ export declare namespace Office {
          */
         dateTimeCreated: Date;
         /**
-         * Gets the date and time that an item was last modified. Read mode only.
+         * Gets the date and time that an item was last modified.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -3308,7 +3238,7 @@ export declare namespace Office {
          *
          * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
          *
-         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
          */
         dateTimeModified: Date;
         /**
@@ -3317,7 +3247,7 @@ export declare namespace Office {
          * The from and sender properties represent the same person unless the message is sent by a delegate. 
          * In that case, the from property represents the delegator, and the sender property represents the delegate.
          *
-         * Note: The recipientType property of the EmailAddressDetails object in the from property is undefined.
+         * **Note**: The recipientType property of the EmailAddressDetails object in the from property is undefined.
          * 
          * The from property returns an EmailAddressDetails object.
          * 
@@ -3386,7 +3316,7 @@ export declare namespace Office {
          * If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier 
          * in the asyncResult.value parameter in the callback function.
          *
-         * Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. 
+         * **Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. 
          * The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. 
          * Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. 
          * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
@@ -3437,7 +3367,7 @@ export declare namespace Office {
          * The from and sender properties represent the same person unless the message is sent by a delegate. 
          * In that case, the from property represents the delegator, and the sender property represents the delegate.
          *
-         * Note: The recipientType property of the EmailAddressDetails object in the sender property is undefined.
+         * **Note**: The recipientType property of the EmailAddressDetails object in the sender property is undefined.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -3493,7 +3423,7 @@ export declare namespace Office {
          * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
          * If this isn't possible, then no error message is thrown.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -3518,7 +3448,7 @@ export declare namespace Office {
          * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
          * If this isn't possible, then no error message is thrown.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -3536,7 +3466,7 @@ export declare namespace Office {
         /**
          * Gets the entities found in the selected item's body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -3550,7 +3480,7 @@ export declare namespace Office {
         /**
          * Gets an array of all the entities of the specified entity type found in the selected item's body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -3620,7 +3550,7 @@ export declare namespace Office {
          * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element 
          * in the manifest XML file with the specified FilterName element value.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -3650,7 +3580,7 @@ export declare namespace Office {
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
          * Instead, use the Body.getAsync method to retrieve the entire body.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -3676,7 +3606,7 @@ export declare namespace Office {
          * and should not attempt to return the entire body of the item. 
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -3970,7 +3900,7 @@ export declare namespace Office {
          *
          * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item | get attachments from the selected item}.
          *
-         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
          */
         ewsUrl: string;
         /**
@@ -4042,7 +3972,7 @@ export declare namespace Office {
          * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and 
          * no error message will be returned.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -4068,7 +3998,7 @@ export declare namespace Office {
          * Do not use the displayMessageForm with an itemId that represents an appointment. Use the displayAppointmentForm method to display 
          * an existing appointment, and displayNewAppointmentForm to display a form to create a new appointment.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -4097,7 +4027,7 @@ export declare namespace Office {
          *
          * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
          *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -4151,13 +4081,13 @@ export declare namespace Office {
          * The XML result of the EWS call is provided as a string in the asyncResult.value property. 
          * If the result exceeds 1 MB in size, an error message is returned instead.
          *
-         * Note: This method is not supported in the following scenarios:
+         * **Note**: This method is not supported in the following scenarios:
          * 
          * - In Outlook for iOS or Outlook for Android.
          * 
          * - When the add-in is loaded in a Gmail mailbox.
          *
-         * Note: The server administrator must set OAuthAuthentication to true on the Client Access Server EWS directory to enable the 
+         * **Note**: The server administrator must set OAuthAuthentication to true on the Client Access Server EWS directory to enable the 
          * makeEwsRequestAsync method to make EWS requests.
          *
          * *Version differences*
@@ -4221,7 +4151,7 @@ export declare namespace Office {
         /**
          * Gets a string that was identified as a meeting suggestion.
          */
-        meetingstring: string;
+        meetingString: string;
         /**
          * Gets the date and time that a suggested meeting is to begin.
          */
@@ -4595,7 +4525,7 @@ export declare namespace Office {
      *
      * The RoamingSettings object is accessible via the roamingSettings property in the Office.context namespace.
      *
-     * Important: The RoamingSettings object is initialized from the persisted storage only when the add-in is first loaded. 
+     * **Important**: The RoamingSettings object is initialized from the persisted storage only when the add-in is first loaded. 
      * For task panes, this means that it is only initialized when the task pane first opens. 
      * If the task pane navigates to another page or reloads the current page, the in-memory object is reset to its initial values, even if 
      * your add-in has persisted changes. The persisted changes will not be available until the task pane is closed and reopened.

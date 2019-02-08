@@ -213,13 +213,16 @@ items:
           type:
             - excel.Excel.Interfaces.BindingLoadOptions
   - uid: excel.Excel.Binding.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Binding;'
+      content: 'load(properties?: string | string[]): Excel.Binding;'
       return:
         type:
           - excel.Excel.Binding
@@ -242,35 +245,32 @@ items:
           });
           ```
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: excel.Excel.Binding.load_2
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(loadOptions)
+    fullName: load(loadOptions)
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): Excel.Binding;
+      content: 'load(loadOptions?: { select?: string; expand?: string; }): Excel.Binding;'
       return:
         type:
           - excel.Excel.Binding
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: loadOptions
+          description: >-
+            Where loadOptions.select is a comma-delimited string that specifies the properties to load, and
+            loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.Binding.onDataChanged
     summary: |-
       Occurs when data or formatting within the binding is changed.

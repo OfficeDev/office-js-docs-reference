@@ -160,13 +160,16 @@ items:
           type:
             - Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.ChartPointsCollection.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartPointsCollection;'
+      content: 'load(properties?: string | string[]): Excel.ChartPointsCollection;'
       return:
         type:
           - excel.Excel.ChartPointsCollection
@@ -207,8 +210,8 @@ items:
           });
           ```
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: excel.Excel.ChartPointsCollection.load_2

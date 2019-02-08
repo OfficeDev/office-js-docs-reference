@@ -137,20 +137,23 @@ items:
           type:
             - Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
   - uid: visio.Visio.ShapeDataItemCollection.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.ShapeDataItemCollection;'
+      content: 'load(properties?: string | string[]): Visio.ShapeDataItemCollection;'
       return:
         type:
           - visio.Visio.ShapeDataItemCollection
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: visio.Visio.ShapeDataItemCollection.load_2

@@ -78,6 +78,31 @@ items:
           type:
             - '(result: AsyncResult<CustomXmlNode[]>) => void'
   - uid: office.Office.CustomXmlNode.getNodesAsync_1
+    summary: Gets the nodes associated with the XPath expression.
+    remarks: |-
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      #### Examples
+
+      ```javascript
+      function showXmlChildNodes() {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              var xmlPart = result.value;
+              xmlPart.getNodesAsync('*', function (nodeResults) {
+                  for (i = 0; i < nodeResults.value.length; i++) {
+                      var node = nodeResults.value[i];
+                      node.getNodesAsync('*', function (nodeResults) {
+                          write(nodeResults.value.length + " childNodes");
+                      });
+                  }
+              });
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: 'getNodesAsync(xPath, callback)'
     fullName: 'getNodesAsync(xPath, callback)'
     langs:
@@ -88,37 +113,18 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          function showXmlChildNodes() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  xmlPart.getNodesAsync('*', function (nodeResults) {
-                      for (i = 0; i < nodeResults.value.length; i++) {
-                          var node = nodeResults.value[i];
-                          node.getNodesAsync('*', function (nodeResults) {
-                              write(nodeResults.value.length + " childNodes");
-                          });
-                      }
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
+        description: ''
       parameters:
         - id: xPath
-          description: ''
+          description: The XPath expression that specifies the nodes to get. Required.
           type:
             - string
         - id: callback
-          description: ''
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
+            of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to the `xPath`
+            parameter.
           type:
             - '(result: AsyncResult<CustomXmlNode[]>) => void'
   - uid: office.Office.CustomXmlNode.getNodeValueAsync
@@ -148,6 +154,31 @@ items:
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.CustomXmlNode.getNodeValueAsync_1
+    summary: Gets the node value.
+    remarks: |-
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      #### Examples
+
+      ```javascript
+      function showXmlNodeValues() {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              var xmlPart = result.value;
+              xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                  for (i = 0; i < nodeResults.value.length; i++) {
+                      var node = nodeResults.value[i];
+                      node.getNodeValueAsync(function (asyncResult) {
+                          write(asyncResult.value);
+                      });
+                  }
+              });
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: getNodeValueAsync(callback)
     fullName: getNodeValueAsync(callback)
     langs:
@@ -158,33 +189,13 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          function showXmlNodeValues() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                      for (i = 0; i < nodeResults.value.length; i++) {
-                          var node = nodeResults.value[i];
-                          node.getNodeValueAsync(function (asyncResult) {
-                              write(asyncResult.value);
-                          });
-                      }
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
+        description: ''
       parameters:
         - id: callback
-          description: ''
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a string
+            that contains the value of the referenced node.
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.CustomXmlNode.getTextAsync
@@ -252,6 +263,8 @@ items:
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.CustomXmlNode.getTextAsync_1
+    summary: Gets the text of an XML node in a custom XML part.
+    remarks: <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     name: getTextAsync(callback)
     fullName: getTextAsync(callback)
     langs:
@@ -265,7 +278,10 @@ items:
         description: ''
       parameters:
         - id: callback
-          description: ''
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a string
+            that contains the inner text of the referenced nodes.
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.CustomXmlNode.getXmlAsync
@@ -295,6 +311,31 @@ items:
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.CustomXmlNode.getXmlAsync_1
+    summary: Gets the node's XML.
+    remarks: |-
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      #### Examples
+
+      ```javascript
+      function showXmlNodeInnerXml() {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              var xmlPart = result.value;
+              xmlPart.getNodesAsync('*', function (nodeResults) {
+                  for (i = 0; i < nodeResults.value.length; i++) {
+                      var node = nodeResults.value[i];
+                      node.getXmlAsync(function (asyncResult) {
+                          write(asyncResult.value);
+                      });
+                  }
+              });
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: getXmlAsync(callback)
     fullName: getXmlAsync(callback)
     langs:
@@ -305,33 +346,13 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          function showXmlNodeInnerXml() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  xmlPart.getNodesAsync('*', function (nodeResults) {
-                      for (i = 0; i < nodeResults.value.length; i++) {
-                          var node = nodeResults.value[i];
-                          node.getXmlAsync(function (asyncResult) {
-                              write(asyncResult.value);
-                          });
-                      }
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
+        description: ''
       parameters:
         - id: callback
-          description: ''
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a string
+            that contains the XML of the referenced node.
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.CustomXmlNode.setNodeValueAsync
@@ -366,6 +387,30 @@ items:
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.CustomXmlNode.setNodeValueAsync_1
+    summary: Sets the node value.
+    remarks: |-
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      #### Examples
+
+      ```javascript
+      function setXmlNodeValue() {
+          Office.context.document.customXmlParts.getByIdAsync(
+              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+              var xmlPart = result.value;
+              xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                  for (i = 0; i < nodeResults.value.length; i++) {
+                      var node = nodeResults.value[i];
+                      write(node);
+                      node.setNodeValueAsync("item number" + i, function (result) { });
+                  }
+              });
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: 'setNodeValueAsync(value, callback)'
     fullName: 'setNodeValueAsync(value, callback)'
     langs:
@@ -376,36 +421,16 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          function setXmlNodeValue() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                      for (i = 0; i < nodeResults.value.length; i++) {
-                          var node = nodeResults.value[i];
-                          write(node);
-                          node.setNodeValueAsync("item number" + i, function (result) { });
-                      }
-                  });
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
+        description: ''
       parameters:
         - id: value
-          description: ''
+          description: The value to be set on the node
           type:
             - string
         - id: callback
-          description: ''
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.CustomXmlNode.setTextAsync
@@ -487,6 +512,11 @@ items:
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.CustomXmlNode.setTextAsync_1
+    summary: Asynchronously sets the text of an XML node in a custom XML part.
+    remarks: |-
+      <table><tr><td>Hosts</td><td>Word</td></tr>
+
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     name: 'setTextAsync(text, callback)'
     fullName: 'setTextAsync(text, callback)'
     langs:
@@ -500,11 +530,13 @@ items:
         description: ''
       parameters:
         - id: text
-          description: ''
+          description: Required. The text value of the XML node.
           type:
             - string
         - id: callback
-          description: ''
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.CustomXmlNode.setXmlAsync
@@ -556,6 +588,8 @@ items:
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.CustomXmlNode.setXmlAsync_1
+    summary: Sets the node XML.
+    remarks: <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     name: 'setXmlAsync(xml, callback)'
     fullName: 'setXmlAsync(xml, callback)'
     langs:
@@ -569,11 +603,13 @@ items:
         description: ''
       parameters:
         - id: xml
-          description: ''
+          description: The XML to be set on the node
           type:
             - string
         - id: callback
-          description: ''
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.CustomXmlNode.baseName

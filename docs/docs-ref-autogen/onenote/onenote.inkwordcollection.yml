@@ -149,20 +149,23 @@ items:
           type:
             - OneNote.Interfaces.InkWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
   - uid: onenote.OneNote.InkWordCollection.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.InkWordCollection;'
+      content: 'load(properties?: string | string[]): OneNote.InkWordCollection;'
       return:
         type:
           - onenote.OneNote.InkWordCollection
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: onenote.OneNote.InkWordCollection.load_2

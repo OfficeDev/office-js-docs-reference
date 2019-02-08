@@ -128,16 +128,16 @@ items:
 
       // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
 
-      // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the 
+      // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the
 
-      // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the 
+      // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the
 
       // recurrence date and time properties.
 
       Recurrence = {
           "recurrenceType": "weekly",
           "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
-          "seriesTime": {seriesTimeObject}, 
+          "seriesTime": {seriesTimeObject},
           "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
       ```
     name: getAsync(callback)
@@ -163,7 +163,7 @@ items:
     summary: |-
       Sets the recurrence pattern of an appointment series.
 
-      Note: setAsync should only be available for series items and not instance items.
+      **Note**: setAsync should only be available for series items and not instance items.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -216,7 +216,7 @@ items:
     summary: |-
       Sets the recurrence pattern of an appointment series.
 
-      Note: setAsync should only be available for series items and not instance items.
+      **Note**: setAsync should only be available for series items and not instance items.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -237,13 +237,13 @@ items:
 
       // The following example sets the recurrence pattern of an appointment series.
 
-      var seriesTimeObject = new Office.SeriesTime(); 
+      var seriesTimeObject = new Office.SeriesTime();
 
-      seriesTimeObject.setStartDate(2019,10,2);  
+      seriesTimeObject.setStartDate(2019,10,2);
 
-      seriesTimeObject.setEndDate(2019,11,2); 
+      seriesTimeObject.setEndDate(2019,11,2);
 
-      seriesTimeObject.setStartTime(10,30); 
+      seriesTimeObject.setStartTime(10,30);
 
       seriesTimeObject.setDuration(30);
 
@@ -260,7 +260,7 @@ items:
       function callback(asyncResult)
 
       {
-          console.log(JSON.stringify(asyncResult)); 
+          console.log(JSON.stringify(asyncResult));
       }
 
 

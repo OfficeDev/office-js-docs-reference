@@ -39,6 +39,8 @@ items:
       - excel.Excel.ChartSeries.plotOrder
       - excel.Excel.ChartSeries.points
       - excel.Excel.ChartSeries.secondPlotSize
+      - excel.Excel.ChartSeries.set
+      - excel.Excel.ChartSeries.set_1
       - excel.Excel.ChartSeries.setBubbleSizes
       - excel.Excel.ChartSeries.setValues
       - excel.Excel.ChartSeries.setXAxisValues
@@ -339,13 +341,16 @@ items:
           type:
             - excel.Excel.Interfaces.ChartSeriesLoadOptions
   - uid: excel.Excel.ChartSeries.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartSeries;'
+      content: 'load(properties?: string | string[]): Excel.ChartSeries;'
       return:
         type:
           - excel.Excel.ChartSeries
@@ -369,35 +374,32 @@ items:
           });
           ```
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: excel.Excel.ChartSeries.load_2
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(loadOptions)
+    fullName: load(loadOptions)
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): Excel.ChartSeries;
+      content: 'load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartSeries;'
       return:
         type:
           - excel.Excel.ChartSeries
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: loadOptions
+          description: >-
+            Where loadOptions.select is a comma-delimited string that specifies the properties to load, and
+            loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.ChartSeries.markerBackgroundColor
     summary: |-
       Represents markers background color of a chart series.
@@ -673,6 +675,54 @@ items:
       return:
         type:
           - number
+  - uid: excel.Excel.ChartSeries.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartSeries): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartSeriesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartSeriesUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ChartSeries.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartSeries): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.ChartSeries
   - uid: excel.Excel.ChartSeries.setBubbleSizes
     summary: |-
       Set bubble sizes for a chart series. Only works for bubble charts.

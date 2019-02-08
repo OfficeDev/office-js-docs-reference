@@ -126,20 +126,23 @@ items:
           type:
             - Excel.Interfaces.RangeViewCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.RangeViewCollection.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.RangeViewCollection;'
+      content: 'load(properties?: string | string[]): Excel.RangeViewCollection;'
       return:
         type:
           - excel.Excel.RangeViewCollection
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: excel.Excel.RangeViewCollection.load_2

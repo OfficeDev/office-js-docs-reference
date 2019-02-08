@@ -172,7 +172,20 @@ export declare namespace Visio {
          * [Api set:  1.1]
          */
         showToolbars: boolean;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.Application): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ApplicationUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Visio.Application): void;
         /**
          *
          * Sets the visibility of a specific toolbar in the application.
@@ -209,11 +222,16 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.ApplicationLoadOptions): Visio.Application;
-        load(option?: string | string[]): Visio.Application;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Visio.Application;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.Application;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Visio.Application;
         toJSON(): Visio.Interfaces.ApplicationData;
     }
     /**
@@ -244,7 +262,20 @@ export declare namespace Visio {
          * [Api set:  1.1]
          */
         readonly view: Visio.DocumentView;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.Document): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Visio.Document): void;
         /**
          *
          * Returns the Active Page of the document.
@@ -284,11 +315,16 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.DocumentLoadOptions): Visio.Document;
-        load(option?: string | string[]): Visio.Document;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Visio.Document;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.Document;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Visio.Document;
         /**
          *
          * Occurs when the data is refreshed in the diagram.
@@ -380,7 +416,20 @@ export declare namespace Visio {
          * [Api set:  1.1]
          */
         hideDiagramBoundary: boolean;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.DocumentView): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.DocumentViewUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Visio.DocumentView): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -397,11 +446,16 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.DocumentViewLoadOptions): Visio.DocumentView;
-        load(option?: string | string[]): Visio.DocumentView;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Visio.DocumentView;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.DocumentView;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Visio.DocumentView;
         toJSON(): Visio.Interfaces.DocumentViewData;
     }
     /**
@@ -474,7 +528,20 @@ export declare namespace Visio {
          * [Api set:  1.1]
          */
         readonly width: number;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.Page): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.PageUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Visio.Page): void;
         /**
          *
          * Set the page as Active Page of the document.
@@ -498,11 +565,16 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.PageLoadOptions): Visio.Page;
-        load(option?: string | string[]): Visio.Page;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Visio.Page;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.Page;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Visio.Page;
         toJSON(): Visio.Interfaces.PageData;
     }
     /**
@@ -519,7 +591,20 @@ export declare namespace Visio {
          * [Api set:  1.1]
          */
         zoom: number;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.PageView): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.PageViewUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Visio.PageView): void;
         /**
          *
          * Pans the Visio drawing to place the specified shape in the center of the view.
@@ -584,11 +669,16 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.PageViewLoadOptions): Visio.PageView;
-        load(option?: string | string[]): Visio.PageView;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Visio.PageView;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.PageView;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Visio.PageView;
         toJSON(): Visio.Interfaces.PageViewData;
     }
     /**
@@ -632,7 +722,11 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.PageCollection;
-        load(option?: string | string[]): Visio.PageCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.PageCollection;
         load(option?: OfficeExtension.LoadOption): Visio.PageCollection;
         toJSON(): Visio.Interfaces.PageCollectionData;
     }
@@ -677,7 +771,11 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.ShapeCollection;
-        load(option?: string | string[]): Visio.ShapeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.ShapeCollection;
         load(option?: OfficeExtension.LoadOption): Visio.ShapeCollection;
         toJSON(): Visio.Interfaces.ShapeCollectionData;
     }
@@ -751,7 +849,20 @@ export declare namespace Visio {
          * [Api set:  1.1]
          */
         readonly text: string;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.Shape): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ShapeUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Visio.Shape): void;
         /**
          *
          * Returns the BoundingBox object that specifies bounding box of the shape.
@@ -775,11 +886,16 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;
-        load(option?: string | string[]): Visio.Shape;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Visio.Shape;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.Shape;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Visio.Shape;
         toJSON(): Visio.Interfaces.ShapeData;
     }
     /**
@@ -796,7 +912,20 @@ export declare namespace Visio {
          * [Api set:  1.1]
          */
         highlight: Visio.Highlight;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.ShapeView): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ShapeViewUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Visio.ShapeView): void;
         /**
          *
          * Adds an overlay on top of the shape.
@@ -850,11 +979,16 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.ShapeViewLoadOptions): Visio.ShapeView;
-        load(option?: string | string[]): Visio.ShapeView;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Visio.ShapeView;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.ShapeView;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Visio.ShapeView;
         toJSON(): Visio.Interfaces.ShapeViewData;
     }
     /**
@@ -978,7 +1112,11 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.ShapeDataItemCollection;
-        load(option?: string | string[]): Visio.ShapeDataItemCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.ShapeDataItemCollection;
         load(option?: OfficeExtension.LoadOption): Visio.ShapeDataItemCollection;
         toJSON(): Visio.Interfaces.ShapeDataItemCollectionData;
     }
@@ -1033,11 +1171,16 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.ShapeDataItemLoadOptions): Visio.ShapeDataItem;
-        load(option?: string | string[]): Visio.ShapeDataItem;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Visio.ShapeDataItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.ShapeDataItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Visio.ShapeDataItem;
         toJSON(): Visio.Interfaces.ShapeDataItemData;
     }
     /**
@@ -1081,7 +1224,11 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.HyperlinkCollection;
-        load(option?: string | string[]): Visio.HyperlinkCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.HyperlinkCollection;
         load(option?: OfficeExtension.LoadOption): Visio.HyperlinkCollection;
         toJSON(): Visio.Interfaces.HyperlinkCollectionData;
     }
@@ -1136,11 +1283,16 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.HyperlinkLoadOptions): Visio.Hyperlink;
-        load(option?: string | string[]): Visio.Hyperlink;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Visio.Hyperlink;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.Hyperlink;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Visio.Hyperlink;
         toJSON(): Visio.Interfaces.HyperlinkData;
     }
     /**
@@ -1184,7 +1336,11 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.CommentCollection;
-        load(option?: string | string[]): Visio.CommentCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.CommentCollection;
         load(option?: OfficeExtension.LoadOption): Visio.CommentCollection;
         toJSON(): Visio.Interfaces.CommentCollectionData;
     }
@@ -1216,7 +1372,20 @@ export declare namespace Visio {
          * [Api set:  1.1]
          */
         text: string;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Visio.Comment): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.CommentUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Visio.Comment): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -1233,11 +1402,16 @@ export declare namespace Visio {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Visio.Interfaces.CommentLoadOptions): Visio.Comment;
-        load(option?: string | string[]): Visio.Comment;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Visio.Comment;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.Comment;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Visio.Comment;
         toJSON(): Visio.Interfaces.CommentData;
     }
     /**
@@ -1269,11 +1443,16 @@ export declare namespace Visio {
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: string | string[]): Visio.Selection;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Visio.Selection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Visio.Selection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Visio.Selection;
         toJSON(): Visio.Interfaces.SelectionData;
     }
     /**

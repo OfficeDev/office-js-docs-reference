@@ -422,47 +422,47 @@ items:
           type:
             - excel.Excel.Interfaces.FilterLoadOptions
   - uid: excel.Excel.Filter.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Filter;'
+      content: 'load(properties?: string | string[]): Excel.Filter;'
       return:
         type:
           - excel.Excel.Filter
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: excel.Excel.Filter.load_2
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(loadOptions)
+    fullName: load(loadOptions)
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): Excel.Filter;
+      content: 'load(loadOptions?: { select?: string; expand?: string; }): Excel.Filter;'
       return:
         type:
           - excel.Excel.Filter
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: loadOptions
+          description: >-
+            Where loadOptions.select is a comma-delimited string that specifies the properties to load, and
+            loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.Filter.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

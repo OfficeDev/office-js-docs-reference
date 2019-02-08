@@ -20,6 +20,8 @@ items:
       - excel.Excel.CustomProperty.load
       - excel.Excel.CustomProperty.load_1
       - excel.Excel.CustomProperty.load_2
+      - excel.Excel.CustomProperty.set
+      - excel.Excel.CustomProperty.set_1
       - excel.Excel.CustomProperty.toJSON
       - excel.Excel.CustomProperty.type
       - excel.Excel.CustomProperty.value
@@ -107,47 +109,95 @@ items:
           type:
             - excel.Excel.Interfaces.CustomPropertyLoadOptions
   - uid: excel.Excel.CustomProperty.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.CustomProperty;'
+      content: 'load(properties?: string | string[]): Excel.CustomProperty;'
       return:
         type:
           - excel.Excel.CustomProperty
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: excel.Excel.CustomProperty.load_2
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(loadOptions)
+    fullName: load(loadOptions)
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): Excel.CustomProperty;
+      content: 'load(loadOptions?: { select?: string; expand?: string; }): Excel.CustomProperty;'
       return:
         type:
           - excel.Excel.CustomProperty
         description: ''
       parameters:
-        - id: option
+        - id: loadOptions
+          description: >-
+            Where loadOptions.select is a comma-delimited string that specifies the properties to load, and
+            loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: excel.Excel.CustomProperty.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.CustomProperty): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.CustomPropertyUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.CustomPropertyUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.CustomProperty.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.CustomProperty): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
           description: ''
           type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
+            - excel.Excel.CustomProperty
   - uid: excel.Excel.CustomProperty.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

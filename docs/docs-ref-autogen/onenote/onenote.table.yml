@@ -30,6 +30,8 @@ items:
       - onenote.OneNote.Table.paragraph
       - onenote.OneNote.Table.rowCount
       - onenote.OneNote.Table.rows
+      - onenote.OneNote.Table.set
+      - onenote.OneNote.Table.set_1
       - onenote.OneNote.Table.setShadingColor
       - onenote.OneNote.Table.toJSON
       - onenote.OneNote.Table.track
@@ -444,13 +446,16 @@ items:
           type:
             - OneNote.Interfaces.TableLoadOptions
   - uid: onenote.OneNote.Table.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.Table;'
+      content: 'load(properties?: string | string[]): OneNote.Table;'
       return:
         type:
           - OneNote.Table
@@ -533,35 +538,32 @@ items:
           });
           ```
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: onenote.OneNote.Table.load_2
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(loadOptions)
+    fullName: load(loadOptions)
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): OneNote.Table;
+      content: 'load(loadOptions?: { select?: string; expand?: string; }): OneNote.Table;'
       return:
         type:
           - OneNote.Table
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: loadOptions
+          description: >-
+            Where loadOptions.select is a comma-delimited string that specifies the properties to load, and
+            loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
+            - '{ select?: string; expand?: string; }'
   - uid: onenote.OneNote.Table.paragraph
     summary: |-
       Gets the Paragraph object that contains the Table object. Read-only.
@@ -607,6 +609,54 @@ items:
       return:
         type:
           - OneNote.TableRowCollection
+  - uid: onenote.OneNote.Table.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: OneNote.Table): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.TableUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: onenote.OneNote.Table.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: OneNote.Table): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - OneNote.Table
   - uid: onenote.OneNote.Table.setShadingColor
     summary: |-
       Sets the shading color of all cells in the table. The color code to set the cells to.

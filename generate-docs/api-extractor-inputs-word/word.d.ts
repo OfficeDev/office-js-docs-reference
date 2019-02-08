@@ -151,7 +151,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell";
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.Body): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.BodyUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Body): void;
         /**
          *
          * Clears the contents of the body object. The user can perform the undo operation on the cleared content.
@@ -414,11 +427,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.BodyLoadOptions): Word.Body;
-        load(option?: string | string[]): Word.Body;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.Body;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.Body;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.Body;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -627,7 +645,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly type: Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.ContentControl): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ContentControlUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.ContentControl): void;
         /**
          *
          * Clears the contents of the content control. The user can perform the undo operation on the cleared content.
@@ -914,11 +945,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.ContentControlLoadOptions): Word.ContentControl;
-        load(option?: string | string[]): Word.ContentControl;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.ContentControl;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.ContentControl;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.ContentControl;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1024,7 +1060,11 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ContentControlCollection;
-        load(option?: string | string[]): Word.ContentControlCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.ContentControlCollection;
         load(option?: OfficeExtension.LoadOption): Word.ContentControlCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -1066,7 +1106,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         value: any;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.CustomProperty): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.CustomPropertyUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.CustomProperty): void;
         /**
          *
          * Deletes the custom property.
@@ -1090,11 +1143,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.CustomPropertyLoadOptions): Word.CustomProperty;
-        load(option?: string | string[]): Word.CustomProperty;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.CustomProperty;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.CustomProperty;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.CustomProperty;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1174,7 +1232,11 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CustomPropertyCollection;
-        load(option?: string | string[]): Word.CustomPropertyCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.CustomPropertyCollection;
         load(option?: OfficeExtension.LoadOption): Word.CustomPropertyCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -1230,7 +1292,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly saved: boolean;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.Document): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Document): void;
         /**
          *
          * Gets the current selection of the document. Multiple selections are not supported.
@@ -1261,11 +1336,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.DocumentLoadOptions): Word.Document;
-        load(option?: string | string[]): Word.Document;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.Document;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.Document;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.Document;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1320,7 +1400,20 @@ export declare namespace Word {
          * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly saved: boolean;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.DocumentCreated): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.DocumentCreatedUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.DocumentCreated): void;
         /**
          *
          * Opens the document.
@@ -1351,11 +1444,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.DocumentCreatedLoadOptions): Word.DocumentCreated;
-        load(option?: string | string[]): Word.DocumentCreated;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.DocumentCreated;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.DocumentCreated;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.DocumentCreated;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1501,7 +1599,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         title: string;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.DocumentProperties): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.DocumentPropertiesUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.DocumentProperties): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -1518,11 +1629,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.DocumentPropertiesLoadOptions): Word.DocumentProperties;
-        load(option?: string | string[]): Word.DocumentProperties;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.DocumentProperties;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.DocumentProperties;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.DocumentProperties;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1619,7 +1735,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.Font): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.FontUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Font): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -1636,11 +1765,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.FontLoadOptions): Word.Font;
-        load(option?: string | string[]): Word.Font;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.Font;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.Font;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.Font;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1751,7 +1885,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         width: number;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.InlinePicture): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.InlinePictureUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.InlinePicture): void;
         /**
          *
          * Deletes the inline picture from the document.
@@ -1979,11 +2126,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.InlinePictureLoadOptions): Word.InlinePicture;
-        load(option?: string | string[]): Word.InlinePicture;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.InlinePicture;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.InlinePicture;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.InlinePicture;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -2035,7 +2187,11 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.InlinePictureCollection;
-        load(option?: string | string[]): Word.InlinePictureCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.InlinePictureCollection;
         load(option?: OfficeExtension.LoadOption): Word.InlinePictureCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -2225,11 +2381,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.ListLoadOptions): Word.List;
-        load(option?: string | string[]): Word.List;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.List;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.List;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.List;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -2308,7 +2469,11 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ListCollection;
-        load(option?: string | string[]): Word.ListCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.ListCollection;
         load(option?: OfficeExtension.LoadOption): Word.ListCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -2350,7 +2515,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly siblingIndex: number;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.ListItem): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ListItemUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.ListItem): void;
         /**
          *
          * Gets the list item parent, or the closest ancestor if the parent does not exist. Throws if the list item has no ancestor.
@@ -2394,11 +2572,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.ListItemLoadOptions): Word.ListItem;
-        load(option?: string | string[]): Word.ListItem;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.ListItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.ListItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.ListItem;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -2628,7 +2811,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly text: string;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.Paragraph): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Paragraph): void;
         /**
          *
          * Lets the paragraph join an existing list at the specified level. Fails if the paragraph cannot join the list or if the paragraph is already a list item.
@@ -2971,11 +3167,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.ParagraphLoadOptions): Word.Paragraph;
-        load(option?: string | string[]): Word.Paragraph;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.Paragraph;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.Paragraph;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.Paragraph;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -3041,7 +3242,11 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ParagraphCollection;
-        load(option?: string | string[]): Word.ParagraphCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.ParagraphCollection;
         load(option?: OfficeExtension.LoadOption): Word.ParagraphCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -3188,7 +3393,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly text: string;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.Range): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Range): void;
         /**
          *
          * Clears the contents of the range object. The user can perform the undo operation on the cleared content.
@@ -3552,11 +3770,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.RangeLoadOptions): Word.Range;
-        load(option?: string | string[]): Word.Range;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.Range;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.Range;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.Range;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -3608,7 +3831,11 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.RangeCollection;
-        load(option?: string | string[]): Word.RangeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.RangeCollection;
         load(option?: OfficeExtension.LoadOption): Word.RangeCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -3679,7 +3906,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         matchWildcards: boolean;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.SearchOptions): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.SearchOptionsUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.SearchOptions): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -3696,11 +3936,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;
-        load(option?: string | string[]): Word.SearchOptions;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.SearchOptions;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.SearchOptions;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.SearchOptions;
         /**
          * Create a new instance of Word.SearchOptions object
          */
@@ -3723,7 +3968,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly body: Word.Body;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.Section): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.SectionUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Section): void;
         /**
          *
          * Gets one of the section's footers.
@@ -3790,11 +4048,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.SectionLoadOptions): Word.Section;
-        load(option?: string | string[]): Word.Section;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.Section;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.Section;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.Section;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -3846,7 +4109,11 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.SectionCollection;
-        load(option?: string | string[]): Word.SectionCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.SectionCollection;
         load(option?: OfficeExtension.LoadOption): Word.SectionCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -4056,7 +4323,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         width: number;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.Table): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Table): void;
         /**
          *
          * Adds columns to the start or end of the table, using the first or last existing column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.
@@ -4388,11 +4668,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.TableLoadOptions): Word.Table;
-        load(option?: string | string[]): Word.Table;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.Table;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.Table;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.Table;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -4444,7 +4729,11 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.TableCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableCollection;
-        load(option?: string | string[]): Word.TableCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.TableCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -4542,7 +4831,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.TableRow): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.TableRowUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.TableRow): void;
         /**
          *
          * Clears the contents of the row.
@@ -4701,11 +5003,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.TableRowLoadOptions): Word.TableRow;
-        load(option?: string | string[]): Word.TableRow;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.TableRow;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.TableRow;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.TableRow;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -4757,7 +5064,11 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableRowCollection;
-        load(option?: string | string[]): Word.TableRowCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.TableRowCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableRowCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -4855,7 +5166,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly width: number;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.TableCell): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.TableCellUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.TableCell): void;
         /**
          *
          * Deletes the column containing this cell. This is applicable to uniform tables.
@@ -5000,11 +5324,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.TableCellLoadOptions): Word.TableCell;
-        load(option?: string | string[]): Word.TableCell;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.TableCell;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.TableCell;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.TableCell;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -5056,7 +5385,11 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableCellCollection;
-        load(option?: string | string[]): Word.TableCellCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.TableCellCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableCellCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
@@ -5098,7 +5431,20 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         width: number;
-        
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.TableBorder): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.TableBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.TableBorder): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -5115,11 +5461,16 @@ export declare namespace Word {
          * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Word.Interfaces.TableBorderLoadOptions): Word.TableBorder;
-        load(option?: string | string[]): Word.TableBorder;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.TableBorder;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(properties?: string | string[]): Word.TableBorder;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(loadOptions?: { select?: string; expand?: string; }): Word.TableBorder;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */

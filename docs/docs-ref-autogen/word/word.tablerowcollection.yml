@@ -123,20 +123,23 @@ items:
           type:
             - Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
   - uid: word.Word.TableRowCollection.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.TableRowCollection;'
+      content: 'load(properties?: string | string[]): Word.TableRowCollection;'
       return:
         type:
           - Word.TableRowCollection
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: word.Word.TableRowCollection.load_2

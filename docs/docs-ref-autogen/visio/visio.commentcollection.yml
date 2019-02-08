@@ -140,20 +140,23 @@ items:
           type:
             - Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
   - uid: visio.Visio.CommentCollection.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.CommentCollection;'
+      content: 'load(properties?: string | string[]): Visio.CommentCollection;'
       return:
         type:
           - visio.Visio.CommentCollection
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: visio.Visio.CommentCollection.load_2

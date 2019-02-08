@@ -195,7 +195,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(CancelableHandler:interface)",
-              "docComment": "/**\n * CancelableHandler interface\n *\n * @beta\n */\n",
+              "docComment": "/**\n * @deprecated\n *\n * Use `CancelableInvocation` instead.\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -207,16 +207,60 @@
                 },
                 {
                   "kind": "Content",
+                  "text": " extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CancelableInvocation"
+                },
+                {
+                  "kind": "Content",
                   "text": " "
                 }
               ],
               "releaseTag": "Beta",
               "name": "CancelableHandler",
+              "members": [],
+              "extendsTokenRanges": [
+                {
+                  "startIndex": 3,
+                  "endIndex": 5
+                }
+              ]
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(CancelableInvocation:interface)",
+              "docComment": "/**\n * Provides information about the invocation of a cancelable custom function. A cancelable custom function can provide a handler for the onCanceled event.\n *\n * To indicate that a function is cancelable, in the metadata JSON file, the function options should specify: `{ \"cancelable\": true }`\n *\n * If the metadata JSON file is being generated from JSDoc comments, include the tag `@cancelable`.\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CancelableInvocation"
+                },
+                {
+                  "kind": "Content",
+                  "text": " extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Invocation"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "CancelableInvocation",
               "members": [
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "onCanceled",
-                  "docComment": "/**\n * Handles what should occur when a custom function is canceled.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Event handler called when the custom function is canceled.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -243,12 +287,70 @@
                   }
                 }
               ],
+              "extendsTokenRanges": [
+                {
+                  "startIndex": 3,
+                  "endIndex": 5
+                }
+              ]
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(Invocation:interface)",
+              "docComment": "/**\n * Provides information about the invocation of a custom function.\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Invocation"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "Invocation",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "address",
+                  "docComment": "/**\n * The cell address where the function is being called, if requested, otherwise undefined.\n *\n * To request the address for the function, in the metadata JSON file, the function options should specify: `{ \"requiresAddress\": true }`\n *\n * If the metadata JSON file is being generated from JSDoc comments, include the tag `@requiresAddress`.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "address"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "address",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                }
+              ],
               "extendsTokenRanges": []
             },
             {
               "kind": "Interface",
               "canonicalReference": "(StreamingHandler:interface)",
-              "docComment": "/**\n * A handler passed automatically as the last parameter to a streaming function. With this parameter, a function can use handler.setResult to set a cell value or hook into the handler.onCanceled event to to handle what happens when the function stops streaming.\n *\n * @beta\n */\n",
+              "docComment": "/**\n * @deprecated\n *\n * Use `StreamingInvocation<ResultType>` instead.\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -264,7 +366,7 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "T"
+                  "text": "ResultType"
                 },
                 {
                   "kind": "Content",
@@ -272,7 +374,59 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "CancelableHandler"
+                  "text": "StreamingInvocation"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResultType"
+                },
+                {
+                  "kind": "Content",
+                  "text": "> "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "StreamingHandler",
+              "members": [],
+              "extendsTokenRanges": [
+                {
+                  "startIndex": 5,
+                  "endIndex": 9
+                }
+              ]
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(StreamingInvocation:interface)",
+              "docComment": "/**\n * Provides information about the invocation of a streaming custom function. A streaming custom function can provide results which can change over time.\n *\n * Call `setResult()` one or more times to provide the result instead of returning a result from the function.\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "StreamingInvocation"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResultType"
+                },
+                {
+                  "kind": "Content",
+                  "text": "> extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CancelableInvocation"
                 },
                 {
                   "kind": "Content",
@@ -280,12 +434,12 @@
                 }
               ],
               "releaseTag": "Beta",
-              "name": "StreamingHandler",
+              "name": "StreamingInvocation",
               "members": [
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "setResult",
-                  "docComment": "/**\n * Sets the returned result for a streaming custom function.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Set the result for the custom function. May be called more than once.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -309,7 +463,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "T"
+                      "text": "ResultType"
                     },
                     {
                       "kind": "Content",

@@ -31,7 +31,7 @@ items:
       - Outlook_1_1.Office.MeetingSuggestion.attendees
       - Outlook_1_1.Office.MeetingSuggestion.end
       - Outlook_1_1.Office.MeetingSuggestion.location
-      - Outlook_1_1.Office.MeetingSuggestion.meetingstring
+      - Outlook_1_1.Office.MeetingSuggestion.meetingString
       - Outlook_1_1.Office.MeetingSuggestion.start
       - Outlook_1_1.Office.MeetingSuggestion.subject
   - uid: Outlook_1_1.Office.MeetingSuggestion.attendees
@@ -70,15 +70,15 @@ items:
       return:
         type:
           - string
-  - uid: Outlook_1_1.Office.MeetingSuggestion.meetingstring
+  - uid: Outlook_1_1.Office.MeetingSuggestion.meetingString
     summary: Gets a string that was identified as a meeting suggestion.
-    name: meetingstring
-    fullName: meetingstring
+    name: meetingString
+    fullName: meetingString
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'meetingstring: string;'
+      content: 'meetingString: string;'
       return:
         type:
           - string

@@ -123,20 +123,23 @@ items:
           type:
             - Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
   - uid: word.Word.InlinePictureCollection.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.InlinePictureCollection;'
+      content: 'load(properties?: string | string[]): Word.InlinePictureCollection;'
       return:
         type:
           - word.Word.InlinePictureCollection
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: word.Word.InlinePictureCollection.load_2

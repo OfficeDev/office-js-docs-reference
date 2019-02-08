@@ -40,6 +40,8 @@ items:
       - onenote.OneNote.Paragraph.parentTableCell
       - onenote.OneNote.Paragraph.parentTableCellOrNull
       - onenote.OneNote.Paragraph.richText
+      - onenote.OneNote.Paragraph.set
+      - onenote.OneNote.Paragraph.set_1
       - onenote.OneNote.Paragraph.table
       - onenote.OneNote.Paragraph.toJSON
       - onenote.OneNote.Paragraph.track
@@ -625,13 +627,16 @@ items:
           type:
             - onenote.OneNote.Interfaces.ParagraphLoadOptions
   - uid: onenote.OneNote.Paragraph.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.Paragraph;'
+      content: 'load(properties?: string | string[]): OneNote.Paragraph;'
       return:
         type:
           - onenote.OneNote.Paragraph
@@ -708,35 +713,32 @@ items:
           });
           ```
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: onenote.OneNote.Paragraph.load_2
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(loadOptions)
+    fullName: load(loadOptions)
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): OneNote.Paragraph;
+      content: 'load(loadOptions?: { select?: string; expand?: string; }): OneNote.Paragraph;'
       return:
         type:
           - onenote.OneNote.Paragraph
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: loadOptions
+          description: >-
+            Where loadOptions.select is a comma-delimited string that specifies the properties to load, and
+            loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
+            - '{ select?: string; expand?: string; }'
   - uid: onenote.OneNote.Paragraph.outline
     summary: |-
       Gets the Outline object that contains the Paragraph. Read-only.
@@ -846,6 +848,54 @@ items:
       return:
         type:
           - onenote.OneNote.RichText
+  - uid: onenote.OneNote.Paragraph.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: OneNote.Paragraph): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ParagraphUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: onenote.OneNote.Paragraph.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: OneNote.Paragraph): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - onenote.OneNote.Paragraph
   - uid: onenote.OneNote.Paragraph.table
     summary: |-
       Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.

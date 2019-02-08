@@ -31,11 +31,8 @@ items:
       - outlook.Office.Item.removeHandlerAsync
       - outlook.Office.Item.removeHandlerAsync_1
       - outlook.Office.Item.body
-      - outlook.Office.Item.dateTimeCreated
-      - outlook.Office.Item.dateTimeModified
       - outlook.Office.Item.itemType
       - outlook.Office.Item.notificationMessages
-      - outlook.Office.Item.recurrence
       - outlook.Office.Item.seriesId
   - uid: outlook.Office.Item.addHandlerAsync
     summary: >-
@@ -122,13 +119,13 @@ items:
 
       ```javascript
 
-      function myHandlerFunction(eventarg) { 
-          if (eventarg.attachmentStatus == Office.MailboxEnums.AttachmentStatus.Added) { 
-              var _att = eventarg.attachmentDetails; 
-              showMessage("Event Fired and Attachment Added!"); 
-              getAttachmentContentAsync(_att.id, options, callback); 
-          } 
-      } 
+      function myHandlerFunction(eventarg) {
+          if (eventarg.attachmentStatus == Office.MailboxEnums.AttachmentStatus.Added) {
+              var _att = eventarg.attachmentDetails;
+              showMessage("Event Fired and Attachment Added!");
+              getAttachmentContentAsync(_att.id, options, callback);
+          }
+      }
 
       Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
 
@@ -165,7 +162,7 @@ items:
             - '(result: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Item.getAttachmentContentAsync
     summary: >-
-      Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
+      Gets an attachment from a message or appointment and returns it as an **AttachmentContent** object.
 
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
@@ -202,7 +199,7 @@ items:
           if (result.value.length > 0) {
               for (i = 0 ; i < result.value.length ; i++) {
                   var options = {asyncContext: {type: result.value[i].attachmentType}};
-                  getAttachmentContentAsync(result.value[i].id, options, handleAttachmentsCallback);  
+                  getAttachmentContentAsync(result.value[i].id, options, handleAttachmentsCallback);
               }
           }
       }
@@ -220,7 +217,7 @@ items:
               // handle .icalender attachment
           }
           else {
-              // handle cloud attachment  
+              // handle cloud attachment
           }
       }
 
@@ -263,7 +260,7 @@ items:
       message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
 
 
-      Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
+      **Note**: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
       16.0.8413.1000) and Outlook on the web for Office 365.
 
 
@@ -643,53 +640,6 @@ items:
       return:
         type:
           - Body
-  - uid: outlook.Office.Item.dateTimeCreated
-    summary: |-
-      Gets the date and time that an item was created. Read mode only.
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
-    name: dateTimeCreated
-    fullName: dateTimeCreated
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'dateTimeCreated: Date;'
-      return:
-        type:
-          - Date
-  - uid: outlook.Office.Item.dateTimeModified
-    summary: |-
-      Gets the date and time that an item was last modified. Read mode only.
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
-
-
-      Note: This member is not supported in Outlook for iOS or Outlook for Android.
-    name: dateTimeModified
-    fullName: dateTimeModified
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'dateTimeModified: Date;'
-      return:
-        type:
-          - Date
   - uid: outlook.Office.Item.itemType
     summary: >-
       Gets the type of item that an instance represents.
@@ -750,42 +700,6 @@ items:
       return:
         type:
           - NotificationMessages
-  - uid: outlook.Office.Item.recurrence
-    summary: >-
-      Gets or sets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and
-      compose modes for appointment items. Read mode for meeting request items.
-
-
-      The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is
-      a series or an instance in a series. `null` is returned for single appointments and meeting requests of single
-      appointments. `undefined` is returned for messages that are not meeting requests.
-
-
-      Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
-
-
-      Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting
-      request of a single appointment and NOT a part of a series.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
-    name: recurrence
-    fullName: recurrence
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'recurrence: Recurrence;'
-      return:
-        type:
-          - Recurrence
   - uid: outlook.Office.Item.seriesId
     summary: >-
       Gets the id of the series that an instance belongs to.
@@ -795,11 +709,11 @@ items:
       item belongs to. However, in iOS and Android, the seriesId returns the REST ID of the parent item.
 
 
-      Note: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier.
-      The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API
-      calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see
-      [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api)<!--
-      -->.
+      **Note**: The identifier returned by the seriesId property is the same as the Exchange Web Services item
+      identifier. The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making
+      REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more
+      details, see [Use the Outlook REST APIs from an Outlook
+      add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api)<!-- -->.
 
 
       The seriesId property returns null for items that do not have parent items such as single appointments, series
@@ -820,7 +734,7 @@ items:
 
       ```javascript
 
-      var seriesId = Office.context.mailbox.item.seriesId; 
+      var seriesId = Office.context.mailbox.item.seriesId;
 
       var isSeries = (seriesId == null);
 

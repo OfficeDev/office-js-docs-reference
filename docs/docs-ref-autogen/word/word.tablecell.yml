@@ -37,6 +37,8 @@ items:
       - word.Word.TableCell.parentRow
       - word.Word.TableCell.parentTable
       - word.Word.TableCell.rowIndex
+      - word.Word.TableCell.set
+      - word.Word.TableCell.set_1
       - word.Word.TableCell.setCellPadding
       - word.Word.TableCell.setCellPadding_1
       - word.Word.TableCell.shadingColor
@@ -437,47 +439,47 @@ items:
           type:
             - Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.TableCell.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.TableCell;'
+      content: 'load(properties?: string | string[]): Word.TableCell;'
       return:
         type:
           - Word.TableCell
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: word.Word.TableCell.load_2
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(loadOptions)
+    fullName: load(loadOptions)
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): Word.TableCell;
+      content: 'load(loadOptions?: { select?: string; expand?: string; }): Word.TableCell;'
       return:
         type:
           - Word.TableCell
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: loadOptions
+          description: >-
+            Where loadOptions.select is a comma-delimited string that specifies the properties to load, and
+            loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
+            - '{ select?: string; expand?: string; }'
   - uid: word.Word.TableCell.parentRow
     summary: |-
       Gets the parent row of the cell. Read-only.
@@ -523,6 +525,54 @@ items:
       return:
         type:
           - number
+  - uid: word.Word.TableCell.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Word.TableCell): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.TableCellUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.TableCellUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: word.Word.TableCell.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Word.TableCell): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Word.TableCell
   - uid: word.Word.TableCell.setCellPadding
     summary: |-
       Sets cell padding in points.

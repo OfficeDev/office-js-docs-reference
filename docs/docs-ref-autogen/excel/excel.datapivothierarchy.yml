@@ -23,6 +23,8 @@ items:
       - excel.Excel.DataPivotHierarchy.name
       - excel.Excel.DataPivotHierarchy.numberFormat
       - excel.Excel.DataPivotHierarchy.position
+      - excel.Excel.DataPivotHierarchy.set
+      - excel.Excel.DataPivotHierarchy.set_1
       - excel.Excel.DataPivotHierarchy.setToDefault
       - excel.Excel.DataPivotHierarchy.showAs
       - excel.Excel.DataPivotHierarchy.summarizeBy
@@ -110,47 +112,47 @@ items:
           type:
             - excel.Excel.Interfaces.DataPivotHierarchyLoadOptions
   - uid: excel.Excel.DataPivotHierarchy.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.DataPivotHierarchy;'
+      content: 'load(properties?: string | string[]): Excel.DataPivotHierarchy;'
       return:
         type:
           - excel.Excel.DataPivotHierarchy
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: excel.Excel.DataPivotHierarchy.load_2
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(loadOptions)
+    fullName: load(loadOptions)
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): Excel.DataPivotHierarchy;
+      content: 'load(loadOptions?: { select?: string; expand?: string; }): Excel.DataPivotHierarchy;'
       return:
         type:
           - excel.Excel.DataPivotHierarchy
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: loadOptions
+          description: >-
+            Where loadOptions.select is a comma-delimited string that specifies the properties to load, and
+            loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.DataPivotHierarchy.name
     summary: |-
       Name of the DataPivotHierarchy.
@@ -211,6 +213,54 @@ items:
       return:
         type:
           - number
+  - uid: excel.Excel.DataPivotHierarchy.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.DataPivotHierarchy): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.DataPivotHierarchyUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.DataPivotHierarchyUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.DataPivotHierarchy.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.DataPivotHierarchy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.DataPivotHierarchy
   - uid: excel.Excel.DataPivotHierarchy.setToDefault
     summary: |-
       Reset the DataPivotHierarchy back to its default values.

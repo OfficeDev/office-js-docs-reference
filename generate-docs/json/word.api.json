@@ -2616,7 +2616,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -2628,7 +2628,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -2668,7 +2668,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -2680,7 +2680,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -2692,7 +2692,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -2700,7 +2700,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -2708,7 +2708,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -2716,7 +2716,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -2748,7 +2748,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -3325,6 +3325,165 @@
                     }
                   ],
                   "name": "select"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.Body): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "BodyUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Body"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Property",
@@ -7443,7 +7602,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -7455,7 +7614,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -7495,7 +7654,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -7507,7 +7666,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -7519,7 +7678,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -7527,7 +7686,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -7535,7 +7694,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -7543,7 +7702,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -7575,7 +7734,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -8254,6 +8413,165 @@
                     }
                   ],
                   "name": "select"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.ContentControl): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ContentControlUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ContentControl"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Method",
@@ -9617,7 +9935,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -9629,7 +9947,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -9669,7 +9987,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -10549,7 +10867,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -10561,7 +10879,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -10601,7 +10919,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -10613,7 +10931,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -10625,7 +10943,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -10633,7 +10951,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -10641,7 +10959,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -10649,7 +10967,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -10681,7 +10999,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -10689,6 +11007,165 @@
                     }
                   ],
                   "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.CustomProperty): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CustomPropertyUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CustomProperty"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Method",
@@ -11412,7 +11889,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -11424,7 +11901,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -11464,7 +11941,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -11954,7 +12431,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -11966,7 +12443,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -12006,7 +12483,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -12018,7 +12495,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -12030,7 +12507,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -12038,7 +12515,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -12046,7 +12523,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -12054,7 +12531,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -12086,7 +12563,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -12244,6 +12721,165 @@
                     "endIndex": 6
                   },
                   "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.Document): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "DocumentUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Document"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Method",
@@ -12614,7 +13250,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -12626,7 +13262,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -12666,7 +13302,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -12678,7 +13314,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -12690,7 +13326,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -12698,7 +13334,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -12706,7 +13342,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -12714,7 +13350,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -12746,7 +13382,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -12936,6 +13572,165 @@
                     "endIndex": 6
                   },
                   "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.DocumentCreated): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "DocumentCreatedUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "DocumentCreated"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Method",
@@ -13614,7 +14409,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -13626,7 +14421,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -13666,7 +14461,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -13678,7 +14473,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -13690,7 +14485,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -13698,7 +14493,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -13706,7 +14501,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -13714,7 +14509,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -13746,7 +14541,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -13852,6 +14647,165 @@
                     "endIndex": 4
                   },
                   "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.DocumentProperties): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "DocumentPropertiesUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "DocumentProperties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Property",
@@ -14874,7 +15828,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14886,7 +15840,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -14926,7 +15880,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -14938,7 +15892,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14950,7 +15904,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -14958,7 +15912,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -14966,7 +15920,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -14974,7 +15928,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -15006,7 +15960,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -15044,6 +15998,165 @@
                     "endIndex": 3
                   },
                   "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.Font): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "FontUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Font"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Property",
@@ -17681,7 +18794,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -17693,7 +18806,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -17733,7 +18846,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -17745,7 +18858,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -17757,7 +18870,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -17765,7 +18878,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -17773,7 +18886,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -17781,7 +18894,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -17813,7 +18926,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -18265,6 +19378,165 @@
                     }
                   ],
                   "name": "select"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.InlinePicture): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "InlinePictureUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "InlinePicture"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Method",
@@ -18731,7 +20003,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -18743,7 +20015,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -18783,7 +20055,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -45863,7 +47135,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -45875,7 +47147,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -45915,7 +47187,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -45927,7 +47199,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -45939,7 +47211,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -45947,7 +47219,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -45955,7 +47227,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -45963,7 +47235,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -45995,7 +47267,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -47688,7 +48960,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -47700,7 +48972,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -47740,7 +49012,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -48362,7 +49634,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -48374,7 +49646,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -48414,7 +49686,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -48426,7 +49698,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -48438,7 +49710,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -48446,7 +49718,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -48454,7 +49726,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -48462,7 +49734,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -48494,7 +49766,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -48502,6 +49774,165 @@
                     }
                   ],
                   "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.ListItem): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ListItemUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ListItem"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Property",
@@ -52254,7 +53685,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -52266,7 +53697,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -52306,7 +53737,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -52318,7 +53749,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -52330,7 +53761,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -52338,7 +53769,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -52346,7 +53777,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -52354,7 +53785,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -52386,7 +53817,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -53023,6 +54454,165 @@
                     }
                   ],
                   "name": "select"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.Paragraph): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ParagraphUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Paragraph"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Property",
@@ -53889,7 +55479,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -53901,7 +55491,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -53941,7 +55531,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -57088,7 +58678,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -57100,7 +58690,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -57140,7 +58730,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -57152,7 +58742,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -57164,7 +58754,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -57172,7 +58762,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -57180,7 +58770,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -57188,7 +58778,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -57220,7 +58810,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -57839,6 +59429,165 @@
                     }
                   ],
                   "name": "select"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.Range): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RangeUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Range"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Method",
@@ -58556,7 +60305,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -58568,7 +60317,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -58608,7 +60357,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -59781,7 +61530,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -59793,7 +61542,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -59833,7 +61582,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -59845,7 +61594,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -59857,7 +61606,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -59865,7 +61614,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -59873,7 +61622,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -59881,7 +61630,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -59913,7 +61662,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -60177,6 +61926,165 @@
                     }
                   ],
                   "name": "newObject"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.SearchOptions): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "SearchOptionsUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "SearchOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Method",
@@ -60777,7 +62685,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -60789,7 +62697,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -60829,7 +62737,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -60841,7 +62749,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -60853,7 +62761,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -60861,7 +62769,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -60869,7 +62777,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -60877,7 +62785,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -60909,7 +62817,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -60917,6 +62825,165 @@
                     }
                   ],
                   "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.Section): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "SectionUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Section"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Method",
@@ -61353,7 +63420,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -61365,7 +63432,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -61405,7 +63472,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -67834,7 +69901,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -67846,7 +69913,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -67886,7 +69953,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -67898,7 +69965,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -67910,7 +69977,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -67918,7 +69985,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -67926,7 +69993,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -67934,7 +70001,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -67966,7 +70033,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -68653,6 +70720,165 @@
                     }
                   ],
                   "name": "select"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.Table): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "TableUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Table"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Method",
@@ -69531,7 +71757,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -69543,7 +71769,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -69583,7 +71809,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -69595,7 +71821,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -69607,7 +71833,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -69615,7 +71841,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -69623,7 +71849,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -69631,7 +71857,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -69663,7 +71889,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -69671,6 +71897,165 @@
                     }
                   ],
                   "name": "load"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.TableBorder): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "TableBorderUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "TableBorder"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Method",
@@ -71041,7 +73426,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -71053,7 +73438,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -71093,7 +73478,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -71105,7 +73490,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -71117,7 +73502,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -71125,7 +73510,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -71133,7 +73518,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -71141,7 +73526,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -71173,7 +73558,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -71299,6 +73684,165 @@
                     "endIndex": 4
                   },
                   "isStatic": false
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.TableCell): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "TableCellUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "TableCell"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Method",
@@ -72037,7 +74581,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -72049,7 +74593,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -72089,7 +74633,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -72605,7 +75149,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -72617,7 +75161,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -72657,7 +75201,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -73869,7 +76413,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -73881,7 +76425,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -73921,7 +76465,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -73933,7 +76477,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,2)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -73945,7 +76489,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "loadOptions"
                     },
                     {
                       "kind": "Content",
@@ -73953,7 +76497,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\n            "
+                      "text": "{ "
                     },
                     {
                       "kind": "Reference",
@@ -73961,7 +76505,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n            "
+                      "text": "?: string; "
                     },
                     {
                       "kind": "Reference",
@@ -73969,7 +76513,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string;\n        }"
+                      "text": "?: string; }"
                     },
                     {
                       "kind": "Content",
@@ -74001,7 +76545,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "loadOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -74390,6 +76934,165 @@
                     }
                   ],
                   "name": "select"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,0)",
+                  "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.TableRow): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Interfaces"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "TableRowUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "UpdateOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "set"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "(set:instance,1)",
+                  "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "set"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "properties"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "TableRow"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "properties",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "set"
                 },
                 {
                   "kind": "Method",
@@ -75094,7 +77797,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param properties - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -75106,7 +77809,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "option"
+                      "text": "properties"
                     },
                     {
                       "kind": "Content",
@@ -75146,7 +77849,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "properties",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5

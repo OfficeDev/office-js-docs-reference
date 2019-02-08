@@ -66,6 +66,8 @@ items:
       - word.Word.ContentControl.search
       - word.Word.ContentControl.select
       - word.Word.ContentControl.select_1
+      - word.Word.ContentControl.set
+      - word.Word.ContentControl.set_1
       - word.Word.ContentControl.split
       - word.Word.ContentControl.style
       - word.Word.ContentControl.styleBuiltIn
@@ -1271,13 +1273,16 @@ items:
           type:
             - word.Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.ContentControl.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.ContentControl;'
+      content: 'load(properties?: string | string[]): Word.ContentControl;'
       return:
         type:
           - word.Word.ContentControl
@@ -1351,35 +1356,32 @@ items:
           });
           ```
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: word.Word.ContentControl.load_2
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(loadOptions)
+    fullName: load(loadOptions)
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): Word.ContentControl;
+      content: 'load(loadOptions?: { select?: string; expand?: string; }): Word.ContentControl;'
       return:
         type:
           - word.Word.ContentControl
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: loadOptions
+          description: >-
+            Where loadOptions.select is a comma-delimited string that specifies the properties to load, and
+            loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
+            - '{ select?: string; expand?: string; }'
   - uid: word.Word.ContentControl.paragraphs
     summary: |-
       Get the collection of paragraph objects in the content control. Read-only.
@@ -1668,6 +1670,90 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - '"Select" | "Start" | "End"'
+  - uid: word.Word.ContentControl.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Word.ContentControl): void`
+      #### Examples
+
+      ```typescript
+      // Adds title and colors to odd and even content controls and changes their appearance.
+      await Word.run(async (context) => {
+          // Gets the complete sentence  (as range) associated with the insertion point.
+          let evenContentControls = context.document.contentControls.getByTag("even");
+          let oddContentControls = context.document.contentControls.getByTag("odd");
+          evenContentControls.load("color,title,appearance");
+          oddContentControls.load("color,title,appearance");
+
+          await context.sync();
+
+          for (let i = 0; i < evenContentControls.items.length; i++) {
+              // Change a few properties and append a paragraph
+              evenContentControls.items[i].set({
+                  color: 'red',
+                  title: 'Odd ContentControl #' + (i + 1),
+                  appearance: 'Tags'
+              });
+              evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
+          }
+
+          for (let j = 0; j < oddContentControls.items.length; j++) {
+              // Change a few properties and append a paragraph
+              oddContentControls.items[j].set({
+                  color: 'green',
+                  title: 'Even ContentControl #' + (j + 1),
+                  appearance: 'Tags'
+              });
+              oddContentControls.items[j].insertHtml("This is an <b>even</b> content control", "End");
+          }
+
+          await context.sync();
+      });
+      ```
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ContentControlUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ContentControlUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: word.Word.ContentControl.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Word.ContentControl): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - word.Word.ContentControl
   - uid: word.Word.ContentControl.split
     summary: |-
       Splits the content control into child ranges by using delimiters.

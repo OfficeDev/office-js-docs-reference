@@ -227,13 +227,16 @@ items:
           type:
             - Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.TableRowCollection.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.TableRowCollection;'
+      content: 'load(properties?: string | string[]): Excel.TableRowCollection;'
       return:
         type:
           - excel.Excel.TableRowCollection
@@ -279,8 +282,8 @@ items:
           });
           ```
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: excel.Excel.TableRowCollection.load_2

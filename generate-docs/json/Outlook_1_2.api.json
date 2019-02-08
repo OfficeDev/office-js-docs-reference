@@ -38,7 +38,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(Appointment:interface)",
-              "docComment": "/**\n * The subclass of {@link Office.Item} dealing with appointments.\n *\n * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.\n */\n",
+              "docComment": "/**\n * The subclass of {@link Office.Item} dealing with appointments.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page for more information.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -74,7 +74,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(AppointmentCompose:interface)",
-              "docComment": "/**\n * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.\n */\n",
+              "docComment": "/**\n * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page for more information.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -2204,64 +2204,6 @@
                 },
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "dateTimeCreated",
-                  "docComment": "/**\n * Gets the date and time that an item was created. Read mode only.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr></table>\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "dateTimeCreated"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Date"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "dateTimeCreated",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  }
-                },
-                {
-                  "kind": "PropertySignature",
-                  "canonicalReference": "dateTimeModified",
-                  "docComment": "/**\n * Gets the date and time that an item was last modified. Read mode only.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr></table>\n *\n * Note: This member is not supported in Outlook for iOS or Outlook for Android.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "dateTimeModified"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Date"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "dateTimeModified",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  }
-                },
-                {
-                  "kind": "PropertySignature",
                   "canonicalReference": "end",
                   "docComment": "/**\n * Gets or sets the date and time that the appointment is to end.\n *\n * The end property is an {@link Office.Time} object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.\n *\n * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr></table>\n */\n",
                   "excerptTokens": [
@@ -2758,7 +2700,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(AppointmentRead:interface)",
-              "docComment": "/**\n * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of 'Office.context.mailbox.item'. Refer to the Object Model pages for more information.\n */\n",
+              "docComment": "/**\n * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page for more information.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -2795,7 +2737,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(displayReplyAllForm:0)",
-                  "docComment": "/**\n * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.\n *\n * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.\n *\n * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function\n */\n",
+                  "docComment": "/**\n * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.\n *\n * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.\n *\n * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -2854,7 +2796,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(displayReplyForm:0)",
-                  "docComment": "/**\n * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.\n *\n * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, displayReplyForm throws an exception.\n *\n * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. OR An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.\n */\n",
+                  "docComment": "/**\n * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.\n *\n * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, displayReplyForm throws an exception.\n *\n * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. OR An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -2913,7 +2855,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getEntities:0)",
-                  "docComment": "/**\n * Gets the entities found in the selected item's body.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n */\n",
+                  "docComment": "/**\n * Gets the entities found in the selected item's body.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -2944,7 +2886,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getEntitiesByType:0)",
-                  "docComment": "/**\n * Gets an array of all the entities of the specified entity type found in the selected item's body.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table.\n *\n * <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission Leve</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td> <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr> <tr> <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td> <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>\n *\n * @param entityType - One of the EntityType enumeration values.\n *\n * @returns If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present in the item's body, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.\n */\n",
+                  "docComment": "/**\n * Gets an array of all the entities of the specified entity type found in the selected item's body.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table.\n *\n * <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission Leve</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td> <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr> <tr> <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td> <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>\n *\n * @param entityType - One of the EntityType enumeration values.\n *\n * @returns If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present in the item's body, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -3039,7 +2981,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getFilteredEntitiesByName:0)",
-                  "docComment": "/**\n * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.\n *\n * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element in the manifest XML file with the specified FilterName element value.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * @param name - The name of the ItemHasKnownEntity rule element that defines the filter to match.\n *\n * @returns If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the name parameter, the method returns null. If the name parameter does match an ItemHasKnownEntity element in the manifest, but there are no entities in the current item that match, the method return an empty array.\n */\n",
+                  "docComment": "/**\n * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.\n *\n * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element in the manifest XML file with the specified FilterName element value.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * @param name - The name of the ItemHasKnownEntity rule element that defines the filter to match.\n *\n * @returns If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the name parameter, the method returns null. If the name parameter does match an ItemHasKnownEntity element in the manifest, but there are no entities in the current item that match, the method return an empty array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -3126,7 +3068,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getRegExMatches:0)",
-                  "docComment": "/**\n * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.\n *\n * The getRegExMatches method returns the strings that match the regular expression defined in each ItemHasRegularExpressionMatch or ItemHasKnownEntity rule element in the manifest XML file. For an ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified by that rule. The PropertyName simple type defines the supported properties.\n *\n * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. Instead, use the Body.getAsync method to retrieve the entire body.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * @returns An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. The name of each array is equal to the corresponding value of the RegExName attribute of the matching ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.\n */\n",
+                  "docComment": "/**\n * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.\n *\n * The getRegExMatches method returns the strings that match the regular expression defined in each ItemHasRegularExpressionMatch or ItemHasKnownEntity rule element in the manifest XML file. For an ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified by that rule. The PropertyName simple type defines the supported properties.\n *\n * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. Instead, use the Body.getAsync method to retrieve the entire body.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * @returns An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. The name of each array is equal to the corresponding value of the RegExName attribute of the matching ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -3157,7 +3099,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getRegExMatchesByName:0)",
-                  "docComment": "/**\n * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.\n *\n * The getRegExMatchesByName method returns the strings that match the regular expression defined in the ItemHasRegularExpressionMatch rule element in the manifest XML file with the specified RegExName element value.\n *\n * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.\n *\n * @returns An array that contains the strings that match the regular expression defined in the manifest XML file.\n */\n",
+                  "docComment": "/**\n * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.\n *\n * The getRegExMatchesByName method returns the strings that match the regular expression defined in the ItemHasRegularExpressionMatch rule element in the manifest XML file with the specified RegExName element value.\n *\n * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.\n *\n * @returns An array that contains the strings that match the regular expression defined in the manifest XML file.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -3322,7 +3264,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "attachments",
-                  "docComment": "/**\n * Gets the item's attachments as an array.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.\n */\n",
+                  "docComment": "/**\n * Gets the item's attachments as an array.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -3384,7 +3326,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "dateTimeCreated",
-                  "docComment": "/**\n * Gets the date and time that an item was created. Read mode only.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n */\n",
+                  "docComment": "/**\n * Gets the date and time that an item was created.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -3413,7 +3355,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "dateTimeModified",
-                  "docComment": "/**\n * Gets the date and time that an item was last modified. Read mode only.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * Note: This member is not supported in Outlook for iOS or Outlook for Android.\n */\n",
+                  "docComment": "/**\n * Gets the date and time that an item was last modified.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n *\n * **Note**: This member is not supported in Outlook for iOS or Outlook for Android.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -3500,7 +3442,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "itemId",
-                  "docComment": "/**\n * Gets the Exchange Web Services item identifier for the current item.\n *\n * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function.\n *\n * Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n */\n",
+                  "docComment": "/**\n * Gets the Exchange Web Services item identifier for the current item.\n *\n * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function.\n *\n * **Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -3789,7 +3731,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(AttachmentDetails:interface)",
-              "docComment": "/**\n * Represents an attachment on an item from the server. Read mode only.\n *\n * An array of AttachmentDetail objects is returned as the attachments property of an Appointment or Message object.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n */\n",
+              "docComment": "/**\n * Represents an attachment on an item from the server. Read mode only.\n *\n * An array of **AttachmentDetails** objects is returned as the attachments property of an appointment or message item.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -6265,64 +6207,6 @@
                 },
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "dateTimeCreated",
-                  "docComment": "/**\n * Gets the date and time that an item was created. Read mode only.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "dateTimeCreated"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Date"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "dateTimeCreated",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  }
-                },
-                {
-                  "kind": "PropertySignature",
-                  "canonicalReference": "dateTimeModified",
-                  "docComment": "/**\n * Gets the date and time that an item was last modified. Read mode only.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * Note: This member is not supported in Outlook for iOS or Outlook for Android.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "dateTimeModified"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Date"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "dateTimeModified",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  }
-                },
-                {
-                  "kind": "PropertySignature",
                   "canonicalReference": "itemType",
                   "docComment": "/**\n * Gets the type of item that an instance represents.\n *\n * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>\n */\n",
                   "excerptTokens": [
@@ -6364,7 +6248,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(ItemCompose:interface)",
-              "docComment": "/**\n * The compose mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.\n */\n",
+              "docComment": "/**\n * The compose mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page for more information.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -8385,7 +8269,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(ItemRead:interface)",
-              "docComment": "/**\n * The read mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.\n */\n",
+              "docComment": "/**\n * The read mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page for more information.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -8414,7 +8298,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(displayReplyAllForm:0)",
-                  "docComment": "/**\n * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.\n *\n * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.\n *\n * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function\n */\n",
+                  "docComment": "/**\n * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.\n *\n * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.\n *\n * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -8473,7 +8357,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(displayReplyForm:0)",
-                  "docComment": "/**\n * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.\n *\n * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, displayReplyForm throws an exception.\n *\n * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. OR An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.\n */\n",
+                  "docComment": "/**\n * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.\n *\n * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, displayReplyForm throws an exception.\n *\n * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. OR An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -8532,7 +8416,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getEntities:0)",
-                  "docComment": "/**\n * Gets the entities found in the selected item's body.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n */\n",
+                  "docComment": "/**\n * Gets the entities found in the selected item's body.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -8563,7 +8447,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getEntitiesByType:0)",
-                  "docComment": "/**\n * Gets an array of all the entities of the specified entity type found in the selected item's body.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table.\n *\n * <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission Leve</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td> <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr> <tr> <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td> <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>\n *\n * @param entityType - One of the EntityType enumeration values.\n *\n * @returns If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present in the item's body, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.\n */\n",
+                  "docComment": "/**\n * Gets an array of all the entities of the specified entity type found in the selected item's body.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table.\n *\n * <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission Leve</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td> <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr> <tr> <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td> <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>\n *\n * @param entityType - One of the EntityType enumeration values.\n *\n * @returns If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present in the item's body, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -8658,7 +8542,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getFilteredEntitiesByName:0)",
-                  "docComment": "/**\n * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.\n *\n * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element in the manifest XML file with the specified FilterName element value.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * @param name - The name of the ItemHasKnownEntity rule element that defines the filter to match.\n *\n * @returns If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the name parameter, the method returns null. If the name parameter does match an ItemHasKnownEntity element in the manifest, but there are no entities in the current item that match, the method return an empty array.\n */\n",
+                  "docComment": "/**\n * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.\n *\n * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element in the manifest XML file with the specified FilterName element value.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * @param name - The name of the ItemHasKnownEntity rule element that defines the filter to match.\n *\n * @returns If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the name parameter, the method returns null. If the name parameter does match an ItemHasKnownEntity element in the manifest, but there are no entities in the current item that match, the method return an empty array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -8745,7 +8629,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getRegExMatches:0)",
-                  "docComment": "/**\n * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.\n *\n * The getRegExMatches method returns the strings that match the regular expression defined in each ItemHasRegularExpressionMatch or ItemHasKnownEntity rule element in the manifest XML file. For an ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified by that rule. The PropertyName simple type defines the supported properties.\n *\n * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. Instead, use the Body.getAsync method to retrieve the entire body.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * @returns An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. The name of each array is equal to the corresponding value of the RegExName attribute of the matching ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.\n */\n",
+                  "docComment": "/**\n * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.\n *\n * The getRegExMatches method returns the strings that match the regular expression defined in each ItemHasRegularExpressionMatch or ItemHasKnownEntity rule element in the manifest XML file. For an ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified by that rule. The PropertyName simple type defines the supported properties.\n *\n * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. Instead, use the Body.getAsync method to retrieve the entire body.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * @returns An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. The name of each array is equal to the corresponding value of the RegExName attribute of the matching ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -8776,7 +8660,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getRegExMatchesByName:0)",
-                  "docComment": "/**\n * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.\n *\n * The getRegExMatchesByName method returns the strings that match the regular expression defined in the ItemHasRegularExpressionMatch rule element in the manifest XML file with the specified RegExName element value.\n *\n * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.\n *\n * @returns An array that contains the strings that match the regular expression defined in the manifest XML file.\n */\n",
+                  "docComment": "/**\n * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.\n *\n * The getRegExMatchesByName method returns the strings that match the regular expression defined in the ItemHasRegularExpressionMatch rule element in the manifest XML file with the specified RegExName element value.\n *\n * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.\n *\n * @returns An array that contains the strings that match the regular expression defined in the manifest XML file.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -8831,7 +8715,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "attachments",
-                  "docComment": "/**\n * Gets the item's attachments as an array.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.\n */\n",
+                  "docComment": "/**\n * Gets the item's attachments as an array.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -8893,7 +8777,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "itemId",
-                  "docComment": "/**\n * Gets the Exchange Web Services item identifier for the current item.\n *\n * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function.\n *\n * Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n */\n",
+                  "docComment": "/**\n * Gets the Exchange Web Services item identifier for the current item.\n *\n * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function.\n *\n * **Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -9964,7 +9848,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(displayAppointmentForm:0)",
-                  "docComment": "/**\n * Displays an existing calendar appointment.\n *\n * The displayAppointmentForm method opens an existing calendar appointment in a new window on the desktop or in a dialog box on mobile devices.\n *\n * In Outlook for Mac, you can use this method to display a single appointment that is not part of a recurring series, or the master appointment of a recurring series, but you cannot display an instance of the series. This is because in Outlook for Mac, you cannot access the properties (including the item ID) of instances of a recurring series.\n *\n * In Outlook Web App, this method opens the specified form only if the body of the form is less than or equal to 32KB number of characters.\n *\n * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and no error message will be returned.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>\n *\n * @param itemId - The Exchange Web Services (EWS) identifier for an existing calendar appointment.\n */\n",
+                  "docComment": "/**\n * Displays an existing calendar appointment.\n *\n * The displayAppointmentForm method opens an existing calendar appointment in a new window on the desktop or in a dialog box on mobile devices.\n *\n * In Outlook for Mac, you can use this method to display a single appointment that is not part of a recurring series, or the master appointment of a recurring series, but you cannot display an instance of the series. This is because in Outlook for Mac, you cannot access the properties (including the item ID) of instances of a recurring series.\n *\n * In Outlook Web App, this method opens the specified form only if the body of the form is less than or equal to 32KB number of characters.\n *\n * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and no error message will be returned.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>\n *\n * @param itemId - The Exchange Web Services (EWS) identifier for an existing calendar appointment.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -10019,7 +9903,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(displayMessageForm:0)",
-                  "docComment": "/**\n * Displays an existing message.\n *\n * The displayMessageForm method opens an existing message in a new window on the desktop or in a dialog box on mobile devices.\n *\n * In Outlook Web App, this method opens the specified form only if the body of the form is less than or equal to 32 KB number of characters.\n *\n * If the specified item identifier does not identify an existing message, no message will be displayed on the client computer, and no error message will be returned.\n *\n * Do not use the displayMessageForm with an itemId that represents an appointment. Use the displayAppointmentForm method to display an existing appointment, and displayNewAppointmentForm to display a form to create a new appointment.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>\n *\n * @param itemId - The Exchange Web Services (EWS) identifier for an existing message.\n */\n",
+                  "docComment": "/**\n * Displays an existing message.\n *\n * The displayMessageForm method opens an existing message in a new window on the desktop or in a dialog box on mobile devices.\n *\n * In Outlook Web App, this method opens the specified form only if the body of the form is less than or equal to 32 KB number of characters.\n *\n * If the specified item identifier does not identify an existing message, no message will be displayed on the client computer, and no error message will be returned.\n *\n * Do not use the displayMessageForm with an itemId that represents an appointment. Use the displayAppointmentForm method to display an existing appointment, and displayNewAppointmentForm to display a form to create a new appointment.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>\n *\n * @param itemId - The Exchange Web Services (EWS) identifier for an existing message.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -10074,7 +9958,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(displayNewAppointmentForm:0)",
-                  "docComment": "/**\n * Displays a form for creating a new calendar appointment.\n *\n * The displayNewAppointmentForm method opens a form that enables the user to create a new appointment or meeting. If parameters are specified, the appointment form fields are automatically populated with the contents of the parameters.\n *\n * In Outlook Web App and OWA for Devices, this method always displays a form with an attendees field. If you do not specify any attendees as input arguments, the method displays a form with a Save button. If you have specified attendees, the form would include the attendees and a Send button.\n *\n * In the Outlook rich client and Outlook RT, if you specify any attendees or resources in the requiredAttendees, optionalAttendees, or resources parameter, this method displays a meeting form with a Send button. If you don't specify any recipients, this method displays an appointment form with a Save & Close button.\n *\n * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * @param parameters - An AppointmentForm describing the new appointment. All properties are optional.\n */\n",
+                  "docComment": "/**\n * Displays a form for creating a new calendar appointment.\n *\n * The displayNewAppointmentForm method opens a form that enables the user to create a new appointment or meeting. If parameters are specified, the appointment form fields are automatically populated with the contents of the parameters.\n *\n * In Outlook Web App and OWA for Devices, this method always displays a form with an attendees field. If you do not specify any attendees as input arguments, the method displays a form with a Save button. If you have specified attendees, the form would include the attendees and a Send button.\n *\n * In the Outlook rich client and Outlook RT, if you specify any attendees or resources in the requiredAttendees, optionalAttendees, or resources parameter, this method displays a meeting form with a Send button. If you don't specify any recipients, this method displays an appointment form with a Save & Close button.\n *\n * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * @param parameters - An AppointmentForm describing the new appointment. All properties are optional.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -10231,7 +10115,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(makeEwsRequestAsync:0)",
-                  "docComment": "/**\n * Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the user's mailbox.\n *\n * In these cases, add-ins should use REST APIs to access the user's mailbox instead.\n *\n * The makeEwsRequestAsync method sends an EWS request on behalf of the add-in to Exchange.\n *\n * You cannot request Folder Associated Items with the makeEwsRequestAsync method.\n *\n * The XML request must specify UTF-8 encoding. \\<?xml version=\"1.0\" encoding=\"utf-8\"?\\>\n *\n * Your add-in must have the ReadWriteMailbox permission to use the makeEwsRequestAsync method. For information about using the ReadWriteMailbox permission and the EWS operations that you can call with the makeEwsRequestAsync method, see {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Specify permissions for mail add-in access to the user's mailbox}.\n *\n * The XML result of the EWS call is provided as a string in the asyncResult.value property. If the result exceeds 1 MB in size, an error message is returned instead.\n *\n * Note: This method is not supported in the following scenarios:\n *\n * - In Outlook for iOS or Outlook for Android.\n *\n * - When the add-in is loaded in a Gmail mailbox.\n *\n * Note: The server administrator must set OAuthAuthentication to true on the Client Access Server EWS directory to enable the makeEwsRequestAsync method to make EWS requests.\n *\n * *Version differences*\n *\n * When you use the makeEwsRequestAsync method in mail apps running in Outlook versions earlier than version 15.0.4535.1004, you should set the encoding value to ISO-8859-1.\n *\n * `<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>`\n *\n * You do not need to set the encoding value when your mail app is running in Outlook on the web. You can determine whether your mail app is running in Outlook or Outlook on the web by using the mailbox.diagnostics.hostName property. You can determine what version of Outlook is running by using the mailbox.diagnostics.hostVersion property.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteMailbox</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose and read</td></tr></table>\n *\n * @param data - The EWS request.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. The `value` property of the result is the XML of the EWS request provided as a string. If the result exceeds 1 MB in size, an error message is returned instead.\n *\n * @param userContext - Optional. Any state data that is passed to the asynchronous method.\n */\n",
+                  "docComment": "/**\n * Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the user's mailbox.\n *\n * In these cases, add-ins should use REST APIs to access the user's mailbox instead.\n *\n * The makeEwsRequestAsync method sends an EWS request on behalf of the add-in to Exchange.\n *\n * You cannot request Folder Associated Items with the makeEwsRequestAsync method.\n *\n * The XML request must specify UTF-8 encoding. \\<?xml version=\"1.0\" encoding=\"utf-8\"?\\>\n *\n * Your add-in must have the ReadWriteMailbox permission to use the makeEwsRequestAsync method. For information about using the ReadWriteMailbox permission and the EWS operations that you can call with the makeEwsRequestAsync method, see {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Specify permissions for mail add-in access to the user's mailbox}.\n *\n * The XML result of the EWS call is provided as a string in the asyncResult.value property. If the result exceeds 1 MB in size, an error message is returned instead.\n *\n * **Note**: This method is not supported in the following scenarios:\n *\n * - In Outlook for iOS or Outlook for Android.\n *\n * - When the add-in is loaded in a Gmail mailbox.\n *\n * **Note**: The server administrator must set OAuthAuthentication to true on the Client Access Server EWS directory to enable the makeEwsRequestAsync method to make EWS requests.\n *\n * *Version differences*\n *\n * When you use the makeEwsRequestAsync method in mail apps running in Outlook versions earlier than version 15.0.4535.1004, you should set the encoding value to ISO-8859-1.\n *\n * `<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>`\n *\n * You do not need to set the encoding value when your mail app is running in Outlook on the web. You can determine whether your mail app is running in Outlook or Outlook on the web by using the mailbox.diagnostics.hostName property. You can determine what version of Outlook is running by using the mailbox.diagnostics.hostVersion property.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteMailbox</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose and read</td></tr></table>\n *\n * @param data - The EWS request.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. The `value` property of the result is the XML of the EWS request provided as a string. If the result exceeds 1 MB in size, an error message is returned instead.\n *\n * @param userContext - Optional. Any state data that is passed to the asynchronous method.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -10385,7 +10269,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "ewsUrl",
-                  "docComment": "/**\n * Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.\n *\n * Your app must have the ReadItem permission specified in its manifest to call the ewsUrl member in read mode.\n *\n * In compose mode you must call the saveAsync method before you can use the ewsUrl member. Your app must have ReadWriteItem permissions to call the saveAsync method.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>\n *\n * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item | get attachments from the selected item}.\n *\n * Note: This member is not supported in Outlook for iOS or Outlook for Android.\n */\n",
+                  "docComment": "/**\n * Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.\n *\n * Your app must have the ReadItem permission specified in its manifest to call the ewsUrl member in read mode.\n *\n * In compose mode you must call the saveAsync method before you can use the ewsUrl member. Your app must have ReadWriteItem permissions to call the saveAsync method.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>\n *\n * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item | get attachments from the selected item}.\n *\n * **Note**: This member is not supported in Outlook for iOS or Outlook for Android.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -11395,12 +11279,12 @@
                 },
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "meetingstring",
+                  "canonicalReference": "meetingString",
                   "docComment": "/**\n * Gets a string that was identified as a meeting suggestion.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
-                      "text": "meetingstring"
+                      "text": "meetingString"
                     },
                     {
                       "kind": "Content",
@@ -11416,7 +11300,7 @@
                     }
                   ],
                   "releaseTag": "Public",
-                  "name": "meetingstring",
+                  "name": "meetingString",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
                     "endIndex": 3
@@ -11486,7 +11370,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(Message:interface)",
-              "docComment": "/**\n * A subclass of {@link Office.Item} for messages.\n *\n * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.\n */\n",
+              "docComment": "/**\n * A subclass of {@link Office.Item} for messages.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page for more information.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -11552,7 +11436,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(MessageCompose:interface)",
-              "docComment": "/**\n * The message compose mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.\n */\n",
+              "docComment": "/**\n * The message compose mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page for more information.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -13712,7 +13596,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "cc",
-                  "docComment": "/**\n * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The cc property returns a {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of the message.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>\n */\n",
+                  "docComment": "/**\n * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The cc property returns an {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of the message.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -13762,64 +13646,6 @@
                   ],
                   "releaseTag": "Public",
                   "name": "conversationId",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  }
-                },
-                {
-                  "kind": "PropertySignature",
-                  "canonicalReference": "dateTimeCreated",
-                  "docComment": "/**\n * Gets the date and time that an item was created. Read mode only.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "dateTimeCreated"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Date"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "dateTimeCreated",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  }
-                },
-                {
-                  "kind": "PropertySignature",
-                  "canonicalReference": "dateTimeModified",
-                  "docComment": "/**\n * Gets the date and time that an item was last modified. Read mode only.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>\n *\n * Note: This member is not supported in Outlook for iOS or Outlook for Android.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "dateTimeModified"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Date"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "dateTimeModified",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
                     "endIndex": 3
@@ -13935,7 +13761,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(MessageRead:interface)",
-              "docComment": "/**\n * The message read mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.\n */\n",
+              "docComment": "/**\n * The message read mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page for more information.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -13972,7 +13798,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(displayReplyAllForm:0)",
-                  "docComment": "/**\n * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.\n *\n * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.\n *\n * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function\n */\n",
+                  "docComment": "/**\n * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.\n *\n * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.\n *\n * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14031,7 +13857,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(displayReplyForm:0)",
-                  "docComment": "/**\n * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.\n *\n * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, displayReplyForm throws an exception.\n *\n * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. OR An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.\n */\n",
+                  "docComment": "/**\n * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.\n *\n * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, displayReplyForm throws an exception.\n *\n * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. OR An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14090,7 +13916,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getEntities:0)",
-                  "docComment": "/**\n * Gets the entities found in the selected item's body.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n */\n",
+                  "docComment": "/**\n * Gets the entities found in the selected item's body.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14121,7 +13947,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getEntitiesByType:0)",
-                  "docComment": "/**\n * Gets an array of all the entities of the specified entity type found in the selected item's body.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table.\n *\n * <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission Leve</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td> <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr> <tr> <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td> <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>\n *\n * @param entityType - One of the EntityType enumeration values.\n *\n * @returns If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present in the item's body, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.\n */\n",
+                  "docComment": "/**\n * Gets an array of all the entities of the specified entity type found in the selected item's body.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>\n *\n * While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table.\n *\n * <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission Leve</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td> <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr> <tr> <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td> <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>\n *\n * @param entityType - One of the EntityType enumeration values.\n *\n * @returns If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present in the item's body, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14216,7 +14042,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getFilteredEntitiesByName:0)",
-                  "docComment": "/**\n * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.\n *\n * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element in the manifest XML file with the specified FilterName element value.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n *\n * @param name - The name of the ItemHasKnownEntity rule element that defines the filter to match.\n *\n * @returns If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the name parameter, the method returns null. If the name parameter does match an ItemHasKnownEntity element in the manifest, but there are no entities in the current item that match, the method return an empty array.\n */\n",
+                  "docComment": "/**\n * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.\n *\n * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element in the manifest XML file with the specified FilterName element value.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n *\n * @param name - The name of the ItemHasKnownEntity rule element that defines the filter to match.\n *\n * @returns If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the name parameter, the method returns null. If the name parameter does match an ItemHasKnownEntity element in the manifest, but there are no entities in the current item that match, the method return an empty array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14303,7 +14129,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getRegExMatches:0)",
-                  "docComment": "/**\n * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.\n *\n * The getRegExMatches method returns the strings that match the regular expression defined in each ItemHasRegularExpressionMatch or ItemHasKnownEntity rule element in the manifest XML file. For an ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified by that rule. The PropertyName simple type defines the supported properties.\n *\n * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. Instead, use the Body.getAsync method to retrieve the entire body.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n *\n * @returns An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. The name of each array is equal to the corresponding value of the RegExName attribute of the matching ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.\n */\n",
+                  "docComment": "/**\n * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.\n *\n * The getRegExMatches method returns the strings that match the regular expression defined in each ItemHasRegularExpressionMatch or ItemHasKnownEntity rule element in the manifest XML file. For an ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified by that rule. The PropertyName simple type defines the supported properties.\n *\n * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. Instead, use the Body.getAsync method to retrieve the entire body.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n *\n * @returns An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. The name of each array is equal to the corresponding value of the RegExName attribute of the matching ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14334,7 +14160,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getRegExMatchesByName:0)",
-                  "docComment": "/**\n * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.\n *\n * The getRegExMatchesByName method returns the strings that match the regular expression defined in the ItemHasRegularExpressionMatch rule element in the manifest XML file with the specified RegExName element value.\n *\n * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.\n *\n * Note: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n *\n * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.\n *\n * @returns An array that contains the strings that match the regular expression defined in the manifest XML file.\n */\n",
+                  "docComment": "/**\n * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.\n *\n * The getRegExMatchesByName method returns the strings that match the regular expression defined in the ItemHasRegularExpressionMatch rule element in the manifest XML file with the specified RegExName element value.\n *\n * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.\n *\n * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n *\n * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.\n *\n * @returns An array that contains the strings that match the regular expression defined in the manifest XML file.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14499,7 +14325,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "attachments",
-                  "docComment": "/**\n * Gets the item's attachments as an array.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n *\n * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.\n */\n",
+                  "docComment": "/**\n * Gets the item's attachments as an array.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n *\n * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14623,7 +14449,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "dateTimeCreated",
-                  "docComment": "/**\n * Gets the date and time that an item was created. Read mode only.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n */\n",
+                  "docComment": "/**\n * Gets the date and time that an item was created.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14652,7 +14478,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "dateTimeModified",
-                  "docComment": "/**\n * Gets the date and time that an item was last modified. Read mode only.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n *\n * Note: This member is not supported in Outlook for iOS or Outlook for Android.\n */\n",
+                  "docComment": "/**\n * Gets the date and time that an item was last modified.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n *\n * **Note**: This member is not supported in Outlook for iOS or Outlook for Android.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14681,7 +14507,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "from",
-                  "docComment": "/**\n * Gets the email address of the sender of a message.\n *\n * The from and sender properties represent the same person unless the message is sent by a delegate. In that case, the from property represents the delegator, and the sender property represents the delegate.\n *\n * Note: The recipientType property of the EmailAddressDetails object in the from property is undefined.\n *\n * The from property returns an EmailAddressDetails object.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n */\n",
+                  "docComment": "/**\n * Gets the email address of the sender of a message.\n *\n * The from and sender properties represent the same person unless the message is sent by a delegate. In that case, the from property represents the delegator, and the sender property represents the delegate.\n *\n * **Note**: The recipientType property of the EmailAddressDetails object in the from property is undefined.\n *\n * The from property returns an EmailAddressDetails object.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14768,7 +14594,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "itemId",
-                  "docComment": "/**\n * Gets the Exchange Web Services item identifier for the current item.\n *\n * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function.\n *\n * Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n */\n",
+                  "docComment": "/**\n * Gets the Exchange Web Services item identifier for the current item.\n *\n * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function.\n *\n * **Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14863,7 +14689,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "sender",
-                  "docComment": "/**\n * Gets the email address of the sender of an email message.\n *\n * The from and sender properties represent the same person unless the message is sent by a delegate. In that case, the from property represents the delegator, and the sender property represents the delegate.\n *\n * Note: The recipientType property of the EmailAddressDetails object in the sender property is undefined.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n */\n",
+                  "docComment": "/**\n * Gets the email address of the sender of an email message.\n *\n * The from and sender properties represent the same person unless the message is sent by a delegate. In that case, the from property represents the delegator, and the sender property represents the delegate.\n *\n * **Note**: The recipientType property of the EmailAddressDetails object in the sender property is undefined.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -16494,7 +16320,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(RoamingSettings:interface)",
-              "docComment": "/**\n * The settings created by using the methods of the RoamingSettings object are saved per add-in and per user. That is, they are available only to the add-in that created them, and only from the user's mail box in which they are saved.\n *\n * While the Outlook Add-in API limits access to these settings to only the add-in that created them, these settings should not be considered secure storage. They can be accessed by Exchange Web Services or Extended MAPI. They should not be used to store sensitive information such as user credentials or security tokens.\n *\n * The name of a setting is a String, while the value can be a String, Number, Boolean, null, Object, or Array.\n *\n * The RoamingSettings object is accessible via the roamingSettings property in the Office.context namespace.\n *\n * Important: The RoamingSettings object is initialized from the persisted storage only when the add-in is first loaded. For task panes, this means that it is only initialized when the task pane first opens. If the task pane navigates to another page or reloads the current page, the in-memory object is reset to its initial values, even if your add-in has persisted changes. The persisted changes will not be available until the task pane is closed and reopened.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>\n */\n",
+              "docComment": "/**\n * The settings created by using the methods of the RoamingSettings object are saved per add-in and per user. That is, they are available only to the add-in that created them, and only from the user's mail box in which they are saved.\n *\n * While the Outlook Add-in API limits access to these settings to only the add-in that created them, these settings should not be considered secure storage. They can be accessed by Exchange Web Services or Extended MAPI. They should not be used to store sensitive information such as user credentials or security tokens.\n *\n * The name of a setting is a String, while the value can be a String, Number, Boolean, null, Object, or Array.\n *\n * The RoamingSettings object is accessible via the roamingSettings property in the Office.context namespace.\n *\n * **Important**: The RoamingSettings object is initialized from the persisted storage only when the add-in is first loaded. For task panes, this means that it is only initialized when the task pane first opens. If the task pane navigates to another page or reloads the current page, the in-memory object is reset to its initial values, even if your add-in has persisted changes. The persisted changes will not be available until the task pane is closed and reopened.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>\n *\n * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",

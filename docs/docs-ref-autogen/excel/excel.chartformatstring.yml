@@ -21,6 +21,8 @@ items:
       - excel.Excel.ChartFormatString.load
       - excel.Excel.ChartFormatString.load_1
       - excel.Excel.ChartFormatString.load_2
+      - excel.Excel.ChartFormatString.set
+      - excel.Excel.ChartFormatString.set_1
       - excel.Excel.ChartFormatString.toJSON
   - uid: excel.Excel.ChartFormatString.context
     summary: >-
@@ -90,47 +92,95 @@ items:
           type:
             - excel.Excel.Interfaces.ChartFormatStringLoadOptions
   - uid: excel.Excel.ChartFormatString.load_1
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(properties)
+    fullName: load(properties)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartFormatString;'
+      content: 'load(properties?: string | string[]): Excel.ChartFormatString;'
       return:
         type:
           - excel.Excel.ChartFormatString
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: properties
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
   - uid: excel.Excel.ChartFormatString.load_2
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(loadOptions)
+    fullName: load(loadOptions)
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): Excel.ChartFormatString;
+      content: 'load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartFormatString;'
       return:
         type:
           - excel.Excel.ChartFormatString
         description: ''
       parameters:
-        - id: option
+        - id: loadOptions
+          description: >-
+            Where loadOptions.select is a comma-delimited string that specifies the properties to load, and
+            loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: excel.Excel.ChartFormatString.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartFormatString): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartFormatStringUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartFormatStringUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ChartFormatString.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartFormatString): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
           description: ''
           type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
+            - excel.Excel.ChartFormatString
   - uid: excel.Excel.ChartFormatString.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
