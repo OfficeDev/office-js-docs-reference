@@ -214,19 +214,19 @@ items:
       Sets the visibility of a specific toolbar in the application.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: 'showToolbar(id, show)'
-    fullName: 'showToolbar(id, show)'
+    name: 'showToolbar(idString, show)'
+    fullName: 'showToolbar(idString, show)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'showToolbar(id: "CommandBar" | "PageNavigationBar" | "StatusBar", show: boolean): void;'
+      content: 'showToolbar(idString: "CommandBar" | "PageNavigationBar" | "StatusBar", show: boolean): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: id
+        - id: idString
           description: The type of the Toolbar
           type:
             - '"CommandBar" | "PageNavigationBar" | "StatusBar"'

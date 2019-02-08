@@ -81,13 +81,13 @@ items:
       Perform a sort operation.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'apply(fields, matchCase, method)'
-    fullName: 'apply(fields, matchCase, method)'
+    name: 'apply(fields, matchCase, methodString)'
+    fullName: 'apply(fields, matchCase, methodString)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'apply(fields: Excel.SortField[], matchCase?: boolean, method?: "PinYin" | "StrokeCount"): void;'
+      content: 'apply(fields: Excel.SortField[], matchCase?: boolean, methodString?: "PinYin" | "StrokeCount"): void;'
       return:
         type:
           - void
@@ -101,7 +101,7 @@ items:
           description: Optional. Whether to have the casing impact string ordering.
           type:
             - boolean
-        - id: method
+        - id: methodString
           description: Optional. The ordering method used for Chinese characters.
           type:
             - '"PinYin" | "StrokeCount"'

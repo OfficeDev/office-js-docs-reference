@@ -85,19 +85,21 @@ items:
       Returns the specific axis identified by type and group.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'getItem(type, group)'
-    fullName: 'getItem(type, group)'
+    name: 'getItem(typeString, group)'
+    fullName: 'getItem(typeString, group)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getItem(type: "Invalid" | "Category" | "Value" | "Series", group?: "Primary" | "Secondary"): Excel.ChartAxis;'
+      content: >-
+        getItem(typeString: "Invalid" | "Category" | "Value" | "Series", group?: "Primary" | "Secondary"):
+        Excel.ChartAxis;
       return:
         type:
           - excel.Excel.ChartAxis
         description: ''
       parameters:
-        - id: type
+        - id: typeString
           description: Specifies the axis type. See Excel.ChartAxisType for details.
           type:
             - '"Invalid" | "Category" | "Value" | "Series"'

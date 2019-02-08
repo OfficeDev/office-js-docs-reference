@@ -202,10 +202,10 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param id - The type of the Toolbar
+         * @param idString - The type of the Toolbar
          * @param show - Whether the toolbar is visibile or not.
          */
-        showToolbar(id: "CommandBar" | "PageNavigationBar" | "StatusBar", show: boolean): void;
+        showToolbar(idString: "CommandBar" | "PageNavigationBar" | "StatusBar", show: boolean): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -224,12 +224,12 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.ApplicationLoadOptions): Visio.Application;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.Application;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Visio.Application;
         toJSON(): Visio.Interfaces.ApplicationData;
@@ -317,12 +317,12 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.DocumentLoadOptions): Visio.Document;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.Document;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Visio.Document;
         /**
@@ -448,12 +448,12 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.DocumentViewLoadOptions): Visio.DocumentView;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.DocumentView;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Visio.DocumentView;
         toJSON(): Visio.Interfaces.DocumentViewData;
@@ -567,12 +567,12 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.PageLoadOptions): Visio.Page;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.Page;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Visio.Page;
         toJSON(): Visio.Interfaces.PageData;
@@ -671,12 +671,12 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.PageViewLoadOptions): Visio.PageView;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.PageView;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Visio.PageView;
         toJSON(): Visio.Interfaces.PageViewData;
@@ -724,7 +724,7 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.PageCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.PageCollection;
         load(option?: OfficeExtension.LoadOption): Visio.PageCollection;
@@ -773,7 +773,7 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.ShapeCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.ShapeCollection;
         load(option?: OfficeExtension.LoadOption): Visio.ShapeCollection;
@@ -888,12 +888,12 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.Shape;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Visio.Shape;
         toJSON(): Visio.Interfaces.ShapeData;
@@ -946,14 +946,14 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param OverlayType - An Overlay Type. Can be 'Text' or 'Image'.
+         * @param OverlayTypeString - An Overlay Type. Can be 'Text' or 'Image'.
          * @param Content - Content of Overlay.
          * @param OverlayHorizontalAlignment - Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.
          * @param OverlayVerticalAlignment - Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.
          * @param Width - Overlay Width.
          * @param Height - Overlay Height.
          */
-        addOverlay(OverlayType: "Text" | "Image", Content: string, OverlayHorizontalAlignment: "Left" | "Center" | "Right", OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number, Height: number): OfficeExtension.ClientResult<number>;
+        addOverlay(OverlayTypeString: "Text" | "Image", Content: string, OverlayHorizontalAlignment: "Left" | "Center" | "Right", OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number, Height: number): OfficeExtension.ClientResult<number>;
         /**
          *
          * Removes particular overlay or all overlays on the Shape.
@@ -981,12 +981,12 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.ShapeViewLoadOptions): Visio.ShapeView;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.ShapeView;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Visio.ShapeView;
         toJSON(): Visio.Interfaces.ShapeViewData;
@@ -1114,7 +1114,7 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.ShapeDataItemCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.ShapeDataItemCollection;
         load(option?: OfficeExtension.LoadOption): Visio.ShapeDataItemCollection;
@@ -1173,12 +1173,12 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.ShapeDataItemLoadOptions): Visio.ShapeDataItem;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.ShapeDataItem;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Visio.ShapeDataItem;
         toJSON(): Visio.Interfaces.ShapeDataItemData;
@@ -1226,7 +1226,7 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.HyperlinkCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.HyperlinkCollection;
         load(option?: OfficeExtension.LoadOption): Visio.HyperlinkCollection;
@@ -1285,12 +1285,12 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.HyperlinkLoadOptions): Visio.Hyperlink;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.Hyperlink;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Visio.Hyperlink;
         toJSON(): Visio.Interfaces.HyperlinkData;
@@ -1338,7 +1338,7 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.CommentCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.CommentCollection;
         load(option?: OfficeExtension.LoadOption): Visio.CommentCollection;
@@ -1404,12 +1404,12 @@ export declare namespace Visio {
         load(option?: Visio.Interfaces.CommentLoadOptions): Visio.Comment;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.Comment;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Visio.Comment;
         toJSON(): Visio.Interfaces.CommentData;
@@ -1445,12 +1445,12 @@ export declare namespace Visio {
          */
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Visio.Selection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Visio.Selection;
         toJSON(): Visio.Interfaces.SelectionData;

@@ -98,19 +98,19 @@ items:
       Gets a border object using its name.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getItem(index)
-    fullName: getItem(index)
+    name: getItem(indexString)
+    fullName: getItem(indexString)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getItem(index: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"): Excel.ConditionalRangeBorder;'
+      content: 'getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"): Excel.ConditionalRangeBorder;'
       return:
         type:
           - excel.Excel.ConditionalRangeBorder
         description: ''
       parameters:
-        - id: index
+        - id: indexString
           description: Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
           type:
             - '"EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"'

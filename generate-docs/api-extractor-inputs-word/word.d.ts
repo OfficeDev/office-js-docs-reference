@@ -201,9 +201,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
+         * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
-        getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
+        getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
          *
          * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
@@ -220,10 +220,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param breakType - Required. The break type to add to the body.
+         * @param breakTypeString - Required. The break type to add to the body.
          * @param insertLocation - Required. The value can be 'Start' or 'End'.
          */
-        insertBreak(breakType: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
+        insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
          *
          * Wraps the body object with a Rich Text content control.
@@ -248,9 +248,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
          */
-        insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
@@ -268,9 +268,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in the document.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
          */
-        insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.
@@ -288,9 +288,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.
-         * @param insertLocation - Required. The value can be 'Start' or 'End'.
+         * @param insertLocationString - Required. The value can be 'Start' or 'End'.
          */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
          * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
@@ -308,9 +308,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
          */
-        insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
@@ -328,9 +328,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Start' or 'End'.
+         * @param insertLocationString - Required. The value can be 'Start' or 'End'.
          */
-        insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
+        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
          * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.
@@ -351,10 +351,10 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocation - Required. The value can be 'Start' or 'End'.
+         * @param insertLocationString - Required. The value can be 'Start' or 'End'.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
+        insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
          * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
@@ -372,9 +372,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
          */
-        insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Performs a search with the specified SearchOptions on the scope of the body object. The search results are a collection of range objects.
@@ -408,9 +408,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionMode?: "Select" | "Start" | "End"): void;
+        select(selectionModeString?: "Select" | "Start" | "End"): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -429,12 +429,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.BodyLoadOptions): Word.Body;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.Body;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.Body;
         /**
@@ -704,9 +704,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After', or 'Content'.
+         * @param rangeLocationString - Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After', or 'Content'.
          */
-        getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
+        getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
          *
          * Gets the text ranges in the content control by using punctuation marks and/or other ending marks.
@@ -733,10 +733,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param breakType - Required. Type of break.
+         * @param breakTypeString - Required. Type of break.
          * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.
          */
-        insertBreak(breakType: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
+        insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
          *
          * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
@@ -754,9 +754,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
-        insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
@@ -774,9 +774,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in to the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
-        insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
@@ -794,9 +794,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
          * Inserts OOXML into the content control at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
@@ -814,9 +814,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted in to the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
-        insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
@@ -834,9 +834,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          */
-        insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
+        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
          * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
@@ -857,10 +857,10 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
+        insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
          * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
@@ -878,9 +878,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. The text to be inserted in to the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
-        insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Performs a search with the specified SearchOptions on the scope of the content control object. The search results are a collection of range objects.
@@ -914,9 +914,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionMode?: "Select" | "Start" | "End"): void;
+        select(selectionModeString?: "Select" | "Start" | "End"): void;
         /**
          *
          * Splits the content control into child ranges by using delimiters.
@@ -947,12 +947,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.ContentControlLoadOptions): Word.ContentControl;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.ContentControl;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.ContentControl;
         /**
@@ -1062,7 +1062,7 @@ export declare namespace Word {
         load(option?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ContentControlCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.ContentControlCollection;
         load(option?: OfficeExtension.LoadOption): Word.ContentControlCollection;
@@ -1145,12 +1145,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.CustomPropertyLoadOptions): Word.CustomProperty;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.CustomProperty;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.CustomProperty;
         /**
@@ -1234,7 +1234,7 @@ export declare namespace Word {
         load(option?: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CustomPropertyCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.CustomPropertyCollection;
         load(option?: OfficeExtension.LoadOption): Word.CustomPropertyCollection;
@@ -1338,12 +1338,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.DocumentLoadOptions): Word.Document;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.Document;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.Document;
         /**
@@ -1446,12 +1446,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.DocumentCreatedLoadOptions): Word.DocumentCreated;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.DocumentCreated;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.DocumentCreated;
         /**
@@ -1631,12 +1631,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.DocumentPropertiesLoadOptions): Word.DocumentProperties;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.DocumentProperties;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.DocumentProperties;
         /**
@@ -1767,12 +1767,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.FontLoadOptions): Word.Font;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.Font;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.Font;
         /**
@@ -1942,9 +1942,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', or 'End'.
+         * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', or 'End'.
          */
-        getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
+        getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
          *
          * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
@@ -1961,10 +1961,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param breakType - Required. The break type to add.
+         * @param breakTypeString - Required. The break type to add.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
          */
-        insertBreak(breakType: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
+        insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
          *
          * Wraps the inline picture with a rich text content control.
@@ -1989,9 +1989,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
          */
-        insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -2009,9 +2009,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param html - Required. The HTML to be inserted.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
          */
-        insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'.
@@ -2029,9 +2029,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Before', or 'After'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Before', or 'After'.
          */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
          * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.
@@ -2049,9 +2049,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
          */
-        insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -2069,9 +2069,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
          */
-        insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
+        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
          * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -2089,9 +2089,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
          */
-        insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Selects the inline picture. This causes Word to scroll to the selection.
@@ -2107,9 +2107,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionMode?: "Select" | "Start" | "End"): void;
+        select(selectionModeString?: "Select" | "Start" | "End"): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -2128,12 +2128,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.InlinePictureLoadOptions): Word.InlinePicture;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.InlinePicture;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.InlinePicture;
         /**
@@ -2189,7 +2189,7 @@ export declare namespace Word {
         load(option?: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.InlinePictureCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.InlinePictureCollection;
         load(option?: OfficeExtension.LoadOption): Word.InlinePictureCollection;
@@ -2275,9 +2275,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'.
          */
-        insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
+        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
          * Sets the alignment of the bullet, number or picture at the specified level in the list.
@@ -2295,9 +2295,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
-         * @param alignment - Required. The level alignment that can be 'Left', 'Centered', or 'Right'.
+         * @param alignmentString - Required. The level alignment that can be 'Left', 'Centered', or 'Right'.
          */
-        setLevelAlignment(level: number, alignment: "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"): void;
+        setLevelAlignment(level: number, alignmentString: "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"): void;
         /**
          *
          * Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
@@ -2317,11 +2317,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
-         * @param listBullet - Required. The bullet.
+         * @param listBulletString - Required. The bullet.
          * @param charCode - Optional. The bullet character's code value. Used only if the bullet is 'Custom'.
          * @param fontName - Optional. The bullet's font name. Used only if the bullet is 'Custom'.
          */
-        setLevelBullet(level: number, listBullet: "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow" | "Checkmark", charCode?: number, fontName?: string): void;
+        setLevelBullet(level: number, listBulletString: "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow" | "Checkmark", charCode?: number, fontName?: string): void;
         /**
          *
          * Sets the two indents of the specified level in the list.
@@ -2351,10 +2351,10 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
-         * @param listNumbering - Required. The ordinal format.
+         * @param listNumberingString - Required. The ordinal format.
          * @param formatString - Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a level of number type that is higher than or equal to this level. For example, an array of ["(", level - 1, ".", level, ")"] can define the format of "(2.c)", where 2 is the parent's item number and c is this level's item number.
          */
-        setLevelNumbering(level: number, listNumbering: "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter", formatString?: any[]): void;
+        setLevelNumbering(level: number, listNumberingString: "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter", formatString?: any[]): void;
         /**
          *
          * Sets the starting number at the specified level in the list. Default value is 1.
@@ -2383,12 +2383,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.ListLoadOptions): Word.List;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.List;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.List;
         /**
@@ -2471,7 +2471,7 @@ export declare namespace Word {
         load(option?: Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ListCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.ListCollection;
         load(option?: OfficeExtension.LoadOption): Word.ListCollection;
@@ -2574,12 +2574,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.ListItemLoadOptions): Word.ListItem;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.ListItem;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.ListItem;
         /**
@@ -2913,9 +2913,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
+         * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
-        getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
+        getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
          *
          * Gets the text ranges in the paragraph by using punctuation marks and/or other ending marks.
@@ -2942,10 +2942,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param breakType - Required. The break type to add to the document.
+         * @param breakTypeString - Required. The break type to add to the document.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
          */
-        insertBreak(breakType: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
+        insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
          *
          * Wraps the paragraph object with a rich text content control.
@@ -2970,9 +2970,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
          */
-        insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
@@ -2990,9 +2990,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in the paragraph.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
          */
-        insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
@@ -3010,9 +3010,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
          */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
          * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
@@ -3030,9 +3030,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted in the paragraph.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
          */
-        insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -3050,9 +3050,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
          */
-        insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
+        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
          * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
@@ -3073,10 +3073,10 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
+        insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
          * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
@@ -3094,9 +3094,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
          */
-        insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Performs a search with the specified SearchOptions on the scope of the paragraph object. The search results are a collection of range objects.
@@ -3130,9 +3130,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionMode?: "Select" | "Start" | "End"): void;
+        select(selectionModeString?: "Select" | "Start" | "End"): void;
         /**
          *
          * Splits the paragraph into child ranges by using delimiters.
@@ -3169,12 +3169,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.ParagraphLoadOptions): Word.Paragraph;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.Paragraph;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.Paragraph;
         /**
@@ -3244,7 +3244,7 @@ export declare namespace Word {
         load(option?: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ParagraphCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.ParagraphCollection;
         load(option?: OfficeExtension.LoadOption): Word.ParagraphCollection;
@@ -3504,9 +3504,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
+         * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
-        getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
+        getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
          *
          * Gets the text child ranges in the range by using punctuation marks and/or other ending marks.
@@ -3533,10 +3533,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param breakType - Required. The break type to add.
+         * @param breakTypeString - Required. The break type to add.
          * @param insertLocation - Required. The value can be 'Before' or 'After'.
          */
-        insertBreak(breakType: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
+        insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
          *
          * Wraps the range object with a rich text content control.
@@ -3561,9 +3561,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
-        insertFileFromBase64(base64File: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -3581,9 +3581,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
-        insertHtml(html: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -3601,9 +3601,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
          * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -3621,9 +3621,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
-        insertOoxml(ooxml: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -3641,9 +3641,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
          */
-        insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
+        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
          * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
@@ -3664,10 +3664,10 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
+        insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
          * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -3685,9 +3685,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
-        insertText(text: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
          * Returns a new range as the intersection of this range with another range. This range is not changed. Throws if the two ranges are not overlapped or adjacent.
@@ -3739,9 +3739,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionMode?: "Select" | "Start" | "End"): void;
+        select(selectionModeString?: "Select" | "Start" | "End"): void;
         /**
          *
          * Splits the range into child ranges by using delimiters.
@@ -3772,12 +3772,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.RangeLoadOptions): Word.Range;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.Range;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.Range;
         /**
@@ -3833,7 +3833,7 @@ export declare namespace Word {
         load(option?: Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.RangeCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.RangeCollection;
         load(option?: OfficeExtension.LoadOption): Word.RangeCollection;
@@ -3938,12 +3938,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.SearchOptions;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.SearchOptions;
         /**
@@ -3997,9 +3997,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param type - Required. The type of footer to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
+         * @param typeString - Required. The type of footer to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
-        getFooter(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
+        getFooter(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         /**
          *
          * Gets one of the section's headers.
@@ -4015,9 +4015,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param type - Required. The type of header to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
+         * @param typeString - Required. The type of header to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
-        getHeader(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
+        getHeader(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         /**
          *
          * Gets the next section. Throws if this section is the last one.
@@ -4050,12 +4050,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.SectionLoadOptions): Word.Section;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.Section;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.Section;
         /**
@@ -4111,7 +4111,7 @@ export declare namespace Word {
         load(option?: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.SectionCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.SectionCollection;
         load(option?: OfficeExtension.LoadOption): Word.SectionCollection;
@@ -4354,11 +4354,11 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation - Required. It can be 'Start' or 'End', corresponding to the appropriate side of the table.
+         * @param insertLocationString - Required. It can be 'Start' or 'End', corresponding to the appropriate side of the table.
          * @param columnCount - Required. Number of columns to add.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        addColumns(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", columnCount: number, values?: string[][]): void;
+        addColumns(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", columnCount: number, values?: string[][]): void;
         /**
          *
          * Adds rows to the start or end of the table, using the first or last existing row as a template. The string values, if specified, are set in the newly inserted rows.
@@ -4376,11 +4376,11 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation - Required. It can be 'Start' or 'End'.
+         * @param insertLocationString - Required. It can be 'Start' or 'End'.
          * @param rowCount - Required. Number of rows to add.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        addRows(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?: string[][]): Word.TableRowCollection;
+        addRows(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?: string[][]): Word.TableRowCollection;
         /**
          *
          * Autofits the table columns to the width of the window.
@@ -4444,9 +4444,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param borderLocation - Required. The border location.
+         * @param borderLocationString - Required. The border location.
          */
-        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
+        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
         /**
          *
          * Gets the table cell at a specified row and column. Throws if the specified table cell does not exist.
@@ -4482,9 +4482,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
-        getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
+        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
          *
          * Gets the next table. Throws if this table is the last one.
@@ -4542,9 +4542,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', or 'After'.
+         * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', or 'After'.
          */
-        getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
+        getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
          *
          * Inserts a content control on the table.
@@ -4569,9 +4569,9 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
          */
-        insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
+        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
          * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
@@ -4592,10 +4592,10 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
+        insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
          * Performs a search with the specified SearchOptions on the scope of the table object. The search results are a collection of range objects.
@@ -4629,9 +4629,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionMode?: "Select" | "Start" | "End"): void;
+        select(selectionModeString?: "Select" | "Start" | "End"): void;
         /**
          *
          * Sets cell padding in points.
@@ -4648,10 +4648,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
-        setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
+        setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -4670,12 +4670,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.TableLoadOptions): Word.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.Table;
         /**
@@ -4731,7 +4731,7 @@ export declare namespace Word {
         load(option?: Word.Interfaces.TableCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.TableCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableCollection;
@@ -4874,9 +4874,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param borderLocation - Required. The border location.
+         * @param borderLocationString - Required. The border location.
          */
-        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
+        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
         /**
          *
          * Gets cell padding in points.
@@ -4892,9 +4892,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
-        getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
+        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
          *
          * Gets the next row. Throws if this row is the last one.
@@ -4926,11 +4926,11 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation - Required. Where the new rows should be inserted, relative to the current row. It can be 'Before' or 'After'.
+         * @param insertLocationString - Required. Where the new rows should be inserted, relative to the current row. It can be 'Before' or 'After'.
          * @param rowCount - Required. Number of rows to add
          * @param values - Optional. Strings to insert in the new rows, specified as a 2D array. The number of cells in each row must not exceed the number of cells in the existing row.
          */
-        insertRows(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?: string[][]): Word.TableRowCollection;
+        insertRows(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?: string[][]): Word.TableRowCollection;
         /**
          *
          * Performs a search with the specified SearchOptions on the scope of the row. The search results are a collection of range objects.
@@ -4964,9 +4964,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
-        select(selectionMode?: "Select" | "Start" | "End"): void;
+        select(selectionModeString?: "Select" | "Start" | "End"): void;
         /**
          *
          * Sets cell padding in points.
@@ -4983,10 +4983,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
-        setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
+        setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -5005,12 +5005,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.TableRowLoadOptions): Word.TableRow;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.TableRow;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.TableRow;
         /**
@@ -5066,7 +5066,7 @@ export declare namespace Word {
         load(option?: Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableRowCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.TableRowCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableRowCollection;
@@ -5209,9 +5209,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param borderLocation - Required. The border location.
+         * @param borderLocationString - Required. The border location.
          */
-        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
+        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
         /**
          *
          * Gets cell padding in points.
@@ -5227,9 +5227,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          */
-        getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
+        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
          *
          * Gets the next cell. Throws if this cell is the last one.
@@ -5261,11 +5261,11 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation - Required. It can be 'Before' or 'After'.
+         * @param insertLocationString - Required. It can be 'Before' or 'After'.
          * @param columnCount - Required. Number of columns to add.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        insertColumns(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", columnCount: number, values?: string[][]): void;
+        insertColumns(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", columnCount: number, values?: string[][]): void;
         /**
          *
          * Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set in the newly inserted rows.
@@ -5283,11 +5283,11 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation - Required. It can be 'Before' or 'After'.
+         * @param insertLocationString - Required. It can be 'Before' or 'After'.
          * @param rowCount - Required. Number of rows to add.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        insertRows(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?: string[][]): Word.TableRowCollection;
+        insertRows(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?: string[][]): Word.TableRowCollection;
         /**
          *
          * Sets cell padding in points.
@@ -5304,10 +5304,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
-        setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
+        setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -5326,12 +5326,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.TableCellLoadOptions): Word.TableCell;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.TableCell;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.TableCell;
         /**
@@ -5387,7 +5387,7 @@ export declare namespace Word {
         load(option?: Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableCellCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.TableCellCollection;
         load(option?: OfficeExtension.LoadOption): Word.TableCellCollection;
@@ -5463,12 +5463,12 @@ export declare namespace Word {
         load(option?: Word.Interfaces.TableBorderLoadOptions): Word.TableBorder;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Word.TableBorder;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Word.TableBorder;
         /**

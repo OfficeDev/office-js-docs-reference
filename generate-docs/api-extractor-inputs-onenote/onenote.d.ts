@@ -129,12 +129,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.ApplicationLoadOptions): OneNote.Application;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.Application;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.Application;
         /**
@@ -198,12 +198,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkAnalysisLoadOptions): OneNote.InkAnalysis;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.InkAnalysis;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.InkAnalysis;
         /**
@@ -282,12 +282,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions): OneNote.InkAnalysisParagraph;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.InkAnalysisParagraph;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraph;
         /**
@@ -358,7 +358,7 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisParagraphCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.InkAnalysisParagraphCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkAnalysisParagraphCollection;
@@ -438,12 +438,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkAnalysisLineLoadOptions): OneNote.InkAnalysisLine;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.InkAnalysisLine;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.InkAnalysisLine;
         /**
@@ -514,7 +514,7 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisLineCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.InkAnalysisLineCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkAnalysisLineCollection;
@@ -608,12 +608,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkAnalysisWordLoadOptions): OneNote.InkAnalysisWord;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.InkAnalysisWord;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.InkAnalysisWord;
         /**
@@ -684,7 +684,7 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisWordCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.InkAnalysisWordCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkAnalysisWordCollection;
@@ -750,12 +750,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.FloatingInkLoadOptions): OneNote.FloatingInk;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.FloatingInk;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.FloatingInk;
         /**
@@ -813,12 +813,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkStrokeLoadOptions): OneNote.InkStroke;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.InkStroke;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.InkStroke;
         /**
@@ -889,7 +889,7 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkStrokeCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkStrokeCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.InkStrokeCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkStrokeCollection;
@@ -962,12 +962,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkWordLoadOptions): OneNote.InkWord;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.InkWord;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.InkWord;
         /**
@@ -1038,7 +1038,7 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.InkWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.InkWordCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.InkWordCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.InkWordCollection;
@@ -1157,12 +1157,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.NotebookLoadOptions): OneNote.Notebook;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.Notebook;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.Notebook;
         /**
@@ -1242,7 +1242,7 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.NotebookCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.NotebookCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.NotebookCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.NotebookCollection;
@@ -1368,12 +1368,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.SectionGroupLoadOptions): OneNote.SectionGroup;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.SectionGroup;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.SectionGroup;
         /**
@@ -1453,7 +1453,7 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.SectionGroupCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.SectionGroupCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.SectionGroupCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.SectionGroupCollection;
@@ -1600,10 +1600,10 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param location - The location of the new section relative to the current section.
+         * @param locationString - The location of the new section relative to the current section.
          * @param title - The name of the new section.
          */
-        insertSectionAsSibling(location: "Before" | "After", title: string): OneNote.Section;
+        insertSectionAsSibling(locationString: "Before" | "After", title: string): OneNote.Section;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -1622,12 +1622,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.SectionLoadOptions): OneNote.Section;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.Section;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.Section;
         /**
@@ -1707,7 +1707,7 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.SectionCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.SectionCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.SectionCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.SectionCollection;
@@ -1884,10 +1884,10 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param location - The location of the new page relative to the current page.
+         * @param locationString - The location of the new page relative to the current page.
          * @param title - The title of the new page.
          */
-        insertPageAsSibling(location: "Before" | "After", title: string): OneNote.Page;
+        insertPageAsSibling(locationString: "Before" | "After", title: string): OneNote.Page;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -1906,12 +1906,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.PageLoadOptions): OneNote.Page;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.Page;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.Page;
         /**
@@ -1991,7 +1991,7 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.PageCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.PageCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.PageCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.PageCollection;
@@ -2113,12 +2113,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.PageContentLoadOptions): OneNote.PageContent;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.PageContent;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.PageContent;
         /**
@@ -2189,7 +2189,7 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.PageContentCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.PageContentCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.PageContentCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.PageContentCollection;
@@ -2302,12 +2302,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.OutlineLoadOptions): OneNote.Outline;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.Outline;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.Outline;
         /**
@@ -2447,10 +2447,10 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param type - The type of the NoteTag.
+         * @param typeString - The type of the NoteTag.
          * @param status - The status of the NoteTag.
          */
-        addNoteTag(type: "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2", status: "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"): OneNote.NoteTag;
+        addNoteTag(typeString: "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2", status: "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"): OneNote.NoteTag;
         /**
          *
          * Deletes the paragraph
@@ -2481,10 +2481,10 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param insertLocation - The location of new contents relative to the current Paragraph.
+         * @param insertLocationString - The location of new contents relative to the current Paragraph.
          * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
-        insertHtmlAsSibling(insertLocation: "Before" | "After", html: string): void;
+        insertHtmlAsSibling(insertLocationString: "Before" | "After", html: string): void;
         /**
          *
          * Inserts the image at the specified insert location..
@@ -2503,12 +2503,12 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param insertLocation - The location of the table relative to the current Paragraph.
+         * @param insertLocationString - The location of the table relative to the current Paragraph.
          * @param base64EncodedImage - HTML string to append.
          * @param width - Optional. Width in the unit of Points. The default value is null and image width will be respected.
          * @param height - Optional. Height in the unit of Points. The default value is null and image height will be respected.
          */
-        insertImageAsSibling(insertLocation: "Before" | "After", base64EncodedImage: string, width: number, height: number): OneNote.Image;
+        insertImageAsSibling(insertLocationString: "Before" | "After", base64EncodedImage: string, width: number, height: number): OneNote.Image;
         /**
          *
          * Inserts the paragraph text at the specifiec insert location.
@@ -2525,10 +2525,10 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param insertLocation - The location of the table relative to the current Paragraph.
+         * @param insertLocationString - The location of the table relative to the current Paragraph.
          * @param paragraphText - HTML string to append.
          */
-        insertRichTextAsSibling(insertLocation: "Before" | "After", paragraphText: string): OneNote.RichText;
+        insertRichTextAsSibling(insertLocationString: "Before" | "After", paragraphText: string): OneNote.RichText;
         /**
          *
          * Adds a table with the specified number of rows and columns before or after the current paragraph.
@@ -2547,12 +2547,12 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param insertLocation - The location of the table relative to the current Paragraph.
+         * @param insertLocationString - The location of the table relative to the current Paragraph.
          * @param rowCount - The number of rows in the table.
          * @param columnCount - The number of columns in the table.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        insertTableAsSibling(insertLocation: "Before" | "After", rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;
+        insertTableAsSibling(insertLocationString: "Before" | "After", rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -2571,12 +2571,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.ParagraphLoadOptions): OneNote.Paragraph;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.Paragraph;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.Paragraph;
         /**
@@ -2647,7 +2647,7 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.ParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.ParagraphCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.ParagraphCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.ParagraphCollection;
@@ -2713,12 +2713,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.NoteTagLoadOptions): OneNote.NoteTag;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.NoteTag;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.NoteTag;
         /**
@@ -2798,12 +2798,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.RichTextLoadOptions): OneNote.RichText;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.RichText;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.RichText;
         /**
@@ -2925,12 +2925,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.ImageLoadOptions): OneNote.Image;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.Image;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.Image;
         /**
@@ -3093,12 +3093,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.TableLoadOptions): OneNote.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.Table;
         /**
@@ -3182,10 +3182,10 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param insertLocation - Where the new rows should be inserted relative to the current row.
+         * @param insertLocationString - Where the new rows should be inserted relative to the current row.
          * @param values - Strings to insert in the new row, specified as an array. Must not have more cells than in the current row. Optional.
          */
-        insertRowAsSibling(insertLocation: "Before" | "After", values?: string[]): OneNote.TableRow;
+        insertRowAsSibling(insertLocationString: "Before" | "After", values?: string[]): OneNote.TableRow;
         /**
          *
          * Sets the shading color of all cells in the row.
@@ -3212,12 +3212,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.TableRowLoadOptions): OneNote.TableRow;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.TableRow;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.TableRow;
         /**
@@ -3288,7 +3288,7 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.TableRowCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.TableRowCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.TableRowCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.TableRowCollection;
@@ -3436,12 +3436,12 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.TableCellLoadOptions): OneNote.TableCell;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.TableCell;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): OneNote.TableCell;
         /**
@@ -3512,7 +3512,7 @@ export declare namespace OneNote {
         load(option?: OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions): OneNote.TableCellCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): OneNote.TableCellCollection;
         load(option?: OfficeExtension.LoadOption): OneNote.TableCellCollection;

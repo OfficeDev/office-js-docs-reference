@@ -828,12 +828,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.RuntimeLoadOptions): Excel.Runtime;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.Runtime;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.Runtime;
         /**
@@ -887,9 +887,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param calculationType - Specifies the calculation type to use. See Excel.CalculationType for details.
+         * @param calculationTypeString - Specifies the calculation type to use. See Excel.CalculationType for details.
          */
-        calculate(calculationType: "Recalculate" | "Full" | "FullRebuild"): void;
+        calculate(calculationTypeString: "Recalculate" | "Full" | "FullRebuild"): void;
         /**
          *
          * Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.
@@ -915,12 +915,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ApplicationLoadOptions): Excel.Application;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.Application;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.Application;
         /**
@@ -1089,12 +1089,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.Workbook;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.Workbook;
         /**
@@ -1164,12 +1164,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.WorkbookProtectionLoadOptions): Excel.WorkbookProtection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.WorkbookProtection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.WorkbookProtection;
         /**
@@ -1204,12 +1204,12 @@ export declare namespace Excel {
          */
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.WorkbookCreated;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.WorkbookCreated;
         /**
@@ -1383,10 +1383,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param positionType - Optional.
+         * @param positionTypeString - Optional.
          * @param relativeTo - Optional.
          */
-        copy(positionType?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet): Excel.Worksheet;
+        copy(positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet): Excel.Worksheet;
         /**
          *
          * Deletes the worksheet from the workbook.
@@ -1497,12 +1497,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.Worksheet;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.Worksheet;
         /**
@@ -1646,7 +1646,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.WorksheetCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.WorksheetCollection;
         load(option?: OfficeExtension.LoadOption): Excel.WorksheetCollection;
@@ -1761,12 +1761,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.WorksheetProtection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.WorksheetProtection;
         /**
@@ -2189,9 +2189,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param applyTo - Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
+         * @param applyToString - Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
          */
-        clear(applyTo?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;
+        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;
         /**
          *
          * Deletes the cells associated with the range.
@@ -2207,9 +2207,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param shift - Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
+         * @param shiftString - Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
          */
-        delete(shift: "Up" | "Left"): void;
+        delete(shiftString: "Up" | "Left"): void;
         /**
          *
          * Gets a Range object with the same top-left cell as the current Range object, but with the specified numbers of rows and columns.
@@ -2420,9 +2420,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param shift - Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
+         * @param shiftString - Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
          */
-        insert(shift: "Down" | "Right"): Excel.Range;
+        insert(shiftString: "Down" | "Right"): Excel.Range;
         /**
          *
          * Merge the range cells into one region in the worksheet.
@@ -2471,12 +2471,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.Range;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.Range;
         /**
@@ -2676,12 +2676,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.RangeViewLoadOptions): Excel.RangeView;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.RangeView;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.RangeView;
         /**
@@ -2735,7 +2735,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.RangeViewCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeViewCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.RangeViewCollection;
         load(option?: OfficeExtension.LoadOption): Excel.RangeViewCollection;
@@ -2809,7 +2809,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.SettingCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.SettingCollection;
         load(option?: OfficeExtension.LoadOption): Excel.SettingCollection;
@@ -2893,12 +2893,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.SettingLoadOptions): Excel.Setting;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.Setting;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.Setting;
         /**
@@ -2985,7 +2985,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.NamedItemCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.NamedItemCollection;
         load(option?: OfficeExtension.LoadOption): Excel.NamedItemCollection;
@@ -3127,12 +3127,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.NamedItemLoadOptions): Excel.NamedItem;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.NamedItem;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.NamedItem;
         /**
@@ -3182,12 +3182,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.NamedItemArrayValuesLoadOptions): Excel.NamedItemArrayValues;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.NamedItemArrayValues;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.NamedItemArrayValues;
         /**
@@ -3265,12 +3265,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.Binding;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.Binding;
         /**
@@ -3333,10 +3333,10 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.3]
          *
          * @param range - Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
-         * @param bindingType - Type of binding. See Excel.BindingType.
+         * @param bindingTypeString - Type of binding. See Excel.BindingType.
          * @param id - Name of binding.
          */
-        add(range: Range | string, bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;
+        add(range: Range | string, bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;
         /**
          *
          * Add a new binding based on a named item in the workbook.
@@ -3357,10 +3357,10 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.3]
          *
          * @param name - Name from which to create binding.
-         * @param bindingType - Type of binding. See Excel.BindingType.
+         * @param bindingTypeString - Type of binding. See Excel.BindingType.
          * @param id - Name of binding.
          */
-        addFromNamedItem(name: string, bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;
+        addFromNamedItem(name: string, bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;
         /**
          *
          * Add a new binding based on the current selection.
@@ -3379,10 +3379,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          *
-         * @param bindingType - Type of binding. See Excel.BindingType.
+         * @param bindingTypeString - Type of binding. See Excel.BindingType.
          * @param id - Name of binding.
          */
-        addFromSelection(bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;
+        addFromSelection(bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;
         /**
          *
          * Gets the number of bindings in the collection.
@@ -3435,7 +3435,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.BindingCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.BindingCollection;
         load(option?: OfficeExtension.LoadOption): Excel.BindingCollection;
@@ -3525,7 +3525,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.TableCollection;
         load(option?: OfficeExtension.LoadOption): Excel.TableCollection;
@@ -3746,12 +3746,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.Table;
         /**
@@ -3859,7 +3859,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableColumnCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.TableColumnCollection;
         load(option?: OfficeExtension.LoadOption): Excel.TableColumnCollection;
@@ -3980,12 +3980,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.TableColumnLoadOptions): Excel.TableColumn;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.TableColumn;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.TableColumn;
         /**
@@ -4071,7 +4071,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableRowCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.TableRowCollection;
         load(option?: OfficeExtension.LoadOption): Excel.TableRowCollection;
@@ -4155,12 +4155,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.TableRowLoadOptions): Excel.TableRow;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.TableRow;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.TableRow;
         /**
@@ -4261,12 +4261,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.DataValidationLoadOptions): Excel.DataValidation;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.DataValidation;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.DataValidation;
         /**
@@ -4648,12 +4648,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.RangeFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.RangeFormat;
         /**
@@ -4717,12 +4717,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.FormatProtectionLoadOptions): Excel.FormatProtection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.FormatProtection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.FormatProtection;
         /**
@@ -4786,12 +4786,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.RangeFill;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.RangeFill;
         /**
@@ -4869,12 +4869,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.RangeBorder;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.RangeBorder;
         /**
@@ -4916,9 +4916,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index - Index value of the border object to be retrieved. See Excel.BorderIndex for details.
+         * @param indexString - Index value of the border object to be retrieved. See Excel.BorderIndex for details.
          */
-        getItem(index: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
+        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
         /**
          *
          * Gets a border object using its index.
@@ -4946,7 +4946,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeBorderCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.RangeBorderCollection;
         load(option?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;
@@ -5039,12 +5039,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.RangeFont;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.RangeFont;
         /**
@@ -5088,11 +5088,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param type - Represents the type of a chart. See Excel.ChartType for details.
+         * @param typeString - Represents the type of a chart. See Excel.ChartType for details.
          * @param sourceData - The Range object corresponding to the source data.
          * @param seriesBy - Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy for details.
          */
-        add(type: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
+        add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
         /**
          *
          * Returns the number of charts in the worksheet.
@@ -5146,7 +5146,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartCollection;
@@ -5408,9 +5408,9 @@ export declare namespace Excel {
          *
          * @param height - (Optional) The desired height of the resulting image.
          * @param width - (Optional) The desired width of the resulting image.
-         * @param fittingMode - (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height and width are set).
+         * @param fittingModeString - (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height and width are set).
          */
-        getImage(width?: number, height?: number, fittingMode?: "Fit" | "FitAndCenter" | "Fill"): OfficeExtension.ClientResult<string>;
+        getImage(width?: number, height?: number, fittingModeString?: "Fit" | "FitAndCenter" | "Fill"): OfficeExtension.ClientResult<string>;
         /**
          *
          * Resets the source data for the chart.
@@ -5428,9 +5428,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          *
          * @param sourceData - The range object corresponding to the source data.
-         * @param seriesBy - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
+         * @param seriesByString - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
          */
-        setData(sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): void;
+        setData(sourceData: Range, seriesByString?: "Auto" | "Columns" | "Rows"): void;
         /**
          *
          * Positions the chart relative to cells on the worksheet.
@@ -5459,12 +5459,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.Chart;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.Chart;
         /**
@@ -5553,12 +5553,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartAreaFormatLoadOptions): Excel.ChartAreaFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartAreaFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartAreaFormat;
         /**
@@ -5629,7 +5629,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartSeriesCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartSeriesCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartSeriesCollection;
@@ -5891,12 +5891,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartSeries;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartSeries;
         /**
@@ -5960,12 +5960,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartSeriesFormatLoadOptions): Excel.ChartSeriesFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartSeriesFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartSeriesFormat;
         /**
@@ -6026,7 +6026,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartPointsCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartPointsCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartPointsCollection;
@@ -6133,12 +6133,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartPointLoadOptions): Excel.ChartPoint;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartPoint;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartPoint;
         /**
@@ -6202,12 +6202,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartPointFormatLoadOptions): Excel.ChartPointFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartPointFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartPointFormat;
         /**
@@ -6276,10 +6276,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param type - Specifies the axis type. See Excel.ChartAxisType for details.
+         * @param typeString - Specifies the axis type. See Excel.ChartAxisType for details.
          * @param group - Optional. Specifies the axis group. See Excel.ChartAxisGroup for details.
          */
-        getItem(type: "Invalid" | "Category" | "Value" | "Series", group?: "Primary" | "Secondary"): Excel.ChartAxis;
+        getItem(typeString: "Invalid" | "Category" | "Value" | "Series", group?: "Primary" | "Secondary"): Excel.ChartAxis;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -6298,12 +6298,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartAxesLoadOptions): Excel.ChartAxes;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartAxes;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartAxes;
         /**
@@ -6646,12 +6646,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartAxis;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartAxis;
         /**
@@ -6722,12 +6722,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartAxisFormatLoadOptions): Excel.ChartAxisFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartAxisFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartAxisFormat;
         /**
@@ -6807,12 +6807,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartAxisTitleLoadOptions): Excel.ChartAxisTitle;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartAxisTitle;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartAxisTitle;
         /**
@@ -6883,12 +6883,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions): Excel.ChartAxisTitleFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartAxisTitleFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartAxisTitleFormat;
         /**
@@ -7038,12 +7038,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartDataLabelsLoadOptions): Excel.ChartDataLabels;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartDataLabels;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartDataLabels;
         /**
@@ -7235,12 +7235,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartDataLabelLoadOptions): Excel.ChartDataLabel;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartDataLabel;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartDataLabel;
         /**
@@ -7311,12 +7311,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartDataLabelFormatLoadOptions): Excel.ChartDataLabelFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartDataLabelFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartDataLabelFormat;
         /**
@@ -7380,12 +7380,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartGridlinesLoadOptions): Excel.ChartGridlines;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartGridlines;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartGridlines;
         /**
@@ -7442,12 +7442,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartGridlinesFormatLoadOptions): Excel.ChartGridlinesFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartGridlinesFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartGridlinesFormat;
         /**
@@ -7567,12 +7567,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartLegendLoadOptions): Excel.ChartLegend;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartLegend;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartLegend;
         /**
@@ -7664,12 +7664,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartLegendEntryLoadOptions): Excel.ChartLegendEntry;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartLegendEntry;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartLegendEntry;
         /**
@@ -7723,7 +7723,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartLegendEntryCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartLegendEntryCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartLegendEntryCollection;
@@ -7795,12 +7795,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartLegendFormatLoadOptions): Excel.ChartLegendFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartLegendFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartLegendFormat;
         /**
@@ -7960,12 +7960,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartTitleLoadOptions): Excel.ChartTitle;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartTitle;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartTitle;
         /**
@@ -8022,12 +8022,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartFormatStringLoadOptions): Excel.ChartFormatString;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartFormatString;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartFormatString;
         /**
@@ -8098,12 +8098,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartTitleFormatLoadOptions): Excel.ChartTitleFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartTitleFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartTitleFormat;
         /**
@@ -8218,12 +8218,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartBorderLoadOptions): Excel.ChartBorder;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartBorder;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartBorder;
         /**
@@ -8301,12 +8301,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartLineFormatLoadOptions): Excel.ChartLineFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartLineFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartLineFormat;
         /**
@@ -8398,12 +8398,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartFontLoadOptions): Excel.ChartFont;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartFont;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartFont;
         /**
@@ -8537,12 +8537,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartTrendlineLoadOptions): Excel.ChartTrendline;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartTrendline;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartTrendline;
         /**
@@ -8577,9 +8577,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param type - Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
+         * @param typeString - Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
          */
-        add(type?: "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"): Excel.ChartTrendline;
+        add(typeString?: "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"): Excel.ChartTrendline;
         /**
          *
          * Returns the number of trendlines in the collection.
@@ -8614,7 +8614,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartTrendlineCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartTrendlineCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartTrendlineCollection;
@@ -8672,12 +8672,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartTrendlineFormatLoadOptions): Excel.ChartTrendlineFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartTrendlineFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartTrendlineFormat;
         /**
@@ -8813,12 +8813,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartTrendlineLabelLoadOptions): Excel.ChartTrendlineLabel;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartTrendlineLabel;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartTrendlineLabel;
         /**
@@ -8889,12 +8889,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions): Excel.ChartTrendlineLabelFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartTrendlineLabelFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartTrendlineLabelFormat;
         /**
@@ -9014,12 +9014,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartPlotAreaLoadOptions): Excel.ChartPlotArea;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartPlotArea;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartPlotArea;
         /**
@@ -9083,12 +9083,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ChartPlotAreaFormatLoadOptions): Excel.ChartPlotAreaFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ChartPlotAreaFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ChartPlotAreaFormat;
         /**
@@ -9128,10 +9128,10 @@ export declare namespace Excel {
          * @param fields - The list of conditions to sort on.
          * @param matchCase - Optional. Whether to have the casing impact string ordering.
          * @param hasHeaders - Optional. Whether the range has a header.
-         * @param orientation - Optional. Whether the operation is sorting rows or columns.
+         * @param orientationString - Optional. Whether the operation is sorting rows or columns.
          * @param method - Optional. The ordering method used for Chinese characters.
          */
-        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientation?: "Rows" | "Columns", method?: "PinYin" | "StrokeCount"): void;
+        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientationString?: "Rows" | "Columns", method?: "PinYin" | "StrokeCount"): void;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeSort object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeSortData`) that contains shallow copies of any loaded child properties from the original object.
@@ -9189,9 +9189,9 @@ export declare namespace Excel {
          *
          * @param fields - The list of conditions to sort on.
          * @param matchCase - Optional. Whether to have the casing impact string ordering.
-         * @param method - Optional. The ordering method used for Chinese characters.
+         * @param methodString - Optional. The ordering method used for Chinese characters.
          */
-        apply(fields: Excel.SortField[], matchCase?: boolean, method?: "PinYin" | "StrokeCount"): void;
+        apply(fields: Excel.SortField[], matchCase?: boolean, methodString?: "PinYin" | "StrokeCount"): void;
         /**
          *
          * Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.
@@ -9224,12 +9224,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.TableSortLoadOptions): Excel.TableSort;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.TableSort;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.TableSort;
         /**
@@ -9359,9 +9359,9 @@ export declare namespace Excel {
          *
          * @param criteria1 - The first criteria string.
          * @param criteria2 - Optional. The second criteria string.
-         * @param oper - Optional. The operator that describes how the two criteria are joined.
+         * @param operString - Optional. The operator that describes how the two criteria are joined.
          */
-        applyCustomFilter(criteria1: string, criteria2?: string, oper?: "And" | "Or"): void;
+        applyCustomFilter(criteria1: string, criteria2?: string, operString?: "And" | "Or"): void;
         /**
          *
          * Apply a "Dynamic" filter to the column.
@@ -9377,9 +9377,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param criteria - The dynamic criteria to apply.
+         * @param criteriaString - The dynamic criteria to apply.
          */
-        applyDynamicFilter(criteria: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;
+        applyDynamicFilter(criteriaString: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;
         /**
          *
          * Apply a "Font Color" filter to the column for the given color.
@@ -9450,12 +9450,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.Filter;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.Filter;
         /**
@@ -9648,7 +9648,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartScopedCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.CustomXmlPartScopedCollection;
         load(option?: OfficeExtension.LoadOption): Excel.CustomXmlPartScopedCollection;
@@ -9731,7 +9731,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.CustomXmlPartCollection;
         load(option?: OfficeExtension.LoadOption): Excel.CustomXmlPartCollection;
@@ -9805,12 +9805,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.CustomXmlPartLoadOptions): Excel.CustomXmlPart;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.CustomXmlPart;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.CustomXmlPart;
         /**
@@ -9892,7 +9892,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotTableCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.PivotTableCollection;
         load(option?: OfficeExtension.LoadOption): Excel.PivotTableCollection;
@@ -10020,12 +10020,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.PivotTableLoadOptions): Excel.PivotTable;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.PivotTable;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.PivotTable;
         /**
@@ -10138,12 +10138,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.PivotLayoutLoadOptions): Excel.PivotLayout;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.PivotLayout;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.PivotLayout;
         /**
@@ -10206,7 +10206,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.PivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotHierarchyCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.PivotHierarchyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.PivotHierarchyCollection;
@@ -10278,12 +10278,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.PivotHierarchyLoadOptions): Excel.PivotHierarchy;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.PivotHierarchy;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.PivotHierarchy;
         /**
@@ -10361,7 +10361,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RowColumnPivotHierarchyCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.RowColumnPivotHierarchyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.RowColumnPivotHierarchyCollection;
@@ -10447,12 +10447,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.RowColumnPivotHierarchyLoadOptions): Excel.RowColumnPivotHierarchy;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.RowColumnPivotHierarchy;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.RowColumnPivotHierarchy;
         /**
@@ -10530,7 +10530,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.FilterPivotHierarchyCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.FilterPivotHierarchyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.FilterPivotHierarchyCollection;
@@ -10623,12 +10623,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.FilterPivotHierarchyLoadOptions): Excel.FilterPivotHierarchy;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.FilterPivotHierarchy;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.FilterPivotHierarchy;
         /**
@@ -10705,7 +10705,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.DataPivotHierarchyCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.DataPivotHierarchyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.DataPivotHierarchyCollection;
@@ -10812,12 +10812,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.DataPivotHierarchyLoadOptions): Excel.DataPivotHierarchy;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.DataPivotHierarchy;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.DataPivotHierarchy;
         /**
@@ -10906,7 +10906,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.PivotFieldCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotFieldCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.PivotFieldCollection;
         load(option?: OfficeExtension.LoadOption): Excel.PivotFieldCollection;
@@ -11001,12 +11001,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.PivotFieldLoadOptions): Excel.PivotField;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.PivotField;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.PivotField;
         /**
@@ -11069,7 +11069,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.PivotItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotItemCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.PivotItemCollection;
         load(option?: OfficeExtension.LoadOption): Excel.PivotItemCollection;
@@ -11148,12 +11148,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.PivotItemLoadOptions): Excel.PivotItem;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.PivotItem;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.PivotItem;
         /**
@@ -11524,12 +11524,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.DocumentPropertiesLoadOptions): Excel.DocumentProperties;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.DocumentProperties;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.DocumentProperties;
         /**
@@ -11607,12 +11607,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.CustomPropertyLoadOptions): Excel.CustomProperty;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.CustomProperty;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.CustomProperty;
         /**
@@ -11692,7 +11692,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomPropertyCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.CustomPropertyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.CustomPropertyCollection;
@@ -11728,9 +11728,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          *
-         * @param type - The type of conditional format being added. See Excel.ConditionalFormatType for details.
+         * @param typeString - The type of conditional format being added. See Excel.ConditionalFormatType for details.
          */
-        add(type: "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue"): Excel.ConditionalFormat;
+        add(typeString: "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue"): Excel.ConditionalFormat;
         /**
          *
          * Clears all conditional formats active on the current specified range.
@@ -11782,7 +11782,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ConditionalFormatCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalFormatCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ConditionalFormatCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ConditionalFormatCollection;
@@ -12005,12 +12005,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ConditionalFormatLoadOptions): Excel.ConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ConditionalFormat;
         /**
@@ -12117,12 +12117,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.DataBarConditionalFormatLoadOptions): Excel.DataBarConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.DataBarConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.DataBarConditionalFormat;
         /**
@@ -12194,12 +12194,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions): Excel.ConditionalDataBarPositiveFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ConditionalDataBarPositiveFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ConditionalDataBarPositiveFormat;
         /**
@@ -12278,12 +12278,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions): Excel.ConditionalDataBarNegativeFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ConditionalDataBarNegativeFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ConditionalDataBarNegativeFormat;
         /**
@@ -12369,12 +12369,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.CustomConditionalFormatLoadOptions): Excel.CustomConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.CustomConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.CustomConditionalFormat;
         /**
@@ -12445,12 +12445,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ConditionalFormatRuleLoadOptions): Excel.ConditionalFormatRule;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ConditionalFormatRule;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ConditionalFormatRule;
         /**
@@ -12528,12 +12528,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.IconSetConditionalFormatLoadOptions): Excel.IconSetConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.IconSetConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.IconSetConditionalFormat;
         /**
@@ -12633,12 +12633,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions): Excel.ColorScaleConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ColorScaleConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ColorScaleConditionalFormat;
         /**
@@ -12760,12 +12760,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions): Excel.TopBottomConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.TopBottomConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.TopBottomConditionalFormat;
         /**
@@ -12851,12 +12851,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions): Excel.PresetCriteriaConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.PresetCriteriaConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.PresetCriteriaConditionalFormat;
         /**
@@ -12935,12 +12935,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.TextConditionalFormatLoadOptions): Excel.TextConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.TextConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.TextConditionalFormat;
         /**
@@ -13026,12 +13026,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.CellValueConditionalFormatLoadOptions): Excel.CellValueConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.CellValueConditionalFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.CellValueConditionalFormat;
         /**
@@ -13138,12 +13138,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ConditionalRangeFormatLoadOptions): Excel.ConditionalRangeFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ConditionalRangeFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ConditionalRangeFormat;
         /**
@@ -13235,12 +13235,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ConditionalRangeFontLoadOptions): Excel.ConditionalRangeFont;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ConditionalRangeFont;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ConditionalRangeFont;
         /**
@@ -13304,12 +13304,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ConditionalRangeFillLoadOptions): Excel.ConditionalRangeFill;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ConditionalRangeFill;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ConditionalRangeFill;
         /**
@@ -13380,12 +13380,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ConditionalRangeBorderLoadOptions): Excel.ConditionalRangeBorder;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ConditionalRangeBorder;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorder;
         /**
@@ -13455,9 +13455,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          *
-         * @param index - Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
+         * @param indexString - Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
          */
-        getItem(index: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"): Excel.ConditionalRangeBorder;
+        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"): Excel.ConditionalRangeBorder;
         /**
          *
          * Gets a border object using its index.
@@ -13485,7 +13485,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.ConditionalRangeBorderCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ConditionalRangeBorderCollection;
@@ -13704,12 +13704,12 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.StyleLoadOptions): Excel.Style;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.Style;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
+         * @param loadOptions - Where loadOptions.select is a comma-delimited string that specifies the properties to load, and loadOptions.expand is a comma-delimited string that specifies the navigation properties to load.
          */
         load(loadOptions?: { select?: string; expand?: string; }): Excel.Style;
         /**
@@ -13755,7 +13755,7 @@ export declare namespace Excel {
         load(option?: Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.StyleCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-        * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
+         * @param properties - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(properties?: string | string[]): Excel.StyleCollection;
         load(option?: OfficeExtension.LoadOption): Excel.StyleCollection;

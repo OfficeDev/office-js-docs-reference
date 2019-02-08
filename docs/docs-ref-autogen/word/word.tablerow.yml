@@ -166,21 +166,21 @@ items:
       Gets the border style of the cells in the row.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getBorder(borderLocation)
-    fullName: getBorder(borderLocation)
+    name: getBorder(borderLocationString)
+    fullName: getBorder(borderLocationString)
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside"
-        | "Outside" | "All"): Word.TableBorder;
+        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" |
+        "Inside" | "Outside" | "All"): Word.TableBorder;
       return:
         type:
           - word.Word.TableBorder
         description: ''
       parameters:
-        - id: borderLocation
+        - id: borderLocationString
           description: Required. The border location.
           type:
             - '"Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"'
@@ -210,19 +210,21 @@ items:
       Gets cell padding in points.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getCellPadding(cellPaddingLocation)
-    fullName: getCellPadding(cellPaddingLocation)
+    name: getCellPadding(cellPaddingLocationString)
+    fullName: getCellPadding(cellPaddingLocationString)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;'
+      content: >-
+        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"):
+        OfficeExtension.ClientResult<number>;
       return:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
       parameters:
-        - id: cellPaddingLocation
+        - id: cellPaddingLocationString
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - '"Top" | "Left" | "Bottom" | "Right"'
@@ -311,21 +313,21 @@ items:
       Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: 'insertRows(insertLocation, rowCount, values)'
-    fullName: 'insertRows(insertLocation, rowCount, values)'
+    name: 'insertRows(insertLocationString, rowCount, values)'
+    fullName: 'insertRows(insertLocationString, rowCount, values)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        insertRows(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?:
+        insertRows(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?:
         string[][]): Word.TableRowCollection;
       return:
         type:
           - Word.TableRowCollection
         description: ''
       parameters:
-        - id: insertLocation
+        - id: insertLocationString
           description: 'Required. Where the new rows should be inserted, relative to the current row. It can be ''Before'' or ''After''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
@@ -552,19 +554,19 @@ items:
       Selects the row and navigates the Word UI to it.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: select(selectionMode)
-    fullName: select(selectionMode)
+    name: select(selectionModeString)
+    fullName: select(selectionModeString)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'select(selectionMode?: "Select" | "Start" | "End"): void;'
+      content: 'select(selectionModeString?: "Select" | "Start" | "End"): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: selectionMode
+        - id: selectionModeString
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - '"Select" | "Start" | "End"'
@@ -646,19 +648,19 @@ items:
       Sets cell padding in points.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: 'setCellPadding(cellPaddingLocation, cellPadding)'
-    fullName: 'setCellPadding(cellPaddingLocation, cellPadding)'
+    name: 'setCellPadding(cellPaddingLocationString, cellPadding)'
+    fullName: 'setCellPadding(cellPaddingLocationString, cellPadding)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;'
+      content: 'setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: cellPaddingLocation
+        - id: cellPaddingLocationString
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - '"Top" | "Left" | "Bottom" | "Right"'

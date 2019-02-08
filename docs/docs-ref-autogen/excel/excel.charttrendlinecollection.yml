@@ -65,21 +65,21 @@ items:
       Adds a new trendline to trendline collection.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: add(type)
-    fullName: add(type)
+    name: add(typeString)
+    fullName: add(typeString)
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        add(type?: "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"):
+        add(typeString?: "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"):
         Excel.ChartTrendline;
       return:
         type:
           - excel.Excel.ChartTrendline
         description: ''
       parameters:
-        - id: type
+        - id: typeString
           description: Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
           type:
             - '"Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"'

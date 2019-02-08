@@ -191,19 +191,19 @@ items:
       Clear range values, format, fill, border, etc.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: clear(applyTo)
-    fullName: clear(applyTo)
+    name: clear(applyToString)
+    fullName: clear(applyToString)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'clear(applyTo?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
+      content: 'clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: applyTo
+        - id: applyToString
           description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
           type:
             - '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
@@ -322,13 +322,13 @@ items:
       Deletes the cells associated with the range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: delete(shift)
-    fullName: delete(shift)
+    name: delete(shiftString)
+    fullName: delete(shiftString)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'delete(shift: "Up" | "Left"): void;'
+      content: 'delete(shiftString: "Up" | "Left"): void;'
       return:
         type:
           - void
@@ -351,7 +351,7 @@ items:
           });
           ```
       parameters:
-        - id: shift
+        - id: shiftString
           description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
           type:
             - '"Up" | "Left"'
@@ -1433,19 +1433,19 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: insert(shift)
-    fullName: insert(shift)
+    name: insert(shiftString)
+    fullName: insert(shiftString)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'insert(shift: "Down" | "Right"): Excel.Range;'
+      content: 'insert(shiftString: "Down" | "Right"): Excel.Range;'
       return:
         type:
           - excel.Excel.Range
         description: ''
       parameters:
-        - id: shift
+        - id: shiftString
           description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
           type:
             - '"Down" | "Right"'

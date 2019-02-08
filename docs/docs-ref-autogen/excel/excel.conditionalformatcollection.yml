@@ -88,21 +88,21 @@ items:
       Adds a new conditional format to the collection at the first/top priority.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: add(type)
-    fullName: add(type)
+    name: add(typeString)
+    fullName: add(typeString)
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        add(type: "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" |
-        "CellValue"): Excel.ConditionalFormat;
+        add(typeString: "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" |
+        "ContainsText" | "CellValue"): Excel.ConditionalFormat;
       return:
         type:
           - excel.Excel.ConditionalFormat
         description: ''
       parameters:
-        - id: type
+        - id: typeString
           description: The type of conditional format being added. See Excel.ConditionalFormatType for details.
           type:
             - >-

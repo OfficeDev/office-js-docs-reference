@@ -98,13 +98,13 @@ items:
       Gets one of the section's footers.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getFooter(type)
-    fullName: getFooter(type)
+    name: getFooter(typeString)
+    fullName: getFooter(typeString)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getFooter(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
+      content: 'getFooter(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
       return:
         type:
           - Word.Body
@@ -151,7 +151,7 @@ items:
           });
           ```
       parameters:
-        - id: type
+        - id: typeString
           description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type:
             - '"Primary" | "FirstPage" | "EvenPages"'
@@ -192,13 +192,13 @@ items:
       Gets one of the section's headers.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getHeader(type)
-    fullName: getHeader(type)
+    name: getHeader(typeString)
+    fullName: getHeader(typeString)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getHeader(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
+      content: 'getHeader(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
       return:
         type:
           - Word.Body
@@ -245,7 +245,7 @@ items:
           });
           ```
       parameters:
-        - id: type
+        - id: typeString
           description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type:
             - '"Primary" | "FirstPage" | "EvenPages"'

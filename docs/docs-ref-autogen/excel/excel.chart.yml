@@ -275,14 +275,14 @@ items:
 
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'getImage(width, height, fittingMode)'
-    fullName: 'getImage(width, height, fittingMode)'
+    name: 'getImage(width, height, fittingModeString)'
+    fullName: 'getImage(width, height, fittingModeString)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getImage(width?: number, height?: number, fittingMode?: "Fit" | "FitAndCenter" | "Fill"):
+        getImage(width?: number, height?: number, fittingModeString?: "Fit" | "FitAndCenter" | "Fill"):
         OfficeExtension.ClientResult<string>;
       return:
         type:
@@ -297,7 +297,7 @@ items:
           description: (Optional) The desired height of the resulting image.
           type:
             - number
-        - id: fittingMode
+        - id: fittingModeString
           description: >-
             (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height
             and width are set).
@@ -717,13 +717,13 @@ items:
       Resets the source data for the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'setData(sourceData, seriesBy)'
-    fullName: 'setData(sourceData, seriesBy)'
+    name: 'setData(sourceData, seriesByString)'
+    fullName: 'setData(sourceData, seriesByString)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setData(sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): void;'
+      content: 'setData(sourceData: Range, seriesByString?: "Auto" | "Columns" | "Rows"): void;'
       return:
         type:
           - void
@@ -750,7 +750,7 @@ items:
           description: The range object corresponding to the source data.
           type:
             - Range
-        - id: seriesBy
+        - id: seriesByString
           description: >-
             Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
             (default), Rows, and Columns. See Excel.ChartSeriesBy for details.

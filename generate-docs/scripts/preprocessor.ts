@@ -66,9 +66,6 @@ tryCatch(async () => {
     let definitions = fsx.readFileSync("../script-inputs/office.d.ts").toString();
 
     console.log("\nFixing issues with d.ts file...");
-    // Note: This step fixing formatting discrepancies and hiding content we do not wish to expose.
-    // LoadOptions are removed, and the corresponding comments are modified to reflect a different overload.
-    // set() is removed from RichAPI, along with corresponding comments. This is to reduce traffic to the method pending a decision about modifying the underlying behavior.
     definitions = applyRegularExpressions(
         definitions
         .replace(/([ ]*)load\(option\?: string \| string\[\]\): (Excel|Word|OneNote|Visio)\.(.*);/g,
@@ -96,13 +93,13 @@ tryCatch(async () => {
     console.log("\ncreate file: excel.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-excel/excel.d.ts',
-        commonApiNamespaceImport + dtsBuilder.extractDtsSection(definitions, "Begin Excel APIs", "End Excel APIs")
+        commonApiNamespaceImport + handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(definitions, "Begin Excel APIs", "End Excel APIs"))
     );
 
     console.log("create file: onenote.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-onenote/onenote.d.ts',
-        commonApiNamespaceImport + dtsBuilder.extractDtsSection(definitions, "Begin OneNote APIs", "End OneNote APIs")
+        commonApiNamespaceImport + handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(definitions, "Begin OneNote APIs", "End OneNote APIs"))
     );
 
     console.log("create file: outlook.d.ts");
@@ -121,13 +118,13 @@ tryCatch(async () => {
     console.log("create file: visio.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-visio/visio.d.ts',
-        commonApiNamespaceImport + dtsBuilder.extractDtsSection(definitions, "Begin Visio APIs", "End Visio APIs")
+        commonApiNamespaceImport + handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(definitions, "Begin Visio APIs", "End Visio APIs"))
     );
 
     console.log("create file: word.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-word/word.d.ts',
-        commonApiNamespaceImport + dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs")
+        commonApiNamespaceImport + handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs"))
     );
 
     // ----
@@ -229,6 +226,28 @@ tryCatch(async () => {
 
     process.exit(0);
 });
+
+function handleLiteralParameterOverloads(dtsString: string): string {
+    // rename parameters for string literal overloads
+    const matches = dtsString.match(/([a-zA-Z]+)\??: (\"[a-zA-Z]*\").*:/g);
+    let matchIndex = 0;
+    matches.forEach((match) => {
+        let parameterName = match.substring(0, match.indexOf(": "));
+        matchIndex = dtsString.indexOf(match, matchIndex);
+        parameterName = parameterName.indexOf("?") >= 0 ? parameterName.substring(0, parameterName.length - 1) : parameterName;
+        console.log(parameterName);
+        console.log(matchIndex);
+        const parameterString = "@param " + parameterName + " ";
+        const index = dtsString.lastIndexOf(parameterString, matchIndex);
+        console.log(index);
+        dtsString = dtsString.substring(0, index)
+         + "@param " + parameterName + "String "
+         + dtsString.substring(index + parameterString.length);
+         matchIndex += match.length;
+    });
+
+    return dtsString.replace(/([a-zA-Z]+)(\??: \"[a-zA-Z]*\".*:)/g, "$1String$2");
+}
 
 async function tryCatch(call: () => Promise<void>) {
     try {
