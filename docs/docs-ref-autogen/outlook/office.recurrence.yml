@@ -220,7 +220,7 @@ items:
     summary: |-
       Sets the recurrence pattern of an appointment series.
 
-      Note: setAsync should only be available for series items and not instance items.
+      **Note**: setAsync should only be available for series items and not instance items.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-

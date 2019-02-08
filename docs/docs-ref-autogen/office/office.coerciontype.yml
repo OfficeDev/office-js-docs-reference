@@ -48,14 +48,14 @@ items:
     summary: |-
       Return or set data as HTML.
 
-      Note: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
+      **Note**: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
     name: Html
     fullName: Html
     langs:
       - typeScript
     type: field
   - uid: office.Office.CoercionType.Image
-    summary: 'Data is returned or set as an image stream. Note: Only applies to data in Excel, Word, and PowerPoint.'
+    summary: 'Data is returned or set as an image stream. **Note**: Only applies to data in Excel, Word, and PowerPoint.'
     name: Image
     fullName: Image
     langs:
@@ -68,7 +68,7 @@ items:
       "R1C2"\], \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\].
 
 
-      Note: Only applies to data in Excel and Word.
+      **Note**: Only applies to data in Excel and Word.
     name: Matrix
     fullName: Matrix
     langs:
@@ -78,7 +78,7 @@ items:
     summary: |-
       Return or set data as Office Open XML.
 
-      Note: Only applies to data in Word.
+      **Note**: Only applies to data in Word.
     name: Ooxml
     fullName: Ooxml
     langs:
@@ -91,7 +91,7 @@ items:
       two slides.
 
 
-      Note: Only applies to data in PowerPoint when calling the [Document](xref:office.Office.Document)<!--
+      **Note**: Only applies to data in PowerPoint when calling the [Document](xref:office.Office.Document)<!--
       -->.getSelectedData method to get the current slide or selected range of slides.
     name: SlideRange
     fullName: SlideRange
@@ -104,7 +104,7 @@ items:
       optional headers.
 
 
-      Note: Only applies to data in Access, Excel, and Word.
+      **Note**: Only applies to data in Access, Excel, and Word.
     name: Table
     fullName: Table
     langs:
@@ -119,7 +119,7 @@ items:
     type: field
   - uid: office.Office.CoercionType.XmlSvg
     summary: >-
-      Data is returned or set as XML data containing an SVG image. Note: Only applies to data in Excel, Word, and
+      Data is returned or set as XML data containing an SVG image. **Note**: Only applies to data in Excel, Word, and
       PowerPoint.
     name: XmlSvg
     fullName: XmlSvg

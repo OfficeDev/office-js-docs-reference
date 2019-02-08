@@ -405,7 +405,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies a table of sample data displayed in the prompt UI as an example of the kinds of fields (columns) that can be bound by your add-in. The headers provided in the TableData object specify the labels used in the field selection UI. Note: This parameter is used only in add-ins for Access. It is ignored if provided when calling the method in an add-in for Excel."
+                  "text": "Specifies a table of sample data displayed in the prompt UI as an example of the kinds of fields (columns) that can be bound by your add-in. The headers provided in the TableData object specify the labels used in the field selection UI. **Note**: This parameter is used only in add-ins for Access. It is ignored if provided when calling the method in an add-in for Excel."
                 }
               ],
               "remarks": [],
@@ -4269,7 +4269,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: What the value property returns for a particular \"Async\" method varies depending on the purpose and context of that method. To determine what is returned by the value property for an \"Async\" method, refer to the \"Callback value\" section of the method's topic."
+                  "text": "**Note**: What the value property returns for a particular \"Async\" method varies depending on the purpose and context of that method. To determine what is returned by the value property for an \"Async\" method, refer to the \"Callback value\" section of the method's topic."
                 },
                 {
                   "kind": "paragraph"
@@ -7701,7 +7701,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. Note: If you specify formulas in the TableData object you pass for the *data* parameter, you might not get the results you expect due to the \"calculated columns\" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or \"matrix\"."
+                  "text": "The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the TableData object you pass for the *data* parameter, you might not get the results you expect due to the \"calculated columns\" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or \"matrix\"."
                 },
                 {
                   "kind": "html-tag",
@@ -8378,7 +8378,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: In Excel, when specifying a table as a named item, you must fully qualify the name to include the worksheet name in the name of the table in this format: \"Sheet1!Table1\""
+                  "text": "**Note**: In Excel, when specifying a table as a named item, you must fully qualify the name to include the worksheet name in the name of the table in this format: \"Sheet1!Table1\""
                 },
                 {
                   "kind": "paragraph"
@@ -8399,7 +8399,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and you try to bind to one these content controls with this method (by specifying its name as the itemName parameter), the operation will fail."
+                  "text": "**Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and you try to bind to one these content controls with this method (by specifying its name as the itemName parameter), the operation will fail."
                 },
                 {
                   "kind": "paragraph"
@@ -12401,7 +12401,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode)."
+                  "text": "**Note**: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode)."
                 }
               ],
               "remarks": [],
@@ -12414,7 +12414,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Data is returned or set as an image stream. Note: Only applies to data in Excel, Word, and PowerPoint."
+                  "text": "Data is returned or set as an image stream. **Note**: Only applies to data in Excel, Word, and PowerPoint."
                 }
               ],
               "remarks": [],
@@ -12434,7 +12434,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: Only applies to data in Excel and Word."
+                  "text": "**Note**: Only applies to data in Excel and Word."
                 }
               ],
               "remarks": [],
@@ -12454,7 +12454,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: Only applies to data in Word."
+                  "text": "**Note**: Only applies to data in Word."
                 }
               ],
               "remarks": [],
@@ -12483,7 +12483,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: Only applies to data in PowerPoint when calling the "
+                  "text": "**Note**: Only applies to data in PowerPoint when calling the "
                 },
                 {
                   "kind": "api-link",
@@ -12522,7 +12522,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: Only applies to data in Access, Excel, and Word."
+                  "text": "**Note**: Only applies to data in Access, Excel, and Word."
                 }
               ],
               "remarks": [],
@@ -12548,7 +12548,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Data is returned or set as XML data containing an SVG image. Note: Only applies to data in Excel, Word, and PowerPoint."
+                  "text": "Data is returned or set as XML data containing an SVG image. **Note**: Only applies to data in Excel, Word, and PowerPoint."
                 }
               ],
               "remarks": [],
@@ -23162,7 +23162,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Important: This API works only in Project 2016 on Windows desktop."
+                  "text": "**Important**: This API works only in Project 2016 on Windows desktop."
                 }
               ],
               "remarks": [
@@ -23402,7 +23402,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Important: This API works only in Project 2016 on Windows desktop."
+                  "text": "**Important**: This API works only in Project 2016 on Windows desktop."
                 }
               ],
               "remarks": [
@@ -23908,7 +23908,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Important: This API works only in Project 2016 on Windows desktop."
+                  "text": "**Important**: This API works only in Project 2016 on Windows desktop."
                 }
               ],
               "remarks": [
@@ -26692,7 +26692,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Important: This API works only in Project 2016 on Windows desktop."
+                  "text": "**Important**: This API works only in Project 2016 on Windows desktop."
                 }
               ],
               "remarks": [
@@ -29167,7 +29167,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Important: This API works only in Project 2016 on Windows desktop."
+                  "text": "**Important**: This API works only in Project 2016 on Windows desktop."
                 }
               ],
               "remarks": [
@@ -29694,7 +29694,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": " is HTML, the specified HTML is inserted. (Important: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data)."
+                  "text": " is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data)."
                 },
                 {
                   "kind": "html-tag",
@@ -31422,7 +31422,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Important: This API works only in Project 2016 on Windows desktop."
+                  "text": "**Important**: This API works only in Project 2016 on Windows desktop."
                 }
               ],
               "remarks": [
@@ -54308,7 +54308,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Important: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios."
+                  "text": "**Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios."
                 }
               ],
               "remarks": [
@@ -55699,7 +55699,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Important: Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of the specified setting in the document, at some point after calling the Settings.remove method and before the add-in is closed, you must call the Settings.saveAsync method."
+                  "text": "**Important**: Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of the specified setting in the document, at some point after calling the Settings.remove method and before the add-in is closed, you must call the Settings.saveAsync method."
                 }
               ],
               "remarks": [
@@ -56666,7 +56666,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The saveAsync method persists the in-memory settings property bag into the document file. However, the changes to the document file itself are saved only when the user (or AutoRecover setting) saves the document to the file system. The refreshAsync method is only useful in coauthoring scenarios when other instances of the same add-in might change the settings and those changes should be made available to all instances."
+                  "text": "**Note**: The saveAsync method persists the in-memory settings property bag into the document file. However, the changes to the document file itself are saved only when the user (or AutoRecover setting) saves the document to the file system. The refreshAsync method is only useful in coauthoring scenarios when other instances of the same add-in might change the settings and those changes should be made available to all instances."
                 },
                 {
                   "kind": "paragraph"
@@ -57417,7 +57417,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Important: Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in the document."
+                  "text": "**Important**: Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in the document."
                 }
               ],
               "remarks": [
@@ -58020,7 +58020,7 @@
             },
             {
               "kind": "text",
-              "text": "**Important:** Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios."
+              "text": "**Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios."
             },
             {
               "kind": "paragraph"

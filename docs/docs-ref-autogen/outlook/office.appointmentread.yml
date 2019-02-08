@@ -5,8 +5,10 @@ items:
       The appointment attendee mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
 
 
-      Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of 'Office.context.mailbox.item'. Refer to the Object Model pages for more information.
+      **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
+      treat this as a mode of Office.context.mailbox.item. Refer to the [Object
+      Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item)
+      page for more information.
     name: Office.AppointmentRead
     fullName: Office.AppointmentRead
     langs:
@@ -123,7 +125,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
 
 
-      Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
+      **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
       returned. For more information, see [Blocked attachments in
       Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)<!--
       -->.
@@ -215,7 +217,7 @@ items:
           - Body
   - uid: outlook.Office.AppointmentRead.dateTimeCreated
     summary: |-
-      Gets the date and time that an item was created. Read mode only.
+      Gets the date and time that an item was created.
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -246,7 +248,7 @@ items:
           - Date
   - uid: outlook.Office.AppointmentRead.dateTimeModified
     summary: |-
-      Gets the date and time that an item was last modified. Read mode only.
+      Gets the date and time that an item was last modified.
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -258,7 +260,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr></table>
 
 
-      Note: This member is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
 
       #### Examples
 
@@ -296,7 +298,7 @@ items:
       in the form UI. If this isn't possible, then no error message is thrown.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -433,7 +435,7 @@ items:
       in the form UI. If this isn't possible, then no error message is thrown.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -641,7 +643,7 @@ items:
     summary: |-
       Gets the entities found in the selected item's body.
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -666,7 +668,7 @@ items:
     summary: |-
       Gets an array of all the entities of the specified entity type found in the selected item's body.
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -744,7 +746,7 @@ items:
       ItemHasKnownEntity rule element in the manifest XML file with the specified FilterName element value.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -782,7 +784,7 @@ items:
       message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
 
 
-      Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
+      **Note**: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
       16.0.8413.1000) and Outlook on the web for Office 365.
 
 
@@ -847,7 +849,7 @@ items:
       use the Body.getAsync method to retrieve the entire body.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -906,7 +908,7 @@ items:
       expression such as .* to obtain the entire body of an item does not always return the expected results.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -950,7 +952,7 @@ items:
       add-ins.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1003,7 +1005,7 @@ items:
       use the Body.getAsync method to retrieve the entire body.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1106,8 +1108,8 @@ items:
       the callback function.
 
 
-      Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The
-      itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making
+      **Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier.
+      The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making
       REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more
       details, see [Use the Outlook REST APIs from an Outlook
       add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id)<!-- -->.
@@ -1431,10 +1433,10 @@ items:
       appointments.
 
 
-      Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
+      **Note**: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
 
 
-      Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting
+      **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting
       request of a single appointment and NOT a part of a series.
 
 
@@ -1566,11 +1568,11 @@ items:
       item belongs to. However, in iOS and Android, the seriesId returns the REST ID of the parent item.
 
 
-      Note: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier.
-      The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API
-      calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see
-      [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api)<!--
-      -->.
+      **Note**: The identifier returned by the seriesId property is the same as the Exchange Web Services item
+      identifier. The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making
+      REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more
+      details, see [Use the Outlook REST APIs from an Outlook
+      add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api)<!-- -->.
 
 
       The seriesId property returns null for items that do not have parent items such as single appointments, series

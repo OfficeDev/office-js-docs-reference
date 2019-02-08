@@ -46,7 +46,21 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+              "text": "**Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the "
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Object Model"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox.item"
+            },
+            {
+              "kind": "text",
+              "text": " page for more information."
             }
           ],
           "remarks": [],
@@ -88,16 +102,21 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of "
+              "text": "**Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the "
             },
             {
-              "kind": "code",
-              "text": "Office.context.mailbox.item",
-              "highlighter": "plain"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Object Model"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox.item"
             },
             {
               "kind": "text",
-              "text": ". Refer to the Object Model pages for more information."
+              "text": " page for more information."
             }
           ],
           "remarks": [],
@@ -815,7 +834,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved."
+                  "text": "**Note**: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved."
                 },
                 {
                   "kind": "paragraph"
@@ -918,245 +937,6 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
-            },
-            "dateTimeCreated": {
-              "kind": "property",
-              "signature": "dateTimeCreated: Date;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "Date",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Gets the date and time that an item was created. Read mode only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "html-tag",
-                  "token": "<table>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Minimum permission level"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "ReadItem"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Applicable Outlook mode"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Appointment Organizer"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</table>"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
-            },
-            "dateTimeModified": {
-              "kind": "property",
-              "signature": "dateTimeModified: Date;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "Date",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Gets the date and time that an item was last modified. Read mode only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "html-tag",
-                  "token": "<table>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Minimum permission level"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "ReadItem"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Applicable Outlook mode"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Appointment Organizer"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</table>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
             },
             "end": {
               "kind": "property",
@@ -2574,14 +2354,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. Until the item is synced, using the itemId will return an error."
+                  "text": "**Note**: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. Until the item is synced, using the itemId will return an error."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The following clients have different behavior for saveAsync on appointments in compose mode:"
+                  "text": "**Note**: The following clients have different behavior for saveAsync on appointments in compose mode:"
                 },
                 {
                   "kind": "paragraph"
@@ -4455,7 +4235,21 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of 'Office.context.mailbox.item'. Refer to the Object Model pages for more information."
+              "text": "**Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the "
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Object Model"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox.item"
+            },
+            {
+              "kind": "text",
+              "text": " page for more information."
             }
           ],
           "remarks": [],
@@ -4576,7 +4370,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see "
+                  "text": "**Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see "
                 },
                 {
                   "kind": "web-link",
@@ -4726,7 +4520,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that an item was created. Read mode only."
+                  "text": "Gets the date and time that an item was created."
                 },
                 {
                   "kind": "paragraph"
@@ -4842,7 +4636,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that an item was last modified. Read mode only."
+                  "text": "Gets the date and time that an item was last modified."
                 },
                 {
                   "kind": "paragraph"
@@ -4945,7 +4739,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This member is not supported in Outlook for iOS or Outlook for Android."
                 }
               ],
               "isBeta": false,
@@ -5029,7 +4823,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -5208,7 +5002,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -5464,7 +5258,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -5608,7 +5402,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -6293,7 +6087,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -6438,7 +6232,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -6596,7 +6390,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -6722,7 +6516,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -6867,7 +6661,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -7333,7 +7127,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see "
+                  "text": "**Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see "
                 },
                 {
                   "kind": "web-link",
@@ -8766,7 +8560,7 @@
             },
             {
               "kind": "text",
-              "text": "An array of AttachmentDetail objects is returned as the attachments property of an Appointment or Message object."
+              "text": "An array of **AttachmentDetails** objects is returned as the attachments property of an appointment or message item."
             },
             {
               "kind": "paragraph"
@@ -12615,245 +12409,6 @@
               "isOverride": false,
               "isEventProperty": false
             },
-            "dateTimeCreated": {
-              "kind": "property",
-              "signature": "dateTimeCreated: Date;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "Date",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Gets the date and time that an item was created. Read mode only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "html-tag",
-                  "token": "<table>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Minimum permission level"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "ReadItem"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Applicable Outlook mode"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Read"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</table>"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
-            },
-            "dateTimeModified": {
-              "kind": "property",
-              "signature": "dateTimeModified: Date;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "Date",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Gets the date and time that an item was last modified. Read mode only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "html-tag",
-                  "token": "<table>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Minimum permission level"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "ReadItem"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Applicable Outlook mode"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Read"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</table>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
-            },
             "itemType": {
               "kind": "property",
               "signature": "itemType: MailboxEnums.ItemType;",
@@ -13288,16 +12843,21 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of "
+              "text": "**Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the "
             },
             {
-              "kind": "code",
-              "text": "Office.context.mailbox.item",
-              "highlighter": "plain"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Object Model"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox.item"
             },
             {
               "kind": "text",
-              "text": ". Refer to the Object Model pages for more information."
+              "text": " page for more information."
             }
           ],
           "remarks": [],
@@ -13891,7 +13451,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved."
+                  "text": "**Note**: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved."
                 },
                 {
                   "kind": "paragraph"
@@ -14448,14 +14008,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. Until the item is synced, using the itemId will return an error."
+                  "text": "**Note**: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. Until the item is synced, using the itemId will return an error."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The following clients have different behavior for saveAsync on appointments in compose mode:"
+                  "text": "**Note**: The following clients have different behavior for saveAsync on appointments in compose mode:"
                 },
                 {
                   "kind": "paragraph"
@@ -15035,16 +14595,21 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of "
+              "text": "**Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the "
             },
             {
-              "kind": "code",
-              "text": "Office.context.mailbox.item",
-              "highlighter": "plain"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Object Model"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox.item"
             },
             {
               "kind": "text",
-              "text": ". Refer to the Object Model pages for more information."
+              "text": " page for more information."
             }
           ],
           "remarks": [],
@@ -15165,7 +14730,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see "
+                  "text": "**Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see "
                 },
                 {
                   "kind": "web-link",
@@ -15263,7 +14828,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -15442,7 +15007,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -15568,7 +15133,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -15712,7 +15277,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -16397,7 +15962,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -16542,7 +16107,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -16700,7 +16265,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -16826,7 +16391,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -16971,7 +16536,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -17437,7 +17002,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see "
+                  "text": "**Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see "
                 },
                 {
                   "kind": "web-link",
@@ -18977,7 +18542,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -19274,7 +18839,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -19790,7 +19355,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -19957,7 +19522,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -20124,7 +19689,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -20657,7 +20222,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This member is not supported in Outlook for iOS or Outlook for Android."
                 }
               ],
               "isBeta": false,
@@ -20789,7 +20354,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible."
+                  "text": "**Note**: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible."
                 },
                 {
                   "kind": "paragraph"
@@ -21310,7 +20875,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in the following scenarios:"
+                  "text": "**Note**: This method is not supported in the following scenarios:"
                 },
                 {
                   "kind": "paragraph"
@@ -21331,7 +20896,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The server administrator must set OAuthAuthentication to true on the Client Access Server EWS directory to enable the makeEwsRequestAsync method to make EWS requests."
+                  "text": "**Note**: The server administrator must set OAuthAuthentication to true on the Client Access Server EWS directory to enable the makeEwsRequestAsync method to make EWS requests."
                 },
                 {
                   "kind": "paragraph"
@@ -22965,9 +22530,9 @@
               "isOverride": false,
               "isEventProperty": false
             },
-            "meetingstring": {
+            "meetingString": {
               "kind": "property",
-              "signature": "meetingstring: string;",
+              "signature": "meetingString: string;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
@@ -23065,16 +22630,21 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of "
+              "text": "**Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the "
             },
             {
-              "kind": "code",
-              "text": "Office.context.mailbox.item",
-              "highlighter": "plain"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Object Model"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox.item"
             },
             {
               "kind": "text",
-              "text": ". Refer to the Object Model pages for more information."
+              "text": " page for more information."
             }
           ],
           "remarks": [],
@@ -23248,16 +22818,21 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of "
+              "text": "**Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the "
             },
             {
-              "kind": "code",
-              "text": "Office.context.mailbox.item",
-              "highlighter": "plain"
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Object Model"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox.item"
             },
             {
               "kind": "text",
-              "text": ". Refer to the Object Model pages for more information."
+              "text": " page for more information."
             }
           ],
           "remarks": [],
@@ -24233,7 +23808,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved."
+                  "text": "**Note**: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved."
                 },
                 {
                   "kind": "paragraph"
@@ -24459,245 +24034,6 @@
                 {
                   "kind": "html-tag",
                   "token": "</table>"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
-            },
-            "dateTimeCreated": {
-              "kind": "property",
-              "signature": "dateTimeCreated: Date;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "Date",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Gets the date and time that an item was created. Read mode only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "html-tag",
-                  "token": "<table>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Minimum permission level"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "ReadItem"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Applicable Outlook mode"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Message Compose"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</table>"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
-            },
-            "dateTimeModified": {
-              "kind": "property",
-              "signature": "dateTimeModified: Date;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "Date",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Gets the date and time that an item was last modified. Read mode only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "html-tag",
-                  "token": "<table>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Minimum permission level"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "ReadItem"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Applicable Outlook mode"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/#extension-points"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Message Compose"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</table>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
                 }
               ],
               "isBeta": false,
@@ -25556,14 +24892,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. Until the item is synced, using the itemId will return an error."
+                  "text": "**Note**: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. Until the item is synced, using the itemId will return an error."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The following clients have different behavior for saveAsync on appointments in compose mode:"
+                  "text": "**Note**: The following clients have different behavior for saveAsync on appointments in compose mode:"
                 },
                 {
                   "kind": "paragraph"
@@ -26266,7 +25602,21 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+              "text": "**Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the "
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Object Model"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox.item"
+            },
+            {
+              "kind": "text",
+              "text": " page for more information."
             }
           ],
           "remarks": [],
@@ -26387,7 +25737,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see "
+                  "text": "**Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see "
                 },
                 {
                   "kind": "web-link",
@@ -26790,7 +26140,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that an item was created. Read mode only."
+                  "text": "Gets the date and time that an item was created."
                 },
                 {
                   "kind": "paragraph"
@@ -26906,7 +26256,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that an item was last modified. Read mode only."
+                  "text": "Gets the date and time that an item was last modified."
                 },
                 {
                   "kind": "paragraph"
@@ -27009,7 +26359,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This member is not supported in Outlook for iOS or Outlook for Android."
                 }
               ],
               "isBeta": false,
@@ -27093,7 +26443,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -27272,7 +26622,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -27401,7 +26751,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The recipientType property of the EmailAddressDetails object in the from property is undefined."
+                  "text": "**Note**: The recipientType property of the EmailAddressDetails object in the from property is undefined."
                 },
                 {
                   "kind": "paragraph"
@@ -27535,7 +26885,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -27679,7 +27029,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -28364,7 +27714,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -28509,7 +27859,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -28667,7 +28017,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -28793,7 +28143,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -28938,7 +28288,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This method is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "**Note**: This method is not supported in Outlook for iOS or Outlook for Android."
                 },
                 {
                   "kind": "paragraph"
@@ -29520,7 +28870,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see "
+                  "text": "**Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see "
                 },
                 {
                   "kind": "web-link",
@@ -30184,7 +29534,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The recipientType property of the EmailAddressDetails object in the sender property is undefined."
+                  "text": "**Note**: The recipientType property of the EmailAddressDetails object in the sender property is undefined."
                 },
                 {
                   "kind": "paragraph"
@@ -32930,7 +32280,7 @@
             },
             {
               "kind": "text",
-              "text": "Important: The RoamingSettings object is initialized from the persisted storage only when the add-in is first loaded. For task panes, this means that it is only initialized when the task pane first opens. If the task pane navigates to another page or reloads the current page, the in-memory object is reset to its initial values, even if your add-in has persisted changes. The persisted changes will not be available until the task pane is closed and reopened."
+              "text": "**Important**: The RoamingSettings object is initialized from the persisted storage only when the add-in is first loaded. For task panes, this means that it is only initialized when the task pane first opens. If the task pane navigates to another page or reloads the current page, the in-memory object is reset to its initial values, even if your add-in has persisted changes. The persisted changes will not be available until the task pane is closed and reopened."
             },
             {
               "kind": "paragraph"
@@ -34993,7 +34343,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater."
+                  "text": "**Note**: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater."
                 },
                 {
                   "kind": "paragraph"
