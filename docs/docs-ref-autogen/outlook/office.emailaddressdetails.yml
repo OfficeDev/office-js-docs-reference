@@ -67,6 +67,7 @@ items:
 
           ```javascript
           var organizerName = Office.context.mailbox.item.organizer.displayName;
+          console.log("Organizer: " + organizerName);
           ```
   - uid: outlook.Office.EmailAddressDetails.emailAddress
     summary: Gets the SMTP email address.
@@ -86,6 +87,7 @@ items:
 
           ```javascript
           var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
+          console.log("Organizer's email address: " + organizerAddress);
           ```
   - uid: outlook.Office.EmailAddressDetails.recipientType
     summary: Gets the email address type of a recipient.

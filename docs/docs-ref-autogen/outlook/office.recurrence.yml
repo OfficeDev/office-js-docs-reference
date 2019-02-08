@@ -67,19 +67,19 @@ items:
 
       ```javascript
 
-      // This example gets the recurrence object of an appointment or meeting request item.
+      // This example gets the Recurrence object of an appointment item.
 
       Office.context.mailbox.item.recurrence.getAsync(callback);
 
-      function callback(asyncResult){
+
+      function callback(asyncResult) {
           var context = asyncResult.context;
           var recurrence = asyncResult.value;
-          if (recurrence == null) {
-              console.log("Non-recurring meeting");
-              return;
+          if (!recurrence) {
+              console.log("One-time appointment or meeting");
+          } else {
+              console.log(JSON.stringify(recurrence));
           }
-
-          console.log(JSON.stringify(recurrence));
       }
 
 
@@ -95,7 +95,9 @@ items:
           "recurrenceType": "weekly",
           "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
           "seriesTime": {seriesTimeObject}, 
-          "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
+          "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
+      }
+
       ```
     name: 'getAsync(options, callback)'
     fullName: getAsync
@@ -274,9 +276,9 @@ items:
       }
 
 
-      //Result: This created a recurring event from November 2, 2019 to December 2, 2019
+      // Result: This created a recurring event from November 2, 2019 to December 2, 2019
 
-      //        at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
+      //         at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
 
       ```
     name: 'setAsync(recurrencePattern, options, callback)'

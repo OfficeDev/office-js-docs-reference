@@ -57,6 +57,7 @@ items:
 
       function callback(asyncResult) {
           var from = asyncResult.value;
+          console.log("From " + from);
       }
 
       ```

@@ -500,12 +500,12 @@ items:
 
       Office.context.mailbox.item.body.getAsync(
           "text",
-          { asyncContext:"This is passed to the callback" },
+          { asyncContext: "This is passed to the callback" },
           function callback(result) {
               // Do something with the result
           });
 
-      //The following is an example of the result parameter passed to the callback function.
+      // The following is an example of the result parameter passed to the callback function.
 
       {
           "value": "TEXT of whole body (including threads below)",
@@ -635,6 +635,8 @@ items:
 
       var conversationId = Office.context.mailbox.item.conversationId;
 
+      console.log("conversationId: " + conversationId);
+
       ```
     name: conversationId
     fullName: conversationId
@@ -712,19 +714,20 @@ items:
 
       var outputString = "";
 
-      item.getAttachmentsAsync(callback);  
+      item.getAttachmentsAsync(callback);
+
 
       function callback(result) {
           if (result.value.length > 0) {
               for (i = 0 ; i < result.value.length ; i++) {
-                  var _att = result.value [i];
+                  var attachment = result.value [i];
                   outputString += "<BR>" + i + ". Name: ";
-                  outputString += _att.name;
-                  outputString += "<BR>ID: " + _att.id;
-                  outputString += "<BR>contentType: " + _att.contentType;
-                  outputString += "<BR>size: " + _att.size;
-                  outputString += "<BR>attachmentType: " + _att.attachmentType;
-                  outputString += "<BR>isInline: " + _att.isInline;
+                  outputString += attachment.name;
+                  outputString += "<BR>ID: " + attachment.id;
+                  outputString += "<BR>contentType: " + attachment.contentType;
+                  outputString += "<BR>size: " + attachment.size;
+                  outputString += "<BR>attachmentType: " + attachment.attachmentType;
+                  outputString += "<BR>isInline: " + attachment.isInline;
               }
           }
       }
@@ -840,7 +843,7 @@ items:
 
       Office.initialize = function () {
           Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
-      }
+      };
 
 
       function getCallback(asyncResult) {
@@ -948,7 +951,7 @@ items:
 
       ```javascript
 
-      if (Office.context.mailbox.item.itemType == Office.MailboxEnums.ItemType.Message) {
+      if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Message) {
           // do something
       } else {
           // do something else
@@ -1266,8 +1269,8 @@ items:
       // the item.
 
       {
-          "value":"AAMkADI5...AAA=",
-          "status":"succeeded"
+          "value": "AAMkADI5...AAA=",
+          "status": "succeeded"
       }
 
       ```
@@ -1331,7 +1334,18 @@ items:
 
       var seriesId = Office.context.mailbox.item.seriesId; 
 
-      var isSeries = (seriesId == null);
+
+      // The seriesId property returns null for items that do
+
+      // not have parent items (such as single appointments,
+
+      // series items, or meeting requests) and returns
+
+      // undefined for messages that are not meeting requests.
+
+      var isSeriesInstance = (seriesId != null);
+
+      console.log("SeriesId is " + seriesId + " and isSeriesInstance is " + isSeriesInstance);
 
       ```
     name: seriesId

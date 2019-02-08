@@ -124,7 +124,7 @@ items:
       Office.context.mailbox.item.location.setAsync(
           "Room 1",
           function (asyncResult) {
-              if (asyncResult.status == "failed") {
+              if (asyncResult.status === "failed") {
                   console.log("Action failed with error: " + asyncResult.error.message);
               }
           }

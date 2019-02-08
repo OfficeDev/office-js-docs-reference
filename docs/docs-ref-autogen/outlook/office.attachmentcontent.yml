@@ -65,6 +65,7 @@ items:
           var item = Office.context.mailbox.item;
           var listOfAttachments = [];
           item.getAttachmentsAsync(callback);
+
           function callback(result) {
               if (result.value.length > 0) {
                   for (i = 0 ; i < result.value.length ; i++) {
@@ -76,14 +77,16 @@ items:
 
           function handleAttachmentsCallback(result) {
               // parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file
-              if (result.format == Office.MailboxEnums.AttachmentContentFormat.Base64) {
+              if (result.format === Office.MailboxEnums.AttachmentContentFormat.Base64) {
                   // handle file attachment
-              } else if (result.format == Office.MailboxEnums.AttachmentContentFormat.Eml) {
-                  // handle item attachment
-              } else if (result.format == Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
+              } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Eml) {
+                  // handle email item attachment
+              } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
                   // handle .icalender attachment
+              } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Url) {
+                  // handle cloud attachment
               } else {
-                  // handle cloud attachment  
+                  // handle attachment formats that are not supported
               }
           }
           ```

@@ -63,10 +63,10 @@ items:
       ```javascript
 
       function myHandlerFunction(eventarg) { 
-          if (eventarg.attachmentStatus == Office.MailboxEnums.AttachmentStatus.Added) { 
-              var _att = eventarg.attachmentDetails; 
+          if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) { 
+              var attachment = eventarg.attachmentDetails; 
               console.log("Event Fired and Attachment Added!"); 
-              getAttachmentContentAsync(_att.id, options, callback); 
+              getAttachmentContentAsync(attachment.id, options, callback); 
           } 
       } 
 
@@ -131,12 +131,12 @@ items:
 
       Office.context.mailbox.item.body.getAsync(
           "text",
-          { asyncContext:"This is passed to the callback" },
+          { asyncContext: "This is passed to the callback" },
           function callback(result) {
               // Do something with the result
           });
 
-      //The following is an example of the result parameter passed to the callback function.
+      // The following is an example of the result parameter passed to the callback function.
 
       {
           "value": "TEXT of whole body (including threads below)",
@@ -190,6 +190,7 @@ items:
 
       item.getAttachmentsAsync(callback);
 
+
       function callback(result) {
           if (result.value.length > 0) {
               for (i = 0 ; i < result.value.length ; i++) {
@@ -202,14 +203,16 @@ items:
 
       function handleAttachmentsCallback(result) {
           // parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file
-          if (result.format == Office.MailboxEnums.AttachmentContentFormat.Base64) {
+          if (result.format === Office.MailboxEnums.AttachmentContentFormat.Base64) {
               // handle file attachment
-          } else if (result.format == Office.MailboxEnums.AttachmentContentFormat.Eml) {
-              // handle item attachment
-          } else if (result.format == Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
+          } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Eml) {
+              // handle email item attachment
+          } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
               // handle .icalender attachment
+          } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Url) {
+              // handle cloud attachment
           } else {
-              // handle cloud attachment  
+              // handle attachment formats that are not supported
           }
       }
 
@@ -280,7 +283,7 @@ items:
 
       Office.context.mailbox.item.getInitializationContextAsync(
           function(asyncResult) {
-              if (asyncResult.status == Office.AsyncResultStatus.Succeeded) {
+              if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
                   if (asyncResult.value != null && asyncResult.value.length > 0) {
                       // The value is a string, parse to an object
                       var context = JSON.parse(asyncResult.value);
@@ -356,8 +359,9 @@ items:
 
       Office.context.mailbox.item.getSharedPropertiesAsync(callback);
 
+
       function callback (asyncResult) {
-          var context=asyncResult.context;
+          var context = asyncResult.context;
           var sharedProperties = asyncResult.value;
       }
 
@@ -412,7 +416,7 @@ items:
 
       ```javascript
 
-      if (Office.context.mailbox.item.itemType == Office.MailboxEnums.ItemType.Message) {
+      if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Message) {
           // do something
       } else {
           // do something else
@@ -480,7 +484,8 @@ items:
               var mailbox = Office.context.mailbox;
               mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
           });
-      }
+      };
+
 
       function customPropsCallback(asyncResult) {
           var customProps = asyncResult.value;
@@ -649,7 +654,18 @@ items:
 
       var seriesId = Office.context.mailbox.item.seriesId; 
 
-      var isSeries = (seriesId == null);
+
+      // The seriesId property returns null for items that do
+
+      // not have parent items (such as single appointments,
+
+      // series items, or meeting requests) and returns
+
+      // undefined for messages that are not meeting requests.
+
+      var isSeriesInstance = (seriesId != null);
+
+      console.log("SeriesId is " + seriesId + " and isSeriesInstance is " + isSeriesInstance);
 
       ```
     name: seriesId

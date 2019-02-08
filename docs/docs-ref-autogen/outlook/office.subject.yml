@@ -123,7 +123,7 @@ items:
       ```javascript
 
       Office.context.mailbox.item.subject.setAsync("New subject!", function (asyncResult) {
-          if (asyncResult.status == "failed") {
+          if (asyncResult.status === "failed") {
               console.log("Action failed with error: " + asyncResult.error.message);
           }
       });

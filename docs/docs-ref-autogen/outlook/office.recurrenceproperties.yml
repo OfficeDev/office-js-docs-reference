@@ -18,19 +18,19 @@ items:
 
       ```javascript
 
-      // This example gets the recurrence object of an appointment or meeting request item.
+      // This example gets the Recurrence object of an appointment item.
 
       Office.context.mailbox.item.recurrence.getAsync(callback);
 
-      function callback(asyncResult){
+
+      function callback(asyncResult) {
           var context = asyncResult.context;
           var recurrence = asyncResult.value;
-          if (recurrence == null) {
-              console.log("Non-recurring meeting");
-              return;
+          if (!recurrence) {
+              console.log("One-time appointment or meeting");
+          } else {
+              console.log(JSON.stringify(recurrence));
           }
-
-          console.log(JSON.stringify(recurrence));
       }
 
 
@@ -46,7 +46,9 @@ items:
           "recurrenceType": "weekly",
           "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
           "seriesTime": {seriesTimeObject}, 
-          "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
+          "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
+      }
+
       ```
     name: Office.RecurrenceProperties
     fullName: Office.RecurrenceProperties
