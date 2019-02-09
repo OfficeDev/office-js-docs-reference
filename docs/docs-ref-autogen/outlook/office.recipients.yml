@@ -80,9 +80,9 @@ items:
 
       Office.context.mailbox.item.to.addAsync(newRecipients, function(result) {
           if (result.error) {
-              showMessage(result.error);
+              console.log(result.error);
           } else {
-              showMessage("Recipients added");
+              console.log("Recipients added");
           }
       });
 
@@ -151,13 +151,13 @@ items:
 
       Office.context.mailbox.item.optionalAttendees.getAsync(function(result) {
           if (result.error) {
-              showMessage(result.error);
+              console.log(result.error);
           } else {
               var msg = "";
               result.value.forEach(function(recip, index) {
                   msg = msg + recip.displayName + " (" + recip.emailAddress + ");";
               });
-              showMessage(msg);
+              console.log(msg);
           }
       });
 
@@ -251,9 +251,9 @@ items:
 
       Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
           if (result.error) {
-              showMessage(result.error);
+              console.log(result.error);
           } else {
-              showMessage("Recipients overwritten");
+              console.log("Recipients overwritten");
           }
       });
 
