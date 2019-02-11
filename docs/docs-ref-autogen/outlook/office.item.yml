@@ -59,23 +59,6 @@ items:
 
       `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) =>
       void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      function myHandlerFunction(eventarg) {
-          if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
-              var attachment = eventarg.attachmentDetails;
-              console.log("Event Fired and Attachment Added!");
-              getAttachmentContentAsync(attachment.id, options, callback);
-          }
-      }
-
-      Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
-
-      ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     langs:
@@ -130,6 +113,23 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function myHandlerFunction(eventarg) {
+          if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+              var attachment = eventarg.attachmentDetails;
+              console.log("Event Fired and Attachment Added!");
+              getAttachmentContentAsync(attachment.id, options, callback);
+          }
+      }
+
+      Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+
+      ```
     name: 'addHandlerAsync(eventType, handler, callback)'
     fullName: 'addHandlerAsync(eventType, handler, callback)'
     langs:

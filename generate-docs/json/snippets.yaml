@@ -10024,7 +10024,7 @@ Office.EmailAddressDetails.recipientType:
     requiredAttendees.forEach(function (requiredAttendee) {
         console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.recipientType);
     });
-Office.EnhancedLocation.addAsync:
+Office.EnhancedLocation.addAsync_1:
   - |-
     var locations = [
         {
@@ -10033,7 +10033,7 @@ Office.EnhancedLocation.addAsync:
         }
     ];
     Office.context.mailbox.item.enhancedLocation.addAsync(locations);
-Office.EnhancedLocation.getAsync:
+Office.EnhancedLocation.getAsync_1:
   - |-
     Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
 
@@ -10046,7 +10046,7 @@ Office.EnhancedLocation.getAsync:
             }
         });
     }
-Office.EnhancedLocation.removeAsync:
+Office.EnhancedLocation.removeAsync_1:
   - |-
     Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
 
@@ -10095,7 +10095,7 @@ Office.Entities.urls:
   - |-
     var item = Office.context.mailbox.item;
     var urls = item.getEntitiesByType(Office.MailboxEnums.EntityType.Url);
-Office.From.getAsync:
+Office.From.getAsync_1:
   - |-
     Office.context.mailbox.item.from.getAsync(callback);
 
@@ -10103,7 +10103,7 @@ Office.From.getAsync:
         var from = asyncResult.value;
         console.log("From " + from);
     }
-Office.InternetHeaders.getAsync:
+Office.InternetHeaders.getAsync_1:
   - >-
     Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"],
     callback);
@@ -10121,7 +10121,7 @@ Office.InternetHeaders.setAsync_1:
   - >-
     Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1",
     "header2": "value2"});
-Office.Item.addHandlerAsync:
+Office.Item.addHandlerAsync_1:
   - >-
     function myHandlerFunction(eventarg) {
         if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
@@ -10301,7 +10301,7 @@ Office.Location.getAsync:
         var context = asyncResult.context;
         var location = asyncResult.value;
     }
-Office.Location.setAsync:
+Office.Location.setAsync_3:
   - |-
     Office.context.mailbox.item.location.setAsync(
         "Room 1",
@@ -11185,7 +11185,7 @@ Office.PhoneNumber:
         console.log("Type: " + JSON.stringify(phoneNumber.type));
         console.log("Source text: " + JSON.stringify(phoneNumber.originalPhoneString));
     });
-Office.Recipients.addAsync:
+Office.Recipients.addAsync_3:
   - |-
     // The following example creates an array of EmailUser objects
     // and adds them to the To recipients of the message.
@@ -11278,7 +11278,7 @@ Office.Recurrence.getAsync_1:
         "seriesTime": {seriesTimeObject},
         "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
     }
-Office.Recurrence.setAsync:
+Office.Recurrence.setAsync_1:
   - >-
     // The following example sets the recurrence pattern of an appointment
     series.
@@ -11514,14 +11514,14 @@ Office.SeriesTime.setStartTime_1:
     var seriesTimeObject = new SeriesTime()
 
     seriesTimeObject.setStartTime("T23:30:00");
-Office.Subject.getAsync:
+Office.Subject.getAsync_1:
   - |-
     Office.context.mailbox.item.subject.getAsync(callback);
 
     function callback(asyncResult) {
         var subject = asyncResult.value;
     }
-Office.Subject.setAsync:
+Office.Subject.setAsync_3:
   - >-
     Office.context.mailbox.item.subject.setAsync("New subject!", function
     (asyncResult) {
@@ -11545,7 +11545,7 @@ Office.TaskSuggestion:
         console.log("Assignees: " + JSON.stringify(taskSuggestion.assignees));
         console.log("Task: " + JSON.stringify(taskSuggestion.taskString));
     });
-Office.Time.getAsync:
+Office.Time.getAsync_1:
   - |-
     Office.context.mailbox.item.start.getAsync(function (asyncResult) {
         if (asyncResult.status === "failed") {

@@ -42,22 +42,6 @@ items:
 
       `addAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void):
       void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      var locations = [
-          {
-              "id": "Contoso",
-              "type": Office.MailboxEnums.LocationType.Custom
-          }
-      ];
-
-      Office.context.mailbox.item.enhancedLocation.addAsync(locations);
-
-      ```
     isPreview: true
     name: 'addAsync(locationIdentifiers, options, callback)'
     fullName: 'addAsync(locationIdentifiers, options, callback)'
@@ -101,6 +85,22 @@ items:
       <td>ReadWriteItem</td> </tr> <tr> <td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td> <td>Compose</td> </tr> <tr>
       <td>Errors</td> <td>InvalidFormatError - The format of the specified data object is not valid.</td> </tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var locations = [
+          {
+              "id": "Contoso",
+              "type": Office.MailboxEnums.LocationType.Custom
+          }
+      ];
+
+      Office.context.mailbox.item.enhancedLocation.addAsync(locations);
+
+      ```
     isPreview: true
     name: 'addAsync(locationIdentifiers, callback)'
     fullName: 'addAsync(locationIdentifiers, callback)'
@@ -143,26 +143,6 @@ items:
 
 
       `getAsync(callback?: (result: Office.AsyncResult<LocationDetails[]>) => void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-
-      function callbackFunction(asyncResult) {
-          asyncResult.value.forEach(function (place) {
-              console.log("Display name: " + place.displayName);
-              console.log("Type: " + place.locationIdentifier.type);
-              if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
-                  console.log("Email address: " + place.emailAddress);
-              }
-          });
-      }
-
-      ```
     isPreview: true
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
@@ -200,6 +180,26 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td> <td>ReadItem</td>
       </tr> <tr> <td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td>
       <td>Compose or read</td> </tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+
+      function callbackFunction(asyncResult) {
+          asyncResult.value.forEach(function (place) {
+              console.log("Display name: " + place.displayName);
+              console.log("Type: " + place.locationIdentifier.type);
+              if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
+                  console.log("Email address: " + place.emailAddress);
+              }
+          });
+      }
+
+      ```
     isPreview: true
     name: getAsync(callback)
     fullName: getAsync(callback)
@@ -241,22 +241,6 @@ items:
 
       `removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void):
       void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-
-      function callbackFunction(asyncResult) {
-          asyncResult.value.forEach(function (currentValue) {
-              Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
-          });
-      }
-
-      ```
     isPreview: true
     name: 'removeAsync(locationIdentifiers, options, callback)'
     fullName: 'removeAsync(locationIdentifiers, options, callback)'
@@ -304,6 +288,22 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td>
       <td>ReadWriteItem</td> </tr> <tr> <td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td> <td>Compose</td> </tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+
+      function callbackFunction(asyncResult) {
+          asyncResult.value.forEach(function (currentValue) {
+              Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
+          });
+      }
+
+      ```
     isPreview: true
     name: 'removeAsync(locationIdentifiers, callback)'
     fullName: 'removeAsync(locationIdentifiers, callback)'
