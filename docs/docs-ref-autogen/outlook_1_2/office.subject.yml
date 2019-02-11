@@ -48,20 +48,6 @@ items:
 
 
       `getAsync(callback: (result: Office.AsyncResult<string>) => void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.subject.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var subject = asyncResult.value;
-      }
-
-      ```
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
     langs:
@@ -105,6 +91,20 @@ items:
 
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.subject.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var subject = asyncResult.value;
+      }
+
+      ```
     name: getAsync(callback)
     fullName: getAsync(callback)
     langs:
@@ -157,19 +157,6 @@ items:
 
 
       `setAsync(subject: string, callback: (result: Office.AsyncResult<void>) => void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.subject.setAsync("New subject!", function (asyncResult) {
-          if (asyncResult.status === "failed") {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          }
-      });
-
-      ```
     name: 'setAsync(subject, options, callback)'
     fullName: 'setAsync(subject, options, callback)'
     langs:
@@ -305,6 +292,19 @@ items:
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The subject parameter is longer than 255
       characters.</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.subject.setAsync("New subject!", function (asyncResult) {
+          if (asyncResult.status === "failed") {
+              console.log("Action failed with error: " + asyncResult.error.message);
+          }
+      });
+
+      ```
     name: 'setAsync(data, callback)'
     fullName: 'setAsync(data, callback)'
     langs:

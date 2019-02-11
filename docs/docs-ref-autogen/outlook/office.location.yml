@@ -156,22 +156,6 @@ items:
 
 
       `setAsync(location: string, callback: (result: Office.AsyncResult<void>) => void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.location.setAsync(
-          "Room 1",
-          function (asyncResult) {
-              if (asyncResult.status === "failed") {
-                  console.log("Action failed with error: " + asyncResult.error.message);
-              }
-          }
-      );
-
-      ```
     name: 'setAsync(location, options, callback)'
     fullName: 'setAsync(location, options, callback)'
     langs:
@@ -304,6 +288,22 @@ items:
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The location parameter is longer than 255
       characters.</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.location.setAsync(
+          "Room 1",
+          function (asyncResult) {
+              if (asyncResult.status === "failed") {
+                  console.log("Action failed with error: " + asyncResult.error.message);
+              }
+          }
+      );
+
+      ```
     name: 'setAsync(location, callback)'
     fullName: 'setAsync(location, callback)'
     langs:

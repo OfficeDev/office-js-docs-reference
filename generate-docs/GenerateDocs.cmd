@@ -52,35 +52,35 @@ cd ..\api-extractor-inputs-office-runtime
 
 call ..\node_modules\.bin\api-extractor run
 
-cd ..\api-extractor-inputs-outlook-legacy\Outlook_1_7
+REM cd ..\api-extractor-inputs-outlook-legacy\Outlook_1_7
 
-call ..\..\node_modules\.bin\api-extractor run
+REM call ..\..\node_modules\.bin\api-extractor run
 
-cd ..\Outlook_1_6
+REM cd ..\Outlook_1_6
 
-call ..\..\node_modules\.bin\api-extractor run
+REM call ..\..\node_modules\.bin\api-extractor run
 
-cd ..\Outlook_1_5
+REM cd ..\Outlook_1_5
 
-call ..\..\node_modules\.bin\api-extractor run
+REM call ..\..\node_modules\.bin\api-extractor run
 
-cd ..\Outlook_1_4
+REM cd ..\Outlook_1_4
 
-call ..\..\node_modules\.bin\api-extractor run
+REM call ..\..\node_modules\.bin\api-extractor run
 
-cd ..\Outlook_1_3
+REM cd ..\Outlook_1_3
 
-call ..\..\node_modules\.bin\api-extractor run
+REM call ..\..\node_modules\.bin\api-extractor run
 
-cd ..\Outlook_1_2
+REM cd ..\Outlook_1_2
 
-call ..\..\node_modules\.bin\api-extractor run
+REM call ..\..\node_modules\.bin\api-extractor run
 
-cd ..\Outlook_1_1
+REM cd ..\Outlook_1_1
 
-call ..\..\node_modules\.bin\api-extractor run
+REM call ..\..\node_modules\.bin\api-extractor run
 
-cd ..
+REM cd ..
 
 cd ..
 

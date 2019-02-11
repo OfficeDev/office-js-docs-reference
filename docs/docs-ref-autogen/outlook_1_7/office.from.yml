@@ -47,21 +47,6 @@ items:
 
 
       `getAsync(callback?: (result: Office.AsyncResult<EmailAddressDetails>) => void): void;`
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.from.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var from = asyncResult.value;
-          console.log("From " + from);
-      }
-
-      ```
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
     langs:
@@ -109,6 +94,21 @@ items:
 
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.from.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var from = asyncResult.value;
+          console.log("From " + from);
+      }
+
+      ```
     name: getAsync(callback)
     fullName: getAsync(callback)
     langs:
