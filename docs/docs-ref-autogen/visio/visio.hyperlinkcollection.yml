@@ -18,6 +18,8 @@ items:
       - visio.Visio.HyperlinkCollection.getItem
       - visio.Visio.HyperlinkCollection.items
       - visio.Visio.HyperlinkCollection.load
+      - visio.Visio.HyperlinkCollection.load_1
+      - visio.Visio.HyperlinkCollection.load_2
       - visio.Visio.HyperlinkCollection.toJSON
   - uid: visio.Visio.HyperlinkCollection.getCount
     summary: |-
@@ -25,7 +27,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -41,7 +43,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getItem(Key)
-    fullName: getItem
+    fullName: getItem(Key)
     langs:
       - typeScript
     type: method
@@ -74,6 +76,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Visio.HyperlinkCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Visio.HyperlinkCollection` - Where option.select is a
@@ -116,24 +122,63 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.HyperlinkCollection;'
+      content: >-
+        load(option?: Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.HyperlinkCollection;
       return:
         type:
           - visio.Visio.HyperlinkCollection
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+  - uid: visio.Visio.HyperlinkCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Visio.HyperlinkCollection;'
+      return:
+        type:
+          - visio.Visio.HyperlinkCollection
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.HyperlinkCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Visio.HyperlinkCollection;'
+      return:
+        type:
+          - visio.Visio.HyperlinkCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: visio.Visio.HyperlinkCollection.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

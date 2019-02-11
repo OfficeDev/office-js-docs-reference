@@ -2,8 +2,8 @@
 items:
   - uid: excel.Excel.Interfaces.ChartTrendlineCollectionUpdateData
     summary: >-
-      An interface for updating data on the ChartTrendlineCollection object, for use in "chartTrendlineCollection.set({
-      ... })".
+      An interface for updating data on the ChartTrendlineCollection object, for use in
+      "chartTrendlineCollection.set(<!-- -->{ ... }<!-- -->)".
     name: Excel.Interfaces.ChartTrendlineCollectionUpdateData
     fullName: Excel.Interfaces.ChartTrendlineCollectionUpdateData
     langs:

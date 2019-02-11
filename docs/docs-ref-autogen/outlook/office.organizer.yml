@@ -50,14 +50,14 @@ items:
 
       ```
     name: 'getAsync(options, callback)'
-    fullName: getAsync
+    fullName: 'getAsync(options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<EmailAddressDetails>) =>
-        void): void;
+        getAsync(options?: Office.AsyncContextOptions, callback?: (result:
+        Office.AsyncResult<EmailAddressDetails>) => void): void;
       return:
         type:
           - void
@@ -68,7 +68,7 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - office.Office.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter,

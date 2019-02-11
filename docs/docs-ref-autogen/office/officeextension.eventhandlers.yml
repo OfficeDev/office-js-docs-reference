@@ -8,13 +8,12 @@ items:
     type: class
     package: office
     children:
-      - office.OfficeExtension.EventHandlers.constructor
+      - office.OfficeExtension.EventHandlers.(constructor)
       - office.OfficeExtension.EventHandlers.add
       - office.OfficeExtension.EventHandlers.remove
-  - uid: office.OfficeExtension.EventHandlers.constructor
-    summary: 'Constructs a new instance of the [EventHandlers](xref:office.OfficeExtension.EventHandlers) class'
-    name: 'constructor(context, parentObject, name, eventInfo)'
-    fullName: constructor
+  - uid: office.OfficeExtension.EventHandlers.(constructor)
+    name: '(constructor)(context, parentObject, name, eventInfo)'
+    fullName: '(constructor)(context, parentObject, name, eventInfo)'
     langs:
       - typeScript
     type: constructor
@@ -39,7 +38,7 @@ items:
             - EventInfo<T>
   - uid: office.OfficeExtension.EventHandlers.add
     name: add(handler)
-    fullName: add
+    fullName: add(handler)
     langs:
       - typeScript
     type: method
@@ -56,7 +55,7 @@ items:
             - '(args: T) => Promise<any>'
   - uid: office.OfficeExtension.EventHandlers.remove
     name: remove(handler)
-    fullName: remove
+    fullName: remove(handler)
     langs:
       - typeScript
     type: method

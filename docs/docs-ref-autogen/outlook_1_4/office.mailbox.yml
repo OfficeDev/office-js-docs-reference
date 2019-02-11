@@ -31,15 +31,15 @@ items:
       - Outlook_1_4.Office.Mailbox.convertToLocalClientTime
       - Outlook_1_4.Office.Mailbox.convertToRestId
       - Outlook_1_4.Office.Mailbox.convertToUtcClientTime
-      - Outlook_1_4.Office.Mailbox.diagnostics
       - Outlook_1_4.Office.Mailbox.displayAppointmentForm
       - Outlook_1_4.Office.Mailbox.displayMessageForm
       - Outlook_1_4.Office.Mailbox.displayNewAppointmentForm
-      - Outlook_1_4.Office.Mailbox.ewsUrl
       - Outlook_1_4.Office.Mailbox.getCallbackTokenAsync
       - Outlook_1_4.Office.Mailbox.getUserIdentityTokenAsync
-      - Outlook_1_4.Office.Mailbox.item
       - Outlook_1_4.Office.Mailbox.makeEwsRequestAsync
+      - Outlook_1_4.Office.Mailbox.diagnostics
+      - Outlook_1_4.Office.Mailbox.ewsUrl
+      - Outlook_1_4.Office.Mailbox.item
       - Outlook_1_4.Office.Mailbox.userProfile
   - uid: Outlook_1_4.Office.Mailbox.convertToEwsId
     summary: >-
@@ -62,8 +62,24 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get an item's ID from a REST API
+
+      var restId = 'AAMkAGVlOTZjNTM3LW...';
+
+
+      // Treat restId as coming from the v2.0 version of the Outlook Mail API
+
+      var ewsId = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
+
+      ```
     name: 'convertToEwsId(itemId, restVersion)'
-    fullName: convertToEwsId
+    fullName: 'convertToEwsId(itemId, restVersion)'
     langs:
       - typeScript
     type: method
@@ -108,7 +124,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: convertToLocalClientTime(timeValue)
-    fullName: convertToLocalClientTime
+    fullName: convertToLocalClientTime(timeValue)
     langs:
       - typeScript
     type: method
@@ -144,8 +160,24 @@ items:
       API](https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations) or
       the [Microsoft Graph](https://graph.microsoft.io/)<!-- -->. The convertToRestId method converts an EWS-formatted
       ID into the proper format for REST.
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get the currently selected item's ID
+
+      var ewsId = Office.context.mailbox.item.itemId;
+
+
+      // Convert to a REST ID for the v2.0 version of the Outlook Mail API
+
+      var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+
+      ```
     name: 'convertToRestId(itemId, restVersion)'
-    fullName: convertToRestId
+    fullName: 'convertToRestId(itemId, restVersion)'
     langs:
       - typeScript
     type: method
@@ -182,7 +214,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: convertToUtcClientTime(input)
-    fullName: convertToUtcClientTime
+    fullName: convertToUtcClientTime(input)
     langs:
       - typeScript
     type: method
@@ -197,52 +229,6 @@ items:
           description: The local time value to convert.
           type:
             - LocalClientTime
-  - uid: Outlook_1_4.Office.Mailbox.diagnostics
-    summary: >-
-      Provides diagnostic information to an Outlook add-in.
-
-
-      Contains the following members:
-
-
-      - hostName (string): A string that represents the name of the host application. It be one of the following values:
-      Outlook, Mac Outlook, OutlookIOS, or OutlookWebApp.
-
-
-      - hostVersion (string): A string that represents the version of either the host application or the Exchange
-      Server. If the mail add-in is running on the Outlook desktop client or Outlook for iOS, the hostVersion property
-      returns the version of the host application, Outlook. In Outlook Web App, the property returns the version of the
-      Exchange Server. An example is the string 15.0.468.0.
-
-
-      - OWAView (MailboxEnums.OWAView or string): An enum (or string literal) that represents the current view of
-      Outlook Web App. If the host application is not Outlook Web App, then accessing this property results in
-      undefined. Outlook Web App has three views (OneColumn - displayed when the screen is narrow, TwoColumns -
-      displayed when the screen is wider, and ThreeColumns - displayed when the screen is wide) that correspond to the
-      width of the screen and the window, and the number of columns that can be displayed.
-
-
-      More information is under [Office.Diagnostics](xref:Outlook_1_4.Office.Diagnostics)<!-- -->.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
-    name: diagnostics
-    fullName: diagnostics
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'diagnostics: Diagnostics;'
-      return:
-        type:
-          - Diagnostics
   - uid: Outlook_1_4.Office.Mailbox.displayAppointmentForm
     summary: >-
       Displays an existing calendar appointment.
@@ -278,7 +264,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: displayAppointmentForm(itemId)
-    fullName: displayAppointmentForm
+    fullName: displayAppointmentForm(itemId)
     langs:
       - typeScript
     type: method
@@ -327,7 +313,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: displayMessageForm(itemId)
-    fullName: displayMessageForm
+    fullName: displayMessageForm(itemId)
     langs:
       - typeScript
     type: method
@@ -377,8 +363,35 @@ items:
 
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var start = new Date();
+
+      var end = new Date();
+
+      end.setHours(start.getHours() + 1);
+
+
+      Office.context.mailbox.displayNewAppointmentForm(
+
+      {
+          requiredAttendees: ['bob@contoso.com'],
+          optionalAttendees: ['sam@contoso.com'],
+          start: start,
+          end: end,
+          location: 'Home',
+          resources: ['projector@contoso.com'],
+          subject: 'meeting',
+          body: 'Hello World!'
+      });
+
+      ```
     name: displayNewAppointmentForm(parameters)
-    fullName: displayNewAppointmentForm
+    fullName: displayNewAppointmentForm(parameters)
     langs:
       - typeScript
     type: method
@@ -393,44 +406,6 @@ items:
           description: An AppointmentForm describing the new appointment. All properties are optional.
           type:
             - AppointmentForm
-  - uid: Outlook_1_4.Office.Mailbox.ewsUrl
-    summary: >-
-      Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.
-
-
-      Your app must have the ReadItem permission specified in its manifest to call the ewsUrl member in read mode.
-
-
-      In compose mode you must call the saveAsync method before you can use the ewsUrl member. Your app must have
-      ReadWriteItem permissions to call the saveAsync method.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
-
-
-      The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can
-      create a remote service to [get attachments from the selected
-      item](https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item)<!-- -->.
-
-
-      **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
-    name: ewsUrl
-    fullName: ewsUrl
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'ewsUrl: string;'
-      return:
-        type:
-          - string
   - uid: Outlook_1_4.Office.Mailbox.getCallbackTokenAsync
     summary: >-
       Gets a string that contains a token used to get an attachment or item from an Exchange Server.
@@ -462,8 +437,29 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       and read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function getCallbackToken() {
+          var options = {
+              isRest: true,
+              asyncContext: { message: 'Hello World!' }
+          };
+
+          Office.context.mailbox.getCallbackTokenAsync(options, cb);
+      }
+
+
+      function cb(asyncResult) {
+          var token = asyncResult.value;
+      }
+
+      ```
     name: 'getCallbackTokenAsync(callback, userContext)'
-    fullName: getCallbackTokenAsync
+    fullName: 'getCallbackTokenAsync(callback, userContext)'
     langs:
       - typeScript
     type: method
@@ -504,8 +500,24 @@ items:
 
       The getUserIdentityTokenAsync method returns a token that you can use to identify and [authenticate the add-in and
       user with a third-party system](https://docs.microsoft.com/outlook/add-ins/authentication)<!-- -->.
+
+      #### Examples
+
+
+      ```javascript
+
+      function getIdentityToken() {
+          Office.context.mailbox.getUserIdentityTokenAsync(cb);
+      }
+
+
+      function cb(asyncResult) {
+          var token = asyncResult.value;
+      }
+
+      ```
     name: 'getUserIdentityTokenAsync(callback, userContext)'
-    fullName: getUserIdentityTokenAsync
+    fullName: 'getUserIdentityTokenAsync(callback, userContext)'
     langs:
       - typeScript
     type: method
@@ -528,22 +540,6 @@ items:
           description: Optional. Any state data that is passed to the asynchronous method.\|
           type:
             - any
-  - uid: Outlook_1_4.Office.Mailbox.item
-    summary: >-
-      The mailbox item. Depending on the context in which the add-in opened, the item may be of any number of types. If
-      you want to see IntelliSense for only a specific type, you should cast this item to one of the following:
-      `ItemCompose`<!-- -->, `ItemRead`<!-- -->, `MessageCompose`<!-- -->, `MessageRead`<!-- -->,
-      `AppointmentCompose`<!-- -->, `AppointmentRead`
-    name: item
-    fullName: item
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose;'
-      return:
-        type:
-          - Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose
   - uid: Outlook_1_4.Office.Mailbox.makeEwsRequestAsync
     summary: >-
       Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the
@@ -559,7 +555,7 @@ items:
       You cannot request Folder Associated Items with the makeEwsRequestAsync method.
 
 
-      The XML request must specify UTF-8 encoding. &lt;?xml version="1.0" encoding="utf-8"?&gt;
+      The XML request must specify UTF-8 encoding. &lt;<!-- -->?xml version="1.0" encoding="utf-8"?<!-- -->&gt;
 
 
       Your add-in must have the ReadWriteMailbox permission to use the makeEwsRequestAsync method. For information about
@@ -609,13 +605,64 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose
       and read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function getSubjectRequest(id) {
+          // Return a GetItem operation request for the subject of the specified item.
+          var request =
+              '<?xml version="1.0" encoding="utf-8"?>' +
+              '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"' +
+              '               xmlns:xsd="http://www.w3.org/2001/XMLSchema"' +
+              '               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"' +
+              '               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">' +
+              '  <soap:Header>' +
+              '    <RequestServerVersion Version="Exchange2013" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" soap:mustUnderstand="0" />' +
+              '  </soap:Header>' +
+              '  <soap:Body>' +
+              '    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">' +
+              '      <ItemShape>' +
+              '        <t:BaseShape>IdOnly</t:BaseShape>' +
+              '        <t:AdditionalProperties>' +
+              '            <t:FieldURI FieldURI="item:Subject"/>' +
+              '        </t:AdditionalProperties>' +
+              '      </ItemShape>' +
+              '      <ItemIds><t:ItemId Id="' + id + '"/></ItemIds>' +
+              '    </GetItem>' +
+              '  </soap:Body>' +
+              '</soap:Envelope>';
+
+          return request;
+      }
+
+
+      function sendRequest() {
+          // Create a local variable that contains the mailbox.
+          Office.context.mailbox.makeEwsRequestAsync(
+              getSubjectRequest(mailbox.item.itemId), callback);
+      }
+
+
+      function callback(asyncResult)  {
+          var result = asyncResult.value;
+          var context = asyncResult.asyncContext;
+
+          // Process the returned response here.
+      }
+
+      ```
     name: 'makeEwsRequestAsync(data, callback, userContext)'
-    fullName: makeEwsRequestAsync
+    fullName: 'makeEwsRequestAsync(data, callback, userContext)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'makeEwsRequestAsync(data: any, callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;'
+      content: >-
+        makeEwsRequestAsync(data: any, callback: (result: Office.AsyncResult<string>) => void, userContext?: any):
+        void;
       return:
         type:
           - void
@@ -636,6 +683,106 @@ items:
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
             - any
+  - uid: Outlook_1_4.Office.Mailbox.diagnostics
+    summary: >-
+      Provides diagnostic information to an Outlook add-in.
+
+
+      Contains the following members:
+
+
+      - hostName (string): A string that represents the name of the host application. It be one of the following values:
+      Outlook, Mac Outlook, OutlookIOS, or OutlookWebApp.
+
+
+      - hostVersion (string): A string that represents the version of either the host application or the Exchange
+      Server. If the mail add-in is running on the Outlook desktop client or Outlook for iOS, the hostVersion property
+      returns the version of the host application, Outlook. In Outlook Web App, the property returns the version of the
+      Exchange Server. An example is the string 15.0.468.0.
+
+
+      - OWAView (MailboxEnums.OWAView or string): An enum (or string literal) that represents the current view of
+      Outlook Web App. If the host application is not Outlook Web App, then accessing this property results in
+      undefined. Outlook Web App has three views (OneColumn - displayed when the screen is narrow, TwoColumns -
+      displayed when the screen is wider, and ThreeColumns - displayed when the screen is wide) that correspond to the
+      width of the screen and the window, and the number of columns that can be displayed.
+
+
+      More information is under [Office.Diagnostics](xref:Outlook_1_4.Office.Diagnostics)<!-- -->.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
+    name: diagnostics
+    fullName: diagnostics
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'diagnostics: Diagnostics;'
+      return:
+        type:
+          - Diagnostics
+  - uid: Outlook_1_4.Office.Mailbox.ewsUrl
+    summary: >-
+      Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.
+
+
+      Your app must have the ReadItem permission specified in its manifest to call the ewsUrl member in read mode.
+
+
+      In compose mode you must call the saveAsync method before you can use the ewsUrl member. Your app must have
+      ReadWriteItem permissions to call the saveAsync method.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      read</td></tr></table>
+
+
+      The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can
+      create a remote service to [get attachments from the selected
+      item](https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item)<!-- -->.
+
+
+      **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
+    name: ewsUrl
+    fullName: ewsUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ewsUrl: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1_4.Office.Mailbox.item
+    summary: >-
+      The mailbox item. Depending on the context in which the add-in opened, the item may be of any number of types. If
+      you want to see IntelliSense for only a specific type, you should cast this item to one of the following:
+      `ItemCompose`<!-- -->, `ItemRead`<!-- -->, `MessageCompose`<!-- -->, `MessageRead`<!-- -->,
+      `AppointmentCompose`<!-- -->, `AppointmentRead`
+    name: item
+    fullName: item
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose;'
+      return:
+        type:
+          - Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose
   - uid: Outlook_1_4.Office.Mailbox.userProfile
     summary: >-
       Information about the user associated with the mailbox. This includes their account type, display name, email

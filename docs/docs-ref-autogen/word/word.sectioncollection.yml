@@ -19,6 +19,8 @@ items:
       - word.Word.SectionCollection.getFirstOrNullObject
       - word.Word.SectionCollection.items
       - word.Word.SectionCollection.load
+      - word.Word.SectionCollection.load_1
+      - word.Word.SectionCollection.load_2
       - word.Word.SectionCollection.toJSON
       - word.Word.SectionCollection.track
       - word.Word.SectionCollection.untrack
@@ -42,7 +44,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirst()
-    fullName: getFirst
+    fullName: getFirst()
     langs:
       - typeScript
     type: method
@@ -58,7 +60,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirstOrNullObject()
-    fullName: getFirstOrNullObject
+    fullName: getFirstOrNullObject()
     langs:
       - typeScript
     type: method
@@ -88,6 +90,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.SectionCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.SectionCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -99,24 +105,63 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.SectionCollection;'
+      content: >-
+        load(option?: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.SectionCollection;
       return:
         type:
           - Word.SectionCollection
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+  - uid: word.Word.SectionCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.SectionCollection;'
+      return:
+        type:
+          - Word.SectionCollection
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: word.Word.SectionCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Word.SectionCollection;'
+      return:
+        type:
+          - Word.SectionCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: word.Word.SectionCollection.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -134,7 +179,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -151,7 +196,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

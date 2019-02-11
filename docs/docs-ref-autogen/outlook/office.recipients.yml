@@ -17,8 +17,15 @@ items:
     package: outlook
     children:
       - outlook.Office.Recipients.addAsync
+      - outlook.Office.Recipients.addAsync_1
+      - outlook.Office.Recipients.addAsync_2
+      - outlook.Office.Recipients.addAsync_3
       - outlook.Office.Recipients.getAsync
+      - outlook.Office.Recipients.getAsync_1
       - outlook.Office.Recipients.setAsync
+      - outlook.Office.Recipients.setAsync_1
+      - outlook.Office.Recipients.setAsync_2
+      - outlook.Office.Recipients.setAsync_3
   - uid: outlook.Office.Recipients.addAsync
     summary: |-
       Adds a recipient list to the existing recipients for an appointment or message.
@@ -51,11 +58,12 @@ items:
       `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
 
 
-      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`
+      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions):
+      void;`
 
 
-      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: Office.AsyncResult<void>)
-      => void): void;`
+      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result:
+      Office.AsyncResult<void>) => void): void;`
 
       #### Examples
 
@@ -88,7 +96,7 @@ items:
 
       ```
     name: 'addAsync(recipients, options, callback)'
-    fullName: addAsync
+    fullName: 'addAsync(recipients, options, callback)'
     langs:
       - typeScript
     type: method
@@ -110,7 +118,144 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - office.Office.AsyncContextOptions
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult. If adding the recipients fails, the asyncResult.error property will
+            contain an error code.
+          type:
+            - '(result: Office.AsyncResult<void>) => void'
+  - uid: outlook.Office.Recipients.addAsync_1
+    summary: |-
+      Adds a recipient list to the existing recipients for an appointment or message.
+
+      The recipients parameter can be an array of one of the following:
+
+      - Strings containing SMTP email addresses
+
+      - EmailUser objects
+
+      - EmailAddressDetails objects
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
+      entries.</td></tr></table>
+    name: addAsync(recipients)
+    fullName: addAsync(recipients)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: recipients
+          description: The recipients to add to the recipients list.
+          type:
+            - '(string | EmailUser | EmailAddressDetails)[]'
+  - uid: outlook.Office.Recipients.addAsync_2
+    summary: |-
+      Adds a recipient list to the existing recipients for an appointment or message.
+
+      The recipients parameter can be an array of one of the following:
+
+      - Strings containing SMTP email addresses
+
+      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
+
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
+      entries.</td></tr></table>
+    name: 'addAsync(recipients, options)'
+    fullName: 'addAsync(recipients, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: recipients
+          description: The recipients to add to the recipients list.
+          type:
+            - '(string | EmailUser | EmailAddressDetails)[]'
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+  - uid: outlook.Office.Recipients.addAsync_3
+    summary: |-
+      Adds a recipient list to the existing recipients for an appointment or message.
+
+      The recipients parameter can be an array of one of the following:
+
+      - Strings containing SMTP email addresses
+
+      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
+
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
+      entries.</td></tr></table>
+    name: 'addAsync(recipients, callback)'
+    fullName: 'addAsync(recipients, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result:
+        Office.AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: recipients
+          description: The recipients to add to the recipients list.
+          type:
+            - '(string | EmailUser | EmailAddressDetails)[]'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -141,6 +286,49 @@ items:
 
 
       `getAsync(callback: (result: Office.AsyncResult<EmailAddressDetails[]>) => void): void;`
+    name: 'getAsync(options, callback)'
+    fullName: 'getAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback: (result:
+        Office.AsyncResult<EmailAddressDetails[]>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult. The `value` property of the result is an array of EmailAddressDetails objects.
+          type:
+            - '(result: Office.AsyncResult<EmailAddressDetails[]>) => void'
+  - uid: outlook.Office.Recipients.getAsync_1
+    summary: >-
+      Gets a recipient list for an appointment or message.
+
+
+      When the call completes, the asyncResult.value property will contain an array of
+      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
 
       #### Examples
 
@@ -162,26 +350,18 @@ items:
       });
 
       ```
-    name: 'getAsync(options, callback)'
-    fullName: getAsync
+    name: getAsync(callback)
+    fullName: getAsync(callback)
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getAsync(options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<EmailAddressDetails[]>) =>
-        void): void;
+      content: 'getAsync(callback: (result: Office.AsyncResult<EmailAddressDetails[]>) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: options
-          description: >-
-            An object literal that contains one or more of the following properties. asyncContext: Developers can
-            provide any object they wish to access in the callback method.
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -222,11 +402,161 @@ items:
       `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
 
 
-      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`
+      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions):
+      void;`
 
 
-      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: Office.AsyncResult<void>)
-      => void): void;`
+      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result:
+      Office.AsyncResult<void>) => void): void;`
+    name: 'setAsync(recipients, options, callback)'
+    fullName: 'setAsync(recipients, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions,
+        callback?: (result: Office.AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: recipients
+          description: The recipients to add to the recipients list.
+          type:
+            - '(string | EmailUser | EmailAddressDetails)[]'
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult. If setting the recipients fails the asyncResult.error property will
+            contain a code that indicates any error that occurred while adding the data.
+          type:
+            - '(result: Office.AsyncResult<void>) => void'
+  - uid: outlook.Office.Recipients.setAsync_1
+    summary: |-
+      Sets a recipient list for an appointment or message.
+
+      The setAsync method overwrites the current recipient list.
+
+      The recipients parameter can be an array of one of the following:
+
+      - Strings containing SMTP email addresses
+
+      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
+
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
+      entries.</td></tr></table>
+    name: setAsync(recipients)
+    fullName: setAsync(recipients)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: recipients
+          description: The recipients to add to the recipients list.
+          type:
+            - '(string | EmailUser | EmailAddressDetails)[]'
+  - uid: outlook.Office.Recipients.setAsync_2
+    summary: |-
+      Sets a recipient list for an appointment or message.
+
+      The setAsync method overwrites the current recipient list.
+
+      The recipients parameter can be an array of one of the following:
+
+      - Strings containing SMTP email addresses
+
+      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
+
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
+      entries.</td></tr></table>
+    name: 'setAsync(recipients, options)'
+    fullName: 'setAsync(recipients, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: recipients
+          description: The recipients to add to the recipients list.
+          type:
+            - '(string | EmailUser | EmailAddressDetails)[]'
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+  - uid: outlook.Office.Recipients.setAsync_3
+    summary: |-
+      Sets a recipient list for an appointment or message.
+
+      The setAsync method overwrites the current recipient list.
+
+      The recipients parameter can be an array of one of the following:
+
+      - Strings containing SMTP email addresses
+
+      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
+
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
+      entries.</td></tr></table>
 
       #### Examples
 
@@ -258,15 +588,15 @@ items:
       });
 
       ```
-    name: 'setAsync(recipients, options, callback)'
-    fullName: setAsync
+    name: 'setAsync(recipients, callback)'
+    fullName: 'setAsync(recipients, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions,
-        callback?: (result: Office.AsyncResult<void>) => void): void;
+        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -276,12 +606,6 @@ items:
           description: The recipients to add to the recipients list.
           type:
             - '(string | EmailUser | EmailAddressDetails)[]'
-        - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single

@@ -20,7 +20,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'throwOnReadOnly?: boolean;'
+      content: 'throwOnReadOnly?: boolean'
       return:
         type:
           - boolean

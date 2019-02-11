@@ -10,12 +10,18 @@ items:
     package: office
     children:
       - office.Office.Bindings.addFromNamedItemAsync
+      - office.Office.Bindings.addFromNamedItemAsync_1
       - office.Office.Bindings.addFromPromptAsync
+      - office.Office.Bindings.addFromPromptAsync_1
       - office.Office.Bindings.addFromSelectionAsync
-      - office.Office.Bindings.document
+      - office.Office.Bindings.addFromSelectionAsync_1
       - office.Office.Bindings.getAllAsync
+      - office.Office.Bindings.getAllAsync_1
       - office.Office.Bindings.getByIdAsync
+      - office.Office.Bindings.getByIdAsync_1
       - office.Office.Bindings.releaseByIdAsync
+      - office.Office.Bindings.releaseByIdAsync_1
+      - office.Office.Bindings.document
   - uid: office.Office.Bindings.addFromNamedItemAsync
     summary: Creates a binding against a named object in the document.
     remarks: >-
@@ -142,7 +148,7 @@ items:
 
       ```
     name: 'addFromNamedItemAsync(itemName, bindingType, options, callback)'
-    fullName: addFromNamedItemAsync
+    fullName: 'addFromNamedItemAsync(itemName, bindingType, options, callback)'
     langs:
       - typeScript
     type: method
@@ -169,6 +175,86 @@ items:
           description: Provides options for configuring the binding that is created.
           type:
             - office.Office.AddBindingFromNamedItemOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Binding object that represents the specified named item.
+          type:
+            - '(result: AsyncResult<Binding>) => void'
+  - uid: office.Office.Bindings.addFromNamedItemAsync_1
+    summary: Creates a binding against a named object in the document.
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+
+
+      For Excel, the itemName parameter can refer to a named range or a table.
+
+
+      By default, adding a table in Excel assigns the name "Table1" for the first table you add, "Table2" for the second
+      table you add, and so on. To assign a meaningful name for a table in the Excel UI, use the Table Name property on
+      the Table Tools \| Design tab of the ribbon.
+
+
+      **Note**: In Excel, when specifying a table as a named item, you must fully qualify the name to include the
+      worksheet name in the name of the table in this format: "Sheet1!Table1"
+
+
+      For Word, the itemName parameter refers to the Title property of a Rich Text content control. (You can't bind to
+      content controls other than the Rich Text content control).
+
+
+      By default, a content control has no Title value assigned. To assign a meaningful name in the Word UI, after
+      inserting a Rich Text content control from the Controls group on the Developer tab of the ribbon, use the
+      Properties command in the Controls group to display the Content Control Properties dialog box. Then set the Title
+      property of the content control to the name you want to reference from your code.
+
+
+      **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and
+      you try to bind to one these content controls with this method (by specifying its name as the itemName parameter),
+      the operation will fail.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
+      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
+      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+    name: 'addFromNamedItemAsync(itemName, bindingType, callback)'
+    fullName: 'addFromNamedItemAsync(itemName, bindingType, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addFromNamedItemAsync(itemName: string, bindingType: BindingType, callback?: (result: AsyncResult<Binding>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: itemName
+          description: Name of the bindable object in the document. For Example 'MyExpenses' table in Excel."
+          type:
+            - string
+        - id: bindingType
+          description: >-
+            The [Office.BindingType](xref:office.Office.BindingType) for the data. The method returns null if the
+            selected object cannot be coerced into the specified type.
+          type:
+            - BindingType
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -224,7 +310,7 @@ items:
 
       ```
     name: 'addFromPromptAsync(bindingType, options, callback)'
-    fullName: addFromPromptAsync
+    fullName: 'addFromPromptAsync(bindingType, options, callback)'
     langs:
       - typeScript
     type: method
@@ -247,6 +333,56 @@ items:
           description: Provides options for configuring the prompt and identifying the binding that is created.
           type:
             - office.Office.AddBindingFromPromptOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Binding object that represents the selection specified by the user.
+          type:
+            - '(result: AsyncResult<Binding>) => void'
+  - uid: office.Office.Bindings.addFromPromptAsync_1
+    summary: Create a binding by prompting the user to make a selection on the document.
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
+
+
+      Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied
+      id. The method fails if the specified selection cannot be bound.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
+      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
+      </td><td> Y </td></tr> </table>
+    name: 'addFromPromptAsync(bindingType, callback)'
+    fullName: 'addFromPromptAsync(bindingType, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addFromPromptAsync(bindingType: BindingType, callback?: (result: AsyncResult<Binding>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: bindingType
+          description: >-
+            Specifies the type of the binding object to create. Required. Returns null if the selected object cannot be
+            coerced into the specified type.
+          type:
+            - BindingType
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -309,7 +445,7 @@ items:
 
       ```
     name: 'addFromSelectionAsync(bindingType, options, callback)'
-    fullName: addFromSelectionAsync
+    fullName: 'addFromSelectionAsync(bindingType, options, callback)'
     langs:
       - typeScript
     type: method
@@ -339,16 +475,28 @@ items:
             Binding object that represents the selection specified by the user.
           type:
             - '(result: AsyncResult<Binding>) => void'
-  - uid: office.Office.Bindings.document
-    summary: >-
-      Gets an [Office.Document](xref:office.Office.Document) object that represents the document associated with this
-      set of bindings.
+  - uid: office.Office.Bindings.addFromSelectionAsync_1
+    summary: Create a binding based on the user's current selection.
     remarks: >-
+      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+
+
+      Adds the specified type of binding object to the Bindings collection, which will be identified with the supplied
+      id.
+
+
+      Note In Excel, if you call the addFromSelectionAsync method passing in the Binding.id of an existing binding, the
+      Binding.type of that binding is used, and its type cannot be changed by specifying a different value for the
+      bindingType parameter. If you need to use an existing id and change the bindingType, call the
+      Bindings.releaseByIdAsync method first to release the binding, and then call the addFromSelectionAsync method to
+      reestablish the binding with a new type.
+
+
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this property.
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
 
 
       For more information about Office host application and server requirements, see [Requirements for running Office
@@ -360,17 +508,77 @@ items:
       </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
       </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
       </table>
-    name: document
-    fullName: document
+    name: 'addFromSelectionAsync(bindingType, callback)'
+    fullName: 'addFromSelectionAsync(bindingType, callback)'
     langs:
       - typeScript
-    type: property
+    type: method
     syntax:
-      content: 'document: Document;'
+      content: 'addFromSelectionAsync(bindingType: BindingType, callback?: (result: AsyncResult<Binding>) => void): void;'
       return:
         type:
-          - Document
+          - void
+        description: ''
+      parameters:
+        - id: bindingType
+          description: >-
+            Specifies the type of the binding object to create. Required. Returns null if the selected object cannot be
+            coerced into the specified type.
+          type:
+            - BindingType
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Binding object that represents the selection specified by the user.
+          type:
+            - '(result: AsyncResult<Binding>) => void'
   - uid: office.Office.Bindings.getAllAsync
+    summary: Gets all bindings that were previously created.
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
+      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
+      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+    name: 'getAllAsync(options, callback)'
+    fullName: 'getAllAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Binding[]>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
+            that contains each binding created for the referenced Bindings object.
+          type:
+            - '(result: AsyncResult<Binding[]>) => void'
+  - uid: office.Office.Bindings.getAllAsync_1
     summary: Gets all bindings that were previously created.
     remarks: >-
       <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
@@ -415,22 +623,18 @@ items:
       }
 
       ```
-    name: 'getAllAsync(options, callback)'
-    fullName: getAllAsync
+    name: getAllAsync(callback)
+    fullName: getAllAsync(callback)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAllAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Binding[]>) => void): void;'
+      content: 'getAllAsync(callback?: (result: AsyncResult<Binding[]>) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             A function that is invoked when the callback returns, whose only parameter is of type
@@ -439,6 +643,61 @@ items:
           type:
             - '(result: AsyncResult<Binding[]>) => void'
   - uid: office.Office.Bindings.getByIdAsync
+    summary: Retrieves a binding based on its Name
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>CustomXmlParts, MatrixBindings, TableBindings,
+      TextBindings</td></tr></table>
+
+
+      Fails if the specified id does not exist.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
+      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
+      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+    name: 'getByIdAsync(id, options, callback)'
+    fullName: 'getByIdAsync(id, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Binding>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: id
+          description: Specifies the unique name of the binding object. Required.
+          type:
+            - string
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            Binding object specified by the id in the call.
+          type:
+            - '(result: AsyncResult<Binding>) => void'
+  - uid: office.Office.Bindings.getByIdAsync_1
     summary: Retrieves a binding based on its Name
     remarks: >-
       <table><tr><td>Requirement Sets</td><td>CustomXmlParts, MatrixBindings, TableBindings,
@@ -483,15 +742,13 @@ items:
       }
 
       ```
-    name: 'getByIdAsync(id, options, callback)'
-    fullName: getByIdAsync
+    name: 'getByIdAsync(id, callback)'
+    fullName: 'getByIdAsync(id, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Binding>) =>
-        void): void;
+      content: 'getByIdAsync(id: string, callback?: (result: AsyncResult<Binding>) => void): void;'
       return:
         type:
           - void
@@ -501,10 +758,6 @@ items:
           description: Specifies the unique name of the binding object. Required.
           type:
             - string
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -513,6 +766,59 @@ items:
           type:
             - '(result: AsyncResult<Binding>) => void'
   - uid: office.Office.Bindings.releaseByIdAsync
+    summary: Removes the binding from the document
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+
+
+      Fails if the specified id does not exist.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
+      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
+      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+    name: 'releaseByIdAsync(id, options, callback)'
+    fullName: 'releaseByIdAsync(id, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        releaseByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: id
+          description: Specifies the unique name to be used to identify the binding object. Required.
+          type:
+            - string
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Bindings.releaseByIdAsync_1
     summary: Removes the binding from the document
     remarks: >-
       <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
@@ -554,15 +860,13 @@ items:
       }
 
       ```
-    name: 'releaseByIdAsync(id, options, callback)'
-    fullName: releaseByIdAsync
+    name: 'releaseByIdAsync(id, callback)'
+    fullName: 'releaseByIdAsync(id, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        releaseByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
-        void): void;
+      content: 'releaseByIdAsync(id: string, callback?: (result: AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -572,13 +876,40 @@ items:
           description: Specifies the unique name to be used to identify the binding object. Required.
           type:
             - string
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Bindings.document
+    summary: >-
+      Gets an [Office.Document](xref:office.Office.Document) object that represents the document associated with this
+      set of bindings.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this property.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
+      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
+      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+    name: document
+    fullName: document
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'document: Document;'
+      return:
+        type:
+          - Document

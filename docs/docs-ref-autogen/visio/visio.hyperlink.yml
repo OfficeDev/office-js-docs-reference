@@ -18,6 +18,8 @@ items:
       - visio.Visio.Hyperlink.description
       - visio.Visio.Hyperlink.extraInfo
       - visio.Visio.Hyperlink.load
+      - visio.Visio.Hyperlink.load_1
+      - visio.Visio.Hyperlink.load_2
       - visio.Visio.Hyperlink.subAddress
       - visio.Visio.Hyperlink.toJSON
   - uid: visio.Visio.Hyperlink.address
@@ -73,6 +75,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.Hyperlink` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.Hyperlink` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -109,21 +115,63 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.Hyperlink;'
+      content: 'load(option?: Visio.Interfaces.HyperlinkLoadOptions): Visio.Hyperlink;'
       return:
         type:
           - visio.Visio.Hyperlink
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - visio.Visio.Interfaces.HyperlinkLoadOptions
+  - uid: visio.Visio.Hyperlink.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Visio.Hyperlink;'
+      return:
+        type:
+          - visio.Visio.Hyperlink
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.Hyperlink.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Hyperlink;'
+      return:
+        type:
+          - visio.Visio.Hyperlink
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: visio.Visio.Hyperlink.subAddress
     summary: |-
       Gets the sub-address of the Hyperlink object. Read-only.
@@ -141,7 +189,7 @@ items:
           - string
   - uid: visio.Visio.Hyperlink.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

@@ -13,7 +13,7 @@ items:
       - office-runtime.OfficeRuntime.DisplayWebDialogOptions
   - uid: office-runtime.OfficeRuntime.displayWebDialog
     summary: Enables you to pop up a web dialog box.
-    name: 'displayWebDialog(url, options)'
+    name: OfficeRuntime.displayWebDialog
     fullName: OfficeRuntime.displayWebDialog
     langs:
       - typeScript

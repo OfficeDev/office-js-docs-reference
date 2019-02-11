@@ -20,7 +20,10 @@ items:
       - visio.Visio.PageView.getSelection
       - visio.Visio.PageView.isShapeInViewport
       - visio.Visio.PageView.load
+      - visio.Visio.PageView.load_1
+      - visio.Visio.PageView.load_2
       - visio.Visio.PageView.set
+      - visio.Visio.PageView.set_1
       - visio.Visio.PageView.setPosition
       - visio.Visio.PageView.toJSON
       - visio.Visio.PageView.zoom
@@ -30,7 +33,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: centerViewportOnShape(ShapeId)
-    fullName: centerViewportOnShape
+    fullName: centerViewportOnShape(ShapeId)
     langs:
       - typeScript
     type: method
@@ -67,7 +70,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: fitToWindow()
-    fullName: fitToWindow
+    fullName: fitToWindow()
     langs:
       - typeScript
     type: method
@@ -83,7 +86,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getPosition()
-    fullName: getPosition
+    fullName: getPosition()
     langs:
       - typeScript
     type: method
@@ -99,7 +102,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getSelection()
-    fullName: getSelection
+    fullName: getSelection()
     langs:
       - typeScript
     type: method
@@ -115,7 +118,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: isShapeInViewport(Shape)
-    fullName: isShapeInViewport
+    fullName: isShapeInViewport(Shape)
     langs:
       - typeScript
     type: method
@@ -138,6 +141,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.PageView` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.PageView` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -148,40 +155,64 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      Visio.run(session, function (ctx) {
-          var activePage = ctx.document.getActivePage();
-          activePage.view.zoom = 300;
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.PageView;'
+      content: 'load(option?: Visio.Interfaces.PageViewLoadOptions): Visio.PageView;'
       return:
         type:
           - visio.Visio.PageView
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - visio.Visio.Interfaces.PageViewLoadOptions
+  - uid: visio.Visio.PageView.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Visio.PageView;'
+      return:
+        type:
+          - visio.Visio.PageView
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.PageView.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.PageView;'
+      return:
+        type:
+          - visio.Visio.PageView
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: visio.Visio.PageView.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -191,7 +222,7 @@ items:
 
       `set(properties: Visio.PageView): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -212,13 +243,31 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: visio.Visio.PageView.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Visio.PageView): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - visio.Visio.PageView
   - uid: visio.Visio.PageView.setPosition
     summary: |-
       Sets the position of the page in the view.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: setPosition(Position)
-    fullName: setPosition
+    fullName: setPosition(Position)
     langs:
       - typeScript
     type: method
@@ -235,7 +284,7 @@ items:
             - visio.Visio.Position
   - uid: visio.Visio.PageView.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -260,3 +309,19 @@ items:
       return:
         type:
           - number
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Visio.run(session, function (ctx) {
+              var activePage = ctx.document.getActivePage();
+              activePage.view.zoom = 300;
+              return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```

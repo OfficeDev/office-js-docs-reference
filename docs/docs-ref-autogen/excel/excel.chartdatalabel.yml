@@ -22,10 +22,13 @@ items:
       - excel.Excel.ChartDataLabel.horizontalAlignment
       - excel.Excel.ChartDataLabel.left
       - excel.Excel.ChartDataLabel.load
+      - excel.Excel.ChartDataLabel.load_1
+      - excel.Excel.ChartDataLabel.load_2
       - excel.Excel.ChartDataLabel.numberFormat
       - excel.Excel.ChartDataLabel.position
       - excel.Excel.ChartDataLabel.separator
       - excel.Excel.ChartDataLabel.set
+      - excel.Excel.ChartDataLabel.set_1
       - excel.Excel.ChartDataLabel.showBubbleSize
       - excel.Excel.ChartDataLabel.showCategoryName
       - excel.Excel.ChartDataLabel.showLegendKey
@@ -156,6 +159,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartDataLabel` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabel` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -167,21 +174,63 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartDataLabel;'
+      content: 'load(option?: Excel.Interfaces.ChartDataLabelLoadOptions): Excel.ChartDataLabel;'
       return:
         type:
           - excel.Excel.ChartDataLabel
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ChartDataLabelLoadOptions
+  - uid: excel.Excel.ChartDataLabel.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartDataLabel;'
+      return:
+        type:
+          - excel.Excel.ChartDataLabel
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartDataLabel.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartDataLabel;'
+      return:
+        type:
+          - excel.Excel.ChartDataLabel
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.ChartDataLabel.numberFormat
     summary: |-
       String value that represents the format code for data label.
@@ -242,7 +291,7 @@ items:
 
       `set(properties: Excel.ChartDataLabel): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -263,6 +312,24 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ChartDataLabel.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartDataLabel): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.ChartDataLabel
   - uid: excel.Excel.ChartDataLabel.showBubbleSize
     summary: |-
       Boolean value representing if the data label bubble size is visible or not.
@@ -393,7 +460,7 @@ items:
       plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

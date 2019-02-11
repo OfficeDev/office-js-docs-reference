@@ -14,12 +14,11 @@ items:
       - office.OfficeExtension.ClientRequestContext
     package: visio
     children:
-      - visio.Visio.RequestContext.constructor
+      - visio.Visio.RequestContext.(constructor)
       - visio.Visio.RequestContext.document
-  - uid: visio.Visio.RequestContext.constructor
-    summary: 'Constructs a new instance of the [RequestContext](xref:visio.Visio.RequestContext) class'
-    name: constructor(url)
-    fullName: constructor
+  - uid: visio.Visio.RequestContext.(constructor)
+    name: (constructor)(url)
+    fullName: (constructor)(url)
     langs:
       - typeScript
     type: constructor

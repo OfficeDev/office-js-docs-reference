@@ -19,9 +19,12 @@ items:
       - visio.Visio.Shape.hyperlinks
       - visio.Visio.Shape.id
       - visio.Visio.Shape.load
+      - visio.Visio.Shape.load_1
+      - visio.Visio.Shape.load_2
       - visio.Visio.Shape.name
       - visio.Visio.Shape.select
       - visio.Visio.Shape.set
+      - visio.Visio.Shape.set_1
       - visio.Visio.Shape.shapeDataItems
       - visio.Visio.Shape.subShapes
       - visio.Visio.Shape.text
@@ -48,7 +51,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getBounds()
-    fullName: getBounds
+    fullName: getBounds()
     langs:
       - typeScript
     type: method
@@ -94,6 +97,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Visio.Shape` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Visio.Shape` - Where option.select is a comma-delimited
@@ -148,21 +155,63 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.Shape;'
+      content: 'load(option?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;'
       return:
         type:
           - visio.Visio.Shape
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - visio.Visio.Interfaces.ShapeLoadOptions
+  - uid: visio.Visio.Shape.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Visio.Shape;'
+      return:
+        type:
+          - visio.Visio.Shape
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.Shape.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Shape;'
+      return:
+        type:
+          - visio.Visio.Shape
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: visio.Visio.Shape.name
     summary: |-
       Shape's name. Read-only.
@@ -202,7 +251,7 @@ items:
 
       `set(properties: Visio.Shape): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -223,6 +272,24 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: visio.Visio.Shape.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Visio.Shape): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - visio.Visio.Shape
   - uid: visio.Visio.Shape.shapeDataItems
     summary: |-
       Returns the Shape's Data Section. Read-only.
@@ -270,7 +337,7 @@ items:
           - string
   - uid: visio.Visio.Shape.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

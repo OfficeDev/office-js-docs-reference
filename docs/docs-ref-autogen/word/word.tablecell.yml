@@ -21,18 +21,26 @@ items:
       - word.Word.TableCell.deleteColumn
       - word.Word.TableCell.deleteRow
       - word.Word.TableCell.getBorder
+      - word.Word.TableCell.getBorder_1
       - word.Word.TableCell.getCellPadding
+      - word.Word.TableCell.getCellPadding_1
       - word.Word.TableCell.getNext
       - word.Word.TableCell.getNextOrNullObject
       - word.Word.TableCell.horizontalAlignment
       - word.Word.TableCell.insertColumns
+      - word.Word.TableCell.insertColumns_1
       - word.Word.TableCell.insertRows
+      - word.Word.TableCell.insertRows_1
       - word.Word.TableCell.load
+      - word.Word.TableCell.load_1
+      - word.Word.TableCell.load_2
       - word.Word.TableCell.parentRow
       - word.Word.TableCell.parentTable
       - word.Word.TableCell.rowIndex
       - word.Word.TableCell.set
+      - word.Word.TableCell.set_1
       - word.Word.TableCell.setCellPadding
+      - word.Word.TableCell.setCellPadding_1
       - word.Word.TableCell.shadingColor
       - word.Word.TableCell.toJSON
       - word.Word.TableCell.track
@@ -105,7 +113,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: deleteColumn()
-    fullName: deleteColumn
+    fullName: deleteColumn()
     langs:
       - typeScript
     type: method
@@ -121,7 +129,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: deleteRow()
-    fullName: deleteRow
+    fullName: deleteRow()
     langs:
       - typeScript
     type: method
@@ -137,7 +145,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getBorder(borderLocation)
-    fullName: getBorder
+    fullName: getBorder(borderLocation)
     langs:
       - typeScript
     type: method
@@ -152,13 +160,36 @@ items:
           description: Required. The border location.
           type:
             - word.Word.BorderLocation
+  - uid: word.Word.TableCell.getBorder_1
+    summary: |-
+      Gets the border style for the specified border.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getBorder(borderLocationString)
+    fullName: getBorder(borderLocationString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" |
+        "Inside" | "Outside" | "All"): Word.TableBorder;
+      return:
+        type:
+          - word.Word.TableBorder
+        description: ''
+      parameters:
+        - id: borderLocationString
+          description: Required. The border location.
+          type:
+            - '"Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"'
   - uid: word.Word.TableCell.getCellPadding
     summary: |-
       Gets cell padding in points.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getCellPadding(cellPaddingLocation)
-    fullName: getCellPadding
+    fullName: getCellPadding(cellPaddingLocation)
     langs:
       - typeScript
     type: method
@@ -173,13 +204,36 @@ items:
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - word.Word.CellPaddingLocation
+  - uid: word.Word.TableCell.getCellPadding_1
+    summary: |-
+      Gets cell padding in points.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getCellPadding(cellPaddingLocationString)
+    fullName: getCellPadding(cellPaddingLocationString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"):
+        OfficeExtension.ClientResult<number>;
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+      parameters:
+        - id: cellPaddingLocationString
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
+          type:
+            - '"Top" | "Left" | "Bottom" | "Right"'
   - uid: word.Word.TableCell.getNext
     summary: |-
       Gets the next cell. Throws if this cell is the last one.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNext()
-    fullName: getNext
+    fullName: getNext()
     langs:
       - typeScript
     type: method
@@ -195,7 +249,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNextOrNullObject()
-    fullName: getNextOrNullObject
+    fullName: getNextOrNullObject()
     langs:
       - typeScript
     type: method
@@ -228,7 +282,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertColumns(insertLocation, columnCount, values)'
-    fullName: insertColumns
+    fullName: 'insertColumns(insertLocation, columnCount, values)'
     langs:
       - typeScript
     type: method
@@ -251,6 +305,39 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
+  - uid: word.Word.TableCell.insertColumns_1
+    summary: >-
+      Adds columns to the left or right of the cell, using the cell's column as a template. This is applicable to
+      uniform tables. The string values, if specified, are set in the newly inserted rows.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertColumns(insertLocationString, columnCount, values)'
+    fullName: 'insertColumns(insertLocationString, columnCount, values)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertColumns(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", columnCount: number,
+        values?: string[][]): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: insertLocationString
+          description: Required. It can be 'Before' or 'After'.
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
+        - id: columnCount
+          description: Required. Number of columns to add.
+          type:
+            - number
+        - id: values
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
   - uid: word.Word.TableCell.insertRows
     summary: >-
       Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set
@@ -259,7 +346,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertRows(insertLocation, rowCount, values)'
-    fullName: insertRows
+    fullName: 'insertRows(insertLocation, rowCount, values)'
     langs:
       - typeScript
     type: method
@@ -282,12 +369,49 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
+  - uid: word.Word.TableCell.insertRows_1
+    summary: >-
+      Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set
+      in the newly inserted rows.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertRows(insertLocationString, rowCount, values)'
+    fullName: 'insertRows(insertLocationString, rowCount, values)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertRows(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?:
+        string[][]): Word.TableRowCollection;
+      return:
+        type:
+          - Word.TableRowCollection
+        description: ''
+      parameters:
+        - id: insertLocationString
+          description: Required. It can be 'Before' or 'After'.
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
+        - id: rowCount
+          description: Required. Number of rows to add.
+          type:
+            - number
+        - id: values
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
   - uid: word.Word.TableCell.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Word.TableCell` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Word.TableCell` - Where option.select is a comma-delimited
@@ -301,21 +425,63 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.TableCell;'
+      content: 'load(option?: Word.Interfaces.TableCellLoadOptions): Word.TableCell;'
       return:
         type:
           - Word.TableCell
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - Word.Interfaces.TableCellLoadOptions
+  - uid: word.Word.TableCell.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.TableCell;'
+      return:
+        type:
+          - Word.TableCell
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: word.Word.TableCell.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.TableCell;'
+      return:
+        type:
+          - Word.TableCell
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: word.Word.TableCell.parentRow
     summary: |-
       Gets the parent row of the cell. Read-only.
@@ -370,7 +536,7 @@ items:
 
       `set(properties: Word.TableCell): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -391,13 +557,31 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: word.Word.TableCell.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Word.TableCell): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Word.TableCell
   - uid: word.Word.TableCell.setCellPadding
     summary: |-
       Sets cell padding in points.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'setCellPadding(cellPaddingLocation, cellPadding)'
-    fullName: setCellPadding
+    fullName: 'setCellPadding(cellPaddingLocation, cellPadding)'
     langs:
       - typeScript
     type: method
@@ -412,6 +596,31 @@ items:
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - word.Word.CellPaddingLocation
+        - id: cellPadding
+          description: Required. The cell padding.
+          type:
+            - number
+  - uid: word.Word.TableCell.setCellPadding_1
+    summary: |-
+      Sets cell padding in points.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'setCellPadding(cellPaddingLocationString, cellPadding)'
+    fullName: 'setCellPadding(cellPaddingLocationString, cellPadding)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cellPaddingLocationString
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
+          type:
+            - '"Top" | "Left" | "Bottom" | "Right"'
         - id: cellPadding
           description: Required. The cell padding.
           type:
@@ -433,7 +642,7 @@ items:
           - string
   - uid: word.Word.TableCell.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -451,7 +660,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -468,7 +677,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

@@ -27,7 +27,7 @@ items:
     summary: Returns a Promise with all keys.
     isPreview: true
     name: getAllKeys(callback)
-    fullName: getAllKeys
+    fullName: getAllKeys(callback)
     langs:
       - typeScript
     type: method
@@ -46,7 +46,7 @@ items:
     summary: Retrieves an object based on a key and invokes a callback when finished. Returns a Promise.
     isPreview: true
     name: 'getItem(key, callback)'
-    fullName: getItem
+    fullName: 'getItem(key, callback)'
     langs:
       - typeScript
     type: method
@@ -69,7 +69,7 @@ items:
     summary: 'Fetches a batch of keys, specified in the `keys` array. When a key doesn''t exist, returns null.'
     isPreview: true
     name: 'multiGet(keys, callback)'
-    fullName: multiGet
+    fullName: 'multiGet(keys, callback)'
     langs:
       - typeScript
     type: method
@@ -92,7 +92,7 @@ items:
     summary: 'Deletes a batch of keys, specified in the `keys` array.'
     isPreview: true
     name: 'multiRemove(keys, callback)'
-    fullName: multiRemove
+    fullName: 'multiRemove(keys, callback)'
     langs:
       - typeScript
     type: method
@@ -115,7 +115,7 @@ items:
     summary: 'Stores multiple key-value pairs in one batch. Returns a Promise. When a key doesn''t exist, returns null.'
     isPreview: true
     name: 'multiSet(keyValuePairs, callback)'
-    fullName: multiSet
+    fullName: 'multiSet(keyValuePairs, callback)'
     langs:
       - typeScript
     type: method
@@ -138,7 +138,7 @@ items:
     summary: Removes an item for specified key and invokes a callback when finished. Returns a Promise.
     isPreview: true
     name: 'removeItem(key, callback)'
-    fullName: removeItem
+    fullName: 'removeItem(key, callback)'
     langs:
       - typeScript
     type: method
@@ -161,7 +161,7 @@ items:
     summary: Assigns the value for a key-value pair and invokes a callback when finished. Returns a Promise.
     isPreview: true
     name: 'setItem(key, value, callback)'
-    fullName: setItem
+    fullName: 'setItem(key, value, callback)'
     langs:
       - typeScript
     type: method

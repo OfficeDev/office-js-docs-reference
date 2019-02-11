@@ -43,13 +43,62 @@ items:
     package: office
     children:
       - office.Office.Binding.addHandlerAsync
-      - office.Office.Binding.document
+      - office.Office.Binding.addHandlerAsync_1
       - office.Office.Binding.getDataAsync
-      - office.Office.Binding.id
+      - office.Office.Binding.getDataAsync_1
       - office.Office.Binding.removeHandlerAsync
+      - office.Office.Binding.removeHandlerAsync_1
       - office.Office.Binding.setDataAsync
+      - office.Office.Binding.setDataAsync_1
+      - office.Office.Binding.document
+      - office.Office.Binding.id
       - office.Office.Binding.type
   - uid: office.Office.Binding.addHandlerAsync
+    summary: >-
+      Adds an event handler to the object for the specified [Office.EventType](xref:office.Office.EventType)<!-- -->.
+      Supported EventTypes are `Office.EventType.BindingDataChanged` and `Office.EventType.BindingSelectionChanged`<!--
+      -->.
+    remarks: >-
+      You can add multiple event handlers for the specified eventType as long as the name of each event handler function
+      is unique.
+    name: 'addHandlerAsync(eventType, handler, options, callback)'
+    fullName: 'addHandlerAsync(eventType, handler, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
+        (result: Office.AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: >-
+            The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or
+            `Office.EventType.BindingSelectionChanged`<!-- -->.
+          type:
+            - Office.EventType
+        - id: handler
+          description: >-
+            The event handler function to add, whose only parameter is of type
+            [Office.BindingDataChangedEventArgs](xref:office.Office.BindingDataChangedEventArgs) or
+            [Office.BindingSelectionChangedEventArgs](xref:office.Office.BindingSelectionChangedEventArgs)<!-- -->.
+          type:
+            - any
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: Office.AsyncResult<void>) => void'
+  - uid: office.Office.Binding.addHandlerAsync_1
     summary: >-
       Adds an event handler to the object for the specified [Office.EventType](xref:office.Office.EventType)<!-- -->.
       Supported EventTypes are `Office.EventType.BindingDataChanged` and `Office.EventType.BindingSelectionChanged`<!--
@@ -113,15 +162,15 @@ items:
       }
 
       ```
-    name: 'addHandlerAsync(eventType, handler, options, callback)'
-    fullName: addHandlerAsync
+    name: 'addHandlerAsync(eventType, handler, callback)'
+    fullName: 'addHandlerAsync(eventType, handler, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
-        (result: Office.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -140,43 +189,46 @@ items:
             [Office.BindingSelectionChangedEventArgs](xref:office.Office.BindingSelectionChangedEventArgs)<!-- -->.
           type:
             - any
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: Office.AsyncResult<void>) => void'
-  - uid: office.Office.Binding.document
-    summary: Get the Document object associated with the binding.
-    name: document
-    fullName: document
+  - uid: office.Office.Binding.getDataAsync
+    summary: Returns the data contained within the binding.
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+
+
+      When called from a MatrixBinding or TableBinding, the getDataAsync method will return a subset of the bound values
+      if the optional startRow, startColumn, rowCount, and columnCount parameters are specified (and they specify a
+      contiguous and valid range).
+    name: 'getDataAsync(options, callback)'
+    fullName: 'getDataAsync(options, callback)'
     langs:
       - typeScript
-    type: property
+    type: method
     syntax:
-      content: 'document: Office.Document;'
+      content: 'getDataAsync<T>(options?: GetBindingDataOptions, callback?: (result: AsyncResult<T>) => void): void;'
       return:
         type:
-          - office.Office.Document
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-              write(asyncResult.value.document.url);
-          });
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - uid: office.Office.Binding.getDataAsync
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for how to get the data in a binding.
+          type:
+            - office.Office.GetBindingDataOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            values in the specified binding. If the `coercionType` parameter is specified (and the call is successful),
+            the data is returned in the format described in the CoercionType enumeration topic.
+          type:
+            - '(result: AsyncResult<T>) => void'
+  - uid: office.Office.Binding.getDataAsync_1
     summary: Returns the data contained within the binding.
     remarks: >-
       <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
@@ -270,22 +322,18 @@ items:
       }
 
       ```
-    name: 'getDataAsync(options, callback)'
-    fullName: getDataAsync
+    name: getDataAsync(callback)
+    fullName: getDataAsync(callback)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getDataAsync<T>(options?: GetBindingDataOptions, callback?: (result: AsyncResult<T>) => void): void;'
+      content: 'getDataAsync<T>(callback?: (result: AsyncResult<T>) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: options
-          description: Provides options for how to get the data in a binding.
-          type:
-            - office.Office.GetBindingDataOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -294,48 +342,11 @@ items:
             the data is returned in the format described in the CoercionType enumeration topic.
           type:
             - '(result: AsyncResult<T>) => void'
-  - uid: office.Office.Binding.id
-    summary: >-
-      A string that uniquely identifies this binding among the bindings in the same
-      [Office.Document](xref:office.Office.Document) object.
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'id: string;'
-      return:
-        type:
-          - string
-        description: |-
-
-          #### Examples
-
-          ```javascript
-          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-              write(asyncResult.value.id);
-          });
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
   - uid: office.Office.Binding.removeHandlerAsync
     summary: Removes the specified handler from the binding for the specified event type.
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>BindingEvents</td></tr></table>
-      #### Examples
-
-      ```javascript
-      function removeEventHandlerFromBinding() {
-          Office.select("bindings#MyBinding").removeHandlerAsync(
-              Office.EventType.BindingDataChanged, {handler:onBindingDataChanged});
-      }
-      ```
+    remarks: <table><tr><td>Requirement Sets</td><td>BindingEvents</td></tr></table>
     name: 'removeHandlerAsync(eventType, options, callback)'
-    fullName: removeHandlerAsync
+    fullName: 'removeHandlerAsync(eventType, options, callback)'
     langs:
       - typeScript
     type: method
@@ -364,7 +375,164 @@ items:
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Binding.removeHandlerAsync_1
+    summary: Removes the specified handler from the binding for the specified event type.
+    remarks: |-
+      <table><tr><td>Requirement Sets</td><td>BindingEvents</td></tr></table>
+      #### Examples
+
+      ```javascript
+      function removeEventHandlerFromBinding() {
+          Office.select("bindings#MyBinding").removeHandlerAsync(
+              Office.EventType.BindingDataChanged, {handler:onBindingDataChanged});
+      }
+      ```
+    name: 'removeHandlerAsync(eventType, callback)'
+    fullName: 'removeHandlerAsync(eventType, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeHandlerAsync(eventType: Office.EventType, callback?: (result: AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: >-
+            The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or
+            `Office.EventType.BindingSelectionChanged`<!-- -->.
+          type:
+            - Office.EventType
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Binding.setDataAsync
+    summary: Writes data to the bound section of the document represented by the specified binding object.
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+
+
+      The value passed for data contains the data to be written in the binding. The kind of value passed determines what
+      will be written as described in the following table.
+
+
+      <table> <tr> <th>`data` value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>Plain text or anything
+      that can be coerced to a string will be written.</td> </tr> <tr> <td>An array of arrays ("matrix")</td>
+      <td>Tabular data without headers will be written. For example, to write data to three rows in two columns, you can
+      pass an array like this: `[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`<!-- -->. To write a single
+      column of three rows, pass an array like this: `[["R1C1"], ["R2C1"], ["R3C1"]]`<!-- -->.</td> </tr> <tr> <td>An
+      [Office.TableData](xref:office.Office.TableData) object</td> <td>A table with headers will be written.</td> </tr>
+      </table>
+
+
+      Additionally, these application-specific actions apply when writing data to a binding. For Word, the specified
+      data is written to the binding as follows:
+
+
+      <table> <tr> <th>`data` value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>The specified text is
+      written.</td> </tr> <tr> <td>An array of arrays ("matrix") or an [Office.TableData](xref:office.Office.TableData)
+      object</td> <td>A Word table is written.</td> </tr> <tr> <td>HTML</td> <td>The specified HTML is written. If any
+      of the HTML you write is invalid, Word will not raise an error. Word will write as much of the HTML as it can and
+      will omit any invalid data.</td> </tr> <tr> <td>Office Open XML ("Open XML")</td> <td>The specified the XML is
+      written.</td> </tr> </table>
+
+
+      For Excel, the specified data is written to the binding as follows:
+
+
+      <table> <tr> <th>`data` value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>The specified text is
+      inserted as the value of the first bound cell.You can also specify a valid formula to add that formula to the
+      bound cell. For example, setting data to `"=SUM(A1:A5)"` will total the values in the specified range. However,
+      when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing
+      formula) from the bound cell. If you call the Binding.getDataAsync method on the bound cell to read its data, the
+      method can return only the data displayed in the cell (the formula's result).</td> </tr> <tr> <td>An array of
+      arrays ("matrix"), and the shape exactly matches the shape of the binding specified</td> <td>The set of rows and
+      columns are written.You can also specify an array of arrays that contain valid formulas to add them to the bound
+      cells. For example, setting data to `[["=SUM(A1:A5)","=AVERAGE(A1:A5)"]]` will add those two formulas to a binding
+      that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas
+      (or any pre-existing formulas) from the binding with the `Binding.getDataAsync` method - it returns only the data
+      displayed in the bound cells.</td> </tr> <tr> <td>An [Office.TableData](xref:office.Office.TableData) object, and
+      the shape of the table matches the bound table.</td> <td>The specified set of rows and/or headers are written, if
+      no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the TableData object
+      you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns"
+      feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to
+      write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a
+      TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td> </tr> </table>
+
+
+      For Excel Online:
+
+
+      - The total number of cells in the value passed to the data parameter can't exceed 20,000 in a single call to this
+      method.
+
+
+      - The number of formatting groups passed to the cellFormat parameter can't exceed 100. A single formatting group
+      consists of a set of formatting applied to a specified range of cells.
+
+
+      In all other cases, an error is returned.
+
+
+      The setDataAsync method will write data in a subset of a table or matrix binding if the optional startRow and
+      startColumn parameters are specified, and they specify a valid range.
+
+
+      In the callback function passed to the setDataAsync method, you can use the properties of the AsyncResult object
+      to return the following information.
+
+
+      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
+      undefined because there is no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td>
+      <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an
+      Error object that provides error information if the operation failed.</td> </tr> <tr>
+      <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object
+      without being altered.</td> </tr> </table>
+    name: 'setDataAsync(data, options, callback)'
+    fullName: 'setDataAsync(data, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setDataAsync(data: TableData | any, options?: SetBindingDataOptions, callback?: (result: AsyncResult<void>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: |-
+            The data to be set in the current selection. Possible data types by host:
+
+            string: Excel, Excel Online, Word, and Word Online only
+
+            array of arrays: Excel and Word only
+
+            [Office.TableData](xref:office.Office.TableData)<!-- -->: Access, Excel, and Word only
+
+            HTML: Word and Word Online only
+
+            Office Open XML: Word only
+          type:
+            - TableData | any
+        - id: options
+          description: Provides options for how to set the data in a binding.
+          type:
+            - office.Office.SetBindingDataOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Binding.setDataAsync_1
     summary: Writes data to the bound section of the document represented by the specified binding object.
     remarks: >-
       <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
@@ -563,15 +731,13 @@ items:
             {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]}, 
         function (asyncResult){});
       ```
-    name: 'setDataAsync(data, options, callback)'
-    fullName: setDataAsync
+    name: 'setDataAsync(data, callback)'
+    fullName: 'setDataAsync(data, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setDataAsync(data: TableData | any, options?: SetBindingDataOptions, callback?: (result: AsyncResult<void>) =>
-        void): void;
+      content: 'setDataAsync(data: TableData | any, callback?: (result: AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -592,16 +758,66 @@ items:
             Office Open XML: Word only
           type:
             - TableData | any
-        - id: options
-          description: Provides options for how to set the data in a binding.
-          type:
-            - office.Office.SetBindingDataOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Binding.document
+    summary: Get the Document object associated with the binding.
+    name: document
+    fullName: document
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'document: Office.Document;'
+      return:
+        type:
+          - office.Office.Document
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              write(asyncResult.value.document.url);
+          });
+
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
+  - uid: office.Office.Binding.id
+    summary: >-
+      A string that uniquely identifies this binding among the bindings in the same
+      [Office.Document](xref:office.Office.Document) object.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              write(asyncResult.value.id);
+          });
+
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
   - uid: office.Office.Binding.type
     summary: Gets the type of the binding.
     name: type

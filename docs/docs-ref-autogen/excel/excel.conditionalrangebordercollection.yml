@@ -18,10 +18,13 @@ items:
       - excel.Excel.ConditionalRangeBorderCollection.context
       - excel.Excel.ConditionalRangeBorderCollection.count
       - excel.Excel.ConditionalRangeBorderCollection.getItem
+      - excel.Excel.ConditionalRangeBorderCollection.getItem_1
       - excel.Excel.ConditionalRangeBorderCollection.getItemAt
       - excel.Excel.ConditionalRangeBorderCollection.items
       - excel.Excel.ConditionalRangeBorderCollection.left
       - excel.Excel.ConditionalRangeBorderCollection.load
+      - excel.Excel.ConditionalRangeBorderCollection.load_1
+      - excel.Excel.ConditionalRangeBorderCollection.load_2
       - excel.Excel.ConditionalRangeBorderCollection.right
       - excel.Excel.ConditionalRangeBorderCollection.toJSON
       - excel.Excel.ConditionalRangeBorderCollection.top
@@ -75,7 +78,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(index)
-    fullName: getItem
+    fullName: getItem(index)
     langs:
       - typeScript
     type: method
@@ -90,13 +93,34 @@ items:
           description: Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
           type:
             - excel.Excel.ConditionalRangeBorderIndex
+  - uid: excel.Excel.ConditionalRangeBorderCollection.getItem_1
+    summary: |-
+      Gets a border object using its name.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(indexString)
+    fullName: getItem(indexString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"): Excel.ConditionalRangeBorder;'
+      return:
+        type:
+          - excel.Excel.ConditionalRangeBorder
+        description: ''
+      parameters:
+        - id: indexString
+          description: Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
+          type:
+            - '"EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"'
   - uid: excel.Excel.ConditionalRangeBorderCollection.getItemAt
     summary: |-
       Gets a border object using its index.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: getItemAt
+    fullName: getItemAt(index)
     langs:
       - typeScript
     type: method
@@ -146,6 +170,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ConditionalRangeBorderCollection` - Where option is a comma-delimited
+      string or an array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorderCollection` - Where
       option.select is a comma-delimited string that specifies the properties to load, and options.expand is a
       comma-delimited string that specifies the navigation properties to load.
@@ -157,21 +185,60 @@ items:
       Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is
       specified, the result set will start after skipping the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ConditionalRangeBorderCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
       return:
         type:
           - excel.Excel.ConditionalRangeBorderCollection
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.ConditionalRangeBorderCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ConditionalRangeBorderCollection;'
+      return:
+        type:
+          - excel.Excel.ConditionalRangeBorderCollection
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ConditionalRangeBorderCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.ConditionalRangeBorderCollection;'
+      return:
+        type:
+          - excel.Excel.ConditionalRangeBorderCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.ConditionalRangeBorderCollection.right
     summary: |-
       Gets the right border. Read-only.
@@ -195,7 +262,7 @@ items:
       method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeBorderCollectionData`<!--
       -->) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

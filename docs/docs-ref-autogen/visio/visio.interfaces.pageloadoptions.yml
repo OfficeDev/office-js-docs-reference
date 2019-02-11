@@ -1,0 +1,122 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.PageLoadOptions
+    summary: |-
+      Represents the Page class.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: Visio.Interfaces.PageLoadOptions
+    fullName: Visio.Interfaces.PageLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.PageLoadOptions.$all
+      - visio.Visio.Interfaces.PageLoadOptions.height
+      - visio.Visio.Interfaces.PageLoadOptions.index
+      - visio.Visio.Interfaces.PageLoadOptions.isBackground
+      - visio.Visio.Interfaces.PageLoadOptions.name
+      - visio.Visio.Interfaces.PageLoadOptions.view
+      - visio.Visio.Interfaces.PageLoadOptions.width
+  - uid: visio.Visio.Interfaces.PageLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.PageLoadOptions.height
+    summary: |-
+      Returns the height of the page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.PageLoadOptions.index
+    summary: |-
+      Index of the Page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.PageLoadOptions.isBackground
+    summary: |-
+      Whether the page is a background page or not. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: isBackground
+    fullName: isBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isBackground?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.PageLoadOptions.name
+    summary: |-
+      Page name. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.PageLoadOptions.view
+    summary: |-
+      Returns the view of the page.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: view
+    fullName: view
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'view?: Visio.Interfaces.PageViewLoadOptions;'
+      return:
+        type:
+          - visio.Visio.Interfaces.PageViewLoadOptions
+  - uid: visio.Visio.Interfaces.PageLoadOptions.width
+    summary: |-
+      Returns the width of the page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type:
+          - boolean

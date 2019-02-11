@@ -273,7 +273,7 @@ OneNote.Application.navigateToPageWithClientUrl:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.FloatingInk.load:
+OneNote.FloatingInk.load_1:
   - |-
     OneNote.run(function(context) {
     
@@ -346,7 +346,7 @@ OneNote.Image.getBase64Image:
                 console.log(imageString);
             });
     });
-OneNote.Image.load:
+OneNote.Image.load_1:
   - |-
     OneNote.run(function(ctx){
         // Get the current outline.         
@@ -461,7 +461,7 @@ OneNote.Image.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.ImageOcrData.load:
+OneNote.ImageOcrData.load_1:
   - |-
     var image = null;
     
@@ -499,7 +499,7 @@ OneNote.ImageOcrData.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.InkAnalysis.load:
+OneNote.InkAnalysis.load_1:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -521,7 +521,7 @@ OneNote.InkAnalysis.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisLine.load:
+OneNote.InkAnalysisLine.load_1:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -548,7 +548,7 @@ OneNote.InkAnalysisLine.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisParagraph.load:
+OneNote.InkAnalysisParagraph.load_1:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -578,7 +578,7 @@ OneNote.InkAnalysisParagraph.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisWord.load:
+OneNote.InkAnalysisWord.load_1:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -681,7 +681,7 @@ OneNote.Notebook.getRestApiId:
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
-OneNote.Notebook.load:
+OneNote.Notebook.load_1:
   - |-
     OneNote.run(function (context) {
             
@@ -832,7 +832,7 @@ OneNote.NotebookCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.NotebookCollection.load:
+OneNote.NotebookCollection.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -1021,7 +1021,7 @@ OneNote.Page.getRestApiId:
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
-OneNote.Page.insertPageAsSibling:
+OneNote.Page.insertPageAsSibling_1:
   - |-
     OneNote.run(function (context) {
     
@@ -1046,7 +1046,7 @@ OneNote.Page.insertPageAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Page.load:
+OneNote.Page.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -1170,7 +1170,7 @@ OneNote.PageCollection.getByTitle:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.PageCollection.load:
+OneNote.PageCollection.load_1:
   - |-
     OneNote.run(function (context) {
         
@@ -1244,7 +1244,7 @@ OneNote.PageContentCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.PageContentCollection.load:
+OneNote.PageContentCollection.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -1432,7 +1432,7 @@ OneNote.Paragraph.insertRichTextAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.Paragraph.load:
+OneNote.Paragraph.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -1531,7 +1531,7 @@ OneNote.ParagraphCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.ParagraphCollection.load:
+OneNote.ParagraphCollection.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -1619,7 +1619,7 @@ OneNote.ParagraphCollection.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.RichText.load:
+OneNote.RichText.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -1764,7 +1764,7 @@ OneNote.Section.copyToSectionGroup:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Section.insertSectionAsSibling:
+OneNote.Section.insertSectionAsSibling_1:
   - |-
     OneNote.run(function (context) {
                 
@@ -1807,7 +1807,7 @@ OneNote.Section.getRestApiId:
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
-OneNote.Section.load:
+OneNote.Section.load_1:
   - |-
     OneNote.run(function (context) {
             
@@ -1910,7 +1910,7 @@ OneNote.SectionCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.SectionCollection.load:
+OneNote.SectionCollection.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -2009,7 +2009,7 @@ OneNote.SectionGroup.addSectionGroup:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.SectionGroup.load:
+OneNote.SectionGroup.load_1:
   - |-
     OneNote.run(function (context) {
             
@@ -2154,7 +2154,7 @@ OneNote.SectionGroupCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.SectionGroupCollection.load:
+OneNote.SectionGroupCollection.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -2333,7 +2333,7 @@ OneNote.Table.insertRow:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Table.load:
+OneNote.Table.load_1:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2469,7 +2469,7 @@ OneNote.TableCell.appendRichText:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.TableCell.load:
+OneNote.TableCell.load_1:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2588,7 +2588,7 @@ OneNote.TableRow.insertRowAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.TableRow.load:
+OneNote.TableRow.load_1:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;

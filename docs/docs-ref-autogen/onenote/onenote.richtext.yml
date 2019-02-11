@@ -19,6 +19,8 @@ items:
       - onenote.OneNote.RichText.id
       - onenote.OneNote.RichText.languageId
       - onenote.OneNote.RichText.load
+      - onenote.OneNote.RichText.load_1
+      - onenote.OneNote.RichText.load_2
       - onenote.OneNote.RichText.paragraph
       - onenote.OneNote.RichText.text
       - onenote.OneNote.RichText.toJSON
@@ -44,7 +46,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getHtml()
-    fullName: getHtml
+    fullName: getHtml()
     langs:
       - typeScript
     type: method
@@ -92,6 +94,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.RichText` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.RichText` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -102,88 +108,126 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      OneNote.run(function (context) {
-
-          // Get the collection of pageContent items from the page.
-          var pageContents = context.application.getActivePage().contents;
-
-          // Get the first PageContent on the page, and then get its outline's paragraphs.
-          var outlinePageContents = ;
-          var paragraphs = ;
-          var richTextParagraphs = ;
-          // Queue a command to load the id and type of each page content in the outline.
-          pageContents.load("id,type");
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
-                  // Load all page contents of type Outline
-                  $.each(pageContents.items, function(index, pageContent) {
-                      if(pageContent.type == 'Outline')
-                      {
-                          pageContent.load('outline,outline/paragraphs,outline/paragraphs/type');
-                          outlinePageContents.push(pageContent);
-                      }
-                  });
-                  return context.sync();
-              })
-              .then(function () {
-                  // Load all rich text paragraphs across outlines
-                  $.each(outlinePageContents, function(index, outlinePageContent) {
-                      var outline = outlinePageContent.outline;
-                      paragraphs = paragraphs.concat(outline.paragraphs.items);
-                  });
-                  $.each(paragraphs, function(index, paragraph) {
-                      if(paragraph.type == 'RichText')
-                      {
-                          richTextParagraphs.push(paragraph);
-                          paragraph.load("id,richText/text");
-                      }
-                  });
-                  return context.sync();
-              })
-              .then(function () {
-                  // Display all rich text paragraphs to the console
-                  $.each(richTextParagraphs, function(index, richTextParagraph) {
-                      var richText = richTextParagraph.richText;
-                      console.log(
-                          "Paragraph found with richtext content : " + 
-                          richText.text + " and richtext id : " + richText.id);
-                  });
-                  return context.sync();
-              });
-      });
-
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      }); 
-
-      ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.RichText;'
+      content: 'load(option?: OneNote.Interfaces.RichTextLoadOptions): OneNote.RichText;'
       return:
         type:
           - onenote.OneNote.RichText
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.RichTextLoadOptions
+  - uid: onenote.OneNote.RichText.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): OneNote.RichText;'
+      return:
+        type:
+          - onenote.OneNote.RichText
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function (context) {
+
+              // Get the collection of pageContent items from the page.
+              var pageContents = context.application.getActivePage().contents;
+
+              // Get the first PageContent on the page, and then get its outline's paragraphs.
+              var outlinePageContents = ;
+              var paragraphs = ;
+              var richTextParagraphs = ;
+              // Queue a command to load the id and type of each page content in the outline.
+              pageContents.load("id,type");
+
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function () {
+                      // Load all page contents of type Outline
+                      $.each(pageContents.items, function(index, pageContent) {
+                          if(pageContent.type == 'Outline')
+                          {
+                              pageContent.load('outline,outline/paragraphs,outline/paragraphs/type');
+                              outlinePageContents.push(pageContent);
+                          }
+                      });
+                      return context.sync();
+                  })
+                  .then(function () {
+                      // Load all rich text paragraphs across outlines
+                      $.each(outlinePageContents, function(index, outlinePageContent) {
+                          var outline = outlinePageContent.outline;
+                          paragraphs = paragraphs.concat(outline.paragraphs.items);
+                      });
+                      $.each(paragraphs, function(index, paragraph) {
+                          if(paragraph.type == 'RichText')
+                          {
+                              richTextParagraphs.push(paragraph);
+                              paragraph.load("id,richText/text");
+                          }
+                      });
+                      return context.sync();
+                  })
+                  .then(function () {
+                      // Display all rich text paragraphs to the console
+                      $.each(richTextParagraphs, function(index, richTextParagraph) {
+                          var richText = richTextParagraph.richText;
+                          console.log(
+                              "Paragraph found with richtext content : " + 
+                              richText.text + " and richtext id : " + richText.id);
+                      });
+                      return context.sync();
+                  });
+          });
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          }); 
+          ```
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.RichText.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.RichText;'
+      return:
+        type:
+          - onenote.OneNote.RichText
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: onenote.OneNote.RichText.paragraph
     summary: |-
       Gets the Paragraph object that contains the RichText object. Read-only.
@@ -222,7 +266,7 @@ items:
       JavaScript object (typed as `OneNote.Interfaces.RichTextData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -240,7 +284,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -257,7 +301,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

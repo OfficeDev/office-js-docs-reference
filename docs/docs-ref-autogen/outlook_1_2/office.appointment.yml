@@ -15,5 +15,5 @@ items:
       - typeScript
     type: interface
     extends:
-      - Item
+      - 'Item '
     package: Outlook_1_2

@@ -2,8 +2,8 @@
 items:
   - uid: excel.Excel.Interfaces.ConditionalRangeFormatUpdateData
     summary: >-
-      An interface for updating data on the ConditionalRangeFormat object, for use in "conditionalRangeFormat.set({ ...
-      })".
+      An interface for updating data on the ConditionalRangeFormat object, for use in "conditionalRangeFormat.set(<!--
+      -->{ ... }<!-- -->)".
     name: Excel.Interfaces.ConditionalRangeFormatUpdateData
     fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
     langs:

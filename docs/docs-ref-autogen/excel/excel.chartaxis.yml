@@ -26,6 +26,8 @@ items:
       - excel.Excel.ChartAxis.isBetweenCategories
       - excel.Excel.ChartAxis.left
       - excel.Excel.ChartAxis.load
+      - excel.Excel.ChartAxis.load_1
+      - excel.Excel.ChartAxis.load_2
       - excel.Excel.ChartAxis.logBase
       - excel.Excel.ChartAxis.majorGridlines
       - excel.Excel.ChartAxis.majorTickMark
@@ -45,6 +47,7 @@ items:
       - excel.Excel.ChartAxis.reversePlotOrder
       - excel.Excel.ChartAxis.scaleType
       - excel.Excel.ChartAxis.set
+      - excel.Excel.ChartAxis.set_1
       - excel.Excel.ChartAxis.setCategoryNames
       - excel.Excel.ChartAxis.setCustomDisplayUnit
       - excel.Excel.ChartAxis.setPositionAt
@@ -259,6 +262,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartAxis` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartAxis` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -269,67 +276,101 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      // Get the maximum of Chart Axis from Chart1
-
-      Excel.run(function (ctx) { 
-          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-          var axis = chart.axes.valueAxis;
-          axis.load('maximum');
-          return ctx.sync().then(function() {
-                  console.log(axis.maximum);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      // Set the maximum, minimum, majorunit, minorunit of valueaxis. 
-
-      Excel.run(function (ctx) { 
-          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-          chart.axes.valueAxis.maximum = 5;
-          chart.axes.valueAxis.minimum = 0;
-          chart.axes.valueAxis.majorUnit = 1;
-          chart.axes.valueAxis.minorUnit = 0.2;
-          return ctx.sync().then(function() {
-                  console.log("Axis Settings Changed");
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartAxis;'
+      content: 'load(option?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;'
       return:
         type:
           - excel.Excel.ChartAxis
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ChartAxisLoadOptions
+  - uid: excel.Excel.ChartAxis.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartAxis;'
+      return:
+        type:
+          - excel.Excel.ChartAxis
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // Get the maximum of Chart Axis from Chart1
+          Excel.run(function (ctx) { 
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              var axis = chart.axes.valueAxis;
+              axis.load('maximum');
+              return ctx.sync().then(function() {
+                      console.log(axis.maximum);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          // Set the maximum, minimum, majorunit, minorunit of valueaxis. 
+          Excel.run(function (ctx) { 
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              chart.axes.valueAxis.maximum = 5;
+              chart.axes.valueAxis.minimum = 0;
+              chart.axes.valueAxis.majorUnit = 1;
+              chart.axes.valueAxis.minorUnit = 0.2;
+              return ctx.sync().then(function() {
+                      console.log("Axis Settings Changed");
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartAxis.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxis;'
+      return:
+        type:
+          - excel.Excel.ChartAxis
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.ChartAxis.logBase
     summary: |-
       Represents the base of the logarithm when using logarithmic scales.
@@ -625,7 +666,7 @@ items:
 
       `set(properties: Excel.ChartAxis): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -646,13 +687,31 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ChartAxis.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartAxis): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.ChartAxis
   - uid: excel.Excel.ChartAxis.setCategoryNames
     summary: |-
       Sets all the category names for the specified axis.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setCategoryNames(sourceData)
-    fullName: setCategoryNames
+    fullName: setCategoryNames(sourceData)
     langs:
       - typeScript
     type: method
@@ -673,7 +732,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setCustomDisplayUnit(value)
-    fullName: setCustomDisplayUnit
+    fullName: setCustomDisplayUnit(value)
     langs:
       - typeScript
     type: method
@@ -694,7 +753,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setPositionAt(value)
-    fullName: setPositionAt
+    fullName: setPositionAt(value)
     langs:
       - typeScript
     type: method
@@ -829,7 +888,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.ChartAxisData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

@@ -2,8 +2,8 @@
 items:
   - uid: excel.Excel.Interfaces.CustomConditionalFormatUpdateData
     summary: >-
-      An interface for updating data on the CustomConditionalFormat object, for use in "customConditionalFormat.set({
-      ... })".
+      An interface for updating data on the CustomConditionalFormat object, for use in "customConditionalFormat.set(<!--
+      -->{ ... }<!-- -->)".
     name: Excel.Interfaces.CustomConditionalFormatUpdateData
     fullName: Excel.Interfaces.CustomConditionalFormatUpdateData
     langs:

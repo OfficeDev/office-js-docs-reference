@@ -15,6 +15,7 @@ items:
     package: onenote
     children:
       - onenote.OneNote.Paragraph.addNoteTag
+      - onenote.OneNote.Paragraph.addNoteTag_1
       - onenote.OneNote.Paragraph.context
       - onenote.OneNote.Paragraph.delete
       - onenote.OneNote.Paragraph.getParagraphInfo
@@ -22,10 +23,16 @@ items:
       - onenote.OneNote.Paragraph.image
       - onenote.OneNote.Paragraph.inkWords
       - onenote.OneNote.Paragraph.insertHtmlAsSibling
+      - onenote.OneNote.Paragraph.insertHtmlAsSibling_1
       - onenote.OneNote.Paragraph.insertImageAsSibling
+      - onenote.OneNote.Paragraph.insertImageAsSibling_1
       - onenote.OneNote.Paragraph.insertRichTextAsSibling
+      - onenote.OneNote.Paragraph.insertRichTextAsSibling_1
       - onenote.OneNote.Paragraph.insertTableAsSibling
+      - onenote.OneNote.Paragraph.insertTableAsSibling_1
       - onenote.OneNote.Paragraph.load
+      - onenote.OneNote.Paragraph.load_1
+      - onenote.OneNote.Paragraph.load_2
       - onenote.OneNote.Paragraph.outline
       - onenote.OneNote.Paragraph.paragraphs
       - onenote.OneNote.Paragraph.parentParagraph
@@ -34,6 +41,7 @@ items:
       - onenote.OneNote.Paragraph.parentTableCellOrNull
       - onenote.OneNote.Paragraph.richText
       - onenote.OneNote.Paragraph.set
+      - onenote.OneNote.Paragraph.set_1
       - onenote.OneNote.Paragraph.table
       - onenote.OneNote.Paragraph.toJSON
       - onenote.OneNote.Paragraph.track
@@ -45,7 +53,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'addNoteTag(type, status)'
-    fullName: addNoteTag
+    fullName: 'addNoteTag(type, status)'
     langs:
       - typeScript
     type: method
@@ -64,6 +72,36 @@ items:
           description: The status of the NoteTag.
           type:
             - onenote.OneNote.NoteTagStatus
+  - uid: onenote.OneNote.Paragraph.addNoteTag_1
+    summary: |-
+      Add NoteTag to the paragraph.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: 'addNoteTag(typeString, status)'
+    fullName: 'addNoteTag(typeString, status)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addNoteTag(typeString: "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" |
+        "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2", status: "Unknown" | "Normal" | "Completed"
+        | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"): OneNote.NoteTag;
+      return:
+        type:
+          - onenote.OneNote.NoteTag
+        description: ''
+      parameters:
+        - id: typeString
+          description: The type of the NoteTag.
+          type:
+            - >-
+              "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea"
+              | "Critical" | "ToDoPriority1" | "ToDoPriority2"
+        - id: status
+          description: The status of the NoteTag.
+          type:
+            - '"Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"'
   - uid: onenote.OneNote.Paragraph.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -84,7 +122,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -138,7 +176,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getParagraphInfo()
-    fullName: getParagraphInfo
+    fullName: getParagraphInfo()
     langs:
       - typeScript
     type: method
@@ -199,7 +237,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertHtmlAsSibling(insertLocation, html)'
-    fullName: insertHtmlAsSibling
+    fullName: 'insertHtmlAsSibling(insertLocation, html)'
     langs:
       - typeScript
     type: method
@@ -258,13 +296,41 @@ items:
             the OneNote add-ins JavaScript API.
           type:
             - string
+  - uid: onenote.OneNote.Paragraph.insertHtmlAsSibling_1
+    summary: |-
+      Inserts the specified HTML content
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: 'insertHtmlAsSibling(insertLocationString, html)'
+    fullName: 'insertHtmlAsSibling(insertLocationString, html)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertHtmlAsSibling(insertLocationString: "Before" | "After", html: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: insertLocationString
+          description: The location of new contents relative to the current Paragraph.
+          type:
+            - '"Before" | "After"'
+        - id: html
+          description: >-
+            An HTML string that describes the visual presentation of the content. See [Supported
+            HTML](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html) for
+            the OneNote add-ins JavaScript API.
+          type:
+            - string
   - uid: onenote.OneNote.Paragraph.insertImageAsSibling
     summary: |-
       Inserts the image at the specified insert location..
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertImageAsSibling(insertLocation, base64EncodedImage, width, height)'
-    fullName: insertImageAsSibling
+    fullName: 'insertImageAsSibling(insertLocation, base64EncodedImage, width, height)'
     langs:
       - typeScript
     type: method
@@ -330,13 +396,48 @@ items:
           description: Optional. Height in the unit of Points. The default value is null and image height will be respected.
           type:
             - number
+  - uid: onenote.OneNote.Paragraph.insertImageAsSibling_1
+    summary: |-
+      Inserts the image at the specified insert location..
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: 'insertImageAsSibling(insertLocationString, base64EncodedImage, width, height)'
+    fullName: 'insertImageAsSibling(insertLocationString, base64EncodedImage, width, height)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertImageAsSibling(insertLocationString: "Before" | "After", base64EncodedImage: string, width: number,
+        height: number): OneNote.Image;
+      return:
+        type:
+          - onenote.OneNote.Image
+        description: ''
+      parameters:
+        - id: insertLocationString
+          description: The location of the table relative to the current Paragraph.
+          type:
+            - '"Before" | "After"'
+        - id: base64EncodedImage
+          description: HTML string to append.
+          type:
+            - string
+        - id: width
+          description: Optional. Width in the unit of Points. The default value is null and image width will be respected.
+          type:
+            - number
+        - id: height
+          description: Optional. Height in the unit of Points. The default value is null and image height will be respected.
+          type:
+            - number
   - uid: onenote.OneNote.Paragraph.insertRichTextAsSibling
     summary: |-
       Inserts the paragraph text at the specifiec insert location.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertRichTextAsSibling(insertLocation, paragraphText)'
-    fullName: insertRichTextAsSibling
+    fullName: 'insertRichTextAsSibling(insertLocation, paragraphText)'
     langs:
       - typeScript
     type: method
@@ -392,13 +493,38 @@ items:
           description: HTML string to append.
           type:
             - string
+  - uid: onenote.OneNote.Paragraph.insertRichTextAsSibling_1
+    summary: |-
+      Inserts the paragraph text at the specifiec insert location.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: 'insertRichTextAsSibling(insertLocationString, paragraphText)'
+    fullName: 'insertRichTextAsSibling(insertLocationString, paragraphText)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertRichTextAsSibling(insertLocationString: "Before" | "After", paragraphText: string): OneNote.RichText;'
+      return:
+        type:
+          - onenote.OneNote.RichText
+        description: ''
+      parameters:
+        - id: insertLocationString
+          description: The location of the table relative to the current Paragraph.
+          type:
+            - '"Before" | "After"'
+        - id: paragraphText
+          description: HTML string to append.
+          type:
+            - string
   - uid: onenote.OneNote.Paragraph.insertTableAsSibling
     summary: |-
       Adds a table with the specified number of rows and columns before or after the current paragraph.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertTableAsSibling(insertLocation, rowCount, columnCount, values)'
-    fullName: insertTableAsSibling
+    fullName: 'insertTableAsSibling(insertLocation, rowCount, columnCount, values)'
     langs:
       - typeScript
     type: method
@@ -427,12 +553,51 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
+  - uid: onenote.OneNote.Paragraph.insertTableAsSibling_1
+    summary: |-
+      Adds a table with the specified number of rows and columns before or after the current paragraph.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: 'insertTableAsSibling(insertLocationString, rowCount, columnCount, values)'
+    fullName: 'insertTableAsSibling(insertLocationString, rowCount, columnCount, values)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertTableAsSibling(insertLocationString: "Before" | "After", rowCount: number, columnCount: number, values?:
+        string[][]): OneNote.Table;
+      return:
+        type:
+          - OneNote.Table
+        description: ''
+      parameters:
+        - id: insertLocationString
+          description: The location of the table relative to the current Paragraph.
+          type:
+            - '"Before" | "After"'
+        - id: rowCount
+          description: The number of rows in the table.
+          type:
+            - number
+        - id: columnCount
+          description: The number of columns in the table.
+          type:
+            - number
+        - id: values
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
   - uid: onenote.OneNote.Paragraph.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): OneNote.Paragraph` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): OneNote.Paragraph` - Where option.select is a
@@ -445,101 +610,135 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      OneNote.run(function (context) {
-
-          // Get the collection of pageContent items from the page.
-          var pageContents = context.application.getActivePage().contents;
-          
-          // Queue a command to load the outline property of each pageContent.
-          pageContents.load("outline");
-              
-          // Get the first PageContent on the page, and then get its Outline.
-          var pageContent = pageContents._GetItem(0);
-          var paragraphs = pageContent.outline.paragraphs;
-                  
-          // Queue a command to load the id and type of each paragraph.
-          paragraphs.load("id,type");
-                  
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
-                  
-                  // Write the text.                  
-                  $.each(paragraphs.items, function(index, paragraph) {
-                      console.log("Paragraph type: " + paragraph.type);
-                      console.log("Paragraph ID: " + paragraph.id);
-                  });
-              });
-      })        
-
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      }); 
-
-      ```
-
-      ```javascript
-
-      OneNote.run(function(context) {
-          var app = context.application;
-          
-          // Gets the active outline
-          var outline = app.getActiveOutline();
-          
-          // load nested paragraphs and their types.
-          outline.load("paragraphs/type");
-          
-          return context.sync().then(function () {
-              var paragraphs = outline.paragraphs.items;
-              
-              var promise;
-              // for each nested paragraphs, load tables only
-              for (var i = 0; i < paragraphs.length; i++) {
-                  var paragraph = paragraphs[i];
-                  if (paragraph.type == "Table") {
-                      paragraph.load("table/id");
-                      promise =  context.sync().then(function() {
-                          console.log(paragraph.table.id);
-                      });
-                  }
-              }
-              return promise;
-          })
-      })
-
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.Paragraph;'
+      content: 'load(option?: OneNote.Interfaces.ParagraphLoadOptions): OneNote.Paragraph;'
       return:
         type:
           - onenote.OneNote.Paragraph
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.ParagraphLoadOptions
+  - uid: onenote.OneNote.Paragraph.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): OneNote.Paragraph;'
+      return:
+        type:
+          - onenote.OneNote.Paragraph
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function (context) {
+
+              // Get the collection of pageContent items from the page.
+              var pageContents = context.application.getActivePage().contents;
+              
+              // Queue a command to load the outline property of each pageContent.
+              pageContents.load("outline");
+                  
+              // Get the first PageContent on the page, and then get its Outline.
+              var pageContent = pageContents._GetItem(0);
+              var paragraphs = pageContent.outline.paragraphs;
+                      
+              // Queue a command to load the id and type of each paragraph.
+              paragraphs.load("id,type");
+                      
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function () {
+                      
+                      // Write the text.                  
+                      $.each(paragraphs.items, function(index, paragraph) {
+                          console.log("Paragraph type: " + paragraph.type);
+                          console.log("Paragraph ID: " + paragraph.id);
+                      });
+                  });
+          })        
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          }); 
+          ```
+          ```javascript
+          OneNote.run(function(context) {
+              var app = context.application;
+              
+              // Gets the active outline
+              var outline = app.getActiveOutline();
+              
+              // load nested paragraphs and their types.
+              outline.load("paragraphs/type");
+              
+              return context.sync().then(function () {
+                  var paragraphs = outline.paragraphs.items;
+                  
+                  var promise;
+                  // for each nested paragraphs, load tables only
+                  for (var i = 0; i < paragraphs.length; i++) {
+                      var paragraph = paragraphs[i];
+                      if (paragraph.type == "Table") {
+                          paragraph.load("table/id");
+                          promise =  context.sync().then(function() {
+                              console.log(paragraph.table.id);
+                          });
+                      }
+                  }
+                  return promise;
+              })
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.Paragraph.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Paragraph;'
+      return:
+        type:
+          - onenote.OneNote.Paragraph
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: onenote.OneNote.Paragraph.outline
     summary: |-
       Gets the Outline object that contains the Paragraph. Read-only.
@@ -658,7 +857,7 @@ items:
 
       `set(properties: OneNote.Paragraph): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -679,6 +878,24 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: onenote.OneNote.Paragraph.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: OneNote.Paragraph): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - onenote.OneNote.Paragraph
   - uid: onenote.OneNote.Paragraph.table
     summary: |-
       Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
@@ -702,7 +919,7 @@ items:
       JavaScript object (typed as `OneNote.Interfaces.ParagraphData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -720,7 +937,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -752,7 +969,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

@@ -32,13 +32,91 @@ items:
     package: office
     children:
       - office.Office.Settings.addHandlerAsync
+      - office.Office.Settings.addHandlerAsync_1
       - office.Office.Settings.get
       - office.Office.Settings.refreshAsync
       - office.Office.Settings.remove
       - office.Office.Settings.removeHandlerAsync
+      - office.Office.Settings.removeHandlerAsync_1
       - office.Office.Settings.saveAsync
+      - office.Office.Settings.saveAsync_1
       - office.Office.Settings.set
   - uid: office.Office.Settings.addHandlerAsync
+    summary: >-
+      Adds an event handler for the settingsChanged event.
+
+
+      **Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in is running
+      with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in
+      Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the
+      settingsChanged event is supported only in Excel Online in co-authoring scenarios.
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+
+
+      You can add multiple event handlers for the specified eventType as long as the name of each event handler function
+      is unique.
+    name: 'addHandlerAsync(eventType, handler, options, callback)'
+    fullName: 'addHandlerAsync(eventType, handler, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
+        (result: AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: Specifies the type of event to add. Required.
+          type:
+            - Office.EventType
+        - id: handler
+          description: >-
+            The event handler function to add, whose only parameter is of type
+            [Office.SettingsChangedEventArgs](xref:office.Office.SettingsChangedEventArgs)<!-- -->. Required.
+          type:
+            - any
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+
+
+            <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
+            undefined because there is no data or object to retrieve when adding an event handler.</td> </tr> <tr>
+            <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr>
+            <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
+            failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is
+            returned in the AsyncResult object without being altered.</td> </tr> </table>
+
+
+            **Support details**
+
+
+            A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+            application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+            For more information about Office host application and server requirements, see [Requirements for running
+            Office
+            Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!--
+            -->.
+
+
+            *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online
+            (in browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Access </strong></td><td> </td><td> Y
+            </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> </td><td> Y </td><td> </td></tr> </table>
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Settings.addHandlerAsync_1
     summary: >-
       Adds an event handler for the settingsChanged event.
 
@@ -77,15 +155,15 @@ items:
       }
 
       ```
-    name: 'addHandlerAsync(eventType, handler, options, callback)'
-    fullName: addHandlerAsync
+    name: 'addHandlerAsync(eventType, handler, callback)'
+    fullName: 'addHandlerAsync(eventType, handler, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void):
+        void;
       return:
         type:
           - void
@@ -101,10 +179,6 @@ items:
             [Office.SettingsChangedEventArgs](xref:office.Office.SettingsChangedEventArgs)<!-- -->. Required.
           type:
             - any
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -177,7 +251,7 @@ items:
 
       ```
     name: get(name)
-    fullName: get
+    fullName: get(name)
     langs:
       - typeScript
     type: method
@@ -235,27 +309,8 @@ items:
       </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> </td></tr> <tr><td><strong>
       PowerPoint </strong></td><td> Y </td><td> Y </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
       </td><td> Y </td><td> </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      function refreshSettings() {
-          Office.context.document.settings.refreshAsync(function (asyncResult) {
-              write('Settings refreshed with status: ' + asyncResult.status);
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: refreshAsync(callback)
-    fullName: refreshAsync
+    fullName: refreshAsync(callback)
     langs:
       - typeScript
     type: method
@@ -317,7 +372,7 @@ items:
 
       ```
     name: remove(name)
-    fullName: remove
+    fullName: remove(name)
     langs:
       - typeScript
     type: method
@@ -333,6 +388,66 @@ items:
           type:
             - string
   - uid: office.Office.Settings.removeHandlerAsync
+    summary: Removes an event handler for the settingsChanged event.
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+
+
+      If the optional handler parameter is omitted when calling the removeHandlerAsync method, all event handlers for
+      the specified eventType will be removed.
+
+
+      When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can
+      access from the callback function's only parameter.
+
+
+      In the callback function passed to the removeHandlerAsync method, you can use the properties of the AsyncResult
+      object to return the following information.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Access </strong></td><td> </td><td> Y </td><td>
+      </td></tr> <tr><td><strong> Excel </strong></td><td> </td><td> Y </td><td> </td></tr> </table>
+    name: 'removeHandlerAsync(eventType, options, callback)'
+    fullName: 'removeHandlerAsync(eventType, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result:
+        AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: Specifies the type of event to remove. Required.
+          type:
+            - Office.EventType
+        - id: options
+          description: Provides options to determine which event handler or handlers are removed.
+          type:
+            - office.Office.RemoveHandlerOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Settings.removeHandlerAsync_1
     summary: Removes an event handler for the settingsChanged event.
     remarks: >-
       <table><tr><td>Requirement Sets</td><td>Settings</td></tr></table>
@@ -388,15 +503,13 @@ items:
       }
 
       ```
-    name: 'removeHandlerAsync(eventType, options, callback)'
-    fullName: removeHandlerAsync
+    name: 'removeHandlerAsync(eventType, callback)'
+    fullName: 'removeHandlerAsync(eventType, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+      content: 'removeHandlerAsync(eventType: Office.EventType, callback?: (result: AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -406,10 +519,6 @@ items:
           description: Specifies the type of event to remove. Required.
           type:
             - Office.EventType
-        - id: options
-          description: Provides options to determine which event handler or handlers are removed.
-          type:
-            - office.Office.RemoveHandlerOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -417,6 +526,67 @@ items:
           type:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Settings.saveAsync
+    summary: Persists the in-memory copy of the settings property bag in the document.
+    remarks: >-
+      Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the
+      session you can just use the set and get methods to work with the in-memory copy of the settings property bag.
+      When you want to persist the settings so that they are available the next time the add-in is used, use the
+      saveAsync method.
+
+
+      **Note**: The saveAsync method persists the in-memory settings property bag into the document file. However, the
+      changes to the document file itself are saved only when the user (or AutoRecover setting) saves the document to
+      the file system. The refreshAsync method is only useful in coauthoring scenarios when other instances of the same
+      add-in might change the settings and those changes should be made available to all instances.
+
+
+      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
+      undefined because there is no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td>
+      <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an
+      Error object that provides error information if the operation failed.</td> </tr> <tr>
+      <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object
+      without being altered.</td> </tr> </table>
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
+      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
+      </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
+      </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
+    name: 'saveAsync(options, callback)'
+    fullName: 'saveAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'saveAsync(options?: SaveSettingsOptions, callback?: (result: AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for saving settings.
+          type:
+            - office.Office.SaveSettingsOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Settings.saveAsync_1
     summary: Persists the in-memory copy of the settings property bag in the document.
     remarks: >-
       Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the
@@ -474,22 +644,18 @@ items:
       }
 
       ```
-    name: 'saveAsync(options, callback)'
-    fullName: saveAsync
+    name: saveAsync(callback)
+    fullName: saveAsync(callback)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(options?: SaveSettingsOptions, callback?: (result: AsyncResult<void>) => void): void;'
+      content: 'saveAsync(callback?: (result: AsyncResult<void>) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: options
-          description: Provides options for saving settings.
-          type:
-            - office.Office.SaveSettingsOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -543,7 +709,7 @@ items:
 
       ```
     name: 'set(name, value)'
-    fullName: set
+    fullName: 'set(name, value)'
     langs:
       - typeScript
     type: method

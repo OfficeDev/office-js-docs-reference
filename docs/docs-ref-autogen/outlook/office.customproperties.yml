@@ -42,7 +42,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: get(name)
-    fullName: get
+    fullName: get(name)
     langs:
       - typeScript
     type: method
@@ -73,7 +73,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: remove(name)
-    fullName: remove
+    fullName: remove(name)
     langs:
       - typeScript
     type: method
@@ -172,7 +172,7 @@ items:
 
       ```
     name: 'saveAsync(callback, asyncContext)'
-    fullName: saveAsync
+    fullName: 'saveAsync(callback, asyncContext)'
     langs:
       - typeScript
     type: method
@@ -219,7 +219,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: 'set(name, value)'
-    fullName: set
+    fullName: 'set(name, value)'
     langs:
       - typeScript
     type: method

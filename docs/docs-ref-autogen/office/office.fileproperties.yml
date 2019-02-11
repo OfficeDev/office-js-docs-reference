@@ -17,7 +17,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'url: string;'
+      content: 'url: string'
       return:
         type:
           - string

@@ -22,6 +22,8 @@ items:
       - excel.Excel.StyleCollection.getItem
       - excel.Excel.StyleCollection.items
       - excel.Excel.StyleCollection.load
+      - excel.Excel.StyleCollection.load_1
+      - excel.Excel.StyleCollection.load_2
       - excel.Excel.StyleCollection.toJSON
   - uid: excel.Excel.StyleCollection.add
     summary: |-
@@ -29,7 +31,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(name)
-    fullName: add
+    fullName: add(name)
     langs:
       - typeScript
     type: method
@@ -89,7 +91,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
-    fullName: getItem
+    fullName: getItem(name)
     langs:
       - typeScript
     type: method
@@ -148,12 +150,14 @@ items:
       WARNING: The StyleCollection items array has a known issue when loading items from the collection. Do not use
       `StyleCollection.items`<!-- -->, any `load()` method, and the `toJSON()` method.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.StyleCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.StyleCollection;
       return:
         type:
           - excel.Excel.StyleCollection
@@ -162,13 +166,50 @@ items:
         - id: option
           description: ''
           type:
+            - Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.StyleCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.StyleCollection;'
+      return:
+        type:
+          - excel.Excel.StyleCollection
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
             - 'string | string[]'
+  - uid: excel.Excel.StyleCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.StyleCollection;'
+      return:
+        type:
+          - excel.Excel.StyleCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.StyleCollection.toJSON
     summary: >-
       WARNING: The StyleCollection items array has a known issue when loading items from the collection. Do not use
       `StyleCollection.items`<!-- -->, any `load()` method, and the `toJSON()` method.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

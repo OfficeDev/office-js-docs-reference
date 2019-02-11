@@ -21,11 +21,14 @@ items:
       - word.Word.Document.context
       - word.Word.Document.getSelection
       - word.Word.Document.load
+      - word.Word.Document.load_1
+      - word.Word.Document.load_2
       - word.Word.Document.properties
       - word.Word.Document.save
       - word.Word.Document.saved
       - word.Word.Document.sections
       - word.Word.Document.set
+      - word.Word.Document.set_1
       - word.Word.Document.toJSON
       - word.Word.Document.track
       - word.Word.Document.untrack
@@ -83,7 +86,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getSelection()
-    fullName: getSelection
+    fullName: getSelection()
     langs:
       - typeScript
     type: method
@@ -131,6 +134,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Word.Document` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Word.Document` - Where option.select is a comma-delimited
@@ -183,21 +190,63 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.Document;'
+      content: 'load(option?: Word.Interfaces.DocumentLoadOptions): Word.Document;'
       return:
         type:
           - Word.Document
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - Word.Interfaces.DocumentLoadOptions
+  - uid: word.Word.Document.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.Document;'
+      return:
+        type:
+          - Word.Document
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: word.Word.Document.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Document;'
+      return:
+        type:
+          - Word.Document
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: word.Word.Document.properties
     summary: |-
       Gets the properties of the document. Read-only.
@@ -234,7 +283,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: save()
-    fullName: save
+    fullName: save()
     langs:
       - typeScript
     type: method
@@ -323,7 +372,7 @@ items:
 
       `set(properties: Word.Document): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -344,9 +393,27 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: word.Word.Document.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Word.Document): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Word.Document
   - uid: word.Word.Document.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -364,7 +431,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -381,7 +448,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

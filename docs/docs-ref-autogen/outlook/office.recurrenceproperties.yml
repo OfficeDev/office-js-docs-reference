@@ -36,16 +36,16 @@ items:
 
       // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
 
-      // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the 
+      // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the
 
-      // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the 
+      // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the
 
       // recurrence date and time properties.
 
       Recurrence = {
           "recurrenceType": "weekly",
           "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
-          "seriesTime": {seriesTimeObject}, 
+          "seriesTime": {seriesTimeObject},
           "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
       }
 

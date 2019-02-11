@@ -20,7 +20,11 @@ items:
     package: Outlook_1_5
     children:
       - Outlook_1_5.Office.Time.getAsync
+      - Outlook_1_5.Office.Time.getAsync_1
       - Outlook_1_5.Office.Time.setAsync
+      - Outlook_1_5.Office.Time.setAsync_1
+      - Outlook_1_5.Office.Time.setAsync_2
+      - Outlook_1_5.Office.Time.setAsync_3
   - uid: Outlook_1_5.Office.Time.getAsync
     summary: >-
       Gets the start or end time of an appointment.
@@ -45,8 +49,24 @@ items:
 
 
       `getAsync(callback: (result: Office.AsyncResult<Date>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.start.getAsync(function (asyncResult) {
+          if (asyncResult.status === "failed") {
+              console.log("Action failed with error: " + asyncResult.error.message);
+          }
+          else {
+              console.log("Start date and time: " + asyncResult.value);
+          }
+      });
+
+      ```
     name: 'getAsync(options, callback)'
-    fullName: getAsync
+    fullName: 'getAsync(options, callback)'
     langs:
       - typeScript
     type: method
@@ -62,7 +82,43 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - office.Office.AsyncContextOptions
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult. The `value` property of the result is a Date object.
+          type:
+            - '(result: Office.AsyncResult<Date>) => void'
+  - uid: Outlook_1_5.Office.Time.getAsync_1
+    summary: >-
+      Gets the start or end time of an appointment.
+
+
+      The date and time is provided as a Date object in the asyncResult.value property. The value is in Coordinated
+      Universal Time (UTC). You can convert the UTC time to the local client time by using the convertToLocalClientTime
+      method.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+    name: getAsync(callback)
+    fullName: getAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(callback: (result: Office.AsyncResult<Date>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -106,15 +162,39 @@ items:
 
 
       `setAsync(dateTime: Date, callback: (result: Office.AsyncResult<void>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      var startTime = new Date("3/14/2015");
+
+      var options = {
+          // Pass information that can be used
+          // in the callback
+          asyncContext: {verb: "Set"}
+      }
+
+      Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
+          if (result.error) {
+              console.debug(result.error);
+          } else {
+              // Access the asyncContext that was passed to the setAsync function
+              console.debug("Start Time " + result.asyncContext.verb);
+          }
+      });
+
+      ```
     name: 'setAsync(dateTime, options, callback)'
-    fullName: setAsync
+    fullName: 'setAsync(dateTime, options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        setAsync(dateTime: Date, options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) =>
-        void): void;
+        setAsync(dateTime: Date, options?: Office.AsyncContextOptions, callback?: (result:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -129,7 +209,143 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - office.Office.AsyncContextOptions
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult. If setting the date and time fails, the asyncResult.error property will contain
+            an error code.
+          type:
+            - '(result: Office.AsyncResult<void>) => void'
+  - uid: Outlook_1_5.Office.Time.setAsync_1
+    summary: >-
+      Sets the start or end time of an appointment.
+
+
+      If the setAsync method is called on the start property, the end property will be adjusted to maintain the duration
+      of the appointment as previously set. If the setAsync method is called on the end property, the duration of the
+      appointment will be extended to the new end time.
+
+
+      The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before the appointment start
+      time.</td></tr></table>
+    name: setAsync(dateTime)
+    fullName: setAsync(dateTime)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(dateTime: Date): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: dateTime
+          description: A date-time object in Coordinated Universal Time (UTC).
+          type:
+            - Date
+  - uid: Outlook_1_5.Office.Time.setAsync_2
+    summary: >-
+      Sets the start or end time of an appointment.
+
+
+      If the setAsync method is called on the start property, the end property will be adjusted to maintain the duration
+      of the appointment as previously set. If the setAsync method is called on the end property, the duration of the
+      appointment will be extended to the new end time.
+
+
+      The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before the appointment start
+      time.</td></tr></table>
+    name: 'setAsync(dateTime, options)'
+    fullName: 'setAsync(dateTime, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(dateTime: Date, options: Office.AsyncContextOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: dateTime
+          description: A date-time object in Coordinated Universal Time (UTC).
+          type:
+            - Date
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+  - uid: Outlook_1_5.Office.Time.setAsync_3
+    summary: >-
+      Sets the start or end time of an appointment.
+
+
+      If the setAsync method is called on the start property, the end property will be adjusted to maintain the duration
+      of the appointment as previously set. If the setAsync method is called on the end property, the duration of the
+      appointment will be extended to the new end time.
+
+
+      The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before the appointment start
+      time.</td></tr></table>
+    name: 'setAsync(dateTime, callback)'
+    fullName: 'setAsync(dateTime, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(dateTime: Date, callback: (result: Office.AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: dateTime
+          description: A date-time object in Coordinated Universal Time (UTC).
+          type:
+            - Date
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter

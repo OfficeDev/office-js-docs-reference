@@ -17,7 +17,10 @@ items:
       - visio.Visio.Comment.author
       - visio.Visio.Comment.date
       - visio.Visio.Comment.load
+      - visio.Visio.Comment.load_1
+      - visio.Visio.Comment.load_2
       - visio.Visio.Comment.set
+      - visio.Visio.Comment.set_1
       - visio.Visio.Comment.text
       - visio.Visio.Comment.toJSON
   - uid: visio.Visio.Comment.author
@@ -56,6 +59,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Visio.Comment` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Visio.Comment` - Where option.select is a comma-delimited
@@ -98,21 +105,63 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.Comment;'
+      content: 'load(option?: Visio.Interfaces.CommentLoadOptions): Visio.Comment;'
       return:
         type:
           - visio.Visio.Comment
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - visio.Visio.Interfaces.CommentLoadOptions
+  - uid: visio.Visio.Comment.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Visio.Comment;'
+      return:
+        type:
+          - visio.Visio.Comment
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.Comment.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Comment;'
+      return:
+        type:
+          - visio.Visio.Comment
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: visio.Visio.Comment.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -122,7 +171,7 @@ items:
 
       `set(properties: Visio.Comment): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -143,6 +192,24 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: visio.Visio.Comment.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Visio.Comment): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - visio.Visio.Comment
   - uid: visio.Visio.Comment.text
     summary: |-
       A string that contains the comment text.
@@ -160,7 +227,7 @@ items:
           - string
   - uid: visio.Visio.Comment.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

@@ -12,6 +12,44 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // This example gets the Recurrence object of an appointment item.
+
+      Office.context.mailbox.item.recurrence.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var context = asyncResult.context;
+          var recurrence = asyncResult.value;
+          if (!recurrence) {
+              console.log("One-time appointment or meeting");
+          } else {
+              console.log(JSON.stringify(recurrence));
+          }
+      }
+
+
+      // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
+
+      // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the
+
+      // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the
+
+      // recurrence date and time properties.
+
+      Recurrence = {
+          "recurrenceType": "weekly",
+          "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
+          "seriesTime": {seriesTimeObject},
+          "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
+      }
+
+      ```
     name: Office.RecurrenceProperties
     fullName: Office.RecurrenceProperties
     langs:

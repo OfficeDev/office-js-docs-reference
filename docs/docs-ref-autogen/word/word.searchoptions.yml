@@ -18,6 +18,8 @@ items:
       - word.Word.SearchOptions.ignorePunct
       - word.Word.SearchOptions.ignoreSpace
       - word.Word.SearchOptions.load
+      - word.Word.SearchOptions.load_1
+      - word.Word.SearchOptions.load_2
       - word.Word.SearchOptions.matchCase
       - word.Word.SearchOptions.matchPrefix
       - word.Word.SearchOptions.matchSuffix
@@ -26,6 +28,7 @@ items:
       - word.Word.SearchOptions.matchWildCards
       - word.Word.SearchOptions.newObject
       - word.Word.SearchOptions.set
+      - word.Word.SearchOptions.set_1
       - word.Word.SearchOptions.toJSON
   - uid: word.Word.SearchOptions.context
     summary: >-
@@ -81,6 +84,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Word.SearchOptions` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Word.SearchOptions` - Where option.select is a
@@ -262,21 +269,63 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.SearchOptions;'
+      content: 'load(option?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;'
       return:
         type:
           - word.Word.SearchOptions
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - word.Word.Interfaces.SearchOptionsLoadOptions
+  - uid: word.Word.SearchOptions.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.SearchOptions;'
+      return:
+        type:
+          - word.Word.SearchOptions
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: word.Word.SearchOptions.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.SearchOptions;'
+      return:
+        type:
+          - word.Word.SearchOptions
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: word.Word.SearchOptions.matchCase
     summary: >-
       Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
@@ -376,7 +425,7 @@ items:
   - uid: word.Word.SearchOptions.newObject
     summary: Create a new instance of Word.SearchOptions object
     name: newObject(context)
-    fullName: newObject
+    fullName: newObject(context)
     langs:
       - typeScript
     type: method
@@ -400,7 +449,7 @@ items:
 
       `set(properties: Word.SearchOptions): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -421,9 +470,27 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: word.Word.SearchOptions.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Word.SearchOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - word.Word.SearchOptions
   - uid: word.Word.SearchOptions.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

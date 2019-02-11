@@ -12,13 +12,55 @@ items:
     type: interface
     package: excel
     children:
-      - excel.Excel.WorksheetChangedEventArgs.address
-      - excel.Excel.WorksheetChangedEventArgs.changeType
       - excel.Excel.WorksheetChangedEventArgs.getRange
       - excel.Excel.WorksheetChangedEventArgs.getRangeOrNullObject
+      - excel.Excel.WorksheetChangedEventArgs.address
+      - excel.Excel.WorksheetChangedEventArgs.changeType
       - excel.Excel.WorksheetChangedEventArgs.source
       - excel.Excel.WorksheetChangedEventArgs.type
       - excel.Excel.WorksheetChangedEventArgs.worksheetId
+  - uid: excel.Excel.WorksheetChangedEventArgs.getRange
+    summary: |-
+      Gets the range that represents the changed area of a specific worksheet.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRange(ctx)
+    fullName: getRange(ctx)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(ctx: Excel.RequestContext): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: ctx
+          description: ''
+          type:
+            - excel.Excel.RequestContext
+  - uid: excel.Excel.WorksheetChangedEventArgs.getRangeOrNullObject
+    summary: |-
+      Gets the range that represents the changed area of a specific worksheet. It might return null object.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRangeOrNullObject(ctx)
+    fullName: getRangeOrNullObject(ctx)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeOrNullObject(ctx: Excel.RequestContext): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+      parameters:
+        - id: ctx
+          description: ''
+          type:
+            - excel.Excel.RequestContext
   - uid: excel.Excel.WorksheetChangedEventArgs.address
     summary: |-
       Gets the range address that represents the changed area of a specific worksheet.
@@ -53,48 +95,6 @@ items:
           - >-
             Excel.DataChangeType | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" |
             "ColumnDeleted" | "CellInserted" | "CellDeleted"
-  - uid: excel.Excel.WorksheetChangedEventArgs.getRange
-    summary: |-
-      Gets the range that represents the changed area of a specific worksheet.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getRange(ctx)
-    fullName: getRange
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(ctx: Excel.RequestContext): Excel.Range;'
-      return:
-        type:
-          - excel.Excel.Range
-        description: ''
-      parameters:
-        - id: ctx
-          description: ''
-          type:
-            - excel.Excel.RequestContext
-  - uid: excel.Excel.WorksheetChangedEventArgs.getRangeOrNullObject
-    summary: |-
-      Gets the range that represents the changed area of a specific worksheet. It might return null object.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getRangeOrNullObject(ctx)
-    fullName: getRangeOrNullObject
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRangeOrNullObject(ctx: Excel.RequestContext): Excel.Range;'
-      return:
-        type:
-          - excel.Excel.Range
-        description: ''
-      parameters:
-        - id: ctx
-          description: ''
-          type:
-            - excel.Excel.RequestContext
   - uid: excel.Excel.WorksheetChangedEventArgs.source
     summary: |-
       Gets the source of the event. See Excel.EventSource for details.

@@ -24,6 +24,8 @@ items:
       - excel.Excel.WorksheetCollection.getLast
       - excel.Excel.WorksheetCollection.items
       - excel.Excel.WorksheetCollection.load
+      - excel.Excel.WorksheetCollection.load_1
+      - excel.Excel.WorksheetCollection.load_2
       - excel.Excel.WorksheetCollection.onActivated
       - excel.Excel.WorksheetCollection.onAdded
       - excel.Excel.WorksheetCollection.onCalculated
@@ -38,7 +40,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(name)
-    fullName: add
+    fullName: add(name)
     langs:
       - typeScript
     type: method
@@ -93,7 +95,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveWorksheet()
-    fullName: getActiveWorksheet
+    fullName: getActiveWorksheet()
     langs:
       - typeScript
     type: method
@@ -126,7 +128,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount(visibleOnly)
-    fullName: getCount
+    fullName: getCount(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -147,7 +149,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getFirst(visibleOnly)
-    fullName: getFirst
+    fullName: getFirst(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -197,7 +199,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
-    fullName: getItem
+    fullName: getItem(key)
     langs:
       - typeScript
     type: method
@@ -218,7 +220,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject
+    fullName: getItemOrNullObject(key)
     langs:
       - typeScript
     type: method
@@ -239,7 +241,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLast(visibleOnly)
-    fullName: getLast
+    fullName: getLast(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -303,6 +305,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.WorksheetCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.WorksheetCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -313,46 +319,82 @@ items:
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      Excel.run(function (ctx) { 
-          var worksheets = ctx.workbook.worksheets;
-          worksheets.load('items');
-          return ctx.sync().then(function() {
-              for (var i = 0; i < worksheets.items.length; i++)
-              {
-                  console.log(worksheets.items[i].name);
-                  console.log(worksheets.items[i].index);
-              }
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.WorksheetCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.WorksheetCollection;
       return:
         type:
           - excel.Excel.WorksheetCollection
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.WorksheetCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.WorksheetCollection;'
+      return:
+        type:
+          - excel.Excel.WorksheetCollection
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var worksheets = ctx.workbook.worksheets;
+              worksheets.load('items');
+              return ctx.sync().then(function() {
+                  for (var i = 0; i < worksheets.items.length; i++)
+                  {
+                      console.log(worksheets.items[i].name);
+                      console.log(worksheets.items[i].index);
+                  }
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.WorksheetCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.WorksheetCollection;'
+      return:
+        type:
+          - excel.Excel.WorksheetCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.WorksheetCollection.onActivated
     summary: |-
       Occurs when any worksheet in the workbook is activated.
@@ -475,7 +517,7 @@ items:
       returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`<!-- -->) that contains an
       "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
