@@ -141,7 +141,8 @@ items:
               var item = Office.context.mailbox.item;
               item.loadCustomPropertiesAsync(customPropsCallback);
           });
-      }
+      };
+
 
       function customPropsCallback(asyncResult) {
           var customProps = asyncResult.value;
@@ -153,7 +154,7 @@ items:
 
 
       function saveCallback(asyncResult) {
-          if (asyncResult.status == Office.AsyncResultStatus.Failed){
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
               write(asyncResult.error.message);
           }
           else {
@@ -165,7 +166,7 @@ items:
 
       // Writes to a div with id='message' on the page.
 
-      function write(message){
+      function write(message) {
           document.getElementById('message').innerText += message;
       }
 

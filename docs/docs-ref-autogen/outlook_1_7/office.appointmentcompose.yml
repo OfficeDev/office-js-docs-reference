@@ -107,9 +107,9 @@ items:
 
       function callback(result) {
           if (result.error) {
-              showMessage(result.error);
+              console.log(result.error);
           } else {
-              showMessage("Attachment added");
+              console.log("Attachment added");
           }
       }
 
@@ -499,9 +499,9 @@ items:
 
       function callback(result) {
           if (result.error) {
-              showMessage(result.error);
+              console.log(result.error);
           } else {
-              showMessage("Attachment added");
+              console.log("Attachment added");
           }
       }
 
@@ -799,7 +799,7 @@ items:
 
       Office.initialize = function () {
           Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
-      }
+      };
 
 
       function getCallback(asyncResult) {
@@ -1514,8 +1514,8 @@ items:
       // the item.
 
       {
-          "value":"AAMkADI5...AAA=",
-          "status":"succeeded"
+          "value": "AAMkADI5...AAA=",
+          "status": "succeeded"
       }
 
       ```
@@ -1570,6 +1570,15 @@ items:
 
 
       `setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+
+      ```
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: 'setSelectedDataAsync(data, options, callback)'
     langs:
@@ -1628,15 +1637,6 @@ items:
 
 
       <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
-
-      ```
     name: setSelectedDataAsync(data)
     fullName: setSelectedDataAsync(data)
     langs:
@@ -1772,6 +1772,30 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // This example gets the body of the message as plain text.
+
+      Office.context.mailbox.item.body.getAsync(
+          "text",
+          { asyncContext: "This is passed to the callback" },
+          function callback(result) {
+              // Do something with the result
+          });
+
+      // The following is an example of an object that is passed as the result parameter to the callback function.
+
+      {
+          "value": "TEXT of whole body (including threads below)",
+          "status": "succeeded",
+          "asyncContext": "This is passed to the callback"
+      }
+
+      ```
     name: body
     fullName: body
     langs:
@@ -1820,8 +1844,8 @@ items:
       var options = {
           // Pass information that can be used
           // in the callback
-          asyncContext: {verb:"Set"}
-      }
+          asyncContext: {verb: "Set"}
+      };
 
       Office.context.mailbox.item.end.setAsync(endTime, options, function(result) {
           if (result.error) {
@@ -1861,6 +1885,19 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Appointment) {
+          // do something
+      } else {
+          // do something else
+      }
+
+      ```
     name: itemType
     fullName: itemType
     langs:
@@ -1926,6 +1963,21 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get all notifications
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(
+          function (asyncResult) {
+              console.log(JSON.stringify(asyncResult));
+          }
+      );
+
+      ```
     name: notificationMessages
     fullName: notificationMessages
     langs:
@@ -2005,9 +2057,11 @@ items:
 
       ```javascript
 
-      var organizerName = Office.context.mailbox.item.organizer.displayName;
-
-      var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
+      Office.context.mailbox.item.organizer.getAsync(
+          function(asyncResult) {
+              console.log(JSON.stringify(asyncResult));
+          }
+      );
 
       ```
     name: organizer
@@ -2046,6 +2100,44 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // This example gets the Recurrence object of an appointment item.
+
+      Office.context.mailbox.item.recurrence.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var context = asyncResult.context;
+          var recurrence = asyncResult.value;
+          if (!recurrence) {
+              console.log("One-time appointment or meeting");
+          } else {
+              console.log(JSON.stringify(recurrence));
+          }
+      }
+
+
+      // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
+
+      // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the
+
+      // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the
+
+      // recurrence date and time properties.
+
+      Recurrence = {
+          "recurrenceType": "weekly",
+          "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
+          "seriesTime": {seriesTimeObject},
+          "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
+      }
+
+      ```
     name: recurrence
     fullName: recurrence
     langs:
@@ -2088,6 +2180,7 @@ items:
 
       function callback(asyncResult) {
           var arrayOfRequiredAttendeesRecipients = asyncResult.value;
+          console.log(JSON.stringify(arrayOfRequiredAttendeesRecipients));
       }
 
       ```
@@ -2130,6 +2223,28 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
       Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var seriesId = Office.context.mailbox.item.seriesId;
+
+
+      // The seriesId property returns null for items that do
+
+      // not have parent items (such as single appointments,
+
+      // series items, or meeting requests) and returns
+
+      // undefined for messages that are not meeting requests.
+
+      var isSeriesInstance = (seriesId != null);
+
+      console.log("SeriesId is " + seriesId + " and isSeriesInstance is " + isSeriesInstance);
+
+      ```
     name: seriesId
     fullName: seriesId
     langs:
@@ -2178,8 +2293,8 @@ items:
       var options = {
           // Pass information that can be used
           // in the callback
-          asyncContext: {verb:"Set"}
-      }
+          asyncContext: {verb: "Set"}
+      };
 
       Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
           if (result.error) {

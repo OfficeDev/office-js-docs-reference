@@ -110,19 +110,19 @@ items:
 
       ```javascript
 
-      // This example gets the recurrence object of an appointment or meeting request item.
+      // This example gets the Recurrence object of an appointment item.
 
       Office.context.mailbox.item.recurrence.getAsync(callback);
 
-      function callback(asyncResult){
+
+      function callback(asyncResult) {
           var context = asyncResult.context;
           var recurrence = asyncResult.value;
-          if (recurrence == null) {
-              console.log("Non-recurring meeting");
-              return;
+          if (!recurrence) {
+              console.log("One-time appointment or meeting");
+          } else {
+              console.log(JSON.stringify(recurrence));
           }
-
-          console.log(JSON.stringify(recurrence));
       }
 
 
@@ -138,7 +138,9 @@ items:
           "recurrenceType": "weekly",
           "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
           "seriesTime": {seriesTimeObject},
-          "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
+          "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
+      }
+
       ```
     name: getAsync(callback)
     fullName: getAsync(callback)
@@ -182,6 +184,46 @@ items:
 
 
       `setAsync(recurrencePattern: Recurrence, callback?: (result: Office.AsyncResult<void>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example sets the recurrence pattern of an appointment series.
+
+      var seriesTimeObject = new Office.SeriesTime();
+
+      seriesTimeObject.setStartDate(2019,10,2);
+
+      seriesTimeObject.setEndDate(2019,11,2);
+
+      seriesTimeObject.setStartTime(10,30);
+
+      seriesTimeObject.setDuration(30);
+
+
+      var pattern = {
+          "seriesTime": seriesTimeObject,
+          "recurrenceType": "weekly",
+          "recurrenceProperties": {"interval": 1, "days": ["tue", "thu"], "firstDayOfWeek": "sun"},
+          "recurrenceTimeZone": {"name": "Pacific Standard Time"}};
+
+      Office.context.mailbox.item.recurrence.setAsync(pattern, callback);
+
+
+      function callback(asyncResult)
+
+      {
+          console.log(JSON.stringify(asyncResult));
+      }
+
+
+      // Result: This created a recurring event from November 2, 2019 to December 2, 2019
+
+      //         at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
+
+      ```
     name: 'setAsync(recurrencePattern, options, callback)'
     fullName: 'setAsync(recurrencePattern, options, callback)'
     langs:
@@ -229,46 +271,6 @@ items:
 
 
       <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before its start time.</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example sets the recurrence pattern of an appointment series.
-
-      var seriesTimeObject = new Office.SeriesTime();
-
-      seriesTimeObject.setStartDate(2019,10,2);
-
-      seriesTimeObject.setEndDate(2019,11,2);
-
-      seriesTimeObject.setStartTime(10,30);
-
-      seriesTimeObject.setDuration(30);
-
-
-      var pattern = {
-          "seriesTime": seriesTimeObject,
-          "recurrenceType": "weekly",
-          "recurrenceProperties": {"interval": 1, "days": ["tue", "thu"], "firstDayOfWeek": "sun"},
-          "recurrenceTimeZone": {"name": "Pacific Standard Time"}};
-
-      Office.context.mailbox.item.recurrence.setAsync(pattern, callback);
-
-
-      function callback(asyncResult)
-
-      {
-          console.log(JSON.stringify(asyncResult));
-      }
-
-
-      //Result: This created a recurring event from November 2, 2019 to December 2, 2019
-
-      //        at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
-
-      ```
     name: 'setAsync(recurrencePattern, callback)'
     fullName: 'setAsync(recurrencePattern, callback)'
     langs:

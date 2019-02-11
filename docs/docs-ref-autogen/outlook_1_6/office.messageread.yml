@@ -390,7 +390,7 @@ items:
               var addresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
               // Continue processing the array of addresses.
           });
-      }
+      };
 
       ```
     name: getEntitiesByType(entityType)
@@ -597,7 +597,7 @@ items:
 
       // match selected by the user.
 
-      var contacts = Office.context.mailbox.item.getSelectedEntities().addresses;
+      var addresses = Office.context.mailbox.item.getSelectedEntities().addresses;
 
       ```
     name: getSelectedEntities()
@@ -749,26 +749,26 @@ items:
 
       // The following code builds an HTML string with details of all attachments on the current item.
 
-      var _Item = Office.context.mailbox.item;
+      var item = Office.context.mailbox.item;
 
       var outputString = "";
 
 
-      if (_Item.attachments.length > 0) {
-          for (i = 0 ; i < _Item.attachments.length ; i++) {
-              var _att = _Item.attachments[i];
+      if (item.attachments.length > 0) {
+          for (i = 0 ; i < item.attachments.length ; i++) {
+              var attachment = item.attachments[i];
               outputString += "<BR>" + i + ". Name: ";
-              outputString += _att.name;
-              outputString += "<BR>ID: " + _att.id;
-              outputString += "<BR>contentType: " + _att.contentType;
-              outputString += "<BR>size: " + _att.size;
-              outputString += "<BR>attachmentType: " + _att.attachmentType;
-              outputString += "<BR>isInline: " + _att.isInline;
+              outputString += attachment.name;
+              outputString += "<BR>ID: " + attachment.id;
+              outputString += "<BR>contentType: " + attachment.contentType;
+              outputString += "<BR>size: " + attachment.size;
+              outputString += "<BR>attachmentType: " + attachment.attachmentType;
+              outputString += "<BR>isInline: " + attachment.isInline;
           }
       }
 
 
-      // Do something with outputString
+      console.log(outputString);
 
       ```
     name: attachments
@@ -793,6 +793,30 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // This example gets the body of the message in plain text.
+
+      Office.context.mailbox.item.body.getAsync(
+          "text",
+          { asyncContext: "This is passed to the callback" },
+          function callback(result) {
+              // Do something with the result
+          });
+
+      // The following is an example of the result parameter passed to the callback function.
+
+      {
+          "value": "TEXT of whole body (including threads below)",
+          "status": "succeeded",
+          "asyncContext": "This is passed to the callback"
+      }
+
+      ```
     name: body
     fullName: body
     langs:
@@ -871,6 +895,17 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var conversationId = Office.context.mailbox.item.conversationId;
+
+      console.log("conversationId: " + conversationId);
+
+      ```
     name: conversationId
     fullName: conversationId
     langs:
@@ -893,6 +928,17 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var dateTimeCreated = Office.context.mailbox.item.dateTimeCreated;
+
+      console.log("Date and time created: " + dateTimeCreated);
+
+      ```
     name: dateTimeCreated
     fullName: dateTimeCreated
     langs:
@@ -918,6 +964,17 @@ items:
 
 
       **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
+
+      #### Examples
+
+
+      ```javascript
+
+      var dateTimeModified = Office.context.mailbox.item.dateTimeModified;
+
+      console.log("Date and time modified: " + dateTimeModified);
+
+      ```
     name: dateTimeModified
     fullName: dateTimeModified
     langs:
@@ -951,6 +1008,17 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var from = Office.context.mailbox.item.from;
+
+      console.log("From " + from);
+
+      ```
     name: from
     fullName: from
     langs:
@@ -973,6 +1041,17 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var internetMessageId = Office.context.mailbox.item.internetMessageId;
+
+      console.log("internetMessageId: " + internetMessageId);
+
+      ```
     name: internetMessageId
     fullName: internetMessageId
     langs:
@@ -1013,6 +1092,17 @@ items:
       use IPM.Schedule.Meeting as the base message class.</td>
       <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
       </tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var itemClass = Office.context.mailbox.item.itemClass;
+
+      console.log("Item class: " + itemClass);
+
+      ```
     name: itemClass
     fullName: itemClass
     langs:
@@ -1065,7 +1155,7 @@ items:
       var itemId = Office.context.mailbox.item.itemId;
 
       if (itemId === null || itemId == undefined) {
-          Office.context.mailbox.item.saveAsync(function(result){
+          Office.context.mailbox.item.saveAsync(function(result) {
               itemId = result.value;
           });
       }
@@ -1098,6 +1188,19 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Message) {
+          // do something
+      } else {
+          // do something else
+      }
+
+      ```
     name: itemType
     fullName: itemType
     langs:
@@ -1125,6 +1228,17 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var normalizedSubject = Office.context.mailbox.item.normalizedSubject;
+
+      console.log("Normalized subject: " + normalizedSubject);
+
+      ```
     name: normalizedSubject
     fullName: normalizedSubject
     langs:
@@ -1147,6 +1261,21 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get all notifications
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(
+          function (asyncResult) {
+              console.log(JSON.stringify(asyncResult));
+          }
+      );
+
+      ```
     name: notificationMessages
     fullName: notificationMessages
     langs:
@@ -1186,6 +1315,8 @@ items:
       var senderName = Office.context.mailbox.item.sender.displayName;
 
       var senderAddress = Office.context.mailbox.item.sender.emailAddress;
+
+      console.log("Sender: " + senderName + " (" + senderAddress + ")");
 
       ```
     name: sender
@@ -1240,7 +1371,7 @@ items:
               // Continue with processing the subject of the current item,
               // which can be a message or appointment.
           });
-      }
+      };
 
       ```
     name: subject

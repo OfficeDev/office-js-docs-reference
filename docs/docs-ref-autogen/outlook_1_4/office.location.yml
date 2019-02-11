@@ -45,6 +45,23 @@ items:
 
 
       `getAsync(callback: (result: Office.AsyncResult<string>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      var userContext = { value : 1 };
+
+      Office.context.mailbox.item.location.getAsync( { context: userContext}, callback);
+
+
+      function callback(asyncResult) {
+          var context = asyncResult.context;
+          var location = asyncResult.value;
+      }
+
+      ```
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
     langs:
@@ -139,6 +156,22 @@ items:
 
 
       `setAsync(location: string, callback: (result: Office.AsyncResult<void>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.location.setAsync(
+          "Room 1",
+          function (asyncResult) {
+              if (asyncResult.status === "failed") {
+                  console.log("Action failed with error: " + asyncResult.error.message);
+              }
+          }
+      );
+
+      ```
     name: 'setAsync(location, options, callback)'
     fullName: 'setAsync(location, options, callback)'
     langs:

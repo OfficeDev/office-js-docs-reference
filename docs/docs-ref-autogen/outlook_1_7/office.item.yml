@@ -54,6 +54,23 @@ items:
 
       `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) =>
       void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      function myHandlerFunction(eventarg) {
+          if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+              var attachment = eventarg.attachmentDetails;
+              console.log("Event Fired and Attachment Added!");
+              getAttachmentContentAsync(attachment.id, options, callback);
+          }
+      }
+
+      Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+
+      ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     langs:
@@ -107,23 +124,6 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      function myHandlerFunction(eventarg) {
-          if (eventarg.attachmentStatus == Office.MailboxEnums.AttachmentStatus.Added) {
-              var _att = eventarg.attachmentDetails;
-              showMessage("Event Fired and Attachment Added!");
-              getAttachmentContentAsync(_att.id, options, callback);
-          }
-      }
-
-      Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
-
-      ```
     name: 'addHandlerAsync(eventType, handler, callback)'
     fullName: 'addHandlerAsync(eventType, handler, callback)'
     langs:
@@ -205,7 +205,8 @@ items:
               var mailbox = Office.context.mailbox;
               mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
           });
-      }
+      };
+
 
       function customPropsCallback(asyncResult) {
           var customProps = asyncResult.value;
@@ -354,6 +355,30 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // This example gets the body of the message in plain text.
+
+      Office.context.mailbox.item.body.getAsync(
+          "text",
+          { asyncContext: "This is passed to the callback" },
+          function callback(result) {
+              // Do something with the result
+          });
+
+      // The following is an example of the result parameter passed to the callback function.
+
+      {
+          "value": "TEXT of whole body (including threads below)",
+          "status": "succeeded",
+          "asyncContext": "This is passed to the callback"
+      }
+
+      ```
     name: body
     fullName: body
     langs:
@@ -387,10 +412,12 @@ items:
 
       ```javascript
 
-      if (Office.context.mailbox.item.itemType == Office.MailboxEnums.ItemType.Message)
+      if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Message) {
           // do something
-      else
+      } else {
           // do something else
+      }
+
       ```
     name: itemType
     fullName: itemType
@@ -414,6 +441,21 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get all notifications
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(
+          function (asyncResult) {
+              console.log(JSON.stringify(asyncResult));
+          }
+      );
+
+      ```
     name: notificationMessages
     fullName: notificationMessages
     langs:
@@ -460,7 +502,18 @@ items:
 
       var seriesId = Office.context.mailbox.item.seriesId;
 
-      var isSeries = (seriesId == null);
+
+      // The seriesId property returns null for items that do
+
+      // not have parent items (such as single appointments,
+
+      // series items, or meeting requests) and returns
+
+      // undefined for messages that are not meeting requests.
+
+      var isSeriesInstance = (seriesId != null);
+
+      console.log("SeriesId is " + seriesId + " and isSeriesInstance is " + isSeriesInstance);
 
       ```
     name: seriesId
