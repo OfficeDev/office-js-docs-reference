@@ -127,6 +127,7 @@ items:
           }
       }
 
+
       Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
 
       ```

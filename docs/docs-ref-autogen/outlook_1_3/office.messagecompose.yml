@@ -122,9 +122,7 @@ items:
 
       // references the attachment in the message body.
 
-      Office.context.mailbox.item.addFileAttachmentAsync
-
-      (
+      Office.context.mailbox.item.addFileAttachmentAsync(
           "http://i.imgur.com/WJXklif.png",
           "cute_bird.png",
           {
@@ -137,7 +135,7 @@ items:
                       "coercionType": "html"
                   },
                   function (asyncResult) {
-
+                      // Do something here
                   });
           });
       ```

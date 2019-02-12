@@ -894,6 +894,7 @@ Office.Item.addHandlerAsync_1:
             getAttachmentContentAsync(attachment.id, options, callback);
         }
     }
+
     Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
 Office.Item.body:
   - |-
@@ -1235,8 +1236,7 @@ Office.MessageCompose.addFileAttachmentAsync:
   - |-
     // The following example adds an image file as an inline attachment and
     // references the attachment in the message body.
-    Office.context.mailbox.item.addFileAttachmentAsync
-    (
+    Office.context.mailbox.item.addFileAttachmentAsync(
         "http://i.imgur.com/WJXklif.png",
         "cute_bird.png",
         {
@@ -1249,7 +1249,7 @@ Office.MessageCompose.addFileAttachmentAsync:
                     "coercionType": "html"
                 },
                 function (asyncResult) {
-
+                    // Do something here
                 });
         });
 Office.MessageCompose.addFileAttachmentFromBase64Async:
@@ -1267,6 +1267,7 @@ Office.MessageCompose.addFileAttachmentFromBase64Async:
                     "coercionType": "html"
                 },
                 function (asyncResult) {
+                    // Do something here
                 });
         });
 Office.MessageCompose.addItemAttachmentAsync:
@@ -1493,13 +1494,7 @@ Office.MessageRead.body:
     }
 Office.MessageRead.cc:
   - |-
-    Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-    Office.context.mailbox.item.cc.addAsync( ['jason@contoso.com'] );
-    Office.context.mailbox.item.cc.getAsync(callback);
-
-    function callback(asyncResult) {
-        var arrayOfCcRecipients = asyncResult.value;
-    }
+    console.log(JSON.stringify(Office.context.mailbox.item.cc));
 Office.MessageRead.conversationId:
   - |-
     var conversationId = Office.context.mailbox.item.conversationId;
@@ -1771,13 +1766,7 @@ Office.MessageRead.subject:
     };
 Office.MessageRead.to:
   - |-
-    Office.context.mailbox.item.to.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-    Office.context.mailbox.item.to.addAsync( ['jason@contoso.com'] );
-    Office.context.mailbox.item.to.getAsync(callback);
-
-    function callback(asyncResult) {
-        var arrayOfToRecipients = asyncResult.value;
-    }
+    console.log(JSON.stringify(Office.context.mailbox.item.to));
 Office.NotificationMessages.addAsync_1:
   - |-
     // Create three notifications, each with a different key

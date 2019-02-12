@@ -746,16 +746,7 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-
-      Office.context.mailbox.item.cc.addAsync( ['jason@contoso.com'] );
-
-      Office.context.mailbox.item.cc.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var arrayOfCcRecipients = asyncResult.value;
-      }
+      console.log(JSON.stringify(Office.context.mailbox.item.cc));
 
       ```
     name: cc
@@ -1303,16 +1294,7 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.to.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-
-      Office.context.mailbox.item.to.addAsync( ['jason@contoso.com'] );
-
-      Office.context.mailbox.item.to.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var arrayOfToRecipients = asyncResult.value;
-      }
+      console.log(JSON.stringify(Office.context.mailbox.item.to));
 
       ```
     name: to
