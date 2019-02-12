@@ -2996,7 +2996,7 @@ Office.Settings.get:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Settings.refreshAsync_1:
+Office.Settings.refreshAsync:
   - |-
     function refreshSettings() {
         Office.context.document.settings.refreshAsync(function (asyncResult) {

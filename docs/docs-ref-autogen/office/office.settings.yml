@@ -309,6 +309,25 @@ items:
       </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> </td></tr> <tr><td><strong>
       PowerPoint </strong></td><td> Y </td><td> Y </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
       </td><td> Y </td><td> </td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function refreshSettings() {
+          Office.context.document.settings.refreshAsync(function (asyncResult) {
+              write('Settings refreshed with status: ' + asyncResult.status);
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
     name: refreshAsync(callback)
     fullName: refreshAsync(callback)
     langs:

@@ -461,7 +461,7 @@ OneNote.Image.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.ImageOcrData.load_1:
+OneNote.Image.ocrData:
   - |-
     var image = null;
     
