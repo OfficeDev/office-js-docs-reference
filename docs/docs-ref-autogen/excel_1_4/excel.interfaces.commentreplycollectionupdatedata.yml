@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionUpdateData
+    summary: >-
+      An interface for updating data on the CommentReplyCollection object, for use in "commentReplyCollection.set({ ...
+      })".
+    name: Excel.Interfaces.CommentReplyCollectionUpdateData
+    fullName: Excel.Interfaces.CommentReplyCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.CommentReplyCollectionUpdateData.items
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.CommentReplyData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.CommentReplyData[]'

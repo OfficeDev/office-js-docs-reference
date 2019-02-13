@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ShapeDeactivatedEventArgs
+    summary: >-
+      Provides information about the shape that raised the Deactivated event.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.ShapeDeactivatedEventArgs
+    fullName: Excel.ShapeDeactivatedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.ShapeDeactivatedEventArgs.shapeId
+      - excel.Excel.ShapeDeactivatedEventArgs.type
+      - excel.Excel.ShapeDeactivatedEventArgs.worksheetId
+  - uid: excel.Excel.ShapeDeactivatedEventArgs.shapeId
+    summary: >-
+      Gets the id of the shape that is deactivated.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: shapeId
+    fullName: shapeId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shapeId: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ShapeDeactivatedEventArgs.type
+    summary: >-
+      Gets the type of the event. See Excel.EventType for details.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "ShapeDeactivated";'
+      return:
+        type:
+          - '"ShapeDeactivated"'
+  - uid: excel.Excel.ShapeDeactivatedEventArgs.worksheetId
+    summary: >-
+      Gets the id of the worksheet in which the shape is deactivated.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: worksheetId
+    fullName: worksheetId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type:
+          - string

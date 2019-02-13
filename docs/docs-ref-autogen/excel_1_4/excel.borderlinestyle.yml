@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.BorderLineStyle
+    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.BorderLineStyle
+    fullName: Excel.BorderLineStyle
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.BorderLineStyle.continuous
+      - excel.Excel.BorderLineStyle.dash
+      - excel.Excel.BorderLineStyle.dashDot
+      - excel.Excel.BorderLineStyle.dashDotDot
+      - excel.Excel.BorderLineStyle.dot
+      - excel.Excel.BorderLineStyle.double
+      - excel.Excel.BorderLineStyle.none
+      - excel.Excel.BorderLineStyle.slantDashDot
+  - uid: excel.Excel.BorderLineStyle.continuous
+    name: continuous
+    fullName: continuous
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Continuous"'
+  - uid: excel.Excel.BorderLineStyle.dash
+    name: dash
+    fullName: dash
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dash"'
+  - uid: excel.Excel.BorderLineStyle.dashDot
+    name: dashDot
+    fullName: dashDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashDot"'
+  - uid: excel.Excel.BorderLineStyle.dashDotDot
+    name: dashDotDot
+    fullName: dashDotDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashDotDot"'
+  - uid: excel.Excel.BorderLineStyle.dot
+    name: dot
+    fullName: dot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dot"'
+  - uid: excel.Excel.BorderLineStyle.double
+    name: double
+    fullName: double
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Double"'
+  - uid: excel.Excel.BorderLineStyle.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel.Excel.BorderLineStyle.slantDashDot
+    name: slantDashDot
+    fullName: slantDashDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SlantDashDot"'

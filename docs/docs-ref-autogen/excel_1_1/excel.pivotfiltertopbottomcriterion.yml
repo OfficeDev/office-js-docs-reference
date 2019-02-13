@@ -1,0 +1,80 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.PivotFilterTopBottomCriterion
+    summary: >-
+      Represents the criteria for the top/bottom values filter.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.PivotFilterTopBottomCriterion
+    fullName: Excel.PivotFilterTopBottomCriterion
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.PivotFilterTopBottomCriterion.bottomItems
+      - excel.Excel.PivotFilterTopBottomCriterion.bottomPercent
+      - excel.Excel.PivotFilterTopBottomCriterion.bottomSum
+      - excel.Excel.PivotFilterTopBottomCriterion.invalid
+      - excel.Excel.PivotFilterTopBottomCriterion.topItems
+      - excel.Excel.PivotFilterTopBottomCriterion.topPercent
+      - excel.Excel.PivotFilterTopBottomCriterion.topSum
+  - uid: excel.Excel.PivotFilterTopBottomCriterion.bottomItems
+    isPreview: true
+    name: bottomItems
+    fullName: bottomItems
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BottomItems"'
+  - uid: excel.Excel.PivotFilterTopBottomCriterion.bottomPercent
+    isPreview: true
+    name: bottomPercent
+    fullName: bottomPercent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BottomPercent"'
+  - uid: excel.Excel.PivotFilterTopBottomCriterion.bottomSum
+    isPreview: true
+    name: bottomSum
+    fullName: bottomSum
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BottomSum"'
+  - uid: excel.Excel.PivotFilterTopBottomCriterion.invalid
+    isPreview: true
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: excel.Excel.PivotFilterTopBottomCriterion.topItems
+    isPreview: true
+    name: topItems
+    fullName: topItems
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TopItems"'
+  - uid: excel.Excel.PivotFilterTopBottomCriterion.topPercent
+    isPreview: true
+    name: topPercent
+    fullName: topPercent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TopPercent"'
+  - uid: excel.Excel.PivotFilterTopBottomCriterion.topSum
+    isPreview: true
+    name: topSum
+    fullName: topSum
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TopSum"'

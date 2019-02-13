@@ -1,0 +1,131 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.HeaderFooterData
+    summary: An interface describing the data returned by calling "headerFooter.toJSON()".
+    name: Excel.Interfaces.HeaderFooterData
+    fullName: Excel.Interfaces.HeaderFooterData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.HeaderFooterData.centerFooter
+      - excel.Excel.Interfaces.HeaderFooterData.centerHeader
+      - excel.Excel.Interfaces.HeaderFooterData.leftFooter
+      - excel.Excel.Interfaces.HeaderFooterData.leftHeader
+      - excel.Excel.Interfaces.HeaderFooterData.rightFooter
+      - excel.Excel.Interfaces.HeaderFooterData.rightHeader
+  - uid: excel.Excel.Interfaces.HeaderFooterData.centerFooter
+    summary: >-
+      Gets or sets the center footer of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: centerFooter
+    fullName: centerFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'centerFooter?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.HeaderFooterData.centerHeader
+    summary: >-
+      Gets or sets the center header of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: centerHeader
+    fullName: centerHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'centerHeader?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.HeaderFooterData.leftFooter
+    summary: >-
+      Gets or sets the left footer of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: leftFooter
+    fullName: leftFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftFooter?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.HeaderFooterData.leftHeader
+    summary: >-
+      Gets or sets the left header of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: leftHeader
+    fullName: leftHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftHeader?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.HeaderFooterData.rightFooter
+    summary: >-
+      Gets or sets the right footer of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: rightFooter
+    fullName: rightFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightFooter?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.HeaderFooterData.rightHeader
+    summary: >-
+      Gets or sets the right header of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: rightHeader
+    fullName: rightHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightHeader?: string;'
+      return:
+        type:
+          - string

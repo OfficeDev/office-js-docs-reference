@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartAxisTickMark
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartAxisTickMark
+    fullName: Excel.ChartAxisTickMark
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartAxisTickMark.cross
+      - excel.Excel.ChartAxisTickMark.inside
+      - excel.Excel.ChartAxisTickMark.none
+      - excel.Excel.ChartAxisTickMark.outside
+  - uid: excel.Excel.ChartAxisTickMark.cross
+    name: cross
+    fullName: cross
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Cross"'
+  - uid: excel.Excel.ChartAxisTickMark.inside
+    name: inside
+    fullName: inside
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Inside"'
+  - uid: excel.Excel.ChartAxisTickMark.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel.Excel.ChartAxisTickMark.outside
+    name: outside
+    fullName: outside
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Outside"'

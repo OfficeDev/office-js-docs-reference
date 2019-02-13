@@ -1,0 +1,104 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.DataValidationType
+    summary: |-
+      Represents Data validation type enum.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.DataValidationType
+    fullName: Excel.DataValidationType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.DataValidationType.custom
+      - excel.Excel.DataValidationType.date
+      - excel.Excel.DataValidationType.decimal
+      - excel.Excel.DataValidationType.inconsistent
+      - excel.Excel.DataValidationType.list
+      - excel.Excel.DataValidationType.mixedCriteria
+      - excel.Excel.DataValidationType.none
+      - excel.Excel.DataValidationType.textLength
+      - excel.Excel.DataValidationType.time
+      - excel.Excel.DataValidationType.wholeNumber
+  - uid: excel.Excel.DataValidationType.custom
+    summary: Custom data validation type
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Custom"'
+  - uid: excel.Excel.DataValidationType.date
+    summary: Date data validation type
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Date"'
+  - uid: excel.Excel.DataValidationType.decimal
+    summary: Decimal data validation type
+    name: decimal
+    fullName: decimal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Decimal"'
+  - uid: excel.Excel.DataValidationType.inconsistent
+    summary: Inconsistent means that the range has inconsistent data validation (there are different rules on different cells)
+    name: inconsistent
+    fullName: inconsistent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Inconsistent"'
+  - uid: excel.Excel.DataValidationType.list
+    summary: List data validation type
+    name: list
+    fullName: list
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"List"'
+  - uid: excel.Excel.DataValidationType.mixedCriteria
+    summary: MixedCriteria means that the range has data validation present on some but not all cells
+    name: mixedCriteria
+    fullName: mixedCriteria
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"MixedCriteria"'
+  - uid: excel.Excel.DataValidationType.none
+    summary: None means allow any value and so there is no data validation in the range.
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel.Excel.DataValidationType.textLength
+    summary: Text length data validation type
+    name: textLength
+    fullName: textLength
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TextLength"'
+  - uid: excel.Excel.DataValidationType.time
+    summary: Time data validation type
+    name: time
+    fullName: time
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Time"'
+  - uid: excel.Excel.DataValidationType.wholeNumber
+    summary: Whole number data validation type
+    name: wholeNumber
+    fullName: wholeNumber
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WholeNumber"'

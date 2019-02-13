@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.RangeBorderUpdateData
+    summary: 'An interface for updating data on the RangeBorder object, for use in "rangeBorder.set({ ... })".'
+    name: Excel.Interfaces.RangeBorderUpdateData
+    fullName: Excel.Interfaces.RangeBorderUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.RangeBorderUpdateData.color
+      - excel.Excel.Interfaces.RangeBorderUpdateData.style
+      - excel.Excel.Interfaces.RangeBorderUpdateData.tintAndShade
+      - excel.Excel.Interfaces.RangeBorderUpdateData.weight
+  - uid: excel.Excel.Interfaces.RangeBorderUpdateData.color
+    summary: >-
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      color (e.g. "orange").
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.RangeBorderUpdateData.style
+    summary: >-
+      One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
+      details.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        style?: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
+        "SlantDashDot";
+      return:
+        type:
+          - >-
+            Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
+            "SlantDashDot"
+  - uid: excel.Excel.Interfaces.RangeBorderUpdateData.tintAndShade
+    summary: >-
+      Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and
+      1 (brightest), with 0 for the original color. A null value indicates that the border doesn't have uniform
+      tintAndShade setting.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.RangeBorderUpdateData.weight
+    summary: |-
+      Specifies the weight of the border around a range. See Excel.BorderWeight for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";'
+      return:
+        type:
+          - Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick"

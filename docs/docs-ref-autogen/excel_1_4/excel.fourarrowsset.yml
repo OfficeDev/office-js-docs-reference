@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.FourArrowsSet
+    name: Excel.FourArrowsSet
+    fullName: Excel.FourArrowsSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.FourArrowsSet.__index
+      - excel.Excel.FourArrowsSet.greenUpArrow
+      - excel.Excel.FourArrowsSet.redDownArrow
+      - excel.Excel.FourArrowsSet.yellowDownInclineArrow
+      - excel.Excel.FourArrowsSet.yellowUpInclineArrow
+  - uid: excel.Excel.FourArrowsSet.__index
+    name: __index(index)
+    fullName: __index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: excel.Excel.FourArrowsSet.greenUpArrow
+    name: greenUpArrow
+    fullName: greenUpArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenUpArrow: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon
+  - uid: excel.Excel.FourArrowsSet.redDownArrow
+    name: redDownArrow
+    fullName: redDownArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redDownArrow: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon
+  - uid: excel.Excel.FourArrowsSet.yellowDownInclineArrow
+    name: yellowDownInclineArrow
+    fullName: yellowDownInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowDownInclineArrow: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon
+  - uid: excel.Excel.FourArrowsSet.yellowUpInclineArrow
+    name: yellowUpInclineArrow
+    fullName: yellowUpInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowUpInclineArrow: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon

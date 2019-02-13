@@ -1,0 +1,72 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartMapOptionsData
+    summary: An interface describing the data returned by calling "chartMapOptions.toJSON()".
+    name: Excel.Interfaces.ChartMapOptionsData
+    fullName: Excel.Interfaces.ChartMapOptionsData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartMapOptionsData.labelStrategy
+      - excel.Excel.Interfaces.ChartMapOptionsData.level
+      - excel.Excel.Interfaces.ChartMapOptionsData.projectionType
+  - uid: excel.Excel.Interfaces.ChartMapOptionsData.labelStrategy
+    summary: >-
+      Returns or sets series map labels strategy of a region map chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: labelStrategy
+    fullName: labelStrategy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'labelStrategy?: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll";'
+      return:
+        type:
+          - Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
+  - uid: excel.Excel.Interfaces.ChartMapOptionsData.level
+    summary: >-
+      Returns or sets series map area of a region map chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        level?: Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" |
+        "Continent" | "World";
+      return:
+        type:
+          - >-
+            Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" |
+            "World"
+  - uid: excel.Excel.Interfaces.ChartMapOptionsData.projectionType
+    summary: >-
+      Returns or sets series projection type of a region map chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: projectionType
+    fullName: projectionType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'projectionType?: Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers";'
+      return:
+        type:
+          - Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"

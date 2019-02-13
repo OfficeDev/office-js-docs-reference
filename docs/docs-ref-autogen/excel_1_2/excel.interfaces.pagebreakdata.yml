@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.PageBreakData
+    summary: An interface describing the data returned by calling "pageBreak.toJSON()".
+    name: Excel.Interfaces.PageBreakData
+    fullName: Excel.Interfaces.PageBreakData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.PageBreakData.columnIndex
+      - excel.Excel.Interfaces.PageBreakData.rowIndex
+  - uid: excel.Excel.Interfaces.PageBreakData.columnIndex
+    summary: >-
+      Represents the column index for the page break
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: columnIndex
+    fullName: columnIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnIndex?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.PageBreakData.rowIndex
+    summary: >-
+      Represents the row index for the page break
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex?: number;'
+      return:
+        type:
+          - number

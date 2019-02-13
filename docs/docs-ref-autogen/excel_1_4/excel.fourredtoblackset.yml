@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.FourRedToBlackSet
+    name: Excel.FourRedToBlackSet
+    fullName: Excel.FourRedToBlackSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.FourRedToBlackSet.__index
+      - excel.Excel.FourRedToBlackSet.blackCircle
+      - excel.Excel.FourRedToBlackSet.grayCircle
+      - excel.Excel.FourRedToBlackSet.pinkCircle
+      - excel.Excel.FourRedToBlackSet.redCircle
+  - uid: excel.Excel.FourRedToBlackSet.__index
+    name: __index(index)
+    fullName: __index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: excel.Excel.FourRedToBlackSet.blackCircle
+    name: blackCircle
+    fullName: blackCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'blackCircle: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon
+  - uid: excel.Excel.FourRedToBlackSet.grayCircle
+    name: grayCircle
+    fullName: grayCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayCircle: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon
+  - uid: excel.Excel.FourRedToBlackSet.pinkCircle
+    name: pinkCircle
+    fullName: pinkCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pinkCircle: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon
+  - uid: excel.Excel.FourRedToBlackSet.redCircle
+    name: redCircle
+    fullName: redCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redCircle: Icon;'
+      return:
+        type:
+          - excel.Excel.Icon

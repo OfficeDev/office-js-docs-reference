@@ -1,0 +1,203 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.FillPattern
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.FillPattern
+    fullName: Excel.FillPattern
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.FillPattern.checker
+      - excel.Excel.FillPattern.crissCross
+      - excel.Excel.FillPattern.down
+      - excel.Excel.FillPattern.gray16
+      - excel.Excel.FillPattern.gray25
+      - excel.Excel.FillPattern.gray50
+      - excel.Excel.FillPattern.gray75
+      - excel.Excel.FillPattern.gray8
+      - excel.Excel.FillPattern.grid
+      - excel.Excel.FillPattern.horizontal
+      - excel.Excel.FillPattern.lightDown
+      - excel.Excel.FillPattern.lightHorizontal
+      - excel.Excel.FillPattern.lightUp
+      - excel.Excel.FillPattern.lightVertical
+      - excel.Excel.FillPattern.linearGradient
+      - excel.Excel.FillPattern.none
+      - excel.Excel.FillPattern.rectangularGradient
+      - excel.Excel.FillPattern.semiGray75
+      - excel.Excel.FillPattern.solid
+      - excel.Excel.FillPattern.up
+      - excel.Excel.FillPattern.vertical
+  - uid: excel.Excel.FillPattern.checker
+    isPreview: true
+    name: checker
+    fullName: checker
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Checker"'
+  - uid: excel.Excel.FillPattern.crissCross
+    isPreview: true
+    name: crissCross
+    fullName: crissCross
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CrissCross"'
+  - uid: excel.Excel.FillPattern.down
+    isPreview: true
+    name: down
+    fullName: down
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Down"'
+  - uid: excel.Excel.FillPattern.gray16
+    isPreview: true
+    name: gray16
+    fullName: gray16
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Gray16"'
+  - uid: excel.Excel.FillPattern.gray25
+    isPreview: true
+    name: gray25
+    fullName: gray25
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Gray25"'
+  - uid: excel.Excel.FillPattern.gray50
+    isPreview: true
+    name: gray50
+    fullName: gray50
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Gray50"'
+  - uid: excel.Excel.FillPattern.gray75
+    isPreview: true
+    name: gray75
+    fullName: gray75
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Gray75"'
+  - uid: excel.Excel.FillPattern.gray8
+    isPreview: true
+    name: gray8
+    fullName: gray8
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Gray8"'
+  - uid: excel.Excel.FillPattern.grid
+    isPreview: true
+    name: grid
+    fullName: grid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Grid"'
+  - uid: excel.Excel.FillPattern.horizontal
+    isPreview: true
+    name: horizontal
+    fullName: horizontal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Horizontal"'
+  - uid: excel.Excel.FillPattern.lightDown
+    isPreview: true
+    name: lightDown
+    fullName: lightDown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LightDown"'
+  - uid: excel.Excel.FillPattern.lightHorizontal
+    isPreview: true
+    name: lightHorizontal
+    fullName: lightHorizontal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LightHorizontal"'
+  - uid: excel.Excel.FillPattern.lightUp
+    isPreview: true
+    name: lightUp
+    fullName: lightUp
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LightUp"'
+  - uid: excel.Excel.FillPattern.lightVertical
+    isPreview: true
+    name: lightVertical
+    fullName: lightVertical
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LightVertical"'
+  - uid: excel.Excel.FillPattern.linearGradient
+    isPreview: true
+    name: linearGradient
+    fullName: linearGradient
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LinearGradient"'
+  - uid: excel.Excel.FillPattern.none
+    isPreview: true
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel.Excel.FillPattern.rectangularGradient
+    isPreview: true
+    name: rectangularGradient
+    fullName: rectangularGradient
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RectangularGradient"'
+  - uid: excel.Excel.FillPattern.semiGray75
+    isPreview: true
+    name: semiGray75
+    fullName: semiGray75
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SemiGray75"'
+  - uid: excel.Excel.FillPattern.solid
+    isPreview: true
+    name: solid
+    fullName: solid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Solid"'
+  - uid: excel.Excel.FillPattern.up
+    isPreview: true
+    name: up
+    fullName: up
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Up"'
+  - uid: excel.Excel.FillPattern.vertical
+    isPreview: true
+    name: vertical
+    fullName: vertical
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Vertical"'

@@ -1,0 +1,55 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.WorksheetFilteredEventArgs
+    summary: >-
+      Provides information about the worksheet that raised the filter applied event.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.WorksheetFilteredEventArgs
+    fullName: Excel.WorksheetFilteredEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.WorksheetFilteredEventArgs.type
+      - excel.Excel.WorksheetFilteredEventArgs.worksheetId
+  - uid: excel.Excel.WorksheetFilteredEventArgs.type
+    summary: >-
+      Represents the type of the event. See Excel.EventType for details.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "WorksheetFiltered";'
+      return:
+        type:
+          - '"WorksheetFiltered"'
+  - uid: excel.Excel.WorksheetFilteredEventArgs.worksheetId
+    summary: >-
+      Represents the id of the worksheet in which the filter is applied.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: worksheetId
+    fullName: worksheetId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type:
+          - string

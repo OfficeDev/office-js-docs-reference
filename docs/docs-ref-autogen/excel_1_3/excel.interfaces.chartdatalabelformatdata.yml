@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartDataLabelFormatData
+    summary: An interface describing the data returned by calling "chartDataLabelFormat.toJSON()".
+    name: Excel.Interfaces.ChartDataLabelFormatData
+    fullName: Excel.Interfaces.ChartDataLabelFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartDataLabelFormatData.border
+      - excel.Excel.Interfaces.ChartDataLabelFormatData.font
+  - uid: excel.Excel.Interfaces.ChartDataLabelFormatData.border
+    summary: |-
+      Represents the border format, which includes color, linestyle, and weight. Read-only.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'border?: Excel.Interfaces.ChartBorderData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartBorderData
+  - uid: excel.Excel.Interfaces.ChartDataLabelFormatData.font
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.Interfaces.ChartFontData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartFontData

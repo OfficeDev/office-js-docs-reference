@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.WorkbookUpdateData
+    summary: 'An interface for updating data on the Workbook object, for use in "workbook.set({ ... })".'
+    name: Excel.Interfaces.WorkbookUpdateData
+    fullName: Excel.Interfaces.WorkbookUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.WorkbookUpdateData.chartDataPointTrack
+      - excel.Excel.Interfaces.WorkbookUpdateData.isDirty
+      - excel.Excel.Interfaces.WorkbookUpdateData.properties
+      - excel.Excel.Interfaces.WorkbookUpdateData.use1904DateSystem
+      - excel.Excel.Interfaces.WorkbookUpdateData.usePrecisionAsDisplayed
+  - uid: excel.Excel.Interfaces.WorkbookUpdateData.chartDataPointTrack
+    summary: >-
+      True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
+      charts track the index of the data points.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: chartDataPointTrack
+    fullName: chartDataPointTrack
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'chartDataPointTrack?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorkbookUpdateData.isDirty
+    summary: >-
+      True if no changes have been made to the specified workbook since it was last saved. You can set this property to
+      True if you want to close a modified workbook without either saving it or being prompted to save it.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: isDirty
+    fullName: isDirty
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDirty?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorkbookUpdateData.properties
+    summary: |-
+      Gets the workbook properties.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: properties
+    fullName: properties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'properties?: Excel.Interfaces.DocumentPropertiesUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.DocumentPropertiesUpdateData
+  - uid: excel.Excel.Interfaces.WorkbookUpdateData.use1904DateSystem
+    summary: >-
+      True if the workbook uses the 1904 date system.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: use1904DateSystem
+    fullName: use1904DateSystem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'use1904DateSystem?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorkbookUpdateData.usePrecisionAsDisplayed
+    summary: >-
+      True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
+      Data will permanently lose accuracy when switching this property from false to true.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: usePrecisionAsDisplayed
+    fullName: usePrecisionAsDisplayed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'usePrecisionAsDisplayed?: boolean;'
+      return:
+        type:
+          - boolean

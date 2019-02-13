@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ShapeTextVertOverflowType
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.ShapeTextVertOverflowType
+    fullName: Excel.ShapeTextVertOverflowType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ShapeTextVertOverflowType.clip
+      - excel.Excel.ShapeTextVertOverflowType.ellipsis
+      - excel.Excel.ShapeTextVertOverflowType.overflow
+      - excel.Excel.ShapeTextVertOverflowType.shapeTextVertOverflowType_MaxEnumIDs
+  - uid: excel.Excel.ShapeTextVertOverflowType.clip
+    isPreview: true
+    name: clip
+    fullName: clip
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Clip"'
+  - uid: excel.Excel.ShapeTextVertOverflowType.ellipsis
+    isPreview: true
+    name: ellipsis
+    fullName: ellipsis
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Ellipsis"'
+  - uid: excel.Excel.ShapeTextVertOverflowType.overflow
+    isPreview: true
+    name: overflow
+    fullName: overflow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Overflow"'
+  - uid: excel.Excel.ShapeTextVertOverflowType.shapeTextVertOverflowType_MaxEnumIDs
+    isPreview: true
+    name: shapeTextVertOverflowType_MaxEnumIDs
+    fullName: shapeTextVertOverflowType_MaxEnumIDs
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ShapeTextVertOverflowType_MaxEnumIDs"'

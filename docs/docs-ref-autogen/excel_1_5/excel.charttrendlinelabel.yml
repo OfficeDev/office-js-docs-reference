@@ -1,0 +1,313 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartTrendlineLabel
+    summary: |-
+      This object represents the attributes for a chart trendline lable object.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartTrendlineLabel
+    fullName: Excel.ChartTrendlineLabel
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartTrendlineLabel.autoText
+      - excel.Excel.ChartTrendlineLabel.context
+      - excel.Excel.ChartTrendlineLabel.format
+      - excel.Excel.ChartTrendlineLabel.formula
+      - excel.Excel.ChartTrendlineLabel.height
+      - excel.Excel.ChartTrendlineLabel.horizontalAlignment
+      - excel.Excel.ChartTrendlineLabel.left
+      - excel.Excel.ChartTrendlineLabel.linkNumberFormat
+      - excel.Excel.ChartTrendlineLabel.load
+      - excel.Excel.ChartTrendlineLabel.numberFormat
+      - excel.Excel.ChartTrendlineLabel.text
+      - excel.Excel.ChartTrendlineLabel.textOrientation
+      - excel.Excel.ChartTrendlineLabel.toJSON
+      - excel.Excel.ChartTrendlineLabel.top
+      - excel.Excel.ChartTrendlineLabel.verticalAlignment
+      - excel.Excel.ChartTrendlineLabel.width
+  - uid: excel.Excel.ChartTrendlineLabel.autoText
+    summary: |-
+      Boolean value representing if trendline label automatically generates appropriate text based on context.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoText
+    fullName: autoText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoText: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartTrendlineLabel.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: excel.Excel.ChartTrendlineLabel.format
+    summary: |-
+      Represents the format of chart trendline label.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartTrendlineLabelFormat;'
+      return:
+        type:
+          - excel.Excel.ChartTrendlineLabelFormat
+  - uid: excel.Excel.ChartTrendlineLabel.formula
+    summary: |-
+      String value that represents the formula of chart trendline label using A1-style notation.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ChartTrendlineLabel.height
+    summary: >-
+      Returns the height, in points, of the chart trendline label. Read-only. Null if chart trendline label is not
+      visible.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartTrendlineLabel.horizontalAlignment
+    summary: >-
+      Represents the horizontal alignment for chart trendline label. See Excel.ChartTextHorizontalAlignment for details.
+      This property is valid only when TextOrientation of trendline label is 90, -90 or 180.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" |
+        "Distributed";
+      return:
+        type:
+          - Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+  - uid: excel.Excel.ChartTrendlineLabel.left
+    summary: >-
+      Represents the distance, in points, from the left edge of chart trendline label to the left edge of chart area.
+      Null if chart trendline label is not visible.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartTrendlineLabel.linkNumberFormat
+    summary: >-
+      Boolean value representing if the number format is linked to the cells (so that the number format changes in the
+      labels when it changes in the cells).
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: linkNumberFormat
+    fullName: linkNumberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkNumberFormat: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartTrendlineLabel.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineLabel` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendlineLabel` -
+      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip specifies the number of items that are
+      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
+      the specified number of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Excel.ChartTrendlineLabel;'
+      return:
+        type:
+          - excel.Excel.ChartTrendlineLabel
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.ChartTrendlineLabel.numberFormat
+    summary: |-
+      String value that represents the format code for trendline label.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ChartTrendlineLabel.text
+    summary: |-
+      String representing the text of the trendline label on a chart.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ChartTrendlineLabel.textOrientation
+    summary: >-
+      Represents the text orientation of chart trendline label. The value should be an integer either from -90 to 90, or
+      180 for vertically-oriented text.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartTrendlineLabel.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartTrendlineLabel object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineLabelData`<!-- -->) that contains shallow
+      copies of any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartTrendlineLabelData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartTrendlineLabelData
+        description: ''
+  - uid: excel.Excel.ChartTrendlineLabel.top
+    summary: >-
+      Represents the distance, in points, from the top edge of chart trendline label to the top of chart area. Null if
+      chart trendline label is not visible.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartTrendlineLabel.verticalAlignment
+    summary: >-
+      Represents the vertical alignment of chart trendline label. See Excel.ChartTextVerticalAlignment for details. This
+      property is valid only when TextOrientation of trendline label is 0.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";'
+      return:
+        type:
+          - Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
+  - uid: excel.Excel.ChartTrendlineLabel.width
+    summary: >-
+      Returns the width, in points, of the chart trendline label. Read-only. Null if chart trendline label is not
+      visible.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number
