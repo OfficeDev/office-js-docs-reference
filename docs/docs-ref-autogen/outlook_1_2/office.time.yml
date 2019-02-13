@@ -171,16 +171,15 @@ items:
       var startTime = new Date("3/14/2015");
 
       var options = {
-          // Pass information that can be used
-          // in the callback
+          // Pass information that can be used in the callback.
           asyncContext: {verb: "Set"}
-      }
+      };
 
       Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
           if (result.error) {
               console.debug(result.error);
           } else {
-              // Access the asyncContext that was passed to the setAsync function
+              // Access the asyncContext that was passed to the setAsync function.
               console.debug("Start Time " + result.asyncContext.verb);
           }
       });

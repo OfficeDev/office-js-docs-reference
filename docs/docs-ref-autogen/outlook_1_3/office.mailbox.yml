@@ -68,12 +68,12 @@ items:
 
       ```javascript
 
-      // Get an item's ID from a REST API
+      // Get an item's ID from a REST API.
 
       var restId = 'AAMkAGVlOTZjNTM3LW...';
 
 
-      // Treat restId as coming from the v2.0 version of the Outlook Mail API
+      // Treat restId as coming from the v2.0 version of the Outlook Mail API.
 
       var ewsId = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
 
@@ -166,12 +166,12 @@ items:
 
       ```javascript
 
-      // Get the currently selected item's ID
+      // Get the currently selected item's ID.
 
       var ewsId = Office.context.mailbox.item.itemId;
 
 
-      // Convert to a REST ID for the v2.0 version of the Outlook Mail API
+      // Convert to a REST ID for the v2.0 version of the Outlook Mail API.
 
       var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
 
@@ -263,6 +263,15 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.displayAppointmentForm(appointmentId);
+
+      ```
     name: displayAppointmentForm(itemId)
     fullName: displayAppointmentForm(itemId)
     langs:
@@ -312,6 +321,15 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.displayMessageForm(messageId);
+
+      ```
     name: displayMessageForm(itemId)
     fullName: displayMessageForm(itemId)
     langs:

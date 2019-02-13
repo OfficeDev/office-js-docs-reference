@@ -39,15 +39,15 @@ items:
 
       ```javascript
 
-      // Get the current value of the 'myKey' setting
+      // Get the current value of the 'myKey' setting.
 
       var value = Office.context.roamingSettings.get('myKey');
 
-      // Update the value of the 'myKey' setting
+      // Update the value of the 'myKey' setting.
 
       Office.context.roamingSettings.set('myKey', 'Hello World!');
 
-      // Persist the change
+      // Persist the change.
 
       Office.context.roamingSettings.saveAsync();
 

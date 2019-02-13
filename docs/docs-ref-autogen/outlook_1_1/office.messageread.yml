@@ -328,6 +328,18 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example accesses the contacts entities in the current item's body.
+
+
+      var contacts = Office.context.mailbox.item.getEntities().contacts;
+
+      ```
     name: getEntities()
     fullName: getEntities()
     langs:
@@ -487,6 +499,31 @@ items:
 
       ```javascript
 
+      // Consider an add-in manifest has the following `Rule` element:
+
+      <Rule xsi:type="RuleCollection" Mode="And">
+
+      <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
+
+      <Rule xsi:type="RuleCollection" Mode="Or">
+          <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+          <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+      </Rule>
+
+      </Rule>
+
+
+      // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
+
+      {
+
+      'fruits': ['apple','banana','Banana','coconut'],
+
+      'veggies': ['tomato','onion','spinach','broccoli']
+
+      }
+
+
       // The following example shows how to access the array of
 
       // matches for the regular expression rule elements `fruits`
@@ -545,6 +582,31 @@ items:
 
 
       ```javascript
+
+      // Consider an add-in manifest has the following `Rule` element:
+
+      <Rule xsi:type="RuleCollection" Mode="And">
+
+      <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
+
+      <Rule xsi:type="RuleCollection" Mode="Or">
+          <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+          <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+      </Rule>
+
+      </Rule>
+
+
+      // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
+
+      {
+
+      'fruits': ['apple','banana','Banana','coconut'],
+
+      'veggies': ['tomato','onion','spinach','broccoli']
+
+      }
+
 
       var fruits = Office.context.mailbox.item.getRegExMatchesByName("fruits");
 
@@ -699,7 +761,7 @@ items:
           "text",
           { asyncContext: "This is passed to the callback" },
           function callback(result) {
-              // Do something with the result
+              // Do something with the result.
           });
 
       // The following is an example of the result parameter passed to the callback function.
@@ -1080,9 +1142,9 @@ items:
       ```javascript
 
       if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Message) {
-          // do something
+          // Do something.
       } else {
-          // do something else
+          // Do something else.
       }
 
       ```

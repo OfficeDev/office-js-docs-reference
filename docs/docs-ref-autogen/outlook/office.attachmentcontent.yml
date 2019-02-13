@@ -76,17 +76,17 @@ items:
           }
 
           function handleAttachmentsCallback(result) {
-              // parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file
+              // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
               if (result.format === Office.MailboxEnums.AttachmentContentFormat.Base64) {
-                  // handle file attachment
+                  // Handle file attachment.
               } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Eml) {
-                  // handle email item attachment
+                  // Handle email item attachment.
               } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
-                  // handle .icalender attachment
+                  // Handle .icalender attachment.
               } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Url) {
-                  // handle cloud attachment
+                  // Handle cloud attachment.
               } else {
-                  // handle attachment formats that are not supported
+                  // Handle attachment formats that are not supported.
               }
           }
           ```
