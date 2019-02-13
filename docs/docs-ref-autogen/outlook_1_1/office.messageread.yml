@@ -501,27 +501,32 @@ items:
 
       // Consider an add-in manifest has the following `Rule` element:
 
-      <Rule xsi:type="RuleCollection" Mode="And">
+      //<Rule xsi:type="RuleCollection" Mode="And">
 
-      <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
+      //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
 
-      <Rule xsi:type="RuleCollection" Mode="Or">
-          <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-          <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-      </Rule>
+      //  <Rule xsi:type="RuleCollection" Mode="Or">
 
-      </Rule>
+      //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut"
+      PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+
+      //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies"
+      RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+
+      //  </Rule>
+
+      //</Rule>
 
 
       // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
 
-      {
+      //{
 
-      'fruits': ['apple','banana','Banana','coconut'],
+      //'fruits': ['apple','banana','Banana','coconut'],
 
-      'veggies': ['tomato','onion','spinach','broccoli']
+      //'veggies': ['tomato','onion','spinach','broccoli']
 
-      }
+      //}
 
 
       // The following example shows how to access the array of
@@ -585,27 +590,32 @@ items:
 
       // Consider an add-in manifest has the following `Rule` element:
 
-      <Rule xsi:type="RuleCollection" Mode="And">
+      //<Rule xsi:type="RuleCollection" Mode="And">
 
-      <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
+      //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
 
-      <Rule xsi:type="RuleCollection" Mode="Or">
-          <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-          <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-      </Rule>
+      //  <Rule xsi:type="RuleCollection" Mode="Or">
 
-      </Rule>
+      //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut"
+      PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+
+      //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies"
+      RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+
+      //  </Rule>
+
+      //</Rule>
 
 
       // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
 
-      {
+      //{
 
-      'fruits': ['apple','banana','Banana','coconut'],
+      //'fruits': ['apple','banana','Banana','coconut'],
 
-      'veggies': ['tomato','onion','spinach','broccoli']
+      //'veggies': ['tomato','onion','spinach','broccoli']
 
-      }
+      //}
 
 
       var fruits = Office.context.mailbox.item.getRegExMatchesByName("fruits");
