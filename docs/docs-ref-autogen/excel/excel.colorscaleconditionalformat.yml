@@ -17,7 +17,10 @@ items:
       - excel.Excel.ColorScaleConditionalFormat.context
       - excel.Excel.ColorScaleConditionalFormat.criteria
       - excel.Excel.ColorScaleConditionalFormat.load
+      - excel.Excel.ColorScaleConditionalFormat.load_1
+      - excel.Excel.ColorScaleConditionalFormat.load_2
       - excel.Excel.ColorScaleConditionalFormat.set
+      - excel.Excel.ColorScaleConditionalFormat.set_1
       - excel.Excel.ColorScaleConditionalFormat.threeColorScale
       - excel.Excel.ColorScaleConditionalFormat.toJSON
   - uid: excel.Excel.ColorScaleConditionalFormat.context
@@ -77,6 +80,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ColorScaleConditionalFormat` - Where option is a comma-delimited string
+      or an array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ColorScaleConditionalFormat` - Where option.select is
       a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string
       that specifies the navigation properties to load.
@@ -88,21 +95,63 @@ items:
       specifies the number of items that are to be skipped and not included in the result. If option.top is specified,
       the result set will start after skipping the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ColorScaleConditionalFormat;'
+      content: 'load(option?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions): Excel.ColorScaleConditionalFormat;'
       return:
         type:
           - excel.Excel.ColorScaleConditionalFormat
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
+  - uid: excel.Excel.ColorScaleConditionalFormat.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ColorScaleConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.ColorScaleConditionalFormat
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ColorScaleConditionalFormat.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ColorScaleConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.ColorScaleConditionalFormat
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.ColorScaleConditionalFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -112,7 +161,7 @@ items:
 
       `set(properties: Excel.ColorScaleConditionalFormat): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -135,6 +184,24 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ColorScaleConditionalFormat.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ColorScaleConditionalFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.ColorScaleConditionalFormat
   - uid: excel.Excel.ColorScaleConditionalFormat.threeColorScale
     summary: >-
       If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum,
@@ -160,7 +227,7 @@ items:
       returns a plain JavaScript object (typed as `Excel.Interfaces.ColorScaleConditionalFormatData`<!-- -->) that
       contains shallow copies of any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

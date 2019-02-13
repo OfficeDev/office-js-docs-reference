@@ -15,11 +15,14 @@ items:
     package: excel
     children:
       - excel.Excel.ChartTrendlineCollection.add
+      - excel.Excel.ChartTrendlineCollection.add_1
       - excel.Excel.ChartTrendlineCollection.context
       - excel.Excel.ChartTrendlineCollection.getCount
       - excel.Excel.ChartTrendlineCollection.getItem
       - excel.Excel.ChartTrendlineCollection.items
       - excel.Excel.ChartTrendlineCollection.load
+      - excel.Excel.ChartTrendlineCollection.load_1
+      - excel.Excel.ChartTrendlineCollection.load_2
       - excel.Excel.ChartTrendlineCollection.toJSON
   - uid: excel.Excel.ChartTrendlineCollection.add
     summary: |-
@@ -27,7 +30,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(type)
-    fullName: add
+    fullName: add(type)
     langs:
       - typeScript
     type: method
@@ -57,6 +60,29 @@ items:
           description: Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
           type:
             - excel.Excel.ChartTrendlineType
+  - uid: excel.Excel.ChartTrendlineCollection.add_1
+    summary: |-
+      Adds a new trendline to trendline collection.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: add(typeString)
+    fullName: add(typeString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        add(typeString?: "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"):
+        Excel.ChartTrendline;
+      return:
+        type:
+          - excel.Excel.ChartTrendline
+        description: ''
+      parameters:
+        - id: typeString
+          description: Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
+          type:
+            - '"Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"'
   - uid: excel.Excel.ChartTrendlineCollection.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -77,7 +103,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -93,7 +119,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(index)
-    fullName: getItem
+    fullName: getItem(index)
     langs:
       - typeScript
     type: method
@@ -128,6 +154,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartTrendlineCollection` - Where option is a comma-delimited string or
+      an array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendlineCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -139,21 +169,60 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartTrendlineCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ChartTrendlineCollection;
       return:
         type:
           - excel.Excel.ChartTrendlineCollection
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.ChartTrendlineCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartTrendlineCollection;'
+      return:
+        type:
+          - excel.Excel.ChartTrendlineCollection
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartTrendlineCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.ChartTrendlineCollection;'
+      return:
+        type:
+          - excel.Excel.ChartTrendlineCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.ChartTrendlineCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -162,7 +231,7 @@ items:
       returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineCollectionData`<!-- -->) that contains
       an "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

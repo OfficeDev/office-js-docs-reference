@@ -31,6 +31,8 @@ items:
       - onenote.OneNote.Application.insertHtmlAtCurrentPosition
       - onenote.OneNote.Application.isViewingDeletedNotes
       - onenote.OneNote.Application.load
+      - onenote.OneNote.Application.load_1
+      - onenote.OneNote.Application.load_2
       - onenote.OneNote.Application.navigateToPage
       - onenote.OneNote.Application.navigateToPageWithClientUrl
       - onenote.OneNote.Application.notebooks
@@ -55,7 +57,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveNotebook()
-    fullName: getActiveNotebook
+    fullName: getActiveNotebook()
     langs:
       - typeScript
     type: method
@@ -101,7 +103,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveNotebookOrNull()
-    fullName: getActiveNotebookOrNull
+    fullName: getActiveNotebookOrNull()
     langs:
       - typeScript
     type: method
@@ -148,7 +150,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveOutline()
-    fullName: getActiveOutline
+    fullName: getActiveOutline()
     langs:
       - typeScript
     type: method
@@ -191,7 +193,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveOutlineOrNull()
-    fullName: getActiveOutlineOrNull
+    fullName: getActiveOutlineOrNull()
     langs:
       - typeScript
     type: method
@@ -235,7 +237,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActivePage()
-    fullName: getActivePage
+    fullName: getActivePage()
     langs:
       - typeScript
     type: method
@@ -281,7 +283,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActivePageOrNull()
-    fullName: getActivePageOrNull
+    fullName: getActivePageOrNull()
     langs:
       - typeScript
     type: method
@@ -328,7 +330,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveParagraph()
-    fullName: getActiveParagraph
+    fullName: getActiveParagraph()
     langs:
       - typeScript
     type: method
@@ -344,7 +346,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveParagraphOrNull()
-    fullName: getActiveParagraphOrNull
+    fullName: getActiveParagraphOrNull()
     langs:
       - typeScript
     type: method
@@ -360,7 +362,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveSection()
-    fullName: getActiveSection
+    fullName: getActiveSection()
     langs:
       - typeScript
     type: method
@@ -406,7 +408,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getActiveSectionOrNull()
-    fullName: getActiveSectionOrNull
+    fullName: getActiveSectionOrNull()
     langs:
       - typeScript
     type: method
@@ -448,7 +450,7 @@ items:
           ```
   - uid: onenote.OneNote.Application.getWindowSize
     name: getWindowSize()
-    fullName: getWindowSize
+    fullName: getWindowSize()
     langs:
       - typeScript
     type: method
@@ -460,7 +462,7 @@ items:
         description: ''
   - uid: onenote.OneNote.Application.insertHtmlAtCurrentPosition
     name: insertHtmlAtCurrentPosition(html)
-    fullName: insertHtmlAtCurrentPosition
+    fullName: insertHtmlAtCurrentPosition(html)
     langs:
       - typeScript
     type: method
@@ -477,7 +479,7 @@ items:
             - string
   - uid: onenote.OneNote.Application.isViewingDeletedNotes
     name: isViewingDeletedNotes()
-    fullName: isViewingDeletedNotes
+    fullName: isViewingDeletedNotes()
     langs:
       - typeScript
     type: method
@@ -495,6 +497,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.Application` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.Application` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -506,28 +512,70 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.Application;'
+      content: 'load(option?: OneNote.Interfaces.ApplicationLoadOptions): OneNote.Application;'
       return:
         type:
           - OneNote.Application
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - OneNote.Interfaces.ApplicationLoadOptions
+  - uid: onenote.OneNote.Application.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): OneNote.Application;'
+      return:
+        type:
+          - OneNote.Application
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.Application.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Application;'
+      return:
+        type:
+          - OneNote.Application
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: onenote.OneNote.Application.navigateToPage
     summary: |-
       Opens the specified page in the application instance.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: navigateToPage(page)
-    fullName: navigateToPage
+    fullName: navigateToPage(page)
     langs:
       - typeScript
     type: method
@@ -582,7 +630,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: navigateToPageWithClientUrl(url)
-    fullName: navigateToPageWithClientUrl
+    fullName: navigateToPageWithClientUrl(url)
     langs:
       - typeScript
     type: method
@@ -656,7 +704,7 @@ items:
       plain JavaScript object (typed as `OneNote.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

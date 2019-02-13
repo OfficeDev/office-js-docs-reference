@@ -31,7 +31,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - Binding
+      - 'Binding '
     package: office
     children:
       - office.Office.MatrixBinding.columnCount

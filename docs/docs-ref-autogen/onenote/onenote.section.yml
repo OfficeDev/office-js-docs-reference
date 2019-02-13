@@ -22,9 +22,12 @@ items:
       - onenote.OneNote.Section.getRestApiId
       - onenote.OneNote.Section.id
       - onenote.OneNote.Section.insertSectionAsSibling
+      - onenote.OneNote.Section.insertSectionAsSibling_1
       - onenote.OneNote.Section.isEncrypted
       - onenote.OneNote.Section.isLocked
       - onenote.OneNote.Section.load
+      - onenote.OneNote.Section.load_1
+      - onenote.OneNote.Section.load_2
       - onenote.OneNote.Section.name
       - onenote.OneNote.Section.notebook
       - onenote.OneNote.Section.pages
@@ -40,7 +43,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: addPage(title)
-    fullName: addPage
+    fullName: addPage(title)
     langs:
       - typeScript
     type: method
@@ -120,7 +123,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: copyToNotebook(destinationNotebook)
-    fullName: copyToNotebook
+    fullName: copyToNotebook(destinationNotebook)
     langs:
       - typeScript
     type: method
@@ -173,7 +176,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: copyToSectionGroup(destinationSectionGroup)
-    fullName: copyToSectionGroup
+    fullName: copyToSectionGroup(destinationSectionGroup)
     langs:
       - typeScript
     type: method
@@ -227,7 +230,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getRestApiId()
-    fullName: getRestApiId
+    fullName: getRestApiId()
     langs:
       - typeScript
     type: method
@@ -278,12 +281,37 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertSectionAsSibling(location, title)'
-    fullName: insertSectionAsSibling
+    fullName: 'insertSectionAsSibling(location, title)'
     langs:
       - typeScript
     type: method
     syntax:
       content: 'insertSectionAsSibling(location: OneNote.InsertLocation, title: string): OneNote.Section;'
+      return:
+        type:
+          - onenote.OneNote.Section
+        description: ''
+      parameters:
+        - id: location
+          description: The location of the new section relative to the current section.
+          type:
+            - onenote.OneNote.InsertLocation
+        - id: title
+          description: The name of the new section.
+          type:
+            - string
+  - uid: onenote.OneNote.Section.insertSectionAsSibling_1
+    summary: |-
+      Inserts a new section before or after the current section.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: 'insertSectionAsSibling(locationString, title)'
+    fullName: 'insertSectionAsSibling(locationString, title)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertSectionAsSibling(locationString: "Before" | "After", title: string): OneNote.Section;'
       return:
         type:
           - onenote.OneNote.Section
@@ -318,10 +346,10 @@ items:
           });
           ```
       parameters:
-        - id: location
+        - id: locationString
           description: The location of the new section relative to the current section.
           type:
-            - onenote.OneNote.InsertLocation
+            - '"Before" | "After"'
         - id: title
           description: The name of the new section.
           type:
@@ -364,6 +392,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.Section` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.Section` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -374,108 +406,138 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      OneNote.run(function (context) {
-              
-          // Get the current section.
-          var section = context.application.getActiveSection();
-                  
-          // Queue a command to load the section. 
-          // For best performance, request specific properties.           
-          section.load("id");
-                  
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
-                  console.log("Section ID: " + section.id);
-              });
-      })
-
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      OneNote.run(function (context) {
-              
-          // Get the current section.
-          var section = context.application.getActiveSection();
-                  
-          // Queue a command to load the section with the specified properties. 
-          section.load("name,notebook/name");
-                  
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
-                  console.log("Section name: " + section.name);
-                  console.log("Parent notebook name: " + section.notebook.name);
-              });
-      })
-
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      OneNote.run(function (context) {
-          // Queue a command to add a page to the current section.
-          var section = context.application.getActiveSection();
-          section.load('clientUrl,notebook');
-          var sectionGroup = section.parentSectionGroupOrNull;
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
-                  if(sectionGroup.isNull === false)
-                  {
-                      // If a parent section group exists, queue a command to add a section in it!
-                      sectionGroup.addSection("NewSectionInSectionGroup");
-                  }
-                  return context.sync();
-              });
-      })
-
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.Section;'
+      content: 'load(option?: OneNote.Interfaces.SectionLoadOptions): OneNote.Section;'
       return:
         type:
           - onenote.OneNote.Section
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.SectionLoadOptions
+  - uid: onenote.OneNote.Section.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): OneNote.Section;'
+      return:
+        type:
+          - onenote.OneNote.Section
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function (context) {
+                  
+              // Get the current section.
+              var section = context.application.getActiveSection();
+                      
+              // Queue a command to load the section. 
+              // For best performance, request specific properties.           
+              section.load("id");
+                      
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function () {
+                      console.log("Section ID: " + section.id);
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          OneNote.run(function (context) {
+                  
+              // Get the current section.
+              var section = context.application.getActiveSection();
+                      
+              // Queue a command to load the section with the specified properties. 
+              section.load("name,notebook/name");
+                      
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function () {
+                      console.log("Section name: " + section.name);
+                      console.log("Parent notebook name: " + section.notebook.name);
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          OneNote.run(function (context) {
+              // Queue a command to add a page to the current section.
+              var section = context.application.getActiveSection();
+              section.load('clientUrl,notebook');
+              var sectionGroup = section.parentSectionGroupOrNull;
+              
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function () {
+                      if(sectionGroup.isNull === false)
+                      {
+                          // If a parent section group exists, queue a command to add a section in it!
+                          sectionGroup.addSection("NewSectionInSectionGroup");
+                      }
+                      return context.sync();
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.Section.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Section;'
+      return:
+        type:
+          - onenote.OneNote.Section
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: onenote.OneNote.Section.name
     summary: |-
       Gets the name of the section. Read-only.
@@ -563,7 +625,7 @@ items:
       JavaScript object (typed as `OneNote.Interfaces.SectionData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -581,7 +643,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -598,7 +660,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

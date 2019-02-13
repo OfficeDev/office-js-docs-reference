@@ -18,6 +18,8 @@ items:
       - visio.Visio.ShapeDataItemCollection.getItem
       - visio.Visio.ShapeDataItemCollection.items
       - visio.Visio.ShapeDataItemCollection.load
+      - visio.Visio.ShapeDataItemCollection.load_1
+      - visio.Visio.ShapeDataItemCollection.load_2
       - visio.Visio.ShapeDataItemCollection.toJSON
   - uid: visio.Visio.ShapeDataItemCollection.getCount
     summary: |-
@@ -25,7 +27,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -41,7 +43,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getItem(key)
-    fullName: getItem
+    fullName: getItem(key)
     langs:
       - typeScript
     type: method
@@ -74,6 +76,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Visio.ShapeDataItemCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItemCollection` - Where option.select is a
@@ -113,24 +119,63 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.ShapeDataItemCollection;'
+      content: >-
+        load(option?: Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.ShapeDataItemCollection;
       return:
         type:
           - visio.Visio.ShapeDataItemCollection
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+  - uid: visio.Visio.ShapeDataItemCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Visio.ShapeDataItemCollection;'
+      return:
+        type:
+          - visio.Visio.ShapeDataItemCollection
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.ShapeDataItemCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Visio.ShapeDataItemCollection;'
+      return:
+        type:
+          - visio.Visio.ShapeDataItemCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: visio.Visio.ShapeDataItemCollection.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

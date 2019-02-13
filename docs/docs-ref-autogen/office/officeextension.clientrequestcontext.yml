@@ -11,7 +11,7 @@ items:
     type: class
     package: office
     children:
-      - office.OfficeExtension.ClientRequestContext.constructor
+      - office.OfficeExtension.ClientRequestContext.(constructor)
       - office.OfficeExtension.ClientRequestContext.debugInfo
       - office.OfficeExtension.ClientRequestContext.load
       - office.OfficeExtension.ClientRequestContext.loadRecursive
@@ -19,10 +19,9 @@ items:
       - office.OfficeExtension.ClientRequestContext.sync
       - office.OfficeExtension.ClientRequestContext.trace
       - office.OfficeExtension.ClientRequestContext.trackedObjects
-  - uid: office.OfficeExtension.ClientRequestContext.constructor
-    summary: 'Constructs a new instance of the [ClientRequestContext](xref:office.OfficeExtension.ClientRequestContext) class'
-    name: constructor(url)
-    fullName: constructor
+  - uid: office.OfficeExtension.ClientRequestContext.(constructor)
+    name: (constructor)(url)
+    fullName: (constructor)(url)
     langs:
       - typeScript
     type: constructor
@@ -50,7 +49,7 @@ items:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     name: 'load(object, option)'
-    fullName: load
+    fullName: 'load(object, option)'
     langs:
       - typeScript
     type: method
@@ -77,7 +76,7 @@ items:
 
       You must call `context.sync()` before reading the properties.
     name: 'loadRecursive(object, options, maxDepth)'
-    fullName: loadRecursive
+    fullName: 'loadRecursive(object, options, maxDepth)'
     langs:
       - typeScript
     type: method
@@ -112,7 +111,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'requestHeaders:'
+      content: 'requestHeaders: { [name: string]: string };'
       return:
         type:
           - '{ [name: string]: string }'
@@ -122,7 +121,7 @@ items:
       on the request context and retrieving properties of loaded Office objects for use in your code. This method
       returns a promise, which is resolved when the synchronization is complete.
     name: sync(passThroughValue)
-    fullName: sync
+    fullName: sync(passThroughValue)
     langs:
       - typeScript
     type: method
@@ -143,7 +142,7 @@ items:
       adds a ".traceMessages" array to the OfficeExtension.Error object, containing all trace messages that were
       executed. These messages can help you monitor the program execution sequence and detect the cause of the error.
     name: trace(message)
-    fullName: trace
+    fullName: trace(message)
     langs:
       - typeScript
     type: method

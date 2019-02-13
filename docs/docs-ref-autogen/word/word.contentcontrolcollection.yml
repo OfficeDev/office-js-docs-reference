@@ -29,6 +29,8 @@ items:
       - word.Word.ContentControlCollection.getItem
       - word.Word.ContentControlCollection.items
       - word.Word.ContentControlCollection.load
+      - word.Word.ContentControlCollection.load_1
+      - word.Word.ContentControlCollection.load_2
       - word.Word.ContentControlCollection.toJSON
       - word.Word.ContentControlCollection.track
       - word.Word.ContentControlCollection.untrack
@@ -54,7 +56,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getById(id)
-    fullName: getById
+    fullName: getById(id)
     langs:
       - typeScript
     type: method
@@ -130,7 +132,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getByIdOrNullObject(id)
-    fullName: getByIdOrNullObject
+    fullName: getByIdOrNullObject(id)
     langs:
       - typeScript
     type: method
@@ -181,7 +183,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getByTag(tag)
-    fullName: getByTag
+    fullName: getByTag(tag)
     langs:
       - typeScript
     type: method
@@ -252,7 +254,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getByTitle(title)
-    fullName: getByTitle
+    fullName: getByTitle(title)
     langs:
       - typeScript
     type: method
@@ -310,7 +312,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getByTypes(types)
-    fullName: getByTypes
+    fullName: getByTypes(types)
     langs:
       - typeScript
     type: method
@@ -331,7 +333,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirst()
-    fullName: getFirst
+    fullName: getFirst()
     langs:
       - typeScript
     type: method
@@ -377,7 +379,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirstOrNullObject()
-    fullName: getFirstOrNullObject
+    fullName: getFirstOrNullObject()
     langs:
       - typeScript
     type: method
@@ -393,7 +395,7 @@ items:
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getItem(index)
-    fullName: getItem
+    fullName: getItem(index)
     langs:
       - typeScript
     type: method
@@ -426,6 +428,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Word.ContentControlCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Word.ContentControlCollection` - Where option.select is a
@@ -518,24 +524,63 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.ContentControlCollection;'
+      content: >-
+        load(option?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.ContentControlCollection;
       return:
         type:
           - word.Word.ContentControlCollection
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+  - uid: word.Word.ContentControlCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.ContentControlCollection;'
+      return:
+        type:
+          - word.Word.ContentControlCollection
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: word.Word.ContentControlCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Word.ContentControlCollection;'
+      return:
+        type:
+          - word.Word.ContentControlCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: word.Word.ContentControlCollection.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -553,7 +598,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -570,7 +615,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

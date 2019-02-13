@@ -18,8 +18,11 @@ items:
       - excel.Excel.PivotHierarchy.fields
       - excel.Excel.PivotHierarchy.id
       - excel.Excel.PivotHierarchy.load
+      - excel.Excel.PivotHierarchy.load_1
+      - excel.Excel.PivotHierarchy.load_2
       - excel.Excel.PivotHierarchy.name
       - excel.Excel.PivotHierarchy.set
+      - excel.Excel.PivotHierarchy.set_1
       - excel.Excel.PivotHierarchy.toJSON
   - uid: excel.Excel.PivotHierarchy.context
     summary: >-
@@ -73,6 +76,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.PivotHierarchy` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.PivotHierarchy` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -84,21 +91,63 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.PivotHierarchy;'
+      content: 'load(option?: Excel.Interfaces.PivotHierarchyLoadOptions): Excel.PivotHierarchy;'
       return:
         type:
           - excel.Excel.PivotHierarchy
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.PivotHierarchyLoadOptions
+  - uid: excel.Excel.PivotHierarchy.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PivotHierarchy;'
+      return:
+        type:
+          - excel.Excel.PivotHierarchy
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.PivotHierarchy.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotHierarchy;'
+      return:
+        type:
+          - excel.Excel.PivotHierarchy
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.PivotHierarchy.name
     summary: |-
       Name of the PivotHierarchy.
@@ -123,7 +172,7 @@ items:
 
       `set(properties: Excel.PivotHierarchy): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -144,6 +193,24 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.PivotHierarchy.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.PivotHierarchy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.PivotHierarchy
   - uid: excel.Excel.PivotHierarchy.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -152,7 +219,7 @@ items:
       plain JavaScript object (typed as `Excel.Interfaces.PivotHierarchyData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

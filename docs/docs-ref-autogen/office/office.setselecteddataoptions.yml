@@ -27,7 +27,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type:
           - any
@@ -46,7 +46,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'cellFormat?: RangeFormatConfiguration[];'
+      content: 'cellFormat?: RangeFormatConfiguration[]'
       return:
         type:
           - 'RangeFormatConfiguration[]'
@@ -58,7 +58,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'coercionType?: Office.CoercionType | string;'
+      content: 'coercionType?: Office.CoercionType | string'
       return:
         type:
           - Office.CoercionType | string
@@ -74,7 +74,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'imageHeight?: number;'
+      content: 'imageHeight?: number'
       return:
         type:
           - number
@@ -89,7 +89,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'imageLeft?: number;'
+      content: 'imageLeft?: number'
       return:
         type:
           - number
@@ -104,7 +104,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'imageTop?: number;'
+      content: 'imageTop?: number'
       return:
         type:
           - number
@@ -120,7 +120,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'imageWidth?: number;'
+      content: 'imageWidth?: number'
       return:
         type:
           - number
@@ -134,7 +134,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'tableOptions?: object;'
+      content: 'tableOptions?: object'
       return:
         type:
           - object

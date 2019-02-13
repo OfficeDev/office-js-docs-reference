@@ -1,0 +1,140 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions
+    summary: |-
+      Represents a collection of DataPivotHierarchy items associated with the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions
+    fullName: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.$all
+      - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.field
+      - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.id
+      - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.name
+      - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.numberFormat
+      - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.position
+      - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.showAs
+      - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.summarizeBy
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.field
+    summary: |-
+      For EACH ITEM in the collection: Returns the PivotFields associated with the DataPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: field
+    fullName: field
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'field?: Excel.Interfaces.PivotFieldLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.PivotFieldLoadOptions
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.id
+    summary: |-
+      For EACH ITEM in the collection: Id of the DataPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.name
+    summary: |-
+      For EACH ITEM in the collection: Name of the DataPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.numberFormat
+    summary: |-
+      For EACH ITEM in the collection: Number format of the DataPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.position
+    summary: |-
+      For EACH ITEM in the collection: Position of the DataPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.showAs
+    summary: >-
+      For EACH ITEM in the collection: Determines whether the data should be shown as a specific summary calculation or
+      not.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showAs
+    fullName: showAs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAs?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.summarizeBy
+    summary: |-
+      For EACH ITEM in the collection: Determines whether to show all items of the DataPivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: summarizeBy
+    fullName: summarizeBy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'summarizeBy?: boolean;'
+      return:
+        type:
+          - boolean

@@ -18,6 +18,26 @@ items:
 
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var item = Office.context.mailbox.item;
+
+      // Get an array of strings that represent task suggestions in the current item's body.
+
+      var taskSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
+
+      console.log("There are " + taskSuggestions.length + " task suggestions.")
+
+      taskSuggestions.forEach(function (taskSuggestion) {
+          console.log("Assignees: " + JSON.stringify(taskSuggestion.assignees));
+          console.log("Task: " + JSON.stringify(taskSuggestion.taskString));
+      });
+
+      ```
     name: Office.TaskSuggestion
     fullName: Office.TaskSuggestion
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Interfaces.ShapeViewUpdateData
-    summary: 'An interface for updating data on the ShapeView object, for use in "shapeView.set({ ... })".'
+    summary: 'An interface for updating data on the ShapeView object, for use in "shapeView.set(<!-- -->{ ... }<!-- -->)".'
     name: Visio.Interfaces.ShapeViewUpdateData
     fullName: Visio.Interfaces.ShapeViewUpdateData
     langs:

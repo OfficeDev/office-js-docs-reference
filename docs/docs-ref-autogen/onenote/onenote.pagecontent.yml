@@ -23,9 +23,12 @@ items:
       - onenote.OneNote.PageContent.ink
       - onenote.OneNote.PageContent.left
       - onenote.OneNote.PageContent.load
+      - onenote.OneNote.PageContent.load_1
+      - onenote.OneNote.PageContent.load_2
       - onenote.OneNote.PageContent.outline
       - onenote.OneNote.PageContent.parentPage
       - onenote.OneNote.PageContent.set
+      - onenote.OneNote.PageContent.set_1
       - onenote.OneNote.PageContent.toJSON
       - onenote.OneNote.PageContent.top
       - onenote.OneNote.PageContent.track
@@ -51,7 +54,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -157,6 +160,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.PageContent` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.PageContent` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -168,21 +175,63 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.PageContent;'
+      content: 'load(option?: OneNote.Interfaces.PageContentLoadOptions): OneNote.PageContent;'
       return:
         type:
           - onenote.OneNote.PageContent
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.PageContentLoadOptions
+  - uid: onenote.OneNote.PageContent.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): OneNote.PageContent;'
+      return:
+        type:
+          - onenote.OneNote.PageContent
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.PageContent.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.PageContent;'
+      return:
+        type:
+          - onenote.OneNote.PageContent
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: onenote.OneNote.PageContent.outline
     summary: |-
       Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
@@ -222,7 +271,7 @@ items:
 
       `set(properties: OneNote.PageContent): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -243,6 +292,24 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: onenote.OneNote.PageContent.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: OneNote.PageContent): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - onenote.OneNote.PageContent
   - uid: onenote.OneNote.PageContent.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -251,7 +318,7 @@ items:
       plain JavaScript object (typed as `OneNote.Interfaces.PageContentData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -284,7 +351,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -316,7 +383,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

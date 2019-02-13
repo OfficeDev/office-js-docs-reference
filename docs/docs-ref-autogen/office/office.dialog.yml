@@ -22,7 +22,7 @@ items:
 
       - DialogEventReceived. Triggered when the dialog box has been closed or otherwise unloaded.
     name: 'addEventHandler(eventType, handler)'
-    fullName: addEventHandler
+    fullName: 'addEventHandler(eventType, handler)'
     langs:
       - typeScript
     type: method
@@ -44,7 +44,7 @@ items:
   - uid: office.Office.Dialog.close
     summary: Called from a parent page to close the corresponding dialog box.
     name: close()
-    fullName: close
+    fullName: close()
     langs:
       - typeScript
     type: method
@@ -57,7 +57,7 @@ items:
   - uid: office.Office.Dialog.sendMessage
     summary: FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE.
     name: sendMessage(name)
-    fullName: sendMessage
+    fullName: sendMessage(name)
     langs:
       - typeScript
     type: method

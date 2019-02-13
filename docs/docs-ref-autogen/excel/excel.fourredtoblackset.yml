@@ -8,28 +8,10 @@ items:
     type: interface
     package: excel
     children:
-      - excel.Excel.FourRedToBlackSet.__index
       - excel.Excel.FourRedToBlackSet.blackCircle
       - excel.Excel.FourRedToBlackSet.grayCircle
       - excel.Excel.FourRedToBlackSet.pinkCircle
       - excel.Excel.FourRedToBlackSet.redCircle
-  - uid: excel.Excel.FourRedToBlackSet.__index
-    name: __index(index)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[index: number]: Icon;'
-      return:
-        type:
-          - excel.Excel.Icon
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
   - uid: excel.Excel.FourRedToBlackSet.blackCircle
     name: blackCircle
     fullName: blackCircle

@@ -15,7 +15,9 @@ items:
     package: word
     children:
       - word.Word.Table.addColumns
+      - word.Word.Table.addColumns_1
       - word.Word.Table.addRows
+      - word.Word.Table.addRows_1
       - word.Word.Table.alignment
       - word.Word.Table.autoFitWindow
       - word.Word.Table.clear
@@ -26,9 +28,11 @@ items:
       - word.Word.Table.distributeColumns
       - word.Word.Table.font
       - word.Word.Table.getBorder
+      - word.Word.Table.getBorder_1
       - word.Word.Table.getCell
       - word.Word.Table.getCellOrNullObject
       - word.Word.Table.getCellPadding
+      - word.Word.Table.getCellPadding_1
       - word.Word.Table.getNext
       - word.Word.Table.getNextOrNullObject
       - word.Word.Table.getParagraphAfter
@@ -36,13 +40,18 @@ items:
       - word.Word.Table.getParagraphBefore
       - word.Word.Table.getParagraphBeforeOrNullObject
       - word.Word.Table.getRange
+      - word.Word.Table.getRange_1
       - word.Word.Table.headerRowCount
       - word.Word.Table.horizontalAlignment
       - word.Word.Table.insertContentControl
       - word.Word.Table.insertParagraph
+      - word.Word.Table.insertParagraph_1
       - word.Word.Table.insertTable
+      - word.Word.Table.insertTable_1
       - word.Word.Table.isUniform
       - word.Word.Table.load
+      - word.Word.Table.load_1
+      - word.Word.Table.load_2
       - word.Word.Table.nestingLevel
       - word.Word.Table.parentBody
       - word.Word.Table.parentContentControl
@@ -55,8 +64,11 @@ items:
       - word.Word.Table.rows
       - word.Word.Table.search
       - word.Word.Table.select
+      - word.Word.Table.select_1
       - word.Word.Table.set
+      - word.Word.Table.set_1
       - word.Word.Table.setCellPadding
+      - word.Word.Table.setCellPadding_1
       - word.Word.Table.shadingColor
       - word.Word.Table.style
       - word.Word.Table.styleBandedColumns
@@ -80,7 +92,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'addColumns(insertLocation, columnCount, values)'
-    fullName: addColumns
+    fullName: 'addColumns(insertLocation, columnCount, values)'
     langs:
       - typeScript
     type: method
@@ -103,6 +115,39 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
+  - uid: word.Word.Table.addColumns_1
+    summary: >-
+      Adds columns to the start or end of the table, using the first or last existing column as a template. This is
+      applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'addColumns(insertLocationString, columnCount, values)'
+    fullName: 'addColumns(insertLocationString, columnCount, values)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addColumns(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", columnCount: number, values?:
+        string[][]): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: insertLocationString
+          description: 'Required. It can be ''Start'' or ''End'', corresponding to the appropriate side of the table.'
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
+        - id: columnCount
+          description: Required. Number of columns to add.
+          type:
+            - number
+        - id: values
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
   - uid: word.Word.Table.addRows
     summary: >-
       Adds rows to the start or end of the table, using the first or last existing row as a template. The string values,
@@ -111,7 +156,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'addRows(insertLocation, rowCount, values)'
-    fullName: addRows
+    fullName: 'addRows(insertLocation, rowCount, values)'
     langs:
       - typeScript
     type: method
@@ -126,6 +171,39 @@ items:
           description: Required. It can be 'Start' or 'End'.
           type:
             - Word.InsertLocation
+        - id: rowCount
+          description: Required. Number of rows to add.
+          type:
+            - number
+        - id: values
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
+  - uid: word.Word.Table.addRows_1
+    summary: >-
+      Adds rows to the start or end of the table, using the first or last existing row as a template. The string values,
+      if specified, are set in the newly inserted rows.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'addRows(insertLocationString, rowCount, values)'
+    fullName: 'addRows(insertLocationString, rowCount, values)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addRows(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?:
+        string[][]): Word.TableRowCollection;
+      return:
+        type:
+          - Word.TableRowCollection
+        description: ''
+      parameters:
+        - id: insertLocationString
+          description: Required. It can be 'Start' or 'End'.
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
         - id: rowCount
           description: Required. Number of rows to add.
           type:
@@ -155,7 +233,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: autoFitWindow()
-    fullName: autoFitWindow
+    fullName: autoFitWindow()
     langs:
       - typeScript
     type: method
@@ -171,7 +249,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: clear()
-    fullName: clear
+    fullName: clear()
     langs:
       - typeScript
     type: method
@@ -201,7 +279,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -217,7 +295,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'deleteColumns(columnIndex, columnCount)'
-    fullName: deleteColumns
+    fullName: 'deleteColumns(columnIndex, columnCount)'
     langs:
       - typeScript
     type: method
@@ -242,7 +320,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'deleteRows(rowIndex, rowCount)'
-    fullName: deleteRows
+    fullName: 'deleteRows(rowIndex, rowCount)'
     langs:
       - typeScript
     type: method
@@ -267,7 +345,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: distributeColumns()
-    fullName: distributeColumns
+    fullName: distributeColumns()
     langs:
       - typeScript
     type: method
@@ -298,7 +376,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getBorder(borderLocation)
-    fullName: getBorder
+    fullName: getBorder(borderLocation)
     langs:
       - typeScript
     type: method
@@ -313,13 +391,36 @@ items:
           description: Required. The border location.
           type:
             - word.Word.BorderLocation
+  - uid: word.Word.Table.getBorder_1
+    summary: |-
+      Gets the border style for the specified border.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getBorder(borderLocationString)
+    fullName: getBorder(borderLocationString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" |
+        "Inside" | "Outside" | "All"): Word.TableBorder;
+      return:
+        type:
+          - word.Word.TableBorder
+        description: ''
+      parameters:
+        - id: borderLocationString
+          description: Required. The border location.
+          type:
+            - '"Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"'
   - uid: word.Word.Table.getCell
     summary: |-
       Gets the table cell at a specified row and column. Throws if the specified table cell does not exist.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'getCell(rowIndex, cellIndex)'
-    fullName: getCell
+    fullName: 'getCell(rowIndex, cellIndex)'
     langs:
       - typeScript
     type: method
@@ -358,7 +459,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'getCellOrNullObject(rowIndex, cellIndex)'
-    fullName: getCellOrNullObject
+    fullName: 'getCellOrNullObject(rowIndex, cellIndex)'
     langs:
       - typeScript
     type: method
@@ -383,7 +484,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getCellPadding(cellPaddingLocation)
-    fullName: getCellPadding
+    fullName: getCellPadding(cellPaddingLocation)
     langs:
       - typeScript
     type: method
@@ -398,13 +499,36 @@ items:
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - word.Word.CellPaddingLocation
+  - uid: word.Word.Table.getCellPadding_1
+    summary: |-
+      Gets cell padding in points.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getCellPadding(cellPaddingLocationString)
+    fullName: getCellPadding(cellPaddingLocationString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"):
+        OfficeExtension.ClientResult<number>;
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+      parameters:
+        - id: cellPaddingLocationString
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
+          type:
+            - '"Top" | "Left" | "Bottom" | "Right"'
   - uid: word.Word.Table.getNext
     summary: |-
       Gets the next table. Throws if this table is the last one.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNext()
-    fullName: getNext
+    fullName: getNext()
     langs:
       - typeScript
     type: method
@@ -420,7 +544,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNextOrNullObject()
-    fullName: getNextOrNullObject
+    fullName: getNextOrNullObject()
     langs:
       - typeScript
     type: method
@@ -436,7 +560,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getParagraphAfter()
-    fullName: getParagraphAfter
+    fullName: getParagraphAfter()
     langs:
       - typeScript
     type: method
@@ -452,7 +576,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getParagraphAfterOrNullObject()
-    fullName: getParagraphAfterOrNullObject
+    fullName: getParagraphAfterOrNullObject()
     langs:
       - typeScript
     type: method
@@ -468,7 +592,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getParagraphBefore()
-    fullName: getParagraphBefore
+    fullName: getParagraphBefore()
     langs:
       - typeScript
     type: method
@@ -484,7 +608,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getParagraphBeforeOrNullObject()
-    fullName: getParagraphBeforeOrNullObject
+    fullName: getParagraphBeforeOrNullObject()
     langs:
       - typeScript
     type: method
@@ -500,7 +624,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getRange(rangeLocation)
-    fullName: getRange
+    fullName: getRange(rangeLocation)
     langs:
       - typeScript
     type: method
@@ -515,6 +639,27 @@ items:
           description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'', or ''After''.'
           type:
             - word.Word.RangeLocation
+  - uid: word.Word.Table.getRange_1
+    summary: |-
+      Gets the range that contains this table, or the range at the start or end of the table.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getRange(rangeLocationString)
+    fullName: getRange(rangeLocationString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: rangeLocationString
+          description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'', or ''After''.'
+          type:
+            - '"Whole" | "Start" | "End" | "Before" | "After" | "Content"'
   - uid: word.Word.Table.headerRowCount
     summary: |-
       Gets and sets the number of header rows.
@@ -553,7 +698,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: insertContentControl()
-    fullName: insertContentControl
+    fullName: insertContentControl()
     langs:
       - typeScript
     type: method
@@ -569,7 +714,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
-    fullName: insertParagraph
+    fullName: 'insertParagraph(paragraphText, insertLocation)'
     langs:
       - typeScript
     type: method
@@ -588,6 +733,33 @@ items:
           description: Required. The value can be 'Before' or 'After'.
           type:
             - Word.InsertLocation
+  - uid: word.Word.Table.insertParagraph_1
+    summary: |-
+      Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertParagraph(paragraphText, insertLocationString)'
+    fullName: 'insertParagraph(paragraphText, insertLocationString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"):
+        Word.Paragraph;
+      return:
+        type:
+          - Word.Paragraph
+        description: ''
+      parameters:
+        - id: paragraphText
+          description: Required. The paragraph text to be inserted.
+          type:
+            - string
+        - id: insertLocationString
+          description: Required. The value can be 'Before' or 'After'.
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: word.Word.Table.insertTable
     summary: >-
       Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or
@@ -596,7 +768,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertTable(rowCount, columnCount, insertLocation, values)'
-    fullName: insertTable
+    fullName: 'insertTable(rowCount, columnCount, insertLocation, values)'
     langs:
       - typeScript
     type: method
@@ -625,6 +797,43 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
+  - uid: word.Word.Table.insertTable_1
+    summary: >-
+      Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or
+      'After'.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertTable(rowCount, columnCount, insertLocationString, values)'
+    fullName: 'insertTable(rowCount, columnCount, insertLocationString, values)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" |
+        "Replace", values?: string[][]): Word.Table;
+      return:
+        type:
+          - Word.Table
+        description: ''
+      parameters:
+        - id: rowCount
+          description: Required. The number of rows in the table.
+          type:
+            - number
+        - id: columnCount
+          description: Required. The number of columns in the table.
+          type:
+            - number
+        - id: insertLocationString
+          description: Required. The value can be 'Before' or 'After'.
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
+        - id: values
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
   - uid: word.Word.Table.isUniform
     summary: |-
       Indicates whether all of the table rows are uniform. Read-only.
@@ -648,6 +857,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.Table` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.Table` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -659,21 +872,63 @@ items:
       included in the result. If option.top is specified, the result set will start after skipping the specified number
       of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.Table;'
+      content: 'load(option?: Word.Interfaces.TableLoadOptions): Word.Table;'
       return:
         type:
           - Word.Table
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - Word.Interfaces.TableLoadOptions
+  - uid: word.Word.Table.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.Table;'
+      return:
+        type:
+          - Word.Table
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: word.Word.Table.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Table;'
+      return:
+        type:
+          - Word.Table
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: word.Word.Table.nestingLevel
     summary: |-
       Gets the nesting level of the table. Top-level tables have level 1. Read-only.
@@ -836,7 +1091,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'search(searchText, searchOptions)'
-    fullName: search
+    fullName: 'search(searchText, searchOptions)'
     langs:
       - typeScript
     type: method
@@ -879,7 +1134,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: select(selectionMode)
-    fullName: select
+    fullName: select(selectionMode)
     langs:
       - typeScript
     type: method
@@ -894,6 +1149,27 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - Word.SelectionMode
+  - uid: word.Word.Table.select_1
+    summary: |-
+      Selects the table, or the position at the start or end of the table, and navigates the Word UI to it.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: select(selectionModeString)
+    fullName: select(selectionModeString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'select(selectionModeString?: "Select" | "Start" | "End"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: selectionModeString
+          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          type:
+            - '"Select" | "Start" | "End"'
   - uid: word.Word.Table.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -903,7 +1179,7 @@ items:
 
       `set(properties: Word.Table): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -924,13 +1200,31 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: word.Word.Table.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Word.Table): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Word.Table
   - uid: word.Word.Table.setCellPadding
     summary: |-
       Sets cell padding in points.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'setCellPadding(cellPaddingLocation, cellPadding)'
-    fullName: setCellPadding
+    fullName: 'setCellPadding(cellPaddingLocation, cellPadding)'
     langs:
       - typeScript
     type: method
@@ -945,6 +1239,31 @@ items:
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - word.Word.CellPaddingLocation
+        - id: cellPadding
+          description: Required. The cell padding.
+          type:
+            - number
+  - uid: word.Word.Table.setCellPadding_1
+    summary: |-
+      Sets cell padding in points.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'setCellPadding(cellPaddingLocationString, cellPadding)'
+    fullName: 'setCellPadding(cellPaddingLocationString, cellPadding)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cellPaddingLocationString
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
+          type:
+            - '"Top" | "Left" | "Bottom" | "Right"'
         - id: cellPadding
           description: Required. The cell padding.
           type:
@@ -1154,7 +1473,7 @@ items:
           - Word.TableCollection
   - uid: word.Word.Table.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -1172,7 +1491,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -1189,7 +1508,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

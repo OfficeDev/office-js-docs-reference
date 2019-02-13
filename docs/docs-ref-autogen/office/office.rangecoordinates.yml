@@ -21,7 +21,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'column?: number;'
+      content: 'column?: number'
       return:
         type:
           - number
@@ -33,7 +33,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'row?: number;'
+      content: 'row?: number'
       return:
         type:
           - number

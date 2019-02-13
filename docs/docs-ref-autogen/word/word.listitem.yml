@@ -21,7 +21,10 @@ items:
       - word.Word.ListItem.level
       - word.Word.ListItem.listString
       - word.Word.ListItem.load
+      - word.Word.ListItem.load_1
+      - word.Word.ListItem.load_2
       - word.Word.ListItem.set
+      - word.Word.ListItem.set_1
       - word.Word.ListItem.siblingIndex
       - word.Word.ListItem.toJSON
       - word.Word.ListItem.track
@@ -48,7 +51,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getAncestor(parentOnly)
-    fullName: getAncestor
+    fullName: getAncestor(parentOnly)
     langs:
       - typeScript
     type: method
@@ -73,7 +76,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getAncestorOrNullObject(parentOnly)
-    fullName: getAncestorOrNullObject
+    fullName: getAncestorOrNullObject(parentOnly)
     langs:
       - typeScript
     type: method
@@ -96,7 +99,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getDescendants(directChildrenOnly)
-    fullName: getDescendants
+    fullName: getDescendants(directChildrenOnly)
     langs:
       - typeScript
     type: method
@@ -151,6 +154,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Word.ListItem` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Word.ListItem` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -162,21 +169,63 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Word.ListItem;'
+      content: 'load(option?: Word.Interfaces.ListItemLoadOptions): Word.ListItem;'
       return:
         type:
           - word.Word.ListItem
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - word.Word.Interfaces.ListItemLoadOptions
+  - uid: word.Word.ListItem.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.ListItem;'
+      return:
+        type:
+          - word.Word.ListItem
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: word.Word.ListItem.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.ListItem;'
+      return:
+        type:
+          - word.Word.ListItem
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: word.Word.ListItem.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -186,7 +235,7 @@ items:
 
       `set(properties: Word.ListItem): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -207,6 +256,24 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: word.Word.ListItem.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Word.ListItem): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - word.Word.ListItem
   - uid: word.Word.ListItem.siblingIndex
     summary: |-
       Gets the list item order number in relation to its siblings. Read-only.
@@ -224,7 +291,7 @@ items:
           - number
   - uid: word.Word.ListItem.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -242,7 +309,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -259,7 +326,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

@@ -2,8 +2,8 @@
 items:
   - uid: excel.Excel.Interfaces.ChartSeriesCollectionUpdateData
     summary: >-
-      An interface for updating data on the ChartSeriesCollection object, for use in "chartSeriesCollection.set({ ...
-      })".
+      An interface for updating data on the ChartSeriesCollection object, for use in "chartSeriesCollection.set(<!--
+      -->{ ... }<!-- -->)".
     name: Excel.Interfaces.ChartSeriesCollectionUpdateData
     fullName: Excel.Interfaces.ChartSeriesCollectionUpdateData
     langs:

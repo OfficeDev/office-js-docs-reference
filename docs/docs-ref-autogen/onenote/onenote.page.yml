@@ -28,10 +28,14 @@ items:
       - onenote.OneNote.Page.id
       - onenote.OneNote.Page.inkAnalysisOrNull
       - onenote.OneNote.Page.insertPageAsSibling
+      - onenote.OneNote.Page.insertPageAsSibling_1
       - onenote.OneNote.Page.load
+      - onenote.OneNote.Page.load_1
+      - onenote.OneNote.Page.load_2
       - onenote.OneNote.Page.pageLevel
       - onenote.OneNote.Page.parentSection
       - onenote.OneNote.Page.set
+      - onenote.OneNote.Page.set_1
       - onenote.OneNote.Page.title
       - onenote.OneNote.Page.toJSON
       - onenote.OneNote.Page.track
@@ -43,7 +47,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'addOutline(left, top, html)'
-    fullName: addOutline
+    fullName: 'addOutline(left, top, html)'
     langs:
       - typeScript
     type: method
@@ -113,7 +117,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: analyzePage()
-    fullName: analyzePage
+    fullName: analyzePage()
     langs:
       - typeScript
     type: method
@@ -129,7 +133,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: applyTranslation(translatedContent)
-    fullName: applyTranslation
+    fullName: applyTranslation(translatedContent)
     langs:
       - typeScript
     type: method
@@ -209,7 +213,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: copyToSection(destinationSection)
-    fullName: copyToSection
+    fullName: copyToSection(destinationSection)
     langs:
       - typeScript
     type: method
@@ -269,7 +273,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: copyToSectionAndSetClassNotebookPageSource(destinationSection)
-    fullName: copyToSectionAndSetClassNotebookPageSource
+    fullName: copyToSectionAndSetClassNotebookPageSource(destinationSection)
     langs:
       - typeScript
     type: method
@@ -290,7 +294,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getRestApiId()
-    fullName: getRestApiId
+    fullName: getRestApiId()
     langs:
       - typeScript
     type: method
@@ -326,7 +330,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: hasTitleContent()
-    fullName: hasTitleContent
+    fullName: hasTitleContent()
     langs:
       - typeScript
     type: method
@@ -372,12 +376,37 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertPageAsSibling(location, title)'
-    fullName: insertPageAsSibling
+    fullName: 'insertPageAsSibling(location, title)'
     langs:
       - typeScript
     type: method
     syntax:
       content: 'insertPageAsSibling(location: OneNote.InsertLocation, title: string): OneNote.Page;'
+      return:
+        type:
+          - onenote.OneNote.Page
+        description: ''
+      parameters:
+        - id: location
+          description: The location of the new page relative to the current page.
+          type:
+            - onenote.OneNote.InsertLocation
+        - id: title
+          description: The title of the new page.
+          type:
+            - string
+  - uid: onenote.OneNote.Page.insertPageAsSibling_1
+    summary: |-
+      Inserts a new page before or after the current page.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: 'insertPageAsSibling(locationString, title)'
+    fullName: 'insertPageAsSibling(locationString, title)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertPageAsSibling(locationString: "Before" | "After", title: string): OneNote.Page;'
       return:
         type:
           - onenote.OneNote.Page
@@ -411,10 +440,10 @@ items:
           });
           ```
       parameters:
-        - id: location
+        - id: locationString
           description: The location of the new page relative to the current page.
           type:
-            - onenote.OneNote.InsertLocation
+            - '"Before" | "After"'
         - id: title
           description: The title of the new page.
           type:
@@ -427,6 +456,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.Page` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.Page` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -437,124 +470,154 @@ items:
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      OneNote.run(function (context) {
-
-          // Gets the active page.
-          var activePage = context.application.getActivePage();
-
-          // Queue a command to add a new page after the active page. 
-          var pageContents = activePage.contents;
-
-          // Queue a command to load the pageContents to access its data.
-          context.load(pageContents);
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function() {
-                  for(var i=0; i < pageContents.items.length; i++)
-                  {
-                      var pageContent = pageContents.items[i];
-                      if (pageContent.type == "Outline")
-                      {
-                          console.log("Found an outline");
-                      }
-                      else if (pageContent.type == "Image")
-                      {
-                          console.log("Found an image");
-                      }
-                      else if (pageContent.type == "Other")
-                      {
-                          console.log("Found a type not supported yet.");
-                      }
-                  }
-              });
-      })
-
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      OneNote.run(function (context) {
-
-          var app = context.application;
-          
-          // Gets the active page.
-          var page = app.getActivePage();
-          
-          // Queue a command to load the webUrl of the page.
-          page.load("webUrl");
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function() {
-                  console.log(page.webUrl);
-              });
-      })
-
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      OneNote.run(function (ctx) {        
-          var app = ctx.application;
-          
-          // Gets the active page.
-          var page = app.getActivePage();
-          
-          // Load ink words
-          page.load('inkAnalysisOrNull/paragraphs/lines/words');
-          
-          return ctx.sync()
-              .then(function() {
-                  if (!page.inkAnalysisOrNull.isNull)
-                      console.log(page.inkAnalysisOrNull.paragraphs.length);
-              });
-      })
-
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.Page;'
+      content: 'load(option?: OneNote.Interfaces.PageLoadOptions): OneNote.Page;'
       return:
         type:
           - onenote.OneNote.Page
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.PageLoadOptions
+  - uid: onenote.OneNote.Page.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): OneNote.Page;'
+      return:
+        type:
+          - onenote.OneNote.Page
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function (context) {
+
+              // Gets the active page.
+              var activePage = context.application.getActivePage();
+
+              // Queue a command to add a new page after the active page. 
+              var pageContents = activePage.contents;
+
+              // Queue a command to load the pageContents to access its data.
+              context.load(pageContents);
+
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function() {
+                      for(var i=0; i < pageContents.items.length; i++)
+                      {
+                          var pageContent = pageContents.items[i];
+                          if (pageContent.type == "Outline")
+                          {
+                              console.log("Found an outline");
+                          }
+                          else if (pageContent.type == "Image")
+                          {
+                              console.log("Found an image");
+                          }
+                          else if (pageContent.type == "Other")
+                          {
+                              console.log("Found a type not supported yet.");
+                          }
+                      }
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          OneNote.run(function (context) {
+
+              var app = context.application;
+              
+              // Gets the active page.
+              var page = app.getActivePage();
+              
+              // Queue a command to load the webUrl of the page.
+              page.load("webUrl");
+              
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function() {
+                      console.log(page.webUrl);
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          OneNote.run(function (ctx) {        
+              var app = ctx.application;
+              
+              // Gets the active page.
+              var page = app.getActivePage();
+              
+              // Load ink words
+              page.load('inkAnalysisOrNull/paragraphs/lines/words');
+              
+              return ctx.sync()
+                  .then(function() {
+                      if (!page.inkAnalysisOrNull.isNull)
+                          console.log(page.inkAnalysisOrNull.paragraphs.length);
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.Page.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Page;'
+      return:
+        type:
+          - onenote.OneNote.Page
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: onenote.OneNote.Page.pageLevel
     summary: |-
       Gets or sets the indentation level of the page.
@@ -594,7 +657,7 @@ items:
 
       `set(properties: OneNote.Page): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -615,6 +678,24 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: onenote.OneNote.Page.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: OneNote.Page): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - onenote.OneNote.Page
   - uid: onenote.OneNote.Page.title
     summary: |-
       Gets or sets the title of the page.
@@ -638,7 +719,7 @@ items:
       JavaScript object (typed as `OneNote.Interfaces.PageData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -656,7 +737,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -673,7 +754,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

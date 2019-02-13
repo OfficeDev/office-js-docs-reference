@@ -23,11 +23,14 @@ items:
       - excel.Excel.Chart.displayBlanksAs
       - excel.Excel.Chart.format
       - excel.Excel.Chart.getImage
+      - excel.Excel.Chart.getImage_1
       - excel.Excel.Chart.height
       - excel.Excel.Chart.id
       - excel.Excel.Chart.left
       - excel.Excel.Chart.legend
       - excel.Excel.Chart.load
+      - excel.Excel.Chart.load_1
+      - excel.Excel.Chart.load_2
       - excel.Excel.Chart.name
       - excel.Excel.Chart.onActivated
       - excel.Excel.Chart.onDeactivated
@@ -37,7 +40,9 @@ items:
       - excel.Excel.Chart.series
       - excel.Excel.Chart.seriesNameLevel
       - excel.Excel.Chart.set
+      - excel.Excel.Chart.set_1
       - excel.Excel.Chart.setData
+      - excel.Excel.Chart.setData_1
       - excel.Excel.Chart.setPosition
       - excel.Excel.Chart.showAllFieldButtons
       - excel.Excel.Chart.showDataLabelsOverMaximum
@@ -158,7 +163,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -221,7 +226,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getImage(width, height, fittingMode)'
-    fullName: getImage
+    fullName: 'getImage(width, height, fittingMode)'
     langs:
       - typeScript
     type: method
@@ -263,6 +268,41 @@ items:
             and width are set).
           type:
             - excel.Excel.ImageFittingMode
+  - uid: excel.Excel.Chart.getImage_1
+    summary: >-
+      Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
+      is preserved as part of the resizing.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'getImage(width, height, fittingModeString)'
+    fullName: 'getImage(width, height, fittingModeString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getImage(width?: number, height?: number, fittingModeString?: "Fit" | "FitAndCenter" | "Fill"):
+        OfficeExtension.ClientResult<string>;
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+      parameters:
+        - id: width
+          description: (Optional) The desired width of the resulting image.
+          type:
+            - number
+        - id: height
+          description: (Optional) The desired height of the resulting image.
+          type:
+            - number
+        - id: fittingModeString
+          description: >-
+            (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height
+            and width are set).
+          type:
+            - '"Fit" | "FitAndCenter" | "Fill"'
   - uid: excel.Excel.Chart.height
     summary: |-
       Represents the height, in points, of the chart object.
@@ -331,6 +371,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Chart` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Chart` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -341,44 +385,82 @@ items:
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      // Get a chart named "Chart1"
-
-      Excel.run(function (ctx) { 
-          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-          chart.load('name');
-          return ctx.sync().then(function() {
-                  console.log(chart.name);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Chart;'
+      content: 'load(option?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;'
       return:
         type:
           - excel.Excel.Chart
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ChartLoadOptions
+  - uid: excel.Excel.Chart.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Chart;'
+      return:
+        type:
+          - excel.Excel.Chart
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // Get a chart named "Chart1"
+          Excel.run(function (ctx) { 
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              chart.load('name');
+              return ctx.sync().then(function() {
+                      console.log(chart.name);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.Chart.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Chart;'
+      return:
+        type:
+          - excel.Excel.Chart
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.Chart.name
     summary: |-
       Represents the name of a chart object.
@@ -564,7 +646,7 @@ items:
 
       `set(properties: Excel.Chart): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -585,18 +667,63 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.Chart.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Chart): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.Chart
   - uid: excel.Excel.Chart.setData
     summary: |-
       Resets the source data for the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'setData(sourceData, seriesBy)'
-    fullName: setData
+    fullName: 'setData(sourceData, seriesBy)'
     langs:
       - typeScript
     type: method
     syntax:
       content: 'setData(sourceData: Range, seriesBy?: Excel.ChartSeriesBy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sourceData
+          description: The range object corresponding to the source data.
+          type:
+            - Range
+        - id: seriesBy
+          description: >-
+            Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
+            (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
+          type:
+            - excel.Excel.ChartSeriesBy
+  - uid: excel.Excel.Chart.setData_1
+    summary: |-
+      Resets the source data for the chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'setData(sourceData, seriesByString)'
+    fullName: 'setData(sourceData, seriesByString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setData(sourceData: Range, seriesByString?: "Auto" | "Columns" | "Rows"): void;'
       return:
         type:
           - void
@@ -623,19 +750,19 @@ items:
           description: The range object corresponding to the source data.
           type:
             - Range
-        - id: seriesBy
+        - id: seriesByString
           description: >-
             Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
             (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
           type:
-            - excel.Excel.ChartSeriesBy
+            - '"Auto" | "Columns" | "Rows"'
   - uid: excel.Excel.Chart.setPosition
     summary: |-
       Positions the chart relative to cells on the worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'setPosition(startCell, endCell)'
-    fullName: setPosition
+    fullName: 'setPosition(startCell, endCell)'
     langs:
       - typeScript
     type: method
@@ -752,7 +879,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.ChartData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

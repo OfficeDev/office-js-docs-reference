@@ -18,7 +18,7 @@ items:
       The RoamingSettings object is accessible via the roamingSettings property in the Office.context namespace.
 
 
-      Important: The RoamingSettings object is initialized from the persisted storage only when the add-in is first
+      **Important**: The RoamingSettings object is initialized from the persisted storage only when the add-in is first
       loaded. For task panes, this means that it is only initialized when the task pane first opens. If the task pane
       navigates to another page or reloads the current page, the in-memory object is reset to its initial values, even
       if your add-in has persisted changes. The persisted changes will not be available until the task pane is closed
@@ -33,6 +33,25 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get the current value of the 'myKey' setting
+
+      var value = Office.context.roamingSettings.get('myKey');
+
+      // Update the value of the 'myKey' setting
+
+      Office.context.roamingSettings.set('myKey', 'Hello World!');
+
+      // Persist the change
+
+      Office.context.roamingSettings.saveAsync();
+
+      ```
     name: Office.RoamingSettings
     fullName: Office.RoamingSettings
     langs:
@@ -57,7 +76,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: get(name)
-    fullName: get
+    fullName: get(name)
     langs:
       - typeScript
     type: method
@@ -85,7 +104,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: remove(name)
-    fullName: remove
+    fullName: remove(name)
     langs:
       - typeScript
     type: method
@@ -120,7 +139,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: saveAsync(callback)
-    fullName: saveAsync
+    fullName: saveAsync(callback)
     langs:
       - typeScript
     type: method
@@ -163,7 +182,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
     name: 'set(name, value)'
-    fullName: set
+    fullName: 'set(name, value)'
     langs:
       - typeScript
     type: method

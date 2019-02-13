@@ -22,7 +22,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type:
           - any
@@ -37,7 +37,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'filterType?: Office.FilterType | string;'
+      content: 'filterType?: Office.FilterType | string'
       return:
         type:
           - Office.FilterType | string
@@ -49,7 +49,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'valueFormat?: Office.ValueFormat | string;'
+      content: 'valueFormat?: Office.ValueFormat | string'
       return:
         type:
           - Office.ValueFormat | string

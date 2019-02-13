@@ -10,5 +10,5 @@ items:
       - typeScript
     type: interface
     extends:
-      - custom-functions-runtime.CustomFunctions.StreamingInvocation
+      - 'StreamingInvocation<ResultType> '
     package: custom-functions-runtime

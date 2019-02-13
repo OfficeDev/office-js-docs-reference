@@ -28,12 +28,15 @@ items:
       - excel.Excel.Table.id
       - excel.Excel.Table.legacyId
       - excel.Excel.Table.load
+      - excel.Excel.Table.load_1
+      - excel.Excel.Table.load_2
       - excel.Excel.Table.name
       - excel.Excel.Table.onChanged
       - excel.Excel.Table.onSelectionChanged
       - excel.Excel.Table.reapplyFilters
       - excel.Excel.Table.rows
       - excel.Excel.Table.set
+      - excel.Excel.Table.set_1
       - excel.Excel.Table.showBandedColumns
       - excel.Excel.Table.showBandedRows
       - excel.Excel.Table.showFilterButton
@@ -49,7 +52,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clearFilters()
-    fullName: clearFilters
+    fullName: clearFilters()
     langs:
       - typeScript
     type: method
@@ -94,7 +97,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: convertToRange()
-    fullName: convertToRange
+    fullName: convertToRange()
     langs:
       - typeScript
     type: method
@@ -126,7 +129,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -158,7 +161,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getDataBodyRange()
-    fullName: getDataBodyRange
+    fullName: getDataBodyRange()
     langs:
       - typeScript
     type: method
@@ -193,7 +196,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getHeaderRowRange()
-    fullName: getHeaderRowRange
+    fullName: getHeaderRowRange()
     langs:
       - typeScript
     type: method
@@ -228,7 +231,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
-    fullName: getRange
+    fullName: getRange()
     langs:
       - typeScript
     type: method
@@ -263,7 +266,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getTotalRowRange()
-    fullName: getTotalRowRange
+    fullName: getTotalRowRange()
     langs:
       - typeScript
     type: method
@@ -362,6 +365,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Table` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Table` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -372,88 +379,118 @@ items:
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      // Get a table by name. 
-
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var table = ctx.workbook.tables.getItem(tableName);
-          table.load('index')
-          return ctx.sync().then(function() {
-                  console.log(table.index);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      // Get a table by index.
-
-      Excel.run(function (ctx) { 
-          var index = 0;
-          var table = ctx.workbook.tables.getItemAt(0);
-          table.load('id')
-          return ctx.sync().then(function() {
-                  console.log(table.id);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      // Set table style. 
-
-      Excel.run(function (ctx) { 
-          var tableName = 'Table1';
-          var table = ctx.workbook.tables.getItem(tableName);
-          table.name = 'Table1-Renamed';
-          table.showTotals = false;
-          table.style = 'TableStyleMedium2';
-          table.load('tableStyle');
-          return ctx.sync().then(function() {
-                  console.log(table.style);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Table;'
+      content: 'load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;'
       return:
         type:
           - excel.Excel.Table
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.TableLoadOptions
+  - uid: excel.Excel.Table.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Table;'
+      return:
+        type:
+          - excel.Excel.Table
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // Get a table by name. 
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              table.load('index')
+              return ctx.sync().then(function() {
+                      console.log(table.index);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          // Get a table by index.
+          Excel.run(function (ctx) { 
+              var index = 0;
+              var table = ctx.workbook.tables.getItemAt(0);
+              table.load('id')
+              return ctx.sync().then(function() {
+                      console.log(table.id);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          // Set table style. 
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              table.name = 'Table1-Renamed';
+              table.showTotals = false;
+              table.style = 'TableStyleMedium2';
+              table.load('tableStyle');
+              return ctx.sync().then(function() {
+                      console.log(table.style);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.Table.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Table;'
+      return:
+        type:
+          - excel.Excel.Table
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.Table.name
     summary: |-
       Name of the table.
@@ -531,7 +568,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reapplyFilters()
-    fullName: reapplyFilters
+    fullName: reapplyFilters()
     langs:
       - typeScript
     type: method
@@ -565,7 +602,7 @@ items:
 
       `set(properties: Excel.Table): void`
     name: 'set(properties, options)'
-    fullName: set
+    fullName: 'set(properties, options)'
     langs:
       - typeScript
     type: method
@@ -586,6 +623,24 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.Table.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Table): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.Table
   - uid: excel.Excel.Table.showBandedColumns
     summary: >-
       Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even
@@ -708,7 +763,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.TableData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

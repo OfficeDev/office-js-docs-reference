@@ -8,12 +8,11 @@ items:
     type: class
     package: office
     children:
-      - office.OfficeExtension.EmbeddedSession.constructor
+      - office.OfficeExtension.EmbeddedSession.(constructor)
       - office.OfficeExtension.EmbeddedSession.init
-  - uid: office.OfficeExtension.EmbeddedSession.constructor
-    summary: 'Constructs a new instance of the [EmbeddedSession](xref:office.OfficeExtension.EmbeddedSession) class'
-    name: 'constructor(url, options)'
-    fullName: constructor
+  - uid: office.OfficeExtension.EmbeddedSession.(constructor)
+    name: '(constructor)(url, options)'
+    fullName: '(constructor)(url, options)'
     langs:
       - typeScript
     type: constructor
@@ -30,7 +29,7 @@ items:
             - office.OfficeExtension.EmbeddedOptions
   - uid: office.OfficeExtension.EmbeddedSession.init
     name: init()
-    fullName: init
+    fullName: init()
     langs:
       - typeScript
     type: method

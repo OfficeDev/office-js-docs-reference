@@ -1,0 +1,190 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.TableRowLoadOptions
+    summary: |-
+      Represents a row in a Word document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.TableRowLoadOptions
+    fullName: Word.Interfaces.TableRowLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.TableRowLoadOptions.$all
+      - word.Word.Interfaces.TableRowLoadOptions.cellCount
+      - word.Word.Interfaces.TableRowLoadOptions.font
+      - word.Word.Interfaces.TableRowLoadOptions.horizontalAlignment
+      - word.Word.Interfaces.TableRowLoadOptions.isHeader
+      - word.Word.Interfaces.TableRowLoadOptions.parentTable
+      - word.Word.Interfaces.TableRowLoadOptions.preferredHeight
+      - word.Word.Interfaces.TableRowLoadOptions.rowIndex
+      - word.Word.Interfaces.TableRowLoadOptions.shadingColor
+      - word.Word.Interfaces.TableRowLoadOptions.values
+      - word.Word.Interfaces.TableRowLoadOptions.verticalAlignment
+  - uid: word.Word.Interfaces.TableRowLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableRowLoadOptions.cellCount
+    summary: |-
+      Gets the number of cells in the row. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: cellCount
+    fullName: cellCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellCount?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableRowLoadOptions.font
+    summary: |-
+      Gets the font. Use this to get and set font name, size, color, and other properties.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Word.Interfaces.FontLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.FontLoadOptions
+  - uid: word.Word.Interfaces.TableRowLoadOptions.horizontalAlignment
+    summary: >-
+      Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or
+      'Justified'.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableRowLoadOptions.isHeader
+    summary: >-
+      Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the
+      Table object.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: isHeader
+    fullName: isHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isHeader?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableRowLoadOptions.parentTable
+    summary: |-
+      Gets parent table.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTable
+    fullName: parentTable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
+      return:
+        type:
+          - Word.Interfaces.TableLoadOptions
+  - uid: word.Word.Interfaces.TableRowLoadOptions.preferredHeight
+    summary: |-
+      Gets and sets the preferred height of the row in points.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: preferredHeight
+    fullName: preferredHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preferredHeight?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableRowLoadOptions.rowIndex
+    summary: |-
+      Gets the index of the row in its parent table. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableRowLoadOptions.shadingColor
+    summary: |-
+      Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: shadingColor
+    fullName: shadingColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shadingColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableRowLoadOptions.values
+    summary: |-
+      Gets and sets the text values in the row, as a 2D Javascript array.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableRowLoadOptions.verticalAlignment
+    summary: |-
+      Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment?: boolean;'
+      return:
+        type:
+          - boolean
