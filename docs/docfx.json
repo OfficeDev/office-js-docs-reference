@@ -498,7 +498,7 @@
     "groups": {
       "outlook-js-preview": {
         "dest": "outlook-js-preview",
-        "moniker_range": "outlook-js-prevew"
+        "moniker_range": "outlook-js-preview"
       },
       "outlook-js-1.1": {
         "dest": "outlook-js-1.1",
