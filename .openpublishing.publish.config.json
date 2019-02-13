@@ -70,6 +70,18 @@
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {
+      "ReferenceTOC": "docs/docs-ref-autogen/outlook/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/outlook_1_1/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/outlook_1_2/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
       "ReferenceTOC": "docs/docs-ref-autogen/outlook_1_3/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
@@ -79,6 +91,14 @@
     },
     {
       "ReferenceTOC": "docs/docs-ref-autogen/outlook_1_5/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/outlook_1_6/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/outlook_1_7/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {

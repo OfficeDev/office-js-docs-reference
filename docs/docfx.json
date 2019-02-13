@@ -7,9 +7,14 @@
           "**/toc.yml"
         ],
         "exclude": [
+          "outlook/**",
+          "outlook_1_1/**",
+          "outlook_1_2/**",
           "outlook_1_3/**",
           "outlook_1_4/**",
           "outlook_1_5/**",
+          "outlook_1_6/**",
+          "outlook_1_7/**",
           "excel_1_4/**",
           "excel_1_5/**"
           
@@ -43,12 +48,22 @@
         "src": "docs-ref-autogen",
         "dest": "api",
         "exclude": [
+          "outlook/**",
+          "outlook.yml",
+          "outlook_1_1/**",
+          "outlook_1_1.yml",
+          "outlook_1_2/**",
+          "outlook_1_2.yml",
           "outlook_1_3/**",
           "outlook_1_3.yml",
           "outlook_1_4/**",
           "outlook_1_4.yml",
           "outlook_1_5/**",
           "outlook_1_5.yml",
+          "outlook_1_6/**",
+          "outlook_1_6.yml",
+          "outlook_1_7/**",
+          "outlook_1_7.yml",
           "excel_1_4/**",
           "excel_1_4.yml",
           "excel_1_5/**",
@@ -62,6 +77,111 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
+      },
+      
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-preview",
+        "src": "docs-ref-autogen/outlook",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-preview",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "outlook.yml"
+        ],
+        "group": "outlook-js-preview",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "group": "outlook-js-preview",
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
+      },
+      
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-1.1",
+        "src": "docs-ref-autogen/outlook_1_1",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-1.1",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "outlook_1_1.yml"
+        ],
+        "group": "outlook-js-1.1",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "group": "outlook-js-1.1",
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
+      },
+      
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-1.2",
+        "src": "docs-ref-autogen/outlook_1_2",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-1.2",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "outlook_1_2.yml"
+        ],
+        "group": "outlook-js-1.2",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "group": "outlook-js-1.2",
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
       },
 
       {
@@ -167,6 +287,77 @@
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
+      
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-1.5",
+        "src": "docs-ref-autogen/outlook_1_5",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-1.5",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "outlook_1_5.yml"
+        ],
+        "group": "outlook-js-1.5",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "group": "outlook-js-1.5",
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
+      },
+      
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-1.7",
+        "src": "docs-ref-autogen/outlook_1_7",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-1.7",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "outlook_1_7.yml"
+        ],
+        "group": "outlook-js-1.7",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "group": "outlook-js-1.7",
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
+      },
+
       {
         "files": [
           "toc.yml"
