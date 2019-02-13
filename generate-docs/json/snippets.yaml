@@ -6141,7 +6141,7 @@ Office.Settings.get:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Settings.refreshAsync_1:
+Office.Settings.refreshAsync:
   - |-
     function refreshSettings() {
         Office.context.document.settings.refreshAsync(function (asyncResult) {
@@ -6915,7 +6915,7 @@ OneNote.Image.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.ImageOcrData.load_1:
+OneNote.Image.ocrData:
   - |-
     var image = null;
 
