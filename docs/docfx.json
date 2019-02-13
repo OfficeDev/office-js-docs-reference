@@ -65,7 +65,7 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "outlook-is-1.4",
+        "group": "outlook-js-1.4",
         "src": "docs-ref-autogen/outlook_1_4",
         "dest": "api"
       },
@@ -74,7 +74,7 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "outlook-is-1.4",
+        "group": "outlook-js-1.4",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -82,7 +82,7 @@
         "files": [
           "outlook_1_4.yml"
         ],
-        "group": "outlook-is-1.4",
+        "group": "outlook-js-1.4",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -90,7 +90,7 @@
         "files": [
           "toc.yml"
         ],
-        "group": "outlook-is-1.4",
+        "group": "outlook-js-1.4",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -99,7 +99,7 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "outlook-is-1.5",
+        "group": "outlook-js-1.5",
         "src": "docs-ref-autogen/outlook_1_5",
         "dest": "api"
       },
@@ -108,7 +108,7 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "outlook-is-1.5",
+        "group": "outlook-js-1.5",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -116,7 +116,7 @@
         "files": [
           "outlook_1_5.yml"
         ],
-        "group": "outlook-is-1.5",
+        "group": "outlook-js-1.5",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -124,7 +124,7 @@
         "files": [
           "toc.yml"
         ],
-        "group": "outlook-is-1.5",
+        "group": "outlook-js-1.5",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
@@ -245,13 +245,13 @@
       }
     ],
     "groups": {
-      "outlook-is-1.4": {
-        "dest": "outlook-is-1.4",
-        "moniker_range": "outlook-is-1.4"
+      "outlook-js-1.4": {
+        "dest": "outlook-js-1.4",
+        "moniker_range": "outlook-js-1.4"
       },
-      "outlook-is-1.5": {
-        "dest": "outlook-is-1.5",
-        "moniker_range": "outlook-is-1.5"
+      "outlook-js-1.5": {
+        "dest": "outlook-js-1.5",
+        "moniker_range": "outlook-js-1.5"
       },
         "excel-js-1.4": {
           "dest": "excel-js-1.4",
