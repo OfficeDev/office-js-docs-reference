@@ -38,22 +38,27 @@ items:
       - office.Office.MatrixBinding.rowCount
   - uid: office.Office.MatrixBinding.columnCount
     summary: 'Gets the number of columns in the matrix data structure, as an integer value.'
-    remarks: |-
-      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
+    remarks: >-
+      <table> <tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr> <tr><td>Requirement
+      Sets</td><td>MatrixBindings</td></tr> </table>
 
-      <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr></table>
       #### Examples
 
+
       ```javascript
+
       function showBindingColumnCount() {
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
               write("Column: " + asyncResult.value.columnCount);
           });
       }
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: columnCount
     fullName: columnCount
@@ -67,22 +72,27 @@ items:
           - number
   - uid: office.Office.MatrixBinding.rowCount
     summary: 'Gets the number of rows in the matrix data structure, as an integer value.'
-    remarks: |-
-      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
+    remarks: >-
+      <table> <tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr> <tr><td>Requirement
+      Sets</td><td>MatrixBindings</td></tr> </table>
 
-      <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr></table>
       #### Examples
 
+
       ```javascript
+
       function showBindingRowCount() {
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
               write("Rows: " + asyncResult.value.rowCount);
           });
       }
+
       // Function that writes to a div with id='message' on the page.
+
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
       ```
     name: rowCount
     fullName: rowCount

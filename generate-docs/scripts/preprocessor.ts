@@ -77,54 +77,52 @@ tryCatch(async () => {
         .replace(/(extends OfficeCore.RequestContext)/g, `extends OfficeExtension.ClientRequestContext`));
 
     const dtsBuilder = new DtsBuilder();
-    const commonApiNamespaceImport = "import \{ OfficeExtension \} from \"../api-extractor-inputs-office/office\"\n";
 
     console.log("\nCreating separate d.ts files...");
 
     console.log("create file: office.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-office/office.d.ts',
-        dtsBuilder.extractDtsSection(definitions, "Begin Office namespace", "End Office namespace") +
+        handleCommonImports(dtsBuilder.extractDtsSection(definitions, "Begin Office namespace", "End Office namespace") +
         '\n' +
         '\n' +
-        dtsBuilder.extractDtsSection(definitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime")
+        dtsBuilder.extractDtsSection(definitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime"), "Common API")
     );
 
     console.log("\ncreate file: excel.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-excel/excel.d.ts',
-        commonApiNamespaceImport + handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(definitions, "Begin Excel APIs", "End Excel APIs"))
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(definitions, "Begin Excel APIs", "End Excel APIs")), "Other")
     );
 
     console.log("create file: onenote.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-onenote/onenote.d.ts',
-        commonApiNamespaceImport + handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(definitions, "Begin OneNote APIs", "End OneNote APIs"))
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(definitions, "Begin OneNote APIs", "End OneNote APIs")), "Other")
     );
 
     console.log("create file: outlook.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-outlook/outlook.d.ts',
-        "import \{Office as CommonAPI\} from \"../api-extractor-inputs-office/office\"\n" +
-        dtsBuilder.extractDtsSection(definitions, "Begin Exchange APIs", "End Exchange APIs").replace(/: Office\./g, ": CommonAPI.").replace(/\<Office\./g, "<CommonAPI.")
+        handleCommonImports(dtsBuilder.extractDtsSection(definitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook")
     );
 
     console.log("create file: powerpoint.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-powerpoint/powerpoint.d.ts',
-        commonApiNamespaceImport + dtsBuilder.extractDtsSection(definitions, "Begin PowerPoint APIs", "End PowerPoint APIs")
+        handleCommonImports(dtsBuilder.extractDtsSection(definitions, "Begin PowerPoint APIs", "End PowerPoint APIs"), "Other")
     );
 
     console.log("create file: visio.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-visio/visio.d.ts',
-        commonApiNamespaceImport + handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(definitions, "Begin Visio APIs", "End Visio APIs"))
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(definitions, "Begin Visio APIs", "End Visio APIs")), "Other")
     );
 
     console.log("create file: word.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-word/word.d.ts',
-        commonApiNamespaceImport + handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs"))
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs")), "Other")
     );
 
     // ----
@@ -226,6 +224,22 @@ tryCatch(async () => {
 
     process.exit(0);
 });
+
+function handleCommonImports(hostDts: string, hostName: "Common API" | "Outlook" | "Other"): string {
+    const commonApiNamespaceImport = "import \{ OfficeExtension \} from \"../api-extractor-inputs-office/office\"\n";
+    const outlookApiNamespaceImport = "import \{ Office as Outlook\} from \"../api-extractor-inputs-outlook/outlook\"\n";
+    const commonApiNamespaceImportForOutlook = "import \{Office as CommonAPI\} from \"../api-extractor-inputs-office/office\"\n";
+    if (hostName === "Outlook") {
+        hostDts = hostDts.replace(/: Office\./g, ": CommonAPI.").replace(/\<Office\./g, "<CommonAPI.");
+        return commonApiNamespaceImportForOutlook + hostDts;
+    } else if (hostName === "Common API") {
+        hostDts = hostDts.replace(/Office\.Mailbox/g, "Outlook.Mailbox").replace(/Office\.RoamingSettings/g, "Outlook.RoamingSettings");
+        return outlookApiNamespaceImport + hostDts;
+    } else {
+        hostDts = hostDts.replace(/Office\.Mailbox/g, "Outlook.Mailbox").replace(/Office\.RoamingSettings/g, "Outlook.RoamingSettings");
+        return commonApiNamespaceImport + outlookApiNamespaceImport + hostDts;
+    }
+}
 
 function handleLiteralParameterOverloads(dtsString: string): string {
     // rename parameters for string literal overloads

@@ -1,3 +1,4 @@
+import { Office as Outlook} from "../api-extractor-inputs-outlook/outlook"
 ////////////////////////////////////////////////////////////////
 //////////////////// Begin Office namespace ////////////////////
 ////////////////////////////////////////////////////////////////
@@ -717,7 +718,7 @@ export declare namespace Office {
         * 
         * In content add-ins for Access web apps, the `displayLanguage property` gets the add-in language (e.g., "en-US").
         * 
-        * When using in Outlook, the applicable modes are Compose or read.
+        * When using in Outlook, the applicable modes are Compose or Read.
         * 
         * **Support details**
         * 
@@ -785,11 +786,12 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+         * <table>
+         *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
+         *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+         * </table>
          */
-        mailbox: Office.Mailbox;
+        mailbox: Outlook.Mailbox;
         /**
         * Provides access to the properties for Office theme colors.
         */
@@ -811,11 +813,12 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+         * <table>
+         *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
+         *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+         * </table>
          */
-        roamingSettings: Office.RoamingSettings;
+        roamingSettings: Outlook.RoamingSettings;
         /**
         * Specifies whether the platform and device allows touch interaction. 
         * True if the add-in is running on a touch device, such as an iPad; false otherwise.
@@ -893,11 +896,11 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * <table><tr><td>Add-in type</td><td>Content, task pane, Outlook</td></tr>
-         * 
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-         *
-         * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr></table>
+         * <table>
+         *   <tr><td>Add-in type</td><td>Content, task pane, Outlook</td></tr>
+         *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
+         *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+         * </table>
          */
         export interface Event {
             
@@ -933,9 +936,10 @@ export declare namespace Office {
              *
              * @remarks
              * 
-             * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-             *
-             * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+             * <table>
+             *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
+             *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+             * </table>
              * 
              * **Support details**
              * 
@@ -985,9 +989,10 @@ export declare namespace Office {
         * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
         *
         * @remarks
-        * <table><tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr>
-        *
-        * <tr><td>Requirement sets</td><td>DialogApi, Mailbox 1.4</td></tr></table>
+        * <table>
+        *   <tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr>
+        *   <tr><td>Requirement sets</td><td>DialogApi, Mailbox 1.4</td></tr>
+        * </table>
         * 
         * This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the Mailbox requirement set 1.4 
         * for Outlook. For more on how to specify a requirement set in your manifest, see 
@@ -1085,9 +1090,10 @@ export declare namespace Office {
         * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
         *
         * @remarks
-        * <table><tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr>
-        *
-        * <tr><td>Requirement sets</td><td>DialogApi, Mailbox 1.4</td></tr></table>
+        * <table>
+        *   <tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr>
+        *   <tr><td>Requirement sets</td><td>DialogApi, Mailbox 1.4</td></tr>
+        * </table>
         * 
         * This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the Mailbox requirement set 1.4 
         * for Outlook. For more on how to specify a requirement set in your manifest, see 
@@ -1899,7 +1905,7 @@ export declare namespace Office {
      * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and 
      * `Office.EventType.ViewSelectionChanged` event types.
      * 
-     * <table>BindingDataChanged and BindingSelectionChanged hosts</td><td>Access, Excel, Word</td></tr></table>
+     * <table><tr><td>BindingDataChanged and BindingSelectionChanged hosts</td><td>Access, Excel, Word</td></tr></table>
      *
      * @remarks
      * 
@@ -3348,9 +3354,10 @@ export declare namespace Office {
          * Asynchronously sets the text of an XML node in a custom XML part.
          *
          * @remarks
-         * <table><tr><td>Hosts</td><td>Word</td></tr>
-         *
-         * <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+         * <table>
+         *   <tr><td>Hosts</td><td>Word</td></tr>
+         *   <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr>
+         * </table>
          *
          * @param text - Required. The text value of the XML node.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -3361,9 +3368,10 @@ export declare namespace Office {
          * Asynchronously sets the text of an XML node in a custom XML part.
          *
          * @remarks
-         * <table><tr><td>Hosts</td><td>Word</td></tr>
-         *
-         * <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+         * <table>
+         *   <tr><td>Hosts</td><td>Word</td></tr>
+         *   <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr>
+         * </table>
          *
          * @param text - Required. The text value of the XML node.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -4528,26 +4536,94 @@ export declare namespace Office {
          * The following application-specific actions apply when writing data to a selection.
          * 
          * <table>
-         * <tr><td>Word</td><td>If there is no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point</td><td>If `data` is a string, the specified text is inserted.</td></tr>
-         * <tr><td></td><td></td><td>If `data` is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td></tr>
-         * <tr><td></td><td></td><td>If `data` is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td></tr>
-         * <tr><td></td><td></td><td>If `data` is Office Open XML, the specified XML is inserted.</td></tr>
-         * <tr><td></td><td></td><td>If `data` is a base64 encoded image stream, the specified image is inserted.</td></tr></td></tr>
-         * <tr><td></td><td>If there is a selection</td><td>It will be replaced with the specified `data` following the same rules as above.</td></tr>
-         * <tr><td></td><td>Insert images</td><td>Inserted images are placed inline. The imageLeft and imageTop parameters are ignored. The image aspect ratio is always locked. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td></tr>
+         *   <tr>
+         *     <td>Word</td>
+         *     <td>If there is no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point</td>
+         *     <td>If `data` is a string, the specified text is inserted.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>If `data` is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>If `data` is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>If `data` is Office Open XML, the specified XML is inserted.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>If `data` is a base64 encoded image stream, the specified image is inserted.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td>If there is a selection</td>
+         *     <td>It will be replaced with the specified `data` following the same rules as above.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td>Insert images</td>
+         *     <td>Inserted images are placed inline. The imageLeft and imageTop parameters are ignored. The image aspect ratio is always locked. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
+         * </tr>
          * 
-         * <tr><td>Excel</td><td>If a single cell is selected</td><td>If `data` is a string, the specified text is inserted as the value of the current cell.</td></tr>
-         * <tr><td></td><td></td><td>If `data` is an array of arrays ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be overwritten.</td></tr>
-         * <tr><td></td><td></td><td>If `data` is a TableData object, a new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten.</td></tr>
-         * <tr><td></td><td>If multiple cells are selected</td><td>If the shape does not match the shape of `data`, an error is returned.</td></tr>
-         * <tr><td></td><td></td><td>If the shape of the selection exactly matches the shape of `data`, the values of the selected cells are updated based on the values in `data`.</td></tr>
-         * <tr><td></td><td>Insert images</td><td>Inserted images are floating. The position imageLeft and imageTop parameters are relative to currently selected cell(s). Negative imageLeft and imageTop values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td></tr>
-         * <tr><td></td><td>All other cases</td><td>An error is returned.</td></tr>
+         *   <tr>
+         *     <td>Excel</td>
+         *     <td>If a single cell is selected</td>
+         *     <td>If `data` is a string, the specified text is inserted as the value of the current cell.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>If `data` is an array of arrays ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be overwritten.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>If `data` is a TableData object, a new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td>If multiple cells are selected</td>
+         *     <td>If the shape does not match the shape of `data`, an error is returned.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>If the shape of the selection exactly matches the shape of `data`, the values of the selected cells are updated based on the values in `data`.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td>Insert images</td>
+         *     <td>Inserted images are floating. The position imageLeft and imageTop parameters are relative to currently selected cell(s). Negative imageLeft and imageTop values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td>All other cases</td>
+         *     <td>An error is returned.</td>
+         *   </tr>
          * 
-         * <tr><td>Excel Online</td><td>In addition to the behaviors described for Excel above, these limits apply when writing data in Excel Online</td><td>The total number of cells you can write to a worksheet with the `data` parameter can't exceed 20,000 in a single call to this method.</td></tr>
-         * <tr><td></td><td></td><td>The number of formatting groups passed to the `cellFormat` parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.</td></tr>
+         *   <tr>
+         *     <td>Excel Online</td>
+         *     <td>In addition to the behaviors described for Excel above, these limits apply when writing data in Excel Online</td>
+         *     <td>The total number of cells you can write to a worksheet with the `data` parameter can't exceed 20,000 in a single call to this method.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>The number of formatting groups passed to the `cellFormat` parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.</td>
+         *   </tr>
          * 
-         * <tr><td>PowerPoint</td><td>Insert image</td><td>Inserted images are floating. The position imageLeft and imageTop parameters are optional but if provided, both should be present. If a single value is provided, it will be ignored. Negative imageLeft and imageTop values are allowed and can position an image outside of a slide. If no optional parameter is given and slide has a placeholder, the image will replace the placeholder in the slide. Image aspect ratio will be locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td></tr>
+         *   <tr>
+         *     <td>PowerPoint</td>
+         *     <td>Insert image</td>
+         *     <td>Inserted images are floating. The position imageLeft and imageTop parameters are optional but if provided, both should be present. If a single value is provided, it will be ignored. Negative imageLeft and imageTop values are allowed and can position an image outside of a slide. If no optional parameter is given and slide has a placeholder, the image will replace the placeholder in the slide. Image aspect ratio will be locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
+         *   </tr>
          * </table>
          * 
          * The possible values for the {@link Office.CoercionType} parameter vary by the host. 
@@ -4645,26 +4721,93 @@ export declare namespace Office {
          * The following application-specific actions apply when writing data to a selection.
          * 
          * <table>
-         * <tr><td>Word</td><td>If there is no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point</td><td>If `data` is a string, the specified text is inserted.</td></tr>
-         * <tr><td></td><td></td><td>If `data` is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td></tr>
-         * <tr><td></td><td></td><td>If `data` is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td></tr>
-         * <tr><td></td><td></td><td>If `data` is Office Open XML, the specified XML is inserted.</td></tr>
-         * <tr><td></td><td></td><td>If `data` is a base64 encoded image stream, the specified image is inserted.</td></tr></td></tr>
-         * <tr><td></td><td>If there is a selection</td><td>It will be replaced with the specified `data` following the same rules as above.</td></tr>
-         * <tr><td></td><td>Insert images</td><td>Inserted images are placed inline. The imageLeft and imageTop parameters are ignored. The image aspect ratio is always locked. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td></tr>
+         *   <tr>
+         *     <td>Word</td>
+         *     <td>If there is no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point</td>
+         *     <td>If `data` is a string, the specified text is inserted.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>If `data` is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>If `data` is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>If `data` is Office Open XML, the specified XML is inserted.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>If `data` is a base64 encoded image stream, the specified image is inserted.</td></tr></td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td>If there is a selection</td>
+         *     <td>It will be replaced with the specified `data` following the same rules as above.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td>Insert images</td>
+         *     <td>Inserted images are placed inline. The imageLeft and imageTop parameters are ignored. The image aspect ratio is always locked. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
+         *   </tr>
          * 
-         * <tr><td>Excel</td><td>If a single cell is selected</td><td>If `data` is a string, the specified text is inserted as the value of the current cell.</td></tr>
-         * <tr><td></td><td></td><td>If `data` is an array of arrays ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be overwritten.</td></tr>
-         * <tr><td></td><td></td><td>If `data` is a TableData object, a new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten.</td></tr>
-         * <tr><td></td><td>If multiple cells are selected</td><td>If the shape does not match the shape of `data`, an error is returned.</td></tr>
-         * <tr><td></td><td></td><td>If the shape of the selection exactly matches the shape of `data`, the values of the selected cells are updated based on the values in `data`.</td></tr>
-         * <tr><td></td><td>Insert images</td><td>Inserted images are floating. The position imageLeft and imageTop parameters are relative to currently selected cell(s). Negative imageLeft and imageTop values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td></tr>
-         * <tr><td></td><td>All other cases</td><td>An error is returned.</td></tr>
+         *   <tr>
+         *     <td>Excel</td>
+         *     <td>If a single cell is selected</td>
+         *     <td>If `data` is a string, the specified text is inserted as the value of the current cell.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>If `data` is an array of arrays ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be overwritten.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>If `data` is a TableData object, a new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td>If multiple cells are selected</td><td>If the shape does not match the shape of `data`, an error is returned.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>If the shape of the selection exactly matches the shape of `data`, the values of the selected cells are updated based on the values in `data`.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td>Insert images</td>
+         *     <td>Inserted images are floating. The position imageLeft and imageTop parameters are relative to currently selected cell(s). Negative imageLeft and imageTop values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td>All other cases</td>
+         *     <td>An error is returned.</td>
+         *   </tr>
          * 
-         * <tr><td>Excel Online</td><td>In addition to the behaviors described for Excel above, these limits apply when writing data in Excel Online</td><td>The total number of cells you can write to a worksheet with the `data` parameter can't exceed 20,000 in a single call to this method.</td></tr>
-         * <tr><td></td><td></td><td>The number of formatting groups passed to the `cellFormat` parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.</td></tr>
+         *   <tr>
+         *     <td>Excel Online</td>
+         *     <td>In addition to the behaviors described for Excel above, these limits apply when writing data in Excel Online</td>
+         *     <td>The total number of cells you can write to a worksheet with the `data` parameter can't exceed 20,000 in a single call to this method.</td>
+         *   </tr>
+         *   <tr>
+         *     <td></td>
+         *     <td></td>
+         *     <td>The number of formatting groups passed to the `cellFormat` parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.</td>
+         *   </tr>
          * 
-         * <tr><td>PowerPoint</td><td>Insert image</td><td>Inserted images are floating. The position imageLeft and imageTop parameters are optional but if provided, both should be present. If a single value is provided, it will be ignored. Negative imageLeft and imageTop values are allowed and can position an image outside of a slide. If no optional parameter is given and slide has a placeholder, the image will replace the placeholder in the slide. Image aspect ratio will be locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td></tr>
+         *   <tr>
+         *     <td>PowerPoint</td>
+         *     <td>Insert image</td>
+         *     <td>Inserted images are floating. The position imageLeft and imageTop parameters are optional but if provided, both should be present. If a single value is provided, it will be ignored. Negative imageLeft and imageTop values are allowed and can position an image outside of a slide. If no optional parameter is given and slide has a placeholder, the image will replace the placeholder in the slide. Image aspect ratio will be locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
+         *   </tr>
          * </table>
          * 
          * The possible values for the {@link Office.CoercionType} parameter vary by the host. 
@@ -5613,18 +5756,20 @@ export declare namespace Office {
         * Gets the number of columns in the matrix data structure, as an integer value.
         *
         * @remarks
-        * <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
-        *
-        * <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr></table>
+        * <table>
+        *   <tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
+        *   <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr>
+        * </table>
         */
         columnCount: number;
         /**
         * Gets the number of rows in the matrix data structure, as an integer value.
         *
         * @remarks
-        * <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
-        *
-        * <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr></table>
+        * <table>
+        *   <tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
+        *   <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr>
+        * </table>
         */
         rowCount: number;
     }
@@ -5632,9 +5777,10 @@ export declare namespace Office {
      * Represents custom settings for a task pane or content add-in that are stored in the host document as name/value pairs.
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Word</td></tr>
-     *
-     * <tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+     * <table>
+     *   <tr><td>Hosts</td><td>Access, Excel, PowerPoint, Word</td></tr>
+     *   <tr><td>Requirement Sets</td><td>Settings</td></tr>
+     * </table>
      * 
      * The settings created by using the methods of the Settings object are saved per add-in and per document. 
      * That is, they are available only to the add-in that created them, and only from the document in which they are saved.
@@ -6880,9 +7026,10 @@ export declare namespace Office {
          * Updates table formatting options on the bound table.
          *
          * @remarks
-         * <table><tr><td>Hosts</td><td>Excel</td></tr>
-         *
-         * <tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
+         * <table>
+         *   <tr><td>Hosts</td><td>Excel</td></tr>
+         *   <tr><td>Requirement Sets</td><td>Not in a set</td></tr>
+         * </table>
          * 
          * In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object to return the following information.
          * 
@@ -6933,9 +7080,10 @@ export declare namespace Office {
          * Updates table formatting options on the bound table.
          *
          * @remarks
-         * <table><tr><td>Hosts</td><td>Excel</td></tr>
-         *
-         * <tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
+         * <table>
+         *   <tr><td>Hosts</td><td>Excel</td></tr>
+         *   <tr><td>Requirement Sets</td><td>Not in a set</td></tr>
+         * </table>
          * 
          * In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object to return the following information.
          * 
@@ -6986,9 +7134,10 @@ export declare namespace Office {
      * Represents the data in a table or an {@link Office.TableBinding}.
      *
      * @remarks
-     * <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
-     *
-     * <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
+     * <table>
+     *   <tr><td>Hosts</td><td>Excel, Word</td></tr>
+     *   <tr><td>Requirement Sets</td><td>TableBindings</td></tr>
+     * </table>
      */
     export class TableData {
         constructor(rows: any[][], headers: any[]);
@@ -6997,10 +7146,11 @@ export declare namespace Office {
          * Gets or sets the headers of the table.
          * 
          * @remarks
-         * <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
+         * <table>
+         *   <tr><td>Hosts</td><td>Excel, Word</td></tr>
+         *   <tr><td>Requirement Sets</td><td>TableBindings</td></tr>
+         * </table>
          *
-         * <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
-         * 
          * To specify headers, you must specify an array of arrays that corresponds to the structure of the table. For example, to specify headers 
          * for a two-column table you would set the header property to [['header1', 'header2']].
          *
@@ -7017,10 +7167,11 @@ export declare namespace Office {
          * Returns an empty array if there are no rows.
          * 
          * @remarks
-         * <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
+         * <table>
+         *   <tr><td>Hosts</td><td>Excel, Word</td></tr>
+         *   <tr><td>Requirement Sets</td><td>TableBindings</td></tr>
+         * </table>
          *
-         * <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
-         * 
          * To specify rows, you must specify an array of arrays that corresponds to the structure of the table. For example, to specify two rows of 
          * string values in a two-column table you would set the rows property to [['a', 'b'], ['c', 'd']].
          *
