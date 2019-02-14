@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.$all
       - excel.Excel.Interfaces.PageLayoutLoadOptions.blackAndWhite
       - excel.Excel.Interfaces.PageLayoutLoadOptions.bottomMargin
       - excel.Excel.Interfaces.PageLayoutLoadOptions.centerHorizontally
@@ -32,6 +33,18 @@ items:
       - excel.Excel.Interfaces.PageLayoutLoadOptions.rightMargin
       - excel.Excel.Interfaces.PageLayoutLoadOptions.topMargin
       - excel.Excel.Interfaces.PageLayoutLoadOptions.zoom
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.blackAndWhite
     summary: >-
       Gets or sets the worksheet's black and white print option.

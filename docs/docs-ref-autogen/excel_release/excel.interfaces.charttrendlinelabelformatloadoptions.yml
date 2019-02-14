@@ -12,8 +12,20 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions.$all
       - excel_release.Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions.border
       - excel_release.Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions.font
+  - uid: excel_release.Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions.border
     summary: |-
       Represents the border format, which includes color, linestyle, and weight.

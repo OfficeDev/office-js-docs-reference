@@ -15,8 +15,21 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions.$all
       - word.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions.id
       - word.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions.namespaceUri
+  - uid: word.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions.id
     summary: >-
       For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only.

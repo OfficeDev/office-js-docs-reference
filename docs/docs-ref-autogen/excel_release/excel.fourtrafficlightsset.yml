@@ -8,28 +8,10 @@ items:
     type: interface
     package: excel_release
     children:
-      - excel_release.Excel.FourTrafficLightsSet.__index
       - excel_release.Excel.FourTrafficLightsSet.blackCircleWithBorder
       - excel_release.Excel.FourTrafficLightsSet.greenCircle
       - excel_release.Excel.FourTrafficLightsSet.redCircleWithBorder
       - excel_release.Excel.FourTrafficLightsSet.yellowCircle
-  - uid: excel_release.Excel.FourTrafficLightsSet.__index
-    name: __index(index)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[index: number]: Icon;'
-      return:
-        type:
-          - Icon
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
   - uid: excel_release.Excel.FourTrafficLightsSet.blackCircleWithBorder
     name: blackCircleWithBorder
     fullName: blackCircleWithBorder

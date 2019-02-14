@@ -3,7 +3,7 @@ items:
   - uid: excel_release.Excel.Interfaces.ConditionalFormatCollectionUpdateData
     summary: >-
       An interface for updating data on the ConditionalFormatCollection object, for use in
-      "conditionalFormatCollection.set({ ... })".
+      "conditionalFormatCollection.set(<!-- -->{ ... }<!-- -->)".
     name: Excel.Interfaces.ConditionalFormatCollectionUpdateData
     fullName: Excel.Interfaces.ConditionalFormatCollectionUpdateData
     langs:

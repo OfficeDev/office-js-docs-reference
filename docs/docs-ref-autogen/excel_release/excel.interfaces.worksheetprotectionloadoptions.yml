@@ -12,8 +12,20 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.WorksheetProtectionLoadOptions.$all
       - excel_release.Excel.Interfaces.WorksheetProtectionLoadOptions.options
       - excel_release.Excel.Interfaces.WorksheetProtectionLoadOptions.protected
+  - uid: excel_release.Excel.Interfaces.WorksheetProtectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.WorksheetProtectionLoadOptions.options
     summary: |-
       Sheet protection options. Read-only.

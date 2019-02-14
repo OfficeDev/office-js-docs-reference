@@ -12,9 +12,21 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.CustomPropertyCollectionLoadOptions.$all
       - word.Word.Interfaces.CustomPropertyCollectionLoadOptions.key
       - word.Word.Interfaces.CustomPropertyCollectionLoadOptions.type
       - word.Word.Interfaces.CustomPropertyCollectionLoadOptions.value
+  - uid: word.Word.Interfaces.CustomPropertyCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.CustomPropertyCollectionLoadOptions.key
     summary: |-
       For EACH ITEM in the collection: Gets the key of the custom property. Read only.

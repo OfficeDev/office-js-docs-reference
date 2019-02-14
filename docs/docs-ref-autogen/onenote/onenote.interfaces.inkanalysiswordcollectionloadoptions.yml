@@ -12,11 +12,23 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.$all
       - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.id
       - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.languageId
       - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.line
       - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.strokePointers
       - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.wordAlternates
+  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the InkAnalysisWord object. Read-only.

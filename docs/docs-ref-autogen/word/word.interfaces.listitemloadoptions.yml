@@ -12,9 +12,21 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.ListItemLoadOptions.$all
       - word.Word.Interfaces.ListItemLoadOptions.level
       - word.Word.Interfaces.ListItemLoadOptions.listString
       - word.Word.Interfaces.ListItemLoadOptions.siblingIndex
+  - uid: word.Word.Interfaces.ListItemLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.ListItemLoadOptions.level
     summary: |-
       Gets or sets the level of the item in the list.

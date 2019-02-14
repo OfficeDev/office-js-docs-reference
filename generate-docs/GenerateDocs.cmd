@@ -40,6 +40,10 @@ cd ..\api-extractor-inputs-visio
 
 call ..\node_modules\.bin\api-extractor run
 
+cd ..\api-extractor-inputs-powerpoint
+
+call ..\node_modules\.bin\api-extractor run
+
 cd ..\api-extractor-inputs-outlook
 
 call ..\node_modules\.bin\api-extractor run

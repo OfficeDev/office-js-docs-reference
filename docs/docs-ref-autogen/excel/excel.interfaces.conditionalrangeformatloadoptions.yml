@@ -12,10 +12,22 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions.$all
       - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions.borders
       - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions.fill
       - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions.font
       - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions.numberFormat
+  - uid: excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions.borders
     summary: |-
       Collection of border objects that apply to the overall conditional format range.

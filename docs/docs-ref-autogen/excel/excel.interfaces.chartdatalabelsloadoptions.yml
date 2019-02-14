@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.$all
       - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.autoText
       - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.format
       - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.horizontalAlignment
@@ -27,6 +28,17 @@ items:
       - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.showValue
       - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.textOrientation
       - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.verticalAlignment
+  - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions.autoText
     summary: |-
       Represents whether data labels automatically generate appropriate text based on context.

@@ -12,9 +12,21 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.ListLoadOptions.$all
       - word.Word.Interfaces.ListLoadOptions.id
       - word.Word.Interfaces.ListLoadOptions.levelExistences
       - word.Word.Interfaces.ListLoadOptions.levelTypes
+  - uid: word.Word.Interfaces.ListLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.ListLoadOptions.id
     summary: |-
       Gets the list's id.

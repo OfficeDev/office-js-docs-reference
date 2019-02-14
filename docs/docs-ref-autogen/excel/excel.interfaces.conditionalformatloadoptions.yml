@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ConditionalFormatLoadOptions.$all
       - excel.Excel.Interfaces.ConditionalFormatLoadOptions.cellValue
       - excel.Excel.Interfaces.ConditionalFormatLoadOptions.cellValueOrNullObject
       - excel.Excel.Interfaces.ConditionalFormatLoadOptions.colorScale
@@ -32,6 +33,17 @@ items:
       - excel.Excel.Interfaces.ConditionalFormatLoadOptions.topBottom
       - excel.Excel.Interfaces.ConditionalFormatLoadOptions.topBottomOrNullObject
       - excel.Excel.Interfaces.ConditionalFormatLoadOptions.type
+  - uid: excel.Excel.Interfaces.ConditionalFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ConditionalFormatLoadOptions.cellValue
     summary: >-
       Returns the cell value conditional format properties if the current conditional format is a CellValue type. For

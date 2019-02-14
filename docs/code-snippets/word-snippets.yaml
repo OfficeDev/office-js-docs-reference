@@ -25,6 +25,37 @@ Word.Body.clear:
     // The Silly stories add-in sample shows how the 
     // clear method can be used to clear the contents of a document.
     // https://aka.ms/sillystorywordaddin
+Word.Body.font:
+  - |-
+    // Get the style and the font size, font name, and font color properties on the body object.
+    // Run a batch operation against the Word object model.
+    Word.run(function (context) {
+    
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+    
+        // Queue a commmand to load font and style information for the document body.
+        context.load(body, 'font/size, font/name, font/color, style');
+    
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            // Show the results of the load method. Here we show the
+            // property values on the body object.
+            var results = 'Font size: ' + body.font.size +
+                          '; Font name: ' + body.font.name +
+                          '; Font color: ' + body.font.color +
+                          '; Body style: ' + body.style;
+    
+            console.log(results);
+        });
+    })
+    .catch(function (error) {
+        console.log('Error: ' + JSON.stringify(error));
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+        }
+    });
 Word.Body.getHtml:
   - |-
     // Run a batch operation against the Word object model.
@@ -310,7 +341,7 @@ Word.Body.select:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.load:
+Word.Body.text:
   - |-
     // Get the text property on the body object
     // Run a batch operation against the Word object model.
@@ -332,36 +363,6 @@ Word.Body.load:
         console.log("Error: " + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // Get the style and the font size, font name, and font color properties on the body object.
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-    
-        // Create a proxy object for the document body.
-        var body = context.document.body;
-    
-        // Queue a commmand to load font and style information for the document body.
-        context.load(body, 'font/size, font/name, font/color, style');
-    
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            // Show the results of the load method. Here we show the
-            // property values on the body object.
-            var results = 'Font size: ' + body.font.size +
-                          '; Font name: ' + body.font.name +
-                          '; Font color: ' + body.font.color +
-                          '; Body style: ' + body.style;
-    
-            console.log(results);
-        });
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
 Word.ContentControl.clear:
@@ -510,7 +511,7 @@ Word.ContentControl.getOoxml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertBreak:
+Word.ContentControl.insertBreak_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -547,7 +548,7 @@ Word.ContentControl.insertBreak:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertFileFromBase64:
+Word.ContentControl.insertHtml_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -585,7 +586,7 @@ Word.ContentControl.insertFileFromBase64:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertInlinePictureFromBase64:
+Word.ContentControl.insertOoxml_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -624,7 +625,7 @@ Word.ContentControl.insertInlinePictureFromBase64:
 
     // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
     // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
-Word.ContentControl.insertParagraph:
+Word.ContentControl.insertParagraph_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -660,7 +661,7 @@ Word.ContentControl.insertParagraph:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertText:
+Word.ContentControl.insertText_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -699,7 +700,7 @@ Word.ContentControl.insertText:
 
     // The Silly stories add-in sample shows how to use the insertText method.
     // https://aka.ms/sillystorywordaddin
-Word.ContentControl.load:
+Word.ContentControl.tag:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -730,6 +731,7 @@ Word.ContentControl.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+Word.ContentControl.load_1:
   - |-
     // Load all of the content control properties
     // Run a batch operation against the Word object model.
@@ -1617,7 +1619,7 @@ Word.Paragraph.getPreviousOrNullObject:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Paragraph.insertBreak:
+Word.Paragraph.insertBreak_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1990,7 +1992,7 @@ Word.Range.getOoxml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Range.insertBreak:
+Word.Range.insertBreak_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2405,7 +2407,7 @@ Word.SearchOptions.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Section.getFooter:
+Word.Section.getFooter_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2443,7 +2445,7 @@ Word.Section.getFooter:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Section.getHeader:
+Word.Section.getHeader_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {

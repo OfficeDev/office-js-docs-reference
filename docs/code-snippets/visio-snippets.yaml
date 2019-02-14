@@ -1,4 +1,4 @@
-Visio.Application.load:
+Visio.Application.showBorders:
   - |-
     Visio.run(session, function (ctx) {
         var application = ctx.document.application;
@@ -115,7 +115,7 @@ Visio.Document.startDataRefresh:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.Document.load:
+Visio.Document.pages:
   - |-
     Visio.run(session, function (ctx) {
         var pages = ctx.document.pages;
@@ -123,28 +123,6 @@ Visio.Document.load:
         return ctx.sync().then(function () {
             console.log("Pages Count: " +pageCount.value);
         });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    Visio.run(session, function (ctx) {
-        var documentView = ctx.document.view;
-        documentView.disableHyperlinks();
-        return ctx.sync();
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    Visio.run(session, function (ctx) {
-        var application = ctx.document.application;
-        application.showToolbars = false;
-        return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);
         if (error instanceof OfficeExtension.Error) {
@@ -163,6 +141,18 @@ Visio.DocumentLoadCompleteEventArgs:
         return ctx.sync().then(function () {
             console.log("Success");
         });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Visio.DocumentView.disableHyperlinks:
+  - |-
+    Visio.run(session, function (ctx) {
+        var documentView = ctx.document.view;
+        documentView.disableHyperlinks();
+        return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);
         if (error instanceof OfficeExtension.Error) {
@@ -269,7 +259,7 @@ Visio.PageView.centerViewportOnShape:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.PageView.load:
+Visio.PageView.zoom:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -448,7 +438,7 @@ Visio.ShapeMouseLeaveEventArgs:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeView.load:
+Visio.ShapeView.highlight:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -461,11 +451,12 @@ Visio.ShapeView.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Visio.ShapeView.addOverlay:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
-        var overlayId=shape.view.addOverlay(1, "Visio Online", 2, 2, 50, 50);
+        var overlayId=shape.view.addOverlay("Image", "Visio Online", "Center", "Center", 50, 50);
         return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -473,6 +464,7 @@ Visio.ShapeView.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Visio.ShapeView.removeOverlay:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();

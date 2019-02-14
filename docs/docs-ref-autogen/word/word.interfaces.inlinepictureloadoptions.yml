@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.InlinePictureLoadOptions.$all
       - word.Word.Interfaces.InlinePictureLoadOptions.altTextDescription
       - word.Word.Interfaces.InlinePictureLoadOptions.altTextTitle
       - word.Word.Interfaces.InlinePictureLoadOptions.height
@@ -26,6 +27,17 @@ items:
       - word.Word.Interfaces.InlinePictureLoadOptions.parentTableCellOrNullObject
       - word.Word.Interfaces.InlinePictureLoadOptions.parentTableOrNullObject
       - word.Word.Interfaces.InlinePictureLoadOptions.width
+  - uid: word.Word.Interfaces.InlinePictureLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.altTextDescription
     summary: |-
       Gets or sets a string that represents the alternative text associated with the inline image.

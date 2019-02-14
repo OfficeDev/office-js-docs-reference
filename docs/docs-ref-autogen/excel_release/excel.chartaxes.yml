@@ -17,8 +17,13 @@ items:
       - excel_release.Excel.ChartAxes.categoryAxis
       - excel_release.Excel.ChartAxes.context
       - excel_release.Excel.ChartAxes.getItem
+      - excel_release.Excel.ChartAxes.getItem_1
       - excel_release.Excel.ChartAxes.load
+      - excel_release.Excel.ChartAxes.load_1
+      - excel_release.Excel.ChartAxes.load_2
       - excel_release.Excel.ChartAxes.seriesAxis
+      - excel_release.Excel.ChartAxes.set
+      - excel_release.Excel.ChartAxes.set_1
       - excel_release.Excel.ChartAxes.toJSON
       - excel_release.Excel.ChartAxes.valueAxis
   - uid: excel_release.Excel.ChartAxes.categoryAxis
@@ -56,7 +61,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getItem(type, group)'
-    fullName: getItem
+    fullName: 'getItem(type, group)'
     langs:
       - typeScript
     type: method
@@ -75,12 +80,43 @@ items:
           description: Optional. Specifies the axis group. See Excel.ChartAxisGroup for details.
           type:
             - excel.Excel.ChartAxisGroup
+  - uid: excel_release.Excel.ChartAxes.getItem_1
+    summary: |-
+      Returns the specific axis identified by type and group.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'getItem(typeString, group)'
+    fullName: 'getItem(typeString, group)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getItem(typeString: "Invalid" | "Category" | "Value" | "Series", group?: "Primary" | "Secondary"):
+        Excel.ChartAxis;
+      return:
+        type:
+          - excel.Excel.ChartAxis
+        description: ''
+      parameters:
+        - id: typeString
+          description: Specifies the axis type. See Excel.ChartAxisType for details.
+          type:
+            - '"Invalid" | "Category" | "Value" | "Series"'
+        - id: group
+          description: Optional. Specifies the axis group. See Excel.ChartAxisGroup for details.
+          type:
+            - '"Primary" | "Secondary"'
   - uid: excel_release.Excel.ChartAxes.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.ChartAxes` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.ChartAxes` - Where option.select is a comma-delimited
@@ -94,7 +130,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -106,9 +142,51 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - excel.Excel.Interfaces.ChartAxesLoadOptions
+  - uid: excel_release.Excel.ChartAxes.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartAxes;'
+      return:
+        type:
+          - excel.Excel.ChartAxes
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.ChartAxes.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxes;'
+      return:
+        type:
+          - excel.Excel.ChartAxes
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel_release.Excel.ChartAxes.seriesAxis
     summary: |-
       Represents the series axis of a 3-dimensional chart. Read-only.
@@ -124,6 +202,54 @@ items:
       return:
         type:
           - excel.Excel.ChartAxis
+  - uid: excel_release.Excel.ChartAxes.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartAxes): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartAxesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartAxesUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel_release.Excel.ChartAxes.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartAxes): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.ChartAxes
   - uid: excel_release.Excel.ChartAxes.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -132,7 +258,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.ChartAxesData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

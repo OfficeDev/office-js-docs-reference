@@ -12,8 +12,20 @@ items:
     type: interface
     package: visio
     children:
+      - visio.Visio.Interfaces.ApplicationLoadOptions.$all
       - visio.Visio.Interfaces.ApplicationLoadOptions.showBorders
       - visio.Visio.Interfaces.ApplicationLoadOptions.showToolbars
+  - uid: visio.Visio.Interfaces.ApplicationLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: visio.Visio.Interfaces.ApplicationLoadOptions.showBorders
     summary: |-
       Show or hide the iFrame application borders.

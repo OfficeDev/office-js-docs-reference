@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.TableCellCollectionLoadOptions.$all
       - word.Word.Interfaces.TableCellCollectionLoadOptions.body
       - word.Word.Interfaces.TableCellCollectionLoadOptions.cellIndex
       - word.Word.Interfaces.TableCellCollectionLoadOptions.columnWidth
@@ -23,6 +24,17 @@ items:
       - word.Word.Interfaces.TableCellCollectionLoadOptions.value
       - word.Word.Interfaces.TableCellCollectionLoadOptions.verticalAlignment
       - word.Word.Interfaces.TableCellCollectionLoadOptions.width
+  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.body
     summary: |-
       For EACH ITEM in the collection: Gets the body object of the cell.

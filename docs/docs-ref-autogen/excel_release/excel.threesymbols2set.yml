@@ -8,27 +8,9 @@ items:
     type: interface
     package: excel_release
     children:
-      - excel_release.Excel.ThreeSymbols2Set.__index
       - excel_release.Excel.ThreeSymbols2Set.greenCheck
       - excel_release.Excel.ThreeSymbols2Set.redCross
       - excel_release.Excel.ThreeSymbols2Set.yellowExclamation
-  - uid: excel_release.Excel.ThreeSymbols2Set.__index
-    name: __index(index)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[index: number]: Icon;'
-      return:
-        type:
-          - Icon
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
   - uid: excel_release.Excel.ThreeSymbols2Set.greenCheck
     name: greenCheck
     fullName: greenCheck

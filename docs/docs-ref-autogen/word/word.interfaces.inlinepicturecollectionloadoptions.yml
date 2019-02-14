@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.$all
       - word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextDescription
       - word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextTitle
       - word.Word.Interfaces.InlinePictureCollectionLoadOptions.height
@@ -26,6 +27,17 @@ items:
       - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCellOrNullObject
       - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableOrNullObject
       - word.Word.Interfaces.InlinePictureCollectionLoadOptions.width
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextDescription
     summary: >-
       For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the

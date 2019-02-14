@@ -15,6 +15,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.TextFrameLoadOptions.$all
       - excel.Excel.Interfaces.TextFrameLoadOptions.autoSize
       - excel.Excel.Interfaces.TextFrameLoadOptions.bottomMargin
       - excel.Excel.Interfaces.TextFrameLoadOptions.hasText
@@ -28,6 +29,18 @@ items:
       - excel.Excel.Interfaces.TextFrameLoadOptions.topMargin
       - excel.Excel.Interfaces.TextFrameLoadOptions.verticalAlignment
       - excel.Excel.Interfaces.TextFrameLoadOptions.verticalOverflow
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.TextFrameLoadOptions.autoSize
     summary: >-
       Gets or sets the auto sizing settings for the text frame. A text frame can be set to auto size the text to fit the

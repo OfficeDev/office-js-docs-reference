@@ -15,8 +15,21 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.RemoveDuplicatesResultLoadOptions.$all
       - excel.Excel.Interfaces.RemoveDuplicatesResultLoadOptions.removed
       - excel.Excel.Interfaces.RemoveDuplicatesResultLoadOptions.uniqueRemaining
+  - uid: excel.Excel.Interfaces.RemoveDuplicatesResultLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.RemoveDuplicatesResultLoadOptions.removed
     summary: >-
       Number of duplicated rows removed by the operation.

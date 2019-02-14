@@ -8,29 +8,11 @@ items:
     type: interface
     package: excel_release
     children:
-      - excel_release.Excel.FiveQuartersSet.__index
       - excel_release.Excel.FiveQuartersSet.blackCircle
       - excel_release.Excel.FiveQuartersSet.circleWithOneWhiteQuarter
       - excel_release.Excel.FiveQuartersSet.circleWithThreeWhiteQuarters
       - excel_release.Excel.FiveQuartersSet.circleWithTwoWhiteQuarters
       - excel_release.Excel.FiveQuartersSet.whiteCircleAllWhiteQuarters
-  - uid: excel_release.Excel.FiveQuartersSet.__index
-    name: __index(index)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[index: number]: Icon;'
-      return:
-        type:
-          - Icon
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
   - uid: excel_release.Excel.FiveQuartersSet.blackCircle
     name: blackCircle
     fullName: blackCircle

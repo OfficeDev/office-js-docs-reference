@@ -21,6 +21,7 @@ items:
       - excel.Excel.Worksheet.comments
       - excel.Excel.Worksheet.context
       - excel.Excel.Worksheet.copy
+      - excel.Excel.Worksheet.copy_1
       - excel.Excel.Worksheet.delete
       - excel.Excel.Worksheet.enableCalculation
       - excel.Excel.Worksheet.findAll
@@ -39,6 +40,8 @@ items:
       - excel.Excel.Worksheet.horizontalPageBreaks
       - excel.Excel.Worksheet.id
       - excel.Excel.Worksheet.load
+      - excel.Excel.Worksheet.load_1
+      - excel.Excel.Worksheet.load_2
       - excel.Excel.Worksheet.name
       - excel.Excel.Worksheet.names
       - excel.Excel.Worksheet.onActivated
@@ -53,6 +56,8 @@ items:
       - excel.Excel.Worksheet.position
       - excel.Excel.Worksheet.protection
       - excel.Excel.Worksheet.replaceAll
+      - excel.Excel.Worksheet.set
+      - excel.Excel.Worksheet.set_1
       - excel.Excel.Worksheet.shapes
       - excel.Excel.Worksheet.showGridlines
       - excel.Excel.Worksheet.showHeadings
@@ -70,7 +75,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: activate()
-    fullName: activate
+    fullName: activate()
     langs:
       - typeScript
     type: method
@@ -120,7 +125,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculate(markAllDirty)
-    fullName: calculate
+    fullName: calculate(markAllDirty)
     langs:
       - typeScript
     type: method
@@ -188,7 +193,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'copy(positionType, relativeTo)'
-    fullName: copy
+    fullName: 'copy(positionType, relativeTo)'
     langs:
       - typeScript
     type: method
@@ -225,13 +230,40 @@ items:
           description: Optional.
           type:
             - excel.Excel.Worksheet
+  - uid: excel.Excel.Worksheet.copy_1
+    summary: |-
+      Copy a worksheet and place it at the specified position. Return the copied worksheet.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'copy(positionTypeString, relativeTo)'
+    fullName: 'copy(positionTypeString, relativeTo)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        copy(positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet):
+        Excel.Worksheet;
+      return:
+        type:
+          - excel.Excel.Worksheet
+        description: ''
+      parameters:
+        - id: positionTypeString
+          description: Optional.
+          type:
+            - '"None" | "Before" | "After" | "Beginning" | "End"'
+        - id: relativeTo
+          description: Optional.
+          type:
+            - excel.Excel.Worksheet
   - uid: excel.Excel.Worksheet.delete
     summary: |-
       Deletes the worksheet from the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -286,7 +318,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'findAll(text, criteria)'
-    fullName: findAll
+    fullName: 'findAll(text, criteria)'
     langs:
       - typeScript
     type: method
@@ -317,7 +349,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'findAllOrNullObject(text, criteria)'
-    fullName: findAllOrNullObject
+    fullName: 'findAllOrNullObject(text, criteria)'
     langs:
       - typeScript
     type: method
@@ -361,7 +393,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getCell(row, column)'
-    fullName: getCell
+    fullName: 'getCell(row, column)'
     langs:
       - typeScript
     type: method
@@ -407,7 +439,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getNext(visibleOnly)
-    fullName: getNext
+    fullName: getNext(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -459,7 +491,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getNextOrNullObject(visibleOnly)
-    fullName: getNextOrNullObject
+    fullName: getNextOrNullObject(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -480,7 +512,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getPrevious(visibleOnly)
-    fullName: getPrevious
+    fullName: getPrevious(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -528,7 +560,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getPreviousOrNullObject(visibleOnly)
-    fullName: getPreviousOrNullObject
+    fullName: getPreviousOrNullObject(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -549,7 +581,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange(address)
-    fullName: getRange
+    fullName: getRange(address)
     langs:
       - typeScript
     type: method
@@ -612,7 +644,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
-    fullName: getRangeByIndexes
+    fullName: 'getRangeByIndexes(startRow, startColumn, rowCount, columnCount)'
     langs:
       - typeScript
     type: method
@@ -649,7 +681,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getRanges(address)
-    fullName: getRanges
+    fullName: getRanges(address)
     langs:
       - typeScript
     type: method
@@ -674,7 +706,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getUsedRange(valuesOnly)
-    fullName: getUsedRange
+    fullName: getUsedRange(valuesOnly)
     langs:
       - typeScript
     type: method
@@ -718,7 +750,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getUsedRangeOrNullObject(valuesOnly)
-    fullName: getUsedRangeOrNullObject
+    fullName: getUsedRangeOrNullObject(valuesOnly)
     langs:
       - typeScript
     type: method
@@ -776,6 +808,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Worksheet` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Worksheet` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -786,49 +822,8 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      // Get worksheet properties based on sheet name.
-
-      Excel.run(function (ctx) { 
-          var wSheetName = 'Sheet1';
-          var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-          worksheet.load('position')
-          return ctx.sync().then(function() {
-                  console.log(worksheet.position);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      // Set worksheet position. 
-
-      Excel.run(function (ctx) { 
-          var wSheetName = 'Sheet1';
-          var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-          worksheet.position = 2;
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -840,9 +835,84 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - excel.Excel.Interfaces.WorksheetLoadOptions
+  - uid: excel.Excel.Worksheet.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Worksheet;'
+      return:
+        type:
+          - excel.Excel.Worksheet
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // Get worksheet properties based on sheet name.
+          Excel.run(function (ctx) { 
+              var wSheetName = 'Sheet1';
+              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+              worksheet.load('position')
+              return ctx.sync().then(function() {
+                      console.log(worksheet.position);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          // Set worksheet position. 
+          Excel.run(function (ctx) { 
+              var wSheetName = 'Sheet1';
+              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+              worksheet.position = 2;
+              return ctx.sync(); 
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.Worksheet.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Worksheet;'
+      return:
+        type:
+          - excel.Excel.Worksheet
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.Worksheet.name
     summary: |-
       The display name of the worksheet.
@@ -888,6 +958,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onActivated.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The activated worksheet ID is: " + event.worksheetId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.Worksheet.onCalculated
     summary: |-
       Occurs when the worksheet is calculated.
@@ -903,6 +989,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onCalculated.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The worksheet has recalculated.");
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.Worksheet.onChanged
     summary: |-
       Occurs when data changed on a specific worksheet.
@@ -946,6 +1048,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onDeactivated.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The deactivated worksheet is: " + event.worksheetId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.Worksheet.onFiltered
     summary: >-
       Occurs when filter is applied on a specific worksheet.
@@ -997,6 +1115,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onSelectionChanged.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The selected range has changed to: " + event.address);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.Worksheet.pageLayout
     summary: >-
       Gets the PageLayout object of the worksheet.
@@ -1069,7 +1203,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'replaceAll(text, replacement, criteria)'
-    fullName: replaceAll
+    fullName: 'replaceAll(text, replacement, criteria)'
     langs:
       - typeScript
     type: method
@@ -1094,6 +1228,54 @@ items:
           description: Additional Replace Criteria.
           type:
             - excel.Excel.ReplaceCriteria
+  - uid: excel.Excel.Worksheet.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Worksheet): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.WorksheetUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.WorksheetUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.Worksheet.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Worksheet): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.Worksheet
   - uid: excel.Excel.Worksheet.shapes
     summary: >-
       Returns the collection of all the Shape objects on the worksheet. Read-only.
@@ -1259,7 +1441,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.WorksheetData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

@@ -12,10 +12,22 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions.$all
       - excel_release.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions.borderColor
       - excel_release.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions.fillColor
       - excel_release.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions.matchPositiveBorderColor
       - excel_release.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions.matchPositiveFillColor
+  - uid: excel_release.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions.borderColor
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML

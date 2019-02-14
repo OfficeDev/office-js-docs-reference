@@ -12,7 +12,19 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.ApplicationLoadOptions.$all
       - excel_release.Excel.Interfaces.ApplicationLoadOptions.calculationMode
+  - uid: excel_release.Excel.Interfaces.ApplicationLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ApplicationLoadOptions.calculationMode
     summary: >-
       Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible

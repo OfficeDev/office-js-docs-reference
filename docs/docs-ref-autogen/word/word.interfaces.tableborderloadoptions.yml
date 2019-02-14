@@ -12,9 +12,21 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.TableBorderLoadOptions.$all
       - word.Word.Interfaces.TableBorderLoadOptions.color
       - word.Word.Interfaces.TableBorderLoadOptions.type
       - word.Word.Interfaces.TableBorderLoadOptions.width
+  - uid: word.Word.Interfaces.TableBorderLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.TableBorderLoadOptions.color
     summary: |-
       Gets or sets the table border color.

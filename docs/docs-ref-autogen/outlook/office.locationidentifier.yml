@@ -1,0 +1,60 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.LocationIdentifier
+    summary: |-
+      Represents the id of a location.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
+    name: Office.LocationIdentifier
+    fullName: Office.LocationIdentifier
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    remarks: |-
+
+      #### Examples
+
+      ```javascript
+      var locations = [
+          {
+              "id": "Contoso",
+              "type": Office.MailboxEnums.LocationType.Custom
+          }
+      ];
+      ```
+    children:
+      - outlook.Office.LocationIdentifier.id
+      - outlook.Office.LocationIdentifier.type
+  - uid: outlook.Office.LocationIdentifier.id
+    summary: |-
+      The location's unique id.
+
+      For **Room** type, it's the room's email address.
+
+      For **Custom** type, it's the displayName.
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.LocationIdentifier.type
+    summary: The location's type.
+    isPreview: true
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: MailboxEnums.LocationType;'
+      return:
+        type:
+          - MailboxEnums.LocationType

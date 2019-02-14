@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.ConditionalFormatCollectionLoadOptions.$all
       - excel_release.Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValue
       - excel_release.Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValueOrNullObject
       - excel_release.Excel.Interfaces.ConditionalFormatCollectionLoadOptions.colorScale
@@ -32,6 +33,17 @@ items:
       - excel_release.Excel.Interfaces.ConditionalFormatCollectionLoadOptions.topBottom
       - excel_release.Excel.Interfaces.ConditionalFormatCollectionLoadOptions.topBottomOrNullObject
       - excel_release.Excel.Interfaces.ConditionalFormatCollectionLoadOptions.type
+  - uid: excel_release.Excel.Interfaces.ConditionalFormatCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ConditionalFormatCollectionLoadOptions.cellValue
     summary: >-
       For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional

@@ -12,8 +12,20 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.NamedItemArrayValuesLoadOptions.$all
       - excel_release.Excel.Interfaces.NamedItemArrayValuesLoadOptions.types
       - excel_release.Excel.Interfaces.NamedItemArrayValuesLoadOptions.values
+  - uid: excel_release.Excel.Interfaces.NamedItemArrayValuesLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.NamedItemArrayValuesLoadOptions.types
     summary: |-
       Represents the types for each item in the named item array

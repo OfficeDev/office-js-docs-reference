@@ -8,7 +8,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - excel.Excel.CellPropertiesLoadOptions
+      - 'CellPropertiesLoadOptions '
     package: excel
     children:
       - excel.Excel.ColumnPropertiesLoadOptions.columnHidden

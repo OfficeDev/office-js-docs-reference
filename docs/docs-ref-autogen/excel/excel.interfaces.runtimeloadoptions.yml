@@ -12,7 +12,19 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.RuntimeLoadOptions.$all
       - excel.Excel.Interfaces.RuntimeLoadOptions.enableEvents
+  - uid: excel.Excel.Interfaces.RuntimeLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.RuntimeLoadOptions.enableEvents
     summary: |-
       Toggle JavaScript events in the current task pane or content add-in.

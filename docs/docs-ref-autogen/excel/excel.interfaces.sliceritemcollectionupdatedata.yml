@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.SlicerItemCollectionUpdateData
-    summary: 'An interface for updating data on the SlicerItemCollection object, for use in "slicerItemCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the SlicerItemCollection object, for use in "slicerItemCollection.set(<!-- -->{
+      ... }<!-- -->)".
     name: Excel.Interfaces.SlicerItemCollectionUpdateData
     fullName: Excel.Interfaces.SlicerItemCollectionUpdateData
     langs:

@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.TableLoadOptions.$all
       - excel.Excel.Interfaces.TableLoadOptions.autoFilter
       - excel.Excel.Interfaces.TableLoadOptions.columns
       - excel.Excel.Interfaces.TableLoadOptions.highlightFirstColumn
@@ -28,6 +29,17 @@ items:
       - excel.Excel.Interfaces.TableLoadOptions.sort
       - excel.Excel.Interfaces.TableLoadOptions.style
       - excel.Excel.Interfaces.TableLoadOptions.worksheet
+  - uid: excel.Excel.Interfaces.TableLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.TableLoadOptions.autoFilter
     summary: >-
       Represents the AutoFilter object of the table.

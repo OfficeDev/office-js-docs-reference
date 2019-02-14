@@ -28,12 +28,15 @@ items:
     package: office
     children:
       - office.Office.CustomXmlParts.addAsync
+      - office.Office.CustomXmlParts.addAsync_1
       - office.Office.CustomXmlParts.getByIdAsync
+      - office.Office.CustomXmlParts.getByIdAsync_1
       - office.Office.CustomXmlParts.getByNamespaceAsync
+      - office.Office.CustomXmlParts.getByNamespaceAsync_1
   - uid: office.Office.CustomXmlParts.addAsync
     summary: Asynchronously adds a new custom XML part to a file.
     name: 'addAsync(xml, options, callback)'
-    fullName: addAsync
+    fullName: 'addAsync(xml, options, callback)'
     langs:
       - typeScript
     type: method
@@ -41,6 +44,35 @@ items:
       content: >-
         addAsync(xml: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlPart>) =>
         void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: xml
+          description: The XML to add to the newly created custom XML part.
+          type:
+            - string
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            newly created CustomXmlPart object.
+          type:
+            - '(result: AsyncResult<CustomXmlPart>) => void'
+  - uid: office.Office.CustomXmlParts.addAsync_1
+    summary: Asynchronously adds a new custom XML part to a file.
+    name: 'addAsync(xml, callback)'
+    fullName: 'addAsync(xml, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addAsync(xml: string, callback?: (result: AsyncResult<CustomXmlPart>) => void): void;'
       return:
         type:
           - void
@@ -76,10 +108,6 @@ items:
           description: The XML to add to the newly created custom XML part.
           type:
             - string
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -90,7 +118,7 @@ items:
   - uid: office.Office.CustomXmlParts.getByIdAsync
     summary: Asynchronously gets the specified custom XML part by its id.
     name: 'getByIdAsync(id, options, callback)'
-    fullName: getByIdAsync
+    fullName: 'getByIdAsync(id, options, callback)'
     langs:
       - typeScript
     type: method
@@ -137,10 +165,36 @@ items:
             specified id, the method returns null.
           type:
             - '(result: AsyncResult<CustomXmlPart>) => void'
+  - uid: office.Office.CustomXmlParts.getByIdAsync_1
+    summary: Asynchronously gets the specified custom XML part by its id.
+    name: 'getByIdAsync(id, callback)'
+    fullName: 'getByIdAsync(id, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByIdAsync(id: string, callback?: (result: AsyncResult<CustomXmlPart>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: id
+          description: 'The GUID of the custom XML part, including opening and closing braces.'
+          type:
+            - string
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a
+            CustomXmlPart object that represents the specified custom XML part. If there is no custom XML part with the
+            specified id, the method returns null.
+          type:
+            - '(result: AsyncResult<CustomXmlPart>) => void'
   - uid: office.Office.CustomXmlParts.getByNamespaceAsync
     summary: Asynchronously gets the specified custom XML part(s) by its namespace.
     name: 'getByNamespaceAsync(ns, options, callback)'
-    fullName: getByNamespaceAsync
+    fullName: 'getByNamespaceAsync(ns, options, callback)'
     langs:
       - typeScript
     type: method
@@ -148,6 +202,35 @@ items:
       content: >-
         getByNamespaceAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result:
         AsyncResult<CustomXmlPart[]>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: ns
+          description: The namespace URI.
+          type:
+            - string
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
+            of CustomXmlPart objects that match the specified namespace.
+          type:
+            - '(result: AsyncResult<CustomXmlPart[]>) => void'
+  - uid: office.Office.CustomXmlParts.getByNamespaceAsync_1
+    summary: Asynchronously gets the specified custom XML part(s) by its namespace.
+    name: 'getByNamespaceAsync(ns, callback)'
+    fullName: 'getByNamespaceAsync(ns, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByNamespaceAsync(ns: string, callback?: (result: AsyncResult<CustomXmlPart[]>) => void): void;'
       return:
         type:
           - void
@@ -173,10 +256,6 @@ items:
           description: The namespace URI.
           type:
             - string
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type

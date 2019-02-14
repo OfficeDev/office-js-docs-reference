@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.$all
       - excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.defaultForAllPages
       - excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.evenPages
       - excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.firstPage
@@ -19,6 +20,18 @@ items:
       - excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.state
       - excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.useSheetMargins
       - excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.useSheetScale
+  - uid: excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.defaultForAllPages
     summary: >-
       The general header/footer, used for all pages unless even/odd or first page is specified.

@@ -8,27 +8,9 @@ items:
     type: interface
     package: excel_release
     children:
-      - excel_release.Excel.ThreeStarsSet.__index
       - excel_release.Excel.ThreeStarsSet.goldStar
       - excel_release.Excel.ThreeStarsSet.halfGoldStar
       - excel_release.Excel.ThreeStarsSet.silverStar
-  - uid: excel_release.Excel.ThreeStarsSet.__index
-    name: __index(index)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[index: number]: Icon;'
-      return:
-        type:
-          - Icon
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
   - uid: excel_release.Excel.ThreeStarsSet.goldStar
     name: goldStar
     fullName: goldStar

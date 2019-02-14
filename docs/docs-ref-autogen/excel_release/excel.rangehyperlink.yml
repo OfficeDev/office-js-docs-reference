@@ -31,6 +31,36 @@ items:
       return:
         type:
           - string
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Orders");
+
+              let productsRange = sheet.getRange("A3:A5");
+              productsRange.load("values");
+
+              await context.sync();
+
+              // Create a hyperlink to a URL 
+              // for each product name in the first table.
+              for (let i = 0; i < productsRange.values.length; i++) {
+                  let cellRange = productsRange.getCell(i, 0);
+                  let cellText = productsRange.values[i][0];
+
+                  let hyperlink = {
+                      textToDisplay: cellText,
+                      screenTip: "Search Bing for '" + cellText + "'",
+                      address: "https://www.bing.com?q=" + cellText
+                  }
+                  cellRange.hyperlink = hyperlink;
+              }
+
+              await context.sync();
+          });
+          ```
   - uid: excel_release.Excel.RangeHyperlink.documentReference
     summary: |-
       Represents the document reference target for the hyperlink.
@@ -46,6 +76,36 @@ items:
       return:
         type:
           - string
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Orders");
+
+              let productsRange = sheet.getRange("A9:A11");
+              productsRange.load("values");
+
+              await context.sync();
+
+              // Create a hyperlink to a location within the workbook
+              // for each product name in the second table.
+              for (let i = 0; i < productsRange.values.length; i++) {
+                  let cellRange = productsRange.getCell(i, 0);
+                  let cellText = productsRange.values[i][0];
+
+                  let hyperlink = {
+                      textToDisplay: cellText,
+                      screenTip: "Navigate to the '" + cellText + "' worksheet",
+                      documentReference: cellText + "!A1"
+                  }
+                  cellRange.hyperlink = hyperlink;
+              }
+
+              await context.sync();
+          });
+          ```
   - uid: excel_release.Excel.RangeHyperlink.screenTip
     summary: |-
       Represents the string displayed when hovering over the hyperlink.
@@ -61,6 +121,36 @@ items:
       return:
         type:
           - string
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Orders");
+
+              let productsRange = sheet.getRange("A3:A5");
+              productsRange.load("values");
+
+              await context.sync();
+
+              // Create a hyperlink to a URL 
+              // for each product name in the first table.
+              for (let i = 0; i < productsRange.values.length; i++) {
+                  let cellRange = productsRange.getCell(i, 0);
+                  let cellText = productsRange.values[i][0];
+
+                  let hyperlink = {
+                      textToDisplay: cellText,
+                      screenTip: "Search Bing for '" + cellText + "'",
+                      address: "https://www.bing.com?q=" + cellText
+                  }
+                  cellRange.hyperlink = hyperlink;
+              }
+
+              await context.sync();
+          });
+          ```
   - uid: excel_release.Excel.RangeHyperlink.textToDisplay
     summary: |-
       Represents the string that is displayed in the top left most cell in the range.
@@ -76,3 +166,33 @@ items:
       return:
         type:
           - string
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Orders");
+
+              let productsRange = sheet.getRange("A3:A5");
+              productsRange.load("values");
+
+              await context.sync();
+
+              // Create a hyperlink to a URL 
+              // for each product name in the first table.
+              for (let i = 0; i < productsRange.values.length; i++) {
+                  let cellRange = productsRange.getCell(i, 0);
+                  let cellText = productsRange.values[i][0];
+
+                  let hyperlink = {
+                      textToDisplay: cellText,
+                      screenTip: "Search Bing for '" + cellText + "'",
+                      address: "https://www.bing.com?q=" + cellText
+                  }
+                  cellRange.hyperlink = hyperlink;
+              }
+
+              await context.sync();
+          });
+          ```

@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.RangeFontLoadOptions.$all
       - excel.Excel.Interfaces.RangeFontLoadOptions.bold
       - excel.Excel.Interfaces.RangeFontLoadOptions.color
       - excel.Excel.Interfaces.RangeFontLoadOptions.italic
@@ -22,6 +23,17 @@ items:
       - excel.Excel.Interfaces.RangeFontLoadOptions.superscript
       - excel.Excel.Interfaces.RangeFontLoadOptions.tintAndShade
       - excel.Excel.Interfaces.RangeFontLoadOptions.underline
+  - uid: excel.Excel.Interfaces.RangeFontLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.RangeFontLoadOptions.bold
     summary: |-
       Represents the bold status of font.

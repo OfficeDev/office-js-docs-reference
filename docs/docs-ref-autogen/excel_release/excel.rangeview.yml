@@ -23,9 +23,13 @@ items:
       - excel_release.Excel.RangeView.getRange
       - excel_release.Excel.RangeView.index
       - excel_release.Excel.RangeView.load
+      - excel_release.Excel.RangeView.load_1
+      - excel_release.Excel.RangeView.load_2
       - excel_release.Excel.RangeView.numberFormat
       - excel_release.Excel.RangeView.rowCount
       - excel_release.Excel.RangeView.rows
+      - excel_release.Excel.RangeView.set
+      - excel_release.Excel.RangeView.set_1
       - excel_release.Excel.RangeView.text
       - excel_release.Excel.RangeView.toJSON
       - excel_release.Excel.RangeView.values
@@ -127,7 +131,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
-    fullName: getRange
+    fullName: getRange()
     langs:
       - typeScript
     type: method
@@ -160,6 +164,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.RangeView` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.RangeView` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -171,7 +179,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -183,9 +191,51 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - excel.Excel.Interfaces.RangeViewLoadOptions
+  - uid: excel_release.Excel.RangeView.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.RangeView;'
+      return:
+        type:
+          - excel.Excel.RangeView
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.RangeView.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeView;'
+      return:
+        type:
+          - excel.Excel.RangeView
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel_release.Excel.RangeView.numberFormat
     summary: |-
       Represents Excel's number format code for the given cell.
@@ -231,6 +281,54 @@ items:
       return:
         type:
           - excel.Excel.RangeViewCollection
+  - uid: excel_release.Excel.RangeView.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.RangeView): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.RangeViewUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.RangeViewUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel_release.Excel.RangeView.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.RangeView): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.RangeView
   - uid: excel_release.Excel.RangeView.text
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
@@ -256,7 +354,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.RangeViewData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

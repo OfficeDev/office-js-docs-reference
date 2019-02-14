@@ -10,12 +10,11 @@ items:
       - office.OfficeExtension.ClientRequestContext
     package: onenote
     children:
-      - onenote.OneNote.RequestContext.constructor
+      - onenote.OneNote.RequestContext.(constructor)
       - onenote.OneNote.RequestContext.application
-  - uid: onenote.OneNote.RequestContext.constructor
-    summary: 'Constructs a new instance of the [RequestContext](xref:onenote.OneNote.RequestContext) class'
-    name: constructor(url)
-    fullName: constructor
+  - uid: onenote.OneNote.RequestContext.(constructor)
+    name: (constructor)(url)
+    fullName: (constructor)(url)
     langs:
       - typeScript
     type: constructor

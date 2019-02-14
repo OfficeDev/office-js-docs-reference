@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.StyleLoadOptions.$all
       - excel_release.Excel.Interfaces.StyleLoadOptions.autoIndent
       - excel_release.Excel.Interfaces.StyleLoadOptions.borders
       - excel_release.Excel.Interfaces.StyleLoadOptions.builtIn
@@ -35,6 +36,17 @@ items:
       - excel_release.Excel.Interfaces.StyleLoadOptions.textOrientation
       - excel_release.Excel.Interfaces.StyleLoadOptions.verticalAlignment
       - excel_release.Excel.Interfaces.StyleLoadOptions.wrapText
+  - uid: excel_release.Excel.Interfaces.StyleLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.StyleLoadOptions.autoIndent
     summary: |-
       Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution.

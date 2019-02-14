@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.TableRowCollectionLoadOptions.$all
       - word.Word.Interfaces.TableRowCollectionLoadOptions.cellCount
       - word.Word.Interfaces.TableRowCollectionLoadOptions.font
       - word.Word.Interfaces.TableRowCollectionLoadOptions.horizontalAlignment
@@ -22,6 +23,17 @@ items:
       - word.Word.Interfaces.TableRowCollectionLoadOptions.shadingColor
       - word.Word.Interfaces.TableRowCollectionLoadOptions.values
       - word.Word.Interfaces.TableRowCollectionLoadOptions.verticalAlignment
+  - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.cellCount
     summary: |-
       For EACH ITEM in the collection: Gets the number of cells in the row. Read-only.

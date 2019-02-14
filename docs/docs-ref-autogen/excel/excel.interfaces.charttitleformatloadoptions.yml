@@ -12,8 +12,20 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartTitleFormatLoadOptions.$all
       - excel.Excel.Interfaces.ChartTitleFormatLoadOptions.border
       - excel.Excel.Interfaces.ChartTitleFormatLoadOptions.font
+  - uid: excel.Excel.Interfaces.ChartTitleFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartTitleFormatLoadOptions.border
     summary: |-
       Represents the border format of chart title, which includes color, linestyle, and weight.

@@ -36,6 +36,8 @@ items:
       - excel.Excel.Shape.line
       - excel.Excel.Shape.lineFormat
       - excel.Excel.Shape.load
+      - excel.Excel.Shape.load_1
+      - excel.Excel.Shape.load_2
       - excel.Excel.Shape.lockAspectRatio
       - excel.Excel.Shape.name
       - excel.Excel.Shape.onActivated
@@ -44,9 +46,15 @@ items:
       - excel.Excel.Shape.placement
       - excel.Excel.Shape.rotation
       - excel.Excel.Shape.saveAsPicture
+      - excel.Excel.Shape.saveAsPicture_1
       - excel.Excel.Shape.scaleHeight
+      - excel.Excel.Shape.scaleHeight_1
       - excel.Excel.Shape.scaleWidth
+      - excel.Excel.Shape.scaleWidth_1
+      - excel.Excel.Shape.set
+      - excel.Excel.Shape.set_1
       - excel.Excel.Shape.setZOrder
+      - excel.Excel.Shape.setZOrder_1
       - excel.Excel.Shape.textFrame
       - excel.Excel.Shape.toJSON
       - excel.Excel.Shape.top
@@ -114,7 +122,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -327,7 +335,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: incrementLeft(increment)
-    fullName: incrementLeft
+    fullName: incrementLeft(increment)
     langs:
       - typeScript
     type: method
@@ -355,7 +363,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: incrementRotation(increment)
-    fullName: incrementRotation
+    fullName: incrementRotation(increment)
     langs:
       - typeScript
     type: method
@@ -381,7 +389,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: incrementTop(increment)
-    fullName: incrementTop
+    fullName: incrementTop(increment)
     langs:
       - typeScript
     type: method
@@ -481,6 +489,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Shape` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Shape` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -493,7 +505,7 @@ items:
       specified number of items.
     isPreview: true
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -505,9 +517,53 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - excel.Excel.Interfaces.ShapeLoadOptions
+  - uid: excel.Excel.Shape.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Shape;'
+      return:
+        type:
+          - excel.Excel.Shape
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.Shape.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Shape;'
+      return:
+        type:
+          - excel.Excel.Shape
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.Shape.lockAspectRatio
     summary: >-
       Represents if the aspect ratio locked, in boolean, of the shape.
@@ -645,7 +701,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: saveAsPicture(format)
-    fullName: saveAsPicture
+    fullName: saveAsPicture(format)
     langs:
       - typeScript
     type: method
@@ -660,6 +716,34 @@ items:
           description: ''
           type:
             - excel.Excel.PictureFormat
+  - uid: excel.Excel.Shape.saveAsPicture_1
+    summary: >-
+      Saves the shape as a picture and returns the picture in the form of base64 encoded string, using the DPI sets to
+      96. Only support saves as to Excel.PictureFormat.BMP, Excel.PictureFormat.PNG, Excel.PictureFormat.JPEG and
+      Excel.PictureFormat.GIF.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: saveAsPicture(formatString)
+    fullName: saveAsPicture(formatString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        saveAsPicture(formatString: "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"):
+        OfficeExtension.ClientResult<string>;
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+      parameters:
+        - id: formatString
+          description: ''
+          type:
+            - '"UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
   - uid: excel.Excel.Shape.scaleHeight
     summary: >-
       Scales the height of the shape by a specified factor. For pictures, you can indicate whether you want to scale the
@@ -671,7 +755,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
-    fullName: scaleHeight
+    fullName: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
     langs:
       - typeScript
     type: method
@@ -699,6 +783,47 @@ items:
             position.
           type:
             - excel.Excel.ShapeScaleFrom
+  - uid: excel.Excel.Shape.scaleHeight_1
+    summary: >-
+      Scales the height of the shape by a specified factor. For pictures, you can indicate whether you want to scale the
+      shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
+      current height.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: 'scaleHeight(scaleFactor, scaleTypeString, scaleFrom)'
+    fullName: 'scaleHeight(scaleFactor, scaleTypeString, scaleFrom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        scaleHeight(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft"
+        | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: scaleFactor
+          description: Specifies the ratio between the height of the shape after you resize it and the current or original height.
+          type:
+            - number
+        - id: scaleTypeString
+          description: >-
+            OriginalSize to scale the shape relative to its original size. CurrentSize to scale it relative to its
+            current size. You can specify OriginalSize for this argument only if the specified shape is a picture.
+          type:
+            - '"CurrentSize" | "OriginalSize"'
+        - id: scaleFrom
+          description: >-
+            Optional. One of the constants of ShapeScaleFrom which specifies which part of the shape retains its
+            position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its
+            position.
+          type:
+            - '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
   - uid: excel.Excel.Shape.scaleWidth
     summary: >-
       Scales the width of the shape by a specified factor. For pictures, you can indicate whether you want to scale the
@@ -710,7 +835,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
-    fullName: scaleWidth
+    fullName: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
     langs:
       - typeScript
     type: method
@@ -738,6 +863,97 @@ items:
             position.
           type:
             - excel.Excel.ShapeScaleFrom
+  - uid: excel.Excel.Shape.scaleWidth_1
+    summary: >-
+      Scales the width of the shape by a specified factor. For pictures, you can indicate whether you want to scale the
+      shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
+      current width.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: 'scaleWidth(scaleFactor, scaleTypeString, scaleFrom)'
+    fullName: 'scaleWidth(scaleFactor, scaleTypeString, scaleFrom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        scaleWidth(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft"
+        | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: scaleFactor
+          description: Specifies the ratio between the width of the shape after you resize it and the current or original width.
+          type:
+            - number
+        - id: scaleTypeString
+          description: >-
+            OriginalSize to scale the shape relative to its original size. CurrentSize to scale it relative to its
+            current size. You can specify OriginalSize for this argument only if the specified shape is a picture.
+          type:
+            - '"CurrentSize" | "OriginalSize"'
+        - id: scaleFrom
+          description: >-
+            Optional. One of the constants of ShapeScaleFrom which specifies which part of the shape retains its
+            position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its
+            position.
+          type:
+            - '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
+  - uid: excel.Excel.Shape.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Shape): void`
+    isPreview: true
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ShapeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ShapeUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.Shape.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    isPreview: true
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Shape): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.Shape
   - uid: excel.Excel.Shape.setZOrder
     summary: >-
       Moves the specified shape in front of or behind other shapes in the collection (that is, changes the shape's
@@ -748,7 +964,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: setZOrder(value)
-    fullName: setZOrder
+    fullName: setZOrder(value)
     langs:
       - typeScript
     type: method
@@ -763,6 +979,31 @@ items:
           description: where to move the specified shape relative to the other shapes. See Excel.ShapeZOrder for detail.
           type:
             - excel.Excel.ShapeZOrder
+  - uid: excel.Excel.Shape.setZOrder_1
+    summary: >-
+      Moves the specified shape in front of or behind other shapes in the collection (that is, changes the shape's
+      position in the z-order).
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: setZOrder(valueString)
+    fullName: setZOrder(valueString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setZOrder(valueString: "BringToFront" | "BringForward" | "SendToBack" | "SendBackward"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: valueString
+          description: where to move the specified shape relative to the other shapes. See Excel.ShapeZOrder for detail.
+          type:
+            - '"BringToFront" | "BringForward" | "SendToBack" | "SendBackward"'
   - uid: excel.Excel.Shape.textFrame
     summary: >-
       Returns the textFrame object of a shape. Read only.
@@ -790,7 +1031,7 @@ items:
       properties from the original object.
     isPreview: true
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

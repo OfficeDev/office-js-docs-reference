@@ -23,7 +23,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type:
           - any
@@ -35,7 +35,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id?: string;'
+      content: 'id?: string'
       return:
         type:
           - string
@@ -49,7 +49,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'promptText?: string;'
+      content: 'promptText?: string'
       return:
         type:
           - string
@@ -57,15 +57,15 @@ items:
     summary: >-
       Specifies a table of sample data displayed in the prompt UI as an example of the kinds of fields (columns) that
       can be bound by your add-in. The headers provided in the TableData object specify the labels used in the field
-      selection UI. Note: This parameter is used only in add-ins for Access. It is ignored if provided when calling the
-      method in an add-in for Excel.
+      selection UI. **Note**: This parameter is used only in add-ins for Access. It is ignored if provided when calling
+      the method in an add-in for Excel.
     name: sampleData
     fullName: sampleData
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'sampleData?: Office.TableData;'
+      content: 'sampleData?: Office.TableData'
       return:
         type:
           - Office.TableData

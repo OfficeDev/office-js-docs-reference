@@ -12,7 +12,19 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions.$all
       - excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions.border
+  - uid: excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions.border
     summary: |-
       Represents the border attributes of a chart plotArea.

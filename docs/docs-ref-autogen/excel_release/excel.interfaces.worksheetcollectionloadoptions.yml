@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.WorksheetCollectionLoadOptions.$all
       - excel_release.Excel.Interfaces.WorksheetCollectionLoadOptions.charts
       - excel_release.Excel.Interfaces.WorksheetCollectionLoadOptions.id
       - excel_release.Excel.Interfaces.WorksheetCollectionLoadOptions.name
@@ -24,6 +25,17 @@ items:
       - excel_release.Excel.Interfaces.WorksheetCollectionLoadOptions.tabColor
       - excel_release.Excel.Interfaces.WorksheetCollectionLoadOptions.tables
       - excel_release.Excel.Interfaces.WorksheetCollectionLoadOptions.visibility
+  - uid: excel_release.Excel.Interfaces.WorksheetCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.WorksheetCollectionLoadOptions.charts
     summary: |-
       For EACH ITEM in the collection: Returns collection of charts that are part of the worksheet.

@@ -12,11 +12,23 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.TableColumnCollectionLoadOptions.$all
       - excel_release.Excel.Interfaces.TableColumnCollectionLoadOptions.filter
       - excel_release.Excel.Interfaces.TableColumnCollectionLoadOptions.id
       - excel_release.Excel.Interfaces.TableColumnCollectionLoadOptions.index
       - excel_release.Excel.Interfaces.TableColumnCollectionLoadOptions.name
       - excel_release.Excel.Interfaces.TableColumnCollectionLoadOptions.values
+  - uid: excel_release.Excel.Interfaces.TableColumnCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.TableColumnCollectionLoadOptions.filter
     summary: |-
       For EACH ITEM in the collection: Retrieve the filter applied to the column.

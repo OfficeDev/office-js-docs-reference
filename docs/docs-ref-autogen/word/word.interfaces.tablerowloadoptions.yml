@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.TableRowLoadOptions.$all
       - word.Word.Interfaces.TableRowLoadOptions.cellCount
       - word.Word.Interfaces.TableRowLoadOptions.font
       - word.Word.Interfaces.TableRowLoadOptions.horizontalAlignment
@@ -22,6 +23,17 @@ items:
       - word.Word.Interfaces.TableRowLoadOptions.shadingColor
       - word.Word.Interfaces.TableRowLoadOptions.values
       - word.Word.Interfaces.TableRowLoadOptions.verticalAlignment
+  - uid: word.Word.Interfaces.TableRowLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.TableRowLoadOptions.cellCount
     summary: |-
       Gets the number of cells in the row. Read-only.

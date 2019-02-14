@@ -15,9 +15,22 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.CommentCollectionLoadOptions.$all
       - excel.Excel.Interfaces.CommentCollectionLoadOptions.content
       - excel.Excel.Interfaces.CommentCollectionLoadOptions.id
       - excel.Excel.Interfaces.CommentCollectionLoadOptions.isParent
+  - uid: excel.Excel.Interfaces.CommentCollectionLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.CommentCollectionLoadOptions.content
     summary: >-
       For EACH ITEM in the collection: Get/Set the content.

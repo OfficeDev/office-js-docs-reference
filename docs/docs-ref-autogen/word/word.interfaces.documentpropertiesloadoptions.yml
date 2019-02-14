@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.DocumentPropertiesLoadOptions.$all
       - word.Word.Interfaces.DocumentPropertiesLoadOptions.applicationName
       - word.Word.Interfaces.DocumentPropertiesLoadOptions.author
       - word.Word.Interfaces.DocumentPropertiesLoadOptions.category
@@ -29,6 +30,17 @@ items:
       - word.Word.Interfaces.DocumentPropertiesLoadOptions.subject
       - word.Word.Interfaces.DocumentPropertiesLoadOptions.template
       - word.Word.Interfaces.DocumentPropertiesLoadOptions.title
+  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.applicationName
     summary: |-
       Gets the application name of the document. Read only.

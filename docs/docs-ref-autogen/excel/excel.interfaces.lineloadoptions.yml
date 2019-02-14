@@ -15,9 +15,22 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.LineLoadOptions.$all
       - excel.Excel.Interfaces.LineLoadOptions.connectorType
       - excel.Excel.Interfaces.LineLoadOptions.id
       - excel.Excel.Interfaces.LineLoadOptions.shape
+  - uid: excel.Excel.Interfaces.LineLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.LineLoadOptions.connectorType
     summary: >-
       Represents the connector type for the line.

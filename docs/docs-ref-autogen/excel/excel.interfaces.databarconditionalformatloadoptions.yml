@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.$all
       - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.axisColor
       - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.axisFormat
       - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.barDirection
@@ -20,6 +21,17 @@ items:
       - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.positiveFormat
       - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.showDataBarOnly
       - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.upperBoundRule
+  - uid: excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.axisColor
     summary: >-
       HTML color code representing the color of the Axis line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML

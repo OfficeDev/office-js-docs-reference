@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.Interfaces.NamedItemCollectionUpdateData
-    summary: 'An interface for updating data on the NamedItemCollection object, for use in "namedItemCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the NamedItemCollection object, for use in "namedItemCollection.set(<!-- -->{
+      ... }<!-- -->)".
     name: Excel.Interfaces.NamedItemCollectionUpdateData
     fullName: Excel.Interfaces.NamedItemCollectionUpdateData
     langs:

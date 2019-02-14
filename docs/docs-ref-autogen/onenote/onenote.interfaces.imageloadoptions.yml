@@ -12,6 +12,7 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.ImageLoadOptions.$all
       - onenote.OneNote.Interfaces.ImageLoadOptions.description
       - onenote.OneNote.Interfaces.ImageLoadOptions.height
       - onenote.OneNote.Interfaces.ImageLoadOptions.hyperlink
@@ -20,6 +21,17 @@ items:
       - onenote.OneNote.Interfaces.ImageLoadOptions.pageContent
       - onenote.OneNote.Interfaces.ImageLoadOptions.paragraph
       - onenote.OneNote.Interfaces.ImageLoadOptions.width
+  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.ImageLoadOptions.description
     summary: |-
       Gets or sets the description of the Image.

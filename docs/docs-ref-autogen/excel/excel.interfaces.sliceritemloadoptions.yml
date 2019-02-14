@@ -15,10 +15,23 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.SlicerItemLoadOptions.$all
       - excel.Excel.Interfaces.SlicerItemLoadOptions.hasData
       - excel.Excel.Interfaces.SlicerItemLoadOptions.isSelected
       - excel.Excel.Interfaces.SlicerItemLoadOptions.key
       - excel.Excel.Interfaces.SlicerItemLoadOptions.name
+  - uid: excel.Excel.Interfaces.SlicerItemLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.SlicerItemLoadOptions.hasData
     summary: >-
       True if the slicer item has data.

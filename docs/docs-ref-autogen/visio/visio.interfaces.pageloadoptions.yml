@@ -12,12 +12,24 @@ items:
     type: interface
     package: visio
     children:
+      - visio.Visio.Interfaces.PageLoadOptions.$all
       - visio.Visio.Interfaces.PageLoadOptions.height
       - visio.Visio.Interfaces.PageLoadOptions.index
       - visio.Visio.Interfaces.PageLoadOptions.isBackground
       - visio.Visio.Interfaces.PageLoadOptions.name
       - visio.Visio.Interfaces.PageLoadOptions.view
       - visio.Visio.Interfaces.PageLoadOptions.width
+  - uid: visio.Visio.Interfaces.PageLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: visio.Visio.Interfaces.PageLoadOptions.height
     summary: |-
       Returns the height of the page. Read-only.

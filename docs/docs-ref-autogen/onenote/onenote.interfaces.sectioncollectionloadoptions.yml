@@ -12,6 +12,7 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.$all
       - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.clientUrl
       - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.id
       - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.isEncrypted
@@ -22,6 +23,17 @@ items:
       - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.parentSectionGroup
       - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.parentSectionGroupOrNull
       - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.webUrl
+  - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.clientUrl
     summary: |-
       For EACH ITEM in the collection: The client url of the section. Read only

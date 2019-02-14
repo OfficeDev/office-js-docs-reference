@@ -12,10 +12,22 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ApplicationLoadOptions.$all
       - excel.Excel.Interfaces.ApplicationLoadOptions.calculationEngineVersion
       - excel.Excel.Interfaces.ApplicationLoadOptions.calculationMode
       - excel.Excel.Interfaces.ApplicationLoadOptions.calculationState
       - excel.Excel.Interfaces.ApplicationLoadOptions.iterativeCalculation
+  - uid: excel.Excel.Interfaces.ApplicationLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ApplicationLoadOptions.calculationEngineVersion
     summary: >-
       Returns a number about the version of Excel Calculation Engine that the workbook was last fully recalculated by.

@@ -14,10 +14,22 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.DocumentLoadOptions.$all
       - word.Word.Interfaces.DocumentLoadOptions.allowCloseOnUntitled
       - word.Word.Interfaces.DocumentLoadOptions.body
       - word.Word.Interfaces.DocumentLoadOptions.properties
       - word.Word.Interfaces.DocumentLoadOptions.saved
+  - uid: word.Word.Interfaces.DocumentLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.DocumentLoadOptions.allowCloseOnUntitled
     summary: >-
       Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this

@@ -15,11 +15,24 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.$all
       - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.endStyleCap
       - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.format
       - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.include
       - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.type
       - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.visible
+  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.endStyleCap
     summary: >-
       Represents whether have the end style cap for the error bars.

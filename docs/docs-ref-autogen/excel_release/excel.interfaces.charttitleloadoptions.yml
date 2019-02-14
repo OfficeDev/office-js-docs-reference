@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.ChartTitleLoadOptions.$all
       - excel_release.Excel.Interfaces.ChartTitleLoadOptions.format
       - excel_release.Excel.Interfaces.ChartTitleLoadOptions.height
       - excel_release.Excel.Interfaces.ChartTitleLoadOptions.horizontalAlignment
@@ -25,6 +26,17 @@ items:
       - excel_release.Excel.Interfaces.ChartTitleLoadOptions.verticalAlignment
       - excel_release.Excel.Interfaces.ChartTitleLoadOptions.visible
       - excel_release.Excel.Interfaces.ChartTitleLoadOptions.width
+  - uid: excel_release.Excel.Interfaces.ChartTitleLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ChartTitleLoadOptions.format
     summary: |-
       Represents the formatting of a chart title, which includes fill and font formatting.

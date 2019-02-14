@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.$all
       - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.field
       - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.id
       - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.name
@@ -19,6 +20,17 @@ items:
       - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.position
       - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.showAs
       - excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.summarizeBy
+  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.field
     summary: |-
       For EACH ITEM in the collection: Returns the PivotFields associated with the DataPivotHierarchy.

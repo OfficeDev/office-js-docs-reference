@@ -12,12 +12,24 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.TableLoadOptions.$all
       - onenote.OneNote.Interfaces.TableLoadOptions.borderVisible
       - onenote.OneNote.Interfaces.TableLoadOptions.columnCount
       - onenote.OneNote.Interfaces.TableLoadOptions.id
       - onenote.OneNote.Interfaces.TableLoadOptions.paragraph
       - onenote.OneNote.Interfaces.TableLoadOptions.rowCount
       - onenote.OneNote.Interfaces.TableLoadOptions.rows
+  - uid: onenote.OneNote.Interfaces.TableLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.TableLoadOptions.borderVisible
     summary: |-
       Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.

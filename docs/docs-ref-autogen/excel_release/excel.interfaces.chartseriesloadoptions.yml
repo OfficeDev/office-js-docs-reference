@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.$all
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.axisGroup
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.chartType
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.dataLabels
@@ -36,6 +37,17 @@ items:
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.smooth
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.splitType
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.varyByCategories
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.axisGroup
     summary: |-
       Returns or sets the group for the specified series. Read/Write

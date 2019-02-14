@@ -15,6 +15,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.NamedItemLoadOptions.$all
       - excel.Excel.Interfaces.NamedItemLoadOptions.arrayValues
       - excel.Excel.Interfaces.NamedItemLoadOptions.comment
       - excel.Excel.Interfaces.NamedItemLoadOptions.formula
@@ -25,6 +26,17 @@ items:
       - excel.Excel.Interfaces.NamedItemLoadOptions.visible
       - excel.Excel.Interfaces.NamedItemLoadOptions.worksheet
       - excel.Excel.Interfaces.NamedItemLoadOptions.worksheetOrNullObject
+  - uid: excel.Excel.Interfaces.NamedItemLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.NamedItemLoadOptions.arrayValues
     summary: |-
       Returns an object containing values and types of the named item.

@@ -3,7 +3,7 @@ items:
   - uid: excel_release.Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
     summary: >-
       An interface for updating data on the CustomXmlPartScopedCollection object, for use in
-      "customXmlPartScopedCollection.set({ ... })".
+      "customXmlPartScopedCollection.set(<!-- -->{ ... }<!-- -->)".
     name: Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
     fullName: Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
     langs:

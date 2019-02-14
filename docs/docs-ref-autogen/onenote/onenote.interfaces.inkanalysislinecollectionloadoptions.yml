@@ -12,9 +12,21 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.$all
       - onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.id
       - onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.paragraph
       - onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.words
+  - uid: onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the InkAnalysisLine object. Read-only.

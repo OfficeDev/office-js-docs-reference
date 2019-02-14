@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.$all
       - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.format
       - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.height
       - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.insideHeight
@@ -22,6 +23,17 @@ items:
       - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.position
       - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.top
       - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.width
+  - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.format
     summary: |-
       Represents the formatting of a chart plotArea.

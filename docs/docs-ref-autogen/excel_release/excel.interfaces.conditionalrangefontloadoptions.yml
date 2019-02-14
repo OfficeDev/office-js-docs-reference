@@ -12,11 +12,23 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.ConditionalRangeFontLoadOptions.$all
       - excel_release.Excel.Interfaces.ConditionalRangeFontLoadOptions.bold
       - excel_release.Excel.Interfaces.ConditionalRangeFontLoadOptions.color
       - excel_release.Excel.Interfaces.ConditionalRangeFontLoadOptions.italic
       - excel_release.Excel.Interfaces.ConditionalRangeFontLoadOptions.strikethrough
       - excel_release.Excel.Interfaces.ConditionalRangeFontLoadOptions.underline
+  - uid: excel_release.Excel.Interfaces.ConditionalRangeFontLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ConditionalRangeFontLoadOptions.bold
     summary: |-
       Represents the bold status of font.

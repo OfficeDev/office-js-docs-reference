@@ -11,33 +11,120 @@ items:
     package: office
     children:
       - office.Office.Document.addHandlerAsync
+      - office.Office.Document.addHandlerAsync_1
+      - office.Office.Document.getActiveViewAsync
+      - office.Office.Document.getActiveViewAsync_1
+      - office.Office.Document.getFileAsync
+      - office.Office.Document.getFileAsync_1
+      - office.Office.Document.getFilePropertiesAsync
+      - office.Office.Document.getFilePropertiesAsync_1
+      - office.Office.Document.getMaxResourceIndexAsync
+      - office.Office.Document.getMaxResourceIndexAsync_1
+      - office.Office.Document.getMaxTaskIndexAsync
+      - office.Office.Document.getMaxTaskIndexAsync_1
+      - office.Office.Document.getProjectFieldAsync
+      - office.Office.Document.getProjectFieldAsync_1
+      - office.Office.Document.getResourceByIndexAsync
+      - office.Office.Document.getResourceByIndexAsync_1
+      - office.Office.Document.getResourceFieldAsync
+      - office.Office.Document.getResourceFieldAsync_1
+      - office.Office.Document.getSelectedDataAsync
+      - office.Office.Document.getSelectedDataAsync_1
+      - office.Office.Document.getSelectedResourceAsync
+      - office.Office.Document.getSelectedResourceAsync_1
+      - office.Office.Document.getSelectedTaskAsync
+      - office.Office.Document.getSelectedTaskAsync_1
+      - office.Office.Document.getSelectedViewAsync
+      - office.Office.Document.getSelectedViewAsync_1
+      - office.Office.Document.getTaskAsync
+      - office.Office.Document.getTaskAsync_1
+      - office.Office.Document.getTaskByIndexAsync
+      - office.Office.Document.getTaskByIndexAsync_1
+      - office.Office.Document.getTaskFieldAsync
+      - office.Office.Document.getTaskFieldAsync_1
+      - office.Office.Document.getWSSUrlAsync
+      - office.Office.Document.getWSSUrlAsync_1
+      - office.Office.Document.goToByIdAsync
+      - office.Office.Document.goToByIdAsync_1
+      - office.Office.Document.removeHandlerAsync
+      - office.Office.Document.removeHandlerAsync_1
+      - office.Office.Document.setResourceFieldAsync
+      - office.Office.Document.setResourceFieldAsync_1
+      - office.Office.Document.setSelectedDataAsync
+      - office.Office.Document.setSelectedDataAsync_1
+      - office.Office.Document.setTaskFieldAsync
+      - office.Office.Document.setTaskFieldAsync_1
       - office.Office.Document.bindings
       - office.Office.Document.customXmlParts
-      - office.Office.Document.getActiveViewAsync
-      - office.Office.Document.getFileAsync
-      - office.Office.Document.getFilePropertiesAsync
-      - office.Office.Document.getMaxResourceIndexAsync
-      - office.Office.Document.getMaxTaskIndexAsync
-      - office.Office.Document.getProjectFieldAsync
-      - office.Office.Document.getResourceByIndexAsync
-      - office.Office.Document.getResourceFieldAsync
-      - office.Office.Document.getSelectedDataAsync
-      - office.Office.Document.getSelectedResourceAsync
-      - office.Office.Document.getSelectedTaskAsync
-      - office.Office.Document.getSelectedViewAsync
-      - office.Office.Document.getTaskAsync
-      - office.Office.Document.getTaskByIndexAsync
-      - office.Office.Document.getTaskFieldAsync
-      - office.Office.Document.getWSSUrlAsync
-      - office.Office.Document.goToByIdAsync
       - office.Office.Document.mode
-      - office.Office.Document.removeHandlerAsync
-      - office.Office.Document.setResourceFieldAsync
-      - office.Office.Document.setSelectedDataAsync
-      - office.Office.Document.setTaskFieldAsync
       - office.Office.Document.settings
       - office.Office.Document.url
   - uid: office.Office.Document.addHandlerAsync
+    summary: Adds an event handler for a Document object event.
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>DocumentEvents</td></tr></table>
+
+
+      You can add multiple event handlers for the specified eventType as long as the name of each event handler function
+      is unique.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
+      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> OneNote </strong></td><td> </td><td> Y </td><td>
+      </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
+      </td></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><td><strong>
+      Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
+    name: 'addHandlerAsync(eventType, handler, options, callback)'
+    fullName: 'addHandlerAsync(eventType, handler, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
+        (result: AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: >-
+            For a Document object event, the eventType parameter can be specified as
+            `Office.EventType.Document.SelectionChanged` or `Office.EventType.Document.ActiveViewChanged`<!-- -->, or
+            the corresponding text value of this enumeration.
+          type:
+            - Office.EventType
+        - id: handler
+          description: >-
+            The event handler function to add, whose only parameter is of type
+            [Office.DocumentSelectionChangedEventArgs](xref:office.Office.DocumentSelectionChangedEventArgs)<!-- -->.
+            Required.
+          type:
+            - any
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Document.addHandlerAsync_1
     summary: Adds an event handler for a Document object event.
     remarks: >-
       <table><tr><td>Requirement Sets</td><td>DocumentEvents</td></tr></table>
@@ -357,15 +444,15 @@ items:
       https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 
       ```
-    name: 'addHandlerAsync(eventType, handler, options, callback)'
-    fullName: addHandlerAsync
+    name: 'addHandlerAsync(eventType, handler, callback)'
+    fullName: 'addHandlerAsync(eventType, handler, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void):
+        void;
       return:
         type:
           - void
@@ -385,6 +472,49 @@ items:
             Required.
           type:
             - any
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Document.getActiveViewAsync
+    summary: Returns the state of the current view of the presentation (edit or read).
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>ActiveView</td></tr></table>
+
+
+      Can trigger an event when the view changes.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> PowerPoint
+      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
+    name: 'getActiveViewAsync(options, callback)'
+    fullName: 'getActiveViewAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getActiveViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<"edit" | "read">) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
@@ -392,114 +522,13 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            state of the presentation's current view. The value returned can be either "edit" or "read". "edit"
+            corresponds to any of the views in which you can edit slides, such as Normal or Outline View. "read"
+            corresponds to either Slide Show or Reading View.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Document.bindings
-    summary: Gets an object that provides access to the bindings defined in the document.
-    remarks: >-
-      You don't instantiate the Document object directly in your script. To call members of the Document object to
-      interact with the current document or worksheet, use `Office.context.document` in your script.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this property.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td>
-      Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      function displayAllBindings() {
-          Office.context.document.bindings.getAllAsync(function (asyncResult) {
-              var bindingString = '';
-              for (var i in asyncResult.value) {
-                  bindingString += asyncResult.value[i].id + '\n';
-              }
-              write('Existing bindings: ' + bindingString);
-          });
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-    name: bindings
-    fullName: bindings
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'bindings: Bindings;'
-      return:
-        type:
-          - office.Office.Bindings
-  - uid: office.Office.Document.customXmlParts
-    summary: Gets an object that represents the custom XML parts in the document.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this property.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Word </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      function getCustomXmlParts(){
-          Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
-              write('Retrieved ' + asyncResult.value.length + ' custom XML parts');
-          });
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-    name: customXmlParts
-    fullName: customXmlParts
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'customXmlParts: CustomXmlParts;'
-      return:
-        type:
-          - office.Office.CustomXmlParts
-  - uid: office.Office.Document.getActiveViewAsync
+            - '(result: AsyncResult<"edit" | "read">) => void'
+  - uid: office.Office.Document.getActiveViewAsync_1
     summary: Returns the state of the current view of the presentation (edit or read).
     remarks: >-
       <table><tr><td>Requirement Sets</td><td>ActiveView</td></tr></table>
@@ -541,24 +570,18 @@ items:
       }
 
       ```
-    name: 'getActiveViewAsync(options, callback)'
-    fullName: getActiveViewAsync
+    name: getActiveViewAsync(callback)
+    fullName: getActiveViewAsync(callback)
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getActiveViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<"edit" | "read">) =>
-        void): void;
+      content: 'getActiveViewAsync(callback?: (result: AsyncResult<"edit" | "read">) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -715,7 +738,7 @@ items:
 
       ```
     name: 'getFileAsync(fileType, options, callback)'
-    fullName: getFileAsync
+    fullName: 'getFileAsync(fileType, options, callback)'
     langs:
       - typeScript
     type: method
@@ -743,7 +766,128 @@ items:
             object.
           type:
             - '(result: AsyncResult<Office.File>) => void'
+  - uid: office.Office.Document.getFileAsync_1
+    summary: >-
+      Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins for iOS, file slice is
+      supported up to 65536 (64 KB). Note that specifying file slice size of above permitted limit will result in an
+      "Internal Error" failure.
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>File</td></tr></table>
+
+
+      For add-ins running in Office host applications other than Office for iOS, the getFileAsync method supports
+      getting files in slices of up to 4194304 bytes (4 MB). For add-ins running in Office for iOS apps, the
+      getFileAsync method supports getting files in slices of up to 65536 (64 KB).
+
+
+      The fileType parameter can be specified by using the [Office.FileType](xref:office.Office.FileType) enumeration or
+      text values. But the possible values vary with the host:
+
+
+      Excel for Windows desktop, iPad, and Excel Online: `Office.FileType.Compressed`
+
+
+      Excel for Mac: `Office.FileType.Compressed`<!-- -->, `Office.FileType.Pdf`
+
+
+      PowerPoint for Windows desktop, Mac, iPad, and PowerPoint Online: `Office.FileType.Compressed`<!-- -->,
+      `Office.FileType.Pdf`
+
+
+      Word for Windows desktop, Mac, iPad, and Word Online: `Office.FileType.Compressed`<!-- -->,
+      `Office.FileType.Pdf`<!-- -->, `Office.FileType.Text`
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
+      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
+      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
+      </td></tr> </table>
+    name: 'getFileAsync(fileType, callback)'
+    fullName: 'getFileAsync(fileType, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFileAsync(fileType: FileType, callback?: (result: AsyncResult<Office.File>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fileType
+          description: The format in which the file will be returned
+          type:
+            - office.Office.FileType
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the File
+            object.
+          type:
+            - '(result: AsyncResult<Office.File>) => void'
   - uid: office.Office.Document.getFilePropertiesAsync
+    summary: Gets file properties of the current document.
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
+
+
+      You get the file's URL with the url property `asyncResult.value.url`<!-- -->.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
+      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
+      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
+      </td></tr> </table>
+    name: 'getFilePropertiesAsync(options, callback)'
+    fullName: 'getFilePropertiesAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getFilePropertiesAsync(options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<Office.FileProperties>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            file's properties (with the URL found at `asyncResult.value.url`<!-- -->).
+          type:
+            - '(result: AsyncResult<Office.FileProperties>) => void'
+  - uid: office.Office.Document.getFilePropertiesAsync_1
     summary: Gets file properties of the current document.
     remarks: >-
       <table><tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
@@ -798,24 +942,18 @@ items:
       }
 
       ```
-    name: 'getFilePropertiesAsync(options, callback)'
-    fullName: getFilePropertiesAsync
+    name: getFilePropertiesAsync(callback)
+    fullName: getFilePropertiesAsync(callback)
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getFilePropertiesAsync(options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<Office.FileProperties>) => void): void;
+      content: 'getFilePropertiesAsync(callback?: (result: AsyncResult<Office.FileProperties>) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             A function that is invoked when the callback returns, whose only parameter is of type
@@ -827,7 +965,51 @@ items:
     summary: |-
       Project documents only. Get the maximum index of the collection of resources in the current project.
 
-      Important: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project 2016 on Windows desktop.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
+    name: 'getMaxResourceIndexAsync(options, callback)'
+    fullName: 'getMaxResourceIndexAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getMaxResourceIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            highest index number in the current project's resource collection.
+          type:
+            - '(result: AsyncResult<number>) => void'
+  - uid: office.Office.Document.getMaxResourceIndexAsync_1
+    summary: |-
+      Project documents only. Get the maximum index of the collection of resources in the current project.
+
+      **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: >-
       **Support details**
 
@@ -931,15 +1113,53 @@ items:
       })();
 
       ```
-    name: 'getMaxResourceIndexAsync(options, callback)'
-    fullName: getMaxResourceIndexAsync
+    name: getMaxResourceIndexAsync(callback)
+    fullName: getMaxResourceIndexAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMaxResourceIndexAsync(callback?: (result: AsyncResult<number>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            highest index number in the current project's resource collection.
+          type:
+            - '(result: AsyncResult<number>) => void'
+  - uid: office.Office.Document.getMaxTaskIndexAsync
+    summary: |-
+      Project documents only. Get the maximum index of the collection of tasks in the current project.
+
+      **Important**: This API works only in Project 2016 on Windows desktop.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
+    name: 'getMaxTaskIndexAsync(options, callback)'
+    fullName: 'getMaxTaskIndexAsync(options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getMaxResourceIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) =>
-        void): void;
+        getMaxTaskIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) => void):
+        void;
       return:
         type:
           - void
@@ -953,14 +1173,14 @@ items:
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            highest index number in the current project's resource collection.
+            highest index number in the current project's task collection.
           type:
             - '(result: AsyncResult<number>) => void'
-  - uid: office.Office.Document.getMaxTaskIndexAsync
+  - uid: office.Office.Document.getMaxTaskIndexAsync_1
     summary: |-
       Project documents only. Get the maximum index of the collection of tasks in the current project.
 
-      Important: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: >-
       **Support details**
 
@@ -1065,24 +1285,18 @@ items:
       })();
 
       ```
-    name: 'getMaxTaskIndexAsync(options, callback)'
-    fullName: getMaxTaskIndexAsync
+    name: getMaxTaskIndexAsync(callback)
+    fullName: getMaxTaskIndexAsync(callback)
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getMaxTaskIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) => void):
-        void;
+      content: 'getMaxTaskIndexAsync(callback?: (result: AsyncResult<number>) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -1091,6 +1305,51 @@ items:
           type:
             - '(result: AsyncResult<number>) => void'
   - uid: office.Office.Document.getProjectFieldAsync
+    summary: Project documents only. Get Project field (Ex. ProjectWebAccessURL).
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
+    name: 'getProjectFieldAsync(fieldId, options, callback)'
+    fullName: 'getProjectFieldAsync(fieldId, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getProjectFieldAsync(fieldId: number, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<any>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fieldId
+          description: Project level fields.
+          type:
+            - number
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
+            the `fieldValue` property, which represents the value of the specified field.
+          type:
+            - '(result: AsyncResult<any>) => void'
+  - uid: office.Office.Document.getProjectFieldAsync_1
     summary: Project documents only. Get Project field (Ex. ProjectWebAccessURL).
     remarks: >-
       **Support details**
@@ -1183,15 +1442,13 @@ items:
       })();
 
       ```
-    name: 'getProjectFieldAsync(fieldId, options, callback)'
-    fullName: getProjectFieldAsync
+    name: 'getProjectFieldAsync(fieldId, callback)'
+    fullName: 'getProjectFieldAsync(fieldId, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getProjectFieldAsync(fieldId: number, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<any>) => void): void;
+      content: 'getProjectFieldAsync(fieldId: number, callback?: (result: AsyncResult<any>) => void): void;'
       return:
         type:
           - void
@@ -1201,10 +1458,6 @@ items:
           description: Project level fields.
           type:
             - number
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -1216,7 +1469,55 @@ items:
     summary: |-
       Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
 
-      Important: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project 2016 on Windows desktop.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
+    name: 'getResourceByIndexAsync(resourceIndex, options, callback)'
+    fullName: 'getResourceByIndexAsync(resourceIndex, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getResourceByIndexAsync(resourceIndex: number, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<string>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: resourceIndex
+          description: The index of the resource in the collection of resources for the project.
+          type:
+            - number
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
+            of the resource as a string.
+          type:
+            - '(result: AsyncResult<string>) => void'
+  - uid: office.Office.Document.getResourceByIndexAsync_1
+    summary: |-
+      Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
+
+      **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: >-
       **Support details**
 
@@ -1320,15 +1621,13 @@ items:
       })();
 
       ```
-    name: 'getResourceByIndexAsync(resourceIndex, options, callback)'
-    fullName: getResourceByIndexAsync
+    name: 'getResourceByIndexAsync(resourceIndex, callback)'
+    fullName: 'getResourceByIndexAsync(resourceIndex, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getResourceByIndexAsync(resourceIndex: number, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<string>) => void): void;
+      content: 'getResourceByIndexAsync(resourceIndex: number, callback?: (result: AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -1336,6 +1635,51 @@ items:
       parameters:
         - id: resourceIndex
           description: The index of the resource in the collection of resources for the project.
+          type:
+            - number
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
+            of the resource as a string.
+          type:
+            - '(result: AsyncResult<string>) => void'
+  - uid: office.Office.Document.getResourceFieldAsync
+    summary: Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
+    name: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
+    fullName: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getResourceFieldAsync(resourceId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?:
+        (result: AsyncResult<string>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: resourceId
+          description: Either a string or value of the Resource Id.
+          type:
+            - string
+        - id: fieldId
+          description: Resource Fields.
           type:
             - number
         - id: options
@@ -1349,7 +1693,7 @@ items:
             of the resource as a string.
           type:
             - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.Document.getResourceFieldAsync
+  - uid: office.Office.Document.getResourceFieldAsync_1
     summary: Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
     remarks: >-
       **Support details**
@@ -1468,15 +1812,15 @@ items:
       })();
 
       ```
-    name: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
-    fullName: getResourceFieldAsync
+    name: 'getResourceFieldAsync(resourceId, fieldId, callback)'
+    fullName: 'getResourceFieldAsync(resourceId, fieldId, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getResourceFieldAsync(resourceId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<string>) => void): void;
+        getResourceFieldAsync(resourceId: string, fieldId: number, callback?: (result: AsyncResult<string>) => void):
+        void;
       return:
         type:
           - void
@@ -1490,10 +1834,6 @@ items:
           description: Resource Fields.
           type:
             - number
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -1672,7 +2012,7 @@ items:
 
       ```
     name: 'getSelectedDataAsync(coercionType, options, callback)'
-    fullName: getSelectedDataAsync
+    fullName: 'getSelectedDataAsync(coercionType, options, callback)'
     langs:
       - typeScript
     type: method
@@ -1701,7 +2041,118 @@ items:
             coercionType parameter. (See Remarks for more information about data coercion.)
           type:
             - '(result: AsyncResult<T>) => void'
+  - uid: office.Office.Document.getSelectedDataAsync_1
+    summary: Reads the data contained in the current selection in the document.
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>Selection</td></tr></table>
+
+
+      In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the
+      AsyncResult object to return the following information.
+
+
+      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
+      undefined because there is no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td>
+      <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an
+      Error object that provides error information if the operation failed.</td> </tr> <tr>
+      <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object
+      without being altered.</td> </tr> </table>
+
+
+      The possible values for the [Office.CoercionType](xref:office.Office.CoercionType) parameter vary by the host.
+
+
+      <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
+      Word</td> <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and Word</td>
+      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Access, Excel, and Word</td>
+      <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
+      <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
+      XML)</td> </tr> <tr> <td>PowerPoint and PowerPoint Online</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
+      <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
+      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
+      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td><td> </td><td>
+      </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
+    name: 'getSelectedDataAsync(coercionType, callback)'
+    fullName: 'getSelectedDataAsync(coercionType, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedDataAsync<T>(coercionType: Office.CoercionType, callback?: (result: AsyncResult<T>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: coercionType
+          description: The type of data structure to return. See the remarks section for each host's supported coercion types.
+          type:
+            - office.Office.CoercionType
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the data
+            in the current selection. This is returned in the data structure or format you specified with the
+            coercionType parameter. (See Remarks for more information about data coercion.)
+          type:
+            - '(result: AsyncResult<T>) => void'
   - uid: office.Office.Document.getSelectedResourceAsync
+    summary: Project documents only. Get the current selected Resource's Id.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
+    name: 'getSelectedResourceAsync(options, callback)'
+    fullName: 'getSelectedResourceAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getSelectedResourceAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
+            of the resource as a string.
+          type:
+            - '(result: AsyncResult<string>) => void'
+  - uid: office.Office.Document.getSelectedResourceAsync_1
     summary: Project documents only. Get the current selected Resource's Id.
     remarks: >-
       **Support details**
@@ -1820,15 +2271,50 @@ items:
       })();
 
       ```
-    name: 'getSelectedResourceAsync(options, callback)'
-    fullName: getSelectedResourceAsync
+    name: getSelectedResourceAsync(callback)
+    fullName: getSelectedResourceAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedResourceAsync(callback?: (result: AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
+            of the resource as a string.
+          type:
+            - '(result: AsyncResult<string>) => void'
+  - uid: office.Office.Document.getSelectedTaskAsync
+    summary: Project documents only. Get the current selected Task's Id.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
+    name: 'getSelectedTaskAsync(options, callback)'
+    fullName: 'getSelectedTaskAsync(options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getSelectedResourceAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) =>
-        void): void;
+        getSelectedTaskAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void):
+        void;
       return:
         type:
           - void
@@ -1845,7 +2331,7 @@ items:
             of the resource as a string.
           type:
             - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.Document.getSelectedTaskAsync
+  - uid: office.Office.Document.getSelectedTaskAsync_1
     summary: Project documents only. Get the current selected Task's Id.
     remarks: >-
       **Support details**
@@ -1942,15 +2428,48 @@ items:
       })();
 
       ```
-    name: 'getSelectedTaskAsync(options, callback)'
-    fullName: getSelectedTaskAsync
+    name: getSelectedTaskAsync(callback)
+    fullName: getSelectedTaskAsync(callback)
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getSelectedTaskAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void):
-        void;
+      content: 'getSelectedTaskAsync(callback?: (result: AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
+            of the resource as a string.
+          type:
+            - '(result: AsyncResult<string>) => void'
+  - uid: office.Office.Document.getSelectedViewAsync
+    summary: Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
+    name: 'getSelectedViewAsync(options, callback)'
+    fullName: 'getSelectedViewAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;'
       return:
         type:
           - void
@@ -1963,11 +2482,12 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
-            of the resource as a string.
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
+            the following properties: `viewName` - The name of the view, as a ProjectViewTypes constant. `viewType` -
+            The type of view, as the integer value of a ProjectViewTypes constant.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.Document.getSelectedViewAsync
+            - '(result: AsyncResult<any>) => void'
+  - uid: office.Office.Document.getSelectedViewAsync_1
     summary: Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
     remarks: >-
       **Support details**
@@ -2038,22 +2558,18 @@ items:
       })();
 
       ```
-    name: 'getSelectedViewAsync(options, callback)'
-    fullName: getSelectedViewAsync
+    name: getSelectedViewAsync(callback)
+    fullName: getSelectedViewAsync(callback)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;'
+      content: 'getSelectedViewAsync(callback?: (result: AsyncResult<any>) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -2063,6 +2579,53 @@ items:
           type:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getTaskAsync
+    summary: 'Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
+    name: 'getTaskAsync(taskId, options, callback)'
+    fullName: 'getTaskAsync(taskId, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getTaskAsync(taskId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: taskId
+          description: Either a string or value of the Task Id.
+          type:
+            - string
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
+            the following properties: `taskName` - The name of the task. `wssTaskId` - The ID of the task in the
+            synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value
+            is 0. `resourceNames` - The comma-separated list of the names of resources that are assigned to the task.
+          type:
+            - '(result: AsyncResult<any>) => void'
+  - uid: office.Office.Document.getTaskAsync_1
     summary: 'Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
     remarks: >-
       **Support details**
@@ -2161,15 +2724,13 @@ items:
       })();
 
       ```
-    name: 'getTaskAsync(taskId, options, callback)'
-    fullName: getTaskAsync
+    name: 'getTaskAsync(taskId, callback)'
+    fullName: 'getTaskAsync(taskId, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getTaskAsync(taskId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) =>
-        void): void;
+      content: 'getTaskAsync(taskId: string, callback?: (result: AsyncResult<any>) => void): void;'
       return:
         type:
           - void
@@ -2179,10 +2740,6 @@ items:
           description: Either a string or value of the Task Id.
           type:
             - string
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -2196,7 +2753,55 @@ items:
     summary: |-
       Project documents only. Get the GUID of the task that has the specified index in the task collection.
 
-      Important: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project 2016 on Windows desktop.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
+    name: 'getTaskByIndexAsync(taskIndex, options, callback)'
+    fullName: 'getTaskByIndexAsync(taskIndex, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getTaskByIndexAsync(taskIndex: number, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<string>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: taskIndex
+          description: The index of the task in the collection of tasks for the project.
+          type:
+            - number
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
+            of the task as a string.
+          type:
+            - '(result: AsyncResult<string>) => void'
+  - uid: office.Office.Document.getTaskByIndexAsync_1
+    summary: |-
+      Project documents only. Get the GUID of the task that has the specified index in the task collection.
+
+      **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: >-
       **Support details**
 
@@ -2303,15 +2908,13 @@ items:
       })();
 
       ```
-    name: 'getTaskByIndexAsync(taskIndex, options, callback)'
-    fullName: getTaskByIndexAsync
+    name: 'getTaskByIndexAsync(taskIndex, callback)'
+    fullName: 'getTaskByIndexAsync(taskIndex, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getTaskByIndexAsync(taskIndex: number, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<string>) => void): void;
+      content: 'getTaskByIndexAsync(taskIndex: number, callback?: (result: AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -2321,10 +2924,6 @@ items:
           description: The index of the task in the collection of tasks for the project.
           type:
             - number
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -2333,6 +2932,55 @@ items:
           type:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getTaskFieldAsync
+    summary: Project documents only. Get task field for provided task Id. (Ex. StartDate).
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
+    name: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
+    fullName: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getTaskFieldAsync(taskId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<any>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: taskId
+          description: Either a string or value of the Task Id.
+          type:
+            - string
+        - id: fieldId
+          description: Task Fields.
+          type:
+            - number
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
+            the `fieldValue` property, which represents the value of the specified field.
+          type:
+            - '(result: AsyncResult<any>) => void'
+  - uid: office.Office.Document.getTaskFieldAsync_1
     summary: Project documents only. Get task field for provided task Id. (Ex. StartDate).
     remarks: >-
       **Support details**
@@ -2446,15 +3094,13 @@ items:
       })();
 
       ```
-    name: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
-    fullName: getTaskFieldAsync
+    name: 'getTaskFieldAsync(taskId, fieldId, callback)'
+    fullName: 'getTaskFieldAsync(taskId, fieldId, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getTaskFieldAsync(taskId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<any>) => void): void;
+      content: 'getTaskFieldAsync(taskId: string, fieldId: number, callback?: (result: AsyncResult<any>) => void): void;'
       return:
         type:
           - void
@@ -2468,10 +3114,6 @@ items:
           description: Task Fields.
           type:
             - number
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -2496,7 +3138,7 @@ items:
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
       browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getWSSUrlAsync(options, callback)'
-    fullName: getWSSUrlAsync
+    fullName: 'getWSSUrlAsync(options, callback)'
     langs:
       - typeScript
     type: method
@@ -2519,7 +3161,118 @@ items:
             URL of the synchronized SharePoint task list.
           type:
             - '(result: AsyncResult<any>) => void'
+  - uid: office.Office.Document.getWSSUrlAsync_1
+    summary: 'Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.'
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
+    name: getWSSUrlAsync(callback)
+    fullName: getWSSUrlAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWSSUrlAsync(callback?: (result: AsyncResult<any>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
+            the following properties: `listName` - the name of the synchronized SharePoint task list. `serverUrl` - the
+            URL of the synchronized SharePoint task list.
+          type:
+            - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.goToByIdAsync
+    summary: Goes to the specified object or location in the document.
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>not in a set</td></tr></table>
+
+
+      PowerPoint doesn't support the goToByIdAsync method in Master Views.
+
+
+      The behavior caused by the selectionMode option varies by host:
+
+
+      In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item.
+      Office.SelectionMode.None for text bindings, selects the cell; for matrix bindings, table bindings, and named
+      items, selects the first data cell (not first cell in header row for tables).
+
+
+      In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide.
+      `Office.SelectionMode.None` doesn't select anything.
+
+
+      In Word: `Office.SelectionMode.Selected` selects all content in the binding. Office.SelectionMode.None for text
+      bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first
+      data cell (not first cell in header row for tables).
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
+      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
+      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> </td><td> Y </td><td> Y
+      </td></tr> </table>
+    name: 'goToByIdAsync(id, goToType, options, callback)'
+    fullName: 'goToByIdAsync(id, goToType, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        goToByIdAsync(id: string | number, goToType: GoToType, options?: GoToByIdOptions, callback?: (result:
+        AsyncResult<any>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: id
+          description: The identifier of the object or location to go to.
+          type:
+            - string | number
+        - id: goToType
+          description: The type of the location to go to.
+          type:
+            - office.Office.GoToType
+        - id: options
+          description: Provides options for whether to select the location that is navigated to.
+          type:
+            - office.Office.GoToByIdOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
+            current view.
+          type:
+            - '(result: AsyncResult<any>) => void'
+  - uid: office.Office.Document.goToByIdAsync_1
     summary: Goes to the specified object or location in the document.
     remarks: >-
       <table><tr><td>Requirement Sets</td><td>not in a set</td></tr></table>
@@ -2698,15 +3451,13 @@ items:
       }
 
       ```
-    name: 'goToByIdAsync(id, goToType, options, callback)'
-    fullName: goToByIdAsync
+    name: 'goToByIdAsync(id, goToType, callback)'
+    fullName: 'goToByIdAsync(id, goToType, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        goToByIdAsync(id: string | number, goToType: GoToType, options?: GoToByIdOptions, callback?: (result:
-        AsyncResult<any>) => void): void;
+      content: 'goToByIdAsync(id: string | number, goToType: GoToType, callback?: (result: AsyncResult<any>) => void): void;'
       return:
         type:
           - void
@@ -2720,10 +3471,6 @@ items:
           description: The type of the location to go to.
           type:
             - office.Office.GoToType
-        - id: options
-          description: Provides options for whether to select the location that is navigated to.
-          type:
-            - office.Office.GoToByIdOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -2731,14 +3478,17 @@ items:
             current view.
           type:
             - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.Document.mode
-    summary: Gets the mode the document is in.
+  - uid: office.Office.Document.removeHandlerAsync
+    summary: Removes an event handler for the specified event type.
     remarks: >-
+      <table><tr><td>Requirement Sets</td><td>DocumentEvents</td></tr></table>
+
+
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this property.
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
 
 
       For more information about Office host application and server requirements, see [Requirements for running Office
@@ -2746,82 +3496,40 @@ items:
 
 
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
-      </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      function displayDocumentMode() {
-          write(Office.context.document.mode);
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-
-      ```javascript
-
-      // The following example initializes the add-in and then gets properties of the
-
-      // Document object that are available in the context of a Project document.
-
-      // A Project document is the opened, active project. To access members of the
-
-      // ProjectDocument object, use the Office.context.document object as shown in
-
-      // the code examples for ProjectDocument methods and events.
-
-      // The example assumes your add-in has a reference to the jQuery library and
-
-      // that the following page control is defined in the content div in the page body:
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-
-                  // Get information about the document.
-                  showDocumentProperties();
-              });
-          };
-
-          // Get the document mode and the URL of the active project.
-          function showDocumentProperties() {
-              var output = String.format(
-                  'The document mode is {0}.<br/>The URL of the active project is {1}.',
-                  Office.context.document.mode,
-                  Office.context.document.url);
-              $('#message').html(output);
-          }
-      })();
-
-      ```
-    name: mode
-    fullName: mode
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
+      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> OneNote </strong></td><td> </td><td> Y </td><td>
+      </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
+      </td></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><td><strong>
+      Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
+    name: 'removeHandlerAsync(eventType, options, callback)'
+    fullName: 'removeHandlerAsync(eventType, options, callback)'
     langs:
       - typeScript
-    type: property
+    type: method
     syntax:
-      content: 'mode: DocumentMode;'
+      content: >-
+        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result:
+        AsyncResult<void>) => void): void;
       return:
         type:
-          - office.Office.DocumentMode
-  - uid: office.Office.Document.removeHandlerAsync
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
+          type:
+            - Office.EventType
+        - id: options
+          description: Provides options to determine which event handler or handlers are removed.
+          type:
+            - office.Office.RemoveHandlerOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Document.removeHandlerAsync_1
     summary: Removes an event handler for the specified event type.
     remarks: >-
       <table><tr><td>Requirement Sets</td><td>DocumentEvents</td></tr></table>
@@ -2935,15 +3643,13 @@ items:
       })();
 
       ```
-    name: 'removeHandlerAsync(eventType, options, callback)'
-    fullName: removeHandlerAsync
+    name: 'removeHandlerAsync(eventType, callback)'
+    fullName: 'removeHandlerAsync(eventType, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result:
-        AsyncResult<void>) => void): void;
+      content: 'removeHandlerAsync(eventType: Office.EventType, callback?: (result: AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -2953,10 +3659,6 @@ items:
           description: The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
           type:
             - Office.EventType
-        - id: options
-          description: Provides options to determine which event handler or handlers are removed.
-          type:
-            - office.Office.RemoveHandlerOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -2967,7 +3669,62 @@ items:
     summary: |-
       Project documents only. Set resource field for specified resource Id.
 
-      Important: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project 2016 on Windows desktop.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
+    name: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, options, callback)'
+    fullName: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object,
+        options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: resourceId
+          description: Either a string or value of the Resource Id.
+          type:
+            - string
+        - id: fieldId
+          description: Resource Fields.
+          type:
+            - number
+        - id: fieldValue
+          description: Value of the target field.
+          type:
+            - string | number | boolean | object
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Document.setResourceFieldAsync_1
+    summary: |-
+      Project documents only. Set resource field for specified resource Id.
+
+      **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: >-
       **Support details**
 
@@ -3077,15 +3834,15 @@ items:
       })();
 
       ```
-    name: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, options, callback)'
-    fullName: setResourceFieldAsync
+    name: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, callback)'
+    fullName: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
         setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object,
-        options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+        callback?: (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -3103,10 +3860,6 @@ items:
           description: Value of the target field.
           type:
             - string | number | boolean | object
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
@@ -3129,9 +3882,9 @@ items:
       specified `data` is inserted at the insertion point</td><td>If `data` is a string, the specified text is
       inserted.</td></tr> <tr><td></td><td></td><td>If `data` is an array of arrays ("matrix") or a TableData object, a
       new Word table is inserted.</td></tr> <tr><td></td><td></td><td>If `data` is HTML, the specified HTML is inserted.
-      (Important: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the
-      HTML as it can and omits any invalid data).</td></tr> <tr><td></td><td></td><td>If `data` is Office Open XML, the
-      specified XML is inserted.</td></tr> <tr><td></td><td></td><td>If `data` is a base64 encoded image stream, the
+      (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of
+      the HTML as it can and omits any invalid data).</td></tr> <tr><td></td><td></td><td>If `data` is Office Open XML,
+      the specified XML is inserted.</td></tr> <tr><td></td><td></td><td>If `data` is a base64 encoded image stream, the
       specified image is inserted.</td></tr></td></tr> <tr><td></td><td>If there is a selection</td><td>It will be
       replaced with the specified `data` following the same rules as above.</td></tr> <tr><td></td><td>Insert
       images</td><td>Inserted images are placed inline. The imageLeft and imageTop parameters are ignored. The image
@@ -3231,7 +3984,7 @@ items:
 
       // to a selection. The following example writes data as an array of three rows of two columns, 
 
-      // specifying the coercionType as "matrix" for that data structure, and if that fails, 
+      // specifying the coercionType as `Matrix` for that data structure, and if that fails, 
 
       // displays the value of the error.message property.
 
@@ -3257,7 +4010,7 @@ items:
 
       // The following example writes data as a one column table with a header and four rows, 
 
-      // specifying the coercionType as "table" for that data structure, and if that fails, 
+      // specifying the coercionType as `Table` for that data structure, and if that fails, 
 
       // displays the value of the error.message property.
 
@@ -3285,7 +4038,7 @@ items:
       }
 
 
-      // In Word if you want to write HTML to the selection, you can specify the coercionType parameter as "html"
+      // In Word if you want to write HTML to the selection, you can specify the coercionType parameter as `Html`
 
       // as shown in the following example, which uses HTML <b> tags to make "Hello" bold.
 
@@ -3308,16 +4061,16 @@ items:
 
       // In Word, PowerPoint, or Excel, if you want to write an image to the selection, you can specify the coercionType
 
-      // parameter as "image" as shown in the following example. Note that imageLeft and imageTop are ignored by Word.
+      // parameter as `Image` as shown in the following example. Note that imageLeft and imageTop are ignored by Word.
 
       function insertPictureAtSelection(base64EncodedImageStr) {
 
           Office.context.document.setSelectedDataAsync(base64EncodedImageStr, {
-          coercionType: Office.CoercionType.Image,
-          imageLeft: 50,
-          imageTop: 50,
-          imageWidth: 100,
-          imageHeight: 100
+              coercionType: Office.CoercionType.Image,
+              imageLeft: 50,
+              imageTop: 50,
+              imageWidth: 100,
+              imageHeight: 100
           },
           function (asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Failed) {
@@ -3326,9 +4079,30 @@ items:
           });
       }
 
+
+      // In Word, PowerPoint, or Excel, if you want to write an scalable vector graphic (SVG) to the selection, you can
+      specify the 
+
+      // coercionType parameter as `XmlSvg` as shown in the following example. Note that imageLeft and imageTop are
+      ignored by Word.
+
+      function insertSvgAtSelection(base64EncodedImageStr) {
+          Office.context.document.setSelectedDataAsync(getImageAsBase64String(), {
+              coercionType: Office.CoercionType.XmlSvg,
+              imageLeft: 50,
+              imageTop: 50,
+              imageWidth: 400
+          },
+              function (asyncResult) {
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                      console.log(asyncResult.error.message);
+                  }
+              });
+      }
+
       ```
     name: 'setSelectedDataAsync(data, options, callback)'
-    fullName: setSelectedDataAsync
+    fullName: 'setSelectedDataAsync(data, options, callback)'
     langs:
       - typeScript
     type: method
@@ -3390,11 +4164,209 @@ items:
             undefined because there is no object or data to retrieve.
           type:
             - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Document.setSelectedDataAsync_1
+    summary: Writes the specified data into the current selection.
+    remarks: >-
+      <table><tr><td>Requirement Sets</td><td>Selection</td></tr></table>
+
+
+      **Application-specific behaviors**
+
+
+      The following application-specific actions apply when writing data to a selection.
+
+
+      <table> <tr><td>Word</td><td>If there is no selection and the insertion point is at a valid location, the
+      specified `data` is inserted at the insertion point</td><td>If `data` is a string, the specified text is
+      inserted.</td></tr> <tr><td></td><td></td><td>If `data` is an array of arrays ("matrix") or a TableData object, a
+      new Word table is inserted.</td></tr> <tr><td></td><td></td><td>If `data` is HTML, the specified HTML is inserted.
+      (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of
+      the HTML as it can and omits any invalid data).</td></tr> <tr><td></td><td></td><td>If `data` is Office Open XML,
+      the specified XML is inserted.</td></tr> <tr><td></td><td></td><td>If `data` is a base64 encoded image stream, the
+      specified image is inserted.</td></tr></td></tr> <tr><td></td><td>If there is a selection</td><td>It will be
+      replaced with the specified `data` following the same rules as above.</td></tr> <tr><td></td><td>Insert
+      images</td><td>Inserted images are placed inline. The imageLeft and imageTop parameters are ignored. The image
+      aspect ratio is always locked. If only one of the imageWidth and imageHeight parameter is given, the other value
+      will be automatically scaled to keep the original aspect ratio.</td></tr>
+
+
+      <tr><td>Excel</td><td>If a single cell is selected</td><td>If `data` is a string, the specified text is inserted
+      as the value of the current cell.</td></tr> <tr><td></td><td></td><td>If `data` is an array of arrays ("matrix"),
+      the specified set of rows and columns are inserted, if no other data in surrounding cells will be
+      overwritten.</td></tr> <tr><td></td><td></td><td>If `data` is a TableData object, a new Excel table with the
+      specified set of rows and headers is inserted, if no other data in surrounding cells will be
+      overwritten.</td></tr> <tr><td></td><td>If multiple cells are selected</td><td>If the shape does not match the
+      shape of `data`<!-- -->, an error is returned.</td></tr> <tr><td></td><td></td><td>If the shape of the selection
+      exactly matches the shape of `data`<!-- -->, the values of the selected cells are updated based on the values in
+      `data`<!-- -->.</td></tr> <tr><td></td><td>Insert images</td><td>Inserted images are floating. The position
+      imageLeft and imageTop parameters are relative to currently selected cell(s). Negative imageLeft and imageTop
+      values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio
+      is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and
+      imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect
+      ratio.</td></tr> <tr><td></td><td>All other cases</td><td>An error is returned.</td></tr>
+
+
+      <tr><td>Excel Online</td><td>In addition to the behaviors described for Excel above, these limits apply when
+      writing data in Excel Online</td><td>The total number of cells you can write to a worksheet with the `data`
+      parameter can't exceed 20,000 in a single call to this method.</td></tr> <tr><td></td><td></td><td>The number of
+      formatting groups passed to the `cellFormat` parameter can't exceed 100. A single formatting group consists of a
+      set of formatting applied to a specified range of cells.</td></tr>
+
+
+      <tr><td>PowerPoint</td><td>Insert image</td><td>Inserted images are floating. The position imageLeft and imageTop
+      parameters are optional but if provided, both should be present. If a single value is provided, it will be
+      ignored. Negative imageLeft and imageTop values are allowed and can position an image outside of a slide. If no
+      optional parameter is given and slide has a placeholder, the image will replace the placeholder in the slide.
+      Image aspect ratio will be locked unless both imageWidth and imageHeight parameters are provided. If only one of
+      the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the
+      original aspect ratio.</td></tr> </table>
+
+
+      The possible values for the [Office.CoercionType](xref:office.Office.CoercionType) parameter vary by the host.
+
+
+      <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
+      Word</td> <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and Word</td>
+      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Access, Excel, and Word</td>
+      <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
+      <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
+      XML)</td> </tr> <tr> <td>PowerPoint and PowerPoint Online</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
+      <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
+      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
+      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td><td> </td><td>
+      </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
+    name: 'setSelectedDataAsync(data, callback)'
+    fullName: 'setSelectedDataAsync(data, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSelectedDataAsync(data: string | TableData | any[][], callback?: (result: AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: >-
+            The data to be set. Either a string or [Office.CoercionType](xref:office.Office.CoercionType) value, 2d
+            array or TableData object.
+
+
+            If the value passed for `data` is:
+
+
+            - A string: Plain text or anything that can be coerced to a string will be inserted. In Excel, you can also
+            specify data as a valid formula to add that formula to the selected cell. For example, setting data to
+            "=SUM(A1:A5)" will total the values in the specified range. However, when you set a formula on the bound
+            cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If
+            you call the Document.getSelectedDataAsync method on the selected cell to read its data, the method can
+            return only the data displayed in the cell (the formula's result).
+
+
+            - An array of arrays ("matrix"): Tabular data without headers will be inserted. For example, to write data
+            to three rows in two columns, you can pass an array like this: \[\["R1C1", "R1C2"\], \["R2C1", "R2C2"\],
+            \["R3C1", "R3C2"\]\]. To write a single column of three rows, pass an array like this: \[\["R1C1"\],
+            \["R2C1"\], \["R3C1"\]\]
+
+
+            In Excel, you can also specify data as an array of arrays that contains valid formulas to add them to the
+            selected cells. For example if no other data will be overwritten, setting data to
+            \[\["=SUM(A1:A5)","=AVERAGE(A1:A5)"\]\] will add those two formulas to the selection. Just as when setting a
+            formula on a single cell as "text", you can't read the added formulas (or any pre-existing formulas) after
+            they have been set - you can only read the formulas' results.
+
+
+            - A TableData object: A table with headers will be inserted. In Excel, if you specify formulas in the
+            TableData object you pass for the data parameter, you might not get the results you expect due to the
+            "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work
+            around this when you want to write `data` that contains formulas to a selected table, try specifying the
+            data as an array of arrays (instead of a TableData object), and specify the coercionType as
+            Microsoft.Office.Matrix or "matrix".
+          type:
+            - 'string | TableData | any[][]'
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The AsyncResult.value property always returns
+            undefined because there is no object or data to retrieve.
+          type:
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Document.setTaskFieldAsync
     summary: |-
       Project documents only. Set task field for specified task Id.
 
-      Important: This API works only in Project 2016 on Windows desktop.
+      **Important**: This API works only in Project 2016 on Windows desktop.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
+    name: 'setTaskFieldAsync(taskId, fieldId, fieldValue, options, callback)'
+    fullName: 'setTaskFieldAsync(taskId, fieldId, fieldValue, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, options?:
+        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: taskId
+          description: Either a string or value of the Task Id.
+          type:
+            - string
+        - id: fieldId
+          description: Task Fields.
+          type:
+            - number
+        - id: fieldValue
+          description: Value of the target field.
+          type:
+            - string | number | boolean | object
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type:
+            - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Document.setTaskFieldAsync_1
+    summary: |-
+      Project documents only. Set task field for specified task Id.
+
+      **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: >-
       **Support details**
 
@@ -3504,15 +4476,15 @@ items:
       })();
 
       ```
-    name: 'setTaskFieldAsync(taskId, fieldId, fieldValue, options, callback)'
-    fullName: setTaskFieldAsync
+    name: 'setTaskFieldAsync(taskId, fieldId, fieldValue, callback)'
+    fullName: 'setTaskFieldAsync(taskId, fieldId, fieldValue, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+        setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, callback?:
+        (result: AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -3530,16 +4502,206 @@ items:
           description: Value of the target field.
           type:
             - string | number | boolean | object
-        - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-          type:
-            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.Document.bindings
+    summary: Gets an object that provides access to the bindings defined in the document.
+    remarks: >-
+      You don't instantiate the Document object directly in your script. To call members of the Document object to
+      interact with the current document or worksheet, use `Office.context.document` in your script.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this property.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
+      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td>
+      Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function displayAllBindings() {
+          Office.context.document.bindings.getAllAsync(function (asyncResult) {
+              var bindingString = '';
+              for (var i in asyncResult.value) {
+                  bindingString += asyncResult.value[i].id + '\n';
+              }
+              write('Existing bindings: ' + bindingString);
+          });
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
+    name: bindings
+    fullName: bindings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bindings: Bindings;'
+      return:
+        type:
+          - office.Office.Bindings
+  - uid: office.Office.Document.customXmlParts
+    summary: Gets an object that represents the custom XML parts in the document.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this property.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Word </strong></td><td> Y
+      </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function getCustomXmlParts(){
+          Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
+              write('Retrieved ' + asyncResult.value.length + ' custom XML parts');
+          });
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
+    name: customXmlParts
+    fullName: customXmlParts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'customXmlParts: CustomXmlParts;'
+      return:
+        type:
+          - office.Office.CustomXmlParts
+  - uid: office.Office.Document.mode
+    summary: Gets the mode the document is in.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this property.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
+      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
+      </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
+      </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function displayDocumentMode() {
+          write(Office.context.document.mode);
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
+
+      ```javascript
+
+      // The following example initializes the add-in and then gets properties of the
+
+      // Document object that are available in the context of a Project document.
+
+      // A Project document is the opened, active project. To access members of the
+
+      // ProjectDocument object, use the Office.context.document object as shown in
+
+      // the code examples for ProjectDocument methods and events.
+
+      // The example assumes your add-in has a reference to the jQuery library and
+
+      // that the following page control is defined in the content div in the page body:
+
+      // <span id="message"></span>
+
+
+      (function () {
+          "use strict";
+
+          // The initialize function must be run each time a new page is loaded.
+          Office.initialize = function (reason) {
+              $(document).ready(function () {
+
+                  // Get information about the document.
+                  showDocumentProperties();
+              });
+          };
+
+          // Get the document mode and the URL of the active project.
+          function showDocumentProperties() {
+              var output = String.format(
+                  'The document mode is {0}.<br/>The URL of the active project is {1}.',
+                  Office.context.document.mode,
+                  Office.context.document.url);
+              $('#message').html(output);
+          }
+      })();
+
+      ```
+    name: mode
+    fullName: mode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'mode: DocumentMode;'
+      return:
+        type:
+          - office.Office.DocumentMode
   - uid: office.Office.Document.settings
     summary: >-
       Gets an object that represents the saved custom settings of the content or task pane add-in for the current

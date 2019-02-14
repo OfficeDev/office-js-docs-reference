@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.Interfaces.ChartCollectionUpdateData
-    summary: 'An interface for updating data on the ChartCollection object, for use in "chartCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the ChartCollection object, for use in "chartCollection.set(<!-- -->{ ... }<!--
+      -->)".
     name: Excel.Interfaces.ChartCollectionUpdateData
     fullName: Excel.Interfaces.ChartCollectionUpdateData
     langs:

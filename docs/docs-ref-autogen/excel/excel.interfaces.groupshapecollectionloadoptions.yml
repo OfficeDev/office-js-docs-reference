@@ -15,6 +15,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.$all
       - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.altTextDescription
       - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.altTextTitle
       - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.fill
@@ -39,6 +40,18 @@ items:
       - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.visible
       - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.width
       - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.zorderPosition
+  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.altTextDescription
     summary: >-
       For EACH ITEM in the collection: Returns or sets the alternative descriptive text string for a Shape object when

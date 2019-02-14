@@ -12,10 +12,22 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.$all
       - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.enableMultipleFilterItems
       - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.id
       - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.name
       - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.position
+  - uid: excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.enableMultipleFilterItems
     summary: |-
       Determines whether to allow multiple filter items.

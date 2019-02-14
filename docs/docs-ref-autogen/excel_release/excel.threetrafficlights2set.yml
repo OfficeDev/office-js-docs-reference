@@ -8,27 +8,9 @@ items:
     type: interface
     package: excel_release
     children:
-      - excel_release.Excel.ThreeTrafficLights2Set.__index
       - excel_release.Excel.ThreeTrafficLights2Set.greenTrafficLight
       - excel_release.Excel.ThreeTrafficLights2Set.redTrafficLight
       - excel_release.Excel.ThreeTrafficLights2Set.yellowTrafficLight
-  - uid: excel_release.Excel.ThreeTrafficLights2Set.__index
-    name: __index(index)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[index: number]: Icon;'
-      return:
-        type:
-          - Icon
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
   - uid: excel_release.Excel.ThreeTrafficLights2Set.greenTrafficLight
     name: greenTrafficLight
     fullName: greenTrafficLight

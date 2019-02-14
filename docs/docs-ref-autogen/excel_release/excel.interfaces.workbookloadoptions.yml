@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.WorkbookLoadOptions.$all
       - excel_release.Excel.Interfaces.WorkbookLoadOptions.application
       - excel_release.Excel.Interfaces.WorkbookLoadOptions.bindings
       - excel_release.Excel.Interfaces.WorkbookLoadOptions.name
@@ -19,6 +20,17 @@ items:
       - excel_release.Excel.Interfaces.WorkbookLoadOptions.protection
       - excel_release.Excel.Interfaces.WorkbookLoadOptions.readOnly
       - excel_release.Excel.Interfaces.WorkbookLoadOptions.tables
+  - uid: excel_release.Excel.Interfaces.WorkbookLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.WorkbookLoadOptions.application
     summary: |-
       Represents the Excel application instance that contains this workbook.

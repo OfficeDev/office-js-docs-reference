@@ -23,9 +23,13 @@ items:
       - excel_release.Excel.PivotTable.id
       - excel_release.Excel.PivotTable.layout
       - excel_release.Excel.PivotTable.load
+      - excel_release.Excel.PivotTable.load_1
+      - excel_release.Excel.PivotTable.load_2
       - excel_release.Excel.PivotTable.name
       - excel_release.Excel.PivotTable.refresh
       - excel_release.Excel.PivotTable.rowHierarchies
+      - excel_release.Excel.PivotTable.set
+      - excel_release.Excel.PivotTable.set_1
       - excel_release.Excel.PivotTable.toJSON
       - excel_release.Excel.PivotTable.worksheet
   - uid: excel_release.Excel.PivotTable.columnHierarchies
@@ -43,6 +47,29 @@ items:
       return:
         type:
           - excel.Excel.RowColumnPivotHierarchyCollection
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");       
+
+              // check if the PivotTable already has a column
+              const column = pivotTable.columnHierarchies.getItemOrNullObject("Farm");
+              column.load("id");
+              await context.sync();
+
+              if (column.isNullObject) {
+                  // ading the farm column to the column hierarchy automatically removes it from the row hierarchy
+                  pivotTable.columnHierarchies.add(pivotTable.hierarchies.getItem("Farm"));
+              } else {
+                  pivotTable.columnHierarchies.remove(column);
+              }
+
+              await context.sync();
+          });
+          ```
   - uid: excel_release.Excel.PivotTable.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -72,13 +99,26 @@ items:
       return:
         type:
           - excel.Excel.DataPivotHierarchyCollection
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+              pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold at Farm"));
+              pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold Wholesale"));
+
+              await context.sync();
+          });
+          ```
   - uid: excel_release.Excel.PivotTable.delete
     summary: |-
       Deletes the PivotTable.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -87,7 +127,17 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              context.workbook.worksheets.getItem("Pivot").pivotTables.getItem("Farm Sales").delete();
+
+              await context.sync();
+          });
+          ```
   - uid: excel_release.Excel.PivotTable.filterHierarchies
     summary: |-
       The Filter Pivot Hierarchies of the PivotTable.
@@ -103,6 +153,27 @@ items:
       return:
         type:
           - excel.Excel.FilterPivotHierarchyCollection
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          async function filter(functionType: Excel.AggregationFunction) {
+              await Excel.run(async (context) => {
+                  const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+                  const filters = pivotTable.filterHierarchies;
+                  const filter = filters.getItemOrNullObject("Classification");
+                  filter.load();
+                  await context.sync();
+
+                  // add the Classification hierarchy to the filter, if it's not already there
+                  if (filter.isNullObject) {
+                      filters.add(pivotTable.hierarchies.getItem("Classification"));
+                      await context.sync();
+                  }
+              });
+          }
+          ```
   - uid: excel_release.Excel.PivotTable.hierarchies
     summary: |-
       The Pivot Hierarchies of the PivotTable.
@@ -148,12 +219,38 @@ items:
       return:
         type:
           - excel.Excel.PivotLayout
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+              pivotTable.layout.load("layoutType");
+              await context.sync();
+
+              // cycle between the three layout types
+              if (pivotTable.layout.layoutType === "Compact") {
+                  pivotTable.layout.layoutType = "Outline";
+              } else if (pivotTable.layout.layoutType === "Outline") {
+                  pivotTable.layout.layoutType = "Tabular";
+              } else {
+                  pivotTable.layout.layoutType = "Compact";
+              }
+              await context.sync();
+              console.log("Pivot layout is now " + pivotTable.layout.layoutType);
+          });
+          ```
   - uid: excel_release.Excel.PivotTable.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.PivotTable` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.PivotTable` - Where option.select is a
@@ -167,7 +264,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -179,9 +276,51 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - excel.Excel.Interfaces.PivotTableLoadOptions
+  - uid: excel_release.Excel.PivotTable.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PivotTable;'
+      return:
+        type:
+          - excel.Excel.PivotTable
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.PivotTable.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotTable;'
+      return:
+        type:
+          - excel.Excel.PivotTable
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel_release.Excel.PivotTable.name
     summary: |-
       Name of the PivotTable.
@@ -203,7 +342,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: refresh()
-    fullName: refresh
+    fullName: refresh()
     langs:
       - typeScript
     type: method
@@ -228,6 +367,54 @@ items:
       return:
         type:
           - excel.Excel.RowColumnPivotHierarchyCollection
+  - uid: excel_release.Excel.PivotTable.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.PivotTable): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.PivotTableUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.PivotTableUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel_release.Excel.PivotTable.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.PivotTable): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.PivotTable
   - uid: excel_release.Excel.PivotTable.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -236,7 +423,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.PivotTableData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

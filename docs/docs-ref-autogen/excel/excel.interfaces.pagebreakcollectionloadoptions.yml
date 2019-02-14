@@ -12,8 +12,21 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.PageBreakCollectionLoadOptions.$all
       - excel.Excel.Interfaces.PageBreakCollectionLoadOptions.columnIndex
       - excel.Excel.Interfaces.PageBreakCollectionLoadOptions.rowIndex
+  - uid: excel.Excel.Interfaces.PageBreakCollectionLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.PageBreakCollectionLoadOptions.columnIndex
     summary: >-
       For EACH ITEM in the collection: Represents the column index for the page break

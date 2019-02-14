@@ -12,7 +12,19 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.FilterLoadOptions.$all
       - excel.Excel.Interfaces.FilterLoadOptions.criteria
+  - uid: excel.Excel.Interfaces.FilterLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.FilterLoadOptions.criteria
     summary: |-
       The currently applied filter on the given column. Read-only.

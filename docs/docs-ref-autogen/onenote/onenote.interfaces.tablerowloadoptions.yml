@@ -12,11 +12,23 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.TableRowLoadOptions.$all
       - onenote.OneNote.Interfaces.TableRowLoadOptions.cellCount
       - onenote.OneNote.Interfaces.TableRowLoadOptions.cells
       - onenote.OneNote.Interfaces.TableRowLoadOptions.id
       - onenote.OneNote.Interfaces.TableRowLoadOptions.parentTable
       - onenote.OneNote.Interfaces.TableRowLoadOptions.rowIndex
+  - uid: onenote.OneNote.Interfaces.TableRowLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.TableRowLoadOptions.cellCount
     summary: |-
       Gets the number of cells in the row. Read-only.

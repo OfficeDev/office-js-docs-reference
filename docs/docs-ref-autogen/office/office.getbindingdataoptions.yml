@@ -29,7 +29,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type:
           - any
@@ -43,7 +43,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'coercionType?: Office.CoercionType | string;'
+      content: 'coercionType?: Office.CoercionType | string'
       return:
         type:
           - Office.CoercionType | string
@@ -57,7 +57,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'columnCount?: number;'
+      content: 'columnCount?: number'
       return:
         type:
           - number
@@ -71,7 +71,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'filterType?: Office.FilterType | string;'
+      content: 'filterType?: Office.FilterType | string'
       return:
         type:
           - Office.FilterType | string
@@ -85,7 +85,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'rowCount?: number;'
+      content: 'rowCount?: number'
       return:
         type:
           - number
@@ -99,7 +99,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'rows?: string;'
+      content: 'rows?: string'
       return:
         type:
           - string
@@ -113,7 +113,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'startColumn?: number;'
+      content: 'startColumn?: number'
       return:
         type:
           - number
@@ -127,7 +127,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'startRow?: number;'
+      content: 'startRow?: number'
       return:
         type:
           - number
@@ -141,7 +141,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'valueFormat?: Office.ValueFormat | string;'
+      content: 'valueFormat?: Office.ValueFormat | string'
       return:
         type:
           - Office.ValueFormat | string

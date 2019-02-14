@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.Interfaces.ShapeFillUpdateData
-    summary: 'An interface for updating data on the ShapeFill object, for use in "shapeFill.set({ ... })".'
+    summary: 'An interface for updating data on the ShapeFill object, for use in "shapeFill.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.ShapeFillUpdateData
     fullName: Excel.Interfaces.ShapeFillUpdateData
     langs:

@@ -7,7 +7,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - OfficeExtension.RunOptions
+      - 'OfficeExtension.RunOptions<Session> '
     package: excel_release
     children:
       - excel_release.Excel.RunOptions.delayForCellEdit

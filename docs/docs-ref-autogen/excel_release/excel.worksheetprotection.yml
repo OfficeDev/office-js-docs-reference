@@ -16,6 +16,8 @@ items:
     children:
       - excel_release.Excel.WorksheetProtection.context
       - excel_release.Excel.WorksheetProtection.load
+      - excel_release.Excel.WorksheetProtection.load_1
+      - excel_release.Excel.WorksheetProtection.load_2
       - excel_release.Excel.WorksheetProtection.options
       - excel_release.Excel.WorksheetProtection.protect
       - excel_release.Excel.WorksheetProtection.protected
@@ -43,6 +45,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.WorksheetProtection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.WorksheetProtection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -54,7 +60,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -66,9 +72,51 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - excel.Excel.Interfaces.WorksheetProtectionLoadOptions
+  - uid: excel_release.Excel.WorksheetProtection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.WorksheetProtection;'
+      return:
+        type:
+          - excel.Excel.WorksheetProtection
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.WorksheetProtection.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.WorksheetProtection;'
+      return:
+        type:
+          - excel.Excel.WorksheetProtection
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel_release.Excel.WorksheetProtection.options
     summary: |-
       Sheet protection options. Read-only.
@@ -92,7 +140,7 @@ items:
       \[ [API set: ExcelApi 1.2 for options; 1.7 for
       password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'protect(options, password)'
-    fullName: protect
+    fullName: 'protect(options, password)'
     langs:
       - typeScript
     type: method
@@ -101,7 +149,55 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function(ctx) {
+            // get a reference to Sheet1
+            var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+
+            // Protect inserting or deleting rows in Sheet1
+            sheet.protection.protect({
+              allowInsertRows: false,
+              allowDeleteRows: false
+            });
+
+            return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```typescript
+          await Excel.run(async (context) => {
+              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+              activeSheet.load("protection/protected");
+
+              await context.sync();
+
+              if (!activeSheet.protection.protected) {
+                  activeSheet.protection.protect();
+              }
+          });
+          ```
+          ```typescript
+          let password = await passwordHandler();
+          passwordHelper(password);
+          await Excel.run(async (context) => {
+              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+              activeSheet.load("protection/protected");
+
+              await context.sync();
+
+              if (!activeSheet.protection.protected) {
+                  activeSheet.protection.protect(null, password);
+              }
+          });
+          ```
       parameters:
         - id: options
           description: Optional. Sheet protection options.
@@ -134,7 +230,7 @@ items:
       a plain JavaScript object (typed as `Excel.Interfaces.WorksheetProtectionData`<!-- -->) that contains shallow
       copies of any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -152,7 +248,7 @@ items:
       \[ [API set: ExcelApi 1.7 for password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
       \]
     name: unprotect(password)
-    fullName: unprotect
+    fullName: unprotect(password)
     langs:
       - typeScript
     type: method
@@ -161,7 +257,53 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function(ctx) {
+            // get a reference to Sheet1
+            var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+
+            // Remove all protects applied to Sheet1
+            sheet.protection.unprotect();
+
+            return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          // Unprotecting a worksheet with unprotect() will remove all 
+          // WorksheetProtectionOptions options applied to a worksheet.
+          // To remove only a subset of WorksheetProtectionOptions use the 
+          // protect() method and set the options you wish to remove to true.
+          Excel.run(function(ctx) {
+            var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+            sheet.protection.protect({
+              allowInsertRows: false, // Protect row insertion
+              allowDeleteRows: true // Unprotect row deletion
+            });
+          });
+          ```
+          ```typescript
+          await Excel.run(async (context) => {
+              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+              activeSheet.protection.unprotect();
+          });
+          ```
+          ```typescript
+          let password = await passwordHandler();
+          passwordHelper(password);
+          await Excel.run(async (context) => {
+              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+              activeSheet.protection.unprotect(password);
+          });
+          ```
       parameters:
         - id: password
           description: sheet protection password.

@@ -12,6 +12,7 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.$all
       - onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.baseUrl
       - onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.clientUrl
       - onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.id
@@ -19,6 +20,17 @@ items:
       - onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.name
       - onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.sectionGroups
       - onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.sections
+  - uid: onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.NotebookCollectionLoadOptions.baseUrl
     summary: |-
       For EACH ITEM in the collection: The url of the site that this notebook is located. Read only

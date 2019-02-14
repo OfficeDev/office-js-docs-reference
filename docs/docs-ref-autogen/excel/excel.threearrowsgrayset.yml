@@ -8,27 +8,9 @@ items:
     type: interface
     package: excel
     children:
-      - excel.Excel.ThreeArrowsGraySet.__index
       - excel.Excel.ThreeArrowsGraySet.grayDownArrow
       - excel.Excel.ThreeArrowsGraySet.graySideArrow
       - excel.Excel.ThreeArrowsGraySet.grayUpArrow
-  - uid: excel.Excel.ThreeArrowsGraySet.__index
-    name: __index(index)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[index: number]: Icon;'
-      return:
-        type:
-          - Icon
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
   - uid: excel.Excel.ThreeArrowsGraySet.grayDownArrow
     name: grayDownArrow
     fullName: grayDownArrow

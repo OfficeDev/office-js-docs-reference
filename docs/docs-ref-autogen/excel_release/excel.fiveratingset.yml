@@ -8,29 +8,11 @@ items:
     type: interface
     package: excel_release
     children:
-      - excel_release.Excel.FiveRatingSet.__index
       - excel_release.Excel.FiveRatingSet.fourBars
       - excel_release.Excel.FiveRatingSet.noBars
       - excel_release.Excel.FiveRatingSet.oneBar
       - excel_release.Excel.FiveRatingSet.threeBars
       - excel_release.Excel.FiveRatingSet.twoBars
-  - uid: excel_release.Excel.FiveRatingSet.__index
-    name: __index(index)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[index: number]: Icon;'
-      return:
-        type:
-          - Icon
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
   - uid: excel_release.Excel.FiveRatingSet.fourBars
     name: fourBars
     fullName: fourBars

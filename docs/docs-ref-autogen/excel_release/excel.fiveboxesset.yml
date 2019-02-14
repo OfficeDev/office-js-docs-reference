@@ -8,29 +8,11 @@ items:
     type: interface
     package: excel_release
     children:
-      - excel_release.Excel.FiveBoxesSet.__index
       - excel_release.Excel.FiveBoxesSet.fourFilledBoxes
       - excel_release.Excel.FiveBoxesSet.noFilledBoxes
       - excel_release.Excel.FiveBoxesSet.oneFilledBox
       - excel_release.Excel.FiveBoxesSet.threeFilledBoxes
       - excel_release.Excel.FiveBoxesSet.twoFilledBoxes
-  - uid: excel_release.Excel.FiveBoxesSet.__index
-    name: __index(index)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[index: number]: Icon;'
-      return:
-        type:
-          - Icon
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
   - uid: excel_release.Excel.FiveBoxesSet.fourFilledBoxes
     name: fourFilledBoxes
     fullName: fourFilledBoxes

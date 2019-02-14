@@ -12,12 +12,24 @@ items:
     type: interface
     package: visio
     children:
+      - visio.Visio.Interfaces.PageCollectionLoadOptions.$all
       - visio.Visio.Interfaces.PageCollectionLoadOptions.height
       - visio.Visio.Interfaces.PageCollectionLoadOptions.index
       - visio.Visio.Interfaces.PageCollectionLoadOptions.isBackground
       - visio.Visio.Interfaces.PageCollectionLoadOptions.name
       - visio.Visio.Interfaces.PageCollectionLoadOptions.view
       - visio.Visio.Interfaces.PageCollectionLoadOptions.width
+  - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.height
     summary: |-
       For EACH ITEM in the collection: Returns the height of the page. Read-only.

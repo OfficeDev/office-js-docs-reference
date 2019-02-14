@@ -12,12 +12,24 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartFontLoadOptions.$all
       - excel.Excel.Interfaces.ChartFontLoadOptions.bold
       - excel.Excel.Interfaces.ChartFontLoadOptions.color
       - excel.Excel.Interfaces.ChartFontLoadOptions.italic
       - excel.Excel.Interfaces.ChartFontLoadOptions.name
       - excel.Excel.Interfaces.ChartFontLoadOptions.size
       - excel.Excel.Interfaces.ChartFontLoadOptions.underline
+  - uid: excel.Excel.Interfaces.ChartFontLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartFontLoadOptions.bold
     summary: |-
       Represents the bold status of font.

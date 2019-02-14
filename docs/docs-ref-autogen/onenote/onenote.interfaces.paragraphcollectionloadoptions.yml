@@ -12,6 +12,7 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.$all
       - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.id
       - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.image
       - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.inkWords
@@ -24,6 +25,17 @@ items:
       - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.richText
       - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.table
       - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.type
+  - uid: onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the Paragraph object. Read-only.

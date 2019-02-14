@@ -12,9 +12,21 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.FloatingInkLoadOptions.$all
       - onenote.OneNote.Interfaces.FloatingInkLoadOptions.id
       - onenote.OneNote.Interfaces.FloatingInkLoadOptions.inkStrokes
       - onenote.OneNote.Interfaces.FloatingInkLoadOptions.pageContent
+  - uid: onenote.OneNote.Interfaces.FloatingInkLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.FloatingInkLoadOptions.id
     summary: |-
       Gets the ID of the FloatingInk object. Read-only.

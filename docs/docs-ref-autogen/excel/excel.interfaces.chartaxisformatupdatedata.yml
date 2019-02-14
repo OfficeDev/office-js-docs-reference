@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartAxisFormatUpdateData
-    summary: 'An interface for updating data on the ChartAxisFormat object, for use in "chartAxisFormat.set({ ... })".'
+    summary: >-
+      An interface for updating data on the ChartAxisFormat object, for use in "chartAxisFormat.set(<!-- -->{ ... }<!--
+      -->)".
     name: Excel.Interfaces.ChartAxisFormatUpdateData
     fullName: Excel.Interfaces.ChartAxisFormatUpdateData
     langs:

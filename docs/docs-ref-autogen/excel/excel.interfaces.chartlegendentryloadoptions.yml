@@ -12,12 +12,24 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartLegendEntryLoadOptions.$all
       - excel.Excel.Interfaces.ChartLegendEntryLoadOptions.height
       - excel.Excel.Interfaces.ChartLegendEntryLoadOptions.index
       - excel.Excel.Interfaces.ChartLegendEntryLoadOptions.left
       - excel.Excel.Interfaces.ChartLegendEntryLoadOptions.top
       - excel.Excel.Interfaces.ChartLegendEntryLoadOptions.visible
       - excel.Excel.Interfaces.ChartLegendEntryLoadOptions.width
+  - uid: excel.Excel.Interfaces.ChartLegendEntryLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartLegendEntryLoadOptions.height
     summary: |-
       Represents the height of the legendEntry on the chart legend.

@@ -2,8 +2,8 @@
 items:
   - uid: excel_release.Excel.Interfaces.ConditionalFormatRuleUpdateData
     summary: >-
-      An interface for updating data on the ConditionalFormatRule object, for use in "conditionalFormatRule.set({ ...
-      })".
+      An interface for updating data on the ConditionalFormatRule object, for use in "conditionalFormatRule.set(<!--
+      -->{ ... }<!-- -->)".
     name: Excel.Interfaces.ConditionalFormatRuleUpdateData
     fullName: Excel.Interfaces.ConditionalFormatRuleUpdateData
     langs:

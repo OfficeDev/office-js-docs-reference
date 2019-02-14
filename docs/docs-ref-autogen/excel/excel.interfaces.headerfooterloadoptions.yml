@@ -12,12 +12,25 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.HeaderFooterLoadOptions.$all
       - excel.Excel.Interfaces.HeaderFooterLoadOptions.centerFooter
       - excel.Excel.Interfaces.HeaderFooterLoadOptions.centerHeader
       - excel.Excel.Interfaces.HeaderFooterLoadOptions.leftFooter
       - excel.Excel.Interfaces.HeaderFooterLoadOptions.leftHeader
       - excel.Excel.Interfaces.HeaderFooterLoadOptions.rightFooter
       - excel.Excel.Interfaces.HeaderFooterLoadOptions.rightHeader
+  - uid: excel.Excel.Interfaces.HeaderFooterLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.HeaderFooterLoadOptions.centerFooter
     summary: >-
       Gets or sets the center footer of the worksheet. To apply font formatting or insert a variable value, use format

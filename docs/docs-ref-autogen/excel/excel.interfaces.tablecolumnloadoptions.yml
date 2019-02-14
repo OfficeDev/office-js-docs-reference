@@ -12,11 +12,23 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.TableColumnLoadOptions.$all
       - excel.Excel.Interfaces.TableColumnLoadOptions.filter
       - excel.Excel.Interfaces.TableColumnLoadOptions.id
       - excel.Excel.Interfaces.TableColumnLoadOptions.index
       - excel.Excel.Interfaces.TableColumnLoadOptions.name
       - excel.Excel.Interfaces.TableColumnLoadOptions.values
+  - uid: excel.Excel.Interfaces.TableColumnLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.TableColumnLoadOptions.filter
     summary: |-
       Retrieve the filter applied to the column.

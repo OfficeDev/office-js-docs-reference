@@ -15,9 +15,22 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.CommentReplyLoadOptions.$all
       - excel.Excel.Interfaces.CommentReplyLoadOptions.content
       - excel.Excel.Interfaces.CommentReplyLoadOptions.id
       - excel.Excel.Interfaces.CommentReplyLoadOptions.isParent
+  - uid: excel.Excel.Interfaces.CommentReplyLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.CommentReplyLoadOptions.content
     summary: >-
       Get/Set the content.

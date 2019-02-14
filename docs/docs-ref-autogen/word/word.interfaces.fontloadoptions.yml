@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.FontLoadOptions.$all
       - word.Word.Interfaces.FontLoadOptions.bold
       - word.Word.Interfaces.FontLoadOptions.color
       - word.Word.Interfaces.FontLoadOptions.doubleStrikeThrough
@@ -23,6 +24,17 @@ items:
       - word.Word.Interfaces.FontLoadOptions.subscript
       - word.Word.Interfaces.FontLoadOptions.superscript
       - word.Word.Interfaces.FontLoadOptions.underline
+  - uid: word.Word.Interfaces.FontLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.FontLoadOptions.bold
     summary: >-
       Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,

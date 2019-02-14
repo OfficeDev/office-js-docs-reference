@@ -12,9 +12,21 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartBorderLoadOptions.$all
       - excel.Excel.Interfaces.ChartBorderLoadOptions.color
       - excel.Excel.Interfaces.ChartBorderLoadOptions.lineStyle
       - excel.Excel.Interfaces.ChartBorderLoadOptions.weight
+  - uid: excel.Excel.Interfaces.ChartBorderLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartBorderLoadOptions.color
     summary: |-
       HTML color code representing the color of borders in the chart.

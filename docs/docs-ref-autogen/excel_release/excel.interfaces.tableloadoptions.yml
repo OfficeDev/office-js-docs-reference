@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.TableLoadOptions.$all
       - excel_release.Excel.Interfaces.TableLoadOptions.columns
       - excel_release.Excel.Interfaces.TableLoadOptions.highlightFirstColumn
       - excel_release.Excel.Interfaces.TableLoadOptions.highlightLastColumn
@@ -27,6 +28,17 @@ items:
       - excel_release.Excel.Interfaces.TableLoadOptions.sort
       - excel_release.Excel.Interfaces.TableLoadOptions.style
       - excel_release.Excel.Interfaces.TableLoadOptions.worksheet
+  - uid: excel_release.Excel.Interfaces.TableLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.TableLoadOptions.columns
     summary: |-
       Represents a collection of all the columns in the table.

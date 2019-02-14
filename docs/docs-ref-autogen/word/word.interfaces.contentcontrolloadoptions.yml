@@ -15,6 +15,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.ContentControlLoadOptions.$all
       - word.Word.Interfaces.ContentControlLoadOptions.appearance
       - word.Word.Interfaces.ContentControlLoadOptions.cannotDelete
       - word.Word.Interfaces.ContentControlLoadOptions.cannotEdit
@@ -37,6 +38,17 @@ items:
       - word.Word.Interfaces.ContentControlLoadOptions.text
       - word.Word.Interfaces.ContentControlLoadOptions.title
       - word.Word.Interfaces.ContentControlLoadOptions.type
+  - uid: word.Word.Interfaces.ContentControlLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.ContentControlLoadOptions.appearance
     summary: |-
       Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.

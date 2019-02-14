@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.RangeViewLoadOptions.$all
       - excel_release.Excel.Interfaces.RangeViewLoadOptions.cellAddresses
       - excel_release.Excel.Interfaces.RangeViewLoadOptions.columnCount
       - excel_release.Excel.Interfaces.RangeViewLoadOptions.formulas
@@ -23,6 +24,17 @@ items:
       - excel_release.Excel.Interfaces.RangeViewLoadOptions.text
       - excel_release.Excel.Interfaces.RangeViewLoadOptions.values
       - excel_release.Excel.Interfaces.RangeViewLoadOptions.valueTypes
+  - uid: excel_release.Excel.Interfaces.RangeViewLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.RangeViewLoadOptions.cellAddresses
     summary: |-
       Represents the cell addresses of the RangeView. Read-only.

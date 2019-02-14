@@ -2,8 +2,8 @@
 items:
   - uid: excel_release.Excel.Interfaces.DataBarConditionalFormatUpdateData
     summary: >-
-      An interface for updating data on the DataBarConditionalFormat object, for use in "dataBarConditionalFormat.set({
-      ... })".
+      An interface for updating data on the DataBarConditionalFormat object, for use in
+      "dataBarConditionalFormat.set(<!-- -->{ ... }<!-- -->)".
     name: Excel.Interfaces.DataBarConditionalFormatUpdateData
     fullName: Excel.Interfaces.DataBarConditionalFormatUpdateData
     langs:

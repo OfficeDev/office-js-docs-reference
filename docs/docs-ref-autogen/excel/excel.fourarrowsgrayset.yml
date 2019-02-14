@@ -8,28 +8,10 @@ items:
     type: interface
     package: excel
     children:
-      - excel.Excel.FourArrowsGraySet.__index
       - excel.Excel.FourArrowsGraySet.grayDownArrow
       - excel.Excel.FourArrowsGraySet.grayDownInclineArrow
       - excel.Excel.FourArrowsGraySet.grayUpArrow
       - excel.Excel.FourArrowsGraySet.grayUpInclineArrow
-  - uid: excel.Excel.FourArrowsGraySet.__index
-    name: __index(index)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[index: number]: Icon;'
-      return:
-        type:
-          - Icon
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
   - uid: excel.Excel.FourArrowsGraySet.grayDownArrow
     name: grayDownArrow
     fullName: grayDownArrow

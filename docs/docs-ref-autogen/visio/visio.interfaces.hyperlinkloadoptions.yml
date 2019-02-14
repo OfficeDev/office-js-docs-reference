@@ -12,10 +12,22 @@ items:
     type: interface
     package: visio
     children:
+      - visio.Visio.Interfaces.HyperlinkLoadOptions.$all
       - visio.Visio.Interfaces.HyperlinkLoadOptions.address
       - visio.Visio.Interfaces.HyperlinkLoadOptions.description
       - visio.Visio.Interfaces.HyperlinkLoadOptions.extraInfo
       - visio.Visio.Interfaces.HyperlinkLoadOptions.subAddress
+  - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.address
     summary: |-
       Gets the address of the Hyperlink object. Read-only.

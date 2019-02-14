@@ -12,9 +12,20 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.InkAnalysisLoadOptions.$all
       - onenote.OneNote.Interfaces.InkAnalysisLoadOptions.id
       - onenote.OneNote.Interfaces.InkAnalysisLoadOptions.page
-      - onenote.OneNote.Interfaces.InkAnalysisLoadOptions.paragraphs
+  - uid: onenote.OneNote.Interfaces.InkAnalysisLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.InkAnalysisLoadOptions.id
     summary: |-
       Gets the ID of the InkAnalysis object. Read-only.
@@ -45,18 +56,3 @@ items:
       return:
         type:
           - onenote.OneNote.Interfaces.PageLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLoadOptions.paragraphs
-    summary: |-
-      Gets the ink analysis paragraphs in this page.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: paragraphs
-    fullName: paragraphs
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'paragraphs?: OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions;'
-      return:
-        type:
-          - onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions

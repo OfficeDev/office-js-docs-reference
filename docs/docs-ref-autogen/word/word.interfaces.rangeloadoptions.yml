@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.RangeLoadOptions.$all
       - word.Word.Interfaces.RangeLoadOptions.font
       - word.Word.Interfaces.RangeLoadOptions.hyperlink
       - word.Word.Interfaces.RangeLoadOptions.isEmpty
@@ -25,6 +26,17 @@ items:
       - word.Word.Interfaces.RangeLoadOptions.style
       - word.Word.Interfaces.RangeLoadOptions.styleBuiltIn
       - word.Word.Interfaces.RangeLoadOptions.text
+  - uid: word.Word.Interfaces.RangeLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.RangeLoadOptions.font
     summary: |-
       Gets the text format of the range. Use this to get and set font name, size, color, and other properties.

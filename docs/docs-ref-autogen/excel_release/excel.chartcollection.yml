@@ -15,6 +15,7 @@ items:
     package: excel_release
     children:
       - excel_release.Excel.ChartCollection.add
+      - excel_release.Excel.ChartCollection.add_1
       - excel_release.Excel.ChartCollection.context
       - excel_release.Excel.ChartCollection.count
       - excel_release.Excel.ChartCollection.getCount
@@ -23,6 +24,8 @@ items:
       - excel_release.Excel.ChartCollection.getItemOrNullObject
       - excel_release.Excel.ChartCollection.items
       - excel_release.Excel.ChartCollection.load
+      - excel_release.Excel.ChartCollection.load_1
+      - excel_release.Excel.ChartCollection.load_2
       - excel_release.Excel.ChartCollection.onActivated
       - excel_release.Excel.ChartCollection.onAdded
       - excel_release.Excel.ChartCollection.onDeactivated
@@ -34,7 +37,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(type, sourceData, seriesBy)'
-    fullName: add
+    fullName: 'add(type, sourceData, seriesBy)'
     langs:
       - typeScript
     type: method
@@ -59,6 +62,88 @@ items:
             for details.
           type:
             - excel.Excel.ChartSeriesBy
+  - uid: excel_release.Excel.ChartCollection.add_1
+    summary: |-
+      Creates a new chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'add(typeString, sourceData, seriesBy)'
+    fullName: 'add(typeString, sourceData, seriesBy)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
+        "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" |
+        "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" |
+        "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" |
+        "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" |
+        "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" |
+        "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" |
+        "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" |
+        "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" |
+        "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" |
+        "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
+        "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" |
+        "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" |
+        "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel",
+        sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
+      return:
+        type:
+          - excel.Excel.Chart
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
+          // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
+          Excel.run(function (ctx) { 
+              var rangeSelection = "A1:B4";
+              var range = ctx.workbook.worksheets.getItem(sheetName)
+                  .getRange(rangeSelection);
+              var chart = ctx.workbook.worksheets.getItem(sheetName)
+                  .charts.add("ColumnClustered", range, "auto");    return ctx.sync().then(function() {
+                      console.log("New Chart Added");
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: typeString
+          description: Represents the type of a chart. See Excel.ChartType for details.
+          type:
+            - >-
+              "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
+              "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" |
+              "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
+              "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie"
+              | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" |
+              "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" |
+              "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" |
+              "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
+              "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" |
+              "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" |
+              "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" |
+              "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" |
+              "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line"
+              | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" |
+              "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
+        - id: sourceData
+          description: The Range object corresponding to the source data.
+          type:
+            - Range
+        - id: seriesBy
+          description: >-
+            Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
+            for details.
+          type:
+            - '"Auto" | "Columns" | "Rows"'
   - uid: excel_release.Excel.ChartCollection.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -94,7 +179,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -110,7 +195,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
-    fullName: getItem
+    fullName: getItem(name)
     langs:
       - typeScript
     type: method
@@ -119,7 +204,52 @@ items:
       return:
         type:
           - excel.Excel.Chart
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var chartname = 'Chart1';
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartname);
+              return ctx.sync().then(function() {
+                      console.log(chart.height);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          Excel.run(function (ctx) { 
+              var chartId = 'SampleChartId';
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartId);
+              return ctx.sync().then(function() {
+                      console.log(chart.height);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          Excel.run(function (ctx) { 
+              var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
+              return ctx.sync().then(function() {
+                      console.log(chart.name);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: name
           description: Name of the chart to be retrieved.
@@ -131,7 +261,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: getItemAt
+    fullName: getItemAt(index)
     langs:
       - typeScript
     type: method
@@ -140,7 +270,24 @@ items:
       return:
         type:
           - excel.Excel.Chart
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
+              return ctx.sync().then(function() {
+                      console.log(chart.name);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
@@ -154,7 +301,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
-    fullName: getItemOrNullObject
+    fullName: getItemOrNullObject(name)
     langs:
       - typeScript
     type: method
@@ -189,6 +336,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -200,7 +351,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -214,9 +365,81 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel_release.Excel.ChartCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartCollection;'
+      return:
+        type:
+          - excel.Excel.ChartCollection
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
+              charts.load('items');
+              return ctx.sync().then(function() {
+                  for (var i = 0; i < charts.items.length; i++)
+                  {
+                      console.log(charts.items[i].name);
+                  }
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          // Get the number of charts
+          Excel.run(function (ctx) { 
+              var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
+              charts.load('count');
+              return ctx.sync().then(function() {
+                  console.log("charts: Count= " + charts.count);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.ChartCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.ChartCollection;'
+      return:
+        type:
+          - excel.Excel.ChartCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel_release.Excel.ChartCollection.onActivated
     summary: |-
       Occurs when a chart is activated.
@@ -232,6 +455,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              context.workbook.worksheets.getActiveWorksheet()
+                  .charts.onActivated.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The ID of the active chart is: " + event.chartId)
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel_release.Excel.ChartCollection.onAdded
     summary: |-
       Occurs when a new chart is added to the worksheet.
@@ -247,6 +486,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartAddedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              context.workbook.worksheets.getActiveWorksheet()
+                  .charts.onAdded.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("A chart has been added with ID: " + event.chartId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel_release.Excel.ChartCollection.onDeactivated
     summary: |-
       Occurs when a chart is deactivated.
@@ -262,6 +517,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              context.workbook.worksheets.getActiveWorksheet()
+                  .charts.onDeactivated.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The chart with this ID was deactivated: " + event.chartId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel_release.Excel.ChartCollection.onDeleted
     summary: |-
       Occurs when a chart is deleted.
@@ -277,6 +548,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartDeletedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              context.workbook.worksheets.getActiveWorksheet()
+                  .charts.onDeleted.add(function (event) {
+                  return Excel.run((context) => {
+                      console.log("The chart with this ID was deleted: " + event.chartId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: excel_release.Excel.ChartCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -285,7 +572,7 @@ items:
       plain JavaScript object (typed as `Excel.Interfaces.ChartCollectionData`<!-- -->) that contains an "items" array
       with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

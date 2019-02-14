@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.Interfaces.PivotTableCollectionUpdateData
-    summary: 'An interface for updating data on the PivotTableCollection object, for use in "pivotTableCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the PivotTableCollection object, for use in "pivotTableCollection.set(<!-- -->{
+      ... }<!-- -->)".
     name: Excel.Interfaces.PivotTableCollectionUpdateData
     fullName: Excel.Interfaces.PivotTableCollectionUpdateData
     langs:

@@ -21,6 +21,10 @@ items:
       - excel_release.Excel.BuiltInStyle
       - excel_release.Excel.CalculationMode
       - excel_release.Excel.CalculationType
+      - excel_release.Excel.CellProperties
+      - excel_release.Excel.CellPropertiesFormat
+      - excel_release.Excel.CellPropertiesFormatLoadOptions
+      - excel_release.Excel.CellPropertiesLoadOptions
       - excel_release.Excel.CellValueConditionalFormat
       - excel_release.Excel.Chart
       - excel_release.Excel.ChartActivatedEventArgs
@@ -91,6 +95,8 @@ items:
       - excel_release.Excel.ChartUnderlineStyle
       - excel_release.Excel.ClearApplyTo
       - excel_release.Excel.ColorScaleConditionalFormat
+      - excel_release.Excel.ColumnProperties
+      - excel_release.Excel.ColumnPropertiesLoadOptions
       - excel_release.Excel.ConditionalCellValueOperator
       - excel_release.Excel.ConditionalCellValueRule
       - excel_release.Excel.ConditionalColorScaleCriteria
@@ -614,11 +620,20 @@ items:
       - excel_release.Excel.RequestContext
       - excel_release.Excel.RowColumnPivotHierarchy
       - excel_release.Excel.RowColumnPivotHierarchyCollection
+      - excel_release.Excel.RowProperties
+      - excel_release.Excel.RowPropertiesLoadOptions
       - excel_release.Excel.run
+      - excel_release.Excel.run_1
+      - excel_release.Excel.run_2
+      - excel_release.Excel.run_3
+      - excel_release.Excel.run_4
       - excel_release.Excel.RunOptions
       - excel_release.Excel.Runtime
       - excel_release.Excel.SelectionChangedEventArgs
       - excel_release.Excel.Session
+      - excel_release.Excel.SettableCellProperties
+      - excel_release.Excel.SettableColumnProperties
+      - excel_release.Excel.SettableRowProperties
       - excel_release.Excel.Setting
       - excel_release.Excel.SettingCollection
       - excel_release.Excel.SettingsChangedEventArgs
@@ -678,7 +693,7 @@ items:
       Creates and opens a new workbook. Optionally, the workbook can be pre-populated with a base64-encoded .xlsx file.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: createWorkbook(base64)
+    name: Excel.createWorkbook
     fullName: Excel.createWorkbook
     langs:
       - typeScript
@@ -688,14 +703,32 @@ items:
       return:
         type:
           - Promise<void>
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          var myFile = document.getElementById("file");
+          var reader = new FileReader();
+
+          reader.onload = function (event) {
+              // strip off the metadata before the base64-encoded string
+              var startIndex = event.target.result.indexOf("base64,");
+              var copyBase64 = event.target.result.substr(startIndex + 7);
+
+              Excel.createWorkbook(copyBase64);        
+          };
+
+          // read in the file as a data URL so we can parse the base64-encoded string
+          reader.readAsDataURL(myFile.files[0]);
+          ```
       parameters:
         - id: base64
           description: ''
           type:
             - string
   - uid: excel_release.Excel.getDataCommonPostprocess
-    name: 'getDataCommonPostprocess(response, callArgs)'
+    name: Excel.getDataCommonPostprocess
     fullName: Excel.getDataCommonPostprocess
     langs:
       - typeScript
@@ -716,7 +749,7 @@ items:
           type:
             - any
   - uid: excel_release.Excel.postprocessBindingDescriptor
-    name: postprocessBindingDescriptor(response)
+    name: Excel.postprocessBindingDescriptor
     fullName: Excel.postprocessBindingDescriptor
     langs:
       - typeScript
@@ -733,6 +766,129 @@ items:
           type:
             - any
   - uid: excel_release.Excel.run
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the
+      promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+    name: Excel.run
+    fullName: Excel.run
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function run<T>(batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;'
+      return:
+        type:
+          - Promise<T>
+        description: ''
+      parameters:
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type:
+            - '(context: Excel.RequestContext) => Promise<T>'
+  - uid: excel_release.Excel.run_1
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
+      previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
+    name: Excel.run_1
+    fullName: Excel.run_1
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
+      return:
+        type:
+          - Promise<T>
+        description: ''
+      parameters:
+        - id: object
+          description: >-
+            A previously-created API object. The batch will use the same RequestContext as the passed-in object, which
+            means that any changes applied to the object will be picked up by "context.sync()".
+          type:
+            - office.OfficeExtension.ClientObject
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type:
+            - '(context: Excel.RequestContext) => Promise<T>'
+  - uid: excel_release.Excel.run_2
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of
+      previously-created API objects.
+    name: Excel.run_2
+    fullName: Excel.run_2
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
+      return:
+        type:
+          - Promise<T>
+        description: ''
+      parameters:
+        - id: objects
+          description: >-
+            An array of previously-created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared RequestContext, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
+          type:
+            - 'OfficeExtension.ClientObject[]'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type:
+            - '(context: Excel.RequestContext) => Promise<T>'
+  - uid: excel_release.Excel.run_3
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
+      previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
+    name: Excel.run_3
+    fullName: Excel.run_3
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export function run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>):
+        Promise<T>;
+      return:
+        type:
+          - Promise<T>
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            The additional options for this Excel.run which specify previous objects, whether to delay the request for
+            cell edit, session info, etc.
+          type:
+            - excel.Excel.RunOptions
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type:
+            - '(context: Excel.RequestContext) => Promise<T>'
+  - uid: excel_release.Excel.run_4
     summary: >-
       Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
       previously-created object. When the promise is resolved, any tracked objects that were automatically allocated
@@ -752,8 +908,8 @@ items:
 
 
       `run<T>(batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
-    name: 'run(context, batch)'
-    fullName: Excel.run
+    name: Excel.run_4
+    fullName: Excel.run_4
     langs:
       - typeScript
     type: function
@@ -809,6 +965,14 @@ references:
     name: Excel.CalculationMode
   - uid: excel_release.Excel.CalculationType
     name: Excel.CalculationType
+  - uid: excel_release.Excel.CellProperties
+    name: Excel.CellProperties
+  - uid: excel_release.Excel.CellPropertiesFormat
+    name: Excel.CellPropertiesFormat
+  - uid: excel_release.Excel.CellPropertiesFormatLoadOptions
+    name: Excel.CellPropertiesFormatLoadOptions
+  - uid: excel_release.Excel.CellPropertiesLoadOptions
+    name: Excel.CellPropertiesLoadOptions
   - uid: excel_release.Excel.CellValueConditionalFormat
     name: Excel.CellValueConditionalFormat
   - uid: excel_release.Excel.Chart
@@ -949,6 +1113,10 @@ references:
     name: Excel.ClearApplyTo
   - uid: excel_release.Excel.ColorScaleConditionalFormat
     name: Excel.ColorScaleConditionalFormat
+  - uid: excel_release.Excel.ColumnProperties
+    name: Excel.ColumnProperties
+  - uid: excel_release.Excel.ColumnPropertiesLoadOptions
+    name: Excel.ColumnPropertiesLoadOptions
   - uid: excel_release.Excel.ConditionalCellValueOperator
     name: Excel.ConditionalCellValueOperator
   - uid: excel_release.Excel.ConditionalCellValueRule
@@ -1989,6 +2157,10 @@ references:
     name: Excel.RowColumnPivotHierarchy
   - uid: excel_release.Excel.RowColumnPivotHierarchyCollection
     name: Excel.RowColumnPivotHierarchyCollection
+  - uid: excel_release.Excel.RowProperties
+    name: Excel.RowProperties
+  - uid: excel_release.Excel.RowPropertiesLoadOptions
+    name: Excel.RowPropertiesLoadOptions
   - uid: excel_release.Excel.RunOptions
     name: Excel.RunOptions
   - uid: excel_release.Excel.Runtime
@@ -1997,6 +2169,12 @@ references:
     name: Excel.SelectionChangedEventArgs
   - uid: excel_release.Excel.Session
     name: Excel.Session
+  - uid: excel_release.Excel.SettableCellProperties
+    name: Excel.SettableCellProperties
+  - uid: excel_release.Excel.SettableColumnProperties
+    name: Excel.SettableColumnProperties
+  - uid: excel_release.Excel.SettableRowProperties
+    name: Excel.SettableRowProperties
   - uid: excel_release.Excel.Setting
     name: Excel.Setting
   - uid: excel_release.Excel.SettingCollection

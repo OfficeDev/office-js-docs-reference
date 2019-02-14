@@ -18,8 +18,20 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.TableRowCollectionLoadOptions.$all
       - excel_release.Excel.Interfaces.TableRowCollectionLoadOptions.index
       - excel_release.Excel.Interfaces.TableRowCollectionLoadOptions.values
+  - uid: excel_release.Excel.Interfaces.TableRowCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.TableRowCollectionLoadOptions.index
     summary: >-
       For EACH ITEM in the collection: Returns the index number of the row within the rows collection of the table.

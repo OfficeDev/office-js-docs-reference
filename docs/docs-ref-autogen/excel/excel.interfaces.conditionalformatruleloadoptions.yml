@@ -12,9 +12,21 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions.$all
       - excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions.formula
       - excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions.formulaLocal
       - excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions.formulaR1C1
+  - uid: excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions.formula
     summary: |-
       The formula, if required, to evaluate the conditional format rule on.

@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.PivotLayoutLoadOptions.$all
       - excel.Excel.Interfaces.PivotLayoutLoadOptions.autoFormat
       - excel.Excel.Interfaces.PivotLayoutLoadOptions.enableFieldList
       - excel.Excel.Interfaces.PivotLayoutLoadOptions.layoutType
@@ -19,6 +20,17 @@ items:
       - excel.Excel.Interfaces.PivotLayoutLoadOptions.showColumnGrandTotals
       - excel.Excel.Interfaces.PivotLayoutLoadOptions.showRowGrandTotals
       - excel.Excel.Interfaces.PivotLayoutLoadOptions.subtotalLocation
+  - uid: excel.Excel.Interfaces.PivotLayoutLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.PivotLayoutLoadOptions.autoFormat
     summary: >-
       True if formatting will be automatically formatted when it’s refreshed or when fields are moved

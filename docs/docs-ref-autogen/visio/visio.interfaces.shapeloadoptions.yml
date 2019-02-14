@@ -12,11 +12,23 @@ items:
     type: interface
     package: visio
     children:
+      - visio.Visio.Interfaces.ShapeLoadOptions.$all
       - visio.Visio.Interfaces.ShapeLoadOptions.id
       - visio.Visio.Interfaces.ShapeLoadOptions.name
       - visio.Visio.Interfaces.ShapeLoadOptions.select
       - visio.Visio.Interfaces.ShapeLoadOptions.text
       - visio.Visio.Interfaces.ShapeLoadOptions.view
+  - uid: visio.Visio.Interfaces.ShapeLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: visio.Visio.Interfaces.ShapeLoadOptions.id
     summary: |-
       Shape's identifier. Read-only.

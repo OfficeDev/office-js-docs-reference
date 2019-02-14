@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartCollectionLoadOptions.$all
       - excel.Excel.Interfaces.ChartCollectionLoadOptions.axes
       - excel.Excel.Interfaces.ChartCollectionLoadOptions.categoryLabelLevel
       - excel.Excel.Interfaces.ChartCollectionLoadOptions.chartType
@@ -36,6 +37,17 @@ items:
       - excel.Excel.Interfaces.ChartCollectionLoadOptions.top
       - excel.Excel.Interfaces.ChartCollectionLoadOptions.width
       - excel.Excel.Interfaces.ChartCollectionLoadOptions.worksheet
+  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.axes
     summary: |-
       For EACH ITEM in the collection: Represents chart axes.

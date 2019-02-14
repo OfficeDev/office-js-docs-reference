@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.TableCellLoadOptions.$all
       - word.Word.Interfaces.TableCellLoadOptions.body
       - word.Word.Interfaces.TableCellLoadOptions.cellIndex
       - word.Word.Interfaces.TableCellLoadOptions.columnWidth
@@ -23,6 +24,17 @@ items:
       - word.Word.Interfaces.TableCellLoadOptions.value
       - word.Word.Interfaces.TableCellLoadOptions.verticalAlignment
       - word.Word.Interfaces.TableCellLoadOptions.width
+  - uid: word.Word.Interfaces.TableCellLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.TableCellLoadOptions.body
     summary: |-
       Gets the body object of the cell.

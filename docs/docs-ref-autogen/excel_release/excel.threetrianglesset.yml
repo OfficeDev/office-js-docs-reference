@@ -8,27 +8,9 @@ items:
     type: interface
     package: excel_release
     children:
-      - excel_release.Excel.ThreeTrianglesSet.__index
       - excel_release.Excel.ThreeTrianglesSet.greenUpTriangle
       - excel_release.Excel.ThreeTrianglesSet.redDownTriangle
       - excel_release.Excel.ThreeTrianglesSet.yellowDash
-  - uid: excel_release.Excel.ThreeTrianglesSet.__index
-    name: __index(index)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[index: number]: Icon;'
-      return:
-        type:
-          - Icon
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
   - uid: excel_release.Excel.ThreeTrianglesSet.greenUpTriangle
     name: greenUpTriangle
     fullName: greenUpTriangle

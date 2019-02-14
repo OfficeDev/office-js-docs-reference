@@ -12,8 +12,20 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.BindingCollectionLoadOptions.$all
       - excel_release.Excel.Interfaces.BindingCollectionLoadOptions.id
       - excel_release.Excel.Interfaces.BindingCollectionLoadOptions.type
+  - uid: excel_release.Excel.Interfaces.BindingCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.BindingCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: Represents binding identifier. Read-only.

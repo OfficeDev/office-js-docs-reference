@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.SearchOptionsLoadOptions.$all
       - word.Word.Interfaces.SearchOptionsLoadOptions.ignorePunct
       - word.Word.Interfaces.SearchOptionsLoadOptions.ignoreSpace
       - word.Word.Interfaces.SearchOptionsLoadOptions.matchCase
@@ -19,6 +20,17 @@ items:
       - word.Word.Interfaces.SearchOptionsLoadOptions.matchSuffix
       - word.Word.Interfaces.SearchOptionsLoadOptions.matchWholeWord
       - word.Word.Interfaces.SearchOptionsLoadOptions.matchWildcards
+  - uid: word.Word.Interfaces.SearchOptionsLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.SearchOptionsLoadOptions.ignorePunct
     summary: >-
       Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the

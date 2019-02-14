@@ -3,7 +3,7 @@ items:
   - uid: excel_release.Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
     summary: >-
       An interface for updating data on the DataPivotHierarchyCollection object, for use in
-      "dataPivotHierarchyCollection.set({ ... })".
+      "dataPivotHierarchyCollection.set(<!-- -->{ ... }<!-- -->)".
     name: Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
     fullName: Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
     langs:

@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.Interfaces.GroupShapeCollectionUpdateData
-    summary: 'An interface for updating data on the GroupShapeCollection object, for use in "groupShapeCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the GroupShapeCollection object, for use in "groupShapeCollection.set(<!-- -->{
+      ... }<!-- -->)".
     name: Excel.Interfaces.GroupShapeCollectionUpdateData
     fullName: Excel.Interfaces.GroupShapeCollectionUpdateData
     langs:

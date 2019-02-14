@@ -8,28 +8,10 @@ items:
     type: interface
     package: excel
     children:
-      - excel.Excel.FourRatingSet.__index
       - excel.Excel.FourRatingSet.fourBars
       - excel.Excel.FourRatingSet.oneBar
       - excel.Excel.FourRatingSet.threeBars
       - excel.Excel.FourRatingSet.twoBars
-  - uid: excel.Excel.FourRatingSet.__index
-    name: __index(index)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[index: number]: Icon;'
-      return:
-        type:
-          - Icon
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
   - uid: excel.Excel.FourRatingSet.fourBars
     name: fourBars
     fullName: fourBars

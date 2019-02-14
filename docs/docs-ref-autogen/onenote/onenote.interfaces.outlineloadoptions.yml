@@ -12,9 +12,21 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.OutlineLoadOptions.$all
       - onenote.OneNote.Interfaces.OutlineLoadOptions.id
       - onenote.OneNote.Interfaces.OutlineLoadOptions.pageContent
       - onenote.OneNote.Interfaces.OutlineLoadOptions.paragraphs
+  - uid: onenote.OneNote.Interfaces.OutlineLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.OutlineLoadOptions.id
     summary: |-
       Gets the ID of the Outline object. Read-only.

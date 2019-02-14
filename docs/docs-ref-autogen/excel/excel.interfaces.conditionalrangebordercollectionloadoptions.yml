@@ -12,9 +12,21 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions.$all
       - excel.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions.color
       - excel.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions.sideIndex
       - excel.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions.style
+  - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions.color
     summary: >-
       For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form \#RRGGBB

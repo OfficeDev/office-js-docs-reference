@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.StyleCollectionLoadOptions.$all
       - excel_release.Excel.Interfaces.StyleCollectionLoadOptions.autoIndent
       - excel_release.Excel.Interfaces.StyleCollectionLoadOptions.borders
       - excel_release.Excel.Interfaces.StyleCollectionLoadOptions.builtIn
@@ -35,6 +36,17 @@ items:
       - excel_release.Excel.Interfaces.StyleCollectionLoadOptions.textOrientation
       - excel_release.Excel.Interfaces.StyleCollectionLoadOptions.verticalAlignment
       - excel_release.Excel.Interfaces.StyleCollectionLoadOptions.wrapText
+  - uid: excel_release.Excel.Interfaces.StyleCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.StyleCollectionLoadOptions.autoIndent
     summary: >-
       For EACH ITEM in the collection: Indicates if text is automatically indented when the text alignment in a cell is

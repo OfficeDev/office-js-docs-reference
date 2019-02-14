@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: onenote.OneNote.Interfaces.InkStrokeCollectionUpdateData
-    summary: 'An interface for updating data on the InkStrokeCollection object, for use in "inkStrokeCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the InkStrokeCollection object, for use in "inkStrokeCollection.set(<!-- -->{
+      ... }<!-- -->)".
     name: OneNote.Interfaces.InkStrokeCollectionUpdateData
     fullName: OneNote.Interfaces.InkStrokeCollectionUpdateData
     langs:

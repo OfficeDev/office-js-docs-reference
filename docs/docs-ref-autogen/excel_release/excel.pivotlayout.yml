@@ -22,6 +22,10 @@ items:
       - excel_release.Excel.PivotLayout.getRowLabelRange
       - excel_release.Excel.PivotLayout.layoutType
       - excel_release.Excel.PivotLayout.load
+      - excel_release.Excel.PivotLayout.load_1
+      - excel_release.Excel.PivotLayout.load_2
+      - excel_release.Excel.PivotLayout.set
+      - excel_release.Excel.PivotLayout.set_1
       - excel_release.Excel.PivotLayout.showColumnGrandTotals
       - excel_release.Excel.PivotLayout.showRowGrandTotals
       - excel_release.Excel.PivotLayout.subtotalLocation
@@ -46,7 +50,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getColumnLabelRange()
-    fullName: getColumnLabelRange
+    fullName: getColumnLabelRange()
     langs:
       - typeScript
     type: method
@@ -62,7 +66,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getDataBodyRange()
-    fullName: getDataBodyRange
+    fullName: getDataBodyRange()
     langs:
       - typeScript
     type: method
@@ -71,14 +75,35 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+              // the layout controls the ranges used by the PivotTable
+              const range = pivotTable.layout.getDataBodyRange();
+
+              // get all the data hierarchy totals
+              const grandTotalRange = range.getLastRow();
+              grandTotalRange.load("address");
+              await context.sync();
+              
+              // use the wholesale and farm sale totals to make a final sum
+              const masterTotalRange = context.workbook.worksheets.getActiveWorksheet().getRange("B27:C27");
+              masterTotalRange.formulas = [["All Crates", "=SUM(" + grandTotalRange.address + ")"]];
+              await context.sync();
+          });
+          ```
   - uid: excel_release.Excel.PivotLayout.getFilterAxisRange
     summary: |-
       Returns the range of the PivotTable's filter area.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getFilterAxisRange()
-    fullName: getFilterAxisRange
+    fullName: getFilterAxisRange()
     langs:
       - typeScript
     type: method
@@ -94,7 +119,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
-    fullName: getRange
+    fullName: getRange()
     langs:
       - typeScript
     type: method
@@ -110,7 +135,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRowLabelRange()
-    fullName: getRowLabelRange
+    fullName: getRowLabelRange()
     langs:
       - typeScript
     type: method
@@ -145,6 +170,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.PivotLayout` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.PivotLayout` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -156,7 +185,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -168,9 +197,99 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - excel.Excel.Interfaces.PivotLayoutLoadOptions
+  - uid: excel_release.Excel.PivotLayout.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PivotLayout;'
+      return:
+        type:
+          - excel.Excel.PivotLayout
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.PivotLayout.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotLayout;'
+      return:
+        type:
+          - excel.Excel.PivotLayout
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: excel_release.Excel.PivotLayout.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.PivotLayout): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.PivotLayoutUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.PivotLayoutUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel_release.Excel.PivotLayout.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.PivotLayout): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.PivotLayout
   - uid: excel_release.Excel.PivotLayout.showColumnGrandTotals
     summary: |-
       True if the PivotTable report shows grand totals for columns.
@@ -226,7 +345,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.PivotLayoutData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

@@ -21,6 +21,8 @@ items:
       - excel_release.Excel.Binding.getText
       - excel_release.Excel.Binding.id
       - excel_release.Excel.Binding.load
+      - excel_release.Excel.Binding.load_1
+      - excel_release.Excel.Binding.load_2
       - excel_release.Excel.Binding.onDataChanged
       - excel_release.Excel.Binding.onSelectionChanged
       - excel_release.Excel.Binding.toJSON
@@ -45,7 +47,7 @@ items:
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -61,7 +63,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
-    fullName: getRange
+    fullName: getRange()
     langs:
       - typeScript
     type: method
@@ -70,14 +72,32 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var binding = ctx.workbook.bindings.getItemAt(0);
+              var range = binding.getRange();
+              range.load('cellCount');
+              return ctx.sync().then(function() {
+                  console.log(range.cellCount);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: excel_release.Excel.Binding.getTable
     summary: |-
       Returns the table represented by the binding. Will throw an error if binding is not of the correct type.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getTable()
-    fullName: getTable
+    fullName: getTable()
     langs:
       - typeScript
     type: method
@@ -86,14 +106,32 @@ items:
       return:
         type:
           - excel.Excel.Table
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var binding = ctx.workbook.bindings.getItemAt(0);
+              var table = binding.getTable();
+              table.load('name');
+              return ctx.sync().then(function() {
+                      console.log(table.name);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: excel_release.Excel.Binding.getText
     summary: |-
       Returns the text represented by the binding. Will throw an error if binding is not of the correct type.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getText()
-    fullName: getText
+    fullName: getText()
     langs:
       - typeScript
     type: method
@@ -102,7 +140,25 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var binding = ctx.workbook.bindings.getItemAt(0);
+              var text = binding.getText();
+              binding.load('text');
+              return ctx.sync().then(function() {
+                  console.log(text);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: excel_release.Excel.Binding.id
     summary: |-
       Represents binding identifier. Read-only.
@@ -126,6 +182,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Binding` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Binding` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -137,7 +197,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -149,9 +209,68 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - excel.Excel.Interfaces.BindingLoadOptions
+  - uid: excel_release.Excel.Binding.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Binding;'
+      return:
+        type:
+          - excel.Excel.Binding
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var binding = ctx.workbook.bindings.getItemAt(0);
+              binding.load('type');
+              return ctx.sync().then(function() {
+                  console.log(binding.type);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.Binding.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Binding;'
+      return:
+        type:
+          - excel.Excel.Binding
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel_release.Excel.Binding.onDataChanged
     summary: |-
       Occurs when data or formatting within the binding is changed.
@@ -167,6 +286,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");    
+              const salesTable = sheet.tables.getItem("SalesTable");
+              const salesByQuarterBinding = context.workbook.bindings.add(salesTable.getRange(), "Table", "SalesByQuarter");
+              salesByQuarterBinding.onDataChanged.add(onSalesDataChanged);
+
+              console.log("The data changed handler is registered.");
+
+              await context.sync();
+          });
+          ```
   - uid: excel_release.Excel.Binding.onSelectionChanged
     summary: |-
       Occurs when the selected content in the binding is changed.
@@ -190,7 +325,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.BindingData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

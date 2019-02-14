@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.TableData
-    summary: 'Represents the data in a table or a [Office.TableBinding](xref:office.Office.TableBinding)<!-- -->.'
+    summary: 'Represents the data in a table or an [Office.TableBinding](xref:office.Office.TableBinding)<!-- -->.'
     remarks: |-
       <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
 
@@ -13,13 +13,13 @@ items:
     type: class
     package: office
     children:
-      - office.Office.TableData.constructor
+      - office.Office.TableData.(constructor)
+      - office.Office.TableData.(constructor)_1
       - office.Office.TableData.headers
       - office.Office.TableData.rows
-  - uid: office.Office.TableData.constructor
-    summary: 'Constructs a new instance of the [TableData](xref:office.Office.TableData) class'
-    name: 'constructor(rows, headers)'
-    fullName: constructor
+  - uid: office.Office.TableData.(constructor)
+    name: '(constructor)(rows, headers)'
+    fullName: '(constructor)(rows, headers)'
     langs:
       - typeScript
     type: constructor
@@ -34,6 +34,14 @@ items:
           description: ''
           type:
             - 'any[]'
+  - uid: office.Office.TableData.(constructor)_1
+    name: (constructor)()
+    fullName: (constructor)()
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: constructor();
   - uid: office.Office.TableData.headers
     summary: Gets or sets the headers of the table.
     remarks: >-

@@ -12,6 +12,7 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.PageCollectionLoadOptions.$all
       - onenote.OneNote.Interfaces.PageCollectionLoadOptions.classNotebookPageSource
       - onenote.OneNote.Interfaces.PageCollectionLoadOptions.clientUrl
       - onenote.OneNote.Interfaces.PageCollectionLoadOptions.contents
@@ -21,6 +22,17 @@ items:
       - onenote.OneNote.Interfaces.PageCollectionLoadOptions.parentSection
       - onenote.OneNote.Interfaces.PageCollectionLoadOptions.title
       - onenote.OneNote.Interfaces.PageCollectionLoadOptions.webUrl
+  - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.classNotebookPageSource
     summary: |-
       For EACH ITEM in the collection: Gets the ClassNotebookPageSource to the page.

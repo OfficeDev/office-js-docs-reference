@@ -24,6 +24,8 @@ items:
       - excel.Excel.TableScopedCollection.getItem
       - excel.Excel.TableScopedCollection.items
       - excel.Excel.TableScopedCollection.load
+      - excel.Excel.TableScopedCollection.load_1
+      - excel.Excel.TableScopedCollection.load_2
       - excel.Excel.TableScopedCollection.toJSON
   - uid: excel.Excel.TableScopedCollection.context
     summary: >-
@@ -49,7 +51,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -69,7 +71,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getFirst()
-    fullName: getFirst
+    fullName: getFirst()
     langs:
       - typeScript
     type: method
@@ -88,7 +90,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItem(key)
-    fullName: getItem
+    fullName: getItem(key)
     langs:
       - typeScript
     type: method
@@ -124,6 +126,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.TableScopedCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.TableScopedCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -136,7 +142,7 @@ items:
       the specified number of items.
     isPreview: true
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -150,9 +156,48 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - Excel.Interfaces.TableScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.TableScopedCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.TableScopedCollection;'
+      return:
+        type:
+          - excel.Excel.TableScopedCollection
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.TableScopedCollection.load_2
+    isPreview: true
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.TableScopedCollection;'
+      return:
+        type:
+          - excel.Excel.TableScopedCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.TableScopedCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -162,7 +207,7 @@ items:
       "items" array with shallow copies of any loaded properties from the collection's items.
     isPreview: true
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

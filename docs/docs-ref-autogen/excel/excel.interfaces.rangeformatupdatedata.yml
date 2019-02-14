@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.RangeFormatUpdateData
-    summary: 'An interface for updating data on the RangeFormat object, for use in "rangeFormat.set({ ... })".'
+    summary: 'An interface for updating data on the RangeFormat object, for use in "rangeFormat.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.RangeFormatUpdateData
     fullName: Excel.Interfaces.RangeFormatUpdateData
     langs:

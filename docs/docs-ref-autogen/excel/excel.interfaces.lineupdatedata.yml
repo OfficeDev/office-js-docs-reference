@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.LineUpdateData
-    summary: 'An interface for updating data on the Line object, for use in "line.set({ ... })".'
+    summary: 'An interface for updating data on the Line object, for use in "line.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.LineUpdateData
     fullName: Excel.Interfaces.LineUpdateData
     langs:

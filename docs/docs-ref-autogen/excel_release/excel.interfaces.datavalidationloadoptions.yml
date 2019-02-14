@@ -12,12 +12,24 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.DataValidationLoadOptions.$all
       - excel_release.Excel.Interfaces.DataValidationLoadOptions.errorAlert
       - excel_release.Excel.Interfaces.DataValidationLoadOptions.ignoreBlanks
       - excel_release.Excel.Interfaces.DataValidationLoadOptions.prompt
       - excel_release.Excel.Interfaces.DataValidationLoadOptions.rule
       - excel_release.Excel.Interfaces.DataValidationLoadOptions.type
       - excel_release.Excel.Interfaces.DataValidationLoadOptions.valid
+  - uid: excel_release.Excel.Interfaces.DataValidationLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.DataValidationLoadOptions.errorAlert
     summary: |-
       Error alert when user enters invalid data.

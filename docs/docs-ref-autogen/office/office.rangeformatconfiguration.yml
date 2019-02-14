@@ -21,7 +21,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'cells: Office.Table | RangeCoordinates;'
+      content: 'cells: Office.Table | RangeCoordinates'
       return:
         type:
           - Office.Table | RangeCoordinates
@@ -33,7 +33,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'format: object;'
+      content: 'format: object'
       return:
         type:
           - object

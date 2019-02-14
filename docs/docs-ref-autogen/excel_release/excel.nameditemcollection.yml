@@ -24,6 +24,8 @@ items:
       - excel_release.Excel.NamedItemCollection.getItemOrNullObject
       - excel_release.Excel.NamedItemCollection.items
       - excel_release.Excel.NamedItemCollection.load
+      - excel_release.Excel.NamedItemCollection.load_1
+      - excel_release.Excel.NamedItemCollection.load_2
       - excel_release.Excel.NamedItemCollection.toJSON
   - uid: excel_release.Excel.NamedItemCollection.add
     summary: |-
@@ -31,7 +33,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(name, reference, comment)'
-    fullName: add
+    fullName: 'add(name, reference, comment)'
     langs:
       - typeScript
     type: method
@@ -40,7 +42,21 @@ items:
       return:
         type:
           - excel.Excel.NamedItem
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const headerRange = sheet.getRange("A1:D1");
+
+              sheet.names.add("ExpensesHeader", headerRange);
+              const namedItems = sheet.names.load("name, type");
+
+              await context.sync();
+          });
+          ```
       parameters:
         - id: name
           description: The name of the named item.
@@ -60,7 +76,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'addFormulaLocal(name, formula, comment)'
-    fullName: addFormulaLocal
+    fullName: 'addFormulaLocal(name, formula, comment)'
     langs:
       - typeScript
     type: method
@@ -103,7 +119,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -119,7 +135,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
-    fullName: getItem
+    fullName: getItem(name)
     langs:
       - typeScript
     type: method
@@ -128,7 +144,25 @@ items:
       return:
         type:
           - excel.Excel.NamedItem
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var sheetName = 'Sheet1';
+              var nameditem = ctx.workbook.names.getItem(sheetName);
+              nameditem.load('type');
+              return ctx.sync().then(function() {
+                      console.log(nameditem.type);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: name
           description: Nameditem name.
@@ -140,7 +174,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
-    fullName: getItemOrNullObject
+    fullName: getItemOrNullObject(name)
     langs:
       - typeScript
     type: method
@@ -175,6 +209,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.NamedItemCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.NamedItemCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -186,7 +224,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -200,9 +238,67 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel_release.Excel.NamedItemCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.NamedItemCollection;'
+      return:
+        type:
+          - excel.Excel.NamedItemCollection
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var nameditems = ctx.workbook.names;
+              nameditems.load('items');
+              return ctx.sync().then(function() {
+                  for (var i = 0; i < nameditems.items.length; i++)
+                  {
+                      console.log(nameditems.items[i].name);
+                      console.log(nameditems.items[i].index);
+                  }
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.NamedItemCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.NamedItemCollection;'
+      return:
+        type:
+          - excel.Excel.NamedItemCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel_release.Excel.NamedItemCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -211,7 +307,7 @@ items:
       returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemCollectionData`<!-- -->) that contains an
       "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

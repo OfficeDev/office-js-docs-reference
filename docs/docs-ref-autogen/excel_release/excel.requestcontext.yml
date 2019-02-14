@@ -14,14 +14,13 @@ items:
       - office.OfficeExtension.ClientRequestContext
     package: excel_release
     children:
-      - excel_release.Excel.RequestContext.constructor
+      - excel_release.Excel.RequestContext.(constructor)
       - excel_release.Excel.RequestContext.application
       - excel_release.Excel.RequestContext.runtime
       - excel_release.Excel.RequestContext.workbook
-  - uid: excel_release.Excel.RequestContext.constructor
-    summary: 'Constructs a new instance of the [RequestContext](xref:excel_release.Excel.RequestContext) class'
-    name: constructor(url)
-    fullName: constructor
+  - uid: excel_release.Excel.RequestContext.(constructor)
+    name: (constructor)(url)
+    fullName: (constructor)(url)
     langs:
       - typeScript
     type: constructor

@@ -21,6 +21,8 @@ items:
       - excel.Excel.RowColumnPivotHierarchyCollection.getItemOrNullObject
       - excel.Excel.RowColumnPivotHierarchyCollection.items
       - excel.Excel.RowColumnPivotHierarchyCollection.load
+      - excel.Excel.RowColumnPivotHierarchyCollection.load_1
+      - excel.Excel.RowColumnPivotHierarchyCollection.load_2
       - excel.Excel.RowColumnPivotHierarchyCollection.remove
       - excel.Excel.RowColumnPivotHierarchyCollection.toJSON
   - uid: excel.Excel.RowColumnPivotHierarchyCollection.add
@@ -31,7 +33,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(pivotHierarchy)
-    fullName: add
+    fullName: add(pivotHierarchy)
     langs:
       - typeScript
     type: method
@@ -66,7 +68,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -82,7 +84,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
-    fullName: getItem
+    fullName: getItem(name)
     langs:
       - typeScript
     type: method
@@ -103,7 +105,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
-    fullName: getItemOrNullObject
+    fullName: getItemOrNullObject(name)
     langs:
       - typeScript
     type: method
@@ -138,6 +140,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.RowColumnPivotHierarchyCollection` - Where option is a comma-delimited
+      string or an array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.RowColumnPivotHierarchyCollection` - Where
       option.select is a comma-delimited string that specifies the properties to load, and options.expand is a
       comma-delimited string that specifies the navigation properties to load.
@@ -149,7 +155,7 @@ items:
       Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is
       specified, the result set will start after skipping the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -163,16 +169,53 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.RowColumnPivotHierarchyCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.RowColumnPivotHierarchyCollection;'
+      return:
+        type:
+          - excel.Excel.RowColumnPivotHierarchyCollection
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.RowColumnPivotHierarchyCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.RowColumnPivotHierarchyCollection;'
+      return:
+        type:
+          - excel.Excel.RowColumnPivotHierarchyCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.RowColumnPivotHierarchyCollection.remove
     summary: |-
       Removes the PivotHierarchy from the current axis.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: remove(rowColumnPivotHierarchy)
-    fullName: remove
+    fullName: remove(rowColumnPivotHierarchy)
     langs:
       - typeScript
     type: method
@@ -196,7 +239,7 @@ items:
       `Excel.Interfaces.RowColumnPivotHierarchyCollectionData`<!-- -->) that contains an "items" array with shallow
       copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

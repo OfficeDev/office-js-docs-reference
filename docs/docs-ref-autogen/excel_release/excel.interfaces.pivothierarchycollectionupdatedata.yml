@@ -2,8 +2,8 @@
 items:
   - uid: excel_release.Excel.Interfaces.PivotHierarchyCollectionUpdateData
     summary: >-
-      An interface for updating data on the PivotHierarchyCollection object, for use in "pivotHierarchyCollection.set({
-      ... })".
+      An interface for updating data on the PivotHierarchyCollection object, for use in
+      "pivotHierarchyCollection.set(<!-- -->{ ... }<!-- -->)".
     name: Excel.Interfaces.PivotHierarchyCollectionUpdateData
     fullName: Excel.Interfaces.PivotHierarchyCollectionUpdateData
     langs:

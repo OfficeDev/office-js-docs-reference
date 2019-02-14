@@ -12,10 +12,22 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.$all
       - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.id
       - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.languageId
       - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.paragraph
       - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.wordAlternates
+  - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the InkWord object. Read-only.

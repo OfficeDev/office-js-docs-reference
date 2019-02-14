@@ -12,7 +12,19 @@ items:
     type: interface
     package: visio
     children:
+      - visio.Visio.Interfaces.ShapeViewLoadOptions.$all
       - visio.Visio.Interfaces.ShapeViewLoadOptions.highlight
+  - uid: visio.Visio.Interfaces.ShapeViewLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: visio.Visio.Interfaces.ShapeViewLoadOptions.highlight
     summary: |-
       Represents the highlight around the shape.

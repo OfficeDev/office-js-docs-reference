@@ -12,9 +12,21 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.TableSortLoadOptions.$all
       - excel.Excel.Interfaces.TableSortLoadOptions.fields
       - excel.Excel.Interfaces.TableSortLoadOptions.matchCase
       - excel.Excel.Interfaces.TableSortLoadOptions.method
+  - uid: excel.Excel.Interfaces.TableSortLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.TableSortLoadOptions.fields
     summary: |-
       Represents the current conditions used to last sort the table. Read-only.

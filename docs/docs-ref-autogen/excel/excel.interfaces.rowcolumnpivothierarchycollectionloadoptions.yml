@@ -12,9 +12,21 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions.$all
       - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions.id
       - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions.name
       - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions.position
+  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: Id of the RowColumnPivotHierarchy.

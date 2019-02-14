@@ -15,6 +15,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.SlicerLoadOptions.$all
       - excel.Excel.Interfaces.SlicerLoadOptions.caption
       - excel.Excel.Interfaces.SlicerLoadOptions.height
       - excel.Excel.Interfaces.SlicerLoadOptions.id
@@ -27,6 +28,18 @@ items:
       - excel.Excel.Interfaces.SlicerLoadOptions.top
       - excel.Excel.Interfaces.SlicerLoadOptions.width
       - excel.Excel.Interfaces.SlicerLoadOptions.worksheet
+  - uid: excel.Excel.Interfaces.SlicerLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.caption
     summary: >-
       Represents the caption of slicer.

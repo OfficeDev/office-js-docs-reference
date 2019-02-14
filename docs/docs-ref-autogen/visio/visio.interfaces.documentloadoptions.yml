@@ -12,8 +12,20 @@ items:
     type: interface
     package: visio
     children:
+      - visio.Visio.Interfaces.DocumentLoadOptions.$all
       - visio.Visio.Interfaces.DocumentLoadOptions.application
       - visio.Visio.Interfaces.DocumentLoadOptions.view
+  - uid: visio.Visio.Interfaces.DocumentLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: visio.Visio.Interfaces.DocumentLoadOptions.application
     summary: |-
       Represents a Visio application instance that contains this document.

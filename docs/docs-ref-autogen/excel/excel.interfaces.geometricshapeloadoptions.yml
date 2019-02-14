@@ -16,8 +16,21 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.GeometricShapeLoadOptions.$all
       - excel.Excel.Interfaces.GeometricShapeLoadOptions.id
       - excel.Excel.Interfaces.GeometricShapeLoadOptions.shape
+  - uid: excel.Excel.Interfaces.GeometricShapeLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.GeometricShapeLoadOptions.id
     summary: >-
       Represents the shape identifier. Read-only.

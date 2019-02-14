@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: visio.Visio.Interfaces.PageViewUpdateData
-    summary: 'An interface for updating data on the PageView object, for use in "pageView.set({ ... })".'
+    summary: 'An interface for updating data on the PageView object, for use in "pageView.set(<!-- -->{ ... }<!-- -->)".'
     name: Visio.Interfaces.PageViewUpdateData
     fullName: Visio.Interfaces.PageViewUpdateData
     langs:

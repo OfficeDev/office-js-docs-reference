@@ -3,7 +3,7 @@ items:
   - uid: excel_release.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
     summary: >-
       An interface for updating data on the ConditionalRangeBorderCollection object, for use in
-      "conditionalRangeBorderCollection.set({ ... })".
+      "conditionalRangeBorderCollection.set(<!-- -->{ ... }<!-- -->)".
     name: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
     fullName: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
     langs:

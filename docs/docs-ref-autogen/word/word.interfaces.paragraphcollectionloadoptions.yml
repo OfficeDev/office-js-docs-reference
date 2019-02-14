@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.$all
       - word.Word.Interfaces.ParagraphCollectionLoadOptions.alignment
       - word.Word.Interfaces.ParagraphCollectionLoadOptions.firstLineIndent
       - word.Word.Interfaces.ParagraphCollectionLoadOptions.font
@@ -40,6 +41,17 @@ items:
       - word.Word.Interfaces.ParagraphCollectionLoadOptions.styleBuiltIn
       - word.Word.Interfaces.ParagraphCollectionLoadOptions.tableNestingLevel
       - word.Word.Interfaces.ParagraphCollectionLoadOptions.text
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.alignment
     summary: >-
       For EACH ITEM in the collection: Gets or sets the alignment for a paragraph. The value can be 'left', 'centered',

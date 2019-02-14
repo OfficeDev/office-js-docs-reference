@@ -48,8 +48,8 @@ items:
       - excel_release.Excel.Functions.bin2Dec
       - excel_release.Excel.Functions.bin2Hex
       - excel_release.Excel.Functions.bin2Oct
-      - excel_release.Excel.Functions.binom_Dist
       - excel_release.Excel.Functions.binom_Dist_Range
+      - excel_release.Excel.Functions.binom_Dist
       - excel_release.Excel.Functions.binom_Inv
       - excel_release.Excel.Functions.bitand
       - excel_release.Excel.Functions.bitlshift
@@ -59,10 +59,10 @@ items:
       - excel_release.Excel.Functions.ceiling_Math
       - excel_release.Excel.Functions.ceiling_Precise
       - excel_release.Excel.Functions.char
-      - excel_release.Excel.Functions.chiSq_Dist
       - excel_release.Excel.Functions.chiSq_Dist_RT
-      - excel_release.Excel.Functions.chiSq_Inv
+      - excel_release.Excel.Functions.chiSq_Dist
       - excel_release.Excel.Functions.chiSq_Inv_RT
+      - excel_release.Excel.Functions.chiSq_Inv
       - excel_release.Excel.Functions.choose
       - excel_release.Excel.Functions.clean
       - excel_release.Excel.Functions.code
@@ -130,19 +130,19 @@ items:
       - excel_release.Excel.Functions.edate
       - excel_release.Excel.Functions.effect
       - excel_release.Excel.Functions.eoMonth
-      - excel_release.Excel.Functions.erf
       - excel_release.Excel.Functions.erf_Precise
-      - excel_release.Excel.Functions.erfC
+      - excel_release.Excel.Functions.erf
       - excel_release.Excel.Functions.erfC_Precise
+      - excel_release.Excel.Functions.erfC
       - excel_release.Excel.Functions.error_Type
       - excel_release.Excel.Functions.even
       - excel_release.Excel.Functions.exact
       - excel_release.Excel.Functions.exp
       - excel_release.Excel.Functions.expon_Dist
-      - excel_release.Excel.Functions.f_Dist
       - excel_release.Excel.Functions.f_Dist_RT
-      - excel_release.Excel.Functions.f_Inv
+      - excel_release.Excel.Functions.f_Dist
       - excel_release.Excel.Functions.f_Inv_RT
+      - excel_release.Excel.Functions.f_Inv
       - excel_release.Excel.Functions.fact
       - excel_release.Excel.Functions.factDouble
       - excel_release.Excel.Functions.false
@@ -155,11 +155,11 @@ items:
       - excel_release.Excel.Functions.floor_Precise
       - excel_release.Excel.Functions.fv
       - excel_release.Excel.Functions.fvschedule
-      - excel_release.Excel.Functions.gamma
       - excel_release.Excel.Functions.gamma_Dist
       - excel_release.Excel.Functions.gamma_Inv
-      - excel_release.Excel.Functions.gammaLn
+      - excel_release.Excel.Functions.gamma
       - excel_release.Excel.Functions.gammaLn_Precise
+      - excel_release.Excel.Functions.gammaLn
       - excel_release.Excel.Functions.gauss
       - excel_release.Excel.Functions.gcd
       - excel_release.Excel.Functions.geoMean
@@ -248,8 +248,8 @@ items:
       - excel_release.Excel.Functions.n
       - excel_release.Excel.Functions.na
       - excel_release.Excel.Functions.negBinom_Dist
-      - excel_release.Excel.Functions.networkDays
       - excel_release.Excel.Functions.networkDays_Intl
+      - excel_release.Excel.Functions.networkDays
       - excel_release.Excel.Functions.nominal
       - excel_release.Excel.Functions.norm_Dist
       - excel_release.Excel.Functions.norm_Inv
@@ -318,8 +318,8 @@ items:
       - excel_release.Excel.Functions.sign
       - excel_release.Excel.Functions.sin
       - excel_release.Excel.Functions.sinh
-      - excel_release.Excel.Functions.skew
       - excel_release.Excel.Functions.skew_p
+      - excel_release.Excel.Functions.skew
       - excel_release.Excel.Functions.sln
       - excel_release.Excel.Functions.small
       - excel_release.Excel.Functions.sqrt
@@ -336,12 +336,12 @@ items:
       - excel_release.Excel.Functions.sumIfs
       - excel_release.Excel.Functions.sumSq
       - excel_release.Excel.Functions.syd
-      - excel_release.Excel.Functions.t
-      - excel_release.Excel.Functions.t_Dist
       - excel_release.Excel.Functions.t_Dist_2T
       - excel_release.Excel.Functions.t_Dist_RT
-      - excel_release.Excel.Functions.t_Inv
+      - excel_release.Excel.Functions.t_Dist
       - excel_release.Excel.Functions.t_Inv_2T
+      - excel_release.Excel.Functions.t_Inv
+      - excel_release.Excel.Functions.t
       - excel_release.Excel.Functions.tan
       - excel_release.Excel.Functions.tanh
       - excel_release.Excel.Functions.tbillEq
@@ -371,8 +371,8 @@ items:
       - excel_release.Excel.Functions.weekday
       - excel_release.Excel.Functions.weekNum
       - excel_release.Excel.Functions.weibull_Dist
-      - excel_release.Excel.Functions.workDay
       - excel_release.Excel.Functions.workDay_Intl
+      - excel_release.Excel.Functions.workDay
       - excel_release.Excel.Functions.xirr
       - excel_release.Excel.Functions.xnpv
       - excel_release.Excel.Functions.xor
@@ -388,7 +388,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: abs(number)
-    fullName: abs
+    fullName: abs(number)
     langs:
       - typeScript
     type: method
@@ -409,7 +409,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'accrInt(issue, firstInterest, settlement, rate, par, frequency, basis, calcMethod)'
-    fullName: accrInt
+    fullName: 'accrInt(issue, firstInterest, settlement, rate, par, frequency, basis, calcMethod)'
     langs:
       - typeScript
     type: method
@@ -468,7 +468,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'accrIntM(issue, settlement, rate, par, basis)'
-    fullName: accrIntM
+    fullName: 'accrIntM(issue, settlement, rate, par, basis)'
     langs:
       - typeScript
     type: method
@@ -512,7 +512,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: acos(number)
-    fullName: acos
+    fullName: acos(number)
     langs:
       - typeScript
     type: method
@@ -533,7 +533,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: acosh(number)
-    fullName: acosh
+    fullName: acosh(number)
     langs:
       - typeScript
     type: method
@@ -554,7 +554,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: acot(number)
-    fullName: acot
+    fullName: acot(number)
     langs:
       - typeScript
     type: method
@@ -575,7 +575,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: acoth(number)
-    fullName: acoth
+    fullName: acoth(number)
     langs:
       - typeScript
     type: method
@@ -596,7 +596,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'amorDegrc(cost, datePurchased, firstPeriod, salvage, period, rate, basis)'
-    fullName: amorDegrc
+    fullName: 'amorDegrc(cost, datePurchased, firstPeriod, salvage, period, rate, basis)'
     langs:
       - typeScript
     type: method
@@ -648,7 +648,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'amorLinc(cost, datePurchased, firstPeriod, salvage, period, rate, basis)'
-    fullName: amorLinc
+    fullName: 'amorLinc(cost, datePurchased, firstPeriod, salvage, period, rate, basis)'
     langs:
       - typeScript
     type: method
@@ -700,7 +700,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: and(values)
-    fullName: and
+    fullName: and(values)
     langs:
       - typeScript
     type: method
@@ -725,7 +725,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: arabic(text)
-    fullName: arabic
+    fullName: arabic(text)
     langs:
       - typeScript
     type: method
@@ -746,7 +746,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: areas(reference)
-    fullName: areas
+    fullName: areas(reference)
     langs:
       - typeScript
     type: method
@@ -769,7 +769,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: asc(text)
-    fullName: asc
+    fullName: asc(text)
     langs:
       - typeScript
     type: method
@@ -790,7 +790,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: asin(number)
-    fullName: asin
+    fullName: asin(number)
     langs:
       - typeScript
     type: method
@@ -811,7 +811,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: asinh(number)
-    fullName: asinh
+    fullName: asinh(number)
     langs:
       - typeScript
     type: method
@@ -832,7 +832,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: atan(number)
-    fullName: atan
+    fullName: atan(number)
     langs:
       - typeScript
     type: method
@@ -853,7 +853,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'atan2(xNum, yNum)'
-    fullName: atan2
+    fullName: 'atan2(xNum, yNum)'
     langs:
       - typeScript
     type: method
@@ -880,7 +880,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: atanh(number)
-    fullName: atanh
+    fullName: atanh(number)
     langs:
       - typeScript
     type: method
@@ -903,7 +903,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: aveDev(values)
-    fullName: aveDev
+    fullName: aveDev(values)
     langs:
       - typeScript
     type: method
@@ -930,7 +930,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: average(values)
-    fullName: average
+    fullName: average(values)
     langs:
       - typeScript
     type: method
@@ -955,7 +955,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: averageA(values)
-    fullName: averageA
+    fullName: averageA(values)
     langs:
       - typeScript
     type: method
@@ -978,7 +978,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'averageIf(range, criteria, averageRange)'
-    fullName: averageIf
+    fullName: 'averageIf(range, criteria, averageRange)'
     langs:
       - typeScript
     type: method
@@ -1012,7 +1012,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'averageIfs(averageRange, values)'
-    fullName: averageIfs
+    fullName: 'averageIfs(averageRange, values)'
     langs:
       - typeScript
     type: method
@@ -1043,7 +1043,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bahtText(number)
-    fullName: bahtText
+    fullName: bahtText(number)
     langs:
       - typeScript
     type: method
@@ -1066,7 +1066,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'base(number, radix, minLength)'
-    fullName: base
+    fullName: 'base(number, radix, minLength)'
     langs:
       - typeScript
     type: method
@@ -1098,7 +1098,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'besselI(x, n)'
-    fullName: besselI
+    fullName: 'besselI(x, n)'
     langs:
       - typeScript
     type: method
@@ -1125,7 +1125,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'besselJ(x, n)'
-    fullName: besselJ
+    fullName: 'besselJ(x, n)'
     langs:
       - typeScript
     type: method
@@ -1152,7 +1152,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'besselK(x, n)'
-    fullName: besselK
+    fullName: 'besselK(x, n)'
     langs:
       - typeScript
     type: method
@@ -1179,7 +1179,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'besselY(x, n)'
-    fullName: besselY
+    fullName: 'besselY(x, n)'
     langs:
       - typeScript
     type: method
@@ -1206,7 +1206,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'beta_Dist(x, alpha, beta, cumulative, A, B)'
-    fullName: beta_Dist
+    fullName: 'beta_Dist(x, alpha, beta, cumulative, A, B)'
     langs:
       - typeScript
     type: method
@@ -1254,7 +1254,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'beta_Inv(probability, alpha, beta, A, B)'
-    fullName: beta_Inv
+    fullName: 'beta_Inv(probability, alpha, beta, A, B)'
     langs:
       - typeScript
     type: method
@@ -1296,7 +1296,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bin2Dec(number)
-    fullName: bin2Dec
+    fullName: bin2Dec(number)
     langs:
       - typeScript
     type: method
@@ -1319,7 +1319,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'bin2Hex(number, places)'
-    fullName: bin2Hex
+    fullName: 'bin2Hex(number, places)'
     langs:
       - typeScript
     type: method
@@ -1347,7 +1347,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'bin2Oct(number, places)'
-    fullName: bin2Oct
+    fullName: 'bin2Oct(number, places)'
     langs:
       - typeScript
     type: method
@@ -1369,52 +1369,13 @@ items:
           description: Is the number of characters to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.binom_Dist
-    summary: |-
-      Returns the individual term binomial distribution probability.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'binom_Dist(numberS, trials, probabilityS, cumulative)'
-    fullName: binom_Dist
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        binom_Dist(numberS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, trials: number |
-        Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, probabilityS: number | Excel.Range |
-        Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference |
-        Excel.FunctionResult<any>): FunctionResult<number>;
-      return:
-        type:
-          - FunctionResult<number>
-        description: ''
-      parameters:
-        - id: numberS
-          description: Is the number of successes in trials.
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: trials
-          description: Is the number of independent trials.
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: probabilityS
-          description: Is the probability of success on each trial.
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: cumulative
-          description: >-
-            Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function,
-            use FALSE.
-          type:
-            - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.binom_Dist_Range
     summary: |-
       Returns the probability of a trial result using a binomial distribution.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'binom_Dist_Range(trials, probabilityS, numberS, numberS2)'
-    fullName: binom_Dist_Range
+    fullName: 'binom_Dist_Range(trials, probabilityS, numberS, numberS2)'
     langs:
       - typeScript
     type: method
@@ -1447,6 +1408,45 @@ items:
             numberS and numberS2.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+  - uid: excel_release.Excel.Functions.binom_Dist
+    summary: |-
+      Returns the individual term binomial distribution probability.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'binom_Dist(numberS, trials, probabilityS, cumulative)'
+    fullName: 'binom_Dist(numberS, trials, probabilityS, cumulative)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        binom_Dist(numberS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, trials: number |
+        Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, probabilityS: number | Excel.Range |
+        Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference |
+        Excel.FunctionResult<any>): FunctionResult<number>;
+      return:
+        type:
+          - FunctionResult<number>
+        description: ''
+      parameters:
+        - id: numberS
+          description: Is the number of successes in trials.
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: trials
+          description: Is the number of independent trials.
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: probabilityS
+          description: Is the probability of success on each trial.
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: cumulative
+          description: >-
+            Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function,
+            use FALSE.
+          type:
+            - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.binom_Inv
     summary: >-
       Returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion
@@ -1455,7 +1455,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'binom_Inv(trials, probabilityS, alpha)'
-    fullName: binom_Inv
+    fullName: 'binom_Inv(trials, probabilityS, alpha)'
     langs:
       - typeScript
     type: method
@@ -1487,7 +1487,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'bitand(number1, number2)'
-    fullName: bitand
+    fullName: 'bitand(number1, number2)'
     langs:
       - typeScript
     type: method
@@ -1514,7 +1514,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'bitlshift(number, shiftAmount)'
-    fullName: bitlshift
+    fullName: 'bitlshift(number, shiftAmount)'
     langs:
       - typeScript
     type: method
@@ -1541,7 +1541,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'bitor(number1, number2)'
-    fullName: bitor
+    fullName: 'bitor(number1, number2)'
     langs:
       - typeScript
     type: method
@@ -1568,7 +1568,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'bitrshift(number, shiftAmount)'
-    fullName: bitrshift
+    fullName: 'bitrshift(number, shiftAmount)'
     langs:
       - typeScript
     type: method
@@ -1595,7 +1595,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'bitxor(number1, number2)'
-    fullName: bitxor
+    fullName: 'bitxor(number1, number2)'
     langs:
       - typeScript
     type: method
@@ -1622,7 +1622,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'ceiling_Math(number, significance, mode)'
-    fullName: ceiling_Math
+    fullName: 'ceiling_Math(number, significance, mode)'
     langs:
       - typeScript
     type: method
@@ -1654,7 +1654,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'ceiling_Precise(number, significance)'
-    fullName: ceiling_Precise
+    fullName: 'ceiling_Precise(number, significance)'
     langs:
       - typeScript
     type: method
@@ -1681,7 +1681,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: char(number)
-    fullName: char
+    fullName: char(number)
     langs:
       - typeScript
     type: method
@@ -1696,13 +1696,40 @@ items:
           description: Is a number between 1 and 255 specifying which character you want.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+  - uid: excel_release.Excel.Functions.chiSq_Dist_RT
+    summary: |-
+      Returns the right-tailed probability of the chi-squared distribution.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'chiSq_Dist_RT(x, degFreedom)'
+    fullName: 'chiSq_Dist_RT(x, degFreedom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        chiSq_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number |
+        Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
+      return:
+        type:
+          - FunctionResult<number>
+        description: ''
+      parameters:
+        - id: x
+          description: 'Is the value at which you want to evaluate the distribution, a nonnegative number.'
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: degFreedom
+          description: 'Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.chiSq_Dist
     summary: |-
       Returns the left-tailed probability of the chi-squared distribution.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'chiSq_Dist(x, degFreedom, cumulative)'
-    fullName: chiSq_Dist
+    fullName: 'chiSq_Dist(x, degFreedom, cumulative)'
     langs:
       - typeScript
     type: method
@@ -1730,67 +1757,13 @@ items:
             density function = FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.chiSq_Dist_RT
-    summary: |-
-      Returns the right-tailed probability of the chi-squared distribution.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'chiSq_Dist_RT(x, degFreedom)'
-    fullName: chiSq_Dist_RT
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        chiSq_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number |
-        Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
-      return:
-        type:
-          - FunctionResult<number>
-        description: ''
-      parameters:
-        - id: x
-          description: 'Is the value at which you want to evaluate the distribution, a nonnegative number.'
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: degFreedom
-          description: 'Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.chiSq_Inv
-    summary: |-
-      Returns the inverse of the left-tailed probability of the chi-squared distribution.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'chiSq_Inv(probability, degFreedom)'
-    fullName: chiSq_Inv
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        chiSq_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom:
-        number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
-      return:
-        type:
-          - FunctionResult<number>
-        description: ''
-      parameters:
-        - id: probability
-          description: 'Is a probability associated with the chi-squared distribution, a value between 0 and 1 inclusive.'
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: degFreedom
-          description: 'Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.chiSq_Inv_RT
     summary: |-
       Returns the inverse of the right-tailed probability of the chi-squared distribution.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'chiSq_Inv_RT(probability, degFreedom)'
-    fullName: chiSq_Inv_RT
+    fullName: 'chiSq_Inv_RT(probability, degFreedom)'
     langs:
       - typeScript
     type: method
@@ -1811,13 +1784,40 @@ items:
           description: 'Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+  - uid: excel_release.Excel.Functions.chiSq_Inv
+    summary: |-
+      Returns the inverse of the left-tailed probability of the chi-squared distribution.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'chiSq_Inv(probability, degFreedom)'
+    fullName: 'chiSq_Inv(probability, degFreedom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        chiSq_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom:
+        number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
+      return:
+        type:
+          - FunctionResult<number>
+        description: ''
+      parameters:
+        - id: probability
+          description: 'Is a probability associated with the chi-squared distribution, a value between 0 and 1 inclusive.'
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: degFreedom
+          description: 'Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.choose
     summary: |-
       Chooses a value or action to perform from a list of values, based on an index number.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'choose(indexNum, values)'
-    fullName: choose
+    fullName: 'choose(indexNum, values)'
     langs:
       - typeScript
     type: method
@@ -1849,7 +1849,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clean(text)
-    fullName: clean
+    fullName: clean(text)
     langs:
       - typeScript
     type: method
@@ -1870,7 +1870,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: code(text)
-    fullName: code
+    fullName: code(text)
     langs:
       - typeScript
     type: method
@@ -1891,7 +1891,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columns(array)
-    fullName: columns
+    fullName: columns(array)
     langs:
       - typeScript
     type: method
@@ -1912,7 +1912,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'combin(number, numberChosen)'
-    fullName: combin
+    fullName: 'combin(number, numberChosen)'
     langs:
       - typeScript
     type: method
@@ -1939,7 +1939,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'combina(number, numberChosen)'
-    fullName: combina
+    fullName: 'combina(number, numberChosen)'
     langs:
       - typeScript
     type: method
@@ -1966,7 +1966,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'complex(realNum, iNum, suffix)'
-    fullName: complex
+    fullName: 'complex(realNum, iNum, suffix)'
     langs:
       - typeScript
     type: method
@@ -1999,7 +1999,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: concatenate(values)
-    fullName: concatenate
+    fullName: concatenate(values)
     langs:
       - typeScript
     type: method
@@ -2024,7 +2024,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'confidence_Norm(alpha, standardDev, size)'
-    fullName: confidence_Norm
+    fullName: 'confidence_Norm(alpha, standardDev, size)'
     langs:
       - typeScript
     type: method
@@ -2058,7 +2058,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'confidence_T(alpha, standardDev, size)'
-    fullName: confidence_T
+    fullName: 'confidence_T(alpha, standardDev, size)'
     langs:
       - typeScript
     type: method
@@ -2106,7 +2106,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'convert(number, fromUnit, toUnit)'
-    fullName: convert
+    fullName: 'convert(number, fromUnit, toUnit)'
     langs:
       - typeScript
     type: method
@@ -2139,7 +2139,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cos(number)
-    fullName: cos
+    fullName: cos(number)
     langs:
       - typeScript
     type: method
@@ -2160,7 +2160,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cosh(number)
-    fullName: cosh
+    fullName: cosh(number)
     langs:
       - typeScript
     type: method
@@ -2181,7 +2181,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cot(number)
-    fullName: cot
+    fullName: cot(number)
     langs:
       - typeScript
     type: method
@@ -2202,7 +2202,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: coth(number)
-    fullName: coth
+    fullName: coth(number)
     langs:
       - typeScript
     type: method
@@ -2223,7 +2223,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count(values)
-    fullName: count
+    fullName: count(values)
     langs:
       - typeScript
     type: method
@@ -2248,7 +2248,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: countA(values)
-    fullName: countA
+    fullName: countA(values)
     langs:
       - typeScript
     type: method
@@ -2273,7 +2273,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: countBlank(range)
-    fullName: countBlank
+    fullName: countBlank(range)
     langs:
       - typeScript
     type: method
@@ -2294,7 +2294,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'countIf(range, criteria)'
-    fullName: countIf
+    fullName: 'countIf(range, criteria)'
     langs:
       - typeScript
     type: method
@@ -2321,7 +2321,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: countIfs(values)
-    fullName: countIfs
+    fullName: countIfs(values)
     langs:
       - typeScript
     type: method
@@ -2347,7 +2347,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'coupDayBs(settlement, maturity, frequency, basis)'
-    fullName: coupDayBs
+    fullName: 'coupDayBs(settlement, maturity, frequency, basis)'
     langs:
       - typeScript
     type: method
@@ -2385,7 +2385,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'coupDays(settlement, maturity, frequency, basis)'
-    fullName: coupDays
+    fullName: 'coupDays(settlement, maturity, frequency, basis)'
     langs:
       - typeScript
     type: method
@@ -2422,7 +2422,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'coupDaysNc(settlement, maturity, frequency, basis)'
-    fullName: coupDaysNc
+    fullName: 'coupDaysNc(settlement, maturity, frequency, basis)'
     langs:
       - typeScript
     type: method
@@ -2460,7 +2460,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'coupNcd(settlement, maturity, frequency, basis)'
-    fullName: coupNcd
+    fullName: 'coupNcd(settlement, maturity, frequency, basis)'
     langs:
       - typeScript
     type: method
@@ -2497,7 +2497,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'coupNum(settlement, maturity, frequency, basis)'
-    fullName: coupNum
+    fullName: 'coupNum(settlement, maturity, frequency, basis)'
     langs:
       - typeScript
     type: method
@@ -2534,7 +2534,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'coupPcd(settlement, maturity, frequency, basis)'
-    fullName: coupPcd
+    fullName: 'coupPcd(settlement, maturity, frequency, basis)'
     langs:
       - typeScript
     type: method
@@ -2571,7 +2571,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: csc(number)
-    fullName: csc
+    fullName: csc(number)
     langs:
       - typeScript
     type: method
@@ -2592,7 +2592,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: csch(number)
-    fullName: csch
+    fullName: csch(number)
     langs:
       - typeScript
     type: method
@@ -2613,7 +2613,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'cumIPmt(rate, nper, pv, startPeriod, endPeriod, type)'
-    fullName: cumIPmt
+    fullName: 'cumIPmt(rate, nper, pv, startPeriod, endPeriod, type)'
     langs:
       - typeScript
     type: method
@@ -2660,7 +2660,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'cumPrinc(rate, nper, pv, startPeriod, endPeriod, type)'
-    fullName: cumPrinc
+    fullName: 'cumPrinc(rate, nper, pv, startPeriod, endPeriod, type)'
     langs:
       - typeScript
     type: method
@@ -2707,7 +2707,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'date(year, month, day)'
-    fullName: date
+    fullName: 'date(year, month, day)'
     langs:
       - typeScript
     type: method
@@ -2739,7 +2739,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: datevalue(dateText)
-    fullName: datevalue
+    fullName: datevalue(dateText)
     langs:
       - typeScript
     type: method
@@ -2764,7 +2764,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'daverage(database, field, criteria)'
-    fullName: daverage
+    fullName: 'daverage(database, field, criteria)'
     langs:
       - typeScript
     type: method
@@ -2800,7 +2800,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: day(serialNumber)
-    fullName: day
+    fullName: day(serialNumber)
     langs:
       - typeScript
     type: method
@@ -2823,7 +2823,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'days(endDate, startDate)'
-    fullName: days
+    fullName: 'days(endDate, startDate)'
     langs:
       - typeScript
     type: method
@@ -2850,7 +2850,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'days360(startDate, endDate, method)'
-    fullName: days360
+    fullName: 'days360(startDate, endDate, method)'
     langs:
       - typeScript
     type: method
@@ -2882,7 +2882,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'db(cost, salvage, life, period, month)'
-    fullName: db
+    fullName: 'db(cost, salvage, life, period, month)'
     langs:
       - typeScript
     type: method
@@ -2927,7 +2927,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dbcs(text)
-    fullName: dbcs
+    fullName: dbcs(text)
     langs:
       - typeScript
     type: method
@@ -2950,7 +2950,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dcount(database, field, criteria)'
-    fullName: dcount
+    fullName: 'dcount(database, field, criteria)'
     langs:
       - typeScript
     type: method
@@ -2986,7 +2986,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dcountA(database, field, criteria)'
-    fullName: dcountA
+    fullName: 'dcountA(database, field, criteria)'
     langs:
       - typeScript
     type: method
@@ -3024,7 +3024,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'ddb(cost, salvage, life, period, factor)'
-    fullName: ddb
+    fullName: 'ddb(cost, salvage, life, period, factor)'
     langs:
       - typeScript
     type: method
@@ -3069,7 +3069,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dec2Bin(number, places)'
-    fullName: dec2Bin
+    fullName: 'dec2Bin(number, places)'
     langs:
       - typeScript
     type: method
@@ -3097,7 +3097,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dec2Hex(number, places)'
-    fullName: dec2Hex
+    fullName: 'dec2Hex(number, places)'
     langs:
       - typeScript
     type: method
@@ -3125,7 +3125,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dec2Oct(number, places)'
-    fullName: dec2Oct
+    fullName: 'dec2Oct(number, places)'
     langs:
       - typeScript
     type: method
@@ -3153,7 +3153,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'decimal(number, radix)'
-    fullName: decimal
+    fullName: 'decimal(number, radix)'
     langs:
       - typeScript
     type: method
@@ -3180,7 +3180,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: degrees(angle)
-    fullName: degrees
+    fullName: degrees(angle)
     langs:
       - typeScript
     type: method
@@ -3201,7 +3201,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'delta(number1, number2)'
-    fullName: delta
+    fullName: 'delta(number1, number2)'
     langs:
       - typeScript
     type: method
@@ -3229,7 +3229,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: devSq(values)
-    fullName: devSq
+    fullName: devSq(values)
     langs:
       - typeScript
     type: method
@@ -3254,7 +3254,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dget(database, field, criteria)'
-    fullName: dget
+    fullName: 'dget(database, field, criteria)'
     langs:
       - typeScript
     type: method
@@ -3290,7 +3290,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'disc(settlement, maturity, pr, redemption, basis)'
-    fullName: disc
+    fullName: 'disc(settlement, maturity, pr, redemption, basis)'
     langs:
       - typeScript
     type: method
@@ -3332,7 +3332,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dmax(database, field, criteria)'
-    fullName: dmax
+    fullName: 'dmax(database, field, criteria)'
     langs:
       - typeScript
     type: method
@@ -3370,7 +3370,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dmin(database, field, criteria)'
-    fullName: dmin
+    fullName: 'dmin(database, field, criteria)'
     langs:
       - typeScript
     type: method
@@ -3406,7 +3406,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dollar(number, decimals)'
-    fullName: dollar
+    fullName: 'dollar(number, decimals)'
     langs:
       - typeScript
     type: method
@@ -3435,7 +3435,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dollarDe(fractionalDollar, fraction)'
-    fullName: dollarDe
+    fullName: 'dollarDe(fractionalDollar, fraction)'
     langs:
       - typeScript
     type: method
@@ -3463,7 +3463,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dollarFr(decimalDollar, fraction)'
-    fullName: dollarFr
+    fullName: 'dollarFr(decimalDollar, fraction)'
     langs:
       - typeScript
     type: method
@@ -3491,7 +3491,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dproduct(database, field, criteria)'
-    fullName: dproduct
+    fullName: 'dproduct(database, field, criteria)'
     langs:
       - typeScript
     type: method
@@ -3527,7 +3527,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dstDev(database, field, criteria)'
-    fullName: dstDev
+    fullName: 'dstDev(database, field, criteria)'
     langs:
       - typeScript
     type: method
@@ -3563,7 +3563,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dstDevP(database, field, criteria)'
-    fullName: dstDevP
+    fullName: 'dstDevP(database, field, criteria)'
     langs:
       - typeScript
     type: method
@@ -3599,7 +3599,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dsum(database, field, criteria)'
-    fullName: dsum
+    fullName: 'dsum(database, field, criteria)'
     langs:
       - typeScript
     type: method
@@ -3635,7 +3635,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'duration(settlement, maturity, coupon, yld, frequency, basis)'
-    fullName: duration
+    fullName: 'duration(settlement, maturity, coupon, yld, frequency, basis)'
     langs:
       - typeScript
     type: method
@@ -3682,7 +3682,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dvar(database, field, criteria)'
-    fullName: dvar
+    fullName: 'dvar(database, field, criteria)'
     langs:
       - typeScript
     type: method
@@ -3718,7 +3718,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'dvarP(database, field, criteria)'
-    fullName: dvarP
+    fullName: 'dvarP(database, field, criteria)'
     langs:
       - typeScript
     type: method
@@ -3754,7 +3754,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'ecma_Ceiling(number, significance)'
-    fullName: ecma_Ceiling
+    fullName: 'ecma_Ceiling(number, significance)'
     langs:
       - typeScript
     type: method
@@ -3781,7 +3781,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'edate(startDate, months)'
-    fullName: edate
+    fullName: 'edate(startDate, months)'
     langs:
       - typeScript
     type: method
@@ -3809,7 +3809,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'effect(nominalRate, npery)'
-    fullName: effect
+    fullName: 'effect(nominalRate, npery)'
     langs:
       - typeScript
     type: method
@@ -3837,7 +3837,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'eoMonth(startDate, months)'
-    fullName: eoMonth
+    fullName: 'eoMonth(startDate, months)'
     langs:
       - typeScript
     type: method
@@ -3859,13 +3859,36 @@ items:
           description: Is the number of months before or after the startDate.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+  - uid: excel_release.Excel.Functions.erf_Precise
+    summary: |-
+      Returns the error function.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: erf_Precise(X)
+    fullName: erf_Precise(X)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        erf_Precise(X: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>):
+        FunctionResult<number>;
+      return:
+        type:
+          - FunctionResult<number>
+        description: ''
+      parameters:
+        - id: X
+          description: Is the lower bound for integrating ERF.PRECISE.
+          type:
+            - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.erf
     summary: |-
       Returns the error function.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'erf(lowerLimit, upperLimit)'
-    fullName: erf
+    fullName: 'erf(lowerLimit, upperLimit)'
     langs:
       - typeScript
     type: method
@@ -3887,59 +3910,13 @@ items:
           description: Is the upper bound for integrating ERF.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.erf_Precise
-    summary: |-
-      Returns the error function.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: erf_Precise(X)
-    fullName: erf_Precise
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        erf_Precise(X: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>):
-        FunctionResult<number>;
-      return:
-        type:
-          - FunctionResult<number>
-        description: ''
-      parameters:
-        - id: X
-          description: Is the lower bound for integrating ERF.PRECISE.
-          type:
-            - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.erfC
-    summary: |-
-      Returns the complementary error function.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: erfC(x)
-    fullName: erfC
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        erfC(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>):
-        FunctionResult<number>;
-      return:
-        type:
-          - FunctionResult<number>
-        description: ''
-      parameters:
-        - id: x
-          description: Is the lower bound for integrating ERF.
-          type:
-            - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.erfC_Precise
     summary: |-
       Returns the complementary error function.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: erfC_Precise(X)
-    fullName: erfC_Precise
+    fullName: erfC_Precise(X)
     langs:
       - typeScript
     type: method
@@ -3956,13 +3933,36 @@ items:
           description: Is the lower bound for integrating ERFC.PRECISE.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+  - uid: excel_release.Excel.Functions.erfC
+    summary: |-
+      Returns the complementary error function.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: erfC(x)
+    fullName: erfC(x)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        erfC(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>):
+        FunctionResult<number>;
+      return:
+        type:
+          - FunctionResult<number>
+        description: ''
+      parameters:
+        - id: x
+          description: Is the lower bound for integrating ERF.
+          type:
+            - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.error_Type
     summary: |-
       Returns a number matching an error value.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: error_Type(errorVal)
-    fullName: error_Type
+    fullName: error_Type(errorVal)
     langs:
       - typeScript
     type: method
@@ -3987,7 +3987,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: even(number)
-    fullName: even
+    fullName: even(number)
     langs:
       - typeScript
     type: method
@@ -4008,7 +4008,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'exact(text1, text2)'
-    fullName: exact
+    fullName: 'exact(text1, text2)'
     langs:
       - typeScript
     type: method
@@ -4035,7 +4035,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: exp(number)
-    fullName: exp
+    fullName: exp(number)
     langs:
       - typeScript
     type: method
@@ -4058,7 +4058,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'expon_Dist(x, lambda, cumulative)'
-    fullName: expon_Dist
+    fullName: 'expon_Dist(x, lambda, cumulative)'
     langs:
       - typeScript
     type: method
@@ -4086,13 +4086,45 @@ items:
             density function = FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+  - uid: excel_release.Excel.Functions.f_Dist_RT
+    summary: |-
+      Returns the (right-tailed) F probability distribution (degree of diversity) for two data sets.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'f_Dist_RT(x, degFreedom1, degFreedom2)'
+    fullName: 'f_Dist_RT(x, degFreedom1, degFreedom2)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        f_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number |
+        Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range |
+        Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
+      return:
+        type:
+          - FunctionResult<number>
+        description: ''
+      parameters:
+        - id: x
+          description: 'Is the value at which to evaluate the function, a nonnegative number.'
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: degFreedom1
+          description: 'Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: degFreedom2
+          description: 'Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.f_Dist
     summary: |-
       Returns the (left-tailed) F probability distribution (degree of diversity) for two data sets.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'f_Dist(x, degFreedom1, degFreedom2, cumulative)'
-    fullName: f_Dist
+    fullName: 'f_Dist(x, degFreedom1, degFreedom2, cumulative)'
     langs:
       - typeScript
     type: method
@@ -4125,70 +4157,6 @@ items:
             density function = FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.f_Dist_RT
-    summary: |-
-      Returns the (right-tailed) F probability distribution (degree of diversity) for two data sets.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'f_Dist_RT(x, degFreedom1, degFreedom2)'
-    fullName: f_Dist_RT
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        f_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number |
-        Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range |
-        Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
-      return:
-        type:
-          - FunctionResult<number>
-        description: ''
-      parameters:
-        - id: x
-          description: 'Is the value at which to evaluate the function, a nonnegative number.'
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: degFreedom1
-          description: 'Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: degFreedom2
-          description: 'Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.f_Inv
-    summary: |-
-      Returns the inverse of the (left-tailed) F probability distribution: if p = F.DIST(x,...), then F.INV(p,...) = x.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'f_Inv(probability, degFreedom1, degFreedom2)'
-    fullName: f_Inv
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        f_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number
-        | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range |
-        Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
-      return:
-        type:
-          - FunctionResult<number>
-        description: ''
-      parameters:
-        - id: probability
-          description: 'Is a probability associated with the F cumulative distribution, a number between 0 and 1 inclusive.'
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: degFreedom1
-          description: 'Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: degFreedom2
-          description: 'Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.f_Inv_RT
     summary: >-
       Returns the inverse of the (right-tailed) F probability distribution: if p = F.DIST.RT(x,...), then
@@ -4197,7 +4165,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'f_Inv_RT(probability, degFreedom1, degFreedom2)'
-    fullName: f_Inv_RT
+    fullName: 'f_Inv_RT(probability, degFreedom1, degFreedom2)'
     langs:
       - typeScript
     type: method
@@ -4223,13 +4191,45 @@ items:
           description: 'Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+  - uid: excel_release.Excel.Functions.f_Inv
+    summary: |-
+      Returns the inverse of the (left-tailed) F probability distribution: if p = F.DIST(x,...), then F.INV(p,...) = x.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'f_Inv(probability, degFreedom1, degFreedom2)'
+    fullName: 'f_Inv(probability, degFreedom1, degFreedom2)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        f_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number
+        | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range |
+        Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
+      return:
+        type:
+          - FunctionResult<number>
+        description: ''
+      parameters:
+        - id: probability
+          description: 'Is a probability associated with the F cumulative distribution, a number between 0 and 1 inclusive.'
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: degFreedom1
+          description: 'Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: degFreedom2
+          description: 'Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.fact
     summary: |-
       Returns the factorial of a number, equal to 1*2*3*...* Number.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fact(number)
-    fullName: fact
+    fullName: fact(number)
     langs:
       - typeScript
     type: method
@@ -4250,7 +4250,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: factDouble(number)
-    fullName: factDouble
+    fullName: factDouble(number)
     langs:
       - typeScript
     type: method
@@ -4273,7 +4273,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: false()
-    fullName: 'false'
+    fullName: false()
     langs:
       - typeScript
     type: method
@@ -4289,7 +4289,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'find(findText, withinText, startNum)'
-    fullName: find
+    fullName: 'find(findText, withinText, startNum)'
     langs:
       - typeScript
     type: method
@@ -4327,7 +4327,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'findB(findText, withinText, startNum)'
-    fullName: findB
+    fullName: 'findB(findText, withinText, startNum)'
     langs:
       - typeScript
     type: method
@@ -4359,7 +4359,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fisher(x)
-    fullName: fisher
+    fullName: fisher(x)
     langs:
       - typeScript
     type: method
@@ -4380,7 +4380,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fisherInv(y)
-    fullName: fisherInv
+    fullName: fisherInv(y)
     langs:
       - typeScript
     type: method
@@ -4401,7 +4401,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'fixed(number, decimals, noCommas)'
-    fullName: fixed
+    fullName: 'fixed(number, decimals, noCommas)'
     langs:
       - typeScript
     type: method
@@ -4435,7 +4435,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'floor_Math(number, significance, mode)'
-    fullName: floor_Math
+    fullName: 'floor_Math(number, significance, mode)'
     langs:
       - typeScript
     type: method
@@ -4467,7 +4467,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'floor_Precise(number, significance)'
-    fullName: floor_Precise
+    fullName: 'floor_Precise(number, significance)'
     langs:
       - typeScript
     type: method
@@ -4494,7 +4494,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'fv(rate, nper, pmt, pv, type)'
-    fullName: fv
+    fullName: 'fv(rate, nper, pmt, pv, type)'
     langs:
       - typeScript
     type: method
@@ -4539,7 +4539,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'fvschedule(principal, schedule)'
-    fullName: fvschedule
+    fullName: 'fvschedule(principal, schedule)'
     langs:
       - typeScript
     type: method
@@ -4561,34 +4561,13 @@ items:
           description: Is an array of interest rates to apply.
           type:
             - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.gamma
-    summary: |-
-      Returns the Gamma function value.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: gamma(x)
-    fullName: gamma
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'gamma(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;'
-      return:
-        type:
-          - FunctionResult<number>
-        description: ''
-      parameters:
-        - id: x
-          description: Is the value for which you want to calculate Gamma.
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.gamma_Dist
     summary: |-
       Returns the gamma distribution.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'gamma_Dist(x, alpha, beta, cumulative)'
-    fullName: gamma_Dist
+    fullName: 'gamma_Dist(x, alpha, beta, cumulative)'
     langs:
       - typeScript
     type: method
@@ -4629,7 +4608,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'gamma_Inv(probability, alpha, beta)'
-    fullName: gamma_Inv
+    fullName: 'gamma_Inv(probability, alpha, beta)'
     langs:
       - typeScript
     type: method
@@ -4657,25 +4636,25 @@ items:
             standard gamma distribution.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.gammaLn
+  - uid: excel_release.Excel.Functions.gamma
     summary: |-
-      Returns the natural logarithm of the gamma function.
+      Returns the Gamma function value.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: gammaLn(x)
-    fullName: gammaLn
+    name: gamma(x)
+    fullName: gamma(x)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'gammaLn(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;'
+      content: 'gamma(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;'
       return:
         type:
           - FunctionResult<number>
         description: ''
       parameters:
         - id: x
-          description: 'Is the value for which you want to calculate GAMMALN, a positive number.'
+          description: Is the value for which you want to calculate Gamma.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.gammaLn_Precise
@@ -4684,7 +4663,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gammaLn_Precise(x)
-    fullName: gammaLn_Precise
+    fullName: gammaLn_Precise(x)
     langs:
       - typeScript
     type: method
@@ -4701,13 +4680,34 @@ items:
           description: 'Is the value for which you want to calculate GAMMALN.PRECISE, a positive number.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+  - uid: excel_release.Excel.Functions.gammaLn
+    summary: |-
+      Returns the natural logarithm of the gamma function.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gammaLn(x)
+    fullName: gammaLn(x)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'gammaLn(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;'
+      return:
+        type:
+          - FunctionResult<number>
+        description: ''
+      parameters:
+        - id: x
+          description: 'Is the value for which you want to calculate GAMMALN, a positive number.'
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.gauss
     summary: |-
       Returns 0.5 less than the standard normal cumulative distribution.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gauss(x)
-    fullName: gauss
+    fullName: gauss(x)
     langs:
       - typeScript
     type: method
@@ -4728,7 +4728,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gcd(values)
-    fullName: gcd
+    fullName: gcd(values)
     langs:
       - typeScript
     type: method
@@ -4751,7 +4751,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: geoMean(values)
-    fullName: geoMean
+    fullName: geoMean(values)
     langs:
       - typeScript
     type: method
@@ -4776,7 +4776,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'geStep(number, step)'
-    fullName: geStep
+    fullName: 'geStep(number, step)'
     langs:
       - typeScript
     type: method
@@ -4804,7 +4804,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: harMean(values)
-    fullName: harMean
+    fullName: harMean(values)
     langs:
       - typeScript
     type: method
@@ -4829,7 +4829,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'hex2Bin(number, places)'
-    fullName: hex2Bin
+    fullName: 'hex2Bin(number, places)'
     langs:
       - typeScript
     type: method
@@ -4857,7 +4857,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hex2Dec(number)
-    fullName: hex2Dec
+    fullName: hex2Dec(number)
     langs:
       - typeScript
     type: method
@@ -4880,7 +4880,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'hex2Oct(number, places)'
-    fullName: hex2Oct
+    fullName: 'hex2Oct(number, places)'
     langs:
       - typeScript
     type: method
@@ -4910,7 +4910,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'hlookup(lookupValue, tableArray, rowIndexNum, rangeLookup)'
-    fullName: hlookup
+    fullName: 'hlookup(lookupValue, tableArray, rowIndexNum, rangeLookup)'
     langs:
       - typeScript
     type: method
@@ -4953,7 +4953,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hour(serialNumber)
-    fullName: hour
+    fullName: hour(serialNumber)
     langs:
       - typeScript
     type: method
@@ -4978,7 +4978,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'hyperlink(linkLocation, friendlyName)'
-    fullName: hyperlink
+    fullName: 'hyperlink(linkLocation, friendlyName)'
     langs:
       - typeScript
     type: method
@@ -5008,7 +5008,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'hypGeom_Dist(sampleS, numberSample, populationS, numberPop, cumulative)'
-    fullName: hypGeom_Dist
+    fullName: 'hypGeom_Dist(sampleS, numberSample, populationS, numberPop, cumulative)'
     langs:
       - typeScript
     type: method
@@ -5052,7 +5052,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'if(logicalTest, valueIfTrue, valueIfFalse)'
-    fullName: if
+    fullName: 'if(logicalTest, valueIfTrue, valueIfFalse)'
     langs:
       - typeScript
     type: method
@@ -5087,7 +5087,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imAbs(inumber)
-    fullName: imAbs
+    fullName: imAbs(inumber)
     langs:
       - typeScript
     type: method
@@ -5110,7 +5110,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imaginary(inumber)
-    fullName: imaginary
+    fullName: imaginary(inumber)
     langs:
       - typeScript
     type: method
@@ -5133,7 +5133,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imArgument(inumber)
-    fullName: imArgument
+    fullName: imArgument(inumber)
     langs:
       - typeScript
     type: method
@@ -5156,7 +5156,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imConjugate(inumber)
-    fullName: imConjugate
+    fullName: imConjugate(inumber)
     langs:
       - typeScript
     type: method
@@ -5179,7 +5179,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imCos(inumber)
-    fullName: imCos
+    fullName: imCos(inumber)
     langs:
       - typeScript
     type: method
@@ -5202,7 +5202,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imCosh(inumber)
-    fullName: imCosh
+    fullName: imCosh(inumber)
     langs:
       - typeScript
     type: method
@@ -5225,7 +5225,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imCot(inumber)
-    fullName: imCot
+    fullName: imCot(inumber)
     langs:
       - typeScript
     type: method
@@ -5248,7 +5248,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imCsc(inumber)
-    fullName: imCsc
+    fullName: imCsc(inumber)
     langs:
       - typeScript
     type: method
@@ -5271,7 +5271,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imCsch(inumber)
-    fullName: imCsch
+    fullName: imCsch(inumber)
     langs:
       - typeScript
     type: method
@@ -5294,7 +5294,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'imDiv(inumber1, inumber2)'
-    fullName: imDiv
+    fullName: 'imDiv(inumber1, inumber2)'
     langs:
       - typeScript
     type: method
@@ -5322,7 +5322,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imExp(inumber)
-    fullName: imExp
+    fullName: imExp(inumber)
     langs:
       - typeScript
     type: method
@@ -5345,7 +5345,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imLn(inumber)
-    fullName: imLn
+    fullName: imLn(inumber)
     langs:
       - typeScript
     type: method
@@ -5368,7 +5368,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imLog10(inumber)
-    fullName: imLog10
+    fullName: imLog10(inumber)
     langs:
       - typeScript
     type: method
@@ -5391,7 +5391,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imLog2(inumber)
-    fullName: imLog2
+    fullName: imLog2(inumber)
     langs:
       - typeScript
     type: method
@@ -5414,7 +5414,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'imPower(inumber, number)'
-    fullName: imPower
+    fullName: 'imPower(inumber, number)'
     langs:
       - typeScript
     type: method
@@ -5442,7 +5442,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imProduct(values)
-    fullName: imProduct
+    fullName: imProduct(values)
     langs:
       - typeScript
     type: method
@@ -5465,7 +5465,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imReal(inumber)
-    fullName: imReal
+    fullName: imReal(inumber)
     langs:
       - typeScript
     type: method
@@ -5488,7 +5488,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imSec(inumber)
-    fullName: imSec
+    fullName: imSec(inumber)
     langs:
       - typeScript
     type: method
@@ -5511,7 +5511,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imSech(inumber)
-    fullName: imSech
+    fullName: imSech(inumber)
     langs:
       - typeScript
     type: method
@@ -5534,7 +5534,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imSin(inumber)
-    fullName: imSin
+    fullName: imSin(inumber)
     langs:
       - typeScript
     type: method
@@ -5557,7 +5557,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imSinh(inumber)
-    fullName: imSinh
+    fullName: imSinh(inumber)
     langs:
       - typeScript
     type: method
@@ -5580,7 +5580,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imSqrt(inumber)
-    fullName: imSqrt
+    fullName: imSqrt(inumber)
     langs:
       - typeScript
     type: method
@@ -5603,7 +5603,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'imSub(inumber1, inumber2)'
-    fullName: imSub
+    fullName: 'imSub(inumber1, inumber2)'
     langs:
       - typeScript
     type: method
@@ -5631,7 +5631,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imSum(values)
-    fullName: imSum
+    fullName: imSum(values)
     langs:
       - typeScript
     type: method
@@ -5654,7 +5654,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: imTan(inumber)
-    fullName: imTan
+    fullName: imTan(inumber)
     langs:
       - typeScript
     type: method
@@ -5677,7 +5677,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: int(number)
-    fullName: int
+    fullName: int(number)
     langs:
       - typeScript
     type: method
@@ -5698,7 +5698,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'intRate(settlement, maturity, investment, redemption, basis)'
-    fullName: intRate
+    fullName: 'intRate(settlement, maturity, investment, redemption, basis)'
     langs:
       - typeScript
     type: method
@@ -5743,7 +5743,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'ipmt(rate, per, nper, pv, fv, type)'
-    fullName: ipmt
+    fullName: 'ipmt(rate, per, nper, pv, fv, type)'
     langs:
       - typeScript
     type: method
@@ -5793,7 +5793,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'irr(values, guess)'
-    fullName: irr
+    fullName: 'irr(values, guess)'
     langs:
       - typeScript
     type: method
@@ -5824,7 +5824,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isErr(value)
-    fullName: isErr
+    fullName: isErr(value)
     langs:
       - typeScript
     type: method
@@ -5851,7 +5851,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isError(value)
-    fullName: isError
+    fullName: isError(value)
     langs:
       - typeScript
     type: method
@@ -5876,7 +5876,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEven(number)
-    fullName: isEven
+    fullName: isEven(number)
     langs:
       - typeScript
     type: method
@@ -5899,7 +5899,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isFormula(reference)
-    fullName: isFormula
+    fullName: isFormula(reference)
     langs:
       - typeScript
     type: method
@@ -5922,7 +5922,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isLogical(value)
-    fullName: isLogical
+    fullName: isLogical(value)
     langs:
       - typeScript
     type: method
@@ -5947,7 +5947,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isNA(value)
-    fullName: isNA
+    fullName: isNA(value)
     langs:
       - typeScript
     type: method
@@ -5972,7 +5972,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isNonText(value)
-    fullName: isNonText
+    fullName: isNonText(value)
     langs:
       - typeScript
     type: method
@@ -5995,7 +5995,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isNumber(value)
-    fullName: isNumber
+    fullName: isNumber(value)
     langs:
       - typeScript
     type: method
@@ -6020,7 +6020,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'iso_Ceiling(number, significance)'
-    fullName: iso_Ceiling
+    fullName: 'iso_Ceiling(number, significance)'
     langs:
       - typeScript
     type: method
@@ -6047,7 +6047,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isOdd(number)
-    fullName: isOdd
+    fullName: isOdd(number)
     langs:
       - typeScript
     type: method
@@ -6070,7 +6070,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isoWeekNum(date)
-    fullName: isoWeekNum
+    fullName: isoWeekNum(date)
     langs:
       - typeScript
     type: method
@@ -6093,7 +6093,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'ispmt(rate, per, nper, pv)'
-    fullName: ispmt
+    fullName: 'ispmt(rate, per, nper, pv)'
     langs:
       - typeScript
     type: method
@@ -6130,7 +6130,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isref(value)
-    fullName: isref
+    fullName: isref(value)
     langs:
       - typeScript
     type: method
@@ -6155,7 +6155,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isText(value)
-    fullName: isText
+    fullName: isText(value)
     langs:
       - typeScript
     type: method
@@ -6180,7 +6180,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: kurt(values)
-    fullName: kurt
+    fullName: kurt(values)
     langs:
       - typeScript
     type: method
@@ -6205,7 +6205,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'large(array, k)'
-    fullName: large
+    fullName: 'large(array, k)'
     langs:
       - typeScript
     type: method
@@ -6232,7 +6232,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lcm(values)
-    fullName: lcm
+    fullName: lcm(values)
     langs:
       - typeScript
     type: method
@@ -6255,7 +6255,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'left(text, numChars)'
-    fullName: left
+    fullName: 'left(text, numChars)'
     langs:
       - typeScript
     type: method
@@ -6284,7 +6284,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'leftb(text, numBytes)'
-    fullName: leftb
+    fullName: 'leftb(text, numBytes)'
     langs:
       - typeScript
     type: method
@@ -6311,7 +6311,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: len(text)
-    fullName: len
+    fullName: len(text)
     langs:
       - typeScript
     type: method
@@ -6332,7 +6332,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lenb(text)
-    fullName: lenb
+    fullName: lenb(text)
     langs:
       - typeScript
     type: method
@@ -6353,7 +6353,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ln(number)
-    fullName: ln
+    fullName: ln(number)
     langs:
       - typeScript
     type: method
@@ -6374,7 +6374,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'log(number, base)'
-    fullName: log
+    fullName: 'log(number, base)'
     langs:
       - typeScript
     type: method
@@ -6401,7 +6401,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: log10(number)
-    fullName: log10
+    fullName: log10(number)
     langs:
       - typeScript
     type: method
@@ -6424,7 +6424,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'logNorm_Dist(x, mean, standardDev, cumulative)'
-    fullName: logNorm_Dist
+    fullName: 'logNorm_Dist(x, mean, standardDev, cumulative)'
     langs:
       - typeScript
     type: method
@@ -6465,7 +6465,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'logNorm_Inv(probability, mean, standardDev)'
-    fullName: logNorm_Inv
+    fullName: 'logNorm_Inv(probability, mean, standardDev)'
     langs:
       - typeScript
     type: method
@@ -6497,7 +6497,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'lookup(lookupValue, lookupVector, resultVector)'
-    fullName: lookup
+    fullName: 'lookup(lookupValue, lookupVector, resultVector)'
     langs:
       - typeScript
     type: method
@@ -6533,7 +6533,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lower(text)
-    fullName: lower
+    fullName: lower(text)
     langs:
       - typeScript
     type: method
@@ -6554,7 +6554,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'match(lookupValue, lookupArray, matchType)'
-    fullName: match
+    fullName: 'match(lookupValue, lookupArray, matchType)'
     langs:
       - typeScript
     type: method
@@ -6590,7 +6590,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: max(values)
-    fullName: max
+    fullName: max(values)
     langs:
       - typeScript
     type: method
@@ -6615,7 +6615,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: maxA(values)
-    fullName: maxA
+    fullName: maxA(values)
     langs:
       - typeScript
     type: method
@@ -6640,7 +6640,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'mduration(settlement, maturity, coupon, yld, frequency, basis)'
-    fullName: mduration
+    fullName: 'mduration(settlement, maturity, coupon, yld, frequency, basis)'
     langs:
       - typeScript
     type: method
@@ -6688,7 +6688,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: median(values)
-    fullName: median
+    fullName: median(values)
     langs:
       - typeScript
     type: method
@@ -6713,7 +6713,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'mid(text, startNum, numChars)'
-    fullName: mid
+    fullName: 'mid(text, startNum, numChars)'
     langs:
       - typeScript
     type: method
@@ -6747,7 +6747,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'midb(text, startNum, numBytes)'
-    fullName: midb
+    fullName: 'midb(text, startNum, numBytes)'
     langs:
       - typeScript
     type: method
@@ -6779,7 +6779,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: min(values)
-    fullName: min
+    fullName: min(values)
     langs:
       - typeScript
     type: method
@@ -6804,7 +6804,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minA(values)
-    fullName: minA
+    fullName: minA(values)
     langs:
       - typeScript
     type: method
@@ -6829,7 +6829,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minute(serialNumber)
-    fullName: minute
+    fullName: minute(serialNumber)
     langs:
       - typeScript
     type: method
@@ -6856,7 +6856,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'mirr(values, financeRate, reinvestRate)'
-    fullName: mirr
+    fullName: 'mirr(values, financeRate, reinvestRate)'
     langs:
       - typeScript
     type: method
@@ -6890,7 +6890,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'mod(number, divisor)'
-    fullName: mod
+    fullName: 'mod(number, divisor)'
     langs:
       - typeScript
     type: method
@@ -6917,7 +6917,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: month(serialNumber)
-    fullName: month
+    fullName: month(serialNumber)
     langs:
       - typeScript
     type: method
@@ -6940,7 +6940,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'mround(number, multiple)'
-    fullName: mround
+    fullName: 'mround(number, multiple)'
     langs:
       - typeScript
     type: method
@@ -6968,7 +6968,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: multiNomial(values)
-    fullName: multiNomial
+    fullName: multiNomial(values)
     langs:
       - typeScript
     type: method
@@ -6991,7 +6991,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: n(value)
-    fullName: 'n'
+    fullName: n(value)
     langs:
       - typeScript
     type: method
@@ -7014,7 +7014,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: na()
-    fullName: na
+    fullName: na()
     langs:
       - typeScript
     type: method
@@ -7032,7 +7032,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'negBinom_Dist(numberF, numberS, probabilityS, cumulative)'
-    fullName: negBinom_Dist
+    fullName: 'negBinom_Dist(numberF, numberS, probabilityS, cumulative)'
     langs:
       - typeScript
     type: method
@@ -7065,48 +7065,13 @@ items:
             use FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.networkDays
-    summary: |-
-      Returns the number of whole workdays between two dates.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'networkDays(startDate, endDate, holidays)'
-    fullName: networkDays
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        networkDays(startDate: number | string | boolean | Excel.Range | Excel.RangeReference |
-        Excel.FunctionResult<any>, endDate: number | string | boolean | Excel.Range | Excel.RangeReference |
-        Excel.FunctionResult<any>, holidays?: number | string | Excel.Range | boolean | Excel.RangeReference |
-        Excel.FunctionResult<any>): FunctionResult<number>;
-      return:
-        type:
-          - FunctionResult<number>
-        description: ''
-      parameters:
-        - id: startDate
-          description: Is a serial date number that represents the start date.
-          type:
-            - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: endDate
-          description: Is a serial date number that represents the end date.
-          type:
-            - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: holidays
-          description: >-
-            Is an optional set of one or more serial date numbers to exclude from the working calendar, such as state
-            and federal holidays and floating holidays.
-          type:
-            - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.networkDays_Intl
     summary: |-
       Returns the number of whole workdays between two dates with custom weekend parameters.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'networkDays_Intl(startDate, endDate, weekend, holidays)'
-    fullName: networkDays_Intl
+    fullName: 'networkDays_Intl(startDate, endDate, weekend, holidays)'
     langs:
       - typeScript
     type: method
@@ -7140,13 +7105,48 @@ items:
             and federal holidays and floating holidays.
           type:
             - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
+  - uid: excel_release.Excel.Functions.networkDays
+    summary: |-
+      Returns the number of whole workdays between two dates.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'networkDays(startDate, endDate, holidays)'
+    fullName: 'networkDays(startDate, endDate, holidays)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        networkDays(startDate: number | string | boolean | Excel.Range | Excel.RangeReference |
+        Excel.FunctionResult<any>, endDate: number | string | boolean | Excel.Range | Excel.RangeReference |
+        Excel.FunctionResult<any>, holidays?: number | string | Excel.Range | boolean | Excel.RangeReference |
+        Excel.FunctionResult<any>): FunctionResult<number>;
+      return:
+        type:
+          - FunctionResult<number>
+        description: ''
+      parameters:
+        - id: startDate
+          description: Is a serial date number that represents the start date.
+          type:
+            - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: endDate
+          description: Is a serial date number that represents the end date.
+          type:
+            - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: holidays
+          description: >-
+            Is an optional set of one or more serial date numbers to exclude from the working calendar, such as state
+            and federal holidays and floating holidays.
+          type:
+            - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.nominal
     summary: |-
       Returns the annual nominal interest rate.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'nominal(effectRate, npery)'
-    fullName: nominal
+    fullName: 'nominal(effectRate, npery)'
     langs:
       - typeScript
     type: method
@@ -7174,7 +7174,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'norm_Dist(x, mean, standardDev, cumulative)'
-    fullName: norm_Dist
+    fullName: 'norm_Dist(x, mean, standardDev, cumulative)'
     langs:
       - typeScript
     type: method
@@ -7213,7 +7213,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'norm_Inv(probability, mean, standardDev)'
-    fullName: norm_Inv
+    fullName: 'norm_Inv(probability, mean, standardDev)'
     langs:
       - typeScript
     type: method
@@ -7245,7 +7245,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'norm_S_Dist(z, cumulative)'
-    fullName: norm_S_Dist
+    fullName: 'norm_S_Dist(z, cumulative)'
     langs:
       - typeScript
     type: method
@@ -7276,7 +7276,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: norm_S_Inv(probability)
-    fullName: norm_S_Inv
+    fullName: norm_S_Inv(probability)
     langs:
       - typeScript
     type: method
@@ -7299,7 +7299,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: not(logical)
-    fullName: not
+    fullName: not(logical)
     langs:
       - typeScript
     type: method
@@ -7320,7 +7320,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: now()
-    fullName: now
+    fullName: now()
     langs:
       - typeScript
     type: method
@@ -7336,7 +7336,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'nper(rate, pmt, pv, fv, type)'
-    fullName: nper
+    fullName: 'nper(rate, pmt, pv, fv, type)'
     langs:
       - typeScript
     type: method
@@ -7383,7 +7383,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'npv(rate, values)'
-    fullName: npv
+    fullName: 'npv(rate, values)'
     langs:
       - typeScript
     type: method
@@ -7412,7 +7412,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'numberValue(text, decimalSeparator, groupSeparator)'
-    fullName: numberValue
+    fullName: 'numberValue(text, decimalSeparator, groupSeparator)'
     langs:
       - typeScript
     type: method
@@ -7444,7 +7444,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'oct2Bin(number, places)'
-    fullName: oct2Bin
+    fullName: 'oct2Bin(number, places)'
     langs:
       - typeScript
     type: method
@@ -7472,7 +7472,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: oct2Dec(number)
-    fullName: oct2Dec
+    fullName: oct2Dec(number)
     langs:
       - typeScript
     type: method
@@ -7495,7 +7495,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'oct2Hex(number, places)'
-    fullName: oct2Hex
+    fullName: 'oct2Hex(number, places)'
     langs:
       - typeScript
     type: method
@@ -7523,7 +7523,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: odd(number)
-    fullName: odd
+    fullName: odd(number)
     langs:
       - typeScript
     type: method
@@ -7544,7 +7544,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'oddFPrice(settlement, maturity, issue, firstCoupon, rate, yld, redemption, frequency, basis)'
-    fullName: oddFPrice
+    fullName: 'oddFPrice(settlement, maturity, issue, firstCoupon, rate, yld, redemption, frequency, basis)'
     langs:
       - typeScript
     type: method
@@ -7607,7 +7607,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'oddFYield(settlement, maturity, issue, firstCoupon, rate, pr, redemption, frequency, basis)'
-    fullName: oddFYield
+    fullName: 'oddFYield(settlement, maturity, issue, firstCoupon, rate, pr, redemption, frequency, basis)'
     langs:
       - typeScript
     type: method
@@ -7670,7 +7670,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'oddLPrice(settlement, maturity, lastInterest, rate, yld, redemption, frequency, basis)'
-    fullName: oddLPrice
+    fullName: 'oddLPrice(settlement, maturity, lastInterest, rate, yld, redemption, frequency, basis)'
     langs:
       - typeScript
     type: method
@@ -7728,7 +7728,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'oddLYield(settlement, maturity, lastInterest, rate, pr, redemption, frequency, basis)'
-    fullName: oddLYield
+    fullName: 'oddLYield(settlement, maturity, lastInterest, rate, pr, redemption, frequency, basis)'
     langs:
       - typeScript
     type: method
@@ -7788,7 +7788,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: or(values)
-    fullName: or
+    fullName: or(values)
     langs:
       - typeScript
     type: method
@@ -7813,7 +7813,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'pduration(rate, pv, fv)'
-    fullName: pduration
+    fullName: 'pduration(rate, pv, fv)'
     langs:
       - typeScript
     type: method
@@ -7845,7 +7845,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'percentile_Exc(array, k)'
-    fullName: percentile_Exc
+    fullName: 'percentile_Exc(array, k)'
     langs:
       - typeScript
     type: method
@@ -7872,7 +7872,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'percentile_Inc(array, k)'
-    fullName: percentile_Inc
+    fullName: 'percentile_Inc(array, k)'
     langs:
       - typeScript
     type: method
@@ -7901,7 +7901,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'percentRank_Exc(array, x, significance)'
-    fullName: percentRank_Exc
+    fullName: 'percentRank_Exc(array, x, significance)'
     langs:
       - typeScript
     type: method
@@ -7937,7 +7937,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'percentRank_Inc(array, x, significance)'
-    fullName: percentRank_Inc
+    fullName: 'percentRank_Inc(array, x, significance)'
     langs:
       - typeScript
     type: method
@@ -7971,7 +7971,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'permut(number, numberChosen)'
-    fullName: permut
+    fullName: 'permut(number, numberChosen)'
     langs:
       - typeScript
     type: method
@@ -8000,7 +8000,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'permutationa(number, numberChosen)'
-    fullName: permutationa
+    fullName: 'permutationa(number, numberChosen)'
     langs:
       - typeScript
     type: method
@@ -8027,7 +8027,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: phi(x)
-    fullName: phi
+    fullName: phi(x)
     langs:
       - typeScript
     type: method
@@ -8048,7 +8048,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pi()
-    fullName: pi
+    fullName: pi()
     langs:
       - typeScript
     type: method
@@ -8064,7 +8064,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'pmt(rate, nper, pv, fv, type)'
-    fullName: pmt
+    fullName: 'pmt(rate, nper, pv, fv, type)'
     langs:
       - typeScript
     type: method
@@ -8109,7 +8109,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'poisson_Dist(x, mean, cumulative)'
-    fullName: poisson_Dist
+    fullName: 'poisson_Dist(x, mean, cumulative)'
     langs:
       - typeScript
     type: method
@@ -8143,7 +8143,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'power(number, power)'
-    fullName: power
+    fullName: 'power(number, power)'
     langs:
       - typeScript
     type: method
@@ -8172,7 +8172,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'ppmt(rate, per, nper, pv, fv, type)'
-    fullName: ppmt
+    fullName: 'ppmt(rate, per, nper, pv, fv, type)'
     langs:
       - typeScript
     type: method
@@ -8220,7 +8220,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'price(settlement, maturity, rate, yld, redemption, frequency, basis)'
-    fullName: price
+    fullName: 'price(settlement, maturity, rate, yld, redemption, frequency, basis)'
     langs:
       - typeScript
     type: method
@@ -8272,7 +8272,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'priceDisc(settlement, maturity, discount, redemption, basis)'
-    fullName: priceDisc
+    fullName: 'priceDisc(settlement, maturity, discount, redemption, basis)'
     langs:
       - typeScript
     type: method
@@ -8315,7 +8315,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'priceMat(settlement, maturity, issue, rate, yld, basis)'
-    fullName: priceMat
+    fullName: 'priceMat(settlement, maturity, issue, rate, yld, basis)'
     langs:
       - typeScript
     type: method
@@ -8362,7 +8362,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: product(values)
-    fullName: product
+    fullName: product(values)
     langs:
       - typeScript
     type: method
@@ -8389,7 +8389,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: proper(text)
-    fullName: proper
+    fullName: proper(text)
     langs:
       - typeScript
     type: method
@@ -8412,7 +8412,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'pv(rate, nper, pmt, fv, type)'
-    fullName: pv
+    fullName: 'pv(rate, nper, pmt, fv, type)'
     langs:
       - typeScript
     type: method
@@ -8455,7 +8455,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'quartile_Exc(array, quart)'
-    fullName: quartile_Exc
+    fullName: 'quartile_Exc(array, quart)'
     langs:
       - typeScript
     type: method
@@ -8482,7 +8482,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'quartile_Inc(array, quart)'
-    fullName: quartile_Inc
+    fullName: 'quartile_Inc(array, quart)'
     langs:
       - typeScript
     type: method
@@ -8509,7 +8509,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'quotient(numerator, denominator)'
-    fullName: quotient
+    fullName: 'quotient(numerator, denominator)'
     langs:
       - typeScript
     type: method
@@ -8537,7 +8537,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: radians(angle)
-    fullName: radians
+    fullName: radians(angle)
     langs:
       - typeScript
     type: method
@@ -8558,7 +8558,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rand()
-    fullName: rand
+    fullName: rand()
     langs:
       - typeScript
     type: method
@@ -8574,7 +8574,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'randBetween(bottom, top)'
-    fullName: randBetween
+    fullName: 'randBetween(bottom, top)'
     langs:
       - typeScript
     type: method
@@ -8604,7 +8604,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'rank_Avg(number, ref, order)'
-    fullName: rank_Avg
+    fullName: 'rank_Avg(number, ref, order)'
     langs:
       - typeScript
     type: method
@@ -8640,7 +8640,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'rank_Eq(number, ref, order)'
-    fullName: rank_Eq
+    fullName: 'rank_Eq(number, ref, order)'
     langs:
       - typeScript
     type: method
@@ -8676,7 +8676,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'rate(nper, pmt, pv, fv, type, guess)'
-    fullName: rate
+    fullName: 'rate(nper, pmt, pv, fv, type, guess)'
     langs:
       - typeScript
     type: method
@@ -8726,7 +8726,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'received(settlement, maturity, investment, discount, basis)'
-    fullName: received
+    fullName: 'received(settlement, maturity, investment, discount, basis)'
     langs:
       - typeScript
     type: method
@@ -8769,7 +8769,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'replace(oldText, startNum, numChars, newText)'
-    fullName: replace
+    fullName: 'replace(oldText, startNum, numChars, newText)'
     langs:
       - typeScript
     type: method
@@ -8806,7 +8806,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'replaceB(oldText, startNum, numBytes, newText)'
-    fullName: replaceB
+    fullName: 'replaceB(oldText, startNum, numBytes, newText)'
     langs:
       - typeScript
     type: method
@@ -8843,7 +8843,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'rept(text, numberTimes)'
-    fullName: rept
+    fullName: 'rept(text, numberTimes)'
     langs:
       - typeScript
     type: method
@@ -8870,7 +8870,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'right(text, numChars)'
-    fullName: right
+    fullName: 'right(text, numChars)'
     langs:
       - typeScript
     type: method
@@ -8899,7 +8899,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'rightb(text, numBytes)'
-    fullName: rightb
+    fullName: 'rightb(text, numBytes)'
     langs:
       - typeScript
     type: method
@@ -8926,7 +8926,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'roman(number, form)'
-    fullName: roman
+    fullName: 'roman(number, form)'
     langs:
       - typeScript
     type: method
@@ -8953,7 +8953,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'round(number, numDigits)'
-    fullName: round
+    fullName: 'round(number, numDigits)'
     langs:
       - typeScript
     type: method
@@ -8982,7 +8982,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'roundDown(number, numDigits)'
-    fullName: roundDown
+    fullName: 'roundDown(number, numDigits)'
     langs:
       - typeScript
     type: method
@@ -9011,7 +9011,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'roundUp(number, numDigits)'
-    fullName: roundUp
+    fullName: 'roundUp(number, numDigits)'
     langs:
       - typeScript
     type: method
@@ -9040,7 +9040,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rows(array)
-    fullName: rows
+    fullName: rows(array)
     langs:
       - typeScript
     type: method
@@ -9061,7 +9061,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'rri(nper, pv, fv)'
-    fullName: rri
+    fullName: 'rri(nper, pv, fv)'
     langs:
       - typeScript
     type: method
@@ -9093,7 +9093,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sec(number)
-    fullName: sec
+    fullName: sec(number)
     langs:
       - typeScript
     type: method
@@ -9114,7 +9114,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sech(number)
-    fullName: sech
+    fullName: sech(number)
     langs:
       - typeScript
     type: method
@@ -9135,7 +9135,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: second(serialNumber)
-    fullName: second
+    fullName: second(serialNumber)
     langs:
       - typeScript
     type: method
@@ -9160,7 +9160,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'seriesSum(x, n, m, coefficients)'
-    fullName: seriesSum
+    fullName: 'seriesSum(x, n, m, coefficients)'
     langs:
       - typeScript
     type: method
@@ -9197,7 +9197,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sheet(value)
-    fullName: sheet
+    fullName: sheet(value)
     langs:
       - typeScript
     type: method
@@ -9220,7 +9220,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sheets(reference)
-    fullName: sheets
+    fullName: sheets(reference)
     langs:
       - typeScript
     type: method
@@ -9245,7 +9245,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sign(number)
-    fullName: sign
+    fullName: sign(number)
     langs:
       - typeScript
     type: method
@@ -9266,7 +9266,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sin(number)
-    fullName: sin
+    fullName: sin(number)
     langs:
       - typeScript
     type: method
@@ -9287,7 +9287,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sinh(number)
-    fullName: sinh
+    fullName: sinh(number)
     langs:
       - typeScript
     type: method
@@ -9302,33 +9302,6 @@ items:
           description: Is any real number.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.skew
-    summary: >-
-      Returns the skewness of a distribution: a characterization of the degree of asymmetry of a distribution around its
-      mean.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: skew(values)
-    fullName: skew
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        skew(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>):
-        FunctionResult<number>;
-      return:
-        type:
-          - FunctionResult<number>
-        description: ''
-      parameters:
-        - id: values
-          description: >-
-            List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers
-            for which you want the skewness.
-          type:
-            - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel_release.Excel.Functions.skew_p
     summary: >-
       Returns the skewness of a distribution based on a population: a characterization of the degree of asymmetry of a
@@ -9337,7 +9310,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: skew_p(values)
-    fullName: skew_p
+    fullName: skew_p(values)
     langs:
       - typeScript
     type: method
@@ -9356,13 +9329,40 @@ items:
             for which you want the population skewness.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
+  - uid: excel_release.Excel.Functions.skew
+    summary: >-
+      Returns the skewness of a distribution: a characterization of the degree of asymmetry of a distribution around its
+      mean.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: skew(values)
+    fullName: skew(values)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        skew(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>):
+        FunctionResult<number>;
+      return:
+        type:
+          - FunctionResult<number>
+        description: ''
+      parameters:
+        - id: values
+          description: >-
+            List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers
+            for which you want the skewness.
+          type:
+            - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel_release.Excel.Functions.sln
     summary: |-
       Returns the straight-line depreciation of an asset for one period.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'sln(cost, salvage, life)'
-    fullName: sln
+    fullName: 'sln(cost, salvage, life)'
     langs:
       - typeScript
     type: method
@@ -9396,7 +9396,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'small(array, k)'
-    fullName: small
+    fullName: 'small(array, k)'
     langs:
       - typeScript
     type: method
@@ -9423,7 +9423,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sqrt(number)
-    fullName: sqrt
+    fullName: sqrt(number)
     langs:
       - typeScript
     type: method
@@ -9444,7 +9444,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sqrtPi(number)
-    fullName: sqrtPi
+    fullName: sqrtPi(number)
     langs:
       - typeScript
     type: method
@@ -9467,7 +9467,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'standardize(x, mean, standardDev)'
-    fullName: standardize
+    fullName: 'standardize(x, mean, standardDev)'
     langs:
       - typeScript
     type: method
@@ -9499,7 +9499,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: stDev_P(values)
-    fullName: stDev_P
+    fullName: stDev_P(values)
     langs:
       - typeScript
     type: method
@@ -9524,7 +9524,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: stDev_S(values)
-    fullName: stDev_S
+    fullName: stDev_S(values)
     langs:
       - typeScript
     type: method
@@ -9551,7 +9551,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: stDevA(values)
-    fullName: stDevA
+    fullName: stDevA(values)
     langs:
       - typeScript
     type: method
@@ -9578,7 +9578,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: stDevPA(values)
-    fullName: stDevPA
+    fullName: stDevPA(values)
     langs:
       - typeScript
     type: method
@@ -9603,7 +9603,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'substitute(text, oldText, newText, instanceNum)'
-    fullName: substitute
+    fullName: 'substitute(text, oldText, newText, instanceNum)'
     langs:
       - typeScript
     type: method
@@ -9644,7 +9644,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'subtotal(functionNum, values)'
-    fullName: subtotal
+    fullName: 'subtotal(functionNum, values)'
     langs:
       - typeScript
     type: method
@@ -9671,7 +9671,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sum(values)
-    fullName: sum
+    fullName: sum(values)
     langs:
       - typeScript
     type: method
@@ -9696,7 +9696,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'sumIf(range, criteria, sumRange)'
-    fullName: sumIf
+    fullName: 'sumIf(range, criteria, sumRange)'
     langs:
       - typeScript
     type: method
@@ -9730,7 +9730,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'sumIfs(sumRange, values)'
-    fullName: sumIfs
+    fullName: 'sumIfs(sumRange, values)'
     langs:
       - typeScript
     type: method
@@ -9762,7 +9762,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sumSq(values)
-    fullName: sumSq
+    fullName: sumSq(values)
     langs:
       - typeScript
     type: method
@@ -9787,7 +9787,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'syd(cost, salvage, life, per)'
-    fullName: syd
+    fullName: 'syd(cost, salvage, life, per)'
     langs:
       - typeScript
     type: method
@@ -9820,36 +9820,67 @@ items:
           description: Is the period and must use the same units as Life.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.t
+  - uid: excel_release.Excel.Functions.t_Dist_2T
     summary: |-
-      Checks whether a value is text, and returns the text if it is, or returns double quotes (empty text) if it is not.
+      Returns the two-tailed Student's t-distribution.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: t(value)
-    fullName: t
+    name: 't_Dist_2T(x, degFreedom)'
+    fullName: 't_Dist_2T(x, degFreedom)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        t(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>):
-        FunctionResult<string>;
+        t_Dist_2T(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number |
+        Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
       return:
         type:
-          - FunctionResult<string>
+          - FunctionResult<number>
         description: ''
       parameters:
-        - id: value
-          description: Is the value to test.
+        - id: x
+          description: Is the numeric value at which to evaluate the distribution.
           type:
-            - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: degFreedom
+          description: Is an integer indicating the number of degrees of freedom that characterize the distribution.
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+  - uid: excel_release.Excel.Functions.t_Dist_RT
+    summary: |-
+      Returns the right-tailed Student's t-distribution.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 't_Dist_RT(x, degFreedom)'
+    fullName: 't_Dist_RT(x, degFreedom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        t_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number |
+        Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
+      return:
+        type:
+          - FunctionResult<number>
+        description: ''
+      parameters:
+        - id: x
+          description: Is the numeric value at which to evaluate the distribution.
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: degFreedom
+          description: Is an integer indicating the number of degrees of freedom that characterize the distribution.
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.t_Dist
     summary: |-
       Returns the left-tailed Student's t-distribution.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 't_Dist(x, degFreedom, cumulative)'
-    fullName: t_Dist
+    fullName: 't_Dist(x, degFreedom, cumulative)'
     langs:
       - typeScript
     type: method
@@ -9877,96 +9908,13 @@ items:
             function, use FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.t_Dist_2T
-    summary: |-
-      Returns the two-tailed Student's t-distribution.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 't_Dist_2T(x, degFreedom)'
-    fullName: t_Dist_2T
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        t_Dist_2T(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number |
-        Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
-      return:
-        type:
-          - FunctionResult<number>
-        description: ''
-      parameters:
-        - id: x
-          description: Is the numeric value at which to evaluate the distribution.
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: degFreedom
-          description: Is an integer indicating the number of degrees of freedom that characterize the distribution.
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.t_Dist_RT
-    summary: |-
-      Returns the right-tailed Student's t-distribution.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 't_Dist_RT(x, degFreedom)'
-    fullName: t_Dist_RT
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        t_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number |
-        Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
-      return:
-        type:
-          - FunctionResult<number>
-        description: ''
-      parameters:
-        - id: x
-          description: Is the numeric value at which to evaluate the distribution.
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: degFreedom
-          description: Is an integer indicating the number of degrees of freedom that characterize the distribution.
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.t_Inv
-    summary: |-
-      Returns the left-tailed inverse of the Student's t-distribution.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 't_Inv(probability, degFreedom)'
-    fullName: t_Inv
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        t_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number |
-        Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
-      return:
-        type:
-          - FunctionResult<number>
-        description: ''
-      parameters:
-        - id: probability
-          description: >-
-            Is the probability associated with the two-tailed Student's t-distribution, a number between 0 and 1
-            inclusive.
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: degFreedom
-          description: Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
-          type:
-            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.t_Inv_2T
     summary: |-
       Returns the two-tailed inverse of the Student's t-distribution.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 't_Inv_2T(probability, degFreedom)'
-    fullName: t_Inv_2T
+    fullName: 't_Inv_2T(probability, degFreedom)'
     langs:
       - typeScript
     type: method
@@ -9989,13 +9937,65 @@ items:
           description: Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+  - uid: excel_release.Excel.Functions.t_Inv
+    summary: |-
+      Returns the left-tailed inverse of the Student's t-distribution.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 't_Inv(probability, degFreedom)'
+    fullName: 't_Inv(probability, degFreedom)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        t_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number |
+        Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
+      return:
+        type:
+          - FunctionResult<number>
+        description: ''
+      parameters:
+        - id: probability
+          description: >-
+            Is the probability associated with the two-tailed Student's t-distribution, a number between 0 and 1
+            inclusive.
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: degFreedom
+          description: Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
+          type:
+            - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+  - uid: excel_release.Excel.Functions.t
+    summary: |-
+      Checks whether a value is text, and returns the text if it is, or returns double quotes (empty text) if it is not.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: t(value)
+    fullName: t(value)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        t(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>):
+        FunctionResult<string>;
+      return:
+        type:
+          - FunctionResult<string>
+        description: ''
+      parameters:
+        - id: value
+          description: Is the value to test.
+          type:
+            - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.tan
     summary: |-
       Returns the tangent of an angle.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tan(number)
-    fullName: tan
+    fullName: tan(number)
     langs:
       - typeScript
     type: method
@@ -10016,7 +10016,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tanh(number)
-    fullName: tanh
+    fullName: tanh(number)
     langs:
       - typeScript
     type: method
@@ -10037,7 +10037,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'tbillEq(settlement, maturity, discount)'
-    fullName: tbillEq
+    fullName: 'tbillEq(settlement, maturity, discount)'
     langs:
       - typeScript
     type: method
@@ -10070,7 +10070,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'tbillPrice(settlement, maturity, discount)'
-    fullName: tbillPrice
+    fullName: 'tbillPrice(settlement, maturity, discount)'
     langs:
       - typeScript
     type: method
@@ -10103,7 +10103,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'tbillYield(settlement, maturity, pr)'
-    fullName: tbillYield
+    fullName: 'tbillYield(settlement, maturity, pr)'
     langs:
       - typeScript
     type: method
@@ -10136,7 +10136,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'text(value, formatText)'
-    fullName: text
+    fullName: 'text(value, formatText)'
     langs:
       - typeScript
     type: method
@@ -10167,7 +10167,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'time(hour, minute, second)'
-    fullName: time
+    fullName: 'time(hour, minute, second)'
     langs:
       - typeScript
     type: method
@@ -10201,7 +10201,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: timevalue(timeText)
-    fullName: timevalue
+    fullName: timevalue(timeText)
     langs:
       - typeScript
     type: method
@@ -10226,7 +10226,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: today()
-    fullName: today
+    fullName: today()
     langs:
       - typeScript
     type: method
@@ -10244,12 +10244,15 @@ items:
       JavaScript object (typed as `Excel.Interfaces.FunctionsData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: |-
+        toJSON(): {
+                    [key: string]: string;
+                };
       return:
         type:
           - |-
@@ -10263,7 +10266,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: trim(text)
-    fullName: trim
+    fullName: trim(text)
     langs:
       - typeScript
     type: method
@@ -10284,7 +10287,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'trimMean(array, percent)'
-    fullName: trimMean
+    fullName: 'trimMean(array, percent)'
     langs:
       - typeScript
     type: method
@@ -10311,7 +10314,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: true()
-    fullName: 'true'
+    fullName: true()
     langs:
       - typeScript
     type: method
@@ -10327,7 +10330,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'trunc(number, numDigits)'
-    fullName: trunc
+    fullName: 'trunc(number, numDigits)'
     langs:
       - typeScript
     type: method
@@ -10356,7 +10359,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type(value)
-    fullName: type
+    fullName: type(value)
     langs:
       - typeScript
     type: method
@@ -10379,7 +10382,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: unichar(number)
-    fullName: unichar
+    fullName: unichar(number)
     langs:
       - typeScript
     type: method
@@ -10402,7 +10405,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: unicode(text)
-    fullName: unicode
+    fullName: unicode(text)
     langs:
       - typeScript
     type: method
@@ -10423,7 +10426,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: upper(text)
-    fullName: upper
+    fullName: upper(text)
     langs:
       - typeScript
     type: method
@@ -10444,7 +10447,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'usdollar(number, decimals)'
-    fullName: usdollar
+    fullName: 'usdollar(number, decimals)'
     langs:
       - typeScript
     type: method
@@ -10471,7 +10474,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value(text)
-    fullName: value
+    fullName: value(text)
     langs:
       - typeScript
     type: method
@@ -10494,7 +10497,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: var_P(values)
-    fullName: var_P
+    fullName: var_P(values)
     langs:
       - typeScript
     type: method
@@ -10517,7 +10520,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: var_S(values)
-    fullName: var_S
+    fullName: var_S(values)
     langs:
       - typeScript
     type: method
@@ -10542,7 +10545,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: varA(values)
-    fullName: varA
+    fullName: varA(values)
     langs:
       - typeScript
     type: method
@@ -10567,7 +10570,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: varPA(values)
-    fullName: varPA
+    fullName: varPA(values)
     langs:
       - typeScript
     type: method
@@ -10592,7 +10595,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'vdb(cost, salvage, life, startPeriod, endPeriod, factor, noSwitch)'
-    fullName: vdb
+    fullName: 'vdb(cost, salvage, life, startPeriod, endPeriod, factor, noSwitch)'
     langs:
       - typeScript
     type: method
@@ -10649,7 +10652,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'vlookup(lookupValue, tableArray, colIndexNum, rangeLookup)'
-    fullName: vlookup
+    fullName: 'vlookup(lookupValue, tableArray, colIndexNum, rangeLookup)'
     langs:
       - typeScript
     type: method
@@ -10694,7 +10697,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'weekday(serialNumber, returnType)'
-    fullName: weekday
+    fullName: 'weekday(serialNumber, returnType)'
     langs:
       - typeScript
     type: method
@@ -10723,7 +10726,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'weekNum(serialNumber, returnType)'
-    fullName: weekNum
+    fullName: 'weekNum(serialNumber, returnType)'
     langs:
       - typeScript
     type: method
@@ -10751,7 +10754,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'weibull_Dist(x, alpha, beta, cumulative)'
-    fullName: weibull_Dist
+    fullName: 'weibull_Dist(x, alpha, beta, cumulative)'
     langs:
       - typeScript
     type: method
@@ -10784,41 +10787,6 @@ items:
             use FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel_release.Excel.Functions.workDay
-    summary: |-
-      Returns the serial number of the date before or after a specified number of workdays.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'workDay(startDate, days, holidays)'
-    fullName: workDay
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        workDay(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
-        days: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, holidays?:
-        number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>):
-        FunctionResult<number>;
-      return:
-        type:
-          - FunctionResult<number>
-        description: ''
-      parameters:
-        - id: startDate
-          description: Is a serial date number that represents the start date.
-          type:
-            - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: days
-          description: Is the number of nonweekend and non-holiday days before or after startDate.
-          type:
-            - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-        - id: holidays
-          description: >-
-            Is an optional array of one or more serial date numbers to exclude from the working calendar, such as state
-            and federal holidays and floating holidays.
-          type:
-            - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.workDay_Intl
     summary: >-
       Returns the serial number of the date before or after a specified number of workdays with custom weekend
@@ -10827,7 +10795,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'workDay_Intl(startDate, days, weekend, holidays)'
-    fullName: workDay_Intl
+    fullName: 'workDay_Intl(startDate, days, weekend, holidays)'
     langs:
       - typeScript
     type: method
@@ -10861,13 +10829,48 @@ items:
             and federal holidays and floating holidays.
           type:
             - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
+  - uid: excel_release.Excel.Functions.workDay
+    summary: |-
+      Returns the serial number of the date before or after a specified number of workdays.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'workDay(startDate, days, holidays)'
+    fullName: 'workDay(startDate, days, holidays)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        workDay(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>,
+        days: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, holidays?:
+        number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>):
+        FunctionResult<number>;
+      return:
+        type:
+          - FunctionResult<number>
+        description: ''
+      parameters:
+        - id: startDate
+          description: Is a serial date number that represents the start date.
+          type:
+            - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: days
+          description: Is the number of nonweekend and non-holiday days before or after startDate.
+          type:
+            - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
+        - id: holidays
+          description: >-
+            Is an optional array of one or more serial date numbers to exclude from the working calendar, such as state
+            and federal holidays and floating holidays.
+          type:
+            - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel_release.Excel.Functions.xirr
     summary: |-
       Returns the internal rate of return for a schedule of cash flows.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'xirr(values, dates, guess)'
-    fullName: xirr
+    fullName: 'xirr(values, dates, guess)'
     langs:
       - typeScript
     type: method
@@ -10899,7 +10902,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'xnpv(rate, values, dates)'
-    fullName: xnpv
+    fullName: 'xnpv(rate, values, dates)'
     langs:
       - typeScript
     type: method
@@ -10931,7 +10934,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: xor(values)
-    fullName: xor
+    fullName: xor(values)
     langs:
       - typeScript
     type: method
@@ -10956,7 +10959,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: year(serialNumber)
-    fullName: year
+    fullName: year(serialNumber)
     langs:
       - typeScript
     type: method
@@ -10979,7 +10982,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'yearFrac(startDate, endDate, basis)'
-    fullName: yearFrac
+    fullName: 'yearFrac(startDate, endDate, basis)'
     langs:
       - typeScript
     type: method
@@ -11012,7 +11015,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'yield(settlement, maturity, rate, pr, redemption, frequency, basis)'
-    fullName: yield
+    fullName: 'yield(settlement, maturity, rate, pr, redemption, frequency, basis)'
     langs:
       - typeScript
     type: method
@@ -11064,7 +11067,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'yieldDisc(settlement, maturity, pr, redemption, basis)'
-    fullName: yieldDisc
+    fullName: 'yieldDisc(settlement, maturity, pr, redemption, basis)'
     langs:
       - typeScript
     type: method
@@ -11107,7 +11110,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'yieldMat(settlement, maturity, issue, rate, pr, basis)'
-    fullName: yieldMat
+    fullName: 'yieldMat(settlement, maturity, issue, rate, pr, basis)'
     langs:
       - typeScript
     type: method
@@ -11154,7 +11157,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'z_Test(array, x, sigma)'
-    fullName: z_Test
+    fullName: 'z_Test(array, x, sigma)'
     langs:
       - typeScript
     type: method

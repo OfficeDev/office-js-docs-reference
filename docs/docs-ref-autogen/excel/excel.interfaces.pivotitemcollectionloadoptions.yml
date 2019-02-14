@@ -12,10 +12,22 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.PivotItemCollectionLoadOptions.$all
       - excel.Excel.Interfaces.PivotItemCollectionLoadOptions.id
       - excel.Excel.Interfaces.PivotItemCollectionLoadOptions.isExpanded
       - excel.Excel.Interfaces.PivotItemCollectionLoadOptions.name
       - excel.Excel.Interfaces.PivotItemCollectionLoadOptions.visible
+  - uid: excel.Excel.Interfaces.PivotItemCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.PivotItemCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: Id of the PivotItem.

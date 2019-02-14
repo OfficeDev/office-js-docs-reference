@@ -25,6 +25,8 @@ items:
       - excel.Excel.SlicerCollection.getItemOrNullObject
       - excel.Excel.SlicerCollection.items
       - excel.Excel.SlicerCollection.load
+      - excel.Excel.SlicerCollection.load_1
+      - excel.Excel.SlicerCollection.load_2
       - excel.Excel.SlicerCollection.toJSON
   - uid: excel.Excel.SlicerCollection.add
     summary: >-
@@ -35,7 +37,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'add(slicerSource, sourceField, slicerDestination)'
-    fullName: add
+    fullName: 'add(slicerSource, sourceField, slicerDestination)'
     langs:
       - typeScript
     type: method
@@ -92,7 +94,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -111,7 +113,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItem(key)
-    fullName: getItem
+    fullName: getItem(key)
     langs:
       - typeScript
     type: method
@@ -135,7 +137,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItemAt(index)
-    fullName: getItemAt
+    fullName: getItemAt(index)
     langs:
       - typeScript
     type: method
@@ -159,7 +161,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject
+    fullName: getItemOrNullObject(key)
     langs:
       - typeScript
     type: method
@@ -195,6 +197,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.SlicerCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.SlicerCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -207,7 +213,7 @@ items:
       specified number of items.
     isPreview: true
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -221,9 +227,48 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - Excel.Interfaces.SlicerCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.SlicerCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.SlicerCollection;'
+      return:
+        type:
+          - excel.Excel.SlicerCollection
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.SlicerCollection.load_2
+    isPreview: true
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.SlicerCollection;'
+      return:
+        type:
+          - excel.Excel.SlicerCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.SlicerCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -233,7 +278,7 @@ items:
       array with shallow copies of any loaded properties from the collection's items.
     isPreview: true
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

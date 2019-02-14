@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.ChartTrendlineLoadOptions.$all
       - excel_release.Excel.Interfaces.ChartTrendlineLoadOptions.backwardPeriod
       - excel_release.Excel.Interfaces.ChartTrendlineLoadOptions.format
       - excel_release.Excel.Interfaces.ChartTrendlineLoadOptions.forwardPeriod
@@ -23,6 +24,17 @@ items:
       - excel_release.Excel.Interfaces.ChartTrendlineLoadOptions.showEquation
       - excel_release.Excel.Interfaces.ChartTrendlineLoadOptions.showRSquared
       - excel_release.Excel.Interfaces.ChartTrendlineLoadOptions.type
+  - uid: excel_release.Excel.Interfaces.ChartTrendlineLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ChartTrendlineLoadOptions.backwardPeriod
     summary: |-
       Represents the number of periods that the trendline extends backward.

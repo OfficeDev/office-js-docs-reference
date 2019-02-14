@@ -12,11 +12,23 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.RangeFillLoadOptions.$all
       - excel.Excel.Interfaces.RangeFillLoadOptions.color
       - excel.Excel.Interfaces.RangeFillLoadOptions.pattern
       - excel.Excel.Interfaces.RangeFillLoadOptions.patternColor
       - excel.Excel.Interfaces.RangeFillLoadOptions.patternTintAndShade
       - excel.Excel.Interfaces.RangeFillLoadOptions.tintAndShade
+  - uid: excel.Excel.Interfaces.RangeFillLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.RangeFillLoadOptions.color
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML

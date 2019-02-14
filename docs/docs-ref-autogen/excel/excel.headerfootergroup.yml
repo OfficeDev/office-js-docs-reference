@@ -19,7 +19,11 @@ items:
       - excel.Excel.HeaderFooterGroup.evenPages
       - excel.Excel.HeaderFooterGroup.firstPage
       - excel.Excel.HeaderFooterGroup.load
+      - excel.Excel.HeaderFooterGroup.load_1
+      - excel.Excel.HeaderFooterGroup.load_2
       - excel.Excel.HeaderFooterGroup.oddPages
+      - excel.Excel.HeaderFooterGroup.set
+      - excel.Excel.HeaderFooterGroup.set_1
       - excel.Excel.HeaderFooterGroup.state
       - excel.Excel.HeaderFooterGroup.toJSON
       - excel.Excel.HeaderFooterGroup.useSheetMargins
@@ -101,6 +105,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.HeaderFooterGroup` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.HeaderFooterGroup` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -113,7 +121,7 @@ items:
       specified number of items.
     isPreview: true
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -125,9 +133,53 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - excel.Excel.Interfaces.HeaderFooterGroupLoadOptions
+  - uid: excel.Excel.HeaderFooterGroup.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.HeaderFooterGroup;'
+      return:
+        type:
+          - excel.Excel.HeaderFooterGroup
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.HeaderFooterGroup.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.HeaderFooterGroup;'
+      return:
+        type:
+          - excel.Excel.HeaderFooterGroup
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.HeaderFooterGroup.oddPages
     summary: >-
       The header/footer to use for odd pages, even header/footer needs to be specified for even pages.
@@ -146,6 +198,56 @@ items:
       return:
         type:
           - excel.Excel.HeaderFooter
+  - uid: excel.Excel.HeaderFooterGroup.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.HeaderFooterGroup): void`
+    isPreview: true
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.HeaderFooterGroupUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.HeaderFooterGroupUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.HeaderFooterGroup.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    isPreview: true
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.HeaderFooterGroup): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.HeaderFooterGroup
   - uid: excel.Excel.HeaderFooterGroup.state
     summary: >-
       Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
@@ -173,7 +275,7 @@ items:
       of any loaded child properties from the original object.
     isPreview: true
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

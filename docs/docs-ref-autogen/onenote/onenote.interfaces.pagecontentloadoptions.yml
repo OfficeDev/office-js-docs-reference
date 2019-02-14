@@ -14,6 +14,7 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.PageContentLoadOptions.$all
       - onenote.OneNote.Interfaces.PageContentLoadOptions.id
       - onenote.OneNote.Interfaces.PageContentLoadOptions.image
       - onenote.OneNote.Interfaces.PageContentLoadOptions.ink
@@ -22,6 +23,17 @@ items:
       - onenote.OneNote.Interfaces.PageContentLoadOptions.parentPage
       - onenote.OneNote.Interfaces.PageContentLoadOptions.top
       - onenote.OneNote.Interfaces.PageContentLoadOptions.type
+  - uid: onenote.OneNote.Interfaces.PageContentLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.PageContentLoadOptions.id
     summary: |-
       Gets the ID of the PageContent object. Read-only.

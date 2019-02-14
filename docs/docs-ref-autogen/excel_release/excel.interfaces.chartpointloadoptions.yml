@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.ChartPointLoadOptions.$all
       - excel_release.Excel.Interfaces.ChartPointLoadOptions.dataLabel
       - excel_release.Excel.Interfaces.ChartPointLoadOptions.format
       - excel_release.Excel.Interfaces.ChartPointLoadOptions.hasDataLabel
@@ -20,6 +21,17 @@ items:
       - excel_release.Excel.Interfaces.ChartPointLoadOptions.markerSize
       - excel_release.Excel.Interfaces.ChartPointLoadOptions.markerStyle
       - excel_release.Excel.Interfaces.ChartPointLoadOptions.value
+  - uid: excel_release.Excel.Interfaces.ChartPointLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ChartPointLoadOptions.dataLabel
     summary: |-
       Returns the data label of a chart point.

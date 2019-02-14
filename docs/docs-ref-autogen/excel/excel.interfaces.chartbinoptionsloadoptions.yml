@@ -15,6 +15,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartBinOptionsLoadOptions.$all
       - excel.Excel.Interfaces.ChartBinOptionsLoadOptions.allowOverflow
       - excel.Excel.Interfaces.ChartBinOptionsLoadOptions.allowUnderflow
       - excel.Excel.Interfaces.ChartBinOptionsLoadOptions.count
@@ -22,6 +23,18 @@ items:
       - excel.Excel.Interfaces.ChartBinOptionsLoadOptions.type
       - excel.Excel.Interfaces.ChartBinOptionsLoadOptions.underflowValue
       - excel.Excel.Interfaces.ChartBinOptionsLoadOptions.width
+  - uid: excel.Excel.Interfaces.ChartBinOptionsLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartBinOptionsLoadOptions.allowOverflow
     summary: >-
       Returns or sets if bin overflow enabled in a histogram chart or pareto chart. Read/Write.

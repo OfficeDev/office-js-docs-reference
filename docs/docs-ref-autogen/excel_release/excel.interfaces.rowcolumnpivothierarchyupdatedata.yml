@@ -2,8 +2,8 @@
 items:
   - uid: excel_release.Excel.Interfaces.RowColumnPivotHierarchyUpdateData
     summary: >-
-      An interface for updating data on the RowColumnPivotHierarchy object, for use in "rowColumnPivotHierarchy.set({
-      ... })".
+      An interface for updating data on the RowColumnPivotHierarchy object, for use in "rowColumnPivotHierarchy.set(<!--
+      -->{ ... }<!-- -->)".
     name: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
     fullName: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
     langs:

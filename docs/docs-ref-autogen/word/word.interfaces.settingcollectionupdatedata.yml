@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.SettingCollectionUpdateData
-    summary: 'An interface for updating data on the SettingCollection object, for use in "settingCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the SettingCollection object, for use in "settingCollection.set(<!-- -->{ ...
+      }<!-- -->)".
     name: Word.Interfaces.SettingCollectionUpdateData
     fullName: Word.Interfaces.SettingCollectionUpdateData
     langs:

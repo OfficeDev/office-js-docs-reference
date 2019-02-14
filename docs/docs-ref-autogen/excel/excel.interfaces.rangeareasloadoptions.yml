@@ -15,6 +15,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.RangeAreasLoadOptions.$all
       - excel.Excel.Interfaces.RangeAreasLoadOptions.address
       - excel.Excel.Interfaces.RangeAreasLoadOptions.addressLocal
       - excel.Excel.Interfaces.RangeAreasLoadOptions.areaCount
@@ -25,6 +26,18 @@ items:
       - excel.Excel.Interfaces.RangeAreasLoadOptions.isEntireRow
       - excel.Excel.Interfaces.RangeAreasLoadOptions.style
       - excel.Excel.Interfaces.RangeAreasLoadOptions.worksheet
+  - uid: excel.Excel.Interfaces.RangeAreasLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.RangeAreasLoadOptions.address
     summary: >-
       Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular

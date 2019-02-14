@@ -23,6 +23,8 @@ items:
       - excel_release.Excel.Workbook.getActiveCell
       - excel_release.Excel.Workbook.getSelectedRange
       - excel_release.Excel.Workbook.load
+      - excel_release.Excel.Workbook.load_1
+      - excel_release.Excel.Workbook.load_2
       - excel_release.Excel.Workbook.name
       - excel_release.Excel.Workbook.names
       - excel_release.Excel.Workbook.onSelectionChanged
@@ -30,6 +32,8 @@ items:
       - excel_release.Excel.Workbook.properties
       - excel_release.Excel.Workbook.protection
       - excel_release.Excel.Workbook.readOnly
+      - excel_release.Excel.Workbook.set
+      - excel_release.Excel.Workbook.set_1
       - excel_release.Excel.Workbook.settings
       - excel_release.Excel.Workbook.styles
       - excel_release.Excel.Workbook.tables
@@ -130,7 +134,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveCell()
-    fullName: getActiveCell
+    fullName: getActiveCell()
     langs:
       - typeScript
     type: method
@@ -139,7 +143,22 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+
+              let myWorkbook = context.workbook;
+              let activeCell = myWorkbook.getActiveCell();
+              activeCell.load("address");
+
+              await context.sync();
+              
+              console.log("The active cell is " + activeCell.address);
+          });
+          ```
   - uid: excel_release.Excel.Workbook.getSelectedRange
     summary: >-
       Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method
@@ -148,7 +167,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getSelectedRange()
-    fullName: getSelectedRange
+    fullName: getSelectedRange()
     langs:
       - typeScript
     type: method
@@ -157,13 +176,34 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var selectedRange = ctx.workbook.getSelectedRange();
+              selectedRange.load('address');
+              return ctx.sync().then(function() {
+                      console.log(selectedRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: excel_release.Excel.Workbook.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.Workbook` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Excel.Workbook` - Where option.select is a comma-delimited
@@ -177,7 +217,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -189,9 +229,51 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - excel.Excel.Interfaces.WorkbookLoadOptions
+  - uid: excel_release.Excel.Workbook.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Workbook;'
+      return:
+        type:
+          - excel.Excel.Workbook
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.Workbook.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Workbook;'
+      return:
+        type:
+          - excel.Excel.Workbook
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel_release.Excel.Workbook.name
     summary: |-
       Gets the workbook name. Read-only.
@@ -267,6 +349,36 @@ items:
       return:
         type:
           - excel.Excel.DocumentProperties
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let titleValue = "Excel document properties API";
+              let subjectValue = "Set and get document properties";
+              let keywordsValue = "Set and get operations";
+              let commentsValue = "This is an Excel document properties API code sample";
+              let categoryValue = "Office Add-ins";
+              let managerValue = "John";
+              let companyValue = "Microsoft";
+
+              let docProperties = context.workbook.properties;
+
+              // Set the writeable document properties.
+              docProperties.title = titleValue;
+              docProperties.subject = subjectValue;
+              docProperties.keywords = keywordsValue;
+              docProperties.comments = commentsValue;
+              docProperties.category = categoryValue;
+              docProperties.manager = managerValue;
+              docProperties.company = companyValue;
+
+              await context.sync();
+
+              console.log("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
+          });
+          ```
   - uid: excel_release.Excel.Workbook.protection
     summary: |-
       Returns workbook protection object for a workbook. Read-only.
@@ -297,6 +409,54 @@ items:
       return:
         type:
           - boolean
+  - uid: excel_release.Excel.Workbook.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Workbook): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.WorkbookUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel_release.Excel.Workbook.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Workbook): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.Workbook
   - uid: excel_release.Excel.Workbook.settings
     summary: |-
       Represents a collection of Settings associated with the workbook. Read-only.
@@ -350,7 +510,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.WorkbookData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

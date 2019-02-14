@@ -12,9 +12,21 @@ items:
     type: interface
     package: visio
     children:
+      - visio.Visio.Interfaces.CommentLoadOptions.$all
       - visio.Visio.Interfaces.CommentLoadOptions.author
       - visio.Visio.Interfaces.CommentLoadOptions.date
       - visio.Visio.Interfaces.CommentLoadOptions.text
+  - uid: visio.Visio.Interfaces.CommentLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: visio.Visio.Interfaces.CommentLoadOptions.author
     summary: |-
       A string that specifies the name of the author of the comment.

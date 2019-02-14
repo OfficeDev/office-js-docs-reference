@@ -15,6 +15,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ShapeLoadOptions.$all
       - excel.Excel.Interfaces.ShapeLoadOptions.altTextDescription
       - excel.Excel.Interfaces.ShapeLoadOptions.altTextTitle
       - excel.Excel.Interfaces.ShapeLoadOptions.fill
@@ -39,6 +40,18 @@ items:
       - excel.Excel.Interfaces.ShapeLoadOptions.visible
       - excel.Excel.Interfaces.ShapeLoadOptions.width
       - excel.Excel.Interfaces.ShapeLoadOptions.zorderPosition
+  - uid: excel.Excel.Interfaces.ShapeLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ShapeLoadOptions.altTextDescription
     summary: >-
       Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page.

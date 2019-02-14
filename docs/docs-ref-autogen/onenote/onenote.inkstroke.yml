@@ -14,12 +14,29 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
+      - onenote.OneNote.InkStroke.context
       - onenote.OneNote.InkStroke.floatingInk
       - onenote.OneNote.InkStroke.id
       - onenote.OneNote.InkStroke.load
+      - onenote.OneNote.InkStroke.load_1
+      - onenote.OneNote.InkStroke.load_2
       - onenote.OneNote.InkStroke.toJSON
       - onenote.OneNote.InkStroke.track
       - onenote.OneNote.InkStroke.untrack
+  - uid: onenote.OneNote.InkStroke.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.InkStroke.floatingInk
     summary: |-
       Gets the ID of the InkStroke object. Read-only.
@@ -58,6 +75,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.InkStroke` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.InkStroke` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -69,7 +90,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -81,12 +102,60 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - onenote.OneNote.Interfaces.InkStrokeLoadOptions
+  - uid: onenote.OneNote.InkStroke.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): OneNote.InkStroke;'
+      return:
+        type:
+          - onenote.OneNote.InkStroke
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: onenote.OneNote.InkStroke.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.InkStroke;'
+      return:
+        type:
+          - onenote.OneNote.InkStroke
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: onenote.OneNote.InkStroke.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.InkStroke object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `OneNote.Interfaces.InkStrokeData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -104,7 +173,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -121,7 +190,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.RangeFormatLoadOptions.$all
       - excel_release.Excel.Interfaces.RangeFormatLoadOptions.borders
       - excel_release.Excel.Interfaces.RangeFormatLoadOptions.columnWidth
       - excel_release.Excel.Interfaces.RangeFormatLoadOptions.fill
@@ -24,6 +25,17 @@ items:
       - excel_release.Excel.Interfaces.RangeFormatLoadOptions.useStandardWidth
       - excel_release.Excel.Interfaces.RangeFormatLoadOptions.verticalAlignment
       - excel_release.Excel.Interfaces.RangeFormatLoadOptions.wrapText
+  - uid: excel_release.Excel.Interfaces.RangeFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.RangeFormatLoadOptions.borders
     summary: |-
       Collection of border objects that apply to the overall range.

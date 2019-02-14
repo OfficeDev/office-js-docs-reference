@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.RangeCollectionLoadOptions.$all
       - word.Word.Interfaces.RangeCollectionLoadOptions.font
       - word.Word.Interfaces.RangeCollectionLoadOptions.hyperlink
       - word.Word.Interfaces.RangeCollectionLoadOptions.isEmpty
@@ -25,6 +26,17 @@ items:
       - word.Word.Interfaces.RangeCollectionLoadOptions.style
       - word.Word.Interfaces.RangeCollectionLoadOptions.styleBuiltIn
       - word.Word.Interfaces.RangeCollectionLoadOptions.text
+  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.RangeCollectionLoadOptions.font
     summary: >-
       For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size,

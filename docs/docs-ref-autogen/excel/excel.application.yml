@@ -15,12 +15,17 @@ items:
     package: excel
     children:
       - excel.Excel.Application.calculate
+      - excel.Excel.Application.calculate_1
       - excel.Excel.Application.calculationEngineVersion
       - excel.Excel.Application.calculationMode
       - excel.Excel.Application.calculationState
       - excel.Excel.Application.context
       - excel.Excel.Application.iterativeCalculation
       - excel.Excel.Application.load
+      - excel.Excel.Application.load_1
+      - excel.Excel.Application.load_2
+      - excel.Excel.Application.set
+      - excel.Excel.Application.set_1
       - excel.Excel.Application.suspendApiCalculationUntilNextSync
       - excel.Excel.Application.suspendScreenUpdatingUntilNextSync
       - excel.Excel.Application.toJSON
@@ -30,12 +35,33 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculate(calculationType)
-    fullName: calculate
+    fullName: calculate(calculationType)
     langs:
       - typeScript
     type: method
     syntax:
       content: 'calculate(calculationType: Excel.CalculationType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: calculationType
+          description: Specifies the calculation type to use. See Excel.CalculationType for details.
+          type:
+            - excel.Excel.CalculationType
+  - uid: excel.Excel.Application.calculate_1
+    summary: |-
+      Recalculate all currently opened workbooks in Excel.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: calculate(calculationTypeString)
+    fullName: calculate(calculationTypeString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'calculate(calculationTypeString: "Recalculate" | "Full" | "FullRebuild"): void;'
       return:
         type:
           - void
@@ -55,10 +81,10 @@ items:
           });
           ```
       parameters:
-        - id: calculationType
+        - id: calculationTypeString
           description: Specifies the calculation type to use. See Excel.CalculationType for details.
           type:
-            - excel.Excel.CalculationType
+            - '"Recalculate" | "Full" | "FullRebuild"'
   - uid: excel.Excel.Application.calculationEngineVersion
     summary: >-
       Returns a number about the version of Excel Calculation Engine that the workbook was last fully recalculated by.
@@ -158,6 +184,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Application` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Application` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -168,28 +198,8 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      Excel.run(function (ctx) {
-          var application = ctx.workbook.application;
-          application.load('calculationMode');
-          return ctx.sync().then(function() {
-              console.log(application.calculationMode);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -201,9 +211,116 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - excel.Excel.Interfaces.ApplicationLoadOptions
+  - uid: excel.Excel.Application.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Application;'
+      return:
+        type:
+          - excel.Excel.Application
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) {
+              var application = ctx.workbook.application;
+              application.load('calculationMode');
+              return ctx.sync().then(function() {
+                  console.log(application.calculationMode);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.Application.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Application;'
+      return:
+        type:
+          - excel.Excel.Application
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: excel.Excel.Application.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Application): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ApplicationUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ApplicationUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.Application.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Application): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.Application
   - uid: excel.Excel.Application.suspendApiCalculationUntilNextSync
     summary: >-
       Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to
@@ -212,7 +329,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: suspendApiCalculationUntilNextSync()
-    fullName: suspendApiCalculationUntilNextSync
+    fullName: suspendApiCalculationUntilNextSync()
     langs:
       - typeScript
     type: method
@@ -231,7 +348,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: suspendScreenUpdatingUntilNextSync()
-    fullName: suspendScreenUpdatingUntilNextSync
+    fullName: suspendScreenUpdatingUntilNextSync()
     langs:
       - typeScript
     type: method
@@ -249,7 +366,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

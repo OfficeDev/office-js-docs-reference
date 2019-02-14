@@ -12,6 +12,7 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions.$all
       - onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions.clientUrl
       - onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions.id
       - onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions.name
@@ -20,6 +21,17 @@ items:
       - onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions.parentSectionGroupOrNull
       - onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions.sectionGroups
       - onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions.sections
+  - uid: onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions.clientUrl
     summary: |-
       For EACH ITEM in the collection: The client url of the section group. Read only

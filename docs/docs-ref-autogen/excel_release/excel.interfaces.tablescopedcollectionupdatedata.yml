@@ -2,8 +2,8 @@
 items:
   - uid: excel_release.Excel.Interfaces.TableScopedCollectionUpdateData
     summary: >-
-      An interface for updating data on the TableScopedCollection object, for use in "tableScopedCollection.set({ ...
-      })".
+      An interface for updating data on the TableScopedCollection object, for use in "tableScopedCollection.set(<!--
+      -->{ ... }<!-- -->)".
     name: Excel.Interfaces.TableScopedCollectionUpdateData
     fullName: Excel.Interfaces.TableScopedCollectionUpdateData
     langs:

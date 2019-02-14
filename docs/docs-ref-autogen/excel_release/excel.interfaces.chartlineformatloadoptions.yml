@@ -12,9 +12,21 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.ChartLineFormatLoadOptions.$all
       - excel_release.Excel.Interfaces.ChartLineFormatLoadOptions.color
       - excel_release.Excel.Interfaces.ChartLineFormatLoadOptions.lineStyle
       - excel_release.Excel.Interfaces.ChartLineFormatLoadOptions.weight
+  - uid: excel_release.Excel.Interfaces.ChartLineFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ChartLineFormatLoadOptions.color
     summary: |-
       HTML color code representing the color of lines in the chart.

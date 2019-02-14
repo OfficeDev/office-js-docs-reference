@@ -12,8 +12,20 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.$all
       - onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.floatingInk
       - onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.id
+  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.floatingInk
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the InkStroke object.

@@ -14,8 +14,20 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.SettingCollectionLoadOptions.$all
       - excel_release.Excel.Interfaces.SettingCollectionLoadOptions.key
       - excel_release.Excel.Interfaces.SettingCollectionLoadOptions.value
+  - uid: excel_release.Excel.Interfaces.SettingCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.SettingCollectionLoadOptions.key
     summary: |-
       For EACH ITEM in the collection: Returns the key that represents the id of the Setting. Read-only.

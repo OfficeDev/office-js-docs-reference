@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartDataLabelFormatUpdateData
-    summary: 'An interface for updating data on the ChartDataLabelFormat object, for use in "chartDataLabelFormat.set({ ... })".'
+    summary: >-
+      An interface for updating data on the ChartDataLabelFormat object, for use in "chartDataLabelFormat.set(<!-- -->{
+      ... }<!-- -->)".
     name: Excel.Interfaces.ChartDataLabelFormatUpdateData
     fullName: Excel.Interfaces.ChartDataLabelFormatUpdateData
     langs:

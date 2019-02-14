@@ -16,6 +16,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.ContentControlCollectionLoadOptions.$all
       - word.Word.Interfaces.ContentControlCollectionLoadOptions.appearance
       - word.Word.Interfaces.ContentControlCollectionLoadOptions.cannotDelete
       - word.Word.Interfaces.ContentControlCollectionLoadOptions.cannotEdit
@@ -38,6 +39,17 @@ items:
       - word.Word.Interfaces.ContentControlCollectionLoadOptions.text
       - word.Word.Interfaces.ContentControlCollectionLoadOptions.title
       - word.Word.Interfaces.ContentControlCollectionLoadOptions.type
+  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.appearance
     summary: >-
       For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be

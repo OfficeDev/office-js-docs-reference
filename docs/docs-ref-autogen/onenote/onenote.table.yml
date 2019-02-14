@@ -19,14 +19,19 @@ items:
       - onenote.OneNote.Table.borderVisible
       - onenote.OneNote.Table.clear
       - onenote.OneNote.Table.columnCount
+      - onenote.OneNote.Table.context
       - onenote.OneNote.Table.getCell
       - onenote.OneNote.Table.id
       - onenote.OneNote.Table.insertColumn
       - onenote.OneNote.Table.insertRow
       - onenote.OneNote.Table.load
+      - onenote.OneNote.Table.load_1
+      - onenote.OneNote.Table.load_2
       - onenote.OneNote.Table.paragraph
       - onenote.OneNote.Table.rowCount
       - onenote.OneNote.Table.rows
+      - onenote.OneNote.Table.set
+      - onenote.OneNote.Table.set_1
       - onenote.OneNote.Table.setShadingColor
       - onenote.OneNote.Table.toJSON
       - onenote.OneNote.Table.track
@@ -39,7 +44,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendColumn(values)
-    fullName: appendColumn
+    fullName: appendColumn(values)
     langs:
       - typeScript
     type: method
@@ -95,7 +100,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendRow(values)
-    fullName: appendRow
+    fullName: appendRow(values)
     langs:
       - typeScript
     type: method
@@ -166,7 +171,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: clear()
-    fullName: clear
+    fullName: clear()
     langs:
       - typeScript
     type: method
@@ -191,13 +196,27 @@ items:
       return:
         type:
           - number
+  - uid: onenote.OneNote.Table.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.Table.getCell
     summary: |-
       Gets the table cell at a specified row and column.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'getCell(rowIndex, cellIndex)'
-    fullName: getCell
+    fullName: 'getCell(rowIndex, cellIndex)'
     langs:
       - typeScript
     type: method
@@ -272,7 +291,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertColumn(index, values)'
-    fullName: insertColumn
+    fullName: 'insertColumn(index, values)'
     langs:
       - typeScript
     type: method
@@ -334,7 +353,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertRow(index, values)'
-    fullName: insertRow
+    fullName: 'insertRow(index, values)'
     langs:
       - typeScript
     type: method
@@ -396,6 +415,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.Table` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.Table` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -406,93 +429,8 @@ items:
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      OneNote.run(function(ctx) {
-          var app = ctx.application;
-          var outline = app.getActiveOutline();
-          
-          // Queue a command to load outline.paragraphs and their types.
-          ctx.load(outline, "paragraphs/type");
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          return ctx.sync().then(function () {
-              var paragraphs = outline.paragraphs;
-              
-              // For each table, log properties.
-              for (var i = 0; i < paragraphs.items.length; i++) {
-                  var paragraph = paragraphs.items[i];
-                  if (paragraph.type == "Table") {
-                      var table = paragraph.table;
-                      ctx.load(table);
-                      return ctx.sync().then(function() {
-                          console.log("Table Id: " + table.id);
-                          console.log("Row Count: " + table.rowCount);
-                          console.log("Column Count: " + table.columnCount);
-                          return ctx.sync();
-                      });
-                  }
-              }
-          });
-      })
-
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      OneNote.run(function(ctx) {
-          var app = ctx.application;
-          var outline = app.getActiveOutline();
-          
-          // Queue a command to load outline.paragraphs and their types.
-          ctx.load(outline, "paragraphs, paragraphs/type");
-          
-          // Run the queued commands, and return a promise to indicate task completion.
-          return ctx.sync().then(function () {
-              var paragraphs = outline.paragraphs;
-              
-              // for each table, log its paragraph id.
-              for (var i = 0; i < paragraphs.items.length; i++) {
-                  var paragraph = paragraphs.items[i];
-                  if (paragraph.type == "Table") {
-                      var table = paragraph.table;
-                      ctx.load(table, "paragraph/id, rows/id");
-                      return ctx.sync().then(function() {
-                          console.log("Paragraph Id: " + table.paragraph.id);
-                          var rows = table.rows;
-                          
-                          // for each rows in the table, log row index and id.
-                          for (var i = 0; i < rows.items.length; i++) {
-                              console.log("Row " + i + " Id: " + rows.items[i].id);
-                          }
-                          return ctx.sync();
-                      });
-                  }
-              }
-          })
-      })
-
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -504,9 +442,128 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - OneNote.Interfaces.TableLoadOptions
+  - uid: onenote.OneNote.Table.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): OneNote.Table;'
+      return:
+        type:
+          - OneNote.Table
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function(ctx) {
+              var app = ctx.application;
+              var outline = app.getActiveOutline();
+              
+              // Queue a command to load outline.paragraphs and their types.
+              ctx.load(outline, "paragraphs/type");
+              
+              // Run the queued commands, and return a promise to indicate task completion.
+              return ctx.sync().then(function () {
+                  var paragraphs = outline.paragraphs;
+                  
+                  // For each table, log properties.
+                  for (var i = 0; i < paragraphs.items.length; i++) {
+                      var paragraph = paragraphs.items[i];
+                      if (paragraph.type == "Table") {
+                          var table = paragraph.table;
+                          ctx.load(table);
+                          return ctx.sync().then(function() {
+                              console.log("Table Id: " + table.id);
+                              console.log("Row Count: " + table.rowCount);
+                              console.log("Column Count: " + table.columnCount);
+                              return ctx.sync();
+                          });
+                      }
+                  }
+              });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          OneNote.run(function(ctx) {
+              var app = ctx.application;
+              var outline = app.getActiveOutline();
+              
+              // Queue a command to load outline.paragraphs and their types.
+              ctx.load(outline, "paragraphs, paragraphs/type");
+              
+              // Run the queued commands, and return a promise to indicate task completion.
+              return ctx.sync().then(function () {
+                  var paragraphs = outline.paragraphs;
+                  
+                  // for each table, log its paragraph id.
+                  for (var i = 0; i < paragraphs.items.length; i++) {
+                      var paragraph = paragraphs.items[i];
+                      if (paragraph.type == "Table") {
+                          var table = paragraph.table;
+                          ctx.load(table, "paragraph/id, rows/id");
+                          return ctx.sync().then(function() {
+                              console.log("Paragraph Id: " + table.paragraph.id);
+                              var rows = table.rows;
+                              
+                              // for each rows in the table, log row index and id.
+                              for (var i = 0; i < rows.items.length; i++) {
+                                  console.log("Row " + i + " Id: " + rows.items[i].id);
+                              }
+                              return ctx.sync();
+                          });
+                      }
+                  }
+              })
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: onenote.OneNote.Table.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Table;'
+      return:
+        type:
+          - OneNote.Table
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: onenote.OneNote.Table.paragraph
     summary: |-
       Gets the Paragraph object that contains the Table object. Read-only.
@@ -552,13 +609,61 @@ items:
       return:
         type:
           - OneNote.TableRowCollection
+  - uid: onenote.OneNote.Table.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: OneNote.Table): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.TableUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: onenote.OneNote.Table.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: OneNote.Table): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - OneNote.Table
   - uid: onenote.OneNote.Table.setShadingColor
     summary: |-
       Sets the shading color of all cells in the table. The color code to set the cells to.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: setShadingColor(colorCode)
-    fullName: setShadingColor
+    fullName: setShadingColor(colorCode)
     langs:
       - typeScript
     type: method
@@ -574,8 +679,14 @@ items:
           type:
             - string
   - uid: onenote.OneNote.Table.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.Table object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `OneNote.Interfaces.TableData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -593,7 +704,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -610,7 +721,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

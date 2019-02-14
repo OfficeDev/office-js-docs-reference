@@ -12,8 +12,20 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.FunctionResultLoadOptions.$all
       - excel.Excel.Interfaces.FunctionResultLoadOptions.error
       - excel.Excel.Interfaces.FunctionResultLoadOptions.value
+  - uid: excel.Excel.Interfaces.FunctionResultLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.FunctionResultLoadOptions.error
     summary: >-
       Error value (such as "\#DIV/0") representing the error. If the error string is not set, then the function

@@ -12,8 +12,20 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.TextConditionalFormatLoadOptions.$all
       - excel_release.Excel.Interfaces.TextConditionalFormatLoadOptions.format
       - excel_release.Excel.Interfaces.TextConditionalFormatLoadOptions.rule
+  - uid: excel_release.Excel.Interfaces.TextConditionalFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.TextConditionalFormatLoadOptions.format
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.

@@ -14,12 +14,32 @@ items:
       - office.OfficeExtension.ClientObject
     package: visio
     children:
+      - visio.Visio.DocumentView.context
       - visio.Visio.DocumentView.disableHyperlinks
       - visio.Visio.DocumentView.disablePan
+      - visio.Visio.DocumentView.disablePanZoomWindow
       - visio.Visio.DocumentView.disableZoom
       - visio.Visio.DocumentView.hideDiagramBoundary
       - visio.Visio.DocumentView.load
+      - visio.Visio.DocumentView.load_1
+      - visio.Visio.DocumentView.load_2
+      - visio.Visio.DocumentView.set
+      - visio.Visio.DocumentView.set_1
       - visio.Visio.DocumentView.toJSON
+  - uid: visio.Visio.DocumentView.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: visio.Visio.DocumentView.disableHyperlinks
     summary: |-
       Disable Hyperlinks.
@@ -35,6 +55,22 @@ items:
       return:
         type:
           - boolean
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Visio.run(session, function (ctx) {
+              var documentView = ctx.document.view;
+              documentView.disableHyperlinks();
+              return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: visio.Visio.DocumentView.disablePan
     summary: |-
       Disable Pan.
@@ -47,6 +83,21 @@ items:
     type: property
     syntax:
       content: 'disablePan: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.DocumentView.disablePanZoomWindow
+    summary: |-
+      Disable PanZoomWindow.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: disablePanZoomWindow
+    fullName: disablePanZoomWindow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disablePanZoomWindow: boolean;'
       return:
         type:
           - boolean
@@ -88,6 +139,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Visio.DocumentView` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Visio.DocumentView` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -99,7 +154,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -111,12 +166,102 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - visio.Visio.Interfaces.DocumentViewLoadOptions
+  - uid: visio.Visio.DocumentView.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Visio.DocumentView;'
+      return:
+        type:
+          - visio.Visio.DocumentView
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: visio.Visio.DocumentView.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.DocumentView;'
+      return:
+        type:
+          - visio.Visio.DocumentView
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: visio.Visio.DocumentView.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Visio.DocumentView): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.DocumentViewUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.DocumentViewUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: visio.Visio.DocumentView.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Visio.DocumentView): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - visio.Visio.DocumentView
   - uid: visio.Visio.DocumentView.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

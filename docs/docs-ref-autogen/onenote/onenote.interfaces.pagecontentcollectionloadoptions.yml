@@ -12,6 +12,7 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.$all
       - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.id
       - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.image
       - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.ink
@@ -20,6 +21,17 @@ items:
       - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.parentPage
       - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.top
       - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.type
+  - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the PageContent object. Read-only.

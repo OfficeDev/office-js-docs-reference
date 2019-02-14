@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.ChartPointsCollectionLoadOptions.$all
       - excel_release.Excel.Interfaces.ChartPointsCollectionLoadOptions.dataLabel
       - excel_release.Excel.Interfaces.ChartPointsCollectionLoadOptions.format
       - excel_release.Excel.Interfaces.ChartPointsCollectionLoadOptions.hasDataLabel
@@ -20,6 +21,17 @@ items:
       - excel_release.Excel.Interfaces.ChartPointsCollectionLoadOptions.markerSize
       - excel_release.Excel.Interfaces.ChartPointsCollectionLoadOptions.markerStyle
       - excel_release.Excel.Interfaces.ChartPointsCollectionLoadOptions.value
+  - uid: excel_release.Excel.Interfaces.ChartPointsCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ChartPointsCollectionLoadOptions.dataLabel
     summary: |-
       For EACH ITEM in the collection: Returns the data label of a chart point.

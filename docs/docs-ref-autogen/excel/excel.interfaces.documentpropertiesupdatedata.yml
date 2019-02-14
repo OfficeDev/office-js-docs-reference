@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.DocumentPropertiesUpdateData
-    summary: 'An interface for updating data on the DocumentProperties object, for use in "documentProperties.set({ ... })".'
+    summary: >-
+      An interface for updating data on the DocumentProperties object, for use in "documentProperties.set(<!-- -->{ ...
+      }<!-- -->)".
     name: Excel.Interfaces.DocumentPropertiesUpdateData
     fullName: Excel.Interfaces.DocumentPropertiesUpdateData
     langs:

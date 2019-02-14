@@ -12,8 +12,20 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartLegendFormatLoadOptions.$all
       - excel.Excel.Interfaces.ChartLegendFormatLoadOptions.border
       - excel.Excel.Interfaces.ChartLegendFormatLoadOptions.font
+  - uid: excel.Excel.Interfaces.ChartLegendFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartLegendFormatLoadOptions.border
     summary: |-
       Represents the border format, which includes color, linestyle, and weight.

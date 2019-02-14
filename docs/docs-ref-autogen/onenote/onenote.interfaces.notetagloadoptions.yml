@@ -12,9 +12,21 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.NoteTagLoadOptions.$all
       - onenote.OneNote.Interfaces.NoteTagLoadOptions.id
       - onenote.OneNote.Interfaces.NoteTagLoadOptions.status
       - onenote.OneNote.Interfaces.NoteTagLoadOptions.type
+  - uid: onenote.OneNote.Interfaces.NoteTagLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.NoteTagLoadOptions.id
     summary: |-
       Gets the Id of the NoteTag object. Read-only.

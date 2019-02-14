@@ -12,7 +12,19 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.ChartTrendlineFormatLoadOptions.$all
       - excel_release.Excel.Interfaces.ChartTrendlineFormatLoadOptions.line
+  - uid: excel_release.Excel.Interfaces.ChartTrendlineFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ChartTrendlineFormatLoadOptions.line
     summary: |-
       Represents chart line formatting.

@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.ChartLegendLoadOptions.$all
       - excel_release.Excel.Interfaces.ChartLegendLoadOptions.format
       - excel_release.Excel.Interfaces.ChartLegendLoadOptions.height
       - excel_release.Excel.Interfaces.ChartLegendLoadOptions.left
@@ -21,6 +22,17 @@ items:
       - excel_release.Excel.Interfaces.ChartLegendLoadOptions.top
       - excel_release.Excel.Interfaces.ChartLegendLoadOptions.visible
       - excel_release.Excel.Interfaces.ChartLegendLoadOptions.width
+  - uid: excel_release.Excel.Interfaces.ChartLegendLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ChartLegendLoadOptions.format
     summary: |-
       Represents the formatting of a chart legend, which includes fill and font formatting.

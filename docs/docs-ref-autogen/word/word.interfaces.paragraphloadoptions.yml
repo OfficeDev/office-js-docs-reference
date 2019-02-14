@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.ParagraphLoadOptions.$all
       - word.Word.Interfaces.ParagraphLoadOptions.alignment
       - word.Word.Interfaces.ParagraphLoadOptions.firstLineIndent
       - word.Word.Interfaces.ParagraphLoadOptions.font
@@ -40,6 +41,17 @@ items:
       - word.Word.Interfaces.ParagraphLoadOptions.styleBuiltIn
       - word.Word.Interfaces.ParagraphLoadOptions.tableNestingLevel
       - word.Word.Interfaces.ParagraphLoadOptions.text
+  - uid: word.Word.Interfaces.ParagraphLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.ParagraphLoadOptions.alignment
     summary: |-
       Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.

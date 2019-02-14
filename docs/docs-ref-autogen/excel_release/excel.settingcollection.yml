@@ -23,6 +23,8 @@ items:
       - excel_release.Excel.SettingCollection.getItemOrNullObject
       - excel_release.Excel.SettingCollection.items
       - excel_release.Excel.SettingCollection.load
+      - excel_release.Excel.SettingCollection.load_1
+      - excel_release.Excel.SettingCollection.load_2
       - excel_release.Excel.SettingCollection.onSettingsChanged
       - excel_release.Excel.SettingCollection.toJSON
   - uid: excel_release.Excel.SettingCollection.add
@@ -31,7 +33,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(key, value)'
-    fullName: add
+    fullName: 'add(key, value)'
     langs:
       - typeScript
     type: method
@@ -40,7 +42,19 @@ items:
       return:
         type:
           - excel.Excel.Setting
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const settings = context.workbook.settings; 
+              settings.onSettingsChanged.add(onChangedSetting);
+
+              await context.sync();
+              console.log("Settings changed handler registered.");
+          });
+          ```
       parameters:
         - id: key
           description: The Key of the new setting.
@@ -70,7 +84,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -86,7 +100,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
-    fullName: getItem
+    fullName: getItem(key)
     langs:
       - typeScript
     type: method
@@ -107,7 +121,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject
+    fullName: getItemOrNullObject(key)
     langs:
       - typeScript
     type: method
@@ -116,7 +130,28 @@ items:
       return:
         type:
           - excel.Excel.Setting
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const settings = context.workbook.settings;
+              let needsReview = settings.getItem("NeedsReview");
+              needsReview.delete();
+              needsReview = settings.getItemOrNullObject("NeedsReview");
+
+              await context.sync();
+
+              if (needsReview.isNullObject) {
+                  console.log("The setting has been deleted");
+              } else {
+                  console.log("The setting was not deleted");
+              }
+
+              await context.sync();
+          });
+          ```
       parameters:
         - id: key
           description: The key of the setting.
@@ -142,6 +177,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.SettingCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.SettingCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -153,7 +192,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -167,9 +206,46 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel_release.Excel.SettingCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.SettingCollection;'
+      return:
+        type:
+          - excel.Excel.SettingCollection
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.SettingCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.SettingCollection;'
+      return:
+        type:
+          - excel.Excel.SettingCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel_release.Excel.SettingCollection.onSettingsChanged
     summary: |-
       Occurs when the Settings in the document are changed.
@@ -185,6 +261,19 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const settings = context.workbook.settings; 
+              settings.onSettingsChanged.add(onChangedSetting);
+
+              await context.sync();
+              console.log("Settings changed handler registered.");
+          });
+          ```
   - uid: excel_release.Excel.SettingCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -193,7 +282,7 @@ items:
       a plain JavaScript object (typed as `Excel.Interfaces.SettingCollectionData`<!-- -->) that contains an "items"
       array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

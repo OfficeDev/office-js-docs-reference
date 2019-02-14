@@ -16,8 +16,20 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.SettingLoadOptions.$all
       - excel_release.Excel.Interfaces.SettingLoadOptions.key
       - excel_release.Excel.Interfaces.SettingLoadOptions.value
+  - uid: excel_release.Excel.Interfaces.SettingLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.SettingLoadOptions.key
     summary: |-
       Returns the key that represents the id of the Setting. Read-only.

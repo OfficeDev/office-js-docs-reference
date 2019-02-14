@@ -12,10 +12,22 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.PivotFieldCollectionLoadOptions.$all
       - excel_release.Excel.Interfaces.PivotFieldCollectionLoadOptions.id
       - excel_release.Excel.Interfaces.PivotFieldCollectionLoadOptions.name
       - excel_release.Excel.Interfaces.PivotFieldCollectionLoadOptions.showAllItems
       - excel_release.Excel.Interfaces.PivotFieldCollectionLoadOptions.subtotals
+  - uid: excel_release.Excel.Interfaces.PivotFieldCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.PivotFieldCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: Id of the PivotField.

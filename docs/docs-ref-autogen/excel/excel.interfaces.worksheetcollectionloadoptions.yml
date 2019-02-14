@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.$all
       - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.autoFilter
       - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.charts
       - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.enableCalculation
@@ -27,6 +28,17 @@ items:
       - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.tabColor
       - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.tables
       - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.visibility
+  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.autoFilter
     summary: >-
       For EACH ITEM in the collection: Represents the AutoFilter object of the worksheet.

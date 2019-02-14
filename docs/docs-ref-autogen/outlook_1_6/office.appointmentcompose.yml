@@ -1,0 +1,1967 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_6.Office.AppointmentCompose
+    summary: >-
+      The appointment organizer mode of [Office.context.mailbox.item](xref:Outlook_1_6.Office.Item)<!-- -->.
+
+
+      **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
+      treat this as a mode of Office.context.mailbox.item. Refer to the [Object
+      Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox.item)
+      page for more information.
+    name: Office.AppointmentCompose
+    fullName: Office.AppointmentCompose
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Appointment
+      - 'ItemCompose '
+    package: Outlook_1_6
+    children:
+      - Outlook_1_6.Office.AppointmentCompose.addFileAttachmentAsync
+      - Outlook_1_6.Office.AppointmentCompose.addFileAttachmentAsync_1
+      - Outlook_1_6.Office.AppointmentCompose.addFileAttachmentAsync_2
+      - Outlook_1_6.Office.AppointmentCompose.addFileAttachmentAsync_3
+      - Outlook_1_6.Office.AppointmentCompose.addItemAttachmentAsync
+      - Outlook_1_6.Office.AppointmentCompose.addItemAttachmentAsync_1
+      - Outlook_1_6.Office.AppointmentCompose.addItemAttachmentAsync_2
+      - Outlook_1_6.Office.AppointmentCompose.addItemAttachmentAsync_3
+      - Outlook_1_6.Office.AppointmentCompose.close
+      - Outlook_1_6.Office.AppointmentCompose.getSelectedDataAsync
+      - Outlook_1_6.Office.AppointmentCompose.getSelectedDataAsync_1
+      - Outlook_1_6.Office.AppointmentCompose.loadCustomPropertiesAsync
+      - Outlook_1_6.Office.AppointmentCompose.removeAttachmentAsync
+      - Outlook_1_6.Office.AppointmentCompose.removeAttachmentAsync_1
+      - Outlook_1_6.Office.AppointmentCompose.removeAttachmentAsync_2
+      - Outlook_1_6.Office.AppointmentCompose.removeAttachmentAsync_3
+      - Outlook_1_6.Office.AppointmentCompose.saveAsync
+      - Outlook_1_6.Office.AppointmentCompose.saveAsync_1
+      - Outlook_1_6.Office.AppointmentCompose.saveAsync_2
+      - Outlook_1_6.Office.AppointmentCompose.saveAsync_3
+      - Outlook_1_6.Office.AppointmentCompose.setSelectedDataAsync
+      - Outlook_1_6.Office.AppointmentCompose.setSelectedDataAsync_1
+      - Outlook_1_6.Office.AppointmentCompose.setSelectedDataAsync_2
+      - Outlook_1_6.Office.AppointmentCompose.setSelectedDataAsync_3
+      - Outlook_1_6.Office.AppointmentCompose.body
+      - Outlook_1_6.Office.AppointmentCompose.end
+      - Outlook_1_6.Office.AppointmentCompose.itemType
+      - Outlook_1_6.Office.AppointmentCompose.location
+      - Outlook_1_6.Office.AppointmentCompose.notificationMessages
+      - Outlook_1_6.Office.AppointmentCompose.optionalAttendees
+      - Outlook_1_6.Office.AppointmentCompose.requiredAttendees
+      - Outlook_1_6.Office.AppointmentCompose.start
+      - Outlook_1_6.Office.AppointmentCompose.subject
+  - uid: Outlook_1_6.Office.AppointmentCompose.addFileAttachmentAsync
+    summary: >-
+      Adds a file to a message or appointment as an attachment.
+
+
+      The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose
+      form.
+
+
+      You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
+      session.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than
+      allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not
+      allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
+
+
+      In addition to this signature, the method also has the following signatures:
+
+
+      `addFileAttachmentAsync(uri: string, attachmentName: string): void;`
+
+
+      `addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;`
+
+
+      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: Office.AsyncResult<string>) =>
+      void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      function callback(result) {
+          if (result.error) {
+              console.log(result.error);
+          } else {
+              console.log("Attachment added");
+          }
+      }
+
+
+      function addAttachment() {
+          // The values in asyncContext can be accessed in the callback.
+          var options = { 'asyncContext': { var1: 1, var2: 2 } };
+
+          var attachmentURL = "https://contoso.com/rtm/icon.png";
+          Office.context.mailbox.item.addFileAttachmentAsync(attachmentURL, attachmentURL, options, callback);
+      }
+
+      ```
+    name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
+    fullName: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
+        (result: Office.AsyncResult<string>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: uri
+          description: >-
+            The URI that provides the location of the file to attach to the message or appointment. The maximum length
+            is 2048 characters.
+          type:
+            - string
+        - id: attachmentName
+          description: >-
+            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
+            characters.
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. isInline: If true, indicates that the
+            attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+          type:
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
+            property. If uploading the attachment fails, the asyncResult object will contain an Error object that
+            provides a description of the error.
+          type:
+            - '(result: Office.AsyncResult<string>) => void'
+  - uid: Outlook_1_6.Office.AppointmentCompose.addFileAttachmentAsync_1
+    summary: >-
+      Adds a file to a message or appointment as an attachment.
+
+
+      The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose
+      form.
+
+
+      You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
+      session.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than
+      allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not
+      allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
+    name: 'addFileAttachmentAsync(uri, attachmentName)'
+    fullName: 'addFileAttachmentAsync(uri, attachmentName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addFileAttachmentAsync(uri: string, attachmentName: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: uri
+          description: >-
+            The URI that provides the location of the file to attach to the message or appointment. The maximum length
+            is 2048 characters.
+          type:
+            - string
+        - id: attachmentName
+          description: >-
+            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
+            characters.
+          type:
+            - string
+  - uid: Outlook_1_6.Office.AppointmentCompose.addFileAttachmentAsync_2
+    summary: >-
+      Adds a file to a message or appointment as an attachment.
+
+
+      The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose
+      form.
+
+
+      You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
+      session.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than
+      allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not
+      allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
+    name: 'addFileAttachmentAsync(uri, attachmentName, options)'
+    fullName: 'addFileAttachmentAsync(uri, attachmentName, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: uri
+          description: >-
+            The URI that provides the location of the file to attach to the message or appointment. The maximum length
+            is 2048 characters.
+          type:
+            - string
+        - id: attachmentName
+          description: >-
+            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
+            characters.
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. isInline: If true, indicates that the
+            attachment will be shown inline in the message body and should not be displayed in the attachment list.
+          type:
+            - Office.AsyncContextOptions
+  - uid: Outlook_1_6.Office.AppointmentCompose.addFileAttachmentAsync_3
+    summary: >-
+      Adds a file to a message or appointment as an attachment.
+
+
+      The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose
+      form.
+
+
+      You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
+      session.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than
+      allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not
+      allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
+    name: 'addFileAttachmentAsync(uri, attachmentName, callback)'
+    fullName: 'addFileAttachmentAsync(uri, attachmentName, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: Office.AsyncResult<string>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: uri
+          description: >-
+            The URI that provides the location of the file to attach to the message or appointment. The maximum length
+            is 2048 characters.
+          type:
+            - string
+        - id: attachmentName
+          description: >-
+            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
+            characters.
+          type:
+            - string
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
+            property. If uploading the attachment fails, the asyncResult object will contain an Error object that
+            provides a description of the error.
+          type:
+            - '(result: Office.AsyncResult<string>) => void'
+  - uid: Outlook_1_6.Office.AppointmentCompose.addItemAttachmentAsync
+    summary: >-
+      Adds an Exchange item, such as a message, as an attachment to the message or appointment.
+
+
+      The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the
+      compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which
+      contains either the attachment identifier or a code that indicates any error that occurred while attaching the
+      item. You can use the options parameter to pass state information to the callback method, if needed.
+
+
+      You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
+      session.
+
+
+      If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items
+      other than the item that you are editing; however, this is not supported and is not recommended.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
+
+
+      In addition to this signature, this method also has the following signatures:
+
+
+      `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
+
+
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`
+
+
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: Office.AsyncResult<string>) =>
+      void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example adds an existing Outlook item as an attachment
+
+      // with the name `My Attachment`.
+
+      function callback(result) {
+          if (result.error) {
+              console.log(result.error);
+          } else {
+              console.log("Attachment added");
+          }
+      }
+
+
+      function addAttachment() {
+          // EWS ID of item to attach (shortened for readability).
+          var itemId = "AAMkADI1...AAA=";
+
+          // The values in asyncContext can be accessed in the callback.
+          var options = { 'asyncContext': { var1: 1, var2: 2 } };
+
+          Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
+      }
+
+      ```
+    name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
+    fullName: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
+        (result: Office.AsyncResult<string>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: itemId
+          description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
+          type:
+            - any
+        - id: attachmentName
+          description: >-
+            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
+            characters.
+          type:
+            - string
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
+            property. If adding the attachment fails, the asyncResult object will contain an Error object that provides
+            a description of the error.
+          type:
+            - '(result: Office.AsyncResult<string>) => void'
+  - uid: Outlook_1_6.Office.AppointmentCompose.addItemAttachmentAsync_1
+    summary: >-
+      Adds an Exchange item, such as a message, as an attachment to the message or appointment.
+
+
+      The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the
+      compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which
+      contains either the attachment identifier or a code that indicates any error that occurred while attaching the
+      item. You can use the options parameter to pass state information to the callback method, if needed.
+
+
+      You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
+      session.
+
+
+      If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items
+      other than the item that you are editing; however, this is not supported and is not recommended.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
+    name: 'addItemAttachmentAsync(itemId, attachmentName)'
+    fullName: 'addItemAttachmentAsync(itemId, attachmentName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addItemAttachmentAsync(itemId: any, attachmentName: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: itemId
+          description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
+          type:
+            - any
+        - id: attachmentName
+          description: >-
+            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
+            characters.
+          type:
+            - string
+  - uid: Outlook_1_6.Office.AppointmentCompose.addItemAttachmentAsync_2
+    summary: >-
+      Adds an Exchange item, such as a message, as an attachment to the message or appointment.
+
+
+      The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the
+      compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which
+      contains either the attachment identifier or a code that indicates any error that occurred while attaching the
+      item. You can use the options parameter to pass state information to the callback method, if needed.
+
+
+      You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
+      session.
+
+
+      If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items
+      other than the item that you are editing; however, this is not supported and is not recommended.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
+    name: 'addItemAttachmentAsync(itemId, attachmentName, options)'
+    fullName: 'addItemAttachmentAsync(itemId, attachmentName, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: itemId
+          description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
+          type:
+            - any
+        - id: attachmentName
+          description: >-
+            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
+            characters.
+          type:
+            - string
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+  - uid: Outlook_1_6.Office.AppointmentCompose.addItemAttachmentAsync_3
+    summary: >-
+      Adds an Exchange item, such as a message, as an attachment to the message or appointment.
+
+
+      The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the
+      compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which
+      contains either the attachment identifier or a code that indicates any error that occurred while attaching the
+      item. You can use the options parameter to pass state information to the callback method, if needed.
+
+
+      You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
+      session.
+
+
+      If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items
+      other than the item that you are editing; however, this is not supported and is not recommended.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
+    name: 'addItemAttachmentAsync(itemId, attachmentName, callback)'
+    fullName: 'addItemAttachmentAsync(itemId, attachmentName, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: Office.AsyncResult<string>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: itemId
+          description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
+          type:
+            - any
+        - id: attachmentName
+          description: >-
+            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
+            characters.
+          type:
+            - string
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
+            property. If adding the attachment fails, the asyncResult object will contain an Error object that provides
+            a description of the error.
+          type:
+            - '(result: Office.AsyncResult<string>) => void'
+  - uid: Outlook_1_6.Office.AppointmentCompose.close
+    summary: >-
+      Closes the current item that is being composed
+
+
+      The behaviors of the close method depends on the current state of the item being composed. If the item has unsaved
+      changes, the client prompts the user to save, discard, or close the action.
+
+
+      In the Outlook desktop client, if the message is an inline reply, the close method has no effect.
+
+
+      **Note**: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync,
+      the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved.
+
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
+      Organizer</td></tr></table>
+    name: close()
+    fullName: close()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'close(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: Outlook_1_6.Office.AppointmentCompose.getSelectedDataAsync
+    summary: >-
+      Asynchronously returns selected data from the subject or body of a message.
+
+
+      If there is no selection but the cursor is in the body or subject, the method returns null for the selected data.
+      If a field other than the body or subject is selected, the method returns the InvalidSelection error.
+
+
+      To access the selected data from the callback method, call asyncResult.value.data. To access the source property
+      that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
+
+
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
+      Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get selected data.
+
+      Office.initialize = function () {
+          Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
+      };
+
+
+      function getCallback(asyncResult) {
+          var text = asyncResult.value.data;
+          var prop = asyncResult.value.sourceProperty;
+
+          Office.context.mailbox.item.setSelectedDataAsync('Setting ' + prop + ': ' + text, {}, setCallback);
+      }
+
+
+      function setCallback(asyncResult) {
+          // Check for errors.
+      }
+
+      ```
+    name: 'getSelectedDataAsync(coercionType, options, callback)'
+    fullName: 'getSelectedDataAsync(coercionType, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getSelectedDataAsync(coercionType: Office.CoercionType, options: Office.AsyncContextOptions, callback:
+        (result: Office.AsyncResult<any>) => void): void;
+      return:
+        type:
+          - void
+        description: The selected data as a string with format determined by coercionType.
+      parameters:
+        - id: coercionType
+          description: >-
+            Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML
+            tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
+          type:
+            - Office.CoercionType
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult.
+          type:
+            - '(result: Office.AsyncResult<any>) => void'
+  - uid: Outlook_1_6.Office.AppointmentCompose.getSelectedDataAsync_1
+    summary: >-
+      Asynchronously returns selected data from the subject or body of a message.
+
+
+      If there is no selection but the cursor is in the body or subject, the method returns null for the selected data.
+      If a field other than the body or subject is selected, the method returns the InvalidSelection error.
+
+
+      To access the selected data from the callback method, call asyncResult.value.data. To access the source property
+      that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
+
+
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
+      Organizer</td></tr></table>
+    name: 'getSelectedDataAsync(coercionType, callback)'
+    fullName: 'getSelectedDataAsync(coercionType, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getSelectedDataAsync(coercionType: Office.CoercionType, callback: (result: Office.AsyncResult<string>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: The selected data as a string with format determined by coercionType.
+      parameters:
+        - id: coercionType
+          description: >-
+            Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML
+            tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
+          type:
+            - Office.CoercionType
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult.
+          type:
+            - '(result: Office.AsyncResult<string>) => void'
+  - uid: Outlook_1_6.Office.AppointmentCompose.loadCustomPropertiesAsync
+    summary: >-
+      Asynchronously loads custom properties for this add-in on the selected item.
+
+
+      Custom properties are stored as key/value pairs on a per-app, per-item basis. This method returns a
+      CustomProperties object in the callback, which provides methods to access the custom properties specific to the
+      current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used
+      as secure storage.
+
+
+      The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can
+      be used to get, set, and remove custom properties from the item and save changes to the custom property set back
+      to the server.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
+      Organizer</td></tr></table>
+    name: 'loadCustomPropertiesAsync(callback, userContext)'
+    fullName: 'loadCustomPropertiesAsync(callback, userContext)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?:
+        any): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult.
+          type:
+            - '(result: Office.AsyncResult<CustomProperties>) => void'
+        - id: userContext
+          description: >-
+            Optional. Developers can provide any object they wish to access in the callback function. This object can be
+            accessed by the asyncResult.asyncContext property in the callback function.
+          type:
+            - any
+  - uid: Outlook_1_6.Office.AppointmentCompose.removeAttachmentAsync
+    summary: >-
+      Removes an attachment from a message or appointment.
+
+
+      The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best
+      practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
+      that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid
+      only within the same session. A session is over when the user closes the app, or if the user starts composing an
+      inline form then subsequently pops out the form to continue in a separate window.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+
+
+      In addition to this signature, the method also has the following signatures:
+
+
+      `removeAttachmentAsync(attachmentId: string): void;`
+
+
+      `removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;`
+
+
+      `removeAttachmentAsync(attachmentId: string, callback: (result: Office.AsyncResult<void>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following code removes an attachment with an identifier of '0'.
+
+      Office.context.mailbox.item.removeAttachmentAsync(
+          '0',
+          { asyncContext : null },
+          function (asyncResult)
+          {
+              console.log(asyncResult.status);
+          }
+      );
+
+      ```
+    name: 'removeAttachmentAsync(attachmentId, options, callback)'
+    fullName: 'removeAttachmentAsync(attachmentId, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result:
+        Office.AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: attachmentId
+          description: The identifier of the attachment to remove.
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
+            contain an error code with the reason for the failure.
+          type:
+            - '(result: Office.AsyncResult<void>) => void'
+  - uid: Outlook_1_6.Office.AppointmentCompose.removeAttachmentAsync_1
+    summary: >-
+      Removes an attachment from a message or appointment.
+
+
+      The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best
+      practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
+      that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid
+      only within the same session. A session is over when the user closes the app, or if the user starts composing an
+      inline form then subsequently pops out the form to continue in a separate window.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    name: removeAttachmentAsync(attachmentId)
+    fullName: removeAttachmentAsync(attachmentId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeAttachmentAsync(attachmentId: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: attachmentId
+          description: The identifier of the attachment to remove.
+          type:
+            - string
+  - uid: Outlook_1_6.Office.AppointmentCompose.removeAttachmentAsync_2
+    summary: >-
+      Removes an attachment from a message or appointment.
+
+
+      The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best
+      practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
+      that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid
+      only within the same session. A session is over when the user closes the app, or if the user starts composing an
+      inline form then subsequently pops out the form to continue in a separate window.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    name: 'removeAttachmentAsync(attachmentId, options)'
+    fullName: 'removeAttachmentAsync(attachmentId, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: attachmentId
+          description: The identifier of the attachment to remove.
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+  - uid: Outlook_1_6.Office.AppointmentCompose.removeAttachmentAsync_3
+    summary: >-
+      Removes an attachment from a message or appointment.
+
+
+      The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best
+      practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
+      that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid
+      only within the same session. A session is over when the user closes the app, or if the user starts composing an
+      inline form then subsequently pops out the form to continue in a separate window.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    name: 'removeAttachmentAsync(attachmentId, callback)'
+    fullName: 'removeAttachmentAsync(attachmentId, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeAttachmentAsync(attachmentId: string, callback: (result: Office.AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: attachmentId
+          description: The identifier of the attachment to remove.
+          type:
+            - string
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
+            contain an error code with the reason for the failure.
+          type:
+            - '(result: Office.AsyncResult<void>) => void'
+  - uid: Outlook_1_6.Office.AppointmentCompose.saveAsync
+    summary: >-
+      Asynchronously saves an item.
+
+
+      When invoked, this method saves the current message as a draft and returns the item id via the callback method. In
+      Outlook Web App or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is
+      saved to the local cache.
+
+
+      Since appointments have no draft state, if saveAsync is called on an appointment in compose mode, the item will be
+      saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no
+      invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.
+
+
+      **Note**: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or
+      the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually
+      synced to the server. Until the item is synced, using the itemId will return an error.
+
+
+      **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
+
+
+      - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac
+      Outlook will return an error.
+
+
+      - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose
+      mode.
+
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+
+
+      In addition to this signature, the method also has the following signatures:
+
+
+      `saveAsync(): void;`
+
+
+      `saveAsync(options: Office.AsyncContextOptions): void;`
+
+
+      `saveAsync(callback: (result: Office.AsyncResult<string>) => void): void;`
+    name: 'saveAsync(options, callback)'
+    fullName: 'saveAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        saveAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult.
+          type:
+            - '(result: Office.AsyncResult<string>) => void'
+  - uid: Outlook_1_6.Office.AppointmentCompose.saveAsync_1
+    summary: >-
+      Asynchronously saves an item.
+
+
+      When invoked, this method saves the current message as a draft and returns the item id via the callback method. In
+      Outlook Web App or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is
+      saved to the local cache.
+
+
+      Since appointments have no draft state, if saveAsync is called on an appointment in compose mode, the item will be
+      saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no
+      invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.
+
+
+      **Note**: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or
+      the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually
+      synced to the server. Until the item is synced, using the itemId will return an error.
+
+
+      **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
+
+
+      - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac
+      Outlook will return an error.
+
+
+      - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose
+      mode.
+
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    name: saveAsync()
+    fullName: saveAsync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'saveAsync(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: Outlook_1_6.Office.AppointmentCompose.saveAsync_2
+    summary: >-
+      Asynchronously saves an item.
+
+
+      When invoked, this method saves the current message as a draft and returns the item id via the callback method. In
+      Outlook Web App or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is
+      saved to the local cache.
+
+
+      Since appointments have no draft state, if saveAsync is called on an appointment in compose mode, the item will be
+      saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no
+      invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.
+
+
+      **Note**: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or
+      the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually
+      synced to the server. Until the item is synced, using the itemId will return an error.
+
+
+      **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
+
+
+      - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac
+      Outlook will return an error.
+
+
+      - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose
+      mode.
+
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    name: saveAsync(options)
+    fullName: saveAsync(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'saveAsync(options: Office.AsyncContextOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+  - uid: Outlook_1_6.Office.AppointmentCompose.saveAsync_3
+    summary: >-
+      Asynchronously saves an item.
+
+
+      When invoked, this method saves the current message as a draft and returns the item id via the callback method. In
+      Outlook Web App or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is
+      saved to the local cache.
+
+
+      Since appointments have no draft state, if saveAsync is called on an appointment in compose mode, the item will be
+      saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no
+      invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.
+
+
+      **Note**: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or
+      the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually
+      synced to the server. Until the item is synced, using the itemId will return an error.
+
+
+      **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
+
+
+      - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac
+      Outlook will return an error.
+
+
+      - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose
+      mode.
+
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.saveAsync(
+          function callback(result) {
+              // Process the result.
+          });
+
+      // The following is an example of the
+
+      // `result` parameter passed to the
+
+      // callback function. The `value`
+
+      // property contains the item ID of
+
+      // the item.
+
+      {
+          "value": "AAMkADI5...AAA=",
+          "status": "succeeded"
+      }
+
+      ```
+    name: saveAsync(callback)
+    fullName: saveAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'saveAsync(callback: (result: Office.AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult.
+          type:
+            - '(result: Office.AsyncResult<string>) => void'
+  - uid: Outlook_1_6.Office.AppointmentCompose.setSelectedDataAsync
+    summary: >-
+      Asynchronously inserts data into the body or subject of a message.
+
+
+      The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the
+      item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or
+      subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.
+
+
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+
+
+      In addition to this signature, the method also has the following signatures:
+
+
+      `setSelectedDataAsync(data: string): void;`
+
+
+      `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
+
+
+      `setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+
+      ```
+    name: 'setSelectedDataAsync(data, options, callback)'
+    fullName: 'setSelectedDataAsync(data, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (result: Office.AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: >-
+            The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are
+            passed in, an ArgumentOutOfRange exception is thrown.
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. coercionType: If text, the current style
+            is applied in Outlook Web App and Outlook. If the field is an HTML editor, only the text data is inserted,
+            even if the data is HTML. If html and the field supports HTML (the subject doesn't), the current style is
+            applied in Outlook Web App and the default style is applied in Outlook. If the field is a text field, an
+            InvalidDataFormat error is returned. If coercionType is not set, the result depends on the field: if the
+            field is HTML then HTML is used; if the field is text, then plain text is used.
+          type:
+            - Office.AsyncContextOptions & CoercionTypeOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult.
+          type:
+            - '(result: Office.AsyncResult<void>) => void'
+  - uid: Outlook_1_6.Office.AppointmentCompose.setSelectedDataAsync_1
+    summary: >-
+      Asynchronously inserts data into the body or subject of a message.
+
+
+      The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the
+      item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or
+      subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.
+
+
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    name: setSelectedDataAsync(data)
+    fullName: setSelectedDataAsync(data)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSelectedDataAsync(data: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: >-
+            The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are
+            passed in, an ArgumentOutOfRange exception is thrown.
+          type:
+            - string
+  - uid: Outlook_1_6.Office.AppointmentCompose.setSelectedDataAsync_2
+    summary: >-
+      Asynchronously inserts data into the body or subject of a message.
+
+
+      The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the
+      item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or
+      subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.
+
+
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
+
+      ```
+    name: 'setSelectedDataAsync(data, options)'
+    fullName: 'setSelectedDataAsync(data, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: >-
+            The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are
+            passed in, an ArgumentOutOfRange exception is thrown.
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. coercionType: If text, the current style
+            is applied in Outlook Web App and Outlook. If the field is an HTML editor, only the text data is inserted,
+            even if the data is HTML. If html and the field supports HTML (the subject doesn't), the current style is
+            applied in Outlook Web App and the default style is applied in Outlook. If the field is a text field, an
+            InvalidDataFormat error is returned. If coercionType is not set, the result depends on the field: if the
+            field is HTML then HTML is used; if the field is text, then plain text is used.
+          type:
+            - Office.AsyncContextOptions & CoercionTypeOptions
+  - uid: Outlook_1_6.Office.AppointmentCompose.setSelectedDataAsync_3
+    summary: >-
+      Asynchronously inserts data into the body or subject of a message.
+
+
+      The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the
+      item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or
+      subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.
+
+
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+
+
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    name: 'setSelectedDataAsync(data, callback)'
+    fullName: 'setSelectedDataAsync(data, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: >-
+            The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are
+            passed in, an ArgumentOutOfRange exception is thrown.
+          type:
+            - string
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult.
+          type:
+            - '(result: Office.AsyncResult<void>) => void'
+  - uid: Outlook_1_6.Office.AppointmentCompose.body
+    summary: |-
+      Gets an object that provides methods for manipulating the body of an item.
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
+      Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // This example gets the body of the message as plain text.
+
+      Office.context.mailbox.item.body.getAsync(
+          "text",
+          { asyncContext: "This is passed to the callback" },
+          function callback(result) {
+              // Do something with the result.
+          });
+
+      // The following is an example of an object that is passed as the result parameter to the callback function.
+
+      {
+          "value": "TEXT of whole body (including threads below)",
+          "status": "succeeded",
+          "asyncContext": "This is passed to the callback"
+      }
+
+      ```
+    name: body
+    fullName: body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body: Body;'
+      return:
+        type:
+          - Body
+  - uid: Outlook_1_6.Office.AppointmentCompose.end
+    summary: >-
+      Gets or sets the date and time that the appointment is to end.
+
+
+      The end property is an [Office.Time](xref:Outlook_1_6.Office.Time) object expressed as a Coordinated Universal
+      Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value
+      to the client's local date and time.
+
+
+      When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to
+      convert the local time on the client to UTC for the server.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
+      Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example sets the end time of an appointment in compose mode by
+
+      // using the `setAsync` method of the `Time` object.
+
+      var endTime = new Date("3/14/2015");
+
+      var options = {
+          // Pass information that can be used in the callback.
+          asyncContext: {verb: "Set"}
+      };
+
+      Office.context.mailbox.item.end.setAsync(endTime, options, function(result) {
+          if (result.error) {
+              console.debug(result.error);
+          } else {
+              // Access the asyncContext that was passed to the setAsync function.
+              console.debug("End Time " + result.asyncContext.verb);
+          }
+      });
+
+      ```
+    name: end
+    fullName: end
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'end: Time;'
+      return:
+        type:
+          - Time
+  - uid: Outlook_1_6.Office.AppointmentCompose.itemType
+    summary: >-
+      Gets the type of item that an instance represents.
+
+
+      The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance
+      is a message or an appointment.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
+      Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Appointment) {
+          // Do something.
+      } else {
+          // Do something else.
+      }
+
+      ```
+    name: itemType
+    fullName: itemType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemType: MailboxEnums.ItemType;'
+      return:
+        type:
+          - MailboxEnums.ItemType
+  - uid: Outlook_1_6.Office.AppointmentCompose.location
+    summary: >-
+      Gets or sets the [Office.Location](xref:Outlook_1_6.Office.Location) of an appointment. The location property
+      returns a Location object that provides methods that are used to get and set the location of the appointment.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
+      Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var userContext = { value : 1 };
+
+      Office.context.mailbox.item.location.getAsync( { context: userContext}, callback);
+
+
+      function callback(asyncResult) {
+          var context = asyncResult.context;
+          var location = asyncResult.value;
+      }
+
+      ```
+    name: location
+    fullName: location
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'location: Location;'
+      return:
+        type:
+          - Location
+  - uid: Outlook_1_6.Office.AppointmentCompose.notificationMessages
+    summary: |-
+      Gets the notification messages for an item.
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
+      Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get all notifications.
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(
+          function (asyncResult) {
+              console.log(JSON.stringify(asyncResult));
+          }
+      );
+
+      ```
+    name: notificationMessages
+    fullName: notificationMessages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'notificationMessages: NotificationMessages;'
+      return:
+        type:
+          - NotificationMessages
+  - uid: Outlook_1_6.Office.AppointmentCompose.optionalAttendees
+    summary: >-
+      Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
+      of the current item. The optionalAttendees property returns an
+      [Office.Recipients](xref:Outlook_1_6.Office.Recipients) object that provides methods to get or update the optional
+      attendees for a meeting.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
+      Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.optionalAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
+
+      Office.context.mailbox.item.optionalAttendees.addAsync( ['jason@contoso.com'] );
+
+      Office.context.mailbox.item.optionalAttendees.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var arrayOfOptionalAttendeesRecipients = asyncResult.value;
+      }
+
+      ```
+    name: optionalAttendees
+    fullName: optionalAttendees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'optionalAttendees: Recipients;'
+      return:
+        type:
+          - Recipients
+  - uid: Outlook_1_6.Office.AppointmentCompose.requiredAttendees
+    summary: >-
+      Provides access to the required attendees of an event. The type of object and level of access depends on the mode
+      of the current item. The requiredAttendees property returns an
+      [Office.Recipients](xref:Outlook_1_6.Office.Recipients) object that provides methods to get or update the required
+      attendees for a meeting.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
+      Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.requiredAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
+
+      Office.context.mailbox.item.requiredAttendees.addAsync( ['jason@contoso.com'] );
+
+      Office.context.mailbox.item.requiredAttendees.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var arrayOfRequiredAttendeesRecipients = asyncResult.value;
+          console.log(JSON.stringify(arrayOfRequiredAttendeesRecipients));
+      }
+
+      ```
+    name: requiredAttendees
+    fullName: requiredAttendees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'requiredAttendees: Recipients;'
+      return:
+        type:
+          - Recipients
+  - uid: Outlook_1_6.Office.AppointmentCompose.start
+    summary: >-
+      Gets or sets the date and time that the appointment is to begin.
+
+
+      The start property is an [Office.Time](xref:Outlook_1_6.Office.Time) object expressed as a Coordinated Universal
+      Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the
+      client's local date and time.
+
+
+      When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to
+      convert the local time on the client to UTC for the server.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
+      Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example sets the start time of an appointment in compose mode by
+
+      // using the `setAsync` method of the `Time` object.
+
+      var startTime = new Date("3/14/2015");
+
+      var options = {
+          // Pass information that can be used in the callback.
+          asyncContext: {verb: "Set"}
+      };
+
+      Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
+          if (result.error) {
+              console.debug(result.error);
+          } else {
+              // Access the asyncContext that was passed to the setAsync function.
+              console.debug("Start Time " + result.asyncContext.verb);
+          }
+      });
+
+      ```
+    name: start
+    fullName: start
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'start: Time;'
+      return:
+        type:
+          - Time
+  - uid: Outlook_1_6.Office.AppointmentCompose.subject
+    summary: |-
+      Gets or sets the description that appears in the subject field of an item.
+
+      The subject property gets or sets the entire subject of the item, as sent by the email server.
+
+      The subject property returns a Subject object that provides methods to get and set the subject.
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment
+      Organizer</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.subject.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var subject = asyncResult.value;
+      }
+
+      ```
+    name: subject
+    fullName: subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject: Subject;'
+      return:
+        type:
+          - Subject

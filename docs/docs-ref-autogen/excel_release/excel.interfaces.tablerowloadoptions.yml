@@ -18,8 +18,20 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.TableRowLoadOptions.$all
       - excel_release.Excel.Interfaces.TableRowLoadOptions.index
       - excel_release.Excel.Interfaces.TableRowLoadOptions.values
+  - uid: excel_release.Excel.Interfaces.TableRowLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.TableRowLoadOptions.index
     summary: |-
       Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.

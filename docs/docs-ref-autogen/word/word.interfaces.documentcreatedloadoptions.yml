@@ -14,9 +14,21 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.DocumentCreatedLoadOptions.$all
       - word.Word.Interfaces.DocumentCreatedLoadOptions.body
       - word.Word.Interfaces.DocumentCreatedLoadOptions.properties
       - word.Word.Interfaces.DocumentCreatedLoadOptions.saved
+  - uid: word.Word.Interfaces.DocumentCreatedLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.DocumentCreatedLoadOptions.body
     summary: >-
       Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,

@@ -2,8 +2,8 @@
 items:
   - uid: excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
     summary: >-
-      An interface for updating data on the ChartBoxwhiskerOptions object, for use in "chartBoxwhiskerOptions.set({ ...
-      })".
+      An interface for updating data on the ChartBoxwhiskerOptions object, for use in "chartBoxwhiskerOptions.set(<!--
+      -->{ ... }<!-- -->)".
     name: Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
     fullName: Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
     langs:

@@ -1,4 +1,5 @@
 import * as fs from "fs-extra";
+import * as ts from "typescript";
 require('isomorphic-fetch');
 
 export async function fetchAndThrowOnError(url: string, format: 'text'): Promise<string>;
@@ -43,7 +44,7 @@ export class DtsBuilder {
         }
         const nextPosition = haystack.indexOf(needle, position + needle.length);
         if (nextPosition > 0) {
-            throw new Error(`Expecting one and only one occurence of the word "${needle}"`);
+            throw new Error(`Expecting one and only one occurrence of the word "${needle}"`);
         }
 
         switch (adjustTo) {
@@ -132,3 +133,27 @@ export function stripSpaces(text: string) {
     return finalSetOfLines;
 }
 
+export function generateEnumList(dtsFile: string) : string[] {
+    const releaseFile: ts.SourceFile = ts.createSourceFile(
+        "office",
+        dtsFile,
+        ts.ScriptTarget.ES2015,
+        true);
+    let enumList = [];
+    lookForEnums(releaseFile, enumList);
+    return enumList;
+}
+
+function lookForEnums(node: ts.Node, enumList: string[]): void {
+    switch (node.kind) {
+        case ts.SyntaxKind.EnumDeclaration:
+            const enumNode = node as ts.EnumDeclaration;
+            const enumName = enumNode.name.getText();
+            enumList.push(enumName);
+            break;
+    }
+
+    node.getChildren().forEach((element) => {
+        lookForEnums(element, enumList);
+    });
+}

@@ -1,5 +1,6 @@
 #!/usr/bin/env node --harmony
 
+import { generateEnumList } from './util';
 import * as fsx from 'fs-extra';
 import * as jsyaml from "js-yaml";
 import * as path from "path";
@@ -97,9 +98,11 @@ tryCatch(async () => {
     let outlookFolders : string[] = ["MailboxEnums"];
 
     // create folders for Excel subcategories
+
     let excelRoot = {"name": "Excel", "uid": "", "items": [] as any};
     let excelRootPushed = false;
-    let excelEnumFilter : string [] = ["AggregationFunction", "BindingType", "BorderIndex", "BorderLineStyle", "BorderWeight", "BuiltInStyle", "CalculationMode", "CalculationState", "CalculationType", "ChartAxisCategoryType", "ChartAxisDisplayUnit", "ChartAxisGroup", "ChartAxisPosition", "ChartAxisScaleType", "ChartAxisTickLabelPosition", "ChartAxisTickMark", "ChartAxisTimeUnit", "ChartAxisType", "ChartBinType", "ChartBoxQuartileCalculation", "ChartColorScheme", "ChartDataLabelPosition", "ChartDisplayBlankAs", "ChartErrorBarsInclude", "ChartErrorBarsType", "ChartGradientStyle", "ChartGradientStyleType", "ChartLegendPosition", "ChartLineStyle", "ChartMapAreaLevel", "ChartMapLabelStrategy", "ChartMapProjectionType", "ChartMarkerStyle", "ChartParentLabelStrategy", "ChartPlotAreaPosition", "ChartPlotBy", "ChartSeriesBy", "ChartSplitSType", "ChartTextHorizontalAlignment", "ChartTextVerticalAlignment", "ChartTickLabelAlignment", "ChartTitlePosition", "ChartTrendlineType", "ChartType", "ChartUnderlineStyle", "ClearApplyTo", "ConditionalCellValueOperator", "ConditionalDataBarAxisFormat", "ConditionalDataBarDirection", "ConditionalFormatColorCriterionType", "ConditionalFormatDirection", "ConditionalFormatIconRuleType", "ConditionalFormatPresetCriterion", "ConditionalFormatRuleType", "ConditionalFormatType", "ConditionalIconCriterionOperator", "ConditionalRangeBorderIndex", "ConditionalRangeBorderLineStyle", "ConditionalRangeFontUnderlineStyle", "ConditionalTextOperator", "ConditionalTopBottomCriterionType", "ContentType", "CustomFunctionMetadataFormat", "CustomFunctionType", "DataChangeType", "DataValidationAlertStyle", "DataValidationOperator", "DataValidationType", "DeleteShiftDirection", "DocumentPropertyItem", "DocumentPropertyType", "DynamicFilterCriteria", "ErrorCodes", "EventSource", "EventType", "FillPattern", "FilterDatetimeSpecificity", "FilterOn", "FilterOperator", "GeometricShapeType", "HeaderFooterState", "HorizontalAlignment", "IconSet", "ImageFittingMode", "InsertShiftDirection", "LinkedDataTypeState", "NamedItemScope", "NamedItemType", "PageOrientation", "PaperType", "PictureFormat", "PivotAxis", "PivotFilterTopBottomCriterion", "PivotLayoutType", "Placement", "PrintComments", "PrintErrorType", "PrintMarginUnit", "PrintOrder", "ProtectionSelectionMode", "RangeCopyType", "RangeUnderlineStyle", "RangeValueType", "ReadingOrder", "SaveBehavior", "SearchDirection", "ShapeAutoSize", "ShapeFillType", "ShapeFontUnderlineStyle", "ShapeScaleFrom", "ShapeScaleType", "ShapeTextHorizontalAlignType", "ShapeTextHorzOverflowType", "ShapeTextOrientationType", "ShapeTextReadingOrder", "ShapeTextVerticalAlignType", "ShapeTextVertOverflowType", "ShapeType", "ShapeZOrder", "SheetVisibility", "ShowAsCalculation", "SortBy",  "SortDataOption", "SortMethod", "SortOn", "SortOrientation", "SpecialCellType", "SpecialCellValueType", "SubtotalLocationType", "VerticalAlignment", "WorksheetPositionType"];
+    let excelEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-excel/excel.d.ts").toString());
+
     let excelEventArgsFilter : string [] = ["BindingDataChangedEventArgs", "BindingSelectionChangedEventArgs", "ChartActivatedEventArgs", "ChartAddedEventArgs", "ChartDeactivatedEventArgs", "ChartDeletedEventArgs", "SelectionChangedEventArgs", "SettingsChangedEventArgs", "TableChangedEventArgs", "TableSelectionChangedEventArgs", "WorksheetActivatedEventArgs", "WorksheetAddedEventArgs", "WorksheetCalculatedEventArgs", "WorksheetChangedEventArgs", "WorksheetDeactivatedEventArgs", "WorksheetDeletedEventArgs", "WorksheetSelectionChangedEventArgs"];
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
     let excelInterfaceFilter : string [] = ["CellPropertiesBorderLoadOptions", "CellPropertiesFillLoadOptions", "CellPropertiesFontLoadOptions", "CellPropertiesFormatLoadOptions", "CellPropertiesLoadOptions ", "ColumnPropertiesLoadOptions", "ConditionalCellValueRule", "ConditionalCellValueRule", "ConditionalColorScaleCriteria", "ConditionalColorScaleCriterion", "ConditionalDataBarRule", "ConditionalIconCriterion", "ConditionalPresetCriteriaRule", "ConditionalTextComparisonRule", "ConditionalTextComparisonRule", "ConditionalTopBottomRule", "FilterCrieteria", "FilterDatetime", "Icon", "IconCollections", "RangeHyperlink", "RangeReference", "RowPropertiesLoadOptions", "RunOptions", "SortField", "WorksheetProtectionOptions"];
@@ -108,11 +111,11 @@ tryCatch(async () => {
 
     // create folders for OneNote subcategories
     let oneNoteEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
-    let oneNoteEnumFilter : string [] = ["EntityType", "ErrorCodes", "InsertLocation", "ListType", "NoteTagStatus", "NoteTagType", "NumberType", "PageContentType", "ParagraphType"];
+    let oneNoteEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-onenote/onenote.d.ts").toString());
     let oneNoteInterfaceFilter : string[] = ["ImageOcrData", "InkStrokePointer", "ParagraphInfo"];
 
     // create folders for word subcategories
-    let wordEnumFilter : string [] = ["Alignment", "BodyType", "BorderLocation", "BorderType", "BreakType", "CellPaddingLocation", "ContentControlAppearance", "ContentControlType", "DocumentPropertyType", "ErrorCodes", "FileContentFormat", "HeaderFooterType", "ImageFormat", "InsertLocation", "ListBullet", "ListLevelType", "ListNumbering", "LocationRelation", "RangeLocation", "SelectionMode", "Style", "TapObjectType", "UnderlineType", "VerticalAlignment"];
+    let wordEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-word/word.d.ts").toString());
 
     // create folders for common (shared) API subcategories
     let sharedEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
@@ -133,7 +136,16 @@ tryCatch(async () => {
     origToc.items.forEach((rootItem, rootIndex) => {
         rootItem.items.forEach((packageItem, packageIndex) => {
             if (packageItem.name !== 'office') {
-                const packageName = packageItem.name === 'onenote' ? 'OneNote' : (packageItem.name.substr(0, 1).toUpperCase() + packageItem.name.substr(1)).replace(/\-/g, ' ');
+                // fix host capitalization
+                let packageName;
+                if (packageItem.name === 'onenote') {
+                    packageName = 'OneNote';
+                } else if (packageItem.name === 'powerpoint') {
+                    packageName = 'PowerPoint';
+                } else {
+                    packageName = (packageItem.name.substr(0, 1).toUpperCase() + packageItem.name.substr(1)).replace(/\-/g, ' ');
+                }
+
                 if (packageItem.items.length === 1) {
                     packageItem.items.forEach((namespaceItem, namespaceIndex) => {
                         membersToMove.items = namespaceItem.items;
@@ -253,11 +265,19 @@ tryCatch(async () => {
                             "items":  membersToMove.items as any
                         });
                     } else {
-                        newToc.items[0].items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items": membersToMove.items
-                        });
+                        if (membersToMove.items) {
+                            newToc.items[0].items.push({
+                                "name": packageName,
+                                "uid": packageItem.uid,
+                                "items": membersToMove.items
+                            });
+                        } else {
+                            newToc.items[0].items.push({
+                                "name": packageName,
+                                "uid": packageItem.uid,
+                                "items": [] as any
+                            });
+                        }
                     }
                 } else {
                     newToc.items[0].items.push({
@@ -313,6 +333,16 @@ tryCatch(async () => {
     fsx.readdirSync(docsDestination)
         .filter(filename => filename !== "overview")
         .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
+
+    fsx.readdirSync(docsSource)
+        .filter(filename => filename.indexOf("outlook") >= 0 && filename.indexOf(".yml") < 0)
+        .forEach(filename => {
+            let subfolder = docsSource + '/' + filename;
+            fsx.readdirSync(subfolder)
+                .forEach(subfilename => {
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/CommonAPI/g, "Office"));
+                });
+        });
 
     // copy docs output to /docs/docs-ref-autogen folder
     fsx.readdirSync(docsSource)

@@ -15,10 +15,23 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.$all
       - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showAxisFieldButtons
       - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showLegendFieldButtons
       - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showReportFilterFieldButtons
       - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showValueFieldButtons
+  - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showAxisFieldButtons
     summary: >-
       Represents whether to display axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to

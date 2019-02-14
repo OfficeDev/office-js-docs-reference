@@ -2,8 +2,8 @@
 items:
   - uid: excel_release.Excel.Interfaces.ChartPointsCollectionUpdateData
     summary: >-
-      An interface for updating data on the ChartPointsCollection object, for use in "chartPointsCollection.set({ ...
-      })".
+      An interface for updating data on the ChartPointsCollection object, for use in "chartPointsCollection.set(<!--
+      -->{ ... }<!-- -->)".
     name: Excel.Interfaces.ChartPointsCollectionUpdateData
     fullName: Excel.Interfaces.ChartPointsCollectionUpdateData
     langs:

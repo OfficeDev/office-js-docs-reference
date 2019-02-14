@@ -15,10 +15,23 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.$all
       - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.hasData
       - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.isSelected
       - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.key
       - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.name
+  - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.hasData
     summary: >-
       For EACH ITEM in the collection: True if the slicer item has data.

@@ -12,12 +12,24 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.TableCellLoadOptions.$all
       - onenote.OneNote.Interfaces.TableCellLoadOptions.cellIndex
       - onenote.OneNote.Interfaces.TableCellLoadOptions.id
       - onenote.OneNote.Interfaces.TableCellLoadOptions.paragraphs
       - onenote.OneNote.Interfaces.TableCellLoadOptions.parentRow
       - onenote.OneNote.Interfaces.TableCellLoadOptions.rowIndex
       - onenote.OneNote.Interfaces.TableCellLoadOptions.shadingColor
+  - uid: onenote.OneNote.Interfaces.TableCellLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.TableCellLoadOptions.cellIndex
     summary: |-
       Gets the index of the cell in its row. Read-only.

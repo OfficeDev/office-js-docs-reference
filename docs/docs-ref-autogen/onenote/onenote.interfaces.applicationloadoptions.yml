@@ -14,7 +14,19 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.ApplicationLoadOptions.$all
       - onenote.OneNote.Interfaces.ApplicationLoadOptions.notebooks
+  - uid: onenote.OneNote.Interfaces.ApplicationLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.ApplicationLoadOptions.notebooks
     summary: >-
       Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one

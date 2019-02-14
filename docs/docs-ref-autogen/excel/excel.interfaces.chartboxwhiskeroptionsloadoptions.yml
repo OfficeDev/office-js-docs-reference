@@ -15,11 +15,24 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.$all
       - excel.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.quartileCalculation
       - excel.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.showInnerPoints
       - excel.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.showMeanLine
       - excel.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.showMeanMarker
       - excel.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.showOutlierPoints
+  - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.quartileCalculation
     summary: >-
       Returns or sets quartile calculation type of a Box &amp; whisker chart. Read/Write.

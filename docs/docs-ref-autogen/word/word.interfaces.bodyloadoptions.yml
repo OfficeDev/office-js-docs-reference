@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.BodyLoadOptions.$all
       - word.Word.Interfaces.BodyLoadOptions.font
       - word.Word.Interfaces.BodyLoadOptions.parentBody
       - word.Word.Interfaces.BodyLoadOptions.parentBodyOrNullObject
@@ -23,6 +24,17 @@ items:
       - word.Word.Interfaces.BodyLoadOptions.styleBuiltIn
       - word.Word.Interfaces.BodyLoadOptions.text
       - word.Word.Interfaces.BodyLoadOptions.type
+  - uid: word.Word.Interfaces.BodyLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.BodyLoadOptions.font
     summary: |-
       Gets the text format of the body. Use this to get and set font name, size, color and other properties.

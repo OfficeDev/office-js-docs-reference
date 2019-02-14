@@ -12,8 +12,20 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartAxisTitleFormatLoadOptions.$all
       - excel.Excel.Interfaces.ChartAxisTitleFormatLoadOptions.border
       - excel.Excel.Interfaces.ChartAxisTitleFormatLoadOptions.font
+  - uid: excel.Excel.Interfaces.ChartAxisTitleFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartAxisTitleFormatLoadOptions.border
     summary: |-
       Represents the border format, which includes color, linestyle, and weight.

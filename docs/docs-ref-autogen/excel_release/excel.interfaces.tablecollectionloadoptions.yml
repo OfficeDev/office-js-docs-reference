@@ -14,6 +14,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.TableCollectionLoadOptions.$all
       - excel_release.Excel.Interfaces.TableCollectionLoadOptions.columns
       - excel_release.Excel.Interfaces.TableCollectionLoadOptions.highlightFirstColumn
       - excel_release.Excel.Interfaces.TableCollectionLoadOptions.highlightLastColumn
@@ -29,6 +30,17 @@ items:
       - excel_release.Excel.Interfaces.TableCollectionLoadOptions.sort
       - excel_release.Excel.Interfaces.TableCollectionLoadOptions.style
       - excel_release.Excel.Interfaces.TableCollectionLoadOptions.worksheet
+  - uid: excel_release.Excel.Interfaces.TableCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.TableCollectionLoadOptions.columns
     summary: |-
       For EACH ITEM in the collection: Represents a collection of all the columns in the table.

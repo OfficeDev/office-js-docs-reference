@@ -24,6 +24,8 @@ items:
       - excel_release.Excel.WorksheetCollection.getLast
       - excel_release.Excel.WorksheetCollection.items
       - excel_release.Excel.WorksheetCollection.load
+      - excel_release.Excel.WorksheetCollection.load_1
+      - excel_release.Excel.WorksheetCollection.load_2
       - excel_release.Excel.WorksheetCollection.onActivated
       - excel_release.Excel.WorksheetCollection.onAdded
       - excel_release.Excel.WorksheetCollection.onCalculated
@@ -38,7 +40,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(name)
-    fullName: add
+    fullName: add(name)
     langs:
       - typeScript
     type: method
@@ -47,7 +49,25 @@ items:
       return:
         type:
           - excel.Excel.Worksheet
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var wSheetName = 'Sample Name';
+              var worksheet = ctx.workbook.worksheets.add(wSheetName);
+              worksheet.load('name');
+              return ctx.sync().then(function() {
+                  console.log(worksheet.name);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: name
           description: >-
@@ -75,7 +95,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveWorksheet()
-    fullName: getActiveWorksheet
+    fullName: getActiveWorksheet()
     langs:
       - typeScript
     type: method
@@ -84,14 +104,31 @@ items:
       return:
         type:
           - excel.Excel.Worksheet
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) {  
+              var activeWorksheet = ctx.workbook.worksheets.getActiveWorksheet();
+              activeWorksheet.load('name');
+              return ctx.sync().then(function() {
+                      console.log(activeWorksheet.name);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: excel_release.Excel.WorksheetCollection.getCount
     summary: |-
       Gets the number of worksheets in the collection.
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount(visibleOnly)
-    fullName: getCount
+    fullName: getCount(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -112,7 +149,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getFirst(visibleOnly)
-    fullName: getFirst
+    fullName: getFirst(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -121,7 +158,36 @@ items:
       return:
         type:
           - excel.Excel.Worksheet
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheets = context.workbook.worksheets;
+
+              // We don't want to include the default worksheet that was created
+              // when the workbook was created, so our "firstSheet" will be the one
+              // after the literal first. Note chaining of navigation methods.
+              const firstSheet = sheets.getFirst().getNext();
+              const lastSheet = sheets.getLast();
+              const firstTaxRateRange = firstSheet.getRange("B2");
+              const lastTaxRateRange = lastSheet.getRange("B2");
+
+              firstSheet.load("name");
+              lastSheet.load("name");
+              firstTaxRateRange.load("text");
+              lastTaxRateRange.load("text");
+
+              await context.sync();
+
+              let firstYear = firstSheet.name.substr(5, 4);
+              let lastYear = lastSheet.name.substr(5, 4);
+              console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
+
+              await context.sync();
+          });
+          ```
       parameters:
         - id: visibleOnly
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
@@ -133,7 +199,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
-    fullName: getItem
+    fullName: getItem(key)
     langs:
       - typeScript
     type: method
@@ -154,7 +220,7 @@ items:
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject
+    fullName: getItemOrNullObject(key)
     langs:
       - typeScript
     type: method
@@ -175,7 +241,7 @@ items:
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getLast(visibleOnly)
-    fullName: getLast
+    fullName: getLast(visibleOnly)
     langs:
       - typeScript
     type: method
@@ -184,7 +250,36 @@ items:
       return:
         type:
           - excel.Excel.Worksheet
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheets = context.workbook.worksheets;
+
+              // We don't want to include the default worksheet that was created
+              // when the workbook was created, so our "firstSheet" will be the one
+              // after the literal first. Note chaining of navigation methods.
+              const firstSheet = sheets.getFirst().getNext();
+              const lastSheet = sheets.getLast();
+              const firstTaxRateRange = firstSheet.getRange("B2");
+              const lastTaxRateRange = lastSheet.getRange("B2");
+
+              firstSheet.load("name");
+              lastSheet.load("name");
+              firstTaxRateRange.load("text");
+              lastTaxRateRange.load("text");
+
+              await context.sync();
+
+              let firstYear = firstSheet.name.substr(5, 4);
+              let lastYear = lastSheet.name.substr(5, 4);
+              console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
+
+              await context.sync();
+          });
+          ```
       parameters:
         - id: visibleOnly
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
@@ -210,6 +305,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.WorksheetCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.WorksheetCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -221,7 +320,7 @@ items:
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -235,9 +334,67 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel_release.Excel.WorksheetCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.WorksheetCollection;'
+      return:
+        type:
+          - excel.Excel.WorksheetCollection
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var worksheets = ctx.workbook.worksheets;
+              worksheets.load('items');
+              return ctx.sync().then(function() {
+                  for (var i = 0; i < worksheets.items.length; i++)
+                  {
+                      console.log(worksheets.items[i].name);
+                      console.log(worksheets.items[i].index);
+                  }
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.WorksheetCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.WorksheetCollection;'
+      return:
+        type:
+          - excel.Excel.WorksheetCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel_release.Excel.WorksheetCollection.onActivated
     summary: |-
       Occurs when any worksheet in the workbook is activated.
@@ -253,6 +410,19 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let sheets = context.workbook.worksheets;
+              sheets.onActivated.add(onActivate);
+
+              await context.sync();
+              console.log("A handler has been registered for the OnActivate event.");
+          });
+          ```
   - uid: excel_release.Excel.WorksheetCollection.onAdded
     summary: |-
       Occurs when a new worksheet is added to the workbook.
@@ -268,6 +438,19 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let sheet = context.workbook.worksheets;
+              sheet.onAdded.add(onWorksheetAdd);
+
+              await context.sync();
+              console.log("A handler has been registered for the OnAdded event.");
+          });
+          ```
   - uid: excel_release.Excel.WorksheetCollection.onCalculated
     summary: |-
       Occurs when any worksheet in the workbook is calculated.
@@ -298,6 +481,19 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let sheets = context.workbook.worksheets;
+              sheets.onDeactivated.add(onDeactivate);
+
+              await context.sync();
+              console.log("A handler has been registered for the OnDeactivate event.");
+          });
+          ```
   - uid: excel_release.Excel.WorksheetCollection.onDeleted
     summary: |-
       Occurs when a worksheet is deleted from the workbook.
@@ -321,7 +517,7 @@ items:
       returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`<!-- -->) that contains an
       "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.TableCollectionLoadOptions.$all
       - word.Word.Interfaces.TableCollectionLoadOptions.alignment
       - word.Word.Interfaces.TableCollectionLoadOptions.font
       - word.Word.Interfaces.TableCollectionLoadOptions.headerRowCount
@@ -37,6 +38,17 @@ items:
       - word.Word.Interfaces.TableCollectionLoadOptions.values
       - word.Word.Interfaces.TableCollectionLoadOptions.verticalAlignment
       - word.Word.Interfaces.TableCollectionLoadOptions.width
+  - uid: word.Word.Interfaces.TableCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.alignment
     summary: >-
       For EACH ITEM in the collection: Gets or sets the alignment of the table against the page column. The value can be

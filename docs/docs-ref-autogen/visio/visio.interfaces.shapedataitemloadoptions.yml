@@ -12,10 +12,22 @@ items:
     type: interface
     package: visio
     children:
+      - visio.Visio.Interfaces.ShapeDataItemLoadOptions.$all
       - visio.Visio.Interfaces.ShapeDataItemLoadOptions.format
       - visio.Visio.Interfaces.ShapeDataItemLoadOptions.formattedValue
       - visio.Visio.Interfaces.ShapeDataItemLoadOptions.label
       - visio.Visio.Interfaces.ShapeDataItemLoadOptions.value
+  - uid: visio.Visio.Interfaces.ShapeDataItemLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: visio.Visio.Interfaces.ShapeDataItemLoadOptions.format
     summary: |-
       A string that specifies the format of the shape data item. Read-only.

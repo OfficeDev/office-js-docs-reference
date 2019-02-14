@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData
-    summary: 'An interface for updating data on the HeaderFooterGroup object, for use in "headerFooterGroup.set({ ... })".'
+    summary: >-
+      An interface for updating data on the HeaderFooterGroup object, for use in "headerFooterGroup.set(<!-- -->{ ...
+      }<!-- -->)".
     name: Excel.Interfaces.HeaderFooterGroupUpdateData
     fullName: Excel.Interfaces.HeaderFooterGroupUpdateData
     langs:

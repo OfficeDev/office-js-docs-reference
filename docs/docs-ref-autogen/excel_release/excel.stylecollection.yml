@@ -19,6 +19,8 @@ items:
       - excel_release.Excel.StyleCollection.getItem
       - excel_release.Excel.StyleCollection.items
       - excel_release.Excel.StyleCollection.load
+      - excel_release.Excel.StyleCollection.load_1
+      - excel_release.Excel.StyleCollection.load_2
       - excel_release.Excel.StyleCollection.toJSON
   - uid: excel_release.Excel.StyleCollection.add
     summary: |-
@@ -26,7 +28,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: add(name)
-    fullName: add
+    fullName: add(name)
     langs:
       - typeScript
     type: method
@@ -35,7 +37,32 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let styles = context.workbook.styles;
+
+              // Add a new style to the style collection.
+              // Styles is in the Home tab ribbon.
+              styles.add("Diagonal Orientation Style");
+                    
+              let newStyle = styles.getItem("Diagonal Orientation Style");
+              
+              // The "Diagonal Orientation Style" properties.
+              newStyle.textOrientation = 38;
+              newStyle.autoIndent = true;
+              newStyle.includeProtection = true;
+              newStyle.shrinkToFit = true;
+              newStyle.locked = false;
+              
+              await context.sync();
+
+              console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
+          });
+          ```
       parameters:
         - id: name
           description: Name of the style to be added.
@@ -61,7 +88,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
-    fullName: getItem
+    fullName: getItem(name)
     langs:
       - typeScript
     type: method
@@ -70,7 +97,32 @@ items:
       return:
         type:
           - excel.Excel.Style
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let styles = context.workbook.styles;
+
+              // Add a new style to the style collection.
+              // Styles is in the Home tab ribbon.
+              styles.add("Diagonal Orientation Style");
+                    
+              let newStyle = styles.getItem("Diagonal Orientation Style");
+              
+              // The "Diagonal Orientation Style" properties.
+              newStyle.textOrientation = 38;
+              newStyle.autoIndent = true;
+              newStyle.includeProtection = true;
+              newStyle.shrinkToFit = true;
+              newStyle.locked = false;
+              
+              await context.sync();
+
+              console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
+          });
+          ```
       parameters:
         - id: name
           description: Name of the style to be retrieved.
@@ -96,6 +148,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.StyleCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.StyleCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -107,7 +163,7 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -121,9 +177,46 @@ items:
         description: ''
       parameters:
         - id: option
-          description: A comma-delimited string or an array of strings that specify the properties to load.
+          description: ''
           type:
             - Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel_release.Excel.StyleCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.StyleCollection;'
+      return:
+        type:
+          - excel.Excel.StyleCollection
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.StyleCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.StyleCollection;'
+      return:
+        type:
+          - excel.Excel.StyleCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel_release.Excel.StyleCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -132,7 +225,7 @@ items:
       plain JavaScript object (typed as `Excel.Interfaces.StyleCollectionData`<!-- -->) that contains an "items" array
       with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

@@ -12,8 +12,20 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.CustomXmlPartCollectionLoadOptions.$all
       - excel.Excel.Interfaces.CustomXmlPartCollectionLoadOptions.id
       - excel.Excel.Interfaces.CustomXmlPartCollectionLoadOptions.namespaceUri
+  - uid: excel.Excel.Interfaces.CustomXmlPartCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.CustomXmlPartCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: The custom XML part's ID. Read-only.

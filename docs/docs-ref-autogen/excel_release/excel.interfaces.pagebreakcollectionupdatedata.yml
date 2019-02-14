@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.Interfaces.PageBreakCollectionUpdateData
-    summary: 'An interface for updating data on the PageBreakCollection object, for use in "pageBreakCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the PageBreakCollection object, for use in "pageBreakCollection.set(<!-- -->{
+      ... }<!-- -->)".
     name: Excel.Interfaces.PageBreakCollectionUpdateData
     fullName: Excel.Interfaces.PageBreakCollectionUpdateData
     langs:

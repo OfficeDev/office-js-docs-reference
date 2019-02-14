@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ChartAxisLoadOptions.$all
       - excel.Excel.Interfaces.ChartAxisLoadOptions.alignment
       - excel.Excel.Interfaces.ChartAxisLoadOptions.axisGroup
       - excel.Excel.Interfaces.ChartAxisLoadOptions.baseTimeUnit
@@ -53,6 +54,17 @@ items:
       - excel.Excel.Interfaces.ChartAxisLoadOptions.type
       - excel.Excel.Interfaces.ChartAxisLoadOptions.visible
       - excel.Excel.Interfaces.ChartAxisLoadOptions.width
+  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.alignment
     summary: |-
       Represents the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.

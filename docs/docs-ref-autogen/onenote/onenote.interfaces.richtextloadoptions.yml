@@ -12,10 +12,22 @@ items:
     type: interface
     package: onenote
     children:
+      - onenote.OneNote.Interfaces.RichTextLoadOptions.$all
       - onenote.OneNote.Interfaces.RichTextLoadOptions.id
       - onenote.OneNote.Interfaces.RichTextLoadOptions.languageId
       - onenote.OneNote.Interfaces.RichTextLoadOptions.paragraph
       - onenote.OneNote.Interfaces.RichTextLoadOptions.text
+  - uid: onenote.OneNote.Interfaces.RichTextLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: onenote.OneNote.Interfaces.RichTextLoadOptions.id
     summary: |-
       Gets the ID of the RichText object. Read-only.

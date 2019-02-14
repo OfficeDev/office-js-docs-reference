@@ -25,7 +25,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
-    fullName: clear
+    fullName: clear()
     langs:
       - typeScript
     type: method
@@ -34,7 +34,25 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // Clear the line format of the major Gridlines on value axis of the Chart named "Chart1"
+          Excel.run(function (ctx) { 
+              var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+              gridlines.format.line.clear();
+              return ctx.sync().then(function() {
+                      console.log("Chart Major Gridlines Format Cleared");
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: excel_release.Excel.ChartFill.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -54,7 +72,7 @@ items:
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
@@ -75,7 +93,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setSolidColor(color)
-    fullName: setSolidColor
+    fullName: setSolidColor(color)
     langs:
       - typeScript
     type: method
@@ -84,7 +102,39 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+
+              chart.format.fill.setSolidColor("#FF0000");
+
+              return ctx.sync().then(function() {
+                      console.log("Chart1 Background Color Changed.");
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+
+              let pointsCollection = sheet.charts.getItemAt(0).series.getItemAt(0).points;
+              let point = pointsCollection.getItemAt(2);
+
+              // Set color for chart point.
+              point.format.fill.setSolidColor('red');
+
+              await context.sync();        
+          });
+          ```
       parameters:
         - id: color
           description: >-
@@ -100,12 +150,15 @@ items:
       JavaScript object (typed as `Excel.Interfaces.ChartFillData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: |-
+        toJSON(): {
+                    [key: string]: string;
+                };
       return:
         type:
           - |-

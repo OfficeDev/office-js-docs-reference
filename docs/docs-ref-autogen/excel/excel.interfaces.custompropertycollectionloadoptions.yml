@@ -12,9 +12,21 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.CustomPropertyCollectionLoadOptions.$all
       - excel.Excel.Interfaces.CustomPropertyCollectionLoadOptions.key
       - excel.Excel.Interfaces.CustomPropertyCollectionLoadOptions.type
       - excel.Excel.Interfaces.CustomPropertyCollectionLoadOptions.value
+  - uid: excel.Excel.Interfaces.CustomPropertyCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.CustomPropertyCollectionLoadOptions.key
     summary: |-
       For EACH ITEM in the collection: Gets the key of the custom property. Read only.

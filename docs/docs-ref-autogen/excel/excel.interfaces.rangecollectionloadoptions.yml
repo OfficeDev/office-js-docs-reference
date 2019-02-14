@@ -12,6 +12,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.$all
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.address
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.addressLocal
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.cellCount
@@ -39,6 +40,18 @@ items:
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.values
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.valueTypes
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.worksheet
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.address
     summary: >-
       For EACH ITEM in the collection: Represents the range reference in A1-style. Address value will contain the Sheet

@@ -15,12 +15,25 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.ShapeFontLoadOptions.$all
       - excel.Excel.Interfaces.ShapeFontLoadOptions.bold
       - excel.Excel.Interfaces.ShapeFontLoadOptions.color
       - excel.Excel.Interfaces.ShapeFontLoadOptions.italic
       - excel.Excel.Interfaces.ShapeFontLoadOptions.name
       - excel.Excel.Interfaces.ShapeFontLoadOptions.size
       - excel.Excel.Interfaces.ShapeFontLoadOptions.underline
+  - uid: excel.Excel.Interfaces.ShapeFontLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ShapeFontLoadOptions.bold
     summary: >-
       Represents the bold status of font. Returns null the TextRange includes both bold and non-bold text fragments.

@@ -12,9 +12,21 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.ChartAxesLoadOptions.$all
       - excel_release.Excel.Interfaces.ChartAxesLoadOptions.categoryAxis
       - excel_release.Excel.Interfaces.ChartAxesLoadOptions.seriesAxis
       - excel_release.Excel.Interfaces.ChartAxesLoadOptions.valueAxis
+  - uid: excel_release.Excel.Interfaces.ChartAxesLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ChartAxesLoadOptions.categoryAxis
     summary: |-
       Represents the category axis in a chart.

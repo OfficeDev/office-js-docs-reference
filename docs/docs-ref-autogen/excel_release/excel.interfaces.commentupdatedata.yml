@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.Interfaces.CommentUpdateData
-    summary: 'An interface for updating data on the Comment object, for use in "comment.set({ ... })".'
+    summary: 'An interface for updating data on the Comment object, for use in "comment.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.CommentUpdateData
     fullName: Excel.Interfaces.CommentUpdateData
     langs:

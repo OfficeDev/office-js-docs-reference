@@ -8,29 +8,11 @@ items:
     type: interface
     package: excel_release
     children:
-      - excel_release.Excel.FiveArrowsSet.__index
       - excel_release.Excel.FiveArrowsSet.greenUpArrow
       - excel_release.Excel.FiveArrowsSet.redDownArrow
       - excel_release.Excel.FiveArrowsSet.yellowDownInclineArrow
       - excel_release.Excel.FiveArrowsSet.yellowSideArrow
       - excel_release.Excel.FiveArrowsSet.yellowUpInclineArrow
-  - uid: excel_release.Excel.FiveArrowsSet.__index
-    name: __index(index)
-    fullName: __index
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: '[index: number]: Icon;'
-      return:
-        type:
-          - Icon
-        description: ''
-      parameters:
-        - id: index
-          description: ''
-          type:
-            - number
   - uid: excel_release.Excel.FiveArrowsSet.greenUpArrow
     name: greenUpArrow
     fullName: greenUpArrow

@@ -12,7 +12,19 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.SectionCollectionLoadOptions.$all
       - word.Word.Interfaces.SectionCollectionLoadOptions.body
+  - uid: word.Word.Interfaces.SectionCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.SectionCollectionLoadOptions.body
     summary: >-
       For EACH ITEM in the collection: Gets the body object of the section. This does not include the header/footer and

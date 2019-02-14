@@ -12,6 +12,7 @@ items:
     type: interface
     package: word
     children:
+      - word.Word.Interfaces.TableLoadOptions.$all
       - word.Word.Interfaces.TableLoadOptions.alignment
       - word.Word.Interfaces.TableLoadOptions.font
       - word.Word.Interfaces.TableLoadOptions.headerRowCount
@@ -37,6 +38,17 @@ items:
       - word.Word.Interfaces.TableLoadOptions.values
       - word.Word.Interfaces.TableLoadOptions.verticalAlignment
       - word.Word.Interfaces.TableLoadOptions.width
+  - uid: word.Word.Interfaces.TableLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: word.Word.Interfaces.TableLoadOptions.alignment
     summary: |-
       Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
