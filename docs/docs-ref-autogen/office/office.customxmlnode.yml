@@ -436,9 +436,7 @@ items:
   - uid: office.Office.CustomXmlNode.setTextAsync
     summary: Asynchronously sets the text of an XML node in a custom XML part.
     remarks: |-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
-
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+      <table> <tr><td>Hosts</td><td>Word</td></tr> <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr> </table>
       #### Examples
 
       ```javascript
@@ -513,10 +511,7 @@ items:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.CustomXmlNode.setTextAsync_1
     summary: Asynchronously sets the text of an XML node in a custom XML part.
-    remarks: |-
-      <table><tr><td>Hosts</td><td>Word</td></tr>
-
-      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    remarks: <table> <tr><td>Hosts</td><td>Word</td></tr> <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr> </table>
     name: 'setTextAsync(text, callback)'
     fullName: 'setTextAsync(text, callback)'
     langs:

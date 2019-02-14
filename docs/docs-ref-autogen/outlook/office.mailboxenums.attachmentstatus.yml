@@ -6,8 +6,8 @@ items:
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td> [Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)
-      </td><td>Compose or read</td></tr></table>
+      <table> <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or Read</td></tr> </table>
     isPreview: true
     name: Office.MailboxEnums.AttachmentStatus
     fullName: Office.MailboxEnums.AttachmentStatus

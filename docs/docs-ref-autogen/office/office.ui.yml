@@ -52,10 +52,8 @@ items:
   - uid: office.Office.UI.displayDialogAsync
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr>
-
-
-      <tr><td>Requirement sets</td><td>DialogAPI, Mailbox 1.4</td></tr></table>
+      <table> <tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr> <tr><td>Requirement
+      sets</td><td>DialogAPI, Mailbox 1.4</td></tr> </table>
 
 
       This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the
@@ -167,10 +165,8 @@ items:
   - uid: office.Office.UI.displayDialogAsync_1
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr>
-
-
-      <tr><td>Requirement sets</td><td>DialogAPI, Mailbox 1.4</td></tr></table>
+      <table> <tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr> <tr><td>Requirement
+      sets</td><td>DialogAPI, Mailbox 1.4</td></tr> </table>
 
 
       This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the
