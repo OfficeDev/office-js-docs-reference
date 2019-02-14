@@ -582,13 +582,6 @@
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
-    {
-      "files": [
-        "toc.yml"
-      ],
-      "src": "breadcrumb",
-      "dest": "office_js_breadcrumb"
-    },
         {
       "files": [
         "**/*.md",
