@@ -119,7 +119,7 @@ items:
 
 
       function addAttachment() {
-          // The values in asyncContext can be accessed in the callback
+          // The values in asyncContext can be accessed in the callback.
           var options = { 'asyncContext': { var1: 1, var2: 2 } };
 
           var attachmentURL = "https://contoso.com/rtm/icon.png";
@@ -602,11 +602,10 @@ items:
 
 
       function addAttachment() {
-          // EWS ID of item to attach
-          // (Shortened for readability)
+          // EWS ID of item to attach (shortened for readability).
           var itemId = "AAMkADI1...AAA=";
 
-          // The values in asyncContext can be accessed in the callback
+          // The values in asyncContext can be accessed in the callback.
           var options = { 'asyncContext': { var1: 1, var2: 2 } };
 
           Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
@@ -1011,7 +1010,7 @@ items:
 
       ```javascript
 
-      // getting selected data
+      // Get selected data.
 
       Office.initialize = function () {
           Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
@@ -1027,7 +1026,7 @@ items:
 
 
       function setCallback(asyncResult) {
-          // check for errors
+          // Check for errors.
       }
 
       ```
@@ -1718,7 +1717,7 @@ items:
 
       Office.context.mailbox.item.saveAsync(
           function callback(result) {
-              // Process the result
+              // Process the result.
           });
 
       // The following is an example of the
@@ -2002,7 +2001,7 @@ items:
           "text",
           { asyncContext: "This is passed to the callback" },
           function callback(result) {
-              // Do something with the result
+              // Do something with the result.
           });
 
       // The following is an example of an object that is passed as the result parameter to the callback function.
@@ -2060,8 +2059,7 @@ items:
       var endTime = new Date("3/14/2015");
 
       var options = {
-          // Pass information that can be used
-          // in the callback
+          // Pass information that can be used in the callback.
           asyncContext: {verb: "Set"}
       };
 
@@ -2069,7 +2067,7 @@ items:
           if (result.error) {
               console.debug(result.error);
           } else {
-              // Access the asyncContext that was passed to the setAsync function
+              // Access the asyncContext that was passed to the setAsync function.
               console.debug("End Time " + result.asyncContext.verb);
           }
       });
@@ -2177,9 +2175,9 @@ items:
       ```javascript
 
       if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Appointment) {
-          // do something
+          // Do something.
       } else {
-          // do something else
+          // Do something else.
       }
 
       ```
@@ -2254,7 +2252,7 @@ items:
 
       ```javascript
 
-      // Get all notifications
+      // Get all notifications.
 
       Office.context.mailbox.item.notificationMessages.getAllAsync(
           function (asyncResult) {
@@ -2525,8 +2523,8 @@ items:
 
       var isSeriesInstance = (seriesId != null);
 
-      console.log("SeriesId is " + seriesId + " and isSeriesInstance is " + isSeriesInstance);
-
+      console.log("SeriesId is " + seriesId 
+          + " and isSeriesInstance is " + isSeriesInstance);
       ```
     name: seriesId
     fullName: seriesId
@@ -2574,8 +2572,7 @@ items:
       var startTime = new Date("3/14/2015");
 
       var options = {
-          // Pass information that can be used
-          // in the callback
+          // Pass information that can be used in the callback.
           asyncContext: {verb: "Set"}
       };
 
@@ -2583,7 +2580,7 @@ items:
           if (result.error) {
               console.debug(result.error);
           } else {
-              // Access the asyncContext that was passed to the setAsync function
+              // Access the asyncContext that was passed to the setAsync function.
               console.debug("Start Time " + result.asyncContext.verb);
           }
       });
