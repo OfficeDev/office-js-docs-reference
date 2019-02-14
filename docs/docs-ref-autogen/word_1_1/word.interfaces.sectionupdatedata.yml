@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.SectionUpdateData
+    summary: 'An interface for updating data on the Section object, for use in "section.set({ ... })".'
+    name: Word.Interfaces.SectionUpdateData
+    fullName: Word.Interfaces.SectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.SectionUpdateData.body
+  - uid: word.Word.Interfaces.SectionUpdateData.body
+    summary: |-
+      Gets the body object of the section. This does not include the header/footer and other section metadata.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: body
+    fullName: body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body?: Word.Interfaces.BodyUpdateData;'
+      return:
+        type:
+          - word.Word.Interfaces.BodyUpdateData

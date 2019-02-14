@@ -1,0 +1,404 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.DocumentProperties
+    summary: |-
+      Represents document properties.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.DocumentProperties
+    fullName: Word.DocumentProperties
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: word
+    children:
+      - word.Word.DocumentProperties.applicationName
+      - word.Word.DocumentProperties.author
+      - word.Word.DocumentProperties.category
+      - word.Word.DocumentProperties.comments
+      - word.Word.DocumentProperties.company
+      - word.Word.DocumentProperties.context
+      - word.Word.DocumentProperties.creationDate
+      - word.Word.DocumentProperties.customProperties
+      - word.Word.DocumentProperties.format
+      - word.Word.DocumentProperties.keywords
+      - word.Word.DocumentProperties.lastAuthor
+      - word.Word.DocumentProperties.lastPrintDate
+      - word.Word.DocumentProperties.lastSaveTime
+      - word.Word.DocumentProperties.load
+      - word.Word.DocumentProperties.manager
+      - word.Word.DocumentProperties.revisionNumber
+      - word.Word.DocumentProperties.security
+      - word.Word.DocumentProperties.subject
+      - word.Word.DocumentProperties.template
+      - word.Word.DocumentProperties.title
+      - word.Word.DocumentProperties.toJSON
+      - word.Word.DocumentProperties.track
+      - word.Word.DocumentProperties.untrack
+  - uid: word.Word.DocumentProperties.applicationName
+    summary: |-
+      Gets the application name of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: applicationName
+    fullName: applicationName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly applicationName: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.DocumentProperties.author
+    summary: |-
+      Gets or sets the author of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: author
+    fullName: author
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'author: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.DocumentProperties.category
+    summary: |-
+      Gets or sets the category of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: category
+    fullName: category
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'category: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.DocumentProperties.comments
+    summary: |-
+      Gets or sets the comments of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comments: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.DocumentProperties.company
+    summary: |-
+      Gets or sets the company of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: company
+    fullName: company
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'company: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.DocumentProperties.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: word.Word.DocumentProperties.creationDate
+    summary: |-
+      Gets the creation date of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly creationDate: Date;'
+      return:
+        type:
+          - Date
+  - uid: word.Word.DocumentProperties.customProperties
+    summary: |-
+      Gets the collection of custom properties of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: customProperties
+    fullName: customProperties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly customProperties: Word.CustomPropertyCollection;'
+      return:
+        type:
+          - Word.CustomPropertyCollection
+  - uid: word.Word.DocumentProperties.format
+    summary: |-
+      Gets or sets the format of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.DocumentProperties.keywords
+    summary: |-
+      Gets or sets the keywords of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: keywords
+    fullName: keywords
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'keywords: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.DocumentProperties.lastAuthor
+    summary: |-
+      Gets the last author of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lastAuthor
+    fullName: lastAuthor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly lastAuthor: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.DocumentProperties.lastPrintDate
+    summary: |-
+      Gets the last print date of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lastPrintDate
+    fullName: lastPrintDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly lastPrintDate: Date;'
+      return:
+        type:
+          - Date
+  - uid: word.Word.DocumentProperties.lastSaveTime
+    summary: |-
+      Gets the last save time of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lastSaveTime
+    fullName: lastSaveTime
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly lastSaveTime: Date;'
+      return:
+        type:
+          - Date
+  - uid: word.Word.DocumentProperties.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: { select?: string; expand?: string; }): Word.DocumentProperties` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.DocumentProperties` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Word.DocumentProperties;'
+      return:
+        type:
+          - Word.DocumentProperties
+        description: ''
+      parameters:
+        - id: option
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: word.Word.DocumentProperties.manager
+    summary: |-
+      Gets or sets the manager of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: manager
+    fullName: manager
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'manager: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.DocumentProperties.revisionNumber
+    summary: |-
+      Gets the revision number of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: revisionNumber
+    fullName: revisionNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly revisionNumber: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.DocumentProperties.security
+    summary: |-
+      Gets the security of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: security
+    fullName: security
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly security: number;'
+      return:
+        type:
+          - number
+  - uid: word.Word.DocumentProperties.subject
+    summary: |-
+      Gets or sets the subject of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: subject
+    fullName: subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.DocumentProperties.template
+    summary: |-
+      Gets the template of the document. Read only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: template
+    fullName: template
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly template: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.DocumentProperties.title
+    summary: |-
+      Gets or sets the title of the document.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.DocumentProperties.toJSON
+    name: toJSON()
+    fullName: toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Word.Interfaces.DocumentPropertiesData;'
+      return:
+        type:
+          - Word.Interfaces.DocumentPropertiesData
+        description: ''
+  - uid: word.Word.DocumentProperties.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.DocumentProperties;'
+      return:
+        type:
+          - Word.DocumentProperties
+        description: ''
+  - uid: word.Word.DocumentProperties.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.DocumentProperties;'
+      return:
+        type:
+          - Word.DocumentProperties
+        description: ''

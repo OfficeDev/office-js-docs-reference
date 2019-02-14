@@ -7,14 +7,6 @@
           "**/toc.yml"
         ],
         "exclude": [
-          "outlook/**",
-          "outlook_1_1/**",
-          "outlook_1_2/**",
-          "outlook_1_3/**",
-          "outlook_1_4/**",
-          "outlook_1_5/**",
-          "outlook_1_6/**",
-          "outlook_1_7/**",
           "excel/**",
           "excel_1_1/**",
           "excel_1_2/**",
@@ -23,8 +15,22 @@
           "excel_1_5/**",
           "excel_1_6/**",
           "excel_1_7/**",
-          "excel_1_8/**"
-          
+          "excel_1_8/**",
+          "onenote/**",
+          "outlook/**",
+          "outlook_1_1/**",
+          "outlook_1_2/**",
+          "outlook_1_3/**",
+          "outlook_1_4/**",
+          "outlook_1_5/**",
+          "outlook_1_6/**",
+          "outlook_1_7/**",
+          "powerpoint/**",
+          "visio/**",
+          "word/**",
+          "word_1_1/**",
+          "word_1_2/**",
+          "word_1_3/**"
         ],
         "src": "docs-ref-autogen",
         "dest": "api/office_ref_toc"
@@ -55,22 +61,6 @@
         "src": "docs-ref-autogen",
         "dest": "api",
         "exclude": [
-          "outlook/**",
-          "outlook.yml",
-          "outlook_1_1/**",
-          "outlook_1_1.yml",
-          "outlook_1_2/**",
-          "outlook_1_2.yml",
-          "outlook_1_3/**",
-          "outlook_1_3.yml",
-          "outlook_1_4/**",
-          "outlook_1_4.yml",
-          "outlook_1_5/**",
-          "outlook_1_5.yml",
-          "outlook_1_6/**",
-          "outlook_1_6.yml",
-          "outlook_1_7/**",
-          "outlook_1_7.yml",
           "excel/**",
           "excel.yml",
           "excel_1_1**",
@@ -88,7 +78,37 @@
           "excel_1_7/**",
           "excel_1_7.yml",
           "excel_1_8/**",
-          "excel_1_8.yml",         
+          "excel_1_8.yml",
+          "onenote/**",
+          "onenote.yml",
+          "outlook/**",
+          "outlook.yml",
+          "outlook_1_1/**",
+          "outlook_1_1.yml",
+          "outlook_1_2/**",
+          "outlook_1_2.yml",
+          "outlook_1_3/**",
+          "outlook_1_3.yml",
+          "outlook_1_4/**",
+          "outlook_1_4.yml",
+          "outlook_1_5/**",
+          "outlook_1_5.yml",
+          "outlook_1_6/**",
+          "outlook_1_6.yml",
+          "outlook_1_7/**",
+          "outlook_1_7.yml",     
+          "powerpoint/**",
+          "powerpoint.yml",  
+          "visio/**",
+          "visio.yml",  
+          "word/**",
+          "word.yml",
+          "word_1_1/**",
+          "word_1_1.yml",
+          "word_1_2/**",
+          "word_1_2.yml",
+          "word_1_3/**",
+          "word_1_3.yml",
           "**/obj/**",
           "**/includes/**",
           "**/_themes/**",
@@ -386,6 +406,148 @@
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
+      
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "excel-js-preview",
+        "src": "docs-ref-autogen/excel",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "excel-js-preview",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "excel.yml"
+        ],
+        "group": "excel-js-preview",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "group": "excel-js-preview",
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
+      },
+
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "excel-js-1.1",
+        "src": "docs-ref-autogen/excel_1_1",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "excel-js-1.1",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "excel_1_1.yml"
+        ],
+        "group": "excel-js-1.1",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "group": "excel-js-1.1",
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
+      },
+      
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "excel-js-1.2",
+        "src": "docs-ref-autogen/excel_1_2",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "excel-js-1.2",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "excel_1_2.yml"
+        ],
+        "group": "excel-js-1.2",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "group": "excel-js-1.2",
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
+      },
+
+      
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "excel-js-1.3",
+        "src": "docs-ref-autogen/excel_1_3",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "excel-js-1.3",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "excel_1_3.yml"
+        ],
+        "group": "excel-js-1.3",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "group": "excel-js-1.3",
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
+      },
+
        {
       "files": [
         "**/*.md",
@@ -461,6 +623,363 @@
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
+
+    
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-1.6",
+      "src": "docs-ref-autogen/excel_1_6",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-1.6",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "excel_1_6.yml"
+      ],
+      "group": "excel-js-1.6",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "excel-js-1.6",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
+
+    
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-1.7",
+      "src": "docs-ref-autogen/excel_1_7",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-1.7",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "excel_1_7.yml"
+      ],
+      "group": "excel-js-1.7",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "excel-js-1.7",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
+
+    
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-1.8",
+      "src": "docs-ref-autogen/excel_1_8",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-1.8",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "excel_1_8.yml"
+      ],
+      "group": "excel-js-1.8",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "excel-js-1.8",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
+
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "onenote-js-1.1",
+      "src": "docs-ref-autogen/onenote",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "onenote-js-1.1",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "onenote.yml"
+      ],
+      "group": "onenote-js-1.1",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "onenote-js-1.1",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
+
+    
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "powerpoint-js-1.1",
+      "src": "docs-ref-autogen/powerpoint",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "powerpoint-js-1.1",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "powerpoint.yml"
+      ],
+      "group": "powerpoint-js-1.1",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "powerpoint-js-1.1",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
+
+    
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "visio-js-1.1",
+      "src": "docs-ref-autogen/visio",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "visio-js-1.1",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "visio.yml"
+      ],
+      "group": "visio-js-1.1",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "visio-js-1.1",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
+
+    
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "word-js-preview",
+      "src": "docs-ref-autogen/word",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "word-js-preview",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "word.yml"
+      ],
+      "group": "word-js-preview",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "word-js-preview",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
+
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "word-js-1.1",
+      "src": "docs-ref-autogen/word_1_1",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "word-js-1.1",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "word_1_1.yml"
+      ],
+      "group": "word-js-1.1",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "word-js-1.1",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
+    
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "word-js-1.2",
+      "src": "docs-ref-autogen/word_1_2",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "word-js-1.2",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "word_1_2.yml"
+      ],
+      "group": "word-js-1.2",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "word-js-1.2",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
+
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "word-js-1.3",
+      "src": "docs-ref-autogen/word_1_3",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "word-js-1.3",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "word_1_3.yml"
+      ],
+      "group": "word-js-1.3",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "word-js-1.3",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
+
     {
       "files": [
         "toc.yml"
@@ -662,7 +1181,16 @@
           "visio"
         ],
         "docs-ref-autogen/word/**": [
-          "word"
+          "word preview"
+        ],
+        "docs-ref-autogen/word_1_1/**": [
+          "word 1.1"
+        ],
+        "docs-ref-autogen/word_1_2/**": [
+          "word 1.2"
+        ],
+        "docs-ref-autogen/word_1_3/**": [
+          "word 1.3"
         ]
       }
     },

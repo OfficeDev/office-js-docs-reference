@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.ListBullet
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.ListBullet
+    fullName: Word.ListBullet
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.ListBullet.arrow
+      - word.Word.ListBullet.checkmark
+      - word.Word.ListBullet.custom
+      - word.Word.ListBullet.diamonds
+      - word.Word.ListBullet.hollow
+      - word.Word.ListBullet.solid
+      - word.Word.ListBullet.square
+  - uid: word.Word.ListBullet.arrow
+    name: arrow
+    fullName: arrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Arrow"'
+  - uid: word.Word.ListBullet.checkmark
+    name: checkmark
+    fullName: checkmark
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Checkmark"'
+  - uid: word.Word.ListBullet.custom
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Custom"'
+  - uid: word.Word.ListBullet.diamonds
+    name: diamonds
+    fullName: diamonds
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Diamonds"'
+  - uid: word.Word.ListBullet.hollow
+    name: hollow
+    fullName: hollow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hollow"'
+  - uid: word.Word.ListBullet.solid
+    name: solid
+    fullName: solid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Solid"'
+  - uid: word.Word.ListBullet.square
+    name: square
+    fullName: square
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Square"'

@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.InlinePictureCollectionData
+    summary: An interface describing the data returned by calling "inlinePictureCollection.toJSON()".
+    name: Word.Interfaces.InlinePictureCollectionData
+    fullName: Word.Interfaces.InlinePictureCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.InlinePictureCollectionData.items
+  - uid: word.Word.Interfaces.InlinePictureCollectionData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Word.Interfaces.InlinePictureData[];'
+      return:
+        type:
+          - 'Word.Interfaces.InlinePictureData[]'
