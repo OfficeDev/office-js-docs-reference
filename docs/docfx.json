@@ -25,7 +25,6 @@
           "outlook_1_5/**",
           "outlook_1_6/**",
           "outlook_1_7/**",
-          "powerpoint/**",
           "visio/**",
           "word/**",
           "word_1_1/**",
@@ -96,9 +95,7 @@
           "outlook_1_6/**",
           "outlook_1_6.yml",
           "outlook_1_7/**",
-          "outlook_1_7.yml",     
-          "powerpoint/**",
-          "powerpoint.yml",  
+          "outlook_1_7.yml", 
           "visio/**",
           "visio.yml",  
           "word/**",
@@ -759,43 +756,6 @@
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
-
-    
-    {
-      "files": [
-        "**/*.md",
-        "**/*.yml"
-      ],
-      "group": "powerpoint-js-1.1",
-      "src": "docs-ref-autogen/powerpoint",
-      "dest": "api"
-    },
-    {
-      "files": [
-        "**/*.md",
-        "**/*.yml"
-      ],
-      "group": "powerpoint-js-1.1",
-      "src": "docs-ref-autogen/office",
-      "dest": "api"
-    },
-    {
-      "files": [
-        "powerpoint.yml"
-      ],
-      "group": "powerpoint-js-1.1",
-      "src": "docs-ref-autogen",
-      "dest": "api"
-    },
-    {
-      "files": [
-        "toc.yml"
-      ],
-      "group": "powerpoint-js-1.1",
-      "src": "breadcrumb",
-      "dest": "office_js_breadcrumb"
-    },
-
     
     {
       "files": [
@@ -1079,10 +1039,6 @@
       "onenote-js-1.1": {
         "dest": "onenote-js-1.1",
         "moniker_range": "onenote-js-1.1"
-      },
-      "powerpoint-js-1.1": {
-        "dest": "powerpoint-js-1.1",
-        "moniker_range": "powerpoint-js-1.1"
       },
       "visio-js-1.1": {
         "dest": "visio-js-1.1",
