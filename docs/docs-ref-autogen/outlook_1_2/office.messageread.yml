@@ -539,7 +539,7 @@ items:
 
       var fruits = allMatches.fruits;
 
-      var veges = allMatches.veggies;
+      var veggies = allMatches.veggies;
 
       ```
     name: getRegExMatches()

@@ -9734,7 +9734,7 @@ Office.AppointmentRead.getRegExMatches:
 
     var fruits = allMatches.fruits;
 
-    var veges = allMatches.veggies;
+    var veggies = allMatches.veggies;
 Office.AppointmentRead.getRegExMatchesByName:
   - >-
     // Consider an add-in manifest has the following `Rule` element:
@@ -11080,7 +11080,7 @@ Office.MessageRead.getRegExMatches:
 
     var fruits = allMatches.fruits;
 
-    var veges = allMatches.veggies;
+    var veggies = allMatches.veggies;
 Office.MessageRead.getRegExMatchesByName:
   - >-
     // Consider an add-in manifest has the following `Rule` element:
