@@ -316,7 +316,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'mailbox: Office.Mailbox'
+      content: 'mailbox: Office.Mailbox;'
       return:
         type:
           - Office.Mailbox

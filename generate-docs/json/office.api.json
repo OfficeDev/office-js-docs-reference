@@ -4131,6 +4131,10 @@
                     {
                       "kind": "Reference",
                       "text": "Mailbox"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
                     }
                   ],
                   "releaseTag": "Public",
