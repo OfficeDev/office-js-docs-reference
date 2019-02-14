@@ -340,7 +340,7 @@ tryCatch(async () => {
     fsx.readdirSync(docsSource)
         .forEach(filename => {
             if (filename === "office.context.yml") {
-                fsx.writeFileSync(docsDestination + '/' + filename, fsx.readFileSync(docsSource + '/' + filename).toString().replace(/Outlook.Mailbox/gi, "$1").replace(/Outlook.RoamingSettings/gi, "$1"));
+                fsx.writeFileSync(docsDestination + '/' + filename, fsx.readFileSync(docsSource + '/' + filename).toString().replace(/Outlook.Mailbox/g, "Office.Mailbox").replace(/Outlook.RoamingSettings/g, "Office.RoamingSettings"));
             } else {
                 fsx.copySync(
                     docsSource + '/' + filename,
