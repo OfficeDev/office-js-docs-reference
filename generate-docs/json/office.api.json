@@ -4122,7 +4122,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Office"
+                      "text": "Outlook"
                     },
                     {
                       "kind": "Content",
@@ -4131,10 +4131,6 @@
                     {
                       "kind": "Reference",
                       "text": "Mailbox"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
                     }
                   ],
                   "releaseTag": "Public",
@@ -4246,7 +4242,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Office"
+                      "text": "Outlook"
                     },
                     {
                       "kind": "Content",
