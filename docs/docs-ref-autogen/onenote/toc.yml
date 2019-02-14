@@ -1,97 +1,97 @@
 items:
 - name: API reference
   items:
-    - name: OneNote
-      items:
-        - name: Enums
-          uid: ''
-          items:
-            - name: ErrorCodes
-              uid: onenote.OneNote.ErrorCodes
-            - name: InsertLocation
-              uid: onenote.OneNote.InsertLocation
-            - name: ListType
-              uid: onenote.OneNote.ListType
-            - name: NoteTagStatus
-              uid: onenote.OneNote.NoteTagStatus
-            - name: NoteTagType
-              uid: onenote.OneNote.NoteTagType
-            - name: NumberType
-              uid: onenote.OneNote.NumberType
-            - name: PageContentType
-              uid: onenote.OneNote.PageContentType
-            - name: ParagraphType
-              uid: onenote.OneNote.ParagraphType
-        - name: Application
-          uid: onenote.OneNote.Application
-        - name: FloatingInk
-          uid: onenote.OneNote.FloatingInk
-        - name: Image
-          uid: onenote.OneNote.Image
-        - name: InkAnalysis
-          uid: onenote.OneNote.InkAnalysis
-        - name: InkAnalysisLine
-          uid: onenote.OneNote.InkAnalysisLine
-        - name: InkAnalysisLineCollection
-          uid: onenote.OneNote.InkAnalysisLineCollection
-        - name: InkAnalysisParagraph
-          uid: onenote.OneNote.InkAnalysisParagraph
-        - name: InkAnalysisParagraphCollection
-          uid: onenote.OneNote.InkAnalysisParagraphCollection
-        - name: InkAnalysisWord
-          uid: onenote.OneNote.InkAnalysisWord
-        - name: InkAnalysisWordCollection
-          uid: onenote.OneNote.InkAnalysisWordCollection
-        - name: InkStroke
-          uid: onenote.OneNote.InkStroke
-        - name: InkStrokeCollection
-          uid: onenote.OneNote.InkStrokeCollection
-        - name: InkWord
-          uid: onenote.OneNote.InkWord
-        - name: InkWordCollection
-          uid: onenote.OneNote.InkWordCollection
-        - name: Notebook
-          uid: onenote.OneNote.Notebook
-        - name: NotebookCollection
-          uid: onenote.OneNote.NotebookCollection
-        - name: NoteTag
-          uid: onenote.OneNote.NoteTag
-        - name: Outline
-          uid: onenote.OneNote.Outline
-        - name: Page
-          uid: onenote.OneNote.Page
-        - name: PageCollection
-          uid: onenote.OneNote.PageCollection
-        - name: PageContent
-          uid: onenote.OneNote.PageContent
-        - name: PageContentCollection
-          uid: onenote.OneNote.PageContentCollection
-        - name: Paragraph
-          uid: onenote.OneNote.Paragraph
-        - name: ParagraphCollection
-          uid: onenote.OneNote.ParagraphCollection
-        - name: RequestContext
-          uid: onenote.OneNote.RequestContext
-        - name: RichText
-          uid: onenote.OneNote.RichText
-        - name: Section
-          uid: onenote.OneNote.Section
-        - name: SectionCollection
-          uid: onenote.OneNote.SectionCollection
-        - name: SectionGroup
-          uid: onenote.OneNote.SectionGroup
-        - name: SectionGroupCollection
-          uid: onenote.OneNote.SectionGroupCollection
-        - name: Table
-          uid: onenote.OneNote.Table
-        - name: TableCell
-          uid: onenote.OneNote.TableCell
-        - name: TableCellCollection
-          uid: onenote.OneNote.TableCellCollection
-        - name: TableRow
-          uid: onenote.OneNote.TableRow
-        - name: TableRowCollection
-          uid: onenote.OneNote.TableRowCollection
+  - name: OneNote
+    items:
+      - name: Enums
+        uid: ''
+        items:
+          - name: ErrorCodes
+            uid: onenote.OneNote.ErrorCodes
+          - name: InsertLocation
+            uid: onenote.OneNote.InsertLocation
+          - name: ListType
+            uid: onenote.OneNote.ListType
+          - name: NoteTagStatus
+            uid: onenote.OneNote.NoteTagStatus
+          - name: NoteTagType
+            uid: onenote.OneNote.NoteTagType
+          - name: NumberType
+            uid: onenote.OneNote.NumberType
+          - name: PageContentType
+            uid: onenote.OneNote.PageContentType
+          - name: ParagraphType
+            uid: onenote.OneNote.ParagraphType
+      - name: Application
+        uid: onenote.OneNote.Application
+      - name: FloatingInk
+        uid: onenote.OneNote.FloatingInk
+      - name: Image
+        uid: onenote.OneNote.Image
+      - name: InkAnalysis
+        uid: onenote.OneNote.InkAnalysis
+      - name: InkAnalysisLine
+        uid: onenote.OneNote.InkAnalysisLine
+      - name: InkAnalysisLineCollection
+        uid: onenote.OneNote.InkAnalysisLineCollection
+      - name: InkAnalysisParagraph
+        uid: onenote.OneNote.InkAnalysisParagraph
+      - name: InkAnalysisParagraphCollection
+        uid: onenote.OneNote.InkAnalysisParagraphCollection
+      - name: InkAnalysisWord
+        uid: onenote.OneNote.InkAnalysisWord
+      - name: InkAnalysisWordCollection
+        uid: onenote.OneNote.InkAnalysisWordCollection
+      - name: InkStroke
+        uid: onenote.OneNote.InkStroke
+      - name: InkStrokeCollection
+        uid: onenote.OneNote.InkStrokeCollection
+      - name: InkWord
+        uid: onenote.OneNote.InkWord
+      - name: InkWordCollection
+        uid: onenote.OneNote.InkWordCollection
+      - name: Notebook
+        uid: onenote.OneNote.Notebook
+      - name: NotebookCollection
+        uid: onenote.OneNote.NotebookCollection
+      - name: NoteTag
+        uid: onenote.OneNote.NoteTag
+      - name: Outline
+        uid: onenote.OneNote.Outline
+      - name: Page
+        uid: onenote.OneNote.Page
+      - name: PageCollection
+        uid: onenote.OneNote.PageCollection
+      - name: PageContent
+        uid: onenote.OneNote.PageContent
+      - name: PageContentCollection
+        uid: onenote.OneNote.PageContentCollection
+      - name: Paragraph
+        uid: onenote.OneNote.Paragraph
+      - name: ParagraphCollection
+        uid: onenote.OneNote.ParagraphCollection
+      - name: RequestContext
+        uid: onenote.OneNote.RequestContext
+      - name: RichText
+        uid: onenote.OneNote.RichText
+      - name: Section
+        uid: onenote.OneNote.Section
+      - name: SectionCollection
+        uid: onenote.OneNote.SectionCollection
+      - name: SectionGroup
+        uid: onenote.OneNote.SectionGroup
+      - name: SectionGroupCollection
+        uid: onenote.OneNote.SectionGroupCollection
+      - name: Table
+        uid: onenote.OneNote.Table
+      - name: TableCell
+        uid: onenote.OneNote.TableCell
+      - name: TableCellCollection
+        uid: onenote.OneNote.TableCellCollection
+      - name: TableRow
+        uid: onenote.OneNote.TableRow
+      - name: TableRowCollection
+        uid: onenote.OneNote.TableRowCollection
   - name: Common API
     items:
       - name: Office
