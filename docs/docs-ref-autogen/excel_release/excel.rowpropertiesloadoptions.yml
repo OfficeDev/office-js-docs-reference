@@ -21,16 +21,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: |-
-        format?: Excel.CellPropertiesFormatLoadOptions & {
-                    rowHeight?: boolean;
-                };
+      content: "format?: Excel.CellPropertiesFormatLoadOptions & {\r\n            rowHeight?: boolean;\r\n        };"
       return:
         type:
-          - |-
-            Excel.CellPropertiesFormatLoadOptions & {
-                        rowHeight?: boolean;
-                    }
+          - "Excel.CellPropertiesFormatLoadOptions & {\r\n            rowHeight?: boolean;\r\n        }"
   - uid: excel_release.Excel.RowPropertiesLoadOptions.rowHidden
     name: rowHidden
     fullName: rowHidden

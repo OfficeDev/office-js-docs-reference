@@ -5,7 +5,7 @@ items:
       - name: Excel
         uid: ''
         items:
-          - name: Custom Functions (Preview)
+          - name: Custom Functions - Preview
             uid: ''
             items:
               - name: Custom functions runtime

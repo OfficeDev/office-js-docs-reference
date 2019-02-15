@@ -3,12 +3,10 @@ items:
   - uid: outlook.Office.Recipients
     summary: '\[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
     name: Office.Recipients
     fullName: Office.Recipients
     langs:
@@ -19,13 +17,11 @@ items:
       - outlook.Office.Recipients.addAsync
       - outlook.Office.Recipients.addAsync_1
       - outlook.Office.Recipients.addAsync_2
-      - outlook.Office.Recipients.addAsync_3
       - outlook.Office.Recipients.getAsync
       - outlook.Office.Recipients.getAsync_1
       - outlook.Office.Recipients.setAsync
       - outlook.Office.Recipients.setAsync_1
       - outlook.Office.Recipients.setAsync_2
-      - outlook.Office.Recipients.setAsync_3
   - uid: outlook.Office.Recipients.addAsync
     summary: |-
       Adds a recipient list to the existing recipients for an appointment or message.
@@ -40,30 +36,12 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
-      entries.</td></tr></table>
-
-
-      In addition to this signature, this method also has the following signatures:
-
-
-      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
-
-
-      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions):
-      void;`
-
-
-      `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result:
-      Office.AsyncResult<void>) => void): void;`
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.</td></tr>
+      </table>
     name: 'addAsync(recipients, options, callback)'
     fullName: 'addAsync(recipients, options, callback)'
     langs:
@@ -109,16 +87,12 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
-      entries.</td></tr></table>
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.</td></tr>
+      </table>
     name: addAsync(recipients)
     fullName: addAsync(recipients)
     langs:
@@ -149,95 +123,12 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
-      entries.</td></tr></table>
-    name: 'addAsync(recipients, options)'
-    fullName: 'addAsync(recipients, options)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions):
-        void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: recipients
-          description: The recipients to add to the recipients list.
-          type:
-            - '(string | EmailUser | EmailAddressDetails)[]'
-        - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
-          type:
-            - Office.AsyncContextOptions
-  - uid: outlook.Office.Recipients.addAsync_3
-    summary: |-
-      Adds a recipient list to the existing recipients for an appointment or message.
-
-      The recipients parameter can be an array of one of the following:
-
-      - Strings containing SMTP email addresses
-
-      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
-
-      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
-      entries.</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example creates an array of EmailUser objects
-
-      // and adds them to the To recipients of the message.
-
-      var newRecipients = [
-          {
-              "displayName": "Allie Bellew",
-              "emailAddress": "allieb@contoso.com"
-          },
-          {
-              "displayName": "Alex Darrow",
-              "emailAddress": "alexd@contoso.com"
-          }
-      ];
-
-
-      Office.context.mailbox.item.to.addAsync(newRecipients, function(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              console.log("Recipients added");
-          }
-      });
-
-      ```
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.</td></tr>
+      </table>
     name: 'addAsync(recipients, callback)'
     fullName: 'addAsync(recipients, callback)'
     langs:
@@ -274,18 +165,10 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
-
-
-      In addition to this signature, this method also has the following signature:
-
-
-      `getAsync(callback: (result: Office.AsyncResult<EmailAddressDetails[]>) => void): void;`
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
     langs:
@@ -323,12 +206,10 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
 
       #### Examples
 
@@ -384,30 +265,12 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
-      entries.</td></tr></table>
-
-
-      In addition to this signature, this method also has the following signatures:
-
-
-      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
-
-
-      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions):
-      void;`
-
-
-      `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result:
-      Office.AsyncResult<void>) => void): void;`
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.</td></tr>
+      </table>
     name: 'setAsync(recipients, options, callback)'
     fullName: 'setAsync(recipients, options, callback)'
     langs:
@@ -455,16 +318,12 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
-      entries.</td></tr></table>
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.</td></tr>
+      </table>
     name: setAsync(recipients)
     fullName: setAsync(recipients)
     langs:
@@ -497,97 +356,12 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
-      entries.</td></tr></table>
-    name: 'setAsync(recipients, options)'
-    fullName: 'setAsync(recipients, options)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions):
-        void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: recipients
-          description: The recipients to add to the recipients list.
-          type:
-            - '(string | EmailUser | EmailAddressDetails)[]'
-        - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
-          type:
-            - Office.AsyncContextOptions
-  - uid: outlook.Office.Recipients.setAsync_3
-    summary: |-
-      Sets a recipient list for an appointment or message.
-
-      The setAsync method overwrites the current recipient list.
-
-      The recipients parameter can be an array of one of the following:
-
-      - Strings containing SMTP email addresses
-
-      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
-
-      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
-      entries.</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example creates an array of EmailUser objects and
-
-      // replaces the CC recipients of the message with the array.
-
-      var newRecipients = [
-          {
-              "displayName": "Allie Bellew",
-              "emailAddress": "allieb@contoso.com"
-          },
-          {
-              "displayName": "Alex Darrow",
-              "emailAddress": "alexd@contoso.com"
-          }
-      ];
-
-
-      Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              console.log("Recipients overwritten");
-          }
-      });
-
-      ```
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.</td></tr>
+      </table>
     name: 'setAsync(recipients, callback)'
     fullName: 'setAsync(recipients, callback)'
     langs:

@@ -11,12 +11,10 @@ items:
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
     isPreview: true
     name: Office.InternetHeaders
     fullName: Office.InternetHeaders
@@ -27,10 +25,13 @@ items:
     children:
       - outlook.Office.InternetHeaders.getAsync
       - outlook.Office.InternetHeaders.getAsync_1
+      - outlook.Office.InternetHeaders.getAsync_2
       - outlook.Office.InternetHeaders.removeAsync
       - outlook.Office.InternetHeaders.removeAsync_1
+      - outlook.Office.InternetHeaders.removeAsync_2
       - outlook.Office.InternetHeaders.setAsync
       - outlook.Office.InternetHeaders.setAsync_1
+      - outlook.Office.InternetHeaders.setAsync_2
   - uid: outlook.Office.InternetHeaders.getAsync
     summary: >-
       Given an array of internet header names, this method returns a dictionary containing those internet headers and
@@ -40,18 +41,10 @@ items:
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
-
-
-      In addition to this signature, this method also has the following signature:
-
-
-      `getAsync(names: string[], callback: (result: Office.AsyncResult<InternetHeaders>) => void): void;`
+      Read</td></tr> </table>
     isPreview: true
     name: 'getAsync(names, options, callback)'
     fullName: 'getAsync(names, options, callback)'
@@ -92,12 +85,10 @@ items:
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
 
       #### Examples
 
@@ -136,6 +127,36 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<InternetHeaders>) => void'
+  - uid: outlook.Office.InternetHeaders.getAsync_2
+    summary: >-
+      Given an array of internet header names, this method returns a dictionary containing those internet headers and
+      their values. If the add-in requests an x-header that is not available, that x-header will not be returned in the
+      results.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> </table>
+    isPreview: true
+    name: getAsync(names)
+    fullName: getAsync(names)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(names: string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: names
+          description: The names of the internet headers to be returned.
+          type:
+            - 'string[]'
   - uid: outlook.Office.InternetHeaders.removeAsync
     summary: >-
       Given an array of internet header names, this method removes the specified headers from the internet header
@@ -144,18 +165,10 @@ items:
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
-
-
-      In addition to this signature, this method also has the following signature:
-
-
-      `removeAsync(names: string[], callback: (result: Office.AsyncResult<Body>) => void): void;`
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
     isPreview: true
     name: 'removeAsync(names, options, callback)'
     fullName: 'removeAsync(names, options, callback)'
@@ -195,12 +208,10 @@ items:
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
 
       #### Examples
 
@@ -233,6 +244,35 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<InternetHeaders>) => void'
+  - uid: outlook.Office.InternetHeaders.removeAsync_2
+    summary: >-
+      Given an array of internet header names, this method removes the specified headers from the internet header
+      collection.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
+    isPreview: true
+    name: removeAsync(names)
+    fullName: removeAsync(names)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeAsync(names: string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: names
+          description: The names of the internet headers to be removed.
+          type:
+            - 'string[]'
   - uid: outlook.Office.InternetHeaders.setAsync
     summary: >-
       Sets the specified internet headers to the specified values.
@@ -244,18 +284,10 @@ items:
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      In addition to this signature, this method also has the following signatures:
-
-
-      `setAsync(headers: string, callback: (result: Office.AsyncResult<void>) => void): void;`
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
     isPreview: true
     name: 'setAsync(headers, options, callback)'
     fullName: 'setAsync(headers, options, callback)'
@@ -301,12 +333,10 @@ items:
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
 
       #### Examples
 
@@ -342,3 +372,37 @@ items:
             property.
           type:
             - '(result: Office.AsyncResult<void>) => void'
+  - uid: outlook.Office.InternetHeaders.setAsync_2
+    summary: >-
+      Sets the specified internet headers to the specified values.
+
+
+      The setAsync method creates a new header if the specified header does not already exist; otherwise, the existing
+      value is replaced with the new value.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
+    isPreview: true
+    name: setAsync(headers)
+    fullName: setAsync(headers)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(headers: Object): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: headers
+          description: >-
+            The names and corresponding values of the headers to be set. Should be a dictionary object with keys being
+            the names of the internet headers and values being the values of the internet headers.
+          type:
+            - Object

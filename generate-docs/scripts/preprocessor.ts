@@ -238,7 +238,7 @@ function handleLiteralParameterOverloads(dtsString: string): string {
         const parameterString = "@param " + parameterName + " ";
         const index = dtsString.lastIndexOf(parameterString, matchIndex);
         if (index < 0) {
-            console.log("Missing @param for literal parameter: " + match);
+            console.warn("Missing @param for literal parameter: " + match);
         } else {
         dtsString = dtsString.substring(0, index)
          + "@param " + parameterName + "String "

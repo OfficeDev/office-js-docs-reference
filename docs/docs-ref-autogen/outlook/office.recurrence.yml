@@ -9,12 +9,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
 
 
       **States**
@@ -37,8 +35,10 @@ items:
     children:
       - outlook.Office.Recurrence.getAsync
       - outlook.Office.Recurrence.getAsync_1
+      - outlook.Office.Recurrence.getAsync_2
       - outlook.Office.Recurrence.setAsync
       - outlook.Office.Recurrence.setAsync_1
+      - outlook.Office.Recurrence.setAsync_2
       - outlook.Office.Recurrence.recurrenceProperties
       - outlook.Office.Recurrence.recurrenceTimeZone
       - outlook.Office.Recurrence.recurrenceType
@@ -51,18 +51,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
-
-
-      In addition to this signature, this method also has the following signature:
-
-
-      `getAsync(callback?: (result: Office.AsyncResult<Recurrence>) => void): void;`
+      Read</td></tr> </table>
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
     langs:
@@ -98,12 +90,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
 
       #### Examples
 
@@ -161,6 +151,29 @@ items:
             Recurrence object.
           type:
             - '(result: Office.AsyncResult<Recurrence>) => void'
+  - uid: outlook.Office.Recurrence.getAsync_2
+    summary: |-
+      Returns the current recurrence object of an appointment series.
+
+      This method returns the entire recurrence object for the appointment series.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> </table>
+    name: getAsync()
+    fullName: getAsync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: outlook.Office.Recurrence.setAsync
     summary: |-
       Sets the recurrence pattern of an appointment series.
@@ -169,21 +182,11 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before its start time.</td></tr></table>
-
-
-      In addition to this signature, this method also has the following signature:
-
-
-      `setAsync(recurrencePattern: Recurrence, callback?: (result: Office.AsyncResult<void>) => void): void;`
+      <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before its start time.</td></tr> </table>
     name: 'setAsync(recurrencePattern, options, callback)'
     fullName: 'setAsync(recurrencePattern, options, callback)'
     langs:
@@ -222,15 +225,11 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before its start time.</td></tr></table>
+      <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before its start time.</td></tr> </table>
 
       #### Examples
 
@@ -293,18 +292,45 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
+  - uid: outlook.Office.Recurrence.setAsync_2
+    summary: |-
+      Sets the recurrence pattern of an appointment series.
+
+      **Note**: setAsync should only be available for series items and not instance items.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
+      <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before its start time.</td></tr> </table>
+    name: setAsync(recurrencePattern)
+    fullName: setAsync(recurrencePattern)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(recurrencePattern: Recurrence): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: recurrencePattern
+          description: A recurrence object.
+          type:
+            - Recurrence
   - uid: outlook.Office.Recurrence.recurrenceProperties
     summary: |-
       Gets or sets the properties of the recurring appointment series.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
     name: recurrenceProperties
     fullName: recurrenceProperties
     langs:
@@ -321,12 +347,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
     name: recurrenceTimeZone
     fullName: recurrenceTimeZone
     langs:
@@ -343,12 +367,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
     name: recurrenceType
     fullName: recurrenceType
     langs:
@@ -369,12 +391,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
     name: seriesTime
     fullName: seriesTime
     langs:

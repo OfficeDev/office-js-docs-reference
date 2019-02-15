@@ -6,12 +6,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
     name: Office.From
     fullName: Office.From
     langs:
@@ -21,6 +19,7 @@ items:
     children:
       - outlook.Office.From.getAsync
       - outlook.Office.From.getAsync_1
+      - outlook.Office.From.getAsync_2
   - uid: outlook.Office.From.getAsync
     summary: >-
       Gets the from value of a message.
@@ -35,18 +34,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
-
-
-      In addition to this signature, the method also has the following signature:
-
-
-      `getAsync(callback?: (result: Office.AsyncResult<EmailAddressDetails>) => void): void;`
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
     langs:
@@ -88,12 +79,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
 
       #### Examples
 
@@ -128,3 +117,32 @@ items:
             value, as an EmailAddressDetails object.
           type:
             - '(result: Office.AsyncResult<EmailAddressDetails>) => void'
+  - uid: outlook.Office.From.getAsync_2
+    summary: >-
+      Gets the from value of a message.
+
+
+      The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
+
+
+      The from value of the item is provided as an [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails)
+      in the asyncResult.value property.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
+    name: getAsync()
+    fullName: getAsync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(): void;'
+      return:
+        type:
+          - void
+        description: ''
