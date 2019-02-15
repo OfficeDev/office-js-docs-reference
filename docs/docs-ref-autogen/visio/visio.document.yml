@@ -15,7 +15,6 @@ items:
     package: visio
     children:
       - visio.Visio.Document.application
-      - visio.Visio.Document.context
       - visio.Visio.Document.getActivePage
       - visio.Visio.Document.load
       - visio.Visio.Document.load_1
@@ -48,20 +47,6 @@ items:
       return:
         type:
           - Visio.Application
-  - uid: visio.Visio.Document.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: visio.Visio.Document.getActivePage
     summary: |-
       Returns the Active Page of the document.

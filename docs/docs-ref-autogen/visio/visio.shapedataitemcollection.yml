@@ -14,7 +14,6 @@ items:
       - office.OfficeExtension.ClientObject
     package: visio
     children:
-      - visio.Visio.ShapeDataItemCollection.context
       - visio.Visio.ShapeDataItemCollection.getCount
       - visio.Visio.ShapeDataItemCollection.getItem
       - visio.Visio.ShapeDataItemCollection.items
@@ -22,20 +21,6 @@ items:
       - visio.Visio.ShapeDataItemCollection.load_1
       - visio.Visio.ShapeDataItemCollection.load_2
       - visio.Visio.ShapeDataItemCollection.toJSON
-  - uid: visio.Visio.ShapeDataItemCollection.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: visio.Visio.ShapeDataItemCollection.getCount
     summary: |-
       Gets the number of Shape Data Items.

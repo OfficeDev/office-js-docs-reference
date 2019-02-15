@@ -42,7 +42,6 @@ items:
       - word.Word.TableCell.setCellPadding
       - word.Word.TableCell.setCellPadding_1
       - word.Word.TableCell.shadingColor
-      - word.Word.TableCell.split
       - word.Word.TableCell.toJSON
       - word.Word.TableCell.track
       - word.Word.TableCell.untrack
@@ -641,34 +640,6 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.TableCell.split
-    summary: >-
-      Splits the cell into the specified number of rows and columns.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: 'split(rowCount, columnCount)'
-    fullName: 'split(rowCount, columnCount)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'split(rowCount: number, columnCount: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: rowCount
-          description: Required. The number of rows to split into. Must be a divisor of the number of underlying rows.
-          type:
-            - number
-        - id: columnCount
-          description: Required. The number of columns to split into.
-          type:
-            - number
   - uid: word.Word.TableCell.toJSON
     name: toJSON()
     fullName: toJSON()

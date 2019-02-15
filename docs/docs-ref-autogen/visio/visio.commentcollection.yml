@@ -14,7 +14,6 @@ items:
       - office.OfficeExtension.ClientObject
     package: visio
     children:
-      - visio.Visio.CommentCollection.context
       - visio.Visio.CommentCollection.getCount
       - visio.Visio.CommentCollection.getItem
       - visio.Visio.CommentCollection.items
@@ -22,20 +21,6 @@ items:
       - visio.Visio.CommentCollection.load_1
       - visio.Visio.CommentCollection.load_2
       - visio.Visio.CommentCollection.toJSON
-  - uid: visio.Visio.CommentCollection.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: visio.Visio.CommentCollection.getCount
     summary: |-
       Gets the number of Comments.

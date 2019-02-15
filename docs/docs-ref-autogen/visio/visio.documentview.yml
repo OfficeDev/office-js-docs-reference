@@ -14,10 +14,8 @@ items:
       - office.OfficeExtension.ClientObject
     package: visio
     children:
-      - visio.Visio.DocumentView.context
       - visio.Visio.DocumentView.disableHyperlinks
       - visio.Visio.DocumentView.disablePan
-      - visio.Visio.DocumentView.disablePanZoomWindow
       - visio.Visio.DocumentView.disableZoom
       - visio.Visio.DocumentView.hideDiagramBoundary
       - visio.Visio.DocumentView.load
@@ -26,20 +24,6 @@ items:
       - visio.Visio.DocumentView.set
       - visio.Visio.DocumentView.set_1
       - visio.Visio.DocumentView.toJSON
-  - uid: visio.Visio.DocumentView.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: visio.Visio.DocumentView.disableHyperlinks
     summary: |-
       Disable Hyperlinks.
@@ -83,21 +67,6 @@ items:
     type: property
     syntax:
       content: 'disablePan: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: visio.Visio.DocumentView.disablePanZoomWindow
-    summary: |-
-      Disable PanZoomWindow.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: disablePanZoomWindow
-    fullName: disablePanZoomWindow
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'disablePanZoomWindow: boolean;'
       return:
         type:
           - boolean

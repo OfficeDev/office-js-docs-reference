@@ -15,7 +15,6 @@ items:
     package: visio
     children:
       - visio.Visio.Comment.author
-      - visio.Visio.Comment.context
       - visio.Visio.Comment.date
       - visio.Visio.Comment.load
       - visio.Visio.Comment.load_1
@@ -39,20 +38,6 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Comment.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: visio.Visio.Comment.date
     summary: |-
       A string that specifies the date when the comment was created.

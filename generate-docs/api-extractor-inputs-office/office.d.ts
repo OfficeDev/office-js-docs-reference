@@ -1,3 +1,4 @@
+import { Office as Outlook} from "../api-extractor-inputs-outlook/outlook"
 ////////////////////////////////////////////////////////////////
 //////////////////// Begin Office namespace ////////////////////
 ////////////////////////////////////////////////////////////////
@@ -790,7 +791,7 @@ export declare namespace Office {
          *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
          * </table>
          */
-        mailbox: Office.Mailbox;
+        mailbox: Outlook.Mailbox;
         /**
         * Provides access to the properties for Office theme colors.
         */
@@ -817,7 +818,7 @@ export declare namespace Office {
          *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
          * </table>
          */
-        roamingSettings: Office.RoamingSettings;
+        roamingSettings: Outlook.RoamingSettings;
         /**
         * Specifies whether the platform and device allows touch interaction. 
         * True if the add-in is running on a touch device, such as an iPad; false otherwise.

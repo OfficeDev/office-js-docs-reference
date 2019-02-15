@@ -17,7 +17,6 @@ items:
       - visio.Visio.Page.activate
       - visio.Visio.Page.allShapes
       - visio.Visio.Page.comments
-      - visio.Visio.Page.context
       - visio.Visio.Page.height
       - visio.Visio.Page.index
       - visio.Visio.Page.isBackground
@@ -77,20 +76,6 @@ items:
       return:
         type:
           - Visio.CommentCollection
-  - uid: visio.Visio.Page.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: visio.Visio.Page.height
     summary: |-
       Returns the height of the page. Read-only.

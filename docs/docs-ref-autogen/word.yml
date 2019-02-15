@@ -18,13 +18,9 @@ items:
       - word.Word.ContentControl
       - word.Word.ContentControlAppearance
       - word.Word.ContentControlCollection
-      - word.Word.ContentControlEventArgs
       - word.Word.ContentControlType
       - word.Word.CustomProperty
       - word.Word.CustomPropertyCollection
-      - word.Word.CustomXmlPart
-      - word.Word.CustomXmlPartCollection
-      - word.Word.CustomXmlPartScopedCollection
       - word.Word.Document
       - word.Word.DocumentCreated
       - word.Word.DocumentProperties
@@ -54,14 +50,6 @@ items:
       - word.Word.Interfaces.CustomPropertyData
       - word.Word.Interfaces.CustomPropertyLoadOptions
       - word.Word.Interfaces.CustomPropertyUpdateData
-      - word.Word.Interfaces.CustomXmlPartCollectionData
-      - word.Word.Interfaces.CustomXmlPartCollectionLoadOptions
-      - word.Word.Interfaces.CustomXmlPartCollectionUpdateData
-      - word.Word.Interfaces.CustomXmlPartData
-      - word.Word.Interfaces.CustomXmlPartLoadOptions
-      - word.Word.Interfaces.CustomXmlPartScopedCollectionData
-      - word.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions
-      - word.Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
       - word.Word.Interfaces.DocumentCreatedData
       - word.Word.Interfaces.DocumentCreatedLoadOptions
       - word.Word.Interfaces.DocumentCreatedUpdateData
@@ -109,12 +97,6 @@ items:
       - word.Word.Interfaces.SectionData
       - word.Word.Interfaces.SectionLoadOptions
       - word.Word.Interfaces.SectionUpdateData
-      - word.Word.Interfaces.SettingCollectionData
-      - word.Word.Interfaces.SettingCollectionLoadOptions
-      - word.Word.Interfaces.SettingCollectionUpdateData
-      - word.Word.Interfaces.SettingData
-      - word.Word.Interfaces.SettingLoadOptions
-      - word.Word.Interfaces.SettingUpdateData
       - word.Word.Interfaces.TableBorderData
       - word.Word.Interfaces.TableBorderLoadOptions
       - word.Word.Interfaces.TableBorderUpdateData
@@ -156,8 +138,6 @@ items:
       - word.Word.Section
       - word.Word.SectionCollection
       - word.Word.SelectionMode
-      - word.Word.Setting
-      - word.Word.SettingCollection
       - word.Word.Style
       - word.Word.Table
       - word.Word.TableBorder
@@ -293,20 +273,12 @@ references:
     name: Word.ContentControlAppearance
   - uid: word.Word.ContentControlCollection
     name: Word.ContentControlCollection
-  - uid: word.Word.ContentControlEventArgs
-    name: Word.ContentControlEventArgs
   - uid: word.Word.ContentControlType
     name: Word.ContentControlType
   - uid: word.Word.CustomProperty
     name: Word.CustomProperty
   - uid: word.Word.CustomPropertyCollection
     name: Word.CustomPropertyCollection
-  - uid: word.Word.CustomXmlPart
-    name: Word.CustomXmlPart
-  - uid: word.Word.CustomXmlPartCollection
-    name: Word.CustomXmlPartCollection
-  - uid: word.Word.CustomXmlPartScopedCollection
-    name: Word.CustomXmlPartScopedCollection
   - uid: word.Word.Document
     name: Word.Document
   - uid: word.Word.DocumentCreated
@@ -365,22 +337,6 @@ references:
     name: Word.Interfaces.CustomPropertyLoadOptions
   - uid: word.Word.Interfaces.CustomPropertyUpdateData
     name: Word.Interfaces.CustomPropertyUpdateData
-  - uid: word.Word.Interfaces.CustomXmlPartCollectionData
-    name: Word.Interfaces.CustomXmlPartCollectionData
-  - uid: word.Word.Interfaces.CustomXmlPartCollectionLoadOptions
-    name: Word.Interfaces.CustomXmlPartCollectionLoadOptions
-  - uid: word.Word.Interfaces.CustomXmlPartCollectionUpdateData
-    name: Word.Interfaces.CustomXmlPartCollectionUpdateData
-  - uid: word.Word.Interfaces.CustomXmlPartData
-    name: Word.Interfaces.CustomXmlPartData
-  - uid: word.Word.Interfaces.CustomXmlPartLoadOptions
-    name: Word.Interfaces.CustomXmlPartLoadOptions
-  - uid: word.Word.Interfaces.CustomXmlPartScopedCollectionData
-    name: Word.Interfaces.CustomXmlPartScopedCollectionData
-  - uid: word.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions
-    name: Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions
-  - uid: word.Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
-    name: Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
   - uid: word.Word.Interfaces.DocumentCreatedData
     name: Word.Interfaces.DocumentCreatedData
   - uid: word.Word.Interfaces.DocumentCreatedLoadOptions
@@ -475,18 +431,6 @@ references:
     name: Word.Interfaces.SectionLoadOptions
   - uid: word.Word.Interfaces.SectionUpdateData
     name: Word.Interfaces.SectionUpdateData
-  - uid: word.Word.Interfaces.SettingCollectionData
-    name: Word.Interfaces.SettingCollectionData
-  - uid: word.Word.Interfaces.SettingCollectionLoadOptions
-    name: Word.Interfaces.SettingCollectionLoadOptions
-  - uid: word.Word.Interfaces.SettingCollectionUpdateData
-    name: Word.Interfaces.SettingCollectionUpdateData
-  - uid: word.Word.Interfaces.SettingData
-    name: Word.Interfaces.SettingData
-  - uid: word.Word.Interfaces.SettingLoadOptions
-    name: Word.Interfaces.SettingLoadOptions
-  - uid: word.Word.Interfaces.SettingUpdateData
-    name: Word.Interfaces.SettingUpdateData
   - uid: word.Word.Interfaces.TableBorderData
     name: Word.Interfaces.TableBorderData
   - uid: word.Word.Interfaces.TableBorderLoadOptions
@@ -563,10 +507,6 @@ references:
     name: Word.SectionCollection
   - uid: word.Word.SelectionMode
     name: Word.SelectionMode
-  - uid: word.Word.Setting
-    name: Word.Setting
-  - uid: word.Word.SettingCollection
-    name: Word.SettingCollection
   - uid: word.Word.Style
     name: Word.Style
   - uid: word.Word.Table

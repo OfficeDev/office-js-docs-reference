@@ -73,36 +73,6 @@
               "name": "Application",
               "members": [
                 {
-                  "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
-                },
-                {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,0)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.Application` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
@@ -975,36 +945,6 @@
                 },
                 {
                   "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
-                },
-                {
-                  "kind": "Property",
                   "canonicalReference": "(date:instance)",
                   "docComment": "/**\n * A string that specifies the date when the comment was created.\n *\n * [Api set: 1.1]\n */\n",
                   "excerptTokens": [
@@ -1538,36 +1478,6 @@
               "releaseTag": "Public",
               "name": "CommentCollection",
               "members": [
-                {
-                  "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
-                },
                 {
                   "kind": "Method",
                   "canonicalReference": "(getCount:instance,0)",
@@ -2183,36 +2093,6 @@
                   "propertyTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 6
-                  },
-                  "isStatic": false
-                },
-                {
-                  "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
                   },
                   "isStatic": false
                 },
@@ -3330,36 +3210,6 @@
               "members": [
                 {
                   "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
-                },
-                {
-                  "kind": "Property",
                   "canonicalReference": "(disableHyperlinks:instance)",
                   "docComment": "/**\n * Disable Hyperlinks.\n *\n * [Api set: 1.1]\n */\n",
                   "excerptTokens": [
@@ -3412,36 +3262,6 @@
                   ],
                   "releaseTag": "Public",
                   "name": "disablePan",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
-                },
-                {
-                  "kind": "Property",
-                  "canonicalReference": "(disablePanZoomWindow:instance)",
-                  "docComment": "/**\n * Disable PanZoomWindow.\n *\n * [Api set: 1.1]\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "disablePanZoomWindow"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "disablePanZoomWindow",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
                     "endIndex": 3
@@ -4274,36 +4094,6 @@
                 },
                 {
                   "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
-                },
-                {
-                  "kind": "Property",
                   "canonicalReference": "(description:instance)",
                   "docComment": "/**\n * Gets the description of a hyperlink. Read-only.\n *\n * [Api set: 1.1]\n */\n",
                   "excerptTokens": [
@@ -4720,36 +4510,6 @@
               "releaseTag": "Public",
               "name": "HyperlinkCollection",
               "members": [
-                {
-                  "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
-                },
                 {
                   "kind": "Method",
                   "canonicalReference": "(getCount:instance,0)",
@@ -6726,35 +6486,6 @@
                     },
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "disablePanZoomWindow",
-                      "docComment": "/**\n * Disable PanZoomWindow.\n *\n * [Api set: 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "disablePanZoomWindow"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "boolean"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "disablePanZoomWindow",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 3
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
                       "canonicalReference": "disableZoom",
                       "docComment": "/**\n * Disable Zoom.\n *\n * [Api set: 1.1]\n */\n",
                       "excerptTokens": [
@@ -6924,35 +6655,6 @@
                     },
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "disablePanZoomWindow",
-                      "docComment": "/**\n * Disable PanZoomWindow.\n *\n * [Api set: 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "disablePanZoomWindow"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "boolean"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "disablePanZoomWindow",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 3
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
                       "canonicalReference": "disableZoom",
                       "docComment": "/**\n * Disable Zoom.\n *\n * [Api set: 1.1]\n */\n",
                       "excerptTokens": [
@@ -7086,35 +6788,6 @@
                       ],
                       "releaseTag": "Public",
                       "name": "disablePan",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 3
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "disablePanZoomWindow",
-                      "docComment": "/**\n * Disable PanZoomWindow.\n *\n * [Api set: 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "disablePanZoomWindow"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "boolean"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "disablePanZoomWindow",
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
                         "endIndex": 3
@@ -11132,31 +10805,6 @@
               "members": [
                 {
                   "kind": "EnumMember",
-                  "canonicalReference": "html",
-                  "docComment": "/**\n * html\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "html"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": " = "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Html\""
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "html",
-                  "initializerTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  }
-                },
-                {
-                  "kind": "EnumMember",
                   "canonicalReference": "image",
                   "docComment": "/**\n * image\n */\n",
                   "excerptTokens": [
@@ -11455,36 +11103,6 @@
                   "propertyTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 6
-                  },
-                  "isStatic": false
-                },
-                {
-                  "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
                   },
                   "isStatic": false
                 },
@@ -12218,36 +11836,6 @@
               "name": "PageCollection",
               "members": [
                 {
-                  "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
-                },
-                {
                   "kind": "Method",
                   "canonicalReference": "(getCount:instance,0)",
                   "docComment": "/**\n * Gets the number of pages in the collection.\n *\n * [Api set: 1.1]\n */\n",
@@ -12952,36 +12540,6 @@
                     }
                   ],
                   "name": "centerViewportOnShape"
-                },
-                {
-                  "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
                 },
                 {
                   "kind": "Method",
@@ -14561,36 +14119,6 @@
               "name": "Selection",
               "members": [
                 {
-                  "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
-                },
-                {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,0)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
@@ -14989,36 +14517,6 @@
                   "propertyTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 6
-                  },
-                  "isStatic": false
-                },
-                {
-                  "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
                   },
                   "isStatic": false
                 },
@@ -15858,36 +15356,6 @@
               "name": "ShapeCollection",
               "members": [
                 {
-                  "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
-                },
-                {
                   "kind": "Method",
                   "canonicalReference": "(getCount:instance,0)",
                   "docComment": "/**\n * Gets the number of Shapes in the collection.\n *\n * [Api set: 1.1]\n */\n",
@@ -16375,36 +15843,6 @@
               "members": [
                 {
                   "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
-                },
-                {
-                  "kind": "Property",
                   "canonicalReference": "(format:instance)",
                   "docComment": "/**\n * A string that specifies the format of the shape data item. Read-only.\n *\n * [Api set: 1.1]\n */\n",
                   "excerptTokens": [
@@ -16855,36 +16293,6 @@
               "releaseTag": "Public",
               "name": "ShapeDataItemCollection",
               "members": [
-                {
-                  "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
-                },
                 {
                   "kind": "Method",
                   "canonicalReference": "(getCount:instance,0)",
@@ -17765,7 +17173,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "\"Text\" | \"Image\" | \"Html\""
+                      "text": "\"Text\" | \"Image\""
                     },
                     {
                       "kind": "Content",
@@ -17924,36 +17332,6 @@
                     }
                   ],
                   "name": "addOverlay"
-                },
-                {
-                  "kind": "Property",
-                  "canonicalReference": "(context:instance)",
-                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "context"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ": "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "RequestContext"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "context",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
                 },
                 {
                   "kind": "Property",
