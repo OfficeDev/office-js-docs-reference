@@ -6,12 +6,10 @@ items:
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
     isPreview: true
     name: Office.AttachmentContent
     fullName: Office.AttachmentContent
@@ -76,17 +74,17 @@ items:
           }
 
           function handleAttachmentsCallback(result) {
-              // parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file
+              // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
               if (result.format === Office.MailboxEnums.AttachmentContentFormat.Base64) {
-                  // handle file attachment
+                  // Handle file attachment.
               } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Eml) {
-                  // handle email item attachment
+                  // Handle email item attachment.
               } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
-                  // handle .icalender attachment
+                  // Handle .icalender attachment.
               } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Url) {
-                  // handle cloud attachment
+                  // Handle cloud attachment.
               } else {
-                  // handle attachment formats that are not supported
+                  // Handle attachment formats that are not supported.
               }
           }
           ```

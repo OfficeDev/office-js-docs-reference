@@ -121,7 +121,7 @@ items:
 
       ```javascript
 
-      // Create three notifications, each with a different key
+      // Create three notifications, each with a different key.
 
       Office.context.mailbox.item.notificationMessages.addAsync("progress", {
           type: "progressIndicator",
@@ -327,7 +327,7 @@ items:
 
       ```javascript
 
-      // Get all notifications
+      // Get all notifications.
 
       Office.context.mailbox.item.notificationMessages.getAllAsync(function (asyncResult) {
           if (asyncResult.status != "failed") {
@@ -432,7 +432,7 @@ items:
 
       ```javascript
 
-      // Remove a notification
+      // Remove a notification.
 
       Office.context.mailbox.item.notificationMessages.removeAsync("progress");
 
@@ -605,7 +605,7 @@ items:
 
       ```javascript
 
-      // Replace a notification with an informational notification
+      // Replace a notification with an informational notification.
 
       Office.context.mailbox.item.notificationMessages.replaceAsync("progress", {
           type: "informationalMessage",

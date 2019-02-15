@@ -335,14 +335,23 @@ tryCatch(async () => {
                     fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/CommonAPI/g, "Office"));
                 });
         });
+        fsx.readdirSync(docsSource)
+        .filter(filename => filename.indexOf("office") >= 0 && filename.indexOf(".yml") < 0)
+        .forEach(filename => {
+            let subfolder = docsSource + '/' + filename;
+            fsx.readdirSync(subfolder).filter(filename => filename.indexOf("context") >= 0)
+                .forEach(subfilename => {
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
+                });
+        });
 
     // copy docs output to /docs/docs-ref-autogen folder
     fsx.readdirSync(docsSource)
         .forEach(filename => {
-            fsx.copySync(
-                docsSource + '/' + filename,
-                docsDestination + '/' + filename
-            );
+        fsx.copySync(
+            docsSource + '/' + filename,
+            docsDestination + '/' + filename
+        );
     });
 
     console.log("\nPostprocessor script complete!\n");

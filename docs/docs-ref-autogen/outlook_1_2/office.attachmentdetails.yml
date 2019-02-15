@@ -23,7 +23,9 @@ items:
 
       ```javascript
 
-      // The following code builds an HTML string with details of all attachments on the current item.
+      // The following code builds an HTML string with details
+
+      // of all attachments on the current item.
 
       var item = Office.context.mailbox.item;
 
