@@ -8524,7 +8524,7 @@ Office.AppointmentCompose.enhancedLocation:
             Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
         });
     }
-Office.AppointmentCompose.getAttachmentsAsync:
+Office.AppointmentCompose.getAttachmentsAsync_1:
   - |-
     var item = Office.context.mailbox.item;
     var outputString = "";
@@ -8647,7 +8647,7 @@ Office.AppointmentCompose.requiredAttendees:
         var arrayOfRequiredAttendeesRecipients = asyncResult.value;
         console.log(JSON.stringify(arrayOfRequiredAttendeesRecipients));
     }
-Office.AppointmentCompose.saveAsync_3:
+Office.AppointmentCompose.saveAsync_2:
   - |-
     Office.context.mailbox.item.saveAsync(
         function callback(result) {
@@ -8674,10 +8674,10 @@ Office.AppointmentCompose.seriesId:
     var isSeriesInstance = (seriesId != null);
     console.log("SeriesId is " + seriesId 
         + " and isSeriesInstance is " + isSeriesInstance);
-Office.AppointmentCompose.setSelectedDataAsync:
+Office.AppointmentCompose.setSelectedDataAsync_1:
   - |-
     Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
-Office.AppointmentCompose.setSelectedDataAsync_2:
+Office.AppointmentCompose.setSelectedDataAsync_3:
   - |-
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
 Office.AppointmentCompose.start:
@@ -8750,6 +8750,30 @@ Office.AppointmentRead.dateTimeModified:
     console.log("Date and time modified: " + dateTimeModified);
 Office.AppointmentRead.displayReplyAllForm:
   - |-
+    // Reply with a body, file attachment, item attachment, and a callback.
+    Office.context.mailbox.item.displayReplyAllForm(
+    {
+        'htmlBody' : 'hi',
+        'attachments' :
+        [
+            {
+                'type' : Office.MailboxEnums.AttachmentType.File,
+                'name' : 'squirrel.png',
+                'url' : 'http://i.imgur.com/sRgTlGR.jpg'
+            },
+            {
+                'type' : 'item',
+                'name' : 'rand',
+                'itemId' : Office.context.mailbox.item.itemId
+            }
+        ],
+        'callback' : function(asyncResult)
+        {
+            console.log(asyncResult.value);
+        }
+    });
+Office.AppointmentRead.displayReplyAllForm_1:
+  - |-
     // The following code passes a string to the `displayReplyAllForm` function.
     Office.context.mailbox.item.displayReplyAllForm('hello there');
     Office.context.mailbox.item.displayReplyAllForm('<b>hello there</b>');
@@ -8790,9 +8814,10 @@ Office.AppointmentRead.displayReplyAllForm:
             }
         ]
     });
-
+Office.AppointmentRead.displayReplyForm:
+  - |-
     // Reply with a body, file attachment, item attachment, and a callback.
-    Office.context.mailbox.item.displayReplyAllForm(
+    Office.context.mailbox.item.displayReplyForm(
     {
         'htmlBody' : 'hi',
         'attachments' :
@@ -8813,7 +8838,7 @@ Office.AppointmentRead.displayReplyAllForm:
             console.log(asyncResult.value);
         }
     });
-Office.AppointmentRead.displayReplyForm:
+Office.AppointmentRead.displayReplyForm_1:
   - |-
     // The following code passes a string to the `displayReplyForm` function.
     Office.context.mailbox.item.displayReplyForm('hello there');
@@ -8854,29 +8879,6 @@ Office.AppointmentRead.displayReplyForm:
                 'itemId' : Office.context.mailbox.item.itemId
             }
         ]
-    });
-
-    // Reply with a body, file attachment, item attachment, and a callback.
-    Office.context.mailbox.item.displayReplyForm(
-    {
-        'htmlBody' : 'hi',
-        'attachments' :
-        [
-            {
-                'type' : Office.MailboxEnums.AttachmentType.File,
-                'name' : 'squirrel.png',
-                'url' : 'http://i.imgur.com/sRgTlGR.jpg'
-            },
-            {
-                'type' : 'item',
-                'name' : 'rand',
-                'itemId' : Office.context.mailbox.item.itemId
-            }
-        ],
-        'callback' : function(asyncResult)
-        {
-            console.log(asyncResult.value);
-        }
     });
 Office.AppointmentRead.end:
   - |-
@@ -9124,7 +9126,7 @@ Office.Body.getAsync:
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-Office.Body.getTypeAsync:
+Office.Body.getTypeAsync_1:
   - |-
     Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
         if (asyncResult.status === "failed") {
@@ -9184,7 +9186,7 @@ Office.Contact:
         console.log("Email addresses: " + JSON.stringify(contact.emailAddresses));
         console.log("Urls: " + JSON.stringify(contact.urls));
     });
-Office.CustomProperties.saveAsync:
+Office.CustomProperties.saveAsync_1:
   - |-
     // The following JavaScript code sample shows how to asynchronously use
     // the loadCustomPropertiesAsync method to load custom properties that
@@ -9248,7 +9250,7 @@ Office.EmailAddressDetails.recipientType:
     requiredAttendees.forEach(function (requiredAttendee) {
         console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.recipientType);
     });
-Office.EnhancedLocation.addAsync_1:
+Office.EnhancedLocation.addAsync_2:
   - |-
     var locations = [
         {
@@ -9270,7 +9272,7 @@ Office.EnhancedLocation.getAsync_1:
             }
         });
     }
-Office.EnhancedLocation.removeAsync_1:
+Office.EnhancedLocation.removeAsync_2:
   - |-
     Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
 
@@ -9323,10 +9325,10 @@ Office.InternetHeaders.getAsync_1:
         var dictionary = asyncResult.value;
         var header1_value = dictionary["header1"];
     }
-Office.InternetHeaders.removeAsync_1:
+Office.InternetHeaders.removeAsync_2:
   - |-
     Office.context.mailbox.item.internetHeaders.removeAsync(["header1", "header2"]);
-Office.InternetHeaders.setAsync_1:
+Office.InternetHeaders.setAsync_2:
   - |-
     Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1", "header2": "value2"});
 Office.Item.addHandlerAsync_1:
@@ -9385,7 +9387,7 @@ Office.Item.getAttachmentContentAsync:
             // Handle attachment formats that are not supported.
         }
     }
-Office.Item.getInitializationContextAsync:
+Office.Item.getInitializationContextAsync_1:
   - |-
     // Get the initialization context (if present).
     Office.context.mailbox.item.getInitializationContextAsync(
@@ -9423,7 +9425,7 @@ Office.Item.itemType:
     } else {
         // Do something else.
     }
-Office.Item.loadCustomPropertiesAsync:
+Office.Item.loadCustomPropertiesAsync_1:
   - |-
     // The following example shows how to use the loadCustomPropertiesAsync method
     // to asynchronously load custom properties that are specific to the current item.
@@ -9479,7 +9481,7 @@ Office.Location.getAsync:
         var context = asyncResult.context;
         var location = asyncResult.value;
     }
-Office.Location.setAsync_3:
+Office.Location.setAsync_2:
   - |-
     Office.context.mailbox.item.location.setAsync(
         "Room 1",
@@ -9510,7 +9512,7 @@ Office.LocationIdentifier:
             "type": Office.MailboxEnums.LocationType.Custom
         }
     ];
-Office.Mailbox.addHandlerAsync:
+Office.Mailbox.addHandlerAsync_1:
   - |-
     Office.initialize = function (reason) {
         $(document).ready(function () {
@@ -9604,7 +9606,7 @@ Office.Mailbox.getCallbackTokenAsync_1:
     function cb(asyncResult) {
         var token = asyncResult.value;
     }
-Office.Mailbox.getUserIdentityTokenAsync:
+Office.Mailbox.getUserIdentityTokenAsync_1:
   - |-
     function getIdentityToken() {
         Office.context.mailbox.getUserIdentityTokenAsync(cb);
@@ -9613,7 +9615,7 @@ Office.Mailbox.getUserIdentityTokenAsync:
     function cb(asyncResult) {
         var token = asyncResult.value;
     }
-Office.Mailbox.makeEwsRequestAsync:
+Office.Mailbox.makeEwsRequestAsync_1:
   - |-
     function getSubjectRequest(id) {
         // Return a GetItem operation request for the subject of the specified item.
@@ -9788,7 +9790,7 @@ Office.MessageCompose.from:
     function callback(asyncResult) {
         var from = asyncResult.value;
     }
-Office.MessageCompose.getAttachmentsAsync:
+Office.MessageCompose.getAttachmentsAsync_1:
   - |-
     var item = Office.context.mailbox.item;
     var outputString = "";
@@ -9808,7 +9810,7 @@ Office.MessageCompose.getAttachmentsAsync:
             }
         }
     }
-Office.MessageCompose.getSelectedDataAsync_1:
+Office.MessageCompose.getSelectedDataAsync:
   - |-
     // Get selected data.
     Office.initialize = function () {
@@ -9859,7 +9861,7 @@ Office.MessageCompose.removeAttachmentAsync:
             console.log(asyncResult.status);
         }
     );
-Office.MessageCompose.saveAsync_3:
+Office.MessageCompose.saveAsync_2:
   - |-
     Office.context.mailbox.item.saveAsync(
         function callback(result) {
@@ -9886,10 +9888,10 @@ Office.MessageCompose.seriesId:
     var isSeriesInstance = (seriesId != null);
     console.log("SeriesId is " + seriesId 
         + " and isSeriesInstance is " + isSeriesInstance);
-Office.MessageCompose.setSelectedDataAsync:
+Office.MessageCompose.setSelectedDataAsync_1:
   - |-
     Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
-Office.MessageCompose.setSelectedDataAsync_2:
+Office.MessageCompose.setSelectedDataAsync_3:
   - |-
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
 Office.MessageCompose.subject:
@@ -9961,6 +9963,30 @@ Office.MessageRead.dateTimeModified:
     console.log("Date and time modified: " + dateTimeModified);
 Office.MessageRead.displayReplyAllForm:
   - |-
+    // Reply with a body, file attachment, item attachment, and a callback.
+    Office.context.mailbox.item.displayReplyAllForm(
+    {
+        'htmlBody' : 'hi',
+        'attachments' :
+        [
+            {
+                'type' : Office.MailboxEnums.AttachmentType.File,
+                'name' : 'squirrel.png',
+                'url' : 'http://i.imgur.com/sRgTlGR.jpg'
+            },
+            {
+                'type' : 'item',
+                'name' : 'rand',
+                'itemId' : Office.context.mailbox.item.itemId
+            }
+        ],
+        'callback' : function(asyncResult)
+        {
+            console.log(asyncResult.value);
+        }
+    });
+Office.MessageRead.displayReplyAllForm_1:
+  - |-
     // The following code passes a string to the `displayReplyAllForm` function.
     Office.context.mailbox.item.displayReplyAllForm('hello there');
     Office.context.mailbox.item.displayReplyAllForm('<b>hello there</b>');
@@ -10001,9 +10027,10 @@ Office.MessageRead.displayReplyAllForm:
             }
         ]
     });
-
+Office.MessageRead.displayReplyForm:
+  - |-
     // Reply with a body, file attachment, item attachment, and a callback.
-    Office.context.mailbox.item.displayReplyAllForm(
+    Office.context.mailbox.item.displayReplyForm(
     {
         'htmlBody' : 'hi',
         'attachments' :
@@ -10024,7 +10051,7 @@ Office.MessageRead.displayReplyAllForm:
             console.log(asyncResult.value);
         }
     });
-Office.MessageRead.displayReplyForm:
+Office.MessageRead.displayReplyForm_1:
   - |-
     // The following code passes a string to the `displayReplyForm` function.
     Office.context.mailbox.item.displayReplyForm('hello there');
@@ -10065,29 +10092,6 @@ Office.MessageRead.displayReplyForm:
                 'itemId' : Office.context.mailbox.item.itemId
             }
         ]
-    });
-
-    // Reply with a body, file attachment, item attachment, and a callback.
-    Office.context.mailbox.item.displayReplyForm(
-    {
-        'htmlBody' : 'hi',
-        'attachments' :
-        [
-            {
-                'type' : Office.MailboxEnums.AttachmentType.File,
-                'name' : 'squirrel.png',
-                'url' : 'http://i.imgur.com/sRgTlGR.jpg'
-            },
-            {
-                'type' : 'item',
-                'name' : 'rand',
-                'itemId' : Office.context.mailbox.item.itemId
-            }
-        ],
-        'callback' : function(asyncResult)
-        {
-            console.log(asyncResult.value);
-        }
     });
 Office.MessageRead.from:
   - |-
@@ -10313,7 +10317,7 @@ Office.NotificationMessages.replaceAsync_1:
         icon : "iconid",
         persistent: false
     });
-Office.Organizer.getAsync:
+Office.Organizer.getAsync_1:
   - |-
     Office.context.mailbox.item.organizer.getAsync(
         function(asyncResult) {
@@ -10331,7 +10335,7 @@ Office.PhoneNumber:
         console.log("Type: " + JSON.stringify(phoneNumber.type));
         console.log("Source text: " + JSON.stringify(phoneNumber.originalPhoneString));
     });
-Office.Recipients.addAsync_3:
+Office.Recipients.addAsync_2:
   - |-
     // The following example creates an array of EmailUser objects
     // and adds them to the To recipients of the message.
@@ -10367,7 +10371,7 @@ Office.Recipients.getAsync_1:
             console.log(msg);
         }
     });
-Office.Recipients.setAsync_3:
+Office.Recipients.setAsync_2:
   - |-
     // The following example creates an array of EmailUser objects and
     // replaces the CC recipients of the message with the array.
@@ -10603,7 +10607,7 @@ Office.Subject.getAsync_1:
     function callback(asyncResult) {
         var subject = asyncResult.value;
     }
-Office.Subject.setAsync_3:
+Office.Subject.setAsync_2:
   - |-
     Office.context.mailbox.item.subject.setAsync("New subject!", function (asyncResult) {
         if (asyncResult.status === "failed") {

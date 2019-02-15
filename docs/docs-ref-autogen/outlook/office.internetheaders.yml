@@ -212,15 +212,6 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.internetHeaders.removeAsync(["header1", "header2"]);
-
-      ```
     isPreview: true
     name: 'removeAsync(names, callback)'
     fullName: 'removeAsync(names, callback)'
@@ -256,6 +247,15 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.internetHeaders.removeAsync(["header1", "header2"]);
+
+      ```
     isPreview: true
     name: removeAsync(names)
     fullName: removeAsync(names)
@@ -337,15 +337,6 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1", "header2": "value2"});
-
-      ```
     isPreview: true
     name: 'setAsync(headers, callback)'
     fullName: 'setAsync(headers, callback)'
@@ -387,6 +378,15 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1", "header2": "value2"});
+
+      ```
     isPreview: true
     name: setAsync(headers)
     fullName: setAsync(headers)
