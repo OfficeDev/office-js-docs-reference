@@ -15,6 +15,7 @@ items:
       - excel.Excel.ShapeType.geometricShape
       - excel.Excel.ShapeType.group
       - excel.Excel.ShapeType.image
+      - excel.Excel.ShapeType.line
       - excel.Excel.ShapeType.unknown
   - uid: excel.Excel.ShapeType.geometricShape
     isPreview: true
@@ -40,6 +41,14 @@ items:
       - typeScript
     type: field
     numericValue: '"Image"'
+  - uid: excel.Excel.ShapeType.line
+    isPreview: true
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Line"'
   - uid: excel.Excel.ShapeType.unknown
     isPreview: true
     name: unknown

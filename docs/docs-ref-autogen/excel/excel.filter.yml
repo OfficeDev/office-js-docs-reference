@@ -19,7 +19,9 @@ items:
       - excel.Excel.Filter.applyBottomPercentFilter
       - excel.Excel.Filter.applyCellColorFilter
       - excel.Excel.Filter.applyCustomFilter
+      - excel.Excel.Filter.applyCustomFilter_1
       - excel.Excel.Filter.applyDynamicFilter
+      - excel.Excel.Filter.applyDynamicFilter_1
       - excel.Excel.Filter.applyFontColorFilter
       - excel.Excel.Filter.applyIconFilter
       - excel.Excel.Filter.applyTopItemsFilter
@@ -29,6 +31,8 @@ items:
       - excel.Excel.Filter.context
       - excel.Excel.Filter.criteria
       - excel.Excel.Filter.load
+      - excel.Excel.Filter.load_1
+      - excel.Excel.Filter.load_2
       - excel.Excel.Filter.toJSON
   - uid: excel.Excel.Filter.apply
     summary: |-
@@ -36,7 +40,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: apply(criteria)
-    fullName: apply
+    fullName: apply(criteria)
     langs:
       - typeScript
     type: method
@@ -57,7 +61,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyBottomItemsFilter(count)
-    fullName: applyBottomItemsFilter
+    fullName: applyBottomItemsFilter(count)
     langs:
       - typeScript
     type: method
@@ -78,7 +82,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyBottomPercentFilter(percent)
-    fullName: applyBottomPercentFilter
+    fullName: applyBottomPercentFilter(percent)
     langs:
       - typeScript
     type: method
@@ -99,7 +103,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyCellColorFilter(color)
-    fullName: applyCellColorFilter
+    fullName: applyCellColorFilter(color)
     langs:
       - typeScript
     type: method
@@ -120,7 +124,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'applyCustomFilter(criteria1, criteria2, oper)'
-    fullName: applyCustomFilter
+    fullName: 'applyCustomFilter(criteria1, criteria2, oper)'
     langs:
       - typeScript
     type: method
@@ -143,13 +147,42 @@ items:
           description: Optional. The operator that describes how the two criteria are joined.
           type:
             - excel.Excel.FilterOperator
+  - uid: excel.Excel.Filter.applyCustomFilter_1
+    summary: |-
+      Apply an "Icon" filter to the column for the given criteria strings.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'applyCustomFilter(criteria1, criteria2, operString)'
+    fullName: 'applyCustomFilter(criteria1, criteria2, operString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyCustomFilter(criteria1: string, criteria2?: string, operString?: "And" | "Or"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: criteria1
+          description: The first criteria string.
+          type:
+            - string
+        - id: criteria2
+          description: Optional. The second criteria string.
+          type:
+            - string
+        - id: operString
+          description: Optional. The operator that describes how the two criteria are joined.
+          type:
+            - '"And" | "Or"'
   - uid: excel.Excel.Filter.applyDynamicFilter
     summary: |-
       Apply a "Dynamic" filter to the column.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyDynamicFilter(criteria)
-    fullName: applyDynamicFilter
+    fullName: applyDynamicFilter(criteria)
     langs:
       - typeScript
     type: method
@@ -164,13 +197,50 @@ items:
           description: The dynamic criteria to apply.
           type:
             - excel.Excel.DynamicFilterCriteria
+  - uid: excel.Excel.Filter.applyDynamicFilter_1
+    summary: |-
+      Apply a "Dynamic" filter to the column.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: applyDynamicFilter(criteriaString)
+    fullName: applyDynamicFilter(criteriaString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        applyDynamicFilter(criteriaString: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" |
+        "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" |
+        "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" |
+        "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2"
+        | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" |
+        "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" |
+        "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: criteriaString
+          description: The dynamic criteria to apply.
+          type:
+            - >-
+              "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" |
+              "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" |
+              "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" |
+              "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" |
+              "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" |
+              "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" |
+              "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" |
+              "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"
   - uid: excel.Excel.Filter.applyFontColorFilter
     summary: |-
       Apply a "Font Color" filter to the column for the given color.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyFontColorFilter(color)
-    fullName: applyFontColorFilter
+    fullName: applyFontColorFilter(color)
     langs:
       - typeScript
     type: method
@@ -191,7 +261,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyIconFilter(icon)
-    fullName: applyIconFilter
+    fullName: applyIconFilter(icon)
     langs:
       - typeScript
     type: method
@@ -212,7 +282,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyTopItemsFilter(count)
-    fullName: applyTopItemsFilter
+    fullName: applyTopItemsFilter(count)
     langs:
       - typeScript
     type: method
@@ -233,7 +303,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyTopPercentFilter(percent)
-    fullName: applyTopPercentFilter
+    fullName: applyTopPercentFilter(percent)
     langs:
       - typeScript
     type: method
@@ -254,7 +324,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: applyValuesFilter(values)
-    fullName: applyValuesFilter
+    fullName: applyValuesFilter(values)
     langs:
       - typeScript
     type: method
@@ -275,7 +345,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
-    fullName: clear
+    fullName: clear()
     langs:
       - typeScript
     type: method
@@ -322,6 +392,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Filter` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Filter` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -333,21 +407,63 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Filter;'
+      content: 'load(option?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;'
       return:
         type:
           - excel.Excel.Filter
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.FilterLoadOptions
+  - uid: excel.Excel.Filter.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Filter;'
+      return:
+        type:
+          - excel.Excel.Filter
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.Filter.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Filter;'
+      return:
+        type:
+          - excel.Excel.Filter
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.Filter.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -356,7 +472,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.FilterData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

@@ -26,6 +26,8 @@ items:
       - excel.Excel.AutoFilter.getRangeOrNullObject
       - excel.Excel.AutoFilter.isDataFiltered
       - excel.Excel.AutoFilter.load
+      - excel.Excel.AutoFilter.load_1
+      - excel.Excel.AutoFilter.load_2
       - excel.Excel.AutoFilter.reapply
       - excel.Excel.AutoFilter.remove
       - excel.Excel.AutoFilter.toJSON
@@ -38,7 +40,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'apply(range, columnIndex, criteria)'
-    fullName: apply
+    fullName: 'apply(range, columnIndex, criteria)'
     langs:
       - typeScript
     type: method
@@ -70,7 +72,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: clearCriteria()
-    fullName: clearCriteria
+    fullName: clearCriteria()
     langs:
       - typeScript
     type: method
@@ -140,7 +142,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getRange()
-    fullName: getRange
+    fullName: getRange()
     langs:
       - typeScript
     type: method
@@ -160,7 +162,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getRangeOrNullObject()
-    fullName: getRangeOrNullObject
+    fullName: getRangeOrNullObject()
     langs:
       - typeScript
     type: method
@@ -196,6 +198,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.AutoFilter` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.AutoFilter` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -208,21 +214,65 @@ items:
       specified number of items.
     isPreview: true
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.AutoFilter;'
+      content: 'load(option?: Excel.Interfaces.AutoFilterLoadOptions): Excel.AutoFilter;'
       return:
         type:
           - excel.Excel.AutoFilter
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.AutoFilterLoadOptions
+  - uid: excel.Excel.AutoFilter.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.AutoFilter;'
+      return:
+        type:
+          - excel.Excel.AutoFilter
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.AutoFilter.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.AutoFilter;'
+      return:
+        type:
+          - excel.Excel.AutoFilter
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.AutoFilter.reapply
     summary: >-
       Applies the specified Autofilter object currently on the range.
@@ -232,7 +282,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: reapply()
-    fullName: reapply
+    fullName: reapply()
     langs:
       - typeScript
     type: method
@@ -251,7 +301,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: remove()
-    fullName: remove
+    fullName: remove()
     langs:
       - typeScript
     type: method
@@ -270,7 +320,7 @@ items:
       child properties from the original object.
     isPreview: true
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

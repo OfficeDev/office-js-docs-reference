@@ -13,7 +13,7 @@ items:
   - uid: office.Office.RequirementSetSupport.isSetSupported
     summary: Check if the specified requirement set is supported by the host Office application.
     name: 'isSetSupported(name, minVersion)'
-    fullName: isSetSupported
+    fullName: 'isSetSupported(name, minVersion)'
     langs:
       - typeScript
     type: method

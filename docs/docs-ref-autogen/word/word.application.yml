@@ -38,7 +38,7 @@ items:
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: createDocument(base64File)
-    fullName: createDocument
+    fullName: createDocument(base64File)
     langs:
       - typeScript
     type: method
@@ -56,7 +56,7 @@ items:
   - uid: word.Word.Application.newObject
     summary: Create a new instance of Word.Application object
     name: newObject(context)
-    fullName: newObject
+    fullName: newObject(context)
     langs:
       - typeScript
     type: method
@@ -73,12 +73,15 @@ items:
             - office.OfficeExtension.ClientRequestContext
   - uid: word.Word.Application.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: |-
+        toJSON(): {
+                    [key: string]: string;
+                };
       return:
         type:
           - |-

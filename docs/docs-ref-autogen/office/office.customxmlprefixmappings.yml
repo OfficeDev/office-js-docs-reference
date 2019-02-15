@@ -28,13 +28,16 @@ items:
     package: office
     children:
       - office.Office.CustomXmlPrefixMappings.addNamespaceAsync
+      - office.Office.CustomXmlPrefixMappings.addNamespaceAsync_1
       - office.Office.CustomXmlPrefixMappings.getNamespaceAsync
+      - office.Office.CustomXmlPrefixMappings.getNamespaceAsync_1
       - office.Office.CustomXmlPrefixMappings.getPrefixAsync
+      - office.Office.CustomXmlPrefixMappings.getPrefixAsync_1
   - uid: office.Office.CustomXmlPrefixMappings.addNamespaceAsync
     summary: Asynchronously adds a prefix to namespace mapping to use when querying an item.
     remarks: 'If no namespace is assigned to the requested prefix, the method returns an empty string ("").'
     name: 'addNamespaceAsync(prefix, ns, options, callback)'
-    fullName: addNamespaceAsync
+    fullName: 'addNamespaceAsync(prefix, ns, options, callback)'
     langs:
       - typeScript
     type: method
@@ -65,13 +68,42 @@ items:
             [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
+  - uid: office.Office.CustomXmlPrefixMappings.addNamespaceAsync_1
+    summary: Asynchronously adds a prefix to namespace mapping to use when querying an item.
+    remarks: 'If no namespace is assigned to the requested prefix, the method returns an empty string ("").'
+    name: 'addNamespaceAsync(prefix, ns, callback)'
+    fullName: 'addNamespaceAsync(prefix, ns, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addNamespaceAsync(prefix: string, ns: string, callback?: (result: AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: prefix
+          description: Specifies the prefix to add to the prefix mapping list. Required.
+          type:
+            - string
+        - id: ns
+          description: Specifies the namespace URI to assign to the newly added prefix. Required.
+          type:
+            - string
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+          type:
+            - '(result: AsyncResult<void>) => void'
   - uid: office.Office.CustomXmlPrefixMappings.getNamespaceAsync
     summary: Asynchronously gets the namespace mapped to the specified prefix.
     remarks: >-
       If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix
       except when the prefix is one added or used by the data store internally, in which case it will return an error.
     name: 'getNamespaceAsync(prefix, options, callback)'
-    fullName: getNamespaceAsync
+    fullName: 'getNamespaceAsync(prefix, options, callback)'
     langs:
       - typeScript
     type: method
@@ -99,6 +131,34 @@ items:
             that contains the namespace mapped to the specified prefix.
           type:
             - '(result: AsyncResult<string>) => void'
+  - uid: office.Office.CustomXmlPrefixMappings.getNamespaceAsync_1
+    summary: Asynchronously gets the namespace mapped to the specified prefix.
+    remarks: >-
+      If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix
+      except when the prefix is one added or used by the data store internally, in which case it will return an error.
+    name: 'getNamespaceAsync(prefix, callback)'
+    fullName: 'getNamespaceAsync(prefix, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNamespaceAsync(prefix: string, callback?: (result: AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: prefix
+          description: TSpecifies the prefix to get the namespace for. Required.
+          type:
+            - string
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a string
+            that contains the namespace mapped to the specified prefix.
+          type:
+            - '(result: AsyncResult<string>) => void'
   - uid: office.Office.CustomXmlPrefixMappings.getPrefixAsync
     summary: Asynchronously gets the prefix for the specified namespace.
     remarks: >-
@@ -106,7 +166,7 @@ items:
       multiple prefixes specified in the namespace manager, the method returns the first prefix that matches the
       supplied namespace.
     name: 'getPrefixAsync(ns, options, callback)'
-    fullName: getPrefixAsync
+    fullName: 'getPrefixAsync(ns, options, callback)'
     langs:
       - typeScript
     type: method
@@ -127,6 +187,35 @@ items:
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
             - office.Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a string
+            that contains the prefix of the specified namespace.
+          type:
+            - '(result: AsyncResult<string>) => void'
+  - uid: office.Office.CustomXmlPrefixMappings.getPrefixAsync_1
+    summary: Asynchronously gets the prefix for the specified namespace.
+    remarks: >-
+      If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are
+      multiple prefixes specified in the namespace manager, the method returns the first prefix that matches the
+      supplied namespace.
+    name: 'getPrefixAsync(ns, callback)'
+    fullName: 'getPrefixAsync(ns, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrefixAsync(ns: string, callback?: (result: AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: ns
+          description: Specifies the namespace to get the prefix for. Required.
+          type:
+            - string
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type

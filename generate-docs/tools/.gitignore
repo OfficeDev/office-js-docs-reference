@@ -1,4 +1,6 @@
+node_modules
+tool-inputs
+tool-outputs
 *.js
 *.js.map
-*.d.ts
-*.md
+package-lock.json

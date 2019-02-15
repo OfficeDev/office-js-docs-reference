@@ -19,6 +19,8 @@ items:
     children:
       - excel.Excel.RemoveDuplicatesResult.context
       - excel.Excel.RemoveDuplicatesResult.load
+      - excel.Excel.RemoveDuplicatesResult.load_1
+      - excel.Excel.RemoveDuplicatesResult.load_2
       - excel.Excel.RemoveDuplicatesResult.removed
       - excel.Excel.RemoveDuplicatesResult.toJSON
       - excel.Excel.RemoveDuplicatesResult.uniqueRemaining
@@ -45,6 +47,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.RemoveDuplicatesResult` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.RemoveDuplicatesResult` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -57,21 +63,65 @@ items:
       the specified number of items.
     isPreview: true
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.RemoveDuplicatesResult;'
+      content: 'load(option?: Excel.Interfaces.RemoveDuplicatesResultLoadOptions): Excel.RemoveDuplicatesResult;'
       return:
         type:
           - excel.Excel.RemoveDuplicatesResult
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.RemoveDuplicatesResultLoadOptions
+  - uid: excel.Excel.RemoveDuplicatesResult.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.RemoveDuplicatesResult;'
+      return:
+        type:
+          - excel.Excel.RemoveDuplicatesResult
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.RemoveDuplicatesResult.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RemoveDuplicatesResult;'
+      return:
+        type:
+          - excel.Excel.RemoveDuplicatesResult
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.RemoveDuplicatesResult.removed
     summary: >-
       Number of duplicated rows removed by the operation.
@@ -99,7 +149,7 @@ items:
       shallow copies of any loaded child properties from the original object.
     isPreview: true
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

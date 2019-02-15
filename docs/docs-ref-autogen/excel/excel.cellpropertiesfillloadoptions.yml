@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.CellPropertiesFillLoadOptions
+    summary: >-
+      Represents which properties to load on the format.fill object.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.CellPropertiesFillLoadOptions
+    fullName: Excel.CellPropertiesFillLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.CellPropertiesFillLoadOptions.color
+      - excel.Excel.CellPropertiesFillLoadOptions.pattern
+      - excel.Excel.CellPropertiesFillLoadOptions.patternColor
+      - excel.Excel.CellPropertiesFillLoadOptions.patternTintAndShade
+      - excel.Excel.CellPropertiesFillLoadOptions.tintAndShade
+  - uid: excel.Excel.CellPropertiesFillLoadOptions.color
+    isPreview: true
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.CellPropertiesFillLoadOptions.pattern
+    isPreview: true
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pattern?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.CellPropertiesFillLoadOptions.patternColor
+    isPreview: true
+    name: patternColor
+    fullName: patternColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.CellPropertiesFillLoadOptions.patternTintAndShade
+    isPreview: true
+    name: patternTintAndShade
+    fullName: patternTintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternTintAndShade?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.CellPropertiesFillLoadOptions.tintAndShade
+    isPreview: true
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type:
+          - boolean

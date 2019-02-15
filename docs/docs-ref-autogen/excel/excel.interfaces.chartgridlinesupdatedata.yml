@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartGridlinesUpdateData
-    summary: 'An interface for updating data on the ChartGridlines object, for use in "chartGridlines.set({ ... })".'
+    summary: >-
+      An interface for updating data on the ChartGridlines object, for use in "chartGridlines.set(<!-- -->{ ... }<!--
+      -->)".
     name: Excel.Interfaces.ChartGridlinesUpdateData
     fullName: Excel.Interfaces.ChartGridlinesUpdateData
     langs:

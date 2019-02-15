@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData
-    summary: 'An interface for updating data on the ChartDataLabels object, for use in "chartDataLabels.set({ ... })".'
+    summary: >-
+      An interface for updating data on the ChartDataLabels object, for use in "chartDataLabels.set(<!-- -->{ ... }<!--
+      -->)".
     name: Excel.Interfaces.ChartDataLabelsUpdateData
     fullName: Excel.Interfaces.ChartDataLabelsUpdateData
     langs:
@@ -26,7 +28,7 @@ items:
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData.verticalAlignment
   - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.autoText
     summary: |-
-      Represents whether data labels automatically generates appropriate text based on context.
+      Represents whether data labels automatically generate appropriate text based on context.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText

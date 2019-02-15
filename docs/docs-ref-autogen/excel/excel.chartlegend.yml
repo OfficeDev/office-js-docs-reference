@@ -20,8 +20,12 @@ items:
       - excel.Excel.ChartLegend.left
       - excel.Excel.ChartLegend.legendEntries
       - excel.Excel.ChartLegend.load
+      - excel.Excel.ChartLegend.load_1
+      - excel.Excel.ChartLegend.load_2
       - excel.Excel.ChartLegend.overlay
       - excel.Excel.ChartLegend.position
+      - excel.Excel.ChartLegend.set
+      - excel.Excel.ChartLegend.set_1
       - excel.Excel.ChartLegend.showShadow
       - excel.Excel.ChartLegend.toJSON
       - excel.Excel.ChartLegend.top
@@ -109,6 +113,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ChartLegend` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ChartLegend` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -119,66 +127,100 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      // Get the position of Chart Legend from Chart1
-
-      Excel.run(function (ctx) { 
-          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-          var legend = chart.legend;
-          legend.load('position');
-          return ctx.sync().then(function() {
-                  console.log(legend.position);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      // Set to show legend of Chart1 and make it on top of the chart.
-
-      Excel.run(function (ctx) { 
-          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-          chart.legend.visible = true;
-          chart.legend.position = "top"; 
-          chart.legend.overlay = false; 
-          return ctx.sync().then(function() {
-                  console.log("Legend Shown ");
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ChartLegend;'
+      content: 'load(option?: Excel.Interfaces.ChartLegendLoadOptions): Excel.ChartLegend;'
       return:
         type:
           - excel.Excel.ChartLegend
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ChartLegendLoadOptions
+  - uid: excel.Excel.ChartLegend.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartLegend;'
+      return:
+        type:
+          - excel.Excel.ChartLegend
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // Get the position of Chart Legend from Chart1
+          Excel.run(function (ctx) { 
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              var legend = chart.legend;
+              legend.load('position');
+              return ctx.sync().then(function() {
+                      console.log(legend.position);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          // Set to show legend of Chart1 and make it on top of the chart.
+          Excel.run(function (ctx) { 
+              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              chart.legend.visible = true;
+              chart.legend.position = "top"; 
+              chart.legend.overlay = false; 
+              return ctx.sync().then(function() {
+                      console.log("Legend Shown ");
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ChartLegend.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLegend;'
+      return:
+        type:
+          - excel.Excel.ChartLegend
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.ChartLegend.overlay
     summary: |-
       Boolean value for whether the chart legend should overlap with the main body of the chart.
@@ -209,6 +251,54 @@ items:
       return:
         type:
           - Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
+  - uid: excel.Excel.ChartLegend.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartLegend): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartLegendUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartLegendUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ChartLegend.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartLegend): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.ChartLegend
   - uid: excel.Excel.ChartLegend.showShadow
     summary: |-
       Represents if the legend has a shadow on the chart.
@@ -232,7 +322,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.ChartLegendData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

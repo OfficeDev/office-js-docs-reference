@@ -1,0 +1,220 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions
+    summary: |-
+      A container for the visible content on a page. A Paragraph can contain any one ParagraphType type of content.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.ParagraphLoadOptions
+    fullName: OneNote.Interfaces.ParagraphLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.ParagraphLoadOptions.$all
+      - onenote.OneNote.Interfaces.ParagraphLoadOptions.id
+      - onenote.OneNote.Interfaces.ParagraphLoadOptions.image
+      - onenote.OneNote.Interfaces.ParagraphLoadOptions.inkWords
+      - onenote.OneNote.Interfaces.ParagraphLoadOptions.outline
+      - onenote.OneNote.Interfaces.ParagraphLoadOptions.paragraphs
+      - onenote.OneNote.Interfaces.ParagraphLoadOptions.parentParagraph
+      - onenote.OneNote.Interfaces.ParagraphLoadOptions.parentParagraphOrNull
+      - onenote.OneNote.Interfaces.ParagraphLoadOptions.parentTableCell
+      - onenote.OneNote.Interfaces.ParagraphLoadOptions.parentTableCellOrNull
+      - onenote.OneNote.Interfaces.ParagraphLoadOptions.richText
+      - onenote.OneNote.Interfaces.ParagraphLoadOptions.table
+      - onenote.OneNote.Interfaces.ParagraphLoadOptions.type
+  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.id
+    summary: |-
+      Gets the ID of the Paragraph object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.image
+    summary: |-
+      Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: image
+    fullName: image
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'image?: OneNote.Interfaces.ImageLoadOptions;'
+      return:
+        type:
+          - OneNote.Interfaces.ImageLoadOptions
+  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.inkWords
+    summary: |-
+      Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: inkWords
+    fullName: inkWords
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inkWords?: OneNote.Interfaces.InkWordCollectionLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions
+  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.outline
+    summary: |-
+      Gets the Outline object that contains the Paragraph.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: outline
+    fullName: outline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'outline?: OneNote.Interfaces.OutlineLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.OutlineLoadOptions
+  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.paragraphs
+    summary: |-
+      The collection of paragraphs under this paragraph. Read only
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: paragraphs
+    fullName: paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions
+  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.parentParagraph
+    summary: |-
+      Gets the parent paragraph object. Throws if a parent paragraph does not exist.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentParagraph
+    fullName: parentParagraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentParagraph?: OneNote.Interfaces.ParagraphLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.ParagraphLoadOptions
+  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.parentParagraphOrNull
+    summary: |-
+      Gets the parent paragraph object. Returns null if a parent paragraph does not exist.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentParagraphOrNull
+    fullName: parentParagraphOrNull
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentParagraphOrNull?: OneNote.Interfaces.ParagraphLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.ParagraphLoadOptions
+  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.parentTableCell
+    summary: >-
+      Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
+      ItemNotFound.
+
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentTableCell
+    fullName: parentTableCell
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCell?: OneNote.Interfaces.TableCellLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.TableCellLoadOptions
+  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.parentTableCellOrNull
+    summary: |-
+      Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentTableCellOrNull
+    fullName: parentTableCellOrNull
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCellOrNull?: OneNote.Interfaces.TableCellLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.TableCellLoadOptions
+  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.richText
+    summary: |-
+      Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: richText
+    fullName: richText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'richText?: OneNote.Interfaces.RichTextLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.RichTextLoadOptions
+  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.table
+    summary: |-
+      Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: table
+    fullName: table
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'table?: OneNote.Interfaces.TableLoadOptions;'
+      return:
+        type:
+          - OneNote.Interfaces.TableLoadOptions
+  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.type
+    summary: |-
+      Gets the type of the Paragraph object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type:
+          - boolean

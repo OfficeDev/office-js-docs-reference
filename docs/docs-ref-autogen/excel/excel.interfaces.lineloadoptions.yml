@@ -1,0 +1,87 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.LineLoadOptions
+    summary: >-
+      Represents a Line object inside a worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.LineLoadOptions
+    fullName: Excel.Interfaces.LineLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.LineLoadOptions.$all
+      - excel.Excel.Interfaces.LineLoadOptions.connectorType
+      - excel.Excel.Interfaces.LineLoadOptions.id
+      - excel.Excel.Interfaces.LineLoadOptions.shape
+  - uid: excel.Excel.Interfaces.LineLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.LineLoadOptions.connectorType
+    summary: >-
+      Represents the connector type for the line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: connectorType
+    fullName: connectorType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'connectorType?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.LineLoadOptions.id
+    summary: >-
+      Represents the shape identifier. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.LineLoadOptions.shape
+    summary: >-
+      Returns the shape object for the line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shape?: Excel.Interfaces.ShapeLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ShapeLoadOptions

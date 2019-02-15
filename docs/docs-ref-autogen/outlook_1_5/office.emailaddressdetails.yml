@@ -34,10 +34,21 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'appointmentResponse: Office.MailboxEnums.ResponseType;'
+      content: 'appointmentResponse: MailboxEnums.ResponseType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.ResponseType
+          - MailboxEnums.ResponseType
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
+          console.log("There are " + requiredAttendees.length + " required attendees.")
+          requiredAttendees.forEach(function (requiredAttendee) {
+              console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.appointmentResponse);
+          });
+          ```
   - uid: Outlook_1_5.Office.EmailAddressDetails.displayName
     summary: Gets the display name associated with an email address.
     name: displayName
@@ -50,6 +61,14 @@ items:
       return:
         type:
           - string
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          var organizerName = Office.context.mailbox.item.organizer.displayName;
+          console.log("Organizer: " + organizerName);
+          ```
   - uid: Outlook_1_5.Office.EmailAddressDetails.emailAddress
     summary: Gets the SMTP email address.
     name: emailAddress
@@ -62,6 +81,14 @@ items:
       return:
         type:
           - string
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
+          console.log("Organizer's email address: " + organizerAddress);
+          ```
   - uid: Outlook_1_5.Office.EmailAddressDetails.recipientType
     summary: Gets the email address type of a recipient.
     name: recipientType
@@ -70,7 +97,18 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'recipientType: Office.MailboxEnums.RecipientType;'
+      content: 'recipientType: MailboxEnums.RecipientType;'
       return:
         type:
-          - outlook.Office.MailboxEnums.RecipientType
+          - MailboxEnums.RecipientType
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
+          console.log("There are " + requiredAttendees.length + " required attendees.")
+          requiredAttendees.forEach(function (requiredAttendee) {
+              console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.recipientType);
+          });
+          ```

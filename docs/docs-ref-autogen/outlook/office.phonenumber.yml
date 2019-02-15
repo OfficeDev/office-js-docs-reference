@@ -12,12 +12,31 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var item = Office.context.mailbox.item;
+
+      // Get an array of strings that represent phone numbers in the current item's body.
+
+      var phoneNumbers = item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
+
+      console.log("There are " + phoneNumbers.length + " phone numbers.")
+
+      phoneNumbers.forEach(function (phoneNumber) {
+          console.log("Phone number: " + JSON.stringify(phoneNumber.phoneString));
+          console.log("Type: " + JSON.stringify(phoneNumber.type));
+          console.log("Source text: " + JSON.stringify(phoneNumber.originalPhoneString));
+      });
+
+      ```
     name: Office.PhoneNumber
     fullName: Office.PhoneNumber
     langs:

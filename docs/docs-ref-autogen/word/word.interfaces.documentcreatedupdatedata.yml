@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.DocumentCreatedUpdateData
-    summary: 'An interface for updating data on the DocumentCreated object, for use in "documentCreated.set({ ... })".'
+    summary: >-
+      An interface for updating data on the DocumentCreated object, for use in "documentCreated.set(<!-- -->{ ... }<!--
+      -->)".
     name: Word.Interfaces.DocumentCreatedUpdateData
     fullName: Word.Interfaces.DocumentCreatedUpdateData
     langs:

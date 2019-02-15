@@ -17,13 +17,89 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.CommentCollection.add
+      - excel.Excel.CommentCollection.add_1
       - excel.Excel.CommentCollection.context
       - excel.Excel.CommentCollection.getCount
       - excel.Excel.CommentCollection.getItem
       - excel.Excel.CommentCollection.getItemAt
+      - excel.Excel.CommentCollection.getItemByCell
+      - excel.Excel.CommentCollection.getItemByReplyId
       - excel.Excel.CommentCollection.items
       - excel.Excel.CommentCollection.load
+      - excel.Excel.CommentCollection.load_1
+      - excel.Excel.CommentCollection.load_2
       - excel.Excel.CommentCollection.toJSON
+  - uid: excel.Excel.CommentCollection.add
+    summary: >-
+      Creates a new comment(comment thread) based on the cell location and content. Invalid argument will be thrown if
+      the location is larger than one cell.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: 'add(content, cellAddress, contentType)'
+    fullName: 'add(content, cellAddress, contentType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(content: string, cellAddress: Range | string, contentType?: Excel.ContentType): Excel.Comment;'
+      return:
+        type:
+          - excel.Excel.Comment
+        description: ''
+      parameters:
+        - id: content
+          description: The comment content.
+          type:
+            - string
+        - id: cellAddress
+          description: >-
+            Cell to insert comment to. May be an Excel Range object, or a string. If string, must contain the full
+            address, including the sheet name
+          type:
+            - Range | string
+        - id: contentType
+          description: Optional. Type of the comment content
+          type:
+            - excel.Excel.ContentType
+  - uid: excel.Excel.CommentCollection.add_1
+    summary: >-
+      Creates a new comment(comment thread) based on the cell location and content. Invalid argument will be thrown if
+      the location is larger than one cell.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: 'add(content, cellAddress, contentTypeString)'
+    fullName: 'add(content, cellAddress, contentTypeString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(content: string, cellAddress: Range | string, contentTypeString?: "Plain"): Excel.Comment;'
+      return:
+        type:
+          - excel.Excel.Comment
+        description: ''
+      parameters:
+        - id: content
+          description: The comment content.
+          type:
+            - string
+        - id: cellAddress
+          description: >-
+            Cell to insert comment to. May be an Excel Range object, or a string. If string, must contain the full
+            address, including the sheet name
+          type:
+            - Range | string
+        - id: contentTypeString
+          description: Optional. Type of the comment content
+          type:
+            - '"Plain"'
   - uid: excel.Excel.CommentCollection.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -48,7 +124,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -67,7 +143,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItem(commentId)
-    fullName: getItem
+    fullName: getItem(commentId)
     langs:
       - typeScript
     type: method
@@ -91,7 +167,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getItemAt(index)
-    fullName: getItemAt
+    fullName: getItemAt(index)
     langs:
       - typeScript
     type: method
@@ -106,6 +182,56 @@ items:
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
+  - uid: excel.Excel.CommentCollection.getItemByCell
+    summary: >-
+      Gets a comment on the specific cell in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getItemByCell(cellAddress)
+    fullName: getItemByCell(cellAddress)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemByCell(cellAddress: Range | string): Excel.Comment;'
+      return:
+        type:
+          - excel.Excel.Comment
+        description: ''
+      parameters:
+        - id: cellAddress
+          description: >-
+            Cell which the comment is on. May be an Excel Range object, or a string. If string, must contain the full
+            address, including the sheet name
+          type:
+            - Range | string
+  - uid: excel.Excel.CommentCollection.getItemByReplyId
+    summary: >-
+      Gets a comment related to its reply ID in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getItemByReplyId(replyId)
+    fullName: getItemByReplyId(replyId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemByReplyId(replyId: string): Excel.Comment;'
+      return:
+        type:
+          - excel.Excel.Comment
+        description: ''
+      parameters:
+        - id: replyId
+          description: The identifier of comment reply.
+          type:
+            - string
   - uid: excel.Excel.CommentCollection.items
     summary: Gets the loaded child items in this collection.
     isPreview: true
@@ -127,6 +253,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.CommentCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.CommentCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -139,21 +269,62 @@ items:
       specified number of items.
     isPreview: true
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.CommentCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.CommentCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.CommentCollection;
       return:
         type:
           - excel.Excel.CommentCollection
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.CommentCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.CommentCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.CommentCollection;'
+      return:
+        type:
+          - excel.Excel.CommentCollection
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.CommentCollection.load_2
+    isPreview: true
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.CommentCollection;'
+      return:
+        type:
+          - excel.Excel.CommentCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: excel.Excel.CommentCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -163,7 +334,7 @@ items:
       array with shallow copies of any loaded properties from the collection's items.
     isPreview: true
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

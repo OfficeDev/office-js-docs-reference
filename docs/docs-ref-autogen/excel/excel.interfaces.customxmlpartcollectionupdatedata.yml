@@ -2,8 +2,8 @@
 items:
   - uid: excel.Excel.Interfaces.CustomXmlPartCollectionUpdateData
     summary: >-
-      An interface for updating data on the CustomXmlPartCollection object, for use in "customXmlPartCollection.set({
-      ... })".
+      An interface for updating data on the CustomXmlPartCollection object, for use in "customXmlPartCollection.set(<!--
+      -->{ ... }<!-- -->)".
     name: Excel.Interfaces.CustomXmlPartCollectionUpdateData
     fullName: Excel.Interfaces.CustomXmlPartCollectionUpdateData
     langs:

@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ConnectorType
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.ConnectorType
+    fullName: Excel.ConnectorType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ConnectorType.curve
+      - excel.Excel.ConnectorType.elbow
+      - excel.Excel.ConnectorType.straight
+  - uid: excel.Excel.ConnectorType.curve
+    isPreview: true
+    name: curve
+    fullName: curve
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Curve"'
+  - uid: excel.Excel.ConnectorType.elbow
+    isPreview: true
+    name: elbow
+    fullName: elbow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Elbow"'
+  - uid: excel.Excel.ConnectorType.straight
+    isPreview: true
+    name: straight
+    fullName: straight
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Straight"'

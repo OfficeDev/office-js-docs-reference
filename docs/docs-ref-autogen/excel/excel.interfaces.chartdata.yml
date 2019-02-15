@@ -340,9 +340,9 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartData.showDataLabelsOverMaximum
     summary: >-
-      Represents whether to to show the data labels when the value is greater than the maximum value on the value axis.
-      If value axis became smaller than the size of data points, you can use this property to set whether to show the
-      data labels. This property applies to 2-D charts only.
+      Represents whether to show the data labels when the value is greater than the maximum value on the value axis. If
+      value axis became smaller than the size of data points, you can use this property to set whether to show the data
+      labels. This property applies to 2-D charts only.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -373,8 +373,8 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ChartData.title
     summary: >-
-      Represents the title of the specified chart, including the text, visibility, position, and formating of the title.
-      Read-only.
+      Represents the title of the specified chart, including the text, visibility, position, and formatting of the
+      title. Read-only.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

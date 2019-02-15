@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.DataPivotHierarchyUpdateData
-    summary: 'An interface for updating data on the DataPivotHierarchy object, for use in "dataPivotHierarchy.set({ ... })".'
+    summary: >-
+      An interface for updating data on the DataPivotHierarchy object, for use in "dataPivotHierarchy.set(<!-- -->{ ...
+      }<!-- -->)".
     name: Excel.Interfaces.DataPivotHierarchyUpdateData
     fullName: Excel.Interfaces.DataPivotHierarchyUpdateData
     langs:
@@ -77,7 +79,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.DataPivotHierarchyUpdateData.showAs
     summary: |-
-      Determines whether the data should be sown as a specific summary calculation or not.
+      Determines whether the data should be shown as a specific summary calculation or not.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAs

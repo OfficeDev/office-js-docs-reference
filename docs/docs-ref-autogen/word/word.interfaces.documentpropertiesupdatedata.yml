@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.DocumentPropertiesUpdateData
-    summary: 'An interface for updating data on the DocumentProperties object, for use in "documentProperties.set({ ... })".'
+    summary: >-
+      An interface for updating data on the DocumentProperties object, for use in "documentProperties.set(<!-- -->{ ...
+      }<!-- -->)".
     name: Word.Interfaces.DocumentPropertiesUpdateData
     fullName: Word.Interfaces.DocumentPropertiesUpdateData
     langs:

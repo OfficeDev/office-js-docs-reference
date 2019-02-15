@@ -1,0 +1,31 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsc -p tsconfig.json --watch",
+    "lint": "tslint --project tsconfig.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/fs-extra": "3.0.1",
+    "@types/inquirer": "0.0.34",
+    "@types/js-yaml": "3.5.29",
+    "@types/lodash": "4.14.64",
+    "@types/node": "7.0.5",
+    "del": "2.2.2",
+    "ts-lint": "4.5.1",
+    "ts-node": "2.1.0",
+    "typescript": "2.6.2"
+  },
+  "dependencies": {
+    "fs-extra": "3.0.1",
+    "inquirer": "3.1.0",
+    "js-yaml": "3.7.0",
+    "lodash": "4.17.5",
+    "isomorphic-fetch": "2.2.1"
+  }
+}

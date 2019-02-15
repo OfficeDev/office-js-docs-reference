@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.Interfaces.ContentControlUpdateData
-    summary: 'An interface for updating data on the ContentControl object, for use in "contentControl.set({ ... })".'
+    summary: >-
+      An interface for updating data on the ContentControl object, for use in "contentControl.set(<!-- -->{ ... }<!--
+      -->)".
     name: Word.Interfaces.ContentControlUpdateData
     fullName: Word.Interfaces.ContentControlUpdateData
     langs:

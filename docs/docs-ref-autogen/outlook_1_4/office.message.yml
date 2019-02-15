@@ -5,15 +5,17 @@ items:
       A subclass of [Office.Item](xref:Outlook_1_4.Office.Item) for messages.
 
 
-      Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of `Office.context.mailbox.item`<!-- -->. Refer to the Object Model pages for more information.
+      **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
+      treat this as a mode of Office.context.mailbox.item. Refer to the [Object
+      Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.4/office.context.mailbox.item)
+      page for more information.
     name: Office.Message
     fullName: Office.Message
     langs:
       - typeScript
     type: interface
     extends:
-      - Item
+      - 'Item '
     package: Outlook_1_4
     children:
       - Outlook_1_4.Office.Message.conversationId

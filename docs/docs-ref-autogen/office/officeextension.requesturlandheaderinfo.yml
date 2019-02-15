@@ -19,7 +19,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'headers?:'
+      content: |-
+        headers?: {
+                    [name: string]: string;
+                };
       return:
         type:
           - |-

@@ -37,7 +37,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: refreshAll()
-    fullName: refreshAll
+    fullName: refreshAll()
     langs:
       - typeScript
     type: method
@@ -55,12 +55,15 @@ items:
       returns a plain JavaScript object (typed as `Excel.Interfaces.DataConnectionCollectionData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: |-
+        toJSON(): {
+                    [key: string]: string;
+                };
       return:
         type:
           - |-

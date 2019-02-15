@@ -20,6 +20,7 @@ items:
       - excel.Excel.Workbook.calculationEngineVersion
       - excel.Excel.Workbook.chartDataPointTrack
       - excel.Excel.Workbook.close
+      - excel.Excel.Workbook.close_1
       - excel.Excel.Workbook.comments
       - excel.Excel.Workbook.context
       - excel.Excel.Workbook.customXmlParts
@@ -28,11 +29,15 @@ items:
       - excel.Excel.Workbook.getActiveCell
       - excel.Excel.Workbook.getActiveChart
       - excel.Excel.Workbook.getActiveChartOrNullObject
+      - excel.Excel.Workbook.getActiveSlicer
+      - excel.Excel.Workbook.getActiveSlicerOrNullObject
       - excel.Excel.Workbook.getIsActiveCollabSession
       - excel.Excel.Workbook.getSelectedRange
       - excel.Excel.Workbook.getSelectedRanges
       - excel.Excel.Workbook.isDirty
       - excel.Excel.Workbook.load
+      - excel.Excel.Workbook.load_1
+      - excel.Excel.Workbook.load_2
       - excel.Excel.Workbook.name
       - excel.Excel.Workbook.names
       - excel.Excel.Workbook.onAutoSaveSettingChanged
@@ -43,7 +48,11 @@ items:
       - excel.Excel.Workbook.protection
       - excel.Excel.Workbook.readOnly
       - excel.Excel.Workbook.save
+      - excel.Excel.Workbook.save_1
+      - excel.Excel.Workbook.set
+      - excel.Excel.Workbook.set_1
       - excel.Excel.Workbook.settings
+      - excel.Excel.Workbook.slicers
       - excel.Excel.Workbook.styles
       - excel.Excel.Workbook.tables
       - excel.Excel.Workbook.toJSON
@@ -144,7 +153,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: close(closeBehavior)
-    fullName: close
+    fullName: close(closeBehavior)
     langs:
       - typeScript
     type: method
@@ -159,6 +168,30 @@ items:
           description: workbook close behavior.
           type:
             - excel.Excel.CloseBehavior
+  - uid: excel.Excel.Workbook.close_1
+    summary: >-
+      Close current workbook.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: close(closeBehaviorString)
+    fullName: close(closeBehaviorString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'close(closeBehaviorString?: "Save" | "SkipSave"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: closeBehaviorString
+          description: workbook close behavior.
+          type:
+            - '"Save" | "SkipSave"'
   - uid: excel.Excel.Workbook.comments
     summary: >-
       Represents a collection of Comments associated with the workbook. Read-only.
@@ -242,7 +275,7 @@ items:
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveCell()
-    fullName: getActiveCell
+    fullName: getActiveCell()
     langs:
       - typeScript
     type: method
@@ -277,7 +310,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getActiveChart()
-    fullName: getActiveChart
+    fullName: getActiveChart()
     langs:
       - typeScript
     type: method
@@ -296,7 +329,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getActiveChartOrNullObject()
-    fullName: getActiveChartOrNullObject
+    fullName: getActiveChartOrNullObject()
     langs:
       - typeScript
     type: method
@@ -305,6 +338,45 @@ items:
       return:
         type:
           - excel.Excel.Chart
+        description: ''
+  - uid: excel.Excel.Workbook.getActiveSlicer
+    summary: >-
+      Gets the currently active slicer in the workbook. If there is no active slicer, will throw exception when invoke
+      this statement.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getActiveSlicer()
+    fullName: getActiveSlicer()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveSlicer(): Excel.Slicer;'
+      return:
+        type:
+          - excel.Excel.Slicer
+        description: ''
+  - uid: excel.Excel.Workbook.getActiveSlicerOrNullObject
+    summary: >-
+      Gets the currently active slicer in the workbook. If there is no active slicer, will return null object
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getActiveSlicerOrNullObject()
+    fullName: getActiveSlicerOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveSlicerOrNullObject(): Excel.Slicer;'
+      return:
+        type:
+          - excel.Excel.Slicer
         description: ''
   - uid: excel.Excel.Workbook.getIsActiveCollabSession
     summary: >-
@@ -316,7 +388,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getIsActiveCollabSession()
-    fullName: getIsActiveCollabSession
+    fullName: getIsActiveCollabSession()
     langs:
       - typeScript
     type: method
@@ -334,7 +406,7 @@ items:
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getSelectedRange()
-    fullName: getSelectedRange
+    fullName: getSelectedRange()
     langs:
       - typeScript
     type: method
@@ -371,7 +443,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getSelectedRanges()
-    fullName: getSelectedRanges
+    fullName: getSelectedRanges()
     langs:
       - typeScript
     type: method
@@ -408,6 +480,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.Workbook` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.Workbook` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -419,21 +495,63 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.Workbook;'
+      content: 'load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;'
       return:
         type:
           - excel.Excel.Workbook
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.WorkbookLoadOptions
+  - uid: excel.Excel.Workbook.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Workbook;'
+      return:
+        type:
+          - excel.Excel.Workbook
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.Workbook.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Workbook;'
+      return:
+        type:
+          - excel.Excel.Workbook
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.Workbook.name
     summary: |-
       Gets the workbook name. Read-only.
@@ -614,7 +732,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: save(saveBehavior)
-    fullName: save
+    fullName: save(saveBehavior)
     langs:
       - typeScript
     type: method
@@ -629,6 +747,78 @@ items:
           description: workbook save behavior.
           type:
             - excel.Excel.SaveBehavior
+  - uid: excel.Excel.Workbook.save_1
+    summary: >-
+      Save current workbook.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: save(saveBehaviorString)
+    fullName: save(saveBehaviorString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'save(saveBehaviorString?: "Save" | "Prompt"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: saveBehaviorString
+          description: workbook save behavior.
+          type:
+            - '"Save" | "Prompt"'
+  - uid: excel.Excel.Workbook.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Workbook): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.WorkbookUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.Workbook.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Workbook): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.Workbook
   - uid: excel.Excel.Workbook.settings
     summary: |-
       Represents a collection of Settings associated with the workbook. Read-only.
@@ -644,6 +834,24 @@ items:
       return:
         type:
           - excel.Excel.SettingCollection
+  - uid: excel.Excel.Workbook.slicers
+    summary: >-
+      Represents a collection of Slicers associated with the workbook. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: slicers
+    fullName: slicers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly slicers: Excel.SlicerCollection;'
+      return:
+        type:
+          - excel.Excel.SlicerCollection
   - uid: excel.Excel.Workbook.styles
     summary: |-
       Represents a collection of styles associated with the workbook. Read-only.
@@ -682,7 +890,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.WorkbookData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

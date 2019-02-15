@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.CommentLoadOptions
+    summary: |-
+      Represents the Comment.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: Visio.Interfaces.CommentLoadOptions
+    fullName: Visio.Interfaces.CommentLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.CommentLoadOptions.$all
+      - visio.Visio.Interfaces.CommentLoadOptions.author
+      - visio.Visio.Interfaces.CommentLoadOptions.date
+      - visio.Visio.Interfaces.CommentLoadOptions.text
+  - uid: visio.Visio.Interfaces.CommentLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.CommentLoadOptions.author
+    summary: |-
+      A string that specifies the name of the author of the comment.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: author
+    fullName: author
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'author?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.CommentLoadOptions.date
+    summary: |-
+      A string that specifies the date when the comment was created.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.CommentLoadOptions.text
+    summary: |-
+      A string that contains the comment text.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type:
+          - boolean

@@ -14,15 +14,32 @@ items:
       - office.OfficeExtension.ClientObject
     package: onenote
     children:
+      - onenote.OneNote.SectionGroupCollection.context
       - onenote.OneNote.SectionGroupCollection.count
       - onenote.OneNote.SectionGroupCollection.getByName
       - onenote.OneNote.SectionGroupCollection.getItem
       - onenote.OneNote.SectionGroupCollection.getItemAt
       - onenote.OneNote.SectionGroupCollection.items
       - onenote.OneNote.SectionGroupCollection.load
+      - onenote.OneNote.SectionGroupCollection.load_1
+      - onenote.OneNote.SectionGroupCollection.load_2
       - onenote.OneNote.SectionGroupCollection.toJSON
       - onenote.OneNote.SectionGroupCollection.track
       - onenote.OneNote.SectionGroupCollection.untrack
+  - uid: onenote.OneNote.SectionGroupCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.SectionGroupCollection.count
     summary: |-
       Returns the number of section groups in the collection. Read-only.
@@ -44,7 +61,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getByName(name)
-    fullName: getByName
+    fullName: getByName(name)
     langs:
       - typeScript
     type: method
@@ -102,7 +119,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
-    fullName: getItem
+    fullName: getItem(index)
     langs:
       - typeScript
     type: method
@@ -123,7 +140,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
-    fullName: getItemAt
+    fullName: getItemAt(index)
     langs:
       - typeScript
     type: method
@@ -158,6 +175,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.SectionGroupCollection` - Where option is a comma-delimited string or
+      an array of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.SectionGroupCollection` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -168,61 +189,102 @@ items:
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
-
-      #### Examples
-
-
-      ```javascript
-
-      OneNote.run(function (context) {
-
-          // Get the section groups that are direct children of the current notebook.
-          var sectionGroups = context.application.getActiveNotebook().sectionGroups;
-
-          // Queue a command to load the section groups. 
-          // For best performance, request specific properties.
-          sectionGroups.load("name"); 
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
-                  
-                  // Iterate through the collection or access items individually by index, 
-                  // for example: sectionGroups.items[0]
-                  $.each(sectionGroups.items, function(index, sectionGroup) {
-                      console.log("Section group name: " + sectionGroup.name);  
-                      console.log("Section group ID: " + sectionGroup.id);  
-                  });
-              });
-      })
-
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.SectionGroupCollection;'
+      content: >-
+        load(option?: OneNote.Interfaces.SectionGroupCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
+        OneNote.SectionGroupCollection;
       return:
         type:
           - onenote.OneNote.SectionGroupCollection
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - OneNote.Interfaces.SectionGroupCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+  - uid: onenote.OneNote.SectionGroupCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): OneNote.SectionGroupCollection;'
+      return:
+        type:
+          - onenote.OneNote.SectionGroupCollection
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function (context) {
+
+              // Get the section groups that are direct children of the current notebook.
+              var sectionGroups = context.application.getActiveNotebook().sectionGroups;
+
+              // Queue a command to load the section groups. 
+              // For best performance, request specific properties.
+              sectionGroups.load("name"); 
+
+              // Run the queued commands, and return a promise to indicate task completion.
+              return context.sync()
+                  .then(function () {
+                      
+                      // Iterate through the collection or access items individually by index, 
+                      // for example: sectionGroups.items[0]
+                      $.each(sectionGroups.items, function(index, sectionGroup) {
+                          console.log("Section group name: " + sectionGroup.name);  
+                          console.log("Section group ID: " + sectionGroup.id);  
+                      });
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.SectionGroupCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): OneNote.SectionGroupCollection;'
+      return:
+        type:
+          - onenote.OneNote.SectionGroupCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: onenote.OneNote.SectionGroupCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `OneNote.SectionGroupCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionGroupCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -240,7 +302,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -257,7 +319,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

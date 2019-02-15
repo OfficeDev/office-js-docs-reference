@@ -15,6 +15,7 @@ items:
     package: excel
     children:
       - excel.Excel.RangeSort.apply
+      - excel.Excel.RangeSort.apply_1
       - excel.Excel.RangeSort.context
       - excel.Excel.RangeSort.toJSON
   - uid: excel.Excel.RangeSort.apply
@@ -23,7 +24,7 @@ items:
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
-    fullName: apply
+    fullName: 'apply(fields, matchCase, hasHeaders, orientation, method)'
     langs:
       - typeScript
     type: method
@@ -56,6 +57,45 @@ items:
           description: Optional. The ordering method used for Chinese characters.
           type:
             - excel.Excel.SortMethod
+  - uid: excel.Excel.RangeSort.apply_1
+    summary: |-
+      Perform a sort operation.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'apply(fields, matchCase, hasHeaders, orientationString, method)'
+    fullName: 'apply(fields, matchCase, hasHeaders, orientationString, method)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientationString?: "Rows" |
+        "Columns", method?: "PinYin" | "StrokeCount"): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fields
+          description: The list of conditions to sort on.
+          type:
+            - 'Excel.SortField[]'
+        - id: matchCase
+          description: Optional. Whether to have the casing impact string ordering.
+          type:
+            - boolean
+        - id: hasHeaders
+          description: Optional. Whether the range has a header.
+          type:
+            - boolean
+        - id: orientationString
+          description: Optional. Whether the operation is sorting rows or columns.
+          type:
+            - '"Rows" | "Columns"'
+        - id: method
+          description: Optional. The ordering method used for Chinese characters.
+          type:
+            - '"PinYin" | "StrokeCount"'
   - uid: excel.Excel.RangeSort.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -78,12 +118,15 @@ items:
       JavaScript object (typed as `Excel.Interfaces.RangeSortData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: |-
+        toJSON(): {
+                    [key: string]: string;
+                };
       return:
         type:
           - |-

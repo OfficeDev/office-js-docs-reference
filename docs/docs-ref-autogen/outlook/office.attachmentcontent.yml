@@ -6,12 +6,10 @@ items:
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
     isPreview: true
     name: Office.AttachmentContent
     fullName: Office.AttachmentContent
@@ -53,7 +51,40 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'format: Office.MailboxEnums.AttachmentContentFormat;'
+      content: 'format: MailboxEnums.AttachmentContentFormat;'
       return:
         type:
-          - outlook.Office.MailboxEnums.AttachmentContentFormat
+          - MailboxEnums.AttachmentContentFormat
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          var item = Office.context.mailbox.item;
+          var listOfAttachments = [];
+          item.getAttachmentsAsync(callback);
+
+          function callback(result) {
+              if (result.value.length > 0) {
+                  for (i = 0 ; i < result.value.length ; i++) {
+                      var options = {asyncContext: {type: result.value[i].attachmentType}};
+                      getAttachmentContentAsync(result.value[i].id, options, handleAttachmentsCallback);
+                  }
+              }
+          }
+
+          function handleAttachmentsCallback(result) {
+              // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
+              if (result.format === Office.MailboxEnums.AttachmentContentFormat.Base64) {
+                  // Handle file attachment.
+              } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Eml) {
+                  // Handle email item attachment.
+              } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
+                  // Handle .icalender attachment.
+              } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Url) {
+                  // Handle cloud attachment.
+              } else {
+                  // Handle attachment formats that are not supported.
+              }
+          }
+          ```

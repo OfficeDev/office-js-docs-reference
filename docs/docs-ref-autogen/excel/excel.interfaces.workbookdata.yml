@@ -24,6 +24,7 @@ items:
       - excel.Excel.Interfaces.WorkbookData.protection
       - excel.Excel.Interfaces.WorkbookData.readOnly
       - excel.Excel.Interfaces.WorkbookData.settings
+      - excel.Excel.Interfaces.WorkbookData.slicers
       - excel.Excel.Interfaces.WorkbookData.styles
       - excel.Excel.Interfaces.WorkbookData.tables
       - excel.Excel.Interfaces.WorkbookData.use1904DateSystem
@@ -274,6 +275,24 @@ items:
       return:
         type:
           - 'Excel.Interfaces.SettingData[]'
+  - uid: excel.Excel.Interfaces.WorkbookData.slicers
+    summary: >-
+      Represents a collection of Slicers associated with the workbook. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: slicers
+    fullName: slicers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'slicers?: Excel.Interfaces.SlicerData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.SlicerData[]'
   - uid: excel.Excel.Interfaces.WorkbookData.styles
     summary: |-
       Represents a collection of styles associated with the workbook. Read-only.

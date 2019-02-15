@@ -36,6 +36,17 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Example: Allie Bellew
+
+      console.log(Office.context.mailbox.userProfile.displayName);
+
+      ```
     name: displayName
     fullName: displayName
     langs:
@@ -58,6 +69,17 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Example: allieb@contoso.com
+
+      console.log(Office.context.mailbox.userProfile.emailAddress);
+
+      ```
     name: emailAddress
     fullName: emailAddress
     langs:
@@ -80,6 +102,17 @@ items:
 
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       read</td></tr></table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Example: Pacific Standard Time
+
+      console.log(Office.context.mailbox.userProfile.timeZone);
+
+      ```
     name: timeZone
     fullName: timeZone
     langs:

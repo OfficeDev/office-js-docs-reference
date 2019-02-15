@@ -31,9 +31,13 @@ items:
       - excel.Excel.ConditionalFormat.iconSetOrNullObject
       - excel.Excel.ConditionalFormat.id
       - excel.Excel.ConditionalFormat.load
+      - excel.Excel.ConditionalFormat.load_1
+      - excel.Excel.ConditionalFormat.load_2
       - excel.Excel.ConditionalFormat.preset
       - excel.Excel.ConditionalFormat.presetOrNullObject
       - excel.Excel.ConditionalFormat.priority
+      - excel.Excel.ConditionalFormat.set
+      - excel.Excel.ConditionalFormat.set_1
       - excel.Excel.ConditionalFormat.stopIfTrue
       - excel.Excel.ConditionalFormat.textComparison
       - excel.Excel.ConditionalFormat.textComparisonOrNullObject
@@ -255,7 +259,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
-    fullName: delete
+    fullName: delete()
     langs:
       - typeScript
     type: method
@@ -273,7 +277,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
-    fullName: getRange
+    fullName: getRange()
     langs:
       - typeScript
     type: method
@@ -321,7 +325,7 @@ items:
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRangeOrNullObject()
-    fullName: getRangeOrNullObject
+    fullName: getRangeOrNullObject()
     langs:
       - typeScript
     type: method
@@ -340,7 +344,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getRanges()
-    fullName: getRanges
+    fullName: getRanges()
     langs:
       - typeScript
     type: method
@@ -447,6 +451,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ConditionalFormat` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ConditionalFormat` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -458,21 +466,63 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ConditionalFormat;'
+      content: 'load(option?: Excel.Interfaces.ConditionalFormatLoadOptions): Excel.ConditionalFormat;'
       return:
         type:
           - excel.Excel.ConditionalFormat
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ConditionalFormatLoadOptions
+  - uid: excel.Excel.ConditionalFormat.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.ConditionalFormat
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ConditionalFormat.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalFormat;'
+      return:
+        type:
+          - excel.Excel.ConditionalFormat
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.ConditionalFormat.preset
     summary: |-
       Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
@@ -539,6 +589,54 @@ items:
       return:
         type:
           - number
+  - uid: excel.Excel.ConditionalFormat.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ConditionalFormat): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ConditionalFormatUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ConditionalFormat.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ConditionalFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.ConditionalFormat
   - uid: excel.Excel.ConditionalFormat.stopIfTrue
     summary: >-
       If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
@@ -614,7 +712,7 @@ items:
       plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatData`<!-- -->) that contains shallow copies
       of any loaded child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

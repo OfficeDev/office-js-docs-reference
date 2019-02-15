@@ -8,12 +8,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
     name: Office.UserProfile
     fullName: Office.UserProfile
     langs:
@@ -29,16 +27,14 @@ items:
     summary: |-
       Gets the account type of the user associated with the mailbox.
 
-      Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
+      **Note**: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
 
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
 
 
       The possible account types are listed in the following table.
@@ -49,6 +45,15 @@ items:
       account.</td> </tr> <tr> <td>office365</td> <td>The mailbox is associated with an Office 365 work or school
       account.</td> </tr> <tr> <td>outlookCom</td> <td>The mailbox is associated with a personal Outlook.com
       account.</td> </tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      console.log(Office.context.mailbox.userProfile.accountType);
+
+      ```
     name: accountType
     fullName: accountType
     langs:
@@ -65,12 +70,21 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Example: Allie Bellew
+
+      console.log(Office.context.mailbox.userProfile.displayName);
+
+      ```
     name: displayName
     fullName: displayName
     langs:
@@ -87,12 +101,21 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Example: allieb@contoso.com
+
+      console.log(Office.context.mailbox.userProfile.emailAddress);
+
+      ```
     name: emailAddress
     fullName: emailAddress
     langs:
@@ -109,12 +132,21 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Example: Pacific Standard Time
+
+      console.log(Office.context.mailbox.userProfile.timeZone);
+
+      ```
     name: timeZone
     fullName: timeZone
     langs:

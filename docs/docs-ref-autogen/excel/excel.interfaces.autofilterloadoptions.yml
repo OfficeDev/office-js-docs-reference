@@ -1,0 +1,87 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.AutoFilterLoadOptions
+    summary: >-
+      Represents the AutoFilter object.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.AutoFilterLoadOptions
+    fullName: Excel.Interfaces.AutoFilterLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.AutoFilterLoadOptions.$all
+      - excel.Excel.Interfaces.AutoFilterLoadOptions.criteria
+      - excel.Excel.Interfaces.AutoFilterLoadOptions.enabled
+      - excel.Excel.Interfaces.AutoFilterLoadOptions.isDataFiltered
+  - uid: excel.Excel.Interfaces.AutoFilterLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.AutoFilterLoadOptions.criteria
+    summary: >-
+      Array that holds all filter criterias in an autofiltered range. Read-Only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.AutoFilterLoadOptions.enabled
+    summary: >-
+      Indicates if the AutoFilter is enabled or not. Read-Only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: enabled
+    fullName: enabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.AutoFilterLoadOptions.isDataFiltered
+    summary: >-
+      Indicates if the AutoFilter has filter criteria. Read-Only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: isDataFiltered
+    fullName: isDataFiltered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDataFiltered?: boolean;'
+      return:
+        type:
+          - boolean

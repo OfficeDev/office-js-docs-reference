@@ -18,9 +18,12 @@ items:
       - onenote.OneNote.Outline.appendImage
       - onenote.OneNote.Outline.appendRichText
       - onenote.OneNote.Outline.appendTable
+      - onenote.OneNote.Outline.context
       - onenote.OneNote.Outline.id
       - onenote.OneNote.Outline.isTitle
       - onenote.OneNote.Outline.load
+      - onenote.OneNote.Outline.load_1
+      - onenote.OneNote.Outline.load_2
       - onenote.OneNote.Outline.pageContent
       - onenote.OneNote.Outline.paragraphs
       - onenote.OneNote.Outline.toJSON
@@ -32,7 +35,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendHtml(html)
-    fullName: appendHtml
+    fullName: appendHtml(html)
     langs:
       - typeScript
     type: method
@@ -94,7 +97,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'appendImage(base64EncodedImage, width, height)'
-    fullName: appendImage
+    fullName: 'appendImage(base64EncodedImage, width, height)'
     langs:
       - typeScript
     type: method
@@ -123,7 +126,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: appendRichText(paragraphText)
-    fullName: appendRichText
+    fullName: appendRichText(paragraphText)
     langs:
       - typeScript
     type: method
@@ -144,7 +147,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: 'appendTable(rowCount, columnCount, values)'
-    fullName: appendTable
+    fullName: 'appendTable(rowCount, columnCount, values)'
     langs:
       - typeScript
     type: method
@@ -204,6 +207,20 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
+  - uid: onenote.OneNote.Outline.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: onenote.OneNote.Outline.id
     summary: |-
       Gets the ID of the Outline object. Read-only.
@@ -225,7 +242,7 @@ items:
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     name: isTitle()
-    fullName: isTitle
+    fullName: isTitle()
     langs:
       - typeScript
     type: method
@@ -243,6 +260,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): OneNote.Outline` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): OneNote.Outline` - Where option.select is a comma-delimited
       string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
       navigation properties to load.
@@ -254,21 +275,63 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): OneNote.Outline;'
+      content: 'load(option?: OneNote.Interfaces.OutlineLoadOptions): OneNote.Outline;'
       return:
         type:
           - onenote.OneNote.Outline
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.OutlineLoadOptions
+  - uid: onenote.OneNote.Outline.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): OneNote.Outline;'
+      return:
+        type:
+          - onenote.OneNote.Outline
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: onenote.OneNote.Outline.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Outline;'
+      return:
+        type:
+          - onenote.OneNote.Outline
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: onenote.OneNote.Outline.pageContent
     summary: >-
       Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the
@@ -302,8 +365,14 @@ items:
         type:
           - onenote.OneNote.ParagraphCollection
   - uid: onenote.OneNote.Outline.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.Outline object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `OneNote.Interfaces.OutlineData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -321,7 +390,7 @@ items:
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
     name: track()
-    fullName: track
+    fullName: track()
     langs:
       - typeScript
     type: method
@@ -338,7 +407,7 @@ items:
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
     name: untrack()
-    fullName: untrack
+    fullName: untrack()
     langs:
       - typeScript
     type: method

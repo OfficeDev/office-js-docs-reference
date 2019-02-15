@@ -20,6 +20,8 @@ items:
       - excel.Excel.ShapeGroup.context
       - excel.Excel.ShapeGroup.id
       - excel.Excel.ShapeGroup.load
+      - excel.Excel.ShapeGroup.load_1
+      - excel.Excel.ShapeGroup.load_2
       - excel.Excel.ShapeGroup.shape
       - excel.Excel.ShapeGroup.shapes
       - excel.Excel.ShapeGroup.toJSON
@@ -65,6 +67,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.ShapeGroup` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.ShapeGroup` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -77,21 +83,65 @@ items:
       specified number of items.
     isPreview: true
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.ShapeGroup;'
+      content: 'load(option?: Excel.Interfaces.ShapeGroupLoadOptions): Excel.ShapeGroup;'
       return:
         type:
           - excel.Excel.ShapeGroup
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ShapeGroupLoadOptions
+  - uid: excel.Excel.ShapeGroup.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ShapeGroup;'
+      return:
+        type:
+          - excel.Excel.ShapeGroup
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.ShapeGroup.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ShapeGroup;'
+      return:
+        type:
+          - excel.Excel.ShapeGroup
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.ShapeGroup.shape
     summary: >-
       Returns the shape object for the group. Read-only.
@@ -137,7 +187,7 @@ items:
       child properties from the original object.
     isPreview: true
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method
@@ -156,7 +206,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: ungroup()
-    fullName: ungroup
+    fullName: ungroup()
     langs:
       - typeScript
     type: method

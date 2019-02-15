@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.TableCollectionUpdateData
-    summary: 'An interface for updating data on the TableCollection object, for use in "tableCollection.set({ ... })".'
+    summary: >-
+      An interface for updating data on the TableCollection object, for use in "tableCollection.set(<!-- -->{ ... }<!--
+      -->)".
     name: Excel.Interfaces.TableCollectionUpdateData
     fullName: Excel.Interfaces.TableCollectionUpdateData
     langs:

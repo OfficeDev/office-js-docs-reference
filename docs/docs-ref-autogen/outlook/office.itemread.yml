@@ -5,60 +5,38 @@ items:
       The read mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
 
 
-      Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of `Office.context.mailbox.item`<!-- -->. Refer to the Object Model pages for more information.
+      **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
+      treat this as a mode of Office.context.mailbox.item. Refer to the [Object
+      Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item)
+      page for more information.
     name: Office.ItemRead
     fullName: Office.ItemRead
     langs:
       - typeScript
     type: interface
     extends:
-      - Item
+      - 'Item '
     package: outlook
     children:
-      - outlook.Office.ItemRead.attachments
       - outlook.Office.ItemRead.displayReplyAllForm
+      - outlook.Office.ItemRead.displayReplyAllForm_1
       - outlook.Office.ItemRead.displayReplyForm
+      - outlook.Office.ItemRead.displayReplyForm_1
       - outlook.Office.ItemRead.getEntities
       - outlook.Office.ItemRead.getEntitiesByType
       - outlook.Office.ItemRead.getFilteredEntitiesByName
       - outlook.Office.ItemRead.getInitializationContextAsync
+      - outlook.Office.ItemRead.getInitializationContextAsync_1
+      - outlook.Office.ItemRead.getInitializationContextAsync_2
       - outlook.Office.ItemRead.getRegExMatches
       - outlook.Office.ItemRead.getRegExMatchesByName
       - outlook.Office.ItemRead.getSelectedEntities
       - outlook.Office.ItemRead.getSelectedRegExMatches
+      - outlook.Office.ItemRead.attachments
       - outlook.Office.ItemRead.itemClass
       - outlook.Office.ItemRead.itemId
       - outlook.Office.ItemRead.normalizedSubject
       - outlook.Office.ItemRead.subject
-  - uid: outlook.Office.ItemRead.attachments
-    summary: |-
-      Gets the item's attachments as an array.
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
-
-
-      Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
-      returned. For more information, see [Blocked attachments in
-      Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)<!--
-      -->.
-    name: attachments
-    fullName: attachments
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'attachments: Office.AttachmentDetails[];'
-      return:
-        type:
-          - 'Office.AttachmentDetails[]'
   - uid: outlook.Office.ItemRead.displayReplyAllForm
     summary: >-
       Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
@@ -77,19 +55,71 @@ items:
       in the form UI. If this isn't possible, then no error message is thrown.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
+    name: 'displayReplyAllForm(formData, callback)'
+    fullName: 'displayReplyAllForm(formData, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        displayReplyAllForm(formData: string | ReplyFormData, callback?: (result: Office.AsyncResult<void>) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formData
+          description: >-
+            A string that contains text and HTML and that represents the body of the reply form. The string is limited
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
+            attachment data and a callback function.
+          type:
+            - string | ReplyFormData
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object.
+          type:
+            - '(result: Office.AsyncResult<void>) => void'
+  - uid: outlook.Office.ItemRead.displayReplyAllForm_1
+    summary: >-
+      Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
+      attendees of the selected appointment.
+
+
+      In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-
+      or 1-column view.
+
+
+      If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.
+
+
+      When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to
+      download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown
+      in the form UI. If this isn't possible, then no error message is thrown.
+
+
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: displayReplyAllForm(formData)
-    fullName: displayReplyAllForm
+    fullName: displayReplyAllForm(formData)
     langs:
       - typeScript
     type: method
@@ -103,8 +133,8 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR An [Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
-            attachment data and a callback function
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
+            attachment data and a callback function.
           type:
             - string | ReplyFormData
   - uid: outlook.Office.ItemRead.displayReplyForm
@@ -125,19 +155,71 @@ items:
       in the form UI. If this isn't possible, then no error message is thrown.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read/td<!-- -->&gt;</tr> </table>
+    name: 'displayReplyForm(formData, callback)'
+    fullName: 'displayReplyForm(formData, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        displayReplyForm(formData: string | ReplyFormData, callback?: (result: Office.AsyncResult<void>) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formData
+          description: >-
+            A string that contains text and HTML and that represents the body of the reply form. The string is limited
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
+            attachment data and a callback function.
+          type:
+            - string | ReplyFormData
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object.
+          type:
+            - '(result: Office.AsyncResult<void>) => void'
+  - uid: outlook.Office.ItemRead.displayReplyForm_1
+    summary: >-
+      Displays a reply form that includes only the sender of the selected message or the organizer of the selected
+      appointment.
+
+
+      In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-
+      or 1-column view.
+
+
+      If any of the string parameters exceed their limits, displayReplyForm throws an exception.
+
+
+      When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to
+      download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown
+      in the form UI. If this isn't possible, then no error message is thrown.
+
+
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: displayReplyForm(formData)
-    fullName: displayReplyForm
+    fullName: displayReplyForm(formData)
     langs:
       - typeScript
     type: method
@@ -151,7 +233,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB. OR An [Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
             attachment data and a callback function.
           type:
             - string | ReplyFormData
@@ -159,18 +241,16 @@ items:
     summary: |-
       Gets the entities found in the selected item's body.
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: getEntities()
-    fullName: getEntities
+    fullName: getEntities()
     langs:
       - typeScript
     type: method
@@ -184,16 +264,14 @@ items:
     summary: |-
       Gets an array of all the entities of the specified entity type found in the selected item's body.
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
 
 
       While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access,
@@ -207,14 +285,14 @@ items:
       <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td>
       <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>
     name: getEntitiesByType(entityType)
-    fullName: getEntitiesByType
+    fullName: getEntitiesByType(entityType)
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getEntitiesByType(entityType: Office.MailboxEnums.EntityType): (string | Contact | MeetingSuggestion |
-        PhoneNumber | TaskSuggestion)[];
+        getEntitiesByType(entityType: MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber |
+        TaskSuggestion)[];
       return:
         type:
           - '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
@@ -227,7 +305,7 @@ items:
         - id: entityType
           description: One of the EntityType enumeration values.
           type:
-            - outlook.Office.MailboxEnums.EntityType
+            - MailboxEnums.EntityType
   - uid: outlook.Office.ItemRead.getFilteredEntitiesByName
     summary: >-
       Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
@@ -237,19 +315,17 @@ items:
       ItemHasKnownEntity rule element in the manifest XML file with the specified FilterName element value.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: getFilteredEntitiesByName(name)
-    fullName: getFilteredEntitiesByName
+    fullName: getFilteredEntitiesByName(name)
     langs:
       - typeScript
     type: method
@@ -275,34 +351,26 @@ items:
       message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
 
 
-      Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
+      **Note**: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
       16.0.8413.1000) and Outlook on the web for Office 365.
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
-
-
-      In addition to this signature, the method also has the following signature:
-
-
-      `getInitializationContextAsync(callback?: (result: AsyncResult<string>) => void): void;`
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     isPreview: true
     name: 'getInitializationContextAsync(options, callback)'
-    fullName: getInitializationContextAsync
+    fullName: 'getInitializationContextAsync(options, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) =>
-        void): void;
+        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result:
+        Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -313,7 +381,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - office.Office.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -322,7 +390,73 @@ items:
             asyncResult object will contain an Error object with its code property set to 9020 and its name property set
             to GenericResponseError.
           type:
-            - '(result: AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
+  - uid: outlook.Office.ItemRead.getInitializationContextAsync_1
+    summary: >-
+      Gets initialization data passed when the add-in is [activated by an actionable
+      message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
+
+
+      **Note**: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
+      16.0.8413.1000) and Outlook on the web for Office 365.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
+    isPreview: true
+    name: getInitializationContextAsync(callback)
+    fullName: getInitializationContextAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getInitializationContextAsync(callback?: (result: Office.AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object. On success, the initialization data is
+            provided in the asyncResult.value property as a string. If there is no initialization context, the
+            asyncResult object will contain an Error object with its code property set to 9020 and its name property set
+            to GenericResponseError.
+          type:
+            - '(result: Office.AsyncResult<string>) => void'
+  - uid: outlook.Office.ItemRead.getInitializationContextAsync_2
+    summary: >-
+      Gets initialization data passed when the add-in is [activated by an actionable
+      message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
+
+
+      **Note**: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
+      16.0.8413.1000) and Outlook on the web for Office 365.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
+    isPreview: true
+    name: getInitializationContextAsync()
+    fullName: getInitializationContextAsync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getInitializationContextAsync(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: outlook.Office.ItemRead.getRegExMatches
     summary: >-
       Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
@@ -340,19 +474,17 @@ items:
       use the Body.getAsync method to retrieve the entire body.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: getRegExMatches()
-    fullName: getRegExMatches
+    fullName: getRegExMatches()
     langs:
       - typeScript
     type: method
@@ -380,19 +512,17 @@ items:
       expression such as .* to obtain the entire body of an item does not always return the expected results.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: getRegExMatchesByName(name)
-    fullName: getRegExMatchesByName
+    fullName: getRegExMatchesByName(name)
     langs:
       - typeScript
     type: method
@@ -413,19 +543,17 @@ items:
       add-ins.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: getSelectedEntities()
-    fullName: getSelectedEntities
+    fullName: getSelectedEntities()
     langs:
       - typeScript
     type: method
@@ -453,19 +581,17 @@ items:
       use the Body.getAsync method to retrieve the entire body.
 
 
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: getSelectedRegExMatches()
-    fullName: getSelectedRegExMatches
+    fullName: getSelectedRegExMatches()
     langs:
       - typeScript
     type: method
@@ -478,6 +604,32 @@ items:
           An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
           The name of each array is equal to the corresponding value of the RegExName attribute of the matching
           ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
+  - uid: outlook.Office.ItemRead.attachments
+    summary: |-
+      Gets the item's attachments as an array.
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
+
+
+      **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
+      returned. For more information, see [Blocked attachments in
+      Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)<!--
+      -->.
+    name: attachments
+    fullName: attachments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachments: AttachmentDetails[];'
+      return:
+        type:
+          - 'AttachmentDetails[]'
   - uid: outlook.Office.ItemRead.itemClass
     summary: >-
       Gets the Exchange Web Services item class of the selected item.
@@ -489,12 +641,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
 
 
       The itemClass property specifies the message class of the selected item. The following are the default message
@@ -502,8 +652,8 @@ items:
 
 
       <table> <tr> <th>Type</th> <th>Description</th> <th>Item Class</th> </tr> <tr> <td>Appointment items</td>
-      <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.</td>
-      <td>IPM.Appointment,IPM.Appointment.Occurence</td> </tr> <tr> <td>Message items</td> <td>These include email
+      <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td>
+      <td>IPM.Appointment,IPM.Appointment.Occurrence</td> </tr> <tr> <td>Message items</td> <td>These include email
       messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that
       use IPM.Schedule.Meeting as the base message class.</td>
       <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
@@ -524,12 +674,12 @@ items:
 
 
       The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can
-      be used to save the item to the store, which will return the item identifier in the AsyncResult.value parameter in
+      be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in
       the callback function.
 
 
-      Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The
-      itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making
+      **Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier.
+      The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making
       REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more
       details, see [Use the Outlook REST APIs from an Outlook
       add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id)<!-- -->.
@@ -537,12 +687,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: itemId
     fullName: itemId
     langs:
@@ -564,12 +712,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: normalizedSubject
     fullName: normalizedSubject
     langs:
@@ -594,12 +740,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: subject
     fullName: subject
     langs:

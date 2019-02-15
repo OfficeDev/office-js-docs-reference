@@ -21,6 +21,8 @@ items:
       - excel.Excel.GeometricShape.context
       - excel.Excel.GeometricShape.id
       - excel.Excel.GeometricShape.load
+      - excel.Excel.GeometricShape.load_1
+      - excel.Excel.GeometricShape.load_2
       - excel.Excel.GeometricShape.shape
       - excel.Excel.GeometricShape.toJSON
   - uid: excel.Excel.GeometricShape.context
@@ -64,6 +66,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.GeometricShape` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.GeometricShape` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -76,21 +82,65 @@ items:
       specified number of items.
     isPreview: true
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.GeometricShape;'
+      content: 'load(option?: Excel.Interfaces.GeometricShapeLoadOptions): Excel.GeometricShape;'
       return:
         type:
           - excel.Excel.GeometricShape
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.GeometricShapeLoadOptions
+  - uid: excel.Excel.GeometricShape.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.GeometricShape;'
+      return:
+        type:
+          - excel.Excel.GeometricShape
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.GeometricShape.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.GeometricShape;'
+      return:
+        type:
+          - excel.Excel.GeometricShape
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.GeometricShape.shape
     summary: >-
       Returns the shape object for the geometric shape. Read-only.
@@ -118,7 +168,7 @@ items:
       any loaded child properties from the original object.
     isPreview: true
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

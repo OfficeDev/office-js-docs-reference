@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartErrorBarsFormatUpdateData
-    summary: 'An interface for updating data on the ChartErrorBarsFormat object, for use in "chartErrorBarsFormat.set({ ... })".'
+    summary: >-
+      An interface for updating data on the ChartErrorBarsFormat object, for use in "chartErrorBarsFormat.set(<!-- -->{
+      ... }<!-- -->)".
     name: Excel.Interfaces.ChartErrorBarsFormatUpdateData
     fullName: Excel.Interfaces.ChartErrorBarsFormatUpdateData
     langs:

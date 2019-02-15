@@ -14,18 +14,35 @@ items:
       - office.OfficeExtension.ClientObject
     package: visio
     children:
+      - visio.Visio.CommentCollection.context
       - visio.Visio.CommentCollection.getCount
       - visio.Visio.CommentCollection.getItem
       - visio.Visio.CommentCollection.items
       - visio.Visio.CommentCollection.load
+      - visio.Visio.CommentCollection.load_1
+      - visio.Visio.CommentCollection.load_2
       - visio.Visio.CommentCollection.toJSON
+  - uid: visio.Visio.CommentCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
   - uid: visio.Visio.CommentCollection.getCount
     summary: |-
       Gets the number of Comments.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getCount()
-    fullName: getCount
+    fullName: getCount()
     langs:
       - typeScript
     type: method
@@ -41,7 +58,7 @@ items:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     name: getItem(key)
-    fullName: getItem
+    fullName: getItem(key)
     langs:
       - typeScript
     type: method
@@ -74,6 +91,10 @@ items:
       the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Visio.CommentCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
 
 
       `load(option?: { select?: string; expand?: string; }): Visio.CommentCollection` - Where option.select is a
@@ -116,24 +137,63 @@ items:
 
       ```
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Visio.CommentCollection;'
+      content: >-
+        load(option?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.CommentCollection;
       return:
         type:
           - Visio.CommentCollection
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+  - uid: visio.Visio.CommentCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Visio.CommentCollection;'
+      return:
+        type:
+          - Visio.CommentCollection
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: visio.Visio.CommentCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Visio.CommentCollection;'
+      return:
+        type:
+          - Visio.CommentCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
   - uid: visio.Visio.CommentCollection.toJSON
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

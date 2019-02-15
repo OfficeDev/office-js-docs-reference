@@ -112,7 +112,7 @@ items:
         type:
           - number
   - uid: Outlook_1_4.Office.LocalClientTime.year
-    summary: Integer value repesenting the year.
+    summary: Integer value representing the year.
     name: year
     fullName: year
     langs:

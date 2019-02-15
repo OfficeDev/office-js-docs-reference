@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.RangeAreasUpdateData
-    summary: 'An interface for updating data on the RangeAreas object, for use in "rangeAreas.set({ ... })".'
+    summary: 'An interface for updating data on the RangeAreas object, for use in "rangeAreas.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.RangeAreasUpdateData
     fullName: Excel.Interfaces.RangeAreasUpdateData
     langs:

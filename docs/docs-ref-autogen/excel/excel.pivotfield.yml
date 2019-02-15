@@ -18,10 +18,15 @@ items:
       - excel.Excel.PivotField.id
       - excel.Excel.PivotField.items
       - excel.Excel.PivotField.load
+      - excel.Excel.PivotField.load_1
+      - excel.Excel.PivotField.load_2
       - excel.Excel.PivotField.name
+      - excel.Excel.PivotField.set
+      - excel.Excel.PivotField.set_1
       - excel.Excel.PivotField.showAllItems
       - excel.Excel.PivotField.sortByLabels
       - excel.Excel.PivotField.sortByValues
+      - excel.Excel.PivotField.sortByValues_1
       - excel.Excel.PivotField.subtotals
       - excel.Excel.PivotField.toJSON
   - uid: excel.Excel.PivotField.context
@@ -76,6 +81,10 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
+      `load(option?: string | string[]): Excel.PivotField` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
       `load(option?: { select?: string; expand?: string; }): Excel.PivotField` - Where option.select is a
       comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
@@ -87,21 +96,63 @@ items:
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
     name: load(option)
-    fullName: load
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[]): Excel.PivotField;'
+      content: 'load(option?: Excel.Interfaces.PivotFieldLoadOptions): Excel.PivotField;'
       return:
         type:
           - excel.Excel.PivotField
         description: ''
       parameters:
         - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.PivotFieldLoadOptions
+  - uid: excel.Excel.PivotField.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PivotField;'
+      return:
+        type:
+          - excel.Excel.PivotField
+        description: ''
+      parameters:
+        - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
+  - uid: excel.Excel.PivotField.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotField;'
+      return:
+        type:
+          - excel.Excel.PivotField
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.PivotField.name
     summary: |-
       Name of the PivotField.
@@ -117,6 +168,54 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.PivotField.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.PivotField): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.PivotFieldUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.PivotFieldUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel.Excel.PivotField.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.PivotField): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.PivotField
   - uid: excel.Excel.PivotField.showAllItems
     summary: |-
       Determines whether to show all items of the PivotField.
@@ -140,7 +239,7 @@ items:
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sortByLabels(sortby)
-    fullName: sortByLabels
+    fullName: sortByLabels(sortby)
     langs:
       - typeScript
     type: method
@@ -165,7 +264,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: 'sortByValues(sortby, valuesHierarchy, pivotItemScope)'
-    fullName: sortByValues
+    fullName: 'sortByValues(sortby, valuesHierarchy, pivotItemScope)'
     langs:
       - typeScript
     type: method
@@ -182,6 +281,45 @@ items:
           description: Represents whether the sorting is done in an ascending or descending order.
           type:
             - excel.Excel.SortBy
+        - id: valuesHierarchy
+          description: Specifies the values to be used for sorting.
+          type:
+            - excel.Excel.DataPivotHierarchy
+        - id: pivotItemScope
+          description: >-
+            The items that should be used for the scope of the sorting. These will be the items that make up the row or
+            column that you want to sort on. If a string is used instead of a PivotItem, the string represents the ID of
+            the PivotItem. If there are no items other than data hierarchy on the axis you want to sort on, this can be
+            empty.
+          type:
+            - Array<PivotItem | string>
+  - uid: excel.Excel.PivotField.sortByValues_1
+    summary: >-
+      Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to
+      sort when there are multiple values from the same DataPivotHierarchy.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: 'sortByValues(sortbyString, valuesHierarchy, pivotItemScope)'
+    fullName: 'sortByValues(sortbyString, valuesHierarchy, pivotItemScope)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        sortByValues(sortbyString: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy,
+        pivotItemScope?: Array<PivotItem | string>): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortbyString
+          description: Represents whether the sorting is done in an ascending or descending order.
+          type:
+            - '"Ascending" | "Descending"'
         - id: valuesHierarchy
           description: Specifies the values to be used for sorting.
           type:
@@ -217,7 +355,7 @@ items:
       JavaScript object (typed as `Excel.Interfaces.PivotFieldData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     name: toJSON()
-    fullName: toJSON
+    fullName: toJSON()
     langs:
       - typeScript
     type: method

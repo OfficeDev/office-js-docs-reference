@@ -1,626 +1,1280 @@
 {
-  "kind": "package",
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.0.13",
+    "schemaVersion": 1000
+  },
+  "kind": "Package",
+  "canonicalReference": "office-runtime",
+  "docComment": "",
   "name": "office-runtime",
-  "summary": [],
-  "remarks": [],
-  "exports": {
-    "OfficeRuntime": {
-      "kind": "namespace",
-      "deprecatedMessage": [],
-      "summary": [
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "",
+      "name": "",
+      "members": [
         {
-          "kind": "text",
-          "text": "Office Runtime namespace"
+          "kind": "Namespace",
+          "canonicalReference": "(OfficeRuntime:namespace)",
+          "docComment": "/**\n * Office Runtime namespace\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare namespace "
+            },
+            {
+              "kind": "Reference",
+              "text": "OfficeRuntime"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "OfficeRuntime",
+          "members": [
+            {
+              "kind": "Interface",
+              "canonicalReference": "(AsyncStorage:interface)",
+              "docComment": "/**\n * Asynchronous, global, and persistent key-value storage that can be used by Excel Custom Functions.\n *\n * @remarks\n *\n * Each add-in instance has its own storage partition, unique to a user and their device.\n *\n * The default amount of total storage allowed per add-in is 5MB.\n *\n * Each method listed below returns a Promise object.\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AsyncStorage"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "AsyncStorage",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(getAllKeys:0)",
+                  "docComment": "/**\n * Returns a Promise with all keys.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "getAllKeys"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "keys"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: string[]) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string[]>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 12,
+                    "endIndex": 14
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 11
+                      }
+                    }
+                  ],
+                  "name": "getAllKeys"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(getItem:0)",
+                  "docComment": "/**\n * Retrieves an object based on a key and invokes a callback when finished. Returns a Promise.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "getItem"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "key"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "result"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: string) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 16,
+                    "endIndex": 18
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 15
+                      }
+                    }
+                  ],
+                  "name": "getItem"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(multiGet:0)",
+                  "docComment": "/**\n * Fetches a batch of keys, specified in the `keys` array. When a key doesn't exist, returns null.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "multiGet"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "keys"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "errors"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[], "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "result"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: string[][]) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string[][]>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 16,
+                    "endIndex": 18
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "keys",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 15
+                      }
+                    }
+                  ],
+                  "name": "multiGet"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(multiRemove:0)",
+                  "docComment": "/**\n * Deletes a batch of keys, specified in the `keys` array.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "multiRemove"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "keys"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "errors"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 16
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "keys",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "multiRemove"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(multiSet:0)",
+                  "docComment": "/**\n * Stores multiple key-value pairs in one batch. Returns a Promise. When a key doesn't exist, returns null.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "multiSet"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "keyValuePairs"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[][]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "errors"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 16
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "keyValuePairs",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "multiSet"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(removeItem:0)",
+                  "docComment": "/**\n * Removes an item for specified key and invokes a callback when finished. Returns a Promise.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "removeItem"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "key"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ") => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 16
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "removeItem"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(setItem:0)",
+                  "docComment": "/**\n * Assigns the value for a key-value pair and invokes a callback when finished. Returns a Promise.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "setItem"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "key"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "value"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ") => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 18,
+                    "endIndex": 20
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "value",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 9
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 12,
+                        "endIndex": 17
+                      }
+                    }
+                  ],
+                  "name": "setItem"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(Dialog:interface)",
+              "docComment": "/**\n * Object representing the dialog box.\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Dialog"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "Dialog",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(close:0)",
+                  "docComment": "/**\n * Method that closes a dialog box.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "close"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [],
+                  "name": "close"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Function",
+              "canonicalReference": "(displayWebDialog:0)",
+              "docComment": "/**\n * Enables you to pop up a web dialog box.\n *\n * @param url - *\n *\n * @param  - options\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export function "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "displayWebDialog"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "url"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "options"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DisplayWebDialogOptions"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Dialog"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 15
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 0,
+              "parameters": [
+                {
+                  "parameterName": "url",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  }
+                }
+              ],
+              "name": "displayWebDialog"
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(DisplayWebDialogOptions:interface)",
+              "docComment": "/**\n * Provides options for how a dialog is displayed.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DisplayWebDialogOptions"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "DisplayWebDialogOptions",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(onMessage:0)",
+                  "docComment": "/**\n * Callback that is run when the dialog sends a message to its parent.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "onMessage"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "message"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "dialog"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Dialog"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 10,
+                    "endIndex": 11
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "message",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "dialog",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 9
+                      }
+                    }
+                  ],
+                  "name": "onMessage"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(onRuntimeError:0)",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "onRuntimeError"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "dialog"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Dialog"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 10,
+                    "endIndex": 11
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "error",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "dialog",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 9
+                      }
+                    }
+                  ],
+                  "name": "onRuntimeError"
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "displayInIFrame",
+                  "docComment": "/**\n * Determines whether the dialog box displays as a popup (false) or within an IFrame (true). This setting is only applicable to custom functions running on Excel Online.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "displayInIFrame"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "displayInIFrame",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "height",
+                  "docComment": "/**\n * Defines the height of the dialog box as a percentage of the current display.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "height"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "height",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "hideTitle",
+                  "docComment": "/**\n * True if title is hidden from the dialog box.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "hideTitle"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "hideTitle",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "onClose",
+                  "docComment": "/**\n * Callback that is run when the dialog box is closed.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "onClose"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "() => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "onClose",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "width",
+                  "docComment": "/**\n * Defines the width of the dialog box as a percentage of the current display.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "width"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "width",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "AsyncStorage",
+              "docComment": "/**\n * Asynchronous, global, and persistent key-value storage that can be used by Excel Custom Functions.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "AsyncStorage"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AsyncStorage"
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "AsyncStorage",
+              "variableTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            }
+          ]
         }
-      ],
-      "remarks": [],
-      "isBeta": false,
-      "exports": {
-        "AsyncStorage": {
-          "kind": "interface",
-          "extends": "",
-          "implements": "",
-          "typeParameters": [],
-          "deprecatedMessage": [],
-          "summary": [
-            {
-              "kind": "text",
-              "text": "Asynchronous, global, and persistent key-value storage that can be used by Excel Custom Functions."
-            }
-          ],
-          "remarks": [
-            {
-              "kind": "text",
-              "text": "Each add-in instance has its own storage partition, unique to a user and their device."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "The default amount of total storage allowed per add-in is 5MB."
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "text",
-              "text": "Each method listed below returns a Promise object."
-            }
-          ],
-          "isBeta": true,
-          "isSealed": false,
-          "members": {
-            "getAllKeys": {
-              "kind": "method",
-              "signature": "getAllKeys(callback?: (error?: Error, keys?: string[]) => void): Promise<string[]>;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "Promise<string[]>",
-                "description": []
-              },
-              "parameters": {
-                "callback": {
-                  "name": "callback",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "(error?: Error, keys?: string[]) => void"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Returns a Promise with all keys."
-                }
-              ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
-            "getItem": {
-              "kind": "method",
-              "signature": "getItem(key: string, callback?: (error?: Error, result?: string) => void): Promise<string>;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "Promise<string>",
-                "description": []
-              },
-              "parameters": {
-                "key": {
-                  "name": "key",
-                  "description": [],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "string"
-                },
-                "callback": {
-                  "name": "callback",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "(error?: Error, result?: string) => void"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Retrieves an object based on a key and invokes a callback when finished. Returns a Promise."
-                }
-              ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
-            "multiGet": {
-              "kind": "method",
-              "signature": "multiGet(keys: string[], callback?: (errors?: Error[], result?: string[][]) => void): Promise<string[][]>;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "Promise<string[][]>",
-                "description": []
-              },
-              "parameters": {
-                "keys": {
-                  "name": "keys",
-                  "description": [],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "string[]"
-                },
-                "callback": {
-                  "name": "callback",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "(errors?: Error[], result?: string[][]) => void"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Fetches a batch of keys, specified in the "
-                },
-                {
-                  "kind": "code",
-                  "text": "keys",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " array. When a key doesn't exist, returns null."
-                }
-              ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
-            "multiRemove": {
-              "kind": "method",
-              "signature": "multiRemove(keys: string[], callback?: (errors?: Error[]) => void): Promise<void>;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "Promise<void>",
-                "description": []
-              },
-              "parameters": {
-                "keys": {
-                  "name": "keys",
-                  "description": [],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "string[]"
-                },
-                "callback": {
-                  "name": "callback",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "(errors?: Error[]) => void"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Deletes a batch of keys, specified in the "
-                },
-                {
-                  "kind": "code",
-                  "text": "keys",
-                  "highlighter": "plain"
-                },
-                {
-                  "kind": "text",
-                  "text": " array."
-                }
-              ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
-            "multiSet": {
-              "kind": "method",
-              "signature": "multiSet(keyValuePairs: string[][], callback?: (errors?: Error[]) => void): Promise<void>;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "Promise<void>",
-                "description": []
-              },
-              "parameters": {
-                "keyValuePairs": {
-                  "name": "keyValuePairs",
-                  "description": [],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "string[][]"
-                },
-                "callback": {
-                  "name": "callback",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "(errors?: Error[]) => void"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Stores multiple key-value pairs in one batch. Returns a Promise. When a key doesn't exist, returns null."
-                }
-              ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
-            "removeItem": {
-              "kind": "method",
-              "signature": "removeItem(key: string, callback?: (error?: Error) => void): Promise<void>;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "Promise<void>",
-                "description": []
-              },
-              "parameters": {
-                "key": {
-                  "name": "key",
-                  "description": [],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "string"
-                },
-                "callback": {
-                  "name": "callback",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "(error?: Error) => void"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Removes an item for specified key and invokes a callback when finished. Returns a Promise."
-                }
-              ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
-            "setItem": {
-              "kind": "method",
-              "signature": "setItem(key: string, value: string, callback?: (error?: Error) => void): Promise<void>;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "Promise<void>",
-                "description": []
-              },
-              "parameters": {
-                "key": {
-                  "name": "key",
-                  "description": [],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "string"
-                },
-                "value": {
-                  "name": "value",
-                  "description": [],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "string"
-                },
-                "callback": {
-                  "name": "callback",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "(error?: Error) => void"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Assigns the value for a key-value pair and invokes a callback when finished. Returns a Promise."
-                }
-              ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            }
-          }
-        },
-        "Dialog": {
-          "kind": "interface",
-          "extends": "",
-          "implements": "",
-          "typeParameters": [],
-          "deprecatedMessage": [],
-          "summary": [
-            {
-              "kind": "text",
-              "text": "Object representing the dialog box."
-            }
-          ],
-          "remarks": [],
-          "isBeta": true,
-          "isSealed": false,
-          "members": {
-            "close": {
-              "kind": "method",
-              "signature": "close(): Promise<void>;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "Promise<void>",
-                "description": []
-              },
-              "parameters": {},
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Method that closes a dialog box."
-                }
-              ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            }
-          }
-        },
-        "displayWebDialog": {
-          "kind": "function",
-          "signature": "export function displayWebDialog(url: string, options: DisplayWebDialogOptions): Promise<Dialog>;",
-          "returnValue": {
-            "type": "Promise<Dialog>",
-            "description": []
-          },
-          "parameters": {
-            "url": {
-              "name": "url",
-              "description": [
-                {
-                  "kind": "text",
-                  "text": "*"
-                }
-              ],
-              "isOptional": false,
-              "isSpread": false,
-              "type": "string"
-            },
-            "options": {
-              "name": "options",
-              "description": [],
-              "isOptional": false,
-              "isSpread": false,
-              "type": "DisplayWebDialogOptions"
-            }
-          },
-          "deprecatedMessage": [],
-          "summary": [
-            {
-              "kind": "text",
-              "text": "Enables you to pop up a web dialog box."
-            }
-          ],
-          "remarks": [],
-          "isBeta": false
-        },
-        "DisplayWebDialogOptions": {
-          "kind": "interface",
-          "extends": "",
-          "implements": "",
-          "typeParameters": [],
-          "deprecatedMessage": [],
-          "summary": [
-            {
-              "kind": "text",
-              "text": "Provides options for how a dialog is displayed."
-            }
-          ],
-          "remarks": [],
-          "isBeta": false,
-          "isSealed": false,
-          "members": {
-            "displayInIFrame": {
-              "kind": "property",
-              "signature": "displayInIFrame?: boolean;",
-              "isOptional": true,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "boolean",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Determines whether the dialog box displays as a popup (false) or within an IFrame (true). This setting is only applicable to custom functions running on Excel Online."
-                }
-              ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
-            },
-            "height": {
-              "kind": "property",
-              "signature": "height?: string;",
-              "isOptional": true,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "string",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Defines the height of the dialog box as a percentage of the current display."
-                }
-              ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
-            },
-            "hideTitle": {
-              "kind": "property",
-              "signature": "hideTitle?: boolean;",
-              "isOptional": true,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "boolean",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "True if title is hidden from the dialog box."
-                }
-              ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
-            },
-            "onClose": {
-              "kind": "property",
-              "signature": "onClose?: () => void;",
-              "isOptional": true,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "() => void",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Callback that is run when the dialog box is closed."
-                }
-              ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
-            },
-            "onMessage": {
-              "kind": "method",
-              "signature": "onMessage?(message: string, dialog?: Dialog): void;",
-              "accessModifier": "",
-              "isOptional": true,
-              "isStatic": false,
-              "returnValue": {
-                "type": "void",
-                "description": []
-              },
-              "parameters": {
-                "message": {
-                  "name": "message",
-                  "description": [],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "string"
-                },
-                "dialog": {
-                  "name": "dialog",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "Dialog"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Callback that is run when the dialog sends a message to its parent."
-                }
-              ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
-            "onRuntimeError": {
-              "kind": "method",
-              "signature": "onRuntimeError?(error: Error, dialog?: Dialog): void;",
-              "accessModifier": "",
-              "isOptional": true,
-              "isStatic": false,
-              "returnValue": {
-                "type": "void",
-                "description": []
-              },
-              "parameters": {
-                "error": {
-                  "name": "error",
-                  "description": [],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "Error"
-                },
-                "dialog": {
-                  "name": "dialog",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "Dialog"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
-            "width": {
-              "kind": "property",
-              "signature": "width?: string;",
-              "isOptional": true,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "string",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Defines the width of the dialog box as a percentage of the current display."
-                }
-              ],
-              "remarks": [],
-              "isBeta": true,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false,
-              "isEventProperty": false
-            }
-          }
-        }
-      }
+      ]
     }
-  }
+  ]
 }

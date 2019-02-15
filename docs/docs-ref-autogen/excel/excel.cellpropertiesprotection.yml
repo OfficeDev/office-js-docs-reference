@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.CellPropertiesProtection
+    summary: >-
+      Represents the returned format.protection properties of getCell/Row/ColumnProperties or format.protection input
+      parameter of setCell/Row/ColumnProperties.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.CellPropertiesProtection
+    fullName: Excel.CellPropertiesProtection
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.CellPropertiesProtection.formulaHidden
+      - excel.Excel.CellPropertiesProtection.locked
+  - uid: excel.Excel.CellPropertiesProtection.formulaHidden
+    isPreview: true
+    name: formulaHidden
+    fullName: formulaHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.CellPropertiesProtection.locked
+    isPreview: true
+    name: locked
+    fullName: locked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'locked?: boolean;'
+      return:
+        type:
+          - boolean

@@ -37,7 +37,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'asyncContext?: any;'
+      content: 'asyncContext?: any'
       return:
         type:
           - any
@@ -52,7 +52,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'selectionMode?: Office.SelectionMode | string;'
+      content: 'selectionMode?: Office.SelectionMode | string'
       return:
         type:
           - Office.SelectionMode | string

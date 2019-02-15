@@ -15,30 +15,12 @@ items:
     type: interface
     package: excel
     children:
-      - excel.Excel.WorksheetFormatChangedEventArgs.address
       - excel.Excel.WorksheetFormatChangedEventArgs.getRange
       - excel.Excel.WorksheetFormatChangedEventArgs.getRangeOrNullObject
+      - excel.Excel.WorksheetFormatChangedEventArgs.address
       - excel.Excel.WorksheetFormatChangedEventArgs.source
       - excel.Excel.WorksheetFormatChangedEventArgs.type
       - excel.Excel.WorksheetFormatChangedEventArgs.worksheetId
-  - uid: excel.Excel.WorksheetFormatChangedEventArgs.address
-    summary: >-
-      Gets the range address that represents the changed area of a specific worksheet.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: address
-    fullName: address
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'address: string;'
-      return:
-        type:
-          - string
   - uid: excel.Excel.WorksheetFormatChangedEventArgs.getRange
     summary: >-
       Gets the range that represents the changed area of a specific worksheet.
@@ -48,7 +30,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getRange(ctx)
-    fullName: getRange
+    fullName: getRange(ctx)
     langs:
       - typeScript
     type: method
@@ -72,7 +54,7 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: getRangeOrNullObject(ctx)
-    fullName: getRangeOrNullObject
+    fullName: getRangeOrNullObject(ctx)
     langs:
       - typeScript
     type: method
@@ -87,6 +69,24 @@ items:
           description: ''
           type:
             - excel.Excel.RequestContext
+  - uid: excel.Excel.WorksheetFormatChangedEventArgs.address
+    summary: >-
+      Gets the range address that represents the changed area of a specific worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address: string;'
+      return:
+        type:
+          - string
   - uid: excel.Excel.WorksheetFormatChangedEventArgs.source
     summary: >-
       Gets the source of the event. See Excel.EventSource for details.

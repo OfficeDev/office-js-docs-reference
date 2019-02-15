@@ -1,7 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData
-    summary: 'An interface for updating data on the ChartBinOptions object, for use in "chartBinOptions.set({ ... })".'
+    summary: >-
+      An interface for updating data on the ChartBinOptions object, for use in "chartBinOptions.set(<!-- -->{ ... }<!--
+      -->)".
     name: Excel.Interfaces.ChartBinOptionsUpdateData
     fullName: Excel.Interfaces.ChartBinOptionsUpdateData
     langs:
