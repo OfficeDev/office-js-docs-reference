@@ -185,7 +185,7 @@ items:
               await context.sync();
 
               if (frozenRange.isNullObject) {
-                  OfficeHelpers.UI.notify(`The worksheet does not contain a frozen pane.`);
+                  console.log(`The worksheet does not contain a frozen pane.`);
               } else {
                   console.log(`The address of the frozen range (cells that are frozen in the top-and-left-most pane) is "${frozenRange.address}"`);
               }

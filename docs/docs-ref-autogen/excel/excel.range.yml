@@ -1842,10 +1842,8 @@ items:
               await context.sync();
 
               if (usedDataRange.isNullObject) {
-                  OfficeHelpers.UI.notify(
-                      "Need Data to Make Chart",
-                      "To create a meaningful chart, press 'Fill the table' (or add names to the Product column and numbers to some of the other cells). Then press 'Try to create chart' again."
-                  );
+                  console.log("Need Data to Make Chart");
+                  console.log("To create a meaningful chart, press 'Fill the table' (or add names to the Product column and numbers to some of the other cells). Then press 'Try to create chart' again.");
               } else {
                   const chart = sheet.charts.add(
                       Excel.ChartType.columnClustered,

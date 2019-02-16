@@ -148,7 +148,7 @@ items:
               await context.sync();
 
               if (myNamedItem.isNullObject) {
-                  OfficeHelpers.UI.notify(`There is no named item. Create it with "Add named item for a range" first.`);
+                  console.log(`There is no named item. Create it with "Add named item for a range" first.`);
               } else {                    
                   // Update named item to point to the second range
                   myNamedItem.formula = "=Sample!$B$10:$D$14";

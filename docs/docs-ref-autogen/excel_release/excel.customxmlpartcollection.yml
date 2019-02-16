@@ -126,8 +126,7 @@ items:
                       ${readableXml}`);
 
               } else {
-                  OfficeHelpers.UI.notify(`There are ${numberOfPartsInNamespace.value} XML parts with namespace ${contosoNamespace}.
-                      There should be exactly 1.`);
+                  console.log(`There are ${numberOfPartsInNamespace.value} XML parts with namespace ${contosoNamespace}. There should be exactly 1.`);
               }        
 
               await context.sync();
