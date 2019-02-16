@@ -8,12 +8,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
     name: Office.Item
     fullName: Office.Item
     langs:
@@ -23,9 +21,12 @@ items:
     children:
       - Outlook_1_7.Office.Item.addHandlerAsync
       - Outlook_1_7.Office.Item.addHandlerAsync_1
+      - Outlook_1_7.Office.Item.addHandlerAsync_2
       - Outlook_1_7.Office.Item.loadCustomPropertiesAsync
+      - Outlook_1_7.Office.Item.loadCustomPropertiesAsync_1
       - Outlook_1_7.Office.Item.removeHandlerAsync
       - Outlook_1_7.Office.Item.removeHandlerAsync_1
+      - Outlook_1_7.Office.Item.removeHandlerAsync_2
       - Outlook_1_7.Office.Item.body
       - Outlook_1_7.Office.Item.itemType
       - Outlook_1_7.Office.Item.notificationMessages
@@ -41,19 +42,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
-
-
-      In addition to this signature, the method also has the following signature:
-
-
-      `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) =>
-      void): void;`
+      Read</td></tr> </table>
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     langs:
@@ -101,12 +93,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
 
       #### Examples
 
@@ -155,6 +145,43 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
+  - uid: Outlook_1_7.Office.Item.addHandlerAsync_2
+    summary: >-
+      Adds an event handler for a supported event.
+
+
+      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
+      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> </table>
+    name: 'addHandlerAsync(eventType, handler)'
+    fullName: 'addHandlerAsync(eventType, handler)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addHandlerAsync(eventType: Office.EventType, handler: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: The event that should invoke the handler.
+          type:
+            - Office.EventType
+        - id: handler
+          description: >-
+            The function to handle the event. The function must accept a single parameter, which is an object literal.
+            The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
+          type:
+            - any
   - uid: Outlook_1_7.Office.Item.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
@@ -173,12 +200,58 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
+    name: 'loadCustomPropertiesAsync(callback, userContext)'
+    fullName: 'loadCustomPropertiesAsync(callback, userContext)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?:
+        any): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult.
+          type:
+            - '(result: Office.AsyncResult<CustomProperties>) => void'
+        - id: userContext
+          description: >-
+            Optional. Developers can provide any object they wish to access in the callback function. This object can be
+            accessed by the asyncResult.asyncContext property in the callback function.
+          type:
+            - any
+  - uid: Outlook_1_7.Office.Item.loadCustomPropertiesAsync_1
+    summary: >-
+      Asynchronously loads custom properties for this add-in on the selected item.
+
+
+      Custom properties are stored as key/value pairs on a per-app, per-item basis. This method returns a
+      CustomProperties object in the callback, which provides methods to access the custom properties specific to the
+      current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used
+      as secure storage.
+
+
+      The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can
+      be used to get, set, and remove custom properties from the item and save changes to the custom property set back
+      to the server.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> </table>
 
       #### Examples
 
@@ -223,15 +296,13 @@ items:
       }
 
       ```
-    name: 'loadCustomPropertiesAsync(callback, userContext)'
-    fullName: 'loadCustomPropertiesAsync(callback, userContext)'
+    name: loadCustomPropertiesAsync(callback)
+    fullName: loadCustomPropertiesAsync(callback)
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?:
-        any): void;
+      content: 'loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void): void;'
       return:
         type:
           - void
@@ -243,12 +314,6 @@ items:
             of type Office.AsyncResult.
           type:
             - '(result: Office.AsyncResult<CustomProperties>) => void'
-        - id: userContext
-          description: >-
-            Optional. Developers can provide any object they wish to access in the callback function. This object can be
-            accessed by the asyncResult.asyncContext property in the callback function.
-          type:
-            - any
   - uid: Outlook_1_7.Office.Item.removeHandlerAsync
     summary: >-
       Removes the event handlers for a supported event type.
@@ -260,19 +325,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
-
-
-      In addition to this signature, the method also has the following signature:
-
-
-      `removeHandlerAsync(eventType: Office.EventType, callback?: (result: Office.AsyncResult<void>) => void):
-      void;`
+      Read</td></tr> </table>
     name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: 'removeHandlerAsync(eventType, options, callback)'
     langs:
@@ -314,12 +370,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
     name: 'removeHandlerAsync(eventType, callback)'
     fullName: 'removeHandlerAsync(eventType, callback)'
     langs:
@@ -344,18 +398,47 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(result: Office.AsyncResult<void>) => void'
+  - uid: Outlook_1_7.Office.Item.removeHandlerAsync_2
+    summary: >-
+      Removes the event handlers for a supported event type.
+
+
+      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
+      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> </table>
+    name: removeHandlerAsync(eventType)
+    fullName: removeHandlerAsync(eventType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeHandlerAsync(eventType: Office.EventType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: The event that should revoke the handler.
+          type:
+            - Office.EventType
   - uid: Outlook_1_7.Office.Item.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
 
       #### Examples
 
@@ -401,12 +484,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
 
       #### Examples
 
@@ -436,12 +517,10 @@ items:
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
 
       #### Examples
 
@@ -489,12 +568,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
 
       #### Examples
 

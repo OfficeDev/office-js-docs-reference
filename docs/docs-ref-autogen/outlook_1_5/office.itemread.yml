@@ -19,7 +19,9 @@ items:
     package: Outlook_1_5
     children:
       - Outlook_1_5.Office.ItemRead.displayReplyAllForm
+      - Outlook_1_5.Office.ItemRead.displayReplyAllForm_1
       - Outlook_1_5.Office.ItemRead.displayReplyForm
+      - Outlook_1_5.Office.ItemRead.displayReplyForm_1
       - Outlook_1_5.Office.ItemRead.getEntities
       - Outlook_1_5.Office.ItemRead.getEntitiesByType
       - Outlook_1_5.Office.ItemRead.getFilteredEntitiesByName
@@ -53,12 +55,64 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
+    name: 'displayReplyAllForm(formData, callback)'
+    fullName: 'displayReplyAllForm(formData, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        displayReplyAllForm(formData: string | ReplyFormData, callback?: (result: Office.AsyncResult<void>) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formData
+          description: >-
+            A string that contains text and HTML and that represents the body of the reply form. The string is limited
+            to 32 KB OR an [Office.ReplyFormData](xref:Outlook_1_5.Office.ReplyFormData) object that contains body or
+            attachment data and a callback function.
+          type:
+            - string | ReplyFormData
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object.
+          type:
+            - '(result: Office.AsyncResult<void>) => void'
+  - uid: Outlook_1_5.Office.ItemRead.displayReplyAllForm_1
+    summary: >-
+      Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
+      attendees of the selected appointment.
+
+
+      In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-
+      or 1-column view.
+
+
+      If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.
+
+
+      When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to
+      download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown
+      in the form UI. If this isn't possible, then no error message is thrown.
+
+
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: displayReplyAllForm(formData)
     fullName: displayReplyAllForm(formData)
     langs:
@@ -74,8 +128,8 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR An [Office.ReplyFormData](xref:Outlook_1_5.Office.ReplyFormData) object that contains body or
-            attachment data and a callback function
+            to 32 KB OR an [Office.ReplyFormData](xref:Outlook_1_5.Office.ReplyFormData) object that contains body or
+            attachment data and a callback function.
           type:
             - string | ReplyFormData
   - uid: Outlook_1_5.Office.ItemRead.displayReplyForm
@@ -101,12 +155,64 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read/td<!-- -->&gt;</tr> </table>
+    name: 'displayReplyForm(formData, callback)'
+    fullName: 'displayReplyForm(formData, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        displayReplyForm(formData: string | ReplyFormData, callback?: (result: Office.AsyncResult<void>) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formData
+          description: >-
+            A string that contains text and HTML and that represents the body of the reply form. The string is limited
+            to 32 KB OR an [Office.ReplyFormData](xref:Outlook_1_5.Office.ReplyFormData) object that contains body or
+            attachment data and a callback function.
+          type:
+            - string | ReplyFormData
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object.
+          type:
+            - '(result: Office.AsyncResult<void>) => void'
+  - uid: Outlook_1_5.Office.ItemRead.displayReplyForm_1
+    summary: >-
+      Displays a reply form that includes only the sender of the selected message or the organizer of the selected
+      appointment.
+
+
+      In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-
+      or 1-column view.
+
+
+      If any of the string parameters exceed their limits, displayReplyForm throws an exception.
+
+
+      When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to
+      download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown
+      in the form UI. If this isn't possible, then no error message is thrown.
+
+
+      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: displayReplyForm(formData)
     fullName: displayReplyForm(formData)
     langs:
@@ -122,7 +228,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB. OR An [Office.ReplyFormData](xref:Outlook_1_5.Office.ReplyFormData) object that contains body or
+            to 32 KB OR an [Office.ReplyFormData](xref:Outlook_1_5.Office.ReplyFormData) object that contains body or
             attachment data and a callback function.
           type:
             - string | ReplyFormData
@@ -134,12 +240,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: getEntities()
     fullName: getEntities()
     langs:
@@ -159,12 +263,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
 
 
       While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access,
@@ -172,7 +274,7 @@ items:
 
 
       <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission
-      Leve</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
+      Level</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
       <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr> <tr>
       <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td>
       <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td>
@@ -213,12 +315,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: getFilteredEntitiesByName(name)
     fullName: getFilteredEntitiesByName(name)
     langs:
@@ -262,12 +362,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: getRegExMatches()
     fullName: getRegExMatches()
     langs:
@@ -302,12 +400,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: getRegExMatchesByName(name)
     fullName: getRegExMatchesByName(name)
     langs:
@@ -330,12 +426,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
 
 
       **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
@@ -363,12 +457,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
 
 
       The itemClass property specifies the message class of the selected item. The following are the default message
@@ -411,12 +503,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: itemId
     fullName: itemId
     langs:
@@ -438,12 +528,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: normalizedSubject
     fullName: normalizedSubject
     langs:
@@ -468,12 +556,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
     name: subject
     fullName: subject
     langs:

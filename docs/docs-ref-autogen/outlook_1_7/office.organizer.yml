@@ -8,12 +8,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
     name: Office.Organizer
     fullName: Office.Organizer
     langs:
@@ -22,6 +20,8 @@ items:
     package: Outlook_1_7
     children:
       - Outlook_1_7.Office.Organizer.getAsync
+      - Outlook_1_7.Office.Organizer.getAsync_1
+      - Outlook_1_7.Office.Organizer.getAsync_2
   - uid: Outlook_1_7.Office.Organizer.getAsync
     summary: >-
       Gets the organizer value of an appointment as an
@@ -30,25 +30,10 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.organizer.getAsync(
-          function(asyncResult) {
-              console.log(JSON.stringify(asyncResult));
-          }
-      );
-
-      ```
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
     langs:
@@ -76,3 +61,70 @@ items:
             value, as an EmailAddressDetails object.
           type:
             - '(result: Office.AsyncResult<EmailAddressDetails>) => void'
+  - uid: Outlook_1_7.Office.Organizer.getAsync_1
+    summary: >-
+      Gets the organizer value of an appointment as an
+      [Office.EmailAddressDetails](xref:Outlook_1_7.Office.EmailAddressDetails) in the asyncResult.value property.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.organizer.getAsync(
+          function(asyncResult) {
+              console.log(JSON.stringify(asyncResult));
+          }
+      );
+
+      ```
+    name: getAsync(callback)
+    fullName: getAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(callback?: (result: Office.AsyncResult<EmailAddressDetails>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter,
+            asyncResult, which is an asyncResult object. The `value` property of the result is message's organizer
+            value, as an EmailAddressDetails object.
+          type:
+            - '(result: Office.AsyncResult<EmailAddressDetails>) => void'
+  - uid: Outlook_1_7.Office.Organizer.getAsync_2
+    summary: >-
+      Gets the organizer value of an appointment as an
+      [Office.EmailAddressDetails](xref:Outlook_1_7.Office.EmailAddressDetails) in the asyncResult.value property.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
+    name: getAsync()
+    fullName: getAsync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(): void;'
+      return:
+        type:
+          - void
+        description: ''
