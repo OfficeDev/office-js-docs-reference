@@ -15,7 +15,6 @@ items:
     package: visio
     children:
       - visio.Visio.Shape.comments
-      - visio.Visio.Shape.context
       - visio.Visio.Shape.getBounds
       - visio.Visio.Shape.hyperlinks
       - visio.Visio.Shape.id
@@ -46,20 +45,6 @@ items:
       return:
         type:
           - Visio.CommentCollection
-  - uid: visio.Visio.Shape.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: visio.Visio.Shape.getBounds
     summary: |-
       Returns the BoundingBox object that specifies bounding box of the shape.

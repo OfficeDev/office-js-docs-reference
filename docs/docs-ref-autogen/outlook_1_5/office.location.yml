@@ -6,12 +6,10 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
     name: Office.Location
     fullName: Office.Location
     langs:
@@ -21,10 +19,10 @@ items:
     children:
       - Outlook_1_5.Office.Location.getAsync
       - Outlook_1_5.Office.Location.getAsync_1
+      - Outlook_1_5.Office.Location.getAsync_2
       - Outlook_1_5.Office.Location.setAsync
       - Outlook_1_5.Office.Location.setAsync_1
       - Outlook_1_5.Office.Location.setAsync_2
-      - Outlook_1_5.Office.Location.setAsync_3
   - uid: Outlook_1_5.Office.Location.getAsync
     summary: >-
       Gets the location of an appointment.
@@ -33,18 +31,10 @@ items:
       The getAsync method starts an asynchronous call to the Exchange server to get the location of an appointment. The
       location of the appointment is provided as a string in the asyncResult.value property.
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
-
-
-      In addition to this signature, the method also has the following signature:
-
-
-      `getAsync(callback: (result: Office.AsyncResult<string>) => void): void;`
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
 
       #### Examples
 
@@ -99,12 +89,10 @@ items:
       The getAsync method starts an asynchronous call to the Exchange server to get the location of an appointment. The
       location of the appointment is provided as a string in the asyncResult.value property.
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
     name: getAsync(callback)
     fullName: getAsync(callback)
     langs:
@@ -126,6 +114,32 @@ items:
             \[Api set: Mailbox 1.1\]
           type:
             - '(result: Office.AsyncResult<string>) => void'
+  - uid: Outlook_1_5.Office.Location.getAsync_2
+    summary: >-
+      Gets the location of an appointment.
+
+
+      The getAsync method starts an asynchronous call to the Exchange server to get the location of an appointment. The
+      location of the appointment is provided as a string in the asyncResult.value property.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
+    name: getAsync()
+    fullName: getAsync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: Outlook_1_5.Office.Location.setAsync
     summary: >-
       Sets the location of an appointment.
@@ -134,28 +148,12 @@ items:
       The setAsync method starts an asynchronous call to the Exchange server to set the location of an appointment.
       Setting the location of an appointment overwrites the current location.
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>DataExceedsMaximumSize - The location parameter is longer than 255
-      characters.</td></tr></table>
-
-
-      In addition to this signature, the method also has the following signatures:
-
-
-      `setAsync(location: string): void;`
-
-
-      `setAsync(location: string, options: Office.AsyncContextOptions): void;`
-
-
-      `setAsync(location: string, callback: (result: Office.AsyncResult<void>) => void): void;`
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The location parameter is longer than 255 characters.</td></tr>
+      </table>
     name: 'setAsync(location, options, callback)'
     fullName: 'setAsync(location, options, callback)'
     langs:
@@ -198,16 +196,12 @@ items:
       The setAsync method starts an asynchronous call to the Exchange server to set the location of an appointment.
       Setting the location of an appointment overwrites the current location.
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>DataExceedsMaximumSize - The location parameter is longer than 255
-      characters.</td></tr></table>
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The location parameter is longer than 255 characters.</td></tr>
+      </table>
     name: setAsync(location)
     fullName: setAsync(location)
     langs:
@@ -235,59 +229,12 @@ items:
       The setAsync method starts an asynchronous call to the Exchange server to set the location of an appointment.
       Setting the location of an appointment overwrites the current location.
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>DataExceedsMaximumSize - The location parameter is longer than 255
-      characters.</td></tr></table>
-    name: 'setAsync(location, options)'
-    fullName: 'setAsync(location, options)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setAsync(location: string, options: Office.AsyncContextOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: location
-          description: The location of the appointment. The string is limited to 255 characters.
-          type:
-            - string
-        - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
-
-
-            \[Api set: Mailbox 1.1\]
-          type:
-            - Office.AsyncContextOptions
-  - uid: Outlook_1_5.Office.Location.setAsync_3
-    summary: >-
-      Sets the location of an appointment.
-
-
-      The setAsync method starts an asynchronous call to the Exchange server to set the location of an appointment.
-      Setting the location of an appointment overwrites the current location.
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>DataExceedsMaximumSize - The location parameter is longer than 255
-      characters.</td></tr></table>
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The location parameter is longer than 255 characters.</td></tr>
+      </table>
 
       #### Examples
 

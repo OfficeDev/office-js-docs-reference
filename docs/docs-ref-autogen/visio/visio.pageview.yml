@@ -15,7 +15,6 @@ items:
     package: visio
     children:
       - visio.Visio.PageView.centerViewportOnShape
-      - visio.Visio.PageView.context
       - visio.Visio.PageView.fitToWindow
       - visio.Visio.PageView.getPosition
       - visio.Visio.PageView.getSelection
@@ -65,20 +64,6 @@ items:
           description: ShapeId to be seen in the center.
           type:
             - number
-  - uid: visio.Visio.PageView.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: visio.Visio.PageView.fitToWindow
     summary: |-
       Fit Page to current window.

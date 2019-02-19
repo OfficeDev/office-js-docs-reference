@@ -15,7 +15,6 @@ items:
     package: visio
     children:
       - visio.Visio.Hyperlink.address
-      - visio.Visio.Hyperlink.context
       - visio.Visio.Hyperlink.description
       - visio.Visio.Hyperlink.extraInfo
       - visio.Visio.Hyperlink.load
@@ -38,20 +37,6 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Hyperlink.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: visio.Visio.Hyperlink.description
     summary: |-
       Gets the description of a hyperlink. Read-only.

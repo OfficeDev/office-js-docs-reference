@@ -16,7 +16,6 @@ items:
     children:
       - visio.Visio.ShapeView.addOverlay
       - visio.Visio.ShapeView.addOverlay_1
-      - visio.Visio.ShapeView.context
       - visio.Visio.ShapeView.highlight
       - visio.Visio.ShapeView.load
       - visio.Visio.ShapeView.load_1
@@ -97,8 +96,8 @@ items:
     type: method
     syntax:
       content: >-
-        addOverlay(OverlayTypeString: "Text" | "Image" | "Html", Content: string, OverlayHorizontalAlignment: "Left" |
-        "Center" | "Right", OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number, Height: number):
+        addOverlay(OverlayTypeString: "Text" | "Image", Content: string, OverlayHorizontalAlignment: "Left" | "Center" |
+        "Right", OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number, Height: number):
         OfficeExtension.ClientResult<number>;
       return:
         type:
@@ -108,7 +107,7 @@ items:
         - id: OverlayTypeString
           description: An Overlay Type. Can be 'Text' or 'Image'.
           type:
-            - '"Text" | "Image" | "Html"'
+            - '"Text" | "Image"'
         - id: Content
           description: Content of Overlay.
           type:
@@ -129,20 +128,6 @@ items:
           description: Overlay Height.
           type:
             - number
-  - uid: visio.Visio.ShapeView.context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type:
-          - RequestContext
   - uid: visio.Visio.ShapeView.highlight
     summary: |-
       Represents the highlight around the shape.

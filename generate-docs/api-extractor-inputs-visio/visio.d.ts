@@ -159,8 +159,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class Application extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Show or hide the iFrame application borders.
@@ -244,8 +242,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class Document extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Represents a Visio application instance that contains this document. Read-only.
@@ -393,8 +389,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class DocumentView extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Disable Hyperlinks.
@@ -409,13 +403,6 @@ export declare namespace Visio {
          * [Api set:  1.1]
          */
         disablePan: boolean;
-        /**
-         *
-         * Disable PanZoomWindow.
-         *
-         * [Api set:  1.1]
-         */
-        disablePanZoomWindow: boolean;
         /**
          *
          * Disable Zoom.
@@ -479,8 +466,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class Page extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * All shapes in the Page, including subshapes. Read-only.
@@ -600,8 +585,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class PageView extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
@@ -706,8 +689,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class PageCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Visio.Page[];
         /**
@@ -757,8 +738,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class ShapeCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Visio.Shape[];
         /**
@@ -808,8 +787,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class Shape extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Returns the Comments Collection. Read-only.
@@ -929,8 +906,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class ShapeView extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Represents the highlight around the shape.
@@ -979,7 +954,7 @@ export declare namespace Visio {
          * @param Width - Overlay Width.
          * @param Height - Overlay Height.
          */
-        addOverlay(OverlayTypeString: "Text" | "Image" | "Html", Content: string, OverlayHorizontalAlignment: "Left" | "Center" | "Right", OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number, Height: number): OfficeExtension.ClientResult<number>;
+        addOverlay(OverlayTypeString: "Text" | "Image", Content: string, OverlayHorizontalAlignment: "Left" | "Center" | "Right", OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number, Height: number): OfficeExtension.ClientResult<number>;
         /**
          *
          * Removes particular overlay or all overlays on the Shape.
@@ -1104,8 +1079,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class ShapeDataItemCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Visio.ShapeDataItem[];
         /**
@@ -1155,8 +1128,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class ShapeDataItem extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * A string that specifies the format of the shape data item. Read-only.
@@ -1220,8 +1191,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class HyperlinkCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Visio.Hyperlink[];
         /**
@@ -1271,8 +1240,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class Hyperlink extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the address of the Hyperlink object. Read-only.
@@ -1336,8 +1303,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class CommentCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /** Gets the loaded child items in this collection. */
         readonly items: Visio.Comment[];
         /**
@@ -1387,8 +1352,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class Comment extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * A string that specifies the name of the author of the comment.
@@ -1459,8 +1422,6 @@ export declare namespace Visio {
      * [Api set:  1.1]
      */
     export class Selection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
         /**
          *
          * Gets the Shapes of the Selection. Read-only.
@@ -1566,12 +1527,6 @@ export declare namespace Visio {
          *
          */
         image = "Image",
-        /**
-         *
-         * html
-         *
-         */
-        html = "Html",
     }
     /**
      *
@@ -1671,13 +1626,6 @@ export declare namespace Visio {
              * [Api set:  1.1]
              */
             disablePan?: boolean;
-            /**
-             *
-             * Disable PanZoomWindow.
-             *
-             * [Api set:  1.1]
-             */
-            disablePanZoomWindow?: boolean;
             /**
              *
              * Disable Zoom.
@@ -1841,13 +1789,6 @@ export declare namespace Visio {
              * [Api set:  1.1]
              */
             disablePan?: boolean;
-            /**
-             *
-             * Disable PanZoomWindow.
-             *
-             * [Api set:  1.1]
-             */
-            disablePanZoomWindow?: boolean;
             /**
              *
              * Disable Zoom.
@@ -2199,13 +2140,6 @@ export declare namespace Visio {
              * [Api set:  1.1]
              */
             disablePan?: boolean;
-            /**
-             *
-             * Disable PanZoomWindow.
-             *
-             * [Api set:  1.1]
-             */
-            disablePanZoomWindow?: boolean;
             /**
              *
              * Disable Zoom.
@@ -2662,9 +2596,9 @@ export declare namespace Visio {
         readonly document: Document;
     }
     /**
- * Executes a batch script that performs actions on the Visio object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
- * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
- */
+     * Executes a batch script that performs actions on the Visio object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
+     */
     export function run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Visio object model, using the request context of a previously-created API object.
@@ -2682,13 +2616,14 @@ export declare namespace Visio {
      * Executes a batch script that performs actions on the Visio object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param contextObject - A previously-created Visio.RequestContext. This context will get re-used by the batch function (instead of having a new context created). This means that the batch will be able to pick up changes made to existing API objects, if those objects were derived from this same context.
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the RequestContext is required to get access to the Visio object model from the add-in.
+     * 
      * @remarks
      * In addition to this signature, the method also has the following signatures:
-     *
+     * 
      * `run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
-     *
+     * 
      * `run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
-     *
+     * 
      * `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
      */
     export function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;

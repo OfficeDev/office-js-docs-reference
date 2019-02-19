@@ -3,9 +3,9 @@ items:
     href: ~/docs-ref-autogen/overview/office.md
     items:
       - name: Excel
-        uid: excel
+        uid: ''
         items:
-          - name: Custom Functions (Preview)
+          - name: Custom Functions - Preview
             uid: ''
             items:
               - name: Custom functions runtime
@@ -32,679 +32,1104 @@ items:
                     uid: office-runtime.OfficeRuntime.Dialog
                   - name: DisplayWebDialogOptions
                     uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
-          - name: Enums
-            uid: ''
+          - name: Excel - Preview
+            uid: excel
             items:
-              - name: AggregationFunction
-                uid: excel.Excel.AggregationFunction
-              - name: AutoFillType
-                uid: excel.Excel.AutoFillType
-              - name: BindingType
-                uid: excel.Excel.BindingType
-              - name: BorderIndex
-                uid: excel.Excel.BorderIndex
-              - name: BorderLineStyle
-                uid: excel.Excel.BorderLineStyle
-              - name: BorderWeight
-                uid: excel.Excel.BorderWeight
-              - name: BuiltInStyle
-                uid: excel.Excel.BuiltInStyle
-              - name: CalculationMode
-                uid: excel.Excel.CalculationMode
-              - name: CalculationState
-                uid: excel.Excel.CalculationState
-              - name: CalculationType
-                uid: excel.Excel.CalculationType
-              - name: ChartAxisCategoryType
-                uid: excel.Excel.ChartAxisCategoryType
-              - name: ChartAxisDisplayUnit
-                uid: excel.Excel.ChartAxisDisplayUnit
-              - name: ChartAxisGroup
-                uid: excel.Excel.ChartAxisGroup
-              - name: ChartAxisPosition
-                uid: excel.Excel.ChartAxisPosition
-              - name: ChartAxisScaleType
-                uid: excel.Excel.ChartAxisScaleType
-              - name: ChartAxisTickLabelPosition
-                uid: excel.Excel.ChartAxisTickLabelPosition
-              - name: ChartAxisTickMark
-                uid: excel.Excel.ChartAxisTickMark
-              - name: ChartAxisTimeUnit
-                uid: excel.Excel.ChartAxisTimeUnit
-              - name: ChartAxisType
-                uid: excel.Excel.ChartAxisType
-              - name: ChartBinType
-                uid: excel.Excel.ChartBinType
-              - name: ChartBoxQuartileCalculation
-                uid: excel.Excel.ChartBoxQuartileCalculation
-              - name: ChartColorScheme
-                uid: excel.Excel.ChartColorScheme
-              - name: ChartDataLabelPosition
-                uid: excel.Excel.ChartDataLabelPosition
-              - name: ChartDisplayBlanksAs
-                uid: excel.Excel.ChartDisplayBlanksAs
-              - name: ChartErrorBarsInclude
-                uid: excel.Excel.ChartErrorBarsInclude
-              - name: ChartErrorBarsType
-                uid: excel.Excel.ChartErrorBarsType
-              - name: ChartGradientStyle
-                uid: excel.Excel.ChartGradientStyle
-              - name: ChartGradientStyleType
-                uid: excel.Excel.ChartGradientStyleType
-              - name: ChartLegendPosition
-                uid: excel.Excel.ChartLegendPosition
-              - name: ChartLineStyle
-                uid: excel.Excel.ChartLineStyle
-              - name: ChartMapAreaLevel
-                uid: excel.Excel.ChartMapAreaLevel
-              - name: ChartMapLabelStrategy
-                uid: excel.Excel.ChartMapLabelStrategy
-              - name: ChartMapProjectionType
-                uid: excel.Excel.ChartMapProjectionType
-              - name: ChartMarkerStyle
-                uid: excel.Excel.ChartMarkerStyle
-              - name: ChartParentLabelStrategy
-                uid: excel.Excel.ChartParentLabelStrategy
-              - name: ChartPlotAreaPosition
-                uid: excel.Excel.ChartPlotAreaPosition
-              - name: ChartPlotBy
-                uid: excel.Excel.ChartPlotBy
-              - name: ChartSeriesBy
-                uid: excel.Excel.ChartSeriesBy
-              - name: ChartSplitType
-                uid: excel.Excel.ChartSplitType
-              - name: ChartTextHorizontalAlignment
-                uid: excel.Excel.ChartTextHorizontalAlignment
-              - name: ChartTextVerticalAlignment
-                uid: excel.Excel.ChartTextVerticalAlignment
-              - name: ChartTickLabelAlignment
-                uid: excel.Excel.ChartTickLabelAlignment
-              - name: ChartTitlePosition
-                uid: excel.Excel.ChartTitlePosition
-              - name: ChartTrendlineType
-                uid: excel.Excel.ChartTrendlineType
-              - name: ChartType
-                uid: excel.Excel.ChartType
-              - name: ChartUnderlineStyle
-                uid: excel.Excel.ChartUnderlineStyle
-              - name: ClearApplyTo
-                uid: excel.Excel.ClearApplyTo
-              - name: CloseBehavior
-                uid: excel.Excel.CloseBehavior
-              - name: ConditionalCellValueOperator
-                uid: excel.Excel.ConditionalCellValueOperator
-              - name: ConditionalDataBarAxisFormat
-                uid: excel.Excel.ConditionalDataBarAxisFormat
-              - name: ConditionalDataBarDirection
-                uid: excel.Excel.ConditionalDataBarDirection
-              - name: ConditionalFormatColorCriterionType
-                uid: excel.Excel.ConditionalFormatColorCriterionType
-              - name: ConditionalFormatDirection
-                uid: excel.Excel.ConditionalFormatDirection
-              - name: ConditionalFormatIconRuleType
-                uid: excel.Excel.ConditionalFormatIconRuleType
-              - name: ConditionalFormatPresetCriterion
-                uid: excel.Excel.ConditionalFormatPresetCriterion
-              - name: ConditionalFormatRuleType
-                uid: excel.Excel.ConditionalFormatRuleType
-              - name: ConditionalFormatType
-                uid: excel.Excel.ConditionalFormatType
-              - name: ConditionalIconCriterionOperator
-                uid: excel.Excel.ConditionalIconCriterionOperator
-              - name: ConditionalRangeBorderIndex
-                uid: excel.Excel.ConditionalRangeBorderIndex
-              - name: ConditionalRangeBorderLineStyle
-                uid: excel.Excel.ConditionalRangeBorderLineStyle
-              - name: ConditionalRangeFontUnderlineStyle
-                uid: excel.Excel.ConditionalRangeFontUnderlineStyle
-              - name: ConditionalTextOperator
-                uid: excel.Excel.ConditionalTextOperator
-              - name: ConditionalTopBottomCriterionType
-                uid: excel.Excel.ConditionalTopBottomCriterionType
-              - name: ConnectorType
-                uid: excel.Excel.ConnectorType
-              - name: ContentType
-                uid: excel.Excel.ContentType
-              - name: CustomFunctionMetadataFormat
-                uid: excel.Excel.CustomFunctionMetadataFormat
-              - name: CustomFunctionType
-                uid: excel.Excel.CustomFunctionType
-              - name: DataChangeType
-                uid: excel.Excel.DataChangeType
-              - name: DataValidationAlertStyle
-                uid: excel.Excel.DataValidationAlertStyle
-              - name: DataValidationOperator
-                uid: excel.Excel.DataValidationOperator
-              - name: DataValidationType
-                uid: excel.Excel.DataValidationType
-              - name: DeleteShiftDirection
-                uid: excel.Excel.DeleteShiftDirection
-              - name: DocumentPropertyItem
-                uid: excel.Excel.DocumentPropertyItem
-              - name: DocumentPropertyType
-                uid: excel.Excel.DocumentPropertyType
-              - name: DynamicFilterCriteria
-                uid: excel.Excel.DynamicFilterCriteria
-              - name: ErrorCodes
-                uid: excel.Excel.ErrorCodes
-              - name: EventSource
-                uid: excel.Excel.EventSource
-              - name: EventType
-                uid: excel.Excel.EventType
-              - name: FillPattern
-                uid: excel.Excel.FillPattern
-              - name: FilterDatetimeSpecificity
-                uid: excel.Excel.FilterDatetimeSpecificity
-              - name: FilterOn
-                uid: excel.Excel.FilterOn
-              - name: FilterOperator
-                uid: excel.Excel.FilterOperator
-              - name: GeometricShapeType
-                uid: excel.Excel.GeometricShapeType
-              - name: HeaderFooterState
-                uid: excel.Excel.HeaderFooterState
-              - name: HorizontalAlignment
-                uid: excel.Excel.HorizontalAlignment
-              - name: IconSet
-                uid: excel.Excel.IconSet
-              - name: ImageFittingMode
-                uid: excel.Excel.ImageFittingMode
-              - name: InsertShiftDirection
-                uid: excel.Excel.InsertShiftDirection
-              - name: LinkedDataTypeState
-                uid: excel.Excel.LinkedDataTypeState
-              - name: NamedItemScope
-                uid: excel.Excel.NamedItemScope
-              - name: NamedItemType
-                uid: excel.Excel.NamedItemType
-              - name: PageOrientation
-                uid: excel.Excel.PageOrientation
-              - name: PaperType
-                uid: excel.Excel.PaperType
-              - name: PictureFormat
-                uid: excel.Excel.PictureFormat
-              - name: PivotAxis
-                uid: excel.Excel.PivotAxis
-              - name: PivotFilterTopBottomCriterion
-                uid: excel.Excel.PivotFilterTopBottomCriterion
-              - name: PivotLayoutType
-                uid: excel.Excel.PivotLayoutType
-              - name: Placement
-                uid: excel.Excel.Placement
-              - name: PrintComments
-                uid: excel.Excel.PrintComments
-              - name: PrintErrorType
-                uid: excel.Excel.PrintErrorType
-              - name: PrintMarginUnit
-                uid: excel.Excel.PrintMarginUnit
-              - name: PrintOrder
-                uid: excel.Excel.PrintOrder
-              - name: ProtectionSelectionMode
-                uid: excel.Excel.ProtectionSelectionMode
-              - name: RangeCopyType
-                uid: excel.Excel.RangeCopyType
-              - name: RangeUnderlineStyle
-                uid: excel.Excel.RangeUnderlineStyle
-              - name: RangeValueType
-                uid: excel.Excel.RangeValueType
-              - name: ReadingOrder
-                uid: excel.Excel.ReadingOrder
-              - name: SaveBehavior
-                uid: excel.Excel.SaveBehavior
-              - name: SearchDirection
-                uid: excel.Excel.SearchDirection
-              - name: ShapeAutoSize
-                uid: excel.Excel.ShapeAutoSize
-              - name: ShapeFillType
-                uid: excel.Excel.ShapeFillType
-              - name: ShapeFontUnderlineStyle
-                uid: excel.Excel.ShapeFontUnderlineStyle
-              - name: ShapeLineDashStyle
-                uid: excel.Excel.ShapeLineDashStyle
-              - name: ShapeLineStyle
-                uid: excel.Excel.ShapeLineStyle
-              - name: ShapeScaleFrom
-                uid: excel.Excel.ShapeScaleFrom
-              - name: ShapeScaleType
-                uid: excel.Excel.ShapeScaleType
-              - name: ShapeTextHorizontalAlignType
-                uid: excel.Excel.ShapeTextHorizontalAlignType
-              - name: ShapeTextHorzOverflowType
-                uid: excel.Excel.ShapeTextHorzOverflowType
-              - name: ShapeTextOrientationType
-                uid: excel.Excel.ShapeTextOrientationType
-              - name: ShapeTextReadingOrder
-                uid: excel.Excel.ShapeTextReadingOrder
-              - name: ShapeTextVerticalAlignType
-                uid: excel.Excel.ShapeTextVerticalAlignType
-              - name: ShapeTextVertOverflowType
-                uid: excel.Excel.ShapeTextVertOverflowType
-              - name: ShapeType
-                uid: excel.Excel.ShapeType
-              - name: ShapeZOrder
-                uid: excel.Excel.ShapeZOrder
-              - name: SheetVisibility
-                uid: excel.Excel.SheetVisibility
-              - name: ShowAsCalculation
-                uid: excel.Excel.ShowAsCalculation
-              - name: SlicerSortType
-                uid: excel.Excel.SlicerSortType
-              - name: SortBy
-                uid: excel.Excel.SortBy
-              - name: SortDataOption
-                uid: excel.Excel.SortDataOption
-              - name: SortMethod
-                uid: excel.Excel.SortMethod
-              - name: SortOn
-                uid: excel.Excel.SortOn
-              - name: SortOrientation
-                uid: excel.Excel.SortOrientation
-              - name: SpecialCellType
-                uid: excel.Excel.SpecialCellType
-              - name: SpecialCellValueType
-                uid: excel.Excel.SpecialCellValueType
-              - name: SubtotalLocationType
-                uid: excel.Excel.SubtotalLocationType
-              - name: VerticalAlignment
-                uid: excel.Excel.VerticalAlignment
-              - name: WorksheetPositionType
-                uid: excel.Excel.WorksheetPositionType
-          - name: Application
-            uid: excel.Excel.Application
-          - name: AutoFilter
-            uid: excel.Excel.AutoFilter
-          - name: BasicDataValidation
-            uid: excel.Excel.BasicDataValidation
-          - name: Binding
-            uid: excel.Excel.Binding
-          - name: BindingCollection
-            uid: excel.Excel.BindingCollection
-          - name: CellBorder
-            uid: excel.Excel.CellBorder
-          - name: CellBorderCollection
-            uid: excel.Excel.CellBorderCollection
-          - name: CellProperties
-            uid: excel.Excel.CellProperties
-          - name: CellPropertiesBorderLoadOptions
-            uid: excel.Excel.CellPropertiesBorderLoadOptions
-          - name: CellPropertiesFill
-            uid: excel.Excel.CellPropertiesFill
-          - name: CellPropertiesFillLoadOptions
-            uid: excel.Excel.CellPropertiesFillLoadOptions
-          - name: CellPropertiesFont
-            uid: excel.Excel.CellPropertiesFont
-          - name: CellPropertiesFontLoadOptions
-            uid: excel.Excel.CellPropertiesFontLoadOptions
-          - name: CellPropertiesFormat
-            uid: excel.Excel.CellPropertiesFormat
-          - name: CellPropertiesFormatLoadOptions
-            uid: excel.Excel.CellPropertiesFormatLoadOptions
-          - name: CellPropertiesLoadOptions
-            uid: excel.Excel.CellPropertiesLoadOptions
-          - name: CellPropertiesProtection
-            uid: excel.Excel.CellPropertiesProtection
-          - name: CellValueConditionalFormat
-            uid: excel.Excel.CellValueConditionalFormat
-          - name: Chart
-            uid: excel.Excel.Chart
-          - name: ChartAreaFormat
-            uid: excel.Excel.ChartAreaFormat
-          - name: ChartAxes
-            uid: excel.Excel.ChartAxes
-          - name: ChartAxis
-            uid: excel.Excel.ChartAxis
-          - name: ChartAxisFormat
-            uid: excel.Excel.ChartAxisFormat
-          - name: ChartAxisTitle
-            uid: excel.Excel.ChartAxisTitle
-          - name: ChartAxisTitleFormat
-            uid: excel.Excel.ChartAxisTitleFormat
-          - name: ChartBinOptions
-            uid: excel.Excel.ChartBinOptions
-          - name: ChartBorder
-            uid: excel.Excel.ChartBorder
-          - name: ChartBoxwhiskerOptions
-            uid: excel.Excel.ChartBoxwhiskerOptions
-          - name: ChartCollection
-            uid: excel.Excel.ChartCollection
-          - name: ChartDataLabel
-            uid: excel.Excel.ChartDataLabel
-          - name: ChartDataLabelFormat
-            uid: excel.Excel.ChartDataLabelFormat
-          - name: ChartDataLabels
-            uid: excel.Excel.ChartDataLabels
-          - name: ChartErrorBars
-            uid: excel.Excel.ChartErrorBars
-          - name: ChartErrorBarsFormat
-            uid: excel.Excel.ChartErrorBarsFormat
-          - name: ChartFill
-            uid: excel.Excel.ChartFill
-          - name: ChartFont
-            uid: excel.Excel.ChartFont
-          - name: ChartFormatString
-            uid: excel.Excel.ChartFormatString
-          - name: ChartGridlines
-            uid: excel.Excel.ChartGridlines
-          - name: ChartGridlinesFormat
-            uid: excel.Excel.ChartGridlinesFormat
-          - name: ChartLegend
-            uid: excel.Excel.ChartLegend
-          - name: ChartLegendEntry
-            uid: excel.Excel.ChartLegendEntry
-          - name: ChartLegendEntryCollection
-            uid: excel.Excel.ChartLegendEntryCollection
-          - name: ChartLegendFormat
-            uid: excel.Excel.ChartLegendFormat
-          - name: ChartLineFormat
-            uid: excel.Excel.ChartLineFormat
-          - name: ChartMapOptions
-            uid: excel.Excel.ChartMapOptions
-          - name: ChartPivotOptions
-            uid: excel.Excel.ChartPivotOptions
-          - name: ChartPlotArea
-            uid: excel.Excel.ChartPlotArea
-          - name: ChartPlotAreaFormat
-            uid: excel.Excel.ChartPlotAreaFormat
-          - name: ChartPoint
-            uid: excel.Excel.ChartPoint
-          - name: ChartPointFormat
-            uid: excel.Excel.ChartPointFormat
-          - name: ChartPointsCollection
-            uid: excel.Excel.ChartPointsCollection
-          - name: ChartSeries
-            uid: excel.Excel.ChartSeries
-          - name: ChartSeriesCollection
-            uid: excel.Excel.ChartSeriesCollection
-          - name: ChartSeriesFormat
-            uid: excel.Excel.ChartSeriesFormat
-          - name: ChartTitle
-            uid: excel.Excel.ChartTitle
-          - name: ChartTitleFormat
-            uid: excel.Excel.ChartTitleFormat
-          - name: ChartTrendline
-            uid: excel.Excel.ChartTrendline
-          - name: ChartTrendlineCollection
-            uid: excel.Excel.ChartTrendlineCollection
-          - name: ChartTrendlineFormat
-            uid: excel.Excel.ChartTrendlineFormat
-          - name: ChartTrendlineLabel
-            uid: excel.Excel.ChartTrendlineLabel
-          - name: ChartTrendlineLabelFormat
-            uid: excel.Excel.ChartTrendlineLabelFormat
-          - name: ColorScaleConditionalFormat
-            uid: excel.Excel.ColorScaleConditionalFormat
-          - name: ColumnProperties
-            uid: excel.Excel.ColumnProperties
-          - name: ColumnPropertiesLoadOptions
-            uid: excel.Excel.ColumnPropertiesLoadOptions
-          - name: Comment
-            uid: excel.Excel.Comment
-          - name: CommentCollection
-            uid: excel.Excel.CommentCollection
-          - name: CommentReply
-            uid: excel.Excel.CommentReply
-          - name: CommentReplyCollection
-            uid: excel.Excel.CommentReplyCollection
-          - name: ConditionalDataBarNegativeFormat
-            uid: excel.Excel.ConditionalDataBarNegativeFormat
-          - name: ConditionalDataBarPositiveFormat
-            uid: excel.Excel.ConditionalDataBarPositiveFormat
-          - name: ConditionalFormat
-            uid: excel.Excel.ConditionalFormat
-          - name: ConditionalFormatCollection
-            uid: excel.Excel.ConditionalFormatCollection
-          - name: ConditionalFormatRule
-            uid: excel.Excel.ConditionalFormatRule
-          - name: ConditionalRangeBorder
-            uid: excel.Excel.ConditionalRangeBorder
-          - name: ConditionalRangeBorderCollection
-            uid: excel.Excel.ConditionalRangeBorderCollection
-          - name: ConditionalRangeFill
-            uid: excel.Excel.ConditionalRangeFill
-          - name: ConditionalRangeFont
-            uid: excel.Excel.ConditionalRangeFont
-          - name: ConditionalRangeFormat
-            uid: excel.Excel.ConditionalRangeFormat
-          - name: CustomConditionalFormat
-            uid: excel.Excel.CustomConditionalFormat
-          - name: CustomDataValidation
-            uid: excel.Excel.CustomDataValidation
-          - name: CustomFunctionEventArgs
-            uid: excel.Excel.CustomFunctionEventArgs
-          - name: CustomProperty
-            uid: excel.Excel.CustomProperty
-          - name: CustomPropertyCollection
-            uid: excel.Excel.CustomPropertyCollection
-          - name: CustomXmlPart
-            uid: excel.Excel.CustomXmlPart
-          - name: CustomXmlPartCollection
-            uid: excel.Excel.CustomXmlPartCollection
-          - name: CustomXmlPartScopedCollection
-            uid: excel.Excel.CustomXmlPartScopedCollection
-          - name: DataBarConditionalFormat
-            uid: excel.Excel.DataBarConditionalFormat
-          - name: DataConnectionCollection
-            uid: excel.Excel.DataConnectionCollection
-          - name: DataPivotHierarchy
-            uid: excel.Excel.DataPivotHierarchy
-          - name: DataPivotHierarchyCollection
-            uid: excel.Excel.DataPivotHierarchyCollection
-          - name: DataValidation
-            uid: excel.Excel.DataValidation
-          - name: DataValidationErrorAlert
-            uid: excel.Excel.DataValidationErrorAlert
-          - name: DataValidationPrompt
-            uid: excel.Excel.DataValidationPrompt
-          - name: DataValidationRule
-            uid: excel.Excel.DataValidationRule
-          - name: DateTimeDataValidation
-            uid: excel.Excel.DateTimeDataValidation
-          - name: DocumentProperties
-            uid: excel.Excel.DocumentProperties
-          - name: Filter
-            uid: excel.Excel.Filter
-          - name: FilterCriteria
-            uid: excel.Excel.FilterCriteria
-          - name: FilterPivotHierarchy
-            uid: excel.Excel.FilterPivotHierarchy
-          - name: FilterPivotHierarchyCollection
-            uid: excel.Excel.FilterPivotHierarchyCollection
-          - name: FormatProtection
-            uid: excel.Excel.FormatProtection
-          - name: FunctionResult
-            uid: excel.Excel.FunctionResult
-          - name: Functions
-            uid: excel.Excel.Functions
-          - name: GeometricShape
-            uid: excel.Excel.GeometricShape
-          - name: GroupShapeCollection
-            uid: excel.Excel.GroupShapeCollection
-          - name: HeaderFooter
-            uid: excel.Excel.HeaderFooter
-          - name: HeaderFooterGroup
-            uid: excel.Excel.HeaderFooterGroup
-          - name: IconSetConditionalFormat
-            uid: excel.Excel.IconSetConditionalFormat
-          - name: Image
-            uid: excel.Excel.Image
-          - name: IterativeCalculation
-            uid: excel.Excel.IterativeCalculation
-          - name: Line
-            uid: excel.Excel.Line
-          - name: ListDataValidation
-            uid: excel.Excel.ListDataValidation
-          - name: NamedItem
-            uid: excel.Excel.NamedItem
-          - name: NamedItemArrayValues
-            uid: excel.Excel.NamedItemArrayValues
-          - name: NamedItemCollection
-            uid: excel.Excel.NamedItemCollection
-          - name: PageBreak
-            uid: excel.Excel.PageBreak
-          - name: PageBreakCollection
-            uid: excel.Excel.PageBreakCollection
-          - name: PageLayout
-            uid: excel.Excel.PageLayout
-          - name: PageLayoutMarginOptions
-            uid: excel.Excel.PageLayoutMarginOptions
-          - name: PageLayoutZoomOptions
-            uid: excel.Excel.PageLayoutZoomOptions
-          - name: PivotField
-            uid: excel.Excel.PivotField
-          - name: PivotFieldCollection
-            uid: excel.Excel.PivotFieldCollection
-          - name: PivotHierarchy
-            uid: excel.Excel.PivotHierarchy
-          - name: PivotHierarchyCollection
-            uid: excel.Excel.PivotHierarchyCollection
-          - name: PivotItem
-            uid: excel.Excel.PivotItem
-          - name: PivotItemCollection
-            uid: excel.Excel.PivotItemCollection
-          - name: PivotLayout
-            uid: excel.Excel.PivotLayout
-          - name: PivotTable
-            uid: excel.Excel.PivotTable
-          - name: PivotTableCollection
-            uid: excel.Excel.PivotTableCollection
-          - name: PresetCriteriaConditionalFormat
-            uid: excel.Excel.PresetCriteriaConditionalFormat
-          - name: Range
-            uid: excel.Excel.Range
-          - name: RangeAreas
-            uid: excel.Excel.RangeAreas
-          - name: RangeBorder
-            uid: excel.Excel.RangeBorder
-          - name: RangeBorderCollection
-            uid: excel.Excel.RangeBorderCollection
-          - name: RangeCollection
-            uid: excel.Excel.RangeCollection
-          - name: RangeFill
-            uid: excel.Excel.RangeFill
-          - name: RangeFont
-            uid: excel.Excel.RangeFont
-          - name: RangeFormat
-            uid: excel.Excel.RangeFormat
-          - name: RangeSort
-            uid: excel.Excel.RangeSort
-          - name: RangeView
-            uid: excel.Excel.RangeView
-          - name: RangeViewCollection
-            uid: excel.Excel.RangeViewCollection
-          - name: RemoveDuplicatesResult
-            uid: excel.Excel.RemoveDuplicatesResult
-          - name: ReplaceCriteria
-            uid: excel.Excel.ReplaceCriteria
-          - name: RequestContext
-            uid: excel.Excel.RequestContext
-          - name: RowColumnPivotHierarchy
-            uid: excel.Excel.RowColumnPivotHierarchy
-          - name: RowColumnPivotHierarchyCollection
-            uid: excel.Excel.RowColumnPivotHierarchyCollection
-          - name: RowProperties
-            uid: excel.Excel.RowProperties
-          - name: RowPropertiesLoadOptions
-            uid: excel.Excel.RowPropertiesLoadOptions
-          - name: Runtime
-            uid: excel.Excel.Runtime
-          - name: SearchCriteria
-            uid: excel.Excel.SearchCriteria
-          - name: Session
-            uid: excel.Excel.Session
-          - name: SettableCellProperties
-            uid: excel.Excel.SettableCellProperties
-          - name: SettableColumnProperties
-            uid: excel.Excel.SettableColumnProperties
-          - name: SettableRowProperties
-            uid: excel.Excel.SettableRowProperties
-          - name: Setting
-            uid: excel.Excel.Setting
-          - name: SettingCollection
-            uid: excel.Excel.SettingCollection
-          - name: Shape
-            uid: excel.Excel.Shape
-          - name: ShapeActivatedEventArgs
-            uid: excel.Excel.ShapeActivatedEventArgs
-          - name: ShapeCollection
-            uid: excel.Excel.ShapeCollection
-          - name: ShapeDeactivatedEventArgs
-            uid: excel.Excel.ShapeDeactivatedEventArgs
-          - name: ShapeFill
-            uid: excel.Excel.ShapeFill
-          - name: ShapeFont
-            uid: excel.Excel.ShapeFont
-          - name: ShapeGroup
-            uid: excel.Excel.ShapeGroup
-          - name: ShapeLineFormat
-            uid: excel.Excel.ShapeLineFormat
-          - name: ShowAsRule
-            uid: excel.Excel.ShowAsRule
-          - name: Slicer
-            uid: excel.Excel.Slicer
-          - name: SlicerCollection
-            uid: excel.Excel.SlicerCollection
-          - name: SlicerItem
-            uid: excel.Excel.SlicerItem
-          - name: SlicerItemCollection
-            uid: excel.Excel.SlicerItemCollection
-          - name: Style
-            uid: excel.Excel.Style
-          - name: StyleCollection
-            uid: excel.Excel.StyleCollection
-          - name: Subtotals
-            uid: excel.Excel.Subtotals
-          - name: Table
-            uid: excel.Excel.Table
-          - name: TableAddedEventArgs
-            uid: excel.Excel.TableAddedEventArgs
-          - name: TableCollection
-            uid: excel.Excel.TableCollection
-          - name: TableColumn
-            uid: excel.Excel.TableColumn
-          - name: TableColumnCollection
-            uid: excel.Excel.TableColumnCollection
-          - name: TableDeletedEventArgs
-            uid: excel.Excel.TableDeletedEventArgs
-          - name: TableFilteredEventArgs
-            uid: excel.Excel.TableFilteredEventArgs
-          - name: TableRow
-            uid: excel.Excel.TableRow
-          - name: TableRowCollection
-            uid: excel.Excel.TableRowCollection
-          - name: TableScopedCollection
-            uid: excel.Excel.TableScopedCollection
-          - name: TableSort
-            uid: excel.Excel.TableSort
-          - name: TextConditionalFormat
-            uid: excel.Excel.TextConditionalFormat
-          - name: TextFrame
-            uid: excel.Excel.TextFrame
-          - name: TextRange
-            uid: excel.Excel.TextRange
-          - name: TopBottomConditionalFormat
-            uid: excel.Excel.TopBottomConditionalFormat
-          - name: Workbook
-            uid: excel.Excel.Workbook
-          - name: WorkbookAutoSaveSettingChangedEventArgs
-            uid: excel.Excel.WorkbookAutoSaveSettingChangedEventArgs
-          - name: WorkbookCreated
-            uid: excel.Excel.WorkbookCreated
-          - name: WorkbookProtection
-            uid: excel.Excel.WorkbookProtection
-          - name: Worksheet
-            uid: excel.Excel.Worksheet
-          - name: WorksheetCollection
-            uid: excel.Excel.WorksheetCollection
-          - name: WorksheetFilteredEventArgs
-            uid: excel.Excel.WorksheetFilteredEventArgs
-          - name: WorksheetFormatChangedEventArgs
-            uid: excel.Excel.WorksheetFormatChangedEventArgs
-          - name: WorksheetFreezePanes
-            uid: excel.Excel.WorksheetFreezePanes
-          - name: WorksheetProtection
-            uid: excel.Excel.WorksheetProtection
-          - name: WorksheetSearchCriteria
-            uid: excel.Excel.WorksheetSearchCriteria
+              - name: Enums
+                uid: ''
+                items:
+                  - name: AggregationFunction
+                    uid: excel.Excel.AggregationFunction
+                  - name: AutoFillType
+                    uid: excel.Excel.AutoFillType
+                  - name: BindingType
+                    uid: excel.Excel.BindingType
+                  - name: BorderIndex
+                    uid: excel.Excel.BorderIndex
+                  - name: BorderLineStyle
+                    uid: excel.Excel.BorderLineStyle
+                  - name: BorderWeight
+                    uid: excel.Excel.BorderWeight
+                  - name: BuiltInStyle
+                    uid: excel.Excel.BuiltInStyle
+                  - name: CalculationMode
+                    uid: excel.Excel.CalculationMode
+                  - name: CalculationState
+                    uid: excel.Excel.CalculationState
+                  - name: CalculationType
+                    uid: excel.Excel.CalculationType
+                  - name: ChartAxisCategoryType
+                    uid: excel.Excel.ChartAxisCategoryType
+                  - name: ChartAxisDisplayUnit
+                    uid: excel.Excel.ChartAxisDisplayUnit
+                  - name: ChartAxisGroup
+                    uid: excel.Excel.ChartAxisGroup
+                  - name: ChartAxisPosition
+                    uid: excel.Excel.ChartAxisPosition
+                  - name: ChartAxisScaleType
+                    uid: excel.Excel.ChartAxisScaleType
+                  - name: ChartAxisTickLabelPosition
+                    uid: excel.Excel.ChartAxisTickLabelPosition
+                  - name: ChartAxisTickMark
+                    uid: excel.Excel.ChartAxisTickMark
+                  - name: ChartAxisTimeUnit
+                    uid: excel.Excel.ChartAxisTimeUnit
+                  - name: ChartAxisType
+                    uid: excel.Excel.ChartAxisType
+                  - name: ChartBinType
+                    uid: excel.Excel.ChartBinType
+                  - name: ChartBoxQuartileCalculation
+                    uid: excel.Excel.ChartBoxQuartileCalculation
+                  - name: ChartColorScheme
+                    uid: excel.Excel.ChartColorScheme
+                  - name: ChartDataLabelPosition
+                    uid: excel.Excel.ChartDataLabelPosition
+                  - name: ChartDisplayBlanksAs
+                    uid: excel.Excel.ChartDisplayBlanksAs
+                  - name: ChartErrorBarsInclude
+                    uid: excel.Excel.ChartErrorBarsInclude
+                  - name: ChartErrorBarsType
+                    uid: excel.Excel.ChartErrorBarsType
+                  - name: ChartGradientStyle
+                    uid: excel.Excel.ChartGradientStyle
+                  - name: ChartGradientStyleType
+                    uid: excel.Excel.ChartGradientStyleType
+                  - name: ChartLegendPosition
+                    uid: excel.Excel.ChartLegendPosition
+                  - name: ChartLineStyle
+                    uid: excel.Excel.ChartLineStyle
+                  - name: ChartMapAreaLevel
+                    uid: excel.Excel.ChartMapAreaLevel
+                  - name: ChartMapLabelStrategy
+                    uid: excel.Excel.ChartMapLabelStrategy
+                  - name: ChartMapProjectionType
+                    uid: excel.Excel.ChartMapProjectionType
+                  - name: ChartMarkerStyle
+                    uid: excel.Excel.ChartMarkerStyle
+                  - name: ChartParentLabelStrategy
+                    uid: excel.Excel.ChartParentLabelStrategy
+                  - name: ChartPlotAreaPosition
+                    uid: excel.Excel.ChartPlotAreaPosition
+                  - name: ChartPlotBy
+                    uid: excel.Excel.ChartPlotBy
+                  - name: ChartSeriesBy
+                    uid: excel.Excel.ChartSeriesBy
+                  - name: ChartSplitType
+                    uid: excel.Excel.ChartSplitType
+                  - name: ChartTextHorizontalAlignment
+                    uid: excel.Excel.ChartTextHorizontalAlignment
+                  - name: ChartTextVerticalAlignment
+                    uid: excel.Excel.ChartTextVerticalAlignment
+                  - name: ChartTickLabelAlignment
+                    uid: excel.Excel.ChartTickLabelAlignment
+                  - name: ChartTitlePosition
+                    uid: excel.Excel.ChartTitlePosition
+                  - name: ChartTrendlineType
+                    uid: excel.Excel.ChartTrendlineType
+                  - name: ChartType
+                    uid: excel.Excel.ChartType
+                  - name: ChartUnderlineStyle
+                    uid: excel.Excel.ChartUnderlineStyle
+                  - name: ClearApplyTo
+                    uid: excel.Excel.ClearApplyTo
+                  - name: CloseBehavior
+                    uid: excel.Excel.CloseBehavior
+                  - name: ConditionalCellValueOperator
+                    uid: excel.Excel.ConditionalCellValueOperator
+                  - name: ConditionalDataBarAxisFormat
+                    uid: excel.Excel.ConditionalDataBarAxisFormat
+                  - name: ConditionalDataBarDirection
+                    uid: excel.Excel.ConditionalDataBarDirection
+                  - name: ConditionalFormatColorCriterionType
+                    uid: excel.Excel.ConditionalFormatColorCriterionType
+                  - name: ConditionalFormatDirection
+                    uid: excel.Excel.ConditionalFormatDirection
+                  - name: ConditionalFormatIconRuleType
+                    uid: excel.Excel.ConditionalFormatIconRuleType
+                  - name: ConditionalFormatPresetCriterion
+                    uid: excel.Excel.ConditionalFormatPresetCriterion
+                  - name: ConditionalFormatRuleType
+                    uid: excel.Excel.ConditionalFormatRuleType
+                  - name: ConditionalFormatType
+                    uid: excel.Excel.ConditionalFormatType
+                  - name: ConditionalIconCriterionOperator
+                    uid: excel.Excel.ConditionalIconCriterionOperator
+                  - name: ConditionalRangeBorderIndex
+                    uid: excel.Excel.ConditionalRangeBorderIndex
+                  - name: ConditionalRangeBorderLineStyle
+                    uid: excel.Excel.ConditionalRangeBorderLineStyle
+                  - name: ConditionalRangeFontUnderlineStyle
+                    uid: excel.Excel.ConditionalRangeFontUnderlineStyle
+                  - name: ConditionalTextOperator
+                    uid: excel.Excel.ConditionalTextOperator
+                  - name: ConditionalTopBottomCriterionType
+                    uid: excel.Excel.ConditionalTopBottomCriterionType
+                  - name: ConnectorType
+                    uid: excel.Excel.ConnectorType
+                  - name: ContentType
+                    uid: excel.Excel.ContentType
+                  - name: CustomFunctionMetadataFormat
+                    uid: excel.Excel.CustomFunctionMetadataFormat
+                  - name: CustomFunctionType
+                    uid: excel.Excel.CustomFunctionType
+                  - name: DataChangeType
+                    uid: excel.Excel.DataChangeType
+                  - name: DataValidationAlertStyle
+                    uid: excel.Excel.DataValidationAlertStyle
+                  - name: DataValidationOperator
+                    uid: excel.Excel.DataValidationOperator
+                  - name: DataValidationType
+                    uid: excel.Excel.DataValidationType
+                  - name: DeleteShiftDirection
+                    uid: excel.Excel.DeleteShiftDirection
+                  - name: DocumentPropertyItem
+                    uid: excel.Excel.DocumentPropertyItem
+                  - name: DocumentPropertyType
+                    uid: excel.Excel.DocumentPropertyType
+                  - name: DynamicFilterCriteria
+                    uid: excel.Excel.DynamicFilterCriteria
+                  - name: ErrorCodes
+                    uid: excel.Excel.ErrorCodes
+                  - name: EventSource
+                    uid: excel.Excel.EventSource
+                  - name: EventType
+                    uid: excel.Excel.EventType
+                  - name: FillPattern
+                    uid: excel.Excel.FillPattern
+                  - name: FilterDatetimeSpecificity
+                    uid: excel.Excel.FilterDatetimeSpecificity
+                  - name: FilterOn
+                    uid: excel.Excel.FilterOn
+                  - name: FilterOperator
+                    uid: excel.Excel.FilterOperator
+                  - name: GeometricShapeType
+                    uid: excel.Excel.GeometricShapeType
+                  - name: HeaderFooterState
+                    uid: excel.Excel.HeaderFooterState
+                  - name: HorizontalAlignment
+                    uid: excel.Excel.HorizontalAlignment
+                  - name: IconSet
+                    uid: excel.Excel.IconSet
+                  - name: ImageFittingMode
+                    uid: excel.Excel.ImageFittingMode
+                  - name: InsertShiftDirection
+                    uid: excel.Excel.InsertShiftDirection
+                  - name: LinkedDataTypeState
+                    uid: excel.Excel.LinkedDataTypeState
+                  - name: NamedItemScope
+                    uid: excel.Excel.NamedItemScope
+                  - name: NamedItemType
+                    uid: excel.Excel.NamedItemType
+                  - name: PageOrientation
+                    uid: excel.Excel.PageOrientation
+                  - name: PaperType
+                    uid: excel.Excel.PaperType
+                  - name: PictureFormat
+                    uid: excel.Excel.PictureFormat
+                  - name: PivotAxis
+                    uid: excel.Excel.PivotAxis
+                  - name: PivotFilterTopBottomCriterion
+                    uid: excel.Excel.PivotFilterTopBottomCriterion
+                  - name: PivotLayoutType
+                    uid: excel.Excel.PivotLayoutType
+                  - name: Placement
+                    uid: excel.Excel.Placement
+                  - name: PrintComments
+                    uid: excel.Excel.PrintComments
+                  - name: PrintErrorType
+                    uid: excel.Excel.PrintErrorType
+                  - name: PrintMarginUnit
+                    uid: excel.Excel.PrintMarginUnit
+                  - name: PrintOrder
+                    uid: excel.Excel.PrintOrder
+                  - name: ProtectionSelectionMode
+                    uid: excel.Excel.ProtectionSelectionMode
+                  - name: RangeCopyType
+                    uid: excel.Excel.RangeCopyType
+                  - name: RangeUnderlineStyle
+                    uid: excel.Excel.RangeUnderlineStyle
+                  - name: RangeValueType
+                    uid: excel.Excel.RangeValueType
+                  - name: ReadingOrder
+                    uid: excel.Excel.ReadingOrder
+                  - name: SaveBehavior
+                    uid: excel.Excel.SaveBehavior
+                  - name: SearchDirection
+                    uid: excel.Excel.SearchDirection
+                  - name: ShapeAutoSize
+                    uid: excel.Excel.ShapeAutoSize
+                  - name: ShapeFillType
+                    uid: excel.Excel.ShapeFillType
+                  - name: ShapeFontUnderlineStyle
+                    uid: excel.Excel.ShapeFontUnderlineStyle
+                  - name: ShapeLineDashStyle
+                    uid: excel.Excel.ShapeLineDashStyle
+                  - name: ShapeLineStyle
+                    uid: excel.Excel.ShapeLineStyle
+                  - name: ShapeScaleFrom
+                    uid: excel.Excel.ShapeScaleFrom
+                  - name: ShapeScaleType
+                    uid: excel.Excel.ShapeScaleType
+                  - name: ShapeTextHorizontalAlignType
+                    uid: excel.Excel.ShapeTextHorizontalAlignType
+                  - name: ShapeTextHorzOverflowType
+                    uid: excel.Excel.ShapeTextHorzOverflowType
+                  - name: ShapeTextOrientationType
+                    uid: excel.Excel.ShapeTextOrientationType
+                  - name: ShapeTextReadingOrder
+                    uid: excel.Excel.ShapeTextReadingOrder
+                  - name: ShapeTextVerticalAlignType
+                    uid: excel.Excel.ShapeTextVerticalAlignType
+                  - name: ShapeTextVertOverflowType
+                    uid: excel.Excel.ShapeTextVertOverflowType
+                  - name: ShapeType
+                    uid: excel.Excel.ShapeType
+                  - name: ShapeZOrder
+                    uid: excel.Excel.ShapeZOrder
+                  - name: SheetVisibility
+                    uid: excel.Excel.SheetVisibility
+                  - name: ShowAsCalculation
+                    uid: excel.Excel.ShowAsCalculation
+                  - name: SlicerSortType
+                    uid: excel.Excel.SlicerSortType
+                  - name: SortBy
+                    uid: excel.Excel.SortBy
+                  - name: SortDataOption
+                    uid: excel.Excel.SortDataOption
+                  - name: SortMethod
+                    uid: excel.Excel.SortMethod
+                  - name: SortOn
+                    uid: excel.Excel.SortOn
+                  - name: SortOrientation
+                    uid: excel.Excel.SortOrientation
+                  - name: SpecialCellType
+                    uid: excel.Excel.SpecialCellType
+                  - name: SpecialCellValueType
+                    uid: excel.Excel.SpecialCellValueType
+                  - name: SubtotalLocationType
+                    uid: excel.Excel.SubtotalLocationType
+                  - name: VerticalAlignment
+                    uid: excel.Excel.VerticalAlignment
+                  - name: WorksheetPositionType
+                    uid: excel.Excel.WorksheetPositionType
+              - name: Application
+                uid: excel.Excel.Application
+              - name: AutoFilter
+                uid: excel.Excel.AutoFilter
+              - name: BasicDataValidation
+                uid: excel.Excel.BasicDataValidation
+              - name: Binding
+                uid: excel.Excel.Binding
+              - name: BindingCollection
+                uid: excel.Excel.BindingCollection
+              - name: CellBorder
+                uid: excel.Excel.CellBorder
+              - name: CellBorderCollection
+                uid: excel.Excel.CellBorderCollection
+              - name: CellProperties
+                uid: excel.Excel.CellProperties
+              - name: CellPropertiesFill
+                uid: excel.Excel.CellPropertiesFill
+              - name: CellPropertiesFont
+                uid: excel.Excel.CellPropertiesFont
+              - name: CellPropertiesFormat
+                uid: excel.Excel.CellPropertiesFormat
+              - name: CellPropertiesLoadOptions
+                uid: excel.Excel.CellPropertiesLoadOptions
+              - name: CellPropertiesProtection
+                uid: excel.Excel.CellPropertiesProtection
+              - name: CellValueConditionalFormat
+                uid: excel.Excel.CellValueConditionalFormat
+              - name: Chart
+                uid: excel.Excel.Chart
+              - name: ChartAreaFormat
+                uid: excel.Excel.ChartAreaFormat
+              - name: ChartAxes
+                uid: excel.Excel.ChartAxes
+              - name: ChartAxis
+                uid: excel.Excel.ChartAxis
+              - name: ChartAxisFormat
+                uid: excel.Excel.ChartAxisFormat
+              - name: ChartAxisTitle
+                uid: excel.Excel.ChartAxisTitle
+              - name: ChartAxisTitleFormat
+                uid: excel.Excel.ChartAxisTitleFormat
+              - name: ChartBinOptions
+                uid: excel.Excel.ChartBinOptions
+              - name: ChartBorder
+                uid: excel.Excel.ChartBorder
+              - name: ChartBoxwhiskerOptions
+                uid: excel.Excel.ChartBoxwhiskerOptions
+              - name: ChartCollection
+                uid: excel.Excel.ChartCollection
+              - name: ChartDataLabel
+                uid: excel.Excel.ChartDataLabel
+              - name: ChartDataLabelFormat
+                uid: excel.Excel.ChartDataLabelFormat
+              - name: ChartDataLabels
+                uid: excel.Excel.ChartDataLabels
+              - name: ChartErrorBars
+                uid: excel.Excel.ChartErrorBars
+              - name: ChartErrorBarsFormat
+                uid: excel.Excel.ChartErrorBarsFormat
+              - name: ChartFill
+                uid: excel.Excel.ChartFill
+              - name: ChartFont
+                uid: excel.Excel.ChartFont
+              - name: ChartFormatString
+                uid: excel.Excel.ChartFormatString
+              - name: ChartGridlines
+                uid: excel.Excel.ChartGridlines
+              - name: ChartGridlinesFormat
+                uid: excel.Excel.ChartGridlinesFormat
+              - name: ChartLegend
+                uid: excel.Excel.ChartLegend
+              - name: ChartLegendEntry
+                uid: excel.Excel.ChartLegendEntry
+              - name: ChartLegendEntryCollection
+                uid: excel.Excel.ChartLegendEntryCollection
+              - name: ChartLegendFormat
+                uid: excel.Excel.ChartLegendFormat
+              - name: ChartLineFormat
+                uid: excel.Excel.ChartLineFormat
+              - name: ChartMapOptions
+                uid: excel.Excel.ChartMapOptions
+              - name: ChartPivotOptions
+                uid: excel.Excel.ChartPivotOptions
+              - name: ChartPlotArea
+                uid: excel.Excel.ChartPlotArea
+              - name: ChartPlotAreaFormat
+                uid: excel.Excel.ChartPlotAreaFormat
+              - name: ChartPoint
+                uid: excel.Excel.ChartPoint
+              - name: ChartPointFormat
+                uid: excel.Excel.ChartPointFormat
+              - name: ChartPointsCollection
+                uid: excel.Excel.ChartPointsCollection
+              - name: ChartSeries
+                uid: excel.Excel.ChartSeries
+              - name: ChartSeriesCollection
+                uid: excel.Excel.ChartSeriesCollection
+              - name: ChartSeriesFormat
+                uid: excel.Excel.ChartSeriesFormat
+              - name: ChartTitle
+                uid: excel.Excel.ChartTitle
+              - name: ChartTitleFormat
+                uid: excel.Excel.ChartTitleFormat
+              - name: ChartTrendline
+                uid: excel.Excel.ChartTrendline
+              - name: ChartTrendlineCollection
+                uid: excel.Excel.ChartTrendlineCollection
+              - name: ChartTrendlineFormat
+                uid: excel.Excel.ChartTrendlineFormat
+              - name: ChartTrendlineLabel
+                uid: excel.Excel.ChartTrendlineLabel
+              - name: ChartTrendlineLabelFormat
+                uid: excel.Excel.ChartTrendlineLabelFormat
+              - name: ColorScaleConditionalFormat
+                uid: excel.Excel.ColorScaleConditionalFormat
+              - name: ColumnProperties
+                uid: excel.Excel.ColumnProperties
+              - name: Comment
+                uid: excel.Excel.Comment
+              - name: CommentCollection
+                uid: excel.Excel.CommentCollection
+              - name: CommentReply
+                uid: excel.Excel.CommentReply
+              - name: CommentReplyCollection
+                uid: excel.Excel.CommentReplyCollection
+              - name: ConditionalDataBarNegativeFormat
+                uid: excel.Excel.ConditionalDataBarNegativeFormat
+              - name: ConditionalDataBarPositiveFormat
+                uid: excel.Excel.ConditionalDataBarPositiveFormat
+              - name: ConditionalFormat
+                uid: excel.Excel.ConditionalFormat
+              - name: ConditionalFormatCollection
+                uid: excel.Excel.ConditionalFormatCollection
+              - name: ConditionalFormatRule
+                uid: excel.Excel.ConditionalFormatRule
+              - name: ConditionalRangeBorder
+                uid: excel.Excel.ConditionalRangeBorder
+              - name: ConditionalRangeBorderCollection
+                uid: excel.Excel.ConditionalRangeBorderCollection
+              - name: ConditionalRangeFill
+                uid: excel.Excel.ConditionalRangeFill
+              - name: ConditionalRangeFont
+                uid: excel.Excel.ConditionalRangeFont
+              - name: ConditionalRangeFormat
+                uid: excel.Excel.ConditionalRangeFormat
+              - name: CustomConditionalFormat
+                uid: excel.Excel.CustomConditionalFormat
+              - name: CustomDataValidation
+                uid: excel.Excel.CustomDataValidation
+              - name: CustomFunctionEventArgs
+                uid: excel.Excel.CustomFunctionEventArgs
+              - name: CustomProperty
+                uid: excel.Excel.CustomProperty
+              - name: CustomPropertyCollection
+                uid: excel.Excel.CustomPropertyCollection
+              - name: CustomXmlPart
+                uid: excel.Excel.CustomXmlPart
+              - name: CustomXmlPartCollection
+                uid: excel.Excel.CustomXmlPartCollection
+              - name: CustomXmlPartScopedCollection
+                uid: excel.Excel.CustomXmlPartScopedCollection
+              - name: DataBarConditionalFormat
+                uid: excel.Excel.DataBarConditionalFormat
+              - name: DataConnectionCollection
+                uid: excel.Excel.DataConnectionCollection
+              - name: DataPivotHierarchy
+                uid: excel.Excel.DataPivotHierarchy
+              - name: DataPivotHierarchyCollection
+                uid: excel.Excel.DataPivotHierarchyCollection
+              - name: DataValidation
+                uid: excel.Excel.DataValidation
+              - name: DataValidationErrorAlert
+                uid: excel.Excel.DataValidationErrorAlert
+              - name: DataValidationPrompt
+                uid: excel.Excel.DataValidationPrompt
+              - name: DataValidationRule
+                uid: excel.Excel.DataValidationRule
+              - name: DateTimeDataValidation
+                uid: excel.Excel.DateTimeDataValidation
+              - name: DocumentProperties
+                uid: excel.Excel.DocumentProperties
+              - name: Filter
+                uid: excel.Excel.Filter
+              - name: FilterCriteria
+                uid: excel.Excel.FilterCriteria
+              - name: FilterPivotHierarchy
+                uid: excel.Excel.FilterPivotHierarchy
+              - name: FilterPivotHierarchyCollection
+                uid: excel.Excel.FilterPivotHierarchyCollection
+              - name: FormatProtection
+                uid: excel.Excel.FormatProtection
+              - name: FunctionResult
+                uid: excel.Excel.FunctionResult
+              - name: Functions
+                uid: excel.Excel.Functions
+              - name: GeometricShape
+                uid: excel.Excel.GeometricShape
+              - name: GroupShapeCollection
+                uid: excel.Excel.GroupShapeCollection
+              - name: HeaderFooter
+                uid: excel.Excel.HeaderFooter
+              - name: HeaderFooterGroup
+                uid: excel.Excel.HeaderFooterGroup
+              - name: IconSetConditionalFormat
+                uid: excel.Excel.IconSetConditionalFormat
+              - name: Image
+                uid: excel.Excel.Image
+              - name: IterativeCalculation
+                uid: excel.Excel.IterativeCalculation
+              - name: Line
+                uid: excel.Excel.Line
+              - name: ListDataValidation
+                uid: excel.Excel.ListDataValidation
+              - name: NamedItem
+                uid: excel.Excel.NamedItem
+              - name: NamedItemArrayValues
+                uid: excel.Excel.NamedItemArrayValues
+              - name: NamedItemCollection
+                uid: excel.Excel.NamedItemCollection
+              - name: PageBreak
+                uid: excel.Excel.PageBreak
+              - name: PageBreakCollection
+                uid: excel.Excel.PageBreakCollection
+              - name: PageLayout
+                uid: excel.Excel.PageLayout
+              - name: PageLayoutMarginOptions
+                uid: excel.Excel.PageLayoutMarginOptions
+              - name: PageLayoutZoomOptions
+                uid: excel.Excel.PageLayoutZoomOptions
+              - name: PivotField
+                uid: excel.Excel.PivotField
+              - name: PivotFieldCollection
+                uid: excel.Excel.PivotFieldCollection
+              - name: PivotHierarchy
+                uid: excel.Excel.PivotHierarchy
+              - name: PivotHierarchyCollection
+                uid: excel.Excel.PivotHierarchyCollection
+              - name: PivotItem
+                uid: excel.Excel.PivotItem
+              - name: PivotItemCollection
+                uid: excel.Excel.PivotItemCollection
+              - name: PivotLayout
+                uid: excel.Excel.PivotLayout
+              - name: PivotTable
+                uid: excel.Excel.PivotTable
+              - name: PivotTableCollection
+                uid: excel.Excel.PivotTableCollection
+              - name: PresetCriteriaConditionalFormat
+                uid: excel.Excel.PresetCriteriaConditionalFormat
+              - name: Range
+                uid: excel.Excel.Range
+              - name: RangeAreas
+                uid: excel.Excel.RangeAreas
+              - name: RangeBorder
+                uid: excel.Excel.RangeBorder
+              - name: RangeBorderCollection
+                uid: excel.Excel.RangeBorderCollection
+              - name: RangeCollection
+                uid: excel.Excel.RangeCollection
+              - name: RangeFill
+                uid: excel.Excel.RangeFill
+              - name: RangeFont
+                uid: excel.Excel.RangeFont
+              - name: RangeFormat
+                uid: excel.Excel.RangeFormat
+              - name: RangeSort
+                uid: excel.Excel.RangeSort
+              - name: RangeView
+                uid: excel.Excel.RangeView
+              - name: RangeViewCollection
+                uid: excel.Excel.RangeViewCollection
+              - name: RemoveDuplicatesResult
+                uid: excel.Excel.RemoveDuplicatesResult
+              - name: ReplaceCriteria
+                uid: excel.Excel.ReplaceCriteria
+              - name: RequestContext
+                uid: excel.Excel.RequestContext
+              - name: RowColumnPivotHierarchy
+                uid: excel.Excel.RowColumnPivotHierarchy
+              - name: RowColumnPivotHierarchyCollection
+                uid: excel.Excel.RowColumnPivotHierarchyCollection
+              - name: RowProperties
+                uid: excel.Excel.RowProperties
+              - name: Runtime
+                uid: excel.Excel.Runtime
+              - name: SearchCriteria
+                uid: excel.Excel.SearchCriteria
+              - name: Session
+                uid: excel.Excel.Session
+              - name: SettableCellProperties
+                uid: excel.Excel.SettableCellProperties
+              - name: SettableColumnProperties
+                uid: excel.Excel.SettableColumnProperties
+              - name: SettableRowProperties
+                uid: excel.Excel.SettableRowProperties
+              - name: Setting
+                uid: excel.Excel.Setting
+              - name: SettingCollection
+                uid: excel.Excel.SettingCollection
+              - name: Shape
+                uid: excel.Excel.Shape
+              - name: ShapeActivatedEventArgs
+                uid: excel.Excel.ShapeActivatedEventArgs
+              - name: ShapeCollection
+                uid: excel.Excel.ShapeCollection
+              - name: ShapeDeactivatedEventArgs
+                uid: excel.Excel.ShapeDeactivatedEventArgs
+              - name: ShapeFill
+                uid: excel.Excel.ShapeFill
+              - name: ShapeFont
+                uid: excel.Excel.ShapeFont
+              - name: ShapeGroup
+                uid: excel.Excel.ShapeGroup
+              - name: ShapeLineFormat
+                uid: excel.Excel.ShapeLineFormat
+              - name: ShowAsRule
+                uid: excel.Excel.ShowAsRule
+              - name: Slicer
+                uid: excel.Excel.Slicer
+              - name: SlicerCollection
+                uid: excel.Excel.SlicerCollection
+              - name: SlicerItem
+                uid: excel.Excel.SlicerItem
+              - name: SlicerItemCollection
+                uid: excel.Excel.SlicerItemCollection
+              - name: Style
+                uid: excel.Excel.Style
+              - name: StyleCollection
+                uid: excel.Excel.StyleCollection
+              - name: Subtotals
+                uid: excel.Excel.Subtotals
+              - name: Table
+                uid: excel.Excel.Table
+              - name: TableAddedEventArgs
+                uid: excel.Excel.TableAddedEventArgs
+              - name: TableCollection
+                uid: excel.Excel.TableCollection
+              - name: TableColumn
+                uid: excel.Excel.TableColumn
+              - name: TableColumnCollection
+                uid: excel.Excel.TableColumnCollection
+              - name: TableDeletedEventArgs
+                uid: excel.Excel.TableDeletedEventArgs
+              - name: TableFilteredEventArgs
+                uid: excel.Excel.TableFilteredEventArgs
+              - name: TableRow
+                uid: excel.Excel.TableRow
+              - name: TableRowCollection
+                uid: excel.Excel.TableRowCollection
+              - name: TableScopedCollection
+                uid: excel.Excel.TableScopedCollection
+              - name: TableSort
+                uid: excel.Excel.TableSort
+              - name: TextConditionalFormat
+                uid: excel.Excel.TextConditionalFormat
+              - name: TextFrame
+                uid: excel.Excel.TextFrame
+              - name: TextRange
+                uid: excel.Excel.TextRange
+              - name: TopBottomConditionalFormat
+                uid: excel.Excel.TopBottomConditionalFormat
+              - name: Workbook
+                uid: excel.Excel.Workbook
+              - name: WorkbookAutoSaveSettingChangedEventArgs
+                uid: excel.Excel.WorkbookAutoSaveSettingChangedEventArgs
+              - name: WorkbookCreated
+                uid: excel.Excel.WorkbookCreated
+              - name: WorkbookProtection
+                uid: excel.Excel.WorkbookProtection
+              - name: Worksheet
+                uid: excel.Excel.Worksheet
+              - name: WorksheetCollection
+                uid: excel.Excel.WorksheetCollection
+              - name: WorksheetFilteredEventArgs
+                uid: excel.Excel.WorksheetFilteredEventArgs
+              - name: WorksheetFormatChangedEventArgs
+                uid: excel.Excel.WorksheetFormatChangedEventArgs
+              - name: WorksheetFreezePanes
+                uid: excel.Excel.WorksheetFreezePanes
+              - name: WorksheetProtection
+                uid: excel.Excel.WorksheetProtection
+              - name: WorksheetSearchCriteria
+                uid: excel.Excel.WorksheetSearchCriteria
+          - name: Excel - Release
+            uid: excel_release
+            items:
+              - name: Enums
+                uid: ''
+                items:
+                  - name: AggregationFunction
+                    uid: excel_release.Excel.AggregationFunction
+                  - name: BindingType
+                    uid: excel_release.Excel.BindingType
+                  - name: BorderIndex
+                    uid: excel_release.Excel.BorderIndex
+                  - name: BorderLineStyle
+                    uid: excel_release.Excel.BorderLineStyle
+                  - name: BorderWeight
+                    uid: excel_release.Excel.BorderWeight
+                  - name: BuiltInStyle
+                    uid: excel_release.Excel.BuiltInStyle
+                  - name: CalculationMode
+                    uid: excel_release.Excel.CalculationMode
+                  - name: CalculationType
+                    uid: excel_release.Excel.CalculationType
+                  - name: ChartAxisCategoryType
+                    uid: excel_release.Excel.ChartAxisCategoryType
+                  - name: ChartAxisDisplayUnit
+                    uid: excel_release.Excel.ChartAxisDisplayUnit
+                  - name: ChartAxisGroup
+                    uid: excel_release.Excel.ChartAxisGroup
+                  - name: ChartAxisPosition
+                    uid: excel_release.Excel.ChartAxisPosition
+                  - name: ChartAxisScaleType
+                    uid: excel_release.Excel.ChartAxisScaleType
+                  - name: ChartAxisTickLabelPosition
+                    uid: excel_release.Excel.ChartAxisTickLabelPosition
+                  - name: ChartAxisTickMark
+                    uid: excel_release.Excel.ChartAxisTickMark
+                  - name: ChartAxisTimeUnit
+                    uid: excel_release.Excel.ChartAxisTimeUnit
+                  - name: ChartAxisType
+                    uid: excel_release.Excel.ChartAxisType
+                  - name: ChartColorScheme
+                    uid: excel_release.Excel.ChartColorScheme
+                  - name: ChartDataLabelPosition
+                    uid: excel_release.Excel.ChartDataLabelPosition
+                  - name: ChartDisplayBlanksAs
+                    uid: excel_release.Excel.ChartDisplayBlanksAs
+                  - name: ChartLegendPosition
+                    uid: excel_release.Excel.ChartLegendPosition
+                  - name: ChartLineStyle
+                    uid: excel_release.Excel.ChartLineStyle
+                  - name: ChartMarkerStyle
+                    uid: excel_release.Excel.ChartMarkerStyle
+                  - name: ChartPlotAreaPosition
+                    uid: excel_release.Excel.ChartPlotAreaPosition
+                  - name: ChartPlotBy
+                    uid: excel_release.Excel.ChartPlotBy
+                  - name: ChartSeriesBy
+                    uid: excel_release.Excel.ChartSeriesBy
+                  - name: ChartSplitType
+                    uid: excel_release.Excel.ChartSplitType
+                  - name: ChartTextHorizontalAlignment
+                    uid: excel_release.Excel.ChartTextHorizontalAlignment
+                  - name: ChartTextVerticalAlignment
+                    uid: excel_release.Excel.ChartTextVerticalAlignment
+                  - name: ChartTickLabelAlignment
+                    uid: excel_release.Excel.ChartTickLabelAlignment
+                  - name: ChartTitlePosition
+                    uid: excel_release.Excel.ChartTitlePosition
+                  - name: ChartTrendlineType
+                    uid: excel_release.Excel.ChartTrendlineType
+                  - name: ChartType
+                    uid: excel_release.Excel.ChartType
+                  - name: ChartUnderlineStyle
+                    uid: excel_release.Excel.ChartUnderlineStyle
+                  - name: ClearApplyTo
+                    uid: excel_release.Excel.ClearApplyTo
+                  - name: ConditionalCellValueOperator
+                    uid: excel_release.Excel.ConditionalCellValueOperator
+                  - name: ConditionalDataBarAxisFormat
+                    uid: excel_release.Excel.ConditionalDataBarAxisFormat
+                  - name: ConditionalDataBarDirection
+                    uid: excel_release.Excel.ConditionalDataBarDirection
+                  - name: ConditionalFormatColorCriterionType
+                    uid: excel_release.Excel.ConditionalFormatColorCriterionType
+                  - name: ConditionalFormatDirection
+                    uid: excel_release.Excel.ConditionalFormatDirection
+                  - name: ConditionalFormatIconRuleType
+                    uid: excel_release.Excel.ConditionalFormatIconRuleType
+                  - name: ConditionalFormatPresetCriterion
+                    uid: excel_release.Excel.ConditionalFormatPresetCriterion
+                  - name: ConditionalFormatRuleType
+                    uid: excel_release.Excel.ConditionalFormatRuleType
+                  - name: ConditionalFormatType
+                    uid: excel_release.Excel.ConditionalFormatType
+                  - name: ConditionalIconCriterionOperator
+                    uid: excel_release.Excel.ConditionalIconCriterionOperator
+                  - name: ConditionalRangeBorderIndex
+                    uid: excel_release.Excel.ConditionalRangeBorderIndex
+                  - name: ConditionalRangeBorderLineStyle
+                    uid: excel_release.Excel.ConditionalRangeBorderLineStyle
+                  - name: ConditionalRangeFontUnderlineStyle
+                    uid: excel_release.Excel.ConditionalRangeFontUnderlineStyle
+                  - name: ConditionalTextOperator
+                    uid: excel_release.Excel.ConditionalTextOperator
+                  - name: ConditionalTopBottomCriterionType
+                    uid: excel_release.Excel.ConditionalTopBottomCriterionType
+                  - name: DataChangeType
+                    uid: excel_release.Excel.DataChangeType
+                  - name: DataValidationAlertStyle
+                    uid: excel_release.Excel.DataValidationAlertStyle
+                  - name: DataValidationOperator
+                    uid: excel_release.Excel.DataValidationOperator
+                  - name: DataValidationType
+                    uid: excel_release.Excel.DataValidationType
+                  - name: DeleteShiftDirection
+                    uid: excel_release.Excel.DeleteShiftDirection
+                  - name: DocumentPropertyItem
+                    uid: excel_release.Excel.DocumentPropertyItem
+                  - name: DocumentPropertyType
+                    uid: excel_release.Excel.DocumentPropertyType
+                  - name: DynamicFilterCriteria
+                    uid: excel_release.Excel.DynamicFilterCriteria
+                  - name: ErrorCodes
+                    uid: excel_release.Excel.ErrorCodes
+                  - name: EventSource
+                    uid: excel_release.Excel.EventSource
+                  - name: EventType
+                    uid: excel_release.Excel.EventType
+                  - name: FilterDatetimeSpecificity
+                    uid: excel_release.Excel.FilterDatetimeSpecificity
+                  - name: FilterOn
+                    uid: excel_release.Excel.FilterOn
+                  - name: FilterOperator
+                    uid: excel_release.Excel.FilterOperator
+                  - name: HorizontalAlignment
+                    uid: excel_release.Excel.HorizontalAlignment
+                  - name: IconSet
+                    uid: excel_release.Excel.IconSet
+                  - name: ImageFittingMode
+                    uid: excel_release.Excel.ImageFittingMode
+                  - name: InsertShiftDirection
+                    uid: excel_release.Excel.InsertShiftDirection
+                  - name: NamedItemScope
+                    uid: excel_release.Excel.NamedItemScope
+                  - name: NamedItemType
+                    uid: excel_release.Excel.NamedItemType
+                  - name: PageOrientation
+                    uid: excel_release.Excel.PageOrientation
+                  - name: PivotLayoutType
+                    uid: excel_release.Excel.PivotLayoutType
+                  - name: ProtectionSelectionMode
+                    uid: excel_release.Excel.ProtectionSelectionMode
+                  - name: RangeUnderlineStyle
+                    uid: excel_release.Excel.RangeUnderlineStyle
+                  - name: RangeValueType
+                    uid: excel_release.Excel.RangeValueType
+                  - name: ReadingOrder
+                    uid: excel_release.Excel.ReadingOrder
+                  - name: SheetVisibility
+                    uid: excel_release.Excel.SheetVisibility
+                  - name: ShowAsCalculation
+                    uid: excel_release.Excel.ShowAsCalculation
+                  - name: SortBy
+                    uid: excel_release.Excel.SortBy
+                  - name: SortDataOption
+                    uid: excel_release.Excel.SortDataOption
+                  - name: SortMethod
+                    uid: excel_release.Excel.SortMethod
+                  - name: SortOn
+                    uid: excel_release.Excel.SortOn
+                  - name: SortOrientation
+                    uid: excel_release.Excel.SortOrientation
+                  - name: SubtotalLocationType
+                    uid: excel_release.Excel.SubtotalLocationType
+                  - name: VerticalAlignment
+                    uid: excel_release.Excel.VerticalAlignment
+                  - name: WorksheetPositionType
+                    uid: excel_release.Excel.WorksheetPositionType
+              - name: Application
+                uid: excel_release.Excel.Application
+              - name: BasicDataValidation
+                uid: excel_release.Excel.BasicDataValidation
+              - name: Binding
+                uid: excel_release.Excel.Binding
+              - name: BindingCollection
+                uid: excel_release.Excel.BindingCollection
+              - name: CellValueConditionalFormat
+                uid: excel_release.Excel.CellValueConditionalFormat
+              - name: Chart
+                uid: excel_release.Excel.Chart
+              - name: ChartAreaFormat
+                uid: excel_release.Excel.ChartAreaFormat
+              - name: ChartAxes
+                uid: excel_release.Excel.ChartAxes
+              - name: ChartAxis
+                uid: excel_release.Excel.ChartAxis
+              - name: ChartAxisFormat
+                uid: excel_release.Excel.ChartAxisFormat
+              - name: ChartAxisTitle
+                uid: excel_release.Excel.ChartAxisTitle
+              - name: ChartAxisTitleFormat
+                uid: excel_release.Excel.ChartAxisTitleFormat
+              - name: ChartBorder
+                uid: excel_release.Excel.ChartBorder
+              - name: ChartCollection
+                uid: excel_release.Excel.ChartCollection
+              - name: ChartDataLabel
+                uid: excel_release.Excel.ChartDataLabel
+              - name: ChartDataLabelFormat
+                uid: excel_release.Excel.ChartDataLabelFormat
+              - name: ChartDataLabels
+                uid: excel_release.Excel.ChartDataLabels
+              - name: ChartFill
+                uid: excel_release.Excel.ChartFill
+              - name: ChartFont
+                uid: excel_release.Excel.ChartFont
+              - name: ChartFormatString
+                uid: excel_release.Excel.ChartFormatString
+              - name: ChartGridlines
+                uid: excel_release.Excel.ChartGridlines
+              - name: ChartGridlinesFormat
+                uid: excel_release.Excel.ChartGridlinesFormat
+              - name: ChartLegend
+                uid: excel_release.Excel.ChartLegend
+              - name: ChartLegendEntry
+                uid: excel_release.Excel.ChartLegendEntry
+              - name: ChartLegendEntryCollection
+                uid: excel_release.Excel.ChartLegendEntryCollection
+              - name: ChartLegendFormat
+                uid: excel_release.Excel.ChartLegendFormat
+              - name: ChartLineFormat
+                uid: excel_release.Excel.ChartLineFormat
+              - name: ChartPlotArea
+                uid: excel_release.Excel.ChartPlotArea
+              - name: ChartPlotAreaFormat
+                uid: excel_release.Excel.ChartPlotAreaFormat
+              - name: ChartPoint
+                uid: excel_release.Excel.ChartPoint
+              - name: ChartPointFormat
+                uid: excel_release.Excel.ChartPointFormat
+              - name: ChartPointsCollection
+                uid: excel_release.Excel.ChartPointsCollection
+              - name: ChartSeries
+                uid: excel_release.Excel.ChartSeries
+              - name: ChartSeriesCollection
+                uid: excel_release.Excel.ChartSeriesCollection
+              - name: ChartSeriesFormat
+                uid: excel_release.Excel.ChartSeriesFormat
+              - name: ChartTitle
+                uid: excel_release.Excel.ChartTitle
+              - name: ChartTitleFormat
+                uid: excel_release.Excel.ChartTitleFormat
+              - name: ChartTrendline
+                uid: excel_release.Excel.ChartTrendline
+              - name: ChartTrendlineCollection
+                uid: excel_release.Excel.ChartTrendlineCollection
+              - name: ChartTrendlineFormat
+                uid: excel_release.Excel.ChartTrendlineFormat
+              - name: ChartTrendlineLabel
+                uid: excel_release.Excel.ChartTrendlineLabel
+              - name: ChartTrendlineLabelFormat
+                uid: excel_release.Excel.ChartTrendlineLabelFormat
+              - name: ColorScaleConditionalFormat
+                uid: excel_release.Excel.ColorScaleConditionalFormat
+              - name: ConditionalDataBarNegativeFormat
+                uid: excel_release.Excel.ConditionalDataBarNegativeFormat
+              - name: ConditionalDataBarPositiveFormat
+                uid: excel_release.Excel.ConditionalDataBarPositiveFormat
+              - name: ConditionalFormat
+                uid: excel_release.Excel.ConditionalFormat
+              - name: ConditionalFormatCollection
+                uid: excel_release.Excel.ConditionalFormatCollection
+              - name: ConditionalFormatRule
+                uid: excel_release.Excel.ConditionalFormatRule
+              - name: ConditionalRangeBorder
+                uid: excel_release.Excel.ConditionalRangeBorder
+              - name: ConditionalRangeBorderCollection
+                uid: excel_release.Excel.ConditionalRangeBorderCollection
+              - name: ConditionalRangeFill
+                uid: excel_release.Excel.ConditionalRangeFill
+              - name: ConditionalRangeFont
+                uid: excel_release.Excel.ConditionalRangeFont
+              - name: ConditionalRangeFormat
+                uid: excel_release.Excel.ConditionalRangeFormat
+              - name: CustomConditionalFormat
+                uid: excel_release.Excel.CustomConditionalFormat
+              - name: CustomDataValidation
+                uid: excel_release.Excel.CustomDataValidation
+              - name: CustomProperty
+                uid: excel_release.Excel.CustomProperty
+              - name: CustomPropertyCollection
+                uid: excel_release.Excel.CustomPropertyCollection
+              - name: CustomXmlPart
+                uid: excel_release.Excel.CustomXmlPart
+              - name: CustomXmlPartCollection
+                uid: excel_release.Excel.CustomXmlPartCollection
+              - name: CustomXmlPartScopedCollection
+                uid: excel_release.Excel.CustomXmlPartScopedCollection
+              - name: DataBarConditionalFormat
+                uid: excel_release.Excel.DataBarConditionalFormat
+              - name: DataConnectionCollection
+                uid: excel_release.Excel.DataConnectionCollection
+              - name: DataPivotHierarchy
+                uid: excel_release.Excel.DataPivotHierarchy
+              - name: DataPivotHierarchyCollection
+                uid: excel_release.Excel.DataPivotHierarchyCollection
+              - name: DataValidation
+                uid: excel_release.Excel.DataValidation
+              - name: DataValidationErrorAlert
+                uid: excel_release.Excel.DataValidationErrorAlert
+              - name: DataValidationPrompt
+                uid: excel_release.Excel.DataValidationPrompt
+              - name: DataValidationRule
+                uid: excel_release.Excel.DataValidationRule
+              - name: DateTimeDataValidation
+                uid: excel_release.Excel.DateTimeDataValidation
+              - name: DocumentProperties
+                uid: excel_release.Excel.DocumentProperties
+              - name: Filter
+                uid: excel_release.Excel.Filter
+              - name: FilterCriteria
+                uid: excel_release.Excel.FilterCriteria
+              - name: FilterPivotHierarchy
+                uid: excel_release.Excel.FilterPivotHierarchy
+              - name: FilterPivotHierarchyCollection
+                uid: excel_release.Excel.FilterPivotHierarchyCollection
+              - name: FormatProtection
+                uid: excel_release.Excel.FormatProtection
+              - name: FunctionResult
+                uid: excel_release.Excel.FunctionResult
+              - name: Functions
+                uid: excel_release.Excel.Functions
+              - name: IconSetConditionalFormat
+                uid: excel_release.Excel.IconSetConditionalFormat
+              - name: ListDataValidation
+                uid: excel_release.Excel.ListDataValidation
+              - name: NamedItem
+                uid: excel_release.Excel.NamedItem
+              - name: NamedItemArrayValues
+                uid: excel_release.Excel.NamedItemArrayValues
+              - name: NamedItemCollection
+                uid: excel_release.Excel.NamedItemCollection
+              - name: PivotField
+                uid: excel_release.Excel.PivotField
+              - name: PivotFieldCollection
+                uid: excel_release.Excel.PivotFieldCollection
+              - name: PivotHierarchy
+                uid: excel_release.Excel.PivotHierarchy
+              - name: PivotHierarchyCollection
+                uid: excel_release.Excel.PivotHierarchyCollection
+              - name: PivotItem
+                uid: excel_release.Excel.PivotItem
+              - name: PivotItemCollection
+                uid: excel_release.Excel.PivotItemCollection
+              - name: PivotLayout
+                uid: excel_release.Excel.PivotLayout
+              - name: PivotTable
+                uid: excel_release.Excel.PivotTable
+              - name: PivotTableCollection
+                uid: excel_release.Excel.PivotTableCollection
+              - name: PresetCriteriaConditionalFormat
+                uid: excel_release.Excel.PresetCriteriaConditionalFormat
+              - name: Range
+                uid: excel_release.Excel.Range
+              - name: RangeBorder
+                uid: excel_release.Excel.RangeBorder
+              - name: RangeBorderCollection
+                uid: excel_release.Excel.RangeBorderCollection
+              - name: RangeFill
+                uid: excel_release.Excel.RangeFill
+              - name: RangeFont
+                uid: excel_release.Excel.RangeFont
+              - name: RangeFormat
+                uid: excel_release.Excel.RangeFormat
+              - name: RangeSort
+                uid: excel_release.Excel.RangeSort
+              - name: RangeView
+                uid: excel_release.Excel.RangeView
+              - name: RangeViewCollection
+                uid: excel_release.Excel.RangeViewCollection
+              - name: RequestContext
+                uid: excel_release.Excel.RequestContext
+              - name: RowColumnPivotHierarchy
+                uid: excel_release.Excel.RowColumnPivotHierarchy
+              - name: RowColumnPivotHierarchyCollection
+                uid: excel_release.Excel.RowColumnPivotHierarchyCollection
+              - name: Runtime
+                uid: excel_release.Excel.Runtime
+              - name: Session
+                uid: excel_release.Excel.Session
+              - name: Setting
+                uid: excel_release.Excel.Setting
+              - name: SettingCollection
+                uid: excel_release.Excel.SettingCollection
+              - name: ShowAsRule
+                uid: excel_release.Excel.ShowAsRule
+              - name: Style
+                uid: excel_release.Excel.Style
+              - name: StyleCollection
+                uid: excel_release.Excel.StyleCollection
+              - name: Subtotals
+                uid: excel_release.Excel.Subtotals
+              - name: Table
+                uid: excel_release.Excel.Table
+              - name: TableCollection
+                uid: excel_release.Excel.TableCollection
+              - name: TableColumn
+                uid: excel_release.Excel.TableColumn
+              - name: TableColumnCollection
+                uid: excel_release.Excel.TableColumnCollection
+              - name: TableRow
+                uid: excel_release.Excel.TableRow
+              - name: TableRowCollection
+                uid: excel_release.Excel.TableRowCollection
+              - name: TableSort
+                uid: excel_release.Excel.TableSort
+              - name: TextConditionalFormat
+                uid: excel_release.Excel.TextConditionalFormat
+              - name: TopBottomConditionalFormat
+                uid: excel_release.Excel.TopBottomConditionalFormat
+              - name: Workbook
+                uid: excel_release.Excel.Workbook
+              - name: WorkbookCreated
+                uid: excel_release.Excel.WorkbookCreated
+              - name: WorkbookProtection
+                uid: excel_release.Excel.WorkbookProtection
+              - name: Worksheet
+                uid: excel_release.Excel.Worksheet
+              - name: WorksheetCollection
+                uid: excel_release.Excel.WorksheetCollection
+              - name: WorksheetFreezePanes
+                uid: excel_release.Excel.WorksheetFreezePanes
+              - name: WorksheetProtection
+                uid: excel_release.Excel.WorksheetProtection
       - name: OneNote
         uid: onenote
         items:
@@ -1571,18 +1996,10 @@ items:
             uid: word.Word.ContentControl
           - name: ContentControlCollection
             uid: word.Word.ContentControlCollection
-          - name: ContentControlEventArgs
-            uid: word.Word.ContentControlEventArgs
           - name: CustomProperty
             uid: word.Word.CustomProperty
           - name: CustomPropertyCollection
             uid: word.Word.CustomPropertyCollection
-          - name: CustomXmlPart
-            uid: word.Word.CustomXmlPart
-          - name: CustomXmlPartCollection
-            uid: word.Word.CustomXmlPartCollection
-          - name: CustomXmlPartScopedCollection
-            uid: word.Word.CustomXmlPartScopedCollection
           - name: Document
             uid: word.Word.Document
           - name: DocumentCreated
@@ -1617,10 +2034,6 @@ items:
             uid: word.Word.Section
           - name: SectionCollection
             uid: word.Word.SectionCollection
-          - name: Setting
-            uid: word.Word.Setting
-          - name: SettingCollection
-            uid: word.Word.SettingCollection
           - name: Table
             uid: word.Word.Table
           - name: TableBorder

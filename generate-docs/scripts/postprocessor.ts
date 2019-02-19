@@ -92,19 +92,21 @@ tryCatch(async () => {
 
     // create a root for all the Outlook versions
     let outlookRoot = {"name": "Outlook", "uid": "", "items": [] as any};
-    let rootPushed = false;
+    let outlookRootPushed = false;
 
     // look for existing folders to move
     let outlookFolders : string[] = ["MailboxEnums"];
 
     // create folders for Excel subcategories
-    let excelRoot;
-    let excelEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
+    let excelRoot = {"name": "Excel", "uid": "", "items": [] as any};
+    let excelRootPushed = false;
     let excelEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-excel/excel.d.ts").toString());
+
     let excelEventArgsFilter : string [] = ["BindingDataChangedEventArgs", "BindingSelectionChangedEventArgs", "ChartActivatedEventArgs", "ChartAddedEventArgs", "ChartDeactivatedEventArgs", "ChartDeletedEventArgs", "SelectionChangedEventArgs", "SettingsChangedEventArgs", "TableChangedEventArgs", "TableSelectionChangedEventArgs", "WorksheetActivatedEventArgs", "WorksheetAddedEventArgs", "WorksheetCalculatedEventArgs", "WorksheetChangedEventArgs", "WorksheetDeactivatedEventArgs", "WorksheetDeletedEventArgs", "WorksheetSelectionChangedEventArgs"];
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
-    let excelInterfaceFilter : string [] = ["ConditionalCellValueRule", "ConditionalCellValueRule", "ConditionalColorScaleCriteria", "ConditionalColorScaleCriterion", "ConditionalDataBarRule", "ConditionalIconCriterion", "ConditionalPresetCriteriaRule", "ConditionalTextComparisonRule", "ConditionalTextComparisonRule", "ConditionalTopBottomRule", "FilterCrieteria", "FilterDatetime", "Icon", "IconCollections", "RangeHyperlink", "RangeReference", "RunOptions", "SortField", "WorksheetProtectionOptions"];
-    let customFunctionsRoot = {"name": "Custom Functions (Preview)", "uid": "", "items": [] as any};
+    let excelInterfaceFilter : string [] = ["CellPropertiesBorderLoadOptions", "CellPropertiesFillLoadOptions", "CellPropertiesFontLoadOptions", "CellPropertiesFormatLoadOptions", "CellPropertiesLoadOptions ", "ColumnPropertiesLoadOptions", "ConditionalCellValueRule", "ConditionalCellValueRule", "ConditionalColorScaleCriteria", "ConditionalColorScaleCriterion", "ConditionalDataBarRule", "ConditionalIconCriterion", "ConditionalPresetCriteriaRule", "ConditionalTextComparisonRule", "ConditionalTextComparisonRule", "ConditionalTopBottomRule", "FilterCrieteria", "FilterDatetime", "Icon", "IconCollections", "RangeHyperlink", "RangeReference", "RowPropertiesLoadOptions", "RunOptions", "SortField", "WorksheetProtectionOptions"];
+
+    let customFunctionsRoot = {"name": "Custom Functions - Preview", "uid": "", "items": [] as any};
 
     // create folders for OneNote subcategories
     let oneNoteEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
@@ -112,7 +114,6 @@ tryCatch(async () => {
     let oneNoteInterfaceFilter : string[] = ["ImageOcrData", "InkStrokePointer", "ParagraphInfo"];
 
     // create folders for word subcategories
-    let wordEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
     let wordEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-word/word.d.ts").toString());
 
     // create folders for common (shared) API subcategories
@@ -151,9 +152,9 @@ tryCatch(async () => {
 
                     // if outlook, put in subfolders for versioning
                     if (packageName.toLocaleLowerCase().includes('outlook')) {
-                        if (!rootPushed) { // add root in alphabetical order
+                        if (!outlookRootPushed) { // add root in alphabetical order
                             newToc.items[0].items.push(outlookRoot);
-                            rootPushed = true;
+                            outlookRootPushed = true;
                         }
                         let filterToCContent = membersToMove.items.filter(item => {
                             return outlookFilter.indexOf(item.name) < 0;
@@ -183,28 +184,35 @@ tryCatch(async () => {
                             });
                         }
                     } else if (packageName.toLocaleLowerCase().includes('excel')) {
-                        membersToMove.items.filter(item => {
-                            return excelIconSetFilter.indexOf(item.name) >= 0;
-                        });
-                        membersToMove.items.filter(item => {
-                            return excelEventArgsFilter.indexOf(item.name) >= 0;
-                        });
+                        if (!excelRootPushed) { // add root in alphabetical order
+                            newToc.items[0].items.push(excelRoot);
+                            excelRootPushed = true;
+                        }
                         let enumList = membersToMove.items.filter(item => {
-                            return excelEnumFilter.indexOf(item.name) >= 0;
-                        });
+                             return excelEnumFilter.indexOf(item.name) >= 0;
+                         });
                         let primaryList = membersToMove.items.filter(item => {
                             return excelFilter.indexOf(item.name) < 0;
                         });
-                        excelEnumRoot.items = enumList;
 
+                        let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(excelEnumRoot);
-                        newToc.items[0].items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items":  primaryList as any
-                        });
 
-                        excelRoot = primaryList;
+                        if (packageName === 'Excel') { // The version without a suffix is the preview version
+                            excelRoot.items.push({
+                                "name": packageName + " - Preview",
+                                "uid": packageItem.uid,
+                                "items": primaryList
+                            });
+                        }
+                        else {
+                            let packageNameVersionFormated = packageName.replace('_r', ' - R');
+                            excelRoot.items.push({
+                                "name": packageNameVersionFormated,
+                                "uid": packageItem.uid,
+                                "items": primaryList
+                            });
+                        }
                     } else if (packageName.toLocaleLowerCase().includes('word')) {
                         let enumList = membersToMove.items.filter(item => {
                             return wordEnumFilter.indexOf(item.name) >= 0;
@@ -212,7 +220,8 @@ tryCatch(async () => {
                         let primaryList = membersToMove.items.filter(item => {
                             return wordFilter.indexOf(item.name) < 0;
                         });
-                        wordEnumRoot.items = enumList;
+
+                        let wordEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(wordEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
@@ -279,13 +288,11 @@ tryCatch(async () => {
             }
         });
     });
-
-    // add custom functions packages under excel
-    excelRoot.unshift(customFunctionsRoot);
-
     // Get the logical order: Preview, 1.6, 1.5, etc.
     outlookRoot.items.reverse();
     outlookRoot.items.unshift(outlookRoot.items.pop());
+    // add custom functions packages under excel
+    excelRoot.items.unshift(customFunctionsRoot);
 
     // process 'office' (Common "Shared" API) package
     origToc.items.forEach((rootItem, rootIndex) => {

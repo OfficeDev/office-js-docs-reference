@@ -12,12 +12,10 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr></table>
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
 
       #### Examples
 
@@ -80,7 +78,7 @@ items:
         type:
           - string
   - uid: Outlook_1_3.Office.Contact.emailAddresses
-    summary: 'An array of strings containing the SMTP email addresses associated with the contact. Nullable,'
+    summary: An array of strings containing the SMTP email addresses associated with the contact. Nullable.
     name: emailAddresses
     fullName: emailAddresses
     langs:

@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ConditionalTopBottomCriterionType
+    summary: |-
+      Represents the criteria for the above/below average conditional format type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalTopBottomCriterionType
+    fullName: Excel.ConditionalTopBottomCriterionType
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ConditionalTopBottomCriterionType.bottomItems
+      - excel_release.Excel.ConditionalTopBottomCriterionType.bottomPercent
+      - excel_release.Excel.ConditionalTopBottomCriterionType.invalid
+      - excel_release.Excel.ConditionalTopBottomCriterionType.topItems
+      - excel_release.Excel.ConditionalTopBottomCriterionType.topPercent
+  - uid: excel_release.Excel.ConditionalTopBottomCriterionType.bottomItems
+    name: bottomItems
+    fullName: bottomItems
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BottomItems"'
+  - uid: excel_release.Excel.ConditionalTopBottomCriterionType.bottomPercent
+    name: bottomPercent
+    fullName: bottomPercent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BottomPercent"'
+  - uid: excel_release.Excel.ConditionalTopBottomCriterionType.invalid
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: excel_release.Excel.ConditionalTopBottomCriterionType.topItems
+    name: topItems
+    fullName: topItems
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TopItems"'
+  - uid: excel_release.Excel.ConditionalTopBottomCriterionType.topPercent
+    name: topPercent
+    fullName: topPercent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TopPercent"'

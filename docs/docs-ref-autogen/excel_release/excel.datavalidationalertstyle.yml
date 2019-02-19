@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.DataValidationAlertStyle
+    summary: |-
+      Represents Data validation error alert style. The default is "Stop".
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.DataValidationAlertStyle
+    fullName: Excel.DataValidationAlertStyle
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.DataValidationAlertStyle.information
+      - excel_release.Excel.DataValidationAlertStyle.stop
+      - excel_release.Excel.DataValidationAlertStyle.warning
+  - uid: excel_release.Excel.DataValidationAlertStyle.information
+    name: information
+    fullName: information
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Information"'
+  - uid: excel_release.Excel.DataValidationAlertStyle.stop
+    name: stop
+    fullName: stop
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Stop"'
+  - uid: excel_release.Excel.DataValidationAlertStyle.warning
+    name: warning
+    fullName: warning
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Warning"'
