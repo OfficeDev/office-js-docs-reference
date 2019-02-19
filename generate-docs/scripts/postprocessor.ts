@@ -98,7 +98,6 @@ tryCatch(async () => {
     let outlookFolders : string[] = ["MailboxEnums"];
 
     // create folders for Excel subcategories
-
     let excelRoot = {"name": "Excel", "uid": "", "items": [] as any};
     let excelRootPushed = false;
     let excelEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-excel/excel.d.ts").toString());
