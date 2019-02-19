@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ShapeType
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.ShapeType
+    fullName: Excel.ShapeType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ShapeType.geometricShape
+      - excel.Excel.ShapeType.group
+      - excel.Excel.ShapeType.image
+      - excel.Excel.ShapeType.line
+      - excel.Excel.ShapeType.unknown
+  - uid: excel.Excel.ShapeType.geometricShape
+    isPreview: true
+    name: geometricShape
+    fullName: geometricShape
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GeometricShape"'
+  - uid: excel.Excel.ShapeType.group
+    isPreview: true
+    name: group
+    fullName: group
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Group"'
+  - uid: excel.Excel.ShapeType.image
+    isPreview: true
+    name: image
+    fullName: image
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Image"'
+  - uid: excel.Excel.ShapeType.line
+    isPreview: true
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Line"'
+  - uid: excel.Excel.ShapeType.unknown
+    isPreview: true
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

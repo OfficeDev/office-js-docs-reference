@@ -1,0 +1,91 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.ConditionalRangeFontData
+    summary: An interface describing the data returned by calling "conditionalRangeFont.toJSON()".
+    name: Excel.Interfaces.ConditionalRangeFontData
+    fullName: Excel.Interfaces.ConditionalRangeFontData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.ConditionalRangeFontData.bold
+      - excel_release.Excel.Interfaces.ConditionalRangeFontData.color
+      - excel_release.Excel.Interfaces.ConditionalRangeFontData.italic
+      - excel_release.Excel.Interfaces.ConditionalRangeFontData.strikethrough
+      - excel_release.Excel.Interfaces.ConditionalRangeFontData.underline
+  - uid: excel_release.Excel.Interfaces.ConditionalRangeFontData.bold
+    summary: |-
+      Represents the bold status of font.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ConditionalRangeFontData.color
+    summary: |-
+      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.Interfaces.ConditionalRangeFontData.italic
+    summary: |-
+      Represents the italic status of the font.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ConditionalRangeFontData.strikethrough
+    summary: |-
+      Represents the strikethrough status of the font.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ConditionalRangeFontData.underline
+    summary: |-
+      Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline?: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double";'
+      return:
+        type:
+          - Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double"

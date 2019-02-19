@@ -477,7 +477,7 @@ items:
       content: 'getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: endingMarks
@@ -1569,7 +1569,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: |-
 
           #### Examples
@@ -1770,7 +1770,7 @@ items:
         Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: delimiters

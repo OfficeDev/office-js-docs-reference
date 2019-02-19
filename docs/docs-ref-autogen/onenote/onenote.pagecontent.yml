@@ -121,7 +121,7 @@ items:
       content: 'readonly image: OneNote.Image;'
       return:
         type:
-          - onenote.OneNote.Image
+          - OneNote.Image
   - uid: onenote.OneNote.PageContent.ink
     summary: |-
       Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.

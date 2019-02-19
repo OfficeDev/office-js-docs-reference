@@ -13,6 +13,7 @@ items:
     package: excel
     children:
       - excel.Excel.Interfaces.TableLoadOptions.$all
+      - excel.Excel.Interfaces.TableLoadOptions.autoFilter
       - excel.Excel.Interfaces.TableLoadOptions.columns
       - excel.Excel.Interfaces.TableLoadOptions.highlightFirstColumn
       - excel.Excel.Interfaces.TableLoadOptions.highlightLastColumn
@@ -39,6 +40,24 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.TableLoadOptions.autoFilter
+    summary: >-
+      Represents the AutoFilter object of the table.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: autoFilter
+    fullName: autoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.AutoFilterLoadOptions
   - uid: excel.Excel.Interfaces.TableLoadOptions.columns
     summary: |-
       Represents a collection of all the columns in the table.

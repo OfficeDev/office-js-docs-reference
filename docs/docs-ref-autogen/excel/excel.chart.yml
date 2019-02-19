@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.Chart.activate
       - excel.Excel.Chart.axes
       - excel.Excel.Chart.categoryLabelLevel
       - excel.Excel.Chart.chartType
@@ -34,6 +35,7 @@ items:
       - excel.Excel.Chart.name
       - excel.Excel.Chart.onActivated
       - excel.Excel.Chart.onDeactivated
+      - excel.Excel.Chart.pivotOptions
       - excel.Excel.Chart.plotArea
       - excel.Excel.Chart.plotBy
       - excel.Excel.Chart.plotVisibleOnly
@@ -52,6 +54,25 @@ items:
       - excel.Excel.Chart.top
       - excel.Excel.Chart.width
       - excel.Excel.Chart.worksheet
+  - uid: excel.Excel.Chart.activate
+    summary: >-
+      Activate the chart in the Excel UI.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: activate()
+    fullName: activate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'activate(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: excel.Excel.Chart.axes
     summary: |-
       Represents chart axes. Read-only.
@@ -560,6 +581,24 @@ items:
               return context.sync();
           });
           ```
+  - uid: excel.Excel.Chart.pivotOptions
+    summary: >-
+      Encapsulates the options for the pivot chart. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: pivotOptions
+    fullName: pivotOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly pivotOptions: Excel.ChartPivotOptions;'
+      return:
+        type:
+          - excel.Excel.ChartPivotOptions
   - uid: excel.Excel.Chart.plotArea
     summary: |-
       Represents the plotArea for the chart.

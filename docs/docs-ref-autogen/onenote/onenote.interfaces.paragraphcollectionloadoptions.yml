@@ -67,7 +67,7 @@ items:
       content: 'image?: OneNote.Interfaces.ImageLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ImageLoadOptions
+          - OneNote.Interfaces.ImageLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.inkWords
     summary: >-
       For EACH ITEM in the collection: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is

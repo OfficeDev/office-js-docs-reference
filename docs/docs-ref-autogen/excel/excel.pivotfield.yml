@@ -25,6 +25,8 @@ items:
       - excel.Excel.PivotField.set_1
       - excel.Excel.PivotField.showAllItems
       - excel.Excel.PivotField.sortByLabels
+      - excel.Excel.PivotField.sortByValues
+      - excel.Excel.PivotField.sortByValues_1
       - excel.Excel.PivotField.subtotals
       - excel.Excel.PivotField.toJSON
   - uid: excel.Excel.PivotField.context
@@ -251,7 +253,85 @@ items:
         - id: sortby
           description: Represents whether the sorting is done in an ascending or descending order.
           type:
+            - SortBy
+  - uid: excel.Excel.PivotField.sortByValues
+    summary: >-
+      Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to
+      sort when there are multiple values from the same DataPivotHierarchy.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: 'sortByValues(sortby, valuesHierarchy, pivotItemScope)'
+    fullName: 'sortByValues(sortby, valuesHierarchy, pivotItemScope)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        sortByValues(sortby: Excel.SortBy, valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem |
+        string>): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortby
+          description: Represents whether the sorting is done in an ascending or descending order.
+          type:
             - excel.Excel.SortBy
+        - id: valuesHierarchy
+          description: Specifies the values to be used for sorting.
+          type:
+            - excel.Excel.DataPivotHierarchy
+        - id: pivotItemScope
+          description: >-
+            The items that should be used for the scope of the sorting. These will be the items that make up the row or
+            column that you want to sort on. If a string is used instead of a PivotItem, the string represents the ID of
+            the PivotItem. If there are no items other than data hierarchy on the axis you want to sort on, this can be
+            empty.
+          type:
+            - Array<PivotItem | string>
+  - uid: excel.Excel.PivotField.sortByValues_1
+    summary: >-
+      Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to
+      sort when there are multiple values from the same DataPivotHierarchy.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: 'sortByValues(sortbyString, valuesHierarchy, pivotItemScope)'
+    fullName: 'sortByValues(sortbyString, valuesHierarchy, pivotItemScope)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        sortByValues(sortbyString: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy,
+        pivotItemScope?: Array<PivotItem | string>): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortbyString
+          description: Represents whether the sorting is done in an ascending or descending order.
+          type:
+            - '"Ascending" | "Descending"'
+        - id: valuesHierarchy
+          description: Specifies the values to be used for sorting.
+          type:
+            - excel.Excel.DataPivotHierarchy
+        - id: pivotItemScope
+          description: >-
+            The items that should be used for the scope of the sorting. These will be the items that make up the row or
+            column that you want to sort on. If a string is used instead of a PivotItem, the string represents the ID of
+            the PivotItem. If there are no items other than data hierarchy on the axis you want to sort on, this can be
+            empty.
+          type:
+            - Array<PivotItem | string>
   - uid: excel.Excel.PivotField.subtotals
     summary: |-
       Subtotals of the PivotField.

@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ShapeTextVerticalAlignType
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.ShapeTextVerticalAlignType
+    fullName: Excel.ShapeTextVerticalAlignType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ShapeTextVerticalAlignType.bottom
+      - excel.Excel.ShapeTextVerticalAlignType.distributed
+      - excel.Excel.ShapeTextVerticalAlignType.justified
+      - excel.Excel.ShapeTextVerticalAlignType.middle
+      - excel.Excel.ShapeTextVerticalAlignType.shapeTextVerticalAlignType_MaxEnumIDs
+      - excel.Excel.ShapeTextVerticalAlignType.top
+  - uid: excel.Excel.ShapeTextVerticalAlignType.bottom
+    isPreview: true
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: excel.Excel.ShapeTextVerticalAlignType.distributed
+    isPreview: true
+    name: distributed
+    fullName: distributed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Distributed"'
+  - uid: excel.Excel.ShapeTextVerticalAlignType.justified
+    isPreview: true
+    name: justified
+    fullName: justified
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Justified"'
+  - uid: excel.Excel.ShapeTextVerticalAlignType.middle
+    isPreview: true
+    name: middle
+    fullName: middle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Middle"'
+  - uid: excel.Excel.ShapeTextVerticalAlignType.shapeTextVerticalAlignType_MaxEnumIDs
+    isPreview: true
+    name: shapeTextVerticalAlignType_MaxEnumIDs
+    fullName: shapeTextVerticalAlignType_MaxEnumIDs
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ShapeTextVerticalAlignType_MaxEnumIDs"'
+  - uid: excel.Excel.ShapeTextVerticalAlignType.top
+    isPreview: true
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

@@ -115,7 +115,7 @@ items:
         Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: option
@@ -135,7 +135,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -152,7 +152,7 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: option
@@ -169,7 +169,7 @@ items:
       content: 'toJSON(): Word.Interfaces.RangeCollectionData;'
       return:
         type:
-          - word.Word.Interfaces.RangeCollectionData
+          - Word.Interfaces.RangeCollectionData
         description: ''
   - uid: word.Word.RangeCollection.track
     summary: >-
@@ -187,7 +187,7 @@ items:
       content: 'track(): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
   - uid: word.Word.RangeCollection.untrack
     summary: >-
@@ -204,5 +204,5 @@ items:
       content: 'untrack(): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''

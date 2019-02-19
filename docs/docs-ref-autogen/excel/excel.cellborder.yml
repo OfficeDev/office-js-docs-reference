@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.CellBorder
+    summary: >-
+      Represents the returned single border properties of getCell/Row/ColumnProperties or border property input
+      parameter of setCell/Row/ColumnProperties.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.CellBorder
+    fullName: Excel.CellBorder
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.CellBorder.color
+      - excel.Excel.CellBorder.style
+      - excel.Excel.CellBorder.tintAndShade
+      - excel.Excel.CellBorder.weight
+  - uid: excel.Excel.CellBorder.color
+    isPreview: true
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.CellBorder.style
+    isPreview: true
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        style?: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
+        "SlantDashDot";
+      return:
+        type:
+          - >-
+            Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
+            "SlantDashDot"
+  - uid: excel.Excel.CellBorder.tintAndShade
+    isPreview: true
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.CellBorder.weight
+    isPreview: true
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";'
+      return:
+        type:
+          - Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick"

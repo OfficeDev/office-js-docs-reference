@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.SlicerItemCollectionUpdateData
+    summary: >-
+      An interface for updating data on the SlicerItemCollection object, for use in "slicerItemCollection.set(<!-- -->{
+      ... }<!-- -->)".
+    name: Excel.Interfaces.SlicerItemCollectionUpdateData
+    fullName: Excel.Interfaces.SlicerItemCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.SlicerItemCollectionUpdateData.items
+  - uid: excel.Excel.Interfaces.SlicerItemCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.SlicerItemData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.SlicerItemData[]'

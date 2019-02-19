@@ -132,7 +132,7 @@ items:
         - id: Shape
           description: Shape to be checked.
           type:
-            - visio.Visio.Shape
+            - Visio.Shape
   - uid: visio.Visio.PageView.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

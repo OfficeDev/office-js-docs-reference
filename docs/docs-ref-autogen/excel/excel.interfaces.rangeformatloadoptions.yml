@@ -13,13 +13,17 @@ items:
     package: excel
     children:
       - excel.Excel.Interfaces.RangeFormatLoadOptions.$all
+      - excel.Excel.Interfaces.RangeFormatLoadOptions.autoIndent
       - excel.Excel.Interfaces.RangeFormatLoadOptions.borders
       - excel.Excel.Interfaces.RangeFormatLoadOptions.columnWidth
       - excel.Excel.Interfaces.RangeFormatLoadOptions.fill
       - excel.Excel.Interfaces.RangeFormatLoadOptions.font
       - excel.Excel.Interfaces.RangeFormatLoadOptions.horizontalAlignment
+      - excel.Excel.Interfaces.RangeFormatLoadOptions.indentLevel
       - excel.Excel.Interfaces.RangeFormatLoadOptions.protection
+      - excel.Excel.Interfaces.RangeFormatLoadOptions.readingOrder
       - excel.Excel.Interfaces.RangeFormatLoadOptions.rowHeight
+      - excel.Excel.Interfaces.RangeFormatLoadOptions.shrinkToFit
       - excel.Excel.Interfaces.RangeFormatLoadOptions.textOrientation
       - excel.Excel.Interfaces.RangeFormatLoadOptions.useStandardHeight
       - excel.Excel.Interfaces.RangeFormatLoadOptions.useStandardWidth
@@ -33,6 +37,24 @@ items:
     type: property
     syntax:
       content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.autoIndent
+    summary: >-
+      Indicates if text is automatically indented when text alignment is set to equal distribution.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: autoIndent
+    fullName: autoIndent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoIndent?: boolean;'
       return:
         type:
           - boolean
@@ -113,6 +135,24 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.indentLevel
+    summary: >-
+      An integer from 0 to 250 that indicates the indent level.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: indentLevel
+    fullName: indentLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'indentLevel?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.protection
     summary: |-
       Returns the format protection object for a range.
@@ -128,6 +168,24 @@ items:
       return:
         type:
           - excel.Excel.Interfaces.FormatProtectionLoadOptions
+  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.readingOrder
+    summary: >-
+      The reading order for the range.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: readingOrder
+    fullName: readingOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readingOrder?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.rowHeight
     summary: |-
       Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
@@ -140,6 +198,24 @@ items:
     type: property
     syntax:
       content: 'rowHeight?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.shrinkToFit
+    summary: >-
+      Indicates if text automatically shrinks to fit in the available column width.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: shrinkToFit
+    fullName: shrinkToFit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shrinkToFit?: boolean;'
       return:
         type:
           - boolean

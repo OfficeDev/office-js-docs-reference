@@ -13,9 +13,12 @@ items:
     package: excel
     children:
       - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.$all
+      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.autoFilter
       - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.charts
+      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.enableCalculation
       - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.id
       - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.name
+      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.pageLayout
       - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.position
       - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.protection
       - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.showGridlines
@@ -36,6 +39,24 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.autoFilter
+    summary: >-
+      For EACH ITEM in the collection: Represents the AutoFilter object of the worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: autoFilter
+    fullName: autoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.AutoFilterLoadOptions
   - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.charts
     summary: |-
       For EACH ITEM in the collection: Returns collection of charts that are part of the worksheet.
@@ -51,6 +72,25 @@ items:
       return:
         type:
           - excel.Excel.Interfaces.ChartCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.enableCalculation
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the enableCalculation property of the worksheet. True if Excel
+      recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: enableCalculation
+    fullName: enableCalculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableCalculation?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.id
     summary: >-
       For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The
@@ -83,6 +123,24 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.pageLayout
+    summary: >-
+      For EACH ITEM in the collection: Gets the PageLayout object of the worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: pageLayout
+    fullName: pageLayout
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageLayout?: Excel.Interfaces.PageLayoutLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.PageLayoutLoadOptions
   - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.position
     summary: |-
       For EACH ITEM in the collection: The zero-based position of the worksheet within the workbook.

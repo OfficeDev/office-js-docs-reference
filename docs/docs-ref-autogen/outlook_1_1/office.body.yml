@@ -8,12 +8,10 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      read</td></tr></table>
+      Read</td></tr> </table>
     name: Office.Body
     fullName: Office.Body
     langs:
@@ -22,41 +20,24 @@ items:
     package: Outlook_1_1
     children:
       - Outlook_1_1.Office.Body.getTypeAsync
+      - Outlook_1_1.Office.Body.getTypeAsync_1
+      - Outlook_1_1.Office.Body.getTypeAsync_2
       - Outlook_1_1.Office.Body.prependAsync
       - Outlook_1_1.Office.Body.prependAsync_1
       - Outlook_1_1.Office.Body.prependAsync_2
-      - Outlook_1_1.Office.Body.prependAsync_3
       - Outlook_1_1.Office.Body.setSelectedDataAsync
       - Outlook_1_1.Office.Body.setSelectedDataAsync_1
       - Outlook_1_1.Office.Body.setSelectedDataAsync_2
-      - Outlook_1_1.Office.Body.setSelectedDataAsync_3
   - uid: Outlook_1_1.Office.Body.getTypeAsync
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr></table>
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
-          if (asyncResult.status === "failed") {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          } else {
-              console.log("Body type: " + asyncResult.value);
-          }
-      });
-
-      ```
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
     name: 'getTypeAsync(options, callback)'
     fullName: 'getTypeAsync(options, callback)'
     langs:
@@ -84,6 +65,71 @@ items:
             asyncResult.value property.
           type:
             - '(result: Office.AsyncResult<Office.CoercionType>) => void'
+  - uid: Outlook_1_1.Office.Body.getTypeAsync_1
+    summary: |-
+      Gets a value that indicates whether the content is in HTML or text format.
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
+          if (asyncResult.status === "failed") {
+              console.log("Action failed with error: " + asyncResult.error.message);
+          } else {
+              console.log("Body type: " + asyncResult.value);
+          }
+      });
+
+      ```
+    name: getTypeAsync(callback)
+    fullName: getTypeAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTypeAsync(callback?: (result: Office.AsyncResult<Office.CoercionType>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult. The content type is returned as one of the CoercionType values in the
+            asyncResult.value property.
+          type:
+            - '(result: Office.AsyncResult<Office.CoercionType>) => void'
+  - uid: Outlook_1_1.Office.Body.getTypeAsync_2
+    summary: |-
+      Gets a value that indicates whether the content is in HTML or text format.
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
+    name: getTypeAsync()
+    fullName: getTypeAsync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTypeAsync(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: Outlook_1_1.Office.Body.prependAsync
     summary: >-
       Adds the specified content to the beginning of the item body.
@@ -99,28 +145,12 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
-      characters.</td></tr></table>
-
-
-      In addition to this signature, this method also has the following signatures:
-
-
-      `prependAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
-
-
-      `prependAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
-
-
-      `prependAsync(data: string): void;`
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr>
+      </table>
 
       #### Examples
 
@@ -183,60 +213,12 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
-      characters.</td></tr></table>
-    name: 'prependAsync(data, options)'
-    fullName: 'prependAsync(data, options)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'prependAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: data
-          description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.'
-          type:
-            - string
-        - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method. coercionType: The desired format for the
-            body. The string in the data parameter will be converted to this format.
-          type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
-  - uid: Outlook_1_1.Office.Body.prependAsync_2
-    summary: >-
-      Adds the specified content to the beginning of the item body.
-
-
-      The prependAsync method inserts the specified string at the beginning of the item body. After insertion, the
-      cursor is returned to its original place, relative to the inserted content.
-
-
-      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
-      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (please see the Examples section for a sample).
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
-      characters.</td></tr></table>
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr>
+      </table>
     name: 'prependAsync(data, callback)'
     fullName: 'prependAsync(data, callback)'
     langs:
@@ -260,7 +242,7 @@ items:
             property.
           type:
             - '(result: Office.AsyncResult<void>) => void'
-  - uid: Outlook_1_1.Office.Body.prependAsync_3
+  - uid: Outlook_1_1.Office.Body.prependAsync_2
     summary: >-
       Adds the specified content to the beginning of the item body.
 
@@ -275,12 +257,12 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
-      characters.</td></tr></table>
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr>
+      </table>
     name: prependAsync(data)
     fullName: prependAsync(data)
     langs:
@@ -314,29 +296,13 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
-      characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
-      Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
-
-
-      In addition to this signature, this method also has the following signatures:
-
-
-      `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
-
-
-      `setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
-
-
-      `setSelectedDataAsync(data: string): void;`
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr>
+      <tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and
+      the message body is in plain text.</td></tr> </table>
 
       #### Examples
 
@@ -401,68 +367,13 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
-      characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
-      Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
-    name: 'setSelectedDataAsync(data, options)'
-    fullName: 'setSelectedDataAsync(data, options)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: data
-          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
-          type:
-            - string
-        - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method. coercionType: The desired format for the
-            body. The string in the data parameter will be converted to this format.
-          type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
-  - uid: Outlook_1_1.Office.Body.setSelectedDataAsync_2
-    summary: >-
-      Replaces the selection in the body with the specified text.
-
-
-      The setSelectedDataAsync method inserts the specified string at the cursor location in the body of the item, or,
-      if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
-      or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
-      insertion, the cursor is placed at the end of the inserted content.
-
-
-      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
-      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (please see the Examples section for a sample).
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
-      characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
-      Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr>
+      <tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and
+      the message body is in plain text.</td></tr> </table>
     name: 'setSelectedDataAsync(data, callback)'
     fullName: 'setSelectedDataAsync(data, callback)'
     langs:
@@ -486,7 +397,7 @@ items:
             property.
           type:
             - '(result: Office.AsyncResult<void>) => void'
-  - uid: Outlook_1_1.Office.Body.setSelectedDataAsync_3
+  - uid: Outlook_1_1.Office.Body.setSelectedDataAsync_2
     summary: >-
       Replaces the selection in the body with the specified text.
 
@@ -503,17 +414,13 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table><tr><td>[Minimum permission
+      <table> <tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-
-
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-
-
-      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
-      characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to
-      Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr>
+      <tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and
+      the message body is in plain text.</td></tr> </table>
     name: setSelectedDataAsync(data)
     fullName: setSelectedDataAsync(data)
     langs:

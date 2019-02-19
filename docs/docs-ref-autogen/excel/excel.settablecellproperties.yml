@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.SettableCellProperties
+    summary: Represents the input parameter of setCellProperties.
+    name: Excel.SettableCellProperties
+    fullName: Excel.SettableCellProperties
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.SettableCellProperties.format
+      - excel.Excel.SettableCellProperties.hyperlink
+      - excel.Excel.SettableCellProperties.style
+  - uid: excel.Excel.SettableCellProperties.format
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.CellPropertiesFormat;'
+      return:
+        type:
+          - excel.Excel.CellPropertiesFormat
+  - uid: excel.Excel.SettableCellProperties.hyperlink
+    name: hyperlink
+    fullName: hyperlink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hyperlink?: Excel.RangeHyperlink;'
+      return:
+        type:
+          - excel.Excel.RangeHyperlink
+  - uid: excel.Excel.SettableCellProperties.style
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: string;'
+      return:
+        type:
+          - string

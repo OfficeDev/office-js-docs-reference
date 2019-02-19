@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ConditionalRangeBorderLineStyle
+    summary: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ConditionalRangeBorderLineStyle
+    fullName: Excel.ConditionalRangeBorderLineStyle
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ConditionalRangeBorderLineStyle.continuous
+      - excel_release.Excel.ConditionalRangeBorderLineStyle.dash
+      - excel_release.Excel.ConditionalRangeBorderLineStyle.dashDot
+      - excel_release.Excel.ConditionalRangeBorderLineStyle.dashDotDot
+      - excel_release.Excel.ConditionalRangeBorderLineStyle.dot
+      - excel_release.Excel.ConditionalRangeBorderLineStyle.none
+  - uid: excel_release.Excel.ConditionalRangeBorderLineStyle.continuous
+    name: continuous
+    fullName: continuous
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Continuous"'
+  - uid: excel_release.Excel.ConditionalRangeBorderLineStyle.dash
+    name: dash
+    fullName: dash
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dash"'
+  - uid: excel_release.Excel.ConditionalRangeBorderLineStyle.dashDot
+    name: dashDot
+    fullName: dashDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashDot"'
+  - uid: excel_release.Excel.ConditionalRangeBorderLineStyle.dashDotDot
+    name: dashDotDot
+    fullName: dashDotDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashDotDot"'
+  - uid: excel_release.Excel.ConditionalRangeBorderLineStyle.dot
+    name: dot
+    fullName: dot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dot"'
+  - uid: excel_release.Excel.ConditionalRangeBorderLineStyle.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
