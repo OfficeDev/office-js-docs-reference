@@ -1,0 +1,148 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.CellPropertiesFont
+    summary: >-
+      Represents the returned format.font properties of getCell/Row/ColumnProperties or format.font input parameter of
+      setCell/Row/ColumnProperties.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.CellPropertiesFont
+    fullName: Excel.CellPropertiesFont
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.CellPropertiesFont.bold
+      - excel.Excel.CellPropertiesFont.color
+      - excel.Excel.CellPropertiesFont.italic
+      - excel.Excel.CellPropertiesFont.name
+      - excel.Excel.CellPropertiesFont.size
+      - excel.Excel.CellPropertiesFont.strikethrough
+      - excel.Excel.CellPropertiesFont.subscript
+      - excel.Excel.CellPropertiesFont.superscript
+      - excel.Excel.CellPropertiesFont.tintAndShade
+      - excel.Excel.CellPropertiesFont.underline
+  - uid: excel.Excel.CellPropertiesFont.bold
+    isPreview: true
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.CellPropertiesFont.color
+    isPreview: true
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.CellPropertiesFont.italic
+    isPreview: true
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.CellPropertiesFont.name
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.CellPropertiesFont.size
+    isPreview: true
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.CellPropertiesFont.strikethrough
+    isPreview: true
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.CellPropertiesFont.subscript
+    isPreview: true
+    name: subscript
+    fullName: subscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.CellPropertiesFont.superscript
+    isPreview: true
+    name: superscript
+    fullName: superscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'superscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.CellPropertiesFont.tintAndShade
+    isPreview: true
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.CellPropertiesFont.underline
+    isPreview: true
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";'
+      return:
+        type:
+          - Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"

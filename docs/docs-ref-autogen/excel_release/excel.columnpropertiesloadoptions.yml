@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ColumnPropertiesLoadOptions
+    summary: 'Represents which column properties to load, when used as part of a "range.getColumnProperties" method.'
+    name: Excel.ColumnPropertiesLoadOptions
+    fullName: Excel.ColumnPropertiesLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'CellPropertiesLoadOptions '
+    package: excel_release
+    children:
+      - excel_release.Excel.ColumnPropertiesLoadOptions.columnHidden
+      - excel_release.Excel.ColumnPropertiesLoadOptions.columnIndex
+      - excel_release.Excel.ColumnPropertiesLoadOptions.format
+  - uid: excel_release.Excel.ColumnPropertiesLoadOptions.columnHidden
+    name: columnHidden
+    fullName: columnHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.ColumnPropertiesLoadOptions.columnIndex
+    name: columnIndex
+    fullName: columnIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.ColumnPropertiesLoadOptions.format
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: "format?: Excel.CellPropertiesFormatLoadOptions & {\r\n            columnWidth?: boolean;\r\n        };"
+      return:
+        type:
+          - "Excel.CellPropertiesFormatLoadOptions & {\r\n            columnWidth?: boolean;\r\n        }"

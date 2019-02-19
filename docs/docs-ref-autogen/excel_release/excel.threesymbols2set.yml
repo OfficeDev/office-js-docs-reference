@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ThreeSymbols2Set
+    name: Excel.ThreeSymbols2Set
+    fullName: Excel.ThreeSymbols2Set
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.ThreeSymbols2Set.greenCheck
+      - excel_release.Excel.ThreeSymbols2Set.redCross
+      - excel_release.Excel.ThreeSymbols2Set.yellowExclamation
+  - uid: excel_release.Excel.ThreeSymbols2Set.greenCheck
+    name: greenCheck
+    fullName: greenCheck
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenCheck: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_release.Excel.ThreeSymbols2Set.redCross
+    name: redCross
+    fullName: redCross
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redCross: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_release.Excel.ThreeSymbols2Set.yellowExclamation
+    name: yellowExclamation
+    fullName: yellowExclamation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowExclamation: Icon;'
+      return:
+        type:
+          - Icon

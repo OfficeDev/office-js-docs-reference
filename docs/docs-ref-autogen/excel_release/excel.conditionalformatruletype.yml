@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ConditionalFormatRuleType
+    summary: |-
+      Represents the types of conditional format values.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalFormatRuleType
+    fullName: Excel.ConditionalFormatRuleType
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ConditionalFormatRuleType.automatic
+      - excel_release.Excel.ConditionalFormatRuleType.formula
+      - excel_release.Excel.ConditionalFormatRuleType.highestValue
+      - excel_release.Excel.ConditionalFormatRuleType.invalid
+      - excel_release.Excel.ConditionalFormatRuleType.lowestValue
+      - excel_release.Excel.ConditionalFormatRuleType.number
+      - excel_release.Excel.ConditionalFormatRuleType.percent
+      - excel_release.Excel.ConditionalFormatRuleType.percentile
+  - uid: excel_release.Excel.ConditionalFormatRuleType.automatic
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: excel_release.Excel.ConditionalFormatRuleType.formula
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Formula"'
+  - uid: excel_release.Excel.ConditionalFormatRuleType.highestValue
+    name: highestValue
+    fullName: highestValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"HighestValue"'
+  - uid: excel_release.Excel.ConditionalFormatRuleType.invalid
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: excel_release.Excel.ConditionalFormatRuleType.lowestValue
+    name: lowestValue
+    fullName: lowestValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LowestValue"'
+  - uid: excel_release.Excel.ConditionalFormatRuleType.number
+    name: number
+    fullName: number
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Number"'
+  - uid: excel_release.Excel.ConditionalFormatRuleType.percent
+    name: percent
+    fullName: percent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percent"'
+  - uid: excel_release.Excel.ConditionalFormatRuleType.percentile
+    name: percentile
+    fullName: percentile
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percentile"'

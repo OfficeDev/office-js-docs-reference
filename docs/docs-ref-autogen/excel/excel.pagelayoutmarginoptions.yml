@@ -1,0 +1,131 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.PageLayoutMarginOptions
+    summary: >-
+      Represents the options in page layout margins.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.PageLayoutMarginOptions
+    fullName: Excel.PageLayoutMarginOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.PageLayoutMarginOptions.bottom
+      - excel.Excel.PageLayoutMarginOptions.footer
+      - excel.Excel.PageLayoutMarginOptions.header
+      - excel.Excel.PageLayoutMarginOptions.left
+      - excel.Excel.PageLayoutMarginOptions.right
+      - excel.Excel.PageLayoutMarginOptions.top
+  - uid: excel.Excel.PageLayoutMarginOptions.bottom
+    summary: >-
+      Represents the page layout bottom margin in the unit specified to use for printing.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottom?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.PageLayoutMarginOptions.footer
+    summary: >-
+      Represents the page layout footer margin in the unit specified to use for printing.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: footer
+    fullName: footer
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'footer?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.PageLayoutMarginOptions.header
+    summary: >-
+      Represents the page layout header margin in the unit specified to use for printing.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: header
+    fullName: header
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'header?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.PageLayoutMarginOptions.left
+    summary: >-
+      Represents the page layout left margin in the unit specified to use for printing.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.PageLayoutMarginOptions.right
+    summary: >-
+      Represents the page layout right margin in the unit specified to use for printing.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'right?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.PageLayoutMarginOptions.top
+    summary: >-
+      Represents the page layout top margin in the unit specified to use for printing.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number

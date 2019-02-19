@@ -52,7 +52,7 @@ items:
       content: 'readonly runtime: Runtime;'
       return:
         type:
-          - excel.Excel.Runtime
+          - Runtime
   - uid: excel.Excel.RequestContext.workbook
     name: workbook
     fullName: workbook
@@ -63,4 +63,4 @@ items:
       content: 'readonly workbook: Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - Workbook

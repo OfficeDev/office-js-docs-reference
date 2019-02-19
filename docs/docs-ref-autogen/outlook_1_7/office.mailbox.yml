@@ -52,10 +52,13 @@ items:
       - Outlook_1_7.Office.Mailbox.restUrl
       - Outlook_1_7.Office.Mailbox.userProfile
   - uid: Outlook_1_7.Office.Mailbox.addHandlerAsync
-    summary: |-
+    summary: >-
       Adds an event handler for a supported event.
 
-      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
+
+      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->. In Preview,
+      `Office.EventType.OfficeThemeChanged` is also supported.
+
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -1199,10 +1202,13 @@ items:
           type:
             - '(result: Office.AsyncResult<string>) => void'
   - uid: Outlook_1_7.Office.Mailbox.removeHandlerAsync
-    summary: |-
+    summary: >-
       Removes the event handlers for a supported event type.
 
-      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
+
+      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->. In Preview,
+      `Office.EventType.OfficeThemeChanged` is also supported.
+
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-

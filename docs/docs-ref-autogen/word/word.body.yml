@@ -1273,7 +1273,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: |-
 
           #### Examples

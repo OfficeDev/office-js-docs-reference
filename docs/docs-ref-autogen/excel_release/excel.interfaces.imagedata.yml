@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.ImageData
+    summary: An interface describing the data returned by calling "image.toJSON()".
+    name: Excel.Interfaces.ImageData
+    fullName: Excel.Interfaces.ImageData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release

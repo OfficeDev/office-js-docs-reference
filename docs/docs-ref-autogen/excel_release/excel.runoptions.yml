@@ -1,0 +1,31 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.RunOptions
+    name: Excel.RunOptions
+    fullName: Excel.RunOptions
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'OfficeExtension.RunOptions<Session> '
+    package: excel_release
+    children:
+      - excel_release.Excel.RunOptions.delayForCellEdit
+  - uid: excel_release.Excel.RunOptions.delayForCellEdit
+    summary: >-
+      Determines whether Excel will delay the batch request until the user exits cell edit mode.
+
+
+      When false, if the user is in cell edit when the batch request is processed by the host, the batch will
+      automatically fail. When true, the batch request will be executed immediately if the user is not in cell edit
+      mode, but if the user is in cell edit mode the batch request will be delayed until the user exits cell edit mode.
+    name: delayForCellEdit
+    fullName: delayForCellEdit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'delayForCellEdit?: boolean;'
+      return:
+        type:
+          - boolean

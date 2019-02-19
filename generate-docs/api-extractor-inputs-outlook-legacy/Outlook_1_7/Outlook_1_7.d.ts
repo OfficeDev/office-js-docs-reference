@@ -5,6 +5,8 @@ import {Office as CommonAPI} from "../../api-extractor-inputs-office/office"
 
 export declare namespace Office {
     export namespace MailboxEnums {
+        
+        
         /**
          * Specifies an attachment's type.
          *
@@ -81,6 +83,7 @@ export declare namespace Office {
              */
             Day = "day"
         }
+        
         /**
          * Specifies an entity's type.
          *
@@ -1130,6 +1133,7 @@ export declare namespace Office {
          */
         subject: string;
     }
+    
     /**
      * Represents an attachment on an item from the server. Read mode only.
      *
@@ -1950,6 +1954,8 @@ export declare namespace Office {
         getAsync(): void;
     }
 
+    
+
     /**
      * Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. 
      * This object provides a method to get the organizer value of an appointment in an Outlook add-in.
@@ -2306,7 +2312,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`.
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -2330,7 +2336,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`.
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -2475,6 +2481,8 @@ export declare namespace Office {
          * </table>
          */
         close(): void;
+        
+        
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -2658,7 +2666,7 @@ export declare namespace Office {
         * Removes the event handlers for a supported event type.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrenceChanged`.
+        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
         * 
         * [Api set: Mailbox 1.7]
         *
@@ -2680,7 +2688,7 @@ export declare namespace Office {
         * Removes the event handlers for a supported event type.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrenceChanged`.
+        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
         * 
         * [Api set: Mailbox 1.7]
         *
@@ -3225,7 +3233,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`.
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -3249,7 +3257,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`.
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -3660,7 +3668,7 @@ export declare namespace Office {
         * Removes the event handlers for a supported event type.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrenceChanged`.
+        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
         * 
         * [Api set: Mailbox 1.7]
         *
@@ -3682,7 +3690,7 @@ export declare namespace Office {
         * Removes the event handlers for a supported event type.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrenceChanged`.
+        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
         * 
         * [Api set: Mailbox 1.7]
         *
@@ -3802,7 +3810,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`.
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -3827,7 +3835,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`.
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -3923,7 +3931,7 @@ export declare namespace Office {
         * Removes the event handlers for a supported event type.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrenceChanged`.
+        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
         * 
         * [Api set: Mailbox 1.7]
         *
@@ -3946,7 +3954,7 @@ export declare namespace Office {
         * Removes the event handlers for a supported event type.
         * 
         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-        * `Office.EventType.RecurrenceChanged`.
+        * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
         * 
         * [Api set: Mailbox 1.7]
         *
@@ -4086,6 +4094,8 @@ export declare namespace Office {
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: CommonAPI.AsyncResult<string>) => void): void;
 
+        
+
         /**
          * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
          *
@@ -4196,6 +4206,8 @@ export declare namespace Office {
          * </table>
          */
         close(): void;
+        
+        
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -4761,6 +4773,8 @@ export declare namespace Office {
          *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
          */
         displayReplyForm(formData: string | ReplyFormData): void;
+        
+        
         /**
          * Gets the entities found in the selected item's body.
          *
@@ -5259,7 +5273,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`.
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -5283,7 +5297,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`.
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -5430,6 +5444,8 @@ export declare namespace Office {
          * </table>
          */
         close(): void;
+        
+        
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -5636,7 +5652,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`.
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -5976,6 +5992,7 @@ export declare namespace Office {
          * </table>
          */
         from: EmailAddressDetails;
+        
         /**
          * Gets the Internet message identifier for an email message.
          *
@@ -6199,7 +6216,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`.
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -6223,7 +6240,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`.
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -6369,6 +6386,8 @@ export declare namespace Office {
          *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
          */
         displayReplyForm(formData: string | ReplyFormData): void;
+        
+        
         /**
          * Gets the entities found in the selected item's body.
          *
@@ -6635,7 +6654,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`.
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -6657,7 +6676,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type.
          * 
          * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-         * `Office.EventType.RecurrenceChanged`.
+         * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -6971,7 +6990,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event.
          *
-         * Currently, the only supported event type is `Office.EventType.ItemChanged`.
+         * Currently, the only supported event type is `Office.EventType.ItemChanged`. In Preview, `Office.EventType.OfficeThemeChanged` is also supported.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -7508,7 +7527,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type.
          *
-         * Currently, the only supported event type is `Office.EventType.ItemChanged`.
+         * Currently, the only supported event type is `Office.EventType.ItemChanged`. In Preview, `Office.EventType.OfficeThemeChanged` is also supported.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -8773,6 +8792,8 @@ export declare namespace Office {
          */
         setStartTime(time: string): void;
     }
+
+    
 
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.

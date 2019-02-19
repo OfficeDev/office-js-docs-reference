@@ -337,7 +337,7 @@ items:
       content: 'getHyperlinkRanges(): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
   - uid: word.Word.Range.getNextTextRange
     summary: >-
@@ -498,7 +498,7 @@ items:
       content: 'getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: |-
 
           #### Examples
@@ -1570,7 +1570,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: searchText
@@ -1726,7 +1726,7 @@ items:
         Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: delimiters

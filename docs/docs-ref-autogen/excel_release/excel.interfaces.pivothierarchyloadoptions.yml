@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.PivotHierarchyLoadOptions
+    summary: |-
+      Represents the Excel PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.PivotHierarchyLoadOptions
+    fullName: Excel.Interfaces.PivotHierarchyLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.PivotHierarchyLoadOptions.$all
+      - excel_release.Excel.Interfaces.PivotHierarchyLoadOptions.id
+      - excel_release.Excel.Interfaces.PivotHierarchyLoadOptions.name
+  - uid: excel_release.Excel.Interfaces.PivotHierarchyLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.PivotHierarchyLoadOptions.id
+    summary: |-
+      Id of the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.PivotHierarchyLoadOptions.name
+    summary: |-
+      Name of the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean

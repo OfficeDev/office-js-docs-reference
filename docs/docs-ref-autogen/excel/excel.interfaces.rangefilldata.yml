@@ -10,9 +10,13 @@ items:
     package: excel
     children:
       - excel.Excel.Interfaces.RangeFillData.color
+      - excel.Excel.Interfaces.RangeFillData.pattern
+      - excel.Excel.Interfaces.RangeFillData.patternColor
+      - excel.Excel.Interfaces.RangeFillData.patternTintAndShade
+      - excel.Excel.Interfaces.RangeFillData.tintAndShade
   - uid: excel.Excel.Interfaces.RangeFillData.color
     summary: >-
-      HTML color code representing the color of the background, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange")
 
 
@@ -27,3 +31,87 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.Interfaces.RangeFillData.pattern
+    summary: >-
+      Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are
+      not supported. A null value indicates that the entire range doesn't have uniform pattern setting.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" |
+        "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" |
+        "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
+      return:
+        type:
+          - >-
+            Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" |
+            "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" |
+            "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
+  - uid: excel.Excel.Interfaces.RangeFillData.patternColor
+    summary: >-
+      Sets HTML color code representing the color of the Range pattern, of the form \#RRGGBB (e.g. "FFA500") or as a
+      named HTML color (e.g. "orange"). Gets HTML color code representing the color of the Range pattern, of the form
+      \#RRGGBB (e.g. "FFA500").
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: patternColor
+    fullName: patternColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternColor?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.RangeFillData.patternTintAndShade
+    summary: >-
+      Returns or sets a double that lightens or darkens a pattern color for Range Fill, the value is between -1
+      (darkest) and 1 (brightest), with 0 for the original color. If the pattern tintAndShades are not uniform, null
+      will be returned.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: patternTintAndShade
+    fullName: patternTintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternTintAndShade?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.RangeFillData.tintAndShade
+    summary: >-
+      Returns or sets a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1
+      (brightest), with 0 for the original color. If the tintAndShades are not uniform, null will be returned.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type:
+          - number

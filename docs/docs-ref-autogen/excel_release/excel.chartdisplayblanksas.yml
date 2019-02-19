@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ChartDisplayBlanksAs
+    summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartDisplayBlanksAs
+    fullName: Excel.ChartDisplayBlanksAs
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ChartDisplayBlanksAs.interplotted
+      - excel_release.Excel.ChartDisplayBlanksAs.notPlotted
+      - excel_release.Excel.ChartDisplayBlanksAs.zero
+  - uid: excel_release.Excel.ChartDisplayBlanksAs.interplotted
+    name: interplotted
+    fullName: interplotted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Interplotted"'
+  - uid: excel_release.Excel.ChartDisplayBlanksAs.notPlotted
+    name: notPlotted
+    fullName: notPlotted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotPlotted"'
+  - uid: excel_release.Excel.ChartDisplayBlanksAs.zero
+    name: zero
+    fullName: zero
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Zero"'

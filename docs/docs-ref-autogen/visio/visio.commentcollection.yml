@@ -51,7 +51,7 @@ items:
       content: 'getItem(key: string): Visio.Comment;'
       return:
         type:
-          - visio.Visio.Comment
+          - Visio.Comment
         description: ''
       parameters:
         - id: key
@@ -132,7 +132,7 @@ items:
         Visio.CommentCollection;
       return:
         type:
-          - visio.Visio.CommentCollection
+          - Visio.CommentCollection
         description: ''
       parameters:
         - id: option
@@ -152,7 +152,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Visio.CommentCollection;'
       return:
         type:
-          - visio.Visio.CommentCollection
+          - Visio.CommentCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -169,7 +169,7 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Visio.CommentCollection;'
       return:
         type:
-          - visio.Visio.CommentCollection
+          - Visio.CommentCollection
         description: ''
       parameters:
         - id: option
@@ -186,5 +186,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.CommentCollectionData;'
       return:
         type:
-          - visio.Visio.Interfaces.CommentCollectionData
+          - Visio.Interfaces.CommentCollectionData
         description: ''

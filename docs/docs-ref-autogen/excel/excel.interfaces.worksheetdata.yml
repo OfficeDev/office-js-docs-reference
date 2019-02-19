@@ -9,20 +9,46 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.WorksheetData.autoFilter
       - excel.Excel.Interfaces.WorksheetData.charts
+      - excel.Excel.Interfaces.WorksheetData.comments
+      - excel.Excel.Interfaces.WorksheetData.enableCalculation
+      - excel.Excel.Interfaces.WorksheetData.horizontalPageBreaks
       - excel.Excel.Interfaces.WorksheetData.id
       - excel.Excel.Interfaces.WorksheetData.name
       - excel.Excel.Interfaces.WorksheetData.names
+      - excel.Excel.Interfaces.WorksheetData.pageLayout
       - excel.Excel.Interfaces.WorksheetData.pivotTables
       - excel.Excel.Interfaces.WorksheetData.position
       - excel.Excel.Interfaces.WorksheetData.protection
+      - excel.Excel.Interfaces.WorksheetData.shapes
       - excel.Excel.Interfaces.WorksheetData.showGridlines
       - excel.Excel.Interfaces.WorksheetData.showHeadings
+      - excel.Excel.Interfaces.WorksheetData.slicers
       - excel.Excel.Interfaces.WorksheetData.standardHeight
       - excel.Excel.Interfaces.WorksheetData.standardWidth
       - excel.Excel.Interfaces.WorksheetData.tabColor
       - excel.Excel.Interfaces.WorksheetData.tables
+      - excel.Excel.Interfaces.WorksheetData.verticalPageBreaks
       - excel.Excel.Interfaces.WorksheetData.visibility
+  - uid: excel.Excel.Interfaces.WorksheetData.autoFilter
+    summary: >-
+      Represents the AutoFilter object of the worksheet. Read-Only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: autoFilter
+    fullName: autoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoFilter?: Excel.Interfaces.AutoFilterData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.AutoFilterData
   - uid: excel.Excel.Interfaces.WorksheetData.charts
     summary: |-
       Returns collection of charts that are part of the worksheet. Read-only.
@@ -38,6 +64,61 @@ items:
       return:
         type:
           - 'Excel.Interfaces.ChartData[]'
+  - uid: excel.Excel.Interfaces.WorksheetData.comments
+    summary: >-
+      Returns a collection of all the Comments objects on the worksheet. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comments?: Excel.Interfaces.CommentData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.CommentData[]'
+  - uid: excel.Excel.Interfaces.WorksheetData.enableCalculation
+    summary: >-
+      Gets or sets the enableCalculation property of the worksheet. True if Excel recalculates the worksheet when
+      necessary. False if Excel doesn't recalculate the sheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: enableCalculation
+    fullName: enableCalculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableCalculation?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorksheetData.horizontalPageBreaks
+    summary: >-
+      Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: horizontalPageBreaks
+    fullName: horizontalPageBreaks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalPageBreaks?: Excel.Interfaces.PageBreakData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.PageBreakData[]'
   - uid: excel.Excel.Interfaces.WorksheetData.id
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
@@ -85,6 +166,24 @@ items:
       return:
         type:
           - 'Excel.Interfaces.NamedItemData[]'
+  - uid: excel.Excel.Interfaces.WorksheetData.pageLayout
+    summary: >-
+      Gets the PageLayout object of the worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: pageLayout
+    fullName: pageLayout
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageLayout?: Excel.Interfaces.PageLayoutData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.PageLayoutData
   - uid: excel.Excel.Interfaces.WorksheetData.pivotTables
     summary: |-
       Collection of PivotTables that are part of the worksheet. Read-only.
@@ -130,6 +229,24 @@ items:
       return:
         type:
           - excel.Excel.Interfaces.WorksheetProtectionData
+  - uid: excel.Excel.Interfaces.WorksheetData.shapes
+    summary: >-
+      Returns the collection of all the Shape objects on the worksheet. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: shapes
+    fullName: shapes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shapes?: Excel.Interfaces.ShapeData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.ShapeData[]'
   - uid: excel.Excel.Interfaces.WorksheetData.showGridlines
     summary: |-
       Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
@@ -160,6 +277,24 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.WorksheetData.slicers
+    summary: >-
+      Returns collection of slicers that are part of the worksheet. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: slicers
+    fullName: slicers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'slicers?: Excel.Interfaces.SlicerData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.SlicerData[]'
   - uid: excel.Excel.Interfaces.WorksheetData.standardHeight
     summary: |-
       Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
@@ -227,6 +362,24 @@ items:
       return:
         type:
           - 'Excel.Interfaces.TableData[]'
+  - uid: excel.Excel.Interfaces.WorksheetData.verticalPageBreaks
+    summary: >-
+      Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: verticalPageBreaks
+    fullName: verticalPageBreaks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalPageBreaks?: Excel.Interfaces.PageBreakData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.PageBreakData[]'
   - uid: excel.Excel.Interfaces.WorksheetData.visibility
     summary: >-
       The Visibility of the worksheet.
