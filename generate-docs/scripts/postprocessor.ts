@@ -131,6 +131,8 @@ tryCatch(async () => {
     oneNoteFilter = oneNoteFilter.concat(oneNoteEnumFilter).concat(oneNoteInterfaceFilter);
     let visioFilter: string[] = ["Interfaces"];
 
+    let tocMap = [{name: "All", toc: newToc}, {name: "Outlook", toc: outlookRoot}, {name: "Excel", toc: excelRoot}];
+
     // process all packages except 'office' (Common "Shared" API)
     origToc.items.forEach((rootItem, rootIndex) => {
         rootItem.items.forEach((packageItem, packageIndex) => {
@@ -206,7 +208,7 @@ tryCatch(async () => {
                             });
                         }
                         else {
-                            let packageNameVersionFormated = packageName.replace('_r', ' - R');
+                            let packageNameVersionFormated = packageName.replace('_1_', ' 1.');
                             excelRoot.items.push({
                                 "name": packageNameVersionFormated,
                                 "uid": packageItem.uid,
@@ -360,6 +362,9 @@ tryCatch(async () => {
             docsDestination + '/' + filename
         );
     });
+
+    fsx.writeFileSync(docsDestination + "/outlook/toc.yml", jsyaml.safeDump(tocMap[1].toc));
+    fsx.writeFileSync(docsDestination + "/excel/toc.yml", jsyaml.safeDump(tocMap[2].toc));
 
     console.log("\nPostprocessor script complete!\n");
 
