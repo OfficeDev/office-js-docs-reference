@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.ThreeSymbolsSet
+    name: Excel.ThreeSymbolsSet
+    fullName: Excel.ThreeSymbolsSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.ThreeSymbolsSet.greenCheckSymbol
+      - excel_1_7.Excel.ThreeSymbolsSet.redCrossSymbol
+      - excel_1_7.Excel.ThreeSymbolsSet.yellowExclamationSymbol
+  - uid: excel_1_7.Excel.ThreeSymbolsSet.greenCheckSymbol
+    name: greenCheckSymbol
+    fullName: greenCheckSymbol
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenCheckSymbol: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_1_7.Excel.ThreeSymbolsSet.redCrossSymbol
+    name: redCrossSymbol
+    fullName: redCrossSymbol
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redCrossSymbol: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_1_7.Excel.ThreeSymbolsSet.yellowExclamationSymbol
+    name: yellowExclamationSymbol
+    fullName: yellowExclamationSymbol
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowExclamationSymbol: Icon;'
+      return:
+        type:
+          - Icon

@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_5.Excel.Interfaces.ConditionalDataBarPositiveFormatData
+    summary: An interface describing the data returned by calling "conditionalDataBarPositiveFormat.toJSON()".
+    name: Excel.Interfaces.ConditionalDataBarPositiveFormatData
+    fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_5

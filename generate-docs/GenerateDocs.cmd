@@ -24,9 +24,39 @@ cd ..\api-extractor-inputs-excel
 
 call ..\node_modules\.bin\api-extractor run
 
-cd ..\api-extractor-inputs-excel-release
+cd ..\api-extractor-inputs-excel-release\Excel_1_8
 
-call ..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Excel_1_7
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Excel_1_6
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Excel_1_5
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Excel_1_4
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Excel_1_3
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Excel_1_2
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Excel_1_1
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..
 
 cd ..\api-extractor-inputs-word
 
@@ -56,35 +86,35 @@ cd ..\api-extractor-inputs-office-runtime
 
 call ..\node_modules\.bin\api-extractor run
 
-REM cd ..\api-extractor-inputs-outlook-legacy\Outlook_1_7
+cd ..\api-extractor-inputs-outlook-legacy\Outlook_1_7
 
-REM call ..\..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
 
-REM cd ..\Outlook_1_6
+cd ..\Outlook_1_6
 
-REM call ..\..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
 
-REM cd ..\Outlook_1_5
+cd ..\Outlook_1_5
 
-REM call ..\..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
 
-REM cd ..\Outlook_1_4
+cd ..\Outlook_1_4
 
-REM call ..\..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
 
-REM cd ..\Outlook_1_3
+cd ..\Outlook_1_3
 
-REM call ..\..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
 
-REM cd ..\Outlook_1_2
+cd ..\Outlook_1_2
 
-REM call ..\..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
 
-REM cd ..\Outlook_1_1
+cd ..\Outlook_1_1
 
-REM call ..\..\node_modules\.bin\api-extractor run
+call ..\..\node_modules\.bin\api-extractor run
 
-REM cd ..
+cd ..
 
 cd ..
 

@@ -1,0 +1,12 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_5.Excel.Interfaces.ChartTrendlineUpdateData
+    summary: >-
+      An interface for updating data on the ChartTrendline object, for use in "chartTrendline.set(<!-- -->{ ... }<!--
+      -->)".
+    name: Excel.Interfaces.ChartTrendlineUpdateData
+    fullName: Excel.Interfaces.ChartTrendlineUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_5

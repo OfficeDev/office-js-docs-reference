@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_6.Excel.BindingSelectionChangedEventArgs
+    summary: |-
+      Provides information about the binding that raised the SelectionChanged event.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.BindingSelectionChangedEventArgs
+    fullName: Excel.BindingSelectionChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_6
+    children:
+      - excel_1_6.Excel.BindingSelectionChangedEventArgs.binding
+      - excel_1_6.Excel.BindingSelectionChangedEventArgs.columnCount
+      - excel_1_6.Excel.BindingSelectionChangedEventArgs.rowCount
+      - excel_1_6.Excel.BindingSelectionChangedEventArgs.startColumn
+      - excel_1_6.Excel.BindingSelectionChangedEventArgs.startRow
+  - uid: excel_1_6.Excel.BindingSelectionChangedEventArgs.binding
+    summary: |-
+      Gets the Binding object that represents the binding that raised the SelectionChanged event.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: binding
+    fullName: binding
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'binding: Excel.Binding;'
+      return:
+        type:
+          - excel.Excel.Binding
+  - uid: excel_1_6.Excel.BindingSelectionChangedEventArgs.columnCount
+    summary: |-
+      Gets the number of columns selected.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnCount
+    fullName: columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnCount: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_6.Excel.BindingSelectionChangedEventArgs.rowCount
+    summary: |-
+      Gets the number of rows selected.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowCount
+    fullName: rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowCount: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_6.Excel.BindingSelectionChangedEventArgs.startColumn
+    summary: |-
+      Gets the index of the first column of the selection (zero-based).
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: startColumn
+    fullName: startColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'startColumn: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_6.Excel.BindingSelectionChangedEventArgs.startRow
+    summary: |-
+      Gets the index of the first row of the selection (zero-based).
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: startRow
+    fullName: startRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'startRow: number;'
+      return:
+        type:
+          - number

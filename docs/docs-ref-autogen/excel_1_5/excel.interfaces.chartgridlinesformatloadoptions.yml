@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_5.Excel.Interfaces.ChartGridlinesFormatLoadOptions
+    summary: |-
+      Encapsulates the format properties for chart gridlines.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartGridlinesFormatLoadOptions
+    fullName: Excel.Interfaces.ChartGridlinesFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_5
+    children:
+      - excel_1_5.Excel.Interfaces.ChartGridlinesFormatLoadOptions.$all
+      - excel_1_5.Excel.Interfaces.ChartGridlinesFormatLoadOptions.line
+  - uid: excel_1_5.Excel.Interfaces.ChartGridlinesFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_5.Excel.Interfaces.ChartGridlinesFormatLoadOptions.line
+    summary: |-
+      Represents chart line formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartLineFormatLoadOptions

@@ -1,0 +1,191 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_5.Excel.Interfaces.ChartData
+    summary: An interface describing the data returned by calling "chart.toJSON()".
+    name: Excel.Interfaces.ChartData
+    fullName: Excel.Interfaces.ChartData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_5
+    children:
+      - excel_1_5.Excel.Interfaces.ChartData.axes
+      - excel_1_5.Excel.Interfaces.ChartData.dataLabels
+      - excel_1_5.Excel.Interfaces.ChartData.format
+      - excel_1_5.Excel.Interfaces.ChartData.height
+      - excel_1_5.Excel.Interfaces.ChartData.left
+      - excel_1_5.Excel.Interfaces.ChartData.legend
+      - excel_1_5.Excel.Interfaces.ChartData.name
+      - excel_1_5.Excel.Interfaces.ChartData.series
+      - excel_1_5.Excel.Interfaces.ChartData.title
+      - excel_1_5.Excel.Interfaces.ChartData.top
+      - excel_1_5.Excel.Interfaces.ChartData.width
+  - uid: excel_1_5.Excel.Interfaces.ChartData.axes
+    summary: |-
+      Represents chart axes. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: axes
+    fullName: axes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'axes?: Excel.Interfaces.ChartAxesData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAxesData
+  - uid: excel_1_5.Excel.Interfaces.ChartData.dataLabels
+    summary: |-
+      Represents the datalabels on the chart. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataLabels
+    fullName: dataLabels
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartDataLabelsData
+  - uid: excel_1_5.Excel.Interfaces.ChartData.format
+    summary: |-
+      Encapsulates the format properties for the chart area. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartAreaFormatData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAreaFormatData
+  - uid: excel_1_5.Excel.Interfaces.ChartData.height
+    summary: |-
+      Represents the height, in points, of the chart object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_5.Excel.Interfaces.ChartData.left
+    summary: |-
+      The distance, in points, from the left side of the chart to the worksheet origin.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_5.Excel.Interfaces.ChartData.legend
+    summary: |-
+      Represents the legend for the chart. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: legend
+    fullName: legend
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'legend?: Excel.Interfaces.ChartLegendData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartLegendData
+  - uid: excel_1_5.Excel.Interfaces.ChartData.name
+    summary: |-
+      Represents the name of a chart object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_5.Excel.Interfaces.ChartData.series
+    summary: |-
+      Represents either a single series or collection of series in the chart. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: series
+    fullName: series
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'series?: Excel.Interfaces.ChartSeriesData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.ChartSeriesData[]'
+  - uid: excel_1_5.Excel.Interfaces.ChartData.title
+    summary: >-
+      Represents the title of the specified chart, including the text, visibility, position, and formatting of the
+      title. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: Excel.Interfaces.ChartTitleData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartTitleData
+  - uid: excel_1_5.Excel.Interfaces.ChartData.top
+    summary: >-
+      Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
+      top of the chart area (on a chart).
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_5.Excel.Interfaces.ChartData.width
+    summary: |-
+      Represents the width, in points, of the chart object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.Interfaces.ChartLegendEntryData
+    summary: An interface describing the data returned by calling "chartLegendEntry.toJSON()".
+    name: Excel.Interfaces.ChartLegendEntryData
+    fullName: Excel.Interfaces.ChartLegendEntryData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.Interfaces.ChartLegendEntryData.visible
+  - uid: excel_1_7.Excel.Interfaces.ChartLegendEntryData.visible
+    summary: |-
+      Represents the visible of a chart legend entry.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_2.Excel.SelectionChangedEventArgs
+    summary: |-
+      Provides information about the document that raised the SelectionChanged event.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.SelectionChangedEventArgs
+    fullName: Excel.SelectionChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_2
+    children:
+      - excel_1_2.Excel.SelectionChangedEventArgs.workbook
+  - uid: excel_1_2.Excel.SelectionChangedEventArgs.workbook
+    summary: |-
+      Gets the workbook object that raised the SelectionChanged event.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: workbook
+    fullName: workbook
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'workbook: Excel.Workbook;'
+      return:
+        type:
+          - excel.Excel.Workbook

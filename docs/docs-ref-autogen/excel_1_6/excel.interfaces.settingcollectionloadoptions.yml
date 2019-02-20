@@ -1,0 +1,60 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_6.Excel.Interfaces.SettingCollectionLoadOptions
+    summary: >-
+      Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to
+      per file and add-in (task-pane or content) combination.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.SettingCollectionLoadOptions
+    fullName: Excel.Interfaces.SettingCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_6
+    children:
+      - excel_1_6.Excel.Interfaces.SettingCollectionLoadOptions.$all
+      - excel_1_6.Excel.Interfaces.SettingCollectionLoadOptions.key
+      - excel_1_6.Excel.Interfaces.SettingCollectionLoadOptions.value
+  - uid: excel_1_6.Excel.Interfaces.SettingCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.SettingCollectionLoadOptions.key
+    summary: |-
+      For EACH ITEM in the collection: Returns the key that represents the id of the Setting. Read-only.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.SettingCollectionLoadOptions.value
+    summary: |-
+      For EACH ITEM in the collection: Represents the value stored for this setting.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: boolean;'
+      return:
+        type:
+          - boolean

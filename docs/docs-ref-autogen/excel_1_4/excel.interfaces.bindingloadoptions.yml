@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_4.Excel.Interfaces.BindingLoadOptions
+    summary: |-
+      Represents an Office.js binding that is defined in the workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.BindingLoadOptions
+    fullName: Excel.Interfaces.BindingLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_4
+    children:
+      - excel_1_4.Excel.Interfaces.BindingLoadOptions.$all
+      - excel_1_4.Excel.Interfaces.BindingLoadOptions.id
+      - excel_1_4.Excel.Interfaces.BindingLoadOptions.type
+  - uid: excel_1_4.Excel.Interfaces.BindingLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_4.Excel.Interfaces.BindingLoadOptions.id
+    summary: |-
+      Represents binding identifier. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_4.Excel.Interfaces.BindingLoadOptions.type
+    summary: |-
+      Returns the type of the binding. See Excel.BindingType for details. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type:
+          - boolean

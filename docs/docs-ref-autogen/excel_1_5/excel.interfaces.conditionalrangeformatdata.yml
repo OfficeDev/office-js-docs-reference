@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_5.Excel.Interfaces.ConditionalRangeFormatData
+    summary: An interface describing the data returned by calling "conditionalRangeFormat.toJSON()".
+    name: Excel.Interfaces.ConditionalRangeFormatData
+    fullName: Excel.Interfaces.ConditionalRangeFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_5

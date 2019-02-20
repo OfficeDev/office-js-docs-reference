@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.Interfaces.PivotItemLoadOptions
+    summary: |-
+      Represents the Excel PivotItem.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.PivotItemLoadOptions
+    fullName: Excel.Interfaces.PivotItemLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.Interfaces.PivotItemLoadOptions.$all
+      - excel_1_8.Excel.Interfaces.PivotItemLoadOptions.id
+      - excel_1_8.Excel.Interfaces.PivotItemLoadOptions.isExpanded
+      - excel_1_8.Excel.Interfaces.PivotItemLoadOptions.name
+      - excel_1_8.Excel.Interfaces.PivotItemLoadOptions.visible
+  - uid: excel_1_8.Excel.Interfaces.PivotItemLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.PivotItemLoadOptions.id
+    summary: |-
+      Id of the PivotItem.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.PivotItemLoadOptions.isExpanded
+    summary: |-
+      Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isExpanded
+    fullName: isExpanded
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isExpanded?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.PivotItemLoadOptions.name
+    summary: |-
+      Name of the PivotItem.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.PivotItemLoadOptions.visible
+    summary: |-
+      Determines whether the PivotItem is visible or not.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

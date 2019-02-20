@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.Interfaces.ChartTrendlineFormatLoadOptions
+    summary: |-
+      Represents the format properties for chart trendline.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartTrendlineFormatLoadOptions
+    fullName: Excel.Interfaces.ChartTrendlineFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.Interfaces.ChartTrendlineFormatLoadOptions.$all
+      - excel_1_7.Excel.Interfaces.ChartTrendlineFormatLoadOptions.line
+  - uid: excel_1_7.Excel.Interfaces.ChartTrendlineFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.ChartTrendlineFormatLoadOptions.line
+    summary: |-
+      Represents chart line formatting.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartLineFormatLoadOptions

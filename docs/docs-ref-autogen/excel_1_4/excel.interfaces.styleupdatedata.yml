@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_4.Excel.Interfaces.StyleUpdateData
+    summary: 'An interface for updating data on the Style object, for use in "style.set(<!-- -->{ ... }<!-- -->)".'
+    name: Excel.Interfaces.StyleUpdateData
+    fullName: Excel.Interfaces.StyleUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_4

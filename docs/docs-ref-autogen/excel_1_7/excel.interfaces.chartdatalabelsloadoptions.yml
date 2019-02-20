@@ -1,0 +1,172 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions
+    summary: |-
+      Represents a collection of all the data labels on a chart point.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartDataLabelsLoadOptions
+    fullName: Excel.Interfaces.ChartDataLabelsLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.$all
+      - excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.format
+      - excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.position
+      - excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.separator
+      - excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.showBubbleSize
+      - excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.showCategoryName
+      - excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.showLegendKey
+      - excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.showPercentage
+      - excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.showSeriesName
+      - excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.showValue
+  - uid: excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.format
+    summary: |-
+      Represents the format of chart data labels, which includes fill and font formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartDataLabelFormatLoadOptions
+  - uid: excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.position
+    summary: >-
+      DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
+      details.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.separator
+    summary: |-
+      String representing the separator used for the data labels on a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: separator
+    fullName: separator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'separator?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.showBubbleSize
+    summary: |-
+      Boolean value representing if the data label bubble size is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showBubbleSize
+    fullName: showBubbleSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBubbleSize?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.showCategoryName
+    summary: |-
+      Boolean value representing if the data label category name is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showCategoryName
+    fullName: showCategoryName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showCategoryName?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.showLegendKey
+    summary: |-
+      Boolean value representing if the data label legend key is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showLegendKey
+    fullName: showLegendKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showLegendKey?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.showPercentage
+    summary: |-
+      Boolean value representing if the data label percentage is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showPercentage
+    fullName: showPercentage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showPercentage?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.showSeriesName
+    summary: |-
+      Boolean value representing if the data label series name is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showSeriesName
+    fullName: showSeriesName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showSeriesName?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions.showValue
+    summary: |-
+      Boolean value representing if the data label value is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showValue
+    fullName: showValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showValue?: boolean;'
+      return:
+        type:
+          - boolean

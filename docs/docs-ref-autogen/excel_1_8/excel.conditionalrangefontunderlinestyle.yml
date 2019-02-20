@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.ConditionalRangeFontUnderlineStyle
+    summary: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ConditionalRangeFontUnderlineStyle
+    fullName: Excel.ConditionalRangeFontUnderlineStyle
+    langs:
+      - typeScript
+    type: enum
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.ConditionalRangeFontUnderlineStyle.double
+      - excel_1_8.Excel.ConditionalRangeFontUnderlineStyle.none
+      - excel_1_8.Excel.ConditionalRangeFontUnderlineStyle.single
+  - uid: excel_1_8.Excel.ConditionalRangeFontUnderlineStyle.double
+    name: double
+    fullName: double
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Double"'
+  - uid: excel_1_8.Excel.ConditionalRangeFontUnderlineStyle.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel_1_8.Excel.ConditionalRangeFontUnderlineStyle.single
+    name: single
+    fullName: single
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Single"'

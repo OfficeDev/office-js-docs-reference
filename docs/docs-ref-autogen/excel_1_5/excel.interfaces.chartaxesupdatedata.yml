@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_5.Excel.Interfaces.ChartAxesUpdateData
+    summary: 'An interface for updating data on the ChartAxes object, for use in "chartAxes.set(<!-- -->{ ... }<!-- -->)".'
+    name: Excel.Interfaces.ChartAxesUpdateData
+    fullName: Excel.Interfaces.ChartAxesUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_5
+    children:
+      - excel_1_5.Excel.Interfaces.ChartAxesUpdateData.categoryAxis
+      - excel_1_5.Excel.Interfaces.ChartAxesUpdateData.seriesAxis
+      - excel_1_5.Excel.Interfaces.ChartAxesUpdateData.valueAxis
+  - uid: excel_1_5.Excel.Interfaces.ChartAxesUpdateData.categoryAxis
+    summary: |-
+      Represents the category axis in a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: categoryAxis
+    fullName: categoryAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'categoryAxis?: Excel.Interfaces.ChartAxisUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAxisUpdateData
+  - uid: excel_1_5.Excel.Interfaces.ChartAxesUpdateData.seriesAxis
+    summary: |-
+      Represents the series axis of a 3-dimensional chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: seriesAxis
+    fullName: seriesAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'seriesAxis?: Excel.Interfaces.ChartAxisUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAxisUpdateData
+  - uid: excel_1_5.Excel.Interfaces.ChartAxesUpdateData.valueAxis
+    summary: |-
+      Represents the value axis in an axis.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: valueAxis
+    fullName: valueAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'valueAxis?: Excel.Interfaces.ChartAxisUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAxisUpdateData

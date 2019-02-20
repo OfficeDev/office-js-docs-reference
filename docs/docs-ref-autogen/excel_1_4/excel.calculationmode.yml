@@ -1,0 +1,40 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_4.Excel.CalculationMode
+    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.CalculationMode
+    fullName: Excel.CalculationMode
+    langs:
+      - typeScript
+    type: enum
+    package: excel_1_4
+    children:
+      - excel_1_4.Excel.CalculationMode.automatic
+      - excel_1_4.Excel.CalculationMode.automaticExceptTables
+      - excel_1_4.Excel.CalculationMode.manual
+  - uid: excel_1_4.Excel.CalculationMode.automatic
+    summary: >-
+      The default recalculation behavior where Excel calculates new formula results every time the relevant data is
+      changed.
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: excel_1_4.Excel.CalculationMode.automaticExceptTables
+    summary: 'Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.'
+    name: automaticExceptTables
+    fullName: automaticExceptTables
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AutomaticExceptTables"'
+  - uid: excel_1_4.Excel.CalculationMode.manual
+    summary: Calculations only occur when the user or add-in requests them.
+    name: manual
+    fullName: manual
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Manual"'

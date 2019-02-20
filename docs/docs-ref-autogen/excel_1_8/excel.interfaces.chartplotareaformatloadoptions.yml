@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaFormatLoadOptions
+    summary: |-
+      Represents the format properties for chart plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartPlotAreaFormatLoadOptions
+    fullName: Excel.Interfaces.ChartPlotAreaFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.Interfaces.ChartPlotAreaFormatLoadOptions.$all
+      - excel_1_8.Excel.Interfaces.ChartPlotAreaFormatLoadOptions.border
+  - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaFormatLoadOptions.border
+    summary: |-
+      Represents the border attributes of a chart plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'border?: Excel.Interfaces.ChartBorderLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartBorderLoadOptions

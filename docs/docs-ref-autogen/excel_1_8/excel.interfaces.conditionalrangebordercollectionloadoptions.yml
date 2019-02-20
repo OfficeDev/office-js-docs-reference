@@ -1,0 +1,80 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
+    summary: |-
+      Represents the border objects that make up range border.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
+    fullName: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions.$all
+      - excel_1_8.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions.color
+      - excel_1_8.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions.sideIndex
+      - excel_1_8.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions.style
+  - uid: excel_1_8.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions.color
+    summary: >-
+      For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form \#RRGGBB
+      (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions.sideIndex
+    summary: >-
+      For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See
+      Excel.ConditionalRangeBorderIndex for details. Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: sideIndex
+    fullName: sideIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sideIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions.style
+    summary: >-
+      For EACH ITEM in the collection: One of the constants of line style specifying the line style for the border. See
+      Excel.BorderLineStyle for details.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean

@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_2.Excel.Interfaces.ChartGridlinesLoadOptions
+    summary: |-
+      Represents major or minor gridlines on a chart axis.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartGridlinesLoadOptions
+    fullName: Excel.Interfaces.ChartGridlinesLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_2
+    children:
+      - excel_1_2.Excel.Interfaces.ChartGridlinesLoadOptions.$all
+      - excel_1_2.Excel.Interfaces.ChartGridlinesLoadOptions.format
+      - excel_1_2.Excel.Interfaces.ChartGridlinesLoadOptions.visible
+  - uid: excel_1_2.Excel.Interfaces.ChartGridlinesLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.ChartGridlinesLoadOptions.format
+    summary: |-
+      Represents the formatting of chart gridlines.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartGridlinesFormatLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartGridlinesFormatLoadOptions
+  - uid: excel_1_2.Excel.Interfaces.ChartGridlinesLoadOptions.visible
+    summary: |-
+      Boolean value representing if the axis gridlines are visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

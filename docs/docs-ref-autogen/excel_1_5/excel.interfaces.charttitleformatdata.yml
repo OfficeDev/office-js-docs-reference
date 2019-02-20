@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_5.Excel.Interfaces.ChartTitleFormatData
+    summary: An interface describing the data returned by calling "chartTitleFormat.toJSON()".
+    name: Excel.Interfaces.ChartTitleFormatData
+    fullName: Excel.Interfaces.ChartTitleFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_5
+    children:
+      - excel_1_5.Excel.Interfaces.ChartTitleFormatData.font
+  - uid: excel_1_5.Excel.Interfaces.ChartTitleFormatData.font
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for an object. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.Interfaces.ChartFontData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartFontData

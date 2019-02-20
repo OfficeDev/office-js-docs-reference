@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.Interfaces.ChartLegendEntryLoadOptions
+    summary: |-
+      Represents the legendEntry in legendEntryCollection.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartLegendEntryLoadOptions
+    fullName: Excel.Interfaces.ChartLegendEntryLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.Interfaces.ChartLegendEntryLoadOptions.$all
+      - excel_1_7.Excel.Interfaces.ChartLegendEntryLoadOptions.visible
+  - uid: excel_1_7.Excel.Interfaces.ChartLegendEntryLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.ChartLegendEntryLoadOptions.visible
+    summary: |-
+      Represents the visible of a chart legend entry.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

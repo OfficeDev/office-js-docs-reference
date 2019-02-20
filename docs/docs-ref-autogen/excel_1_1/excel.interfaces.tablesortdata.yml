@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_1.Excel.Interfaces.TableSortData
+    summary: An interface describing the data returned by calling "tableSort.toJSON()".
+    name: Excel.Interfaces.TableSortData
+    fullName: Excel.Interfaces.TableSortData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_1

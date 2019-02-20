@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.Interfaces.FilterLoadOptions
+    summary: |-
+      Manages the filtering of a table's column.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.FilterLoadOptions
+    fullName: Excel.Interfaces.FilterLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.Interfaces.FilterLoadOptions.$all
+      - excel_1_8.Excel.Interfaces.FilterLoadOptions.criteria
+  - uid: excel_1_8.Excel.Interfaces.FilterLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.FilterLoadOptions.criteria
+    summary: |-
+      The currently applied filter on the given column. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria?: boolean;'
+      return:
+        type:
+          - boolean

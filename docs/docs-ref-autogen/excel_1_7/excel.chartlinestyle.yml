@@ -1,0 +1,99 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.ChartLineStyle
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartLineStyle
+    fullName: Excel.ChartLineStyle
+    langs:
+      - typeScript
+    type: enum
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.ChartLineStyle.automatic
+      - excel_1_7.Excel.ChartLineStyle.continuous
+      - excel_1_7.Excel.ChartLineStyle.dash
+      - excel_1_7.Excel.ChartLineStyle.dashDot
+      - excel_1_7.Excel.ChartLineStyle.dashDotDot
+      - excel_1_7.Excel.ChartLineStyle.dot
+      - excel_1_7.Excel.ChartLineStyle.grey25
+      - excel_1_7.Excel.ChartLineStyle.grey50
+      - excel_1_7.Excel.ChartLineStyle.grey75
+      - excel_1_7.Excel.ChartLineStyle.none
+      - excel_1_7.Excel.ChartLineStyle.roundDot
+  - uid: excel_1_7.Excel.ChartLineStyle.automatic
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: excel_1_7.Excel.ChartLineStyle.continuous
+    name: continuous
+    fullName: continuous
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Continuous"'
+  - uid: excel_1_7.Excel.ChartLineStyle.dash
+    name: dash
+    fullName: dash
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dash"'
+  - uid: excel_1_7.Excel.ChartLineStyle.dashDot
+    name: dashDot
+    fullName: dashDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashDot"'
+  - uid: excel_1_7.Excel.ChartLineStyle.dashDotDot
+    name: dashDotDot
+    fullName: dashDotDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashDotDot"'
+  - uid: excel_1_7.Excel.ChartLineStyle.dot
+    name: dot
+    fullName: dot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dot"'
+  - uid: excel_1_7.Excel.ChartLineStyle.grey25
+    name: grey25
+    fullName: grey25
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Grey25"'
+  - uid: excel_1_7.Excel.ChartLineStyle.grey50
+    name: grey50
+    fullName: grey50
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Grey50"'
+  - uid: excel_1_7.Excel.ChartLineStyle.grey75
+    name: grey75
+    fullName: grey75
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Grey75"'
+  - uid: excel_1_7.Excel.ChartLineStyle.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel_1_7.Excel.ChartLineStyle.roundDot
+    name: roundDot
+    fullName: roundDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RoundDot"'

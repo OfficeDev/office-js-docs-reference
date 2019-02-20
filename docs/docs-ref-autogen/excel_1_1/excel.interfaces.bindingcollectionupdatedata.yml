@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_1.Excel.Interfaces.BindingCollectionUpdateData
+    summary: >-
+      An interface for updating data on the BindingCollection object, for use in "bindingCollection.set(<!-- -->{ ...
+      }<!-- -->)".
+    name: Excel.Interfaces.BindingCollectionUpdateData
+    fullName: Excel.Interfaces.BindingCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_1
+    children:
+      - excel_1_1.Excel.Interfaces.BindingCollectionUpdateData.items
+  - uid: excel_1_1.Excel.Interfaces.BindingCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.BindingData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.BindingData[]'

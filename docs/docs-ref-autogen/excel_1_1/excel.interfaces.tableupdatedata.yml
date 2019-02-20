@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_1.Excel.Interfaces.TableUpdateData
+    summary: 'An interface for updating data on the Table object, for use in "table.set(<!-- -->{ ... }<!-- -->)".'
+    name: Excel.Interfaces.TableUpdateData
+    fullName: Excel.Interfaces.TableUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_1
+    children:
+      - excel_1_1.Excel.Interfaces.TableUpdateData.name
+      - excel_1_1.Excel.Interfaces.TableUpdateData.showHeaders
+      - excel_1_1.Excel.Interfaces.TableUpdateData.showTotals
+      - excel_1_1.Excel.Interfaces.TableUpdateData.style
+  - uid: excel_1_1.Excel.Interfaces.TableUpdateData.name
+    summary: |-
+      Name of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_1.Excel.Interfaces.TableUpdateData.showHeaders
+    summary: |-
+      Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showHeaders
+    fullName: showHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showHeaders?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_1.Excel.Interfaces.TableUpdateData.showTotals
+    summary: |-
+      Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showTotals
+    fullName: showTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showTotals?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_1.Excel.Interfaces.TableUpdateData.style
+    summary: >-
+      Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
+      TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined
+      style present in the workbook can also be specified.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: string;'
+      return:
+        type:
+          - string

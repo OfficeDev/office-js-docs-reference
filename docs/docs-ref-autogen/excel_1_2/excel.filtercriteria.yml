@@ -1,0 +1,169 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_2.Excel.FilterCriteria
+    summary: |-
+      Represents the filtering criteria applied to a column.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.FilterCriteria
+    fullName: Excel.FilterCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_2
+    children:
+      - excel_1_2.Excel.FilterCriteria.color
+      - excel_1_2.Excel.FilterCriteria.criterion1
+      - excel_1_2.Excel.FilterCriteria.criterion2
+      - excel_1_2.Excel.FilterCriteria.dynamicCriteria
+      - excel_1_2.Excel.FilterCriteria.filterOn
+      - excel_1_2.Excel.FilterCriteria.icon
+      - excel_1_2.Excel.FilterCriteria.operator
+      - excel_1_2.Excel.FilterCriteria.values
+  - uid: excel_1_2.Excel.FilterCriteria.color
+    summary: |-
+      The HTML color string used to filter cells. Used with "cellColor" and "fontColor" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_2.Excel.FilterCriteria.criterion1
+    summary: >-
+      The first criterion used to filter data. Used as an operator in the case of "custom" filtering. For example "<!--
+      -->&gt;<!-- -->50" for number greater than 50 or "=*s" for values ending in "s".
+
+
+      Used as a number in the case of top/bottom items/percents. E.g. "5" for the top 5 items if filterOn is set to
+      "topItems"
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criterion1
+    fullName: criterion1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criterion1?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_2.Excel.FilterCriteria.criterion2
+    summary: |-
+      The second criterion used to filter data. Only used as an operator in the case of "custom" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criterion2
+    fullName: criterion2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criterion2?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_2.Excel.FilterCriteria.dynamicCriteria
+    summary: >-
+      The dynamic criteria from the Excel.DynamicFilterCriteria set to apply on this column. Used with "dynamic"
+      filtering.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dynamicCriteria
+    fullName: dynamicCriteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        dynamicCriteria?: Excel.DynamicFilterCriteria | "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" |
+        "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" |
+        "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" |
+        "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2"
+        | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" |
+        "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" |
+        "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday";
+      return:
+        type:
+          - >-
+            Excel.DynamicFilterCriteria | "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" |
+            "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" |
+            "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" |
+            "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1"
+            | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" |
+            "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" |
+            "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" |
+            "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"
+  - uid: excel_1_2.Excel.FilterCriteria.filterOn
+    summary: |-
+      The property used by the filter to determine whether the values should stay visible.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: filterOn
+    fullName: filterOn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        filterOn: Excel.FilterOn | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" |
+        "TopItems" | "TopPercent" | "Icon" | "Custom";
+      return:
+        type:
+          - >-
+            Excel.FilterOn | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" |
+            "TopItems" | "TopPercent" | "Icon" | "Custom"
+  - uid: excel_1_2.Excel.FilterCriteria.icon
+    summary: |-
+      The icon used to filter cells. Used with "icon" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: icon
+    fullName: icon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'icon?: Excel.Icon;'
+      return:
+        type:
+          - excel.Excel.Icon
+  - uid: excel_1_2.Excel.FilterCriteria.operator
+    summary: |-
+      The operator used to combine criterion 1 and 2 when using "custom" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator?: Excel.FilterOperator | "And" | "Or";'
+      return:
+        type:
+          - Excel.FilterOperator | "And" | "Or"
+  - uid: excel_1_2.Excel.FilterCriteria.values
+    summary: |-
+      The set of values to be used as part of "values" filtering.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values?: Array<string | FilterDatetime>;'
+      return:
+        type:
+          - Array<string | FilterDatetime>

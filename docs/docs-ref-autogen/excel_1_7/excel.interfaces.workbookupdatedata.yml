@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.Interfaces.WorkbookUpdateData
+    summary: 'An interface for updating data on the Workbook object, for use in "workbook.set(<!-- -->{ ... }<!-- -->)".'
+    name: Excel.Interfaces.WorkbookUpdateData
+    fullName: Excel.Interfaces.WorkbookUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.Interfaces.WorkbookUpdateData.properties
+  - uid: excel_1_7.Excel.Interfaces.WorkbookUpdateData.properties
+    summary: |-
+      Gets the workbook properties.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: properties
+    fullName: properties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'properties?: Excel.Interfaces.DocumentPropertiesUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.DocumentPropertiesUpdateData

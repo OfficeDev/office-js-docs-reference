@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_1.Excel.Interfaces.NamedItemCollectionData
+    summary: An interface describing the data returned by calling "namedItemCollection.toJSON()".
+    name: Excel.Interfaces.NamedItemCollectionData
+    fullName: Excel.Interfaces.NamedItemCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_1
+    children:
+      - excel_1_1.Excel.Interfaces.NamedItemCollectionData.items
+  - uid: excel_1_1.Excel.Interfaces.NamedItemCollectionData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.NamedItemData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.NamedItemData[]'

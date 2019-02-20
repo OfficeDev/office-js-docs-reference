@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.ThreeArrowsSet
+    name: Excel.ThreeArrowsSet
+    fullName: Excel.ThreeArrowsSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.ThreeArrowsSet.greenUpArrow
+      - excel_1_7.Excel.ThreeArrowsSet.redDownArrow
+      - excel_1_7.Excel.ThreeArrowsSet.yellowSideArrow
+  - uid: excel_1_7.Excel.ThreeArrowsSet.greenUpArrow
+    name: greenUpArrow
+    fullName: greenUpArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenUpArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_1_7.Excel.ThreeArrowsSet.redDownArrow
+    name: redDownArrow
+    fullName: redDownArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redDownArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_1_7.Excel.ThreeArrowsSet.yellowSideArrow
+    name: yellowSideArrow
+    fullName: yellowSideArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowSideArrow: Icon;'
+      return:
+        type:
+          - Icon

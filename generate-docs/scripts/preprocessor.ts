@@ -99,10 +99,10 @@ tryCatch(async () => {
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other")
     );
 
-    console.log("\ncreate file: excel_release.d.ts");
+    console.log("\ncreate file: excel_1_8.d.ts");
     fsx.writeFileSync(
-        '../api-extractor-inputs-excel-release/excel_release.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other")
+        '../api-extractor-inputs-excel-release/Excel_1_8/excel_1_8.d.ts',
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other", true)
     );
 
     console.log("create file: onenote.d.ts");
@@ -252,9 +252,9 @@ function applyRegularExpressions (definitionsIn) {
         .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
 }
 
-function handleCommonImports(hostDts: string, hostName: "Common API" | "Outlook" | "Other"): string {
-    const commonApiNamespaceImport = "import \{ OfficeExtension \} from \"../api-extractor-inputs-office/office\"\n";
-    const outlookApiNamespaceImport = "import \{ Office as Outlook\} from \"../api-extractor-inputs-outlook/outlook\"\n";
+function handleCommonImports(hostDts: string, hostName: "Common API" | "Outlook" | "Other", isVersioned?: boolean): string {
+    const commonApiNamespaceImport = "import \{ OfficeExtension \} from \"" + (isVersioned ? "../" : "") + "../api-extractor-inputs-office/office\"\n";
+    const outlookApiNamespaceImport = "import \{ Office as Outlook\} from \"" + (isVersioned ? "../" : "") + "../api-extractor-inputs-outlook/outlook\"\n";
     const commonApiNamespaceImportForOutlook = "import \{Office as CommonAPI\} from \"../api-extractor-inputs-office/office\"\n";
     if (hostName === "Outlook") {
         hostDts = hostDts.replace(/: Office\./g, ": CommonAPI.").replace(/\<Office\./g, "<CommonAPI.");

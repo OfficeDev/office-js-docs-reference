@@ -1,0 +1,167 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions
+    summary: >-
+      A collection of all the NamedItem objects that are part of the workbook or worksheet, depending on how it was
+      reached.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.NamedItemCollectionLoadOptions
+    fullName: Excel.Interfaces.NamedItemCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_6
+    children:
+      - excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.$all
+      - excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.comment
+      - excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.name
+      - excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.scope
+      - excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.type
+      - excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.value
+      - excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.visible
+      - excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.worksheet
+      - excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.worksheetOrNullObject
+  - uid: excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.comment
+    summary: |-
+      For EACH ITEM in the collection: Represents the comment associated with this name.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: comment
+    fullName: comment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comment?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.name
+    summary: |-
+      For EACH ITEM in the collection: The name of the object. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.scope
+    summary: >-
+      For EACH ITEM in the collection: Indicates whether the name is scoped to the workbook or to a specific worksheet.
+      Possible values are: Worksheet, Workbook. Read-only.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: scope
+    fullName: scope
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'scope?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.type
+    summary: >-
+      For EACH ITEM in the collection: Indicates the type of the value returned by the name's formula. See
+      Excel.NamedItemType for details. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
+      Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.value
+    summary: >-
+      For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range, will
+      return the range address. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.visible
+    summary: |-
+      For EACH ITEM in the collection: Specifies whether the object is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.worksheet
+    summary: >-
+      For EACH ITEM in the collection: Returns the worksheet on which the named item is scoped to. Throws an error if
+      the item is scoped to the workbook instead.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorksheetLoadOptions
+  - uid: excel_1_6.Excel.Interfaces.NamedItemCollectionLoadOptions.worksheetOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Returns the worksheet on which the named item is scoped to. Returns a null object
+      if the item is scoped to the workbook instead.
+
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheetOrNullObject
+    fullName: worksheetOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetOrNullObject?: Excel.Interfaces.WorksheetLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorksheetLoadOptions

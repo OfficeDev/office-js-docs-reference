@@ -1,0 +1,122 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.Interfaces.WorkbookLoadOptions
+    summary: |-
+      Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.WorkbookLoadOptions
+    fullName: Excel.Interfaces.WorkbookLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.Interfaces.WorkbookLoadOptions.$all
+      - excel_1_7.Excel.Interfaces.WorkbookLoadOptions.application
+      - excel_1_7.Excel.Interfaces.WorkbookLoadOptions.bindings
+      - excel_1_7.Excel.Interfaces.WorkbookLoadOptions.name
+      - excel_1_7.Excel.Interfaces.WorkbookLoadOptions.properties
+      - excel_1_7.Excel.Interfaces.WorkbookLoadOptions.protection
+      - excel_1_7.Excel.Interfaces.WorkbookLoadOptions.tables
+  - uid: excel_1_7.Excel.Interfaces.WorkbookLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.WorkbookLoadOptions.application
+    summary: |-
+      Represents the Excel application instance that contains this workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: application
+    fullName: application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'application?: Excel.Interfaces.ApplicationLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ApplicationLoadOptions
+  - uid: excel_1_7.Excel.Interfaces.WorkbookLoadOptions.bindings
+    summary: |-
+      Represents a collection of bindings that are part of the workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bindings
+    fullName: bindings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bindings?: Excel.Interfaces.BindingCollectionLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.BindingCollectionLoadOptions
+  - uid: excel_1_7.Excel.Interfaces.WorkbookLoadOptions.name
+    summary: |-
+      Gets the workbook name. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.WorkbookLoadOptions.properties
+    summary: |-
+      Gets the workbook properties.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: properties
+    fullName: properties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'properties?: Excel.Interfaces.DocumentPropertiesLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.DocumentPropertiesLoadOptions
+  - uid: excel_1_7.Excel.Interfaces.WorkbookLoadOptions.protection
+    summary: |-
+      Returns workbook protection object for a workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: protection
+    fullName: protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protection?: Excel.Interfaces.WorkbookProtectionLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorkbookProtectionLoadOptions
+  - uid: excel_1_7.Excel.Interfaces.WorkbookLoadOptions.tables
+    summary: |-
+      Represents a collection of tables associated with the workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tables
+    fullName: tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TableCollectionLoadOptions

@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_6.Excel.FourArrowsSet
+    name: Excel.FourArrowsSet
+    fullName: Excel.FourArrowsSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_6
+    children:
+      - excel_1_6.Excel.FourArrowsSet.greenUpArrow
+      - excel_1_6.Excel.FourArrowsSet.redDownArrow
+      - excel_1_6.Excel.FourArrowsSet.yellowDownInclineArrow
+      - excel_1_6.Excel.FourArrowsSet.yellowUpInclineArrow
+  - uid: excel_1_6.Excel.FourArrowsSet.greenUpArrow
+    name: greenUpArrow
+    fullName: greenUpArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenUpArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_1_6.Excel.FourArrowsSet.redDownArrow
+    name: redDownArrow
+    fullName: redDownArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redDownArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_1_6.Excel.FourArrowsSet.yellowDownInclineArrow
+    name: yellowDownInclineArrow
+    fullName: yellowDownInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowDownInclineArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_1_6.Excel.FourArrowsSet.yellowUpInclineArrow
+    name: yellowUpInclineArrow
+    fullName: yellowUpInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowUpInclineArrow: Icon;'
+      return:
+        type:
+          - Icon

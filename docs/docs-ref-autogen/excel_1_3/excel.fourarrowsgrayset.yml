@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_3.Excel.FourArrowsGraySet
+    name: Excel.FourArrowsGraySet
+    fullName: Excel.FourArrowsGraySet
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_3
+    children:
+      - excel_1_3.Excel.FourArrowsGraySet.grayDownArrow
+      - excel_1_3.Excel.FourArrowsGraySet.grayDownInclineArrow
+      - excel_1_3.Excel.FourArrowsGraySet.grayUpArrow
+      - excel_1_3.Excel.FourArrowsGraySet.grayUpInclineArrow
+  - uid: excel_1_3.Excel.FourArrowsGraySet.grayDownArrow
+    name: grayDownArrow
+    fullName: grayDownArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayDownArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_1_3.Excel.FourArrowsGraySet.grayDownInclineArrow
+    name: grayDownInclineArrow
+    fullName: grayDownInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayDownInclineArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_1_3.Excel.FourArrowsGraySet.grayUpArrow
+    name: grayUpArrow
+    fullName: grayUpArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayUpArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_1_3.Excel.FourArrowsGraySet.grayUpInclineArrow
+    name: grayUpInclineArrow
+    fullName: grayUpInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayUpInclineArrow: Icon;'
+      return:
+        type:
+          - Icon

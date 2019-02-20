@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_6.Excel.Interfaces.PivotTableCollectionLoadOptions
+    summary: |-
+      Represents a collection of all the PivotTables that are part of the workbook or worksheet.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.PivotTableCollectionLoadOptions
+    fullName: Excel.Interfaces.PivotTableCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_6
+    children:
+      - excel_1_6.Excel.Interfaces.PivotTableCollectionLoadOptions.$all
+      - excel_1_6.Excel.Interfaces.PivotTableCollectionLoadOptions.id
+      - excel_1_6.Excel.Interfaces.PivotTableCollectionLoadOptions.name
+      - excel_1_6.Excel.Interfaces.PivotTableCollectionLoadOptions.worksheet
+  - uid: excel_1_6.Excel.Interfaces.PivotTableCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.PivotTableCollectionLoadOptions.id
+    summary: |-
+      For EACH ITEM in the collection: Id of the PivotTable. Read-only.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.PivotTableCollectionLoadOptions.name
+    summary: |-
+      For EACH ITEM in the collection: Name of the PivotTable.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.PivotTableCollectionLoadOptions.worksheet
+    summary: |-
+      For EACH ITEM in the collection: The worksheet containing the current PivotTable.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorksheetLoadOptions

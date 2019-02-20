@@ -1,0 +1,227 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.Interfaces.ChartTitleData
+    summary: An interface describing the data returned by calling "chartTitle.toJSON()".
+    name: Excel.Interfaces.ChartTitleData
+    fullName: Excel.Interfaces.ChartTitleData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.Interfaces.ChartTitleData.format
+      - excel_1_8.Excel.Interfaces.ChartTitleData.height
+      - excel_1_8.Excel.Interfaces.ChartTitleData.horizontalAlignment
+      - excel_1_8.Excel.Interfaces.ChartTitleData.left
+      - excel_1_8.Excel.Interfaces.ChartTitleData.overlay
+      - excel_1_8.Excel.Interfaces.ChartTitleData.position
+      - excel_1_8.Excel.Interfaces.ChartTitleData.showShadow
+      - excel_1_8.Excel.Interfaces.ChartTitleData.text
+      - excel_1_8.Excel.Interfaces.ChartTitleData.textOrientation
+      - excel_1_8.Excel.Interfaces.ChartTitleData.top
+      - excel_1_8.Excel.Interfaces.ChartTitleData.verticalAlignment
+      - excel_1_8.Excel.Interfaces.ChartTitleData.visible
+      - excel_1_8.Excel.Interfaces.ChartTitleData.width
+  - uid: excel_1_8.Excel.Interfaces.ChartTitleData.format
+    summary: |-
+      Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartTitleFormatData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartTitleFormatData
+  - uid: excel_1_8.Excel.Interfaces.ChartTitleData.height
+    summary: |-
+      Returns the height, in points, of the chart title. Null if chart title is not visible. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_8.Excel.Interfaces.ChartTitleData.horizontalAlignment
+    summary: |-
+      Represents the horizontal alignment for chart title.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment?: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" |
+        "Distributed";
+      return:
+        type:
+          - Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+  - uid: excel_1_8.Excel.Interfaces.ChartTitleData.left
+    summary: >-
+      Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if
+      chart title is not visible.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_8.Excel.Interfaces.ChartTitleData.overlay
+    summary: |-
+      Boolean value representing if the chart title will overlay the chart or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: overlay
+    fullName: overlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlay?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ChartTitleData.position
+    summary: |-
+      Represents the position of chart title. See Excel.ChartTitlePosition for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position?: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right";'
+      return:
+        type:
+          - Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right"
+  - uid: excel_1_8.Excel.Interfaces.ChartTitleData.showShadow
+    summary: |-
+      Represents a boolean value that determines if the chart title has a shadow.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showShadow
+    fullName: showShadow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showShadow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ChartTitleData.text
+    summary: |-
+      Represents the title text of a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_8.Excel.Interfaces.ChartTitleData.textOrientation
+    summary: >-
+      Represents the text orientation of chart title. The value should be an integer either from -90 to 90, or 180 for
+      vertically-oriented text.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_8.Excel.Interfaces.ChartTitleData.top
+    summary: >-
+      Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title
+      is not visible.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_8.Excel.Interfaces.ChartTitleData.verticalAlignment
+    summary: |-
+      Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";'
+      return:
+        type:
+          - Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
+  - uid: excel_1_8.Excel.Interfaces.ChartTitleData.visible
+    summary: |-
+      A boolean value the represents the visibility of a chart title object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ChartTitleData.width
+    summary: |-
+      Returns the width, in points, of the chart title. Null if chart title is not visible. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_4.Excel.FilterDatetimeSpecificity
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.FilterDatetimeSpecificity
+    fullName: Excel.FilterDatetimeSpecificity
+    langs:
+      - typeScript
+    type: enum
+    package: excel_1_4
+    children:
+      - excel_1_4.Excel.FilterDatetimeSpecificity.day
+      - excel_1_4.Excel.FilterDatetimeSpecificity.hour
+      - excel_1_4.Excel.FilterDatetimeSpecificity.minute
+      - excel_1_4.Excel.FilterDatetimeSpecificity.month
+      - excel_1_4.Excel.FilterDatetimeSpecificity.second
+      - excel_1_4.Excel.FilterDatetimeSpecificity.year
+  - uid: excel_1_4.Excel.FilterDatetimeSpecificity.day
+    name: day
+    fullName: day
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Day"'
+  - uid: excel_1_4.Excel.FilterDatetimeSpecificity.hour
+    name: hour
+    fullName: hour
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hour"'
+  - uid: excel_1_4.Excel.FilterDatetimeSpecificity.minute
+    name: minute
+    fullName: minute
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Minute"'
+  - uid: excel_1_4.Excel.FilterDatetimeSpecificity.month
+    name: month
+    fullName: month
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Month"'
+  - uid: excel_1_4.Excel.FilterDatetimeSpecificity.second
+    name: second
+    fullName: second
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Second"'
+  - uid: excel_1_4.Excel.FilterDatetimeSpecificity.year
+    name: year
+    fullName: year
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Year"'

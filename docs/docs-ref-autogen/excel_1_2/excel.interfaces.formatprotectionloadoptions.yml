@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_2.Excel.Interfaces.FormatProtectionLoadOptions
+    summary: |-
+      Represents the format protection of a range object.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.FormatProtectionLoadOptions
+    fullName: Excel.Interfaces.FormatProtectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_2
+    children:
+      - excel_1_2.Excel.Interfaces.FormatProtectionLoadOptions.$all
+      - excel_1_2.Excel.Interfaces.FormatProtectionLoadOptions.formulaHidden
+      - excel_1_2.Excel.Interfaces.FormatProtectionLoadOptions.locked
+  - uid: excel_1_2.Excel.Interfaces.FormatProtectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.FormatProtectionLoadOptions.formulaHidden
+    summary: >-
+      Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range
+      doesn't have uniform formula hidden setting.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulaHidden
+    fullName: formulaHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.FormatProtectionLoadOptions.locked
+    summary: >-
+      Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have
+      uniform lock setting.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: locked
+    fullName: locked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'locked?: boolean;'
+      return:
+        type:
+          - boolean

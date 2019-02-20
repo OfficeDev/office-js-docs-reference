@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.Interfaces.IconSetConditionalFormatUpdateData
+    summary: >-
+      An interface for updating data on the IconSetConditionalFormat object, for use in
+      "iconSetConditionalFormat.set(<!-- -->{ ... }<!-- -->)".
+    name: Excel.Interfaces.IconSetConditionalFormatUpdateData
+    fullName: Excel.Interfaces.IconSetConditionalFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.Interfaces.IconSetConditionalFormatUpdateData.criteria
+      - excel_1_8.Excel.Interfaces.IconSetConditionalFormatUpdateData.reverseIconOrder
+      - excel_1_8.Excel.Interfaces.IconSetConditionalFormatUpdateData.showIconOnly
+      - excel_1_8.Excel.Interfaces.IconSetConditionalFormatUpdateData.style
+  - uid: excel_1_8.Excel.Interfaces.IconSetConditionalFormatUpdateData.criteria
+    summary: >-
+      An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for
+      the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when
+      set.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria?: Excel.ConditionalIconCriterion[];'
+      return:
+        type:
+          - 'Excel.ConditionalIconCriterion[]'
+  - uid: excel_1_8.Excel.Interfaces.IconSetConditionalFormatUpdateData.reverseIconOrder
+    summary: |-
+      If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: reverseIconOrder
+    fullName: reverseIconOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'reverseIconOrder?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.IconSetConditionalFormatUpdateData.showIconOnly
+    summary: |-
+      If true, hides the values and only shows icons.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showIconOnly
+    fullName: showIconOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showIconOnly?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.IconSetConditionalFormatUpdateData.style
+    summary: |-
+      If set, displays the IconSet option for the conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        style?: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
+        "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" |
+        "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" |
+        "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" |
+        "LinkedEntityMapIcon";
+      return:
+        type:
+          - >-
+            Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
+            "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" |
+            "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" |
+            "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" |
+            "LinkedEntityMapIcon"

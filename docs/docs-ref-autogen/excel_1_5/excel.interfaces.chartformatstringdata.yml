@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_5.Excel.Interfaces.ChartFormatStringData
+    summary: An interface describing the data returned by calling "chartFormatString.toJSON()".
+    name: Excel.Interfaces.ChartFormatStringData
+    fullName: Excel.Interfaces.ChartFormatStringData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_5

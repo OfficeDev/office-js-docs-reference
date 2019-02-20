@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_4.Excel.Interfaces.TableSortLoadOptions
+    summary: |-
+      Manages sorting operations on Table objects.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.TableSortLoadOptions
+    fullName: Excel.Interfaces.TableSortLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_4
+    children:
+      - excel_1_4.Excel.Interfaces.TableSortLoadOptions.$all
+      - excel_1_4.Excel.Interfaces.TableSortLoadOptions.fields
+      - excel_1_4.Excel.Interfaces.TableSortLoadOptions.matchCase
+      - excel_1_4.Excel.Interfaces.TableSortLoadOptions.method
+  - uid: excel_1_4.Excel.Interfaces.TableSortLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_4.Excel.Interfaces.TableSortLoadOptions.fields
+    summary: |-
+      Represents the current conditions used to last sort the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fields
+    fullName: fields
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fields?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_4.Excel.Interfaces.TableSortLoadOptions.matchCase
+    summary: |-
+      Represents whether the casing impacted the last sort of the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: matchCase
+    fullName: matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_4.Excel.Interfaces.TableSortLoadOptions.method
+    summary: |-
+      Represents Chinese character ordering method last used to sort the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: method
+    fullName: method
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'method?: boolean;'
+      return:
+        type:
+          - boolean

@@ -1,0 +1,12 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_4.Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+    summary: >-
+      An interface for updating data on the ColorScaleConditionalFormat object, for use in
+      "colorScaleConditionalFormat.set(<!-- -->{ ... }<!-- -->)".
+    name: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+    fullName: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_4

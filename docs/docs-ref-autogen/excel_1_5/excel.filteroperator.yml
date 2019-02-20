@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_5.Excel.FilterOperator
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.FilterOperator
+    fullName: Excel.FilterOperator
+    langs:
+      - typeScript
+    type: enum
+    package: excel_1_5
+    children:
+      - excel_1_5.Excel.FilterOperator.and
+      - excel_1_5.Excel.FilterOperator.or
+  - uid: excel_1_5.Excel.FilterOperator.and
+    name: and
+    fullName: and
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"And"'
+  - uid: excel_1_5.Excel.FilterOperator.or
+    name: or
+    fullName: or
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Or"'

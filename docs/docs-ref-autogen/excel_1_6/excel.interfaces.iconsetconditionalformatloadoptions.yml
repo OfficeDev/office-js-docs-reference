@@ -1,0 +1,93 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_6.Excel.Interfaces.IconSetConditionalFormatLoadOptions
+    summary: |-
+      Represents an IconSet criteria for conditional formatting.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.IconSetConditionalFormatLoadOptions
+    fullName: Excel.Interfaces.IconSetConditionalFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_6
+    children:
+      - excel_1_6.Excel.Interfaces.IconSetConditionalFormatLoadOptions.$all
+      - excel_1_6.Excel.Interfaces.IconSetConditionalFormatLoadOptions.criteria
+      - excel_1_6.Excel.Interfaces.IconSetConditionalFormatLoadOptions.reverseIconOrder
+      - excel_1_6.Excel.Interfaces.IconSetConditionalFormatLoadOptions.showIconOnly
+      - excel_1_6.Excel.Interfaces.IconSetConditionalFormatLoadOptions.style
+  - uid: excel_1_6.Excel.Interfaces.IconSetConditionalFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.IconSetConditionalFormatLoadOptions.criteria
+    summary: >-
+      An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for
+      the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when
+      set.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.IconSetConditionalFormatLoadOptions.reverseIconOrder
+    summary: |-
+      If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: reverseIconOrder
+    fullName: reverseIconOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'reverseIconOrder?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.IconSetConditionalFormatLoadOptions.showIconOnly
+    summary: |-
+      If true, hides the values and only shows icons.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showIconOnly
+    fullName: showIconOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showIconOnly?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.IconSetConditionalFormatLoadOptions.style
+    summary: |-
+      If set, displays the IconSet option for the conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean

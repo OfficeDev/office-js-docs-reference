@@ -1,0 +1,173 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData
+    summary: >-
+      An interface for updating data on the ChartPlotArea object, for use in "chartPlotArea.set(<!-- -->{ ... }<!--
+      -->)".
+    name: Excel.Interfaces.ChartPlotAreaUpdateData
+    fullName: Excel.Interfaces.ChartPlotAreaUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.format
+      - excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.height
+      - excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.insideHeight
+      - excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.insideLeft
+      - excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.insideTop
+      - excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.insideWidth
+      - excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.left
+      - excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.position
+      - excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.top
+      - excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.width
+  - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.format
+    summary: |-
+      Represents the formatting of a chart plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartPlotAreaFormatUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartPlotAreaFormatUpdateData
+  - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.height
+    summary: |-
+      Represents the height value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.insideHeight
+    summary: |-
+      Represents the insideHeight value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: insideHeight
+    fullName: insideHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'insideHeight?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.insideLeft
+    summary: |-
+      Represents the insideLeft value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: insideLeft
+    fullName: insideLeft
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'insideLeft?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.insideTop
+    summary: |-
+      Represents the insideTop value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: insideTop
+    fullName: insideTop
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'insideTop?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.insideWidth
+    summary: |-
+      Represents the insideWidth value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: insideWidth
+    fullName: insideWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'insideWidth?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.left
+    summary: |-
+      Represents the left value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.position
+    summary: |-
+      Represents the position of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position?: Excel.ChartPlotAreaPosition | "Automatic" | "Custom";'
+      return:
+        type:
+          - Excel.ChartPlotAreaPosition | "Automatic" | "Custom"
+  - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.top
+    summary: |-
+      Represents the top value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.width
+    summary: |-
+      Represents the width value of plotArea.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

@@ -1,0 +1,12 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_1.Excel.Interfaces.TopBottomConditionalFormatUpdateData
+    summary: >-
+      An interface for updating data on the TopBottomConditionalFormat object, for use in
+      "topBottomConditionalFormat.set(<!-- -->{ ... }<!-- -->)".
+    name: Excel.Interfaces.TopBottomConditionalFormatUpdateData
+    fullName: Excel.Interfaces.TopBottomConditionalFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_1

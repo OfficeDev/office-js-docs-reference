@@ -1,0 +1,91 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.Interfaces.PivotFieldData
+    summary: An interface describing the data returned by calling "pivotField.toJSON()".
+    name: Excel.Interfaces.PivotFieldData
+    fullName: Excel.Interfaces.PivotFieldData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.Interfaces.PivotFieldData.id
+      - excel_1_8.Excel.Interfaces.PivotFieldData.items
+      - excel_1_8.Excel.Interfaces.PivotFieldData.name
+      - excel_1_8.Excel.Interfaces.PivotFieldData.showAllItems
+      - excel_1_8.Excel.Interfaces.PivotFieldData.subtotals
+  - uid: excel_1_8.Excel.Interfaces.PivotFieldData.id
+    summary: |-
+      Id of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_8.Excel.Interfaces.PivotFieldData.items
+    summary: |-
+      Returns the PivotFields associated with the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.PivotItemData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.PivotItemData[]'
+  - uid: excel_1_8.Excel.Interfaces.PivotFieldData.name
+    summary: |-
+      Name of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_8.Excel.Interfaces.PivotFieldData.showAllItems
+    summary: |-
+      Determines whether to show all items of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showAllItems
+    fullName: showAllItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAllItems?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.PivotFieldData.subtotals
+    summary: |-
+      Subtotals of the PivotField.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subtotals
+    fullName: subtotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subtotals?: Excel.Subtotals;'
+      return:
+        type:
+          - excel.Excel.Subtotals
