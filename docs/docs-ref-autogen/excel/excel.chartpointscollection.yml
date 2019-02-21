@@ -36,7 +36,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ChartPointsCollection.count
     summary: |-
       Returns the number of chart points in the series. Read-only.

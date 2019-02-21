@@ -80,7 +80,7 @@ items:
       content: 'borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeBorderCollectionLoadOptions
+          - excel_1_8.Excel.Interfaces.RangeBorderCollectionLoadOptions
   - uid: excel_1_8.Excel.Interfaces.StyleCollectionLoadOptions.builtIn
     summary: |-
       For EACH ITEM in the collection: Indicates if the style is a built-in style.
@@ -110,7 +110,7 @@ items:
       content: 'fill?: Excel.Interfaces.RangeFillLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFillLoadOptions
+          - excel_1_8.Excel.Interfaces.RangeFillLoadOptions
   - uid: excel_1_8.Excel.Interfaces.StyleCollectionLoadOptions.font
     summary: |-
       For EACH ITEM in the collection: A Font object that represents the font of the style.
@@ -125,7 +125,7 @@ items:
       content: 'font?: Excel.Interfaces.RangeFontLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFontLoadOptions
+          - excel_1_8.Excel.Interfaces.RangeFontLoadOptions
   - uid: excel_1_8.Excel.Interfaces.StyleCollectionLoadOptions.formulaHidden
     summary: |-
       For EACH ITEM in the collection: Indicates if the formula will be hidden when the worksheet is protected.

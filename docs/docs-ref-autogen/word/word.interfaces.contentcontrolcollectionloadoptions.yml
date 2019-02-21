@@ -215,7 +215,7 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableLoadOptions
+          - word.Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCell
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws if it is not
@@ -232,7 +232,7 @@ items:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableCellLoadOptions
+          - word.Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTableCellOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the content control. Returns a null object if
@@ -249,7 +249,7 @@ items:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableCellLoadOptions
+          - word.Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTableOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the content control. Returns a null object if it is
@@ -266,7 +266,7 @@ items:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableLoadOptions
+          - word.Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.placeholderText
     summary: >-
       For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be

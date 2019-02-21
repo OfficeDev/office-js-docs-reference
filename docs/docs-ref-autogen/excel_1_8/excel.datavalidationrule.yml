@@ -35,7 +35,7 @@ items:
       content: 'custom?: Excel.CustomDataValidation;'
       return:
         type:
-          - excel.Excel.CustomDataValidation
+          - excel_1_8.Excel.CustomDataValidation
   - uid: excel_1_8.Excel.DataValidationRule.date
     summary: |-
       Date data validation criteria.
@@ -50,7 +50,7 @@ items:
       content: 'date?: Excel.DateTimeDataValidation;'
       return:
         type:
-          - excel.Excel.DateTimeDataValidation
+          - excel_1_8.Excel.DateTimeDataValidation
   - uid: excel_1_8.Excel.DataValidationRule.decimal
     summary: |-
       Decimal data validation criteria.
@@ -65,7 +65,7 @@ items:
       content: 'decimal?: Excel.BasicDataValidation;'
       return:
         type:
-          - excel.Excel.BasicDataValidation
+          - excel_1_8.Excel.BasicDataValidation
   - uid: excel_1_8.Excel.DataValidationRule.list
     summary: |-
       List data validation criteria.
@@ -80,7 +80,7 @@ items:
       content: 'list?: Excel.ListDataValidation;'
       return:
         type:
-          - excel.Excel.ListDataValidation
+          - excel_1_8.Excel.ListDataValidation
         description: |-
 
           #### Examples
@@ -122,7 +122,7 @@ items:
       content: 'textLength?: Excel.BasicDataValidation;'
       return:
         type:
-          - excel.Excel.BasicDataValidation
+          - excel_1_8.Excel.BasicDataValidation
   - uid: excel_1_8.Excel.DataValidationRule.time
     summary: |-
       Time data validation criteria.
@@ -137,7 +137,7 @@ items:
       content: 'time?: Excel.DateTimeDataValidation;'
       return:
         type:
-          - excel.Excel.DateTimeDataValidation
+          - excel_1_8.Excel.DateTimeDataValidation
   - uid: excel_1_8.Excel.DataValidationRule.wholeNumber
     summary: |-
       WholeNumber data validation criteria.
@@ -152,7 +152,7 @@ items:
       content: 'wholeNumber?: Excel.BasicDataValidation;'
       return:
         type:
-          - excel.Excel.BasicDataValidation
+          - excel_1_8.Excel.BasicDataValidation
         description: |-
 
           #### Examples

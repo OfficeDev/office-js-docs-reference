@@ -83,7 +83,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.CustomXmlPartCollection.getByNamespace
     summary: |-
       Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.

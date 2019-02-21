@@ -91,7 +91,7 @@ items:
       content: 'fill?: Excel.Interfaces.RangeFillData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFillData
+          - excel_1_8.Excel.Interfaces.RangeFillData
   - uid: excel_1_8.Excel.Interfaces.StyleData.font
     summary: |-
       A Font object that represents the font of the style.
@@ -106,7 +106,7 @@ items:
       content: 'font?: Excel.Interfaces.RangeFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFontData
+          - excel_1_8.Excel.Interfaces.RangeFontData
   - uid: excel_1_8.Excel.Interfaces.StyleData.formulaHidden
     summary: |-
       Indicates if the formula will be hidden when the worksheet is protected.

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_4
     children:
       - excel_1_4.Excel.Chart.axes
@@ -53,7 +53,7 @@ items:
       content: 'readonly axes: Excel.ChartAxes;'
       return:
         type:
-          - excel.Excel.ChartAxes
+          - excel_1_4.Excel.ChartAxes
   - uid: excel_1_4.Excel.Chart.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -67,7 +67,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_4.Excel.RequestContext
   - uid: excel_1_4.Excel.Chart.dataLabels
     summary: |-
       Represents the datalabels on the chart. Read-only.
@@ -82,7 +82,7 @@ items:
       content: 'readonly dataLabels: Excel.ChartDataLabels;'
       return:
         type:
-          - excel.Excel.ChartDataLabels
+          - excel_1_4.Excel.ChartDataLabels
   - uid: excel_1_4.Excel.Chart.delete
     summary: |-
       Deletes the chart object.
@@ -128,7 +128,7 @@ items:
       content: 'readonly format: Excel.ChartAreaFormat;'
       return:
         type:
-          - excel.Excel.ChartAreaFormat
+          - excel_1_4.Excel.ChartAreaFormat
   - uid: excel_1_4.Excel.Chart.getImage
     summary: >-
       Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
@@ -178,7 +178,7 @@ items:
             (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height
             and width are set).
           type:
-            - excel.Excel.ImageFittingMode
+            - excel_1_4.Excel.ImageFittingMode
   - uid: excel_1_4.Excel.Chart.getImage_1
     summary: >-
       Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
@@ -258,7 +258,7 @@ items:
       content: 'readonly legend: Excel.ChartLegend;'
       return:
         type:
-          - excel.Excel.ChartLegend
+          - excel_1_4.Excel.ChartLegend
   - uid: excel_1_4.Excel.Chart.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -290,13 +290,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - excel_1_4.Excel.Chart
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartLoadOptions
+            - excel_1_4.Excel.Interfaces.ChartLoadOptions
   - uid: excel_1_4.Excel.Chart.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -310,7 +310,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - excel_1_4.Excel.Chart
         description: |-
 
           #### Examples
@@ -348,7 +348,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - excel_1_4.Excel.Chart
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -408,7 +408,7 @@ items:
       content: 'readonly series: Excel.ChartSeriesCollection;'
       return:
         type:
-          - excel.Excel.ChartSeriesCollection
+          - excel_1_4.Excel.ChartSeriesCollection
   - uid: excel_1_4.Excel.Chart.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -438,7 +438,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_4.Excel.Chart.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -456,7 +456,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Chart
+            - excel_1_4.Excel.Chart
   - uid: excel_1_4.Excel.Chart.setData
     summary: |-
       Resets the source data for the chart.
@@ -477,13 +477,13 @@ items:
         - id: sourceData
           description: The range object corresponding to the source data.
           type:
-            - Range
+            - excel_1_4.Excel.Range
         - id: seriesBy
           description: >-
             Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
             (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
           type:
-            - excel.Excel.ChartSeriesBy
+            - excel_1_4.Excel.ChartSeriesBy
   - uid: excel_1_4.Excel.Chart.setData_1
     summary: |-
       Resets the source data for the chart.
@@ -521,7 +521,7 @@ items:
         - id: sourceData
           description: The range object corresponding to the source data.
           type:
-            - Range
+            - excel_1_4.Excel.Range
         - id: seriesByString
           description: >-
             Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
@@ -594,7 +594,7 @@ items:
       content: 'readonly title: Excel.ChartTitle;'
       return:
         type:
-          - excel.Excel.ChartTitle
+          - excel_1_4.Excel.ChartTitle
   - uid: excel_1_4.Excel.Chart.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -611,7 +611,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartData
+          - excel_1_4.Excel.Interfaces.ChartData
         description: ''
   - uid: excel_1_4.Excel.Chart.top
     summary: >-
@@ -659,4 +659,4 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - excel_1_4.Excel.Worksheet

@@ -23,7 +23,7 @@ items:
       content: 'blackCircle: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_5.Excel.Icon
   - uid: excel_1_5.Excel.FiveQuartersSet.circleWithOneWhiteQuarter
     name: circleWithOneWhiteQuarter
     fullName: circleWithOneWhiteQuarter
@@ -34,7 +34,7 @@ items:
       content: 'circleWithOneWhiteQuarter: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_5.Excel.Icon
   - uid: excel_1_5.Excel.FiveQuartersSet.circleWithThreeWhiteQuarters
     name: circleWithThreeWhiteQuarters
     fullName: circleWithThreeWhiteQuarters
@@ -45,7 +45,7 @@ items:
       content: 'circleWithThreeWhiteQuarters: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_5.Excel.Icon
   - uid: excel_1_5.Excel.FiveQuartersSet.circleWithTwoWhiteQuarters
     name: circleWithTwoWhiteQuarters
     fullName: circleWithTwoWhiteQuarters
@@ -56,7 +56,7 @@ items:
       content: 'circleWithTwoWhiteQuarters: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_5.Excel.Icon
   - uid: excel_1_5.Excel.FiveQuartersSet.whiteCircleAllWhiteQuarters
     name: whiteCircleAllWhiteQuarters
     fullName: whiteCircleAllWhiteQuarters
@@ -67,4 +67,4 @@ items:
       content: 'whiteCircleAllWhiteQuarters: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_5.Excel.Icon

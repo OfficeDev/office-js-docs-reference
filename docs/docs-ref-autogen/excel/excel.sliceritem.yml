@@ -42,7 +42,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.SlicerItem.hasData
     summary: >-
       True if the slicer item has data.

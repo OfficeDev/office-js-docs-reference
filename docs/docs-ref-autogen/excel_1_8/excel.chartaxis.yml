@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_8
     children:
       - excel_1_8.Excel.ChartAxis.alignment
@@ -135,7 +135,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_8.Excel.RequestContext
   - uid: excel_1_8.Excel.ChartAxis.customDisplayUnit
     summary: >-
       Represents the custom axis display unit value. Read-only. To set this property, please use the
@@ -206,7 +206,7 @@ items:
       content: 'readonly format: Excel.ChartAxisFormat;'
       return:
         type:
-          - excel.Excel.ChartAxisFormat
+          - excel_1_8.Excel.ChartAxisFormat
   - uid: excel_1_8.Excel.ChartAxis.height
     summary: |-
       Represents the height, in points, of the chart axis. Null if the axis is not visible. Read-only.
@@ -285,13 +285,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;'
       return:
         type:
-          - excel.Excel.ChartAxis
+          - excel_1_8.Excel.ChartAxis
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartAxisLoadOptions
+            - excel_1_8.Excel.Interfaces.ChartAxisLoadOptions
   - uid: excel_1_8.Excel.ChartAxis.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -305,7 +305,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartAxis;'
       return:
         type:
-          - excel.Excel.ChartAxis
+          - excel_1_8.Excel.ChartAxis
         description: |-
 
           #### Examples
@@ -362,7 +362,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxis;'
       return:
         type:
-          - excel.Excel.ChartAxis
+          - excel_1_8.Excel.ChartAxis
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -400,7 +400,7 @@ items:
       content: 'readonly majorGridlines: Excel.ChartGridlines;'
       return:
         type:
-          - excel.Excel.ChartGridlines
+          - excel_1_8.Excel.ChartGridlines
   - uid: excel_1_8.Excel.ChartAxis.majorTickMark
     summary: |-
       Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
@@ -498,7 +498,7 @@ items:
       content: 'readonly minorGridlines: Excel.ChartGridlines;'
       return:
         type:
-          - excel.Excel.ChartGridlines
+          - excel_1_8.Excel.ChartGridlines
   - uid: excel_1_8.Excel.ChartAxis.minorTickMark
     summary: |-
       Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
@@ -686,7 +686,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.ChartAxis.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -704,7 +704,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartAxis
+            - excel_1_8.Excel.ChartAxis
   - uid: excel_1_8.Excel.ChartAxis.setCategoryNames
     summary: |-
       Sets all the category names for the specified axis.
@@ -725,7 +725,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - Range
+            - excel_1_8.Excel.Range
   - uid: excel_1_8.Excel.ChartAxis.setCustomDisplayUnit
     summary: |-
       Sets the axis display unit to a custom value.
@@ -879,7 +879,7 @@ items:
       content: 'readonly title: Excel.ChartAxisTitle;'
       return:
         type:
-          - excel.Excel.ChartAxisTitle
+          - excel_1_8.Excel.ChartAxisTitle
   - uid: excel_1_8.Excel.ChartAxis.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -896,7 +896,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartAxisData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisData
+          - excel_1_8.Excel.Interfaces.ChartAxisData
         description: ''
   - uid: excel_1_8.Excel.ChartAxis.top
     summary: >-

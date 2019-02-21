@@ -35,7 +35,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartPlotAreaFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPlotAreaFormatUpdateData
+          - excel_1_8.Excel.Interfaces.ChartPlotAreaFormatUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData.height
     summary: |-
       Represents the height value of plotArea.

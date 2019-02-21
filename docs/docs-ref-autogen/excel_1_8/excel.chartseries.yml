@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_8
     children:
       - excel_1_8.Excel.ChartSeries.axisGroup
@@ -122,7 +122,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_8.Excel.RequestContext
   - uid: excel_1_8.Excel.ChartSeries.dataLabels
     summary: |-
       Represents a collection of all dataLabels in the series.
@@ -137,7 +137,7 @@ items:
       content: 'readonly dataLabels: Excel.ChartDataLabels;'
       return:
         type:
-          - excel.Excel.ChartDataLabels
+          - excel_1_8.Excel.ChartDataLabels
   - uid: excel_1_8.Excel.ChartSeries.delete
     summary: |-
       Deletes the chart series.
@@ -254,7 +254,7 @@ items:
       content: 'readonly format: Excel.ChartSeriesFormat;'
       return:
         type:
-          - excel.Excel.ChartSeriesFormat
+          - excel_1_8.Excel.ChartSeriesFormat
   - uid: excel_1_8.Excel.ChartSeries.gapWidth
     summary: >-
       Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of
@@ -333,13 +333,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;'
       return:
         type:
-          - excel.Excel.ChartSeries
+          - excel_1_8.Excel.ChartSeries
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartSeriesLoadOptions
+            - excel_1_8.Excel.Interfaces.ChartSeriesLoadOptions
   - uid: excel_1_8.Excel.ChartSeries.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -353,7 +353,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartSeries;'
       return:
         type:
-          - excel.Excel.ChartSeries
+          - excel_1_8.Excel.ChartSeries
         description: |-
 
           #### Examples
@@ -391,7 +391,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartSeries;'
       return:
         type:
-          - excel.Excel.ChartSeries
+          - excel_1_8.Excel.ChartSeries
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -657,7 +657,7 @@ items:
       content: 'readonly points: Excel.ChartPointsCollection;'
       return:
         type:
-          - excel.Excel.ChartPointsCollection
+          - excel_1_8.Excel.ChartPointsCollection
   - uid: excel_1_8.Excel.ChartSeries.secondPlotSize
     summary: >-
       Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a
@@ -704,7 +704,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.ChartSeries.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -722,7 +722,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartSeries
+            - excel_1_8.Excel.ChartSeries
   - uid: excel_1_8.Excel.ChartSeries.setBubbleSizes
     summary: |-
       Set bubble sizes for a chart series. Only works for bubble charts.
@@ -743,7 +743,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - Range
+            - excel_1_8.Excel.Range
   - uid: excel_1_8.Excel.ChartSeries.setValues
     summary: |-
       Set values for a chart series. For scatter chart, it means Y axis values.
@@ -783,7 +783,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - Range
+            - excel_1_8.Excel.Range
   - uid: excel_1_8.Excel.ChartSeries.setXAxisValues
     summary: |-
       Set values of X axis for a chart series. Only works for scatter charts.
@@ -804,7 +804,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - Range
+            - excel_1_8.Excel.Range
   - uid: excel_1_8.Excel.ChartSeries.showShadow
     summary: |-
       Boolean value representing if the series has a shadow or not.
@@ -868,7 +868,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartSeriesData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesData
+          - excel_1_8.Excel.Interfaces.ChartSeriesData
         description: ''
   - uid: excel_1_8.Excel.ChartSeries.trendlines
     summary: |-
@@ -884,7 +884,7 @@ items:
       content: 'readonly trendlines: Excel.ChartTrendlineCollection;'
       return:
         type:
-          - excel.Excel.ChartTrendlineCollection
+          - excel_1_8.Excel.ChartTrendlineCollection
   - uid: excel_1_8.Excel.ChartSeries.varyByCategories
     summary: >-
       True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one

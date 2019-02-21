@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: onenote
     children:
       - onenote.OneNote.FloatingInk.context
@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - onenote.OneNote.RequestContext
   - uid: onenote.OneNote.FloatingInk.id
     summary: |-
       Gets the ID of the FloatingInk object. Read-only.

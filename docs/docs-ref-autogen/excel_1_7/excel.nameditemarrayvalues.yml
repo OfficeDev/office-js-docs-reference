@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_7
     children:
       - excel_1_7.Excel.NamedItemArrayValues.context
@@ -34,7 +34,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_7.Excel.RequestContext
   - uid: excel_1_7.Excel.NamedItemArrayValues.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -66,13 +66,13 @@ items:
       content: 'load(option?: Excel.Interfaces.NamedItemArrayValuesLoadOptions): Excel.NamedItemArrayValues;'
       return:
         type:
-          - excel.Excel.NamedItemArrayValues
+          - excel_1_7.Excel.NamedItemArrayValues
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.NamedItemArrayValuesLoadOptions
+            - excel_1_7.Excel.Interfaces.NamedItemArrayValuesLoadOptions
   - uid: excel_1_7.Excel.NamedItemArrayValues.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -86,7 +86,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.NamedItemArrayValues;'
       return:
         type:
-          - excel.Excel.NamedItemArrayValues
+          - excel_1_7.Excel.NamedItemArrayValues
         description: ''
       parameters:
         - id: propertyNames
@@ -106,7 +106,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.NamedItemArrayValues;'
       return:
         type:
-          - excel.Excel.NamedItemArrayValues
+          - excel_1_7.Excel.NamedItemArrayValues
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -131,7 +131,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.NamedItemArrayValuesData;'
       return:
         type:
-          - excel.Excel.Interfaces.NamedItemArrayValuesData
+          - excel_1_7.Excel.Interfaces.NamedItemArrayValuesData
         description: ''
   - uid: excel_1_7.Excel.NamedItemArrayValues.types
     summary: |-

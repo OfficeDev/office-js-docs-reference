@@ -111,7 +111,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(callback?: (result: Office.AsyncResult<void>) => void, asyncContext?: any): void;'
+      content: 'saveAsync(callback?: (result: CommonAPI.AsyncResult<void>) => void, asyncContext?: any): void;'
       return:
         type:
           - void
@@ -122,7 +122,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
         - id: asyncContext
           description: |-
             Optional. Any state data that is passed to the callback method.
@@ -214,7 +214,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(callback?: (result: Office.AsyncResult<void>) => void): void;'
+      content: 'saveAsync(callback?: (result: CommonAPI.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -228,7 +228,7 @@ items:
 
             \[Api set: Mailbox 1.0\]
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_4.Office.CustomProperties.saveAsync_2
     summary: >-
       Saves item-specific custom properties to the server.

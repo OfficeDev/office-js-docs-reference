@@ -86,7 +86,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ConditionalRangeFont.italic
     summary: |-
       Represents the italic status of the font.

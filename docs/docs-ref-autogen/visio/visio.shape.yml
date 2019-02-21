@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: visio
     children:
       - visio.Visio.Shape.comments
@@ -44,7 +44,7 @@ items:
       content: 'readonly comments: Visio.CommentCollection;'
       return:
         type:
-          - Visio.CommentCollection
+          - visio.Visio.CommentCollection
   - uid: visio.Visio.Shape.getBounds
     summary: |-
       Returns the BoundingBox object that specifies bounding box of the shape.
@@ -163,13 +163,13 @@ items:
       content: 'load(option?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;'
       return:
         type:
-          - Visio.Shape
+          - visio.Visio.Shape
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Visio.Interfaces.ShapeLoadOptions
+            - visio.Visio.Interfaces.ShapeLoadOptions
   - uid: visio.Visio.Shape.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -183,7 +183,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Visio.Shape;'
       return:
         type:
-          - Visio.Shape
+          - visio.Visio.Shape
         description: ''
       parameters:
         - id: propertyNames
@@ -203,7 +203,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Shape;'
       return:
         type:
-          - Visio.Shape
+          - visio.Visio.Shape
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -271,7 +271,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: visio.Visio.Shape.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -289,7 +289,7 @@ items:
         - id: properties
           description: ''
           type:
-            - Visio.Shape
+            - visio.Visio.Shape
   - uid: visio.Visio.Shape.shapeDataItems
     summary: |-
       Returns the Shape's Data Section. Read-only.
@@ -319,7 +319,7 @@ items:
       content: 'readonly subShapes: Visio.ShapeCollection;'
       return:
         type:
-          - Visio.ShapeCollection
+          - visio.Visio.ShapeCollection
   - uid: visio.Visio.Shape.text
     summary: |-
       Shape's text. Read-only.
@@ -345,7 +345,7 @@ items:
       content: 'toJSON(): Visio.Interfaces.ShapeData;'
       return:
         type:
-          - Visio.Interfaces.ShapeData
+          - visio.Visio.Interfaces.ShapeData
         description: ''
   - uid: visio.Visio.Shape.view
     summary: |-

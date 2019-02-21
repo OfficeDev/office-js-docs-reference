@@ -47,7 +47,7 @@ items:
       content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableColumnCollectionLoadOptions
+          - excel_1_1.Excel.Interfaces.TableColumnCollectionLoadOptions
   - uid: excel_1_1.Excel.Interfaces.TableCollectionLoadOptions.id
     summary: >-
       For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value
@@ -94,7 +94,7 @@ items:
       content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableRowCollectionLoadOptions
+          - excel_1_1.Excel.Interfaces.TableRowCollectionLoadOptions
   - uid: excel_1_1.Excel.Interfaces.TableCollectionLoadOptions.showHeaders
     summary: >-
       For EACH ITEM in the collection: Indicates whether the header row is visible or not. This value can be set to show

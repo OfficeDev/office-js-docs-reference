@@ -26,7 +26,7 @@ items:
       content: 'baseField?: Excel.PivotField;'
       return:
         type:
-          - excel.Excel.PivotField
+          - excel_1_8.Excel.PivotField
   - uid: excel_1_8.Excel.ShowAsRule.baseItem
     summary: |-
       The base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null.
@@ -41,7 +41,7 @@ items:
       content: 'baseItem?: Excel.PivotItem;'
       return:
         type:
-          - excel.Excel.PivotItem
+          - excel_1_8.Excel.PivotItem
         description: |-
 
           #### Examples

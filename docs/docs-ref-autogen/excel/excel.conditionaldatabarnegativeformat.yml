@@ -55,7 +55,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ConditionalDataBarNegativeFormat.fillColor
     summary: >-
       HTML color code representing the fill color, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color (e.g.

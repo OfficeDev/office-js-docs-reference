@@ -114,7 +114,7 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableLoadOptions
+          - word.Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.preferredHeight
     summary: |-
       For EACH ITEM in the collection: Gets and sets the preferred height of the row in points.

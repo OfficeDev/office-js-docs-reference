@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_7
     children:
       - excel_1_7.Excel.ChartAxisTitle.context
@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_7.Excel.RequestContext
   - uid: excel_1_7.Excel.ChartAxisTitle.format
     summary: |-
       Represents the formatting of chart axis title. Read-only.
@@ -52,7 +52,7 @@ items:
       content: 'readonly format: Excel.ChartAxisTitleFormat;'
       return:
         type:
-          - excel.Excel.ChartAxisTitleFormat
+          - excel_1_7.Excel.ChartAxisTitleFormat
   - uid: excel_1_7.Excel.ChartAxisTitle.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -84,13 +84,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartAxisTitleLoadOptions): Excel.ChartAxisTitle;'
       return:
         type:
-          - excel.Excel.ChartAxisTitle
+          - excel_1_7.Excel.ChartAxisTitle
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartAxisTitleLoadOptions
+            - excel_1_7.Excel.Interfaces.ChartAxisTitleLoadOptions
   - uid: excel_1_7.Excel.ChartAxisTitle.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -104,7 +104,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartAxisTitle;'
       return:
         type:
-          - excel.Excel.ChartAxisTitle
+          - excel_1_7.Excel.ChartAxisTitle
         description: |-
 
           #### Examples
@@ -158,7 +158,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxisTitle;'
       return:
         type:
-          - excel.Excel.ChartAxisTitle
+          - excel_1_7.Excel.ChartAxisTitle
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -196,7 +196,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_7.Excel.ChartAxisTitle.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -214,7 +214,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartAxisTitle
+            - excel_1_7.Excel.ChartAxisTitle
   - uid: excel_1_7.Excel.ChartAxisTitle.text
     summary: |-
       Represents the axis title.
@@ -246,7 +246,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartAxisTitleData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisTitleData
+          - excel_1_7.Excel.Interfaces.ChartAxisTitleData
         description: ''
   - uid: excel_1_7.Excel.ChartAxisTitle.visible
     summary: |-

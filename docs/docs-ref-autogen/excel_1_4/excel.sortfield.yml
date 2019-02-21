@@ -77,7 +77,7 @@ items:
       content: 'icon?: Excel.Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - excel_1_4.Excel.Icon
   - uid: excel_1_4.Excel.SortField.key
     summary: >-
       Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: word
     children:
       - word.Word.RangeCollection.context
@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - word.Word.RequestContext
   - uid: word.Word.RangeCollection.getFirst
     summary: |-
       Gets the first range in this collection. Throws if this collection is empty.
@@ -52,7 +52,7 @@ items:
       content: 'getFirst(): Word.Range;'
       return:
         type:
-          - Word.Range
+          - word.Word.Range
         description: ''
   - uid: word.Word.RangeCollection.getFirstOrNullObject
     summary: |-
@@ -68,7 +68,7 @@ items:
       content: 'getFirstOrNullObject(): Word.Range;'
       return:
         type:
-          - Word.Range
+          - word.Word.Range
         description: ''
   - uid: word.Word.RangeCollection.items
     summary: Gets the loaded child items in this collection.
@@ -115,7 +115,7 @@ items:
         Word.RangeCollection;
       return:
         type:
-          - Word.RangeCollection
+          - word.Word.RangeCollection
         description: ''
       parameters:
         - id: option
@@ -135,7 +135,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.RangeCollection;'
       return:
         type:
-          - Word.RangeCollection
+          - word.Word.RangeCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -152,13 +152,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.RangeCollection;'
       return:
         type:
-          - Word.RangeCollection
+          - word.Word.RangeCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: word.Word.RangeCollection.toJSON
     name: toJSON()
     fullName: toJSON()
@@ -169,7 +169,7 @@ items:
       content: 'toJSON(): Word.Interfaces.RangeCollectionData;'
       return:
         type:
-          - Word.Interfaces.RangeCollectionData
+          - word.Word.Interfaces.RangeCollectionData
         description: ''
   - uid: word.Word.RangeCollection.track
     summary: >-
@@ -187,7 +187,7 @@ items:
       content: 'track(): Word.RangeCollection;'
       return:
         type:
-          - Word.RangeCollection
+          - word.Word.RangeCollection
         description: ''
   - uid: word.Word.RangeCollection.untrack
     summary: >-
@@ -204,5 +204,5 @@ items:
       content: 'untrack(): Word.RangeCollection;'
       return:
         type:
-          - Word.RangeCollection
+          - word.Word.RangeCollection
         description: ''

@@ -15,7 +15,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - 'Item '
+      - Outlook_1_7.Office.Item
     package: Outlook_1_7
     children:
       - Outlook_1_7.Office.ItemRead.displayReplyAllForm
@@ -68,7 +68,7 @@ items:
     type: method
     syntax:
       content: >-
-        displayReplyAllForm(formData: string | ReplyFormData, callback?: (result: Office.AsyncResult<void>) => void):
+        displayReplyAllForm(formData: string | ReplyFormData, callback?: (result: CommonAPI.AsyncResult<void>) => void):
         void;
       return:
         type:
@@ -87,7 +87,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.ItemRead.displayReplyAllForm_1
     summary: >-
       Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
@@ -168,7 +168,7 @@ items:
     type: method
     syntax:
       content: >-
-        displayReplyForm(formData: string | ReplyFormData, callback?: (result: Office.AsyncResult<void>) => void):
+        displayReplyForm(formData: string | ReplyFormData, callback?: (result: CommonAPI.AsyncResult<void>) => void):
         void;
       return:
         type:
@@ -187,7 +187,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.ItemRead.displayReplyForm_1
     summary: >-
       Displays a reply form that includes only the sender of the selected message or the organizer of the selected
@@ -255,7 +255,7 @@ items:
       content: 'getEntities(): Entities;'
       return:
         type:
-          - Entities
+          - Outlook_1_7.Office.Entities
         description: ''
   - uid: Outlook_1_7.Office.ItemRead.getEntitiesByType
     summary: |-
@@ -446,7 +446,7 @@ items:
       content: 'getSelectedEntities(): Entities;'
       return:
         type:
-          - Entities
+          - Outlook_1_7.Office.Entities
         description: ''
   - uid: Outlook_1_7.Office.ItemRead.getSelectedRegExMatches
     summary: >-

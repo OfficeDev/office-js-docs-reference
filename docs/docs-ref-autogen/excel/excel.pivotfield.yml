@@ -42,7 +42,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.PivotField.id
     summary: |-
       Id of the PivotField.
@@ -253,7 +253,7 @@ items:
         - id: sortby
           description: Represents whether the sorting is done in an ascending or descending order.
           type:
-            - SortBy
+            - excel.Excel.SortBy
   - uid: excel.Excel.PivotField.sortByValues
     summary: >-
       Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to

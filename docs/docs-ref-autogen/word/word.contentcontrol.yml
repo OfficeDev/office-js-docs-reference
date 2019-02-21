@@ -14,7 +14,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: word
     children:
       - word.Word.ContentControl.appearance
@@ -225,7 +225,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - word.Word.RequestContext
   - uid: word.Word.ContentControl.delete
     summary: |-
       Deletes the content control and its content. If keepContent is set to true, the content is not deleted.
@@ -435,7 +435,7 @@ items:
       content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
       return:
         type:
-          - Word.Range
+          - word.Word.Range
         description: ''
       parameters:
         - id: rangeLocation
@@ -456,7 +456,7 @@ items:
       content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
       return:
         type:
-          - Word.Range
+          - word.Word.Range
         description: ''
       parameters:
         - id: rangeLocationString
@@ -477,7 +477,7 @@ items:
       content: 'getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;'
       return:
         type:
-          - Word.RangeCollection
+          - word.Word.RangeCollection
         description: ''
       parameters:
         - id: endingMarks
@@ -550,7 +550,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.ContentControl.insertBreak_1
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End',
@@ -637,7 +637,7 @@ items:
       content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - Word.Range
+          - word.Word.Range
         description: ''
       parameters:
         - id: base64File
@@ -649,7 +649,7 @@ items:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.ContentControl.insertFileFromBase64_1
     summary: >-
       Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace',
@@ -668,7 +668,7 @@ items:
         "Replace"): Word.Range;
       return:
         type:
-          - Word.Range
+          - word.Word.Range
         description: ''
       parameters:
         - id: base64File
@@ -697,7 +697,7 @@ items:
       content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - Word.Range
+          - word.Word.Range
         description: ''
       parameters:
         - id: html
@@ -709,7 +709,7 @@ items:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.ContentControl.insertHtml_1
     summary: >-
       Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace',
@@ -726,7 +726,7 @@ items:
       content: 'insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - Word.Range
+          - word.Word.Range
         description: |-
 
           #### Examples
@@ -810,7 +810,7 @@ items:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.ContentControl.insertInlinePictureFromBase64_1
     summary: >-
       Inserts an inline picture into the content control at the specified location. The insertLocation value can be
@@ -858,7 +858,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - Word.Range
+          - word.Word.Range
         description: ''
       parameters:
         - id: ooxml
@@ -870,7 +870,7 @@ items:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.ContentControl.insertOoxml_1
     summary: >-
       Inserts OOXML into the content control at the specified location. The insertLocation value can be 'Replace',
@@ -887,7 +887,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - Word.Range
+          - word.Word.Range
         description: |-
 
           #### Examples
@@ -958,7 +958,7 @@ items:
       content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
-          - Word.Paragraph
+          - word.Word.Paragraph
         description: ''
       parameters:
         - id: paragraphText
@@ -970,7 +970,7 @@ items:
             Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
             'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.ContentControl.insertParagraph_1
     summary: >-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or
@@ -989,7 +989,7 @@ items:
         Word.Paragraph;
       return:
         type:
-          - Word.Paragraph
+          - word.Word.Paragraph
         description: |-
 
           #### Examples
@@ -1059,7 +1059,7 @@ items:
         Word.Table;
       return:
         type:
-          - Word.Table
+          - word.Word.Table
         description: ''
       parameters:
         - id: rowCount
@@ -1075,7 +1075,7 @@ items:
             Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
             'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
@@ -1098,7 +1098,7 @@ items:
         "Replace", values?: string[][]): Word.Table;
       return:
         type:
-          - Word.Table
+          - word.Word.Table
         description: ''
       parameters:
         - id: rowCount
@@ -1135,7 +1135,7 @@ items:
       content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - Word.Range
+          - word.Word.Range
         description: ''
       parameters:
         - id: text
@@ -1147,7 +1147,7 @@ items:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.ContentControl.insertText_1
     summary: >-
       Inserts text into the content control at the specified location. The insertLocation value can be 'Replace',
@@ -1164,7 +1164,7 @@ items:
       content: 'insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - Word.Range
+          - word.Word.Range
         description: |-
 
           #### Examples
@@ -1396,7 +1396,7 @@ items:
       content: 'readonly paragraphs: Word.ParagraphCollection;'
       return:
         type:
-          - Word.ParagraphCollection
+          - word.Word.ParagraphCollection
   - uid: word.Word.ContentControl.parentBody
     summary: |-
       Gets the parent body of the content control. Read-only.
@@ -1411,7 +1411,7 @@ items:
       content: 'readonly parentBody: Word.Body;'
       return:
         type:
-          - Word.Body
+          - word.Word.Body
   - uid: word.Word.ContentControl.parentContentControl
     summary: >-
       Gets the content control that contains the content control. Throws if there isn't a parent content control.
@@ -1460,7 +1460,7 @@ items:
       content: 'readonly parentTable: Word.Table;'
       return:
         type:
-          - Word.Table
+          - word.Word.Table
   - uid: word.Word.ContentControl.parentTableCell
     summary: |-
       Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only.
@@ -1475,7 +1475,7 @@ items:
       content: 'readonly parentTableCell: Word.TableCell;'
       return:
         type:
-          - Word.TableCell
+          - word.Word.TableCell
   - uid: word.Word.ContentControl.parentTableCellOrNullObject
     summary: >-
       Gets the table cell that contains the content control. Returns a null object if it is not contained in a table
@@ -1492,7 +1492,7 @@ items:
       content: 'readonly parentTableCellOrNullObject: Word.TableCell;'
       return:
         type:
-          - Word.TableCell
+          - word.Word.TableCell
   - uid: word.Word.ContentControl.parentTableOrNullObject
     summary: >-
       Gets the table that contains the content control. Returns a null object if it is not contained in a table.
@@ -1509,7 +1509,7 @@ items:
       content: 'readonly parentTableOrNullObject: Word.Table;'
       return:
         type:
-          - Word.Table
+          - word.Word.Table
   - uid: word.Word.ContentControl.placeholderText
     summary: >-
       Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control
@@ -1569,7 +1569,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - Word.RangeCollection
+          - word.Word.RangeCollection
         description: |-
 
           #### Examples
@@ -1648,7 +1648,7 @@ items:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
-            - Word.SelectionMode
+            - word.Word.SelectionMode
   - uid: word.Word.ContentControl.select_1
     summary: |-
       Selects the content control. This causes Word to scroll to the selection.
@@ -1735,7 +1735,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.ContentControl.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -1770,7 +1770,7 @@ items:
         Word.RangeCollection;
       return:
         type:
-          - Word.RangeCollection
+          - word.Word.RangeCollection
         description: ''
       parameters:
         - id: delimiters
@@ -1933,7 +1933,7 @@ items:
       content: 'readonly tables: Word.TableCollection;'
       return:
         type:
-          - Word.TableCollection
+          - word.Word.TableCollection
   - uid: word.Word.ContentControl.tag
     summary: |-
       Gets or sets a tag to identify a content control.

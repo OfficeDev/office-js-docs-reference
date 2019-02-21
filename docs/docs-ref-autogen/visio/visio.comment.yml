@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: visio
     children:
       - visio.Visio.Comment.author
@@ -113,13 +113,13 @@ items:
       content: 'load(option?: Visio.Interfaces.CommentLoadOptions): Visio.Comment;'
       return:
         type:
-          - Visio.Comment
+          - visio.Visio.Comment
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Visio.Interfaces.CommentLoadOptions
+            - visio.Visio.Interfaces.CommentLoadOptions
   - uid: visio.Visio.Comment.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -133,7 +133,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Visio.Comment;'
       return:
         type:
-          - Visio.Comment
+          - visio.Visio.Comment
         description: ''
       parameters:
         - id: propertyNames
@@ -153,7 +153,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Comment;'
       return:
         type:
-          - Visio.Comment
+          - visio.Visio.Comment
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -191,7 +191,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: visio.Visio.Comment.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -209,7 +209,7 @@ items:
         - id: properties
           description: ''
           type:
-            - Visio.Comment
+            - visio.Visio.Comment
   - uid: visio.Visio.Comment.text
     summary: |-
       A string that contains the comment text.
@@ -235,5 +235,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.CommentData;'
       return:
         type:
-          - Visio.Interfaces.CommentData
+          - visio.Visio.Interfaces.CommentData
         description: ''

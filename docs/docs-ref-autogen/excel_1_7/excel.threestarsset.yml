@@ -21,7 +21,7 @@ items:
       content: 'goldStar: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_7.Excel.Icon
   - uid: excel_1_7.Excel.ThreeStarsSet.halfGoldStar
     name: halfGoldStar
     fullName: halfGoldStar
@@ -32,7 +32,7 @@ items:
       content: 'halfGoldStar: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_7.Excel.Icon
   - uid: excel_1_7.Excel.ThreeStarsSet.silverStar
     name: silverStar
     fullName: silverStar
@@ -43,4 +43,4 @@ items:
       content: 'silverStar: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_7.Excel.Icon

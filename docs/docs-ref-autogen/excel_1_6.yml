@@ -520,7 +520,7 @@ items:
             A previously-created API object. The batch will use the same RequestContext as the passed-in object, which
             means that any changes applied to the object will be picked up by "context.sync()".
           type:
-            - office.OfficeExtension.ClientObject
+            - OfficeExtension.ClientObject
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of
@@ -586,7 +586,7 @@ items:
             The additional options for this Excel.run which specify previous objects, whether to delay the request for
             cell edit, session info, etc.
           type:
-            - excel.Excel.RunOptions
+            - excel_1_6.Excel.RunOptions
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of
@@ -634,7 +634,7 @@ items:
             A previously-created object. The batch will use the same RequestContext as the passed-in object, which means
             that any changes applied to the object will be picked up by "context.sync()".
           type:
-            - office.OfficeExtension.ClientRequestContext
+            - OfficeExtension.ClientRequestContext
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of

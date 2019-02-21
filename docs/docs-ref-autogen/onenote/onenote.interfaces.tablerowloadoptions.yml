@@ -88,7 +88,7 @@ items:
       content: 'parentTable?: OneNote.Interfaces.TableLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.TableLoadOptions
+          - onenote.OneNote.Interfaces.TableLoadOptions
   - uid: onenote.OneNote.Interfaces.TableRowLoadOptions.rowIndex
     summary: |-
       Gets the index of the row in its parent table. Read-only.

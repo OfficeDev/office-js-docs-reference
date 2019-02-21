@@ -113,7 +113,7 @@ items:
       content: 'parentTable?: Word.Interfaces.TableData;'
       return:
         type:
-          - Word.Interfaces.TableData
+          - word.Word.Interfaces.TableData
   - uid: word.Word.Interfaces.TableRowData.preferredHeight
     summary: |-
       Gets and sets the preferred height of the row in points.

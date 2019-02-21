@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_8
     children:
       - excel_1_8.Excel.CustomProperty.context
@@ -38,7 +38,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_8.Excel.RequestContext
   - uid: excel_1_8.Excel.CustomProperty.delete
     summary: |-
       Deletes the custom property.
@@ -101,13 +101,13 @@ items:
       content: 'load(option?: Excel.Interfaces.CustomPropertyLoadOptions): Excel.CustomProperty;'
       return:
         type:
-          - excel.Excel.CustomProperty
+          - excel_1_8.Excel.CustomProperty
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.CustomPropertyLoadOptions
+            - excel_1_8.Excel.Interfaces.CustomPropertyLoadOptions
   - uid: excel_1_8.Excel.CustomProperty.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -121,7 +121,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.CustomProperty;'
       return:
         type:
-          - excel.Excel.CustomProperty
+          - excel_1_8.Excel.CustomProperty
         description: ''
       parameters:
         - id: propertyNames
@@ -141,7 +141,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CustomProperty;'
       return:
         type:
-          - excel.Excel.CustomProperty
+          - excel_1_8.Excel.CustomProperty
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -179,7 +179,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.CustomProperty.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -197,7 +197,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.CustomProperty
+            - excel_1_8.Excel.CustomProperty
   - uid: excel_1_8.Excel.CustomProperty.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -214,7 +214,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.CustomPropertyData;'
       return:
         type:
-          - excel.Excel.Interfaces.CustomPropertyData
+          - excel_1_8.Excel.Interfaces.CustomPropertyData
         description: ''
   - uid: excel_1_8.Excel.CustomProperty.type
     summary: |-

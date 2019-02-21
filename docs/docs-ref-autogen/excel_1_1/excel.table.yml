@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_1
     children:
       - excel_1_1.Excel.Table.columns
@@ -47,7 +47,7 @@ items:
       content: 'readonly columns: Excel.TableColumnCollection;'
       return:
         type:
-          - excel.Excel.TableColumnCollection
+          - excel_1_1.Excel.TableColumnCollection
   - uid: excel_1_1.Excel.Table.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -61,7 +61,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_1.Excel.RequestContext
   - uid: excel_1_1.Excel.Table.delete
     summary: |-
       Deletes the table.
@@ -108,7 +108,7 @@ items:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -143,7 +143,7 @@ items:
       content: 'getHeaderRowRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -178,7 +178,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -213,7 +213,7 @@ items:
       content: 'getTotalRowRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -282,13 +282,13 @@ items:
       content: 'load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
+          - excel_1_1.Excel.Table
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.TableLoadOptions
+            - excel_1_1.Excel.Interfaces.TableLoadOptions
   - uid: excel_1_1.Excel.Table.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -302,7 +302,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
+          - excel_1_1.Excel.Table
         description: |-
 
           #### Examples
@@ -376,7 +376,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
+          - excel_1_1.Excel.Table
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -414,7 +414,7 @@ items:
       content: 'readonly rows: Excel.TableRowCollection;'
       return:
         type:
-          - excel.Excel.TableRowCollection
+          - excel_1_1.Excel.TableRowCollection
   - uid: excel_1_1.Excel.Table.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -444,7 +444,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_1.Excel.Table.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -462,7 +462,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Table
+            - excel_1_1.Excel.Table
   - uid: excel_1_1.Excel.Table.showHeaders
     summary: |-
       Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
@@ -527,5 +527,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableData
+          - excel_1_1.Excel.Interfaces.TableData
         description: ''

@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ChartAxisFormat.fill
     summary: |-
       Represents chart fill formatting. Read-only.

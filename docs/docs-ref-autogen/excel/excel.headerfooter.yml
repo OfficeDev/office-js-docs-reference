@@ -79,7 +79,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.HeaderFooter.leftFooter
     summary: >-
       Gets or sets the left footer of the worksheet. To apply font formatting or insert a variable value, use format

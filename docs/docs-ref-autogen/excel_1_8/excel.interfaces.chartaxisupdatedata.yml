@@ -117,7 +117,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAxisFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisFormatUpdateData
+          - excel_1_8.Excel.Interfaces.ChartAxisFormatUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartAxisUpdateData.isBetweenCategories
     summary: |-
       Represents whether value axis crosses the category axis between categories.
@@ -162,7 +162,7 @@ items:
       content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartGridlinesUpdateData
+          - excel_1_8.Excel.Interfaces.ChartGridlinesUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartAxisUpdateData.majorTickMark
     summary: |-
       Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
@@ -260,7 +260,7 @@ items:
       content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartGridlinesUpdateData
+          - excel_1_8.Excel.Interfaces.ChartGridlinesUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartAxisUpdateData.minorTickMark
     summary: |-
       Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
@@ -497,7 +497,7 @@ items:
       content: 'title?: Excel.Interfaces.ChartAxisTitleUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisTitleUpdateData
+          - excel_1_8.Excel.Interfaces.ChartAxisTitleUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartAxisUpdateData.visible
     summary: |-
       A boolean value represents the visibility of the axis.

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: word
     children:
       - word.Word.TableCellCollection.context
@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - word.Word.RequestContext
   - uid: word.Word.TableCellCollection.getFirst
     summary: |-
       Gets the first table cell in this collection. Throws if this collection is empty.
@@ -52,7 +52,7 @@ items:
       content: 'getFirst(): Word.TableCell;'
       return:
         type:
-          - Word.TableCell
+          - word.Word.TableCell
         description: ''
   - uid: word.Word.TableCellCollection.getFirstOrNullObject
     summary: |-
@@ -68,7 +68,7 @@ items:
       content: 'getFirstOrNullObject(): Word.TableCell;'
       return:
         type:
-          - Word.TableCell
+          - word.Word.TableCell
         description: ''
   - uid: word.Word.TableCellCollection.items
     summary: Gets the loaded child items in this collection.
@@ -115,7 +115,7 @@ items:
         Word.TableCellCollection;
       return:
         type:
-          - Word.TableCellCollection
+          - word.Word.TableCellCollection
         description: ''
       parameters:
         - id: option
@@ -135,7 +135,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.TableCellCollection;'
       return:
         type:
-          - Word.TableCellCollection
+          - word.Word.TableCellCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -152,13 +152,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.TableCellCollection;'
       return:
         type:
-          - Word.TableCellCollection
+          - word.Word.TableCellCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: word.Word.TableCellCollection.toJSON
     name: toJSON()
     fullName: toJSON()
@@ -169,7 +169,7 @@ items:
       content: 'toJSON(): Word.Interfaces.TableCellCollectionData;'
       return:
         type:
-          - Word.Interfaces.TableCellCollectionData
+          - word.Word.Interfaces.TableCellCollectionData
         description: ''
   - uid: word.Word.TableCellCollection.track
     summary: >-
@@ -187,7 +187,7 @@ items:
       content: 'track(): Word.TableCellCollection;'
       return:
         type:
-          - Word.TableCellCollection
+          - word.Word.TableCellCollection
         description: ''
   - uid: word.Word.TableCellCollection.untrack
     summary: >-
@@ -204,5 +204,5 @@ items:
       content: 'untrack(): Word.TableCellCollection;'
       return:
         type:
-          - Word.TableCellCollection
+          - word.Word.TableCellCollection
         description: ''

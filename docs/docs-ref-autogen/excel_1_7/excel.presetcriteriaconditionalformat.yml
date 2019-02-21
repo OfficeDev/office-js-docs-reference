@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_7
     children:
       - excel_1_7.Excel.PresetCriteriaConditionalFormat.context
@@ -38,7 +38,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_7.Excel.RequestContext
   - uid: excel_1_7.Excel.PresetCriteriaConditionalFormat.format
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -53,7 +53,7 @@ items:
       content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFormat
+          - excel_1_7.Excel.ConditionalRangeFormat
   - uid: excel_1_7.Excel.PresetCriteriaConditionalFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -87,13 +87,13 @@ items:
         Excel.PresetCriteriaConditionalFormat;
       return:
         type:
-          - excel.Excel.PresetCriteriaConditionalFormat
+          - excel_1_7.Excel.PresetCriteriaConditionalFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
+            - excel_1_7.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
   - uid: excel_1_7.Excel.PresetCriteriaConditionalFormat.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -107,7 +107,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.PresetCriteriaConditionalFormat;'
       return:
         type:
-          - excel.Excel.PresetCriteriaConditionalFormat
+          - excel_1_7.Excel.PresetCriteriaConditionalFormat
         description: ''
       parameters:
         - id: propertyNames
@@ -127,7 +127,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PresetCriteriaConditionalFormat;'
       return:
         type:
-          - excel.Excel.PresetCriteriaConditionalFormat
+          - excel_1_7.Excel.PresetCriteriaConditionalFormat
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -150,7 +150,7 @@ items:
       content: 'rule: Excel.ConditionalPresetCriteriaRule;'
       return:
         type:
-          - excel.Excel.ConditionalPresetCriteriaRule
+          - excel_1_7.Excel.ConditionalPresetCriteriaRule
         description: |-
 
           #### Examples
@@ -209,7 +209,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_7.Excel.PresetCriteriaConditionalFormat.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -227,7 +227,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.PresetCriteriaConditionalFormat
+            - excel_1_7.Excel.PresetCriteriaConditionalFormat
   - uid: excel_1_7.Excel.PresetCriteriaConditionalFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -244,5 +244,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.PresetCriteriaConditionalFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.PresetCriteriaConditionalFormatData
+          - excel_1_7.Excel.Interfaces.PresetCriteriaConditionalFormatData
         description: ''

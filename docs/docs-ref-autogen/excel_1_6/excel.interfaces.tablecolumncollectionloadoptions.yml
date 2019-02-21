@@ -43,7 +43,7 @@ items:
       content: 'filter?: Excel.Interfaces.FilterLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.FilterLoadOptions
+          - excel_1_6.Excel.Interfaces.FilterLoadOptions
   - uid: excel_1_6.Excel.Interfaces.TableColumnCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: Returns a unique key that identifies the column within the table. Read-only.

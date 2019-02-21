@@ -85,8 +85,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(coercionType: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (result:
-        Office.AsyncResult<string>) => void): void;
+        getAsync(coercionType: CommonAPI.CoercionType, options?: CommonAPI.AsyncContextOptions, callback?: (result:
+        CommonAPI.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -95,20 +95,20 @@ items:
         - id: coercionType
           description: The format for the returned body.
           type:
-            - Office.CoercionType
+            - CommonAPI.CoercionType
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties: asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - CommonAPI.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. The body is provided in the requested format in the asyncResult.value
             property.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(result: CommonAPI.AsyncResult<string>) => void'
   - uid: Outlook_1_6.Office.Body.getAsync_1
     summary: >-
       Returns the current body in a specified format.
@@ -135,7 +135,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(coercionType: Office.CoercionType, callback: (result: Office.AsyncResult<string>) => void): void;'
+      content: 'getAsync(coercionType: CommonAPI.CoercionType, callback: (result: CommonAPI.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -144,14 +144,14 @@ items:
         - id: coercionType
           description: The format for the returned body.
           type:
-            - Office.CoercionType
+            - CommonAPI.CoercionType
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. The body is provided in the requested format in the asyncResult.value
             property.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(result: CommonAPI.AsyncResult<string>) => void'
   - uid: Outlook_1_6.Office.Body.getAsync_2
     summary: >-
       Returns the current body in a specified format.
@@ -178,7 +178,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(coercionType: Office.CoercionType): void;'
+      content: 'getAsync(coercionType: CommonAPI.CoercionType): void;'
       return:
         type:
           - void
@@ -187,7 +187,7 @@ items:
         - id: coercionType
           description: The format for the returned body.
           type:
-            - Office.CoercionType
+            - CommonAPI.CoercionType
   - uid: Outlook_1_6.Office.Body.getTypeAsync
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
@@ -205,8 +205,8 @@ items:
     type: method
     syntax:
       content: >-
-        getTypeAsync(options?: Office.AsyncContextOptions, callback?: (result:
-        Office.AsyncResult<Office.CoercionType>) => void): void;
+        getTypeAsync(options?: CommonAPI.AsyncContextOptions, callback?: (result:
+        CommonAPI.AsyncResult<CommonAPI.CoercionType>) => void): void;
       return:
         type:
           - void
@@ -217,14 +217,14 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - CommonAPI.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. The content type is returned as one of the CoercionType values in the
             asyncResult.value property.
           type:
-            - '(result: Office.AsyncResult<Office.CoercionType>) => void'
+            - '(result: CommonAPI.AsyncResult<CommonAPI.CoercionType>) => void'
   - uid: Outlook_1_6.Office.Body.getTypeAsync_1
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
@@ -256,7 +256,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getTypeAsync(callback?: (result: Office.AsyncResult<Office.CoercionType>) => void): void;'
+      content: 'getTypeAsync(callback?: (result: CommonAPI.AsyncResult<CommonAPI.CoercionType>) => void): void;'
       return:
         type:
           - void
@@ -268,7 +268,7 @@ items:
             parameter of type Office.AsyncResult. The content type is returned as one of the CoercionType values in the
             asyncResult.value property.
           type:
-            - '(result: Office.AsyncResult<Office.CoercionType>) => void'
+            - '(result: CommonAPI.AsyncResult<CommonAPI.CoercionType>) => void'
   - uid: Outlook_1_6.Office.Body.getTypeAsync_2
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
@@ -333,8 +333,8 @@ items:
     type: method
     syntax:
       content: >-
-        prependAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
-        Office.AsyncResult<void>) => void): void;
+        prependAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
+        CommonAPI.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -350,14 +350,14 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.Body.prependAsync_1
     summary: >-
       Adds the specified content to the beginning of the item body.
@@ -385,7 +385,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'prependAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;'
+      content: 'prependAsync(data: string, callback: (result: CommonAPI.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -401,7 +401,7 @@ items:
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.Body.prependAsync_2
     summary: >-
       Adds the specified content to the beginning of the item body.
@@ -501,8 +501,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
-        Office.AsyncResult<void>) => void): void;
+        setAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?: (result:
+        CommonAPI.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -518,14 +518,14 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.Body.setAsync_1
     summary: >-
       Replaces the entire body with the specified text.
@@ -556,7 +556,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;'
+      content: 'setAsync(data: string, callback: (result: CommonAPI.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -572,7 +572,7 @@ items:
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.Body.setAsync_2
     summary: >-
       Replaces the entire body with the specified text.
@@ -659,8 +659,8 @@ items:
     type: method
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (result: Office.AsyncResult<void>) => void): void;
+        setSelectedDataAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (result: CommonAPI.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -676,14 +676,14 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.Body.setSelectedDataAsync_1
     summary: >-
       Replaces the selection in the body with the specified text.
@@ -714,7 +714,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;'
+      content: 'setSelectedDataAsync(data: string, callback: (result: CommonAPI.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -730,7 +730,7 @@ items:
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.Body.setSelectedDataAsync_2
     summary: >-
       Replaces the selection in the body with the specified text.

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_2
     children:
       - excel_1_2.Excel.RangeBorder.color
@@ -55,7 +55,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_2.Excel.RequestContext
   - uid: excel_1_2.Excel.RangeBorder.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -87,13 +87,13 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;'
       return:
         type:
-          - excel.Excel.RangeBorder
+          - excel_1_2.Excel.RangeBorder
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.RangeBorderLoadOptions
+            - excel_1_2.Excel.Interfaces.RangeBorderLoadOptions
   - uid: excel_1_2.Excel.RangeBorder.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -107,7 +107,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.RangeBorder;'
       return:
         type:
-          - excel.Excel.RangeBorder
+          - excel_1_2.Excel.RangeBorder
         description: |-
 
           #### Examples
@@ -172,7 +172,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeBorder;'
       return:
         type:
-          - excel.Excel.RangeBorder
+          - excel_1_2.Excel.RangeBorder
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -210,7 +210,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_2.Excel.RangeBorder.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -228,7 +228,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.RangeBorder
+            - excel_1_2.Excel.RangeBorder
   - uid: excel_1_2.Excel.RangeBorder.sideIndex
     summary: |-
       Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
@@ -285,7 +285,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeBorderData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeBorderData
+          - excel_1_2.Excel.Interfaces.RangeBorderData
         description: ''
   - uid: excel_1_2.Excel.RangeBorder.weight
     summary: |-

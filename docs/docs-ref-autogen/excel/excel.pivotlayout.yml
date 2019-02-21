@@ -70,7 +70,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.PivotLayout.enableFieldList
     summary: >-
       True if the field list should be shown or hidden from the UI.

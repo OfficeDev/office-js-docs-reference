@@ -22,7 +22,7 @@ items:
       content: 'blackCircle: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_5.Excel.Icon
   - uid: excel_1_5.Excel.FourRedToBlackSet.grayCircle
     name: grayCircle
     fullName: grayCircle
@@ -33,7 +33,7 @@ items:
       content: 'grayCircle: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_5.Excel.Icon
   - uid: excel_1_5.Excel.FourRedToBlackSet.pinkCircle
     name: pinkCircle
     fullName: pinkCircle
@@ -44,7 +44,7 @@ items:
       content: 'pinkCircle: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_5.Excel.Icon
   - uid: excel_1_5.Excel.FourRedToBlackSet.redCircle
     name: redCircle
     fullName: redCircle
@@ -55,4 +55,4 @@ items:
       content: 'redCircle: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_5.Excel.Icon

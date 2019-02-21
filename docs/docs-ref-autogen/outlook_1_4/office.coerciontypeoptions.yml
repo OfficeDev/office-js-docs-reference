@@ -16,7 +16,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'coercionType?: Office.CoercionType;'
+      content: 'coercionType?: CommonAPI.CoercionType;'
       return:
         type:
-          - Office.CoercionType
+          - CommonAPI.CoercionType

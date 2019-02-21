@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: onenote
     children:
       - onenote.OneNote.PageCollection.context
@@ -39,7 +39,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - onenote.OneNote.RequestContext
   - uid: onenote.OneNote.PageCollection.count
     summary: |-
       Returns the number of pages in the collection. Read-only.
@@ -278,7 +278,7 @@ items:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: onenote.OneNote.PageCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

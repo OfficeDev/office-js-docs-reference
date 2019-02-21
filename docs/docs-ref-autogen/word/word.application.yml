@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: word
     children:
       - word.Word.Application.context
@@ -31,7 +31,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - word.Word.RequestContext
   - uid: word.Word.Application.createDocument
     summary: |-
       Creates a new document by using an optional base64 encoded .docx file.
@@ -64,13 +64,13 @@ items:
       content: 'static newObject(context: OfficeExtension.ClientRequestContext): Word.Application;'
       return:
         type:
-          - Word.Application
+          - word.Word.Application
         description: ''
       parameters:
         - id: context
           description: ''
           type:
-            - office.OfficeExtension.ClientRequestContext
+            - OfficeExtension.ClientRequestContext
   - uid: word.Word.Application.toJSON
     name: toJSON()
     fullName: toJSON()

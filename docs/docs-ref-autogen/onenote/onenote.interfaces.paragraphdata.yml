@@ -45,7 +45,7 @@ items:
       content: 'image?: OneNote.Interfaces.ImageData;'
       return:
         type:
-          - OneNote.Interfaces.ImageData
+          - onenote.OneNote.Interfaces.ImageData
   - uid: onenote.OneNote.Interfaces.ParagraphData.inkWords
     summary: |-
       Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
@@ -105,7 +105,7 @@ items:
       content: 'table?: OneNote.Interfaces.TableData;'
       return:
         type:
-          - OneNote.Interfaces.TableData
+          - onenote.OneNote.Interfaces.TableData
   - uid: onenote.OneNote.Interfaces.ParagraphData.type
     summary: |-
       Gets the type of the Paragraph object. Read-only.

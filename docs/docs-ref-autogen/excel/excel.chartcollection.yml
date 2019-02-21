@@ -55,7 +55,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - Range
+            - excel.Excel.Range
         - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
@@ -137,7 +137,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - Range
+            - excel.Excel.Range
         - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
@@ -157,7 +157,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ChartCollection.count
     summary: |-
       Returns the number of charts in the worksheet. Read-only.

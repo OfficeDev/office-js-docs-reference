@@ -22,7 +22,7 @@ items:
       content: 'blackCircleWithBorder: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_6.Excel.Icon
   - uid: excel_1_6.Excel.FourTrafficLightsSet.greenCircle
     name: greenCircle
     fullName: greenCircle
@@ -33,7 +33,7 @@ items:
       content: 'greenCircle: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_6.Excel.Icon
   - uid: excel_1_6.Excel.FourTrafficLightsSet.redCircleWithBorder
     name: redCircleWithBorder
     fullName: redCircleWithBorder
@@ -44,7 +44,7 @@ items:
       content: 'redCircleWithBorder: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_6.Excel.Icon
   - uid: excel_1_6.Excel.FourTrafficLightsSet.yellowCircle
     name: yellowCircle
     fullName: yellowCircle
@@ -55,4 +55,4 @@ items:
       content: 'yellowCircle: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_6.Excel.Icon

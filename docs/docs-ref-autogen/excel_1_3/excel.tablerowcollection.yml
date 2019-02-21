@@ -17,7 +17,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_3
     children:
       - excel_1_3.Excel.TableRowCollection.add
@@ -52,7 +52,7 @@ items:
         Excel.TableRow;
       return:
         type:
-          - excel.Excel.TableRow
+          - excel_1_3.Excel.TableRow
         description: |-
 
           #### Examples
@@ -97,7 +97,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_3.Excel.RequestContext
   - uid: excel_1_3.Excel.TableRowCollection.count
     summary: |-
       Returns the number of rows in the table. Read-only.
@@ -133,7 +133,7 @@ items:
       content: 'getItemAt(index: number): Excel.TableRow;'
       return:
         type:
-          - excel.Excel.TableRow
+          - excel_1_3.Excel.TableRow
         description: |-
 
           #### Examples
@@ -202,7 +202,7 @@ items:
         Excel.TableRowCollection;
       return:
         type:
-          - excel.Excel.TableRowCollection
+          - excel_1_3.Excel.TableRowCollection
         description: ''
       parameters:
         - id: option
@@ -222,7 +222,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TableRowCollection;'
       return:
         type:
-          - excel.Excel.TableRowCollection
+          - excel_1_3.Excel.TableRowCollection
         description: |-
 
           #### Examples
@@ -279,13 +279,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.TableRowCollection;'
       return:
         type:
-          - excel.Excel.TableRowCollection
+          - excel_1_3.Excel.TableRowCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel_1_3.Excel.TableRowCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -302,5 +302,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableRowCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableRowCollectionData
+          - excel_1_3.Excel.Interfaces.TableRowCollectionData
         description: ''

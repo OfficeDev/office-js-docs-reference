@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: onenote
     children:
       - onenote.OneNote.InkWord.context
@@ -38,7 +38,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - onenote.OneNote.RequestContext
   - uid: onenote.OneNote.InkWord.id
     summary: |-
       Gets the ID of the InkWord object. Read-only.

@@ -213,7 +213,7 @@ items:
             having a new context created). This means that the batch will be able to pick up changes made to existing
             API objects, if those objects were derived from this same context.
           type:
-            - office.OfficeExtension.ClientRequestContext
+            - OfficeExtension.ClientRequestContext
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of

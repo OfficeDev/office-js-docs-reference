@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_2
     children:
       - excel_1_2.Excel.Binding.context
@@ -39,7 +39,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_2.Excel.RequestContext
   - uid: excel_1_2.Excel.Binding.getRange
     summary: |-
       Returns the range represented by the binding. Will throw an error if binding is not of the correct type.
@@ -54,7 +54,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_2.Excel.Range
         description: |-
 
           #### Examples
@@ -88,7 +88,7 @@ items:
       content: 'getTable(): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
+          - excel_1_2.Excel.Table
         description: |-
 
           #### Examples
@@ -188,13 +188,13 @@ items:
       content: 'load(option?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - excel_1_2.Excel.Binding
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.BindingLoadOptions
+            - excel_1_2.Excel.Interfaces.BindingLoadOptions
   - uid: excel_1_2.Excel.Binding.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -208,7 +208,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - excel_1_2.Excel.Binding
         description: |-
 
           #### Examples
@@ -245,7 +245,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - excel_1_2.Excel.Binding
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -316,7 +316,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.BindingData;'
       return:
         type:
-          - excel.Excel.Interfaces.BindingData
+          - excel_1_2.Excel.Interfaces.BindingData
         description: ''
   - uid: excel_1_2.Excel.Binding.type
     summary: |-

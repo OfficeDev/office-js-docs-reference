@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_6
     children:
       - excel_1_6.Excel.ChartFill.clear
@@ -66,7 +66,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_6.Excel.RequestContext
   - uid: excel_1_6.Excel.ChartFill.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -80,7 +80,7 @@ items:
       content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartFill;'
       return:
         type:
-          - excel.Excel.ChartFill
+          - excel_1_6.Excel.ChartFill
         description: ''
       parameters:
         - id: option
@@ -155,14 +155,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        toJSON(): {
-                    [key: string]: string;
-                };
+      content: "toJSON(): {\r\n            [key: string]: string;\r\n        };"
       return:
         type:
-          - |-
-            {
-                        [key: string]: string;
-                    }
+          - "{\r\n            [key: string]: string;\r\n        }"
         description: ''

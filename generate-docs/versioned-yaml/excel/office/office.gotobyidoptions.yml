@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.GoToByIdOptions
+    summary: Provides options for whether to select the location that is navigated to.
+    remarks: >-
+      The behavior caused by the [options.selectionMode](xref:office.Office.SelectionMode) option varies by host:
+
+
+      In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item.
+      `Office.SelectionMode.None` for text bindings, selects the cell; for matrix bindings, table bindings, and named
+      items, selects the first data cell (not first cell in header row for tables).
+
+
+      In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide.
+      `Office.SelectionMode.None` doesn't select anything.
+
+
+      In Word: `Office.SelectionMode.Selected` selects all content in the binding. `Office.SelectionMode.None` for text
+      bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first
+      data cell (not first cell in header row for tables).
+    name: Office.GoToByIdOptions
+    fullName: Office.GoToByIdOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.GoToByIdOptions.asyncContext
+      - office.Office.GoToByIdOptions.selectionMode
+  - uid: office.Office.GoToByIdOptions.asyncContext
+    summary: >-
+      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      object that is passed to a callback.
+    name: asyncContext
+    fullName: asyncContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'asyncContext?: any'
+      return:
+        type:
+          - any
+  - uid: office.Office.GoToByIdOptions.selectionMode
+    summary: >-
+      Specifies whether the location specified by the id parameter is selected (highlighted). Use
+      [Office.SelectionMode](xref:office.Office.SelectionMode) or string equivalent. See the Remarks for more
+      information.
+    name: selectionMode
+    fullName: selectionMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'selectionMode?: Office.SelectionMode | string'
+      return:
+        type:
+          - Office.SelectionMode | string

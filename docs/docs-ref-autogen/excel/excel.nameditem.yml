@@ -80,7 +80,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.NamedItem.delete
     summary: |-
       Deletes the given name.

@@ -50,7 +50,7 @@ items:
       content: 'axes?: Excel.Interfaces.ChartAxesLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxesLoadOptions
+          - excel_1_2.Excel.Interfaces.ChartAxesLoadOptions
   - uid: excel_1_2.Excel.Interfaces.ChartLoadOptions.dataLabels
     summary: |-
       Represents the datalabels on the chart.
@@ -65,7 +65,7 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
+          - excel_1_2.Excel.Interfaces.ChartDataLabelsLoadOptions
   - uid: excel_1_2.Excel.Interfaces.ChartLoadOptions.format
     summary: |-
       Encapsulates the format properties for the chart area.
@@ -80,7 +80,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAreaFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAreaFormatLoadOptions
+          - excel_1_2.Excel.Interfaces.ChartAreaFormatLoadOptions
   - uid: excel_1_2.Excel.Interfaces.ChartLoadOptions.height
     summary: |-
       Represents the height, in points, of the chart object.
@@ -125,7 +125,7 @@ items:
       content: 'legend?: Excel.Interfaces.ChartLegendLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendLoadOptions
+          - excel_1_2.Excel.Interfaces.ChartLegendLoadOptions
   - uid: excel_1_2.Excel.Interfaces.ChartLoadOptions.name
     summary: |-
       Represents the name of a chart object.
@@ -155,7 +155,7 @@ items:
       content: 'series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions
+          - excel_1_2.Excel.Interfaces.ChartSeriesCollectionLoadOptions
   - uid: excel_1_2.Excel.Interfaces.ChartLoadOptions.title
     summary: >-
       Represents the title of the specified chart, including the text, visibility, position, and formatting of the
@@ -172,7 +172,7 @@ items:
       content: 'title?: Excel.Interfaces.ChartTitleLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleLoadOptions
+          - excel_1_2.Excel.Interfaces.ChartTitleLoadOptions
   - uid: excel_1_2.Excel.Interfaces.ChartLoadOptions.top
     summary: >-
       Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
@@ -219,4 +219,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetLoadOptions
+          - excel_1_2.Excel.Interfaces.WorksheetLoadOptions

@@ -1,0 +1,813 @@
+items:
+  - name: API reference
+    href: ~/docs-ref-autogen/overview/office.md
+    items:
+      - name: excel_1_5
+        uid: excel_1_5
+        items:
+          - name: Excel
+            items:
+              - name: Application
+                uid: excel_1_5.Excel.Application
+              - name: Binding
+                uid: excel_1_5.Excel.Binding
+              - name: BindingCollection
+                uid: excel_1_5.Excel.BindingCollection
+              - name: BindingDataChangedEventArgs
+                uid: excel_1_5.Excel.BindingDataChangedEventArgs
+              - name: BindingSelectionChangedEventArgs
+                uid: excel_1_5.Excel.BindingSelectionChangedEventArgs
+              - name: BindingType
+                uid: excel_1_5.Excel.BindingType
+              - name: BorderIndex
+                uid: excel_1_5.Excel.BorderIndex
+              - name: BorderLineStyle
+                uid: excel_1_5.Excel.BorderLineStyle
+              - name: BorderWeight
+                uid: excel_1_5.Excel.BorderWeight
+              - name: CalculationMode
+                uid: excel_1_5.Excel.CalculationMode
+              - name: CalculationType
+                uid: excel_1_5.Excel.CalculationType
+              - name: Chart
+                uid: excel_1_5.Excel.Chart
+              - name: ChartAreaFormat
+                uid: excel_1_5.Excel.ChartAreaFormat
+              - name: ChartAxes
+                uid: excel_1_5.Excel.ChartAxes
+              - name: ChartAxis
+                uid: excel_1_5.Excel.ChartAxis
+              - name: ChartAxisFormat
+                uid: excel_1_5.Excel.ChartAxisFormat
+              - name: ChartAxisTitle
+                uid: excel_1_5.Excel.ChartAxisTitle
+              - name: ChartAxisTitleFormat
+                uid: excel_1_5.Excel.ChartAxisTitleFormat
+              - name: ChartCollection
+                uid: excel_1_5.Excel.ChartCollection
+              - name: ChartDataLabelFormat
+                uid: excel_1_5.Excel.ChartDataLabelFormat
+              - name: ChartDataLabelPosition
+                uid: excel_1_5.Excel.ChartDataLabelPosition
+              - name: ChartDataLabels
+                uid: excel_1_5.Excel.ChartDataLabels
+              - name: ChartFill
+                uid: excel_1_5.Excel.ChartFill
+              - name: ChartFont
+                uid: excel_1_5.Excel.ChartFont
+              - name: ChartGridlines
+                uid: excel_1_5.Excel.ChartGridlines
+              - name: ChartGridlinesFormat
+                uid: excel_1_5.Excel.ChartGridlinesFormat
+              - name: ChartLegend
+                uid: excel_1_5.Excel.ChartLegend
+              - name: ChartLegendFormat
+                uid: excel_1_5.Excel.ChartLegendFormat
+              - name: ChartLegendPosition
+                uid: excel_1_5.Excel.ChartLegendPosition
+              - name: ChartLineFormat
+                uid: excel_1_5.Excel.ChartLineFormat
+              - name: ChartPoint
+                uid: excel_1_5.Excel.ChartPoint
+              - name: ChartPointFormat
+                uid: excel_1_5.Excel.ChartPointFormat
+              - name: ChartPointsCollection
+                uid: excel_1_5.Excel.ChartPointsCollection
+              - name: ChartSeries
+                uid: excel_1_5.Excel.ChartSeries
+              - name: ChartSeriesBy
+                uid: excel_1_5.Excel.ChartSeriesBy
+              - name: ChartSeriesCollection
+                uid: excel_1_5.Excel.ChartSeriesCollection
+              - name: ChartSeriesFormat
+                uid: excel_1_5.Excel.ChartSeriesFormat
+              - name: ChartTitle
+                uid: excel_1_5.Excel.ChartTitle
+              - name: ChartTitleFormat
+                uid: excel_1_5.Excel.ChartTitleFormat
+              - name: ChartType
+                uid: excel_1_5.Excel.ChartType
+              - name: ChartUnderlineStyle
+                uid: excel_1_5.Excel.ChartUnderlineStyle
+              - name: ClearApplyTo
+                uid: excel_1_5.Excel.ClearApplyTo
+              - name: CustomXmlPart
+                uid: excel_1_5.Excel.CustomXmlPart
+              - name: CustomXmlPartCollection
+                uid: excel_1_5.Excel.CustomXmlPartCollection
+              - name: CustomXmlPartScopedCollection
+                uid: excel_1_5.Excel.CustomXmlPartScopedCollection
+              - name: DeleteShiftDirection
+                uid: excel_1_5.Excel.DeleteShiftDirection
+              - name: DynamicFilterCriteria
+                uid: excel_1_5.Excel.DynamicFilterCriteria
+              - name: ErrorCodes
+                uid: excel_1_5.Excel.ErrorCodes
+              - name: Filter
+                uid: excel_1_5.Excel.Filter
+              - name: FilterCriteria
+                uid: excel_1_5.Excel.FilterCriteria
+              - name: FilterDatetime
+                uid: excel_1_5.Excel.FilterDatetime
+              - name: FilterDatetimeSpecificity
+                uid: excel_1_5.Excel.FilterDatetimeSpecificity
+              - name: FilterOn
+                uid: excel_1_5.Excel.FilterOn
+              - name: FilterOperator
+                uid: excel_1_5.Excel.FilterOperator
+              - name: FiveArrowsGraySet
+                uid: excel_1_5.Excel.FiveArrowsGraySet
+              - name: FiveArrowsSet
+                uid: excel_1_5.Excel.FiveArrowsSet
+              - name: FiveBoxesSet
+                uid: excel_1_5.Excel.FiveBoxesSet
+              - name: FiveQuartersSet
+                uid: excel_1_5.Excel.FiveQuartersSet
+              - name: FiveRatingSet
+                uid: excel_1_5.Excel.FiveRatingSet
+              - name: FormatProtection
+                uid: excel_1_5.Excel.FormatProtection
+              - name: FourArrowsGraySet
+                uid: excel_1_5.Excel.FourArrowsGraySet
+              - name: FourArrowsSet
+                uid: excel_1_5.Excel.FourArrowsSet
+              - name: FourRatingSet
+                uid: excel_1_5.Excel.FourRatingSet
+              - name: FourRedToBlackSet
+                uid: excel_1_5.Excel.FourRedToBlackSet
+              - name: FourTrafficLightsSet
+                uid: excel_1_5.Excel.FourTrafficLightsSet
+              - name: FunctionResult
+                uid: excel_1_5.Excel.FunctionResult
+              - name: Functions
+                uid: excel_1_5.Excel.Functions
+              - name: HorizontalAlignment
+                uid: excel_1_5.Excel.HorizontalAlignment
+              - name: Icon
+                uid: excel_1_5.Excel.Icon
+              - name: IconCollections
+                uid: excel_1_5.Excel.IconCollections
+              - name: IconSet
+                uid: excel_1_5.Excel.IconSet
+              - name: ImageFittingMode
+                uid: excel_1_5.Excel.ImageFittingMode
+              - name: InsertShiftDirection
+                uid: excel_1_5.Excel.InsertShiftDirection
+              - name: Interfaces
+                items:
+                  - name: ApplicationData
+                    uid: excel_1_5.Excel.Interfaces.ApplicationData
+                  - name: ApplicationLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ApplicationLoadOptions
+                  - name: ApplicationUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ApplicationUpdateData
+                  - name: BindingCollectionData
+                    uid: excel_1_5.Excel.Interfaces.BindingCollectionData
+                  - name: BindingCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.BindingCollectionLoadOptions
+                  - name: BindingCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.BindingCollectionUpdateData
+                  - name: BindingData
+                    uid: excel_1_5.Excel.Interfaces.BindingData
+                  - name: BindingLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.BindingLoadOptions
+                  - name: CellValueConditionalFormatData
+                    uid: excel_1_5.Excel.Interfaces.CellValueConditionalFormatData
+                  - name: CellValueConditionalFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.CellValueConditionalFormatUpdateData
+                  - name: ChartAreaFormatData
+                    uid: excel_1_5.Excel.Interfaces.ChartAreaFormatData
+                  - name: ChartAreaFormatLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartAreaFormatLoadOptions
+                  - name: ChartAreaFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartAreaFormatUpdateData
+                  - name: ChartAxesData
+                    uid: excel_1_5.Excel.Interfaces.ChartAxesData
+                  - name: ChartAxesLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartAxesLoadOptions
+                  - name: ChartAxesUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartAxesUpdateData
+                  - name: ChartAxisData
+                    uid: excel_1_5.Excel.Interfaces.ChartAxisData
+                  - name: ChartAxisFormatData
+                    uid: excel_1_5.Excel.Interfaces.ChartAxisFormatData
+                  - name: ChartAxisFormatLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartAxisFormatLoadOptions
+                  - name: ChartAxisFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartAxisFormatUpdateData
+                  - name: ChartAxisLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartAxisLoadOptions
+                  - name: ChartAxisTitleData
+                    uid: excel_1_5.Excel.Interfaces.ChartAxisTitleData
+                  - name: ChartAxisTitleFormatData
+                    uid: excel_1_5.Excel.Interfaces.ChartAxisTitleFormatData
+                  - name: ChartAxisTitleFormatLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartAxisTitleFormatLoadOptions
+                  - name: ChartAxisTitleFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartAxisTitleFormatUpdateData
+                  - name: ChartAxisTitleLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartAxisTitleLoadOptions
+                  - name: ChartAxisTitleUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartAxisTitleUpdateData
+                  - name: ChartAxisUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartAxisUpdateData
+                  - name: ChartBorderData
+                    uid: excel_1_5.Excel.Interfaces.ChartBorderData
+                  - name: ChartBorderUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartBorderUpdateData
+                  - name: ChartCollectionData
+                    uid: excel_1_5.Excel.Interfaces.ChartCollectionData
+                  - name: ChartCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartCollectionLoadOptions
+                  - name: ChartCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartCollectionUpdateData
+                  - name: ChartData
+                    uid: excel_1_5.Excel.Interfaces.ChartData
+                  - name: ChartDataLabelData
+                    uid: excel_1_5.Excel.Interfaces.ChartDataLabelData
+                  - name: ChartDataLabelFormatData
+                    uid: excel_1_5.Excel.Interfaces.ChartDataLabelFormatData
+                  - name: ChartDataLabelFormatLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartDataLabelFormatLoadOptions
+                  - name: ChartDataLabelFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartDataLabelFormatUpdateData
+                  - name: ChartDataLabelsData
+                    uid: excel_1_5.Excel.Interfaces.ChartDataLabelsData
+                  - name: ChartDataLabelsLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartDataLabelsLoadOptions
+                  - name: ChartDataLabelsUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData
+                  - name: ChartDataLabelUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartDataLabelUpdateData
+                  - name: ChartFontData
+                    uid: excel_1_5.Excel.Interfaces.ChartFontData
+                  - name: ChartFontLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartFontLoadOptions
+                  - name: ChartFontUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartFontUpdateData
+                  - name: ChartFormatStringData
+                    uid: excel_1_5.Excel.Interfaces.ChartFormatStringData
+                  - name: ChartFormatStringUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartFormatStringUpdateData
+                  - name: ChartGridlinesData
+                    uid: excel_1_5.Excel.Interfaces.ChartGridlinesData
+                  - name: ChartGridlinesFormatData
+                    uid: excel_1_5.Excel.Interfaces.ChartGridlinesFormatData
+                  - name: ChartGridlinesFormatLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartGridlinesFormatLoadOptions
+                  - name: ChartGridlinesFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartGridlinesFormatUpdateData
+                  - name: ChartGridlinesLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartGridlinesLoadOptions
+                  - name: ChartGridlinesUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartGridlinesUpdateData
+                  - name: ChartLegendData
+                    uid: excel_1_5.Excel.Interfaces.ChartLegendData
+                  - name: ChartLegendEntryCollectionData
+                    uid: excel_1_5.Excel.Interfaces.ChartLegendEntryCollectionData
+                  - name: ChartLegendEntryCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartLegendEntryCollectionUpdateData
+                  - name: ChartLegendEntryData
+                    uid: excel_1_5.Excel.Interfaces.ChartLegendEntryData
+                  - name: ChartLegendEntryUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartLegendEntryUpdateData
+                  - name: ChartLegendFormatData
+                    uid: excel_1_5.Excel.Interfaces.ChartLegendFormatData
+                  - name: ChartLegendFormatLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartLegendFormatLoadOptions
+                  - name: ChartLegendFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartLegendFormatUpdateData
+                  - name: ChartLegendLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartLegendLoadOptions
+                  - name: ChartLegendUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartLegendUpdateData
+                  - name: ChartLineFormatData
+                    uid: excel_1_5.Excel.Interfaces.ChartLineFormatData
+                  - name: ChartLineFormatLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartLineFormatLoadOptions
+                  - name: ChartLineFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartLineFormatUpdateData
+                  - name: ChartLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartLoadOptions
+                  - name: ChartPlotAreaData
+                    uid: excel_1_5.Excel.Interfaces.ChartPlotAreaData
+                  - name: ChartPlotAreaFormatData
+                    uid: excel_1_5.Excel.Interfaces.ChartPlotAreaFormatData
+                  - name: ChartPlotAreaFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartPlotAreaFormatUpdateData
+                  - name: ChartPlotAreaUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartPlotAreaUpdateData
+                  - name: ChartPointData
+                    uid: excel_1_5.Excel.Interfaces.ChartPointData
+                  - name: ChartPointFormatData
+                    uid: excel_1_5.Excel.Interfaces.ChartPointFormatData
+                  - name: ChartPointFormatLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartPointFormatLoadOptions
+                  - name: ChartPointFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartPointFormatUpdateData
+                  - name: ChartPointLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartPointLoadOptions
+                  - name: ChartPointsCollectionData
+                    uid: excel_1_5.Excel.Interfaces.ChartPointsCollectionData
+                  - name: ChartPointsCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartPointsCollectionLoadOptions
+                  - name: ChartPointsCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartPointsCollectionUpdateData
+                  - name: ChartPointUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartPointUpdateData
+                  - name: ChartSeriesCollectionData
+                    uid: excel_1_5.Excel.Interfaces.ChartSeriesCollectionData
+                  - name: ChartSeriesCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartSeriesCollectionLoadOptions
+                  - name: ChartSeriesCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartSeriesCollectionUpdateData
+                  - name: ChartSeriesData
+                    uid: excel_1_5.Excel.Interfaces.ChartSeriesData
+                  - name: ChartSeriesFormatData
+                    uid: excel_1_5.Excel.Interfaces.ChartSeriesFormatData
+                  - name: ChartSeriesFormatLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartSeriesFormatLoadOptions
+                  - name: ChartSeriesFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartSeriesFormatUpdateData
+                  - name: ChartSeriesLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartSeriesLoadOptions
+                  - name: ChartSeriesUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartSeriesUpdateData
+                  - name: ChartTitleData
+                    uid: excel_1_5.Excel.Interfaces.ChartTitleData
+                  - name: ChartTitleFormatData
+                    uid: excel_1_5.Excel.Interfaces.ChartTitleFormatData
+                  - name: ChartTitleFormatLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartTitleFormatLoadOptions
+                  - name: ChartTitleFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartTitleFormatUpdateData
+                  - name: ChartTitleLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.ChartTitleLoadOptions
+                  - name: ChartTitleUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartTitleUpdateData
+                  - name: ChartTrendlineCollectionData
+                    uid: excel_1_5.Excel.Interfaces.ChartTrendlineCollectionData
+                  - name: ChartTrendlineCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartTrendlineCollectionUpdateData
+                  - name: ChartTrendlineData
+                    uid: excel_1_5.Excel.Interfaces.ChartTrendlineData
+                  - name: ChartTrendlineFormatData
+                    uid: excel_1_5.Excel.Interfaces.ChartTrendlineFormatData
+                  - name: ChartTrendlineFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartTrendlineFormatUpdateData
+                  - name: ChartTrendlineLabelData
+                    uid: excel_1_5.Excel.Interfaces.ChartTrendlineLabelData
+                  - name: ChartTrendlineLabelFormatData
+                    uid: excel_1_5.Excel.Interfaces.ChartTrendlineLabelFormatData
+                  - name: ChartTrendlineLabelFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
+                  - name: ChartTrendlineLabelUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartTrendlineLabelUpdateData
+                  - name: ChartTrendlineUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartTrendlineUpdateData
+                  - name: ChartUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ChartUpdateData
+                  - name: CollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.CollectionLoadOptions
+                  - name: ColorScaleConditionalFormatData
+                    uid: excel_1_5.Excel.Interfaces.ColorScaleConditionalFormatData
+                  - name: ColorScaleConditionalFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+                  - name: ConditionalDataBarNegativeFormatData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalDataBarNegativeFormatData
+                  - name: ConditionalDataBarNegativeFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
+                  - name: ConditionalDataBarPositiveFormatData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalDataBarPositiveFormatData
+                  - name: ConditionalDataBarPositiveFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
+                  - name: ConditionalFormatCollectionData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalFormatCollectionData
+                  - name: ConditionalFormatCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalFormatCollectionUpdateData
+                  - name: ConditionalFormatData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalFormatData
+                  - name: ConditionalFormatRuleData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalFormatRuleData
+                  - name: ConditionalFormatRuleUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalFormatRuleUpdateData
+                  - name: ConditionalFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalFormatUpdateData
+                  - name: ConditionalRangeBorderCollectionData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalRangeBorderCollectionData
+                  - name: ConditionalRangeBorderCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
+                  - name: ConditionalRangeBorderData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalRangeBorderData
+                  - name: ConditionalRangeBorderUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalRangeBorderUpdateData
+                  - name: ConditionalRangeFillData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalRangeFillData
+                  - name: ConditionalRangeFillUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalRangeFillUpdateData
+                  - name: ConditionalRangeFontData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalRangeFontData
+                  - name: ConditionalRangeFontUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalRangeFontUpdateData
+                  - name: ConditionalRangeFormatData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalRangeFormatData
+                  - name: ConditionalRangeFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.ConditionalRangeFormatUpdateData
+                  - name: CustomConditionalFormatData
+                    uid: excel_1_5.Excel.Interfaces.CustomConditionalFormatData
+                  - name: CustomConditionalFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.CustomConditionalFormatUpdateData
+                  - name: CustomPropertyCollectionData
+                    uid: excel_1_5.Excel.Interfaces.CustomPropertyCollectionData
+                  - name: CustomPropertyCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.CustomPropertyCollectionUpdateData
+                  - name: CustomPropertyData
+                    uid: excel_1_5.Excel.Interfaces.CustomPropertyData
+                  - name: CustomPropertyUpdateData
+                    uid: excel_1_5.Excel.Interfaces.CustomPropertyUpdateData
+                  - name: CustomXmlPartCollectionData
+                    uid: excel_1_5.Excel.Interfaces.CustomXmlPartCollectionData
+                  - name: CustomXmlPartCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.CustomXmlPartCollectionLoadOptions
+                  - name: CustomXmlPartCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.CustomXmlPartCollectionUpdateData
+                  - name: CustomXmlPartData
+                    uid: excel_1_5.Excel.Interfaces.CustomXmlPartData
+                  - name: CustomXmlPartLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.CustomXmlPartLoadOptions
+                  - name: CustomXmlPartScopedCollectionData
+                    uid: excel_1_5.Excel.Interfaces.CustomXmlPartScopedCollectionData
+                  - name: CustomXmlPartScopedCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions
+                  - name: CustomXmlPartScopedCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
+                  - name: DataBarConditionalFormatData
+                    uid: excel_1_5.Excel.Interfaces.DataBarConditionalFormatData
+                  - name: DataBarConditionalFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.DataBarConditionalFormatUpdateData
+                  - name: DataPivotHierarchyCollectionData
+                    uid: excel_1_5.Excel.Interfaces.DataPivotHierarchyCollectionData
+                  - name: DataPivotHierarchyCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
+                  - name: DataPivotHierarchyData
+                    uid: excel_1_5.Excel.Interfaces.DataPivotHierarchyData
+                  - name: DataPivotHierarchyUpdateData
+                    uid: excel_1_5.Excel.Interfaces.DataPivotHierarchyUpdateData
+                  - name: DataValidationData
+                    uid: excel_1_5.Excel.Interfaces.DataValidationData
+                  - name: DataValidationUpdateData
+                    uid: excel_1_5.Excel.Interfaces.DataValidationUpdateData
+                  - name: DocumentPropertiesData
+                    uid: excel_1_5.Excel.Interfaces.DocumentPropertiesData
+                  - name: DocumentPropertiesUpdateData
+                    uid: excel_1_5.Excel.Interfaces.DocumentPropertiesUpdateData
+                  - name: FilterData
+                    uid: excel_1_5.Excel.Interfaces.FilterData
+                  - name: FilterLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.FilterLoadOptions
+                  - name: FilterPivotHierarchyCollectionData
+                    uid: excel_1_5.Excel.Interfaces.FilterPivotHierarchyCollectionData
+                  - name: FilterPivotHierarchyCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData
+                  - name: FilterPivotHierarchyData
+                    uid: excel_1_5.Excel.Interfaces.FilterPivotHierarchyData
+                  - name: FilterPivotHierarchyUpdateData
+                    uid: excel_1_5.Excel.Interfaces.FilterPivotHierarchyUpdateData
+                  - name: FormatProtectionData
+                    uid: excel_1_5.Excel.Interfaces.FormatProtectionData
+                  - name: FormatProtectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.FormatProtectionLoadOptions
+                  - name: FormatProtectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.FormatProtectionUpdateData
+                  - name: FunctionResultData
+                    uid: excel_1_5.Excel.Interfaces.FunctionResultData
+                  - name: FunctionResultLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.FunctionResultLoadOptions
+                  - name: IconSetConditionalFormatData
+                    uid: excel_1_5.Excel.Interfaces.IconSetConditionalFormatData
+                  - name: IconSetConditionalFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.IconSetConditionalFormatUpdateData
+                  - name: NamedItemArrayValuesData
+                    uid: excel_1_5.Excel.Interfaces.NamedItemArrayValuesData
+                  - name: NamedItemCollectionData
+                    uid: excel_1_5.Excel.Interfaces.NamedItemCollectionData
+                  - name: NamedItemCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.NamedItemCollectionLoadOptions
+                  - name: NamedItemCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.NamedItemCollectionUpdateData
+                  - name: NamedItemData
+                    uid: excel_1_5.Excel.Interfaces.NamedItemData
+                  - name: NamedItemLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.NamedItemLoadOptions
+                  - name: NamedItemUpdateData
+                    uid: excel_1_5.Excel.Interfaces.NamedItemUpdateData
+                  - name: PivotFieldCollectionData
+                    uid: excel_1_5.Excel.Interfaces.PivotFieldCollectionData
+                  - name: PivotFieldCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.PivotFieldCollectionUpdateData
+                  - name: PivotFieldData
+                    uid: excel_1_5.Excel.Interfaces.PivotFieldData
+                  - name: PivotFieldUpdateData
+                    uid: excel_1_5.Excel.Interfaces.PivotFieldUpdateData
+                  - name: PivotHierarchyCollectionData
+                    uid: excel_1_5.Excel.Interfaces.PivotHierarchyCollectionData
+                  - name: PivotHierarchyCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.PivotHierarchyCollectionUpdateData
+                  - name: PivotHierarchyData
+                    uid: excel_1_5.Excel.Interfaces.PivotHierarchyData
+                  - name: PivotHierarchyUpdateData
+                    uid: excel_1_5.Excel.Interfaces.PivotHierarchyUpdateData
+                  - name: PivotItemCollectionData
+                    uid: excel_1_5.Excel.Interfaces.PivotItemCollectionData
+                  - name: PivotItemCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.PivotItemCollectionUpdateData
+                  - name: PivotItemData
+                    uid: excel_1_5.Excel.Interfaces.PivotItemData
+                  - name: PivotItemUpdateData
+                    uid: excel_1_5.Excel.Interfaces.PivotItemUpdateData
+                  - name: PivotLayoutData
+                    uid: excel_1_5.Excel.Interfaces.PivotLayoutData
+                  - name: PivotLayoutUpdateData
+                    uid: excel_1_5.Excel.Interfaces.PivotLayoutUpdateData
+                  - name: PivotTableCollectionData
+                    uid: excel_1_5.Excel.Interfaces.PivotTableCollectionData
+                  - name: PivotTableCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.PivotTableCollectionLoadOptions
+                  - name: PivotTableCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.PivotTableCollectionUpdateData
+                  - name: PivotTableData
+                    uid: excel_1_5.Excel.Interfaces.PivotTableData
+                  - name: PivotTableLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.PivotTableLoadOptions
+                  - name: PivotTableUpdateData
+                    uid: excel_1_5.Excel.Interfaces.PivotTableUpdateData
+                  - name: PresetCriteriaConditionalFormatData
+                    uid: excel_1_5.Excel.Interfaces.PresetCriteriaConditionalFormatData
+                  - name: PresetCriteriaConditionalFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+                  - name: RangeBorderCollectionData
+                    uid: excel_1_5.Excel.Interfaces.RangeBorderCollectionData
+                  - name: RangeBorderCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.RangeBorderCollectionLoadOptions
+                  - name: RangeBorderCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.RangeBorderCollectionUpdateData
+                  - name: RangeBorderData
+                    uid: excel_1_5.Excel.Interfaces.RangeBorderData
+                  - name: RangeBorderLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.RangeBorderLoadOptions
+                  - name: RangeBorderUpdateData
+                    uid: excel_1_5.Excel.Interfaces.RangeBorderUpdateData
+                  - name: RangeData
+                    uid: excel_1_5.Excel.Interfaces.RangeData
+                  - name: RangeFillData
+                    uid: excel_1_5.Excel.Interfaces.RangeFillData
+                  - name: RangeFillLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.RangeFillLoadOptions
+                  - name: RangeFillUpdateData
+                    uid: excel_1_5.Excel.Interfaces.RangeFillUpdateData
+                  - name: RangeFontData
+                    uid: excel_1_5.Excel.Interfaces.RangeFontData
+                  - name: RangeFontLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.RangeFontLoadOptions
+                  - name: RangeFontUpdateData
+                    uid: excel_1_5.Excel.Interfaces.RangeFontUpdateData
+                  - name: RangeFormatData
+                    uid: excel_1_5.Excel.Interfaces.RangeFormatData
+                  - name: RangeFormatLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.RangeFormatLoadOptions
+                  - name: RangeFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.RangeFormatUpdateData
+                  - name: RangeLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.RangeLoadOptions
+                  - name: RangeUpdateData
+                    uid: excel_1_5.Excel.Interfaces.RangeUpdateData
+                  - name: RangeViewCollectionData
+                    uid: excel_1_5.Excel.Interfaces.RangeViewCollectionData
+                  - name: RangeViewCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.RangeViewCollectionLoadOptions
+                  - name: RangeViewCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.RangeViewCollectionUpdateData
+                  - name: RangeViewData
+                    uid: excel_1_5.Excel.Interfaces.RangeViewData
+                  - name: RangeViewLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.RangeViewLoadOptions
+                  - name: RangeViewUpdateData
+                    uid: excel_1_5.Excel.Interfaces.RangeViewUpdateData
+                  - name: RowColumnPivotHierarchyCollectionData
+                    uid: excel_1_5.Excel.Interfaces.RowColumnPivotHierarchyCollectionData
+                  - name: RowColumnPivotHierarchyCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
+                  - name: RowColumnPivotHierarchyData
+                    uid: excel_1_5.Excel.Interfaces.RowColumnPivotHierarchyData
+                  - name: RowColumnPivotHierarchyUpdateData
+                    uid: excel_1_5.Excel.Interfaces.RowColumnPivotHierarchyUpdateData
+                  - name: RuntimeData
+                    uid: excel_1_5.Excel.Interfaces.RuntimeData
+                  - name: RuntimeLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.RuntimeLoadOptions
+                  - name: RuntimeUpdateData
+                    uid: excel_1_5.Excel.Interfaces.RuntimeUpdateData
+                  - name: SettingCollectionData
+                    uid: excel_1_5.Excel.Interfaces.SettingCollectionData
+                  - name: SettingCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.SettingCollectionLoadOptions
+                  - name: SettingCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.SettingCollectionUpdateData
+                  - name: SettingData
+                    uid: excel_1_5.Excel.Interfaces.SettingData
+                  - name: SettingLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.SettingLoadOptions
+                  - name: SettingUpdateData
+                    uid: excel_1_5.Excel.Interfaces.SettingUpdateData
+                  - name: StyleCollectionData
+                    uid: excel_1_5.Excel.Interfaces.StyleCollectionData
+                  - name: StyleCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.StyleCollectionUpdateData
+                  - name: StyleData
+                    uid: excel_1_5.Excel.Interfaces.StyleData
+                  - name: StyleUpdateData
+                    uid: excel_1_5.Excel.Interfaces.StyleUpdateData
+                  - name: TableCollectionData
+                    uid: excel_1_5.Excel.Interfaces.TableCollectionData
+                  - name: TableCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.TableCollectionLoadOptions
+                  - name: TableCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.TableCollectionUpdateData
+                  - name: TableColumnCollectionData
+                    uid: excel_1_5.Excel.Interfaces.TableColumnCollectionData
+                  - name: TableColumnCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.TableColumnCollectionLoadOptions
+                  - name: TableColumnCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.TableColumnCollectionUpdateData
+                  - name: TableColumnData
+                    uid: excel_1_5.Excel.Interfaces.TableColumnData
+                  - name: TableColumnLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.TableColumnLoadOptions
+                  - name: TableColumnUpdateData
+                    uid: excel_1_5.Excel.Interfaces.TableColumnUpdateData
+                  - name: TableData
+                    uid: excel_1_5.Excel.Interfaces.TableData
+                  - name: TableLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.TableLoadOptions
+                  - name: TableRowCollectionData
+                    uid: excel_1_5.Excel.Interfaces.TableRowCollectionData
+                  - name: TableRowCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.TableRowCollectionLoadOptions
+                  - name: TableRowCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.TableRowCollectionUpdateData
+                  - name: TableRowData
+                    uid: excel_1_5.Excel.Interfaces.TableRowData
+                  - name: TableRowLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.TableRowLoadOptions
+                  - name: TableRowUpdateData
+                    uid: excel_1_5.Excel.Interfaces.TableRowUpdateData
+                  - name: TableSortData
+                    uid: excel_1_5.Excel.Interfaces.TableSortData
+                  - name: TableSortLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.TableSortLoadOptions
+                  - name: TableUpdateData
+                    uid: excel_1_5.Excel.Interfaces.TableUpdateData
+                  - name: TextConditionalFormatData
+                    uid: excel_1_5.Excel.Interfaces.TextConditionalFormatData
+                  - name: TextConditionalFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.TextConditionalFormatUpdateData
+                  - name: TopBottomConditionalFormatData
+                    uid: excel_1_5.Excel.Interfaces.TopBottomConditionalFormatData
+                  - name: TopBottomConditionalFormatUpdateData
+                    uid: excel_1_5.Excel.Interfaces.TopBottomConditionalFormatUpdateData
+                  - name: WorkbookCreatedData
+                    uid: excel_1_5.Excel.Interfaces.WorkbookCreatedData
+                  - name: WorkbookData
+                    uid: excel_1_5.Excel.Interfaces.WorkbookData
+                  - name: WorkbookLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.WorkbookLoadOptions
+                  - name: WorkbookProtectionData
+                    uid: excel_1_5.Excel.Interfaces.WorkbookProtectionData
+                  - name: WorkbookUpdateData
+                    uid: excel_1_5.Excel.Interfaces.WorkbookUpdateData
+                  - name: WorksheetCollectionData
+                    uid: excel_1_5.Excel.Interfaces.WorksheetCollectionData
+                  - name: WorksheetCollectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions
+                  - name: WorksheetCollectionUpdateData
+                    uid: excel_1_5.Excel.Interfaces.WorksheetCollectionUpdateData
+                  - name: WorksheetData
+                    uid: excel_1_5.Excel.Interfaces.WorksheetData
+                  - name: WorksheetLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.WorksheetLoadOptions
+                  - name: WorksheetProtectionData
+                    uid: excel_1_5.Excel.Interfaces.WorksheetProtectionData
+                  - name: WorksheetProtectionLoadOptions
+                    uid: excel_1_5.Excel.Interfaces.WorksheetProtectionLoadOptions
+                  - name: WorksheetUpdateData
+                    uid: excel_1_5.Excel.Interfaces.WorksheetUpdateData
+              - name: NamedItem
+                uid: excel_1_5.Excel.NamedItem
+              - name: NamedItemCollection
+                uid: excel_1_5.Excel.NamedItemCollection
+              - name: NamedItemScope
+                uid: excel_1_5.Excel.NamedItemScope
+              - name: NamedItemType
+                uid: excel_1_5.Excel.NamedItemType
+              - name: PivotTable
+                uid: excel_1_5.Excel.PivotTable
+              - name: PivotTableCollection
+                uid: excel_1_5.Excel.PivotTableCollection
+              - name: Range
+                uid: excel_1_5.Excel.Range
+              - name: RangeBorder
+                uid: excel_1_5.Excel.RangeBorder
+              - name: RangeBorderCollection
+                uid: excel_1_5.Excel.RangeBorderCollection
+              - name: RangeFill
+                uid: excel_1_5.Excel.RangeFill
+              - name: RangeFont
+                uid: excel_1_5.Excel.RangeFont
+              - name: RangeFormat
+                uid: excel_1_5.Excel.RangeFormat
+              - name: RangeReference
+                uid: excel_1_5.Excel.RangeReference
+              - name: RangeSort
+                uid: excel_1_5.Excel.RangeSort
+              - name: RangeUnderlineStyle
+                uid: excel_1_5.Excel.RangeUnderlineStyle
+              - name: RangeValueType
+                uid: excel_1_5.Excel.RangeValueType
+              - name: RangeView
+                uid: excel_1_5.Excel.RangeView
+              - name: RangeViewCollection
+                uid: excel_1_5.Excel.RangeViewCollection
+              - name: RequestContext
+                uid: excel_1_5.Excel.RequestContext
+              - name: RunOptions
+                uid: excel_1_5.Excel.RunOptions
+              - name: Runtime
+                uid: excel_1_5.Excel.Runtime
+              - name: SelectionChangedEventArgs
+                uid: excel_1_5.Excel.SelectionChangedEventArgs
+              - name: Session
+                uid: excel_1_5.Excel.Session
+              - name: Setting
+                uid: excel_1_5.Excel.Setting
+              - name: SettingCollection
+                uid: excel_1_5.Excel.SettingCollection
+              - name: SettingsChangedEventArgs
+                uid: excel_1_5.Excel.SettingsChangedEventArgs
+              - name: SheetVisibility
+                uid: excel_1_5.Excel.SheetVisibility
+              - name: SortDataOption
+                uid: excel_1_5.Excel.SortDataOption
+              - name: SortField
+                uid: excel_1_5.Excel.SortField
+              - name: SortMethod
+                uid: excel_1_5.Excel.SortMethod
+              - name: SortOn
+                uid: excel_1_5.Excel.SortOn
+              - name: SortOrientation
+                uid: excel_1_5.Excel.SortOrientation
+              - name: Table
+                uid: excel_1_5.Excel.Table
+              - name: TableCollection
+                uid: excel_1_5.Excel.TableCollection
+              - name: TableColumn
+                uid: excel_1_5.Excel.TableColumn
+              - name: TableColumnCollection
+                uid: excel_1_5.Excel.TableColumnCollection
+              - name: TableRow
+                uid: excel_1_5.Excel.TableRow
+              - name: TableRowCollection
+                uid: excel_1_5.Excel.TableRowCollection
+              - name: TableSort
+                uid: excel_1_5.Excel.TableSort
+              - name: ThreeArrowsGraySet
+                uid: excel_1_5.Excel.ThreeArrowsGraySet
+              - name: ThreeArrowsSet
+                uid: excel_1_5.Excel.ThreeArrowsSet
+              - name: ThreeFlagsSet
+                uid: excel_1_5.Excel.ThreeFlagsSet
+              - name: ThreeSignsSet
+                uid: excel_1_5.Excel.ThreeSignsSet
+              - name: ThreeStarsSet
+                uid: excel_1_5.Excel.ThreeStarsSet
+              - name: ThreeSymbols2Set
+                uid: excel_1_5.Excel.ThreeSymbols2Set
+              - name: ThreeSymbolsSet
+                uid: excel_1_5.Excel.ThreeSymbolsSet
+              - name: ThreeTrafficLights1Set
+                uid: excel_1_5.Excel.ThreeTrafficLights1Set
+              - name: ThreeTrafficLights2Set
+                uid: excel_1_5.Excel.ThreeTrafficLights2Set
+              - name: ThreeTrianglesSet
+                uid: excel_1_5.Excel.ThreeTrianglesSet
+              - name: VerticalAlignment
+                uid: excel_1_5.Excel.VerticalAlignment
+              - name: Workbook
+                uid: excel_1_5.Excel.Workbook
+              - name: Worksheet
+                uid: excel_1_5.Excel.Worksheet
+              - name: WorksheetCollection
+                uid: excel_1_5.Excel.WorksheetCollection
+              - name: WorksheetProtection
+                uid: excel_1_5.Excel.WorksheetProtection
+              - name: WorksheetProtectionOptions
+                uid: excel_1_5.Excel.WorksheetProtectionOptions

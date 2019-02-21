@@ -109,7 +109,7 @@ items:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesData;'
       return:
         type:
-          - excel.Excel.Interfaces.DocumentPropertiesData
+          - excel_1_7.Excel.Interfaces.DocumentPropertiesData
   - uid: excel_1_7.Excel.Interfaces.WorkbookData.protection
     summary: |-
       Returns workbook protection object for a workbook. Read-only.
@@ -124,7 +124,7 @@ items:
       content: 'protection?: Excel.Interfaces.WorkbookProtectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorkbookProtectionData
+          - excel_1_7.Excel.Interfaces.WorkbookProtectionData
   - uid: excel_1_7.Excel.Interfaces.WorkbookData.settings
     summary: |-
       Represents a collection of Settings associated with the workbook. Read-only.

@@ -29,7 +29,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartTrendlineFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTrendlineFormatData
+          - excel_1_7.Excel.Interfaces.ChartTrendlineFormatData
   - uid: excel_1_7.Excel.Interfaces.ChartTrendlineData.intercept
     summary: >-
       Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic

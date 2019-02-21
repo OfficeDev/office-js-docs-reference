@@ -25,7 +25,7 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontData
+          - excel_1_3.Excel.Interfaces.ChartFontData
   - uid: excel_1_3.Excel.Interfaces.ChartAxisFormatData.line
     summary: |-
       Represents chart line formatting. Read-only.
@@ -40,4 +40,4 @@ items:
       content: 'line?: Excel.Interfaces.ChartLineFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLineFormatData
+          - excel_1_3.Excel.Interfaces.ChartLineFormatData

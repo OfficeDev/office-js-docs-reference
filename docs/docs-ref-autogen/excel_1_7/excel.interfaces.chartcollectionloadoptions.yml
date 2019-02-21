@@ -53,7 +53,7 @@ items:
       content: 'axes?: Excel.Interfaces.ChartAxesLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxesLoadOptions
+          - excel_1_7.Excel.Interfaces.ChartAxesLoadOptions
   - uid: excel_1_7.Excel.Interfaces.ChartCollectionLoadOptions.chartType
     summary: |-
       For EACH ITEM in the collection: Represents the type of the chart. See Excel.ChartType for details.
@@ -83,7 +83,7 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
+          - excel_1_7.Excel.Interfaces.ChartDataLabelsLoadOptions
   - uid: excel_1_7.Excel.Interfaces.ChartCollectionLoadOptions.format
     summary: |-
       For EACH ITEM in the collection: Encapsulates the format properties for the chart area.
@@ -98,7 +98,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAreaFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAreaFormatLoadOptions
+          - excel_1_7.Excel.Interfaces.ChartAreaFormatLoadOptions
   - uid: excel_1_7.Excel.Interfaces.ChartCollectionLoadOptions.height
     summary: |-
       For EACH ITEM in the collection: Represents the height, in points, of the chart object.
@@ -158,7 +158,7 @@ items:
       content: 'legend?: Excel.Interfaces.ChartLegendLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendLoadOptions
+          - excel_1_7.Excel.Interfaces.ChartLegendLoadOptions
   - uid: excel_1_7.Excel.Interfaces.ChartCollectionLoadOptions.name
     summary: |-
       For EACH ITEM in the collection: Represents the name of a chart object.
@@ -188,7 +188,7 @@ items:
       content: 'series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions
+          - excel_1_7.Excel.Interfaces.ChartSeriesCollectionLoadOptions
   - uid: excel_1_7.Excel.Interfaces.ChartCollectionLoadOptions.showAllFieldButtons
     summary: |-
       For EACH ITEM in the collection: Represents whether to display all field buttons on a PivotChart.
@@ -220,7 +220,7 @@ items:
       content: 'title?: Excel.Interfaces.ChartTitleLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleLoadOptions
+          - excel_1_7.Excel.Interfaces.ChartTitleLoadOptions
   - uid: excel_1_7.Excel.Interfaces.ChartCollectionLoadOptions.top
     summary: >-
       For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the object to the top of
@@ -267,4 +267,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetLoadOptions
+          - excel_1_7.Excel.Interfaces.WorksheetLoadOptions

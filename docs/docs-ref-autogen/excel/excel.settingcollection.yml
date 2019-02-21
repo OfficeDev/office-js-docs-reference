@@ -77,7 +77,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.SettingCollection.getCount
     summary: |-
       Gets the number of Settings in the collection.

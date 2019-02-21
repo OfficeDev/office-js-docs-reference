@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: visio
     children:
       - visio.Visio.ShapeCollection.getCount
@@ -68,7 +68,7 @@ items:
       content: 'getItem(key: number | string): Visio.Shape;'
       return:
         type:
-          - Visio.Shape
+          - visio.Visio.Shape
         description: ''
       parameters:
         - id: key
@@ -120,7 +120,7 @@ items:
         Visio.ShapeCollection;
       return:
         type:
-          - Visio.ShapeCollection
+          - visio.Visio.ShapeCollection
         description: ''
       parameters:
         - id: option
@@ -140,7 +140,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Visio.ShapeCollection;'
       return:
         type:
-          - Visio.ShapeCollection
+          - visio.Visio.ShapeCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -157,13 +157,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Visio.ShapeCollection;'
       return:
         type:
-          - Visio.ShapeCollection
+          - visio.Visio.ShapeCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: visio.Visio.ShapeCollection.toJSON
     name: toJSON()
     fullName: toJSON()
@@ -174,5 +174,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.ShapeCollectionData;'
       return:
         type:
-          - Visio.Interfaces.ShapeCollectionData
+          - visio.Visio.Interfaces.ShapeCollectionData
         description: ''

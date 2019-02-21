@@ -40,7 +40,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartPointFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPointFormatLoadOptions
+          - excel_1_6.Excel.Interfaces.ChartPointFormatLoadOptions
   - uid: excel_1_6.Excel.Interfaces.ChartPointsCollectionLoadOptions.value
     summary: |-
       For EACH ITEM in the collection: Returns the value of a chart point. Read-only.

@@ -33,7 +33,7 @@ items:
       content: 'axes?: Excel.Interfaces.ChartAxesUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxesUpdateData
+          - excel_1_3.Excel.Interfaces.ChartAxesUpdateData
   - uid: excel_1_3.Excel.Interfaces.ChartUpdateData.dataLabels
     summary: |-
       Represents the datalabels on the chart.
@@ -48,7 +48,7 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelsUpdateData
+          - excel_1_3.Excel.Interfaces.ChartDataLabelsUpdateData
   - uid: excel_1_3.Excel.Interfaces.ChartUpdateData.format
     summary: |-
       Encapsulates the format properties for the chart area.
@@ -63,7 +63,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAreaFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAreaFormatUpdateData
+          - excel_1_3.Excel.Interfaces.ChartAreaFormatUpdateData
   - uid: excel_1_3.Excel.Interfaces.ChartUpdateData.height
     summary: |-
       Represents the height, in points, of the chart object.
@@ -108,7 +108,7 @@ items:
       content: 'legend?: Excel.Interfaces.ChartLegendUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendUpdateData
+          - excel_1_3.Excel.Interfaces.ChartLegendUpdateData
   - uid: excel_1_3.Excel.Interfaces.ChartUpdateData.name
     summary: |-
       Represents the name of a chart object.
@@ -140,7 +140,7 @@ items:
       content: 'title?: Excel.Interfaces.ChartTitleUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleUpdateData
+          - excel_1_3.Excel.Interfaces.ChartTitleUpdateData
   - uid: excel_1_3.Excel.Interfaces.ChartUpdateData.top
     summary: >-
       Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the

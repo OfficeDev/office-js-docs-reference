@@ -41,7 +41,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ChartMapOptions.labelStrategy
     summary: >-
       Returns or sets series map labels strategy of a region map chart. Read/Write.

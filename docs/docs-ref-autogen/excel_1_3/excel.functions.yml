@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_3
     children:
       - excel_1_3.Excel.Functions.abs
@@ -2099,7 +2099,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_3.Excel.RequestContext
   - uid: excel_1_3.Excel.Functions.convert
     summary: |-
       Converts a number from one measurement system to another.
@@ -10249,16 +10249,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        toJSON(): {
-                    [key: string]: string;
-                };
+      content: "toJSON(): {\r\n            [key: string]: string;\r\n        };"
       return:
         type:
-          - |-
-            {
-                        [key: string]: string;
-                    }
+          - "{\r\n            [key: string]: string;\r\n        }"
         description: ''
   - uid: excel_1_3.Excel.Functions.trim
     summary: |-

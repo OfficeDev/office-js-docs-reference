@@ -52,7 +52,7 @@ items:
     type: method
     syntax:
       content: >-
-        loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?:
+        loadCustomPropertiesAsync(callback: (result: CommonAPI.AsyncResult<CustomProperties>) => void, userContext?:
         any): void;
       return:
         type:
@@ -64,7 +64,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<CustomProperties>) => void'
+            - '(result: CommonAPI.AsyncResult<CustomProperties>) => void'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
@@ -143,7 +143,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void): void;'
+      content: 'loadCustomPropertiesAsync(callback: (result: CommonAPI.AsyncResult<CustomProperties>) => void): void;'
       return:
         type:
           - void
@@ -154,7 +154,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<CustomProperties>) => void'
+            - '(result: CommonAPI.AsyncResult<CustomProperties>) => void'
   - uid: Outlook_1_2.Office.Item.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
@@ -198,7 +198,7 @@ items:
       content: 'body: Body;'
       return:
         type:
-          - Body
+          - Outlook_1_2.Office.Body
   - uid: Outlook_1_2.Office.Item.itemType
     summary: >-
       Gets the type of item that an instance represents.

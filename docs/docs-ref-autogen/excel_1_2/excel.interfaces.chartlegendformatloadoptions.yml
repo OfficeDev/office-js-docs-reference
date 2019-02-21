@@ -39,4 +39,4 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontLoadOptions
+          - excel_1_2.Excel.Interfaces.ChartFontLoadOptions

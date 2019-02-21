@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_7
     children:
       - excel_1_7.Excel.WorksheetCollection.add
@@ -47,7 +47,7 @@ items:
       content: 'add(name?: string): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - excel_1_7.Excel.Worksheet
         description: |-
 
           #### Examples
@@ -87,7 +87,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_7.Excel.RequestContext
   - uid: excel_1_7.Excel.WorksheetCollection.getActiveWorksheet
     summary: |-
       Gets the currently active worksheet in the workbook.
@@ -102,7 +102,7 @@ items:
       content: 'getActiveWorksheet(): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - excel_1_7.Excel.Worksheet
         description: |-
 
           #### Examples
@@ -156,7 +156,7 @@ items:
       content: 'getFirst(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - excel_1_7.Excel.Worksheet
         description: |-
 
           #### Examples
@@ -206,7 +206,7 @@ items:
       content: 'getItem(key: string): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - excel_1_7.Excel.Worksheet
         description: ''
       parameters:
         - id: key
@@ -227,7 +227,7 @@ items:
       content: 'getItemOrNullObject(key: string): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - excel_1_7.Excel.Worksheet
         description: ''
       parameters:
         - id: key
@@ -248,7 +248,7 @@ items:
       content: 'getLast(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - excel_1_7.Excel.Worksheet
         description: |-
 
           #### Examples
@@ -329,7 +329,7 @@ items:
         Excel.WorksheetCollection;
       return:
         type:
-          - excel.Excel.WorksheetCollection
+          - excel_1_7.Excel.WorksheetCollection
         description: ''
       parameters:
         - id: option
@@ -349,7 +349,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.WorksheetCollection;'
       return:
         type:
-          - excel.Excel.WorksheetCollection
+          - excel_1_7.Excel.WorksheetCollection
         description: |-
 
           #### Examples
@@ -387,13 +387,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.WorksheetCollection;'
       return:
         type:
-          - excel.Excel.WorksheetCollection
+          - excel_1_7.Excel.WorksheetCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel_1_7.Excel.WorksheetCollection.onActivated
     summary: |-
       Occurs when any worksheet in the workbook is activated.
@@ -509,5 +509,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorksheetCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetCollectionData
+          - excel_1_7.Excel.Interfaces.WorksheetCollectionData
         description: ''

@@ -98,7 +98,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.TableRowCollection.count
     summary: |-
       Returns the number of rows in the table. Read-only.

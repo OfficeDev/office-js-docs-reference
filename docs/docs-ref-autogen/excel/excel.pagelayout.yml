@@ -140,7 +140,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.PageLayout.draftMode
     summary: >-
       Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.

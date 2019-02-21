@@ -32,7 +32,7 @@ items:
       content: 'customIcon?: Excel.Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - excel_1_6.Excel.Icon
   - uid: excel_1_6.Excel.ConditionalIconCriterion.formula
     summary: |-
       A number or a formula depending on the type.

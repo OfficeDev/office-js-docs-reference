@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: word
     children:
       - word.Word.TableCell.body
@@ -62,7 +62,7 @@ items:
       content: 'readonly body: Word.Body;'
       return:
         type:
-          - Word.Body
+          - word.Word.Body
   - uid: word.Word.TableCell.cellIndex
     summary: |-
       Gets the index of the cell in its row. Read-only.
@@ -106,7 +106,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - word.Word.RequestContext
   - uid: word.Word.TableCell.deleteColumn
     summary: |-
       Deletes the column containing this cell. This is applicable to uniform tables.
@@ -241,7 +241,7 @@ items:
       content: 'getNext(): Word.TableCell;'
       return:
         type:
-          - Word.TableCell
+          - word.Word.TableCell
         description: ''
   - uid: word.Word.TableCell.getNextOrNullObject
     summary: |-
@@ -257,7 +257,7 @@ items:
       content: 'getNextOrNullObject(): Word.TableCell;'
       return:
         type:
-          - Word.TableCell
+          - word.Word.TableCell
         description: ''
   - uid: word.Word.TableCell.horizontalAlignment
     summary: |-
@@ -296,7 +296,7 @@ items:
         - id: insertLocation
           description: Required. It can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
         - id: columnCount
           description: Required. Number of columns to add.
           type:
@@ -354,13 +354,13 @@ items:
       content: 'insertRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][]): Word.TableRowCollection;'
       return:
         type:
-          - Word.TableRowCollection
+          - word.Word.TableRowCollection
         description: ''
       parameters:
         - id: insertLocation
           description: Required. It can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
         - id: rowCount
           description: Required. Number of rows to add.
           type:
@@ -387,7 +387,7 @@ items:
         string[][]): Word.TableRowCollection;
       return:
         type:
-          - Word.TableRowCollection
+          - word.Word.TableRowCollection
         description: ''
       parameters:
         - id: insertLocationString
@@ -433,13 +433,13 @@ items:
       content: 'load(option?: Word.Interfaces.TableCellLoadOptions): Word.TableCell;'
       return:
         type:
-          - Word.TableCell
+          - word.Word.TableCell
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.TableCellLoadOptions
+            - word.Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.TableCell.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -453,7 +453,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.TableCell;'
       return:
         type:
-          - Word.TableCell
+          - word.Word.TableCell
         description: ''
       parameters:
         - id: propertyNames
@@ -473,7 +473,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.TableCell;'
       return:
         type:
-          - Word.TableCell
+          - word.Word.TableCell
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -496,7 +496,7 @@ items:
       content: 'readonly parentRow: Word.TableRow;'
       return:
         type:
-          - Word.TableRow
+          - word.Word.TableRow
   - uid: word.Word.TableCell.parentTable
     summary: |-
       Gets the parent table of the cell. Read-only.
@@ -511,7 +511,7 @@ items:
       content: 'readonly parentTable: Word.Table;'
       return:
         type:
-          - Word.Table
+          - word.Word.Table
   - uid: word.Word.TableCell.rowIndex
     summary: |-
       Gets the index of the cell's row in the table. Read-only.
@@ -556,7 +556,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.TableCell.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -574,7 +574,7 @@ items:
         - id: properties
           description: ''
           type:
-            - Word.TableCell
+            - word.Word.TableCell
   - uid: word.Word.TableCell.setCellPadding
     summary: |-
       Sets cell padding in points.
@@ -650,7 +650,7 @@ items:
       content: 'toJSON(): Word.Interfaces.TableCellData;'
       return:
         type:
-          - Word.Interfaces.TableCellData
+          - word.Word.Interfaces.TableCellData
         description: ''
   - uid: word.Word.TableCell.track
     summary: >-
@@ -668,7 +668,7 @@ items:
       content: 'track(): Word.TableCell;'
       return:
         type:
-          - Word.TableCell
+          - word.Word.TableCell
         description: ''
   - uid: word.Word.TableCell.untrack
     summary: >-
@@ -685,7 +685,7 @@ items:
       content: 'untrack(): Word.TableCell;'
       return:
         type:
-          - Word.TableCell
+          - word.Word.TableCell
         description: ''
   - uid: word.Word.TableCell.value
     summary: |-

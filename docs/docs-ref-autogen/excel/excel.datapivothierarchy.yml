@@ -42,7 +42,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.DataPivotHierarchy.field
     summary: |-
       Returns the PivotFields associated with the DataPivotHierarchy.

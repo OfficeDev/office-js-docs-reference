@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: onenote
     children:
       - onenote.OneNote.SectionGroup.addSection
@@ -175,7 +175,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - onenote.OneNote.RequestContext
   - uid: onenote.OneNote.SectionGroup.getRestApiId
     summary: |-
       Gets the REST API ID.

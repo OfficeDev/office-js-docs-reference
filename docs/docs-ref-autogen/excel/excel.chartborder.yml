@@ -69,7 +69,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ChartBorder.lineStyle
     summary: |-
       Represents the line style of the border. See Excel.ChartLineStyle for details.

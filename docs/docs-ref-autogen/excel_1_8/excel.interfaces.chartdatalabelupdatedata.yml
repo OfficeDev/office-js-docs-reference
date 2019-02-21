@@ -58,7 +58,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelFormatUpdateData
+          - excel_1_8.Excel.Interfaces.ChartDataLabelFormatUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartDataLabelUpdateData.formula
     summary: |-
       String value that represents the formula of chart data label using A1-style notation.

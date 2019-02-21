@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_5
     children:
       - excel_1_5.Excel.RangeView.cellAddresses
@@ -77,7 +77,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_5.Excel.RequestContext
   - uid: excel_1_5.Excel.RangeView.formulas
     summary: |-
       Represents the formula in A1-style notation.
@@ -139,7 +139,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_5.Excel.Range
         description: ''
   - uid: excel_1_5.Excel.RangeView.index
     summary: |-
@@ -187,13 +187,13 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeViewLoadOptions): Excel.RangeView;'
       return:
         type:
-          - excel.Excel.RangeView
+          - excel_1_5.Excel.RangeView
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.RangeViewLoadOptions
+            - excel_1_5.Excel.Interfaces.RangeViewLoadOptions
   - uid: excel_1_5.Excel.RangeView.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -207,7 +207,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.RangeView;'
       return:
         type:
-          - excel.Excel.RangeView
+          - excel_1_5.Excel.RangeView
         description: ''
       parameters:
         - id: propertyNames
@@ -227,7 +227,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeView;'
       return:
         type:
-          - excel.Excel.RangeView
+          - excel_1_5.Excel.RangeView
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -280,7 +280,7 @@ items:
       content: 'readonly rows: Excel.RangeViewCollection;'
       return:
         type:
-          - excel.Excel.RangeViewCollection
+          - excel_1_5.Excel.RangeViewCollection
   - uid: excel_1_5.Excel.RangeView.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -310,7 +310,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_5.Excel.RangeView.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -328,7 +328,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.RangeView
+            - excel_1_5.Excel.RangeView
   - uid: excel_1_5.Excel.RangeView.text
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
@@ -362,7 +362,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeViewData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeViewData
+          - excel_1_5.Excel.Interfaces.RangeViewData
         description: ''
   - uid: excel_1_5.Excel.RangeView.values
     summary: >-

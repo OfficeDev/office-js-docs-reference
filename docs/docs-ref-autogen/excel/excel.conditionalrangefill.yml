@@ -69,7 +69,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ConditionalRangeFill.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

@@ -25,7 +25,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartPointFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPointFormatData
+          - excel_1_4.Excel.Interfaces.ChartPointFormatData
   - uid: excel_1_4.Excel.Interfaces.ChartPointData.value
     summary: |-
       Returns the value of a chart point. Read-only.

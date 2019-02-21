@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_8
     children:
       - excel_1_8.Excel.DataConnectionCollection.context
@@ -30,7 +30,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_8.Excel.RequestContext
   - uid: excel_1_8.Excel.DataConnectionCollection.refreshAll
     summary: |-
       Refreshes all the Data Connections in the collection.

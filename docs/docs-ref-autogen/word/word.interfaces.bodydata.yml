@@ -182,7 +182,7 @@ items:
       content: 'parentSection?: Word.Interfaces.SectionData;'
       return:
         type:
-          - Word.Interfaces.SectionData
+          - word.Word.Interfaces.SectionData
   - uid: word.Word.Interfaces.BodyData.parentSectionOrNullObject
     summary: |-
       Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only.
@@ -197,7 +197,7 @@ items:
       content: 'parentSectionOrNullObject?: Word.Interfaces.SectionData;'
       return:
         type:
-          - Word.Interfaces.SectionData
+          - word.Word.Interfaces.SectionData
   - uid: word.Word.Interfaces.BodyData.style
     summary: >-
       Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_8
     children:
       - excel_1_8.Excel.ChartCollection.add
@@ -45,23 +45,23 @@ items:
       content: 'add(type: Excel.ChartType, sourceData: Range, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - excel_1_8.Excel.Chart
         description: ''
       parameters:
         - id: type
           description: Represents the type of a chart. See Excel.ChartType for details.
           type:
-            - excel.Excel.ChartType
+            - excel_1_8.Excel.ChartType
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - Range
+            - excel_1_8.Excel.Range
         - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
             for details.
           type:
-            - excel.Excel.ChartSeriesBy
+            - excel_1_8.Excel.ChartSeriesBy
   - uid: excel_1_8.Excel.ChartCollection.add_1
     summary: |-
       Creates a new chart.
@@ -91,7 +91,7 @@ items:
         sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
       return:
         type:
-          - excel.Excel.Chart
+          - excel_1_8.Excel.Chart
         description: |-
 
           #### Examples
@@ -137,7 +137,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - Range
+            - excel_1_8.Excel.Range
         - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
@@ -157,7 +157,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_8.Excel.RequestContext
   - uid: excel_1_8.Excel.ChartCollection.count
     summary: |-
       Returns the number of charts in the worksheet. Read-only.
@@ -203,7 +203,7 @@ items:
       content: 'getItem(name: string): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - excel_1_8.Excel.Chart
         description: |-
 
           #### Examples
@@ -269,7 +269,7 @@ items:
       content: 'getItemAt(index: number): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - excel_1_8.Excel.Chart
         description: |-
 
           #### Examples
@@ -309,7 +309,7 @@ items:
       content: 'getItemOrNullObject(name: string): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - excel_1_8.Excel.Chart
         description: ''
       parameters:
         - id: name
@@ -361,7 +361,7 @@ items:
         Excel.ChartCollection;
       return:
         type:
-          - excel.Excel.ChartCollection
+          - excel_1_8.Excel.ChartCollection
         description: ''
       parameters:
         - id: option
@@ -381,7 +381,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartCollection;'
       return:
         type:
-          - excel.Excel.ChartCollection
+          - excel_1_8.Excel.ChartCollection
         description: |-
 
           #### Examples
@@ -433,13 +433,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.ChartCollection;'
       return:
         type:
-          - excel.Excel.ChartCollection
+          - excel_1_8.Excel.ChartCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel_1_8.Excel.ChartCollection.onActivated
     summary: |-
       Occurs when a chart is activated.
@@ -580,5 +580,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartCollectionData
+          - excel_1_8.Excel.Interfaces.ChartCollectionData
         description: ''

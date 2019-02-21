@@ -53,7 +53,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ConditionalRangeFormat.fill
     summary: |-
       Returns the fill object defined on the overall conditional format range. Read-only.

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_2
     children:
       - excel_1_2.Excel.ChartPointsCollection.context
@@ -35,7 +35,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_2.Excel.RequestContext
   - uid: excel_1_2.Excel.ChartPointsCollection.count
     summary: |-
       Returns the number of chart points in the series. Read-only.
@@ -65,7 +65,7 @@ items:
       content: 'getItemAt(index: number): Excel.ChartPoint;'
       return:
         type:
-          - excel.Excel.ChartPoint
+          - excel_1_2.Excel.ChartPoint
         description: |-
 
           #### Examples
@@ -135,7 +135,7 @@ items:
         Excel.ChartPointsCollection;
       return:
         type:
-          - excel.Excel.ChartPointsCollection
+          - excel_1_2.Excel.ChartPointsCollection
         description: ''
       parameters:
         - id: option
@@ -155,7 +155,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartPointsCollection;'
       return:
         type:
-          - excel.Excel.ChartPointsCollection
+          - excel_1_2.Excel.ChartPointsCollection
         description: |-
 
           #### Examples
@@ -207,13 +207,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.ChartPointsCollection;'
       return:
         type:
-          - excel.Excel.ChartPointsCollection
+          - excel_1_2.Excel.ChartPointsCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel_1_2.Excel.ChartPointsCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -230,5 +230,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartPointsCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPointsCollectionData
+          - excel_1_2.Excel.Interfaces.ChartPointsCollectionData
         description: ''

@@ -26,7 +26,7 @@ items:
       content: 'application?: Visio.Interfaces.ApplicationData;'
       return:
         type:
-          - Visio.Interfaces.ApplicationData
+          - visio.Visio.Interfaces.ApplicationData
   - uid: visio.Visio.Interfaces.DocumentData.pages
     summary: |-
       Represents a collection of pages associated with the document. Read-only.

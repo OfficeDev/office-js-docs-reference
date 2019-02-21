@@ -77,7 +77,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.RangeView.formulas
     summary: |-
       Represents the formula in A1-style notation.

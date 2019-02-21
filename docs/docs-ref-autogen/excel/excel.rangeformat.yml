@@ -138,7 +138,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.RangeFormat.fill
     summary: |-
       Returns the fill object defined on the overall range. Read-only.

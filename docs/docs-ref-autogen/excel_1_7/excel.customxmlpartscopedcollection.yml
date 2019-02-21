@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_7
     children:
       - excel_1_7.Excel.CustomXmlPartScopedCollection.context
@@ -40,7 +40,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_7.Excel.RequestContext
   - uid: excel_1_7.Excel.CustomXmlPartScopedCollection.getCount
     summary: |-
       Gets the number of CustomXML parts in this collection.
@@ -103,7 +103,7 @@ items:
       content: 'getItem(id: string): Excel.CustomXmlPart;'
       return:
         type:
-          - excel.Excel.CustomXmlPart
+          - excel_1_7.Excel.CustomXmlPart
         description: ''
       parameters:
         - id: id
@@ -126,7 +126,7 @@ items:
       content: 'getItemOrNullObject(id: string): Excel.CustomXmlPart;'
       return:
         type:
-          - excel.Excel.CustomXmlPart
+          - excel_1_7.Excel.CustomXmlPart
         description: |-
 
           #### Examples
@@ -179,7 +179,7 @@ items:
       content: 'getOnlyItem(): Excel.CustomXmlPart;'
       return:
         type:
-          - excel.Excel.CustomXmlPart
+          - excel_1_7.Excel.CustomXmlPart
         description: |-
 
           #### Examples
@@ -227,7 +227,7 @@ items:
       content: 'getOnlyItemOrNullObject(): Excel.CustomXmlPart;'
       return:
         type:
-          - excel.Excel.CustomXmlPart
+          - excel_1_7.Excel.CustomXmlPart
         description: ''
   - uid: excel_1_7.Excel.CustomXmlPartScopedCollection.items
     summary: Gets the loaded child items in this collection.
@@ -274,7 +274,7 @@ items:
         Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartScopedCollection;
       return:
         type:
-          - excel.Excel.CustomXmlPartScopedCollection
+          - excel_1_7.Excel.CustomXmlPartScopedCollection
         description: ''
       parameters:
         - id: option
@@ -294,7 +294,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.CustomXmlPartScopedCollection;'
       return:
         type:
-          - excel.Excel.CustomXmlPartScopedCollection
+          - excel_1_7.Excel.CustomXmlPartScopedCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -311,13 +311,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.CustomXmlPartScopedCollection;'
       return:
         type:
-          - excel.Excel.CustomXmlPartScopedCollection
+          - excel_1_7.Excel.CustomXmlPartScopedCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel_1_7.Excel.CustomXmlPartScopedCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -334,5 +334,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.CustomXmlPartScopedCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.CustomXmlPartScopedCollectionData
+          - excel_1_7.Excel.Interfaces.CustomXmlPartScopedCollectionData
         description: ''

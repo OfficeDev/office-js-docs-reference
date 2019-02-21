@@ -33,7 +33,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartLegendFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendFormatData
+          - excel_1_8.Excel.Interfaces.ChartLegendFormatData
   - uid: excel_1_8.Excel.Interfaces.ChartLegendData.height
     summary: |-
       Represents the height, in points, of the legend on the chart. Null if legend is not visible.

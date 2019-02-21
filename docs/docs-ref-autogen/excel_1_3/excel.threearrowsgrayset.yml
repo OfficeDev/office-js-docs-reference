@@ -21,7 +21,7 @@ items:
       content: 'grayDownArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_3.Excel.Icon
   - uid: excel_1_3.Excel.ThreeArrowsGraySet.graySideArrow
     name: graySideArrow
     fullName: graySideArrow
@@ -32,7 +32,7 @@ items:
       content: 'graySideArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_3.Excel.Icon
   - uid: excel_1_3.Excel.ThreeArrowsGraySet.grayUpArrow
     name: grayUpArrow
     fullName: grayUpArrow
@@ -43,4 +43,4 @@ items:
       content: 'grayUpArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_3.Excel.Icon

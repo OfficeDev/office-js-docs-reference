@@ -130,7 +130,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.Table.convertToRange
     summary: |-
       Converts the table into a normal range of cells. All data is preserved.

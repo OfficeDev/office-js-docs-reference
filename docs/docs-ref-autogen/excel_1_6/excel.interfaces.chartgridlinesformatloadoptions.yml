@@ -39,4 +39,4 @@ items:
       content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLineFormatLoadOptions
+          - excel_1_6.Excel.Interfaces.ChartLineFormatLoadOptions

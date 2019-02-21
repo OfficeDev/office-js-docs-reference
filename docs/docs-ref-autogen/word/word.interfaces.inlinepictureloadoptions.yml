@@ -126,7 +126,7 @@ items:
       content: 'paragraph?: Word.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - Word.Interfaces.ParagraphLoadOptions
+          - word.Word.Interfaces.ParagraphLoadOptions
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.parentContentControl
     summary: |-
       Gets the content control that contains the inline image. Throws if there isn't a parent content control.
@@ -173,7 +173,7 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableLoadOptions
+          - word.Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.parentTableCell
     summary: |-
       Gets the table cell that contains the inline image. Throws if it is not contained in a table cell.
@@ -188,7 +188,7 @@ items:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableCellLoadOptions
+          - word.Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.parentTableCellOrNullObject
     summary: |-
       Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
@@ -203,7 +203,7 @@ items:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableCellLoadOptions
+          - word.Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.parentTableOrNullObject
     summary: |-
       Gets the table that contains the inline image. Returns a null object if it is not contained in a table.
@@ -218,7 +218,7 @@ items:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableLoadOptions
+          - word.Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.InlinePictureLoadOptions.width
     summary: |-
       Gets or sets a number that describes the width of the inline image.

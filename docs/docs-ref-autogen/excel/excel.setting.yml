@@ -41,7 +41,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.Setting.delete
     summary: |-
       Deletes the setting.

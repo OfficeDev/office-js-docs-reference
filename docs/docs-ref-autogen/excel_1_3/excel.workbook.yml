@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_3
     children:
       - excel_1_3.Excel.Workbook.application
@@ -44,7 +44,7 @@ items:
       content: 'readonly application: Excel.Application;'
       return:
         type:
-          - excel.Excel.Application
+          - excel_1_3.Excel.Application
   - uid: excel_1_3.Excel.Workbook.bindings
     summary: |-
       Represents a collection of bindings that are part of the workbook. Read-only.
@@ -59,7 +59,7 @@ items:
       content: 'readonly bindings: Excel.BindingCollection;'
       return:
         type:
-          - excel.Excel.BindingCollection
+          - excel_1_3.Excel.BindingCollection
   - uid: excel_1_3.Excel.Workbook.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -73,7 +73,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_3.Excel.RequestContext
   - uid: excel_1_3.Excel.Workbook.functions
     summary: |-
       Represents a collection of worksheet functions that can be used for computation. Read-only.
@@ -88,7 +88,7 @@ items:
       content: 'readonly functions: Excel.Functions;'
       return:
         type:
-          - excel.Excel.Functions
+          - excel_1_3.Excel.Functions
   - uid: excel_1_3.Excel.Workbook.getSelectedRange
     summary: >-
       Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method
@@ -105,7 +105,7 @@ items:
       content: 'getSelectedRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_3.Excel.Range
         description: |-
 
           #### Examples
@@ -155,13 +155,13 @@ items:
       content: 'load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - excel_1_3.Excel.Workbook
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.WorkbookLoadOptions
+            - excel_1_3.Excel.Interfaces.WorkbookLoadOptions
   - uid: excel_1_3.Excel.Workbook.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -175,7 +175,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - excel_1_3.Excel.Workbook
         description: ''
       parameters:
         - id: propertyNames
@@ -195,7 +195,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - excel_1_3.Excel.Workbook
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -218,7 +218,7 @@ items:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type:
-          - excel.Excel.NamedItemCollection
+          - excel_1_3.Excel.NamedItemCollection
   - uid: excel_1_3.Excel.Workbook.onSelectionChanged
     summary: |-
       Occurs when the selection in the document is changed.
@@ -248,7 +248,7 @@ items:
       content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
         type:
-          - excel.Excel.PivotTableCollection
+          - excel_1_3.Excel.PivotTableCollection
   - uid: excel_1_3.Excel.Workbook.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -278,7 +278,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_3.Excel.Workbook.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -296,7 +296,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Workbook
+            - excel_1_3.Excel.Workbook
   - uid: excel_1_3.Excel.Workbook.tables
     summary: |-
       Represents a collection of tables associated with the workbook. Read-only.
@@ -311,7 +311,7 @@ items:
       content: 'readonly tables: Excel.TableCollection;'
       return:
         type:
-          - excel.Excel.TableCollection
+          - excel_1_3.Excel.TableCollection
   - uid: excel_1_3.Excel.Workbook.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -328,7 +328,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorkbookData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorkbookData
+          - excel_1_3.Excel.Interfaces.WorkbookData
         description: ''
   - uid: excel_1_3.Excel.Workbook.worksheets
     summary: |-
@@ -344,4 +344,4 @@ items:
       content: 'readonly worksheets: Excel.WorksheetCollection;'
       return:
         type:
-          - excel.Excel.WorksheetCollection
+          - excel_1_3.Excel.WorksheetCollection

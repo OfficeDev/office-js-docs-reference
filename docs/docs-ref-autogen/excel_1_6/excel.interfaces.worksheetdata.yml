@@ -124,7 +124,7 @@ items:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetProtectionData
+          - excel_1_6.Excel.Interfaces.WorksheetProtectionData
   - uid: excel_1_6.Excel.Interfaces.WorksheetData.tables
     summary: |-
       Collection of tables that are part of the worksheet. Read-only.

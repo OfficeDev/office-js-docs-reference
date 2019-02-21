@@ -36,7 +36,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ChartSeriesFormat.fill
     summary: |-
       Represents the fill format of a chart series, which includes background formatting information. Read-only.

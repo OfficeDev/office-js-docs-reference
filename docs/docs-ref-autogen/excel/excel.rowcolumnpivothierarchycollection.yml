@@ -61,7 +61,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.RowColumnPivotHierarchyCollection.getCount
     summary: |-
       Gets the number of pivot hierarchies in the collection.

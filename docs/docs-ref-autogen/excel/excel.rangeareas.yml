@@ -249,7 +249,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.RangeAreas.convertDataTypeToText
     summary: >-
       Converts all cells in the RangeAreas with datatypes into text.

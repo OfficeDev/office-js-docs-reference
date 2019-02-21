@@ -45,7 +45,7 @@ items:
       content: 'field?: Excel.Interfaces.PivotFieldLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.PivotFieldLoadOptions
+          - excel_1_8.Excel.Interfaces.PivotFieldLoadOptions
   - uid: excel_1_8.Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: Id of the DataPivotHierarchy.

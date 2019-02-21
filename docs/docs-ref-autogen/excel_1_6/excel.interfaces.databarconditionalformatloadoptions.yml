@@ -108,7 +108,7 @@ items:
       content: 'negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
+          - excel_1_6.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
   - uid: excel_1_6.Excel.Interfaces.DataBarConditionalFormatLoadOptions.positiveFormat
     summary: |-
       Representation of all values to the right of the axis in an Excel data bar.
@@ -123,7 +123,7 @@ items:
       content: 'positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
+          - excel_1_6.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
   - uid: excel_1_6.Excel.Interfaces.DataBarConditionalFormatLoadOptions.showDataBarOnly
     summary: |-
       If true, hides the values from the cells where the data bar is applied.

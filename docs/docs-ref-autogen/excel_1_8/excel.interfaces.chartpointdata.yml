@@ -31,7 +31,7 @@ items:
       content: 'dataLabel?: Excel.Interfaces.ChartDataLabelData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelData
+          - excel_1_8.Excel.Interfaces.ChartDataLabelData
   - uid: excel_1_8.Excel.Interfaces.ChartPointData.format
     summary: |-
       Encapsulates the format properties chart point. Read-only.
@@ -46,7 +46,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartPointFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPointFormatData
+          - excel_1_8.Excel.Interfaces.ChartPointFormatData
   - uid: excel_1_8.Excel.Interfaces.ChartPointData.hasDataLabel
     summary: |-
       Represents whether a data point has a data label. Not applicable for surface charts.

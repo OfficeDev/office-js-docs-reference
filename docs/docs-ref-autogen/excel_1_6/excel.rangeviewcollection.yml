@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_6
     children:
       - excel_1_6.Excel.RangeViewCollection.context
@@ -35,7 +35,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_6.Excel.RequestContext
   - uid: excel_1_6.Excel.RangeViewCollection.getCount
     summary: |-
       Gets the number of RangeView objects in the collection.
@@ -66,7 +66,7 @@ items:
       content: 'getItemAt(index: number): Excel.RangeView;'
       return:
         type:
-          - excel.Excel.RangeView
+          - excel_1_6.Excel.RangeView
         description: ''
       parameters:
         - id: index
@@ -118,7 +118,7 @@ items:
         Excel.RangeViewCollection;
       return:
         type:
-          - excel.Excel.RangeViewCollection
+          - excel_1_6.Excel.RangeViewCollection
         description: ''
       parameters:
         - id: option
@@ -138,7 +138,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.RangeViewCollection;'
       return:
         type:
-          - excel.Excel.RangeViewCollection
+          - excel_1_6.Excel.RangeViewCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -155,13 +155,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.RangeViewCollection;'
       return:
         type:
-          - excel.Excel.RangeViewCollection
+          - excel_1_6.Excel.RangeViewCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel_1_6.Excel.RangeViewCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -178,5 +178,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeViewCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeViewCollectionData
+          - excel_1_6.Excel.Interfaces.RangeViewCollectionData
         description: ''

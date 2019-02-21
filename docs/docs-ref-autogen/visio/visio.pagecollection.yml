@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: visio
     children:
       - visio.Visio.PageCollection.getCount
@@ -51,7 +51,7 @@ items:
       content: 'getItem(key: number | string): Visio.Page;'
       return:
         type:
-          - Visio.Page
+          - visio.Visio.Page
         description: |-
 
           #### Examples
@@ -119,7 +119,7 @@ items:
         Visio.PageCollection;
       return:
         type:
-          - Visio.PageCollection
+          - visio.Visio.PageCollection
         description: ''
       parameters:
         - id: option
@@ -139,7 +139,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Visio.PageCollection;'
       return:
         type:
-          - Visio.PageCollection
+          - visio.Visio.PageCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -156,13 +156,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Visio.PageCollection;'
       return:
         type:
-          - Visio.PageCollection
+          - visio.Visio.PageCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: visio.Visio.PageCollection.toJSON
     name: toJSON()
     fullName: toJSON()
@@ -173,5 +173,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.PageCollectionData;'
       return:
         type:
-          - Visio.Interfaces.PageCollectionData
+          - visio.Visio.Interfaces.PageCollectionData
         description: ''

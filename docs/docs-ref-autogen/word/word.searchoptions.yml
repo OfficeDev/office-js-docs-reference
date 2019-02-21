@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: word
     children:
       - word.Word.SearchOptions.context
@@ -43,7 +43,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - word.Word.RequestContext
   - uid: word.Word.SearchOptions.ignorePunct
     summary: >-
       Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the
@@ -439,7 +439,7 @@ items:
         - id: context
           description: ''
           type:
-            - office.OfficeExtension.ClientRequestContext
+            - OfficeExtension.ClientRequestContext
   - uid: word.Word.SearchOptions.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -469,7 +469,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.SearchOptions.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)

@@ -1,0 +1,189 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension.Error
+    summary: >-
+      The error object returned by `context.sync()`<!-- -->, if a promise is rejected due to an error while processing
+      the request.
+    name: OfficeExtension.Error
+    fullName: OfficeExtension.Error
+    langs:
+      - typeScript
+    type: class
+    package: office
+    remarks: |-
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Create a proxy object for the document body.
+          var body = context.document.body;
+
+          // Queue a commmand to insert text in to the beginning of the body.
+          // This will cause an OfficeExtension.Error.
+          body.insertText(0);
+
+          // Synchronize the document state by executing the queued-up commands,
+          // and return a promise to indicate task completion.
+          return context.sync();
+      })
+      .catch(function (error) {
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Error code and message: ' + error.toString());
+          }
+      });
+      ```
+    children:
+      - office.OfficeExtension.Error.code
+      - office.OfficeExtension.Error.debugInfo
+      - office.OfficeExtension.Error.innerError
+      - office.OfficeExtension.Error.message
+      - office.OfficeExtension.Error.name
+      - office.OfficeExtension.Error.stack
+      - office.OfficeExtension.Error.traceMessages
+  - uid: office.OfficeExtension.Error.code
+    summary: 'Error code string, such as "InvalidArgument".'
+    name: code
+    fullName: code
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'code: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension.Error.debugInfo
+    summary: 'Debug info (useful for detailed logging of the error, i.e., via `JSON.stringify(...)`<!-- -->).'
+    name: debugInfo
+    fullName: debugInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'debugInfo: DebugInfo;'
+      return:
+        type:
+          - office.OfficeExtension.DebugInfo
+  - uid: office.OfficeExtension.Error.innerError
+    summary: 'Inner error, if applicable.'
+    name: innerError
+    fullName: innerError
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'innerError: Error;'
+      return:
+        type:
+          - Error
+  - uid: office.OfficeExtension.Error.message
+    summary: The error message passed through from the host Office application.
+    name: message
+    fullName: message
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'message: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension.Error.name
+    summary: 'Error name: "OfficeExtension.Error".'
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension.Error.stack
+    summary: 'Stack trace, if applicable.'
+    name: stack
+    fullName: stack
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'stack: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension.Error.traceMessages
+    summary: >-
+      Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`<!--
+      -->. If there was an error, this contains all trace messages that were executed before the error occurred. These
+      messages can help you monitor the program execution sequence and detect the case of the error.
+    name: traceMessages
+    fullName: traceMessages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'traceMessages: string[];'
+      return:
+        type:
+          - 'string[]'
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // The following example shows how you can instrument a batch of commands
+          // to determine where an error occurred. The first batch successfully
+          // inserts the first two paragraphs into the document and cause no errors.
+          // The second batch successfully inserts the third and fourth paragraphs
+          // but fails in the call to insert the fifth paragraph. All other commands
+          // after the failed command in the batch are not executed, including the
+          // command that adds the fifth trace message. In this case, the error
+          // occurred after the fourth paragraph was inserted, and before adding the
+          // fifth trace message.
+
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a proxy object for the document body.
+              var body = context.document.body;
+
+              // Queue a commmand to insert the paragraph at the end of the document body.
+              // Start a batch of commands.
+              body.insertParagraph('1st paragraph', Word.InsertLocation.end);
+              // Queue a command for instrumenting this part of the batch.
+              context.trace('1st paragraph successful');
+
+              body.insertParagraph('2nd paragraph', Word.InsertLocation.end);
+              context.trace('2nd paragraph successful');
+
+              // Synchronize the document state by executing the queued-up commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  // Queue a commmand to insert the paragraph at the end of the document body.
+                  // Start a new batch of commands.
+                  body.insertParagraph('3rd paragraph', Word.InsertLocation.end);
+                  context.trace('3rd paragraph successful');
+
+                  body.insertParagraph('4th paragraph', Word.InsertLocation.end);
+                  context.trace('4th paragraph successful');
+
+                  // This command will cause an error. The trace messages in the queue up to
+                  // this point will be available via Error.traceMessages.
+                  body.insertParagraph(0, '5th paragraph', Word.InsertLocation.end);
+                  // Queue a command for instrumenting this part of the batch.
+                  // This trace message will not be set on Error.traceMessages.
+                  context.trace('5th paragraph successful');
+              }).then(context.sync);
+          })
+          .catch(function (error) {
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Trace messages: ' + error.traceMessages);
+              }
+          });
+
+          // Output: "Trace messages: 3rd paragraph successful,4th paragraph successful"
+          ```

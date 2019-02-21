@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_7
     children:
       - excel_1_7.Excel.ChartLegendEntry.context
@@ -35,7 +35,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_7.Excel.RequestContext
   - uid: excel_1_7.Excel.ChartLegendEntry.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -67,13 +67,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartLegendEntryLoadOptions): Excel.ChartLegendEntry;'
       return:
         type:
-          - excel.Excel.ChartLegendEntry
+          - excel_1_7.Excel.ChartLegendEntry
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartLegendEntryLoadOptions
+            - excel_1_7.Excel.Interfaces.ChartLegendEntryLoadOptions
   - uid: excel_1_7.Excel.ChartLegendEntry.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -87,7 +87,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartLegendEntry;'
       return:
         type:
-          - excel.Excel.ChartLegendEntry
+          - excel_1_7.Excel.ChartLegendEntry
         description: ''
       parameters:
         - id: propertyNames
@@ -107,7 +107,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLegendEntry;'
       return:
         type:
-          - excel.Excel.ChartLegendEntry
+          - excel_1_7.Excel.ChartLegendEntry
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -145,7 +145,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_7.Excel.ChartLegendEntry.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -163,7 +163,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartLegendEntry
+            - excel_1_7.Excel.ChartLegendEntry
   - uid: excel_1_7.Excel.ChartLegendEntry.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -180,7 +180,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartLegendEntryData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendEntryData
+          - excel_1_7.Excel.Interfaces.ChartLegendEntryData
         description: ''
   - uid: excel_1_7.Excel.ChartLegendEntry.visible
     summary: |-

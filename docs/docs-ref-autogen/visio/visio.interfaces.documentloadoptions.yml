@@ -40,7 +40,7 @@ items:
       content: 'application?: Visio.Interfaces.ApplicationLoadOptions;'
       return:
         type:
-          - Visio.Interfaces.ApplicationLoadOptions
+          - visio.Visio.Interfaces.ApplicationLoadOptions
   - uid: visio.Visio.Interfaces.DocumentLoadOptions.view
     summary: |-
       Returns the DocumentView object.

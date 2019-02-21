@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_8
     children:
       - excel_1_8.Excel.WorkbookCreated.context
@@ -33,7 +33,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_8.Excel.RequestContext
   - uid: excel_1_8.Excel.WorkbookCreated.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -47,7 +47,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.WorkbookCreated;'
       return:
         type:
-          - excel.Excel.WorkbookCreated
+          - excel_1_8.Excel.WorkbookCreated
         description: ''
       parameters:
         - id: propertyNames
@@ -67,7 +67,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.WorkbookCreated;'
       return:
         type:
-          - excel.Excel.WorkbookCreated
+          - excel_1_8.Excel.WorkbookCreated
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -92,5 +92,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorkbookCreatedData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorkbookCreatedData
+          - excel_1_8.Excel.Interfaces.WorkbookCreatedData
         description: ''

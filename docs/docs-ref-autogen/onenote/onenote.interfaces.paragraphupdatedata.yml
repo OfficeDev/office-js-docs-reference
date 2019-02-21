@@ -40,4 +40,4 @@ items:
       content: 'table?: OneNote.Interfaces.TableUpdateData;'
       return:
         type:
-          - OneNote.Interfaces.TableUpdateData
+          - onenote.OneNote.Interfaces.TableUpdateData

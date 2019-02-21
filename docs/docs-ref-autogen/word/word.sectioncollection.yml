@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: word
     children:
       - word.Word.SectionCollection.context
@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - word.Word.RequestContext
   - uid: word.Word.SectionCollection.getFirst
     summary: |-
       Gets the first section in this collection. Throws if this collection is empty.
@@ -52,7 +52,7 @@ items:
       content: 'getFirst(): Word.Section;'
       return:
         type:
-          - Word.Section
+          - word.Word.Section
         description: ''
   - uid: word.Word.SectionCollection.getFirstOrNullObject
     summary: |-
@@ -68,7 +68,7 @@ items:
       content: 'getFirstOrNullObject(): Word.Section;'
       return:
         type:
-          - Word.Section
+          - word.Word.Section
         description: ''
   - uid: word.Word.SectionCollection.items
     summary: Gets the loaded child items in this collection.
@@ -115,7 +115,7 @@ items:
         Word.SectionCollection;
       return:
         type:
-          - Word.SectionCollection
+          - word.Word.SectionCollection
         description: ''
       parameters:
         - id: option
@@ -135,7 +135,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.SectionCollection;'
       return:
         type:
-          - Word.SectionCollection
+          - word.Word.SectionCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -152,13 +152,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.SectionCollection;'
       return:
         type:
-          - Word.SectionCollection
+          - word.Word.SectionCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: word.Word.SectionCollection.toJSON
     name: toJSON()
     fullName: toJSON()
@@ -169,7 +169,7 @@ items:
       content: 'toJSON(): Word.Interfaces.SectionCollectionData;'
       return:
         type:
-          - Word.Interfaces.SectionCollectionData
+          - word.Word.Interfaces.SectionCollectionData
         description: ''
   - uid: word.Word.SectionCollection.track
     summary: >-
@@ -187,7 +187,7 @@ items:
       content: 'track(): Word.SectionCollection;'
       return:
         type:
-          - Word.SectionCollection
+          - word.Word.SectionCollection
         description: ''
   - uid: word.Word.SectionCollection.untrack
     summary: >-
@@ -204,5 +204,5 @@ items:
       content: 'untrack(): Word.SectionCollection;'
       return:
         type:
-          - Word.SectionCollection
+          - word.Word.SectionCollection
         description: ''

@@ -2099,7 +2099,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.Functions.convert
     summary: |-
       Converts a number from one measurement system to another.

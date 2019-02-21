@@ -84,7 +84,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.SlicerCollection.getCount
     summary: >-
       Returns the number of slicers in the collection.

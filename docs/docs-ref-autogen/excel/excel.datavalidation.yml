@@ -59,7 +59,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.DataValidation.errorAlert
     summary: |-
       Error alert when user enters invalid data.

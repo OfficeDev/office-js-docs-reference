@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_7
     children:
       - excel_1_7.Excel.ChartLegend.context
@@ -44,7 +44,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_7.Excel.RequestContext
   - uid: excel_1_7.Excel.ChartLegend.format
     summary: |-
       Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
@@ -59,7 +59,7 @@ items:
       content: 'readonly format: Excel.ChartLegendFormat;'
       return:
         type:
-          - excel.Excel.ChartLegendFormat
+          - excel_1_7.Excel.ChartLegendFormat
   - uid: excel_1_7.Excel.ChartLegend.height
     summary: |-
       Represents the height, in points, of the legend on the chart. Null if legend is not visible.
@@ -104,7 +104,7 @@ items:
       content: 'readonly legendEntries: Excel.ChartLegendEntryCollection;'
       return:
         type:
-          - excel.Excel.ChartLegendEntryCollection
+          - excel_1_7.Excel.ChartLegendEntryCollection
   - uid: excel_1_7.Excel.ChartLegend.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -136,13 +136,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartLegendLoadOptions): Excel.ChartLegend;'
       return:
         type:
-          - excel.Excel.ChartLegend
+          - excel_1_7.Excel.ChartLegend
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartLegendLoadOptions
+            - excel_1_7.Excel.Interfaces.ChartLegendLoadOptions
   - uid: excel_1_7.Excel.ChartLegend.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -156,7 +156,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartLegend;'
       return:
         type:
-          - excel.Excel.ChartLegend
+          - excel_1_7.Excel.ChartLegend
         description: |-
 
           #### Examples
@@ -212,7 +212,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLegend;'
       return:
         type:
-          - excel.Excel.ChartLegend
+          - excel_1_7.Excel.ChartLegend
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -280,7 +280,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_7.Excel.ChartLegend.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -298,7 +298,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartLegend
+            - excel_1_7.Excel.ChartLegend
   - uid: excel_1_7.Excel.ChartLegend.showShadow
     summary: |-
       Represents if the legend has a shadow on the chart.
@@ -330,7 +330,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartLegendData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendData
+          - excel_1_7.Excel.Interfaces.ChartLegendData
         description: ''
   - uid: excel_1_7.Excel.ChartLegend.top
     summary: |-

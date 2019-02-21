@@ -55,7 +55,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.PageBreak.delete
     summary: >-
       Deletes a page break object.

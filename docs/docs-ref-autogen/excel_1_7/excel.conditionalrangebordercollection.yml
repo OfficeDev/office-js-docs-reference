@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_7
     children:
       - excel_1_7.Excel.ConditionalRangeBorderCollection.bottom
@@ -42,7 +42,7 @@ items:
       content: 'readonly bottom: Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
+          - excel_1_7.Excel.ConditionalRangeBorder
   - uid: excel_1_7.Excel.ConditionalRangeBorderCollection.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -56,7 +56,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_7.Excel.RequestContext
   - uid: excel_1_7.Excel.ConditionalRangeBorderCollection.count
     summary: |-
       Number of border objects in the collection. Read-only.
@@ -86,13 +86,13 @@ items:
       content: 'getItem(index: Excel.ConditionalRangeBorderIndex): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
+          - excel_1_7.Excel.ConditionalRangeBorder
         description: ''
       parameters:
         - id: index
           description: Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
           type:
-            - excel.Excel.ConditionalRangeBorderIndex
+            - excel_1_7.Excel.ConditionalRangeBorderIndex
   - uid: excel_1_7.Excel.ConditionalRangeBorderCollection.getItem_1
     summary: |-
       Gets a border object using its name.
@@ -107,7 +107,7 @@ items:
       content: 'getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
+          - excel_1_7.Excel.ConditionalRangeBorder
         description: ''
       parameters:
         - id: indexString
@@ -128,7 +128,7 @@ items:
       content: 'getItemAt(index: number): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
+          - excel_1_7.Excel.ConditionalRangeBorder
         description: ''
       parameters:
         - id: index
@@ -161,7 +161,7 @@ items:
       content: 'readonly left: Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
+          - excel_1_7.Excel.ConditionalRangeBorder
   - uid: excel_1_7.Excel.ConditionalRangeBorderCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -195,7 +195,7 @@ items:
         Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
       return:
         type:
-          - excel.Excel.ConditionalRangeBorderCollection
+          - excel_1_7.Excel.ConditionalRangeBorderCollection
         description: ''
       parameters:
         - id: option
@@ -215,7 +215,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalRangeBorderCollection;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorderCollection
+          - excel_1_7.Excel.ConditionalRangeBorderCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -232,13 +232,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.ConditionalRangeBorderCollection;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorderCollection
+          - excel_1_7.Excel.ConditionalRangeBorderCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel_1_7.Excel.ConditionalRangeBorderCollection.right
     summary: |-
       Gets the right border. Read-only.
@@ -253,7 +253,7 @@ items:
       content: 'readonly right: Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
+          - excel_1_7.Excel.ConditionalRangeBorder
   - uid: excel_1_7.Excel.ConditionalRangeBorderCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -270,7 +270,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeBorderCollectionData
+          - excel_1_7.Excel.Interfaces.ConditionalRangeBorderCollectionData
         description: ''
   - uid: excel_1_7.Excel.ConditionalRangeBorderCollection.top
     summary: |-
@@ -286,4 +286,4 @@ items:
       content: 'readonly top: Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
+          - excel_1_7.Excel.ConditionalRangeBorder

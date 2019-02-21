@@ -70,8 +70,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, options?:
-        Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: CommonAPI.EventType, handler: (type: CommonAPI.EventType) => void, options?:
+        CommonAPI.AsyncContextOptions, callback?: (result: CommonAPI.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -80,23 +80,23 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - Office.EventType
+            - CommonAPI.EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
             The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
           type:
-            - '(type: Office.EventType) => void'
+            - '(type: CommonAPI.EventType) => void'
         - id: options
           description: 'Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - Office.AsyncContextOptions
+            - CommonAPI.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.Mailbox.addHandlerAsync_1
     summary: |-
       Adds an event handler for a supported event.
@@ -139,8 +139,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, callback?:
-        (result: Office.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: CommonAPI.EventType, handler: (type: CommonAPI.EventType) => void, callback?:
+        (result: CommonAPI.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -149,19 +149,19 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - Office.EventType
+            - CommonAPI.EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
             The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
           type:
-            - '(type: Office.EventType) => void'
+            - '(type: CommonAPI.EventType) => void'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.Mailbox.addHandlerAsync_2
     summary: |-
       Adds an event handler for a supported event.
@@ -180,7 +180,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void): void;'
+      content: 'addHandlerAsync(eventType: CommonAPI.EventType, handler: (type: CommonAPI.EventType) => void): void;'
       return:
         type:
           - void
@@ -189,13 +189,13 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - Office.EventType
+            - CommonAPI.EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
             The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
           type:
-            - '(type: Office.EventType) => void'
+            - '(type: CommonAPI.EventType) => void'
   - uid: Outlook_1_6.Office.Mailbox.convertToEwsId
     summary: >-
       Converts an item ID formatted for REST into EWS format.
@@ -283,7 +283,7 @@ items:
       content: 'convertToLocalClientTime(timeValue: Date): LocalClientTime;'
       return:
         type:
-          - LocalClientTime
+          - Outlook_1_6.Office.LocalClientTime
         description: ''
       parameters:
         - id: timeValue
@@ -375,7 +375,7 @@ items:
         - id: input
           description: The local time value to convert.
           type:
-            - LocalClientTime
+            - Outlook_1_6.Office.LocalClientTime
   - uid: Outlook_1_6.Office.Mailbox.displayAppointmentForm
     summary: >-
       Displays an existing calendar appointment.
@@ -564,7 +564,7 @@ items:
         - id: parameters
           description: An AppointmentForm describing the new appointment. All properties are optional.
           type:
-            - AppointmentForm
+            - Outlook_1_6.Office.AppointmentForm
   - uid: Outlook_1_6.Office.Mailbox.displayNewMessageForm
     summary: >-
       Displays a form for creating a new message.
@@ -739,8 +739,8 @@ items:
     type: method
     syntax:
       content: >-
-        getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (result:
-        Office.AsyncResult<string>) => void): void;
+        getCallbackTokenAsync(options: CommonAPI.AsyncContextOptions & { isRest?: boolean }, callback: (result:
+        CommonAPI.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -752,7 +752,7 @@ items:
             provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is false.
             asyncContext: Any state data that is passed to the asynchronous method.
           type:
-            - 'Office.AsyncContextOptions & { isRest?: boolean }'
+            - 'CommonAPI.AsyncContextOptions & { isRest?: boolean }'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -760,7 +760,7 @@ items:
             was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
             information.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(result: CommonAPI.AsyncResult<string>) => void'
   - uid: Outlook_1_6.Office.Mailbox.getCallbackTokenAsync_1
     summary: >-
       Gets a string that contains a token used to get an attachment or item from an Exchange Server.
@@ -812,7 +812,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCallbackTokenAsync(callback: (result: Office.AsyncResult<string>) => void): void;'
+      content: 'getCallbackTokenAsync(callback: (result: CommonAPI.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -825,7 +825,7 @@ items:
             was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
             information.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(result: CommonAPI.AsyncResult<string>) => void'
   - uid: Outlook_1_6.Office.Mailbox.getCallbackTokenAsync_2
     summary: >-
       Gets a string that contains a token used to get an attachment or item from an Exchange Server.
@@ -861,7 +861,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCallbackTokenAsync(callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;'
+      content: 'getCallbackTokenAsync(callback: (result: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;'
       return:
         type:
           - void
@@ -874,7 +874,7 @@ items:
             was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
             information.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(result: CommonAPI.AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
@@ -901,7 +901,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getUserIdentityTokenAsync(callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;'
+      content: 'getUserIdentityTokenAsync(callback: (result: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;'
       return:
         type:
           - void
@@ -914,7 +914,7 @@ items:
             was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
             information.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(result: CommonAPI.AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.\|
           type:
@@ -957,7 +957,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getUserIdentityTokenAsync(callback: (result: Office.AsyncResult<string>) => void): void;'
+      content: 'getUserIdentityTokenAsync(callback: (result: CommonAPI.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -970,7 +970,7 @@ items:
             was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
             information.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(result: CommonAPI.AsyncResult<string>) => void'
   - uid: Outlook_1_6.Office.Mailbox.makeEwsRequestAsync
     summary: >-
       Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the
@@ -1041,7 +1041,7 @@ items:
     type: method
     syntax:
       content: >-
-        makeEwsRequestAsync(data: any, callback: (result: Office.AsyncResult<string>) => void, userContext?: any):
+        makeEwsRequestAsync(data: any, callback: (result: CommonAPI.AsyncResult<string>) => void, userContext?: any):
         void;
       return:
         type:
@@ -1058,7 +1058,7 @@ items:
             of type Office.AsyncResult. The `value` property of the result is the XML of the EWS request provided as a
             string. If the result exceeds 1 MB in size, an error message is returned instead.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(result: CommonAPI.AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
@@ -1181,7 +1181,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'makeEwsRequestAsync(data: any, callback: (result: Office.AsyncResult<string>) => void): void;'
+      content: 'makeEwsRequestAsync(data: any, callback: (result: CommonAPI.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -1197,7 +1197,7 @@ items:
             of type Office.AsyncResult. The `value` property of the result is the XML of the EWS request provided as a
             string. If the result exceeds 1 MB in size, an error message is returned instead.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(result: CommonAPI.AsyncResult<string>) => void'
   - uid: Outlook_1_6.Office.Mailbox.removeHandlerAsync
     summary: |-
       Removes the event handlers for a supported event type.
@@ -1217,8 +1217,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: Office.AsyncContextOptions, callback?: (result:
-        Office.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: CommonAPI.EventType, options?: CommonAPI.AsyncContextOptions, callback?: (result:
+        CommonAPI.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -1227,17 +1227,17 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - Office.EventType
+            - CommonAPI.EventType
         - id: options
           description: 'Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - Office.AsyncContextOptions
+            - CommonAPI.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.Mailbox.removeHandlerAsync_1
     summary: |-
       Removes the event handlers for a supported event type.
@@ -1257,7 +1257,7 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, callback?: (result: Office.AsyncResult<void>) => void):
+        removeHandlerAsync(eventType: CommonAPI.EventType, callback?: (result: CommonAPI.AsyncResult<void>) => void):
         void;
       return:
         type:
@@ -1267,13 +1267,13 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - Office.EventType
+            - CommonAPI.EventType
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.Mailbox.removeHandlerAsync_2
     summary: |-
       Removes the event handlers for a supported event type.
@@ -1292,7 +1292,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'removeHandlerAsync(eventType: Office.EventType): void;'
+      content: 'removeHandlerAsync(eventType: CommonAPI.EventType): void;'
       return:
         type:
           - void
@@ -1301,7 +1301,7 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - Office.EventType
+            - CommonAPI.EventType
   - uid: Outlook_1_6.Office.Mailbox.diagnostics
     summary: >-
       Provides diagnostic information to an Outlook add-in.
@@ -1345,7 +1345,7 @@ items:
       content: 'diagnostics: Diagnostics;'
       return:
         type:
-          - Diagnostics
+          - Outlook_1_6.Office.Diagnostics
   - uid: Outlook_1_6.Office.Mailbox.ewsUrl
     summary: >-
       Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.
@@ -1446,4 +1446,4 @@ items:
       content: 'userProfile: UserProfile;'
       return:
         type:
-          - UserProfile
+          - Outlook_1_6.Office.UserProfile

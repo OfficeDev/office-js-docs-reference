@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_7
     children:
       - excel_1_7.Excel.ConditionalRangeFont.bold
@@ -86,7 +86,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_7.Excel.RequestContext
   - uid: excel_1_7.Excel.ConditionalRangeFont.italic
     summary: |-
       Represents the italic status of the font.
@@ -133,13 +133,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ConditionalRangeFontLoadOptions): Excel.ConditionalRangeFont;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFont
+          - excel_1_7.Excel.ConditionalRangeFont
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ConditionalRangeFontLoadOptions
+            - excel_1_7.Excel.Interfaces.ConditionalRangeFontLoadOptions
   - uid: excel_1_7.Excel.ConditionalRangeFont.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -153,7 +153,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalRangeFont;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFont
+          - excel_1_7.Excel.ConditionalRangeFont
         description: ''
       parameters:
         - id: propertyNames
@@ -173,7 +173,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalRangeFont;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFont
+          - excel_1_7.Excel.ConditionalRangeFont
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -211,7 +211,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_7.Excel.ConditionalRangeFont.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -229,7 +229,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ConditionalRangeFont
+            - excel_1_7.Excel.ConditionalRangeFont
   - uid: excel_1_7.Excel.ConditionalRangeFont.strikethrough
     summary: |-
       Represents the strikethrough status of the font.
@@ -261,7 +261,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFontData
+          - excel_1_7.Excel.Interfaces.ConditionalRangeFontData
         description: ''
   - uid: excel_1_7.Excel.ConditionalRangeFont.underline
     summary: |-

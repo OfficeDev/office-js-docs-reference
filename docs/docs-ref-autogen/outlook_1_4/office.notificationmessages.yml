@@ -48,8 +48,8 @@ items:
     type: method
     syntax:
       content: >-
-        addAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions,
-        callback?: (result: Office.AsyncResult<void>) => void): void;
+        addAsync(key: string, JSONmessage: NotificationMessageDetails, options?: CommonAPI.AsyncContextOptions,
+        callback?: (result: CommonAPI.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -66,13 +66,13 @@ items:
             A JSON object that contains the notification message to be added to the item. It contains a
             NotificationMessageDetails object.
           type:
-            - NotificationMessageDetails
+            - Outlook_1_4.Office.NotificationMessageDetails
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - CommonAPI.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -81,7 +81,7 @@ items:
 
             \[Api set: Mailbox 1.3\]
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_4.Office.NotificationMessages.addAsync_1
     summary: >-
       Adds a notification to an item.
@@ -146,7 +146,7 @@ items:
 
             \[Api set: Mailbox 1.3\]
           type:
-            - NotificationMessageDetails
+            - Outlook_1_4.Office.NotificationMessageDetails
   - uid: Outlook_1_4.Office.NotificationMessages.addAsync_2
     summary: >-
       Adds a notification to an item.
@@ -166,7 +166,7 @@ items:
     type: method
     syntax:
       content: >-
-        addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: Office.AsyncResult<void>)
+        addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: CommonAPI.AsyncResult<void>)
         => void): void;
       return:
         type:
@@ -184,7 +184,7 @@ items:
             A JSON object that contains the notification message to be added to the item. It contains a
             NotificationMessageDetails object.
           type:
-            - NotificationMessageDetails
+            - Outlook_1_4.Office.NotificationMessageDetails
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -193,7 +193,7 @@ items:
 
             \[Api set: Mailbox 1.3\]
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_4.Office.NotificationMessages.getAllAsync
     summary: |-
       Returns all keys and messages for an item.
@@ -211,8 +211,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAllAsync(options?: Office.AsyncContextOptions, callback?: (result:
-        Office.AsyncResult<NotificationMessageDetails[]>) => void): void;
+        getAllAsync(options?: CommonAPI.AsyncContextOptions, callback?: (result:
+        CommonAPI.AsyncResult<NotificationMessageDetails[]>) => void): void;
       return:
         type:
           - void
@@ -223,14 +223,14 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - CommonAPI.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. The `value` property of the result is an array of
             NotificationMessageDetails objects.
           type:
-            - '(result: Office.AsyncResult<NotificationMessageDetails[]>) => void'
+            - '(result: CommonAPI.AsyncResult<NotificationMessageDetails[]>) => void'
   - uid: Outlook_1_4.Office.NotificationMessages.getAllAsync_1
     summary: |-
       Returns all keys and messages for an item.
@@ -267,7 +267,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAllAsync(callback: (result: Office.AsyncResult<NotificationMessageDetails[]>) => void): void;'
+      content: 'getAllAsync(callback: (result: CommonAPI.AsyncResult<NotificationMessageDetails[]>) => void): void;'
       return:
         type:
           - void
@@ -279,7 +279,7 @@ items:
             parameter of type Office.AsyncResult. The `value` property of the result is an array of
             NotificationMessageDetails objects.
           type:
-            - '(result: Office.AsyncResult<NotificationMessageDetails[]>) => void'
+            - '(result: CommonAPI.AsyncResult<NotificationMessageDetails[]>) => void'
   - uid: Outlook_1_4.Office.NotificationMessages.getAllAsync_2
     summary: |-
       Returns all keys and messages for an item.
@@ -318,8 +318,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeAsync(key: string, options?: Office.AsyncContextOptions, callback?: (result:
-        Office.AsyncResult<void>) => void): void;
+        removeAsync(key: string, options?: CommonAPI.AsyncContextOptions, callback?: (result:
+        CommonAPI.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -332,13 +332,13 @@ items:
         - id: options
           description: ''
           type:
-            - Office.AsyncContextOptions
+            - CommonAPI.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_4.Office.NotificationMessages.removeAsync_1
     summary: |-
       Removes a notification message for an item.
@@ -392,7 +392,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'removeAsync(key: string, callback: (result: Office.AsyncResult<void>) => void): void;'
+      content: 'removeAsync(key: string, callback: (result: CommonAPI.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -407,7 +407,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_4.Office.NotificationMessages.replaceAsync
     summary: |-
       Replaces a notification message that has a given key with another message.
@@ -427,8 +427,8 @@ items:
     type: method
     syntax:
       content: >-
-        replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions,
-        callback?: (result: Office.AsyncResult<void>) => void): void;
+        replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options?: CommonAPI.AsyncContextOptions,
+        callback?: (result: CommonAPI.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -443,19 +443,19 @@ items:
             A JSON object that contains the new notification message to replace the existing message. It contains a
             NotificationMessageDetails object.
           type:
-            - NotificationMessageDetails
+            - Outlook_1_4.Office.NotificationMessageDetails
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - CommonAPI.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_4.Office.NotificationMessages.replaceAsync_1
     summary: |-
       Replaces a notification message that has a given key with another message.
@@ -505,7 +505,7 @@ items:
             A JSON object that contains the new notification message to replace the existing message. It contains a
             NotificationMessageDetails object.
           type:
-            - NotificationMessageDetails
+            - Outlook_1_4.Office.NotificationMessageDetails
   - uid: Outlook_1_4.Office.NotificationMessages.replaceAsync_2
     summary: |-
       Replaces a notification message that has a given key with another message.
@@ -526,7 +526,7 @@ items:
     syntax:
       content: >-
         replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result:
-        Office.AsyncResult<void>) => void): void;
+        CommonAPI.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -541,10 +541,10 @@ items:
             A JSON object that contains the new notification message to replace the existing message. It contains a
             NotificationMessageDetails object.
           type:
-            - NotificationMessageDetails
+            - Outlook_1_4.Office.NotificationMessageDetails
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'

@@ -42,7 +42,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartLegendFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendFormatLoadOptions
+          - excel_1_1.Excel.Interfaces.ChartLegendFormatLoadOptions
   - uid: excel_1_1.Excel.Interfaces.ChartLegendLoadOptions.overlay
     summary: |-
       Boolean value for whether the chart legend should overlap with the main body of the chart.

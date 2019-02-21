@@ -70,7 +70,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ChartDataLabel.format
     summary: |-
       Represents the format of chart data label.

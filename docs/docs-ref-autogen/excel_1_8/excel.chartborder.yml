@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_8
     children:
       - excel_1_8.Excel.ChartBorder.clear
@@ -69,7 +69,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_8.Excel.RequestContext
   - uid: excel_1_8.Excel.ChartBorder.lineStyle
     summary: |-
       Represents the line style of the border. See Excel.ChartLineStyle for details.
@@ -120,13 +120,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartBorderLoadOptions): Excel.ChartBorder;'
       return:
         type:
-          - excel.Excel.ChartBorder
+          - excel_1_8.Excel.ChartBorder
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartBorderLoadOptions
+            - excel_1_8.Excel.Interfaces.ChartBorderLoadOptions
   - uid: excel_1_8.Excel.ChartBorder.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -140,7 +140,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartBorder;'
       return:
         type:
-          - excel.Excel.ChartBorder
+          - excel_1_8.Excel.ChartBorder
         description: ''
       parameters:
         - id: propertyNames
@@ -160,7 +160,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartBorder;'
       return:
         type:
-          - excel.Excel.ChartBorder
+          - excel_1_8.Excel.ChartBorder
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -198,7 +198,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.ChartBorder.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -216,7 +216,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartBorder
+            - excel_1_8.Excel.ChartBorder
   - uid: excel_1_8.Excel.ChartBorder.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -233,7 +233,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartBorderData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBorderData
+          - excel_1_8.Excel.Interfaces.ChartBorderData
         description: ''
   - uid: excel_1_8.Excel.ChartBorder.weight
     summary: |-

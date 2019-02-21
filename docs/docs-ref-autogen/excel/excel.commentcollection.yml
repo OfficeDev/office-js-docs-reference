@@ -114,7 +114,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.CommentCollection.getCount
     summary: >-
       Gets the number of comments in the collection.

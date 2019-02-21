@@ -32,7 +32,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelFormatData
+          - excel_1_1.Excel.Interfaces.ChartDataLabelFormatData
   - uid: excel_1_1.Excel.Interfaces.ChartDataLabelsData.position
     summary: >-
       DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for

@@ -210,7 +210,7 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableLoadOptions
+          - word.Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.parentTableCell
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains this table. Throws if it is not contained in a
@@ -227,7 +227,7 @@ items:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableCellLoadOptions
+          - word.Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.parentTableCellOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains this table. Returns a null object if it is not
@@ -244,7 +244,7 @@ items:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableCellLoadOptions
+          - word.Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.parentTableOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains this table. Returns a null object if it is not
@@ -261,7 +261,7 @@ items:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableLoadOptions
+          - word.Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.rowCount
     summary: |-
       For EACH ITEM in the collection: Gets the number of rows in the table. Read-only.

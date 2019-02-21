@@ -64,7 +64,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ChartSeriesCollection.count
     summary: |-
       Returns the number of series in the collection. Read-only.

@@ -83,7 +83,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.PivotTableCollection.getCount
     summary: |-
       Gets the number of pivot tables in the collection.

@@ -61,7 +61,7 @@ items:
       content: 'axes?: Excel.Interfaces.ChartAxesLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxesLoadOptions
+          - excel_1_8.Excel.Interfaces.ChartAxesLoadOptions
   - uid: excel_1_8.Excel.Interfaces.ChartCollectionLoadOptions.categoryLabelLevel
     summary: >-
       For EACH ITEM in the collection: Returns or sets a ChartCategoryLabelLevel enumeration constant referring to the
@@ -108,7 +108,7 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
+          - excel_1_8.Excel.Interfaces.ChartDataLabelsLoadOptions
   - uid: excel_1_8.Excel.Interfaces.ChartCollectionLoadOptions.displayBlanksAs
     summary: |-
       For EACH ITEM in the collection: Returns or sets the way that blank cells are plotted on a chart. Read/Write.
@@ -138,7 +138,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAreaFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAreaFormatLoadOptions
+          - excel_1_8.Excel.Interfaces.ChartAreaFormatLoadOptions
   - uid: excel_1_8.Excel.Interfaces.ChartCollectionLoadOptions.height
     summary: |-
       For EACH ITEM in the collection: Represents the height, in points, of the chart object.
@@ -198,7 +198,7 @@ items:
       content: 'legend?: Excel.Interfaces.ChartLegendLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendLoadOptions
+          - excel_1_8.Excel.Interfaces.ChartLegendLoadOptions
   - uid: excel_1_8.Excel.Interfaces.ChartCollectionLoadOptions.name
     summary: |-
       For EACH ITEM in the collection: Represents the name of a chart object.
@@ -228,7 +228,7 @@ items:
       content: 'plotArea?: Excel.Interfaces.ChartPlotAreaLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPlotAreaLoadOptions
+          - excel_1_8.Excel.Interfaces.ChartPlotAreaLoadOptions
   - uid: excel_1_8.Excel.Interfaces.ChartCollectionLoadOptions.plotBy
     summary: >-
       For EACH ITEM in the collection: Returns or sets the way columns or rows are used as data series on the chart.
@@ -277,7 +277,7 @@ items:
       content: 'series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions
+          - excel_1_8.Excel.Interfaces.ChartSeriesCollectionLoadOptions
   - uid: excel_1_8.Excel.Interfaces.ChartCollectionLoadOptions.seriesNameLevel
     summary: >-
       For EACH ITEM in the collection: Returns or sets a ChartSeriesNameLevel enumeration constant referring to the
@@ -359,7 +359,7 @@ items:
       content: 'title?: Excel.Interfaces.ChartTitleLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleLoadOptions
+          - excel_1_8.Excel.Interfaces.ChartTitleLoadOptions
   - uid: excel_1_8.Excel.Interfaces.ChartCollectionLoadOptions.top
     summary: >-
       For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the object to the top of
@@ -406,4 +406,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetLoadOptions
+          - excel_1_8.Excel.Interfaces.WorksheetLoadOptions

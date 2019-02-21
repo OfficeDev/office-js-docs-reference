@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_2
     children:
       - excel_1_2.Excel.RangeBorderCollection.context
@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_2.Excel.RequestContext
   - uid: excel_1_2.Excel.RangeBorderCollection.count
     summary: |-
       Number of border objects in the collection. Read-only.
@@ -67,7 +67,7 @@ items:
       content: 'getItem(index: Excel.BorderIndex): Excel.RangeBorder;'
       return:
         type:
-          - excel.Excel.RangeBorder
+          - excel_1_2.Excel.RangeBorder
         description: |-
 
           #### Examples
@@ -95,7 +95,7 @@ items:
         - id: index
           description: Index value of the border object to be retrieved. See Excel.BorderIndex for details.
           type:
-            - excel.Excel.BorderIndex
+            - excel_1_2.Excel.BorderIndex
   - uid: excel_1_2.Excel.RangeBorderCollection.getItem_1
     summary: |-
       Gets a border object using its name.
@@ -112,7 +112,7 @@ items:
         | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
       return:
         type:
-          - excel.Excel.RangeBorder
+          - excel_1_2.Excel.RangeBorder
         description: ''
       parameters:
         - id: indexString
@@ -135,7 +135,7 @@ items:
       content: 'getItemAt(index: number): Excel.RangeBorder;'
       return:
         type:
-          - excel.Excel.RangeBorder
+          - excel_1_2.Excel.RangeBorder
         description: |-
 
           #### Examples
@@ -208,7 +208,7 @@ items:
         Excel.RangeBorderCollection;
       return:
         type:
-          - excel.Excel.RangeBorderCollection
+          - excel_1_2.Excel.RangeBorderCollection
         description: ''
       parameters:
         - id: option
@@ -228,7 +228,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.RangeBorderCollection;'
       return:
         type:
-          - excel.Excel.RangeBorderCollection
+          - excel_1_2.Excel.RangeBorderCollection
         description: |-
 
           #### Examples
@@ -290,13 +290,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;'
       return:
         type:
-          - excel.Excel.RangeBorderCollection
+          - excel_1_2.Excel.RangeBorderCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel_1_2.Excel.RangeBorderCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -313,5 +313,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeBorderCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeBorderCollectionData
+          - excel_1_2.Excel.Interfaces.RangeBorderCollectionData
         description: ''

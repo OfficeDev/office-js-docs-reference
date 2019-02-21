@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_8
     children:
       - excel_1_8.Excel.PivotItem.context
@@ -38,7 +38,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_8.Excel.RequestContext
   - uid: excel_1_8.Excel.PivotItem.id
     summary: |-
       Id of the PivotItem.
@@ -100,13 +100,13 @@ items:
       content: 'load(option?: Excel.Interfaces.PivotItemLoadOptions): Excel.PivotItem;'
       return:
         type:
-          - excel.Excel.PivotItem
+          - excel_1_8.Excel.PivotItem
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.PivotItemLoadOptions
+            - excel_1_8.Excel.Interfaces.PivotItemLoadOptions
   - uid: excel_1_8.Excel.PivotItem.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -120,7 +120,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.PivotItem;'
       return:
         type:
-          - excel.Excel.PivotItem
+          - excel_1_8.Excel.PivotItem
         description: ''
       parameters:
         - id: propertyNames
@@ -140,7 +140,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotItem;'
       return:
         type:
-          - excel.Excel.PivotItem
+          - excel_1_8.Excel.PivotItem
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -193,7 +193,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.PivotItem.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -211,7 +211,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.PivotItem
+            - excel_1_8.Excel.PivotItem
   - uid: excel_1_8.Excel.PivotItem.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -228,7 +228,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.PivotItemData;'
       return:
         type:
-          - excel.Excel.Interfaces.PivotItemData
+          - excel_1_8.Excel.Interfaces.PivotItemData
         description: ''
   - uid: excel_1_8.Excel.PivotItem.visible
     summary: |-

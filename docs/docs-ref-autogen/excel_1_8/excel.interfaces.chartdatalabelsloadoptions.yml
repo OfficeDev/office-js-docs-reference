@@ -67,7 +67,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelFormatLoadOptions
+          - excel_1_8.Excel.Interfaces.ChartDataLabelFormatLoadOptions
   - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsLoadOptions.horizontalAlignment
     summary: >-
       Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This

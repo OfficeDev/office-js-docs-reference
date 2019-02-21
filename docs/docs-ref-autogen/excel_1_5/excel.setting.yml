@@ -15,7 +15,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_5
     children:
       - excel_1_5.Excel.Setting.context
@@ -41,7 +41,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_5.Excel.RequestContext
   - uid: excel_1_5.Excel.Setting.delete
     summary: |-
       Deletes the setting.
@@ -125,13 +125,13 @@ items:
       content: 'load(option?: Excel.Interfaces.SettingLoadOptions): Excel.Setting;'
       return:
         type:
-          - excel.Excel.Setting
+          - excel_1_5.Excel.Setting
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.SettingLoadOptions
+            - excel_1_5.Excel.Interfaces.SettingLoadOptions
   - uid: excel_1_5.Excel.Setting.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -145,7 +145,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Setting;'
       return:
         type:
-          - excel.Excel.Setting
+          - excel_1_5.Excel.Setting
         description: ''
       parameters:
         - id: propertyNames
@@ -165,7 +165,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Setting;'
       return:
         type:
-          - excel.Excel.Setting
+          - excel_1_5.Excel.Setting
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -203,7 +203,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_5.Excel.Setting.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -221,7 +221,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Setting
+            - excel_1_5.Excel.Setting
   - uid: excel_1_5.Excel.Setting.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -238,7 +238,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.SettingData;'
       return:
         type:
-          - excel.Excel.Interfaces.SettingData
+          - excel_1_5.Excel.Interfaces.SettingData
         description: ''
   - uid: excel_1_5.Excel.Setting.value
     summary: |-

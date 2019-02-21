@@ -36,7 +36,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.TopBottomConditionalFormat.format
     summary: >-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_7
     children:
       - excel_1_7.Excel.ConditionalFormat.cellValue
@@ -60,7 +60,7 @@ items:
       content: 'readonly cellValue: Excel.CellValueConditionalFormat;'
       return:
         type:
-          - excel.Excel.CellValueConditionalFormat
+          - excel_1_7.Excel.CellValueConditionalFormat
         description: |-
 
           #### Examples
@@ -93,7 +93,7 @@ items:
       content: 'readonly cellValueOrNullObject: Excel.CellValueConditionalFormat;'
       return:
         type:
-          - excel.Excel.CellValueConditionalFormat
+          - excel_1_7.Excel.CellValueConditionalFormat
   - uid: excel_1_7.Excel.ConditionalFormat.colorScale
     summary: >-
       Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
@@ -110,7 +110,7 @@ items:
       content: 'readonly colorScale: Excel.ColorScaleConditionalFormat;'
       return:
         type:
-          - excel.Excel.ColorScaleConditionalFormat
+          - excel_1_7.Excel.ColorScaleConditionalFormat
         description: |-
 
           #### Examples
@@ -147,7 +147,7 @@ items:
       content: 'readonly colorScaleOrNullObject: Excel.ColorScaleConditionalFormat;'
       return:
         type:
-          - excel.Excel.ColorScaleConditionalFormat
+          - excel_1_7.Excel.ColorScaleConditionalFormat
   - uid: excel_1_7.Excel.ConditionalFormat.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -161,7 +161,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_7.Excel.RequestContext
   - uid: excel_1_7.Excel.ConditionalFormat.custom
     summary: |-
       Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
@@ -176,7 +176,7 @@ items:
       content: 'readonly custom: Excel.CustomConditionalFormat;'
       return:
         type:
-          - excel.Excel.CustomConditionalFormat
+          - excel_1_7.Excel.CustomConditionalFormat
         description: |-
 
           #### Examples
@@ -206,7 +206,7 @@ items:
       content: 'readonly customOrNullObject: Excel.CustomConditionalFormat;'
       return:
         type:
-          - excel.Excel.CustomConditionalFormat
+          - excel_1_7.Excel.CustomConditionalFormat
   - uid: excel_1_7.Excel.ConditionalFormat.dataBar
     summary: |-
       Returns the data bar properties if the current conditional format is a data bar. Read-only.
@@ -221,7 +221,7 @@ items:
       content: 'readonly dataBar: Excel.DataBarConditionalFormat;'
       return:
         type:
-          - excel.Excel.DataBarConditionalFormat
+          - excel_1_7.Excel.DataBarConditionalFormat
         description: |-
 
           #### Examples
@@ -251,7 +251,7 @@ items:
       content: 'readonly dataBarOrNullObject: Excel.DataBarConditionalFormat;'
       return:
         type:
-          - excel.Excel.DataBarConditionalFormat
+          - excel_1_7.Excel.DataBarConditionalFormat
   - uid: excel_1_7.Excel.ConditionalFormat.delete
     summary: |-
       Deletes this conditional format.
@@ -284,7 +284,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_7.Excel.Range
         description: |-
 
           #### Examples
@@ -332,7 +332,7 @@ items:
       content: 'getRangeOrNullObject(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_7.Excel.Range
         description: ''
   - uid: excel_1_7.Excel.ConditionalFormat.iconSet
     summary: |-
@@ -348,7 +348,7 @@ items:
       content: 'readonly iconSet: Excel.IconSetConditionalFormat;'
       return:
         type:
-          - excel.Excel.IconSetConditionalFormat
+          - excel_1_7.Excel.IconSetConditionalFormat
         description: |-
 
           #### Examples
@@ -407,7 +407,7 @@ items:
       content: 'readonly iconSetOrNullObject: Excel.IconSetConditionalFormat;'
       return:
         type:
-          - excel.Excel.IconSetConditionalFormat
+          - excel_1_7.Excel.IconSetConditionalFormat
   - uid: excel_1_7.Excel.ConditionalFormat.id
     summary: |-
       The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
@@ -454,13 +454,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ConditionalFormatLoadOptions): Excel.ConditionalFormat;'
       return:
         type:
-          - excel.Excel.ConditionalFormat
+          - excel_1_7.Excel.ConditionalFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ConditionalFormatLoadOptions
+            - excel_1_7.Excel.Interfaces.ConditionalFormatLoadOptions
   - uid: excel_1_7.Excel.ConditionalFormat.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -474,7 +474,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalFormat;'
       return:
         type:
-          - excel.Excel.ConditionalFormat
+          - excel_1_7.Excel.ConditionalFormat
         description: ''
       parameters:
         - id: propertyNames
@@ -494,7 +494,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalFormat;'
       return:
         type:
-          - excel.Excel.ConditionalFormat
+          - excel_1_7.Excel.ConditionalFormat
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -517,7 +517,7 @@ items:
       content: 'readonly preset: Excel.PresetCriteriaConditionalFormat;'
       return:
         type:
-          - excel.Excel.PresetCriteriaConditionalFormat
+          - excel_1_7.Excel.PresetCriteriaConditionalFormat
         description: |-
 
           #### Examples
@@ -548,7 +548,7 @@ items:
       content: 'readonly presetOrNullObject: Excel.PresetCriteriaConditionalFormat;'
       return:
         type:
-          - excel.Excel.PresetCriteriaConditionalFormat
+          - excel_1_7.Excel.PresetCriteriaConditionalFormat
   - uid: excel_1_7.Excel.ConditionalFormat.priority
     summary: >-
       The priority (or index) within the conditional format collection that this conditional format currently exists in.
@@ -598,7 +598,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_7.Excel.ConditionalFormat.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -616,7 +616,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ConditionalFormat
+            - excel_1_7.Excel.ConditionalFormat
   - uid: excel_1_7.Excel.ConditionalFormat.stopIfTrue
     summary: >-
       If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
@@ -650,7 +650,7 @@ items:
       content: 'readonly textComparison: Excel.TextConditionalFormat;'
       return:
         type:
-          - excel.Excel.TextConditionalFormat
+          - excel_1_7.Excel.TextConditionalFormat
         description: |-
 
           #### Examples
@@ -683,7 +683,7 @@ items:
       content: 'readonly textComparisonOrNullObject: Excel.TextConditionalFormat;'
       return:
         type:
-          - excel.Excel.TextConditionalFormat
+          - excel_1_7.Excel.TextConditionalFormat
   - uid: excel_1_7.Excel.ConditionalFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -700,7 +700,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalFormatData
+          - excel_1_7.Excel.Interfaces.ConditionalFormatData
         description: ''
   - uid: excel_1_7.Excel.ConditionalFormat.topBottom
     summary: >-
@@ -718,7 +718,7 @@ items:
       content: 'readonly topBottom: Excel.TopBottomConditionalFormat;'
       return:
         type:
-          - excel.Excel.TopBottomConditionalFormat
+          - excel_1_7.Excel.TopBottomConditionalFormat
   - uid: excel_1_7.Excel.ConditionalFormat.topBottomOrNullObject
     summary: >-
       Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type. For
@@ -735,7 +735,7 @@ items:
       content: 'readonly topBottomOrNullObject: Excel.TopBottomConditionalFormat;'
       return:
         type:
-          - excel.Excel.TopBottomConditionalFormat
+          - excel_1_7.Excel.TopBottomConditionalFormat
   - uid: excel_1_7.Excel.ConditionalFormat.type
     summary: |-
       A type of conditional format. Only one can be set at a time. Read-only.

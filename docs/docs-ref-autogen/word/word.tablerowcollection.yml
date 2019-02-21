@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: word
     children:
       - word.Word.TableRowCollection.context
@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - word.Word.RequestContext
   - uid: word.Word.TableRowCollection.getFirst
     summary: |-
       Gets the first row in this collection. Throws if this collection is empty.
@@ -52,7 +52,7 @@ items:
       content: 'getFirst(): Word.TableRow;'
       return:
         type:
-          - Word.TableRow
+          - word.Word.TableRow
         description: ''
   - uid: word.Word.TableRowCollection.getFirstOrNullObject
     summary: |-
@@ -68,7 +68,7 @@ items:
       content: 'getFirstOrNullObject(): Word.TableRow;'
       return:
         type:
-          - Word.TableRow
+          - word.Word.TableRow
         description: ''
   - uid: word.Word.TableRowCollection.items
     summary: Gets the loaded child items in this collection.
@@ -115,7 +115,7 @@ items:
         Word.TableRowCollection;
       return:
         type:
-          - Word.TableRowCollection
+          - word.Word.TableRowCollection
         description: ''
       parameters:
         - id: option
@@ -135,7 +135,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.TableRowCollection;'
       return:
         type:
-          - Word.TableRowCollection
+          - word.Word.TableRowCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -152,13 +152,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.TableRowCollection;'
       return:
         type:
-          - Word.TableRowCollection
+          - word.Word.TableRowCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: word.Word.TableRowCollection.toJSON
     name: toJSON()
     fullName: toJSON()
@@ -169,7 +169,7 @@ items:
       content: 'toJSON(): Word.Interfaces.TableRowCollectionData;'
       return:
         type:
-          - Word.Interfaces.TableRowCollectionData
+          - word.Word.Interfaces.TableRowCollectionData
         description: ''
   - uid: word.Word.TableRowCollection.track
     summary: >-
@@ -187,7 +187,7 @@ items:
       content: 'track(): Word.TableRowCollection;'
       return:
         type:
-          - Word.TableRowCollection
+          - word.Word.TableRowCollection
         description: ''
   - uid: word.Word.TableRowCollection.untrack
     summary: >-
@@ -204,5 +204,5 @@ items:
       content: 'untrack(): Word.TableRowCollection;'
       return:
         type:
-          - Word.TableRowCollection
+          - word.Word.TableRowCollection
         description: ''

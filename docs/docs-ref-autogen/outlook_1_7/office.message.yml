@@ -15,7 +15,7 @@ items:
       - typeScript
     type: interface
     extends:
-      - 'Item '
+      - Outlook_1_7.Office.Item
     package: Outlook_1_7
     children:
       - Outlook_1_7.Office.Message.conversationId

@@ -156,7 +156,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.Application.iterativeCalculation
     summary: >-
       Returns the Iterative Calculation settings. On Excel for Windows and Excel for Mac, the settings will apply to the

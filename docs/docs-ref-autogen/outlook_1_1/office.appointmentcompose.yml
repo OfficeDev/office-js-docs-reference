@@ -15,8 +15,8 @@ items:
       - typeScript
     type: interface
     extends:
-      - Appointment
-      - 'ItemCompose '
+      - Outlook_1_1.Office.Appointment
+      - Outlook_1_1.Office.ItemCompose
     package: Outlook_1_1
     children:
       - Outlook_1_1.Office.AppointmentCompose.addFileAttachmentAsync
@@ -92,8 +92,8 @@ items:
     type: method
     syntax:
       content: >-
-        addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: Office.AsyncResult<string>) => void): void;
+        addFileAttachmentAsync(uri: string, attachmentName: string, options?: CommonAPI.AsyncContextOptions, callback?:
+        (result: CommonAPI.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -117,7 +117,7 @@ items:
             can provide any object they wish to access in the callback method. isInline: If true, indicates that the
             attachment will be shown inline in the message body, and should not be displayed in the attachment list.
           type:
-            - Office.AsyncContextOptions
+            - CommonAPI.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -125,7 +125,7 @@ items:
             property. If uploading the attachment fails, the asyncResult object will contain an Error object that
             provides a description of the error.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(result: CommonAPI.AsyncResult<string>) => void'
   - uid: Outlook_1_1.Office.AppointmentCompose.addFileAttachmentAsync_1
     summary: >-
       Adds a file to a message or appointment as an attachment.
@@ -203,7 +203,7 @@ items:
     type: method
     syntax:
       content: >-
-        addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: Office.AsyncResult<string>) =>
+        addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: CommonAPI.AsyncResult<string>) =>
         void): void;
       return:
         type:
@@ -229,7 +229,7 @@ items:
             property. If uploading the attachment fails, the asyncResult object will contain an Error object that
             provides a description of the error.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(result: CommonAPI.AsyncResult<string>) => void'
   - uid: Outlook_1_1.Office.AppointmentCompose.addItemAttachmentAsync
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
@@ -294,8 +294,8 @@ items:
     type: method
     syntax:
       content: >-
-        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: Office.AsyncResult<string>) => void): void;
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: CommonAPI.AsyncContextOptions, callback?:
+        (result: CommonAPI.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -316,7 +316,7 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - CommonAPI.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -324,7 +324,7 @@ items:
             property. If adding the attachment fails, the asyncResult object will contain an Error object that provides
             a description of the error.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(result: CommonAPI.AsyncResult<string>) => void'
   - uid: Outlook_1_1.Office.AppointmentCompose.addItemAttachmentAsync_1
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
@@ -408,7 +408,7 @@ items:
     type: method
     syntax:
       content: >-
-        addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: Office.AsyncResult<string>) =>
+        addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: CommonAPI.AsyncResult<string>) =>
         void): void;
       return:
         type:
@@ -432,7 +432,7 @@ items:
             property. If adding the attachment fails, the asyncResult object will contain an Error object that provides
             a description of the error.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(result: CommonAPI.AsyncResult<string>) => void'
   - uid: Outlook_1_1.Office.AppointmentCompose.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
@@ -463,7 +463,7 @@ items:
     type: method
     syntax:
       content: >-
-        loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?:
+        loadCustomPropertiesAsync(callback: (result: CommonAPI.AsyncResult<CustomProperties>) => void, userContext?:
         any): void;
       return:
         type:
@@ -475,7 +475,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<CustomProperties>) => void'
+            - '(result: CommonAPI.AsyncResult<CustomProperties>) => void'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
@@ -511,7 +511,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void): void;'
+      content: 'loadCustomPropertiesAsync(callback: (result: CommonAPI.AsyncResult<CustomProperties>) => void): void;'
       return:
         type:
           - void
@@ -522,7 +522,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<CustomProperties>) => void'
+            - '(result: CommonAPI.AsyncResult<CustomProperties>) => void'
   - uid: Outlook_1_1.Office.AppointmentCompose.removeAttachmentAsync
     summary: >-
       Removes an attachment from a message or appointment.
@@ -567,8 +567,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result:
-        Office.AsyncResult<void>) => void): void;
+        removeAttachmentAsync(attachmentId: string, options?: CommonAPI.AsyncContextOptions, callback?: (result:
+        CommonAPI.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -583,14 +583,14 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - CommonAPI.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
             contain an error code with the reason for the failure.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_1.Office.AppointmentCompose.removeAttachmentAsync_1
     summary: >-
       Removes an attachment from a message or appointment.
@@ -651,7 +651,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'removeAttachmentAsync(attachmentId: string, callback: (result: Office.AsyncResult<void>) => void): void;'
+      content: 'removeAttachmentAsync(attachmentId: string, callback: (result: CommonAPI.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -667,7 +667,7 @@ items:
             parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
             contain an error code with the reason for the failure.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(result: CommonAPI.AsyncResult<void>) => void'
   - uid: Outlook_1_1.Office.AppointmentCompose.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
@@ -712,7 +712,7 @@ items:
       content: 'body: Body;'
       return:
         type:
-          - Body
+          - Outlook_1_1.Office.Body
   - uid: Outlook_1_1.Office.AppointmentCompose.end
     summary: >-
       Gets or sets the date and time that the appointment is to end.
@@ -770,7 +770,7 @@ items:
       content: 'end: Time;'
       return:
         type:
-          - Time
+          - Outlook_1_1.Office.Time
   - uid: Outlook_1_1.Office.AppointmentCompose.itemType
     summary: >-
       Gets the type of item that an instance represents.
@@ -849,7 +849,7 @@ items:
       content: 'location: Location;'
       return:
         type:
-          - Location
+          - Outlook_1_1.Office.Location
   - uid: Outlook_1_1.Office.AppointmentCompose.optionalAttendees
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
@@ -892,7 +892,7 @@ items:
       content: 'optionalAttendees: Recipients;'
       return:
         type:
-          - Recipients
+          - Outlook_1_1.Office.Recipients
   - uid: Outlook_1_1.Office.AppointmentCompose.requiredAttendees
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode
@@ -936,7 +936,7 @@ items:
       content: 'requiredAttendees: Recipients;'
       return:
         type:
-          - Recipients
+          - Outlook_1_1.Office.Recipients
   - uid: Outlook_1_1.Office.AppointmentCompose.start
     summary: >-
       Gets or sets the date and time that the appointment is to begin.
@@ -994,7 +994,7 @@ items:
       content: 'start: Time;'
       return:
         type:
-          - Time
+          - Outlook_1_1.Office.Time
   - uid: Outlook_1_1.Office.AppointmentCompose.subject
     summary: |-
       Gets or sets the description that appears in the subject field of an item.
@@ -1033,4 +1033,4 @@ items:
       content: 'subject: Subject;'
       return:
         type:
-          - Subject
+          - Outlook_1_1.Office.Subject

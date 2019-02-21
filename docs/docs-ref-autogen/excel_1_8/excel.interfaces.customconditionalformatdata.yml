@@ -27,7 +27,7 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatData
+          - excel_1_8.Excel.Interfaces.ConditionalRangeFormatData
   - uid: excel_1_8.Excel.Interfaces.CustomConditionalFormatData.rule
     summary: |-
       Represents the Rule object on this conditional format. Read-only.
@@ -42,4 +42,4 @@ items:
       content: 'rule?: Excel.Interfaces.ConditionalFormatRuleData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalFormatRuleData
+          - excel_1_8.Excel.Interfaces.ConditionalFormatRuleData

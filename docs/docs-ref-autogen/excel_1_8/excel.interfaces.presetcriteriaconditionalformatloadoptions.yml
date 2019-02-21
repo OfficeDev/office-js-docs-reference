@@ -42,7 +42,7 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
+          - excel_1_8.Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: excel_1_8.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.rule
     summary: |-
       The rule of the conditional format.

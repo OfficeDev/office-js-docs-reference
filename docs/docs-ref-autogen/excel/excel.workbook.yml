@@ -223,7 +223,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.Workbook.customXmlParts
     summary: |-
       Represents the collection of custom XML parts contained by this workbook. Read-only.

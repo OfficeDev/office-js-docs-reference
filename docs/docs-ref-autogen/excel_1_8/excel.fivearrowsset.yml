@@ -23,7 +23,7 @@ items:
       content: 'greenUpArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_8.Excel.Icon
   - uid: excel_1_8.Excel.FiveArrowsSet.redDownArrow
     name: redDownArrow
     fullName: redDownArrow
@@ -34,7 +34,7 @@ items:
       content: 'redDownArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_8.Excel.Icon
   - uid: excel_1_8.Excel.FiveArrowsSet.yellowDownInclineArrow
     name: yellowDownInclineArrow
     fullName: yellowDownInclineArrow
@@ -45,7 +45,7 @@ items:
       content: 'yellowDownInclineArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_8.Excel.Icon
   - uid: excel_1_8.Excel.FiveArrowsSet.yellowSideArrow
     name: yellowSideArrow
     fullName: yellowSideArrow
@@ -56,7 +56,7 @@ items:
       content: 'yellowSideArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_8.Excel.Icon
   - uid: excel_1_8.Excel.FiveArrowsSet.yellowUpInclineArrow
     name: yellowUpInclineArrow
     fullName: yellowUpInclineArrow
@@ -67,4 +67,4 @@ items:
       content: 'yellowUpInclineArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel_1_8.Excel.Icon

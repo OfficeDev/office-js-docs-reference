@@ -14,7 +14,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_7
     children:
       - excel_1_7.Excel.NamedItem.arrayValues
@@ -51,7 +51,7 @@ items:
       content: 'readonly arrayValues: Excel.NamedItemArrayValues;'
       return:
         type:
-          - excel.Excel.NamedItemArrayValues
+          - excel_1_7.Excel.NamedItemArrayValues
   - uid: excel_1_7.Excel.NamedItem.comment
     summary: |-
       Represents the comment associated with this name.
@@ -80,7 +80,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_7.Excel.RequestContext
   - uid: excel_1_7.Excel.NamedItem.delete
     summary: |-
       Deletes the given name.
@@ -175,7 +175,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_7.Excel.Range
         description: |-
 
           #### Examples
@@ -214,7 +214,7 @@ items:
       content: 'getRangeOrNullObject(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_7.Excel.Range
         description: ''
   - uid: excel_1_7.Excel.NamedItem.load
     summary: >-
@@ -247,13 +247,13 @@ items:
       content: 'load(option?: Excel.Interfaces.NamedItemLoadOptions): Excel.NamedItem;'
       return:
         type:
-          - excel.Excel.NamedItem
+          - excel_1_7.Excel.NamedItem
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.NamedItemLoadOptions
+            - excel_1_7.Excel.Interfaces.NamedItemLoadOptions
   - uid: excel_1_7.Excel.NamedItem.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -267,7 +267,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.NamedItem;'
       return:
         type:
-          - excel.Excel.NamedItem
+          - excel_1_7.Excel.NamedItem
         description: |-
 
           #### Examples
@@ -305,7 +305,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.NamedItem;'
       return:
         type:
-          - excel.Excel.NamedItem
+          - excel_1_7.Excel.NamedItem
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -375,7 +375,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_7.Excel.NamedItem.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -393,7 +393,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.NamedItem
+            - excel_1_7.Excel.NamedItem
   - uid: excel_1_7.Excel.NamedItem.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -410,7 +410,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.NamedItemData;'
       return:
         type:
-          - excel.Excel.Interfaces.NamedItemData
+          - excel_1_7.Excel.Interfaces.NamedItemData
         description: ''
   - uid: excel_1_7.Excel.NamedItem.type
     summary: >-
@@ -475,7 +475,7 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - excel_1_7.Excel.Worksheet
   - uid: excel_1_7.Excel.NamedItem.worksheetOrNullObject
     summary: >-
       Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the
@@ -492,4 +492,4 @@ items:
       content: 'readonly worksheetOrNullObject: Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - excel_1_7.Excel.Worksheet

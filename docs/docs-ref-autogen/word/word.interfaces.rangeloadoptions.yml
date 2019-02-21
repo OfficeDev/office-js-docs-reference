@@ -144,7 +144,7 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableLoadOptions
+          - word.Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.RangeLoadOptions.parentTableCell
     summary: |-
       Gets the table cell that contains the range. Throws if it is not contained in a table cell.
@@ -159,7 +159,7 @@ items:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableCellLoadOptions
+          - word.Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.RangeLoadOptions.parentTableCellOrNullObject
     summary: |-
       Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
@@ -174,7 +174,7 @@ items:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableCellLoadOptions
+          - word.Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.RangeLoadOptions.parentTableOrNullObject
     summary: |-
       Gets the table that contains the range. Returns a null object if it is not contained in a table.
@@ -189,7 +189,7 @@ items:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableLoadOptions
+          - word.Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.RangeLoadOptions.style
     summary: >-
       Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use

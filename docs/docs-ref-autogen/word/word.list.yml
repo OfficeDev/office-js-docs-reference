@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: word
     children:
       - word.Word.List.context
@@ -50,7 +50,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - word.Word.RequestContext
   - uid: word.Word.List.getLevelParagraphs
     summary: |-
       Gets the paragraphs that occur at the specified level in the list.
@@ -65,7 +65,7 @@ items:
       content: 'getLevelParagraphs(level: number): Word.ParagraphCollection;'
       return:
         type:
-          - Word.ParagraphCollection
+          - word.Word.ParagraphCollection
         description: ''
       parameters:
         - id: level
@@ -124,7 +124,7 @@ items:
       content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
-          - Word.Paragraph
+          - word.Word.Paragraph
         description: ''
       parameters:
         - id: paragraphText
@@ -134,7 +134,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.List.insertParagraph_1
     summary: >-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or
@@ -153,7 +153,7 @@ items:
         Word.Paragraph;
       return:
         type:
-          - Word.Paragraph
+          - word.Word.Paragraph
         description: ''
       parameters:
         - id: paragraphText
@@ -290,7 +290,7 @@ items:
       content: 'readonly paragraphs: Word.ParagraphCollection;'
       return:
         type:
-          - Word.ParagraphCollection
+          - word.Word.ParagraphCollection
   - uid: word.Word.List.setLevelAlignment
     summary: |-
       Sets the alignment of the bullet, number or picture at the specified level in the list.

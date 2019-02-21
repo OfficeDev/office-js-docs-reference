@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_3
     children:
       - excel_1_3.Excel.ChartLegendFormat.context
@@ -36,7 +36,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_3.Excel.RequestContext
   - uid: excel_1_3.Excel.ChartLegendFormat.fill
     summary: |-
       Represents the fill format of an object, which includes background formatting information. Read-only.
@@ -51,7 +51,7 @@ items:
       content: 'readonly fill: Excel.ChartFill;'
       return:
         type:
-          - excel.Excel.ChartFill
+          - excel_1_3.Excel.ChartFill
   - uid: excel_1_3.Excel.ChartLegendFormat.font
     summary: |-
       Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
@@ -66,7 +66,7 @@ items:
       content: 'readonly font: Excel.ChartFont;'
       return:
         type:
-          - excel.Excel.ChartFont
+          - excel_1_3.Excel.ChartFont
         description: |-
 
           #### Examples
@@ -121,13 +121,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartLegendFormatLoadOptions): Excel.ChartLegendFormat;'
       return:
         type:
-          - excel.Excel.ChartLegendFormat
+          - excel_1_3.Excel.ChartLegendFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartLegendFormatLoadOptions
+            - excel_1_3.Excel.Interfaces.ChartLegendFormatLoadOptions
   - uid: excel_1_3.Excel.ChartLegendFormat.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -141,7 +141,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartLegendFormat;'
       return:
         type:
-          - excel.Excel.ChartLegendFormat
+          - excel_1_3.Excel.ChartLegendFormat
         description: ''
       parameters:
         - id: propertyNames
@@ -161,7 +161,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLegendFormat;'
       return:
         type:
-          - excel.Excel.ChartLegendFormat
+          - excel_1_3.Excel.ChartLegendFormat
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -199,7 +199,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_3.Excel.ChartLegendFormat.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -217,7 +217,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartLegendFormat
+            - excel_1_3.Excel.ChartLegendFormat
   - uid: excel_1_3.Excel.ChartLegendFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -234,5 +234,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartLegendFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendFormatData
+          - excel_1_3.Excel.Interfaces.ChartLegendFormatData
         description: ''

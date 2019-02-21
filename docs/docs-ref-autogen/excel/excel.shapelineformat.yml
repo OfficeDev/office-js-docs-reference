@@ -64,7 +64,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ShapeLineFormat.dashStyle
     summary: >-
       Represents the line style of the shape. Returns null when line is not visible or has mixed line dash style

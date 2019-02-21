@@ -62,7 +62,7 @@ items:
       content: 'properties?: Word.Interfaces.DocumentPropertiesData;'
       return:
         type:
-          - Word.Interfaces.DocumentPropertiesData
+          - word.Word.Interfaces.DocumentPropertiesData
   - uid: word.Word.Interfaces.DocumentData.saved
     summary: >-
       Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't

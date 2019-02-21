@@ -63,7 +63,7 @@ items:
       content: 'properties?: Word.Interfaces.DocumentPropertiesLoadOptions;'
       return:
         type:
-          - Word.Interfaces.DocumentPropertiesLoadOptions
+          - word.Word.Interfaces.DocumentPropertiesLoadOptions
   - uid: word.Word.Interfaces.DocumentCreatedLoadOptions.saved
     summary: >-
       Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't

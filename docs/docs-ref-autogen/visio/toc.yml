@@ -1,0 +1,165 @@
+items:
+  - name: API reference
+    href: ~/docs-ref-autogen/overview/office.md
+    items:
+      - name: visio
+        uid: visio
+        items:
+          - name: Visio
+            items:
+              - name: Application
+                uid: visio.Visio.Application
+              - name: BoundingBox
+                uid: visio.Visio.BoundingBox
+              - name: Comment
+                uid: visio.Visio.Comment
+              - name: CommentCollection
+                uid: visio.Visio.CommentCollection
+              - name: DataRefreshCompleteEventArgs
+                uid: visio.Visio.DataRefreshCompleteEventArgs
+              - name: Document
+                uid: visio.Visio.Document
+              - name: DocumentLoadCompleteEventArgs
+                uid: visio.Visio.DocumentLoadCompleteEventArgs
+              - name: DocumentView
+                uid: visio.Visio.DocumentView
+              - name: ErrorCodes
+                uid: visio.Visio.ErrorCodes
+              - name: Highlight
+                uid: visio.Visio.Highlight
+              - name: Hyperlink
+                uid: visio.Visio.Hyperlink
+              - name: HyperlinkCollection
+                uid: visio.Visio.HyperlinkCollection
+              - name: Interfaces
+                items:
+                  - name: ApplicationData
+                    uid: visio.Visio.Interfaces.ApplicationData
+                  - name: ApplicationLoadOptions
+                    uid: visio.Visio.Interfaces.ApplicationLoadOptions
+                  - name: ApplicationUpdateData
+                    uid: visio.Visio.Interfaces.ApplicationUpdateData
+                  - name: CollectionLoadOptions
+                    uid: visio.Visio.Interfaces.CollectionLoadOptions
+                  - name: CommentCollectionData
+                    uid: visio.Visio.Interfaces.CommentCollectionData
+                  - name: CommentCollectionLoadOptions
+                    uid: visio.Visio.Interfaces.CommentCollectionLoadOptions
+                  - name: CommentCollectionUpdateData
+                    uid: visio.Visio.Interfaces.CommentCollectionUpdateData
+                  - name: CommentData
+                    uid: visio.Visio.Interfaces.CommentData
+                  - name: CommentLoadOptions
+                    uid: visio.Visio.Interfaces.CommentLoadOptions
+                  - name: CommentUpdateData
+                    uid: visio.Visio.Interfaces.CommentUpdateData
+                  - name: DocumentData
+                    uid: visio.Visio.Interfaces.DocumentData
+                  - name: DocumentLoadOptions
+                    uid: visio.Visio.Interfaces.DocumentLoadOptions
+                  - name: DocumentUpdateData
+                    uid: visio.Visio.Interfaces.DocumentUpdateData
+                  - name: DocumentViewData
+                    uid: visio.Visio.Interfaces.DocumentViewData
+                  - name: DocumentViewLoadOptions
+                    uid: visio.Visio.Interfaces.DocumentViewLoadOptions
+                  - name: DocumentViewUpdateData
+                    uid: visio.Visio.Interfaces.DocumentViewUpdateData
+                  - name: HyperlinkCollectionData
+                    uid: visio.Visio.Interfaces.HyperlinkCollectionData
+                  - name: HyperlinkCollectionLoadOptions
+                    uid: visio.Visio.Interfaces.HyperlinkCollectionLoadOptions
+                  - name: HyperlinkCollectionUpdateData
+                    uid: visio.Visio.Interfaces.HyperlinkCollectionUpdateData
+                  - name: HyperlinkData
+                    uid: visio.Visio.Interfaces.HyperlinkData
+                  - name: HyperlinkLoadOptions
+                    uid: visio.Visio.Interfaces.HyperlinkLoadOptions
+                  - name: PageCollectionData
+                    uid: visio.Visio.Interfaces.PageCollectionData
+                  - name: PageCollectionLoadOptions
+                    uid: visio.Visio.Interfaces.PageCollectionLoadOptions
+                  - name: PageCollectionUpdateData
+                    uid: visio.Visio.Interfaces.PageCollectionUpdateData
+                  - name: PageData
+                    uid: visio.Visio.Interfaces.PageData
+                  - name: PageLoadOptions
+                    uid: visio.Visio.Interfaces.PageLoadOptions
+                  - name: PageUpdateData
+                    uid: visio.Visio.Interfaces.PageUpdateData
+                  - name: PageViewData
+                    uid: visio.Visio.Interfaces.PageViewData
+                  - name: PageViewLoadOptions
+                    uid: visio.Visio.Interfaces.PageViewLoadOptions
+                  - name: PageViewUpdateData
+                    uid: visio.Visio.Interfaces.PageViewUpdateData
+                  - name: SelectionData
+                    uid: visio.Visio.Interfaces.SelectionData
+                  - name: ShapeCollectionData
+                    uid: visio.Visio.Interfaces.ShapeCollectionData
+                  - name: ShapeCollectionLoadOptions
+                    uid: visio.Visio.Interfaces.ShapeCollectionLoadOptions
+                  - name: ShapeCollectionUpdateData
+                    uid: visio.Visio.Interfaces.ShapeCollectionUpdateData
+                  - name: ShapeData
+                    uid: visio.Visio.Interfaces.ShapeData
+                  - name: ShapeDataItemCollectionData
+                    uid: visio.Visio.Interfaces.ShapeDataItemCollectionData
+                  - name: ShapeDataItemCollectionLoadOptions
+                    uid: visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions
+                  - name: ShapeDataItemCollectionUpdateData
+                    uid: visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData
+                  - name: ShapeDataItemData
+                    uid: visio.Visio.Interfaces.ShapeDataItemData
+                  - name: ShapeDataItemLoadOptions
+                    uid: visio.Visio.Interfaces.ShapeDataItemLoadOptions
+                  - name: ShapeLoadOptions
+                    uid: visio.Visio.Interfaces.ShapeLoadOptions
+                  - name: ShapeUpdateData
+                    uid: visio.Visio.Interfaces.ShapeUpdateData
+                  - name: ShapeViewData
+                    uid: visio.Visio.Interfaces.ShapeViewData
+                  - name: ShapeViewLoadOptions
+                    uid: visio.Visio.Interfaces.ShapeViewLoadOptions
+                  - name: ShapeViewUpdateData
+                    uid: visio.Visio.Interfaces.ShapeViewUpdateData
+              - name: OverlayHorizontalAlignment
+                uid: visio.Visio.OverlayHorizontalAlignment
+              - name: OverlayType
+                uid: visio.Visio.OverlayType
+              - name: OverlayVerticalAlignment
+                uid: visio.Visio.OverlayVerticalAlignment
+              - name: Page
+                uid: visio.Visio.Page
+              - name: PageCollection
+                uid: visio.Visio.PageCollection
+              - name: PageLoadCompleteEventArgs
+                uid: visio.Visio.PageLoadCompleteEventArgs
+              - name: PageRenderCompleteEventArgs
+                uid: visio.Visio.PageRenderCompleteEventArgs
+              - name: PageView
+                uid: visio.Visio.PageView
+              - name: Position
+                uid: visio.Visio.Position
+              - name: RequestContext
+                uid: visio.Visio.RequestContext
+              - name: Selection
+                uid: visio.Visio.Selection
+              - name: SelectionChangedEventArgs
+                uid: visio.Visio.SelectionChangedEventArgs
+              - name: Shape
+                uid: visio.Visio.Shape
+              - name: ShapeCollection
+                uid: visio.Visio.ShapeCollection
+              - name: ShapeDataItem
+                uid: visio.Visio.ShapeDataItem
+              - name: ShapeDataItemCollection
+                uid: visio.Visio.ShapeDataItemCollection
+              - name: ShapeMouseEnterEventArgs
+                uid: visio.Visio.ShapeMouseEnterEventArgs
+              - name: ShapeMouseLeaveEventArgs
+                uid: visio.Visio.ShapeMouseLeaveEventArgs
+              - name: ShapeView
+                uid: visio.Visio.ShapeView
+              - name: ToolBarType
+                uid: visio.Visio.ToolBarType

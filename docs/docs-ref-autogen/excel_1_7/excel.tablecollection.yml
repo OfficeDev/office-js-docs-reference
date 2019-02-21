@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_7
     children:
       - excel_1_7.Excel.TableCollection.add
@@ -46,7 +46,7 @@ items:
       content: 'add(address: Range | string, hasHeaders: boolean): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
+          - excel_1_7.Excel.Table
         description: |-
 
           #### Examples
@@ -94,7 +94,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_7.Excel.RequestContext
   - uid: excel_1_7.Excel.TableCollection.count
     summary: |-
       Returns the number of tables in the workbook. Read-only.
@@ -140,7 +140,7 @@ items:
       content: 'getItem(key: string): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
+          - excel_1_7.Excel.Table
         description: |-
 
           #### Examples
@@ -179,7 +179,7 @@ items:
       content: 'getItemAt(index: number): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
+          - excel_1_7.Excel.Table
         description: |-
 
           #### Examples
@@ -217,7 +217,7 @@ items:
       content: 'getItemOrNullObject(key: string): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
+          - excel_1_7.Excel.Table
         description: ''
       parameters:
         - id: key
@@ -269,7 +269,7 @@ items:
         Excel.TableCollection;
       return:
         type:
-          - excel.Excel.TableCollection
+          - excel_1_7.Excel.TableCollection
         description: ''
       parameters:
         - id: option
@@ -289,7 +289,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TableCollection;'
       return:
         type:
-          - excel.Excel.TableCollection
+          - excel_1_7.Excel.TableCollection
         description: |-
 
           #### Examples
@@ -342,13 +342,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.TableCollection;'
       return:
         type:
-          - excel.Excel.TableCollection
+          - excel_1_7.Excel.TableCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel_1_7.Excel.TableCollection.onChanged
     summary: |-
       Occurs when data changes on any table in a workbook, or a worksheet.
@@ -393,5 +393,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableCollectionData
+          - excel_1_7.Excel.Interfaces.TableCollectionData
         description: ''

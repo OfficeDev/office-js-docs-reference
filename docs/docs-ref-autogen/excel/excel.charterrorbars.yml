@@ -43,7 +43,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ChartErrorBars.endStyleCap
     summary: >-
       Represents whether have the end style cap for the error bars.

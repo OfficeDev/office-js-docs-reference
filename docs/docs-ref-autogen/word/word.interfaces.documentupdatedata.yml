@@ -42,4 +42,4 @@ items:
       content: 'properties?: Word.Interfaces.DocumentPropertiesUpdateData;'
       return:
         type:
-          - Word.Interfaces.DocumentPropertiesUpdateData
+          - word.Word.Interfaces.DocumentPropertiesUpdateData

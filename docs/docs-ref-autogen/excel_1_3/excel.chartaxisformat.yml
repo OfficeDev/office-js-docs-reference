@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_3
     children:
       - excel_1_3.Excel.ChartAxisFormat.context
@@ -36,7 +36,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_3.Excel.RequestContext
   - uid: excel_1_3.Excel.ChartAxisFormat.font
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
@@ -51,7 +51,7 @@ items:
       content: 'readonly font: Excel.ChartFont;'
       return:
         type:
-          - excel.Excel.ChartFont
+          - excel_1_3.Excel.ChartFont
   - uid: excel_1_3.Excel.ChartAxisFormat.line
     summary: |-
       Represents chart line formatting. Read-only.
@@ -66,7 +66,7 @@ items:
       content: 'readonly line: Excel.ChartLineFormat;'
       return:
         type:
-          - excel.Excel.ChartLineFormat
+          - excel_1_3.Excel.ChartLineFormat
   - uid: excel_1_3.Excel.ChartAxisFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -98,13 +98,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartAxisFormatLoadOptions): Excel.ChartAxisFormat;'
       return:
         type:
-          - excel.Excel.ChartAxisFormat
+          - excel_1_3.Excel.ChartAxisFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartAxisFormatLoadOptions
+            - excel_1_3.Excel.Interfaces.ChartAxisFormatLoadOptions
   - uid: excel_1_3.Excel.ChartAxisFormat.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -118,7 +118,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartAxisFormat;'
       return:
         type:
-          - excel.Excel.ChartAxisFormat
+          - excel_1_3.Excel.ChartAxisFormat
         description: ''
       parameters:
         - id: propertyNames
@@ -138,7 +138,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxisFormat;'
       return:
         type:
-          - excel.Excel.ChartAxisFormat
+          - excel_1_3.Excel.ChartAxisFormat
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -176,7 +176,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_3.Excel.ChartAxisFormat.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -194,7 +194,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartAxisFormat
+            - excel_1_3.Excel.ChartAxisFormat
   - uid: excel_1_3.Excel.ChartAxisFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -211,5 +211,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartAxisFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisFormatData
+          - excel_1_3.Excel.Interfaces.ChartAxisFormatData
         description: ''

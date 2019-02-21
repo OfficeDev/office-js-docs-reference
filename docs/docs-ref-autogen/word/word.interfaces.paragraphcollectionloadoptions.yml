@@ -343,7 +343,7 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableLoadOptions
+          - word.Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCell
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws if it is not contained in
@@ -360,7 +360,7 @@ items:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableCellLoadOptions
+          - word.Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Returns a null object if it is
@@ -377,7 +377,7 @@ items:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableCellLoadOptions
+          - word.Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the paragraph. Returns a null object if it is not
@@ -394,7 +394,7 @@ items:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - Word.Interfaces.TableLoadOptions
+          - word.Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.rightIndent
     summary: |-
       For EACH ITEM in the collection: Gets or sets the right indent value, in points, for the paragraph.

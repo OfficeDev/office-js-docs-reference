@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_6
     children:
       - excel_1_6.Excel.FormatProtection.context
@@ -36,7 +36,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_6.Excel.RequestContext
   - uid: excel_1_6.Excel.FormatProtection.formulaHidden
     summary: >-
       Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range
@@ -85,13 +85,13 @@ items:
       content: 'load(option?: Excel.Interfaces.FormatProtectionLoadOptions): Excel.FormatProtection;'
       return:
         type:
-          - excel.Excel.FormatProtection
+          - excel_1_6.Excel.FormatProtection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.FormatProtectionLoadOptions
+            - excel_1_6.Excel.Interfaces.FormatProtectionLoadOptions
   - uid: excel_1_6.Excel.FormatProtection.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -105,7 +105,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.FormatProtection;'
       return:
         type:
-          - excel.Excel.FormatProtection
+          - excel_1_6.Excel.FormatProtection
         description: ''
       parameters:
         - id: propertyNames
@@ -125,7 +125,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.FormatProtection;'
       return:
         type:
-          - excel.Excel.FormatProtection
+          - excel_1_6.Excel.FormatProtection
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -180,7 +180,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_6.Excel.FormatProtection.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -198,7 +198,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.FormatProtection
+            - excel_1_6.Excel.FormatProtection
   - uid: excel_1_6.Excel.FormatProtection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -215,5 +215,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.FormatProtectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.FormatProtectionData
+          - excel_1_6.Excel.Interfaces.FormatProtectionData
         description: ''

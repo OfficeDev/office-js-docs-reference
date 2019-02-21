@@ -27,4 +27,4 @@ items:
       content: 'settings: Excel.SettingCollection;'
       return:
         type:
-          - excel.Excel.SettingCollection
+          - excel_1_5.Excel.SettingCollection

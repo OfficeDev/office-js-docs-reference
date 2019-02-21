@@ -81,7 +81,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ChartBinOptions.count
     summary: >-
       Returns or sets count of bin of a histogram chart or pareto chart. Read/Write.

@@ -81,7 +81,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ShapeFont.italic
     summary: >-
       Represents the italic status of font. Return null if the TextRange includes both italic and non-italic text

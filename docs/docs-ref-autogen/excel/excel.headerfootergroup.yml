@@ -42,7 +42,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.HeaderFooterGroup.defaultForAllPages
     summary: >-
       The general header/footer, used for all pages unless even/odd or first page is specified.

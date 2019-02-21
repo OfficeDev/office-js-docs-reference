@@ -92,7 +92,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.Slicer.delete
     summary: >-
       Deletes the slicer.

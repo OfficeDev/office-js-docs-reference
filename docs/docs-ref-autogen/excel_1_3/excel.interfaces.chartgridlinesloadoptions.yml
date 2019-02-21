@@ -40,7 +40,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartGridlinesFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartGridlinesFormatLoadOptions
+          - excel_1_3.Excel.Interfaces.ChartGridlinesFormatLoadOptions
   - uid: excel_1_3.Excel.Interfaces.ChartGridlinesLoadOptions.visible
     summary: |-
       Boolean value representing if the axis gridlines are visible or not.

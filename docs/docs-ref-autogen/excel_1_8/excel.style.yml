@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_8
     children:
       - excel_1_8.Excel.Style.autoIndent
@@ -74,7 +74,7 @@ items:
       content: 'readonly borders: Excel.RangeBorderCollection;'
       return:
         type:
-          - excel.Excel.RangeBorderCollection
+          - excel_1_8.Excel.RangeBorderCollection
   - uid: excel_1_8.Excel.Style.builtIn
     summary: |-
       Indicates if the style is a built-in style.
@@ -103,7 +103,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_8.Excel.RequestContext
   - uid: excel_1_8.Excel.Style.delete
     summary: |-
       Deletes this style.
@@ -150,7 +150,7 @@ items:
       content: 'readonly fill: Excel.RangeFill;'
       return:
         type:
-          - excel.Excel.RangeFill
+          - excel_1_8.Excel.RangeFill
   - uid: excel_1_8.Excel.Style.font
     summary: |-
       A Font object that represents the font of the style.
@@ -165,7 +165,7 @@ items:
       content: 'readonly font: Excel.RangeFont;'
       return:
         type:
-          - excel.Excel.RangeFont
+          - excel_1_8.Excel.RangeFont
         description: |-
 
           #### Examples
@@ -402,13 +402,13 @@ items:
       content: 'load(option?: Excel.Interfaces.StyleLoadOptions): Excel.Style;'
       return:
         type:
-          - excel.Excel.Style
+          - excel_1_8.Excel.Style
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.StyleLoadOptions
+            - excel_1_8.Excel.Interfaces.StyleLoadOptions
   - uid: excel_1_8.Excel.Style.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -422,7 +422,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Style;'
       return:
         type:
-          - excel.Excel.Style
+          - excel_1_8.Excel.Style
         description: ''
       parameters:
         - id: propertyNames
@@ -442,7 +442,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Style;'
       return:
         type:
-          - excel.Excel.Style
+          - excel_1_8.Excel.Style
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -555,7 +555,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.Style.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -573,7 +573,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Style
+            - excel_1_8.Excel.Style
   - uid: excel_1_8.Excel.Style.shrinkToFit
     summary: |-
       Indicates if text automatically shrinks to fit in the available column width.
@@ -620,7 +620,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.StyleData;'
       return:
         type:
-          - excel.Excel.Interfaces.StyleData
+          - excel_1_8.Excel.Interfaces.StyleData
         description: ''
   - uid: excel_1_8.Excel.Style.verticalAlignment
     summary: |-

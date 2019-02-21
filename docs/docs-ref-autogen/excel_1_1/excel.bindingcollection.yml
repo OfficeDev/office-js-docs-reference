@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_1
     children:
       - excel_1_1.Excel.BindingCollection.context
@@ -36,7 +36,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_1.Excel.RequestContext
   - uid: excel_1_1.Excel.BindingCollection.count
     summary: |-
       Returns the number of bindings in the collection. Read-only.
@@ -66,7 +66,7 @@ items:
       content: 'getItem(id: string): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - excel_1_1.Excel.Binding
         description: |-
 
           #### Examples
@@ -132,7 +132,7 @@ items:
       content: 'getItemAt(index: number): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - excel_1_1.Excel.Binding
         description: |-
 
           #### Examples
@@ -202,7 +202,7 @@ items:
         Excel.BindingCollection;
       return:
         type:
-          - excel.Excel.BindingCollection
+          - excel_1_1.Excel.BindingCollection
         description: ''
       parameters:
         - id: option
@@ -222,7 +222,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.BindingCollection;'
       return:
         type:
-          - excel.Excel.BindingCollection
+          - excel_1_1.Excel.BindingCollection
         description: |-
 
           #### Examples
@@ -274,13 +274,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.BindingCollection;'
       return:
         type:
-          - excel.Excel.BindingCollection
+          - excel_1_1.Excel.BindingCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel_1_1.Excel.BindingCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -297,5 +297,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.BindingCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.BindingCollectionData
+          - excel_1_1.Excel.Interfaces.BindingCollectionData
         description: ''

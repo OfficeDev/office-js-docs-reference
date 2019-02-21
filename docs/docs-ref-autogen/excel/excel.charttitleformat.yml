@@ -52,7 +52,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ChartTitleFormat.fill
     summary: |-
       Represents the fill format of an object, which includes background formatting information. Read-only.

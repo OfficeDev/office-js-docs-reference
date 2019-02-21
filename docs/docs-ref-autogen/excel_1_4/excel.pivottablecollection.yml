@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_4
     children:
       - excel_1_4.Excel.PivotTableCollection.context
@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_4.Excel.RequestContext
   - uid: excel_1_4.Excel.PivotTableCollection.getCount
     summary: |-
       Gets the number of pivot tables in the collection.
@@ -68,7 +68,7 @@ items:
       content: 'getItem(name: string): Excel.PivotTable;'
       return:
         type:
-          - excel.Excel.PivotTable
+          - excel_1_4.Excel.PivotTable
         description: ''
       parameters:
         - id: name
@@ -89,7 +89,7 @@ items:
       content: 'getItemOrNullObject(name: string): Excel.PivotTable;'
       return:
         type:
-          - excel.Excel.PivotTable
+          - excel_1_4.Excel.PivotTable
         description: ''
       parameters:
         - id: name
@@ -141,7 +141,7 @@ items:
         Excel.PivotTableCollection;
       return:
         type:
-          - excel.Excel.PivotTableCollection
+          - excel_1_4.Excel.PivotTableCollection
         description: ''
       parameters:
         - id: option
@@ -161,7 +161,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.PivotTableCollection;'
       return:
         type:
-          - excel.Excel.PivotTableCollection
+          - excel_1_4.Excel.PivotTableCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -178,13 +178,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.PivotTableCollection;'
       return:
         type:
-          - excel.Excel.PivotTableCollection
+          - excel_1_4.Excel.PivotTableCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel_1_4.Excel.PivotTableCollection.refreshAll
     summary: |-
       Refreshes all the pivot tables in the collection.
@@ -217,5 +217,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.PivotTableCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.PivotTableCollectionData
+          - excel_1_4.Excel.Interfaces.PivotTableCollectionData
         description: ''

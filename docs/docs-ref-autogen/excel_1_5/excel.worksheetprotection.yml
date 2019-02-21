@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_5
     children:
       - excel_1_5.Excel.WorksheetProtection.context
@@ -35,7 +35,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_5.Excel.RequestContext
   - uid: excel_1_5.Excel.WorksheetProtection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -67,13 +67,13 @@ items:
       content: 'load(option?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;'
       return:
         type:
-          - excel.Excel.WorksheetProtection
+          - excel_1_5.Excel.WorksheetProtection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.WorksheetProtectionLoadOptions
+            - excel_1_5.Excel.Interfaces.WorksheetProtectionLoadOptions
   - uid: excel_1_5.Excel.WorksheetProtection.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -87,7 +87,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.WorksheetProtection;'
       return:
         type:
-          - excel.Excel.WorksheetProtection
+          - excel_1_5.Excel.WorksheetProtection
         description: ''
       parameters:
         - id: propertyNames
@@ -107,7 +107,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.WorksheetProtection;'
       return:
         type:
-          - excel.Excel.WorksheetProtection
+          - excel_1_5.Excel.WorksheetProtection
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -130,7 +130,7 @@ items:
       content: 'readonly options: Excel.WorksheetProtectionOptions;'
       return:
         type:
-          - excel.Excel.WorksheetProtectionOptions
+          - excel_1_5.Excel.WorksheetProtectionOptions
   - uid: excel_1_5.Excel.WorksheetProtection.protect
     summary: >-
       Protects a worksheet. Fails if the worksheet has already been protected.
@@ -201,7 +201,7 @@ items:
         - id: options
           description: Optional. Sheet protection options.
           type:
-            - excel.Excel.WorksheetProtectionOptions
+            - excel_1_5.Excel.WorksheetProtectionOptions
         - id: password
           description: Optional. Sheet protection password.
           type:
@@ -237,5 +237,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorksheetProtectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetProtectionData
+          - excel_1_5.Excel.Interfaces.WorksheetProtectionData
         description: ''

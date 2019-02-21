@@ -44,7 +44,7 @@ items:
       content: 'borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeBorderCollectionLoadOptions
+          - excel_1_1.Excel.Interfaces.RangeBorderCollectionLoadOptions
   - uid: excel_1_1.Excel.Interfaces.RangeFormatLoadOptions.fill
     summary: |-
       Returns the fill object defined on the overall range.
@@ -59,7 +59,7 @@ items:
       content: 'fill?: Excel.Interfaces.RangeFillLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFillLoadOptions
+          - excel_1_1.Excel.Interfaces.RangeFillLoadOptions
   - uid: excel_1_1.Excel.Interfaces.RangeFormatLoadOptions.font
     summary: |-
       Returns the font object defined on the overall range.
@@ -74,7 +74,7 @@ items:
       content: 'font?: Excel.Interfaces.RangeFontLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFontLoadOptions
+          - excel_1_1.Excel.Interfaces.RangeFontLoadOptions
   - uid: excel_1_1.Excel.Interfaces.RangeFormatLoadOptions.horizontalAlignment
     summary: |-
       Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.

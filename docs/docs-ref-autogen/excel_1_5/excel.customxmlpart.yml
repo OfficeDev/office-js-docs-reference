@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_5
     children:
       - excel_1_5.Excel.CustomXmlPart.context
@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_5.Excel.RequestContext
   - uid: excel_1_5.Excel.CustomXmlPart.delete
     summary: |-
       Deletes the custom XML part.
@@ -197,13 +197,13 @@ items:
       content: 'load(option?: Excel.Interfaces.CustomXmlPartLoadOptions): Excel.CustomXmlPart;'
       return:
         type:
-          - excel.Excel.CustomXmlPart
+          - excel_1_5.Excel.CustomXmlPart
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.CustomXmlPartLoadOptions
+            - excel_1_5.Excel.Interfaces.CustomXmlPartLoadOptions
   - uid: excel_1_5.Excel.CustomXmlPart.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -217,7 +217,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.CustomXmlPart;'
       return:
         type:
-          - excel.Excel.CustomXmlPart
+          - excel_1_5.Excel.CustomXmlPart
         description: ''
       parameters:
         - id: propertyNames
@@ -237,7 +237,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CustomXmlPart;'
       return:
         type:
-          - excel.Excel.CustomXmlPart
+          - excel_1_5.Excel.CustomXmlPart
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -322,5 +322,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.CustomXmlPartData;'
       return:
         type:
-          - excel.Excel.Interfaces.CustomXmlPartData
+          - excel_1_5.Excel.Interfaces.CustomXmlPartData
         description: ''

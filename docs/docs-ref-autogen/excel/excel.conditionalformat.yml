@@ -162,7 +162,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ConditionalFormat.custom
     summary: |-
       Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.

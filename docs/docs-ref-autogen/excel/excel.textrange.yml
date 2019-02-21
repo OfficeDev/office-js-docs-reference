@@ -38,7 +38,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.TextRange.font
     summary: >-
       Returns a ShapeFont object that represents the font attributes for the text range. Read-only.

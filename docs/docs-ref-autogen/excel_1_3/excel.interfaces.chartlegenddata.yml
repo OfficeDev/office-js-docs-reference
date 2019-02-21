@@ -27,7 +27,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartLegendFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendFormatData
+          - excel_1_3.Excel.Interfaces.ChartLegendFormatData
   - uid: excel_1_3.Excel.Interfaces.ChartLegendData.overlay
     summary: |-
       Boolean value for whether the chart legend should overlap with the main body of the chart.

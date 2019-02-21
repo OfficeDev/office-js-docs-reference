@@ -41,7 +41,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisTitleFormatLoadOptions
+          - excel_1_4.Excel.Interfaces.ChartAxisTitleFormatLoadOptions
   - uid: excel_1_4.Excel.Interfaces.ChartAxisTitleLoadOptions.text
     summary: |-
       Represents the axis title.

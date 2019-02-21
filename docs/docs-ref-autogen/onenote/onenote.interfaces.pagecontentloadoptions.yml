@@ -63,7 +63,7 @@ items:
       content: 'image?: OneNote.Interfaces.ImageLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.ImageLoadOptions
+          - onenote.OneNote.Interfaces.ImageLoadOptions
   - uid: onenote.OneNote.Interfaces.PageContentLoadOptions.ink
     summary: |-
       Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.

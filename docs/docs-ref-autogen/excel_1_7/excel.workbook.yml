@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_7
     children:
       - excel_1_7.Excel.Workbook.application
@@ -52,7 +52,7 @@ items:
       content: 'readonly application: Excel.Application;'
       return:
         type:
-          - excel.Excel.Application
+          - excel_1_7.Excel.Application
   - uid: excel_1_7.Excel.Workbook.bindings
     summary: |-
       Represents a collection of bindings that are part of the workbook. Read-only.
@@ -67,7 +67,7 @@ items:
       content: 'readonly bindings: Excel.BindingCollection;'
       return:
         type:
-          - excel.Excel.BindingCollection
+          - excel_1_7.Excel.BindingCollection
   - uid: excel_1_7.Excel.Workbook.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -81,7 +81,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_7.Excel.RequestContext
   - uid: excel_1_7.Excel.Workbook.customXmlParts
     summary: |-
       Represents the collection of custom XML parts contained by this workbook. Read-only.
@@ -96,7 +96,7 @@ items:
       content: 'readonly customXmlParts: Excel.CustomXmlPartCollection;'
       return:
         type:
-          - excel.Excel.CustomXmlPartCollection
+          - excel_1_7.Excel.CustomXmlPartCollection
   - uid: excel_1_7.Excel.Workbook.dataConnections
     summary: |-
       Represents all data connections in the workbook. Read-only.
@@ -111,7 +111,7 @@ items:
       content: 'readonly dataConnections: Excel.DataConnectionCollection;'
       return:
         type:
-          - excel.Excel.DataConnectionCollection
+          - excel_1_7.Excel.DataConnectionCollection
   - uid: excel_1_7.Excel.Workbook.functions
     summary: |-
       Represents a collection of worksheet functions that can be used for computation. Read-only.
@@ -126,7 +126,7 @@ items:
       content: 'readonly functions: Excel.Functions;'
       return:
         type:
-          - excel.Excel.Functions
+          - excel_1_7.Excel.Functions
   - uid: excel_1_7.Excel.Workbook.getActiveCell
     summary: |-
       Gets the currently active cell from the workbook.
@@ -141,7 +141,7 @@ items:
       content: 'getActiveCell(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_7.Excel.Range
         description: |-
 
           #### Examples
@@ -174,7 +174,7 @@ items:
       content: 'getSelectedRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_7.Excel.Range
         description: |-
 
           #### Examples
@@ -224,13 +224,13 @@ items:
       content: 'load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - excel_1_7.Excel.Workbook
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.WorkbookLoadOptions
+            - excel_1_7.Excel.Interfaces.WorkbookLoadOptions
   - uid: excel_1_7.Excel.Workbook.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -244,7 +244,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - excel_1_7.Excel.Workbook
         description: ''
       parameters:
         - id: propertyNames
@@ -264,7 +264,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - excel_1_7.Excel.Workbook
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -302,7 +302,7 @@ items:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type:
-          - excel.Excel.NamedItemCollection
+          - excel_1_7.Excel.NamedItemCollection
   - uid: excel_1_7.Excel.Workbook.onSelectionChanged
     summary: |-
       Occurs when the selection in the document is changed.
@@ -332,7 +332,7 @@ items:
       content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
         type:
-          - excel.Excel.PivotTableCollection
+          - excel_1_7.Excel.PivotTableCollection
   - uid: excel_1_7.Excel.Workbook.properties
     summary: |-
       Gets the workbook properties. Read-only.
@@ -347,7 +347,7 @@ items:
       content: 'readonly properties: Excel.DocumentProperties;'
       return:
         type:
-          - excel.Excel.DocumentProperties
+          - excel_1_7.Excel.DocumentProperties
         description: |-
 
           #### Examples
@@ -392,7 +392,7 @@ items:
       content: 'readonly protection: Excel.WorkbookProtection;'
       return:
         type:
-          - excel.Excel.WorkbookProtection
+          - excel_1_7.Excel.WorkbookProtection
   - uid: excel_1_7.Excel.Workbook.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -422,7 +422,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_7.Excel.Workbook.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -440,7 +440,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Workbook
+            - excel_1_7.Excel.Workbook
   - uid: excel_1_7.Excel.Workbook.settings
     summary: |-
       Represents a collection of Settings associated with the workbook. Read-only.
@@ -455,7 +455,7 @@ items:
       content: 'readonly settings: Excel.SettingCollection;'
       return:
         type:
-          - excel.Excel.SettingCollection
+          - excel_1_7.Excel.SettingCollection
   - uid: excel_1_7.Excel.Workbook.styles
     summary: |-
       Represents a collection of styles associated with the workbook. Read-only.
@@ -470,7 +470,7 @@ items:
       content: 'readonly styles: Excel.StyleCollection;'
       return:
         type:
-          - excel.Excel.StyleCollection
+          - excel_1_7.Excel.StyleCollection
   - uid: excel_1_7.Excel.Workbook.tables
     summary: |-
       Represents a collection of tables associated with the workbook. Read-only.
@@ -485,7 +485,7 @@ items:
       content: 'readonly tables: Excel.TableCollection;'
       return:
         type:
-          - excel.Excel.TableCollection
+          - excel_1_7.Excel.TableCollection
   - uid: excel_1_7.Excel.Workbook.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -502,7 +502,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorkbookData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorkbookData
+          - excel_1_7.Excel.Interfaces.WorkbookData
         description: ''
   - uid: excel_1_7.Excel.Workbook.worksheets
     summary: |-
@@ -518,4 +518,4 @@ items:
       content: 'readonly worksheets: Excel.WorksheetCollection;'
       return:
         type:
-          - excel.Excel.WorksheetCollection
+          - excel_1_7.Excel.WorksheetCollection

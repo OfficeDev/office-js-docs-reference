@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_8
     children:
       - excel_1_8.Excel.TableColumn.context
@@ -44,7 +44,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_8.Excel.RequestContext
   - uid: excel_1_8.Excel.TableColumn.delete
     summary: |-
       Deletes the column from the table.
@@ -91,7 +91,7 @@ items:
       content: 'readonly filter: Excel.Filter;'
       return:
         type:
-          - excel.Excel.Filter
+          - excel_1_8.Excel.Filter
   - uid: excel_1_8.Excel.TableColumn.getDataBodyRange
     summary: |-
       Gets the range object associated with the data body of the column.
@@ -106,7 +106,7 @@ items:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_8.Excel.Range
         description: |-
 
           #### Examples
@@ -140,7 +140,7 @@ items:
       content: 'getHeaderRowRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_8.Excel.Range
         description: |-
 
           #### Examples
@@ -175,7 +175,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_8.Excel.Range
         description: |-
 
           #### Examples
@@ -210,7 +210,7 @@ items:
       content: 'getTotalRowRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_8.Excel.Range
         description: |-
 
           #### Examples
@@ -292,13 +292,13 @@ items:
       content: 'load(option?: Excel.Interfaces.TableColumnLoadOptions): Excel.TableColumn;'
       return:
         type:
-          - excel.Excel.TableColumn
+          - excel_1_8.Excel.TableColumn
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.TableColumnLoadOptions
+            - excel_1_8.Excel.Interfaces.TableColumnLoadOptions
   - uid: excel_1_8.Excel.TableColumn.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -312,7 +312,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TableColumn;'
       return:
         type:
-          - excel.Excel.TableColumn
+          - excel_1_8.Excel.TableColumn
         description: |-
 
           #### Examples
@@ -368,7 +368,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableColumn;'
       return:
         type:
-          - excel.Excel.TableColumn
+          - excel_1_8.Excel.TableColumn
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -423,7 +423,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.TableColumn.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -441,7 +441,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.TableColumn
+            - excel_1_8.Excel.TableColumn
   - uid: excel_1_8.Excel.TableColumn.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -458,7 +458,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableColumnData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableColumnData
+          - excel_1_8.Excel.Interfaces.TableColumnData
         description: ''
   - uid: excel_1_8.Excel.TableColumn.values
     summary: >-

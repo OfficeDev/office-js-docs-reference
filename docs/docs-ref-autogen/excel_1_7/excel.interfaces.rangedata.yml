@@ -156,7 +156,7 @@ items:
       content: 'format?: Excel.Interfaces.RangeFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFormatData
+          - excel_1_7.Excel.Interfaces.RangeFormatData
   - uid: excel_1_7.Excel.Interfaces.RangeData.formulas
     summary: >-
       Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
@@ -241,7 +241,7 @@ items:
       content: 'hyperlink?: Excel.RangeHyperlink;'
       return:
         type:
-          - excel.Excel.RangeHyperlink
+          - excel_1_7.Excel.RangeHyperlink
   - uid: excel_1_7.Excel.Interfaces.RangeData.isEntireColumn
     summary: |-
       Represents if the current range is an entire column. Read-only.

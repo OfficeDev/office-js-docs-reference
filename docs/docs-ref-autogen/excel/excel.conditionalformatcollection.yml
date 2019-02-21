@@ -168,7 +168,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel.Excel.RequestContext
   - uid: excel.Excel.ConditionalFormatCollection.getCount
     summary: |-
       Returns the number of conditional formats in the workbook. Read-only.

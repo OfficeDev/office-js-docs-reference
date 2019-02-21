@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_1
     children:
       - excel_1_1.Excel.Range.address
@@ -141,7 +141,7 @@ items:
         - id: applyTo
           description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
           type:
-            - excel.Excel.ClearApplyTo
+            - excel_1_1.Excel.ClearApplyTo
   - uid: excel_1_1.Excel.Range.clear_1
     summary: |-
       Clear range values, format, fill, border, etc.
@@ -206,7 +206,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_1.Excel.RequestContext
   - uid: excel_1_1.Excel.Range.delete
     summary: |-
       Deletes the cells associated with the range.
@@ -227,7 +227,7 @@ items:
         - id: shift
           description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
           type:
-            - excel.Excel.DeleteShiftDirection
+            - excel_1_1.Excel.DeleteShiftDirection
   - uid: excel_1_1.Excel.Range.delete_1
     summary: |-
       Deletes the cells associated with the range.
@@ -282,7 +282,7 @@ items:
       content: 'readonly format: Excel.RangeFormat;'
       return:
         type:
-          - excel.Excel.RangeFormat
+          - excel_1_1.Excel.RangeFormat
   - uid: excel_1_1.Excel.Range.formulas
     summary: >-
       Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
@@ -336,7 +336,7 @@ items:
       content: 'getBoundingRect(anotherRange: Range | string): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -380,7 +380,7 @@ items:
       content: 'getCell(row: number, column: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -426,7 +426,7 @@ items:
       content: 'getColumn(column: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -468,7 +468,7 @@ items:
       content: 'getEntireColumn(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -508,7 +508,7 @@ items:
       content: 'getEntireRow(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -547,7 +547,7 @@ items:
       content: 'getIntersection(anotherRange: Range | string): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -588,7 +588,7 @@ items:
       content: 'getLastCell(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -623,7 +623,7 @@ items:
       content: 'getLastColumn(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -658,7 +658,7 @@ items:
       content: 'getLastRow(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -696,7 +696,7 @@ items:
       content: 'getOffsetRange(rowOffset: number, columnOffset: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -745,7 +745,7 @@ items:
       content: 'getRow(row: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -787,7 +787,7 @@ items:
       content: 'insert(shift: Excel.InsertShiftDirection): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -811,7 +811,7 @@ items:
         - id: shift
           description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
           type:
-            - excel.Excel.InsertShiftDirection
+            - excel_1_1.Excel.InsertShiftDirection
   - uid: excel_1_1.Excel.Range.insert_1
     summary: >-
       Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
@@ -828,7 +828,7 @@ items:
       content: 'insert(shiftString: "Down" | "Right"): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: ''
       parameters:
         - id: shiftString
@@ -866,13 +866,13 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.RangeLoadOptions
+            - excel_1_1.Excel.Interfaces.RangeLoadOptions
   - uid: excel_1_1.Excel.Range.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -886,7 +886,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -966,7 +966,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -1123,7 +1123,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - office.OfficeExtension.UpdateOptions
+            - OfficeExtension.UpdateOptions
   - uid: excel_1_1.Excel.Range.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -1141,7 +1141,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Range
+            - excel_1_1.Excel.Range
   - uid: excel_1_1.Excel.Range.text
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
@@ -1175,7 +1175,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeData
+          - excel_1_1.Excel.Interfaces.RangeData
         description: ''
   - uid: excel_1_1.Excel.Range.track
     summary: >-
@@ -1193,7 +1193,7 @@ items:
       content: 'track(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: ''
   - uid: excel_1_1.Excel.Range.untrack
     summary: >-
@@ -1210,7 +1210,7 @@ items:
       content: 'untrack(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - excel_1_1.Excel.Range
         description: |-
 
           #### Examples
@@ -1282,4 +1282,4 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - excel_1_1.Excel.Worksheet

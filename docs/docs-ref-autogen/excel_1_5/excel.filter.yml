@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel_1_5
     children:
       - excel_1_5.Excel.Filter.apply
@@ -54,7 +54,7 @@ items:
         - id: criteria
           description: The criteria to apply.
           type:
-            - excel.Excel.FilterCriteria
+            - excel_1_5.Excel.FilterCriteria
   - uid: excel_1_5.Excel.Filter.applyBottomItemsFilter
     summary: |-
       Apply a "Bottom Item" filter to the column for the given number of elements.
@@ -146,7 +146,7 @@ items:
         - id: oper
           description: Optional. The operator that describes how the two criteria are joined.
           type:
-            - excel.Excel.FilterOperator
+            - excel_1_5.Excel.FilterOperator
   - uid: excel_1_5.Excel.Filter.applyCustomFilter_1
     summary: |-
       Apply an "Icon" filter to the column for the given criteria strings.
@@ -196,7 +196,7 @@ items:
         - id: criteria
           description: The dynamic criteria to apply.
           type:
-            - excel.Excel.DynamicFilterCriteria
+            - excel_1_5.Excel.DynamicFilterCriteria
   - uid: excel_1_5.Excel.Filter.applyDynamicFilter_1
     summary: |-
       Apply a "Dynamic" filter to the column.
@@ -275,7 +275,7 @@ items:
         - id: icon
           description: The icons of the cells to show.
           type:
-            - excel.Excel.Icon
+            - excel_1_5.Excel.Icon
   - uid: excel_1_5.Excel.Filter.applyTopItemsFilter
     summary: |-
       Apply a "Top Item" filter to the column for the given number of elements.
@@ -368,7 +368,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - RequestContext
+          - excel_1_5.Excel.RequestContext
   - uid: excel_1_5.Excel.Filter.criteria
     summary: |-
       The currently applied filter on the given column. Read-only.
@@ -383,7 +383,7 @@ items:
       content: 'readonly criteria: Excel.FilterCriteria;'
       return:
         type:
-          - excel.Excel.FilterCriteria
+          - excel_1_5.Excel.FilterCriteria
   - uid: excel_1_5.Excel.Filter.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -415,13 +415,13 @@ items:
       content: 'load(option?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;'
       return:
         type:
-          - excel.Excel.Filter
+          - excel_1_5.Excel.Filter
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.FilterLoadOptions
+            - excel_1_5.Excel.Interfaces.FilterLoadOptions
   - uid: excel_1_5.Excel.Filter.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -435,7 +435,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Filter;'
       return:
         type:
-          - excel.Excel.Filter
+          - excel_1_5.Excel.Filter
         description: ''
       parameters:
         - id: propertyNames
@@ -455,7 +455,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Filter;'
       return:
         type:
-          - excel.Excel.Filter
+          - excel_1_5.Excel.Filter
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -480,5 +480,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.FilterData;'
       return:
         type:
-          - excel.Excel.Interfaces.FilterData
+          - excel_1_5.Excel.Interfaces.FilterData
         description: ''
