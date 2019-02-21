@@ -19,10 +19,8 @@ items:
     children:
       - outlook.Office.Location.getAsync
       - outlook.Office.Location.getAsync_1
-      - outlook.Office.Location.getAsync_2
       - outlook.Office.Location.setAsync
       - outlook.Office.Location.setAsync_1
-      - outlook.Office.Location.setAsync_2
   - uid: outlook.Office.Location.getAsync
     summary: >-
       Gets the location of an appointment.
@@ -59,8 +57,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void):
-        void;
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) =>
+        void): void;
       return:
         type:
           - void
@@ -68,19 +66,19 @@ items:
       parameters:
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
           type:
             - Office.AsyncContextOptions
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult.
 
 
             \[Api set: Mailbox 1.1\]
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.Location.getAsync_1
     summary: >-
       Gets the location of an appointment.
@@ -99,7 +97,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback: (result: Office.AsyncResult<string>) => void): void;'
+      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -107,39 +105,13 @@ items:
       parameters:
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult.
 
 
             \[Api set: Mailbox 1.1\]
           type:
-            - '(result: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.Location.getAsync_2
-    summary: >-
-      Gets the location of an appointment.
-
-
-      The getAsync method starts an asynchronous call to the Exchange server to get the location of an appointment. The
-      location of the appointment is provided as a string in the asyncResult.value property.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
-    name: getAsync()
-    fullName: getAsync()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAsync(): void;'
-      return:
-        type:
-          - void
-        description: ''
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.Location.setAsync
     summary: >-
       Sets the location of an appointment.
@@ -161,7 +133,7 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(location: string, options?: Office.AsyncContextOptions, callback?: (result:
+        setAsync(location: string, options?: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -187,41 +159,8 @@ items:
 
             \[Api set: Mailbox 1.1\]
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Location.setAsync_1
-    summary: >-
-      Sets the location of an appointment.
-
-
-      The setAsync method starts an asynchronous call to the Exchange server to set the location of an appointment.
-      Setting the location of an appointment overwrites the current location.
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-      <tr><td>Errors</td><td>DataExceedsMaximumSize - The location parameter is longer than 255 characters.</td></tr>
-      </table>
-    name: setAsync(location)
-    fullName: setAsync(location)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setAsync(location: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: location
-          description: |-
-            The location of the appointment. The string is limited to 255 characters.
-
-            \[Api set: Mailbox 1.1\]
-          type:
-            - string
-  - uid: outlook.Office.Location.setAsync_2
     summary: >-
       Sets the location of an appointment.
 
@@ -257,7 +196,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(location: string, callback: (result: Office.AsyncResult<void>) => void): void;'
+      content: 'setAsync(location: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -276,4 +215,4 @@ items:
 
             \[Api set: Mailbox 1.1\]
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'

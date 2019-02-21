@@ -20,13 +20,10 @@ items:
     children:
       - outlook.Office.EnhancedLocation.addAsync
       - outlook.Office.EnhancedLocation.addAsync_1
-      - outlook.Office.EnhancedLocation.addAsync_2
       - outlook.Office.EnhancedLocation.getAsync
       - outlook.Office.EnhancedLocation.getAsync_1
-      - outlook.Office.EnhancedLocation.getAsync_2
       - outlook.Office.EnhancedLocation.removeAsync
       - outlook.Office.EnhancedLocation.removeAsync_1
-      - outlook.Office.EnhancedLocation.removeAsync_2
   - uid: outlook.Office.EnhancedLocation.addAsync
     summary: |-
       Adds to the set of locations associated with the appointment.
@@ -47,8 +44,8 @@ items:
     type: method
     syntax:
       content: >-
-        addAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?: (result:
-        Office.AsyncResultStatus) => void): void;
+        addAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResultStatus) => void): void;
       return:
         type:
           - void
@@ -70,46 +67,8 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to
             determine if the call succeeded.
           type:
-            - '(result: Office.AsyncResultStatus) => void'
+            - '(asyncResult: Office.AsyncResultStatus) => void'
   - uid: outlook.Office.EnhancedLocation.addAsync_1
-    summary: |-
-      Adds to the set of locations associated with the appointment.
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-      <tr><td>Errors</td><td>InvalidFormatError - The format of the specified data object is not valid.</td></tr>
-      </table>
-    isPreview: true
-    name: 'addAsync(locationIdentifiers, callback)'
-    fullName: 'addAsync(locationIdentifiers, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        addAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void):
-        void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: locationIdentifiers
-          description: The locations to be added to the current list of locations.
-          type:
-            - 'LocationIdentifier[]'
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to
-            determine if the call succeeded.
-          type:
-            - '(result: Office.AsyncResultStatus) => void'
-  - uid: outlook.Office.EnhancedLocation.addAsync_2
     summary: |-
       Adds to the set of locations associated with the appointment.
 
@@ -138,13 +97,15 @@ items:
 
       ```
     isPreview: true
-    name: addAsync(locationIdentifiers)
-    fullName: addAsync(locationIdentifiers)
+    name: 'addAsync(locationIdentifiers, callback)'
+    fullName: 'addAsync(locationIdentifiers, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'addAsync(locationIdentifiers: LocationIdentifier[]): void;'
+      content: >-
+        addAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: Office.AsyncResultStatus) =>
+        void): void;
       return:
         type:
           - void
@@ -154,6 +115,13 @@ items:
           description: The locations to be added to the current list of locations.
           type:
             - 'LocationIdentifier[]'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to
+            determine if the call succeeded.
+          type:
+            - '(asyncResult: Office.AsyncResultStatus) => void'
   - uid: outlook.Office.EnhancedLocation.getAsync
     summary: |-
       Gets the set of locations associated with the appointment.
@@ -172,8 +140,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<LocationDetails[]>)
-        => void): void;
+        getAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<LocationDetails[]>) => void): void;
       return:
         type:
           - void
@@ -190,7 +158,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: Office.AsyncResult<LocationDetails[]>) => void'
+            - '(asyncResult: Office.AsyncResult<LocationDetails[]>) => void'
   - uid: outlook.Office.EnhancedLocation.getAsync_1
     summary: |-
       Gets the set of locations associated with the appointment.
@@ -228,7 +196,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback?: (result: Office.AsyncResult<LocationDetails[]>) => void): void;'
+      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<LocationDetails[]>) => void): void;'
       return:
         type:
           - void
@@ -239,29 +207,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: Office.AsyncResult<LocationDetails[]>) => void'
-  - uid: outlook.Office.EnhancedLocation.getAsync_2
-    summary: |-
-      Gets the set of locations associated with the appointment.
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
-    isPreview: true
-    name: getAsync()
-    fullName: getAsync()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAsync(): void;'
-      return:
-        type:
-          - void
-        description: ''
+            - '(asyncResult: Office.AsyncResult<LocationDetails[]>) => void'
   - uid: outlook.Office.EnhancedLocation.removeAsync
     summary: >-
       Removes the set of locations associated with the appointment.
@@ -286,7 +232,7 @@ items:
     syntax:
       content: >-
         removeAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?:
-        (result: Office.AsyncResultStatus) => void): void;
+        (asyncResult: Office.AsyncResultStatus) => void): void;
       return:
         type:
           - void
@@ -308,49 +254,8 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to
             determine if the call succeeded.
           type:
-            - '(result: Office.AsyncResultStatus) => void'
+            - '(asyncResult: Office.AsyncResultStatus) => void'
   - uid: outlook.Office.EnhancedLocation.removeAsync_1
-    summary: >-
-      Removes the set of locations associated with the appointment.
-
-
-      If there are multiple locations with the same name, all matching locations will be removed even if only one was
-      specified in locationIdentifiers.
-
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
-    isPreview: true
-    name: 'removeAsync(locationIdentifiers, callback)'
-    fullName: 'removeAsync(locationIdentifiers, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) =>
-        void): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: locationIdentifiers
-          description: The locations to be removed from the current list of locations.
-          type:
-            - 'LocationIdentifier[]'
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to
-            determine if the call succeeded.
-          type:
-            - '(result: Office.AsyncResultStatus) => void'
-  - uid: outlook.Office.EnhancedLocation.removeAsync_2
     summary: >-
       Removes the set of locations associated with the appointment.
 
@@ -382,13 +287,15 @@ items:
 
       ```
     isPreview: true
-    name: removeAsync(locationIdentifiers)
-    fullName: removeAsync(locationIdentifiers)
+    name: 'removeAsync(locationIdentifiers, callback)'
+    fullName: 'removeAsync(locationIdentifiers, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'removeAsync(locationIdentifiers: LocationIdentifier[]): void;'
+      content: >-
+        removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: Office.AsyncResultStatus) =>
+        void): void;
       return:
         type:
           - void
@@ -398,3 +305,10 @@ items:
           description: The locations to be removed from the current list of locations.
           type:
             - 'LocationIdentifier[]'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to
+            determine if the call succeeded.
+          type:
+            - '(asyncResult: Office.AsyncResultStatus) => void'

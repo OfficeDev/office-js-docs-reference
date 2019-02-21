@@ -38,10 +38,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'callback?: (result: Office.AsyncResult<any>) => void;'
+      content: 'callback?: (asyncResult: Office.AsyncResult<any>) => void;'
       return:
         type:
-          - '(result: Office.AsyncResult<any>) => void'
+          - '(asyncResult: Office.AsyncResult<any>) => void'
   - uid: Outlook_1_2.Office.ReplyFormData.htmlBody
     summary: >-
       A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32
