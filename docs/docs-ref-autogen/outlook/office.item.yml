@@ -21,20 +21,15 @@ items:
     children:
       - outlook.Office.Item.addHandlerAsync
       - outlook.Office.Item.addHandlerAsync_1
-      - outlook.Office.Item.addHandlerAsync_2
       - outlook.Office.Item.getAttachmentContentAsync
       - outlook.Office.Item.getAttachmentContentAsync_1
-      - outlook.Office.Item.getAttachmentContentAsync_2
       - outlook.Office.Item.getInitializationContextAsync
       - outlook.Office.Item.getInitializationContextAsync_1
-      - outlook.Office.Item.getInitializationContextAsync_2
       - outlook.Office.Item.getSharedPropertiesAsync
       - outlook.Office.Item.getSharedPropertiesAsync_1
       - outlook.Office.Item.loadCustomPropertiesAsync
-      - outlook.Office.Item.loadCustomPropertiesAsync_1
       - outlook.Office.Item.removeHandlerAsync
       - outlook.Office.Item.removeHandlerAsync_1
-      - outlook.Office.Item.removeHandlerAsync_2
       - outlook.Office.Item.body
       - outlook.Office.Item.itemType
       - outlook.Office.Item.notificationMessages
@@ -62,8 +57,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result:
-        Office.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -84,13 +79,13 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - any
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Item.addHandlerAsync_1
     summary: >-
       Adds an event handler for a supported event.
@@ -132,8 +127,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>)
-        => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -154,45 +149,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Item.addHandlerAsync_2
-    summary: >-
-      Adds an event handler for a supported event.
-
-
-      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
-      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->. In Preview,
-      `Office.EventType.AttachmentsChanged` is also supported.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
-    name: 'addHandlerAsync(eventType, handler)'
-    fullName: 'addHandlerAsync(eventType, handler)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addHandlerAsync(eventType: Office.EventType, handler: any): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: eventType
-          description: The event that should invoke the handler.
-          type:
-            - Office.EventType
-        - id: handler
-          description: >-
-            The function to handle the event. The function must accept a single parameter, which is an object literal.
-            The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
-          type:
-            - any
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Item.getAttachmentContentAsync
     summary: >-
       Gets an attachment from a message or appointment and returns it as an **AttachmentContent** object.
@@ -259,8 +216,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAttachmentContentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result:
-        Office.AsyncResult<AttachmentContent>) => void): void;
+        getAttachmentContentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<AttachmentContent>) => void): void;
       return:
         type:
           - void
@@ -282,44 +239,8 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object. If the call fails, the asyncResult.error
             property will contain and error code with the reason for the failure.
           type:
-            - '(result: Office.AsyncResult<AttachmentContent>) => void'
+            - '(asyncResult: Office.AsyncResult<AttachmentContent>) => void'
   - uid: outlook.Office.Item.getAttachmentContentAsync_1
-    summary: >-
-      Gets an attachment from a message or appointment and returns it as an **AttachmentContent** object.
-
-
-      The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
-      practice, you should use the identifier to retrieve an attachment in the same session that the attachmentIds were
-      retrieved with the `getAttachmentsAsync` or `item.attachments` call. In Outlook Web App and OWA for Devices, the
-      attachment identifier is valid only within the same session. A session is over when the user closes the app, or if
-      the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
-
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
-      </table>
-    isPreview: true
-    name: getAttachmentContentAsync(attachmentId)
-    fullName: getAttachmentContentAsync(attachmentId)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAttachmentContentAsync(attachmentId: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: attachmentId
-          description: The identifier of the attachment you want to get.
-          type:
-            - string
-  - uid: outlook.Office.Item.getAttachmentContentAsync_2
     summary: >-
       Gets an attachment from a message or appointment and returns it as an **AttachmentContent** object.
 
@@ -346,8 +267,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAttachmentContentAsync(attachmentId: string, callback?: (result: Office.AsyncResult<AttachmentContent>) =>
-        void): void;
+        getAttachmentContentAsync(attachmentId: string, callback?: (asyncResult:
+        Office.AsyncResult<AttachmentContent>) => void): void;
       return:
         type:
           - void
@@ -363,7 +284,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object. If the call fails, the asyncResult.error
             property will contain and error code with the reason for the failure.
           type:
-            - '(result: Office.AsyncResult<AttachmentContent>) => void'
+            - '(asyncResult: Office.AsyncResult<AttachmentContent>) => void'
   - uid: outlook.Office.Item.getInitializationContextAsync
     summary: >-
       Gets initialization data passed when the add-in is [activated by an actionable
@@ -388,7 +309,7 @@ items:
     type: method
     syntax:
       content: >-
-        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (result:
+        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<string>) => void): void;
       return:
         type:
@@ -409,7 +330,7 @@ items:
             asyncResult object will contain an Error object with its code property set to 9020 and its name property set
             to GenericResponseError.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.Item.getInitializationContextAsync_1
     summary: >-
       Gets initialization data passed when the add-in is [activated by an actionable
@@ -463,7 +384,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getInitializationContextAsync(callback?: (result: Office.AsyncResult<string>) => void): void;'
+      content: 'getInitializationContextAsync(callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -477,35 +398,7 @@ items:
             asyncResult object will contain an Error object with its code property set to 9020 and its name property set
             to GenericResponseError.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.Item.getInitializationContextAsync_2
-    summary: >-
-      Gets initialization data passed when the add-in is [activated by an actionable
-      message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
-
-
-      **Note**: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
-      16.0.8413.1000) and Outlook on the web for Office 365.
-
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
-    isPreview: true
-    name: getInitializationContextAsync()
-    fullName: getInitializationContextAsync()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getInitializationContextAsync(): void;'
-      return:
-        type:
-          - void
-        description: ''
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.Item.getSharedPropertiesAsync
     summary: |-
       Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
@@ -524,7 +417,7 @@ items:
     type: method
     syntax:
       content: >-
-        getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (result:
+        getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
         Office.AsyncResult<SharedProperties>) => void): void;
       return:
         type:
@@ -542,7 +435,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. The `value` property of the result is the properties of the shared item.
           type:
-            - '(result: Office.AsyncResult<SharedProperties>) => void'
+            - '(asyncResult: Office.AsyncResult<SharedProperties>) => void'
   - uid: outlook.Office.Item.getSharedPropertiesAsync_1
     summary: |-
       Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
@@ -575,7 +468,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getSharedPropertiesAsync(callback: (result: Office.AsyncResult<SharedProperties>) => void): void;'
+      content: 'getSharedPropertiesAsync(callback: (asyncResult: Office.AsyncResult<SharedProperties>) => void): void;'
       return:
         type:
           - void
@@ -586,7 +479,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. The `value` property of the result is the properties of the shared item.
           type:
-            - '(result: Office.AsyncResult<SharedProperties>) => void'
+            - '(asyncResult: Office.AsyncResult<SharedProperties>) => void'
   - uid: outlook.Office.Item.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
@@ -616,8 +509,8 @@ items:
     type: method
     syntax:
       content: >-
-        loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?:
-        any): void;
+        loadCustomPropertiesAsync(callback: (asyncResult: Office.AsyncResult<CustomProperties>) => void,
+        userContext?: any): void;
       return:
         type:
           - void
@@ -628,97 +521,13 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<CustomProperties>) => void'
+            - '(asyncResult: Office.AsyncResult<CustomProperties>) => void'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
             accessed by the asyncResult.asyncContext property in the callback function.
           type:
             - any
-  - uid: outlook.Office.Item.loadCustomPropertiesAsync_1
-    summary: >-
-      Asynchronously loads custom properties for this add-in on the selected item.
-
-
-      Custom properties are stored as key/value pairs on a per-app, per-item basis. This method returns a
-      CustomProperties object in the callback, which provides methods to access the custom properties specific to the
-      current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used
-      as secure storage.
-
-
-      The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can
-      be used to get, set, and remove custom properties from the item and save changes to the custom property set back
-      to the server.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example shows how to use the loadCustomPropertiesAsync method
-
-      // to asynchronously load custom properties that are specific to the current item.
-
-      // The example also shows how to use the saveAsync method to save these properties
-
-      // back to the server. After loading the custom properties, the example uses the
-
-      // get method to read the custom property myProp, the set method to write the
-
-      // custom property otherProp, and then finally calls the saveAsync method to save
-
-      // the custom properties.
-
-      Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready function.
-          $(document).ready(function () {
-              // After the DOM is loaded, add-in-specific code can run.
-              var mailbox = Office.context.mailbox;
-              mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
-          });
-      };
-
-
-      function customPropsCallback(asyncResult) {
-          var customProps = asyncResult.value;
-          var myProp = customProps.get("myProp");
-
-          customProps.set("otherProp", "value");
-          customProps.saveAsync(saveCallback);
-      }
-
-
-      function saveCallback(asyncResult) {
-
-      }
-
-      ```
-    name: loadCustomPropertiesAsync(callback)
-    fullName: loadCustomPropertiesAsync(callback)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: callback
-          description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult.
-          type:
-            - '(result: Office.AsyncResult<CustomProperties>) => void'
   - uid: outlook.Office.Item.removeHandlerAsync
     summary: >-
       Removes the event handlers for a supported event type.
@@ -742,7 +551,7 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (result:
+        removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -764,7 +573,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Item.removeHandlerAsync_1
     summary: >-
       Removes the event handlers for a supported event type.
@@ -788,8 +597,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, callback?: (result: Office.AsyncResult<void>) => void):
-        void;
+        removeHandlerAsync(eventType: Office.EventType, callback?: (asyncResult: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -804,39 +613,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Item.removeHandlerAsync_2
-    summary: >-
-      Removes the event handlers for a supported event type.
-
-
-      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
-      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->. In Preview,
-      `Office.EventType.AttachmentsChanged` is also supported.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
-    name: removeHandlerAsync(eventType)
-    fullName: removeHandlerAsync(eventType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'removeHandlerAsync(eventType: Office.EventType): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: eventType
-          description: The event that should revoke the handler.
-          type:
-            - Office.EventType
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Item.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
