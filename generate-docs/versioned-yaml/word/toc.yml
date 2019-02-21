@@ -1,0 +1,289 @@
+items:
+  - name: API reference
+    href: ~/docs-ref-autogen/overview/office.md
+    items:
+      - name: word
+        uid: word
+        items:
+          - name: Word
+            items:
+              - name: Alignment
+                uid: word.Word.Alignment
+              - name: Application
+                uid: word.Word.Application
+              - name: Body
+                uid: word.Word.Body
+              - name: BodyType
+                uid: word.Word.BodyType
+              - name: BorderLocation
+                uid: word.Word.BorderLocation
+              - name: BorderType
+                uid: word.Word.BorderType
+              - name: BreakType
+                uid: word.Word.BreakType
+              - name: CellPaddingLocation
+                uid: word.Word.CellPaddingLocation
+              - name: ContentControl
+                uid: word.Word.ContentControl
+              - name: ContentControlAppearance
+                uid: word.Word.ContentControlAppearance
+              - name: ContentControlCollection
+                uid: word.Word.ContentControlCollection
+              - name: ContentControlType
+                uid: word.Word.ContentControlType
+              - name: CustomProperty
+                uid: word.Word.CustomProperty
+              - name: CustomPropertyCollection
+                uid: word.Word.CustomPropertyCollection
+              - name: Document
+                uid: word.Word.Document
+              - name: DocumentCreated
+                uid: word.Word.DocumentCreated
+              - name: DocumentProperties
+                uid: word.Word.DocumentProperties
+              - name: DocumentPropertyType
+                uid: word.Word.DocumentPropertyType
+              - name: ErrorCodes
+                uid: word.Word.ErrorCodes
+              - name: EventType
+                uid: word.Word.EventType
+              - name: FileContentFormat
+                uid: word.Word.FileContentFormat
+              - name: Font
+                uid: word.Word.Font
+              - name: HeaderFooterType
+                uid: word.Word.HeaderFooterType
+              - name: ImageFormat
+                uid: word.Word.ImageFormat
+              - name: InlinePicture
+                uid: word.Word.InlinePicture
+              - name: InlinePictureCollection
+                uid: word.Word.InlinePictureCollection
+              - name: InsertLocation
+                uid: word.Word.InsertLocation
+              - name: Interfaces
+                items:
+                  - name: BodyData
+                    uid: word.Word.Interfaces.BodyData
+                  - name: BodyLoadOptions
+                    uid: word.Word.Interfaces.BodyLoadOptions
+                  - name: BodyUpdateData
+                    uid: word.Word.Interfaces.BodyUpdateData
+                  - name: CollectionLoadOptions
+                    uid: word.Word.Interfaces.CollectionLoadOptions
+                  - name: ContentControlCollectionData
+                    uid: word.Word.Interfaces.ContentControlCollectionData
+                  - name: ContentControlCollectionLoadOptions
+                    uid: word.Word.Interfaces.ContentControlCollectionLoadOptions
+                  - name: ContentControlCollectionUpdateData
+                    uid: word.Word.Interfaces.ContentControlCollectionUpdateData
+                  - name: ContentControlData
+                    uid: word.Word.Interfaces.ContentControlData
+                  - name: ContentControlLoadOptions
+                    uid: word.Word.Interfaces.ContentControlLoadOptions
+                  - name: ContentControlUpdateData
+                    uid: word.Word.Interfaces.ContentControlUpdateData
+                  - name: CustomPropertyCollectionData
+                    uid: word.Word.Interfaces.CustomPropertyCollectionData
+                  - name: CustomPropertyCollectionLoadOptions
+                    uid: word.Word.Interfaces.CustomPropertyCollectionLoadOptions
+                  - name: CustomPropertyCollectionUpdateData
+                    uid: word.Word.Interfaces.CustomPropertyCollectionUpdateData
+                  - name: CustomPropertyData
+                    uid: word.Word.Interfaces.CustomPropertyData
+                  - name: CustomPropertyLoadOptions
+                    uid: word.Word.Interfaces.CustomPropertyLoadOptions
+                  - name: CustomPropertyUpdateData
+                    uid: word.Word.Interfaces.CustomPropertyUpdateData
+                  - name: DocumentCreatedData
+                    uid: word.Word.Interfaces.DocumentCreatedData
+                  - name: DocumentCreatedLoadOptions
+                    uid: word.Word.Interfaces.DocumentCreatedLoadOptions
+                  - name: DocumentCreatedUpdateData
+                    uid: word.Word.Interfaces.DocumentCreatedUpdateData
+                  - name: DocumentData
+                    uid: word.Word.Interfaces.DocumentData
+                  - name: DocumentLoadOptions
+                    uid: word.Word.Interfaces.DocumentLoadOptions
+                  - name: DocumentPropertiesData
+                    uid: word.Word.Interfaces.DocumentPropertiesData
+                  - name: DocumentPropertiesLoadOptions
+                    uid: word.Word.Interfaces.DocumentPropertiesLoadOptions
+                  - name: DocumentPropertiesUpdateData
+                    uid: word.Word.Interfaces.DocumentPropertiesUpdateData
+                  - name: DocumentUpdateData
+                    uid: word.Word.Interfaces.DocumentUpdateData
+                  - name: FontData
+                    uid: word.Word.Interfaces.FontData
+                  - name: FontLoadOptions
+                    uid: word.Word.Interfaces.FontLoadOptions
+                  - name: FontUpdateData
+                    uid: word.Word.Interfaces.FontUpdateData
+                  - name: InlinePictureCollectionData
+                    uid: word.Word.Interfaces.InlinePictureCollectionData
+                  - name: InlinePictureCollectionLoadOptions
+                    uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions
+                  - name: InlinePictureCollectionUpdateData
+                    uid: word.Word.Interfaces.InlinePictureCollectionUpdateData
+                  - name: InlinePictureData
+                    uid: word.Word.Interfaces.InlinePictureData
+                  - name: InlinePictureLoadOptions
+                    uid: word.Word.Interfaces.InlinePictureLoadOptions
+                  - name: InlinePictureUpdateData
+                    uid: word.Word.Interfaces.InlinePictureUpdateData
+                  - name: ListCollectionData
+                    uid: word.Word.Interfaces.ListCollectionData
+                  - name: ListCollectionLoadOptions
+                    uid: word.Word.Interfaces.ListCollectionLoadOptions
+                  - name: ListCollectionUpdateData
+                    uid: word.Word.Interfaces.ListCollectionUpdateData
+                  - name: ListData
+                    uid: word.Word.Interfaces.ListData
+                  - name: ListItemData
+                    uid: word.Word.Interfaces.ListItemData
+                  - name: ListItemLoadOptions
+                    uid: word.Word.Interfaces.ListItemLoadOptions
+                  - name: ListItemUpdateData
+                    uid: word.Word.Interfaces.ListItemUpdateData
+                  - name: ListLoadOptions
+                    uid: word.Word.Interfaces.ListLoadOptions
+                  - name: ParagraphCollectionData
+                    uid: word.Word.Interfaces.ParagraphCollectionData
+                  - name: ParagraphCollectionLoadOptions
+                    uid: word.Word.Interfaces.ParagraphCollectionLoadOptions
+                  - name: ParagraphCollectionUpdateData
+                    uid: word.Word.Interfaces.ParagraphCollectionUpdateData
+                  - name: ParagraphData
+                    uid: word.Word.Interfaces.ParagraphData
+                  - name: ParagraphLoadOptions
+                    uid: word.Word.Interfaces.ParagraphLoadOptions
+                  - name: ParagraphUpdateData
+                    uid: word.Word.Interfaces.ParagraphUpdateData
+                  - name: RangeCollectionData
+                    uid: word.Word.Interfaces.RangeCollectionData
+                  - name: RangeCollectionLoadOptions
+                    uid: word.Word.Interfaces.RangeCollectionLoadOptions
+                  - name: RangeCollectionUpdateData
+                    uid: word.Word.Interfaces.RangeCollectionUpdateData
+                  - name: RangeData
+                    uid: word.Word.Interfaces.RangeData
+                  - name: RangeLoadOptions
+                    uid: word.Word.Interfaces.RangeLoadOptions
+                  - name: RangeUpdateData
+                    uid: word.Word.Interfaces.RangeUpdateData
+                  - name: SearchOptionsData
+                    uid: word.Word.Interfaces.SearchOptionsData
+                  - name: SearchOptionsLoadOptions
+                    uid: word.Word.Interfaces.SearchOptionsLoadOptions
+                  - name: SearchOptionsUpdateData
+                    uid: word.Word.Interfaces.SearchOptionsUpdateData
+                  - name: SectionCollectionData
+                    uid: word.Word.Interfaces.SectionCollectionData
+                  - name: SectionCollectionLoadOptions
+                    uid: word.Word.Interfaces.SectionCollectionLoadOptions
+                  - name: SectionCollectionUpdateData
+                    uid: word.Word.Interfaces.SectionCollectionUpdateData
+                  - name: SectionData
+                    uid: word.Word.Interfaces.SectionData
+                  - name: SectionLoadOptions
+                    uid: word.Word.Interfaces.SectionLoadOptions
+                  - name: SectionUpdateData
+                    uid: word.Word.Interfaces.SectionUpdateData
+                  - name: TableBorderData
+                    uid: word.Word.Interfaces.TableBorderData
+                  - name: TableBorderLoadOptions
+                    uid: word.Word.Interfaces.TableBorderLoadOptions
+                  - name: TableBorderUpdateData
+                    uid: word.Word.Interfaces.TableBorderUpdateData
+                  - name: TableCellCollectionData
+                    uid: word.Word.Interfaces.TableCellCollectionData
+                  - name: TableCellCollectionLoadOptions
+                    uid: word.Word.Interfaces.TableCellCollectionLoadOptions
+                  - name: TableCellCollectionUpdateData
+                    uid: word.Word.Interfaces.TableCellCollectionUpdateData
+                  - name: TableCellData
+                    uid: word.Word.Interfaces.TableCellData
+                  - name: TableCellLoadOptions
+                    uid: word.Word.Interfaces.TableCellLoadOptions
+                  - name: TableCellUpdateData
+                    uid: word.Word.Interfaces.TableCellUpdateData
+                  - name: TableCollectionData
+                    uid: word.Word.Interfaces.TableCollectionData
+                  - name: TableCollectionLoadOptions
+                    uid: word.Word.Interfaces.TableCollectionLoadOptions
+                  - name: TableCollectionUpdateData
+                    uid: word.Word.Interfaces.TableCollectionUpdateData
+                  - name: TableData
+                    uid: word.Word.Interfaces.TableData
+                  - name: TableLoadOptions
+                    uid: word.Word.Interfaces.TableLoadOptions
+                  - name: TableRowCollectionData
+                    uid: word.Word.Interfaces.TableRowCollectionData
+                  - name: TableRowCollectionLoadOptions
+                    uid: word.Word.Interfaces.TableRowCollectionLoadOptions
+                  - name: TableRowCollectionUpdateData
+                    uid: word.Word.Interfaces.TableRowCollectionUpdateData
+                  - name: TableRowData
+                    uid: word.Word.Interfaces.TableRowData
+                  - name: TableRowLoadOptions
+                    uid: word.Word.Interfaces.TableRowLoadOptions
+                  - name: TableRowUpdateData
+                    uid: word.Word.Interfaces.TableRowUpdateData
+                  - name: TableUpdateData
+                    uid: word.Word.Interfaces.TableUpdateData
+              - name: List
+                uid: word.Word.List
+              - name: ListBullet
+                uid: word.Word.ListBullet
+              - name: ListCollection
+                uid: word.Word.ListCollection
+              - name: ListItem
+                uid: word.Word.ListItem
+              - name: ListLevelType
+                uid: word.Word.ListLevelType
+              - name: ListNumbering
+                uid: word.Word.ListNumbering
+              - name: LocationRelation
+                uid: word.Word.LocationRelation
+              - name: Paragraph
+                uid: word.Word.Paragraph
+              - name: ParagraphCollection
+                uid: word.Word.ParagraphCollection
+              - name: Range
+                uid: word.Word.Range
+              - name: RangeCollection
+                uid: word.Word.RangeCollection
+              - name: RangeLocation
+                uid: word.Word.RangeLocation
+              - name: RequestContext
+                uid: word.Word.RequestContext
+              - name: SearchOptions
+                uid: word.Word.SearchOptions
+              - name: Section
+                uid: word.Word.Section
+              - name: SectionCollection
+                uid: word.Word.SectionCollection
+              - name: SelectionMode
+                uid: word.Word.SelectionMode
+              - name: Style
+                uid: word.Word.Style
+              - name: Table
+                uid: word.Word.Table
+              - name: TableBorder
+                uid: word.Word.TableBorder
+              - name: TableCell
+                uid: word.Word.TableCell
+              - name: TableCellCollection
+                uid: word.Word.TableCellCollection
+              - name: TableCollection
+                uid: word.Word.TableCollection
+              - name: TableRow
+                uid: word.Word.TableRow
+              - name: TableRowCollection
+                uid: word.Word.TableRowCollection
+              - name: TapObjectType
+                uid: word.Word.TapObjectType
+              - name: UnderlineType
+                uid: word.Word.UnderlineType
+              - name: VerticalAlignment
+                uid: word.Word.VerticalAlignment
