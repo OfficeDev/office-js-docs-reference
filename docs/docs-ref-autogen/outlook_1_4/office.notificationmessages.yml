@@ -19,16 +19,12 @@ items:
     children:
       - Outlook_1_4.Office.NotificationMessages.addAsync
       - Outlook_1_4.Office.NotificationMessages.addAsync_1
-      - Outlook_1_4.Office.NotificationMessages.addAsync_2
       - Outlook_1_4.Office.NotificationMessages.getAllAsync
       - Outlook_1_4.Office.NotificationMessages.getAllAsync_1
-      - Outlook_1_4.Office.NotificationMessages.getAllAsync_2
       - Outlook_1_4.Office.NotificationMessages.removeAsync
       - Outlook_1_4.Office.NotificationMessages.removeAsync_1
-      - Outlook_1_4.Office.NotificationMessages.removeAsync_2
       - Outlook_1_4.Office.NotificationMessages.replaceAsync
       - Outlook_1_4.Office.NotificationMessages.replaceAsync_1
-      - Outlook_1_4.Office.NotificationMessages.replaceAsync_2
   - uid: Outlook_1_4.Office.NotificationMessages.addAsync
     summary: >-
       Adds a notification to an item.
@@ -49,7 +45,7 @@ items:
     syntax:
       content: >-
         addAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions,
-        callback?: (result: Office.AsyncResult<void>) => void): void;
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -81,7 +77,7 @@ items:
 
             \[Api set: Mailbox 1.3\]
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_4.Office.NotificationMessages.addAsync_1
     summary: >-
       Adds a notification to an item.
@@ -120,45 +116,6 @@ items:
       });
 
       ```
-    name: 'addAsync(key, JSONmessage)'
-    fullName: 'addAsync(key, JSONmessage)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addAsync(key: string, JSONmessage: NotificationMessageDetails): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: key
-          description: >-
-            A developer-specified key used to reference this notification message. Developers can use it to modify this
-            message later. It can't be longer than 32 characters.
-          type:
-            - string
-        - id: JSONmessage
-          description: >-
-            A JSON object that contains the notification message to be added to the item. It contains a
-            NotificationMessageDetails object.
-
-
-            \[Api set: Mailbox 1.3\]
-          type:
-            - NotificationMessageDetails
-  - uid: Outlook_1_4.Office.NotificationMessages.addAsync_2
-    summary: >-
-      Adds a notification to an item.
-
-
-      There are a maximum of 5 notifications per message. Setting more will return a
-      NumberOfNotificationMessagesExceeded error.
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
     name: 'addAsync(key, JSONmessage, callback)'
     fullName: 'addAsync(key, JSONmessage, callback)'
     langs:
@@ -166,8 +123,8 @@ items:
     type: method
     syntax:
       content: >-
-        addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: Office.AsyncResult<void>)
-        => void): void;
+        addAsync(key: string, JSONmessage: NotificationMessageDetails, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -193,7 +150,7 @@ items:
 
             \[Api set: Mailbox 1.3\]
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_4.Office.NotificationMessages.getAllAsync
     summary: |-
       Returns all keys and messages for an item.
@@ -211,7 +168,7 @@ items:
     type: method
     syntax:
       content: >-
-        getAllAsync(options?: Office.AsyncContextOptions, callback?: (result:
+        getAllAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<NotificationMessageDetails[]>) => void): void;
       return:
         type:
@@ -230,7 +187,7 @@ items:
             parameter of type Office.AsyncResult. The `value` property of the result is an array of
             NotificationMessageDetails objects.
           type:
-            - '(result: Office.AsyncResult<NotificationMessageDetails[]>) => void'
+            - '(asyncResult: Office.AsyncResult<NotificationMessageDetails[]>) => void'
   - uid: Outlook_1_4.Office.NotificationMessages.getAllAsync_1
     summary: |-
       Returns all keys and messages for an item.
@@ -267,7 +224,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAllAsync(callback: (result: Office.AsyncResult<NotificationMessageDetails[]>) => void): void;'
+      content: 'getAllAsync(callback?: (asyncResult: Office.AsyncResult<NotificationMessageDetails[]>) => void): void;'
       return:
         type:
           - void
@@ -279,28 +236,7 @@ items:
             parameter of type Office.AsyncResult. The `value` property of the result is an array of
             NotificationMessageDetails objects.
           type:
-            - '(result: Office.AsyncResult<NotificationMessageDetails[]>) => void'
-  - uid: Outlook_1_4.Office.NotificationMessages.getAllAsync_2
-    summary: |-
-      Returns all keys and messages for an item.
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
-    name: getAllAsync()
-    fullName: getAllAsync()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAllAsync(): void;'
-      return:
-        type:
-          - void
-        description: ''
+            - '(asyncResult: Office.AsyncResult<NotificationMessageDetails[]>) => void'
   - uid: Outlook_1_4.Office.NotificationMessages.removeAsync
     summary: |-
       Removes a notification message for an item.
@@ -318,7 +254,7 @@ items:
     type: method
     syntax:
       content: >-
-        removeAsync(key: string, options?: Office.AsyncContextOptions, callback?: (result:
+        removeAsync(key: string, options?: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -330,7 +266,9 @@ items:
           type:
             - string
         - id: options
-          description: ''
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
           type:
             - Office.AsyncContextOptions
         - id: callback
@@ -338,7 +276,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_4.Office.NotificationMessages.removeAsync_1
     summary: |-
       Removes a notification message for an item.
@@ -360,39 +298,13 @@ items:
       Office.context.mailbox.item.notificationMessages.removeAsync("progress");
 
       ```
-    name: removeAsync(key)
-    fullName: removeAsync(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'removeAsync(key: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: key
-          description: The key for the notification message to remove.
-          type:
-            - string
-  - uid: Outlook_1_4.Office.NotificationMessages.removeAsync_2
-    summary: |-
-      Removes a notification message for an item.
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
     name: 'removeAsync(key, callback)'
     fullName: 'removeAsync(key, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'removeAsync(key: string, callback: (result: Office.AsyncResult<void>) => void): void;'
+      content: 'removeAsync(key: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -407,7 +319,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_4.Office.NotificationMessages.replaceAsync
     summary: |-
       Replaces a notification message that has a given key with another message.
@@ -428,7 +340,7 @@ items:
     syntax:
       content: >-
         replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options?: Office.AsyncContextOptions,
-        callback?: (result: Office.AsyncResult<void>) => void): void;
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -455,7 +367,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_4.Office.NotificationMessages.replaceAsync_1
     summary: |-
       Replaces a notification message that has a given key with another message.
@@ -484,40 +396,6 @@ items:
       });
 
       ```
-    name: 'replaceAsync(key, JSONmessage)'
-    fullName: 'replaceAsync(key, JSONmessage)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'replaceAsync(key: string, JSONmessage: NotificationMessageDetails): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: key
-          description: The key for the notification message to replace. It can't be longer than 32 characters.
-          type:
-            - string
-        - id: JSONmessage
-          description: >-
-            A JSON object that contains the new notification message to replace the existing message. It contains a
-            NotificationMessageDetails object.
-          type:
-            - NotificationMessageDetails
-  - uid: Outlook_1_4.Office.NotificationMessages.replaceAsync_2
-    summary: |-
-      Replaces a notification message that has a given key with another message.
-
-      If a notification message with the specified key doesn't exist, replaceAsync will add the notification.
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
     name: 'replaceAsync(key, JSONmessage, callback)'
     fullName: 'replaceAsync(key, JSONmessage, callback)'
     langs:
@@ -525,7 +403,7 @@ items:
     type: method
     syntax:
       content: >-
-        replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result:
+        replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -547,4 +425,4 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'

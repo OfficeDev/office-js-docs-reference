@@ -185,6 +185,63 @@ items:
 
       ```javascript
 
+      // The following code passes a string to the `displayReplyAllForm` function.
+
+      Office.context.mailbox.item.displayReplyAllForm('hello there');
+
+      Office.context.mailbox.item.displayReplyAllForm('<b>hello there</b>');
+
+
+      // Reply with an empty body.
+
+      Office.context.mailbox.item.displayReplyAllForm({});
+
+
+      // Reply with just a body.
+
+      Office.context.mailbox.item.displayReplyAllForm(
+
+      {
+
+      'htmlBody' : 'hi'
+
+      });
+
+
+      // Reply with a body and a file attachment.
+
+      Office.context.mailbox.item.displayReplyAllForm(
+
+      {
+          'htmlBody' : 'hi',
+          'attachments' :
+          [
+              {
+              'type' : Office.MailboxEnums.AttachmentType.File,
+              'name' : 'squirrel.png',
+              'url' : 'http://i.imgur.com/sRgTlGR.jpg'
+              }
+          ]
+      });
+
+
+      // Reply with a body and an item attachment.
+
+      Office.context.mailbox.item.displayReplyAllForm(
+
+      {
+          'htmlBody' : 'hi',
+          'attachments' :
+          [
+              {
+              'type' : 'item',
+              'name' : 'rand',
+              'itemId' : Office.context.mailbox.item.itemId
+              }
+          ]
+      });
+
+
       // Reply with a body, file attachment, item attachment, and a callback.
 
       Office.context.mailbox.item.displayReplyAllForm(
@@ -270,6 +327,61 @@ items:
 
 
       ```javascript
+
+      // The following code passes a string to the `displayReplyForm` function.
+
+      Office.context.mailbox.item.displayReplyForm('hello there');
+
+      Office.context.mailbox.item.displayReplyForm('<b>hello there</b>');
+
+
+      // Reply with an empty body.
+
+      Office.context.mailbox.item.displayReplyForm({});
+
+
+      // Reply with just a body.
+
+      Office.context.mailbox.item.displayReplyForm(
+
+      {
+          'htmlBody' : 'hi'
+      });
+
+
+      // Reply with a body and a file attachment.
+
+      Office.context.mailbox.item.displayReplyForm(
+
+      {
+          'htmlBody' : 'hi',
+          'attachments' :
+          [
+              {
+                  'type' : Office.MailboxEnums.AttachmentType.File,
+                  'name' : 'squirrel.png',
+                  'url' : 'http://i.imgur.com/sRgTlGR.jpg'
+              }
+          ]
+      });
+
+
+      // Reply with a body and an item attachment.
+
+      Office.context.mailbox.item.displayReplyForm(
+
+      {
+          'htmlBody' : 'hi',
+          'attachments' :
+          [
+              {
+                  'type' : 'item',
+                  'name' : 'rand',
+                  'itemId' : Office.context.mailbox.item.itemId
+              }
+          ]
+      });
+
 
       // Reply with a body, file attachment, item attachment, and a callback.
 

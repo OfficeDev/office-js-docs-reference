@@ -80,6 +80,22 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
       <tr><td>Errors</td><td>InvalidFormatError - The format of the specified data object is not valid.</td></tr>
       </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var locations = [
+          {
+              "id": "Contoso",
+              "type": Office.MailboxEnums.LocationType.Custom
+          }
+      ];
+
+      Office.context.mailbox.item.enhancedLocation.addAsync(locations);
+
+      ```
     isPreview: true
     name: 'addAsync(locationIdentifiers, callback)'
     fullName: 'addAsync(locationIdentifiers, callback)'
@@ -254,6 +270,22 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+
+      function callbackFunction(asyncResult) {
+          asyncResult.value.forEach(function (currentValue) {
+              Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
+          });
+      }
+
+      ```
     isPreview: true
     name: 'removeAsync(locationIdentifiers, callback)'
     fullName: 'removeAsync(locationIdentifiers, callback)'
