@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_6.Excel.Interfaces.ChartTitleData
+    summary: An interface describing the data returned by calling "chartTitle.toJSON()".
+    name: Excel.Interfaces.ChartTitleData
+    fullName: Excel.Interfaces.ChartTitleData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_6
+    children:
+      - excel_1_6.Excel.Interfaces.ChartTitleData.format
+      - excel_1_6.Excel.Interfaces.ChartTitleData.overlay
+      - excel_1_6.Excel.Interfaces.ChartTitleData.text
+      - excel_1_6.Excel.Interfaces.ChartTitleData.visible
+  - uid: excel_1_6.Excel.Interfaces.ChartTitleData.format
+    summary: |-
+      Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartTitleFormatData;'
+      return:
+        type:
+          - excel_1_6.Excel.Interfaces.ChartTitleFormatData
+  - uid: excel_1_6.Excel.Interfaces.ChartTitleData.overlay
+    summary: |-
+      Boolean value representing if the chart title will overlay the chart or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: overlay
+    fullName: overlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlay?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.ChartTitleData.text
+    summary: |-
+      Represents the title text of a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_6.Excel.Interfaces.ChartTitleData.visible
+    summary: |-
+      A boolean value the represents the visibility of a chart title object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

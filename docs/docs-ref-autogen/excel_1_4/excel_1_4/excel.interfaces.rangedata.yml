@@ -1,0 +1,322 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_4.Excel.Interfaces.RangeData
+    summary: An interface describing the data returned by calling "range.toJSON()".
+    name: Excel.Interfaces.RangeData
+    fullName: Excel.Interfaces.RangeData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_4
+    children:
+      - excel_1_4.Excel.Interfaces.RangeData.address
+      - excel_1_4.Excel.Interfaces.RangeData.addressLocal
+      - excel_1_4.Excel.Interfaces.RangeData.cellCount
+      - excel_1_4.Excel.Interfaces.RangeData.columnCount
+      - excel_1_4.Excel.Interfaces.RangeData.columnHidden
+      - excel_1_4.Excel.Interfaces.RangeData.columnIndex
+      - excel_1_4.Excel.Interfaces.RangeData.format
+      - excel_1_4.Excel.Interfaces.RangeData.formulas
+      - excel_1_4.Excel.Interfaces.RangeData.formulasLocal
+      - excel_1_4.Excel.Interfaces.RangeData.formulasR1C1
+      - excel_1_4.Excel.Interfaces.RangeData.hidden
+      - excel_1_4.Excel.Interfaces.RangeData.numberFormat
+      - excel_1_4.Excel.Interfaces.RangeData.rowCount
+      - excel_1_4.Excel.Interfaces.RangeData.rowHidden
+      - excel_1_4.Excel.Interfaces.RangeData.rowIndex
+      - excel_1_4.Excel.Interfaces.RangeData.text
+      - excel_1_4.Excel.Interfaces.RangeData.values
+      - excel_1_4.Excel.Interfaces.RangeData.valueTypes
+  - uid: excel_1_4.Excel.Interfaces.RangeData.address
+    summary: >-
+      Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_4.Excel.Interfaces.RangeData.addressLocal
+    summary: |-
+      Represents range reference for the specified range in the language of the user. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: addressLocal
+    fullName: addressLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addressLocal?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_4.Excel.Interfaces.RangeData.cellCount
+    summary: |-
+      Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: cellCount
+    fullName: cellCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellCount?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_4.Excel.Interfaces.RangeData.columnCount
+    summary: |-
+      Represents the total number of columns in the range. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnCount
+    fullName: columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnCount?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_4.Excel.Interfaces.RangeData.columnHidden
+    summary: |-
+      Represents if all columns of the current range are hidden.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnHidden
+    fullName: columnHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_4.Excel.Interfaces.RangeData.columnIndex
+    summary: |-
+      Represents the column number of the first cell in the range. Zero-indexed. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnIndex
+    fullName: columnIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnIndex?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_4.Excel.Interfaces.RangeData.format
+    summary: >-
+      Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.RangeFormatData;'
+      return:
+        type:
+          - excel_1_4.Excel.Interfaces.RangeFormatData
+  - uid: excel_1_4.Excel.Interfaces.RangeData.formulas
+    summary: >-
+      Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
+      single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
+      cells in the range.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulas
+    fullName: formulas
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulas?: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: excel_1_4.Excel.Interfaces.RangeData.formulasLocal
+    summary: >-
+      Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
+      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. When setting formulas to a range, the
+      value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single
+      value, it will be applied to all cells in the range.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulasLocal
+    fullName: formulasLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulasLocal?: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: excel_1_4.Excel.Interfaces.RangeData.formulasR1C1
+    summary: >-
+      Represents the formula in R1C1-style notation. When setting formulas to a range, the value argument can be either
+      a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
+      cells in the range.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulasR1C1
+    fullName: formulasR1C1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulasR1C1?: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: excel_1_4.Excel.Interfaces.RangeData.hidden
+    summary: |-
+      Represents if all cells of the current range are hidden. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hidden
+    fullName: hidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_4.Excel.Interfaces.RangeData.numberFormat
+    summary: >-
+      Represents Excel's number format code for the given range. When setting number format to a range, the value
+      argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it
+      will be applied to all cells in the range.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat?: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: excel_1_4.Excel.Interfaces.RangeData.rowCount
+    summary: |-
+      Returns the total number of rows in the range. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowCount
+    fullName: rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowCount?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_4.Excel.Interfaces.RangeData.rowHidden
+    summary: |-
+      Represents if all rows of the current range are hidden.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowHidden
+    fullName: rowHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_4.Excel.Interfaces.RangeData.rowIndex
+    summary: |-
+      Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_4.Excel.Interfaces.RangeData.text
+    summary: >-
+      Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
+      that happens in Excel UI will not affect the text value returned by the API. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: string[][];'
+      return:
+        type:
+          - 'string[][]'
+  - uid: excel_1_4.Excel.Interfaces.RangeData.values
+    summary: >-
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cells that contain an error will return the error string. When setting values to a range, the value argument can
+      be either a single value (string, number or boolean) or a two-dimensional array. If the argument is a single
+      value, it will be applied to all cells in the range.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values?: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: excel_1_4.Excel.Interfaces.RangeData.valueTypes
+    summary: |-
+      Represents the type of data of each cell. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: valueTypes
+    fullName: valueTypes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'valueTypes?: Excel.RangeValueType[][];'
+      return:
+        type:
+          - 'Excel.RangeValueType[][]'

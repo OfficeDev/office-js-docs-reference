@@ -1,0 +1,22 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_6.Office.CoercionTypeOptions
+    name: Office.CoercionTypeOptions
+    fullName: Office.CoercionTypeOptions
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1_6
+    children:
+      - Outlook_1_6.Office.CoercionTypeOptions.coercionType
+  - uid: Outlook_1_6.Office.CoercionTypeOptions.coercionType
+    name: coercionType
+    fullName: coercionType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'coercionType?: CommonAPI.CoercionType;'
+      return:
+        type:
+          - CommonAPI.CoercionType

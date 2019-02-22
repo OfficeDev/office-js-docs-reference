@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_5.Excel.Interfaces.ChartAxesLoadOptions
+    summary: |-
+      Represents the chart axes.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartAxesLoadOptions
+    fullName: Excel.Interfaces.ChartAxesLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_5
+    children:
+      - excel_1_5.Excel.Interfaces.ChartAxesLoadOptions.$all
+      - excel_1_5.Excel.Interfaces.ChartAxesLoadOptions.categoryAxis
+      - excel_1_5.Excel.Interfaces.ChartAxesLoadOptions.seriesAxis
+      - excel_1_5.Excel.Interfaces.ChartAxesLoadOptions.valueAxis
+  - uid: excel_1_5.Excel.Interfaces.ChartAxesLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_5.Excel.Interfaces.ChartAxesLoadOptions.categoryAxis
+    summary: |-
+      Represents the category axis in a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: categoryAxis
+    fullName: categoryAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'categoryAxis?: Excel.Interfaces.ChartAxisLoadOptions;'
+      return:
+        type:
+          - excel_1_5.Excel.Interfaces.ChartAxisLoadOptions
+  - uid: excel_1_5.Excel.Interfaces.ChartAxesLoadOptions.seriesAxis
+    summary: |-
+      Represents the series axis of a 3-dimensional chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: seriesAxis
+    fullName: seriesAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'seriesAxis?: Excel.Interfaces.ChartAxisLoadOptions;'
+      return:
+        type:
+          - excel_1_5.Excel.Interfaces.ChartAxisLoadOptions
+  - uid: excel_1_5.Excel.Interfaces.ChartAxesLoadOptions.valueAxis
+    summary: |-
+      Represents the value axis in an axis.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: valueAxis
+    fullName: valueAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'valueAxis?: Excel.Interfaces.ChartAxisLoadOptions;'
+      return:
+        type:
+          - excel_1_5.Excel.Interfaces.ChartAxisLoadOptions

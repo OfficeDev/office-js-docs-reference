@@ -1,0 +1,147 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_4.Excel.Interfaces.ChartAxisData
+    summary: An interface describing the data returned by calling "chartAxis.toJSON()".
+    name: Excel.Interfaces.ChartAxisData
+    fullName: Excel.Interfaces.ChartAxisData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_4
+    children:
+      - excel_1_4.Excel.Interfaces.ChartAxisData.format
+      - excel_1_4.Excel.Interfaces.ChartAxisData.majorGridlines
+      - excel_1_4.Excel.Interfaces.ChartAxisData.majorUnit
+      - excel_1_4.Excel.Interfaces.ChartAxisData.maximum
+      - excel_1_4.Excel.Interfaces.ChartAxisData.minimum
+      - excel_1_4.Excel.Interfaces.ChartAxisData.minorGridlines
+      - excel_1_4.Excel.Interfaces.ChartAxisData.minorUnit
+      - excel_1_4.Excel.Interfaces.ChartAxisData.title
+  - uid: excel_1_4.Excel.Interfaces.ChartAxisData.format
+    summary: |-
+      Represents the formatting of a chart object, which includes line and font formatting. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartAxisFormatData;'
+      return:
+        type:
+          - excel_1_4.Excel.Interfaces.ChartAxisFormatData
+  - uid: excel_1_4.Excel.Interfaces.ChartAxisData.majorGridlines
+    summary: |-
+      Returns a Gridlines object that represents the major gridlines for the specified axis. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: majorGridlines
+    fullName: majorGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesData;'
+      return:
+        type:
+          - excel_1_4.Excel.Interfaces.ChartGridlinesData
+  - uid: excel_1_4.Excel.Interfaces.ChartAxisData.majorUnit
+    summary: >-
+      Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
+      returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: majorUnit
+    fullName: majorUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'majorUnit?: any;'
+      return:
+        type:
+          - any
+  - uid: excel_1_4.Excel.Interfaces.ChartAxisData.maximum
+    summary: >-
+      Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: maximum
+    fullName: maximum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maximum?: any;'
+      return:
+        type:
+          - any
+  - uid: excel_1_4.Excel.Interfaces.ChartAxisData.minimum
+    summary: >-
+      Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minimum
+    fullName: minimum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minimum?: any;'
+      return:
+        type:
+          - any
+  - uid: excel_1_4.Excel.Interfaces.ChartAxisData.minorGridlines
+    summary: |-
+      Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minorGridlines
+    fullName: minorGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesData;'
+      return:
+        type:
+          - excel_1_4.Excel.Interfaces.ChartGridlinesData
+  - uid: excel_1_4.Excel.Interfaces.ChartAxisData.minorUnit
+    summary: >-
+      Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
+      automatic axis values). The returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: minorUnit
+    fullName: minorUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minorUnit?: any;'
+      return:
+        type:
+          - any
+  - uid: excel_1_4.Excel.Interfaces.ChartAxisData.title
+    summary: |-
+      Represents the axis title. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: Excel.Interfaces.ChartAxisTitleData;'
+      return:
+        type:
+          - excel_1_4.Excel.Interfaces.ChartAxisTitleData

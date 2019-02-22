@@ -1,0 +1,249 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData
+    summary: An interface describing the data returned by calling "chartDataLabels.toJSON()".
+    name: Excel.Interfaces.ChartDataLabelsData
+    fullName: Excel.Interfaces.ChartDataLabelsData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.Interfaces.ChartDataLabelsData.autoText
+      - excel_1_8.Excel.Interfaces.ChartDataLabelsData.format
+      - excel_1_8.Excel.Interfaces.ChartDataLabelsData.horizontalAlignment
+      - excel_1_8.Excel.Interfaces.ChartDataLabelsData.numberFormat
+      - excel_1_8.Excel.Interfaces.ChartDataLabelsData.position
+      - excel_1_8.Excel.Interfaces.ChartDataLabelsData.separator
+      - excel_1_8.Excel.Interfaces.ChartDataLabelsData.showBubbleSize
+      - excel_1_8.Excel.Interfaces.ChartDataLabelsData.showCategoryName
+      - excel_1_8.Excel.Interfaces.ChartDataLabelsData.showLegendKey
+      - excel_1_8.Excel.Interfaces.ChartDataLabelsData.showPercentage
+      - excel_1_8.Excel.Interfaces.ChartDataLabelsData.showSeriesName
+      - excel_1_8.Excel.Interfaces.ChartDataLabelsData.showValue
+      - excel_1_8.Excel.Interfaces.ChartDataLabelsData.textOrientation
+      - excel_1_8.Excel.Interfaces.ChartDataLabelsData.verticalAlignment
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData.autoText
+    summary: |-
+      Represents whether data labels automatically generate appropriate text based on context.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoText
+    fullName: autoText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoText?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData.format
+    summary: |-
+      Represents the format of chart data labels, which includes fill and font formatting. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartDataLabelFormatData;'
+      return:
+        type:
+          - excel_1_8.Excel.Interfaces.ChartDataLabelFormatData
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData.horizontalAlignment
+    summary: >-
+      Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This
+      property is valid only when TextOrientation of data label is 0.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment?: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" |
+        "Distributed";
+      return:
+        type:
+          - Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData.numberFormat
+    summary: |-
+      Represents the format code for data labels.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData.position
+    summary: >-
+      DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
+      details.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        position?: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" |
+        "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
+      return:
+        type:
+          - >-
+            Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" |
+            "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData.separator
+    summary: |-
+      String representing the separator used for the data labels on a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: separator
+    fullName: separator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'separator?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData.showBubbleSize
+    summary: |-
+      Boolean value representing if the data label bubble size is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showBubbleSize
+    fullName: showBubbleSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBubbleSize?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData.showCategoryName
+    summary: |-
+      Boolean value representing if the data label category name is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showCategoryName
+    fullName: showCategoryName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showCategoryName?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData.showLegendKey
+    summary: |-
+      Boolean value representing if the data label legend key is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showLegendKey
+    fullName: showLegendKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showLegendKey?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData.showPercentage
+    summary: |-
+      Boolean value representing if the data label percentage is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showPercentage
+    fullName: showPercentage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showPercentage?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData.showSeriesName
+    summary: |-
+      Boolean value representing if the data label series name is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showSeriesName
+    fullName: showSeriesName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showSeriesName?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData.showValue
+    summary: |-
+      Boolean value representing if the data label value is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showValue
+    fullName: showValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showValue?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData.textOrientation
+    summary: >-
+      Represents the text orientation of data labels. The value should be an integer either from -90 to 90, or 180 for
+      vertically-oriented text.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_8.Excel.Interfaces.ChartDataLabelsData.verticalAlignment
+    summary: >-
+      Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details. This
+      property is valid only when TextOrientation of data label is 90, -90 or 180.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";'
+      return:
+        type:
+          - Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"

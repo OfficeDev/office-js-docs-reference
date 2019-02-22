@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.Interfaces.WorksheetProtectionData
+    summary: An interface describing the data returned by calling "worksheetProtection.toJSON()".
+    name: Excel.Interfaces.WorksheetProtectionData
+    fullName: Excel.Interfaces.WorksheetProtectionData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.Interfaces.WorksheetProtectionData.options
+      - excel_1_8.Excel.Interfaces.WorksheetProtectionData.protected
+  - uid: excel_1_8.Excel.Interfaces.WorksheetProtectionData.options
+    summary: |-
+      Sheet protection options. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: options
+    fullName: options
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'options?: Excel.WorksheetProtectionOptions;'
+      return:
+        type:
+          - excel_1_8.Excel.WorksheetProtectionOptions
+  - uid: excel_1_8.Excel.Interfaces.WorksheetProtectionData.protected
+    summary: |-
+      Indicates if the worksheet is protected. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: protected
+    fullName: protected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected?: boolean;'
+      return:
+        type:
+          - boolean

@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension.ClientObject
+    summary: >-
+      An abstract proxy object that represents an object in an Office document. You create proxy objects from the
+      context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the
+      proxy object state with the document by calling `context.sync()`<!-- -->.
+    name: OfficeExtension.ClientObject
+    fullName: OfficeExtension.ClientObject
+    langs:
+      - typeScript
+    type: class
+    package: office
+    children:
+      - office.OfficeExtension.ClientObject.context
+      - office.OfficeExtension.ClientObject.isNullObject
+  - uid: office.OfficeExtension.ClientObject.context
+    summary: The request context associated with the object
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: ClientRequestContext;'
+      return:
+        type:
+          - office.OfficeExtension.ClientRequestContext
+  - uid: office.OfficeExtension.ClientObject.isNullObject
+    summary: >-
+      Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()`
+      before reading the isNullObject property.
+    name: isNullObject
+    fullName: isNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isNullObject: boolean;'
+      return:
+        type:
+          - boolean

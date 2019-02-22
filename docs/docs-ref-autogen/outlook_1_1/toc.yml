@@ -1,0 +1,89 @@
+items:
+  - name: API reference
+    href: ~/docs-ref-autogen/overview/office.md
+    items:
+      - name: Outlook_1_1
+        uid: Outlook_1_1
+        items:
+          - name: Office
+            items:
+              - name: Appointment
+                uid: Outlook_1_1.Office.Appointment
+              - name: AppointmentCompose
+                uid: Outlook_1_1.Office.AppointmentCompose
+              - name: AppointmentForm
+                uid: Outlook_1_1.Office.AppointmentForm
+              - name: AppointmentRead
+                uid: Outlook_1_1.Office.AppointmentRead
+              - name: AttachmentDetails
+                uid: Outlook_1_1.Office.AttachmentDetails
+              - name: Body
+                uid: Outlook_1_1.Office.Body
+              - name: CoercionTypeOptions
+                uid: Outlook_1_1.Office.CoercionTypeOptions
+              - name: Contact
+                uid: Outlook_1_1.Office.Contact
+              - name: CustomProperties
+                uid: Outlook_1_1.Office.CustomProperties
+              - name: Diagnostics
+                uid: Outlook_1_1.Office.Diagnostics
+              - name: EmailAddressDetails
+                uid: Outlook_1_1.Office.EmailAddressDetails
+              - name: EmailUser
+                uid: Outlook_1_1.Office.EmailUser
+              - name: Entities
+                uid: Outlook_1_1.Office.Entities
+              - name: Item
+                uid: Outlook_1_1.Office.Item
+              - name: ItemCompose
+                uid: Outlook_1_1.Office.ItemCompose
+              - name: ItemRead
+                uid: Outlook_1_1.Office.ItemRead
+              - name: LocalClientTime
+                uid: Outlook_1_1.Office.LocalClientTime
+              - name: Location
+                uid: Outlook_1_1.Office.Location
+              - name: Mailbox
+                uid: Outlook_1_1.Office.Mailbox
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: Outlook_1_1.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: Outlook_1_1.Office.MailboxEnums.EntityType
+                  - name: ItemType
+                    uid: Outlook_1_1.Office.MailboxEnums.ItemType
+                  - name: OWAView
+                    uid: Outlook_1_1.Office.MailboxEnums.OWAView
+                  - name: RecipientType
+                    uid: Outlook_1_1.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: Outlook_1_1.Office.MailboxEnums.ResponseType
+              - name: MeetingSuggestion
+                uid: Outlook_1_1.Office.MeetingSuggestion
+              - name: Message
+                uid: Outlook_1_1.Office.Message
+              - name: MessageCompose
+                uid: Outlook_1_1.Office.MessageCompose
+              - name: MessageRead
+                uid: Outlook_1_1.Office.MessageRead
+              - name: PhoneNumber
+                uid: Outlook_1_1.Office.PhoneNumber
+              - name: Recipients
+                uid: Outlook_1_1.Office.Recipients
+              - name: ReplyFormAttachment
+                uid: Outlook_1_1.Office.ReplyFormAttachment
+              - name: ReplyFormData
+                uid: Outlook_1_1.Office.ReplyFormData
+              - name: RoamingSettings
+                uid: Outlook_1_1.Office.RoamingSettings
+              - name: SourceProperty
+                uid: Outlook_1_1.Office.SourceProperty
+              - name: Subject
+                uid: Outlook_1_1.Office.Subject
+              - name: TaskSuggestion
+                uid: Outlook_1_1.Office.TaskSuggestion
+              - name: Time
+                uid: Outlook_1_1.Office.Time
+              - name: UserProfile
+                uid: Outlook_1_1.Office.UserProfile

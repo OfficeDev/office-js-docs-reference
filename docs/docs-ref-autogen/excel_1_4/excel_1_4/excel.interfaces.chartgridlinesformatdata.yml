@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_4.Excel.Interfaces.ChartGridlinesFormatData
+    summary: An interface describing the data returned by calling "chartGridlinesFormat.toJSON()".
+    name: Excel.Interfaces.ChartGridlinesFormatData
+    fullName: Excel.Interfaces.ChartGridlinesFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_4
+    children:
+      - excel_1_4.Excel.Interfaces.ChartGridlinesFormatData.line
+  - uid: excel_1_4.Excel.Interfaces.ChartGridlinesFormatData.line
+    summary: |-
+      Represents chart line formatting. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatData;'
+      return:
+        type:
+          - excel_1_4.Excel.Interfaces.ChartLineFormatData

@@ -1,0 +1,163 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData
+    summary: >-
+      An interface for updating data on the ChartDataLabels object, for use in "chartDataLabels.set(<!-- -->{ ... }<!--
+      -->)".
+    name: Excel.Interfaces.ChartDataLabelsUpdateData
+    fullName: Excel.Interfaces.ChartDataLabelsUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_5
+    children:
+      - excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.format
+      - excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.position
+      - excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.separator
+      - excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.showBubbleSize
+      - excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.showCategoryName
+      - excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.showLegendKey
+      - excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.showPercentage
+      - excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.showSeriesName
+      - excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.showValue
+  - uid: excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.format
+    summary: |-
+      Represents the format of chart data labels, which includes fill and font formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;'
+      return:
+        type:
+          - excel_1_5.Excel.Interfaces.ChartDataLabelFormatUpdateData
+  - uid: excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.position
+    summary: >-
+      DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
+      details.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        position?: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" |
+        "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
+      return:
+        type:
+          - >-
+            Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" |
+            "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
+  - uid: excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.separator
+    summary: |-
+      String representing the separator used for the data labels on a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: separator
+    fullName: separator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'separator?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.showBubbleSize
+    summary: |-
+      Boolean value representing if the data label bubble size is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showBubbleSize
+    fullName: showBubbleSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBubbleSize?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.showCategoryName
+    summary: |-
+      Boolean value representing if the data label category name is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showCategoryName
+    fullName: showCategoryName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showCategoryName?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.showLegendKey
+    summary: |-
+      Boolean value representing if the data label legend key is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showLegendKey
+    fullName: showLegendKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showLegendKey?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.showPercentage
+    summary: |-
+      Boolean value representing if the data label percentage is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showPercentage
+    fullName: showPercentage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showPercentage?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.showSeriesName
+    summary: |-
+      Boolean value representing if the data label series name is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showSeriesName
+    fullName: showSeriesName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showSeriesName?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_5.Excel.Interfaces.ChartDataLabelsUpdateData.showValue
+    summary: |-
+      Boolean value representing if the data label value is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showValue
+    fullName: showValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showValue?: boolean;'
+      return:
+        type:
+          - boolean

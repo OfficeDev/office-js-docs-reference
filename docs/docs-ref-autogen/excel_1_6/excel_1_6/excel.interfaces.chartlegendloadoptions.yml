@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_6.Excel.Interfaces.ChartLegendLoadOptions
+    summary: |-
+      Represents the legend in a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartLegendLoadOptions
+    fullName: Excel.Interfaces.ChartLegendLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_6
+    children:
+      - excel_1_6.Excel.Interfaces.ChartLegendLoadOptions.$all
+      - excel_1_6.Excel.Interfaces.ChartLegendLoadOptions.format
+      - excel_1_6.Excel.Interfaces.ChartLegendLoadOptions.overlay
+      - excel_1_6.Excel.Interfaces.ChartLegendLoadOptions.position
+      - excel_1_6.Excel.Interfaces.ChartLegendLoadOptions.visible
+  - uid: excel_1_6.Excel.Interfaces.ChartLegendLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.ChartLegendLoadOptions.format
+    summary: |-
+      Represents the formatting of a chart legend, which includes fill and font formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartLegendFormatLoadOptions;'
+      return:
+        type:
+          - excel_1_6.Excel.Interfaces.ChartLegendFormatLoadOptions
+  - uid: excel_1_6.Excel.Interfaces.ChartLegendLoadOptions.overlay
+    summary: |-
+      Boolean value for whether the chart legend should overlap with the main body of the chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: overlay
+    fullName: overlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlay?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.ChartLegendLoadOptions.position
+    summary: |-
+      Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.ChartLegendLoadOptions.visible
+    summary: |-
+      A boolean value the represents the visibility of a ChartLegend object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

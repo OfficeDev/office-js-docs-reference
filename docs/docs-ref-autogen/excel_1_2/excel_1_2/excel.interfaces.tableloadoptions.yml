@@ -1,0 +1,175 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_2.Excel.Interfaces.TableLoadOptions
+    summary: |-
+      Represents an Excel table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.TableLoadOptions
+    fullName: Excel.Interfaces.TableLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_2
+    children:
+      - excel_1_2.Excel.Interfaces.TableLoadOptions.$all
+      - excel_1_2.Excel.Interfaces.TableLoadOptions.columns
+      - excel_1_2.Excel.Interfaces.TableLoadOptions.id
+      - excel_1_2.Excel.Interfaces.TableLoadOptions.name
+      - excel_1_2.Excel.Interfaces.TableLoadOptions.rows
+      - excel_1_2.Excel.Interfaces.TableLoadOptions.showHeaders
+      - excel_1_2.Excel.Interfaces.TableLoadOptions.showTotals
+      - excel_1_2.Excel.Interfaces.TableLoadOptions.sort
+      - excel_1_2.Excel.Interfaces.TableLoadOptions.style
+      - excel_1_2.Excel.Interfaces.TableLoadOptions.worksheet
+  - uid: excel_1_2.Excel.Interfaces.TableLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.TableLoadOptions.columns
+    summary: |-
+      Represents a collection of all the columns in the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
+      return:
+        type:
+          - excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions
+  - uid: excel_1_2.Excel.Interfaces.TableLoadOptions.id
+    summary: >-
+      Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
+      same even when the table is renamed. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.TableLoadOptions.name
+    summary: |-
+      Name of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.TableLoadOptions.rows
+    summary: |-
+      Represents a collection of all the rows in the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rows
+    fullName: rows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
+      return:
+        type:
+          - excel_1_2.Excel.Interfaces.TableRowCollectionLoadOptions
+  - uid: excel_1_2.Excel.Interfaces.TableLoadOptions.showHeaders
+    summary: |-
+      Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showHeaders
+    fullName: showHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showHeaders?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.TableLoadOptions.showTotals
+    summary: |-
+      Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showTotals
+    fullName: showTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showTotals?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.TableLoadOptions.sort
+    summary: |-
+      Represents the sorting for the table.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: sort
+    fullName: sort
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sort?: Excel.Interfaces.TableSortLoadOptions;'
+      return:
+        type:
+          - excel_1_2.Excel.Interfaces.TableSortLoadOptions
+  - uid: excel_1_2.Excel.Interfaces.TableLoadOptions.style
+    summary: >-
+      Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
+      TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined
+      style present in the workbook can also be specified.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.TableLoadOptions.worksheet
+    summary: |-
+      The worksheet containing the current table.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
+      return:
+        type:
+          - excel_1_2.Excel.Interfaces.WorksheetLoadOptions

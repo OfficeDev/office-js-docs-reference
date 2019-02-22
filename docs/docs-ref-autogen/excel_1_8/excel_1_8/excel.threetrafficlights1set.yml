@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.ThreeTrafficLights1Set
+    name: Excel.ThreeTrafficLights1Set
+    fullName: Excel.ThreeTrafficLights1Set
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.ThreeTrafficLights1Set.greenCircle
+      - excel_1_8.Excel.ThreeTrafficLights1Set.redCircleWithBorder
+      - excel_1_8.Excel.ThreeTrafficLights1Set.yellowCircle
+  - uid: excel_1_8.Excel.ThreeTrafficLights1Set.greenCircle
+    name: greenCircle
+    fullName: greenCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenCircle: Icon;'
+      return:
+        type:
+          - excel_1_8.Excel.Icon
+  - uid: excel_1_8.Excel.ThreeTrafficLights1Set.redCircleWithBorder
+    name: redCircleWithBorder
+    fullName: redCircleWithBorder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redCircleWithBorder: Icon;'
+      return:
+        type:
+          - excel_1_8.Excel.Icon
+  - uid: excel_1_8.Excel.ThreeTrafficLights1Set.yellowCircle
+    name: yellowCircle
+    fullName: yellowCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowCircle: Icon;'
+      return:
+        type:
+          - excel_1_8.Excel.Icon

@@ -1,0 +1,510 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions
+    summary: |-
+      Contains a collection of [Word.Paragraph](xref:word.Word.Paragraph) objects.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.ParagraphCollectionLoadOptions
+    fullName: Word.Interfaces.ParagraphCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.$all
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.alignment
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.firstLineIndent
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.font
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.isLastParagraph
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.isListItem
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.leftIndent
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.lineSpacing
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.lineUnitAfter
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.lineUnitBefore
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.list
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.listItem
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.listItemOrNullObject
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.listOrNullObject
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.outlineLevel
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentBody
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControlOrNullObject
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTable
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCell
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNullObject
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableOrNullObject
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.rightIndent
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.spaceAfter
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.spaceBefore
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.style
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.styleBuiltIn
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.tableNestingLevel
+      - word.Word.Interfaces.ParagraphCollectionLoadOptions.text
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.alignment
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the alignment for a paragraph. The value can be 'left', 'centered',
+      'right', or 'justified'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: alignment
+    fullName: alignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'alignment?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.firstLineIndent
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the value, in points, for a first line or hanging indent. Use a
+      positive value to set a first-line indent, and use a negative value to set a hanging indent.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: firstLineIndent
+    fullName: firstLineIndent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'firstLineIndent?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.font
+    summary: >-
+      For EACH ITEM in the collection: Gets the text format of the paragraph. Use this to get and set font name, size,
+      color, and other properties.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Word.Interfaces.FontLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.FontLoadOptions
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.isLastParagraph
+    summary: |-
+      For EACH ITEM in the collection: Indicates the paragraph is the last one inside its parent body. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: isLastParagraph
+    fullName: isLastParagraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isLastParagraph?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.isListItem
+    summary: |-
+      For EACH ITEM in the collection: Checks whether the paragraph is a list item. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: isListItem
+    fullName: isListItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isListItem?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.leftIndent
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the left indent value, in points, for the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: leftIndent
+    fullName: leftIndent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftIndent?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.lineSpacing
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the line spacing, in points, for the specified paragraph. In the
+      Word UI, this value is divided by 12.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lineSpacing
+    fullName: lineSpacing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lineSpacing?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.lineUnitAfter
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, after the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lineUnitAfter
+    fullName: lineUnitAfter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lineUnitAfter?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.lineUnitBefore
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, before the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lineUnitBefore
+    fullName: lineUnitBefore
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lineUnitBefore?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.list
+    summary: >-
+      For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws if the paragraph is not in
+      a list.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: list
+    fullName: list
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'list?: Word.Interfaces.ListLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.ListLoadOptions
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.listItem
+    summary: >-
+      For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws if the paragraph is not part of a
+      list.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: listItem
+    fullName: listItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listItem?: Word.Interfaces.ListItemLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.ListItemLoadOptions
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.listItemOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the ListItem for the paragraph. Returns a null object if the paragraph is
+      not part of a list.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: listItemOrNullObject
+    fullName: listItemOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listItemOrNullObject?: Word.Interfaces.ListItemLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.ListItemLoadOptions
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.listOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Returns a null object if the
+      paragraph is not in a list.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: listOrNullObject
+    fullName: listOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listOrNullObject?: Word.Interfaces.ListLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.ListLoadOptions
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.outlineLevel
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the outline level for the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: outlineLevel
+    fullName: outlineLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'outlineLevel?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentBody
+    summary: |-
+      For EACH ITEM in the collection: Gets the parent body of the paragraph.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentBody
+    fullName: parentBody
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.BodyLoadOptions
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws if there isn't a
+      parent content control.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControl
+    fullName: parentContentControl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.ContentControlLoadOptions
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControlOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control that contains the paragraph. Returns a null object if
+      there isn't a parent content control.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControlOrNullObject
+    fullName: parentContentControlOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.ContentControlLoadOptions
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTable
+    summary: >-
+      For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws if it is not contained in a
+      table.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTable
+    fullName: parentTable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.TableLoadOptions
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCell
+    summary: >-
+      For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws if it is not contained in
+      a table cell.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableCell
+    fullName: parentTableCell
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.TableCellLoadOptions
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Returns a null object if it is
+      not contained in a table cell.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableCellOrNullObject
+    fullName: parentTableCellOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.TableCellLoadOptions
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the table that contains the paragraph. Returns a null object if it is not
+      contained in a table.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableOrNullObject
+    fullName: parentTableOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.TableLoadOptions
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.rightIndent
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the right indent value, in points, for the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: rightIndent
+    fullName: rightIndent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightIndent?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.spaceAfter
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the spacing, in points, after the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: spaceAfter
+    fullName: spaceAfter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'spaceAfter?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.spaceBefore
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the spacing, in points, before the paragraph.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: spaceBefore
+    fullName: spaceBefore
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'spaceBefore?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.style
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the style name for the paragraph. Use this property for custom
+      styles and localized style names. To use the built-in styles that are portable between locales, see the
+      "styleBuiltIn" property.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.styleBuiltIn
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the built-in style name for the paragraph. Use this property for
+      built-in styles that are portable between locales. To use custom styles or localized style names, see the "style"
+      property.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: styleBuiltIn
+    fullName: styleBuiltIn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styleBuiltIn?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.tableNestingLevel
+    summary: >-
+      For EACH ITEM in the collection: Gets the level of the paragraph's table. It returns 0 if the paragraph is not in
+      a table. Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: tableNestingLevel
+    fullName: tableNestingLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tableNestingLevel?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.text
+    summary: |-
+      For EACH ITEM in the collection: Gets the text of the paragraph. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type:
+          - boolean
