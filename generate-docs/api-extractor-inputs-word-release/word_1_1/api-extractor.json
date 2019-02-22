@@ -11,13 +11,13 @@
     "missingReleaseTags": "allow"
   },
   "project": {
-    "entryPointSourceFile": "word_1_1.d.ts"
+    "entryPointSourceFile": "word.d.ts"
   },
   "apiReviewFile": {
     "enabled": false
   },
   "apiJsonFile": {
     "enabled": true,
-    "outputFolder": "../json"
+    "outputFolder": "../../versioned-json/word_1_1"
   }
 }

@@ -11,13 +11,13 @@
     "missingReleaseTags": "allow"
   },
   "project": {
-    "entryPointSourceFile": "excel_1_4.d.ts"
+    "entryPointSourceFile": "excel.d.ts"
   },
   "apiReviewFile": {
     "enabled": false
   },
   "apiJsonFile": {
     "enabled": true,
-    "outputFolder": "../../json"
+    "outputFolder": "../../versioned-json/excel_1_4"
   }
 }

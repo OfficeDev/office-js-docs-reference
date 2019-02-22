@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartBorderUpdateData
+    summary: 'An interface for updating data on the ChartBorder object, for use in "chartBorder.set(<!-- -->{ ... }<!-- -->)".'
+    name: Excel.Interfaces.ChartBorderUpdateData
+    fullName: Excel.Interfaces.ChartBorderUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel

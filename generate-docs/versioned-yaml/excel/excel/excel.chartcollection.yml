@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel
     children:
       - excel.Excel.ChartCollection.add
@@ -439,7 +439,7 @@ items:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel.Excel.ChartCollection.onActivated
     summary: |-
       Occurs when a chart is activated.

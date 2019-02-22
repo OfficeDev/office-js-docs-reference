@@ -1,0 +1,149 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions
+    summary: >-
+      Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was
+      reached.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.TableCollectionLoadOptions
+    fullName: Excel.Interfaces.TableCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.TableCollectionLoadOptions.$all
+      - excel.Excel.Interfaces.TableCollectionLoadOptions.columns
+      - excel.Excel.Interfaces.TableCollectionLoadOptions.id
+      - excel.Excel.Interfaces.TableCollectionLoadOptions.name
+      - excel.Excel.Interfaces.TableCollectionLoadOptions.rows
+      - excel.Excel.Interfaces.TableCollectionLoadOptions.showHeaders
+      - excel.Excel.Interfaces.TableCollectionLoadOptions.showTotals
+      - excel.Excel.Interfaces.TableCollectionLoadOptions.style
+  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.columns
+    summary: |-
+      For EACH ITEM in the collection: Represents a collection of all the columns in the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TableColumnCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.id
+    summary: >-
+      For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value
+      of the identifier remains the same even when the table is renamed. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.name
+    summary: |-
+      For EACH ITEM in the collection: Name of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.rows
+    summary: |-
+      For EACH ITEM in the collection: Represents a collection of all the rows in the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rows
+    fullName: rows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TableRowCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.showHeaders
+    summary: >-
+      For EACH ITEM in the collection: Indicates whether the header row is visible or not. This value can be set to show
+      or remove the header row.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showHeaders
+    fullName: showHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showHeaders?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.showTotals
+    summary: >-
+      For EACH ITEM in the collection: Indicates whether the total row is visible or not. This value can be set to show
+      or remove the total row.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showTotals
+    fullName: showTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showTotals?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.style
+    summary: >-
+      For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are:
+      TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru
+      TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean

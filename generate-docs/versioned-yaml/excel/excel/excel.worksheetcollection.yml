@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel
     children:
       - excel.Excel.WorksheetCollection.add
@@ -484,7 +484,7 @@ items:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel.Excel.WorksheetCollection.onActivated
     summary: |-
       Occurs when any worksheet in the workbook is activated.

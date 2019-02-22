@@ -1,0 +1,210 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions
+    summary: |-
+      Represents a collection of Chart Trendlines.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartTrendlineCollectionLoadOptions
+    fullName: Excel.Interfaces.ChartTrendlineCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.$all
+      - excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.backwardPeriod
+      - excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.format
+      - excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.forwardPeriod
+      - excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.intercept
+      - excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.label
+      - excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.movingAveragePeriod
+      - excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.name
+      - excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.polynomialOrder
+      - excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.showEquation
+      - excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.showRSquared
+      - excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.type
+  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.backwardPeriod
+    summary: |-
+      For EACH ITEM in the collection: Represents the number of periods that the trendline extends backward.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: backwardPeriod
+    fullName: backwardPeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'backwardPeriod?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.format
+    summary: |-
+      For EACH ITEM in the collection: Represents the formatting of a chart trendline.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartTrendlineFormatLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartTrendlineFormatLoadOptions
+  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.forwardPeriod
+    summary: |-
+      For EACH ITEM in the collection: Represents the number of periods that the trendline extends forward.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: forwardPeriod
+    fullName: forwardPeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'forwardPeriod?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.intercept
+    summary: >-
+      For EACH ITEM in the collection: Represents the intercept value of the trendline. Can be set to a numeric value or
+      an empty string (for automatic values). The returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: intercept
+    fullName: intercept
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'intercept?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.label
+    summary: |-
+      For EACH ITEM in the collection: Represents the label of a chart trendline.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: label
+    fullName: label
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'label?: Excel.Interfaces.ChartTrendlineLabelLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartTrendlineLabelLoadOptions
+  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.movingAveragePeriod
+    summary: >-
+      For EACH ITEM in the collection: Represents the period of a chart trendline. Only applicable for trendline with
+      MovingAverage type.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: movingAveragePeriod
+    fullName: movingAveragePeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'movingAveragePeriod?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.name
+    summary: >-
+      For EACH ITEM in the collection: Represents the name of the trendline. Can be set to a string value, or can be set
+      to null value represents automatic values. The returned value is always a string
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.polynomialOrder
+    summary: >-
+      For EACH ITEM in the collection: Represents the order of a chart trendline. Only applicable for trendline with
+      Polynomial type.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: polynomialOrder
+    fullName: polynomialOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'polynomialOrder?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.showEquation
+    summary: |-
+      For EACH ITEM in the collection: True if the equation for the trendline is displayed on the chart.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showEquation
+    fullName: showEquation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showEquation?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.showRSquared
+    summary: |-
+      For EACH ITEM in the collection: True if the R-squared for the trendline is displayed on the chart.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showRSquared
+    fullName: showRSquared
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRSquared?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionLoadOptions.type
+    summary: |-
+      For EACH ITEM in the collection: Represents the type of a chart trendline.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type:
+          - boolean

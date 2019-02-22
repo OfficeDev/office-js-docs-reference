@@ -18,5 +18,5 @@
       "dom"
     ]
   },
-  "include": [ "excel_1_7.d.ts" ]
+  "include": [ "excel.d.ts" ]
 }

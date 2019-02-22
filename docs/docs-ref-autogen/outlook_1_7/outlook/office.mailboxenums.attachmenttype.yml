@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook.Office.MailboxEnums.AttachmentType
+    summary: |-
+      Specifies an attachment's type.
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or Read</td></tr> </table>
+    name: Office.MailboxEnums.AttachmentType
+    fullName: Office.MailboxEnums.AttachmentType
+    langs:
+      - typeScript
+    type: enum
+    package: Outlook
+    children:
+      - Outlook.Office.MailboxEnums.AttachmentType.Cloud
+      - Outlook.Office.MailboxEnums.AttachmentType.File
+      - Outlook.Office.MailboxEnums.AttachmentType.Item
+  - uid: Outlook.Office.MailboxEnums.AttachmentType.Cloud
+    summary: >-
+      The attachment is stored in a cloud location, such as OneDrive. The id property of the attachment contains a URL
+      to the file.
+    name: Cloud
+    fullName: Cloud
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"cloud"'
+  - uid: Outlook.Office.MailboxEnums.AttachmentType.File
+    summary: The attachment is a file
+    name: File
+    fullName: File
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"file"'
+  - uid: Outlook.Office.MailboxEnums.AttachmentType.Item
+    summary: The attachment is an Exchange item
+    name: Item
+    fullName: Item
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"item"'

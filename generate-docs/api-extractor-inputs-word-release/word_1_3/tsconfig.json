@@ -18,5 +18,5 @@
       "dom"
     ]
   },
-  "include": [ "word_1_3.d.ts" ]
+  "include": [ "word.d.ts" ]
 }

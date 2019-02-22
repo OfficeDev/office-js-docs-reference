@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel
     children:
       - excel.Excel.PivotTableCollection.add
@@ -230,7 +230,7 @@ items:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel.Excel.PivotTableCollection.refreshAll
     summary: |-
       Refreshes all the pivot tables in the collection.

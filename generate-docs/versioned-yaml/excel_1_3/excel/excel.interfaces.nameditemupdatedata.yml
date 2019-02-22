@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.NamedItemUpdateData
+    summary: 'An interface for updating data on the NamedItem object, for use in "namedItem.set(<!-- -->{ ... }<!-- -->)".'
+    name: Excel.Interfaces.NamedItemUpdateData
+    fullName: Excel.Interfaces.NamedItemUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.NamedItemUpdateData.visible
+  - uid: excel.Excel.Interfaces.NamedItemUpdateData.visible
+    summary: |-
+      Specifies whether the object is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

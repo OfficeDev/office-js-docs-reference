@@ -1,0 +1,424 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions
+    summary: |-
+      Represents a series in a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartSeriesLoadOptions
+    fullName: Excel.Interfaces.ChartSeriesLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.$all
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.axisGroup
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.chartType
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.dataLabels
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.doughnutHoleSize
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.explosion
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.filtered
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.firstSliceAngle
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.format
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.gapWidth
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.hasDataLabels
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.invertIfNegative
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.markerBackgroundColor
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.markerForegroundColor
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.markerSize
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.markerStyle
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.name
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.overlap
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.plotOrder
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.points
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.secondPlotSize
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.showShadow
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.smooth
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.splitType
+      - excel.Excel.Interfaces.ChartSeriesLoadOptions.varyByCategories
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.axisGroup
+    summary: |-
+      Returns or sets the group for the specified series. Read/Write
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: axisGroup
+    fullName: axisGroup
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'axisGroup?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.chartType
+    summary: |-
+      Represents the chart type of a series. See Excel.ChartType for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: chartType
+    fullName: chartType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'chartType?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.dataLabels
+    summary: |-
+      Represents a collection of all dataLabels in the series.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataLabels
+    fullName: dataLabels
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.doughnutHoleSize
+    summary: >-
+      Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnutExploded charts. Throws an
+      invalid argument exception on invalid charts.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: doughnutHoleSize
+    fullName: doughnutHoleSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'doughnutHoleSize?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.explosion
+    summary: >-
+      Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no
+      explosion (the tip of the slice is in the center of the pie). Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: explosion
+    fullName: explosion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'explosion?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.filtered
+    summary: |-
+      Boolean value representing if the series is filtered or not. Not applicable for surface charts.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: filtered
+    fullName: filtered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'filtered?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.firstSliceAngle
+    summary: >-
+      Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical).
+      Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: firstSliceAngle
+    fullName: firstSliceAngle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'firstSliceAngle?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.format
+    summary: |-
+      Represents the formatting of a chart series, which includes fill and line formatting.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.gapWidth
+    summary: >-
+      Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of
+      line and pie charts. Throws an invalid argument exception on invalid charts.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gapWidth
+    fullName: gapWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gapWidth?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.hasDataLabels
+    summary: |-
+      Boolean value representing if the series has data labels or not.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hasDataLabels
+    fullName: hasDataLabels
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasDataLabels?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.invertIfNegative
+    summary: |-
+      True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: invertIfNegative
+    fullName: invertIfNegative
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'invertIfNegative?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.markerBackgroundColor
+    summary: |-
+      Represents markers background color of a chart series.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: markerBackgroundColor
+    fullName: markerBackgroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerBackgroundColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.markerForegroundColor
+    summary: |-
+      Represents markers foreground color of a chart series.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: markerForegroundColor
+    fullName: markerForegroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerForegroundColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.markerSize
+    summary: |-
+      Represents marker size of a chart series.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: markerSize
+    fullName: markerSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerSize?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.markerStyle
+    summary: |-
+      Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: markerStyle
+    fullName: markerStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerStyle?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.name
+    summary: |-
+      Represents the name of a series in a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.overlap
+    summary: >-
+      Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and
+      2-D column charts. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: overlap
+    fullName: overlap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlap?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.plotOrder
+    summary: |-
+      Represents the plot order of a chart series within the chart group.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: plotOrder
+    fullName: plotOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'plotOrder?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.points
+    summary: |-
+      Represents a collection of all points in the series.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: points
+    fullName: points
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartPointsCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.secondPlotSize
+    summary: >-
+      Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a
+      percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: secondPlotSize
+    fullName: secondPlotSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'secondPlotSize?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.showShadow
+    summary: |-
+      Boolean value representing if the series has a shadow or not.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showShadow
+    fullName: showShadow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showShadow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.smooth
+    summary: |-
+      Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: smooth
+    fullName: smooth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'smooth?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.splitType
+    summary: |-
+      Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: splitType
+    fullName: splitType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'splitType?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.varyByCategories
+    summary: >-
+      True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one
+      series. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: varyByCategories
+    fullName: varyByCategories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'varyByCategories?: boolean;'
+      return:
+        type:
+          - boolean

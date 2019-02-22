@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel
     children:
       - excel.Excel.RangeBorderCollection.context
@@ -297,7 +297,7 @@ items:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel.Excel.RangeBorderCollection.tintAndShade
     summary: >-
       Returns or sets a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and

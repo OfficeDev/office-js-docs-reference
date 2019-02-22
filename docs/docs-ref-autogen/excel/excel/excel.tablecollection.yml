@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - office.OfficeExtension.ClientObject
+      - 'OfficeExtension.ClientObject '
     package: excel
     children:
       - excel.Excel.TableCollection.add
@@ -351,7 +351,7 @@ items:
         - id: option
           description: ''
           type:
-            - office.OfficeExtension.LoadOption
+            - OfficeExtension.LoadOption
   - uid: excel.Excel.TableCollection.onAdded
     summary: >-
       Occurs when new table is added in a workbook.

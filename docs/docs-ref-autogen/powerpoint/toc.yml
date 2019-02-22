@@ -1,8 +1,0 @@
-items:
-  - name: API reference
-    href: ~/docs-ref-autogen/overview/office.md
-    items:
-      - name: powerpoint
-        uid: powerpoint
-        items:
-          - name: PowerPoint

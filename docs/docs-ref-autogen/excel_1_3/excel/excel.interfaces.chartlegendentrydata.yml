@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartLegendEntryData
+    summary: An interface describing the data returned by calling "chartLegendEntry.toJSON()".
+    name: Excel.Interfaces.ChartLegendEntryData
+    fullName: Excel.Interfaces.ChartLegendEntryData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
