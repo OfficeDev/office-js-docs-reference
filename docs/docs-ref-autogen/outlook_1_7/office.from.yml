@@ -19,7 +19,6 @@ items:
     children:
       - Outlook_1_7.Office.From.getAsync
       - Outlook_1_7.Office.From.getAsync_1
-      - Outlook_1_7.Office.From.getAsync_2
   - uid: Outlook_1_7.Office.From.getAsync
     summary: >-
       Gets the from value of a message.
@@ -45,8 +44,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<EmailAddressDetails>)
-        => void): void;
+        getAsync(options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<EmailAddressDetails>) => void): void;
       return:
         type:
           - void
@@ -54,17 +53,17 @@ items:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. asyncContext: Developers can
-            provide any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
           type:
             - Office.AsyncContextOptions
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter,
-            asyncResult, which is an Office.AsyncResult object. The `value` property of the result is message's from
-            value, as an EmailAddressDetails object.
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object. The `value` property of the result is the
+            item's from value, as an EmailAddressDetails object.
           type:
-            - '(result: Office.AsyncResult<EmailAddressDetails>) => void'
+            - '(asyncResult: Office.AsyncResult<EmailAddressDetails>) => void'
   - uid: Outlook_1_7.Office.From.getAsync_1
     summary: >-
       Gets the from value of a message.
@@ -104,7 +103,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback?: (result: Office.AsyncResult<EmailAddressDetails>) => void): void;'
+      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<EmailAddressDetails>) => void): void;'
       return:
         type:
           - void
@@ -112,37 +111,8 @@ items:
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter,
-            asyncResult, which is an Office.AsyncResult object. The `value` property of the result is message's from
-            value, as an EmailAddressDetails object.
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object. The `value` property of the result is the
+            item's from value, as an EmailAddressDetails object.
           type:
-            - '(result: Office.AsyncResult<EmailAddressDetails>) => void'
-  - uid: Outlook_1_7.Office.From.getAsync_2
-    summary: >-
-      Gets the from value of a message.
-
-
-      The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
-
-
-      The from value of the item is provided as an
-      [Office.EmailAddressDetails](xref:Outlook_1_7.Office.EmailAddressDetails) in the asyncResult.value property.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr> </table>
-    name: getAsync()
-    fullName: getAsync()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAsync(): void;'
-      return:
-        type:
-          - void
-        description: ''
+            - '(asyncResult: Office.AsyncResult<EmailAddressDetails>) => void'

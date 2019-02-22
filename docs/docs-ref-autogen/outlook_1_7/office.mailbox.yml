@@ -27,7 +27,6 @@ items:
     children:
       - Outlook_1_7.Office.Mailbox.addHandlerAsync
       - Outlook_1_7.Office.Mailbox.addHandlerAsync_1
-      - Outlook_1_7.Office.Mailbox.addHandlerAsync_2
       - Outlook_1_7.Office.Mailbox.convertToEwsId
       - Outlook_1_7.Office.Mailbox.convertToLocalClientTime
       - Outlook_1_7.Office.Mailbox.convertToRestId
@@ -38,27 +37,20 @@ items:
       - Outlook_1_7.Office.Mailbox.displayNewMessageForm
       - Outlook_1_7.Office.Mailbox.getCallbackTokenAsync
       - Outlook_1_7.Office.Mailbox.getCallbackTokenAsync_1
-      - Outlook_1_7.Office.Mailbox.getCallbackTokenAsync_2
       - Outlook_1_7.Office.Mailbox.getUserIdentityTokenAsync
-      - Outlook_1_7.Office.Mailbox.getUserIdentityTokenAsync_1
       - Outlook_1_7.Office.Mailbox.makeEwsRequestAsync
-      - Outlook_1_7.Office.Mailbox.makeEwsRequestAsync_1
       - Outlook_1_7.Office.Mailbox.removeHandlerAsync
       - Outlook_1_7.Office.Mailbox.removeHandlerAsync_1
-      - Outlook_1_7.Office.Mailbox.removeHandlerAsync_2
       - Outlook_1_7.Office.Mailbox.diagnostics
       - Outlook_1_7.Office.Mailbox.ewsUrl
       - Outlook_1_7.Office.Mailbox.item
       - Outlook_1_7.Office.Mailbox.restUrl
       - Outlook_1_7.Office.Mailbox.userProfile
   - uid: Outlook_1_7.Office.Mailbox.addHandlerAsync
-    summary: >-
+    summary: |-
       Adds an event handler for a supported event.
 
-
-      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->. In Preview,
-      `Office.EventType.OfficeThemeChanged` is also supported.
-
+      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -74,7 +66,7 @@ items:
     syntax:
       content: >-
         addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, options?:
-        Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<void>) => void): void;
+        Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -99,7 +91,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.Mailbox.addHandlerAsync_1
     summary: |-
       Adds an event handler for a supported event.
@@ -143,7 +135,7 @@ items:
     syntax:
       content: >-
         addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, callback?:
-        (result: Office.AsyncResult<void>) => void): void;
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -164,41 +156,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
-  - uid: Outlook_1_7.Office.Mailbox.addHandlerAsync_2
-    summary: |-
-      Adds an event handler for a supported event.
-
-      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
-    name: 'addHandlerAsync(eventType, handler)'
-    fullName: 'addHandlerAsync(eventType, handler)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: eventType
-          description: The event that should invoke the handler.
-          type:
-            - Office.EventType
-        - id: handler
-          description: >-
-            The function to handle the event. The function must accept a single parameter, which is an object literal.
-            The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
-          type:
-            - '(type: Office.EventType) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.Mailbox.convertToEwsId
     summary: >-
       Converts an item ID formatted for REST into EWS format.
@@ -742,7 +700,7 @@ items:
     type: method
     syntax:
       content: >-
-        getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (result:
+        getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (asyncResult:
         Office.AsyncResult<string>) => void): void;
       return:
         type:
@@ -763,73 +721,8 @@ items:
             was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
             information.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: Outlook_1_7.Office.Mailbox.getCallbackTokenAsync_1
-    summary: >-
-      Gets a string that contains a token used to get an attachment or item from an Exchange Server.
-
-
-      The getCallbackTokenAsync method makes an asynchronous call to get an opaque token from the Exchange Server that
-      hosts the user's mailbox. The lifetime of the callback token is 5 minutes.
-
-
-      You can pass the token and an attachment identifier or item identifier to a third-party system. The third-party
-      system uses the token as a bearer authorization token to call the Exchange Web Services (EWS) GetAttachment or
-      GetItem operation to return an attachment or item. For example, you can create a remote service to get attachments
-      from the selected item.
-
-
-      Your app must have the ReadItem permission specified in its manifest to call the getCallbackTokenAsync method in
-      read mode.
-
-
-      In compose mode you must call the saveAsync method to get an item identifier to pass to the getCallbackTokenAsync
-      method. Your app must have ReadWriteItem permissions to call the saveAsync method.
-
-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      function getCallbackToken() {
-          Office.context.mailbox.getCallbackTokenAsync(cb);
-      }
-
-
-      function cb(asyncResult) {
-          var token = asyncResult.value;
-      }
-
-      ```
-    name: getCallbackTokenAsync(callback)
-    fullName: getCallbackTokenAsync(callback)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCallbackTokenAsync(callback: (result: Office.AsyncResult<string>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: callback
-          description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property. If there
-            was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
-            information.
-          type:
-            - '(result: Office.AsyncResult<string>) => void'
-  - uid: Outlook_1_7.Office.Mailbox.getCallbackTokenAsync_2
     summary: >-
       Gets a string that contains a token used to get an attachment or item from an Exchange Server.
 
@@ -858,13 +751,29 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       Read</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function getCallbackToken() {
+          Office.context.mailbox.getCallbackTokenAsync(cb);
+      }
+
+
+      function cb(asyncResult) {
+          var token = asyncResult.value;
+      }
+
+      ```
     name: 'getCallbackTokenAsync(callback, userContext)'
     fullName: 'getCallbackTokenAsync(callback, userContext)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getCallbackTokenAsync(callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;'
+      content: 'getCallbackTokenAsync(callback: (asyncResult: Office.AsyncResult<string>) => void, userContext?: any): void;'
       return:
         type:
           - void
@@ -877,52 +786,12 @@ items:
             was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
             information.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
             - any
   - uid: Outlook_1_7.Office.Mailbox.getUserIdentityTokenAsync
-    summary: |-
-      Gets a token identifying the user and the Office Add-in.
-
-      The token is provided as a string in the asyncResult.value property.
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
-
-
-      The getUserIdentityTokenAsync method returns a token that you can use to identify and [authenticate the add-in and
-      user with a third-party system](https://docs.microsoft.com/outlook/add-ins/authentication)<!-- -->.
-    name: 'getUserIdentityTokenAsync(callback, userContext)'
-    fullName: 'getUserIdentityTokenAsync(callback, userContext)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUserIdentityTokenAsync(callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: callback
-          description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property. If there
-            was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
-            information.
-          type:
-            - '(result: Office.AsyncResult<string>) => void'
-        - id: userContext
-          description: Optional. Any state data that is passed to the asynchronous method.\|
-          type:
-            - any
-  - uid: Outlook_1_7.Office.Mailbox.getUserIdentityTokenAsync_1
     summary: |-
       Gets a token identifying the user and the Office Add-in.
 
@@ -954,13 +823,15 @@ items:
       }
 
       ```
-    name: getUserIdentityTokenAsync(callback)
-    fullName: getUserIdentityTokenAsync(callback)
+    name: 'getUserIdentityTokenAsync(callback, userContext)'
+    fullName: 'getUserIdentityTokenAsync(callback, userContext)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getUserIdentityTokenAsync(callback: (result: Office.AsyncResult<string>) => void): void;'
+      content: >-
+        getUserIdentityTokenAsync(callback: (asyncResult: Office.AsyncResult<string>) => void, userContext?: any):
+        void;
       return:
         type:
           - void
@@ -973,100 +844,12 @@ items:
             was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
             information.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
-  - uid: Outlook_1_7.Office.Mailbox.makeEwsRequestAsync
-    summary: >-
-      Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the
-      user's mailbox.
-
-
-      In these cases, add-ins should use REST APIs to access the user's mailbox instead.
-
-
-      The makeEwsRequestAsync method sends an EWS request on behalf of the add-in to Exchange.
-
-
-      You cannot request Folder Associated Items with the makeEwsRequestAsync method.
-
-
-      The XML request must specify UTF-8 encoding. &lt;<!-- -->?xml version="1.0" encoding="utf-8"?<!-- -->&gt;
-
-
-      Your add-in must have the ReadWriteMailbox permission to use the makeEwsRequestAsync method. For information about
-      using the ReadWriteMailbox permission and the EWS operations that you can call with the makeEwsRequestAsync
-      method, see [Specify permissions for mail add-in access to the user's
-      mailbox](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->.
-
-
-      The XML result of the EWS call is provided as a string in the asyncResult.value property. If the result exceeds 1
-      MB in size, an error message is returned instead.
-
-
-      **Note**: This method is not supported in the following scenarios:
-
-
-      - In Outlook for iOS or Outlook for Android.
-
-
-      - When the add-in is loaded in a Gmail mailbox.
-
-
-      **Note**: The server administrator must set OAuthAuthentication to true on the Client Access Server EWS directory
-      to enable the makeEwsRequestAsync method to make EWS requests.
-
-
-      *Version differences*
-
-
-      When you use the makeEwsRequestAsync method in mail apps running in Outlook versions earlier than version
-      15.0.4535.1004, you should set the encoding value to ISO-8859-1.
-
-
-      `<?xml version="1.0" encoding="iso-8859-1"?>`
-
-
-      You do not need to set the encoding value when your mail app is running in Outlook on the web. You can determine
-      whether your mail app is running in Outlook or Outlook on the web by using the mailbox.diagnostics.hostName
-      property. You can determine what version of Outlook is running by using the mailbox.diagnostics.hostVersion
-      property.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteMailbox</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
-    name: 'makeEwsRequestAsync(data, callback, userContext)'
-    fullName: 'makeEwsRequestAsync(data, callback, userContext)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        makeEwsRequestAsync(data: any, callback: (result: Office.AsyncResult<string>) => void, userContext?: any):
-        void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: data
-          description: The EWS request.
-          type:
-            - any
-        - id: callback
-          description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The `value` property of the result is the XML of the EWS request provided as a
-            string. If the result exceeds 1 MB in size, an error message is returned instead.
-          type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
         - id: userContext
-          description: Optional. Any state data that is passed to the asynchronous method.
+          description: Optional. Any state data that is passed to the asynchronous method.\|
           type:
             - any
-  - uid: Outlook_1_7.Office.Mailbox.makeEwsRequestAsync_1
+  - uid: Outlook_1_7.Office.Mailbox.makeEwsRequestAsync
     summary: >-
       Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the
       user's mailbox.
@@ -1178,13 +961,15 @@ items:
       }
 
       ```
-    name: 'makeEwsRequestAsync(data, callback)'
-    fullName: 'makeEwsRequestAsync(data, callback)'
+    name: 'makeEwsRequestAsync(data, callback, userContext)'
+    fullName: 'makeEwsRequestAsync(data, callback, userContext)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'makeEwsRequestAsync(data: any, callback: (result: Office.AsyncResult<string>) => void): void;'
+      content: >-
+        makeEwsRequestAsync(data: any, callback: (asyncResult: Office.AsyncResult<string>) => void, userContext?:
+        any): void;
       return:
         type:
           - void
@@ -1200,15 +985,16 @@ items:
             of type Office.AsyncResult. The `value` property of the result is the XML of the EWS request provided as a
             string. If the result exceeds 1 MB in size, an error message is returned instead.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
+        - id: userContext
+          description: Optional. Any state data that is passed to the asynchronous method.
+          type:
+            - any
   - uid: Outlook_1_7.Office.Mailbox.removeHandlerAsync
-    summary: >-
+    summary: |-
       Removes the event handlers for a supported event type.
 
-
-      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->. In Preview,
-      `Office.EventType.OfficeThemeChanged` is also supported.
-
+      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -1223,8 +1009,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: Office.AsyncContextOptions, callback?: (result:
-        Office.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: Office.EventType, options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -1243,7 +1029,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.Mailbox.removeHandlerAsync_1
     summary: |-
       Removes the event handlers for a supported event type.
@@ -1263,8 +1049,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, callback?: (result: Office.AsyncResult<void>) => void):
-        void;
+        removeHandlerAsync(eventType: Office.EventType, callback?: (asyncResult: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -1279,35 +1065,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
-  - uid: Outlook_1_7.Office.Mailbox.removeHandlerAsync_2
-    summary: |-
-      Removes the event handlers for a supported event type.
-
-      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
-    name: removeHandlerAsync(eventType)
-    fullName: removeHandlerAsync(eventType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'removeHandlerAsync(eventType: Office.EventType): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: eventType
-          description: The event that should revoke the handler.
-          type:
-            - Office.EventType
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.Mailbox.diagnostics
     summary: >-
       Provides diagnostic information to an Outlook add-in.
